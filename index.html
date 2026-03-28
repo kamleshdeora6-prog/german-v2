@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>German Study App</title>
+<link rel="stylesheet" href="styles.css">
+
+</head><body class="theme-focus">
+<div class="shell">
+<aside class="sidebar">
+  <div class="brand"><div class="logo">🦋</div><div><h1>German Study App</h1><div class="sub">GitHub-ready replacement build</div></div></div>
+  <button class="navbtn active" data-section="dashboard">🏠 Dashboard <span>›</span></button>
+  <button class="navbtn" data-section="practice">🧠 Practice <span>›</span></button>
+  <button class="navbtn" data-section="passages">📚 Passages <span>›</span></button>
+  <button class="navbtn" data-section="vocabulary">🧩 Vocabulary <span>›</span></button>
+  <button class="navbtn" data-section="conjugation">🔁 Conjugation <span>›</span></button>
+  <button class="navbtn" data-section="flashcards">🃏 Flashcards <span>›</span></button>
+  <button class="navbtn" data-section="grammar">📘 Grammar <span>›</span></button>
+  <button class="navbtn" data-section="notes">📝 Notes <span>›</span></button>
+  <div class="sidebarFooter">Progress saves in your browser. Upload these files to GitHub Pages to publish the app.</div>
+</aside>
+<main class="main">
+  <div class="topbar">
+    <div class="toolbar row">
+      <span class="pill">✅ <span id="dataCounts">Loading data…</span></span>
+      <span class="pill">🔥 <span id="streakBadge">Streak 0</span></span>
+      <span class="pill">🎯 <span id="weakAreaBadge">Weak area: —</span></span>
+    </div>
+    <div class="toolbar row" style="min-width:420px">
+      <div style="min-width:160px"><div class="label">Mission level</div><select id="missionPreset"><option value="easy">Easy</option><option value="medium" selected>Medium</option><option value="hard">Hard</option><option value="intense">Intense</option></select></div>
+      <div style="min-width:140px"><div class="label">Theme</div><select id="themeSelect"><option value="theme-focus">Focus</option><option value="theme-light">Light</option><option value="theme-dark">Dark</option></select></div>
+      <button id="resetTodayBtn">Reset today</button>
+    </div>
+  </div>
+  <section class="missions">
+    <div class="panel">
+      <div class="sectionTitle"><h2>Today's missions</h2><span class="pill">Choose your pace and follow the bars</span></div>
+      <div class="grid2">
+        <div>
+          <div class="label">📚 Passages</div><div class="meter"><div id="missionPassages" class="fill"></div></div><div id="missionPassagesText" class="small muted"></div>
+          <div class="label" style="margin-top:10px">🧠 Exercises</div><div class="meter"><div id="missionExercises" class="fill"></div></div><div id="missionExercisesText" class="small muted"></div>
+          <div class="label" style="margin-top:10px">🧩 Vocabulary</div><div class="meter"><div id="missionVocab" class="fill"></div></div><div id="missionVocabText" class="small muted"></div>
+          <div class="label" style="margin-top:10px">✍️ Writing</div><div class="meter"><div id="missionWriting" class="fill"></div></div><div id="missionWritingText" class="small muted"></div>
+        </div>
+        <div class="card">
+          <div class="label">Recommended order</div>
+          <ol class="small"><li>Read one passage and listen once</li><li>Do exercises from your weak area</li><li>Review 6–12 vocabulary items</li><li>Finish with one sentence-writing task</li></ol>
+          <button class="primary" onclick="goSection('practice')">Continue studying</button>
+        </div>
+      </div>
+    </div>
+    <div class="panel stats">
+      <div class="stat"><div class="label">Passages today</div><h3 id="statPassages">0</h3></div>
+      <div class="stat"><div class="label">Exercises correct</div><h3 id="statExercises">0</h3></div>
+      <div class="stat"><div class="label">Vocabulary seen</div><h3 id="statVocab">0</h3></div>
+      <div class="stat"><div class="label">Writing done</div><h3 id="statWriting">0</h3></div>
+    </div>
+  </section>
+
+  <section id="section-dashboard" class="app-section panel">
+    <div class="sectionTitle"><h2>Dashboard</h2><span class="pill">Roadmap • Weak spots • Daily guide</span></div>
+    <div class="grid2">
+      <div class="card">
+        <h3 style="margin-top:0">Learning roadmap</h3>
+        <div id="roadmapCards" class="list"></div>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">Study insights</h3>
+        <div id="insightsBox" class="small"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section-practice" class="app-section panel hidden">
+    <div class="sectionTitle"><h2>Practice</h2><span class="pill">Exercises • Passage typing • Sentence writing</span></div>
+    <div class="subtabs"><button class="subbtn active" data-practice="exercises">Exercises</button><button class="subbtn" data-practice="typing">Passage typing</button><button class="subbtn" data-practice="writing">Sentence writing</button></div>
+    <div id="practice-exercises">
+      <div class="row">
+        <div style="min-width:160px"><div class="label">Level</div><select id="exerciseLevel"></select></div>
+        <div style="min-width:220px"><div class="label">Type</div><select id="exerciseType"></select></div>
+        <div style="min-width:160px"><div class="label">Order</div><select id="exerciseOrder"><option value="random">Random</option><option value="sequence">Sequence</option></select></div>
+      </div>
+      <div class="card" style="margin-top:12px">
+        <div class="row" style="justify-content:space-between"><span class="pill" id="exerciseProgressPill">Progress 0/0</span><span class="pill" id="exerciseHintPill">Mode: typing</span></div>
+        <div id="exerciseQuestion" class="exerciseQ" style="margin:14px 0"></div>
+        <input id="exerciseAnswer" class="answerbox" placeholder="Type your answer">
+        <div class="row" style="margin-top:12px"><button class="primary" id="checkExerciseBtn">Check</button><button id="nextExerciseBtn">Next</button><button id="restartExerciseBtn">Restart</button></div>
+        <div id="exerciseResult" class="result small" style="margin-top:10px"></div>
+      </div>
+    </div>
+    <div id="practice-typing" class="hidden">
+      <div class="row"><div class="grow"><div class="label">Passage</div><select id="typingPassageSelect"></select></div><div style="min-width:140px"><div class="label">Show English</div><select id="typingShowEnglish"><option value="0">Off</option><option value="1">On</option></select></div></div>
+      <div class="grid2" style="margin-top:12px"><div class="card"><div class="row" style="justify-content:space-between"><strong>Reference</strong><div class="row"><label class="pill small">Speed <select id="audioSpeed" style="width:auto;padding:6px 8px;margin-left:6px"><option value="0.8">0.8×</option><option value="1" selected>1×</option><option value="1.2">1.2×</option></select></label><button id="typingListenBtn">🔊 Listen</button><button id="typingStopBtn" class="stop-audio-btn">⏹ Stop</button></div></div><pre id="typingReference" style="white-space:pre-wrap"></pre><div id="typingEnglishWrap" class="small muted hidden"></div></div><div class="card"><strong>Your typing</strong><textarea id="typingInput" placeholder="Type the passage here..."></textarea><div class="row"><button class="primary" id="checkTypingBtn">Check typing</button><button id="clearTypingBtn">Clear</button></div><div id="typingResult" class="small" style="margin-top:8px"></div></div></div>
+    </div>
+    <div id="practice-writing" class="hidden">
+      <div class="card"><div class="row" style="justify-content:space-between"><strong>Translate into German</strong><button id="newWritingPromptBtn">New prompt</button></div><div id="writingPrompt" class="exerciseQ" style="margin:12px 0"></div><textarea id="writingInput" placeholder="Write your German sentence here..."></textarea><div class="row"><button class="primary" id="checkWritingBtn">Check</button></div><div id="writingResult" class="small" style="margin-top:8px"></div></div>
+    </div>
+  </section>
+
+  <section id="section-passages" class="app-section panel hidden">
+    <div class="sectionTitle"><h2>Passages library</h2><span class="pill">Read • Search • Listen • Save local notes</span></div>
+    <div class="row"><div style="min-width:140px"><div class="label">Level</div><select id="passageLevel"></select></div><div class="grow"><div class="label">Search</div><input id="passageSearch" placeholder="Search title, chapter or text"></div></div>
+    <details class="card" style="margin-top:12px"><summary><strong>Optional local passage entry</strong></summary><div class="row" style="margin-top:10px"><div style="min-width:120px"><div class="label">Level</div><select id="localPassageLevel"><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select></div></div><textarea id="localPassageGerman" placeholder="German text"></textarea><textarea id="localPassageEnglish" placeholder="English translation"></textarea><button class="primary" id="saveLocalPassageBtn">Save locally</button></details>
+    <div id="passagesList" class="list" style="margin-top:12px"></div>
+  </section>
+
+  <section id="section-vocabulary" class="app-section panel hidden">
+    <div class="sectionTitle"><h2>Vocabulary</h2><span class="pill">Word list • Search • Match game</span></div>
+    <div class="subtabs"><button class="subbtn active" data-vocabtab="list">Word list</button><button class="subbtn" data-vocabtab="game">Match game</button></div>
+    <div id="vocab-list-tab">
+      <div class="row"><div style="min-width:140px"><div class="label">Level</div><select id="vocabLevel"></select></div><div style="min-width:180px"><div class="label">Topic</div><select id="vocabTopic"></select></div><div class="grow"><div class="label">Search</div><input id="vocabSearch" placeholder="Search German or English"></div></div>
+      <div id="vocabStats" class="small muted" style="margin-top:10px"></div>
+      <div id="vocabList" class="list" style="margin-top:12px"></div>
+    </div>
+    <div id="vocab-game-tab" class="hidden">
+      <div class="card"><div class="row" style="justify-content:space-between"><strong>Match German and English</strong><button id="newMatchGameBtn">New round</button></div><div id="matchStatus" class="small muted" style="margin:8px 0"></div><div class="match-grid"><div id="matchGerman"></div><div id="matchEnglish"></div></div></div>
+    </div>
+  </section>
+
+  <section id="section-conjugation" class="app-section panel hidden">
+    <div class="sectionTitle"><h2>Conjugation trainer</h2><span class="pill">Browse verbs • Mini quiz</span></div>
+    <div class="row"><div style="min-width:140px"><div class="label">Level</div><select id="conjLevel"></select></div><div class="grow"><div class="label">Search verb</div><input id="conjSearch" placeholder="e.g. gehen, arbeiten"></div></div>
+    <div class="grid2" style="margin-top:12px"><div class="card"><div class="row" style="justify-content:space-between"><strong id="conjVerbTitle">Verb</strong><button id="nextVerbBtn">Next verb</button></div><div id="conjVerbMeta" class="small muted"></div><div id="conjForms" class="conj-forms" style="margin-top:12px"></div></div><div class="card"><strong>Quick quiz</strong><div id="conjQuizPrompt" class="exerciseQ" style="margin:12px 0"></div><input id="conjQuizAnswer" placeholder="Type the form"><div class="row" style="margin-top:10px"><button class="primary" id="checkConjBtn">Check</button><button id="nextConjQuizBtn">Next</button></div><div id="conjQuizResult" class="small" style="margin-top:8px"></div></div></div>
+  </section>
+
+  <section id="section-flashcards" class="app-section panel hidden">
+    <div class="sectionTitle"><h2>Flashcards</h2><span class="pill">Flip • Filter • Review</span></div>
+    <div class="row"><div style="min-width:180px"><div class="label">Category</div><select id="flashCategory"></select></div><div style="min-width:180px"><div class="label">Order</div><select id="flashOrder"><option value="random">Random</option><option value="sequence">Sequence</option></select></div></div>
+    <div class="card flip" id="flashCard" style="margin-top:12px">Loading…</div><div class="flashhint">Tap card to flip. Use next to continue.</div><div class="row" style="margin-top:10px"><button class="primary" id="nextFlashBtn">Next card</button></div>
+  </section>
+
+  <section id="section-grammar" class="app-section panel hidden">
+    <div class="sectionTitle"><h2>Grammar tables</h2><span class="pill">Detailed overview + your reference image</span></div>
+    <div class="grid2"><div class="card note-item"><pre id="grammarTablesText"></pre></div><div class="card"><img src="assets/grammar_reference.png" alt="Grammar reference" style="width:100%;border-radius:16px;border:1px solid var(--line)"></div></div>
+  </section>
+
+  <section id="section-notes" class="app-section panel hidden">
+    <div class="sectionTitle"><h2>Notes</h2><span class="pill">Search all grammar and study notes</span></div>
+    <input id="notesSearch" placeholder="Search notes">
+    <div id="notesList" class="list" style="margin-top:12px"></div>
+  </section>
+</main></div>
+<script src="app.js"></script>
+</body></html>

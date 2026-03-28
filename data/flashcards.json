@@ -1,0 +1,804 @@
+{
+  "flashcards": [
+    {
+      "category": "articles",
+      "front": "der Mann",
+      "back": "the man (masculine)"
+    },
+    {
+      "category": "articles",
+      "front": "die Frau",
+      "back": "the woman (feminine)"
+    },
+    {
+      "category": "articles",
+      "front": "das Kind",
+      "back": "the child (neuter)"
+    },
+    {
+      "category": "articles",
+      "front": "der Tisch",
+      "back": "the table"
+    },
+    {
+      "category": "articles",
+      "front": "die Lampe",
+      "back": "the lamp"
+    },
+    {
+      "category": "articles",
+      "front": "das Fenster",
+      "back": "the window"
+    },
+    {
+      "category": "articles",
+      "front": "der Hund",
+      "back": "the dog"
+    },
+    {
+      "category": "articles",
+      "front": "die Katze",
+      "back": "the cat"
+    },
+    {
+      "category": "articles",
+      "front": "das Auto",
+      "back": "the car"
+    },
+    {
+      "category": "articles",
+      "front": "der Lehrer",
+      "back": "the teacher"
+    },
+    {
+      "category": "articles",
+      "front": "die Schule",
+      "back": "the school"
+    },
+    {
+      "category": "articles",
+      "front": "das Buch",
+      "back": "the book"
+    },
+    {
+      "category": "articles",
+      "front": "der Freund",
+      "back": "the friend"
+    },
+    {
+      "category": "articles",
+      "front": "die Wohnung",
+      "back": "the apartment"
+    },
+    {
+      "category": "articles",
+      "front": "das Büro",
+      "back": "the office"
+    },
+    {
+      "category": "articles",
+      "front": "der Termin",
+      "back": "the appointment"
+    },
+    {
+      "category": "articles",
+      "front": "die Frage",
+      "back": "the question"
+    },
+    {
+      "category": "articles",
+      "front": "das Problem",
+      "back": "the problem"
+    },
+    {
+      "category": "articles",
+      "front": "der Film",
+      "back": "the movie"
+    },
+    {
+      "category": "articles",
+      "front": "die Arbeit",
+      "back": "the work"
+    },
+    {
+      "category": "modal_verbs",
+      "front": "können",
+      "back": "can / to be able to"
+    },
+    {
+      "category": "modal_verbs",
+      "front": "müssen",
+      "back": "must / have to"
+    },
+    {
+      "category": "modal_verbs",
+      "front": "wollen",
+      "back": "to want"
+    },
+    {
+      "category": "modal_verbs",
+      "front": "dürfen",
+      "back": "may / allowed to"
+    },
+    {
+      "category": "modal_verbs",
+      "front": "sollen",
+      "back": "should"
+    },
+    {
+      "category": "modal_verbs",
+      "front": "möchten",
+      "back": "would like"
+    },
+    {
+      "category": "modal_verbs",
+      "front": "ich kann",
+      "back": "I can"
+    },
+    {
+      "category": "modal_verbs",
+      "front": "du kannst",
+      "back": "you can"
+    },
+    {
+      "category": "modal_verbs",
+      "front": "er kann",
+      "back": "he can"
+    },
+    {
+      "category": "modal_verbs",
+      "front": "wir können",
+      "back": "we can"
+    },
+    {
+      "category": "modal_verbs",
+      "front": "ich muss",
+      "back": "I must"
+    },
+    {
+      "category": "modal_verbs",
+      "front": "du musst",
+      "back": "you must"
+    },
+    {
+      "category": "modal_verbs",
+      "front": "wir müssen",
+      "back": "we must"
+    },
+    {
+      "category": "modal_verbs",
+      "front": "ich will",
+      "back": "I want"
+    },
+    {
+      "category": "modal_verbs",
+      "front": "du willst",
+      "back": "you want"
+    },
+    {
+      "category": "modal_verbs",
+      "front": "er will",
+      "back": "he wants"
+    },
+    {
+      "category": "modal_verbs",
+      "front": "ich möchte",
+      "back": "I would like"
+    },
+    {
+      "category": "modal_verbs",
+      "front": "möchten Sie",
+      "back": "would you like (formal)"
+    },
+    {
+      "category": "modal_verbs",
+      "front": "ich darf",
+      "back": "I may"
+    },
+    {
+      "category": "modal_verbs",
+      "front": "ich soll",
+      "back": "I should"
+    },
+    {
+      "category": "prepositions",
+      "front": "für",
+      "back": "for"
+    },
+    {
+      "category": "prepositions",
+      "front": "ohne",
+      "back": "without"
+    },
+    {
+      "category": "prepositions",
+      "front": "durch",
+      "back": "through"
+    },
+    {
+      "category": "prepositions",
+      "front": "gegen",
+      "back": "against"
+    },
+    {
+      "category": "prepositions",
+      "front": "um",
+      "back": "around"
+    },
+    {
+      "category": "prepositions",
+      "front": "mit",
+      "back": "with"
+    },
+    {
+      "category": "prepositions",
+      "front": "nach",
+      "back": "to / after"
+    },
+    {
+      "category": "prepositions",
+      "front": "von",
+      "back": "from"
+    },
+    {
+      "category": "prepositions",
+      "front": "zu",
+      "back": "to"
+    },
+    {
+      "category": "prepositions",
+      "front": "bei",
+      "back": "at"
+    },
+    {
+      "category": "prepositions",
+      "front": "in",
+      "back": "in"
+    },
+    {
+      "category": "prepositions",
+      "front": "auf",
+      "back": "on"
+    },
+    {
+      "category": "prepositions",
+      "front": "an",
+      "back": "at/on"
+    },
+    {
+      "category": "prepositions",
+      "front": "über",
+      "back": "over/about"
+    },
+    {
+      "category": "prepositions",
+      "front": "unter",
+      "back": "under"
+    },
+    {
+      "category": "prepositions",
+      "front": "vor",
+      "back": "before/in front of"
+    },
+    {
+      "category": "prepositions",
+      "front": "hinter",
+      "back": "behind"
+    },
+    {
+      "category": "prepositions",
+      "front": "zwischen",
+      "back": "between"
+    },
+    {
+      "category": "prepositions",
+      "front": "neben",
+      "back": "next to"
+    },
+    {
+      "category": "prepositions",
+      "front": "wegen",
+      "back": "because of"
+    },
+    {
+      "category": "w_questions",
+      "front": "wer",
+      "back": "who"
+    },
+    {
+      "category": "w_questions",
+      "front": "was",
+      "back": "what"
+    },
+    {
+      "category": "w_questions",
+      "front": "wann",
+      "back": "when"
+    },
+    {
+      "category": "w_questions",
+      "front": "warum",
+      "back": "why"
+    },
+    {
+      "category": "w_questions",
+      "front": "wo",
+      "back": "where"
+    },
+    {
+      "category": "w_questions",
+      "front": "woher",
+      "back": "where from"
+    },
+    {
+      "category": "w_questions",
+      "front": "wohin",
+      "back": "where to"
+    },
+    {
+      "category": "w_questions",
+      "front": "wie",
+      "back": "how"
+    },
+    {
+      "category": "w_questions",
+      "front": "wie viel",
+      "back": "how much"
+    },
+    {
+      "category": "w_questions",
+      "front": "wie viele",
+      "back": "how many"
+    },
+    {
+      "category": "w_questions",
+      "front": "wie lange",
+      "back": "how long"
+    },
+    {
+      "category": "w_questions",
+      "front": "wie spät",
+      "back": "what time"
+    },
+    {
+      "category": "w_questions",
+      "front": "welcher",
+      "back": "which (masculine)"
+    },
+    {
+      "category": "w_questions",
+      "front": "welche",
+      "back": "which (feminine/plural)"
+    },
+    {
+      "category": "w_questions",
+      "front": "welches",
+      "back": "which (neuter)"
+    },
+    {
+      "category": "w_questions",
+      "front": "wann beginnt das Meeting",
+      "back": "when does the meeting start"
+    },
+    {
+      "category": "w_questions",
+      "front": "wo wohnst du",
+      "back": "where do you live"
+    },
+    {
+      "category": "w_questions",
+      "front": "warum lernst du Deutsch",
+      "back": "why do you learn German"
+    },
+    {
+      "category": "w_questions",
+      "front": "wie heißt du",
+      "back": "what is your name"
+    },
+    {
+      "category": "w_questions",
+      "front": "wo arbeitest du",
+      "back": "where do you work"
+    },
+    {
+      "category": "conjunctions",
+      "front": "und",
+      "back": "and"
+    },
+    {
+      "category": "conjunctions",
+      "front": "oder",
+      "back": "or"
+    },
+    {
+      "category": "conjunctions",
+      "front": "aber",
+      "back": "but"
+    },
+    {
+      "category": "conjunctions",
+      "front": "denn",
+      "back": "because (normal order)"
+    },
+    {
+      "category": "conjunctions",
+      "front": "weil",
+      "back": "because (verb at end)"
+    },
+    {
+      "category": "conjunctions",
+      "front": "dass",
+      "back": "that"
+    },
+    {
+      "category": "conjunctions",
+      "front": "obwohl",
+      "back": "although"
+    },
+    {
+      "category": "conjunctions",
+      "front": "wenn",
+      "back": "if/when"
+    },
+    {
+      "category": "conjunctions",
+      "front": "damit",
+      "back": "so that"
+    },
+    {
+      "category": "conjunctions",
+      "front": "deshalb",
+      "back": "therefore"
+    },
+    {
+      "category": "conjunctions",
+      "front": "trotzdem",
+      "back": "nevertheless"
+    },
+    {
+      "category": "conjunctions",
+      "front": "außerdem",
+      "back": "besides"
+    },
+    {
+      "category": "conjunctions",
+      "front": "zuerst",
+      "back": "first"
+    },
+    {
+      "category": "conjunctions",
+      "front": "danach",
+      "back": "after that"
+    },
+    {
+      "category": "conjunctions",
+      "front": "bevor",
+      "back": "before"
+    },
+    {
+      "category": "conjunctions",
+      "front": "während",
+      "back": "while"
+    },
+    {
+      "category": "conjunctions",
+      "front": "seitdem",
+      "back": "since"
+    },
+    {
+      "category": "conjunctions",
+      "front": "sobald",
+      "back": "as soon as"
+    },
+    {
+      "category": "conjunctions",
+      "front": "falls",
+      "back": "in case"
+    },
+    {
+      "category": "conjunctions",
+      "front": "solange",
+      "back": "as long as"
+    },
+    {
+      "category": "adjectives",
+      "front": "gut",
+      "back": "good"
+    },
+    {
+      "category": "adjectives",
+      "front": "schlecht",
+      "back": "bad"
+    },
+    {
+      "category": "adjectives",
+      "front": "neu",
+      "back": "new"
+    },
+    {
+      "category": "adjectives",
+      "front": "alt",
+      "back": "old"
+    },
+    {
+      "category": "adjectives",
+      "front": "groß",
+      "back": "big"
+    },
+    {
+      "category": "adjectives",
+      "front": "klein",
+      "back": "small"
+    },
+    {
+      "category": "adjectives",
+      "front": "teuer",
+      "back": "expensive"
+    },
+    {
+      "category": "adjectives",
+      "front": "billig",
+      "back": "cheap"
+    },
+    {
+      "category": "adjectives",
+      "front": "schnell",
+      "back": "fast"
+    },
+    {
+      "category": "adjectives",
+      "front": "langsam",
+      "back": "slow"
+    },
+    {
+      "category": "adjectives",
+      "front": "freundlich",
+      "back": "friendly"
+    },
+    {
+      "category": "adjectives",
+      "front": "nett",
+      "back": "nice"
+    },
+    {
+      "category": "adjectives",
+      "front": "laut",
+      "back": "loud"
+    },
+    {
+      "category": "adjectives",
+      "front": "leise",
+      "back": "quiet"
+    },
+    {
+      "category": "adjectives",
+      "front": "praktisch",
+      "back": "practical"
+    },
+    {
+      "category": "adjectives",
+      "front": "zuverlässig",
+      "back": "reliable"
+    },
+    {
+      "category": "adjectives",
+      "front": "traditionell",
+      "back": "traditional"
+    },
+    {
+      "category": "adjectives",
+      "front": "schön",
+      "back": "beautiful"
+    },
+    {
+      "category": "adjectives",
+      "front": "wichtig",
+      "back": "important"
+    },
+    {
+      "category": "adjectives",
+      "front": "müde",
+      "back": "tired"
+    },
+    {
+      "category": "verbs",
+      "front": "gehen",
+      "back": "to go"
+    },
+    {
+      "category": "verbs",
+      "front": "kommen",
+      "back": "to come"
+    },
+    {
+      "category": "verbs",
+      "front": "sehen",
+      "back": "to see"
+    },
+    {
+      "category": "verbs",
+      "front": "machen",
+      "back": "to make/do"
+    },
+    {
+      "category": "verbs",
+      "front": "lernen",
+      "back": "to learn"
+    },
+    {
+      "category": "verbs",
+      "front": "arbeiten",
+      "back": "to work"
+    },
+    {
+      "category": "verbs",
+      "front": "essen",
+      "back": "to eat"
+    },
+    {
+      "category": "verbs",
+      "front": "trinken",
+      "back": "to drink"
+    },
+    {
+      "category": "verbs",
+      "front": "lesen",
+      "back": "to read"
+    },
+    {
+      "category": "verbs",
+      "front": "schreiben",
+      "back": "to write"
+    },
+    {
+      "category": "verbs",
+      "front": "sprechen",
+      "back": "to speak"
+    },
+    {
+      "category": "verbs",
+      "front": "verstehen",
+      "back": "to understand"
+    },
+    {
+      "category": "verbs",
+      "front": "helfen",
+      "back": "to help"
+    },
+    {
+      "category": "verbs",
+      "front": "finden",
+      "back": "to find"
+    },
+    {
+      "category": "verbs",
+      "front": "bleiben",
+      "back": "to stay"
+    },
+    {
+      "category": "verbs",
+      "front": "treffen",
+      "back": "to meet"
+    },
+    {
+      "category": "verbs",
+      "front": "kochen",
+      "back": "to cook"
+    },
+    {
+      "category": "verbs",
+      "front": "studieren",
+      "back": "to study"
+    },
+    {
+      "category": "verbs",
+      "front": "verdienen",
+      "back": "to earn"
+    },
+    {
+      "category": "verbs",
+      "front": "reparieren",
+      "back": "to repair"
+    },
+    {
+      "category": "phrases",
+      "front": "Vielen Dank im Voraus",
+      "back": "Many thanks in advance"
+    },
+    {
+      "category": "phrases",
+      "front": "Mit freundlichen Grüßen",
+      "back": "Kind regards"
+    },
+    {
+      "category": "phrases",
+      "front": "Liebe Grüße",
+      "back": "Best wishes"
+    },
+    {
+      "category": "phrases",
+      "front": "Es tut mir leid",
+      "back": "I am sorry"
+    },
+    {
+      "category": "phrases",
+      "front": "Ich würde mich freuen",
+      "back": "I would be happy"
+    },
+    {
+      "category": "phrases",
+      "front": "Könnten Sie bitte",
+      "back": "Could you please"
+    },
+    {
+      "category": "phrases",
+      "front": "Bitte teilen Sie mir mit",
+      "back": "Please let me know"
+    },
+    {
+      "category": "phrases",
+      "front": "Ich interessiere mich für",
+      "back": "I am interested in"
+    },
+    {
+      "category": "phrases",
+      "front": "Haben Sie Zeit",
+      "back": "Do you have time"
+    },
+    {
+      "category": "phrases",
+      "front": "Wir freuen uns auf Ihr Kommen",
+      "back": "We look forward to your coming"
+    },
+    {
+      "category": "phrases",
+      "front": "Ich hoffe, es geht Ihnen gut",
+      "back": "I hope you are well"
+    },
+    {
+      "category": "phrases",
+      "front": "Vielen Dank für Ihre Hilfe",
+      "back": "Thank you for your help"
+    },
+    {
+      "category": "phrases",
+      "front": "Ich melde mich später",
+      "back": "I will contact you later"
+    },
+    {
+      "category": "phrases",
+      "front": "Bis bald",
+      "back": "See you soon"
+    },
+    {
+      "category": "phrases",
+      "front": "Guten Morgen",
+      "back": "Good morning"
+    },
+    {
+      "category": "phrases",
+      "front": "Guten Tag",
+      "back": "Good day"
+    },
+    {
+      "category": "phrases",
+      "front": "Guten Abend",
+      "back": "Good evening"
+    },
+    {
+      "category": "phrases",
+      "front": "Wie geht es Ihnen",
+      "back": "How are you (formal)"
+    },
+    {
+      "category": "phrases",
+      "front": "Wie geht es dir",
+      "back": "How are you (informal)"
+    },
+    {
+      "category": "phrases",
+      "front": "Alles Gute",
+      "back": "All the best"
+    }
+  ]
+}

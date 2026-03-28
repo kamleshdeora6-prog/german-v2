@@ -1,0 +1,818 @@
+{
+  "a1": [
+    {
+      "en": "I live in Berlin.",
+      "de": "Ich wohne in Berlin."
+    },
+    {
+      "en": "I learn German.",
+      "de": "Ich lerne Deutsch."
+    },
+    {
+      "en": "She drinks water.",
+      "de": "Sie trinkt Wasser."
+    },
+    {
+      "en": "He works today.",
+      "de": "Er arbeitet heute."
+    },
+    {
+      "en": "We buy bread.",
+      "de": "Wir kaufen Brot."
+    },
+    {
+      "en": "They cook dinner.",
+      "de": "Sie kochen Abendessen."
+    },
+    {
+      "en": "I read a book.",
+      "de": "Ich lese ein Buch."
+    },
+    {
+      "en": "The train comes today.",
+      "de": "Der Zug kommt heute."
+    },
+    {
+      "en": "I write an email.",
+      "de": "Ich schreibe eine E-Mail."
+    },
+    {
+      "en": "He eats an apple.",
+      "de": "Er isst einen Apfel."
+    },
+    {
+      "en": "Today I work at home.",
+      "de": "Heute arbeite ich zu Hause."
+    },
+    {
+      "en": "Tomorrow we visit friends.",
+      "de": "Morgen besuchen wir Freunde."
+    },
+    {
+      "en": "In the evening I watch TV.",
+      "de": "Am Abend sehe ich fern."
+    },
+    {
+      "en": "On Monday she studies.",
+      "de": "Am Montag studiert sie."
+    },
+    {
+      "en": "Sometimes I drink coffee.",
+      "de": "Manchmal trinke ich Kaffee."
+    },
+    {
+      "en": "Often we walk in the park.",
+      "de": "Oft gehen wir im Park spazieren."
+    },
+    {
+      "en": "Today the weather is good.",
+      "de": "Heute ist das Wetter gut."
+    },
+    {
+      "en": "Now I eat lunch.",
+      "de": "Jetzt esse ich zu Mittag."
+    },
+    {
+      "en": "At night they sleep.",
+      "de": "In der Nacht schlafen sie."
+    },
+    {
+      "en": "In Berlin many people work.",
+      "de": "In Berlin arbeiten viele Menschen."
+    },
+    {
+      "en": "Do you live here?",
+      "de": "Wohnst du hier?"
+    },
+    {
+      "en": "Do you speak German?",
+      "de": "Sprichst du Deutsch?"
+    },
+    {
+      "en": "Do you drink coffee?",
+      "de": "Trinkst du Kaffee?"
+    },
+    {
+      "en": "Do you work tomorrow?",
+      "de": "Arbeitest du morgen?"
+    },
+    {
+      "en": "Is the train late?",
+      "de": "Ist der Zug spät?"
+    },
+    {
+      "en": "Where do you live?",
+      "de": "Wo wohnst du?"
+    },
+    {
+      "en": "When do you work?",
+      "de": "Wann arbeitest du?"
+    },
+    {
+      "en": "Why do you learn German?",
+      "de": "Warum lernst du Deutsch?"
+    },
+    {
+      "en": "What do you eat?",
+      "de": "Was isst du?"
+    },
+    {
+      "en": "Who comes today?",
+      "de": "Wer kommt heute?"
+    },
+    {
+      "en": "I can speak German.",
+      "de": "Ich kann Deutsch sprechen."
+    },
+    {
+      "en": "We must work today.",
+      "de": "Wir müssen heute arbeiten."
+    },
+    {
+      "en": "She wants to learn German.",
+      "de": "Sie will Deutsch lernen."
+    },
+    {
+      "en": "I would like coffee.",
+      "de": "Ich möchte Kaffee."
+    },
+    {
+      "en": "You should sleep.",
+      "de": "Du sollst schlafen."
+    },
+    {
+      "en": "I stand up at seven.",
+      "de": "Ich stehe um sieben Uhr auf."
+    },
+    {
+      "en": "We shop today.",
+      "de": "Wir kaufen heute ein."
+    },
+    {
+      "en": "He calls his friend.",
+      "de": "Er ruft seinen Freund an."
+    },
+    {
+      "en": "She invites us.",
+      "de": "Sie lädt uns ein."
+    },
+    {
+      "en": "I bring water along.",
+      "de": "Ich bringe Wasser mit."
+    },
+    {
+      "en": "I wash myself in the morning.",
+      "de": "Ich wasche mich am Morgen."
+    },
+    {
+      "en": "We meet each other today.",
+      "de": "Wir treffen uns heute."
+    },
+    {
+      "en": "He feels tired.",
+      "de": "Er fühlt sich müde."
+    },
+    {
+      "en": "I am happy today.",
+      "de": "Ich freue mich heute."
+    },
+    {
+      "en": "She remembers the teacher.",
+      "de": "Sie erinnert sich an den Lehrer."
+    },
+    {
+      "en": "Open the door!",
+      "de": "Öffne die Tür!"
+    },
+    {
+      "en": "Come here!",
+      "de": "Komm hierher!"
+    },
+    {
+      "en": "Listen to me!",
+      "de": "Hör mir zu!"
+    },
+    {
+      "en": "Read the text!",
+      "de": "Lies den Text!"
+    },
+    {
+      "en": "Write the sentence!",
+      "de": "Schreib den Satz!"
+    }
+  ],
+  "a2": [
+    {
+      "en": "I am learning German because I live in Germany.",
+      "de": "Ich lerne Deutsch, weil ich in Deutschland wohne."
+    },
+    {
+      "en": "She stays at home because she is sick.",
+      "de": "Sie bleibt zu Hause, weil sie krank ist."
+    },
+    {
+      "en": "We work hard because we need money.",
+      "de": "Wir arbeiten viel, weil wir Geld brauchen."
+    },
+    {
+      "en": "He studies because he wants a good job.",
+      "de": "Er studiert, weil er einen guten Job will."
+    },
+    {
+      "en": "I cook because my friends visit me.",
+      "de": "Ich koche, weil meine Freunde mich besuchen."
+    },
+    {
+      "en": "I know that he lives in Berlin.",
+      "de": "Ich weiß, dass er in Berlin wohnt."
+    },
+    {
+      "en": "She thinks that the exam is difficult.",
+      "de": "Sie denkt, dass die Prüfung schwierig ist."
+    },
+    {
+      "en": "We believe that the train arrives soon.",
+      "de": "Wir glauben, dass der Zug bald kommt."
+    },
+    {
+      "en": "He says that he works tomorrow.",
+      "de": "Er sagt, dass er morgen arbeitet."
+    },
+    {
+      "en": "I hope that you come today.",
+      "de": "Ich hoffe, dass du heute kommst."
+    },
+    {
+      "en": "When I have time, I read a book.",
+      "de": "Wenn ich Zeit habe, lese ich ein Buch."
+    },
+    {
+      "en": "When she finishes work, she goes home.",
+      "de": "Wenn sie die Arbeit beendet, geht sie nach Hause."
+    },
+    {
+      "en": "When we meet friends, we drink coffee.",
+      "de": "Wenn wir Freunde treffen, trinken wir Kaffee."
+    },
+    {
+      "en": "When it rains, I stay at home.",
+      "de": "Wenn es regnet, bleibe ich zu Hause."
+    },
+    {
+      "en": "When I travel, I take many photos.",
+      "de": "Wenn ich reise, mache ich viele Fotos."
+    },
+    {
+      "en": "I am learning German to work in Germany.",
+      "de": "Ich lerne Deutsch, um in Deutschland zu arbeiten."
+    },
+    {
+      "en": "She saves money to buy a car.",
+      "de": "Sie spart Geld, um ein Auto zu kaufen."
+    },
+    {
+      "en": "He trains a lot to stay healthy.",
+      "de": "Er trainiert viel, um gesund zu bleiben."
+    },
+    {
+      "en": "We read books to learn more.",
+      "de": "Wir lesen Bücher, um mehr zu lernen."
+    },
+    {
+      "en": "I wake up early to catch the train.",
+      "de": "Ich stehe früh auf, um den Zug zu nehmen."
+    },
+    {
+      "en": "I wash myself in the morning.",
+      "de": "Ich wasche mich am Morgen."
+    },
+    {
+      "en": "We meet each other tomorrow.",
+      "de": "Wir treffen uns morgen."
+    },
+    {
+      "en": "He remembers the meeting.",
+      "de": "Er erinnert sich an das Treffen."
+    },
+    {
+      "en": "She feels tired today.",
+      "de": "Sie fühlt sich heute müde."
+    },
+    {
+      "en": "I prepare myself for the exam.",
+      "de": "Ich bereite mich auf die Prüfung vor."
+    },
+    {
+      "en": "I have learned German for two years.",
+      "de": "Ich habe zwei Jahre Deutsch gelernt."
+    },
+    {
+      "en": "She has bought a new phone.",
+      "de": "Sie hat ein neues Handy gekauft."
+    },
+    {
+      "en": "We have visited the museum.",
+      "de": "Wir haben das Museum besucht."
+    },
+    {
+      "en": "He has written the email.",
+      "de": "Er hat die E-Mail geschrieben."
+    },
+    {
+      "en": "I have eaten breakfast.",
+      "de": "Ich habe gefrühstückt."
+    },
+    {
+      "en": "The train has arrived.",
+      "de": "Der Zug ist angekommen."
+    },
+    {
+      "en": "She has gone home.",
+      "de": "Sie ist nach Hause gegangen."
+    },
+    {
+      "en": "We have traveled to Berlin.",
+      "de": "Wir sind nach Berlin gefahren."
+    },
+    {
+      "en": "He has stayed here.",
+      "de": "Er ist hier geblieben."
+    },
+    {
+      "en": "I have gotten up early.",
+      "de": "Ich bin früh aufgestanden."
+    },
+    {
+      "en": "Do you know where he lives?",
+      "de": "Weißt du, wo er wohnt?"
+    },
+    {
+      "en": "Can you tell me when the train comes?",
+      "de": "Kannst du mir sagen, wann der Zug kommt?"
+    },
+    {
+      "en": "She asks if you have time.",
+      "de": "Sie fragt, ob du Zeit hast."
+    },
+    {
+      "en": "I want to know why he left.",
+      "de": "Ich möchte wissen, warum er gegangen ist."
+    },
+    {
+      "en": "Do you know what she studies?",
+      "de": "Weißt du, was sie studiert?"
+    },
+    {
+      "en": "I stay at home, because I am sick.",
+      "de": "Ich bleibe zu Hause, denn ich bin krank."
+    },
+    {
+      "en": "He comes later, because he has a meeting.",
+      "de": "Er kommt später, denn er hat eine Besprechung."
+    },
+    {
+      "en": "I let my hair be cut.",
+      "de": "Ich lasse mir die Haare schneiden."
+    },
+    {
+      "en": "We let the car be repaired.",
+      "de": "Wir lassen das Auto reparieren."
+    },
+    {
+      "en": "She learns German so that she can work in Germany.",
+      "de": "Sie lernt Deutsch, damit sie in Deutschland arbeiten kann."
+    },
+    {
+      "en": "I buy a bike so that I am faster.",
+      "de": "Ich kaufe ein Fahrrad, damit ich schneller bin."
+    },
+    {
+      "en": "There are many people here.",
+      "de": "Es gibt hier viele Leute."
+    },
+    {
+      "en": "It is important to learn German.",
+      "de": "Es ist wichtig, Deutsch zu lernen."
+    },
+    {
+      "en": "Tomorrow I go to the cinema with my friend.",
+      "de": "Morgen gehe ich mit meinem Freund ins Kino."
+    },
+    {
+      "en": "We drive to school by bus in the morning.",
+      "de": "Wir fahren morgens mit dem Bus zur Schule."
+    }
+  ],
+  "b1": [
+    {
+      "en": "Although it is raining, I go for a walk.",
+      "de": "Obwohl es regnet, gehe ich spazieren."
+    },
+    {
+      "en": "Although he is tired, he continues working.",
+      "de": "Obwohl er müde ist, arbeitet er weiter."
+    },
+    {
+      "en": "Although the exam was difficult, I passed.",
+      "de": "Obwohl die Prüfung schwierig war, habe ich bestanden."
+    },
+    {
+      "en": "Although she had little time, she finished everything.",
+      "de": "Obwohl sie wenig Zeit hatte, hat sie alles geschafft."
+    },
+    {
+      "en": "Although we live far away, we visit our parents often.",
+      "de": "Obwohl wir weit weg wohnen, besuchen wir unsere Eltern oft."
+    },
+    {
+      "en": "If I had more time, I would travel more.",
+      "de": "Wenn ich mehr Zeit hätte, würde ich mehr reisen."
+    },
+    {
+      "en": "If she learned more German, she could work here.",
+      "de": "Wenn sie mehr Deutsch lernen würde, könnte sie hier arbeiten."
+    },
+    {
+      "en": "If we saved money, we could buy a house.",
+      "de": "Wenn wir Geld sparen würden, könnten wir ein Haus kaufen."
+    },
+    {
+      "en": "If he came earlier, we would start on time.",
+      "de": "Wenn er früher käme, würden wir pünktlich anfangen."
+    },
+    {
+      "en": "If the weather were better, we would go swimming.",
+      "de": "Wenn das Wetter besser wäre, würden wir schwimmen gehen."
+    },
+    {
+      "en": "He said that he would come later.",
+      "de": "Er sagte, dass er später kommen würde."
+    },
+    {
+      "en": "She explained that the task was important.",
+      "de": "Sie erklärte, dass die Aufgabe wichtig war."
+    },
+    {
+      "en": "I realized that the problem was complex.",
+      "de": "Ich habe erkannt, dass das Problem komplex war."
+    },
+    {
+      "en": "They believed that the plan would work.",
+      "de": "Sie glaubten, dass der Plan funktionieren würde."
+    },
+    {
+      "en": "We noticed that he was unhappy.",
+      "de": "Wir bemerkten, dass er unzufrieden war."
+    },
+    {
+      "en": "I started learning German three years ago.",
+      "de": "Ich habe vor drei Jahren angefangen, Deutsch zu lernen."
+    },
+    {
+      "en": "He stopped smoking last year.",
+      "de": "Er hat letztes Jahr aufgehört zu rauchen."
+    },
+    {
+      "en": "She plans to study abroad.",
+      "de": "Sie plant, im Ausland zu studieren."
+    },
+    {
+      "en": "We hope to find a solution soon.",
+      "de": "Wir hoffen, bald eine Lösung zu finden."
+    },
+    {
+      "en": "I forgot to send the email.",
+      "de": "Ich habe vergessen, die E-Mail zu schicken."
+    },
+    {
+      "en": "Many people think that technology changes our lives.",
+      "de": "Viele Menschen denken, dass Technologie unser Leben verändert."
+    },
+    {
+      "en": "Experts say that learning languages improves the brain.",
+      "de": "Experten sagen, dass das Lernen von Sprachen das Gehirn verbessert."
+    },
+    {
+      "en": "Teachers believe that practice is the key to success.",
+      "de": "Lehrer glauben, dass Übung der Schlüssel zum Erfolg ist."
+    },
+    {
+      "en": "My parents think that Berlin is an interesting city.",
+      "de": "Meine Eltern denken, dass Berlin eine interessante Stadt ist."
+    },
+    {
+      "en": "I know that regular exercise is important.",
+      "de": "Ich weiß, dass regelmäßige Bewegung wichtig ist."
+    },
+    {
+      "en": "In Germany people recycle a lot.",
+      "de": "In Deutschland recycelt man viel."
+    },
+    {
+      "en": "Here people speak German.",
+      "de": "Hier spricht man Deutsch."
+    },
+    {
+      "en": "In this company people work very efficiently.",
+      "de": "In dieser Firma arbeitet man sehr effizient."
+    },
+    {
+      "en": "At the university people often discuss politics.",
+      "de": "An der Universität diskutiert man oft über Politik."
+    },
+    {
+      "en": "In summer people spend a lot of time outside.",
+      "de": "Im Sommer verbringt man viel Zeit draußen."
+    },
+    {
+      "en": "The problem was solved yesterday.",
+      "de": "Das Problem wurde gestern gelöst."
+    },
+    {
+      "en": "The car is repaired today.",
+      "de": "Das Auto wird heute repariert."
+    },
+    {
+      "en": "The documents are checked every morning.",
+      "de": "Die Dokumente werden jeden Morgen geprüft."
+    },
+    {
+      "en": "The meeting was canceled at short notice.",
+      "de": "Das Treffen wurde kurzfristig abgesagt."
+    },
+    {
+      "en": "The package will be delivered tomorrow.",
+      "de": "Das Paket wird morgen geliefert."
+    },
+    {
+      "en": "This is the man who works here.",
+      "de": "Das ist der Mann, der hier arbeitet."
+    },
+    {
+      "en": "I know the woman who lives in Berlin.",
+      "de": "Ich kenne die Frau, die in Berlin wohnt."
+    },
+    {
+      "en": "That is the book that I bought yesterday.",
+      "de": "Das ist das Buch, das ich gestern gekauft habe."
+    },
+    {
+      "en": "We visited the city that my friend recommended.",
+      "de": "Wir haben die Stadt besucht, die mein Freund empfohlen hat."
+    },
+    {
+      "en": "She is the colleague with whom I work.",
+      "de": "Sie ist die Kollegin, mit der ich arbeite."
+    },
+    {
+      "en": "He speaks not only German but also English.",
+      "de": "Er spricht nicht nur Deutsch, sondern auch Englisch."
+    },
+    {
+      "en": "She is not only smart but also very friendly.",
+      "de": "Sie ist nicht nur klug, sondern auch sehr freundlich."
+    },
+    {
+      "en": "Tomorrow I will start a new job.",
+      "de": "Morgen werde ich einen neuen Job anfangen."
+    },
+    {
+      "en": "Next year we will move to another city.",
+      "de": "Nächstes Jahr werden wir in eine andere Stadt ziehen."
+    },
+    {
+      "en": "I would like to improve my German.",
+      "de": "Ich würde gern mein Deutsch verbessern."
+    },
+    {
+      "en": "She would like to work abroad.",
+      "de": "Sie würde gern im Ausland arbeiten."
+    },
+    {
+      "en": "Because he missed the train, he arrived late.",
+      "de": "Weil er den Zug verpasst hat, ist er spät angekommen."
+    },
+    {
+      "en": "While I was studying, my friend called me.",
+      "de": "Während ich lernte, rief mich mein Freund an."
+    },
+    {
+      "en": "After we had finished the project, we celebrated.",
+      "de": "Nachdem wir das Projekt beendet hatten, haben wir gefeiert."
+    },
+    {
+      "en": "Before I go to bed, I always read a few pages.",
+      "de": "Bevor ich schlafen gehe, lese ich immer ein paar Seiten."
+    },
+    {
+      "en": "As soon as he arrives, we can begin.",
+      "de": "Sobald er ankommt, können wir anfangen."
+    }
+  ],
+  "b2": [
+    {
+      "en": "Even though the project was difficult, the team managed to finish it on time.",
+      "de": "Obwohl das Projekt schwierig war, hat das Team es geschafft, es rechtzeitig zu beenden."
+    },
+    {
+      "en": "If the government invested more in education, the economy would benefit.",
+      "de": "Wenn die Regierung mehr in Bildung investieren würde, würde die Wirtschaft davon profitieren."
+    },
+    {
+      "en": "Many experts argue that digitalization will fundamentally change the labor market.",
+      "de": "Viele Experten argumentieren, dass die Digitalisierung den Arbeitsmarkt grundlegend verändern wird."
+    },
+    {
+      "en": "The study shows that people who exercise regularly live longer.",
+      "de": "Die Studie zeigt, dass Menschen, die regelmäßig Sport treiben, länger leben."
+    },
+    {
+      "en": "Although the results seem convincing, further research is necessary.",
+      "de": "Obwohl die Ergebnisse überzeugend erscheinen, ist weitere Forschung notwendig."
+    },
+    {
+      "en": "If companies reduced emissions, climate change could slow down.",
+      "de": "Wenn Unternehmen ihre Emissionen reduzieren würden, könnte sich der Klimawandel verlangsamen."
+    },
+    {
+      "en": "The report emphasizes that education plays a key role in social mobility.",
+      "de": "Der Bericht betont, dass Bildung eine Schlüsselrolle für soziale Mobilität spielt."
+    },
+    {
+      "en": "One reason why many people move to cities is better job opportunities.",
+      "de": "Ein Grund, warum viele Menschen in Städte ziehen, sind bessere Arbeitsmöglichkeiten."
+    },
+    {
+      "en": "The proposal was rejected because it was considered too expensive.",
+      "de": "Der Vorschlag wurde abgelehnt, weil er als zu teuer angesehen wurde."
+    },
+    {
+      "en": "It is often assumed that technology will solve most global problems.",
+      "de": "Es wird oft angenommen, dass Technologie die meisten globalen Probleme lösen wird."
+    },
+    {
+      "en": "The company plans to expand its business into international markets.",
+      "de": "Das Unternehmen plant, sein Geschäft auf internationale Märkte auszuweiten."
+    },
+    {
+      "en": "Although he had little experience, he managed to solve the problem effectively.",
+      "de": "Obwohl er wenig Erfahrung hatte, gelang es ihm, das Problem effektiv zu lösen."
+    },
+    {
+      "en": "The data suggests that consumer behavior is changing rapidly.",
+      "de": "Die Daten deuten darauf hin, dass sich das Verbraucherverhalten schnell verändert."
+    },
+    {
+      "en": "Researchers are trying to determine how climate change affects biodiversity.",
+      "de": "Forscher versuchen zu bestimmen, wie sich der Klimawandel auf die Biodiversität auswirkt."
+    },
+    {
+      "en": "It is important that governments take responsibility for environmental protection.",
+      "de": "Es ist wichtig, dass Regierungen Verantwortung für den Umweltschutz übernehmen."
+    },
+    {
+      "en": "The author claims that social media influences political opinions more strongly than traditional newspapers.",
+      "de": "Der Autor behauptet, dass soziale Medien politische Meinungen stärker beeinflussen als traditionelle Zeitungen."
+    },
+    {
+      "en": "If the city invested more in public transport, traffic congestion could be reduced significantly.",
+      "de": "Wenn die Stadt mehr in den öffentlichen Nahverkehr investieren würde, könnte der Verkehrsstau erheblich reduziert werden."
+    },
+    {
+      "en": "Although many people support the reform, others fear its long-term consequences.",
+      "de": "Obwohl viele Menschen die Reform unterstützen, fürchten andere ihre langfristigen Folgen."
+    },
+    {
+      "en": "The article points out that economic growth does not automatically lead to greater equality.",
+      "de": "Der Artikel weist darauf hin, dass wirtschaftliches Wachstum nicht automatisch zu mehr Gleichheit führt."
+    },
+    {
+      "en": "Anyone who wants to succeed in an international environment should be able to communicate clearly.",
+      "de": "Wer in einem internationalen Umfeld erfolgreich sein will, sollte klar kommunizieren können."
+    },
+    {
+      "en": "The fact that more people work remotely has changed the structure of many companies.",
+      "de": "Die Tatsache, dass mehr Menschen remote arbeiten, hat die Struktur vieler Unternehmen verändert."
+    },
+    {
+      "en": "Even if the measures are expensive, they may prove beneficial in the long run.",
+      "de": "Auch wenn die Maßnahmen teuer sind, könnten sie sich langfristig als vorteilhaft erweisen."
+    },
+    {
+      "en": "The manager expects the team to complete the project before the end of the month.",
+      "de": "Der Manager erwartet, dass das Team das Projekt vor Ende des Monats abschließt."
+    },
+    {
+      "en": "What matters most is whether the proposed solution can actually be implemented.",
+      "de": "Entscheidend ist, ob die vorgeschlagene Lösung tatsächlich umgesetzt werden kann."
+    },
+    {
+      "en": "It is often forgotten that technological progress also creates new ethical questions.",
+      "de": "Es wird oft vergessen, dass technologischer Fortschritt auch neue ethische Fragen aufwirft."
+    },
+    {
+      "en": "The measures that were introduced last year have already shown measurable results.",
+      "de": "Die Maßnahmen, die im letzten Jahr eingeführt wurden, haben bereits messbare Ergebnisse gezeigt."
+    },
+    {
+      "en": "If I had been informed earlier, I would have prepared differently for the meeting.",
+      "de": "Wenn ich früher informiert worden wäre, hätte ich mich anders auf das Treffen vorbereitet."
+    },
+    {
+      "en": "The speaker explained not only how the system works but also why it was developed.",
+      "de": "Der Redner erklärte nicht nur, wie das System funktioniert, sondern auch, warum es entwickelt wurde."
+    },
+    {
+      "en": "The university offers students the opportunity to gain experience abroad.",
+      "de": "Die Universität bietet den Studierenden die Möglichkeit, im Ausland Erfahrungen zu sammeln."
+    },
+    {
+      "en": "The problem cannot be solved unless all those involved are willing to cooperate.",
+      "de": "Das Problem kann nicht gelöst werden, es sei denn, alle Beteiligten sind zur Zusammenarbeit bereit."
+    },
+    {
+      "en": "Although the evidence is limited, it indicates a clear tendency.",
+      "de": "Obwohl die Belege begrenzt sind, weisen sie auf eine klare Tendenz hin."
+    },
+    {
+      "en": "The report concludes that further investment is necessary to remain competitive.",
+      "de": "Der Bericht kommt zu dem Schluss, dass weitere Investitionen notwendig sind, um wettbewerbsfähig zu bleiben."
+    },
+    {
+      "en": "The company, which was founded only five years ago, already operates worldwide.",
+      "de": "Das Unternehmen, das erst vor fünf Jahren gegründet wurde, ist bereits weltweit tätig."
+    },
+    {
+      "en": "Whether the reform succeeds depends largely on how consistently it is implemented.",
+      "de": "Ob die Reform gelingt, hängt weitgehend davon ab, wie konsequent sie umgesetzt wird."
+    },
+    {
+      "en": "The more experience employees gain, the more independently they can work.",
+      "de": "Je mehr Erfahrung die Mitarbeitenden sammeln, desto selbstständiger können sie arbeiten."
+    },
+    {
+      "en": "It is assumed that prices will continue to rise if demand remains high.",
+      "de": "Es wird angenommen, dass die Preise weiter steigen werden, wenn die Nachfrage hoch bleibt."
+    },
+    {
+      "en": "The politician denied having known about the problem in advance.",
+      "de": "Der Politiker bestritt, im Voraus von dem Problem gewusst zu haben."
+    },
+    {
+      "en": "The book deals with the question of how societies handle change.",
+      "de": "Das Buch befasst sich mit der Frage, wie Gesellschaften mit Veränderungen umgehen."
+    },
+    {
+      "en": "People who regularly reflect on their goals often make more conscious decisions.",
+      "de": "Menschen, die regelmäßig über ihre Ziele nachdenken, treffen oft bewusstere Entscheidungen."
+    },
+    {
+      "en": "The software was developed to make internal processes more efficient.",
+      "de": "Die Software wurde entwickelt, um interne Prozesse effizienter zu gestalten."
+    },
+    {
+      "en": "The idea that success depends solely on talent is far too simplistic.",
+      "de": "Die Vorstellung, dass Erfolg ausschließlich von Talent abhängt, ist viel zu einfach."
+    },
+    {
+      "en": "Hardly had the meeting started when the first technical problems appeared.",
+      "de": "Kaum hatte die Sitzung begonnen, da traten schon die ersten technischen Probleme auf."
+    },
+    {
+      "en": "By comparing both approaches, one can better understand their strengths and weaknesses.",
+      "de": "Indem man beide Ansätze vergleicht, kann man ihre Stärken und Schwächen besser verstehen."
+    },
+    {
+      "en": "The company has set itself the goal of becoming climate-neutral by 2035.",
+      "de": "Das Unternehmen hat sich das Ziel gesetzt, bis 2035 klimaneutral zu werden."
+    },
+    {
+      "en": "No sooner had he finished his studies than he received several job offers.",
+      "de": "Kaum hatte er sein Studium abgeschlossen, erhielt er mehrere Stellenangebote."
+    },
+    {
+      "en": "The question of whether artificial intelligence should be regulated is becoming increasingly urgent.",
+      "de": "Die Frage, ob künstliche Intelligenz reguliert werden sollte, wird immer dringlicher."
+    },
+    {
+      "en": "Even those who were initially skeptical later admitted that the reform had positive effects.",
+      "de": "Selbst diejenigen, die anfangs skeptisch waren, gaben später zu, dass die Reform positive Auswirkungen hatte."
+    },
+    {
+      "en": "As far as sustainability is concerned, consumers are increasingly expecting transparent information.",
+      "de": "Was die Nachhaltigkeit betrifft, erwarten Verbraucher zunehmend transparente Informationen."
+    },
+    {
+      "en": "The discussion revealed that the participants had very different priorities.",
+      "de": "Die Diskussion zeigte, dass die Teilnehmenden sehr unterschiedliche Prioritäten hatten."
+    },
+    {
+      "en": "What surprised me most was how quickly the team adapted to the new conditions.",
+      "de": "Was mich am meisten überrascht hat, war, wie schnell sich das Team an die neuen Bedingungen angepasst hat."
+    },
+    {
+      "en": "Provided that the necessary resources are available, the project can begin immediately.",
+      "de": "Vorausgesetzt, dass die notwendigen Ressourcen verfügbar sind, kann das Projekt sofort beginnen."
+    }
+  ]
+}

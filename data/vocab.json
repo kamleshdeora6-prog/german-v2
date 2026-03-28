@@ -1,0 +1,1674 @@
+[
+  {
+    "de": "der Mann",
+    "en": "the man (masculine)",
+    "level": "A1",
+    "topic": "Basics",
+    "example_de": "Beispiel: der Mann",
+    "example_en": "Example: the man (masculine)"
+  },
+  {
+    "de": "die Frau",
+    "en": "the woman (feminine)",
+    "level": "A1",
+    "topic": "Basics",
+    "example_de": "Beispiel: die Frau",
+    "example_en": "Example: the woman (feminine)"
+  },
+  {
+    "de": "das Kind",
+    "en": "the child (neuter)",
+    "level": "A1",
+    "topic": "Basics",
+    "example_de": "Beispiel: das Kind",
+    "example_en": "Example: the child (neuter)"
+  },
+  {
+    "de": "der Tisch",
+    "en": "the table",
+    "level": "A1",
+    "topic": "Basics",
+    "example_de": "Beispiel: der Tisch",
+    "example_en": "Example: the table"
+  },
+  {
+    "de": "die Lampe",
+    "en": "the lamp",
+    "level": "A1",
+    "topic": "Basics",
+    "example_de": "Beispiel: die Lampe",
+    "example_en": "Example: the lamp"
+  },
+  {
+    "de": "das Fenster",
+    "en": "the window",
+    "level": "A1",
+    "topic": "Basics",
+    "example_de": "Beispiel: das Fenster",
+    "example_en": "Example: the window"
+  },
+  {
+    "de": "der Hund",
+    "en": "the dog",
+    "level": "A1",
+    "topic": "Basics",
+    "example_de": "Beispiel: der Hund",
+    "example_en": "Example: the dog"
+  },
+  {
+    "de": "die Katze",
+    "en": "the cat",
+    "level": "A1",
+    "topic": "Basics",
+    "example_de": "Beispiel: die Katze",
+    "example_en": "Example: the cat"
+  },
+  {
+    "de": "das Auto",
+    "en": "the car",
+    "level": "A1",
+    "topic": "Basics",
+    "example_de": "Beispiel: das Auto",
+    "example_en": "Example: the car"
+  },
+  {
+    "de": "der Lehrer",
+    "en": "the teacher",
+    "level": "A1",
+    "topic": "Basics",
+    "example_de": "Beispiel: der Lehrer",
+    "example_en": "Example: the teacher"
+  },
+  {
+    "de": "die Schule",
+    "en": "the school",
+    "level": "A1",
+    "topic": "Basics",
+    "example_de": "Beispiel: die Schule",
+    "example_en": "Example: the school"
+  },
+  {
+    "de": "das Buch",
+    "en": "the book",
+    "level": "A1",
+    "topic": "Basics",
+    "example_de": "Beispiel: das Buch",
+    "example_en": "Example: the book"
+  },
+  {
+    "de": "der Freund",
+    "en": "the friend",
+    "level": "A1",
+    "topic": "Basics",
+    "example_de": "Beispiel: der Freund",
+    "example_en": "Example: the friend"
+  },
+  {
+    "de": "die Wohnung",
+    "en": "the apartment",
+    "level": "A1",
+    "topic": "Basics",
+    "example_de": "Beispiel: die Wohnung",
+    "example_en": "Example: the apartment"
+  },
+  {
+    "de": "das Büro",
+    "en": "the office",
+    "level": "A1",
+    "topic": "Basics",
+    "example_de": "Beispiel: das Büro",
+    "example_en": "Example: the office"
+  },
+  {
+    "de": "der Termin",
+    "en": "the appointment",
+    "level": "A1",
+    "topic": "Basics",
+    "example_de": "Beispiel: der Termin",
+    "example_en": "Example: the appointment"
+  },
+  {
+    "de": "die Frage",
+    "en": "the question",
+    "level": "A1",
+    "topic": "Basics",
+    "example_de": "Beispiel: die Frage",
+    "example_en": "Example: the question"
+  },
+  {
+    "de": "das Problem",
+    "en": "the problem",
+    "level": "A1",
+    "topic": "Basics",
+    "example_de": "Beispiel: das Problem",
+    "example_en": "Example: the problem"
+  },
+  {
+    "de": "der Film",
+    "en": "the movie",
+    "level": "A1",
+    "topic": "Basics",
+    "example_de": "Beispiel: der Film",
+    "example_en": "Example: the movie"
+  },
+  {
+    "de": "die Arbeit",
+    "en": "the work",
+    "level": "A1",
+    "topic": "Basics",
+    "example_de": "Beispiel: die Arbeit",
+    "example_en": "Example: the work"
+  },
+  {
+    "de": "können",
+    "en": "can / to be able to",
+    "level": "A1",
+    "topic": "Modal verbs",
+    "example_de": "Beispiel: können",
+    "example_en": "Example: can / to be able to"
+  },
+  {
+    "de": "müssen",
+    "en": "must / have to",
+    "level": "A1",
+    "topic": "Modal verbs",
+    "example_de": "Beispiel: müssen",
+    "example_en": "Example: must / have to"
+  },
+  {
+    "de": "wollen",
+    "en": "to want",
+    "level": "A1",
+    "topic": "Modal verbs",
+    "example_de": "Beispiel: wollen",
+    "example_en": "Example: to want"
+  },
+  {
+    "de": "dürfen",
+    "en": "may / allowed to",
+    "level": "A1",
+    "topic": "Modal verbs",
+    "example_de": "Beispiel: dürfen",
+    "example_en": "Example: may / allowed to"
+  },
+  {
+    "de": "sollen",
+    "en": "should",
+    "level": "A1",
+    "topic": "Modal verbs",
+    "example_de": "Beispiel: sollen",
+    "example_en": "Example: should"
+  },
+  {
+    "de": "möchten",
+    "en": "would like",
+    "level": "A1",
+    "topic": "Modal verbs",
+    "example_de": "Beispiel: möchten",
+    "example_en": "Example: would like"
+  },
+  {
+    "de": "ich kann",
+    "en": "I can",
+    "level": "A1",
+    "topic": "Modal verbs",
+    "example_de": "Beispiel: ich kann",
+    "example_en": "Example: I can"
+  },
+  {
+    "de": "du kannst",
+    "en": "you can",
+    "level": "A1",
+    "topic": "Modal verbs",
+    "example_de": "Beispiel: du kannst",
+    "example_en": "Example: you can"
+  },
+  {
+    "de": "er kann",
+    "en": "he can",
+    "level": "A1",
+    "topic": "Modal verbs",
+    "example_de": "Beispiel: er kann",
+    "example_en": "Example: he can"
+  },
+  {
+    "de": "wir können",
+    "en": "we can",
+    "level": "A1",
+    "topic": "Modal verbs",
+    "example_de": "Beispiel: wir können",
+    "example_en": "Example: we can"
+  },
+  {
+    "de": "ich muss",
+    "en": "I must",
+    "level": "A1",
+    "topic": "Modal verbs",
+    "example_de": "Beispiel: ich muss",
+    "example_en": "Example: I must"
+  },
+  {
+    "de": "du musst",
+    "en": "you must",
+    "level": "A1",
+    "topic": "Modal verbs",
+    "example_de": "Beispiel: du musst",
+    "example_en": "Example: you must"
+  },
+  {
+    "de": "wir müssen",
+    "en": "we must",
+    "level": "A1",
+    "topic": "Modal verbs",
+    "example_de": "Beispiel: wir müssen",
+    "example_en": "Example: we must"
+  },
+  {
+    "de": "ich will",
+    "en": "I want",
+    "level": "A1",
+    "topic": "Modal verbs",
+    "example_de": "Beispiel: ich will",
+    "example_en": "Example: I want"
+  },
+  {
+    "de": "du willst",
+    "en": "you want",
+    "level": "A1",
+    "topic": "Modal verbs",
+    "example_de": "Beispiel: du willst",
+    "example_en": "Example: you want"
+  },
+  {
+    "de": "er will",
+    "en": "he wants",
+    "level": "A1",
+    "topic": "Modal verbs",
+    "example_de": "Beispiel: er will",
+    "example_en": "Example: he wants"
+  },
+  {
+    "de": "ich möchte",
+    "en": "I would like",
+    "level": "A1",
+    "topic": "Modal verbs",
+    "example_de": "Beispiel: ich möchte",
+    "example_en": "Example: I would like"
+  },
+  {
+    "de": "möchten Sie",
+    "en": "would you like (formal)",
+    "level": "A1",
+    "topic": "Modal verbs",
+    "example_de": "Beispiel: möchten Sie",
+    "example_en": "Example: would you like (formal)"
+  },
+  {
+    "de": "ich darf",
+    "en": "I may",
+    "level": "A1",
+    "topic": "Modal verbs",
+    "example_de": "Beispiel: ich darf",
+    "example_en": "Example: I may"
+  },
+  {
+    "de": "ich soll",
+    "en": "I should",
+    "level": "A1",
+    "topic": "Modal verbs",
+    "example_de": "Beispiel: ich soll",
+    "example_en": "Example: I should"
+  },
+  {
+    "de": "für",
+    "en": "for",
+    "level": "A2",
+    "topic": "Prepositions",
+    "example_de": "Beispiel: für",
+    "example_en": "Example: for"
+  },
+  {
+    "de": "ohne",
+    "en": "without",
+    "level": "A2",
+    "topic": "Prepositions",
+    "example_de": "Beispiel: ohne",
+    "example_en": "Example: without"
+  },
+  {
+    "de": "durch",
+    "en": "through",
+    "level": "A2",
+    "topic": "Prepositions",
+    "example_de": "Beispiel: durch",
+    "example_en": "Example: through"
+  },
+  {
+    "de": "gegen",
+    "en": "against",
+    "level": "A2",
+    "topic": "Prepositions",
+    "example_de": "Beispiel: gegen",
+    "example_en": "Example: against"
+  },
+  {
+    "de": "um",
+    "en": "around",
+    "level": "A2",
+    "topic": "Prepositions",
+    "example_de": "Beispiel: um",
+    "example_en": "Example: around"
+  },
+  {
+    "de": "mit",
+    "en": "with",
+    "level": "A2",
+    "topic": "Prepositions",
+    "example_de": "Beispiel: mit",
+    "example_en": "Example: with"
+  },
+  {
+    "de": "nach",
+    "en": "to / after",
+    "level": "A2",
+    "topic": "Prepositions",
+    "example_de": "Beispiel: nach",
+    "example_en": "Example: to / after"
+  },
+  {
+    "de": "von",
+    "en": "from",
+    "level": "A2",
+    "topic": "Prepositions",
+    "example_de": "Beispiel: von",
+    "example_en": "Example: from"
+  },
+  {
+    "de": "zu",
+    "en": "to",
+    "level": "A2",
+    "topic": "Prepositions",
+    "example_de": "Beispiel: zu",
+    "example_en": "Example: to"
+  },
+  {
+    "de": "bei",
+    "en": "at",
+    "level": "A2",
+    "topic": "Prepositions",
+    "example_de": "Beispiel: bei",
+    "example_en": "Example: at"
+  },
+  {
+    "de": "in",
+    "en": "in",
+    "level": "A2",
+    "topic": "Prepositions",
+    "example_de": "Beispiel: in",
+    "example_en": "Example: in"
+  },
+  {
+    "de": "auf",
+    "en": "on",
+    "level": "A2",
+    "topic": "Prepositions",
+    "example_de": "Beispiel: auf",
+    "example_en": "Example: on"
+  },
+  {
+    "de": "an",
+    "en": "at/on",
+    "level": "A2",
+    "topic": "Prepositions",
+    "example_de": "Beispiel: an",
+    "example_en": "Example: at/on"
+  },
+  {
+    "de": "über",
+    "en": "over/about",
+    "level": "A2",
+    "topic": "Prepositions",
+    "example_de": "Beispiel: über",
+    "example_en": "Example: over/about"
+  },
+  {
+    "de": "unter",
+    "en": "under",
+    "level": "A2",
+    "topic": "Prepositions",
+    "example_de": "Beispiel: unter",
+    "example_en": "Example: under"
+  },
+  {
+    "de": "vor",
+    "en": "before/in front of",
+    "level": "A2",
+    "topic": "Prepositions",
+    "example_de": "Beispiel: vor",
+    "example_en": "Example: before/in front of"
+  },
+  {
+    "de": "hinter",
+    "en": "behind",
+    "level": "A2",
+    "topic": "Prepositions",
+    "example_de": "Beispiel: hinter",
+    "example_en": "Example: behind"
+  },
+  {
+    "de": "zwischen",
+    "en": "between",
+    "level": "A2",
+    "topic": "Prepositions",
+    "example_de": "Beispiel: zwischen",
+    "example_en": "Example: between"
+  },
+  {
+    "de": "neben",
+    "en": "next to",
+    "level": "A2",
+    "topic": "Prepositions",
+    "example_de": "Beispiel: neben",
+    "example_en": "Example: next to"
+  },
+  {
+    "de": "wegen",
+    "en": "because of",
+    "level": "A2",
+    "topic": "Prepositions",
+    "example_de": "Beispiel: wegen",
+    "example_en": "Example: because of"
+  },
+  {
+    "de": "wer",
+    "en": "who",
+    "level": "A1",
+    "topic": "Question words",
+    "example_de": "Beispiel: wer",
+    "example_en": "Example: who"
+  },
+  {
+    "de": "was",
+    "en": "what",
+    "level": "A1",
+    "topic": "Question words",
+    "example_de": "Beispiel: was",
+    "example_en": "Example: what"
+  },
+  {
+    "de": "wann",
+    "en": "when",
+    "level": "A1",
+    "topic": "Question words",
+    "example_de": "Beispiel: wann",
+    "example_en": "Example: when"
+  },
+  {
+    "de": "warum",
+    "en": "why",
+    "level": "A1",
+    "topic": "Question words",
+    "example_de": "Beispiel: warum",
+    "example_en": "Example: why"
+  },
+  {
+    "de": "wo",
+    "en": "where",
+    "level": "A1",
+    "topic": "Question words",
+    "example_de": "Beispiel: wo",
+    "example_en": "Example: where"
+  },
+  {
+    "de": "woher",
+    "en": "where from",
+    "level": "A1",
+    "topic": "Question words",
+    "example_de": "Beispiel: woher",
+    "example_en": "Example: where from"
+  },
+  {
+    "de": "wohin",
+    "en": "where to",
+    "level": "A1",
+    "topic": "Question words",
+    "example_de": "Beispiel: wohin",
+    "example_en": "Example: where to"
+  },
+  {
+    "de": "wie",
+    "en": "how",
+    "level": "A1",
+    "topic": "Question words",
+    "example_de": "Beispiel: wie",
+    "example_en": "Example: how"
+  },
+  {
+    "de": "wie viel",
+    "en": "how much",
+    "level": "A1",
+    "topic": "Question words",
+    "example_de": "Beispiel: wie viel",
+    "example_en": "Example: how much"
+  },
+  {
+    "de": "wie viele",
+    "en": "how many",
+    "level": "A1",
+    "topic": "Question words",
+    "example_de": "Beispiel: wie viele",
+    "example_en": "Example: how many"
+  },
+  {
+    "de": "wie lange",
+    "en": "how long",
+    "level": "A1",
+    "topic": "Question words",
+    "example_de": "Beispiel: wie lange",
+    "example_en": "Example: how long"
+  },
+  {
+    "de": "wie spät",
+    "en": "what time",
+    "level": "A1",
+    "topic": "Question words",
+    "example_de": "Beispiel: wie spät",
+    "example_en": "Example: what time"
+  },
+  {
+    "de": "welcher",
+    "en": "which (masculine)",
+    "level": "A1",
+    "topic": "Question words",
+    "example_de": "Beispiel: welcher",
+    "example_en": "Example: which (masculine)"
+  },
+  {
+    "de": "welche",
+    "en": "which (feminine/plural)",
+    "level": "A1",
+    "topic": "Question words",
+    "example_de": "Beispiel: welche",
+    "example_en": "Example: which (feminine/plural)"
+  },
+  {
+    "de": "welches",
+    "en": "which (neuter)",
+    "level": "A1",
+    "topic": "Question words",
+    "example_de": "Beispiel: welches",
+    "example_en": "Example: which (neuter)"
+  },
+  {
+    "de": "wann beginnt das Meeting",
+    "en": "when does the meeting start",
+    "level": "A1",
+    "topic": "Question words",
+    "example_de": "Beispiel: wann beginnt das Meeting",
+    "example_en": "Example: when does the meeting start"
+  },
+  {
+    "de": "wo wohnst du",
+    "en": "where do you live",
+    "level": "A1",
+    "topic": "Question words",
+    "example_de": "Beispiel: wo wohnst du",
+    "example_en": "Example: where do you live"
+  },
+  {
+    "de": "warum lernst du Deutsch",
+    "en": "why do you learn German",
+    "level": "A1",
+    "topic": "Question words",
+    "example_de": "Beispiel: warum lernst du Deutsch",
+    "example_en": "Example: why do you learn German"
+  },
+  {
+    "de": "wie heißt du",
+    "en": "what is your name",
+    "level": "A1",
+    "topic": "Question words",
+    "example_de": "Beispiel: wie heißt du",
+    "example_en": "Example: what is your name"
+  },
+  {
+    "de": "wo arbeitest du",
+    "en": "where do you work",
+    "level": "A1",
+    "topic": "Question words",
+    "example_de": "Beispiel: wo arbeitest du",
+    "example_en": "Example: where do you work"
+  },
+  {
+    "de": "und",
+    "en": "and",
+    "level": "A2",
+    "topic": "Connectors",
+    "example_de": "Beispiel: und",
+    "example_en": "Example: and"
+  },
+  {
+    "de": "oder",
+    "en": "or",
+    "level": "A2",
+    "topic": "Connectors",
+    "example_de": "Beispiel: oder",
+    "example_en": "Example: or"
+  },
+  {
+    "de": "aber",
+    "en": "but",
+    "level": "A2",
+    "topic": "Connectors",
+    "example_de": "Beispiel: aber",
+    "example_en": "Example: but"
+  },
+  {
+    "de": "denn",
+    "en": "because (normal order)",
+    "level": "A2",
+    "topic": "Connectors",
+    "example_de": "Beispiel: denn",
+    "example_en": "Example: because (normal order)"
+  },
+  {
+    "de": "weil",
+    "en": "because (verb at end)",
+    "level": "A2",
+    "topic": "Connectors",
+    "example_de": "Beispiel: weil",
+    "example_en": "Example: because (verb at end)"
+  },
+  {
+    "de": "dass",
+    "en": "that",
+    "level": "A2",
+    "topic": "Connectors",
+    "example_de": "Beispiel: dass",
+    "example_en": "Example: that"
+  },
+  {
+    "de": "obwohl",
+    "en": "although",
+    "level": "A2",
+    "topic": "Connectors",
+    "example_de": "Beispiel: obwohl",
+    "example_en": "Example: although"
+  },
+  {
+    "de": "wenn",
+    "en": "if/when",
+    "level": "A2",
+    "topic": "Connectors",
+    "example_de": "Beispiel: wenn",
+    "example_en": "Example: if/when"
+  },
+  {
+    "de": "damit",
+    "en": "so that",
+    "level": "A2",
+    "topic": "Connectors",
+    "example_de": "Beispiel: damit",
+    "example_en": "Example: so that"
+  },
+  {
+    "de": "deshalb",
+    "en": "therefore",
+    "level": "A2",
+    "topic": "Connectors",
+    "example_de": "Beispiel: deshalb",
+    "example_en": "Example: therefore"
+  },
+  {
+    "de": "trotzdem",
+    "en": "nevertheless",
+    "level": "A2",
+    "topic": "Connectors",
+    "example_de": "Beispiel: trotzdem",
+    "example_en": "Example: nevertheless"
+  },
+  {
+    "de": "außerdem",
+    "en": "besides",
+    "level": "A2",
+    "topic": "Connectors",
+    "example_de": "Beispiel: außerdem",
+    "example_en": "Example: besides"
+  },
+  {
+    "de": "zuerst",
+    "en": "first",
+    "level": "A2",
+    "topic": "Connectors",
+    "example_de": "Beispiel: zuerst",
+    "example_en": "Example: first"
+  },
+  {
+    "de": "danach",
+    "en": "after that",
+    "level": "A2",
+    "topic": "Connectors",
+    "example_de": "Beispiel: danach",
+    "example_en": "Example: after that"
+  },
+  {
+    "de": "bevor",
+    "en": "before",
+    "level": "A2",
+    "topic": "Connectors",
+    "example_de": "Beispiel: bevor",
+    "example_en": "Example: before"
+  },
+  {
+    "de": "während",
+    "en": "while",
+    "level": "A2",
+    "topic": "Connectors",
+    "example_de": "Beispiel: während",
+    "example_en": "Example: while"
+  },
+  {
+    "de": "seitdem",
+    "en": "since",
+    "level": "A2",
+    "topic": "Connectors",
+    "example_de": "Beispiel: seitdem",
+    "example_en": "Example: since"
+  },
+  {
+    "de": "sobald",
+    "en": "as soon as",
+    "level": "A2",
+    "topic": "Connectors",
+    "example_de": "Beispiel: sobald",
+    "example_en": "Example: as soon as"
+  },
+  {
+    "de": "falls",
+    "en": "in case",
+    "level": "A2",
+    "topic": "Connectors",
+    "example_de": "Beispiel: falls",
+    "example_en": "Example: in case"
+  },
+  {
+    "de": "solange",
+    "en": "as long as",
+    "level": "A2",
+    "topic": "Connectors",
+    "example_de": "Beispiel: solange",
+    "example_en": "Example: as long as"
+  },
+  {
+    "de": "gut",
+    "en": "good",
+    "level": "A2",
+    "topic": "Adjectives",
+    "example_de": "Beispiel: gut",
+    "example_en": "Example: good"
+  },
+  {
+    "de": "schlecht",
+    "en": "bad",
+    "level": "A2",
+    "topic": "Adjectives",
+    "example_de": "Beispiel: schlecht",
+    "example_en": "Example: bad"
+  },
+  {
+    "de": "neu",
+    "en": "new",
+    "level": "A2",
+    "topic": "Adjectives",
+    "example_de": "Beispiel: neu",
+    "example_en": "Example: new"
+  },
+  {
+    "de": "alt",
+    "en": "old",
+    "level": "A2",
+    "topic": "Adjectives",
+    "example_de": "Beispiel: alt",
+    "example_en": "Example: old"
+  },
+  {
+    "de": "groß",
+    "en": "big",
+    "level": "A2",
+    "topic": "Adjectives",
+    "example_de": "Beispiel: groß",
+    "example_en": "Example: big"
+  },
+  {
+    "de": "klein",
+    "en": "small",
+    "level": "A2",
+    "topic": "Adjectives",
+    "example_de": "Beispiel: klein",
+    "example_en": "Example: small"
+  },
+  {
+    "de": "teuer",
+    "en": "expensive",
+    "level": "A2",
+    "topic": "Adjectives",
+    "example_de": "Beispiel: teuer",
+    "example_en": "Example: expensive"
+  },
+  {
+    "de": "billig",
+    "en": "cheap",
+    "level": "A2",
+    "topic": "Adjectives",
+    "example_de": "Beispiel: billig",
+    "example_en": "Example: cheap"
+  },
+  {
+    "de": "schnell",
+    "en": "fast",
+    "level": "A2",
+    "topic": "Adjectives",
+    "example_de": "Beispiel: schnell",
+    "example_en": "Example: fast"
+  },
+  {
+    "de": "langsam",
+    "en": "slow",
+    "level": "A2",
+    "topic": "Adjectives",
+    "example_de": "Beispiel: langsam",
+    "example_en": "Example: slow"
+  },
+  {
+    "de": "freundlich",
+    "en": "friendly",
+    "level": "A2",
+    "topic": "Adjectives",
+    "example_de": "Beispiel: freundlich",
+    "example_en": "Example: friendly"
+  },
+  {
+    "de": "nett",
+    "en": "nice",
+    "level": "A2",
+    "topic": "Adjectives",
+    "example_de": "Beispiel: nett",
+    "example_en": "Example: nice"
+  },
+  {
+    "de": "laut",
+    "en": "loud",
+    "level": "A2",
+    "topic": "Adjectives",
+    "example_de": "Beispiel: laut",
+    "example_en": "Example: loud"
+  },
+  {
+    "de": "leise",
+    "en": "quiet",
+    "level": "A2",
+    "topic": "Adjectives",
+    "example_de": "Beispiel: leise",
+    "example_en": "Example: quiet"
+  },
+  {
+    "de": "praktisch",
+    "en": "practical",
+    "level": "A2",
+    "topic": "Adjectives",
+    "example_de": "Beispiel: praktisch",
+    "example_en": "Example: practical"
+  },
+  {
+    "de": "zuverlässig",
+    "en": "reliable",
+    "level": "A2",
+    "topic": "Adjectives",
+    "example_de": "Beispiel: zuverlässig",
+    "example_en": "Example: reliable"
+  },
+  {
+    "de": "traditionell",
+    "en": "traditional",
+    "level": "A2",
+    "topic": "Adjectives",
+    "example_de": "Beispiel: traditionell",
+    "example_en": "Example: traditional"
+  },
+  {
+    "de": "schön",
+    "en": "beautiful",
+    "level": "A2",
+    "topic": "Adjectives",
+    "example_de": "Beispiel: schön",
+    "example_en": "Example: beautiful"
+  },
+  {
+    "de": "wichtig",
+    "en": "important",
+    "level": "A2",
+    "topic": "Adjectives",
+    "example_de": "Beispiel: wichtig",
+    "example_en": "Example: important"
+  },
+  {
+    "de": "müde",
+    "en": "tired",
+    "level": "A2",
+    "topic": "Adjectives",
+    "example_de": "Beispiel: müde",
+    "example_en": "Example: tired"
+  },
+  {
+    "de": "gehen",
+    "en": "to go",
+    "level": "A1",
+    "topic": "Daily verbs",
+    "example_de": "Beispiel: gehen",
+    "example_en": "Example: to go"
+  },
+  {
+    "de": "kommen",
+    "en": "to come",
+    "level": "A1",
+    "topic": "Daily verbs",
+    "example_de": "Beispiel: kommen",
+    "example_en": "Example: to come"
+  },
+  {
+    "de": "sehen",
+    "en": "to see",
+    "level": "A1",
+    "topic": "Daily verbs",
+    "example_de": "Beispiel: sehen",
+    "example_en": "Example: to see"
+  },
+  {
+    "de": "machen",
+    "en": "to make/do",
+    "level": "A1",
+    "topic": "Daily verbs",
+    "example_de": "Beispiel: machen",
+    "example_en": "Example: to make/do"
+  },
+  {
+    "de": "lernen",
+    "en": "to learn",
+    "level": "A1",
+    "topic": "Daily verbs",
+    "example_de": "Beispiel: lernen",
+    "example_en": "Example: to learn"
+  },
+  {
+    "de": "arbeiten",
+    "en": "to work",
+    "level": "A1",
+    "topic": "Daily verbs",
+    "example_de": "Beispiel: arbeiten",
+    "example_en": "Example: to work"
+  },
+  {
+    "de": "essen",
+    "en": "to eat",
+    "level": "A1",
+    "topic": "Daily verbs",
+    "example_de": "Beispiel: essen",
+    "example_en": "Example: to eat"
+  },
+  {
+    "de": "trinken",
+    "en": "to drink",
+    "level": "A1",
+    "topic": "Daily verbs",
+    "example_de": "Beispiel: trinken",
+    "example_en": "Example: to drink"
+  },
+  {
+    "de": "lesen",
+    "en": "to read",
+    "level": "A1",
+    "topic": "Daily verbs",
+    "example_de": "Beispiel: lesen",
+    "example_en": "Example: to read"
+  },
+  {
+    "de": "schreiben",
+    "en": "to write",
+    "level": "A1",
+    "topic": "Daily verbs",
+    "example_de": "Beispiel: schreiben",
+    "example_en": "Example: to write"
+  },
+  {
+    "de": "sprechen",
+    "en": "to speak",
+    "level": "A1",
+    "topic": "Daily verbs",
+    "example_de": "Beispiel: sprechen",
+    "example_en": "Example: to speak"
+  },
+  {
+    "de": "verstehen",
+    "en": "to understand",
+    "level": "A1",
+    "topic": "Daily verbs",
+    "example_de": "Beispiel: verstehen",
+    "example_en": "Example: to understand"
+  },
+  {
+    "de": "helfen",
+    "en": "to help",
+    "level": "A1",
+    "topic": "Daily verbs",
+    "example_de": "Beispiel: helfen",
+    "example_en": "Example: to help"
+  },
+  {
+    "de": "finden",
+    "en": "to find",
+    "level": "A1",
+    "topic": "Daily verbs",
+    "example_de": "Beispiel: finden",
+    "example_en": "Example: to find"
+  },
+  {
+    "de": "bleiben",
+    "en": "to stay",
+    "level": "A1",
+    "topic": "Daily verbs",
+    "example_de": "Beispiel: bleiben",
+    "example_en": "Example: to stay"
+  },
+  {
+    "de": "treffen",
+    "en": "to meet",
+    "level": "A1",
+    "topic": "Daily verbs",
+    "example_de": "Beispiel: treffen",
+    "example_en": "Example: to meet"
+  },
+  {
+    "de": "kochen",
+    "en": "to cook",
+    "level": "A1",
+    "topic": "Daily verbs",
+    "example_de": "Beispiel: kochen",
+    "example_en": "Example: to cook"
+  },
+  {
+    "de": "studieren",
+    "en": "to study",
+    "level": "A1",
+    "topic": "Daily verbs",
+    "example_de": "Beispiel: studieren",
+    "example_en": "Example: to study"
+  },
+  {
+    "de": "verdienen",
+    "en": "to earn",
+    "level": "A1",
+    "topic": "Daily verbs",
+    "example_de": "Beispiel: verdienen",
+    "example_en": "Example: to earn"
+  },
+  {
+    "de": "reparieren",
+    "en": "to repair",
+    "level": "A1",
+    "topic": "Daily verbs",
+    "example_de": "Beispiel: reparieren",
+    "example_en": "Example: to repair"
+  },
+  {
+    "de": "Vielen Dank im Voraus",
+    "en": "Many thanks in advance",
+    "level": "A1",
+    "topic": "Phrases",
+    "example_de": "Beispiel: Vielen Dank im Voraus",
+    "example_en": "Example: Many thanks in advance"
+  },
+  {
+    "de": "Mit freundlichen Grüßen",
+    "en": "Kind regards",
+    "level": "A1",
+    "topic": "Phrases",
+    "example_de": "Beispiel: Mit freundlichen Grüßen",
+    "example_en": "Example: Kind regards"
+  },
+  {
+    "de": "Liebe Grüße",
+    "en": "Best wishes",
+    "level": "A1",
+    "topic": "Phrases",
+    "example_de": "Beispiel: Liebe Grüße",
+    "example_en": "Example: Best wishes"
+  },
+  {
+    "de": "Es tut mir leid",
+    "en": "I am sorry",
+    "level": "A1",
+    "topic": "Phrases",
+    "example_de": "Beispiel: Es tut mir leid",
+    "example_en": "Example: I am sorry"
+  },
+  {
+    "de": "Ich würde mich freuen",
+    "en": "I would be happy",
+    "level": "A1",
+    "topic": "Phrases",
+    "example_de": "Beispiel: Ich würde mich freuen",
+    "example_en": "Example: I would be happy"
+  },
+  {
+    "de": "Könnten Sie bitte",
+    "en": "Could you please",
+    "level": "A1",
+    "topic": "Phrases",
+    "example_de": "Beispiel: Könnten Sie bitte",
+    "example_en": "Example: Could you please"
+  },
+  {
+    "de": "Bitte teilen Sie mir mit",
+    "en": "Please let me know",
+    "level": "A1",
+    "topic": "Phrases",
+    "example_de": "Beispiel: Bitte teilen Sie mir mit",
+    "example_en": "Example: Please let me know"
+  },
+  {
+    "de": "Ich interessiere mich für",
+    "en": "I am interested in",
+    "level": "A1",
+    "topic": "Phrases",
+    "example_de": "Beispiel: Ich interessiere mich für",
+    "example_en": "Example: I am interested in"
+  },
+  {
+    "de": "Haben Sie Zeit",
+    "en": "Do you have time",
+    "level": "A1",
+    "topic": "Phrases",
+    "example_de": "Beispiel: Haben Sie Zeit",
+    "example_en": "Example: Do you have time"
+  },
+  {
+    "de": "Wir freuen uns auf Ihr Kommen",
+    "en": "We look forward to your coming",
+    "level": "A1",
+    "topic": "Phrases",
+    "example_de": "Beispiel: Wir freuen uns auf Ihr Kommen",
+    "example_en": "Example: We look forward to your coming"
+  },
+  {
+    "de": "Ich hoffe, es geht Ihnen gut",
+    "en": "I hope you are well",
+    "level": "A1",
+    "topic": "Phrases",
+    "example_de": "Beispiel: Ich hoffe, es geht Ihnen gut",
+    "example_en": "Example: I hope you are well"
+  },
+  {
+    "de": "Vielen Dank für Ihre Hilfe",
+    "en": "Thank you for your help",
+    "level": "A1",
+    "topic": "Phrases",
+    "example_de": "Beispiel: Vielen Dank für Ihre Hilfe",
+    "example_en": "Example: Thank you for your help"
+  },
+  {
+    "de": "Ich melde mich später",
+    "en": "I will contact you later",
+    "level": "A1",
+    "topic": "Phrases",
+    "example_de": "Beispiel: Ich melde mich später",
+    "example_en": "Example: I will contact you later"
+  },
+  {
+    "de": "Bis bald",
+    "en": "See you soon",
+    "level": "A1",
+    "topic": "Phrases",
+    "example_de": "Beispiel: Bis bald",
+    "example_en": "Example: See you soon"
+  },
+  {
+    "de": "Guten Morgen",
+    "en": "Good morning",
+    "level": "A1",
+    "topic": "Phrases",
+    "example_de": "Beispiel: Guten Morgen",
+    "example_en": "Example: Good morning"
+  },
+  {
+    "de": "Guten Tag",
+    "en": "Good day",
+    "level": "A1",
+    "topic": "Phrases",
+    "example_de": "Beispiel: Guten Tag",
+    "example_en": "Example: Good day"
+  },
+  {
+    "de": "Guten Abend",
+    "en": "Good evening",
+    "level": "A1",
+    "topic": "Phrases",
+    "example_de": "Beispiel: Guten Abend",
+    "example_en": "Example: Good evening"
+  },
+  {
+    "de": "Wie geht es Ihnen",
+    "en": "How are you (formal)",
+    "level": "A1",
+    "topic": "Phrases",
+    "example_de": "Beispiel: Wie geht es Ihnen",
+    "example_en": "Example: How are you (formal)"
+  },
+  {
+    "de": "Wie geht es dir",
+    "en": "How are you (informal)",
+    "level": "A1",
+    "topic": "Phrases",
+    "example_de": "Beispiel: Wie geht es dir",
+    "example_en": "Example: How are you (informal)"
+  },
+  {
+    "de": "Alles Gute",
+    "en": "All the best",
+    "level": "A1",
+    "topic": "Phrases",
+    "example_de": "Beispiel: Alles Gute",
+    "example_en": "Example: All the best"
+  },
+  {
+    "de": "die Nachbarschaft",
+    "en": "neighborhood",
+    "level": "B1",
+    "topic": "Housing",
+    "example_de": "Beispiel: die Nachbarschaft",
+    "example_en": "Example: neighborhood"
+  },
+  {
+    "de": "die Hausordnung",
+    "en": "building rules",
+    "level": "B1",
+    "topic": "Housing",
+    "example_de": "Beispiel: die Hausordnung",
+    "example_en": "Example: building rules"
+  },
+  {
+    "de": "der Lärm",
+    "en": "noise",
+    "level": "B1",
+    "topic": "Housing",
+    "example_de": "Beispiel: der Lärm",
+    "example_en": "Example: noise"
+  },
+  {
+    "de": "sich beschweren",
+    "en": "to complain",
+    "level": "B1",
+    "topic": "Housing",
+    "example_de": "Beispiel: sich beschweren",
+    "example_en": "Example: to complain"
+  },
+  {
+    "de": "rücksichtsvoll",
+    "en": "considerate",
+    "level": "B1",
+    "topic": "Housing",
+    "example_de": "Beispiel: rücksichtsvoll",
+    "example_en": "Example: considerate"
+  },
+  {
+    "de": "die Bestellung",
+    "en": "order",
+    "level": "B1",
+    "topic": "Shopping",
+    "example_de": "Beispiel: die Bestellung",
+    "example_en": "Example: order"
+  },
+  {
+    "de": "der Kassenbon",
+    "en": "receipt",
+    "level": "B1",
+    "topic": "Shopping",
+    "example_de": "Beispiel: der Kassenbon",
+    "example_en": "Example: receipt"
+  },
+  {
+    "de": "umtauschen",
+    "en": "to exchange",
+    "level": "B1",
+    "topic": "Shopping",
+    "example_de": "Beispiel: umtauschen",
+    "example_en": "Example: to exchange"
+  },
+  {
+    "de": "der Rabatt",
+    "en": "discount",
+    "level": "B1",
+    "topic": "Shopping",
+    "example_de": "Beispiel: der Rabatt",
+    "example_en": "Example: discount"
+  },
+  {
+    "de": "der Einkaufstipp",
+    "en": "shopping tip",
+    "level": "B1",
+    "topic": "Shopping",
+    "example_de": "Beispiel: der Einkaufstipp",
+    "example_en": "Example: shopping tip"
+  },
+  {
+    "de": "die Versicherung",
+    "en": "insurance",
+    "level": "B1",
+    "topic": "Services",
+    "example_de": "Beispiel: die Versicherung",
+    "example_en": "Example: insurance"
+  },
+  {
+    "de": "das Sperrmülltelefon",
+    "en": "bulk waste hotline",
+    "level": "B1",
+    "topic": "Services",
+    "example_de": "Beispiel: das Sperrmülltelefon",
+    "example_en": "Example: bulk waste hotline"
+  },
+  {
+    "de": "der Vertrag",
+    "en": "contract",
+    "level": "B1",
+    "topic": "Services",
+    "example_de": "Beispiel: der Vertrag",
+    "example_en": "Example: contract"
+  },
+  {
+    "de": "der Verbraucherschutz",
+    "en": "consumer protection",
+    "level": "B1",
+    "topic": "Services",
+    "example_de": "Beispiel: der Verbraucherschutz",
+    "example_en": "Example: consumer protection"
+  },
+  {
+    "de": "kündigen",
+    "en": "to cancel",
+    "level": "B1",
+    "topic": "Services",
+    "example_de": "Beispiel: kündigen",
+    "example_en": "Example: to cancel"
+  },
+  {
+    "de": "das Krankenhaus",
+    "en": "hospital",
+    "level": "B1",
+    "topic": "Health",
+    "example_de": "Beispiel: das Krankenhaus",
+    "example_en": "Example: hospital"
+  },
+  {
+    "de": "die Behandlung",
+    "en": "treatment",
+    "level": "B1",
+    "topic": "Health",
+    "example_de": "Beispiel: die Behandlung",
+    "example_en": "Example: treatment"
+  },
+  {
+    "de": "die Untersuchung",
+    "en": "examination",
+    "level": "B1",
+    "topic": "Health",
+    "example_de": "Beispiel: die Untersuchung",
+    "example_en": "Example: examination"
+  },
+  {
+    "de": "der Notruf",
+    "en": "emergency call",
+    "level": "B1",
+    "topic": "Health",
+    "example_de": "Beispiel: der Notruf",
+    "example_en": "Example: emergency call"
+  },
+  {
+    "de": "die Station",
+    "en": "ward",
+    "level": "B1",
+    "topic": "Health",
+    "example_de": "Beispiel: die Station",
+    "example_en": "Example: ward"
+  },
+  {
+    "de": "umweltfreundlich",
+    "en": "environmentally friendly",
+    "level": "B1",
+    "topic": "Environment",
+    "example_de": "Beispiel: umweltfreundlich",
+    "example_en": "Example: environmentally friendly"
+  },
+  {
+    "de": "Energie sparen",
+    "en": "to save energy",
+    "level": "B1",
+    "topic": "Environment",
+    "example_de": "Beispiel: Energie sparen",
+    "example_en": "Example: to save energy"
+  },
+  {
+    "de": "recyceln",
+    "en": "to recycle",
+    "level": "B1",
+    "topic": "Environment",
+    "example_de": "Beispiel: recyceln",
+    "example_en": "Example: to recycle"
+  },
+  {
+    "de": "die Klimakrise",
+    "en": "climate crisis",
+    "level": "B2",
+    "topic": "Environment",
+    "example_de": "Beispiel: die Klimakrise",
+    "example_en": "Example: climate crisis"
+  },
+  {
+    "de": "nachhaltig",
+    "en": "sustainable",
+    "level": "B2",
+    "topic": "Environment",
+    "example_de": "Beispiel: nachhaltig",
+    "example_en": "Example: sustainable"
+  },
+  {
+    "de": "die Veranstaltung",
+    "en": "event",
+    "level": "B1",
+    "topic": "Culture",
+    "example_de": "Beispiel: die Veranstaltung",
+    "example_en": "Example: event"
+  },
+  {
+    "de": "die Ausstellung",
+    "en": "exhibition",
+    "level": "B1",
+    "topic": "Culture",
+    "example_de": "Beispiel: die Ausstellung",
+    "example_en": "Example: exhibition"
+  },
+  {
+    "de": "die Bücherei",
+    "en": "library",
+    "level": "B1",
+    "topic": "Culture",
+    "example_de": "Beispiel: die Bücherei",
+    "example_en": "Example: library"
+  },
+  {
+    "de": "das Graffiti",
+    "en": "graffiti",
+    "level": "B1",
+    "topic": "Culture",
+    "example_de": "Beispiel: das Graffiti",
+    "example_en": "Example: graffiti"
+  },
+  {
+    "de": "kulturell",
+    "en": "cultural",
+    "level": "B1",
+    "topic": "Culture",
+    "example_de": "Beispiel: kulturell",
+    "example_en": "Example: cultural"
+  },
+  {
+    "de": "die Bewerbung",
+    "en": "application",
+    "level": "B1",
+    "topic": "Work",
+    "example_de": "Beispiel: die Bewerbung",
+    "example_en": "Example: application"
+  },
+  {
+    "de": "der Lebenslauf",
+    "en": "CV",
+    "level": "B1",
+    "topic": "Work",
+    "example_de": "Beispiel: der Lebenslauf",
+    "example_en": "Example: CV"
+  },
+  {
+    "de": "die Stellenanzeige",
+    "en": "job advertisement",
+    "level": "B1",
+    "topic": "Work",
+    "example_de": "Beispiel: die Stellenanzeige",
+    "example_en": "Example: job advertisement"
+  },
+  {
+    "de": "der Arbeitgeber",
+    "en": "employer",
+    "level": "B1",
+    "topic": "Work",
+    "example_de": "Beispiel: der Arbeitgeber",
+    "example_en": "Example: employer"
+  },
+  {
+    "de": "die Arbeitszeit",
+    "en": "working hours",
+    "level": "B1",
+    "topic": "Work",
+    "example_de": "Beispiel: die Arbeitszeit",
+    "example_en": "Example: working hours"
+  },
+  {
+    "de": "die Arbeitsbedingung",
+    "en": "working condition",
+    "level": "B2",
+    "topic": "Work",
+    "example_de": "Beispiel: die Arbeitsbedingung",
+    "example_en": "Example: working condition"
+  },
+  {
+    "de": "die Weiterbildung",
+    "en": "further training",
+    "level": "B2",
+    "topic": "Work",
+    "example_de": "Beispiel: die Weiterbildung",
+    "example_en": "Example: further training"
+  },
+  {
+    "de": "das Vorstellungsgespräch",
+    "en": "job interview",
+    "level": "B1",
+    "topic": "Work",
+    "example_de": "Beispiel: das Vorstellungsgespräch",
+    "example_en": "Example: job interview"
+  },
+  {
+    "de": "belastbar",
+    "en": "resilient",
+    "level": "B2",
+    "topic": "Work",
+    "example_de": "Beispiel: belastbar",
+    "example_en": "Example: resilient"
+  },
+  {
+    "de": "einerseits",
+    "en": "on the one hand",
+    "level": "B2",
+    "topic": "Opinion",
+    "example_de": "Beispiel: einerseits",
+    "example_en": "Example: on the one hand"
+  },
+  {
+    "de": "andererseits",
+    "en": "on the other hand",
+    "level": "B2",
+    "topic": "Opinion",
+    "example_de": "Beispiel: andererseits",
+    "example_en": "Example: on the other hand"
+  },
+  {
+    "de": "meiner Meinung nach",
+    "en": "in my opinion",
+    "level": "B2",
+    "topic": "Opinion",
+    "example_de": "Beispiel: meiner Meinung nach",
+    "example_en": "Example: in my opinion"
+  },
+  {
+    "de": "es hängt davon ab",
+    "en": "it depends on that",
+    "level": "B2",
+    "topic": "Opinion",
+    "example_de": "Beispiel: es hängt davon ab",
+    "example_en": "Example: it depends on that"
+  },
+  {
+    "de": "ich bin der Ansicht, dass",
+    "en": "I am of the opinion that",
+    "level": "B2",
+    "topic": "Opinion",
+    "example_de": "Beispiel: ich bin der Ansicht, dass",
+    "example_en": "Example: I am of the opinion that"
+  },
+  {
+    "de": "die Mehrsprachigkeit",
+    "en": "multilingualism",
+    "level": "B2",
+    "topic": "Education",
+    "example_de": "Beispiel: die Mehrsprachigkeit",
+    "example_en": "Example: multilingualism"
+  },
+  {
+    "de": "die Kompetenz",
+    "en": "competence",
+    "level": "B2",
+    "topic": "Education",
+    "example_de": "Beispiel: die Kompetenz",
+    "example_en": "Example: competence"
+  },
+  {
+    "de": "sich weiterbilden",
+    "en": "to continue one's education",
+    "level": "B2",
+    "topic": "Education",
+    "example_de": "Beispiel: sich weiterbilden",
+    "example_en": "Example: to continue one's education"
+  },
+  {
+    "de": "die Perspektive",
+    "en": "perspective",
+    "level": "B2",
+    "topic": "Education",
+    "example_de": "Beispiel: die Perspektive",
+    "example_en": "Example: perspective"
+  },
+  {
+    "de": "lebenslanges Lernen",
+    "en": "lifelong learning",
+    "level": "B2",
+    "topic": "Education",
+    "example_de": "Beispiel: lebenslanges Lernen",
+    "example_en": "Example: lifelong learning"
+  }
+]

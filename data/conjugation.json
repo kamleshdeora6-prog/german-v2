@@ -1,0 +1,2146 @@
+{
+  "verbs": [
+    {
+      "infinitive": "gehen",
+      "english": "to go",
+      "type": "irregular",
+      "level": "A1",
+      "forms": {
+        "ich": "gehe",
+        "du": "gehst",
+        "er": "geht",
+        "wir": "gehen",
+        "ihr": "geht",
+        "sie": "gehen"
+      }
+    },
+    {
+      "infinitive": "kommen",
+      "english": "to come",
+      "type": "irregular",
+      "level": "A1",
+      "forms": {
+        "ich": "komme",
+        "du": "kommst",
+        "er": "kommt",
+        "wir": "kommen",
+        "ihr": "kommt",
+        "sie": "kommen"
+      }
+    },
+    {
+      "infinitive": "sehen",
+      "english": "to see/watch",
+      "type": "irregular",
+      "level": "A1",
+      "forms": {
+        "ich": "sehe",
+        "du": "siehst",
+        "er": "sieht",
+        "wir": "sehen",
+        "ihr": "seht",
+        "sie": "sehen"
+      }
+    },
+    {
+      "infinitive": "lesen",
+      "english": "to read",
+      "type": "irregular",
+      "level": "A1",
+      "forms": {
+        "ich": "lese",
+        "du": "liest",
+        "er": "liest",
+        "wir": "lesen",
+        "ihr": "lest",
+        "sie": "lesen"
+      }
+    },
+    {
+      "infinitive": "sprechen",
+      "english": "to speak",
+      "type": "irregular",
+      "level": "A1",
+      "forms": {
+        "ich": "spreche",
+        "du": "sprichst",
+        "er": "spricht",
+        "wir": "sprechen",
+        "ihr": "sprecht",
+        "sie": "sprechen"
+      }
+    },
+    {
+      "infinitive": "essen",
+      "english": "to eat",
+      "type": "irregular",
+      "level": "A1",
+      "forms": {
+        "ich": "esse",
+        "du": "isst",
+        "er": "isst",
+        "wir": "essen",
+        "ihr": "esst",
+        "sie": "essen"
+      }
+    },
+    {
+      "infinitive": "helfen",
+      "english": "to help",
+      "type": "irregular",
+      "level": "A1",
+      "forms": {
+        "ich": "helfe",
+        "du": "hilfst",
+        "er": "hilft",
+        "wir": "helfen",
+        "ihr": "helft",
+        "sie": "helfen"
+      }
+    },
+    {
+      "infinitive": "treffen",
+      "english": "to meet",
+      "type": "irregular",
+      "level": "A1",
+      "forms": {
+        "ich": "treffe",
+        "du": "triffst",
+        "er": "trifft",
+        "wir": "treffen",
+        "ihr": "trefft",
+        "sie": "treffen"
+      }
+    },
+    {
+      "infinitive": "verstehen",
+      "english": "to understand",
+      "type": "irregular",
+      "level": "A1",
+      "forms": {
+        "ich": "verstehe",
+        "du": "verstehst",
+        "er": "versteht",
+        "wir": "verstehen",
+        "ihr": "versteht",
+        "sie": "verstehen"
+      }
+    },
+    {
+      "infinitive": "bleiben",
+      "english": "to stay/remain",
+      "type": "irregular",
+      "level": "A1",
+      "forms": {
+        "ich": "bleibe",
+        "du": "bleibst",
+        "er": "bleibt",
+        "wir": "bleiben",
+        "ihr": "bleibt",
+        "sie": "bleiben"
+      }
+    },
+    {
+      "infinitive": "beginnen",
+      "english": "to begin",
+      "type": "irregular",
+      "level": "A1",
+      "forms": {
+        "ich": "beginne",
+        "du": "beginnst",
+        "er": "beginnt",
+        "wir": "beginnen",
+        "ihr": "beginnt",
+        "sie": "beginnen"
+      }
+    },
+    {
+      "infinitive": "nehmen",
+      "english": "to take",
+      "type": "irregular",
+      "level": "A1",
+      "forms": {
+        "ich": "nehme",
+        "du": "nimmst",
+        "er": "nimmt",
+        "wir": "nehmen",
+        "ihr": "nehmt",
+        "sie": "nehmen"
+      }
+    },
+    {
+      "infinitive": "fahren",
+      "english": "to drive/go (by vehicle)",
+      "type": "irregular",
+      "level": "A1",
+      "forms": {
+        "ich": "fahre",
+        "du": "fährst",
+        "er": "fährt",
+        "wir": "fahren",
+        "ihr": "fahrt",
+        "sie": "fahren"
+      }
+    },
+    {
+      "infinitive": "laufen",
+      "english": "to run/walk",
+      "type": "irregular",
+      "level": "A1",
+      "forms": {
+        "ich": "laufe",
+        "du": "läufst",
+        "er": "läuft",
+        "wir": "laufen",
+        "ihr": "lauft",
+        "sie": "laufen"
+      }
+    },
+    {
+      "infinitive": "trinken",
+      "english": "to drink",
+      "type": "irregular",
+      "level": "A1",
+      "forms": {
+        "ich": "trinke",
+        "du": "trinkst",
+        "er": "trinkt",
+        "wir": "trinken",
+        "ihr": "trinkt",
+        "sie": "trinken"
+      }
+    },
+    {
+      "infinitive": "machen",
+      "english": "to do/make",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "mache",
+        "du": "machst",
+        "er": "macht",
+        "wir": "machen",
+        "ihr": "macht",
+        "sie": "machen"
+      }
+    },
+    {
+      "infinitive": "lernen",
+      "english": "to learn",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "lerne",
+        "du": "lernst",
+        "er": "lernt",
+        "wir": "lernen",
+        "ihr": "lernt",
+        "sie": "lernen"
+      }
+    },
+    {
+      "infinitive": "arbeiten",
+      "english": "to work",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "arbeite",
+        "du": "arbeitest",
+        "er": "arbeitet",
+        "wir": "arbeiten",
+        "ihr": "arbeitet",
+        "sie": "arbeiten"
+      }
+    },
+    {
+      "infinitive": "kaufen",
+      "english": "to buy",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "kaufe",
+        "du": "kaufst",
+        "er": "kauft",
+        "wir": "kaufen",
+        "ihr": "kauft",
+        "sie": "kaufen"
+      }
+    },
+    {
+      "infinitive": "kochen",
+      "english": "to cook",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "koche",
+        "du": "kochst",
+        "er": "kocht",
+        "wir": "kochen",
+        "ihr": "kocht",
+        "sie": "kochen"
+      }
+    },
+    {
+      "infinitive": "besuchen",
+      "english": "to visit",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "besuche",
+        "du": "besuchst",
+        "er": "besucht",
+        "wir": "besuchen",
+        "ihr": "besucht",
+        "sie": "besuchen"
+      }
+    },
+    {
+      "infinitive": "schicken",
+      "english": "to send",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "schicke",
+        "du": "schickst",
+        "er": "schickt",
+        "wir": "schicken",
+        "ihr": "schickt",
+        "sie": "schicken"
+      }
+    },
+    {
+      "infinitive": "schreiben",
+      "english": "to write",
+      "type": "irregular",
+      "level": "A1",
+      "forms": {
+        "ich": "schreibe",
+        "du": "schreibst",
+        "er": "schreibt",
+        "wir": "schreiben",
+        "ihr": "schreibt",
+        "sie": "schreiben"
+      }
+    },
+    {
+      "infinitive": "warten",
+      "english": "to wait",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "warte",
+        "du": "wartest",
+        "er": "wartet",
+        "wir": "warten",
+        "ihr": "wartet",
+        "sie": "warten"
+      }
+    },
+    {
+      "infinitive": "wünschen",
+      "english": "to wish",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "wünsche",
+        "du": "wünschst",
+        "er": "wünscht",
+        "wir": "wünschen",
+        "ihr": "wünscht",
+        "sie": "wünschen"
+      }
+    },
+    {
+      "infinitive": "feiern",
+      "english": "to celebrate",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "feiere",
+        "du": "feierst",
+        "er": "feiert",
+        "wir": "feiern",
+        "ihr": "feiert",
+        "sie": "feiern"
+      }
+    },
+    {
+      "infinitive": "erzählen",
+      "english": "to tell",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "erzähle",
+        "du": "erzählst",
+        "er": "erzählt",
+        "wir": "erzählen",
+        "ihr": "erzählt",
+        "sie": "erzählen"
+      }
+    },
+    {
+      "infinitive": "lösen",
+      "english": "to solve",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "löse",
+        "du": "löst",
+        "er": "löst",
+        "wir": "lösen",
+        "ihr": "löst",
+        "sie": "lösen"
+      }
+    },
+    {
+      "infinitive": "teilen",
+      "english": "to share",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "teile",
+        "du": "teilst",
+        "er": "teilt",
+        "wir": "teilen",
+        "ihr": "teilt",
+        "sie": "teilen"
+      }
+    },
+    {
+      "infinitive": "fehlen",
+      "english": "to be missing",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "fehle",
+        "du": "fehlst",
+        "er": "fehlt",
+        "wir": "fehlen",
+        "ihr": "fehlt",
+        "sie": "fehlen"
+      }
+    },
+    {
+      "infinitive": "verdienen",
+      "english": "to earn",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "verdiene",
+        "du": "verdienst",
+        "er": "verdient",
+        "wir": "verdienen",
+        "ihr": "verdient",
+        "sie": "verdienen"
+      }
+    },
+    {
+      "infinitive": "sammeln",
+      "english": "to collect/gain",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "sammle",
+        "du": "sammelst",
+        "er": "sammelt",
+        "wir": "sammeln",
+        "ihr": "sammelt",
+        "sie": "sammeln"
+      }
+    },
+    {
+      "infinitive": "studieren",
+      "english": "to study",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "studiere",
+        "du": "studierst",
+        "er": "studiert",
+        "wir": "studieren",
+        "ihr": "studiert",
+        "sie": "studieren"
+      }
+    },
+    {
+      "infinitive": "entspannen",
+      "english": "to relax",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "entspanne",
+        "du": "entspannst",
+        "er": "entspannt",
+        "wir": "entspannen",
+        "ihr": "entspannt",
+        "sie": "entspannen"
+      }
+    },
+    {
+      "infinitive": "diskutieren",
+      "english": "to discuss",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "diskutiere",
+        "du": "diskutierst",
+        "er": "diskutiert",
+        "wir": "diskutieren",
+        "ihr": "diskutiert",
+        "sie": "diskutieren"
+      }
+    },
+    {
+      "infinitive": "analysieren",
+      "english": "to analyse",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "analysiere",
+        "du": "analysierst",
+        "er": "analysiert",
+        "wir": "analysieren",
+        "ihr": "analysiert",
+        "sie": "analysieren"
+      }
+    },
+    {
+      "infinitive": "benötigen",
+      "english": "to need (formal)",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "benötige",
+        "du": "benötigst",
+        "er": "benötigt",
+        "wir": "benötigen",
+        "ihr": "benötigt",
+        "sie": "benötigen"
+      }
+    },
+    {
+      "infinitive": "klären",
+      "english": "to clarify/resolve",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "kläre",
+        "du": "klärst",
+        "er": "klärt",
+        "wir": "klären",
+        "ihr": "klärt",
+        "sie": "klären"
+      }
+    },
+    {
+      "infinitive": "hoffen",
+      "english": "to hope",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "hoffe",
+        "du": "hoffst",
+        "er": "hofft",
+        "wir": "hoffen",
+        "ihr": "hofft",
+        "sie": "hoffen"
+      }
+    },
+    {
+      "infinitive": "funktionieren",
+      "english": "to function/work",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "funktioniere",
+        "du": "funktionierst",
+        "er": "funktioniert",
+        "wir": "funktionieren",
+        "ihr": "funktioniert",
+        "sie": "funktionieren"
+      }
+    },
+    {
+      "infinitive": "reparieren",
+      "english": "to repair",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "repariere",
+        "du": "reparierst",
+        "er": "repariert",
+        "wir": "reparieren",
+        "ihr": "repariert",
+        "sie": "reparieren"
+      }
+    },
+    {
+      "infinitive": "dekorieren",
+      "english": "to decorate",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "dekoriere",
+        "du": "dekorierst",
+        "er": "dekoriert",
+        "wir": "dekorieren",
+        "ihr": "dekoriert",
+        "sie": "dekorieren"
+      }
+    },
+    {
+      "infinitive": "tun",
+      "english": "to do",
+      "type": "irregular",
+      "level": "A1",
+      "forms": {
+        "ich": "tue",
+        "du": "tust",
+        "er": "tut",
+        "wir": "tun",
+        "ihr": "tut",
+        "sie": "tun"
+      }
+    },
+    {
+      "infinitive": "bekommen",
+      "english": "to receive/get",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "bekomme",
+        "du": "bekommst",
+        "er": "bekommt",
+        "wir": "bekommen",
+        "ihr": "bekommt",
+        "sie": "bekommen"
+      }
+    },
+    {
+      "infinitive": "vereinbaren",
+      "english": "to arrange (an appointment)",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "vereinbare",
+        "du": "vereinbarst",
+        "er": "vereinbart",
+        "wir": "vereinbaren",
+        "ihr": "vereinbart",
+        "sie": "vereinbaren"
+      }
+    },
+    {
+      "infinitive": "erledigen",
+      "english": "to complete/get done",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "erledige",
+        "du": "erledigst",
+        "er": "erledigt",
+        "wir": "erledigen",
+        "ihr": "erledigt",
+        "sie": "erledigen"
+      }
+    },
+    {
+      "infinitive": "austauschen",
+      "english": "to replace/exchange",
+      "type": "separable",
+      "level": "A1",
+      "forms": {
+        "ich": "tausche aus",
+        "du": "tauschst aus",
+        "er": "tauscht aus",
+        "wir": "tauschen aus",
+        "ihr": "tauscht aus",
+        "sie": "tauschen aus"
+      }
+    },
+    {
+      "infinitive": "einladen",
+      "english": "to invite",
+      "type": "separable",
+      "level": "A1",
+      "forms": {
+        "ich": "lade ein",
+        "du": "lädst ein",
+        "er": "lädt ein",
+        "wir": "laden ein",
+        "ihr": "ladet ein",
+        "sie": "laden ein"
+      }
+    },
+    {
+      "infinitive": "aufstehen",
+      "english": "to get up",
+      "type": "separable",
+      "level": "A1",
+      "forms": {
+        "ich": "stehe auf",
+        "du": "stehst auf",
+        "er": "steht auf",
+        "wir": "stehen auf",
+        "ihr": "steht auf",
+        "sie": "stehen auf"
+      }
+    },
+    {
+      "infinitive": "einkaufen",
+      "english": "to shop (groceries)",
+      "type": "separable",
+      "level": "A1",
+      "forms": {
+        "ich": "kaufe ein",
+        "du": "kaufst ein",
+        "er": "kauft ein",
+        "wir": "kaufen ein",
+        "ihr": "kauft ein",
+        "sie": "kaufen ein"
+      }
+    },
+    {
+      "infinitive": "spazieren gehen",
+      "english": "to go for a walk",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "gehe spazieren",
+        "du": "gehst spazieren",
+        "er": "geht spazieren",
+        "wir": "gehen spazieren",
+        "ihr": "geht spazieren",
+        "sie": "gehen spazieren"
+      }
+    },
+    {
+      "infinitive": "sich erinnern",
+      "english": "to remember",
+      "type": "reflexive",
+      "level": "A1",
+      "forms": {
+        "ich": "erinnere mich",
+        "du": "erinnerst dich",
+        "er": "erinnert sich",
+        "wir": "erinnern uns",
+        "ihr": "erinnert euch",
+        "sie": "erinnern sich"
+      }
+    },
+    {
+      "infinitive": "sich freuen",
+      "english": "to be happy / to look forward",
+      "type": "reflexive",
+      "level": "A1",
+      "forms": {
+        "ich": "freue mich",
+        "du": "freust dich",
+        "er": "freut sich",
+        "wir": "freuen uns",
+        "ihr": "freut euch",
+        "sie": "freuen sich"
+      }
+    },
+    {
+      "infinitive": "sich fühlen",
+      "english": "to feel",
+      "type": "reflexive",
+      "level": "A1",
+      "forms": {
+        "ich": "fühle mich",
+        "du": "fühlst dich",
+        "er": "fühlt sich",
+        "wir": "fühlen uns",
+        "ihr": "fühlt euch",
+        "sie": "fühlen sich"
+      }
+    },
+    {
+      "infinitive": "konzentrieren",
+      "english": "to concentrate",
+      "type": "regular",
+      "level": "A1",
+      "forms": {
+        "ich": "konzentriere",
+        "du": "konzentrierst",
+        "er": "konzentriert",
+        "wir": "konzentrieren",
+        "ihr": "konzentriert",
+        "sie": "konzentrieren"
+      }
+    },
+    {
+      "infinitive": "sich konzentrieren",
+      "english": "to concentrate (reflexive, common)",
+      "type": "reflexive",
+      "level": "A1",
+      "forms": {
+        "ich": "konzentriere mich",
+        "du": "konzentrierst dich",
+        "er": "konzentriert sich",
+        "wir": "konzentrieren uns",
+        "ihr": "konzentriert euch",
+        "sie": "konzentrieren sich"
+      }
+    },
+    {
+      "infinitive": "mögen",
+      "english": "to like",
+      "type": "irregular",
+      "level": "A1",
+      "forms": {
+        "ich": "mag",
+        "du": "magst",
+        "er": "mag",
+        "wir": "mögen",
+        "ihr": "mögt",
+        "sie": "mögen"
+      }
+    },
+    {
+      "infinitive": "möchten",
+      "english": "would like",
+      "type": "modal",
+      "level": "A1",
+      "forms": {
+        "ich": "möchte",
+        "du": "möchtest",
+        "er": "möchte",
+        "wir": "möchten",
+        "ihr": "möchtet",
+        "sie": "möchten"
+      }
+    },
+    {
+      "infinitive": "können",
+      "english": "can",
+      "type": "modal",
+      "level": "A1",
+      "forms": {
+        "ich": "kann",
+        "du": "kannst",
+        "er": "kann",
+        "wir": "können",
+        "ihr": "könnt",
+        "sie": "können"
+      }
+    },
+    {
+      "infinitive": "müssen",
+      "english": "must / to have to",
+      "type": "modal",
+      "level": "A1",
+      "forms": {
+        "ich": "muss",
+        "du": "musst",
+        "er": "muss",
+        "wir": "müssen",
+        "ihr": "müsst",
+        "sie": "müssen"
+      }
+    },
+    {
+      "infinitive": "wollen",
+      "english": "to want",
+      "type": "modal",
+      "level": "A1",
+      "forms": {
+        "ich": "will",
+        "du": "willst",
+        "er": "will",
+        "wir": "wollen",
+        "ihr": "wollt",
+        "sie": "wollen"
+      }
+    },
+    {
+      "infinitive": "dürfen",
+      "english": "may / to be allowed to",
+      "type": "modal",
+      "level": "A1",
+      "forms": {
+        "ich": "darf",
+        "du": "darfst",
+        "er": "darf",
+        "wir": "dürfen",
+        "ihr": "dürft",
+        "sie": "dürfen"
+      }
+    },
+    {
+      "infinitive": "sollen",
+      "english": "should / supposed to",
+      "type": "modal",
+      "level": "A1",
+      "forms": {
+        "ich": "soll",
+        "du": "sollst",
+        "er": "soll",
+        "wir": "sollen",
+        "ihr": "sollt",
+        "sie": "sollen"
+      }
+    },
+    {
+      "infinitive": "anrufen",
+      "english": "to call (phone)",
+      "type": "separable",
+      "level": "A2",
+      "forms": {
+        "ich": "rufe an",
+        "du": "rufst an",
+        "er": "ruft an",
+        "wir": "rufen an",
+        "ihr": "ruft an",
+        "sie": "rufen an"
+      }
+    },
+    {
+      "infinitive": "mitbringen",
+      "english": "to bring along",
+      "type": "separable",
+      "level": "A2",
+      "forms": {
+        "ich": "bringe mit",
+        "du": "bringst mit",
+        "er": "bringt mit",
+        "wir": "bringen mit",
+        "ihr": "bringt mit",
+        "sie": "bringen mit"
+      }
+    },
+    {
+      "infinitive": "abholen",
+      "english": "to pick up",
+      "type": "separable",
+      "level": "A2",
+      "forms": {
+        "ich": "hole ab",
+        "du": "holst ab",
+        "er": "holt ab",
+        "wir": "holen ab",
+        "ihr": "holt ab",
+        "sie": "holen ab"
+      }
+    },
+    {
+      "infinitive": "vorbereiten",
+      "english": "to prepare",
+      "type": "separable",
+      "level": "A2",
+      "forms": {
+        "ich": "bereite vor",
+        "du": "bereitest vor",
+        "er": "bereitet vor",
+        "wir": "bereiten vor",
+        "ihr": "bereitet vor",
+        "sie": "bereiten vor"
+      }
+    },
+    {
+      "infinitive": "erklären",
+      "english": "to explain",
+      "type": "regular",
+      "level": "A2",
+      "forms": {
+        "ich": "erkläre",
+        "du": "erklärst",
+        "er": "erklärt",
+        "wir": "erklären",
+        "ihr": "erklärt",
+        "sie": "erklären"
+      }
+    },
+    {
+      "infinitive": "vergessen",
+      "english": "to forget",
+      "type": "irregular",
+      "level": "A2",
+      "forms": {
+        "ich": "vergesse",
+        "du": "vergisst",
+        "er": "vergisst",
+        "wir": "vergessen",
+        "ihr": "vergesst",
+        "sie": "vergessen"
+      }
+    },
+    {
+      "infinitive": "helfen können",
+      "english": "to be able to help",
+      "type": "regular",
+      "level": "A2",
+      "forms": {
+        "ich": "kann helfen",
+        "du": "kannst helfen",
+        "er": "kann helfen",
+        "wir": "können helfen",
+        "ihr": "könnt helfen",
+        "sie": "können helfen"
+      }
+    },
+    {
+      "infinitive": "empfehlen",
+      "english": "to recommend",
+      "type": "irregular",
+      "level": "A2",
+      "forms": {
+        "ich": "empfehle",
+        "du": "empfiehlst",
+        "er": "empfiehlt",
+        "wir": "empfehlen",
+        "ihr": "empfehlt",
+        "sie": "empfehlen"
+      }
+    },
+    {
+      "infinitive": "beschreiben",
+      "english": "to describe",
+      "type": "irregular",
+      "level": "A2",
+      "forms": {
+        "ich": "beschreibe",
+        "du": "beschreibst",
+        "er": "beschreibt",
+        "wir": "beschreiben",
+        "ihr": "beschreibt",
+        "sie": "beschreiben"
+      }
+    },
+    {
+      "infinitive": "brauchen",
+      "english": "to need",
+      "type": "regular",
+      "level": "A2",
+      "forms": {
+        "ich": "brauche",
+        "du": "brauchst",
+        "er": "braucht",
+        "wir": "brauchen",
+        "ihr": "braucht",
+        "sie": "brauchen"
+      }
+    },
+    {
+      "infinitive": "sparen",
+      "english": "to save (money)",
+      "type": "regular",
+      "level": "A2",
+      "forms": {
+        "ich": "spare",
+        "du": "sparst",
+        "er": "spart",
+        "wir": "sparen",
+        "ihr": "spart",
+        "sie": "sparen"
+      }
+    },
+    {
+      "infinitive": "umziehen",
+      "english": "to move house / change clothes",
+      "type": "separable",
+      "level": "A2",
+      "forms": {
+        "ich": "ziehe um",
+        "du": "ziehst um",
+        "er": "zieht um",
+        "wir": "ziehen um",
+        "ihr": "zieht um",
+        "sie": "ziehen um"
+      }
+    },
+    {
+      "infinitive": "vermieten",
+      "english": "to rent out",
+      "type": "regular",
+      "level": "A2",
+      "forms": {
+        "ich": "vermiete",
+        "du": "vermietest",
+        "er": "vermietet",
+        "wir": "vermieten",
+        "ihr": "vermietet",
+        "sie": "vermieten"
+      }
+    },
+    {
+      "infinitive": "mieten",
+      "english": "to rent",
+      "type": "regular",
+      "level": "A2",
+      "forms": {
+        "ich": "miete",
+        "du": "mietest",
+        "er": "mietet",
+        "wir": "mieten",
+        "ihr": "mietet",
+        "sie": "mieten"
+      }
+    },
+    {
+      "infinitive": "bestellen",
+      "english": "to order",
+      "type": "regular",
+      "level": "A2",
+      "forms": {
+        "ich": "bestelle",
+        "du": "bestellst",
+        "er": "bestellt",
+        "wir": "bestellen",
+        "ihr": "bestellt",
+        "sie": "bestellen"
+      }
+    },
+    {
+      "infinitive": "zurückgeben",
+      "english": "to give back / return",
+      "type": "separable",
+      "level": "A2",
+      "forms": {
+        "ich": "gebe zurück",
+        "du": "gibst zurück",
+        "er": "gibt zurück",
+        "wir": "geben zurück",
+        "ihr": "gebt zurück",
+        "sie": "geben zurück"
+      }
+    },
+    {
+      "infinitive": "ausfüllen",
+      "english": "to fill out",
+      "type": "separable",
+      "level": "A2",
+      "forms": {
+        "ich": "fülle aus",
+        "du": "füllst aus",
+        "er": "füllt aus",
+        "wir": "füllen aus",
+        "ihr": "füllt aus",
+        "sie": "füllen aus"
+      }
+    },
+    {
+      "infinitive": "unterschreiben",
+      "english": "to sign",
+      "type": "irregular",
+      "level": "A2",
+      "forms": {
+        "ich": "unterschreibe",
+        "du": "unterschreibst",
+        "er": "unterschreibt",
+        "wir": "unterschreiben",
+        "ihr": "unterschreibt",
+        "sie": "unterschreiben"
+      }
+    },
+    {
+      "infinitive": "benutzen",
+      "english": "to use",
+      "type": "regular",
+      "level": "A2",
+      "forms": {
+        "ich": "benutze",
+        "du": "benutzt",
+        "er": "benutzt",
+        "wir": "benutzen",
+        "ihr": "benutzt",
+        "sie": "benutzen"
+      }
+    },
+    {
+      "infinitive": "aussehen",
+      "english": "to look / appear",
+      "type": "separable",
+      "level": "A2",
+      "forms": {
+        "ich": "sehe aus",
+        "du": "siehst aus",
+        "er": "sieht aus",
+        "wir": "sehen aus",
+        "ihr": "seht aus",
+        "sie": "sehen aus"
+      }
+    },
+    {
+      "infinitive": "passen",
+      "english": "to fit / suit",
+      "type": "regular",
+      "level": "A2",
+      "forms": {
+        "ich": "passe",
+        "du": "passt",
+        "er": "passt",
+        "wir": "passen",
+        "ihr": "passt",
+        "sie": "passen"
+      }
+    },
+    {
+      "infinitive": "tragen",
+      "english": "to carry / wear",
+      "type": "irregular",
+      "level": "A2",
+      "forms": {
+        "ich": "trage",
+        "du": "trägst",
+        "er": "trägt",
+        "wir": "tragen",
+        "ihr": "tragt",
+        "sie": "tragen"
+      }
+    },
+    {
+      "infinitive": "sich anmelden",
+      "english": "to register",
+      "type": "reflexive",
+      "level": "A2",
+      "forms": {
+        "ich": "melde mich an",
+        "du": "meldest dich an",
+        "er": "meldet sich an",
+        "wir": "melden uns an",
+        "ihr": "meldet euch an",
+        "sie": "melden sich an"
+      }
+    },
+    {
+      "infinitive": "sich entscheiden",
+      "english": "to decide",
+      "type": "reflexive",
+      "level": "A2",
+      "forms": {
+        "ich": "entscheide mich",
+        "du": "entscheidest dich",
+        "er": "entscheidet sich",
+        "wir": "entscheiden uns",
+        "ihr": "entscheidet euch",
+        "sie": "entscheiden sich"
+      }
+    },
+    {
+      "infinitive": "sich interessieren",
+      "english": "to be interested",
+      "type": "reflexive",
+      "level": "A2",
+      "forms": {
+        "ich": "interessiere mich",
+        "du": "interessierst dich",
+        "er": "interessiert sich",
+        "wir": "interessieren uns",
+        "ihr": "interessiert euch",
+        "sie": "interessieren sich"
+      }
+    },
+    {
+      "infinitive": "sich treffen",
+      "english": "to meet each other",
+      "type": "reflexive",
+      "level": "A2",
+      "forms": {
+        "ich": "treffe mich",
+        "du": "triffst dich",
+        "er": "trifft sich",
+        "wir": "treffen uns",
+        "ihr": "trefft euch",
+        "sie": "treffen sich"
+      }
+    },
+    {
+      "infinitive": "gehören",
+      "english": "to belong to",
+      "type": "regular",
+      "level": "A2",
+      "forms": {
+        "ich": "gehöre",
+        "du": "gehörst",
+        "er": "gehört",
+        "wir": "gehören",
+        "ihr": "gehört",
+        "sie": "gehören"
+      }
+    },
+    {
+      "infinitive": "wechseln",
+      "english": "to change / switch",
+      "type": "regular",
+      "level": "A2",
+      "forms": {
+        "ich": "wechsle",
+        "du": "wechselst",
+        "er": "wechselt",
+        "wir": "wechseln",
+        "ihr": "wechselt",
+        "sie": "wechseln"
+      }
+    },
+    {
+      "infinitive": "verkaufen",
+      "english": "to sell",
+      "type": "regular",
+      "level": "A2",
+      "forms": {
+        "ich": "verkaufe",
+        "du": "verkaufst",
+        "er": "verkauft",
+        "wir": "verkaufen",
+        "ihr": "verkauft",
+        "sie": "verkaufen"
+      }
+    },
+    {
+      "infinitive": "sich waschen",
+      "english": "to wash oneself",
+      "type": "reflexive",
+      "level": "A2",
+      "forms": {
+        "ich": "wasche mich",
+        "du": "wäschst dich",
+        "er": "wäscht sich",
+        "wir": "waschen uns",
+        "ihr": "wascht euch",
+        "sie": "waschen sich"
+      }
+    },
+    {
+      "infinitive": "bewerben",
+      "english": "to apply",
+      "type": "regular",
+      "level": "B1",
+      "forms": {
+        "ich": "bewerbe",
+        "du": "bewirbst",
+        "er": "bewirbt",
+        "wir": "bewerben",
+        "ihr": "bewerbt",
+        "sie": "bewerben"
+      }
+    },
+    {
+      "infinitive": "sich bewerben",
+      "english": "to apply (for a job)",
+      "type": "reflexive",
+      "level": "B1",
+      "forms": {
+        "ich": "bewerbe mich",
+        "du": "bewirbst dich",
+        "er": "bewirbt sich",
+        "wir": "bewerben uns",
+        "ihr": "bewerbt euch",
+        "sie": "bewerben sich"
+      }
+    },
+    {
+      "infinitive": "erreichen",
+      "english": "to reach / achieve",
+      "type": "regular",
+      "level": "B1",
+      "forms": {
+        "ich": "erreiche",
+        "du": "erreichst",
+        "er": "erreicht",
+        "wir": "erreichen",
+        "ihr": "erreicht",
+        "sie": "erreichen"
+      }
+    },
+    {
+      "infinitive": "verbessern",
+      "english": "to improve",
+      "type": "regular",
+      "level": "B1",
+      "forms": {
+        "ich": "verbessere",
+        "du": "verbesserst",
+        "er": "verbessert",
+        "wir": "verbessern",
+        "ihr": "verbessert",
+        "sie": "verbessern"
+      }
+    },
+    {
+      "infinitive": "vergleichen",
+      "english": "to compare",
+      "type": "irregular",
+      "level": "B1",
+      "forms": {
+        "ich": "vergleiche",
+        "du": "vergleichst",
+        "er": "vergleicht",
+        "wir": "vergleichen",
+        "ihr": "vergleicht",
+        "sie": "vergleichen"
+      }
+    },
+    {
+      "infinitive": "vermeiden",
+      "english": "to avoid",
+      "type": "irregular",
+      "level": "B1",
+      "forms": {
+        "ich": "vermeide",
+        "du": "vermeidest",
+        "er": "vermeidet",
+        "wir": "vermeiden",
+        "ihr": "vermeidet",
+        "sie": "vermeiden"
+      }
+    },
+    {
+      "infinitive": "entstehen",
+      "english": "to arise / originate",
+      "type": "irregular",
+      "level": "B1",
+      "forms": {
+        "ich": "entstehe",
+        "du": "entstehst",
+        "er": "entsteht",
+        "wir": "entstehen",
+        "ihr": "entsteht",
+        "sie": "entstehen"
+      }
+    },
+    {
+      "infinitive": "teilnehmen",
+      "english": "to participate",
+      "type": "separable",
+      "level": "B1",
+      "forms": {
+        "ich": "nehme teil",
+        "du": "nimmst teil",
+        "er": "nimmt teil",
+        "wir": "nehmen teil",
+        "ihr": "nehmt teil",
+        "sie": "nehmen teil"
+      }
+    },
+    {
+      "infinitive": "vorstellen",
+      "english": "to introduce / imagine",
+      "type": "separable",
+      "level": "B1",
+      "forms": {
+        "ich": "stelle vor",
+        "du": "stellst vor",
+        "er": "stellt vor",
+        "wir": "stellen vor",
+        "ihr": "stellt vor",
+        "sie": "stellen vor"
+      }
+    },
+    {
+      "infinitive": "darstellen",
+      "english": "to present / portray",
+      "type": "separable",
+      "level": "B1",
+      "forms": {
+        "ich": "stelle dar",
+        "du": "stellst dar",
+        "er": "stellt dar",
+        "wir": "stellen dar",
+        "ihr": "stellt dar",
+        "sie": "stellen dar"
+      }
+    },
+    {
+      "infinitive": "feststellen",
+      "english": "to determine / notice",
+      "type": "separable",
+      "level": "B1",
+      "forms": {
+        "ich": "stelle fest",
+        "du": "stellst fest",
+        "er": "stellt fest",
+        "wir": "stellen fest",
+        "ihr": "stellt fest",
+        "sie": "stellen fest"
+      }
+    },
+    {
+      "infinitive": "zusammenfassen",
+      "english": "to summarize",
+      "type": "separable",
+      "level": "B1",
+      "forms": {
+        "ich": "fasse zusammen",
+        "du": "fasst zusammen",
+        "er": "fasst zusammen",
+        "wir": "fassen zusammen",
+        "ihr": "fasst zusammen",
+        "sie": "fassen zusammen"
+      }
+    },
+    {
+      "infinitive": "überzeugen",
+      "english": "to convince",
+      "type": "regular",
+      "level": "B1",
+      "forms": {
+        "ich": "überzeuge",
+        "du": "überzeugst",
+        "er": "überzeugt",
+        "wir": "überzeugen",
+        "ihr": "überzeugt",
+        "sie": "überzeugen"
+      }
+    },
+    {
+      "infinitive": "erwarten",
+      "english": "to expect",
+      "type": "regular",
+      "level": "B1",
+      "forms": {
+        "ich": "erwarte",
+        "du": "erwartest",
+        "er": "erwartet",
+        "wir": "erwarten",
+        "ihr": "erwartet",
+        "sie": "erwarten"
+      }
+    },
+    {
+      "infinitive": "erlauben",
+      "english": "to allow",
+      "type": "regular",
+      "level": "B1",
+      "forms": {
+        "ich": "erlaube",
+        "du": "erlaubst",
+        "er": "erlaubt",
+        "wir": "erlauben",
+        "ihr": "erlaubt",
+        "sie": "erlauben"
+      }
+    },
+    {
+      "infinitive": "verbieten",
+      "english": "to forbid",
+      "type": "irregular",
+      "level": "B1",
+      "forms": {
+        "ich": "verbiete",
+        "du": "verbietest",
+        "er": "verbietet",
+        "wir": "verbieten",
+        "ihr": "verbietet",
+        "sie": "verbieten"
+      }
+    },
+    {
+      "infinitive": "unterstützen",
+      "english": "to support",
+      "type": "regular",
+      "level": "B1",
+      "forms": {
+        "ich": "unterstütze",
+        "du": "unterstützt",
+        "er": "unterstützt",
+        "wir": "unterstützen",
+        "ihr": "unterstützt",
+        "sie": "unterstützen"
+      }
+    },
+    {
+      "infinitive": "entwickeln",
+      "english": "to develop",
+      "type": "regular",
+      "level": "B1",
+      "forms": {
+        "ich": "entwickle",
+        "du": "entwickelst",
+        "er": "entwickelt",
+        "wir": "entwickeln",
+        "ihr": "entwickelt",
+        "sie": "entwickeln"
+      }
+    },
+    {
+      "infinitive": "wachsen",
+      "english": "to grow",
+      "type": "irregular",
+      "level": "B1",
+      "forms": {
+        "ich": "wachse",
+        "du": "wächst",
+        "er": "wächst",
+        "wir": "wachsen",
+        "ihr": "wachst",
+        "sie": "wachsen"
+      }
+    },
+    {
+      "infinitive": "gelten",
+      "english": "to be valid / apply",
+      "type": "irregular",
+      "level": "B1",
+      "forms": {
+        "ich": "gelte",
+        "du": "giltst",
+        "er": "gilt",
+        "wir": "gelten",
+        "ihr": "geltet",
+        "sie": "gelten"
+      }
+    },
+    {
+      "infinitive": "gelingen",
+      "english": "to succeed",
+      "type": "irregular",
+      "level": "B1",
+      "forms": {
+        "ich": "gelinge",
+        "du": "gelingst",
+        "er": "gelingt",
+        "wir": "gelingen",
+        "ihr": "gelingt",
+        "sie": "gelingen"
+      }
+    },
+    {
+      "infinitive": "scheitern",
+      "english": "to fail",
+      "type": "regular",
+      "level": "B1",
+      "forms": {
+        "ich": "scheitere",
+        "du": "scheiterst",
+        "er": "scheitert",
+        "wir": "scheitern",
+        "ihr": "scheitert",
+        "sie": "scheitern"
+      }
+    },
+    {
+      "infinitive": "ankündigen",
+      "english": "to announce",
+      "type": "separable",
+      "level": "B1",
+      "forms": {
+        "ich": "kündige an",
+        "du": "kündigst an",
+        "er": "kündigt an",
+        "wir": "kündigen an",
+        "ihr": "kündigt an",
+        "sie": "kündigen an"
+      }
+    },
+    {
+      "infinitive": "reagieren",
+      "english": "to react",
+      "type": "regular",
+      "level": "B1",
+      "forms": {
+        "ich": "reagiere",
+        "du": "reagierst",
+        "er": "reagiert",
+        "wir": "reagieren",
+        "ihr": "reagiert",
+        "sie": "reagieren"
+      }
+    },
+    {
+      "infinitive": "verursachen",
+      "english": "to cause",
+      "type": "regular",
+      "level": "B1",
+      "forms": {
+        "ich": "verursache",
+        "du": "verursachst",
+        "er": "verursacht",
+        "wir": "verursachen",
+        "ihr": "verursacht",
+        "sie": "verursachen"
+      }
+    },
+    {
+      "infinitive": "lösen können",
+      "english": "to be able to solve",
+      "type": "regular",
+      "level": "B1",
+      "forms": {
+        "ich": "kann lösen",
+        "du": "kannst lösen",
+        "er": "kann lösen",
+        "wir": "können lösen",
+        "ihr": "könnt lösen",
+        "sie": "können lösen"
+      }
+    },
+    {
+      "infinitive": "sich verhalten",
+      "english": "to behave",
+      "type": "reflexive",
+      "level": "B1",
+      "forms": {
+        "ich": "verhalte mich",
+        "du": "verhältst dich",
+        "er": "verhält sich",
+        "wir": "verhalten uns",
+        "ihr": "verhaltet euch",
+        "sie": "verhalten sich"
+      }
+    },
+    {
+      "infinitive": "sich beschweren",
+      "english": "to complain",
+      "type": "reflexive",
+      "level": "B1",
+      "forms": {
+        "ich": "beschwere mich",
+        "du": "beschwerst dich",
+        "er": "beschwert sich",
+        "wir": "beschweren uns",
+        "ihr": "beschwert euch",
+        "sie": "beschweren sich"
+      }
+    },
+    {
+      "infinitive": "sich vorbereiten",
+      "english": "to prepare oneself",
+      "type": "reflexive",
+      "level": "B1",
+      "forms": {
+        "ich": "bereite mich vor",
+        "du": "bereitest dich vor",
+        "er": "bereitet sich vor",
+        "wir": "bereiten uns vor",
+        "ihr": "bereitet euch vor",
+        "sie": "bereiten sich vor"
+      }
+    },
+    {
+      "infinitive": "sich erholen",
+      "english": "to recover / relax",
+      "type": "reflexive",
+      "level": "B1",
+      "forms": {
+        "ich": "erhole mich",
+        "du": "erholst dich",
+        "er": "erholt sich",
+        "wir": "erholen uns",
+        "ihr": "erholt euch",
+        "sie": "erholen sich"
+      }
+    },
+    {
+      "infinitive": "bewerten",
+      "english": "to evaluate",
+      "type": "regular",
+      "level": "B2",
+      "forms": {
+        "ich": "bewerte",
+        "du": "bewertest",
+        "er": "bewertet",
+        "wir": "bewerten",
+        "ihr": "bewertet",
+        "sie": "bewerten"
+      }
+    },
+    {
+      "infinitive": "beurteilen",
+      "english": "to assess / judge",
+      "type": "regular",
+      "level": "B2",
+      "forms": {
+        "ich": "beurteile",
+        "du": "beurteilst",
+        "er": "beurteilt",
+        "wir": "beurteilen",
+        "ihr": "beurteilt",
+        "sie": "beurteilen"
+      }
+    },
+    {
+      "infinitive": "nachweisen",
+      "english": "to prove / verify",
+      "type": "separable",
+      "level": "B2",
+      "forms": {
+        "ich": "weise nach",
+        "du": "weist nach",
+        "er": "weist nach",
+        "wir": "weisen nach",
+        "ihr": "weist nach",
+        "sie": "weisen nach"
+      }
+    },
+    {
+      "infinitive": "begründen",
+      "english": "to justify / give reasons",
+      "type": "regular",
+      "level": "B2",
+      "forms": {
+        "ich": "begründe",
+        "du": "begründest",
+        "er": "begründet",
+        "wir": "begründen",
+        "ihr": "begründet",
+        "sie": "begründen"
+      }
+    },
+    {
+      "infinitive": "vertreten",
+      "english": "to represent",
+      "type": "irregular",
+      "level": "B2",
+      "forms": {
+        "ich": "vertrete",
+        "du": "vertrittst",
+        "er": "vertritt",
+        "wir": "vertreten",
+        "ihr": "vertretet",
+        "sie": "vertreten"
+      }
+    },
+    {
+      "infinitive": "widersprechen",
+      "english": "to contradict",
+      "type": "irregular",
+      "level": "B2",
+      "forms": {
+        "ich": "widerspreche",
+        "du": "widersprichst",
+        "er": "widerspricht",
+        "wir": "widersprechen",
+        "ihr": "widersprecht",
+        "sie": "widersprechen"
+      }
+    },
+    {
+      "infinitive": "festlegen",
+      "english": "to define / determine",
+      "type": "separable",
+      "level": "B2",
+      "forms": {
+        "ich": "lege fest",
+        "du": "legst fest",
+        "er": "legt fest",
+        "wir": "legen fest",
+        "ihr": "legt fest",
+        "sie": "legen fest"
+      }
+    },
+    {
+      "infinitive": "einsetzen",
+      "english": "to use / deploy",
+      "type": "separable",
+      "level": "B2",
+      "forms": {
+        "ich": "setze ein",
+        "du": "setzt ein",
+        "er": "setzt ein",
+        "wir": "setzen ein",
+        "ihr": "setzt ein",
+        "sie": "setzen ein"
+      }
+    },
+    {
+      "infinitive": "umsetzen",
+      "english": "to implement",
+      "type": "separable",
+      "level": "B2",
+      "forms": {
+        "ich": "setze um",
+        "du": "setzt um",
+        "er": "setzt um",
+        "wir": "setzen um",
+        "ihr": "setzt um",
+        "sie": "setzen um"
+      }
+    },
+    {
+      "infinitive": "hervorheben",
+      "english": "to emphasize",
+      "type": "separable",
+      "level": "B2",
+      "forms": {
+        "ich": "hebe hervor",
+        "du": "hebst hervor",
+        "er": "hebt hervor",
+        "wir": "heben hervor",
+        "ihr": "hebt hervor",
+        "sie": "heben hervor"
+      }
+    },
+    {
+      "infinitive": "zusichern",
+      "english": "to assure / guarantee",
+      "type": "separable",
+      "level": "B2",
+      "forms": {
+        "ich": "sichere zu",
+        "du": "sicherst zu",
+        "er": "sichert zu",
+        "wir": "sichern zu",
+        "ihr": "sichert zu",
+        "sie": "sichern zu"
+      }
+    },
+    {
+      "infinitive": "berücksichtigen",
+      "english": "to take into account",
+      "type": "regular",
+      "level": "B2",
+      "forms": {
+        "ich": "berücksichtige",
+        "du": "berücksichtigst",
+        "er": "berücksichtigt",
+        "wir": "berücksichtigen",
+        "ihr": "berücksichtigt",
+        "sie": "berücksichtigen"
+      }
+    },
+    {
+      "infinitive": "voraussetzen",
+      "english": "to presuppose / require",
+      "type": "separable",
+      "level": "B2",
+      "forms": {
+        "ich": "setze voraus",
+        "du": "setzt voraus",
+        "er": "setzt voraus",
+        "wir": "setzen voraus",
+        "ihr": "setzt voraus",
+        "sie": "setzen voraus"
+      }
+    },
+    {
+      "infinitive": "belegen",
+      "english": "to prove / document",
+      "type": "regular",
+      "level": "B2",
+      "forms": {
+        "ich": "belege",
+        "du": "belegst",
+        "er": "belegt",
+        "wir": "belegen",
+        "ihr": "belegt",
+        "sie": "belegen"
+      }
+    },
+    {
+      "infinitive": "verfassen",
+      "english": "to compose / draft",
+      "type": "regular",
+      "level": "B2",
+      "forms": {
+        "ich": "verfasse",
+        "du": "verfasst",
+        "er": "verfasst",
+        "wir": "verfassen",
+        "ihr": "verfasst",
+        "sie": "verfassen"
+      }
+    },
+    {
+      "infinitive": "darlegen",
+      "english": "to explain in detail",
+      "type": "separable",
+      "level": "B2",
+      "forms": {
+        "ich": "lege dar",
+        "du": "legst dar",
+        "er": "legt dar",
+        "wir": "legen dar",
+        "ihr": "legt dar",
+        "sie": "legen dar"
+      }
+    },
+    {
+      "infinitive": "erfassen",
+      "english": "to capture / record / grasp",
+      "type": "regular",
+      "level": "B2",
+      "forms": {
+        "ich": "erfasse",
+        "du": "erfasst",
+        "er": "erfasst",
+        "wir": "erfassen",
+        "ihr": "erfasst",
+        "sie": "erfassen"
+      }
+    },
+    {
+      "infinitive": "ermitteln",
+      "english": "to determine / investigate",
+      "type": "regular",
+      "level": "B2",
+      "forms": {
+        "ich": "ermittle",
+        "du": "ermittelst",
+        "er": "ermittelt",
+        "wir": "ermitteln",
+        "ihr": "ermittelt",
+        "sie": "ermitteln"
+      }
+    },
+    {
+      "infinitive": "ableiten",
+      "english": "to derive",
+      "type": "separable",
+      "level": "B2",
+      "forms": {
+        "ich": "leite ab",
+        "du": "leitest ab",
+        "er": "leitet ab",
+        "wir": "leiten ab",
+        "ihr": "leitet ab",
+        "sie": "leiten ab"
+      }
+    },
+    {
+      "infinitive": "annehmen",
+      "english": "to assume / accept",
+      "type": "separable",
+      "level": "B2",
+      "forms": {
+        "ich": "nehme an",
+        "du": "nimmst an",
+        "er": "nimmt an",
+        "wir": "nehmen an",
+        "ihr": "nehmt an",
+        "sie": "nehmen an"
+      }
+    },
+    {
+      "infinitive": "ablehnen",
+      "english": "to reject",
+      "type": "separable",
+      "level": "B2",
+      "forms": {
+        "ich": "lehne ab",
+        "du": "lehnst ab",
+        "er": "lehnt ab",
+        "wir": "lehnen ab",
+        "ihr": "lehnt ab",
+        "sie": "lehnen ab"
+      }
+    },
+    {
+      "infinitive": "beeinflussen",
+      "english": "to influence",
+      "type": "regular",
+      "level": "B2",
+      "forms": {
+        "ich": "beeinflusse",
+        "du": "beeinflusst",
+        "er": "beeinflusst",
+        "wir": "beeinflussen",
+        "ihr": "beeinflusst",
+        "sie": "beeinflussen"
+      }
+    },
+    {
+      "infinitive": "erweitern",
+      "english": "to expand",
+      "type": "regular",
+      "level": "B2",
+      "forms": {
+        "ich": "erweitere",
+        "du": "erweiterst",
+        "er": "erweitert",
+        "wir": "erweitern",
+        "ihr": "erweitert",
+        "sie": "erweitern"
+      }
+    },
+    {
+      "infinitive": "einschätzen",
+      "english": "to estimate / assess",
+      "type": "separable",
+      "level": "B2",
+      "forms": {
+        "ich": "schätze ein",
+        "du": "schätzt ein",
+        "er": "schätzt ein",
+        "wir": "schätzen ein",
+        "ihr": "schätzt ein",
+        "sie": "schätzen ein"
+      }
+    },
+    {
+      "infinitive": "zunehmen",
+      "english": "to increase",
+      "type": "separable",
+      "level": "B2",
+      "forms": {
+        "ich": "nehme zu",
+        "du": "nimmst zu",
+        "er": "nimmt zu",
+        "wir": "nehmen zu",
+        "ihr": "nehmt zu",
+        "sie": "nehmen zu"
+      }
+    },
+    {
+      "infinitive": "abnehmen",
+      "english": "to decrease / lose weight",
+      "type": "separable",
+      "level": "B2",
+      "forms": {
+        "ich": "nehme ab",
+        "du": "nimmst ab",
+        "er": "nimmt ab",
+        "wir": "nehmen ab",
+        "ihr": "nehmt ab",
+        "sie": "nehmen ab"
+      }
+    },
+    {
+      "infinitive": "sich eignen",
+      "english": "to be suitable",
+      "type": "reflexive",
+      "level": "B2",
+      "forms": {
+        "ich": "eigne mich",
+        "du": "eignest dich",
+        "er": "eignet sich",
+        "wir": "eignen uns",
+        "ihr": "eignet euch",
+        "sie": "eignen sich"
+      }
+    },
+    {
+      "infinitive": "sich auswirken",
+      "english": "to have an effect",
+      "type": "reflexive",
+      "level": "B2",
+      "forms": {
+        "ich": "wirke mich aus",
+        "du": "wirkst dich aus",
+        "er": "wirkt sich aus",
+        "wir": "wirken uns aus",
+        "ihr": "wirkt euch aus",
+        "sie": "wirken sich aus"
+      }
+    },
+    {
+      "infinitive": "sich beziehen",
+      "english": "to refer to",
+      "type": "reflexive",
+      "level": "B2",
+      "forms": {
+        "ich": "beziehe mich",
+        "du": "beziehst dich",
+        "er": "bezieht sich",
+        "wir": "beziehen uns",
+        "ihr": "bezieht euch",
+        "sie": "beziehen sich"
+      }
+    },
+    {
+      "infinitive": "sich zusammensetzen",
+      "english": "to consist of",
+      "type": "reflexive",
+      "level": "B2",
+      "forms": {
+        "ich": "setze mich zusammen",
+        "du": "setzt dich zusammen",
+        "er": "setzt sich zusammen",
+        "wir": "setzen uns zusammen",
+        "ihr": "setzt euch zusammen",
+        "sie": "setzen sich zusammen"
+      }
+    }
+  ]
+}
