@@ -1670,5 +1670,85 @@
     "topic": "Education",
     "example_de": "Beispiel: lebenslanges Lernen",
     "example_en": "Example: lifelong learning"
+  },
+  {
+    "de": "darauf",
+    "en": "on it / about it",
+    "level": "B1",
+    "topic": "Connectors",
+    "example_de": "Ich warte darauf.",
+    "example_en": "I am waiting for it."
+  },
+  {
+    "de": "daran",
+    "en": "on it / about it",
+    "level": "B1",
+    "topic": "Connectors",
+    "example_de": "Ich denke daran.",
+    "example_en": "I am thinking about it."
+  },
+  {
+    "de": "damit",
+    "en": "with it / so that",
+    "level": "B1",
+    "topic": "Connectors",
+    "example_de": "Ich schneide damit Brot. / Ich lerne, damit ich bestehe.",
+    "example_en": "I cut bread with it. / I study so that I pass."
+  },
+  {
+    "de": "davon",
+    "en": "from it / of it",
+    "level": "B1",
+    "topic": "Connectors",
+    "example_de": "Ich träume davon.",
+    "example_en": "I dream about it."
+  },
+  {
+    "de": "dafür",
+    "en": "for it",
+    "level": "B1",
+    "topic": "Connectors",
+    "example_de": "Ich interessiere mich dafür.",
+    "example_en": "I am interested in it."
+  },
+  {
+    "de": "dazu",
+    "en": "to it / in addition",
+    "level": "B1",
+    "topic": "Connectors",
+    "example_de": "Was sagst du dazu?",
+    "example_en": "What do you say about it?"
+  },
+  {
+    "de": "darüber",
+    "en": "about it",
+    "level": "B1",
+    "topic": "Connectors",
+    "example_de": "Wir sprechen darüber.",
+    "example_en": "We are talking about it."
+  },
+  {
+    "de": "dagegen",
+    "en": "against it",
+    "level": "B1",
+    "topic": "Connectors",
+    "example_de": "Ich bin dagegen.",
+    "example_en": "I am against it."
+  },
+  {
+    "de": "die unbestimmten Artikel",
+    "en": "indefinite articles",
+    "level": "A2",
+    "topic": "Grammar",
+    "example_de": "ein, eine",
+    "example_en": "a, an"
+  },
+  {
+    "de": "die Possessivartikel",
+    "en": "possessive determiners",
+    "level": "A2",
+    "topic": "Grammar",
+    "example_de": "mein, dein, sein",
+    "example_en": "my, your, his"
   }
 ]

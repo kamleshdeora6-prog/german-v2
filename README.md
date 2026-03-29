@@ -1,23 +1,35 @@
-# German Study App
+# German Coach V3
 
-GitHub Pages-ready structure.
+A static GitHub Pages friendly German learning app.
 
-## Files
+## Structure
+
 - `index.html`
 - `styles.css`
 - `app.js`
-- `data/*.json`
-- `assets/grammar_reference.png`
+- `data/`
+  - `passages.json`
+  - `notes.json`
+  - `exercises.json`
+  - `flashcards.json`
+  - `conjugation.json`
+  - `sentences.json`
+  - `vocab.json`
+- `assets/`
+  - `grammar_reference.png`
 
-## Deploy on GitHub Pages
-1. Create a new repo.
-2. Upload all files and folders from this project.
-3. In GitHub, go to **Settings → Pages**.
-4. Set source to **Deploy from a branch**.
-5. Select the `main` branch and `/ (root)`.
-6. Save.
+## Features
 
-## Notes
-- Progress is saved in the browser with localStorage.
-- Audio uses the browser speech engine.
-- The app now includes a **Stop** button for audio playback.
+- compact dashboard with daily missions
+- unique passage counting
+- weak-area tracking
+- cleaner exercise explanations
+- merged study/practice flow
+- grammar master tables
+- vocabulary list + match game + typing mode
+- audio play/stop for passages
+- GitHub Pages ready static deployment
+
+## GitHub Pages
+
+Upload the extracted files so that `index.html` is in the repo root.
