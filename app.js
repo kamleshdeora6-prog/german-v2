@@ -45,6 +45,17 @@ function translateStatic(){
 function renderApp(){
  $('#aboutText').innerHTML=`<strong>${t('About','Über')}:</strong> ${t('German Coach works fully in the browser. Your progress is saved locally on this device.','German Coach läuft vollständig im Browser. Dein Fortschritt wird lokal auf diesem Gerät gespeichert.')}`;
  const weak=getWeakAreas();
+ const counts=[
+   [t('Passages','Passagen'), state.data.passages.length],
+   [t('Exercises','Übungen'), state.data.exercises.length],
+   [t('Vocabulary items','Wortschatz-Einträge'), state.data.vocab.length],
+   [t('Flashcards','Karteikarten'), state.data.flashcards.length],
+   [t('Verbs','Verben'), state.data.conjugation.length],
+   [t('Grammar notes','Grammatiknotizen'), Object.keys(state.data.notes||{}).length],
+   [t('Sentence entries','Satz-Einträge'), Object.values(state.data.sentences||{}).reduce((n,a)=>n+(Array.isArray(a)?a.length:0),0)],
+   [t('Leben in Deutschland questions','LiD-Fragen'), LID_QUESTIONS.length]
+ ];
+ $('#appCounts').innerHTML='<strong>'+t('Content overview','Inhaltsübersicht')+':</strong><br>'+counts.map(([k,v])=>`${k}: ${v}`).join('<br>');
  $('#weakAreaText').innerHTML= weak.length ? `<strong>${t('Current weak areas','Aktuelle Schwächen')}:</strong><br>${weak.slice(0,5).map(w=>`${w.type} (${w.wrong}/${w.right})`).join('<br>')}` : t('No weak areas recorded yet.','Noch keine Schwächen gespeichert.');
  renderWeakSection();
 }
@@ -112,12 +123,114 @@ const QA_BANK=[{mode:'answer',prompt_en:'Where do you work?',prompt_de:'Wo arbei
 function newQA(){ const mode=$('#qaMode').value; const pool=QA_BANK.filter(x=>x.mode===mode); state.currentQA=pool[Math.floor(Math.random()*pool.length)]||QA_BANK[0]; const showEn = $('#qaShowEnglish') ? $('#qaShowEnglish').checked : false; $('#qaPrompt').textContent=showEn ? `${state.currentQA.prompt_de} / ${state.currentQA.prompt_en}` : state.currentQA.prompt_de; $('#qaInput').value=''; $('#qaFeedback').textContent=''; $('#qaExplanation').classList.add('hidden'); }
 function checkQA(){ const ok=norm($('#qaInput').value)===norm(state.currentQA.answer); $('#qaFeedback').textContent=ok?t('Correct!','Richtig!'):t('Not quite.','Nicht ganz.'); $('#qaFeedback').className='result '+(ok?'good':'bad'); const qaShowEn = $('#qaShowEnglish') ? $('#qaShowEnglish').checked : false; $('#qaExplanation').innerHTML=`<strong>${t('Correct answer','Richtige Antwort')}:</strong> ${state.currentQA.answer}${qaShowEn && state.currentQA.answer_en ? ' / '+state.currentQA.answer_en : ''}`; $('#qaExplanation').classList.remove('hidden'); }
 function showQA(){ const qaShowEn = $('#qaShowEnglish') ? $('#qaShowEnglish').checked : false; $('#qaExplanation').innerHTML=`<strong>${t('Correct answer','Richtige Antwort')}:</strong> ${state.currentQA.answer}${qaShowEn && state.currentQA.answer_en ? ' / '+state.currentQA.answer_en : ''}`; $('#qaExplanation').classList.remove('hidden'); }
-function translateLidQuestion(item){ const overrides={ 'What is the German constitution called?':'Wie heißt die deutsche Verfassung?', 'Who elects the Bundestag?':'Wer wählt den Bundestag?', 'What is forbidden in a democracy?':'Was ist in einer Demokratie verboten?', 'What do you do in an election?':'Was macht man bei einer Wahl?', 'Why are several parties important?':'Warum sind mehrere Parteien wichtig?', 'What does freedom of the press mean?':'Was bedeutet Pressefreiheit?', 'What does freedom of religion mean in Germany?':'Was bedeutet Religionsfreiheit in Deutschland?', 'How often are Bundestag elections normally held?':'Wie oft findet normalerweise die Bundestagswahl statt?', 'Which statement about equal rights for women and men is correct?':'Welche Aussage zur Gleichberechtigung von Frauen und Männern ist richtig?', 'What does gender equality mean?':'Was bedeutet Gleichberechtigung von Frauen und Männern?', 'What is the role of the Bundesrat?':'Was ist die Aufgabe des Bundesrates?', 'Which colors are on the German flag?':'Welche Farben hat die deutsche Flagge?' }; const choiceMap={'Citizens with voting rights':'Bürgerinnen und Bürger mit Wahlrecht','The Länder governments':'Die Landesregierungen','Only the Federal President':'Nur der Bundespräsident','Election fraud':'Wahlbetrug','Different opinions':'Verschiedene Meinungen','Peaceful criticism':'Friedliche Kritik','You vote secretly':'Man wählt geheim','You show your ballot publicly':'Man zeigt den Wahlzettel öffentlich','You ask the police to decide':'Die Polizei entscheidet','So different opinions can be represented':'Damit verschiedene Meinungen vertreten werden können','So one party controls everything':'Damit eine Partei alles kontrolliert','So elections become unnecessary':'Damit Wahlen unnötig werden','Media may report freely within the law':'Medien dürfen im Rahmen des Gesetzes frei berichten','Newspapers need permission from one party':'Zeitungen brauchen die Erlaubnis einer Partei','Only state media may publish':'Nur staatliche Medien dürfen veröffentlichen','Only one religion is allowed':'Nur eine Religion ist erlaubt','Everyone may choose and practise a religion freely':'Jeder darf seine Religion frei wählen und ausüben','Religion is decided by the employer':'Der Arbeitgeber entscheidet über die Religion','Every 2 years':'Alle 2 Jahre','Every 4 years':'Alle 4 Jahre','Every 8 years':'Alle 8 Jahre','Black, red, gold':'Schwarz, Rot, Gold','Blue, white, red':'Blau, Weiß, Rot','Green, white, black':'Grün, Weiß, Schwarz'}; return {q:item.q,q_de:overrides[item.q]||item.q,choices:item.choices,choices_de:item.choices.map(c=>choiceMap[c]||c),ex:item.ex,ex_de:item.ex}; }
+function deifyLidText(txt){
+  if(!txt) return txt;
+  const exact={
+    'What is the German constitution called?':'Wie heißt die deutsche Verfassung?',
+    'Who elects the Bundestag?':'Wer wählt den Bundestag?',
+    'What is forbidden in a democracy?':'Was ist in einer Demokratie verboten?',
+    'What do you do in an election?':'Was macht man bei einer Wahl?',
+    'Why are several parties important?':'Warum sind mehrere Parteien wichtig?',
+    'What does freedom of the press mean?':'Was bedeutet Pressefreiheit?',
+    'What does freedom of religion mean in Germany?':'Was bedeutet Religionsfreiheit in Deutschland?',
+    'What does freedom of religion mean?':'Was bedeutet Religionsfreiheit?',
+    'How often are Bundestag elections normally held?':'Wie oft findet normalerweise die Bundestagswahl statt?',
+    'Which statement about equal rights for women and men is correct?':'Welche Aussage zur Gleichberechtigung von Frauen und Männern ist richtig?',
+    'What does gender equality mean?':'Was bedeutet Gleichberechtigung von Frauen und Männern?',
+    'What is the role of the Bundesrat?':'Was ist die Aufgabe des Bundesrates?',
+    'Which colors are on the German flag?':'Welche Farben hat die deutsche Flagge?',
+    'What is the capital of Germany?':'Was ist die Hauptstadt von Deutschland?',
+    'How many federal states does Germany have?':'Wie viele Bundesländer hat Deutschland?',
+    'What is a Land in Germany?':'Was ist ein Bundesland in Deutschland?',
+    'What is the Bundestag?':'Was ist der Bundestag?'
+  };
+  if(exact[txt]) return exact[txt];
+  let s=' '+txt+' ';
+  const reps=[
+    [' What does ',' Was bedeutet '],[' What is the role of ',' Was ist die Aufgabe von '],[' What is the job of ',' Was ist die Aufgabe von '],
+    [' What is protected by ',' Was wird geschützt durch '],[' What is guaranteed by ',' Was wird garantiert durch '],[' What is a ',' Was ist ein '],
+    [' What is an ',' Was ist ein '],[' What is ',' Was ist '],[' Which statement about ',' Welche Aussage zu '],[' Which statement ',' Welche Aussage '],
+    [' Which right ',' Welches Recht '],[' Which colors are on ',' Welche Farben hat '],[' Which institution ',' Welche Institution '],[' Which office ',' Welche Behörde '],
+    [' Who ',' Wer '],[' Why ',' Warum '],[' How many ',' Wie viele '],[' How often ',' Wie oft '],[' Where ',' Wo '],[' When ',' Wann '],[' In Germany ',' In Deutschland '],
+    [' the German constitution ',' die deutsche Verfassung '],[' the Bundestag ',' den Bundestag '],[' the Bundesrat ',' den Bundesrat '],[' the Federal President ',' den Bundespräsidenten '],
+    [' democracy ',' Demokratie '],[' freedom of religion ',' Religionsfreiheit '],[' freedom of expression ',' Meinungsfreiheit '],[' freedom of the press ',' Pressefreiheit '],
+    [' equal rights ',' die Gleichberechtigung '],[' women and men ',' von Frauen und Männern '],[' federal states ',' Bundesländer '],[' Germany ',' Deutschland '],[' capital ',' Hauptstadt ']
+  ];
+  for(const [a,b] of reps) s=s.replaceAll(a,b);
+  s=s.trim();
+  if(!/[?!.]$/.test(s)) s+='?';
+  return s;
+}
+function deifyLidChoice(txt){
+  if(!txt) return txt;
+  const exact={
+    'Citizens with voting rights':'Wahlberechtigte Bürgerinnen und Bürger',
+    'The Länder governments':'Die Landesregierungen',
+    'Only the Federal President':'Nur der Bundespräsident',
+    'Election fraud':'Wahlbetrug',
+    'Different opinions':'Verschiedene Meinungen',
+    'Peaceful criticism':'Friedliche Kritik',
+    'You vote secretly':'Man wählt geheim',
+    'You show your ballot publicly':'Man zeigt den Wahlzettel öffentlich',
+    'You ask the police to decide':'Die Polizei entscheidet',
+    'So different opinions can be represented':'Damit verschiedene Meinungen vertreten werden können',
+    'So one party controls everything':'Damit eine Partei alles kontrolliert',
+    'So elections become unnecessary':'Damit Wahlen unnötig werden',
+    'Media may report freely within the law':'Medien dürfen im Rahmen des Gesetzes frei berichten',
+    'Newspapers need permission from one party':'Zeitungen brauchen die Erlaubnis einer Partei',
+    'Only state media may publish':'Nur staatliche Medien dürfen veröffentlichen',
+    'Only one religion is allowed':'Nur eine Religion ist erlaubt',
+    'Everyone may choose and practise a religion freely':'Jeder darf seine Religion frei wählen und ausüben',
+    'Religion is decided by the employer':'Der Arbeitgeber entscheidet über die Religion',
+    'Black, red, gold':'Schwarz, Rot, Gold',
+    'Blue, white, red':'Blau, Weiß, Rot',
+    'Green, white, black':'Grün, Weiß, Schwarz',
+    'both have the same rights':'Frauen und Männer haben die gleichen Rechte',
+    'men may vote twice':'Männer dürfen zweimal wählen',
+    'women cannot work':'Frauen dürfen nicht arbeiten'
+  };
+  if(exact[txt]) return exact[txt];
+  let s=' '+txt+' ';
+  const reps=[
+    [' The ',' Die '],[' the ',' die '],[' citizens ',' Bürgerinnen und Bürger '],[' federal parliament ',' Bundestag '],[' federal government ',' Bundesregierung '],
+    [' voting rights ',' Wahlrecht '],[' freedom of religion ',' Religionsfreiheit '],[' freedom of expression ',' Meinungsfreiheit '],[' freedom of the press ',' Pressefreiheit '],
+    [' equal rights ',' Gleichberechtigung '],[' women and men ',' Frauen und Männer '],[' Germany ',' Deutschland '],[' human dignity ',' Menschenwürde '],
+    [' constitution ',' Verfassung '],[' basic law ',' Grundgesetz '],[' election ',' Wahl '],[' elections ',' Wahlen '],[' law ',' Gesetz '],[' laws ',' Gesetze '],
+    [' police ',' Polizei '],[' government ',' Regierung '],[' parliament ',' Parlament '],[' church ',' Kirche '],[' religion ',' Religion '],
+    [' may ',' dürfen '],[' must ',' müssen '],[' can ',' können '],[' only ',' nur '],[' not ',' nicht '],[' freely ',' frei '],[' secretly ',' geheim '],
+    [' and ',' und '],[' or ',' oder '],[' children ',' Kinder '],[' employers ',' Arbeitgeber '],[' state ',' Staat '],[' states ',' Staaten ']
+  ];
+  for(const [a,b] of reps) s=s.replaceAll(a,b);
+  s=s.replace(/\s+/g,' ').trim();
+  return s.charAt(0).toUpperCase()+s.slice(1);
+}
+function deifyLidExplain(txt){
+  if(!txt) return txt;
+  let s=' '+txt+' ';
+  const reps=[
+    [" Germany's constitution is called the Grundgesetz. "," Die deutsche Verfassung heißt Grundgesetz. "],
+    [' Citizens elect the Bundestag in democratic elections. ',' Die Bürgerinnen und Bürger wählen den Bundestag in demokratischen Wahlen. '],
+    [' Voting is secret. ',' Wahlen sind geheim. '],
+    [' Press freedom is a protected basic right. ',' Die Pressefreiheit ist ein geschütztes Grundrecht. '],
+    [' Freedom of religion protects individual choice. ',' Die Religionsfreiheit schützt die freie persönliche Entscheidung. '],
+    [' Germany has 16 Länder. ',' Deutschland hat 16 Bundesländer. '],
+    [' Berlin is the capital. ',' Berlin ist die Hauptstadt. '],
+    [' Everyone is equal before the law. ',' Alle Menschen sind vor dem Gesetz gleich. '],
+    [' Opposition is part of democratic control. ',' Die Opposition gehört zur demokratischen Kontrolle. '],
+    [' Human dignity is protected by the Basic Law. ',' Die Menschenwürde wird durch das Grundgesetz geschützt. '],
+    [' The Berlin Wall fell was a key event in 1989. ',' Der Fall der Berliner Mauer war 1989 ein zentrales Ereignis. ']
+  ];
+  for(const [a,b] of reps) s=s.replaceAll(a,b);
+  if(s.trim()!==txt.trim()) return s.trim();
+  return txt.replace(/Germany/g,'Deutschland').replace(/German/g,'deutsch').replace(/constitution/g,'Verfassung').replace(/freedom of religion/g,'Religionsfreiheit').replace(/freedom of expression/g,'Meinungsfreiheit').replace(/freedom of the press/g,'Pressefreiheit').replace(/equal rights/g,'Gleichberechtigung').replace(/women and men/g,'Frauen und Männer');
+}
+function translateLidQuestion(item){ return {q:item.q,q_de:deifyLidText(item.q),choices:item.choices,choices_de:item.choices.map(deifyLidChoice),ex:item.ex,ex_de:deifyLidExplain(item.ex)}; }
 const LID_QUESTIONS=RAW_LID.map(translateLidQuestion);
 function newLid(){ state.currentLid=LID_QUESTIONS[Math.floor(Math.random()*LID_QUESTIONS.length)]||LID_QUESTIONS[0]; renderLid(); }
-function renderLid(){ const item=state.currentLid; if(!item) return; const showEn=$('#lidShowEnglish').checked; $('#lidQuestion').textContent=showEn ? `${item.q_de} / ${item.q}` : item.q_de; $('#lidChoices').innerHTML=item.choices_de.map((c,i)=>`<button class="lid-choice" data-i="${i}">${showEn ? c + ' / ' + (item.choices[i]||'') : c}</button>`).join(''); $$('.lid-choice').forEach(b=>b.onclick=()=>checkLid(+b.dataset.i)); $('#lidMeta').textContent=t('German exam mode: answer in German by default.','Deutscher Prüfungsmodus: Standardmäßig auf Deutsch.'); $('#lidFeedback').textContent=''; $('#lidExplain').classList.add('hidden'); }
-function checkLid(i){ const item=state.currentLid; const ok=i===item.a; $('#lidFeedback').textContent=ok?t('Correct!','Richtig!'):t('Not correct.','Nicht richtig.'); $('#lidFeedback').className='result '+(ok?'good':'bad'); $('#lidExplain').innerHTML=`<strong>${t('Correct answer','Richtige Antwort')}:</strong> ${item.choices_de[item.a]}${$('#lidShowEnglish').checked ? ' / '+(item.choices[item.a]||'') : ''}<br><strong>${t('Explanation','Erklärung')}:</strong> ${$('#lidShowEnglish').checked ? item.ex_de+' / '+item.ex : item.ex_de}`; $('#lidExplain').classList.remove('hidden'); recordWeak('leben_in_deutschland',ok); if(ok) addXP(1); saveStore(); updateHeader(); }
-function showLidAnswer(){ if(!state.currentLid) return; $('#lidExplain').innerHTML=`<strong>${t('Correct answer','Richtige Antwort')}:</strong> ${state.currentLid.choices_de[state.currentLid.a]}`; $('#lidExplain').classList.remove('hidden'); }
+function renderLid(){ const item=state.currentLid; if(!item) return; const showEn=$('#lidShowEnglish').checked; const qDe=item.q_de||item.q; const qEn=item.q||''; $('#lidQuestion').textContent=showEn && qEn && qEn!==qDe ? `${qDe}
+(${qEn})` : qDe; $('#lidChoices').innerHTML=item.choices_de.map((c,i)=>{ const en=item.choices[i]||''; const label=showEn && en && en!==c ? `${c}<span class="muted tiny"><br>(${en})</span>` : c; return `<button class="lid-choice" data-i="${i}">${label}</button>`; }).join(''); $$('.lid-choice').forEach(b=>b.onclick=()=>checkLid(+b.dataset.i)); $('#lidMeta').textContent=t('German exam mode: answer in German by default.','Deutscher Prüfungsmodus: Standardmäßig auf Deutsch.'); $('#lidFeedback').textContent=''; $('#lidExplain').classList.add('hidden'); }
+function checkLid(i){ const item=state.currentLid; const ok=i===item.a; const showEn=$('#lidShowEnglish').checked; const ans=item.choices_de[item.a]||item.choices[item.a]; const ansHtml=showEn && item.choices[item.a] && item.choices[item.a]!==ans ? `${ans}<br><span class="muted tiny">(${item.choices[item.a]})</span>` : ans; const ex=item.ex_de||item.ex; const exHtml=showEn && item.ex && item.ex!==ex ? `${ex}<br><span class="muted tiny">(${item.ex})</span>` : ex; $('#lidFeedback').textContent=ok?t('Correct!','Richtig!'):t('Not correct.','Nicht richtig.'); $('#lidFeedback').className='result '+(ok?'good':'bad'); $('#lidExplain').innerHTML=`<strong>${t('Correct answer','Richtige Antwort')}:</strong> ${ansHtml}<br><strong>${t('Explanation','Erklärung')}:</strong> ${exHtml}`; $('#lidExplain').classList.remove('hidden'); recordWeak('leben_in_deutschland',ok); if(ok) addXP(1); saveStore(); updateHeader(); }
+function showLidAnswer(){ if(!state.currentLid) return; const showEn=$('#lidShowEnglish').checked; const ans=state.currentLid.choices_de[state.currentLid.a]||state.currentLid.choices[state.currentLid.a]; $('#lidExplain').innerHTML=`<strong>${t('Correct answer','Richtige Antwort')}:</strong> ${ans}${showEn && state.currentLid.choices[state.currentLid.a] && state.currentLid.choices[state.currentLid.a]!==ans ? '<br><span class="muted tiny">('+state.currentLid.choices[state.currentLid.a]+')</span>' : ''}`; $('#lidExplain').classList.remove('hidden'); }
 function bind(){ $('#sidebarOpen').onclick=()=>$('#sidebar').classList.add('open'); $('#sidebarClose').onclick=()=>$('#sidebar').classList.remove('open'); $$('.navbtn').forEach(b=>b.onclick=()=>goSection(b.dataset.section)); $$('.subbtn').forEach(b=>b.onclick=()=>switchPractice(b.dataset.practice)); $$('.vocabbtn').forEach(b=>b.onclick=()=>switchVocab(b.dataset.vmode)); $$('.exambtn').forEach(b=>b.onclick=()=>switchExam(b.dataset.emode)); $('#themeSelect').onchange=e=>setTheme(e.target.value); $('#settingsTheme').onchange=e=>setTheme(e.target.value); $('#languageSelect').onchange=e=>setLanguage(e.target.value); $('#settingsLanguage').onchange=e=>setLanguage(e.target.value); $('#missionPreset').onchange=e=>{ store.missionPreset=e.target.value; saveStore(); updateHeader(); }; ['customPassages','customExercises','customVocab','customWriting'].forEach(id=>$('#'+id).onchange=()=>{ store.missionCustom={passages:+$('#customPassages').value,exercises:+$('#customExercises').value,vocab:+$('#customVocab').value,writing:+$('#customWriting').value}; saveStore(); updateHeader(); }); $('#continueBtn').onclick=()=>{ const weak=getWeakAreas()[0]; goSection('practice'); switchPractice('exercises'); if(weak){ $('#exerciseFocusFilter').value='weak'; $('#exerciseTypeFilter').value=weak.type; } newExercise(); }; $('#resetTodayBtn').onclick=()=>{ store.daily[todayKey()]={uniquePassages:[],repeatPassages:0,correctExercises:0,attemptedExercises:0,uniqueVocab:[],writingDone:0,listeningDone:0,xp:0}; saveStore(); updateHeader(); }; $('#countRepeatsToggle').onchange=e=>{ store.countRepeats=e.target.checked; saveStore(); }; $('#exerciseLevelFilter').onchange=newExercise; $('#exerciseTypeFilter').onchange=newExercise; $('#exerciseFocusFilter').onchange=newExercise; $('#nextExerciseBtn').onclick=newExercise; $('#checkExerciseBtn').onclick=checkExercise; $('#showExerciseAnswerBtn').onclick=showExerciseAnswer; $('#typingLevelFilter').onchange=renderTypingOptions; $('#typingSelect').onchange=loadTypingPassage; $('#typingShowEnglish').onchange=()=>$('#typingEnglishWrap').classList.toggle('hidden',!$('#typingShowEnglish').checked); $('#playPassageBtn').onclick=()=>{ const p=currentPassage(); if(p) speak(p.german,$('#audioSpeed').value); }; $('#stopPassageBtn').onclick=stopSpeak; $('#repeatPassageBtn').onclick=()=>{ const p=currentPassage(); if(p) speak(p.german,$('#audioSpeed').value); }; $('#checkTypingBtn').onclick=checkTyping; $('#clearTypingBtn').onclick=()=>$('#typingInput').value=''; $('#listenLevelFilter').onchange=newListening; if($('#listenShowEnglish')) $('#listenShowEnglish').onchange=newListening; $('#newListeningBtn').onclick=newListening; $('#playListenBtn').onclick=()=>speak(state.currentListen.text,$('#listenSpeed').value); $('#stopListenBtn').onclick=stopSpeak; $('#replayListenBtn').onclick=()=>speak(state.currentListen.text,$('#listenSpeed').value); $('#revealListenBtn').onclick=()=>$('#listenAnswer').classList.remove('hidden'); $('#checkListenBtn').onclick=checkListening; $('#structureLevelFilter').onchange=newStructure; $('#newStructureBtn').onclick=newStructure; $('#checkStructureBtn').onclick=checkStructure; $('#showStructureBtn').onclick=showStructure; $('#writingTaskSelect').onchange=renderWritingTask; if($('#writingShowEnglish')) $('#writingShowEnglish').onchange=renderWritingTask; $('#newWritingBtn').onclick=()=>{ $('#writingTaskSelect').selectedIndex=($('#writingTaskSelect').selectedIndex+1)%WRITING_TASKS.length; renderWritingTask(); }; $('#checkWritingBtn').onclick=checkWriting; $('#showWritingSampleBtn').onclick=()=>$('#writingSample').classList.remove('hidden'); $('#vocabSearch').oninput=renderVocabList; $('#vocabLevelFilter').onchange=renderVocabList; $('#vocabTopicFilter').onchange=renderVocabList; $('#vocabDifficultOnly').onchange=renderVocabList; $('#newMatchBtn').onclick=newMatch; $('#newTypeWordBtn').onclick=newTypeWord; $('#checkTypeWordBtn').onclick=()=>showTypeWord(false); $('#showTypeWordBtn').onclick=()=>showTypeWord(true); $('#grammarSearch').oninput=renderGrammar; $('#flashCategoryFilter').onchange=nextFlash; $('#nextFlashBtn').onclick=nextFlash; $('#flashCard').onclick=flipFlash; $('#conjLevelFilter').onchange=newConj; $('#newConjBtn').onclick=newConj; $('#checkConjBtn').onclick=checkConj; $('#showConjBtn').onclick=showConj; $('#startExamBtn').onclick=startExam; $('#finishExamBtn').onclick=finishExam; $('#photoTaskSelect').onchange=renderPhotoTask; $('#newPhotoTaskBtn').onclick=()=>{ $('#photoTaskSelect').selectedIndex=($('#photoTaskSelect').selectedIndex+1)%PHOTO_TASKS.length; renderPhotoTask(); }; $('#checkPhotoExamBtn').onclick=checkPhotoExam; $('#showPhotoSampleBtn').onclick=()=>$('#photoExamSample').classList.remove('hidden'); $('#qaMode').onchange=newQA; if($('#qaShowEnglish')) $('#qaShowEnglish').onchange=newQA; $('#newQARoundBtn').onclick=newQA; $('#checkQABtn').onclick=checkQA; $('#showQABtn').onclick=showQA; $('#newLidBtn').onclick=newLid; $('#showLidAnswerBtn').onclick=showLidAnswer; $('#lidShowEnglish').onchange=renderLid; const rw=$('#refreshWeakBtn'); if(rw) rw.onclick=renderWeakSection; const pw=$('#practiceWeakBtn'); if(pw) pw.onclick=()=>{ goSection('practice'); switchPractice('exercises'); $('#exerciseFocusFilter').value='weak'; newExercise(); }; }
 
 function nextTypingPassage(){ const sel=$("#typingSelect"); if(!sel || !sel.options.length) return; sel.selectedIndex=(sel.selectedIndex+1)%sel.options.length; loadTypingPassage(); }
