@@ -18197,6 +18197,150 @@
       "question": "Fill the gap: Diese ______ gilt ab morgen.",
       "answer": "Vorschrift",
       "hint": "Regulation / rule."
+    },
+    {
+      "id": 2023,
+      "level": "A2",
+      "type": "question_to_answer",
+      "mode": "typing",
+      "question": "Wie spät beginnt der Kurs?",
+      "answer": "Der Kurs beginnt um neun Uhr.",
+      "hint": "Answer in a full sentence."
+    },
+    {
+      "id": 2024,
+      "level": "B1",
+      "type": "question_to_answer",
+      "mode": "typing",
+      "question": "Wo arbeitet Frau Keller?",
+      "answer": "Frau Keller arbeitet im Finanzamt.",
+      "hint": "Answer in a full sentence."
+    },
+    {
+      "id": 2025,
+      "level": "A2",
+      "type": "question_to_answer",
+      "mode": "typing",
+      "question": "Warum lernst du Deutsch?",
+      "answer": "Ich lerne Deutsch, weil ich in Deutschland arbeite.",
+      "hint": "Use a full sentence, not only one word."
+    },
+    {
+      "id": 2026,
+      "level": "B1",
+      "type": "question_to_answer",
+      "mode": "typing",
+      "question": "Was musst du heute erledigen?",
+      "answer": "Ich muss heute die Steuererklärung vorbereiten.",
+      "hint": "Answer in a full sentence."
+    },
+    {
+      "id": 2027,
+      "level": "B1",
+      "type": "question_to_answer",
+      "mode": "typing",
+      "question": "Mit wem sprichst du?",
+      "answer": "Ich spreche mit meiner Kollegin aus der Buchhaltung.",
+      "hint": "Use the correct preposition and case."
+    },
+    {
+      "id": 2028,
+      "level": "A2",
+      "type": "answer_to_question",
+      "mode": "typing",
+      "question": "Der Zug ist verspätet.",
+      "answer": "Warum ist der Zug verspätet?",
+      "hint": "Build the matching question."
+    },
+    {
+      "id": 2029,
+      "level": "A2",
+      "type": "answer_to_question",
+      "mode": "typing",
+      "question": "Ich habe gestern einen Termin beim Bürgeramt gehabt.",
+      "answer": "Wo hattest du gestern einen Termin?",
+      "hint": "Make a correct question."
+    },
+    {
+      "id": 2030,
+      "level": "B1",
+      "type": "answer_to_question",
+      "mode": "typing",
+      "question": "Wir arbeiten an einem neuen Budgetplan.",
+      "answer": "Woran arbeitet ihr?",
+      "hint": "Use the correct da-word or question word."
+    },
+    {
+      "id": 2031,
+      "level": "B1",
+      "type": "answer_to_question",
+      "mode": "typing",
+      "question": "Sie wartet auf die Rückmeldung vom Chef.",
+      "answer": "Worauf wartet sie?",
+      "hint": "Use the correct wo-compound."
+    },
+    {
+      "id": 2032,
+      "level": "B2",
+      "type": "answer_to_question",
+      "mode": "typing",
+      "question": "Ich schreibe die E-Mail, damit der Kunde alle Infos hat.",
+      "answer": "Warum schreibst du die E-Mail?",
+      "hint": "Ask for the reason."
+    },
+    {
+      "id": 2033,
+      "level": "A1",
+      "type": "dative_reason",
+      "mode": "typing",
+      "question": "Ich helfe ___ Mann.",
+      "answer": "dem",
+      "hint": "Use dative because helfen takes dative."
+    },
+    {
+      "id": 2034,
+      "level": "A1",
+      "type": "accusative_reason",
+      "mode": "typing",
+      "question": "Ich sehe ___ Mann.",
+      "answer": "den",
+      "hint": "Use accusative because sehen takes a direct object."
+    },
+    {
+      "id": 2035,
+      "level": "A1",
+      "type": "nominative_reason",
+      "mode": "typing",
+      "question": "___ Mann arbeitet heute.",
+      "answer": "Der",
+      "hint": "Use nominative because the noun is the subject."
+    },
+    {
+      "id": 2036,
+      "level": "A2",
+      "type": "dative_reason",
+      "mode": "typing",
+      "question": "Ich fahre mit ___ Kollegin ins Büro.",
+      "answer": "der",
+      "hint": "Use dative after mit."
+    },
+    {
+      "id": 2037,
+      "level": "A2",
+      "type": "two_way_reason",
+      "mode": "typing",
+      "question": "Wir gehen in ___ Besprechungsraum.",
+      "answer": "den",
+      "hint": "Movement → accusative after in."
+    },
+    {
+      "id": 2038,
+      "level": "A2",
+      "type": "two_way_reason",
+      "mode": "typing",
+      "question": "Wir sind in ___ Besprechungsraum.",
+      "answer": "dem",
+      "hint": "Location → dative after in."
     }
   ]
 }

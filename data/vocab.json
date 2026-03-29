@@ -8342,5 +8342,237 @@
     "topic": "Law",
     "example_de": "Der Vertrag wurde fristlos gekündigt.",
     "example_en": "The contract was terminated without notice."
+  },
+  {
+    "de": "der Umsatzsteuerbescheid",
+    "en": "VAT assessment notice",
+    "level": "B2",
+    "topic": "Tax",
+    "example_de": "Der Umsatzsteuerbescheid kam gestern per Post.",
+    "example_en": "The VAT assessment notice arrived yesterday."
+  },
+  {
+    "de": "die Gewinn- und Verlustrechnung",
+    "en": "profit and loss statement",
+    "level": "B2",
+    "topic": "Finance",
+    "example_de": "Die Gewinn- und Verlustrechnung ist Teil des Jahresabschlusses.",
+    "example_en": "The profit and loss statement is part of the annual accounts."
+  },
+  {
+    "de": "der Steuerberater",
+    "en": "tax adviser",
+    "level": "B1",
+    "topic": "Tax",
+    "example_de": "Unser Steuerberater erklärt die neue Regelung.",
+    "example_en": "Our tax adviser explains the new rule."
+  },
+  {
+    "de": "der Freibetrag",
+    "en": "tax allowance",
+    "level": "B2",
+    "topic": "Tax",
+    "example_de": "Der Freibetrag senkt die Steuerlast.",
+    "example_en": "The allowance reduces the tax burden."
+  },
+  {
+    "de": "die Fristverlängerung",
+    "en": "deadline extension",
+    "level": "B2",
+    "topic": "Office",
+    "example_de": "Wir beantragen eine Fristverlängerung.",
+    "example_en": "We are applying for an extension of the deadline."
+  },
+  {
+    "de": "die Klage",
+    "en": "lawsuit",
+    "level": "B2",
+    "topic": "Law",
+    "example_de": "Die Klage wurde beim Gericht eingereicht.",
+    "example_en": "The lawsuit was filed with the court."
+  },
+  {
+    "de": "der Bescheid",
+    "en": "official notice",
+    "level": "B1",
+    "topic": "Law",
+    "example_de": "Der Bescheid enthält wichtige Informationen.",
+    "example_en": "The official notice contains important information."
+  },
+  {
+    "de": "die Kündigungsfrist",
+    "en": "notice period",
+    "level": "B2",
+    "topic": "Law",
+    "example_de": "Die Kündigungsfrist beträgt drei Monate.",
+    "example_en": "The notice period is three months."
+  },
+  {
+    "de": "die Lohnabrechnung",
+    "en": "pay slip",
+    "level": "B1",
+    "topic": "Office",
+    "example_de": "Meine Lohnabrechnung ist im Portal verfügbar.",
+    "example_en": "My payslip is available in the portal."
+  },
+  {
+    "de": "die Verhandlung",
+    "en": "negotiation",
+    "level": "B2",
+    "topic": "Management",
+    "example_de": "Die Verhandlung mit dem Kunden war erfolgreich.",
+    "example_en": "The negotiation with the customer was successful."
+  },
+  {
+    "de": "der Mahnbescheid",
+    "en": "payment order notice",
+    "level": "B2",
+    "topic": "Law",
+    "example_de": "Ein Mahnbescheid sollte nicht ignoriert werden.",
+    "example_en": "A payment order notice should not be ignored."
+  },
+  {
+    "de": "die Abschreibung",
+    "en": "depreciation",
+    "level": "B2",
+    "topic": "Finance",
+    "example_de": "Die Abschreibung wird monatlich gebucht.",
+    "example_en": "Depreciation is posted monthly."
+  },
+  {
+    "de": "die Liquidität",
+    "en": "liquidity",
+    "level": "B2",
+    "topic": "Finance",
+    "example_de": "Liquidität ist für kleine Firmen besonders wichtig.",
+    "example_en": "Liquidity is especially important for small companies."
+  },
+  {
+    "de": "der Jahresabschluss",
+    "en": "annual financial statement",
+    "level": "B2",
+    "topic": "Finance",
+    "example_de": "Wir besprechen heute der Jahresabschluss.",
+    "example_en": "Today we are discussing annual financial statement."
+  },
+  {
+    "de": "die Rechnungskorrektur",
+    "en": "invoice correction",
+    "level": "B2",
+    "topic": "Tax",
+    "example_de": "Wir besprechen heute die Rechnungskorrektur.",
+    "example_en": "Today we are discussing invoice correction."
+  },
+  {
+    "de": "der Arbeitsvertrag",
+    "en": "employment contract",
+    "level": "B2",
+    "topic": "Law",
+    "example_de": "Wir besprechen heute der Arbeitsvertrag.",
+    "example_en": "Today we are discussing employment contract."
+  },
+  {
+    "de": "die Nebenkostenabrechnung",
+    "en": "service charge statement",
+    "level": "B1",
+    "topic": "Office",
+    "example_de": "Wir besprechen heute die Nebenkostenabrechnung.",
+    "example_en": "Today we are discussing service charge statement."
+  },
+  {
+    "de": "die Datenschutzrichtlinie",
+    "en": "data protection policy",
+    "level": "B2",
+    "topic": "Law",
+    "example_de": "Wir besprechen heute die Datenschutzrichtlinie.",
+    "example_en": "Today we are discussing data protection policy."
+  },
+  {
+    "de": "das Meetingprotokoll",
+    "en": "meeting minutes",
+    "level": "B1",
+    "topic": "Office",
+    "example_de": "Wir besprechen heute das Meetingprotokoll.",
+    "example_en": "Today we are discussing meeting minutes."
+  },
+  {
+    "de": "die Budgetplanung",
+    "en": "budget planning",
+    "level": "B1",
+    "topic": "Management",
+    "example_de": "Wir besprechen heute die Budgetplanung.",
+    "example_en": "Today we are discussing budget planning."
+  },
+  {
+    "de": "die Kostenstelle",
+    "en": "cost center",
+    "level": "B2",
+    "topic": "Finance",
+    "example_de": "Wir besprechen heute die Kostenstelle.",
+    "example_en": "Today we are discussing cost center."
+  },
+  {
+    "de": "der Zahlungsplan",
+    "en": "payment plan",
+    "level": "B2",
+    "topic": "Finance",
+    "example_de": "Wir besprechen heute der Zahlungsplan.",
+    "example_en": "Today we are discussing payment plan."
+  },
+  {
+    "de": "die Forderung",
+    "en": "claim / receivable",
+    "level": "B2",
+    "topic": "Finance",
+    "example_de": "Wir besprechen heute die Forderung.",
+    "example_en": "Today we are discussing claim / receivable."
+  },
+  {
+    "de": "die Verbindlichkeit",
+    "en": "liability",
+    "level": "B2",
+    "topic": "Finance",
+    "example_de": "Wir besprechen heute die Verbindlichkeit.",
+    "example_en": "Today we are discussing liability."
+  },
+  {
+    "de": "der Personalbedarf",
+    "en": "staffing need",
+    "level": "B1",
+    "topic": "Management",
+    "example_de": "Wir besprechen heute der Personalbedarf.",
+    "example_en": "Today we are discussing staffing need."
+  },
+  {
+    "de": "die Zielvereinbarung",
+    "en": "target agreement",
+    "level": "B1",
+    "topic": "Management",
+    "example_de": "Wir besprechen heute die Zielvereinbarung.",
+    "example_en": "Today we are discussing target agreement."
+  },
+  {
+    "de": "die Teamleitung",
+    "en": "team leadership",
+    "level": "B1",
+    "topic": "Management",
+    "example_de": "Wir besprechen heute die Teamleitung.",
+    "example_en": "Today we are discussing team leadership."
+  },
+  {
+    "de": "die Rechtsabteilung",
+    "en": "legal department",
+    "level": "B2",
+    "topic": "Law",
+    "example_de": "Wir besprechen heute die Rechtsabteilung.",
+    "example_en": "Today we are discussing legal department."
+  },
+  {
+    "de": "die Anwaltskanzlei",
+    "en": "law firm",
+    "level": "B2",
+    "topic": "Law",
+    "example_de": "Wir besprechen heute die Anwaltskanzlei.",
+    "example_en": "Today we are discussing law firm."
   }
 ]
