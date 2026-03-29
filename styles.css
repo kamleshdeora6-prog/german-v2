@@ -55,3 +55,10 @@ button:hover{filter:brightness(1.04)}
 
 #dataHealthText .good{color:#0f766e;font-weight:700}#dataHealthText .bad{color:#b91c1c;font-weight:700}
 .counts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}.count-card{background:var(--panel);border:1px solid var(--line);padding:12px;border-radius:14px}.count-big{font-size:1.6rem;font-weight:800}
+
+/* v15 fixes */
+.subbtn.active,.vocabbtn.active,.exambtn.active{color:#08263b!important;text-shadow:none!important;font-weight:800}
+.subbtn:nth-child(3).active{color:#ffffff!important}
+#grammarWrap .grammar-section, #grammarWrap .note-block, #appCounts, #aboutText, #dataHealthText, #weakAreaText{color:var(--text)}
+#structurePrompt{min-height:28px}
+#flashCard{color:var(--text)}
