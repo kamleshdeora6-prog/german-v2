@@ -18341,6 +18341,528 @@
       "question": "Wir sind in ___ Besprechungsraum.",
       "answer": "dem",
       "hint": "Location → dative after in."
+    },
+    {
+      "id": 2039,
+      "level": "A1",
+      "type": "article_rules",
+      "mode": "typing",
+      "question": "___ Montag ist mein Lieblingstag.",
+      "answer": "Der",
+      "hint": "Days are usually DER."
+    },
+    {
+      "id": 2040,
+      "level": "A1",
+      "type": "article_rules",
+      "mode": "typing",
+      "question": "Ich lese ___ Zeitung am Morgen.",
+      "answer": "die",
+      "hint": "Nouns ending in -ung are usually DIE."
+    },
+    {
+      "id": 2041,
+      "level": "A1",
+      "type": "article_rules",
+      "mode": "typing",
+      "question": "Wir besuchen ___ Museum am Samstag.",
+      "answer": "das",
+      "hint": "Nouns ending in -um are usually DAS."
+    },
+    {
+      "id": 2042,
+      "level": "A1",
+      "type": "article_rules",
+      "mode": "typing",
+      "question": "___ Löwin schläft im Zoo.",
+      "answer": "die",
+      "hint": "Female animals are usually DIE."
+    },
+    {
+      "id": 2043,
+      "level": "A1",
+      "type": "article_rules",
+      "mode": "typing",
+      "question": "Er kauft ___ Computer für das Büro.",
+      "answer": "den",
+      "hint": "Many machines ending in -er are masculine."
+    },
+    {
+      "id": 2044,
+      "level": "A1",
+      "type": "article_rules",
+      "mode": "typing",
+      "question": "___ Religion ist für viele Menschen wichtig.",
+      "answer": "die",
+      "hint": "Nouns ending in -ion are usually DIE."
+    },
+    {
+      "id": 2045,
+      "level": "A1",
+      "type": "article_rules",
+      "mode": "typing",
+      "question": "___ Bier ist kalt.",
+      "answer": "das",
+      "hint": "Important exception: Bier is DAS."
+    },
+    {
+      "id": 2046,
+      "level": "A1",
+      "type": "article_rules",
+      "mode": "typing",
+      "question": "___ Herbst ist oft windig.",
+      "answer": "der",
+      "hint": "Seasons are usually DER."
+    },
+    {
+      "id": 2047,
+      "level": "A1",
+      "type": "article_rules",
+      "mode": "typing",
+      "question": "___ Dokument liegt auf dem Tisch.",
+      "answer": "das",
+      "hint": "Nouns ending in -ment are usually DAS."
+    },
+    {
+      "id": 2048,
+      "level": "A1",
+      "type": "article_rules",
+      "mode": "typing",
+      "question": "Sie besucht ___ Bäckerei.",
+      "answer": "die",
+      "hint": "Nouns ending in -ei are usually DIE."
+    },
+    {
+      "id": 2049,
+      "level": "A2",
+      "type": "indirect_questions",
+      "mode": "typing",
+      "question": "Können Sie mir sagen, ___ der Zug pünktlich ist?",
+      "answer": "ob",
+      "hint": "Use ob for yes/no indirect questions."
+    },
+    {
+      "id": 2050,
+      "level": "A2",
+      "type": "indirect_questions",
+      "mode": "typing",
+      "question": "Weißt du, ___ der Kurs beginnt?",
+      "answer": "wann",
+      "hint": "Keep the W-word in an indirect question."
+    },
+    {
+      "id": 2051,
+      "level": "A2",
+      "type": "indirect_questions",
+      "mode": "typing",
+      "question": "Ich weiß nicht, ___ er heute kommt.",
+      "answer": "ob",
+      "hint": "Yes/no → ob."
+    },
+    {
+      "id": 2052,
+      "level": "A2",
+      "type": "indirect_questions",
+      "mode": "typing",
+      "question": "Kannst du mir erklären, ___ das funktioniert?",
+      "answer": "wie",
+      "hint": "Use the matching W-word."
+    },
+    {
+      "id": 2053,
+      "level": "A2",
+      "type": "indirect_questions",
+      "mode": "typing",
+      "question": "Sie fragt, ___ das Hotel so weit vom Bahnhof entfernt ist.",
+      "answer": "warum",
+      "hint": "Indirect question with warum."
+    },
+    {
+      "id": 2054,
+      "level": "B1",
+      "type": "indirect_questions",
+      "mode": "typing",
+      "question": "Wissen Sie, ___ ich hier parken darf?",
+      "answer": "ob",
+      "hint": "Verb goes to the end in the ob-clause."
+    },
+    {
+      "id": 2055,
+      "level": "B1",
+      "type": "indirect_questions",
+      "mode": "typing",
+      "question": "Er möchte wissen, ___ der nächste Bus fährt.",
+      "answer": "wann",
+      "hint": "W-word keeps its meaning."
+    },
+    {
+      "id": 2056,
+      "level": "B1",
+      "type": "indirect_questions",
+      "mode": "typing",
+      "question": "Ich frage mich, ___ sie schon informiert worden ist.",
+      "answer": "ob",
+      "hint": "Indirect yes/no question."
+    },
+    {
+      "id": 2057,
+      "level": "A2",
+      "type": "wenn_wann_als",
+      "mode": "typing",
+      "question": "___ ich Zeit habe, lese ich ein Buch.",
+      "answer": "Wenn",
+      "hint": "Condition / repeated situation → wenn."
+    },
+    {
+      "id": 2058,
+      "level": "A2",
+      "type": "wenn_wann_als",
+      "mode": "typing",
+      "question": "___ beginnt der Unterricht?",
+      "answer": "Wann",
+      "hint": "Question word → wann."
+    },
+    {
+      "id": 2059,
+      "level": "A2",
+      "type": "wenn_wann_als",
+      "mode": "typing",
+      "question": "___ ich klein war, spielte ich viel draußen.",
+      "answer": "Als",
+      "hint": "One past event/state → als."
+    },
+    {
+      "id": 2060,
+      "level": "B1",
+      "type": "wenn_wann_als",
+      "mode": "typing",
+      "question": "Ruf mich an, ___ du angekommen bist.",
+      "answer": "wenn",
+      "hint": "Future condition → wenn."
+    },
+    {
+      "id": 2061,
+      "level": "B1",
+      "type": "wenn_wann_als",
+      "mode": "typing",
+      "question": "Niemand wusste, ___ der Arzt kommt.",
+      "answer": "wann",
+      "hint": "Indirect question → wann."
+    },
+    {
+      "id": 2062,
+      "level": "B1",
+      "type": "wenn_wann_als",
+      "mode": "typing",
+      "question": "___ sie nach Berlin zog, begann ein neuer Lebensabschnitt.",
+      "answer": "Als",
+      "hint": "Single finished past moment → als."
+    },
+    {
+      "id": 2063,
+      "level": "A2",
+      "type": "um_zu_damit",
+      "mode": "typing",
+      "question": "Ich spare Geld, ___ ein Auto zu kaufen.",
+      "answer": "um",
+      "hint": "Same subject → um ... zu."
+    },
+    {
+      "id": 2064,
+      "level": "A2",
+      "type": "um_zu_damit",
+      "mode": "typing",
+      "question": "Ich erkläre es langsam, ___ du alles verstehst.",
+      "answer": "damit",
+      "hint": "Different subject → damit."
+    },
+    {
+      "id": 2065,
+      "level": "B1",
+      "type": "um_zu_damit",
+      "mode": "typing",
+      "question": "Wir fahren früher los, ___ den Zug nicht zu verpassen.",
+      "answer": "um",
+      "hint": "Same subject and infinitive."
+    },
+    {
+      "id": 2066,
+      "level": "B1",
+      "type": "um_zu_damit",
+      "mode": "typing",
+      "question": "Sie schreibt alles auf, ___ ihre Kollegin es später lesen kann.",
+      "answer": "damit",
+      "hint": "Full clause with a different subject."
+    },
+    {
+      "id": 2067,
+      "level": "B1",
+      "type": "um_zu_damit",
+      "mode": "typing",
+      "question": "Er trainiert jeden Tag, ___ fit zu bleiben.",
+      "answer": "um",
+      "hint": "Purpose with same subject."
+    },
+    {
+      "id": 2068,
+      "level": "B1",
+      "type": "um_zu_damit",
+      "mode": "typing",
+      "question": "Ich schicke dir die Adresse, ___ du uns leichter findest.",
+      "answer": "damit",
+      "hint": "Clause with different subject."
+    },
+    {
+      "id": 2069,
+      "level": "B1",
+      "type": "lassen",
+      "mode": "typing",
+      "question": "Ich lasse mir die Haare ___.",
+      "answer": "schneiden",
+      "hint": "With lassen, the second verb stays in the infinitive."
+    },
+    {
+      "id": 2070,
+      "level": "B1",
+      "type": "lassen",
+      "mode": "typing",
+      "question": "Wir lassen das Auto heute ___.",
+      "answer": "reparieren",
+      "hint": "Have something done → infinitive at the end."
+    },
+    {
+      "id": 2071,
+      "level": "B1",
+      "type": "lassen",
+      "mode": "typing",
+      "question": "Lass mich bitte in Ruhe ___.",
+      "answer": "arbeiten",
+      "hint": "lassen + infinitive"
+    },
+    {
+      "id": 2072,
+      "level": "B1",
+      "type": "lassen",
+      "mode": "typing",
+      "question": "Sie lässt ihre Kinder länger draußen ___.",
+      "answer": "spielen",
+      "hint": "Allow someone to do something."
+    },
+    {
+      "id": 2073,
+      "level": "A2",
+      "type": "verb_preposition",
+      "mode": "typing",
+      "question": "Ich freue mich ___ den Urlaub.",
+      "answer": "auf",
+      "hint": "sich freuen auf + Akk"
+    },
+    {
+      "id": 2074,
+      "level": "A2",
+      "type": "verb_preposition",
+      "mode": "typing",
+      "question": "Wir sprechen ___ das Problem.",
+      "answer": "über",
+      "hint": "sprechen über + Akk"
+    },
+    {
+      "id": 2075,
+      "level": "A2",
+      "type": "verb_preposition",
+      "mode": "typing",
+      "question": "Er wartet ___ den Bus.",
+      "answer": "auf",
+      "hint": "warten auf + Akk"
+    },
+    {
+      "id": 2076,
+      "level": "A2",
+      "type": "verb_preposition",
+      "mode": "typing",
+      "question": "Sie bittet ___ Hilfe.",
+      "answer": "um",
+      "hint": "bitten um + Akk"
+    },
+    {
+      "id": 2077,
+      "level": "A2",
+      "type": "verb_preposition",
+      "mode": "typing",
+      "question": "Ich träume ___ einer Reise.",
+      "answer": "von",
+      "hint": "träumen von + Dat"
+    },
+    {
+      "id": 2078,
+      "level": "B1",
+      "type": "verb_preposition",
+      "mode": "typing",
+      "question": "Das hängt ___ dem Wetter ab.",
+      "answer": "von",
+      "hint": "abhängen von + Dat"
+    },
+    {
+      "id": 2079,
+      "level": "B1",
+      "type": "verb_preposition",
+      "mode": "typing",
+      "question": "Er denkt oft ___ seine Familie.",
+      "answer": "an",
+      "hint": "denken an + Akk"
+    },
+    {
+      "id": 2080,
+      "level": "B1",
+      "type": "verb_preposition",
+      "mode": "typing",
+      "question": "Wir suchen ___ einer Lösung.",
+      "answer": "nach",
+      "hint": "suchen nach + Dat"
+    },
+    {
+      "id": 2081,
+      "level": "A2",
+      "type": "verbindungsadverbien",
+      "mode": "typing",
+      "question": "Ich bin krank. ___ bleibe ich heute zu Hause.",
+      "answer": "Deshalb",
+      "hint": "Use a main-clause connector for a result."
+    },
+    {
+      "id": 2082,
+      "level": "A2",
+      "type": "verbindungsadverbien",
+      "mode": "typing",
+      "question": "Es regnet. ___ gehen wir spazieren.",
+      "answer": "Trotzdem",
+      "hint": "Shows contrast with a surprising result."
+    },
+    {
+      "id": 2083,
+      "level": "B1",
+      "type": "verbindungsadverbien",
+      "mode": "typing",
+      "question": "Er hat kein Auto. ___ fährt er jeden Tag mit dem Bus.",
+      "answer": "Deshalb",
+      "hint": "Result in a new main clause."
+    },
+    {
+      "id": 2084,
+      "level": "B1",
+      "type": "verbindungsadverbien",
+      "mode": "typing",
+      "question": "Sie war müde. ___ lernte sie weiter.",
+      "answer": "Trotzdem",
+      "hint": "Contrast connector."
+    },
+    {
+      "id": 2085,
+      "level": "B1",
+      "type": "question_to_answer",
+      "mode": "typing",
+      "question": "Answer in a full sentence: Wann beginnt der Kurs?",
+      "answer": "Der Kurs beginnt um neun Uhr.",
+      "hint": "Write a full answer sentence."
+    },
+    {
+      "id": 2086,
+      "level": "B1",
+      "type": "question_to_answer",
+      "mode": "typing",
+      "question": "Answer in a full sentence: Warum lernst du Deutsch?",
+      "answer": "Ich lerne Deutsch, weil ich in Deutschland arbeiten möchte.",
+      "hint": "Use a full sentence."
+    },
+    {
+      "id": 2087,
+      "level": "B1",
+      "type": "answer_to_question",
+      "mode": "typing",
+      "question": "Write the question: Ich wohne seit zwei Jahren in Berlin.",
+      "answer": "Wie lange wohnst du in Berlin?",
+      "hint": "Create the correct W-question."
+    },
+    {
+      "id": 2088,
+      "level": "B1",
+      "type": "answer_to_question",
+      "mode": "typing",
+      "question": "Write the question: Der Termin ist am Donnerstag um 16 Uhr.",
+      "answer": "Wann ist der Termin?",
+      "hint": "Find the matching question."
+    },
+    {
+      "id": 2089,
+      "level": "A2",
+      "type": "sentence_structure_reason",
+      "mode": "typing",
+      "question": "Why is it “mit dem Bus”?",
+      "answer": "mit takes the dative, so Bus becomes dem Bus",
+      "hint": "Dative preposition."
+    },
+    {
+      "id": 2090,
+      "level": "A2",
+      "type": "sentence_structure_reason",
+      "mode": "typing",
+      "question": "Why is it “den Mann” in “Ich sehe den Mann”?",
+      "answer": "Mann is the direct object, so it is in the accusative: den Mann",
+      "hint": "Direct object → accusative."
+    },
+    {
+      "id": 2091,
+      "level": "B1",
+      "type": "sentence_structure_reason",
+      "mode": "typing",
+      "question": "Why is it “abholen” but “ich hole dich ab”?",
+      "answer": "abholen is a separable verb, so in the main clause the prefix goes to the end: ich hole dich ab",
+      "hint": "Separable verb rule."
+    },
+    {
+      "id": 2092,
+      "level": "B1",
+      "type": "sentence_structure_reason",
+      "mode": "typing",
+      "question": "Why is it “ich bin gegangen”?",
+      "answer": "gehen is a movement verb, so Perfekt usually uses sein: ich bin gegangen",
+      "hint": "Perfekt with sein."
+    },
+    {
+      "id": 2093,
+      "level": "B1",
+      "type": "konjunktiv_ii_tipps",
+      "mode": "typing",
+      "question": "Complete the advice: Du hast Kopfschmerzen. Du ___ zum Arzt gehen.",
+      "answer": "solltest",
+      "hint": "Advice is often expressed with sollte / solltest."
+    },
+    {
+      "id": 2094,
+      "level": "B1",
+      "type": "konjunktiv_ii_tipps",
+      "mode": "typing",
+      "question": "Complete the suggestion: An deiner Stelle ___ ich früher losgehen.",
+      "answer": "würde",
+      "hint": "Use würde for a polite suggestion."
+    },
+    {
+      "id": 2095,
+      "level": "B1",
+      "type": "infinitiv_mit_zu",
+      "mode": "typing",
+      "question": "Es ist wichtig, pünktlich ___ sein.",
+      "answer": "zu",
+      "hint": "infinitive with zu"
+    },
+    {
+      "id": 2096,
+      "level": "B1",
+      "type": "infinitiv_mit_zu",
+      "mode": "typing",
+      "question": "Ich habe vor, morgen früh ___.",
+      "answer": "aufzustehen",
+      "hint": "Separable verb + zu."
     }
   ]
 }
