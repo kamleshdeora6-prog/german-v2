@@ -118,7 +118,7 @@
         <div class="toolbar wrap">
           <select id="listenLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select>
           <button id="newListeningBtn">New round</button>
-          <label class="stack mini"><span class="tiny">Speed</span><select id="listenSpeed"><option value="0.75">0.75x</option><option value="1" selected>1x</option><option value="1.25">1.25x</option></select></label>
+          <label class="stack mini"><span class="tiny">Speed</span><select id="listenSpeed"><option value="0.75">0.75x</option><option value="1" selected>1x</option><option value="1.25">1.25x</option></select></label><label class="checkline"><input type="checkbox" id="listenShowEnglish"> Show English</label>
         </div>
         <div id="listenPrompt" class="note-block"></div>
         <div class="row gap8 wrap"><button id="playListenBtn">▶ Play</button><button id="stopListenBtn" class="orange">■ Stop</button><button id="replayListenBtn" class="teal">↻ Repeat</button><button class="ghost" id="revealListenBtn">Show answer</button></div>
@@ -142,7 +142,7 @@
       </div>
 
       <div id="practice-writing" class="practice-panel compact-card hidden">
-        <div class="toolbar wrap"><select id="writingTaskSelect"></select><button id="newWritingBtn">New round</button></div>
+        <div class="toolbar wrap"><select id="writingTaskSelect"></select><button id="newWritingBtn">New round</button><label class="checkline"><input type="checkbox" id="writingShowEnglish"> Show English</label></div>
         <div id="writingPrompt" class="note-block"></div>
         <div id="writingPhotoWrap" class="hidden media-wrap"><img id="writingPhoto" alt="Prompt image"></div>
         <textarea id="writingInput" placeholder="Write here"></textarea>
@@ -229,7 +229,7 @@
         <div id="photoExamSample" class="explanation hidden"></div>
       </div>
       <div id="exam-qa" class="exam-panel compact-card hidden">
-        <div class="toolbar wrap"><select id="qaMode"><option value="answer">Questions → full answers</option><option value="question">Answers → make questions</option></select><button id="newQARoundBtn">New round</button></div>
+        <div class="toolbar wrap"><select id="qaMode"><option value="answer">Questions → full answers</option><option value="question">Answers → make questions</option></select><button id="newQARoundBtn">New round</button><label class="checkline"><input type="checkbox" id="qaShowEnglish"> Show English</label></div>
         <div id="qaPrompt" class="question"></div>
         <textarea id="qaInput" placeholder="Write here"></textarea>
         <div class="row gap8 wrap"><button id="checkQABtn">Check</button><button class="ghost" id="showQABtn">Show answer</button></div>
@@ -270,6 +270,7 @@
           <div>
             <h3>About</h3>
             <div id="aboutText" class="note-block"></div>
+            <div id="appCounts" class="note-block"></div>
             <div id="weakAreaText" class="note-block"></div>
           </div>
         </div>
