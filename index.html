@@ -80,6 +80,7 @@
         <button class="subbtn" data-practice="typing">Typing</button>
         <button class="subbtn" data-practice="listening">Listening Q&amp;A</button>
         <button class="subbtn" data-practice="structure">Sentence Structure</button>
+        <button class="subbtn" data-practice="cases">Cases</button>
         <button class="subbtn" data-practice="writing">Writing</button>
       </div>
 
@@ -139,6 +140,18 @@
         <div class="row gap8 wrap"><button id="checkStructureBtn">Check</button><button class="ghost" id="showStructureBtn">Show answer</button></div>
         <div id="structureFeedback" class="result"></div>
         <div id="structureReason" class="explanation hidden"></div>
+      </div>
+
+      <div id="practice-cases" class="practice-panel compact-card hidden">
+        <div class="toolbar wrap">
+          <select id="caseLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select>
+          <button id="newCaseBtn">New round</button>
+        </div>
+        <div id="casePrompt" class="question"></div>
+        <div id="caseChoices" class="chips"></div>
+        <div class="row gap8 wrap"><button id="showCaseBtn" class="ghost">Show answer</button></div>
+        <div id="caseFeedback" class="result"></div>
+        <div id="caseReason" class="explanation hidden"></div>
       </div>
 
       <div id="practice-writing" class="practice-panel compact-card hidden">
@@ -252,7 +265,9 @@
 
     <section id="section-weak" class="app-section hidden">
       <div class="compact-card">
-        <div class="toolbar wrap"><button id="refreshWeakBtn">Refresh</button><button class="ghost" id="practiceWeakBtn">Practice weak areas</button></div>
+        <div class="toolbar wrap"><button id="refreshWeakBtn">Refresh</button><button class="ghost" id="practiceWeakBtn">Practice weak areas</button><button class="ghost" id="startAdaptiveBtn">Adaptive review</button></div>
+        <div id="adaptivePlan" class="note-block"></div>
+        <div id="dueReviewWrap" class="note-block"></div>
         <div id="weakWrap"></div>
       </div>
     </section>
