@@ -52,3 +52,6 @@ button:hover{filter:brightness(1.04)}
 .counts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}.count-card{padding:12px;border:1px solid var(--line);border-radius:14px;background:var(--card)}.count-big{font-size:1.5rem;font-weight:800;margin-top:4px}.muted{color:var(--muted)}.tiny{font-size:.85rem;margin-top:4px}
 #practice-cases .chips{margin:12px 0;}
 #dueReviewWrap button{display:block;margin:6px 0;}
+
+#dataHealthText .good{color:#0f766e;font-weight:700}#dataHealthText .bad{color:#b91c1c;font-weight:700}
+.counts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}.count-card{background:var(--panel);border:1px solid var(--line);padding:12px;border-radius:14px}.count-big{font-size:1.6rem;font-weight:800}
