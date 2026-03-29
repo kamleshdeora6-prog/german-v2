@@ -25,6 +25,7 @@
         <button class="navbtn" data-section="practice">🧪 Practice</button>
         <button class="navbtn" data-section="review">🔁 Review</button>
         <button class="navbtn" data-section="settings">⚙️ Settings</button>
+        <button class="navbtn" data-section="about">ℹ️ About</button>
       </div>
 
       <div class="nav-group compact-note">
@@ -40,7 +41,7 @@
           <button class="icon-btn" id="openSidebarBtn" aria-label="Open menu">☰</button>
           <div>
             <h1 id="pageTitle">Dashboard</h1>
-            <div class="muted small" id="dataCounts">Loading data…</div>
+            <div class="muted small" id="dataCounts">Daily mission progress and smart review</div>
           </div>
         </div>
         <div class="mission-strip">
@@ -116,12 +117,11 @@
           </div>
 
           <div class="card">
-            <div class="card-head between"><h2>Roadmap</h2><span class="badge">compact</span></div>
-            <div class="roadmap">
-              <div class="road-step"><strong>A1</strong><span>Articles, present tense, question words</span></div>
-              <div class="road-step"><strong>A2</strong><span>Perfekt, modal verbs, weil/dass, reflexive verbs</span></div>
-              <div class="road-step"><strong>B1</strong><span>Word order, da-words, relative clauses, passive</span></div>
-              <div class="road-step"><strong>B2</strong><span>Konjunktiv II, argumentation, advanced connectors</span></div>
+            <div class="card-head between"><h2>Focus now</h2><span class="badge">next best steps</span></div>
+            <div class="stack-sm">
+              <div class="soft-block"><strong>1. Finish today’s mission</strong><div class="muted small">Unique passages, vocabulary, exercises, and one writing task count best.</div></div>
+              <div class="soft-block"><strong>2. Review weak areas</strong><div class="muted small">Use weak-area sorting in exercises and repeat difficult vocabulary.</div></div>
+              <div class="soft-block"><strong>3. Build patterns</strong><div class="muted small">Focus on weil, dass, damit, adjective endings, and da-words.</div></div>
             </div>
           </div>
         </div>
@@ -343,6 +343,29 @@
           <div class="card">
             <div class="card-head between"><h2>Weak area review</h2><span class="badge">Smarter tracking</span></div>
             <div id="weakAreaPanel"></div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="section-about" class="app-section hidden">
+        <div class="grid two-up">
+          <div class="card">
+            <div class="card-head between"><h2>Roadmap</h2><span class="badge">A1 → B2</span></div>
+            <div class="roadmap">
+              <div class="road-step"><strong>A1</strong><span>Articles, present tense, question words, simple daily life.</span></div>
+              <div class="road-step"><strong>A2</strong><span>Perfekt, modal verbs, reflexive verbs, prepositions, short emails.</span></div>
+              <div class="road-step"><strong>B1</strong><span>Word order, da-words, relative clauses, passive, opinions and complaints.</span></div>
+              <div class="road-step"><strong>B2</strong><span>Konjunktiv II, argumentation, nominal style, advanced connectors.</span></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-head between"><h2>App details</h2><span class="badge">hidden from dashboard</span></div>
+            <div class="soft-block" id="aboutCounts">Loading content details…</div>
+            <div class="stack-sm mt12">
+              <div class="soft-block"><strong>How progress works</strong><div class="muted small">Repeated passage practice is tracked separately from unique passage completions.</div></div>
+              <div class="soft-block"><strong>Mission counting</strong><div class="muted small">Only meaningful actions count: checked typing, submitted exercises, learned words, and long enough writing tasks.</div></div>
+            </div>
           </div>
         </div>
       </section>

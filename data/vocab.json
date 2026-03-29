@@ -1688,14 +1688,6 @@
     "example_en": "I am thinking about it."
   },
   {
-    "de": "damit",
-    "en": "with it / so that",
-    "level": "B1",
-    "topic": "Connectors",
-    "example_de": "Ich schneide damit Brot. / Ich lerne, damit ich bestehe.",
-    "example_en": "I cut bread with it. / I study so that I pass."
-  },
-  {
     "de": "davon",
     "en": "from it / of it",
     "level": "B1",
@@ -1750,5 +1742,6261 @@
     "topic": "Grammar",
     "example_de": "mein, dein, sein",
     "example_en": "my, your, his"
+  },
+  {
+    "de": "das Zimmer",
+    "en": "room",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort das Zimmer.",
+    "example_en": "This topic includes the word room."
+  },
+  {
+    "de": "der Balkon",
+    "en": "balcony",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Balkon.",
+    "example_en": "This topic includes the word balcony."
+  },
+  {
+    "de": "der Flur",
+    "en": "hallway",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Flur.",
+    "example_en": "This topic includes the word hallway."
+  },
+  {
+    "de": "das Regal",
+    "en": "shelf",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort das Regal.",
+    "example_en": "This topic includes the word shelf."
+  },
+  {
+    "de": "der Schreibtisch",
+    "en": "desk",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Schreibtisch.",
+    "example_en": "This topic includes the word desk."
+  },
+  {
+    "de": "die Heizung",
+    "en": "heating",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Heizung.",
+    "example_en": "This topic includes the word heating."
+  },
+  {
+    "de": "der Schlüssel",
+    "en": "key",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Schlüssel.",
+    "example_en": "This topic includes the word key."
+  },
+  {
+    "de": "der Mieter",
+    "en": "tenant",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Mieter.",
+    "example_en": "This topic includes the word tenant."
+  },
+  {
+    "de": "der Vermieter",
+    "en": "landlord",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Vermieter.",
+    "example_en": "This topic includes the word landlord."
+  },
+  {
+    "de": "die Miete",
+    "en": "rent",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Miete.",
+    "example_en": "This topic includes the word rent."
+  },
+  {
+    "de": "der Umzug",
+    "en": "move",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Umzug.",
+    "example_en": "This topic includes the word move."
+  },
+  {
+    "de": "der Haushalt",
+    "en": "household",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Haushalt.",
+    "example_en": "This topic includes the word household."
+  },
+  {
+    "de": "die Steckdose",
+    "en": "socket",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Steckdose.",
+    "example_en": "This topic includes the word socket."
+  },
+  {
+    "de": "die Gardine",
+    "en": "curtain",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Gardine.",
+    "example_en": "This topic includes the word curtain."
+  },
+  {
+    "de": "die Decke",
+    "en": "blanket",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Decke.",
+    "example_en": "This topic includes the word blanket."
+  },
+  {
+    "de": "das Handtuch",
+    "en": "towel",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort das Handtuch.",
+    "example_en": "This topic includes the word towel."
+  },
+  {
+    "de": "sauber",
+    "en": "clean",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Sauber ist in diesem Thema wichtig.",
+    "example_en": "Clean is important in this topic."
+  },
+  {
+    "de": "ruhig",
+    "en": "quiet",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Ruhig ist in diesem Thema wichtig.",
+    "example_en": "Quiet is important in this topic."
+  },
+  {
+    "de": "bequem",
+    "en": "comfortable",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Bequem ist in diesem Thema wichtig.",
+    "example_en": "Comfortable is important in this topic."
+  },
+  {
+    "de": "hell",
+    "en": "bright",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Hell ist in diesem Thema wichtig.",
+    "example_en": "Bright is important in this topic."
+  },
+  {
+    "de": "eng",
+    "en": "narrow",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Eng ist in diesem Thema wichtig.",
+    "example_en": "Narrow is important in this topic."
+  },
+  {
+    "de": "mieten",
+    "en": "to rent",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Wir möchten mieten sicher benutzen.",
+    "example_en": "We want to use to rent confidently."
+  },
+  {
+    "de": "vermieten",
+    "en": "to rent out",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Wir möchten vermieten sicher benutzen.",
+    "example_en": "We want to use to rent out confidently."
+  },
+  {
+    "de": "umziehen",
+    "en": "to move",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Wir möchten umziehen sicher benutzen.",
+    "example_en": "We want to use to move confidently."
+  },
+  {
+    "de": "putzen",
+    "en": "to clean",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Wir möchten putzen sicher benutzen.",
+    "example_en": "We want to use to clean confidently."
+  },
+  {
+    "de": "lüften",
+    "en": "to air out",
+    "topic": "Home",
+    "level": "A2",
+    "example_de": "Wir möchten lüften sicher benutzen.",
+    "example_en": "We want to use to air out confidently."
+  },
+  {
+    "de": "die Erfahrung",
+    "en": "experience",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Erfahrung.",
+    "example_en": "This topic includes the word experience."
+  },
+  {
+    "de": "die Fähigkeit",
+    "en": "skill",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Fähigkeit.",
+    "example_en": "This topic includes the word skill."
+  },
+  {
+    "de": "die Verantwortung",
+    "en": "responsibility",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Verantwortung.",
+    "example_en": "This topic includes the word responsibility."
+  },
+  {
+    "de": "die Aufgabe",
+    "en": "task",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Aufgabe.",
+    "example_en": "This topic includes the word task."
+  },
+  {
+    "de": "die Besprechung",
+    "en": "meeting",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Besprechung.",
+    "example_en": "This topic includes the word meeting."
+  },
+  {
+    "de": "die Abteilung",
+    "en": "department",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Abteilung.",
+    "example_en": "This topic includes the word department."
+  },
+  {
+    "de": "die Leitung",
+    "en": "management",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Leitung.",
+    "example_en": "This topic includes the word management."
+  },
+  {
+    "de": "das Gehalt",
+    "en": "salary",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort das Gehalt.",
+    "example_en": "This topic includes the word salary."
+  },
+  {
+    "de": "die Kündigung",
+    "en": "notice / dismissal",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Kündigung.",
+    "example_en": "This topic includes the word notice / dismissal."
+  },
+  {
+    "de": "die Stelle",
+    "en": "position",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Stelle.",
+    "example_en": "This topic includes the word position."
+  },
+  {
+    "de": "der Kollege",
+    "en": "colleague",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort der Kollege.",
+    "example_en": "This topic includes the word colleague."
+  },
+  {
+    "de": "die Fortbildung",
+    "en": "further training",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Fortbildung.",
+    "example_en": "This topic includes the word further training."
+  },
+  {
+    "de": "pünktlich",
+    "en": "punctual",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Pünktlich ist in diesem Thema wichtig.",
+    "example_en": "Punctual is important in this topic."
+  },
+  {
+    "de": "flexibel",
+    "en": "flexible",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Flexibel ist in diesem Thema wichtig.",
+    "example_en": "Flexible is important in this topic."
+  },
+  {
+    "de": "beruflich",
+    "en": "professional",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Beruflich ist in diesem Thema wichtig.",
+    "example_en": "Professional is important in this topic."
+  },
+  {
+    "de": "bewerben",
+    "en": "to apply",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Wir möchten bewerben sicher benutzen.",
+    "example_en": "We want to use to apply confidently."
+  },
+  {
+    "de": "einstellen",
+    "en": "to hire",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Wir möchten einstellen sicher benutzen.",
+    "example_en": "We want to use to hire confidently."
+  },
+  {
+    "de": "organisieren",
+    "en": "to organize",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Wir möchten organisieren sicher benutzen.",
+    "example_en": "We want to use to organize confidently."
+  },
+  {
+    "de": "erreichen",
+    "en": "to achieve",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Wir möchten erreichen sicher benutzen.",
+    "example_en": "We want to use to achieve confidently."
+  },
+  {
+    "de": "verbessern",
+    "en": "to improve",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Verbessern ist in diesem Thema wichtig.",
+    "example_en": "To improve is important in this topic."
+  },
+  {
+    "de": "teilnehmen",
+    "en": "to participate",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Wir möchten teilnehmen sicher benutzen.",
+    "example_en": "We want to use to participate confidently."
+  },
+  {
+    "de": "vorbereiten",
+    "en": "to prepare",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Wir möchten vorbereiten sicher benutzen.",
+    "example_en": "We want to use to prepare confidently."
+  },
+  {
+    "de": "verhandeln",
+    "en": "to negotiate",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Verhandeln ist in diesem Thema wichtig.",
+    "example_en": "To negotiate is important in this topic."
+  },
+  {
+    "de": "entscheiden",
+    "en": "to decide",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Wir möchten entscheiden sicher benutzen.",
+    "example_en": "We want to use to decide confidently."
+  },
+  {
+    "de": "unterstützen",
+    "en": "to support",
+    "topic": "Work",
+    "level": "B1",
+    "example_de": "Wir möchten unterstützen sicher benutzen.",
+    "example_en": "We want to use to support confidently."
+  },
+  {
+    "de": "das Angebot",
+    "en": "special offer",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort das Angebot.",
+    "example_en": "This topic includes the word special offer."
+  },
+  {
+    "de": "die Kasse",
+    "en": "checkout",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Kasse.",
+    "example_en": "This topic includes the word checkout."
+  },
+  {
+    "de": "die Tüte",
+    "en": "bag",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Tüte.",
+    "example_en": "This topic includes the word bag."
+  },
+  {
+    "de": "der Bon",
+    "en": "receipt",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Bon.",
+    "example_en": "This topic includes the word receipt."
+  },
+  {
+    "de": "die Größe",
+    "en": "size",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Größe.",
+    "example_en": "This topic includes the word size."
+  },
+  {
+    "de": "die Marke",
+    "en": "brand",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Marke.",
+    "example_en": "This topic includes the word brand."
+  },
+  {
+    "de": "das Produkt",
+    "en": "product",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort das Produkt.",
+    "example_en": "This topic includes the word product."
+  },
+  {
+    "de": "die Rückgabe",
+    "en": "return",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Rückgabe.",
+    "example_en": "This topic includes the word return."
+  },
+  {
+    "de": "die Reklamation",
+    "en": "complaint",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Reklamation.",
+    "example_en": "This topic includes the word complaint."
+  },
+  {
+    "de": "die Auswahl",
+    "en": "selection",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Auswahl.",
+    "example_en": "This topic includes the word selection."
+  },
+  {
+    "de": "der Preisvergleich",
+    "en": "price comparison",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Preisvergleich.",
+    "example_en": "This topic includes the word price comparison."
+  },
+  {
+    "de": "die Umkleidekabine",
+    "en": "changing room",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Umkleidekabine.",
+    "example_en": "This topic includes the word changing room."
+  },
+  {
+    "de": "der Einkaufskorb",
+    "en": "shopping basket",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Einkaufskorb.",
+    "example_en": "This topic includes the word shopping basket."
+  },
+  {
+    "de": "der Kundenservice",
+    "en": "customer service",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Kundenservice.",
+    "example_en": "This topic includes the word customer service."
+  },
+  {
+    "de": "günstig",
+    "en": "cheap",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Günstig ist in diesem Thema wichtig.",
+    "example_en": "Cheap is important in this topic."
+  },
+  {
+    "de": "nützlich",
+    "en": "useful",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Nützlich ist in diesem Thema wichtig.",
+    "example_en": "Useful is important in this topic."
+  },
+  {
+    "de": "hochwertig",
+    "en": "high-quality",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Hochwertig ist in diesem Thema wichtig.",
+    "example_en": "High-quality is important in this topic."
+  },
+  {
+    "de": "bestellen",
+    "en": "to order",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Wir möchten bestellen sicher benutzen.",
+    "example_en": "We want to use to order confidently."
+  },
+  {
+    "de": "bezahlen",
+    "en": "to pay",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Wir möchten bezahlen sicher benutzen.",
+    "example_en": "We want to use to pay confidently."
+  },
+  {
+    "de": "tauschen",
+    "en": "to exchange",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Wir möchten tauschen sicher benutzen.",
+    "example_en": "We want to use to exchange confidently."
+  },
+  {
+    "de": "zurückgeben",
+    "en": "to return",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Wir möchten zurückgeben sicher benutzen.",
+    "example_en": "We want to use to return confidently."
+  },
+  {
+    "de": "passen",
+    "en": "to fit",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Wir möchten passen sicher benutzen.",
+    "example_en": "We want to use to fit confidently."
+  },
+  {
+    "de": "aussehen",
+    "en": "to look",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Wir möchten aussehen sicher benutzen.",
+    "example_en": "We want to use to look confidently."
+  },
+  {
+    "de": "tragen",
+    "en": "to wear",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Wir möchten tragen sicher benutzen.",
+    "example_en": "We want to use to wear confidently."
+  },
+  {
+    "de": "wählen",
+    "en": "to choose",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Wir möchten wählen sicher benutzen.",
+    "example_en": "We want to use to choose confidently."
+  },
+  {
+    "de": "vergleichen",
+    "en": "to compare",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Wir möchten vergleichen sicher benutzen.",
+    "example_en": "We want to use to compare confidently."
+  },
+  {
+    "de": "empfehlen",
+    "en": "to recommend",
+    "topic": "Shopping",
+    "level": "A2",
+    "example_de": "Wir möchten empfehlen sicher benutzen.",
+    "example_en": "We want to use to recommend confidently."
+  },
+  {
+    "de": "die Gesundheit",
+    "en": "health",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Gesundheit.",
+    "example_en": "This topic includes the word health."
+  },
+  {
+    "de": "die Praxis",
+    "en": "doctor's office",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Praxis.",
+    "example_en": "This topic includes the word doctor's office."
+  },
+  {
+    "de": "das Rezept",
+    "en": "prescription",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort das Rezept.",
+    "example_en": "This topic includes the word prescription."
+  },
+  {
+    "de": "der Schmerz",
+    "en": "pain",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Schmerz.",
+    "example_en": "This topic includes the word pain."
+  },
+  {
+    "de": "die Erkältung",
+    "en": "cold",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Erkältung.",
+    "example_en": "This topic includes the word cold."
+  },
+  {
+    "de": "der Husten",
+    "en": "cough",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Husten.",
+    "example_en": "This topic includes the word cough."
+  },
+  {
+    "de": "das Fieber",
+    "en": "fever",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort das Fieber.",
+    "example_en": "This topic includes the word fever."
+  },
+  {
+    "de": "die Bewegung",
+    "en": "exercise",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Bewegung.",
+    "example_en": "This topic includes the word exercise."
+  },
+  {
+    "de": "die Ernährung",
+    "en": "nutrition",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Ernährung.",
+    "example_en": "This topic includes the word nutrition."
+  },
+  {
+    "de": "die Gewohnheit",
+    "en": "habit",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Gewohnheit.",
+    "example_en": "This topic includes the word habit."
+  },
+  {
+    "de": "die Krankenkasse",
+    "en": "health insurance",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Krankenkasse.",
+    "example_en": "This topic includes the word health insurance."
+  },
+  {
+    "de": "das Symptom",
+    "en": "symptom",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort das Symptom.",
+    "example_en": "This topic includes the word symptom."
+  },
+  {
+    "de": "gesund",
+    "en": "healthy",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Gesund ist in diesem Thema wichtig.",
+    "example_en": "Healthy is important in this topic."
+  },
+  {
+    "de": "krank",
+    "en": "ill",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Krank ist in diesem Thema wichtig.",
+    "example_en": "Ill is important in this topic."
+  },
+  {
+    "de": "fit",
+    "en": "fit",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Fit ist in diesem Thema wichtig.",
+    "example_en": "Fit is important in this topic."
+  },
+  {
+    "de": "regelmäßig",
+    "en": "regularly",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Regelmäßig ist in diesem Thema wichtig.",
+    "example_en": "Regularly is important in this topic."
+  },
+  {
+    "de": "untersuchen",
+    "en": "to examine",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Wir möchten untersuchen sicher benutzen.",
+    "example_en": "We want to use to examine confidently."
+  },
+  {
+    "de": "behandeln",
+    "en": "to treat",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Behandeln ist in diesem Thema wichtig.",
+    "example_en": "To treat is important in this topic."
+  },
+  {
+    "de": "verschreiben",
+    "en": "to prescribe",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Wir möchten verschreiben sicher benutzen.",
+    "example_en": "We want to use to prescribe confidently."
+  },
+  {
+    "de": "sich ausruhen",
+    "en": "to rest",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Man muss sich ausruhen im richtigen Kontext verwenden.",
+    "example_en": "You have to use to rest in the right context."
+  },
+  {
+    "de": "trainieren",
+    "en": "to train",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Wir möchten trainieren sicher benutzen.",
+    "example_en": "We want to use to train confidently."
+  },
+  {
+    "de": "atmen",
+    "en": "to breathe",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Wir möchten atmen sicher benutzen.",
+    "example_en": "We want to use to breathe confidently."
+  },
+  {
+    "de": "heilen",
+    "en": "to heal",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Wir möchten heilen sicher benutzen.",
+    "example_en": "We want to use to heal confidently."
+  },
+  {
+    "de": "vermeiden",
+    "en": "to avoid",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Wir möchten vermeiden sicher benutzen.",
+    "example_en": "We want to use to avoid confidently."
+  },
+  {
+    "de": "schützen",
+    "en": "to protect",
+    "topic": "Health",
+    "level": "A2",
+    "example_de": "Wir möchten schützen sicher benutzen.",
+    "example_en": "We want to use to protect confidently."
+  },
+  {
+    "de": "die Bildung",
+    "en": "education",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Bildung.",
+    "example_en": "This topic includes the word education."
+  },
+  {
+    "de": "der Kurs",
+    "en": "course",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Kurs.",
+    "example_en": "This topic includes the word course."
+  },
+  {
+    "de": "die Prüfung",
+    "en": "exam",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Prüfung.",
+    "example_en": "This topic includes the word exam."
+  },
+  {
+    "de": "die Lösung",
+    "en": "solution",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Lösung.",
+    "example_en": "This topic includes the word solution."
+  },
+  {
+    "de": "die Note",
+    "en": "grade",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Note.",
+    "example_en": "This topic includes the word grade."
+  },
+  {
+    "de": "der Unterricht",
+    "en": "lesson",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Unterricht.",
+    "example_en": "This topic includes the word lesson."
+  },
+  {
+    "de": "die Grammatik",
+    "en": "grammar",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Grammatik.",
+    "example_en": "This topic includes the word grammar."
+  },
+  {
+    "de": "der Wortschatz",
+    "en": "vocabulary",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Wortschatz.",
+    "example_en": "This topic includes the word vocabulary."
+  },
+  {
+    "de": "die Aussprache",
+    "en": "pronunciation",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Aussprache.",
+    "example_en": "This topic includes the word pronunciation."
+  },
+  {
+    "de": "das Lehrbuch",
+    "en": "textbook",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort das Lehrbuch.",
+    "example_en": "This topic includes the word textbook."
+  },
+  {
+    "de": "die Hausaufgabe",
+    "en": "homework",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Hausaufgabe.",
+    "example_en": "This topic includes the word homework."
+  },
+  {
+    "de": "die Wiederholung",
+    "en": "revision",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Wiederholung.",
+    "example_en": "This topic includes the word revision."
+  },
+  {
+    "de": "die Erklärung",
+    "en": "explanation",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Erklärung.",
+    "example_en": "This topic includes the word explanation."
+  },
+  {
+    "de": "der Fortschritt",
+    "en": "progress",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Fortschritt.",
+    "example_en": "This topic includes the word progress."
+  },
+  {
+    "de": "einfach",
+    "en": "easy",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Einfach ist in diesem Thema wichtig.",
+    "example_en": "Easy is important in this topic."
+  },
+  {
+    "de": "schwierig",
+    "en": "difficult",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Schwierig ist in diesem Thema wichtig.",
+    "example_en": "Difficult is important in this topic."
+  },
+  {
+    "de": "klar",
+    "en": "clear",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Klar ist in diesem Thema wichtig.",
+    "example_en": "Clear is important in this topic."
+  },
+  {
+    "de": "mündlich",
+    "en": "oral",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Mündlich ist in diesem Thema wichtig.",
+    "example_en": "Oral is important in this topic."
+  },
+  {
+    "de": "schriftlich",
+    "en": "written",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Schriftlich ist in diesem Thema wichtig.",
+    "example_en": "Written is important in this topic."
+  },
+  {
+    "de": "wiederholen",
+    "en": "to repeat",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Wir möchten wiederholen sicher benutzen.",
+    "example_en": "We want to use to repeat confidently."
+  },
+  {
+    "de": "erklären",
+    "en": "to explain",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Wir möchten erklären sicher benutzen.",
+    "example_en": "We want to use to explain confidently."
+  },
+  {
+    "de": "merken",
+    "en": "to remember",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Wir möchten merken sicher benutzen.",
+    "example_en": "We want to use to remember confidently."
+  },
+  {
+    "de": "prüfen",
+    "en": "to check",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Wir möchten prüfen sicher benutzen.",
+    "example_en": "We want to use to check confidently."
+  },
+  {
+    "de": "korrigieren",
+    "en": "to correct",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Wir möchten korrigieren sicher benutzen.",
+    "example_en": "We want to use to correct confidently."
+  },
+  {
+    "de": "üben",
+    "en": "to practice",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Wir möchten üben sicher benutzen.",
+    "example_en": "We want to use to practice confidently."
+  },
+  {
+    "de": "bestehen",
+    "en": "to pass",
+    "topic": "Education",
+    "level": "A2",
+    "example_de": "Wir möchten bestehen sicher benutzen.",
+    "example_en": "We want to use to pass confidently."
+  },
+  {
+    "de": "die Reise",
+    "en": "trip",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Reise.",
+    "example_en": "This topic includes the word trip."
+  },
+  {
+    "de": "der Bahnhof",
+    "en": "train station",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Bahnhof.",
+    "example_en": "This topic includes the word train station."
+  },
+  {
+    "de": "der Fahrplan",
+    "en": "schedule",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Fahrplan.",
+    "example_en": "This topic includes the word schedule."
+  },
+  {
+    "de": "die Verbindung",
+    "en": "connection",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Verbindung.",
+    "example_en": "This topic includes the word connection."
+  },
+  {
+    "de": "die Verspätung",
+    "en": "delay",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Verspätung.",
+    "example_en": "This topic includes the word delay."
+  },
+  {
+    "de": "das Ticket",
+    "en": "ticket",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort das Ticket.",
+    "example_en": "This topic includes the word ticket."
+  },
+  {
+    "de": "der Bahnsteig",
+    "en": "platform",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Bahnsteig.",
+    "example_en": "This topic includes the word platform."
+  },
+  {
+    "de": "der Sitzplatz",
+    "en": "seat",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Sitzplatz.",
+    "example_en": "This topic includes the word seat."
+  },
+  {
+    "de": "die Unterkunft",
+    "en": "accommodation",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Unterkunft.",
+    "example_en": "This topic includes the word accommodation."
+  },
+  {
+    "de": "die Sehenswürdigkeit",
+    "en": "sight",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Sehenswürdigkeit.",
+    "example_en": "This topic includes the word sight."
+  },
+  {
+    "de": "der Koffer",
+    "en": "suitcase",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Koffer.",
+    "example_en": "This topic includes the word suitcase."
+  },
+  {
+    "de": "der Ausflug",
+    "en": "excursion",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Ausflug.",
+    "example_en": "This topic includes the word excursion."
+  },
+  {
+    "de": "die Buchung",
+    "en": "booking",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Buchung.",
+    "example_en": "This topic includes the word booking."
+  },
+  {
+    "de": "die Grenze",
+    "en": "border",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Grenze.",
+    "example_en": "This topic includes the word border."
+  },
+  {
+    "de": "die Strecke",
+    "en": "route",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Strecke.",
+    "example_en": "This topic includes the word route."
+  },
+  {
+    "de": "früh",
+    "en": "early",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Früh ist in diesem Thema wichtig.",
+    "example_en": "Early is important in this topic."
+  },
+  {
+    "de": "spät",
+    "en": "late",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Spät ist in diesem Thema wichtig.",
+    "example_en": "Late is important in this topic."
+  },
+  {
+    "de": "unterwegs",
+    "en": "on the way",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Unterwegs ist in diesem Thema wichtig.",
+    "example_en": "On the way is important in this topic."
+  },
+  {
+    "de": "zentral",
+    "en": "central",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Zentral ist in diesem Thema wichtig.",
+    "example_en": "Central is important in this topic."
+  },
+  {
+    "de": "buchen",
+    "en": "to book",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Wir möchten buchen sicher benutzen.",
+    "example_en": "We want to use to book confidently."
+  },
+  {
+    "de": "abfahren",
+    "en": "to depart",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Wir möchten abfahren sicher benutzen.",
+    "example_en": "We want to use to depart confidently."
+  },
+  {
+    "de": "ankommen",
+    "en": "to arrive",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Wir möchten ankommen sicher benutzen.",
+    "example_en": "We want to use to arrive confidently."
+  },
+  {
+    "de": "umsteigen",
+    "en": "to change trains",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Wir möchten umsteigen sicher benutzen.",
+    "example_en": "We want to use to change trains confidently."
+  },
+  {
+    "de": "reservieren",
+    "en": "to reserve",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Wir möchten reservieren sicher benutzen.",
+    "example_en": "We want to use to reserve confidently."
+  },
+  {
+    "de": "reisen",
+    "en": "to travel",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Wir möchten reisen sicher benutzen.",
+    "example_en": "We want to use to travel confidently."
+  },
+  {
+    "de": "packen",
+    "en": "to pack",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Wir möchten packen sicher benutzen.",
+    "example_en": "We want to use to pack confidently."
+  },
+  {
+    "de": "besichtigen",
+    "en": "to visit / tour",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Wir möchten besichtigen sicher benutzen.",
+    "example_en": "We want to use to visit / tour confidently."
+  },
+  {
+    "de": "orientieren",
+    "en": "to orient",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Wir möchten orientieren sicher benutzen.",
+    "example_en": "We want to use to orient confidently."
+  },
+  {
+    "de": "planen",
+    "en": "to plan",
+    "topic": "Travel",
+    "level": "A2",
+    "example_de": "Wir möchten planen sicher benutzen.",
+    "example_en": "We want to use to plan confidently."
+  },
+  {
+    "de": "die Umwelt",
+    "en": "environment",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Umwelt.",
+    "example_en": "This topic includes the word environment."
+  },
+  {
+    "de": "das Klima",
+    "en": "climate",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort das Klima.",
+    "example_en": "This topic includes the word climate."
+  },
+  {
+    "de": "die Ressource",
+    "en": "resource",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Ressource.",
+    "example_en": "This topic includes the word resource."
+  },
+  {
+    "de": "der Müll",
+    "en": "waste",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort der Müll.",
+    "example_en": "This topic includes the word waste."
+  },
+  {
+    "de": "das Recycling",
+    "en": "recycling",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort das Recycling.",
+    "example_en": "This topic includes the word recycling."
+  },
+  {
+    "de": "die Energie",
+    "en": "energy",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Energie.",
+    "example_en": "This topic includes the word energy."
+  },
+  {
+    "de": "der Strom",
+    "en": "electricity",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort der Strom.",
+    "example_en": "This topic includes the word electricity."
+  },
+  {
+    "de": "die Luftqualität",
+    "en": "air quality",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Luftqualität.",
+    "example_en": "This topic includes the word air quality."
+  },
+  {
+    "de": "der Verbrauch",
+    "en": "consumption",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort der Verbrauch.",
+    "example_en": "This topic includes the word consumption."
+  },
+  {
+    "de": "die Verpackung",
+    "en": "packaging",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Verpackung.",
+    "example_en": "This topic includes the word packaging."
+  },
+  {
+    "de": "die Nachhaltigkeit",
+    "en": "sustainability",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Nachhaltigkeit.",
+    "example_en": "This topic includes the word sustainability."
+  },
+  {
+    "de": "das Verhalten",
+    "en": "behavior",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort das Verhalten.",
+    "example_en": "This topic includes the word behavior."
+  },
+  {
+    "de": "die Maßnahme",
+    "en": "measure",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Maßnahme.",
+    "example_en": "This topic includes the word measure."
+  },
+  {
+    "de": "der Klimaschutz",
+    "en": "climate protection",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort der Klimaschutz.",
+    "example_en": "This topic includes the word climate protection."
+  },
+  {
+    "de": "schädlich",
+    "en": "harmful",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Schädlich ist in diesem Thema wichtig.",
+    "example_en": "Harmful is important in this topic."
+  },
+  {
+    "de": "sparsam",
+    "en": "economical",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Sparsam ist in diesem Thema wichtig.",
+    "example_en": "Economical is important in this topic."
+  },
+  {
+    "de": "verantwortungsvoll",
+    "en": "responsible",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Verantwortungsvoll ist in diesem Thema wichtig.",
+    "example_en": "Responsible is important in this topic."
+  },
+  {
+    "de": "reduzieren",
+    "en": "to reduce",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Wir möchten reduzieren sicher benutzen.",
+    "example_en": "We want to use to reduce confidently."
+  },
+  {
+    "de": "trennen",
+    "en": "to separate",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Wir möchten trennen sicher benutzen.",
+    "example_en": "We want to use to separate confidently."
+  },
+  {
+    "de": "verbrauchen",
+    "en": "to consume",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Wir möchten verbrauchen sicher benutzen.",
+    "example_en": "We want to use to consume confidently."
+  },
+  {
+    "de": "sparen",
+    "en": "to save",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Wir möchten sparen sicher benutzen.",
+    "example_en": "We want to use to save confidently."
+  },
+  {
+    "de": "verwenden",
+    "en": "to use",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Wir möchten verwenden sicher benutzen.",
+    "example_en": "We want to use to use confidently."
+  },
+  {
+    "de": "fördern",
+    "en": "to promote",
+    "topic": "Environment",
+    "level": "B1",
+    "example_de": "Fördern ist in diesem Thema wichtig.",
+    "example_en": "To promote is important in this topic."
+  },
+  {
+    "de": "die Gesellschaft",
+    "en": "society",
+    "topic": "Society",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Gesellschaft.",
+    "example_en": "This topic includes the word society."
+  },
+  {
+    "de": "die Meinung",
+    "en": "opinion",
+    "topic": "Society",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Meinung.",
+    "example_en": "This topic includes the word opinion."
+  },
+  {
+    "de": "die Regel",
+    "en": "rule",
+    "topic": "Society",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Regel.",
+    "example_en": "This topic includes the word rule."
+  },
+  {
+    "de": "die Vielfalt",
+    "en": "diversity",
+    "topic": "Society",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Vielfalt.",
+    "example_en": "This topic includes the word diversity."
+  },
+  {
+    "de": "der Respekt",
+    "en": "respect",
+    "topic": "Society",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort der Respekt.",
+    "example_en": "This topic includes the word respect."
+  },
+  {
+    "de": "das Gespräch",
+    "en": "conversation",
+    "topic": "Society",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort das Gespräch.",
+    "example_en": "This topic includes the word conversation."
+  },
+  {
+    "de": "das Missverständnis",
+    "en": "misunderstanding",
+    "topic": "Society",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort das Missverständnis.",
+    "example_en": "This topic includes the word misunderstanding."
+  },
+  {
+    "de": "die Herausforderung",
+    "en": "challenge",
+    "topic": "Society",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Herausforderung.",
+    "example_en": "This topic includes the word challenge."
+  },
+  {
+    "de": "die Zusammenarbeit",
+    "en": "cooperation",
+    "topic": "Society",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Zusammenarbeit.",
+    "example_en": "This topic includes the word cooperation."
+  },
+  {
+    "de": "offen",
+    "en": "open",
+    "topic": "Society",
+    "level": "B1",
+    "example_de": "Wir möchten offen sicher benutzen.",
+    "example_en": "We want to use open confidently."
+  },
+  {
+    "de": "fair",
+    "en": "fair",
+    "topic": "Society",
+    "level": "B1",
+    "example_de": "Fair ist in diesem Thema wichtig.",
+    "example_en": "Fair is important in this topic."
+  },
+  {
+    "de": "respektvoll",
+    "en": "respectful",
+    "topic": "Society",
+    "level": "B1",
+    "example_de": "Respektvoll ist in diesem Thema wichtig.",
+    "example_en": "Respectful is important in this topic."
+  },
+  {
+    "de": "kritisch",
+    "en": "critical",
+    "topic": "Society",
+    "level": "B1",
+    "example_de": "Kritisch ist in diesem Thema wichtig.",
+    "example_en": "Critical is important in this topic."
+  },
+  {
+    "de": "gemeinsam",
+    "en": "together",
+    "topic": "Society",
+    "level": "B1",
+    "example_de": "Gemeinsam ist in diesem Thema wichtig.",
+    "example_en": "Together is important in this topic."
+  },
+  {
+    "de": "diskutieren",
+    "en": "to discuss",
+    "topic": "Society",
+    "level": "B1",
+    "example_de": "Wir möchten diskutieren sicher benutzen.",
+    "example_en": "We want to use to discuss confidently."
+  },
+  {
+    "de": "akzeptieren",
+    "en": "to accept",
+    "topic": "Society",
+    "level": "B1",
+    "example_de": "Wir möchten akzeptieren sicher benutzen.",
+    "example_en": "We want to use to accept confidently."
+  },
+  {
+    "de": "beobachten",
+    "en": "to observe",
+    "topic": "Society",
+    "level": "B1",
+    "example_de": "Wir möchten beobachten sicher benutzen.",
+    "example_en": "We want to use to observe confidently."
+  },
+  {
+    "de": "verändern",
+    "en": "to change",
+    "topic": "Society",
+    "level": "B1",
+    "example_de": "Verändern ist in diesem Thema wichtig.",
+    "example_en": "To change is important in this topic."
+  },
+  {
+    "de": "reagieren",
+    "en": "to react",
+    "topic": "Society",
+    "level": "B1",
+    "example_de": "Wir möchten reagieren sicher benutzen.",
+    "example_en": "We want to use to react confidently."
+  },
+  {
+    "de": "stärken",
+    "en": "to strengthen",
+    "topic": "Society",
+    "level": "B1",
+    "example_de": "Wir möchten stärken sicher benutzen.",
+    "example_en": "We want to use to strengthen confidently."
+  },
+  {
+    "de": "die Technik",
+    "en": "technology",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Technik.",
+    "example_en": "This topic includes the word technology."
+  },
+  {
+    "de": "das Gerät",
+    "en": "device",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort das Gerät.",
+    "example_en": "This topic includes the word device."
+  },
+  {
+    "de": "das Netzwerk",
+    "en": "network",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort das Netzwerk.",
+    "example_en": "This topic includes the word network."
+  },
+  {
+    "de": "die Datei",
+    "en": "file",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Datei.",
+    "example_en": "This topic includes the word file."
+  },
+  {
+    "de": "der Bildschirm",
+    "en": "screen",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort der Bildschirm.",
+    "example_en": "This topic includes the word screen."
+  },
+  {
+    "de": "die Tastatur",
+    "en": "keyboard",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Tastatur.",
+    "example_en": "This topic includes the word keyboard."
+  },
+  {
+    "de": "die Anwendung",
+    "en": "application",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Anwendung.",
+    "example_en": "This topic includes the word application."
+  },
+  {
+    "de": "die Sicherheit",
+    "en": "security",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Sicherheit.",
+    "example_en": "This topic includes the word security."
+  },
+  {
+    "de": "der Datenschutz",
+    "en": "data protection",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort der Datenschutz.",
+    "example_en": "This topic includes the word data protection."
+  },
+  {
+    "de": "das Passwort",
+    "en": "password",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort das Passwort.",
+    "example_en": "This topic includes the word password."
+  },
+  {
+    "de": "die Aktualisierung",
+    "en": "update",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Aktualisierung.",
+    "example_en": "This topic includes the word update."
+  },
+  {
+    "de": "der Fehler",
+    "en": "error",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort der Fehler.",
+    "example_en": "This topic includes the word error."
+  },
+  {
+    "de": "die Software",
+    "en": "software",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Software.",
+    "example_en": "This topic includes the word software."
+  },
+  {
+    "de": "die Plattform",
+    "en": "platform",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Plattform.",
+    "example_en": "This topic includes the word platform."
+  },
+  {
+    "de": "digital",
+    "en": "digital",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Digital ist in diesem Thema wichtig.",
+    "example_en": "Digital is important in this topic."
+  },
+  {
+    "de": "online",
+    "en": "online",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Online ist in diesem Thema wichtig.",
+    "example_en": "Online is important in this topic."
+  },
+  {
+    "de": "sicher",
+    "en": "secure",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Sicher ist in diesem Thema wichtig.",
+    "example_en": "Secure is important in this topic."
+  },
+  {
+    "de": "automatisch",
+    "en": "automatic",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Automatisch ist in diesem Thema wichtig.",
+    "example_en": "Automatic is important in this topic."
+  },
+  {
+    "de": "speichern",
+    "en": "to save",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Speichern ist in diesem Thema wichtig.",
+    "example_en": "To save is important in this topic."
+  },
+  {
+    "de": "laden",
+    "en": "to load / charge",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Wir möchten laden sicher benutzen.",
+    "example_en": "We want to use to load / charge confidently."
+  },
+  {
+    "de": "löschen",
+    "en": "to delete",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Wir möchten löschen sicher benutzen.",
+    "example_en": "We want to use to delete confidently."
+  },
+  {
+    "de": "installieren",
+    "en": "to install",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Wir möchten installieren sicher benutzen.",
+    "example_en": "We want to use to install confidently."
+  },
+  {
+    "de": "aktualisieren",
+    "en": "to update",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Wir möchten aktualisieren sicher benutzen.",
+    "example_en": "We want to use to update confidently."
+  },
+  {
+    "de": "verbinden",
+    "en": "to connect",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Wir möchten verbinden sicher benutzen.",
+    "example_en": "We want to use to connect confidently."
+  },
+  {
+    "de": "sichern",
+    "en": "to secure",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Sichern ist in diesem Thema wichtig.",
+    "example_en": "To secure is important in this topic."
+  },
+  {
+    "de": "teilen",
+    "en": "to share",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Wir möchten teilen sicher benutzen.",
+    "example_en": "We want to use to share confidently."
+  },
+  {
+    "de": "nutzen",
+    "en": "to use",
+    "topic": "Technology",
+    "level": "B1",
+    "example_de": "Wir möchten nutzen sicher benutzen.",
+    "example_en": "We want to use to use confidently."
+  },
+  {
+    "de": "die Kultur",
+    "en": "culture",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Kultur.",
+    "example_en": "This topic includes the word culture."
+  },
+  {
+    "de": "das Konzert",
+    "en": "concert",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort das Konzert.",
+    "example_en": "This topic includes the word concert."
+  },
+  {
+    "de": "das Museum",
+    "en": "museum",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort das Museum.",
+    "example_en": "This topic includes the word museum."
+  },
+  {
+    "de": "das Theater",
+    "en": "theater",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort das Theater.",
+    "example_en": "This topic includes the word theater."
+  },
+  {
+    "de": "der Eintritt",
+    "en": "admission",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort der Eintritt.",
+    "example_en": "This topic includes the word admission."
+  },
+  {
+    "de": "das Publikum",
+    "en": "audience",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort das Publikum.",
+    "example_en": "This topic includes the word audience."
+  },
+  {
+    "de": "die Tradition",
+    "en": "tradition",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Tradition.",
+    "example_en": "This topic includes the word tradition."
+  },
+  {
+    "de": "die Feier",
+    "en": "celebration",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Feier.",
+    "example_en": "This topic includes the word celebration."
+  },
+  {
+    "de": "das Fest",
+    "en": "festival",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort das Fest.",
+    "example_en": "This topic includes the word festival."
+  },
+  {
+    "de": "die Sprache",
+    "en": "language",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Sprache.",
+    "example_en": "This topic includes the word language."
+  },
+  {
+    "de": "die Geschichte",
+    "en": "history",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Geschichte.",
+    "example_en": "This topic includes the word history."
+  },
+  {
+    "de": "der Eindruck",
+    "en": "impression",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort der Eindruck.",
+    "example_en": "This topic includes the word impression."
+  },
+  {
+    "de": "interessant",
+    "en": "interesting",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Interessant ist in diesem Thema wichtig.",
+    "example_en": "Interesting is important in this topic."
+  },
+  {
+    "de": "spannend",
+    "en": "exciting",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Spannend ist in diesem Thema wichtig.",
+    "example_en": "Exciting is important in this topic."
+  },
+  {
+    "de": "modern",
+    "en": "modern",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Modern ist in diesem Thema wichtig.",
+    "example_en": "Modern is important in this topic."
+  },
+  {
+    "de": "kreativ",
+    "en": "creative",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Kreativ ist in diesem Thema wichtig.",
+    "example_en": "Creative is important in this topic."
+  },
+  {
+    "de": "feiern",
+    "en": "to celebrate",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Feiern ist in diesem Thema wichtig.",
+    "example_en": "To celebrate is important in this topic."
+  },
+  {
+    "de": "besuchen",
+    "en": "to visit",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Wir möchten besuchen sicher benutzen.",
+    "example_en": "We want to use to visit confidently."
+  },
+  {
+    "de": "darstellen",
+    "en": "to portray",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Wir möchten darstellen sicher benutzen.",
+    "example_en": "We want to use to portray confidently."
+  },
+  {
+    "de": "beschreiben",
+    "en": "to describe",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Wir möchten beschreiben sicher benutzen.",
+    "example_en": "We want to use to describe confidently."
+  },
+  {
+    "de": "erleben",
+    "en": "to experience",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Wir möchten erleben sicher benutzen.",
+    "example_en": "We want to use to experience confidently."
+  },
+  {
+    "de": "genießen",
+    "en": "to enjoy",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Wir möchten genießen sicher benutzen.",
+    "example_en": "We want to use to enjoy confidently."
+  },
+  {
+    "de": "vorstellen",
+    "en": "to present",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Wir möchten vorstellen sicher benutzen.",
+    "example_en": "We want to use to present confidently."
+  },
+  {
+    "de": "erinnern",
+    "en": "to remember",
+    "topic": "Culture",
+    "level": "B1",
+    "example_de": "Erinnern ist in diesem Thema wichtig.",
+    "example_en": "To remember is important in this topic."
+  },
+  {
+    "de": "die Nachricht",
+    "en": "message",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Nachricht.",
+    "example_en": "This topic includes the word message."
+  },
+  {
+    "de": "die Antwort",
+    "en": "answer",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Antwort.",
+    "example_en": "This topic includes the word answer."
+  },
+  {
+    "de": "die Bitte",
+    "en": "request",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Bitte.",
+    "example_en": "This topic includes the word request."
+  },
+  {
+    "de": "die Diskussion",
+    "en": "discussion",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Diskussion.",
+    "example_en": "This topic includes the word discussion."
+  },
+  {
+    "de": "die Rückmeldung",
+    "en": "feedback",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Rückmeldung.",
+    "example_en": "This topic includes the word feedback."
+  },
+  {
+    "de": "der Hinweis",
+    "en": "notice / hint",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort der Hinweis.",
+    "example_en": "This topic includes the word notice / hint."
+  },
+  {
+    "de": "die E-Mail",
+    "en": "email",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die E-Mail.",
+    "example_en": "This topic includes the word email."
+  },
+  {
+    "de": "der Anruf",
+    "en": "call",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort der Anruf.",
+    "example_en": "This topic includes the word call."
+  },
+  {
+    "de": "die Beschwerde",
+    "en": "complaint",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Beschwerde.",
+    "example_en": "This topic includes the word complaint."
+  },
+  {
+    "de": "das Argument",
+    "en": "argument",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort das Argument.",
+    "example_en": "This topic includes the word argument."
+  },
+  {
+    "de": "die Zustimmung",
+    "en": "agreement",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Zustimmung.",
+    "example_en": "This topic includes the word agreement."
+  },
+  {
+    "de": "der Vorschlag",
+    "en": "suggestion",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort der Vorschlag.",
+    "example_en": "This topic includes the word suggestion."
+  },
+  {
+    "de": "deutlich",
+    "en": "clear",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Deutlich ist in diesem Thema wichtig.",
+    "example_en": "Clear is important in this topic."
+  },
+  {
+    "de": "höflich",
+    "en": "polite",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Höflich ist in diesem Thema wichtig.",
+    "example_en": "Polite is important in this topic."
+  },
+  {
+    "de": "direkt",
+    "en": "direct",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Direkt ist in diesem Thema wichtig.",
+    "example_en": "Direct is important in this topic."
+  },
+  {
+    "de": "missverständlich",
+    "en": "misleading",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Missverständlich ist in diesem Thema wichtig.",
+    "example_en": "Misleading is important in this topic."
+  },
+  {
+    "de": "antworten",
+    "en": "to answer",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Wir möchten antworten sicher benutzen.",
+    "example_en": "We want to use to answer confidently."
+  },
+  {
+    "de": "fragen",
+    "en": "to ask",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Wir möchten fragen sicher benutzen.",
+    "example_en": "We want to use to ask confidently."
+  },
+  {
+    "de": "zustimmen",
+    "en": "to agree",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Wir möchten zustimmen sicher benutzen.",
+    "example_en": "We want to use to agree confidently."
+  },
+  {
+    "de": "ablehnen",
+    "en": "to reject",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Wir möchten ablehnen sicher benutzen.",
+    "example_en": "We want to use to reject confidently."
+  },
+  {
+    "de": "formulieren",
+    "en": "to phrase",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Wir möchten formulieren sicher benutzen.",
+    "example_en": "We want to use to phrase confidently."
+  },
+  {
+    "de": "begründen",
+    "en": "to justify",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Wir möchten begründen sicher benutzen.",
+    "example_en": "We want to use to justify confidently."
+  },
+  {
+    "de": "mitteilen",
+    "en": "to inform",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Wir möchten mitteilen sicher benutzen.",
+    "example_en": "We want to use to inform confidently."
+  },
+  {
+    "de": "klären",
+    "en": "to clarify",
+    "topic": "Communication",
+    "level": "B1",
+    "example_de": "Wir möchten klären sicher benutzen.",
+    "example_en": "We want to use to clarify confidently."
+  },
+  {
+    "de": "das Geld",
+    "en": "money",
+    "topic": "Finance",
+    "level": "B2",
+    "example_de": "Dieses Thema enthält das Wort das Geld.",
+    "example_en": "This topic includes the word money."
+  },
+  {
+    "de": "das Konto",
+    "en": "account",
+    "topic": "Finance",
+    "level": "B2",
+    "example_de": "Dieses Thema enthält das Wort das Konto.",
+    "example_en": "This topic includes the word account."
+  },
+  {
+    "de": "die Zahlung",
+    "en": "payment",
+    "topic": "Finance",
+    "level": "B2",
+    "example_de": "Dieses Thema enthält das Wort die Zahlung.",
+    "example_en": "This topic includes the word payment."
+  },
+  {
+    "de": "die Rechnung",
+    "en": "invoice",
+    "topic": "Finance",
+    "level": "B2",
+    "example_de": "Dieses Thema enthält das Wort die Rechnung.",
+    "example_en": "This topic includes the word invoice."
+  },
+  {
+    "de": "die Überweisung",
+    "en": "bank transfer",
+    "topic": "Finance",
+    "level": "B2",
+    "example_de": "Dieses Thema enthält das Wort die Überweisung.",
+    "example_en": "This topic includes the word bank transfer."
+  },
+  {
+    "de": "das Budget",
+    "en": "budget",
+    "topic": "Finance",
+    "level": "B2",
+    "example_de": "Dieses Thema enthält das Wort das Budget.",
+    "example_en": "This topic includes the word budget."
+  },
+  {
+    "de": "die Ausgabe",
+    "en": "expense",
+    "topic": "Finance",
+    "level": "B2",
+    "example_de": "Dieses Thema enthält das Wort die Ausgabe.",
+    "example_en": "This topic includes the word expense."
+  },
+  {
+    "de": "die Einnahme",
+    "en": "income",
+    "topic": "Finance",
+    "level": "B2",
+    "example_de": "Dieses Thema enthält das Wort die Einnahme.",
+    "example_en": "This topic includes the word income."
+  },
+  {
+    "de": "der Betrag",
+    "en": "amount",
+    "topic": "Finance",
+    "level": "B2",
+    "example_de": "Dieses Thema enthält das Wort der Betrag.",
+    "example_en": "This topic includes the word amount."
+  },
+  {
+    "de": "die Sparsamkeit",
+    "en": "thrift",
+    "topic": "Finance",
+    "level": "B2",
+    "example_de": "Dieses Thema enthält das Wort die Sparsamkeit.",
+    "example_en": "This topic includes the word thrift."
+  },
+  {
+    "de": "der Preis",
+    "en": "price",
+    "topic": "Finance",
+    "level": "B2",
+    "example_de": "Dieses Thema enthält das Wort der Preis.",
+    "example_en": "This topic includes the word price."
+  },
+  {
+    "de": "die Kosten",
+    "en": "costs",
+    "topic": "Finance",
+    "level": "B2",
+    "example_de": "Dieses Thema enthält das Wort die Kosten.",
+    "example_en": "This topic includes the word costs."
+  },
+  {
+    "de": "die Gebühr",
+    "en": "fee",
+    "topic": "Finance",
+    "level": "B2",
+    "example_de": "Dieses Thema enthält das Wort die Gebühr.",
+    "example_en": "This topic includes the word fee."
+  },
+  {
+    "de": "die Steuer",
+    "en": "tax",
+    "topic": "Finance",
+    "level": "B2",
+    "example_de": "Dieses Thema enthält das Wort die Steuer.",
+    "example_en": "This topic includes the word tax."
+  },
+  {
+    "de": "kostengünstig",
+    "en": "cost-effective",
+    "topic": "Finance",
+    "level": "B2",
+    "example_de": "Kostengünstig ist in diesem Thema wichtig.",
+    "example_en": "Cost-effective is important in this topic."
+  },
+  {
+    "de": "finanziell",
+    "en": "financial",
+    "topic": "Finance",
+    "level": "B2",
+    "example_de": "Finanziell ist in diesem Thema wichtig.",
+    "example_en": "Financial is important in this topic."
+  },
+  {
+    "de": "monatlich",
+    "en": "monthly",
+    "topic": "Finance",
+    "level": "B2",
+    "example_de": "Monatlich ist in diesem Thema wichtig.",
+    "example_en": "Monthly is important in this topic."
+  },
+  {
+    "de": "überweisen",
+    "en": "to transfer",
+    "topic": "Finance",
+    "level": "B2",
+    "example_de": "Wir möchten überweisen sicher benutzen.",
+    "example_en": "We want to use to transfer confidently."
+  },
+  {
+    "de": "kosten",
+    "en": "to cost",
+    "topic": "Finance",
+    "level": "B2",
+    "example_de": "Wir möchten kosten sicher benutzen.",
+    "example_en": "We want to use to cost confidently."
+  },
+  {
+    "de": "rechnen",
+    "en": "to calculate",
+    "topic": "Finance",
+    "level": "B2",
+    "example_de": "Wir möchten rechnen sicher benutzen.",
+    "example_en": "We want to use to calculate confidently."
+  },
+  {
+    "de": "investieren",
+    "en": "to invest",
+    "topic": "Finance",
+    "level": "B2",
+    "example_de": "Wir möchten investieren sicher benutzen.",
+    "example_en": "We want to use to invest confidently."
+  },
+  {
+    "de": "das Frühstück",
+    "en": "breakfast",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort das Frühstück.",
+    "example_en": "This topic includes the word breakfast."
+  },
+  {
+    "de": "das Mittagessen",
+    "en": "lunch",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort das Mittagessen.",
+    "example_en": "This topic includes the word lunch."
+  },
+  {
+    "de": "das Abendessen",
+    "en": "dinner",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort das Abendessen.",
+    "example_en": "This topic includes the word dinner."
+  },
+  {
+    "de": "die Mahlzeit",
+    "en": "meal",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Mahlzeit.",
+    "example_en": "This topic includes the word meal."
+  },
+  {
+    "de": "das Getränk",
+    "en": "drink",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort das Getränk.",
+    "example_en": "This topic includes the word drink."
+  },
+  {
+    "de": "das Gemüse",
+    "en": "vegetables",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort das Gemüse.",
+    "example_en": "This topic includes the word vegetables."
+  },
+  {
+    "de": "das Obst",
+    "en": "fruit",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort das Obst.",
+    "example_en": "This topic includes the word fruit."
+  },
+  {
+    "de": "die Zutat",
+    "en": "ingredient",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Zutat.",
+    "example_en": "This topic includes the word ingredient."
+  },
+  {
+    "de": "die Portion",
+    "en": "portion",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort die Portion.",
+    "example_en": "This topic includes the word portion."
+  },
+  {
+    "de": "der Geschmack",
+    "en": "taste",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Geschmack.",
+    "example_en": "This topic includes the word taste."
+  },
+  {
+    "de": "der Hunger",
+    "en": "hunger",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Hunger.",
+    "example_en": "This topic includes the word hunger."
+  },
+  {
+    "de": "der Teller",
+    "en": "plate",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort der Teller.",
+    "example_en": "This topic includes the word plate."
+  },
+  {
+    "de": "das Besteck",
+    "en": "cutlery",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort das Besteck.",
+    "example_en": "This topic includes the word cutlery."
+  },
+  {
+    "de": "das Dessert",
+    "en": "dessert",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Dieses Thema enthält das Wort das Dessert.",
+    "example_en": "This topic includes the word dessert."
+  },
+  {
+    "de": "frisch",
+    "en": "fresh",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Frisch ist in diesem Thema wichtig.",
+    "example_en": "Fresh is important in this topic."
+  },
+  {
+    "de": "süß",
+    "en": "sweet",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Süß ist in diesem Thema wichtig.",
+    "example_en": "Sweet is important in this topic."
+  },
+  {
+    "de": "salzig",
+    "en": "salty",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Salzig ist in diesem Thema wichtig.",
+    "example_en": "Salty is important in this topic."
+  },
+  {
+    "de": "scharf",
+    "en": "spicy",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Scharf ist in diesem Thema wichtig.",
+    "example_en": "Spicy is important in this topic."
+  },
+  {
+    "de": "vegetarisch",
+    "en": "vegetarian",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Vegetarisch ist in diesem Thema wichtig.",
+    "example_en": "Vegetarian is important in this topic."
+  },
+  {
+    "de": "braten",
+    "en": "to fry",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Wir möchten braten sicher benutzen.",
+    "example_en": "We want to use to fry confidently."
+  },
+  {
+    "de": "backen",
+    "en": "to bake",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Wir möchten backen sicher benutzen.",
+    "example_en": "We want to use to bake confidently."
+  },
+  {
+    "de": "schneiden",
+    "en": "to cut",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Wir möchten schneiden sicher benutzen.",
+    "example_en": "We want to use to cut confidently."
+  },
+  {
+    "de": "würzen",
+    "en": "to season",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Wir möchten würzen sicher benutzen.",
+    "example_en": "We want to use to season confidently."
+  },
+  {
+    "de": "servieren",
+    "en": "to serve",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Wir möchten servieren sicher benutzen.",
+    "example_en": "We want to use to serve confidently."
+  },
+  {
+    "de": "probieren",
+    "en": "to try",
+    "topic": "Food",
+    "level": "A2",
+    "example_de": "Wir möchten probieren sicher benutzen.",
+    "example_en": "We want to use to try confidently."
+  },
+  {
+    "de": "die Zeit",
+    "en": "time",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Zeit.",
+    "example_en": "This topic includes the word time."
+  },
+  {
+    "de": "der Kalender",
+    "en": "calendar",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort der Kalender.",
+    "example_en": "This topic includes the word calendar."
+  },
+  {
+    "de": "die Frist",
+    "en": "deadline",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Frist.",
+    "example_en": "This topic includes the word deadline."
+  },
+  {
+    "de": "der Plan",
+    "en": "plan",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort der Plan.",
+    "example_en": "This topic includes the word plan."
+  },
+  {
+    "de": "die Priorität",
+    "en": "priority",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Priorität.",
+    "example_en": "This topic includes the word priority."
+  },
+  {
+    "de": "die Pause",
+    "en": "break",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Pause.",
+    "example_en": "This topic includes the word break."
+  },
+  {
+    "de": "der Anfang",
+    "en": "beginning",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort der Anfang.",
+    "example_en": "This topic includes the word beginning."
+  },
+  {
+    "de": "das Ende",
+    "en": "end",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort das Ende.",
+    "example_en": "This topic includes the word end."
+  },
+  {
+    "de": "die Dauer",
+    "en": "duration",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Dauer.",
+    "example_en": "This topic includes the word duration."
+  },
+  {
+    "de": "der Alltag",
+    "en": "everyday life",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort der Alltag.",
+    "example_en": "This topic includes the word everyday life."
+  },
+  {
+    "de": "die Routine",
+    "en": "routine",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Routine.",
+    "example_en": "This topic includes the word routine."
+  },
+  {
+    "de": "die Vorbereitung",
+    "en": "preparation",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Vorbereitung.",
+    "example_en": "This topic includes the word preparation."
+  },
+  {
+    "de": "die Organisation",
+    "en": "organization",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Organisation.",
+    "example_en": "This topic includes the word organization."
+  },
+  {
+    "de": "die Entscheidung",
+    "en": "decision",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Dieses Thema enthält das Wort die Entscheidung.",
+    "example_en": "This topic includes the word decision."
+  },
+  {
+    "de": "rechtzeitig",
+    "en": "in good time",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Rechtzeitig ist in diesem Thema wichtig.",
+    "example_en": "In good time is important in this topic."
+  },
+  {
+    "de": "sofort",
+    "en": "immediately",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Sofort ist in diesem Thema wichtig.",
+    "example_en": "Immediately is important in this topic."
+  },
+  {
+    "de": "später",
+    "en": "later",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Später ist in diesem Thema wichtig.",
+    "example_en": "Later is important in this topic."
+  },
+  {
+    "de": "beginnen",
+    "en": "to begin",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Wir möchten beginnen sicher benutzen.",
+    "example_en": "We want to use to begin confidently."
+  },
+  {
+    "de": "enden",
+    "en": "to end",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Wir möchten enden sicher benutzen.",
+    "example_en": "We want to use to end confidently."
+  },
+  {
+    "de": "verschieben",
+    "en": "to postpone",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Wir möchten verschieben sicher benutzen.",
+    "example_en": "We want to use to postpone confidently."
+  },
+  {
+    "de": "vereinbaren",
+    "en": "to arrange",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Wir möchten vereinbaren sicher benutzen.",
+    "example_en": "We want to use to arrange confidently."
+  },
+  {
+    "de": "priorisieren",
+    "en": "to prioritize",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Wir möchten priorisieren sicher benutzen.",
+    "example_en": "We want to use to prioritize confidently."
+  },
+  {
+    "de": "unterbrechen",
+    "en": "to interrupt",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Wir möchten unterbrechen sicher benutzen.",
+    "example_en": "We want to use to interrupt confidently."
+  },
+  {
+    "de": "fortsetzen",
+    "en": "to continue",
+    "topic": "Time and Planning",
+    "level": "B1",
+    "example_de": "Wir möchten fortsetzen sicher benutzen.",
+    "example_en": "We want to use to continue confidently."
+  },
+  {
+    "de": "zum Beispiel",
+    "en": "for example",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten zum Beispiel sicher benutzen.",
+    "example_en": "We want to use for example confidently."
+  },
+  {
+    "de": "im Grunde",
+    "en": "basically",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten im Grunde sicher benutzen.",
+    "example_en": "We want to use basically confidently."
+  },
+  {
+    "de": "auf jeden Fall",
+    "en": "in any case",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten auf jeden Fall sicher benutzen.",
+    "example_en": "We want to use in any case confidently."
+  },
+  {
+    "de": "ich bin damit einverstanden",
+    "en": "I agree with that",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten ich bin damit einverstanden sicher benutzen.",
+    "example_en": "We want to use I agree with that confidently."
+  },
+  {
+    "de": "ich bin anderer Meinung",
+    "en": "I have a different opinion",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten ich bin anderer Meinung sicher benutzen.",
+    "example_en": "We want to use I have a different opinion confidently."
+  },
+  {
+    "de": "das kommt darauf an",
+    "en": "that depends",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Dieses Thema enthält das Wort das kommt darauf an.",
+    "example_en": "This topic includes the word that depends."
+  },
+  {
+    "de": "unter anderem",
+    "en": "among other things",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten unter anderem sicher benutzen.",
+    "example_en": "We want to use among other things confidently."
+  },
+  {
+    "de": "im Vergleich dazu",
+    "en": "compared with that",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten im Vergleich dazu sicher benutzen.",
+    "example_en": "We want to use compared with that confidently."
+  },
+  {
+    "de": "sowohl ... als auch",
+    "en": "both ... and",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten sowohl ... als auch sicher benutzen.",
+    "example_en": "We want to use both ... and confidently."
+  },
+  {
+    "de": "nicht nur ... sondern auch",
+    "en": "not only ... but also",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten nicht nur ... sondern auch sicher benutzen.",
+    "example_en": "We want to use not only ... but also confidently."
+  },
+  {
+    "de": "im Laufe der Zeit",
+    "en": "over time",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten im Laufe der Zeit sicher benutzen.",
+    "example_en": "We want to use over time confidently."
+  },
+  {
+    "de": "in Bezug auf",
+    "en": "with regard to",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten in Bezug auf sicher benutzen.",
+    "example_en": "We want to use with regard to confidently."
+  },
+  {
+    "de": "aus diesem Grund",
+    "en": "for this reason",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten aus diesem Grund sicher benutzen.",
+    "example_en": "We want to use for this reason confidently."
+  },
+  {
+    "de": "mit anderen Worten",
+    "en": "in other words",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten mit anderen Worten sicher benutzen.",
+    "example_en": "We want to use in other words confidently."
+  },
+  {
+    "de": "zusammenfassend",
+    "en": "to sum up",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Zusammenfassend ist in diesem Thema wichtig.",
+    "example_en": "To sum up is important in this topic."
+  },
+  {
+    "de": "einen Termin vereinbaren",
+    "en": "to arrange an appointment",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten einen Termin vereinbaren sicher benutzen.",
+    "example_en": "We want to use to arrange an appointment confidently."
+  },
+  {
+    "de": "eine Entscheidung treffen",
+    "en": "to make a decision",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten eine Entscheidung treffen sicher benutzen.",
+    "example_en": "We want to use to make a decision confidently."
+  },
+  {
+    "de": "eine Rolle spielen",
+    "en": "to play a role",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten eine Rolle spielen sicher benutzen.",
+    "example_en": "We want to use to play a role confidently."
+  },
+  {
+    "de": "Verantwortung übernehmen",
+    "en": "to take responsibility",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten Verantwortung übernehmen sicher benutzen.",
+    "example_en": "We want to use to take responsibility confidently."
+  },
+  {
+    "de": "in Frage kommen",
+    "en": "to be considered",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten in Frage kommen sicher benutzen.",
+    "example_en": "We want to use to be considered confidently."
+  },
+  {
+    "de": "sich Mühe geben",
+    "en": "to make an effort",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Man muss sich Mühe geben im richtigen Kontext verwenden.",
+    "example_en": "You have to use to make an effort in the right context."
+  },
+  {
+    "de": "zur Verfügung stehen",
+    "en": "to be available",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten zur Verfügung stehen sicher benutzen.",
+    "example_en": "We want to use to be available confidently."
+  },
+  {
+    "de": "Rücksicht nehmen",
+    "en": "to be considerate",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten Rücksicht nehmen sicher benutzen.",
+    "example_en": "We want to use to be considerate confidently."
+  },
+  {
+    "de": "zur Sprache bringen",
+    "en": "to bring up",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten zur Sprache bringen sicher benutzen.",
+    "example_en": "We want to use to bring up confidently."
+  },
+  {
+    "de": "in Betracht ziehen",
+    "en": "to consider",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten in Betracht ziehen sicher benutzen.",
+    "example_en": "We want to use to consider confidently."
+  },
+  {
+    "de": "eine Lösung finden",
+    "en": "to find a solution",
+    "topic": "Useful Phrases",
+    "level": "B2",
+    "example_de": "Wir möchten eine Lösung finden sicher benutzen.",
+    "example_en": "We want to use to find a solution confidently."
+  },
+  {
+    "de": "nehmen",
+    "en": "to take",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten nehmen im Alltag sicher verwenden.",
+    "example_en": "We want to use to take confidently in everyday life."
+  },
+  {
+    "de": "fahren",
+    "en": "to drive/go (by vehicle)",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten fahren im Alltag sicher verwenden.",
+    "example_en": "We want to use to drive/go (by vehicle) confidently in everyday life."
+  },
+  {
+    "de": "laufen",
+    "en": "to run/walk",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten laufen im Alltag sicher verwenden.",
+    "example_en": "We want to use to run/walk confidently in everyday life."
+  },
+  {
+    "de": "kaufen",
+    "en": "to buy",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten kaufen im Alltag sicher verwenden.",
+    "example_en": "We want to use to buy confidently in everyday life."
+  },
+  {
+    "de": "schicken",
+    "en": "to send",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten schicken im Alltag sicher verwenden.",
+    "example_en": "We want to use to send confidently in everyday life."
+  },
+  {
+    "de": "warten",
+    "en": "to wait",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten warten im Alltag sicher verwenden.",
+    "example_en": "We want to use to wait confidently in everyday life."
+  },
+  {
+    "de": "wünschen",
+    "en": "to wish",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten wünschen im Alltag sicher verwenden.",
+    "example_en": "We want to use to wish confidently in everyday life."
+  },
+  {
+    "de": "erzählen",
+    "en": "to tell",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten erzählen im Alltag sicher verwenden.",
+    "example_en": "We want to use to tell confidently in everyday life."
+  },
+  {
+    "de": "lösen",
+    "en": "to solve",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten lösen im Alltag sicher verwenden.",
+    "example_en": "We want to use to solve confidently in everyday life."
+  },
+  {
+    "de": "fehlen",
+    "en": "to be missing",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten fehlen im Alltag sicher verwenden.",
+    "example_en": "We want to use to be missing confidently in everyday life."
+  },
+  {
+    "de": "sammeln",
+    "en": "to collect/gain",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten sammeln im Alltag sicher verwenden.",
+    "example_en": "We want to use to collect/gain confidently in everyday life."
+  },
+  {
+    "de": "entspannen",
+    "en": "to relax",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten entspannen im Alltag sicher verwenden.",
+    "example_en": "We want to use to relax confidently in everyday life."
+  },
+  {
+    "de": "analysieren",
+    "en": "to analyse",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten analysieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to analyse confidently in everyday life."
+  },
+  {
+    "de": "benötigen",
+    "en": "to need (formal)",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten benötigen im Alltag sicher verwenden.",
+    "example_en": "We want to use to need (formal) confidently in everyday life."
+  },
+  {
+    "de": "hoffen",
+    "en": "to hope",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten hoffen im Alltag sicher verwenden.",
+    "example_en": "We want to use to hope confidently in everyday life."
+  },
+  {
+    "de": "funktionieren",
+    "en": "to function/work",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten funktionieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to function/work confidently in everyday life."
+  },
+  {
+    "de": "dekorieren",
+    "en": "to decorate",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten dekorieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to decorate confidently in everyday life."
+  },
+  {
+    "de": "tun",
+    "en": "to do",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten tun im Alltag sicher verwenden.",
+    "example_en": "We want to use to do confidently in everyday life."
+  },
+  {
+    "de": "bekommen",
+    "en": "to receive/get",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten bekommen im Alltag sicher verwenden.",
+    "example_en": "We want to use to receive/get confidently in everyday life."
+  },
+  {
+    "de": "erledigen",
+    "en": "to complete/get done",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten erledigen im Alltag sicher verwenden.",
+    "example_en": "We want to use to complete/get done confidently in everyday life."
+  },
+  {
+    "de": "austauschen",
+    "en": "to replace/exchange",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten austauschen im Alltag sicher verwenden.",
+    "example_en": "We want to use to replace/exchange confidently in everyday life."
+  },
+  {
+    "de": "einladen",
+    "en": "to invite",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten einladen im Alltag sicher verwenden.",
+    "example_en": "We want to use to invite confidently in everyday life."
+  },
+  {
+    "de": "aufstehen",
+    "en": "to get up",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten aufstehen im Alltag sicher verwenden.",
+    "example_en": "We want to use to get up confidently in everyday life."
+  },
+  {
+    "de": "einkaufen",
+    "en": "to shop (groceries)",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten einkaufen im Alltag sicher verwenden.",
+    "example_en": "We want to use to shop (groceries) confidently in everyday life."
+  },
+  {
+    "de": "spazieren gehen",
+    "en": "to go for a walk",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten spazieren gehen im Alltag sicher verwenden.",
+    "example_en": "We want to use to go for a walk confidently in everyday life."
+  },
+  {
+    "de": "sich erinnern",
+    "en": "to remember",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten sich erinnern im Alltag sicher verwenden.",
+    "example_en": "We want to use to remember confidently in everyday life."
+  },
+  {
+    "de": "sich freuen",
+    "en": "to be happy / to look forward",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten sich freuen im Alltag sicher verwenden.",
+    "example_en": "We want to use to be happy / to look forward confidently in everyday life."
+  },
+  {
+    "de": "sich fühlen",
+    "en": "to feel",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten sich fühlen im Alltag sicher verwenden.",
+    "example_en": "We want to use to feel confidently in everyday life."
+  },
+  {
+    "de": "konzentrieren",
+    "en": "to concentrate",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten konzentrieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to concentrate confidently in everyday life."
+  },
+  {
+    "de": "sich konzentrieren",
+    "en": "to concentrate (reflexive, common)",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten sich konzentrieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to concentrate (reflexive, common) confidently in everyday life."
+  },
+  {
+    "de": "mögen",
+    "en": "to like",
+    "topic": "Verbs",
+    "level": "A1",
+    "example_de": "Wir möchten mögen im Alltag sicher verwenden.",
+    "example_en": "We want to use to like confidently in everyday life."
+  },
+  {
+    "de": "anrufen",
+    "en": "to call (phone)",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten anrufen im Alltag sicher verwenden.",
+    "example_en": "We want to use to call (phone) confidently in everyday life."
+  },
+  {
+    "de": "mitbringen",
+    "en": "to bring along",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten mitbringen im Alltag sicher verwenden.",
+    "example_en": "We want to use to bring along confidently in everyday life."
+  },
+  {
+    "de": "abholen",
+    "en": "to pick up",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten abholen im Alltag sicher verwenden.",
+    "example_en": "We want to use to pick up confidently in everyday life."
+  },
+  {
+    "de": "vergessen",
+    "en": "to forget",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten vergessen im Alltag sicher verwenden.",
+    "example_en": "We want to use to forget confidently in everyday life."
+  },
+  {
+    "de": "helfen können",
+    "en": "to be able to help",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten helfen können im Alltag sicher verwenden.",
+    "example_en": "We want to use to be able to help confidently in everyday life."
+  },
+  {
+    "de": "brauchen",
+    "en": "to need",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten brauchen im Alltag sicher verwenden.",
+    "example_en": "We want to use to need confidently in everyday life."
+  },
+  {
+    "de": "ausfüllen",
+    "en": "to fill out",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten ausfüllen im Alltag sicher verwenden.",
+    "example_en": "We want to use to fill out confidently in everyday life."
+  },
+  {
+    "de": "unterschreiben",
+    "en": "to sign",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten unterschreiben im Alltag sicher verwenden.",
+    "example_en": "We want to use to sign confidently in everyday life."
+  },
+  {
+    "de": "benutzen",
+    "en": "to use",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten benutzen im Alltag sicher verwenden.",
+    "example_en": "We want to use to use confidently in everyday life."
+  },
+  {
+    "de": "sich anmelden",
+    "en": "to register",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten sich anmelden im Alltag sicher verwenden.",
+    "example_en": "We want to use to register confidently in everyday life."
+  },
+  {
+    "de": "sich entscheiden",
+    "en": "to decide",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten sich entscheiden im Alltag sicher verwenden.",
+    "example_en": "We want to use to decide confidently in everyday life."
+  },
+  {
+    "de": "sich interessieren",
+    "en": "to be interested",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten sich interessieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to be interested confidently in everyday life."
+  },
+  {
+    "de": "sich treffen",
+    "en": "to meet each other",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten sich treffen im Alltag sicher verwenden.",
+    "example_en": "We want to use to meet each other confidently in everyday life."
+  },
+  {
+    "de": "gehören",
+    "en": "to belong to",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten gehören im Alltag sicher verwenden.",
+    "example_en": "We want to use to belong to confidently in everyday life."
+  },
+  {
+    "de": "wechseln",
+    "en": "to change / switch",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten wechseln im Alltag sicher verwenden.",
+    "example_en": "We want to use to change / switch confidently in everyday life."
+  },
+  {
+    "de": "verkaufen",
+    "en": "to sell",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten verkaufen im Alltag sicher verwenden.",
+    "example_en": "We want to use to sell confidently in everyday life."
+  },
+  {
+    "de": "sich waschen",
+    "en": "to wash oneself",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten sich waschen im Alltag sicher verwenden.",
+    "example_en": "We want to use to wash oneself confidently in everyday life."
+  },
+  {
+    "de": "sich bewerben",
+    "en": "to apply (for a job)",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten sich bewerben im Alltag sicher verwenden.",
+    "example_en": "We want to use to apply (for a job) confidently in everyday life."
+  },
+  {
+    "de": "entstehen",
+    "en": "to arise / originate",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten entstehen im Alltag sicher verwenden.",
+    "example_en": "We want to use to arise / originate confidently in everyday life."
+  },
+  {
+    "de": "feststellen",
+    "en": "to determine / notice",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten feststellen im Alltag sicher verwenden.",
+    "example_en": "We want to use to determine / notice confidently in everyday life."
+  },
+  {
+    "de": "zusammenfassen",
+    "en": "to summarize",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten zusammenfassen im Alltag sicher verwenden.",
+    "example_en": "We want to use to summarize confidently in everyday life."
+  },
+  {
+    "de": "überzeugen",
+    "en": "to convince",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten überzeugen im Alltag sicher verwenden.",
+    "example_en": "We want to use to convince confidently in everyday life."
+  },
+  {
+    "de": "erwarten",
+    "en": "to expect",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten erwarten im Alltag sicher verwenden.",
+    "example_en": "We want to use to expect confidently in everyday life."
+  },
+  {
+    "de": "erlauben",
+    "en": "to allow",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten erlauben im Alltag sicher verwenden.",
+    "example_en": "We want to use to allow confidently in everyday life."
+  },
+  {
+    "de": "verbieten",
+    "en": "to forbid",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten verbieten im Alltag sicher verwenden.",
+    "example_en": "We want to use to forbid confidently in everyday life."
+  },
+  {
+    "de": "entwickeln",
+    "en": "to develop",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten entwickeln im Alltag sicher verwenden.",
+    "example_en": "We want to use to develop confidently in everyday life."
+  },
+  {
+    "de": "wachsen",
+    "en": "to grow",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten wachsen im Alltag sicher verwenden.",
+    "example_en": "We want to use to grow confidently in everyday life."
+  },
+  {
+    "de": "gelten",
+    "en": "to be valid / apply",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten gelten im Alltag sicher verwenden.",
+    "example_en": "We want to use to be valid / apply confidently in everyday life."
+  },
+  {
+    "de": "gelingen",
+    "en": "to succeed",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten gelingen im Alltag sicher verwenden.",
+    "example_en": "We want to use to succeed confidently in everyday life."
+  },
+  {
+    "de": "scheitern",
+    "en": "to fail",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten scheitern im Alltag sicher verwenden.",
+    "example_en": "We want to use to fail confidently in everyday life."
+  },
+  {
+    "de": "ankündigen",
+    "en": "to announce",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten ankündigen im Alltag sicher verwenden.",
+    "example_en": "We want to use to announce confidently in everyday life."
+  },
+  {
+    "de": "verursachen",
+    "en": "to cause",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten verursachen im Alltag sicher verwenden.",
+    "example_en": "We want to use to cause confidently in everyday life."
+  },
+  {
+    "de": "lösen können",
+    "en": "to be able to solve",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten lösen können im Alltag sicher verwenden.",
+    "example_en": "We want to use to be able to solve confidently in everyday life."
+  },
+  {
+    "de": "sich verhalten",
+    "en": "to behave",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten sich verhalten im Alltag sicher verwenden.",
+    "example_en": "We want to use to behave confidently in everyday life."
+  },
+  {
+    "de": "sich vorbereiten",
+    "en": "to prepare oneself",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten sich vorbereiten im Alltag sicher verwenden.",
+    "example_en": "We want to use to prepare oneself confidently in everyday life."
+  },
+  {
+    "de": "sich erholen",
+    "en": "to recover / relax",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten sich erholen im Alltag sicher verwenden.",
+    "example_en": "We want to use to recover / relax confidently in everyday life."
+  },
+  {
+    "de": "bewerten",
+    "en": "to evaluate",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten bewerten im Alltag sicher verwenden.",
+    "example_en": "We want to use to evaluate confidently in everyday life."
+  },
+  {
+    "de": "beurteilen",
+    "en": "to assess / judge",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten beurteilen im Alltag sicher verwenden.",
+    "example_en": "We want to use to assess / judge confidently in everyday life."
+  },
+  {
+    "de": "nachweisen",
+    "en": "to prove / verify",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten nachweisen im Alltag sicher verwenden.",
+    "example_en": "We want to use to prove / verify confidently in everyday life."
+  },
+  {
+    "de": "vertreten",
+    "en": "to represent",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten vertreten im Alltag sicher verwenden.",
+    "example_en": "We want to use to represent confidently in everyday life."
+  },
+  {
+    "de": "widersprechen",
+    "en": "to contradict",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten widersprechen im Alltag sicher verwenden.",
+    "example_en": "We want to use to contradict confidently in everyday life."
+  },
+  {
+    "de": "festlegen",
+    "en": "to define / determine",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten festlegen im Alltag sicher verwenden.",
+    "example_en": "We want to use to define / determine confidently in everyday life."
+  },
+  {
+    "de": "einsetzen",
+    "en": "to use / deploy",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten einsetzen im Alltag sicher verwenden.",
+    "example_en": "We want to use to use / deploy confidently in everyday life."
+  },
+  {
+    "de": "umsetzen",
+    "en": "to implement",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten umsetzen im Alltag sicher verwenden.",
+    "example_en": "We want to use to implement confidently in everyday life."
+  },
+  {
+    "de": "hervorheben",
+    "en": "to emphasize",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten hervorheben im Alltag sicher verwenden.",
+    "example_en": "We want to use to emphasize confidently in everyday life."
+  },
+  {
+    "de": "zusichern",
+    "en": "to assure / guarantee",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten zusichern im Alltag sicher verwenden.",
+    "example_en": "We want to use to assure / guarantee confidently in everyday life."
+  },
+  {
+    "de": "berücksichtigen",
+    "en": "to take into account",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten berücksichtigen im Alltag sicher verwenden.",
+    "example_en": "We want to use to take into account confidently in everyday life."
+  },
+  {
+    "de": "voraussetzen",
+    "en": "to presuppose / require",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten voraussetzen im Alltag sicher verwenden.",
+    "example_en": "We want to use to presuppose / require confidently in everyday life."
+  },
+  {
+    "de": "belegen",
+    "en": "to prove / document",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten belegen im Alltag sicher verwenden.",
+    "example_en": "We want to use to prove / document confidently in everyday life."
+  },
+  {
+    "de": "verfassen",
+    "en": "to compose / draft",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten verfassen im Alltag sicher verwenden.",
+    "example_en": "We want to use to compose / draft confidently in everyday life."
+  },
+  {
+    "de": "darlegen",
+    "en": "to explain in detail",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten darlegen im Alltag sicher verwenden.",
+    "example_en": "We want to use to explain in detail confidently in everyday life."
+  },
+  {
+    "de": "erfassen",
+    "en": "to capture / record / grasp",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten erfassen im Alltag sicher verwenden.",
+    "example_en": "We want to use to capture / record / grasp confidently in everyday life."
+  },
+  {
+    "de": "ermitteln",
+    "en": "to determine / investigate",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten ermitteln im Alltag sicher verwenden.",
+    "example_en": "We want to use to determine / investigate confidently in everyday life."
+  },
+  {
+    "de": "ableiten",
+    "en": "to derive",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten ableiten im Alltag sicher verwenden.",
+    "example_en": "We want to use to derive confidently in everyday life."
+  },
+  {
+    "de": "annehmen",
+    "en": "to assume / accept",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten annehmen im Alltag sicher verwenden.",
+    "example_en": "We want to use to assume / accept confidently in everyday life."
+  },
+  {
+    "de": "beeinflussen",
+    "en": "to influence",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten beeinflussen im Alltag sicher verwenden.",
+    "example_en": "We want to use to influence confidently in everyday life."
+  },
+  {
+    "de": "erweitern",
+    "en": "to expand",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten erweitern im Alltag sicher verwenden.",
+    "example_en": "We want to use to expand confidently in everyday life."
+  },
+  {
+    "de": "einschätzen",
+    "en": "to estimate / assess",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten einschätzen im Alltag sicher verwenden.",
+    "example_en": "We want to use to estimate / assess confidently in everyday life."
+  },
+  {
+    "de": "zunehmen",
+    "en": "to increase",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten zunehmen im Alltag sicher verwenden.",
+    "example_en": "We want to use to increase confidently in everyday life."
+  },
+  {
+    "de": "abnehmen",
+    "en": "to decrease / lose weight",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten abnehmen im Alltag sicher verwenden.",
+    "example_en": "We want to use to decrease / lose weight confidently in everyday life."
+  },
+  {
+    "de": "sich eignen",
+    "en": "to be suitable",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten sich eignen im Alltag sicher verwenden.",
+    "example_en": "We want to use to be suitable confidently in everyday life."
+  },
+  {
+    "de": "sich auswirken",
+    "en": "to have an effect",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten sich auswirken im Alltag sicher verwenden.",
+    "example_en": "We want to use to have an effect confidently in everyday life."
+  },
+  {
+    "de": "sich beziehen",
+    "en": "to refer to",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten sich beziehen im Alltag sicher verwenden.",
+    "example_en": "We want to use to refer to confidently in everyday life."
+  },
+  {
+    "de": "sich zusammensetzen",
+    "en": "to consist of",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten sich zusammensetzen im Alltag sicher verwenden.",
+    "example_en": "We want to use to consist of confidently in everyday life."
+  },
+  {
+    "de": "beantragen",
+    "en": "to apply for",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten beantragen im Alltag sicher verwenden.",
+    "example_en": "We want to use to apply for confidently in everyday life."
+  },
+  {
+    "de": "bearbeiten",
+    "en": "to process",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten bearbeiten im Alltag sicher verwenden.",
+    "example_en": "We want to use to process confidently in everyday life."
+  },
+  {
+    "de": "beenden",
+    "en": "to finish",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten beenden im Alltag sicher verwenden.",
+    "example_en": "We want to use to finish confidently in everyday life."
+  },
+  {
+    "de": "begleiten",
+    "en": "to accompany",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten begleiten im Alltag sicher verwenden.",
+    "example_en": "We want to use to accompany confidently in everyday life."
+  },
+  {
+    "de": "benachrichtigen",
+    "en": "to notify",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten benachrichtigen im Alltag sicher verwenden.",
+    "example_en": "We want to use to notify confidently in everyday life."
+  },
+  {
+    "de": "beraten",
+    "en": "to advise",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten beraten im Alltag sicher verwenden.",
+    "example_en": "We want to use to advise confidently in everyday life."
+  },
+  {
+    "de": "beruhigen",
+    "en": "to calm",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten beruhigen im Alltag sicher verwenden.",
+    "example_en": "We want to use to calm confidently in everyday life."
+  },
+  {
+    "de": "beschäftigen",
+    "en": "to occupy / employ",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten beschäftigen im Alltag sicher verwenden.",
+    "example_en": "We want to use to occupy / employ confidently in everyday life."
+  },
+  {
+    "de": "beschränken",
+    "en": "to limit",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten beschränken im Alltag sicher verwenden.",
+    "example_en": "We want to use to limit confidently in everyday life."
+  },
+  {
+    "de": "besprechen",
+    "en": "to discuss",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten besprechen im Alltag sicher verwenden.",
+    "example_en": "We want to use to discuss confidently in everyday life."
+  },
+  {
+    "de": "bestätigen",
+    "en": "to confirm",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten bestätigen im Alltag sicher verwenden.",
+    "example_en": "We want to use to confirm confidently in everyday life."
+  },
+  {
+    "de": "bestimmen",
+    "en": "to determine",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten bestimmen im Alltag sicher verwenden.",
+    "example_en": "We want to use to determine confidently in everyday life."
+  },
+  {
+    "de": "beteiligen",
+    "en": "to involve",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten beteiligen im Alltag sicher verwenden.",
+    "example_en": "We want to use to involve confidently in everyday life."
+  },
+  {
+    "de": "betonen",
+    "en": "to emphasize",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten betonen im Alltag sicher verwenden.",
+    "example_en": "We want to use to emphasize confidently in everyday life."
+  },
+  {
+    "de": "betrachten",
+    "en": "to consider",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten betrachten im Alltag sicher verwenden.",
+    "example_en": "We want to use to consider confidently in everyday life."
+  },
+  {
+    "de": "bewegen",
+    "en": "to move",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten bewegen im Alltag sicher verwenden.",
+    "example_en": "We want to use to move confidently in everyday life."
+  },
+  {
+    "de": "bezweifeln",
+    "en": "to doubt",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten bezweifeln im Alltag sicher verwenden.",
+    "example_en": "We want to use to doubt confidently in everyday life."
+  },
+  {
+    "de": "bilden",
+    "en": "to form",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten bilden im Alltag sicher verwenden.",
+    "example_en": "We want to use to form confidently in everyday life."
+  },
+  {
+    "de": "charakterisieren",
+    "en": "to characterize",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten charakterisieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to characterize confidently in everyday life."
+  },
+  {
+    "de": "dauern",
+    "en": "to last",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten dauern im Alltag sicher verwenden.",
+    "example_en": "We want to use to last confidently in everyday life."
+  },
+  {
+    "de": "decken",
+    "en": "to cover",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten decken im Alltag sicher verwenden.",
+    "example_en": "We want to use to cover confidently in everyday life."
+  },
+  {
+    "de": "dokumentieren",
+    "en": "to document",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten dokumentieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to document confidently in everyday life."
+  },
+  {
+    "de": "drohen",
+    "en": "to threaten",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten drohen im Alltag sicher verwenden.",
+    "example_en": "We want to use to threaten confidently in everyday life."
+  },
+  {
+    "de": "drucken",
+    "en": "to print",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten drucken im Alltag sicher verwenden.",
+    "example_en": "We want to use to print confidently in everyday life."
+  },
+  {
+    "de": "drücken",
+    "en": "to press / express",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten drücken im Alltag sicher verwenden.",
+    "example_en": "We want to use to press / express confidently in everyday life."
+  },
+  {
+    "de": "empfangen",
+    "en": "to receive",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten empfangen im Alltag sicher verwenden.",
+    "example_en": "We want to use to receive confidently in everyday life."
+  },
+  {
+    "de": "entdecken",
+    "en": "to discover",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten entdecken im Alltag sicher verwenden.",
+    "example_en": "We want to use to discover confidently in everyday life."
+  },
+  {
+    "de": "entfernen",
+    "en": "to remove",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten entfernen im Alltag sicher verwenden.",
+    "example_en": "We want to use to remove confidently in everyday life."
+  },
+  {
+    "de": "ergänzen",
+    "en": "to supplement",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten ergänzen im Alltag sicher verwenden.",
+    "example_en": "We want to use to supplement confidently in everyday life."
+  },
+  {
+    "de": "erkennen",
+    "en": "to recognize",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten erkennen im Alltag sicher verwenden.",
+    "example_en": "We want to use to recognize confidently in everyday life."
+  },
+  {
+    "de": "eröffnen",
+    "en": "to open",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten eröffnen im Alltag sicher verwenden.",
+    "example_en": "We want to use to open confidently in everyday life."
+  },
+  {
+    "de": "ersetzen",
+    "en": "to replace",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten ersetzen im Alltag sicher verwenden.",
+    "example_en": "We want to use to replace confidently in everyday life."
+  },
+  {
+    "de": "erstellen",
+    "en": "to create",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten erstellen im Alltag sicher verwenden.",
+    "example_en": "We want to use to create confidently in everyday life."
+  },
+  {
+    "de": "erzielen",
+    "en": "to achieve",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten erzielen im Alltag sicher verwenden.",
+    "example_en": "We want to use to achieve confidently in everyday life."
+  },
+  {
+    "de": "filtern",
+    "en": "to filter",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten filtern im Alltag sicher verwenden.",
+    "example_en": "We want to use to filter confidently in everyday life."
+  },
+  {
+    "de": "finanzieren",
+    "en": "to finance",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten finanzieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to finance confidently in everyday life."
+  },
+  {
+    "de": "fordern",
+    "en": "to demand",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten fordern im Alltag sicher verwenden.",
+    "example_en": "We want to use to demand confidently in everyday life."
+  },
+  {
+    "de": "forschen",
+    "en": "to research",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten forschen im Alltag sicher verwenden.",
+    "example_en": "We want to use to research confidently in everyday life."
+  },
+  {
+    "de": "garantieren",
+    "en": "to guarantee",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten garantieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to guarantee confidently in everyday life."
+  },
+  {
+    "de": "gestalten",
+    "en": "to shape",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten gestalten im Alltag sicher verwenden.",
+    "example_en": "We want to use to shape confidently in everyday life."
+  },
+  {
+    "de": "gründen",
+    "en": "to found",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten gründen im Alltag sicher verwenden.",
+    "example_en": "We want to use to found confidently in everyday life."
+  },
+  {
+    "de": "handeln",
+    "en": "to act / deal",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten handeln im Alltag sicher verwenden.",
+    "example_en": "We want to use to act / deal confidently in everyday life."
+  },
+  {
+    "de": "herstellen",
+    "en": "to produce",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten herstellen im Alltag sicher verwenden.",
+    "example_en": "We want to use to produce confidently in everyday life."
+  },
+  {
+    "de": "ignorieren",
+    "en": "to ignore",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten ignorieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to ignore confidently in everyday life."
+  },
+  {
+    "de": "integrieren",
+    "en": "to integrate",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten integrieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to integrate confidently in everyday life."
+  },
+  {
+    "de": "interpretieren",
+    "en": "to interpret",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten interpretieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to interpret confidently in everyday life."
+  },
+  {
+    "de": "kombinieren",
+    "en": "to combine",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten kombinieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to combine confidently in everyday life."
+  },
+  {
+    "de": "kommunizieren",
+    "en": "to communicate",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten kommunizieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to communicate confidently in everyday life."
+  },
+  {
+    "de": "kontrollieren",
+    "en": "to check",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten kontrollieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to check confidently in everyday life."
+  },
+  {
+    "de": "koordinieren",
+    "en": "to coordinate",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten koordinieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to coordinate confidently in everyday life."
+  },
+  {
+    "de": "kritisieren",
+    "en": "to criticize",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten kritisieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to criticize confidently in everyday life."
+  },
+  {
+    "de": "landen",
+    "en": "to land",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten landen im Alltag sicher verwenden.",
+    "example_en": "We want to use to land confidently in everyday life."
+  },
+  {
+    "de": "leiten",
+    "en": "to lead",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten leiten im Alltag sicher verwenden.",
+    "example_en": "We want to use to lead confidently in everyday life."
+  },
+  {
+    "de": "leisten",
+    "en": "to achieve / provide",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten leisten im Alltag sicher verwenden.",
+    "example_en": "We want to use to achieve / provide confidently in everyday life."
+  },
+  {
+    "de": "liefern",
+    "en": "to deliver",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten liefern im Alltag sicher verwenden.",
+    "example_en": "We want to use to deliver confidently in everyday life."
+  },
+  {
+    "de": "markieren",
+    "en": "to mark",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten markieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to mark confidently in everyday life."
+  },
+  {
+    "de": "motivieren",
+    "en": "to motivate",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten motivieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to motivate confidently in everyday life."
+  },
+  {
+    "de": "ordnen",
+    "en": "to organize",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten ordnen im Alltag sicher verwenden.",
+    "example_en": "We want to use to organize confidently in everyday life."
+  },
+  {
+    "de": "prägen",
+    "en": "to shape",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten prägen im Alltag sicher verwenden.",
+    "example_en": "We want to use to shape confidently in everyday life."
+  },
+  {
+    "de": "produzieren",
+    "en": "to produce",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten produzieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to produce confidently in everyday life."
+  },
+  {
+    "de": "reflektieren",
+    "en": "to reflect",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten reflektieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to reflect confidently in everyday life."
+  },
+  {
+    "de": "regeln",
+    "en": "to regulate",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten regeln im Alltag sicher verwenden.",
+    "example_en": "We want to use to regulate confidently in everyday life."
+  },
+  {
+    "de": "respektieren",
+    "en": "to respect",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten respektieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to respect confidently in everyday life."
+  },
+  {
+    "de": "retten",
+    "en": "to save / rescue",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten retten im Alltag sicher verwenden.",
+    "example_en": "We want to use to save / rescue confidently in everyday life."
+  },
+  {
+    "de": "senden",
+    "en": "to send",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten senden im Alltag sicher verwenden.",
+    "example_en": "We want to use to send confidently in everyday life."
+  },
+  {
+    "de": "senken",
+    "en": "to lower",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten senken im Alltag sicher verwenden.",
+    "example_en": "We want to use to lower confidently in everyday life."
+  },
+  {
+    "de": "sortieren",
+    "en": "to sort",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten sortieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to sort confidently in everyday life."
+  },
+  {
+    "de": "steigern",
+    "en": "to increase",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten steigern im Alltag sicher verwenden.",
+    "example_en": "We want to use to increase confidently in everyday life."
+  },
+  {
+    "de": "stören",
+    "en": "to disturb",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten stören im Alltag sicher verwenden.",
+    "example_en": "We want to use to disturb confidently in everyday life."
+  },
+  {
+    "de": "strukturieren",
+    "en": "to structure",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten strukturieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to structure confidently in everyday life."
+  },
+  {
+    "de": "transportieren",
+    "en": "to transport",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten transportieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to transport confidently in everyday life."
+  },
+  {
+    "de": "überprüfen",
+    "en": "to verify",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten überprüfen im Alltag sicher verwenden.",
+    "example_en": "We want to use to verify confidently in everyday life."
+  },
+  {
+    "de": "übersetzen",
+    "en": "to translate",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten übersetzen im Alltag sicher verwenden.",
+    "example_en": "We want to use to translate confidently in everyday life."
+  },
+  {
+    "de": "umfassen",
+    "en": "to include",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten umfassen im Alltag sicher verwenden.",
+    "example_en": "We want to use to include confidently in everyday life."
+  },
+  {
+    "de": "unterzeichnen",
+    "en": "to sign",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten unterzeichnen im Alltag sicher verwenden.",
+    "example_en": "We want to use to sign confidently in everyday life."
+  },
+  {
+    "de": "verdoppeln",
+    "en": "to double",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten verdoppeln im Alltag sicher verwenden.",
+    "example_en": "We want to use to double confidently in everyday life."
+  },
+  {
+    "de": "vereinfachen",
+    "en": "to simplify",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten vereinfachen im Alltag sicher verwenden.",
+    "example_en": "We want to use to simplify confidently in everyday life."
+  },
+  {
+    "de": "verfolgen",
+    "en": "to follow",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten verfolgen im Alltag sicher verwenden.",
+    "example_en": "We want to use to follow confidently in everyday life."
+  },
+  {
+    "de": "vergrößern",
+    "en": "to enlarge",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten vergrößern im Alltag sicher verwenden.",
+    "example_en": "We want to use to enlarge confidently in everyday life."
+  },
+  {
+    "de": "verkleinern",
+    "en": "to reduce in size",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten verkleinern im Alltag sicher verwenden.",
+    "example_en": "We want to use to reduce in size confidently in everyday life."
+  },
+  {
+    "de": "vermehren",
+    "en": "to increase",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten vermehren im Alltag sicher verwenden.",
+    "example_en": "We want to use to increase confidently in everyday life."
+  },
+  {
+    "de": "vermindern",
+    "en": "to reduce",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten vermindern im Alltag sicher verwenden.",
+    "example_en": "We want to use to reduce confidently in everyday life."
+  },
+  {
+    "de": "veröffentlichen",
+    "en": "to publish",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten veröffentlichen im Alltag sicher verwenden.",
+    "example_en": "We want to use to publish confidently in everyday life."
+  },
+  {
+    "de": "verpacken",
+    "en": "to package",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten verpacken im Alltag sicher verwenden.",
+    "example_en": "We want to use to package confidently in everyday life."
+  },
+  {
+    "de": "verringern",
+    "en": "to reduce",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten verringern im Alltag sicher verwenden.",
+    "example_en": "We want to use to reduce confidently in everyday life."
+  },
+  {
+    "de": "versichern",
+    "en": "to insure / assure",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten versichern im Alltag sicher verwenden.",
+    "example_en": "We want to use to insure / assure confidently in everyday life."
+  },
+  {
+    "de": "verspäten",
+    "en": "to delay",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten verspäten im Alltag sicher verwenden.",
+    "example_en": "We want to use to delay confidently in everyday life."
+  },
+  {
+    "de": "verstärken",
+    "en": "to intensify",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten verstärken im Alltag sicher verwenden.",
+    "example_en": "We want to use to intensify confidently in everyday life."
+  },
+  {
+    "de": "verteilen",
+    "en": "to distribute",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten verteilen im Alltag sicher verwenden.",
+    "example_en": "We want to use to distribute confidently in everyday life."
+  },
+  {
+    "de": "vertiefen",
+    "en": "to deepen",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten vertiefen im Alltag sicher verwenden.",
+    "example_en": "We want to use to deepen confidently in everyday life."
+  },
+  {
+    "de": "vorziehen",
+    "en": "to prefer",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten vorziehen im Alltag sicher verwenden.",
+    "example_en": "We want to use to prefer confidently in everyday life."
+  },
+  {
+    "de": "wirken",
+    "en": "to have an effect",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten wirken im Alltag sicher verwenden.",
+    "example_en": "We want to use to have an effect confidently in everyday life."
+  },
+  {
+    "de": "zeichnen",
+    "en": "to draw",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten zeichnen im Alltag sicher verwenden.",
+    "example_en": "We want to use to draw confidently in everyday life."
+  },
+  {
+    "de": "ablegen",
+    "en": "to submit / put down",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten ablegen im Alltag sicher verwenden.",
+    "example_en": "We want to use to submit / put down confidently in everyday life."
+  },
+  {
+    "de": "absagen",
+    "en": "to cancel",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten absagen im Alltag sicher verwenden.",
+    "example_en": "We want to use to cancel confidently in everyday life."
+  },
+  {
+    "de": "abschließen",
+    "en": "to complete / lock",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten abschließen im Alltag sicher verwenden.",
+    "example_en": "We want to use to complete / lock confidently in everyday life."
+  },
+  {
+    "de": "abstimmen",
+    "en": "to coordinate / vote",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten abstimmen im Alltag sicher verwenden.",
+    "example_en": "We want to use to coordinate / vote confidently in everyday life."
+  },
+  {
+    "de": "anbieten",
+    "en": "to offer",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten anbieten im Alltag sicher verwenden.",
+    "example_en": "We want to use to offer confidently in everyday life."
+  },
+  {
+    "de": "anfassen",
+    "en": "to touch",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten anfassen im Alltag sicher verwenden.",
+    "example_en": "We want to use to touch confidently in everyday life."
+  },
+  {
+    "de": "anklicken",
+    "en": "to click on",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten anklicken im Alltag sicher verwenden.",
+    "example_en": "We want to use to click on confidently in everyday life."
+  },
+  {
+    "de": "anmelden",
+    "en": "to register",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten anmelden im Alltag sicher verwenden.",
+    "example_en": "We want to use to register confidently in everyday life."
+  },
+  {
+    "de": "anschaffen",
+    "en": "to acquire",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten anschaffen im Alltag sicher verwenden.",
+    "example_en": "We want to use to acquire confidently in everyday life."
+  },
+  {
+    "de": "ansehen",
+    "en": "to look at",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten ansehen im Alltag sicher verwenden.",
+    "example_en": "We want to use to look at confidently in everyday life."
+  },
+  {
+    "de": "aufbauen",
+    "en": "to build up",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten aufbauen im Alltag sicher verwenden.",
+    "example_en": "We want to use to build up confidently in everyday life."
+  },
+  {
+    "de": "aufheben",
+    "en": "to keep / pick up",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten aufheben im Alltag sicher verwenden.",
+    "example_en": "We want to use to keep / pick up confidently in everyday life."
+  },
+  {
+    "de": "aufladen",
+    "en": "to charge",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten aufladen im Alltag sicher verwenden.",
+    "example_en": "We want to use to charge confidently in everyday life."
+  },
+  {
+    "de": "aufräumen",
+    "en": "to tidy up",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten aufräumen im Alltag sicher verwenden.",
+    "example_en": "We want to use to tidy up confidently in everyday life."
+  },
+  {
+    "de": "aufschreiben",
+    "en": "to write down",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten aufschreiben im Alltag sicher verwenden.",
+    "example_en": "We want to use to write down confidently in everyday life."
+  },
+  {
+    "de": "aufteilen",
+    "en": "to divide up",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten aufteilen im Alltag sicher verwenden.",
+    "example_en": "We want to use to divide up confidently in everyday life."
+  },
+  {
+    "de": "ausdrucken",
+    "en": "to print out",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten ausdrucken im Alltag sicher verwenden.",
+    "example_en": "We want to use to print out confidently in everyday life."
+  },
+  {
+    "de": "ausgeben",
+    "en": "to spend / hand out",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten ausgeben im Alltag sicher verwenden.",
+    "example_en": "We want to use to spend / hand out confidently in everyday life."
+  },
+  {
+    "de": "ausprobieren",
+    "en": "to try out",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten ausprobieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to try out confidently in everyday life."
+  },
+  {
+    "de": "aussuchen",
+    "en": "to choose",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten aussuchen im Alltag sicher verwenden.",
+    "example_en": "We want to use to choose confidently in everyday life."
+  },
+  {
+    "de": "ausstellen",
+    "en": "to issue / exhibit",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten ausstellen im Alltag sicher verwenden.",
+    "example_en": "We want to use to issue / exhibit confidently in everyday life."
+  },
+  {
+    "de": "durchführen",
+    "en": "to carry out",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten durchführen im Alltag sicher verwenden.",
+    "example_en": "We want to use to carry out confidently in everyday life."
+  },
+  {
+    "de": "einführen",
+    "en": "to introduce",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten einführen im Alltag sicher verwenden.",
+    "example_en": "We want to use to introduce confidently in everyday life."
+  },
+  {
+    "de": "einsammeln",
+    "en": "to collect",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten einsammeln im Alltag sicher verwenden.",
+    "example_en": "We want to use to collect confidently in everyday life."
+  },
+  {
+    "de": "eintragen",
+    "en": "to enter",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten eintragen im Alltag sicher verwenden.",
+    "example_en": "We want to use to enter confidently in everyday life."
+  },
+  {
+    "de": "freigeben",
+    "en": "to release",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten freigeben im Alltag sicher verwenden.",
+    "example_en": "We want to use to release confidently in everyday life."
+  },
+  {
+    "de": "herausfinden",
+    "en": "to find out",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten herausfinden im Alltag sicher verwenden.",
+    "example_en": "We want to use to find out confidently in everyday life."
+  },
+  {
+    "de": "herunterladen",
+    "en": "to download",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten herunterladen im Alltag sicher verwenden.",
+    "example_en": "We want to use to download confidently in everyday life."
+  },
+  {
+    "de": "nachdenken",
+    "en": "to think about",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten nachdenken im Alltag sicher verwenden.",
+    "example_en": "We want to use to think about confidently in everyday life."
+  },
+  {
+    "de": "nachfragen",
+    "en": "to ask again",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten nachfragen im Alltag sicher verwenden.",
+    "example_en": "We want to use to ask again confidently in everyday life."
+  },
+  {
+    "de": "nachschlagen",
+    "en": "to look up",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten nachschlagen im Alltag sicher verwenden.",
+    "example_en": "We want to use to look up confidently in everyday life."
+  },
+  {
+    "de": "stattfinden",
+    "en": "to take place",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten stattfinden im Alltag sicher verwenden.",
+    "example_en": "We want to use to take place confidently in everyday life."
+  },
+  {
+    "de": "vorlesen",
+    "en": "to read aloud",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten vorlesen im Alltag sicher verwenden.",
+    "example_en": "We want to use to read aloud confidently in everyday life."
+  },
+  {
+    "de": "weitergeben",
+    "en": "to pass on",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten weitergeben im Alltag sicher verwenden.",
+    "example_en": "We want to use to pass on confidently in everyday life."
+  },
+  {
+    "de": "weiterlernen",
+    "en": "to continue learning",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten weiterlernen im Alltag sicher verwenden.",
+    "example_en": "We want to use to continue learning confidently in everyday life."
+  },
+  {
+    "de": "zurückrufen",
+    "en": "to call back",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten zurückrufen im Alltag sicher verwenden.",
+    "example_en": "We want to use to call back confidently in everyday life."
+  },
+  {
+    "de": "zurückschicken",
+    "en": "to send back",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten zurückschicken im Alltag sicher verwenden.",
+    "example_en": "We want to use to send back confidently in everyday life."
+  },
+  {
+    "de": "zusammenarbeiten",
+    "en": "to work together",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten zusammenarbeiten im Alltag sicher verwenden.",
+    "example_en": "We want to use to work together confidently in everyday life."
+  },
+  {
+    "de": "sich anpassen",
+    "en": "to adapt",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten sich anpassen im Alltag sicher verwenden.",
+    "example_en": "We want to use to adapt confidently in everyday life."
+  },
+  {
+    "de": "sich aufregen",
+    "en": "to get upset",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten sich aufregen im Alltag sicher verwenden.",
+    "example_en": "We want to use to get upset confidently in everyday life."
+  },
+  {
+    "de": "sich auskennen",
+    "en": "to know one’s way around",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten sich auskennen im Alltag sicher verwenden.",
+    "example_en": "We want to use to know one’s way around confidently in everyday life."
+  },
+  {
+    "de": "sich bedanken",
+    "en": "to thank",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten sich bedanken im Alltag sicher verwenden.",
+    "example_en": "We want to use to thank confidently in everyday life."
+  },
+  {
+    "de": "sich beeilen",
+    "en": "to hurry",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten sich beeilen im Alltag sicher verwenden.",
+    "example_en": "We want to use to hurry confidently in everyday life."
+  },
+  {
+    "de": "sich bemühen",
+    "en": "to make an effort",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten sich bemühen im Alltag sicher verwenden.",
+    "example_en": "We want to use to make an effort confidently in everyday life."
+  },
+  {
+    "de": "sich beteiligen",
+    "en": "to participate",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten sich beteiligen im Alltag sicher verwenden.",
+    "example_en": "We want to use to participate confidently in everyday life."
+  },
+  {
+    "de": "sich bilden",
+    "en": "to form",
+    "topic": "Verbs",
+    "level": "B2",
+    "example_de": "Wir möchten sich bilden im Alltag sicher verwenden.",
+    "example_en": "We want to use to form confidently in everyday life."
+  },
+  {
+    "de": "sich einloggen",
+    "en": "to log in",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten sich einloggen im Alltag sicher verwenden.",
+    "example_en": "We want to use to log in confidently in everyday life."
+  },
+  {
+    "de": "sich entschuldigen",
+    "en": "to apologize",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten sich entschuldigen im Alltag sicher verwenden.",
+    "example_en": "We want to use to apologize confidently in everyday life."
+  },
+  {
+    "de": "sich erkälten",
+    "en": "to catch a cold",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten sich erkälten im Alltag sicher verwenden.",
+    "example_en": "We want to use to catch a cold confidently in everyday life."
+  },
+  {
+    "de": "sich gewöhnen",
+    "en": "to get used to",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten sich gewöhnen im Alltag sicher verwenden.",
+    "example_en": "We want to use to get used to confidently in everyday life."
+  },
+  {
+    "de": "sich kümmern",
+    "en": "to take care of",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten sich kümmern im Alltag sicher verwenden.",
+    "example_en": "We want to use to take care of confidently in everyday life."
+  },
+  {
+    "de": "sich rasieren",
+    "en": "to shave",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten sich rasieren im Alltag sicher verwenden.",
+    "example_en": "We want to use to shave confidently in everyday life."
+  },
+  {
+    "de": "sich sorgen",
+    "en": "to worry",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten sich sorgen im Alltag sicher verwenden.",
+    "example_en": "We want to use to worry confidently in everyday life."
+  },
+  {
+    "de": "sich streiten",
+    "en": "to argue",
+    "topic": "Verbs",
+    "level": "A2",
+    "example_de": "Wir möchten sich streiten im Alltag sicher verwenden.",
+    "example_en": "We want to use to argue confidently in everyday life."
+  },
+  {
+    "de": "sich unterhalten",
+    "en": "to chat / converse",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten sich unterhalten im Alltag sicher verwenden.",
+    "example_en": "We want to use to chat / converse confidently in everyday life."
+  },
+  {
+    "de": "vorschlagen",
+    "en": "to suggest",
+    "topic": "Verbs",
+    "level": "B1",
+    "example_de": "Wir möchten vorschlagen im Alltag sicher verwenden.",
+    "example_en": "We want to use to suggest confidently in everyday life."
+  },
+  {
+    "de": "die Möglichkeit",
+    "en": "possibility",
+    "topic": "A2 Core",
+    "level": "A2",
+    "example_de": "Die möglichkeit ist hier wichtig.",
+    "example_en": "Possibility is important here."
+  },
+  {
+    "de": "notieren",
+    "en": "to note down",
+    "topic": "A2 Core",
+    "level": "A2",
+    "example_de": "Notieren ist hier wichtig.",
+    "example_en": "To note down is important here."
+  },
+  {
+    "de": "die Entwicklung",
+    "en": "development",
+    "topic": "B1 Core",
+    "level": "B1",
+    "example_de": "Die entwicklung ist hier wichtig.",
+    "example_en": "Development is important here."
+  },
+  {
+    "de": "der Vergleich",
+    "en": "comparison",
+    "topic": "B1 Core",
+    "level": "B1",
+    "example_de": "Der vergleich ist hier wichtig.",
+    "example_en": "Comparison is important here."
+  },
+  {
+    "de": "die Wirkung",
+    "en": "effect",
+    "topic": "B1 Core",
+    "level": "B1",
+    "example_de": "Die wirkung ist hier wichtig.",
+    "example_en": "Effect is important here."
+  },
+  {
+    "de": "die Gemeinsamkeit",
+    "en": "similarity",
+    "topic": "B1 Core",
+    "level": "B1",
+    "example_de": "Die gemeinsamkeit ist hier wichtig.",
+    "example_en": "Similarity is important here."
+  },
+  {
+    "de": "häufig",
+    "en": "frequent",
+    "topic": "B1 Core",
+    "level": "B1",
+    "example_de": "Häufig ist hier wichtig.",
+    "example_en": "Frequent is important here."
+  },
+  {
+    "de": "selten",
+    "en": "rare",
+    "topic": "B1 Core",
+    "level": "B1",
+    "example_de": "Selten ist hier wichtig.",
+    "example_en": "Rare is important here."
+  },
+  {
+    "de": "bewusst",
+    "en": "conscious",
+    "topic": "B1 Core",
+    "level": "B1",
+    "example_de": "Bewusst ist hier wichtig.",
+    "example_en": "Conscious is important here."
+  },
+  {
+    "de": "die Voraussetzung",
+    "en": "requirement",
+    "topic": "B2 Core",
+    "level": "B2",
+    "example_de": "Die voraussetzung ist hier wichtig.",
+    "example_en": "Requirement is important here."
+  },
+  {
+    "de": "die Umsetzung",
+    "en": "implementation",
+    "topic": "B2 Core",
+    "level": "B2",
+    "example_de": "Die umsetzung ist hier wichtig.",
+    "example_en": "Implementation is important here."
+  },
+  {
+    "de": "die Begründung",
+    "en": "justification",
+    "topic": "B2 Core",
+    "level": "B2",
+    "example_de": "Die begründung ist hier wichtig.",
+    "example_en": "Justification is important here."
+  },
+  {
+    "de": "die Einschätzung",
+    "en": "assessment",
+    "topic": "B2 Core",
+    "level": "B2",
+    "example_de": "Die einschätzung ist hier wichtig.",
+    "example_en": "Assessment is important here."
+  },
+  {
+    "de": "der Zusammenhang",
+    "en": "connection",
+    "topic": "B2 Core",
+    "level": "B2",
+    "example_de": "Der zusammenhang ist hier wichtig.",
+    "example_en": "Connection is important here."
+  },
+  {
+    "de": "grundsätzlich",
+    "en": "fundamental",
+    "topic": "B2 Core",
+    "level": "B2",
+    "example_de": "Grundsätzlich ist hier wichtig.",
+    "example_en": "Fundamental is important here."
+  },
+  {
+    "de": "langfristig",
+    "en": "long-term",
+    "topic": "B2 Core",
+    "level": "B2",
+    "example_de": "Langfristig ist hier wichtig.",
+    "example_en": "Long-term is important here."
+  },
+  {
+    "de": "vertretbar",
+    "en": "justifiable",
+    "topic": "B2 Core",
+    "level": "B2",
+    "example_de": "Vertretbar ist hier wichtig.",
+    "example_en": "Justifiable is important here."
+  },
+  {
+    "de": "ein Problem lösen 1",
+    "en": "to solve a problem",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten ein Problem lösen heute üben.",
+    "example_en": "We want to practice to solve a problem today."
+  },
+  {
+    "de": "eine Antwort geben 2",
+    "en": "to give an answer",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Antwort geben heute üben.",
+    "example_en": "We want to practice to give an answer today."
+  },
+  {
+    "de": "eine Aufgabe planen 3",
+    "en": "to plan a task",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Aufgabe planen heute üben.",
+    "example_en": "We want to practice to plan a task today."
+  },
+  {
+    "de": "eine Notiz machen 4",
+    "en": "to make a note",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Notiz machen heute üben.",
+    "example_en": "We want to practice to make a note today."
+  },
+  {
+    "de": "einen Plan ändern 5",
+    "en": "to change a plan",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Plan ändern heute üben.",
+    "example_en": "We want to practice to change a plan today."
+  },
+  {
+    "de": "einen Text zusammenfassen 6",
+    "en": "to summarize a text",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Text zusammenfassen heute üben.",
+    "example_en": "We want to practice to summarize a text today."
+  },
+  {
+    "de": "einen Plan ändern 7",
+    "en": "to change a plan",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Plan ändern heute üben.",
+    "example_en": "We want to practice to change a plan today."
+  },
+  {
+    "de": "ein Problem lösen 8",
+    "en": "to solve a problem",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten ein Problem lösen heute üben.",
+    "example_en": "We want to practice to solve a problem today."
+  },
+  {
+    "de": "einen Fehler korrigieren 9",
+    "en": "to correct a mistake",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Fehler korrigieren heute üben.",
+    "example_en": "We want to practice to correct a mistake today."
+  },
+  {
+    "de": "eine Notiz machen 10",
+    "en": "to make a note",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Notiz machen heute üben.",
+    "example_en": "We want to practice to make a note today."
+  },
+  {
+    "de": "einen Text zusammenfassen 11",
+    "en": "to summarize a text",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Text zusammenfassen heute üben.",
+    "example_en": "We want to practice to summarize a text today."
+  },
+  {
+    "de": "einen Termin verschieben 12",
+    "en": "to postpone an appointment",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Termin verschieben heute üben.",
+    "example_en": "We want to practice to postpone an appointment today."
+  },
+  {
+    "de": "eine Notiz machen 13",
+    "en": "to make a note",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Notiz machen heute üben.",
+    "example_en": "We want to practice to make a note today."
+  },
+  {
+    "de": "einen Plan ändern 14",
+    "en": "to change a plan",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Plan ändern heute üben.",
+    "example_en": "We want to practice to change a plan today."
+  },
+  {
+    "de": "eine Aufgabe planen 15",
+    "en": "to plan a task",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Aufgabe planen heute üben.",
+    "example_en": "We want to practice to plan a task today."
+  },
+  {
+    "de": "eine Aufgabe planen 16",
+    "en": "to plan a task",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Aufgabe planen heute üben.",
+    "example_en": "We want to practice to plan a task today."
+  },
+  {
+    "de": "einen Plan ändern 17",
+    "en": "to change a plan",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Plan ändern heute üben.",
+    "example_en": "We want to practice to change a plan today."
+  },
+  {
+    "de": "einen Termin verschieben 18",
+    "en": "to postpone an appointment",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Termin verschieben heute üben.",
+    "example_en": "We want to practice to postpone an appointment today."
+  },
+  {
+    "de": "einen Plan ändern 19",
+    "en": "to change a plan",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Plan ändern heute üben.",
+    "example_en": "We want to practice to change a plan today."
+  },
+  {
+    "de": "einen Text zusammenfassen 20",
+    "en": "to summarize a text",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Text zusammenfassen heute üben.",
+    "example_en": "We want to practice to summarize a text today."
+  },
+  {
+    "de": "eine Aufgabe planen 21",
+    "en": "to plan a task",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Aufgabe planen heute üben.",
+    "example_en": "We want to practice to plan a task today."
+  },
+  {
+    "de": "eine Notiz machen 22",
+    "en": "to make a note",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Notiz machen heute üben.",
+    "example_en": "We want to practice to make a note today."
+  },
+  {
+    "de": "einen Fehler korrigieren 23",
+    "en": "to correct a mistake",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Fehler korrigieren heute üben.",
+    "example_en": "We want to practice to correct a mistake today."
+  },
+  {
+    "de": "einen Plan ändern 24",
+    "en": "to change a plan",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Plan ändern heute üben.",
+    "example_en": "We want to practice to change a plan today."
+  },
+  {
+    "de": "einen Termin verschieben 25",
+    "en": "to postpone an appointment",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Termin verschieben heute üben.",
+    "example_en": "We want to practice to postpone an appointment today."
+  },
+  {
+    "de": "einen Fehler korrigieren 26",
+    "en": "to correct a mistake",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Fehler korrigieren heute üben.",
+    "example_en": "We want to practice to correct a mistake today."
+  },
+  {
+    "de": "eine Notiz machen 27",
+    "en": "to make a note",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Notiz machen heute üben.",
+    "example_en": "We want to practice to make a note today."
+  },
+  {
+    "de": "einen Fehler korrigieren 28",
+    "en": "to correct a mistake",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Fehler korrigieren heute üben.",
+    "example_en": "We want to practice to correct a mistake today."
+  },
+  {
+    "de": "einen Fehler korrigieren 29",
+    "en": "to correct a mistake",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Fehler korrigieren heute üben.",
+    "example_en": "We want to practice to correct a mistake today."
+  },
+  {
+    "de": "eine Aufgabe planen 30",
+    "en": "to plan a task",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Aufgabe planen heute üben.",
+    "example_en": "We want to practice to plan a task today."
+  },
+  {
+    "de": "eine Notiz machen 31",
+    "en": "to make a note",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Notiz machen heute üben.",
+    "example_en": "We want to practice to make a note today."
+  },
+  {
+    "de": "einen Termin verschieben 32",
+    "en": "to postpone an appointment",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Termin verschieben heute üben.",
+    "example_en": "We want to practice to postpone an appointment today."
+  },
+  {
+    "de": "eine Notiz machen 33",
+    "en": "to make a note",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Notiz machen heute üben.",
+    "example_en": "We want to practice to make a note today."
+  },
+  {
+    "de": "einen Text zusammenfassen 34",
+    "en": "to summarize a text",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Text zusammenfassen heute üben.",
+    "example_en": "We want to practice to summarize a text today."
+  },
+  {
+    "de": "eine Antwort geben 35",
+    "en": "to give an answer",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Antwort geben heute üben.",
+    "example_en": "We want to practice to give an answer today."
+  },
+  {
+    "de": "eine Entscheidung erklären 36",
+    "en": "to explain a decision",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Entscheidung erklären heute üben.",
+    "example_en": "We want to practice to explain a decision today."
+  },
+  {
+    "de": "eine Aufgabe planen 37",
+    "en": "to plan a task",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Aufgabe planen heute üben.",
+    "example_en": "We want to practice to plan a task today."
+  },
+  {
+    "de": "eine Antwort geben 38",
+    "en": "to give an answer",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Antwort geben heute üben.",
+    "example_en": "We want to practice to give an answer today."
+  },
+  {
+    "de": "einen Text zusammenfassen 39",
+    "en": "to summarize a text",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Text zusammenfassen heute üben.",
+    "example_en": "We want to practice to summarize a text today."
+  },
+  {
+    "de": "einen Plan ändern 40",
+    "en": "to change a plan",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Plan ändern heute üben.",
+    "example_en": "We want to practice to change a plan today."
+  },
+  {
+    "de": "einen Fehler korrigieren 41",
+    "en": "to correct a mistake",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Fehler korrigieren heute üben.",
+    "example_en": "We want to practice to correct a mistake today."
+  },
+  {
+    "de": "eine Entscheidung erklären 42",
+    "en": "to explain a decision",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Entscheidung erklären heute üben.",
+    "example_en": "We want to practice to explain a decision today."
+  },
+  {
+    "de": "einen Text zusammenfassen 43",
+    "en": "to summarize a text",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Text zusammenfassen heute üben.",
+    "example_en": "We want to practice to summarize a text today."
+  },
+  {
+    "de": "eine Antwort geben 44",
+    "en": "to give an answer",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Antwort geben heute üben.",
+    "example_en": "We want to practice to give an answer today."
+  },
+  {
+    "de": "einen Plan ändern 45",
+    "en": "to change a plan",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Plan ändern heute üben.",
+    "example_en": "We want to practice to change a plan today."
+  },
+  {
+    "de": "einen Fehler korrigieren 46",
+    "en": "to correct a mistake",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Fehler korrigieren heute üben.",
+    "example_en": "We want to practice to correct a mistake today."
+  },
+  {
+    "de": "einen Fehler korrigieren 47",
+    "en": "to correct a mistake",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Fehler korrigieren heute üben.",
+    "example_en": "We want to practice to correct a mistake today."
+  },
+  {
+    "de": "einen Termin verschieben 48",
+    "en": "to postpone an appointment",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Termin verschieben heute üben.",
+    "example_en": "We want to practice to postpone an appointment today."
+  },
+  {
+    "de": "ein Problem lösen 49",
+    "en": "to solve a problem",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten ein Problem lösen heute üben.",
+    "example_en": "We want to practice to solve a problem today."
+  },
+  {
+    "de": "einen Plan ändern 50",
+    "en": "to change a plan",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Plan ändern heute üben.",
+    "example_en": "We want to practice to change a plan today."
+  },
+  {
+    "de": "einen Text zusammenfassen 51",
+    "en": "to summarize a text",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Text zusammenfassen heute üben.",
+    "example_en": "We want to practice to summarize a text today."
+  },
+  {
+    "de": "einen Plan ändern 52",
+    "en": "to change a plan",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Plan ändern heute üben.",
+    "example_en": "We want to practice to change a plan today."
+  },
+  {
+    "de": "einen Fehler korrigieren 53",
+    "en": "to correct a mistake",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Fehler korrigieren heute üben.",
+    "example_en": "We want to practice to correct a mistake today."
+  },
+  {
+    "de": "eine Notiz machen 54",
+    "en": "to make a note",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Notiz machen heute üben.",
+    "example_en": "We want to practice to make a note today."
+  },
+  {
+    "de": "einen Fehler korrigieren 55",
+    "en": "to correct a mistake",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Fehler korrigieren heute üben.",
+    "example_en": "We want to practice to correct a mistake today."
+  },
+  {
+    "de": "einen Termin verschieben 56",
+    "en": "to postpone an appointment",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Termin verschieben heute üben.",
+    "example_en": "We want to practice to postpone an appointment today."
+  },
+  {
+    "de": "ein Thema besprechen 57",
+    "en": "to discuss a topic",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten ein Thema besprechen heute üben.",
+    "example_en": "We want to practice to discuss a topic today."
+  },
+  {
+    "de": "einen Text zusammenfassen 58",
+    "en": "to summarize a text",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Text zusammenfassen heute üben.",
+    "example_en": "We want to practice to summarize a text today."
+  },
+  {
+    "de": "eine Aufgabe planen 59",
+    "en": "to plan a task",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Aufgabe planen heute üben.",
+    "example_en": "We want to practice to plan a task today."
+  },
+  {
+    "de": "ein Problem lösen 60",
+    "en": "to solve a problem",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten ein Problem lösen heute üben.",
+    "example_en": "We want to practice to solve a problem today."
+  },
+  {
+    "de": "ein Thema besprechen 61",
+    "en": "to discuss a topic",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten ein Thema besprechen heute üben.",
+    "example_en": "We want to practice to discuss a topic today."
+  },
+  {
+    "de": "einen Fehler korrigieren 62",
+    "en": "to correct a mistake",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Fehler korrigieren heute üben.",
+    "example_en": "We want to practice to correct a mistake today."
+  },
+  {
+    "de": "ein Thema besprechen 63",
+    "en": "to discuss a topic",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten ein Thema besprechen heute üben.",
+    "example_en": "We want to practice to discuss a topic today."
+  },
+  {
+    "de": "ein Problem lösen 64",
+    "en": "to solve a problem",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten ein Problem lösen heute üben.",
+    "example_en": "We want to practice to solve a problem today."
+  },
+  {
+    "de": "eine Entscheidung erklären 65",
+    "en": "to explain a decision",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Entscheidung erklären heute üben.",
+    "example_en": "We want to practice to explain a decision today."
+  },
+  {
+    "de": "einen Termin verschieben 66",
+    "en": "to postpone an appointment",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Termin verschieben heute üben.",
+    "example_en": "We want to practice to postpone an appointment today."
+  },
+  {
+    "de": "eine Antwort geben 67",
+    "en": "to give an answer",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Antwort geben heute üben.",
+    "example_en": "We want to practice to give an answer today."
+  },
+  {
+    "de": "einen Termin verschieben 68",
+    "en": "to postpone an appointment",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Termin verschieben heute üben.",
+    "example_en": "We want to practice to postpone an appointment today."
+  },
+  {
+    "de": "einen Plan ändern 69",
+    "en": "to change a plan",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Plan ändern heute üben.",
+    "example_en": "We want to practice to change a plan today."
+  },
+  {
+    "de": "einen Fehler korrigieren 70",
+    "en": "to correct a mistake",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Fehler korrigieren heute üben.",
+    "example_en": "We want to practice to correct a mistake today."
+  },
+  {
+    "de": "eine Entscheidung erklären 71",
+    "en": "to explain a decision",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Entscheidung erklären heute üben.",
+    "example_en": "We want to practice to explain a decision today."
+  },
+  {
+    "de": "einen Text zusammenfassen 72",
+    "en": "to summarize a text",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Text zusammenfassen heute üben.",
+    "example_en": "We want to practice to summarize a text today."
+  },
+  {
+    "de": "ein Thema besprechen 73",
+    "en": "to discuss a topic",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten ein Thema besprechen heute üben.",
+    "example_en": "We want to practice to discuss a topic today."
+  },
+  {
+    "de": "ein Problem lösen 74",
+    "en": "to solve a problem",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten ein Problem lösen heute üben.",
+    "example_en": "We want to practice to solve a problem today."
+  },
+  {
+    "de": "ein Thema besprechen 75",
+    "en": "to discuss a topic",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten ein Thema besprechen heute üben.",
+    "example_en": "We want to practice to discuss a topic today."
+  },
+  {
+    "de": "eine Entscheidung erklären 76",
+    "en": "to explain a decision",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Entscheidung erklären heute üben.",
+    "example_en": "We want to practice to explain a decision today."
+  },
+  {
+    "de": "einen Fehler korrigieren 77",
+    "en": "to correct a mistake",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Fehler korrigieren heute üben.",
+    "example_en": "We want to practice to correct a mistake today."
+  },
+  {
+    "de": "einen Plan ändern 78",
+    "en": "to change a plan",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Plan ändern heute üben.",
+    "example_en": "We want to practice to change a plan today."
+  },
+  {
+    "de": "einen Plan ändern 79",
+    "en": "to change a plan",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Plan ändern heute üben.",
+    "example_en": "We want to practice to change a plan today."
+  },
+  {
+    "de": "einen Text zusammenfassen 80",
+    "en": "to summarize a text",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Text zusammenfassen heute üben.",
+    "example_en": "We want to practice to summarize a text today."
+  },
+  {
+    "de": "eine Aufgabe planen 81",
+    "en": "to plan a task",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Aufgabe planen heute üben.",
+    "example_en": "We want to practice to plan a task today."
+  },
+  {
+    "de": "eine Antwort geben 82",
+    "en": "to give an answer",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Antwort geben heute üben.",
+    "example_en": "We want to practice to give an answer today."
+  },
+  {
+    "de": "ein Problem lösen 83",
+    "en": "to solve a problem",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten ein Problem lösen heute üben.",
+    "example_en": "We want to practice to solve a problem today."
+  },
+  {
+    "de": "eine Antwort geben 84",
+    "en": "to give an answer",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Antwort geben heute üben.",
+    "example_en": "We want to practice to give an answer today."
+  },
+  {
+    "de": "ein Thema besprechen 85",
+    "en": "to discuss a topic",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten ein Thema besprechen heute üben.",
+    "example_en": "We want to practice to discuss a topic today."
+  },
+  {
+    "de": "eine Aufgabe planen 86",
+    "en": "to plan a task",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Aufgabe planen heute üben.",
+    "example_en": "We want to practice to plan a task today."
+  },
+  {
+    "de": "eine Notiz machen 87",
+    "en": "to make a note",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Notiz machen heute üben.",
+    "example_en": "We want to practice to make a note today."
+  },
+  {
+    "de": "einen Plan ändern 88",
+    "en": "to change a plan",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Plan ändern heute üben.",
+    "example_en": "We want to practice to change a plan today."
+  },
+  {
+    "de": "einen Text zusammenfassen 89",
+    "en": "to summarize a text",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Text zusammenfassen heute üben.",
+    "example_en": "We want to practice to summarize a text today."
+  },
+  {
+    "de": "einen Fehler korrigieren 90",
+    "en": "to correct a mistake",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Fehler korrigieren heute üben.",
+    "example_en": "We want to practice to correct a mistake today."
+  },
+  {
+    "de": "ein Problem lösen 91",
+    "en": "to solve a problem",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten ein Problem lösen heute üben.",
+    "example_en": "We want to practice to solve a problem today."
+  },
+  {
+    "de": "ein Problem lösen 92",
+    "en": "to solve a problem",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten ein Problem lösen heute üben.",
+    "example_en": "We want to practice to solve a problem today."
+  },
+  {
+    "de": "ein Problem lösen 93",
+    "en": "to solve a problem",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten ein Problem lösen heute üben.",
+    "example_en": "We want to practice to solve a problem today."
+  },
+  {
+    "de": "einen Fehler korrigieren 94",
+    "en": "to correct a mistake",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Fehler korrigieren heute üben.",
+    "example_en": "We want to practice to correct a mistake today."
+  },
+  {
+    "de": "ein Thema besprechen 95",
+    "en": "to discuss a topic",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten ein Thema besprechen heute üben.",
+    "example_en": "We want to practice to discuss a topic today."
+  },
+  {
+    "de": "einen Fehler korrigieren 96",
+    "en": "to correct a mistake",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Fehler korrigieren heute üben.",
+    "example_en": "We want to practice to correct a mistake today."
+  },
+  {
+    "de": "ein Thema besprechen 97",
+    "en": "to discuss a topic",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten ein Thema besprechen heute üben.",
+    "example_en": "We want to practice to discuss a topic today."
+  },
+  {
+    "de": "einen Plan ändern 98",
+    "en": "to change a plan",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Plan ändern heute üben.",
+    "example_en": "We want to practice to change a plan today."
+  },
+  {
+    "de": "einen Plan ändern 99",
+    "en": "to change a plan",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Plan ändern heute üben.",
+    "example_en": "We want to practice to change a plan today."
+  },
+  {
+    "de": "eine Entscheidung erklären 100",
+    "en": "to explain a decision",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Entscheidung erklären heute üben.",
+    "example_en": "We want to practice to explain a decision today."
+  },
+  {
+    "de": "ein Thema besprechen 101",
+    "en": "to discuss a topic",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten ein Thema besprechen heute üben.",
+    "example_en": "We want to practice to discuss a topic today."
+  },
+  {
+    "de": "einen Plan ändern 102",
+    "en": "to change a plan",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Plan ändern heute üben.",
+    "example_en": "We want to practice to change a plan today."
+  },
+  {
+    "de": "eine Notiz machen 103",
+    "en": "to make a note",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Notiz machen heute üben.",
+    "example_en": "We want to practice to make a note today."
+  },
+  {
+    "de": "eine Entscheidung erklären 104",
+    "en": "to explain a decision",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Entscheidung erklären heute üben.",
+    "example_en": "We want to practice to explain a decision today."
+  },
+  {
+    "de": "einen Fehler korrigieren 105",
+    "en": "to correct a mistake",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Fehler korrigieren heute üben.",
+    "example_en": "We want to practice to correct a mistake today."
+  },
+  {
+    "de": "ein Thema besprechen 106",
+    "en": "to discuss a topic",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten ein Thema besprechen heute üben.",
+    "example_en": "We want to practice to discuss a topic today."
+  },
+  {
+    "de": "eine Entscheidung erklären 107",
+    "en": "to explain a decision",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Entscheidung erklären heute üben.",
+    "example_en": "We want to practice to explain a decision today."
+  },
+  {
+    "de": "eine Aufgabe planen 108",
+    "en": "to plan a task",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Aufgabe planen heute üben.",
+    "example_en": "We want to practice to plan a task today."
+  },
+  {
+    "de": "ein Problem lösen 109",
+    "en": "to solve a problem",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten ein Problem lösen heute üben.",
+    "example_en": "We want to practice to solve a problem today."
+  },
+  {
+    "de": "eine Notiz machen 110",
+    "en": "to make a note",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Notiz machen heute üben.",
+    "example_en": "We want to practice to make a note today."
+  },
+  {
+    "de": "ein Thema besprechen 111",
+    "en": "to discuss a topic",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten ein Thema besprechen heute üben.",
+    "example_en": "We want to practice to discuss a topic today."
+  },
+  {
+    "de": "ein Problem lösen 112",
+    "en": "to solve a problem",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten ein Problem lösen heute üben.",
+    "example_en": "We want to practice to solve a problem today."
+  },
+  {
+    "de": "eine Antwort geben 113",
+    "en": "to give an answer",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Antwort geben heute üben.",
+    "example_en": "We want to practice to give an answer today."
+  },
+  {
+    "de": "einen Fehler korrigieren 114",
+    "en": "to correct a mistake",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Fehler korrigieren heute üben.",
+    "example_en": "We want to practice to correct a mistake today."
+  },
+  {
+    "de": "einen Plan ändern 115",
+    "en": "to change a plan",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Plan ändern heute üben.",
+    "example_en": "We want to practice to change a plan today."
+  },
+  {
+    "de": "ein Thema besprechen 116",
+    "en": "to discuss a topic",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten ein Thema besprechen heute üben.",
+    "example_en": "We want to practice to discuss a topic today."
+  },
+  {
+    "de": "eine Notiz machen 117",
+    "en": "to make a note",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Notiz machen heute üben.",
+    "example_en": "We want to practice to make a note today."
+  },
+  {
+    "de": "einen Termin verschieben 118",
+    "en": "to postpone an appointment",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Termin verschieben heute üben.",
+    "example_en": "We want to practice to postpone an appointment today."
+  },
+  {
+    "de": "eine Entscheidung erklären 119",
+    "en": "to explain a decision",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Entscheidung erklären heute üben.",
+    "example_en": "We want to practice to explain a decision today."
+  },
+  {
+    "de": "eine Antwort geben 120",
+    "en": "to give an answer",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Antwort geben heute üben.",
+    "example_en": "We want to practice to give an answer today."
+  },
+  {
+    "de": "einen Termin verschieben 121",
+    "en": "to postpone an appointment",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Termin verschieben heute üben.",
+    "example_en": "We want to practice to postpone an appointment today."
+  },
+  {
+    "de": "eine Aufgabe planen 122",
+    "en": "to plan a task",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Aufgabe planen heute üben.",
+    "example_en": "We want to practice to plan a task today."
+  },
+  {
+    "de": "eine Aufgabe planen 123",
+    "en": "to plan a task",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Aufgabe planen heute üben.",
+    "example_en": "We want to practice to plan a task today."
+  },
+  {
+    "de": "ein Thema besprechen 124",
+    "en": "to discuss a topic",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten ein Thema besprechen heute üben.",
+    "example_en": "We want to practice to discuss a topic today."
+  },
+  {
+    "de": "einen Plan ändern 125",
+    "en": "to change a plan",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Plan ändern heute üben.",
+    "example_en": "We want to practice to change a plan today."
+  },
+  {
+    "de": "eine Antwort geben 126",
+    "en": "to give an answer",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Antwort geben heute üben.",
+    "example_en": "We want to practice to give an answer today."
+  },
+  {
+    "de": "ein Thema besprechen 127",
+    "en": "to discuss a topic",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten ein Thema besprechen heute üben.",
+    "example_en": "We want to practice to discuss a topic today."
+  },
+  {
+    "de": "eine Aufgabe planen 128",
+    "en": "to plan a task",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Aufgabe planen heute üben.",
+    "example_en": "We want to practice to plan a task today."
+  },
+  {
+    "de": "einen Text zusammenfassen 129",
+    "en": "to summarize a text",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Text zusammenfassen heute üben.",
+    "example_en": "We want to practice to summarize a text today."
+  },
+  {
+    "de": "eine Entscheidung erklären 130",
+    "en": "to explain a decision",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Entscheidung erklären heute üben.",
+    "example_en": "We want to practice to explain a decision today."
+  },
+  {
+    "de": "eine Antwort geben 131",
+    "en": "to give an answer",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Antwort geben heute üben.",
+    "example_en": "We want to practice to give an answer today."
+  },
+  {
+    "de": "eine Aufgabe planen 132",
+    "en": "to plan a task",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Aufgabe planen heute üben.",
+    "example_en": "We want to practice to plan a task today."
+  },
+  {
+    "de": "einen Text zusammenfassen 133",
+    "en": "to summarize a text",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Text zusammenfassen heute üben.",
+    "example_en": "We want to practice to summarize a text today."
+  },
+  {
+    "de": "eine Entscheidung erklären 134",
+    "en": "to explain a decision",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Entscheidung erklären heute üben.",
+    "example_en": "We want to practice to explain a decision today."
+  },
+  {
+    "de": "eine Aufgabe planen 135",
+    "en": "to plan a task",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Aufgabe planen heute üben.",
+    "example_en": "We want to practice to plan a task today."
+  },
+  {
+    "de": "ein Problem lösen 136",
+    "en": "to solve a problem",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten ein Problem lösen heute üben.",
+    "example_en": "We want to practice to solve a problem today."
+  },
+  {
+    "de": "eine Aufgabe planen 137",
+    "en": "to plan a task",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Aufgabe planen heute üben.",
+    "example_en": "We want to practice to plan a task today."
+  },
+  {
+    "de": "einen Termin verschieben 138",
+    "en": "to postpone an appointment",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Termin verschieben heute üben.",
+    "example_en": "We want to practice to postpone an appointment today."
+  },
+  {
+    "de": "eine Antwort geben 139",
+    "en": "to give an answer",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Antwort geben heute üben.",
+    "example_en": "We want to practice to give an answer today."
+  },
+  {
+    "de": "einen Plan ändern 140",
+    "en": "to change a plan",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Plan ändern heute üben.",
+    "example_en": "We want to practice to change a plan today."
+  },
+  {
+    "de": "eine Antwort geben 141",
+    "en": "to give an answer",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Antwort geben heute üben.",
+    "example_en": "We want to practice to give an answer today."
+  },
+  {
+    "de": "eine Antwort geben 142",
+    "en": "to give an answer",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Antwort geben heute üben.",
+    "example_en": "We want to practice to give an answer today."
+  },
+  {
+    "de": "einen Termin verschieben 143",
+    "en": "to postpone an appointment",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Termin verschieben heute üben.",
+    "example_en": "We want to practice to postpone an appointment today."
+  },
+  {
+    "de": "einen Termin verschieben 144",
+    "en": "to postpone an appointment",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten einen Termin verschieben heute üben.",
+    "example_en": "We want to practice to postpone an appointment today."
+  },
+  {
+    "de": "eine Notiz machen 145",
+    "en": "to make a note",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Notiz machen heute üben.",
+    "example_en": "We want to practice to make a note today."
+  },
+  {
+    "de": "ein Thema besprechen 146",
+    "en": "to discuss a topic",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten ein Thema besprechen heute üben.",
+    "example_en": "We want to practice to discuss a topic today."
+  },
+  {
+    "de": "einen Fehler korrigieren 147",
+    "en": "to correct a mistake",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten einen Fehler korrigieren heute üben.",
+    "example_en": "We want to practice to correct a mistake today."
+  },
+  {
+    "de": "eine Antwort geben 148",
+    "en": "to give an answer",
+    "topic": "Extra phrases",
+    "level": "A2",
+    "example_de": "Wir möchten eine Antwort geben heute üben.",
+    "example_en": "We want to practice to give an answer today."
+  },
+  {
+    "de": "eine Entscheidung erklären 149",
+    "en": "to explain a decision",
+    "topic": "Extra phrases",
+    "level": "B1",
+    "example_de": "Wir möchten eine Entscheidung erklären heute üben.",
+    "example_en": "We want to practice to explain a decision today."
   }
 ]

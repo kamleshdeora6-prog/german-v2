@@ -233,7 +233,7 @@ function applyMissionPresetUI() {
 }
 
 function buildCounts() {
-  q('#dataCounts').textContent = `${state.data.passages.length} passages • ${state.data.exercises.length} exercises • ${state.data.vocab.length} vocab • ${Object.keys(state.data.notes).length} grammar notes • ${state.data.conjugation.length} verbs`;
+  q('#aboutCounts').textContent = `${state.data.passages.length} passages • ${state.data.exercises.length} exercises • ${state.data.vocab.length} vocabulary items • ${Object.keys(state.data.notes).length} grammar notes • ${state.data.conjugation.length} verbs`;
 }
 
 function updateDashboard() {
