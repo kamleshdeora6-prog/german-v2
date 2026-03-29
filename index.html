@@ -2,394 +2,241 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>German Coach V3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>German Coach V4</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="theme-focus">
-  <div class="app-shell">
-    <aside class="sidebar" id="sidebar">
-      <div class="brand">
-        <div class="logo">DE</div>
-        <div>
-          <div class="brand-title">German Coach</div>
-          <div class="brand-sub">A1 → B2</div>
-        </div>
-        <button class="icon-btn mobile-only" id="closeSidebarBtn" aria-label="Close menu">✕</button>
+<div id="app">
+  <aside id="sidebar" class="sidebar">
+    <div class="brand"><span class="mascot">🦋</span><div><strong>German Coach</strong><div class="muted tiny">A1 → B2</div></div></div>
+    <button id="sidebarClose" class="mobile-only iconbtn">✕</button>
+    <nav>
+      <div class="navgroup"><div class="navtitle" data-i18n="nav_study">Study</div>
+        <button class="navbtn active" data-section="practice" data-i18n="nav_practice">Practice</button>
+        <button class="navbtn" data-section="vocab" data-i18n="nav_vocab">Vocabulary</button>
+        <button class="navbtn" data-section="grammar" data-i18n="nav_grammar">Grammar</button>
       </div>
-
-      <div class="nav-group">
-        <div class="nav-title">Main</div>
-        <button class="navbtn active" data-section="dashboard">📊 Dashboard</button>
-        <button class="navbtn" data-section="study">📚 Study</button>
-        <button class="navbtn" data-section="practice">🧪 Practice</button>
-        <button class="navbtn" data-section="review">🔁 Review</button>
-        <button class="navbtn" data-section="settings">⚙️ Settings</button>
-        <button class="navbtn" data-section="about">ℹ️ About</button>
+      <div class="navgroup"><div class="navtitle" data-i18n="nav_train">Train</div>
+        <button class="navbtn" data-section="flashcards" data-i18n="nav_flashcards">Flashcards</button>
+        <button class="navbtn" data-section="conjugation" data-i18n="nav_conjugation">Conjugation</button>
+        <button class="navbtn" data-section="exam" data-i18n="nav_exam">Exam Mode</button>
       </div>
-
-      <div class="nav-group compact-note">
-        <div class="nav-title">Quick stats</div>
-        <div class="soft-chip" id="sideStreak">🔥 0 day streak</div>
-        <div class="soft-chip" id="sideWeak">⚠ Weak: —</div>
+      <div class="navgroup"><div class="navtitle" data-i18n="nav_more">More</div>
+        <button class="navbtn" data-section="app" data-i18n="nav_app">App</button>
       </div>
-    </aside>
+    </nav>
+  </aside>
 
-    <main class="main">
-      <header class="topbar compact-topbar">
-        <div class="row gap-sm">
-          <button class="icon-btn" id="openSidebarBtn" aria-label="Open menu">☰</button>
+  <main class="main">
+    <header class="topbar">
+      <div class="top-left">
+        <button id="sidebarOpen" class="mobile-only iconbtn">☰</button>
+        <div class="titlewrap">
+          <span class="mascot small">🦋</span>
           <div>
-            <h1 id="pageTitle">Dashboard</h1>
-            <div class="muted small" id="dataCounts">Daily mission progress and smart review</div>
+            <div id="pageTitle" class="page-title">Practice</div>
+            <div class="muted tiny" id="smartCoachText">Focus on one task at a time.</div>
           </div>
         </div>
-        <div class="mission-strip">
-          <div class="mission-mini">
-            <div class="mission-mini-label">Passages</div>
-            <div class="mission-bar"><span id="miniPassages"></span></div>
+      </div>
+      <div class="top-mission compact-row">
+        <label class="tiny" for="missionPreset" data-i18n="mission_level">Mission</label>
+        <select id="missionPreset">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+          <option value="custom">Custom</option>
+        </select>
+        <div class="pill" id="streakPill">🔥 0</div>
+        <div class="pill" id="xpPill">⭐ 0 XP</div>
+        <div class="pill" id="dailyPill">0%</div>
+        <select id="languageSelect"><option value="en">EN</option><option value="de">DE</option></select>
+        <select id="themeSelect"><option value="theme-focus">Focus</option><option value="theme-light">Light</option><option value="theme-dark">Dark</option></select>
+      </div>
+    </header>
+
+    <section class="mission-strip card">
+      <div class="mission-grid">
+        <div class="metric"><div class="metric-head"><span data-i18n="label_passages">Passages</span><span id="mPassagesText">0/0</span></div><div class="bar"><span id="mPassagesBar"></span></div></div>
+        <div class="metric"><div class="metric-head"><span data-i18n="label_exercises">Exercises</span><span id="mExercisesText">0/0</span></div><div class="bar"><span id="mExercisesBar"></span></div></div>
+        <div class="metric"><div class="metric-head"><span data-i18n="label_vocab">Vocab</span><span id="mVocabText">0/0</span></div><div class="bar"><span id="mVocabBar"></span></div></div>
+        <div class="metric"><div class="metric-head"><span data-i18n="label_writing">Writing</span><span id="mWritingText">0/0</span></div><div class="bar"><span id="mWritingBar"></span></div></div>
+      </div>
+      <div class="compact-row end gap8">
+        <button id="continueBtn" data-i18n="continue_btn">Continue</button>
+        <details class="details-inline"><summary data-i18n="today_done">Today</summary><div id="todayDrop"></div></details>
+        <details class="details-inline"><summary data-i18n="mission_custom">Custom</summary>
+          <div class="grid2 mini-settings">
+            <label>Passages<input id="customPassages" type="number" min="1" max="20"></label>
+            <label>Exercises<input id="customExercises" type="number" min="1" max="200"></label>
+            <label>Vocab<input id="customVocab" type="number" min="1" max="100"></label>
+            <label>Writing<input id="customWriting" type="number" min="1" max="20"></label>
           </div>
-          <div class="mission-mini">
-            <div class="mission-mini-label">Exercises</div>
-            <div class="mission-bar"><span id="miniExercises"></span></div>
+        </details>
+      </div>
+    </section>
+
+    <section id="section-practice" class="app-section">
+      <div class="subtabs">
+        <button class="subbtn active" data-practice="exercises" data-i18n="sub_exercises">Exercises</button>
+        <button class="subbtn" data-practice="typing" data-i18n="sub_typing">Typing</button>
+        <button class="subbtn" data-practice="listening" data-i18n="sub_listening">Listening</button>
+        <button class="subbtn" data-practice="structure" data-i18n="sub_structure">Sentence Structure</button>
+        <button class="subbtn" data-practice="writing" data-i18n="sub_writing">Writing</button>
+      </div>
+
+      <div id="practice-exercises" class="practice-panel card">
+        <div class="toolbar wrap">
+          <select id="exerciseLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select>
+          <select id="exerciseTypeFilter"></select>
+          <select id="exerciseFocusFilter"><option value="all">All</option><option value="weak">Weak areas</option></select>
+          <button id="nextExerciseBtn" data-i18n="next_btn">Next</button>
+        </div>
+        <div class="question-box">
+          <div id="exerciseMeta" class="badge"></div>
+          <div id="exerciseQuestion" class="question"></div>
+          <input id="exerciseAnswerInput" type="text" placeholder="Type answer">
+          <div class="row gap8"><button id="checkExerciseBtn" data-i18n="check_btn">Check</button><button class="ghost" id="showExerciseAnswerBtn" data-i18n="show_answer">Show answer</button></div>
+          <div id="exerciseResult" class="result"></div>
+          <div id="exerciseExplanation" class="explanation hidden"></div>
+        </div>
+      </div>
+
+      <div id="practice-typing" class="practice-panel card hidden">
+        <div class="toolbar wrap">
+          <select id="typingLevelFilter"><option value="ALL">All levels</option><option>A2</option><option>B1</option><option>B2</option></select>
+          <select id="typingSelect"></select>
+          <label class="checkline"><input type="checkbox" id="typingShowEnglish"> <span data-i18n="show_english">Show English</span></label>
+          <label class="tiny">Speed<select id="audioSpeed"><option value="0.75">0.75x</option><option value="1" selected>1x</option><option value="1.25">1.25x</option></select></label>
+        </div>
+        <div class="row gap8 wrap"><button id="playPassageBtn">▶</button><button id="stopPassageBtn">■</button><button id="repeatPassageBtn">↻</button></div>
+        <div class="twocol">
+          <div><div class="smallhead">German</div><textarea id="typingReference" readonly></textarea><div id="typingEnglishWrap" class="hidden"><div class="smallhead">English</div><textarea id="typingEnglish" readonly></textarea></div></div>
+          <div><div class="smallhead" data-i18n="type_here">Type here</div><textarea id="typingInput"></textarea><div class="row gap8"><button id="checkTypingBtn" data-i18n="check_btn">Check</button><button class="ghost" id="clearTypingBtn">Clear</button></div><div id="typingFeedback" class="result"></div></div>
+        </div>
+      </div>
+
+      <div id="practice-listening" class="practice-panel card hidden">
+        <div class="toolbar wrap">
+          <select id="listenLevelFilter"><option value="ALL">All levels</option><option>A2</option><option>B1</option><option>B2</option></select>
+          <button id="newListeningBtn" data-i18n="new_round">New round</button>
+          <label class="tiny">Speed<select id="listenSpeed"><option value="0.75">0.75x</option><option value="1" selected>1x</option><option value="1.25">1.25x</option></select></label>
+        </div>
+        <div class="row gap8 wrap"><button id="playListenBtn">▶</button><button id="stopListenBtn">■</button><button id="replayListenBtn">↻</button><button class="ghost" id="revealListenBtn" data-i18n="show_answer">Show answer</button></div>
+        <textarea id="listenInput" placeholder="Type what you hear"></textarea>
+        <div class="row gap8"><button id="checkListenBtn" data-i18n="check_btn">Check</button></div>
+        <div id="listenFeedback" class="result"></div>
+        <div id="listenAnswer" class="hidden note-block"></div>
+      </div>
+
+      <div id="practice-structure" class="practice-panel card hidden">
+        <div class="toolbar wrap">
+          <select id="structureLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select>
+          <button id="newStructureBtn" data-i18n="new_round">New round</button>
+        </div>
+        <div id="structurePrompt" class="question"></div>
+        <div id="structureWords" class="chips"></div>
+        <textarea id="structureAnswer" placeholder="Build the correct sentence"></textarea>
+        <div class="row gap8"><button id="checkStructureBtn" data-i18n="check_btn">Check</button><button class="ghost" id="showStructureBtn" data-i18n="show_answer">Show answer</button></div>
+        <div id="structureFeedback" class="result"></div>
+        <div id="structureReason" class="explanation hidden"></div>
+      </div>
+
+      <div id="practice-writing" class="practice-panel card hidden">
+        <div class="toolbar wrap"><select id="writingTaskSelect"></select><button id="newWritingBtn" data-i18n="new_round">New task</button></div>
+        <div id="writingPrompt" class="note-block"></div>
+        <textarea id="writingInput" placeholder="Write here"></textarea>
+        <div class="row gap8"><button id="checkWritingBtn" data-i18n="check_btn">Check</button><button class="ghost" id="showWritingSampleBtn" data-i18n="show_sample">Show sample</button></div>
+        <div id="writingFeedback" class="result"></div>
+        <div id="writingSample" class="explanation hidden"></div>
+      </div>
+    </section>
+
+    <section id="section-vocab" class="app-section hidden">
+      <div class="subtabs">
+        <button class="vocabbtn active" data-vmode="list" data-i18n="vocab_list">List</button>
+        <button class="vocabbtn" data-vmode="match" data-i18n="vocab_match">Match</button>
+        <button class="vocabbtn" data-vmode="type" data-i18n="vocab_type">Type</button>
+      </div>
+      <div id="vocab-list" class="card">
+        <div class="toolbar wrap">
+          <input id="vocabSearch" placeholder="Search vocab">
+          <select id="vocabLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select>
+          <select id="vocabTopicFilter"><option value="ALL">All topics</option></select>
+          <label class="checkline"><input type="checkbox" id="vocabDifficultOnly"> Difficult only</label>
+        </div>
+        <div id="vocabListWrap" class="list-wrap"></div>
+      </div>
+      <div id="vocab-match" class="card hidden">
+        <div class="toolbar wrap"><button id="newMatchBtn" data-i18n="new_round">New round</button></div>
+        <div class="match-grid"><div><div class="smallhead">Deutsch</div><div id="matchDe"></div></div><div><div class="smallhead">English</div><div id="matchEn"></div></div></div>
+        <div id="matchFeedback" class="result"></div>
+      </div>
+      <div id="vocab-type" class="card hidden">
+        <div class="toolbar wrap"><button id="newTypeWordBtn" data-i18n="new_round">New round</button><div id="typeWordMeta" class="badge"></div></div>
+        <div id="typeWordPrompt" class="question"></div>
+        <input id="typeWordInput" type="text" placeholder="Type German word">
+        <div class="row gap8"><button id="checkTypeWordBtn" data-i18n="check_btn">Check</button><button class="ghost" id="showTypeWordBtn" data-i18n="show_answer">Show answer</button></div>
+        <div id="typeWordFeedback" class="result"></div>
+      </div>
+    </section>
+
+    <section id="section-grammar" class="app-section hidden">
+      <div class="card">
+        <div class="toolbar wrap"><input id="grammarSearch" placeholder="Search grammar"></div>
+        <div id="grammarWrap"></div>
+      </div>
+    </section>
+
+    <section id="section-flashcards" class="app-section hidden">
+      <div class="card">
+        <div class="toolbar wrap"><select id="flashCategoryFilter"><option value="ALL">All categories</option></select><button id="nextFlashBtn" data-i18n="next_btn">Next</button></div>
+        <div id="flashCard" class="flash-card">Tap to flip</div>
+      </div>
+    </section>
+
+    <section id="section-conjugation" class="app-section hidden">
+      <div class="card">
+        <div class="toolbar wrap"><select id="conjLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select><button id="newConjBtn" data-i18n="new_round">New round</button></div>
+        <div id="conjQuestion" class="question"></div>
+        <input id="conjInput" type="text" placeholder="Type form">
+        <div class="row gap8"><button id="checkConjBtn" data-i18n="check_btn">Check</button><button class="ghost" id="showConjBtn" data-i18n="show_answer">Show answer</button></div>
+        <div id="conjFeedback" class="result"></div>
+        <div id="conjReveal" class="explanation hidden"></div>
+      </div>
+    </section>
+
+    <section id="section-exam" class="app-section hidden">
+      <div class="card">
+        <div class="toolbar wrap"><select id="examLevel"><option>B1</option><option>B2</option></select><button id="startExamBtn">Start exam</button><button class="ghost" id="finishExamBtn">Finish</button></div>
+        <div id="examIntro" class="note-block">60-point mixed exam: grammar, reading, listening, and writing. Speaking is not included.</div>
+        <div id="examWrap"></div>
+        <div id="examResult" class="result"></div>
+      </div>
+    </section>
+
+    <section id="section-app" class="app-section hidden">
+      <div class="card">
+        <h3>App</h3>
+        <div class="grid2">
+          <div>
+            <div class="smallhead">Settings</div>
+            <label class="stack">Language<select id="settingsLanguage"><option value="en">English</option><option value="de">Deutsch</option></select></label>
+            <label class="stack">Theme<select id="settingsTheme"><option value="theme-focus">Focus</option><option value="theme-light">Light</option><option value="theme-dark">Dark</option></select></label>
+            <label class="checkline"><input id="countRepeatsToggle" type="checkbox"> Count repeat attempts in today totals</label>
+            <button id="resetTodayBtn" class="ghost">Reset today</button>
           </div>
-          <div class="mission-mini">
-            <div class="mission-mini-label">Vocab</div>
-            <div class="mission-bar"><span id="miniVocab"></span></div>
-          </div>
-          <div class="mission-mini">
-            <div class="mission-mini-label">Writing</div>
-            <div class="mission-bar"><span id="miniWriting"></span></div>
+          <div>
+            <div class="smallhead">About</div>
+            <div id="aboutText" class="note-block"></div>
+            <div id="weakAreaText" class="note-block"></div>
           </div>
         </div>
-      </header>
-
-      <section id="section-dashboard" class="app-section">
-        <div class="grid two-up compact-dashboard">
-          <div class="card">
-            <div class="card-head between">
-              <h2>Today</h2>
-              <button class="ghost-btn" id="continueBtn">Continue</button>
-            </div>
-            <div class="metrics four">
-              <div class="metric"><div class="metric-value" id="statUniquePassages">0</div><div class="metric-label">Unique passages</div></div>
-              <div class="metric"><div class="metric-value" id="statCorrectExercises">0</div><div class="metric-label">Correct exercises</div></div>
-              <div class="metric"><div class="metric-value" id="statUniqueVocab">0</div><div class="metric-label">Unique vocab</div></div>
-              <div class="metric"><div class="metric-value" id="statWriting">0</div><div class="metric-label">Writing tasks</div></div>
-            </div>
-            <div class="callout" id="todaySummary">Set your mission and start studying.</div>
-          </div>
-          <div class="card">
-            <div class="card-head between">
-              <h2>Weak areas</h2>
-              <button class="ghost-btn" id="practiceWeakBtn">Practice weak area</button>
-            </div>
-            <div id="weakList" class="stack-sm"></div>
-          </div>
-        </div>
-
-        <div class="grid two-up">
-          <div class="card">
-            <div class="card-head between"><h2>Daily mission</h2><span class="badge" id="missionBadge">medium</span></div>
-            <div class="row gap-sm wrap mb12">
-              <label class="small">Mission level
-                <select id="missionPreset">
-                  <option value="easy">Easy</option>
-                  <option value="medium">Medium</option>
-                  <option value="hard">Hard</option>
-                  <option value="custom">Custom</option>
-                </select>
-              </label>
-              <button class="ghost-btn" id="resetTodayBtn">Reset today</button>
-            </div>
-            <div id="customMissionPanel" class="grid two-up hidden mb12">
-              <label class="small">Passages<input type="number" id="customPassages" min="1" max="20"></label>
-              <label class="small">Exercises<input type="number" id="customExercises" min="1" max="200"></label>
-              <label class="small">Vocab<input type="number" id="customVocab" min="1" max="100"></label>
-              <label class="small">Writing<input type="number" id="customWriting" min="1" max="20"></label>
-            </div>
-            <div class="mission-list">
-              <div class="mission-row"><div>Passages</div><div class="mission-row-right"><span id="missionPassagesText"></span><div class="mission-bar large"><span id="missionPassagesBar"></span></div></div></div>
-              <div class="mission-row"><div>Exercises</div><div class="mission-row-right"><span id="missionExercisesText"></span><div class="mission-bar large"><span id="missionExercisesBar"></span></div></div></div>
-              <div class="mission-row"><div>Vocabulary</div><div class="mission-row-right"><span id="missionVocabText"></span><div class="mission-bar large"><span id="missionVocabBar"></span></div></div></div>
-              <div class="mission-row"><div>Writing</div><div class="mission-row-right"><span id="missionWritingText"></span><div class="mission-bar large"><span id="missionWritingBar"></span></div></div></div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-head between"><h2>Focus now</h2><span class="badge">next best steps</span></div>
-            <div class="stack-sm">
-              <div class="soft-block"><strong>1. Finish today’s mission</strong><div class="muted small">Unique passages, vocabulary, exercises, and one writing task count best.</div></div>
-              <div class="soft-block"><strong>2. Review weak areas</strong><div class="muted small">Use weak-area sorting in exercises and repeat difficult vocabulary.</div></div>
-              <div class="soft-block"><strong>3. Build patterns</strong><div class="muted small">Focus on weil, dass, damit, adjective endings, and da-words.</div></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="section-study" class="app-section hidden">
-        <div class="subnav">
-          <button class="subbtn active" data-study="smart">Smart study</button>
-          <button class="subbtn" data-study="vocab">Vocabulary</button>
-          <button class="subbtn" data-study="grammar">Grammar</button>
-        </div>
-
-        <div id="study-smart" class="study-panel">
-          <div class="grid two-up">
-            <div class="card">
-              <div class="card-head between"><h2>Topic study flow</h2><span class="badge">Passage → vocab → exercises</span></div>
-              <label class="small">Topic / chapter
-                <select id="smartTopicSelect"></select>
-              </label>
-              <div class="stack-sm mt12">
-                <div class="soft-block"><strong>Passage</strong><div id="smartPassageTitle" class="muted small"></div></div>
-                <div class="soft-block"><strong>Vocabulary focus</strong><div id="smartVocabList" class="muted small"></div></div>
-                <div class="soft-block"><strong>Grammar focus</strong><div id="smartGrammarList" class="muted small"></div></div>
-              </div>
-              <div class="row gap-sm wrap mt12">
-                <button id="goToTypingBtn">Open typing practice</button>
-                <button class="ghost-btn" id="goToVocabBtn">Open vocab</button>
-                <button class="ghost-btn" id="goToExercisesBtn">Open exercises</button>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-head between"><h2>Quick search</h2><span class="badge">Passages • vocab • notes</span></div>
-              <input id="globalSearchInput" placeholder="Search for weil, darauf, passive, work…">
-              <div id="globalSearchResults" class="search-results mt12"></div>
-            </div>
-          </div>
-        </div>
-
-        <div id="study-vocab" class="study-panel hidden">
-          <div class="grid two-up">
-            <div class="card">
-              <div class="card-head between"><h2>Vocabulary list</h2><span class="badge" id="vocabCountBadge">0 words</span></div>
-              <div class="row gap-sm wrap mb12">
-                <label class="small grow">Topic<select id="vocabTopicFilter"></select></label>
-                <label class="small grow">Level<select id="vocabLevelFilter"></select></label>
-              </div>
-              <input id="vocabSearch" placeholder="Search German or English">
-              <div id="vocabList" class="list mt12"></div>
-            </div>
-            <div class="card">
-              <div class="card-head between"><h2>Word trainer</h2><span class="badge">Match • type • review</span></div>
-              <div class="subnav compact-subnav mb12">
-                <button class="subbtn active" data-vocabmode="match">Match game</button>
-                <button class="subbtn" data-vocabmode="type">Type German</button>
-                <button class="subbtn" data-vocabmode="review">Difficult words</button>
-              </div>
-              <div id="vocab-match-mode" class="vocab-mode">
-                <div class="row gap-sm wrap mb12">
-                  <button id="newMatchBtn">New round</button>
-                </div>
-                <div class="grid two-up equal" id="matchGame"></div>
-                <div class="callout mt12" id="matchStatus">Match the English and German words.</div>
-              </div>
-              <div id="vocab-type-mode" class="vocab-mode hidden">
-                <div class="soft-block"><strong id="typePrompt">Prompt</strong></div>
-                <input id="typeAnswer" placeholder="Type the German word">
-                <div class="row gap-sm wrap mt12">
-                  <button id="checkTypeBtn">Check</button>
-                  <button class="ghost-btn" id="nextTypeBtn">Next</button>
-                  <button class="ghost-btn" id="markDifficultBtn">Mark difficult</button>
-                </div>
-                <div class="callout mt12" id="typeFeedback">Start typing practice.</div>
-              </div>
-              <div id="vocab-review-mode" class="vocab-mode hidden">
-                <div id="difficultWordsList" class="list"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="study-grammar" class="study-panel hidden">
-          <div class="grid two-up">
-            <div class="card span-all">
-              <div class="card-head between"><h2>Grammar master table</h2><span class="badge">Cases • pronouns • adjective endings</span></div>
-              <div class="grammar-grid" id="grammarMasterGrid"></div>
-            </div>
-            <div class="card">
-              <div class="card-head between"><h2>Grammar notes</h2><span class="badge">From notes.json</span></div>
-              <select id="grammarNoteSelect"></select>
-              <pre id="grammarNoteView" class="note-view mt12"></pre>
-            </div>
-            <div class="card">
-              <div class="card-head between"><h2>Reference image</h2><span class="badge">Quick glance</span></div>
-              <img src="assets/grammar_reference.png" alt="grammar reference" class="reference-img">
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="section-practice" class="app-section hidden">
-        <div class="subnav">
-          <button class="subbtn active" data-practice="exercises">Exercises</button>
-          <button class="subbtn" data-practice="typing">Typing</button>
-          <button class="subbtn" data-practice="writing">Writing</button>
-          <button class="subbtn" data-practice="conjugation">Conjugation</button>
-        </div>
-
-        <div id="practice-exercises" class="practice-panel">
-          <div class="grid two-up">
-            <div class="card">
-              <div class="card-head between"><h2>Exercise trainer</h2><span class="badge" id="exerciseBadge">Filtered</span></div>
-              <div class="row gap-sm wrap mb12">
-                <label class="small grow">Type<select id="exerciseTypeFilter"></select></label>
-                <label class="small grow">Level<select id="exerciseLevelFilter"></select></label>
-                <label class="small grow">Sort<select id="exerciseSortFilter"><option value="default">Default</option><option value="weak">Weak areas first</option></select></label>
-              </div>
-              <div class="soft-block" id="exerciseQuestionBox"></div>
-              <input id="exerciseAnswer" placeholder="Type your answer">
-              <div class="row gap-sm wrap mt12">
-                <button id="submitExerciseBtn">Submit</button>
-                <button class="ghost-btn" id="nextExerciseBtn">Next</button>
-                <button class="ghost-btn" id="showHintBtn">Hint</button>
-              </div>
-              <div class="callout mt12" id="exerciseHintBox">Pick a category and start.</div>
-            </div>
-            <div class="card">
-              <div class="card-head between"><h2>Explanation</h2><span class="badge">Rule + example</span></div>
-              <div id="exerciseFeedback" class="feedback-box">
-                <div class="muted">Your answer and explanation will appear here.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="practice-typing" class="practice-panel hidden">
-          <div class="grid two-up">
-            <div class="card">
-              <div class="card-head between"><h2>Passage typing</h2><span class="badge">Unique completions only count once</span></div>
-              <div class="row gap-sm wrap mb12">
-                <label class="small grow">Level<select id="typingLevelFilter"></select></label>
-                <label class="small grow">Passage<select id="typingPassageSelect"></select></label>
-              </div>
-              <textarea id="typingReference" rows="9" readonly></textarea>
-              <div class="row gap-sm wrap mt12">
-                <button id="playAudioBtn">▶ Play</button>
-                <button class="ghost-btn" id="stopAudioBtn">■ Stop</button>
-                <label class="small">Speed<select id="audioSpeedSelect"><option value="0.75">0.75×</option><option value="1" selected>1×</option><option value="1.2">1.2×</option></select></label>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-head between"><h2>Your typing</h2><span class="badge" id="typingStatusBadge">Ready</span></div>
-              <textarea id="typingInput" rows="9" placeholder="Type the German passage here..."></textarea>
-              <div class="row gap-sm wrap mt12">
-                <button id="checkTypingBtn">Check typing</button>
-                <button class="ghost-btn" id="clearTypingBtn">Clear</button>
-              </div>
-              <div class="callout mt12" id="typingFeedback">Accuracy and passage status will appear here.</div>
-            </div>
-          </div>
-        </div>
-
-        <div id="practice-writing" class="practice-panel hidden">
-          <div class="grid two-up">
-            <div class="card">
-              <div class="card-head between"><h2>Guided writing</h2><span class="badge">Template-based</span></div>
-              <select id="writingTaskSelect"></select>
-              <div class="soft-block mt12" id="writingPrompt"></div>
-              <textarea id="writingInput" rows="10" placeholder="Write at least 40 characters..."></textarea>
-              <div class="row gap-sm wrap mt12">
-                <button id="submitWritingBtn">Submit writing</button>
-                <button class="ghost-btn" id="nextWritingBtn">Next task</button>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-head between"><h2>Writing feedback</h2><span class="badge">Simple coaching</span></div>
-              <div id="writingFeedback" class="feedback-box"><div class="muted">Write and submit to see hints.</div></div>
-            </div>
-          </div>
-        </div>
-
-        <div id="practice-conjugation" class="practice-panel hidden">
-          <div class="grid two-up">
-            <div class="card">
-              <div class="card-head between"><h2>Verb explorer</h2><span class="badge">Cleaner layout</span></div>
-              <div class="row gap-sm wrap mb12">
-                <label class="small grow">Level<select id="conjLevelFilter"></select></label>
-                <label class="small grow">Verb<select id="conjVerbSelect"></select></label>
-              </div>
-              <div id="conjCard" class="conj-card"></div>
-            </div>
-            <div class="card">
-              <div class="card-head between"><h2>Mini quiz</h2><span class="badge">Form recall</span></div>
-              <div id="conjQuizPrompt" class="soft-block"></div>
-              <input id="conjQuizAnswer" placeholder="Type the correct form">
-              <div class="row gap-sm wrap mt12">
-                <button id="checkConjBtn">Check</button>
-                <button class="ghost-btn" id="nextConjBtn">Next</button>
-              </div>
-              <div class="callout mt12" id="conjQuizFeedback">Choose a verb and start the quiz.</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="section-review" class="app-section hidden">
-        <div class="grid two-up">
-          <div class="card">
-            <div class="card-head between"><h2>Flashcards</h2><span class="badge">Flip to learn</span></div>
-            <div class="row gap-sm wrap mb12">
-              <label class="small grow">Category<select id="flashCategoryFilter"></select></label>
-            </div>
-            <div id="flashCard" class="flash-card">Tap to start</div>
-            <div class="row gap-sm wrap mt12">
-              <button id="flipFlashBtn">Flip</button>
-              <button class="ghost-btn" id="nextFlashBtn">Next</button>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-head between"><h2>Weak area review</h2><span class="badge">Smarter tracking</span></div>
-            <div id="weakAreaPanel"></div>
-          </div>
-        </div>
-      </section>
-
-
-      <section id="section-about" class="app-section hidden">
-        <div class="grid two-up">
-          <div class="card">
-            <div class="card-head between"><h2>Roadmap</h2><span class="badge">A1 → B2</span></div>
-            <div class="roadmap">
-              <div class="road-step"><strong>A1</strong><span>Articles, present tense, question words, simple daily life.</span></div>
-              <div class="road-step"><strong>A2</strong><span>Perfekt, modal verbs, reflexive verbs, prepositions, short emails.</span></div>
-              <div class="road-step"><strong>B1</strong><span>Word order, da-words, relative clauses, passive, opinions and complaints.</span></div>
-              <div class="road-step"><strong>B2</strong><span>Konjunktiv II, argumentation, nominal style, advanced connectors.</span></div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-head between"><h2>App details</h2><span class="badge">hidden from dashboard</span></div>
-            <div class="soft-block" id="aboutCounts">Loading content details…</div>
-            <div class="stack-sm mt12">
-              <div class="soft-block"><strong>How progress works</strong><div class="muted small">Repeated passage practice is tracked separately from unique passage completions.</div></div>
-              <div class="soft-block"><strong>Mission counting</strong><div class="muted small">Only meaningful actions count: checked typing, submitted exercises, learned words, and long enough writing tasks.</div></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="section-settings" class="app-section hidden">
-        <div class="grid two-up">
-          <div class="card">
-            <div class="card-head between"><h2>Appearance</h2><span class="badge">3 themes</span></div>
-            <label class="small">Theme
-              <select id="themeSelect">
-                <option value="theme-focus">Focus</option>
-                <option value="theme-light">Light</option>
-                <option value="theme-dark">Dark</option>
-              </select>
-            </label>
-          </div>
-          <div class="card">
-            <div class="card-head between"><h2>Progress rules</h2><span class="badge">Honest counting</span></div>
-            <div class="small muted">Passages count as complete only once per day when your typing accuracy reaches at least 70%. Repeats are stored separately as review attempts.</div>
-          </div>
-        </div>
-      </section>
-    </main>
-  </div>
-  <script src="app.js"></script>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="app.js"></script>
 </body>
 </html>

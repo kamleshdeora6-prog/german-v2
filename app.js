@@ -1,905 +1,148 @@
-
-const LS_KEY = 'german_coach_v3_state';
-const state = {
-  data: { passages: [], notes: {}, exercises: [], flashcards: [], conjugation: [], sentences: {}, vocab: [] },
-  ui: { section: 'dashboard', study: 'smart', practice: 'exercises', vocabMode: 'match' },
-  exercisePool: [],
-  currentExercise: null,
-  currentTypingIndex: 0,
-  currentWritingIndex: 0,
-  flashPool: [],
-  flashIndex: 0,
-  flashFlipped: false,
-  matchRound: { pairs: [], selected: null, matched: 0 },
-  typeWord: null,
-  conjPool: [],
-  conjQuiz: null,
-  currentUtterance: null,
+const LS_KEY='german_coach_v4';
+const q=s=>document.querySelector(s); const qa=s=>[...document.querySelectorAll(s)];
+const state={data:{passages:[],notes:{},exercises:[],flashcards:[],conjugation:[],sentences:{},vocab:[]},ui:{section:'practice',practice:'exercises',vocab:'list',lang:'en'},speech:null,match:{pairs:[],selected:null},currentExercise:null,currentPassage:null,currentListen:null,currentStructure:null,currentWriting:0,currentFlash:0,flashFlipped:false,currentConj:null,exam:null};
+const STORE_DEFAULT={theme:'theme-focus',lang:'en',missionPreset:'medium',missionCustom:{passages:2,exercises:20,vocab:10,writing:1},daily:{},streak:0,lastActive:'',xp:0,countRepeats:false,weak:{},difficultWords:[],last:{section:'practice',practice:'exercises'}};
+let store=loadStore();
+const I18N={
+ en:{nav_study:'Study',nav_practice:'Practice',nav_vocab:'Vocabulary',nav_grammar:'Grammar',nav_train:'Train',nav_flashcards:'Flashcards',nav_conjugation:'Conjugation',nav_exam:'Exam Mode',nav_more:'More',nav_app:'App',mission_level:'Mission',label_passages:'Passages',label_exercises:'Exercises',label_vocab:'Vocab',label_writing:'Writing',continue_btn:'Continue',today_done:'Today',mission_custom:'Custom',sub_exercises:'Exercises',sub_typing:'Typing',sub_listening:'Listening',sub_structure:'Sentence Structure',sub_writing:'Writing',show_english:'Show English',type_here:'Type here',check_btn:'Check',show_answer:'Show answer',new_round:'New round',show_sample:'Show sample',vocab_list:'List',vocab_match:'Match Game',vocab_type:'Type the Word'},
+ de:{nav_study:'Lernen',nav_practice:'Üben',nav_vocab:'Wortschatz',nav_grammar:'Grammatik',nav_train:'Training',nav_flashcards:'Karteikarten',nav_conjugation:'Konjugation',nav_exam:'Prüfungsmodus',nav_more:'Mehr',nav_app:'App',mission_level:'Mission',label_passages:'Texte',label_exercises:'Übungen',label_vocab:'Wörter',label_writing:'Schreiben',continue_btn:'Weiterlernen',today_done:'Heute',mission_custom:'Eigenes Ziel',sub_exercises:'Übungen',sub_typing:'Abschreiben',sub_listening:'Hören',sub_structure:'Satzbau',sub_writing:'Schreiben',show_english:'Englisch zeigen',type_here:'Hier schreiben',check_btn:'Prüfen',show_answer:'Antwort zeigen',new_round:'Neue Runde',show_sample:'Muster zeigen',vocab_list:'Liste',vocab_match:'Zuordnen',vocab_type:'Wort tippen'}
 };
-
-const q = (s) => document.querySelector(s);
-const qa = (s) => [...document.querySelectorAll(s)];
-
-const EXPLANATIONS = {
-  articles: { rule: 'Match the noun with the correct article and case.', example: 'den Mann, dem Mann, kein Mann' },
-  prepositions: { rule: 'Learn which prepositions need accusative, dative, or a two-way meaning.', example: 'mit dem Bus, für den Kurs, in die Stadt / in der Stadt' },
-  connectors: { rule: 'weil, dass, obwohl, wenn, damit send the verb to the end.', example: 'Ich lerne, damit ich die Prüfung bestehe.' },
-  word_order: { rule: 'In subordinate clauses, the verb goes to the end.', example: '..., weil ich heute keine Zeit habe.' },
-  passive: { rule: 'Use werden + Partizip II for passive.', example: 'Das Auto wird repariert.' },
-  konjunktiv_ii: { rule: 'Use würde / hätte / wäre for polite or hypothetical meaning.', example: 'Ich würde gern mehr reisen.' },
-  relative_clauses: { rule: 'Relative pronouns agree with the noun and case in the clause.', example: 'Der Mann, der dort steht, ...' },
-  adjectives: { rule: 'Adjective endings depend on article, gender, and case.', example: 'ein guter Mann / den guten Mann' },
-  sentence_patterns: { rule: 'Memorise whole sentence frames, not only single words.', example: 'Es ist wichtig, dass ... / Ich habe vor, ... zu ...' },
-  translation_en_de: { rule: 'Build the sentence with correct German word order, articles, and case.', example: 'I think that he is tired. → Ich denke, dass er müde ist.' },
-  mixed_quiz: { rule: 'Use the sentence clue to identify the grammar pattern.', example: 'Look for prepositions, connectors, or case signals.' },
-  default: { rule: 'Check article, verb position, case, and spelling.', example: 'Read the whole sentence before answering.' }
+const MISSION_TARGETS={easy:{passages:1,exercises:10,vocab:8,writing:1},medium:{passages:2,exercises:20,vocab:12,writing:2},hard:{passages:3,exercises:35,vocab:18,writing:3}};
+const EXPLANATIONS={
+ articles:{rule_en:'Choose the article from the noun gender and sentence case.',rule_de:'Wähle den Artikel nach Genus und Fall.',example:'der Mann / den Mann / dem Mann'},
+ prepositions:{rule_en:'Prepositions decide the case: für → Akkusativ, mit → Dativ, in → Akk/Dat by meaning.',rule_de:'Präpositionen bestimmen den Fall: für → Akkusativ, mit → Dativ, in → Akk/Dat nach Bedeutung.',example:'mit dem Bus, für den Kurs, in die Stadt / in der Stadt'},
+ connectors:{rule_en:'weil, dass, obwohl, wenn, damit send the verb to the end.',rule_de:'weil, dass, obwohl, wenn, damit schicken das Verb ans Satzende.',example:'Ich lerne, damit ich die Prüfung bestehe.'},
+ word_order:{rule_en:'Main clause: verb in position 2. Subordinate clause: verb at the end.',rule_de:'Hauptsatz: Verb auf Position 2. Nebensatz: Verb am Ende.',example:'Heute gehe ich nach Hause, weil ich müde bin.'},
+ sentence_structure:{rule_en:'Look for time, manner, place and for the case signal from the verb or preposition.',rule_de:'Achte auf Zeit, Art, Ort und auf das Fallsignal durch Verb oder Präposition.',example:'Ich gebe dem Mann das Buch. → dem Mann = dative recipient.'},
+ perfect:{rule_en:'Perfekt uses haben/sein + Partizip II. Separable verbs keep ge inside: abholen → abgeholt.',rule_de:'Das Perfekt benutzt haben/sein + Partizip II. Trennbare Verben behalten ge innen: abholen → abgeholt.',example:'Ich habe das Paket abgeholt.'},
+ default:{rule_en:'Check case, article, verb position, and spelling.',rule_de:'Prüfe Fall, Artikel, Verbposition und Rechtschreibung.',example:'Read the whole sentence first.'}
 };
-
-const WRITING_TASKS = [
-  { title: 'Formal email', prompt: 'Write a short formal email asking for an appointment. Use a greeting, your request, and a polite closing.' },
-  { title: 'Opinion paragraph', prompt: 'Write 4–5 sentences about social media or online learning. Use: Einerseits / Andererseits / Meiner Meinung nach.' },
-  { title: 'Complaint message', prompt: 'Write a complaint to a neighbour or a service company. Explain the problem and ask for a solution.' },
-  { title: 'Work topic', prompt: 'Write about your job or dream job. Include what you do, what is important, and what you would like to improve.' },
+const WRITING_SAMPLES=[
+ {title:'Formal email',prompt_en:'Write a short formal email asking for an appointment.',prompt_de:'Schreibe eine kurze formelle E-Mail und bitte um einen Termin.',sample:`Sehr geehrte Damen und Herren,\nich möchte gern einen Termin vereinbaren. Haben Sie nächste Woche Zeit?\nMit freundlichen Grüßen\nKamlesh`},
+ {title:'Opinion text',prompt_en:'Write 4–5 sentences about social media. Use Einerseits / Andererseits / Meiner Meinung nach.',prompt_de:'Schreibe 4–5 Sätze über soziale Medien. Benutze Einerseits / Andererseits / Meiner Meinung nach.',sample:`Einerseits sind soziale Medien praktisch, weil man schnell kommunizieren kann. Andererseits verbringen viele Menschen zu viel Zeit online. Meiner Meinung nach sollte man sie bewusst nutzen.`},
+ {title:'Complaint',prompt_en:'Write a complaint message and ask for a solution.',prompt_de:'Schreibe eine Beschwerde und bitte um eine Lösung.',sample:`Sehr geehrte Damen und Herren,\nleider funktioniert mein Gerät nicht richtig. Ich bitte Sie um eine schnelle Lösung oder einen Austausch.\nMit freundlichen Grüßen`}
 ];
-
-function defaultStore() {
-  return {
-    theme: 'theme-focus',
-    missionPreset: 'medium',
-    missionCustom: { passages: 2, exercises: 20, vocab: 12, writing: 2 },
-    daily: {},
-    weakAreas: {},
-    difficultWords: [],
-    progress: {
-      uniquePassagesEver: [],
-      uniqueVocabEver: [],
-      lastSection: 'dashboard',
-      lastPractice: 'exercises'
-    }
-  };
-}
-
-function loadStore() {
-  try {
-    const raw = localStorage.getItem(LS_KEY);
-    return Object.assign(defaultStore(), raw ? JSON.parse(raw) : {});
-  } catch {
-    return defaultStore();
-  }
-}
-
-const store = loadStore();
-
-function saveStore() {
-  localStorage.setItem(LS_KEY, JSON.stringify(store));
-}
-
-function todayKey() {
-  return new Date().toISOString().slice(0, 10);
-}
-
-function ensureToday() {
-  const key = todayKey();
-  if (!store.daily[key]) {
-    store.daily[key] = {
-      uniquePassages: [],
-      repeatedPassages: 0,
-      correctExercises: 0,
-      attemptedExercises: 0,
-      uniqueVocab: [],
-      writingDone: 0,
-      typingChecks: 0
-    };
-  }
-}
-
-function getToday() {
-  ensureToday();
-  return store.daily[todayKey()];
-}
-
-const missionTargets = {
-  easy: { passages: 1, exercises: 10, vocab: 8, writing: 1 },
-  medium: { passages: 2, exercises: 20, vocab: 12, writing: 2 },
-  hard: { passages: 3, exercises: 35, vocab: 18, writing: 3 },
-  custom: null
-};
-
-async function loadJsonSmart(relPath) {
-  const paths = [relPath, './' + relPath, new URL(relPath, window.location.href).toString()];
-  let lastErr;
-  for (const path of paths) {
-    try {
-      const res = await fetch(path, { cache: 'no-store' });
-      if (!res.ok) throw new Error(`${relPath} → HTTP ${res.status}`);
-      return await res.json();
-    } catch (e) { lastErr = e; }
-  }
-  throw lastErr || new Error('Failed to load ' + relPath);
-}
-
-async function init() {
-  try {
-    const [passages, notes, exercises, flashcards, conjugation, sentences, vocab] = await Promise.all([
-      loadJsonSmart('data/passages.json'),
-      loadJsonSmart('data/notes.json'),
-      loadJsonSmart('data/exercises.json'),
-      loadJsonSmart('data/flashcards.json'),
-      loadJsonSmart('data/conjugation.json'),
-      loadJsonSmart('data/sentences.json'),
-      loadJsonSmart('data/vocab.json')
-    ]);
-    state.data.passages = Array.isArray(passages) ? passages : [];
-    state.data.notes = notes || {};
-    state.data.exercises = exercises?.exercises || [];
-    state.data.flashcards = flashcards?.flashcards || [];
-    state.data.conjugation = conjugation?.verbs || [];
-    state.data.sentences = sentences || {};
-    state.data.vocab = Array.isArray(vocab) ? vocab : [];
-    bootstrap();
-  } catch (err) {
-    console.error(err);
-    q('#dataCounts').textContent = 'Data failed to load';
-    alert('Data files could not load. Please keep index.html, styles.css, app.js, the data folder, and the assets folder together in the repo root.');
-  }
-}
-
-function bootstrap() {
-  document.body.className = store.theme;
-  q('#themeSelect').value = store.theme;
-  q('#missionPreset').value = store.missionPreset;
-  q('#pageTitle').textContent = 'Dashboard';
-  wireNav();
-  wireDashboard();
-  setupStudy();
-  setupVocab();
-  setupGrammar();
-  setupExercises();
-  setupTyping();
-  setupWriting();
-  setupConjugation();
-  setupReview();
-  buildCounts();
-  updateDashboard();
-  applyMissionPresetUI();
-  goSection(store.progress.lastSection || 'dashboard');
-}
-
-function wireNav() {
-  qa('.navbtn').forEach(btn => btn.onclick = () => goSection(btn.dataset.section));
-  q('#openSidebarBtn').onclick = () => q('#sidebar').classList.add('open');
-  q('#closeSidebarBtn').onclick = () => q('#sidebar').classList.remove('open');
-  qa('[data-study]').forEach(btn => btn.onclick = () => switchStudy(btn.dataset.study));
-  qa('[data-practice]').forEach(btn => btn.onclick = () => switchPractice(btn.dataset.practice));
-  qa('[data-vocabmode]').forEach(btn => btn.onclick = () => switchVocabMode(btn.dataset.vocabmode));
-}
-
-function goSection(name) {
-  state.ui.section = name;
-  store.progress.lastSection = name;
-  saveStore();
-  qa('.navbtn').forEach(btn => btn.classList.toggle('active', btn.dataset.section === name));
-  qa('.app-section').forEach(sec => sec.classList.add('hidden'));
-  q('#section-' + name)?.classList.remove('hidden');
-  q('#pageTitle').textContent = name.charAt(0).toUpperCase() + name.slice(1);
-  q('#sidebar').classList.remove('open');
-}
-
-function wireDashboard() {
-  q('#themeSelect').onchange = e => { store.theme = e.target.value; document.body.className = store.theme; saveStore(); };
-  q('#missionPreset').onchange = e => { store.missionPreset = e.target.value; saveStore(); applyMissionPresetUI(); updateDashboard(); };
-  ['customPassages','customExercises','customVocab','customWriting'].forEach(id => {
-    q('#' + id).onchange = () => {
-      store.missionCustom = {
-        passages: Number(q('#customPassages').value || 2),
-        exercises: Number(q('#customExercises').value || 20),
-        vocab: Number(q('#customVocab').value || 12),
-        writing: Number(q('#customWriting').value || 2),
-      };
-      saveStore();
-      updateDashboard();
-    };
-  });
-  q('#resetTodayBtn').onclick = () => {
-    if (!confirm('Reset today’s progress?')) return;
-    store.daily[todayKey()] = {
-      uniquePassages: [], repeatedPassages: 0, correctExercises: 0, attemptedExercises: 0, uniqueVocab: [], writingDone: 0, typingChecks: 0
-    };
-    saveStore();
-    updateDashboard();
-  };
-  q('#continueBtn').onclick = continueStudying;
-  q('#practiceWeakBtn').onclick = () => {
-    goSection('practice');
-    switchPractice('exercises');
-    q('#exerciseSortFilter').value = 'weak';
-    buildExercisePool();
-    nextExercise();
-  };
-}
-
-function currentMission() {
-  return store.missionPreset === 'custom' ? store.missionCustom : missionTargets[store.missionPreset] || missionTargets.medium;
-}
-
-function applyMissionPresetUI() {
-  q('#missionBadge').textContent = store.missionPreset;
-  const isCustom = store.missionPreset === 'custom';
-  q('#customMissionPanel').classList.toggle('hidden', !isCustom);
-  q('#customPassages').value = store.missionCustom.passages;
-  q('#customExercises').value = store.missionCustom.exercises;
-  q('#customVocab').value = store.missionCustom.vocab;
-  q('#customWriting').value = store.missionCustom.writing;
-}
-
-function buildCounts() {
-  q('#aboutCounts').textContent = `${state.data.passages.length} passages • ${state.data.exercises.length} exercises • ${state.data.vocab.length} vocabulary items • ${Object.keys(state.data.notes).length} grammar notes • ${state.data.conjugation.length} verbs`;
-}
-
-function updateDashboard() {
-  const d = getToday();
-  const mission = currentMission();
-  q('#statUniquePassages').textContent = d.uniquePassages.length;
-  q('#statCorrectExercises').textContent = d.correctExercises;
-  q('#statUniqueVocab').textContent = d.uniqueVocab.length;
-  q('#statWriting').textContent = d.writingDone;
-
-  setProgress('miniPassages', d.uniquePassages.length, mission.passages);
-  setProgress('miniExercises', d.correctExercises, mission.exercises);
-  setProgress('miniVocab', d.uniqueVocab.length, mission.vocab);
-  setProgress('miniWriting', d.writingDone, mission.writing);
-
-  setMissionRow('Passages', 'missionPassages', d.uniquePassages.length, mission.passages);
-  setMissionRow('Exercises', 'missionExercises', d.correctExercises, mission.exercises);
-  setMissionRow('Vocabulary', 'missionVocab', d.uniqueVocab.length, mission.vocab);
-  setMissionRow('Writing', 'missionWriting', d.writingDone, mission.writing);
-
-  const totalDone = d.uniquePassages.length + d.correctExercises + d.uniqueVocab.length + d.writingDone;
-  q('#todaySummary').textContent = totalDone
-    ? `Today: ${d.uniquePassages.length} unique passage(s), ${d.correctExercises} correct exercise(s), ${d.uniqueVocab.length} new vocab item(s), ${d.writingDone} writing task(s). Repeated passages: ${d.repeatedPassages}.`
-    : 'Choose a study flow or continue where you left off.';
-
-  updateWeakUI();
-  updateSideStats();
-}
-
-function setProgress(id, value, target) {
-  const pct = Math.max(0, Math.min(100, Math.round((value / Math.max(1, target)) * 100)));
-  q('#' + id).style.width = pct + '%';
-}
-
-function setMissionRow(label, baseId, value, target) {
-  q('#' + baseId + 'Text').textContent = `${value} / ${target}`;
-  setProgress(baseId + 'Bar', value, target);
-}
-
-function updateSideStats() {
-  q('#sideStreak').textContent = `🔥 ${calculateStreak()} day streak`;
-  q('#sideWeak').textContent = `⚠ Weak: ${topWeakLabel()}`;
-}
-
-function calculateStreak() {
-  const keys = Object.keys(store.daily).sort();
-  let streak = 0;
-  let day = new Date();
-  while (true) {
-    const key = day.toISOString().slice(0,10);
-    const d = store.daily[key];
-    const active = d && (d.uniquePassages.length || d.correctExercises || d.uniqueVocab.length || d.writingDone);
-    if (active) { streak += 1; day.setDate(day.getDate() - 1); }
-    else break;
-  }
-  return streak;
-}
-
-function updateWeakUI() {
-  const entries = Object.entries(store.weakAreas || {}).sort((a,b)=>b[1]-a[1]).slice(0,4);
-  const weakList = q('#weakList');
-  const weakPanel = q('#weakAreaPanel');
-  weakList.innerHTML = '';
-  weakPanel.innerHTML = '';
-  if (!entries.length) {
-    weakList.innerHTML = '<div class="muted small">No weak area data yet. Start practicing and the app will learn from your mistakes.</div>';
-    weakPanel.innerHTML = weakList.innerHTML;
-    return;
-  }
-  for (const [key, score] of entries) {
-    const html = `<div class="list-item"><div class="top"><strong>${prettyType(key)}</strong><span class="badge">${score} misses</span></div><div class="small muted">Focus suggestion: ${suggestionForType(key)}</div></div>`;
-    weakList.insertAdjacentHTML('beforeend', html);
-    weakPanel.insertAdjacentHTML('beforeend', html);
-  }
-}
-
-function topWeakLabel() {
-  const top = Object.entries(store.weakAreas || {}).sort((a,b)=>b[1]-a[1])[0];
-  return top ? prettyType(top[0]) : '—';
-}
-
-function increaseWeak(type) {
-  store.weakAreas[type] = (store.weakAreas[type] || 0) + 1;
-  saveStore();
-  updateWeakUI();
-  updateSideStats();
-}
-
-function decreaseWeak(type) {
-  if (!store.weakAreas[type]) return;
-  store.weakAreas[type] = Math.max(0, store.weakAreas[type] - 1);
-  saveStore();
-  updateWeakUI();
-  updateSideStats();
-}
-
-function continueStudying() {
-  if ((store.progress.lastSection || 'dashboard') === 'practice') {
-    goSection('practice');
-    switchPractice(store.progress.lastPractice || 'exercises');
-    return;
-  }
-  goSection('practice');
-  switchPractice('exercises');
-}
-
-// Study and search
-function setupStudy() {
-  const chapters = [...new Set(state.data.passages.map(p => p.chapter || 'General'))].sort();
-  q('#smartTopicSelect').innerHTML = chapters.map(ch => `<option>${escapeHtml(ch)}</option>`).join('');
-  q('#smartTopicSelect').onchange = renderSmartStudy;
-  q('#goToTypingBtn').onclick = () => { goSection('practice'); switchPractice('typing'); };
-  q('#goToVocabBtn').onclick = () => { goSection('study'); switchStudy('vocab'); };
-  q('#goToExercisesBtn').onclick = () => { goSection('practice'); switchPractice('exercises'); };
-  q('#globalSearchInput').oninput = renderGlobalSearch;
-  renderSmartStudy();
-}
-
-function switchStudy(name) {
-  state.ui.study = name;
-  qa('[data-study]').forEach(btn => btn.classList.toggle('active', btn.dataset.study === name));
-  qa('.study-panel').forEach(p => p.classList.add('hidden'));
-  q('#study-' + name).classList.remove('hidden');
-}
-
-function renderSmartStudy() {
-  const chapter = q('#smartTopicSelect').value;
-  const passage = state.data.passages.find(p => (p.chapter || 'General') === chapter) || state.data.passages[0];
-  q('#smartPassageTitle').textContent = passage ? `${passage.title} (${passage.level})` : 'No passage';
-  const vocab = state.data.vocab.filter(v => (v.topic || '').toLowerCase().includes((chapter || '').split('–').pop().trim().toLowerCase()) || (v.level || '') === (passage?.level || '')); 
-  q('#smartVocabList').textContent = vocab.slice(0,8).map(v => `${v.de} — ${v.en}`).join(' • ') || 'Use the vocab section to explore more words.';
-  const grammar = ['grammar_master_articles','grammar_connectors_master','grammar_da_words','grammar_sentence_patterns_b1b2'].filter(k => state.data.notes[k]);
-  q('#smartGrammarList').textContent = grammar.map(k => prettyNoteKey(k)).join(' • ');
-}
-
-function renderGlobalSearch() {
-  const term = q('#globalSearchInput').value.trim().toLowerCase();
-  const out = q('#globalSearchResults');
-  out.innerHTML = '';
-  if (!term) {
-    out.innerHTML = '<div class="muted small">Search notes, vocabulary, and passages.</div>';
-    return;
-  }
-  const results = [];
-  state.data.passages.forEach(p => {
-    const hay = `${p.title} ${p.chapter} ${p.german} ${p.english}`.toLowerCase();
-    if (hay.includes(term)) results.push({ kind: 'Passage', title: p.title, text: p.chapter + ' • ' + p.level });
-  });
-  state.data.vocab.forEach(v => {
-    const hay = `${v.de} ${v.en} ${v.topic}`.toLowerCase();
-    if (hay.includes(term)) results.push({ kind: 'Vocab', title: `${v.de} — ${v.en}`, text: `${v.topic} • ${v.level}` });
-  });
-  Object.entries(state.data.notes).forEach(([k, v]) => {
-    if (String(v).toLowerCase().includes(term) || prettyNoteKey(k).toLowerCase().includes(term)) {
-      results.push({ kind: 'Grammar', title: prettyNoteKey(k), text: String(v).slice(0, 120) + '…' });
-    }
-  });
-  out.innerHTML = results.slice(0, 18).map(r => `<div class="search-item"><strong>${escapeHtml(r.kind)}:</strong> ${escapeHtml(r.title)}<div class="small muted mt12">${escapeHtml(r.text)}</div></div>`).join('') || '<div class="muted small">No results.</div>';
-}
-
-// Vocabulary
-function setupVocab() {
-  const topics = ['All', ...new Set(state.data.vocab.map(v => v.topic || 'Other'))].sort();
-  const levels = ['All', ...new Set(state.data.vocab.map(v => v.level || 'Other'))].sort();
-  q('#vocabTopicFilter').innerHTML = topics.map(v => `<option>${escapeHtml(v)}</option>`).join('');
-  q('#vocabLevelFilter').innerHTML = levels.map(v => `<option>${escapeHtml(v)}</option>`).join('');
-  q('#vocabTopicFilter').onchange = renderVocabList;
-  q('#vocabLevelFilter').onchange = renderVocabList;
-  q('#vocabSearch').oninput = renderVocabList;
-  q('#newMatchBtn').onclick = newMatchRound;
-  q('#checkTypeBtn').onclick = checkTypeWord;
-  q('#nextTypeBtn').onclick = nextTypeWord;
-  q('#markDifficultBtn').onclick = markCurrentWordDifficult;
-  renderVocabList();
-  newMatchRound();
-  nextTypeWord();
-}
-
-function switchVocabMode(name) {
-  state.ui.vocabMode = name;
-  qa('[data-vocabmode]').forEach(btn => btn.classList.toggle('active', btn.dataset.vocabmode === name));
-  qa('.vocab-mode').forEach(p => p.classList.add('hidden'));
-  q('#vocab-' + name + '-mode').classList.remove('hidden');
-  if (name === 'review') renderDifficultWords();
-}
-
-function filteredVocab() {
-  const topic = q('#vocabTopicFilter').value;
-  const level = q('#vocabLevelFilter').value;
-  const term = q('#vocabSearch').value.trim().toLowerCase();
-  return state.data.vocab.filter(v => {
-    return (topic === 'All' || v.topic === topic) && (level === 'All' || v.level === level) && (!term || `${v.de} ${v.en} ${v.example_de || ''} ${v.example_en || ''}`.toLowerCase().includes(term));
-  });
-}
-
-function renderVocabList() {
-  const items = filteredVocab();
-  q('#vocabCountBadge').textContent = `${items.length} words`;
-  q('#vocabList').innerHTML = items.slice(0, 180).map((v, idx) => `
-    <div class="list-item">
-      <div class="top"><strong>${escapeHtml(v.de)}</strong><span class="badge">${escapeHtml(v.level || '—')} • ${escapeHtml(v.topic || 'General')}</span></div>
-      <div class="mt12">${escapeHtml(v.en)}</div>
-      <div class="small muted mt12">${escapeHtml(v.example_de || '')}</div>
-      <div class="small muted">${escapeHtml(v.example_en || '')}</div>
-      <div class="row gap-sm wrap mt12"><button class="ghost-btn" onclick="markVocabSeen('${encodeURIComponent(v.de)}')">Mark learned</button><button class="ghost-btn" onclick="markSpecificWordDifficult('${encodeURIComponent(v.de)}')">Difficult</button></div>
-    </div>`).join('') || '<div class="muted small">No words match the current filter.</div>';
-}
-window.markVocabSeen = function(encoded){ markVocabSeen(decodeURIComponent(encoded)); };
-window.markSpecificWordDifficult = function(encoded){ markSpecificWordDifficult(decodeURIComponent(encoded)); };
-
-function markVocabSeen(word) {
-  const d = getToday();
-  if (!d.uniqueVocab.includes(word)) d.uniqueVocab.push(word);
-  if (!store.progress.uniqueVocabEver.includes(word)) store.progress.uniqueVocabEver.push(word);
-  saveStore();
-  updateDashboard();
-}
-
-function markSpecificWordDifficult(word) {
-  if (!store.difficultWords.includes(word)) store.difficultWords.push(word);
-  saveStore();
-  renderDifficultWords();
-}
-
-function newMatchRound() {
-  const pool = shuffle([...state.data.vocab]).slice(0, 6);
-  state.matchRound.pairs = pool;
-  state.matchRound.selected = null;
-  state.matchRound.matched = 0;
-  const left = shuffle(pool.map((v, i) => ({ side: 'de', id: i, label: v.de })));
-  const right = shuffle(pool.map((v, i) => ({ side: 'en', id: i, label: v.en })));
-  q('#matchGame').innerHTML = `<div class="match-col">${left.map(item => `<button class="match-btn" data-side="de" data-id="${item.id}">${escapeHtml(item.label)}</button>`).join('')}</div>
-  <div class="match-col">${right.map(item => `<button class="match-btn" data-side="en" data-id="${item.id}">${escapeHtml(item.label)}</button>`).join('')}</div>`;
-  qa('.match-btn').forEach(btn => btn.onclick = () => chooseMatch(btn));
-  q('#matchStatus').textContent = 'Match the English and German words.';
-}
-
-function chooseMatch(btn) {
-  if (btn.classList.contains('done')) return;
-  const side = btn.dataset.side;
-  const id = btn.dataset.id;
-  if (!state.matchRound.selected) {
-    state.matchRound.selected = { side, id, el: btn };
-    btn.classList.add('selected');
-    return;
-  }
-  if (state.matchRound.selected.side === side) {
-    state.matchRound.selected.el.classList.remove('selected');
-    state.matchRound.selected = { side, id, el: btn };
-    btn.classList.add('selected');
-    return;
-  }
-  const first = state.matchRound.selected;
-  const match = first.id === id;
-  first.el.classList.remove('selected');
-  if (match) {
-    first.el.classList.add('done');
-    btn.classList.add('done');
-    state.matchRound.matched += 1;
-    const word = state.matchRound.pairs[Number(id)].de;
-    markVocabSeen(word);
-    q('#matchStatus').textContent = `Correct match: ${state.matchRound.pairs[Number(id)].de} — ${state.matchRound.pairs[Number(id)].en}`;
-    if (state.matchRound.matched === state.matchRound.pairs.length) q('#matchStatus').textContent = 'Round complete. Great work.';
-  } else {
-    q('#matchStatus').textContent = 'Not a match. Try again.';
-  }
-  state.matchRound.selected = null;
-}
-
-function nextTypeWord() {
-  const items = filteredVocab();
-  state.typeWord = items[Math.floor(Math.random() * items.length)] || state.data.vocab[0];
-  q('#typePrompt').textContent = state.typeWord ? `${state.typeWord.en} (${state.typeWord.topic}, ${state.typeWord.level})` : 'No word available';
-  q('#typeAnswer').value = '';
-  q('#typeFeedback').textContent = 'Type the German word.';
-}
-
-function checkTypeWord() {
-  const value = q('#typeAnswer').value.trim();
-  if (!state.typeWord) return;
-  if (normalise(value) === normalise(state.typeWord.de)) {
-    q('#typeFeedback').innerHTML = `<span class="ok">Correct.</span> ${escapeHtml(state.typeWord.de)} = ${escapeHtml(state.typeWord.en)}`;
-    markVocabSeen(state.typeWord.de);
-  } else {
-    q('#typeFeedback').innerHTML = `<span class="bad">Not quite.</span> Correct: <strong>${escapeHtml(state.typeWord.de)}</strong><br><span class="small muted">Example: ${escapeHtml(state.typeWord.example_de || '')}</span>`;
-    markSpecificWordDifficult(state.typeWord.de);
-  }
-}
-
-function markCurrentWordDifficult() {
-  if (state.typeWord) {
-    markSpecificWordDifficult(state.typeWord.de);
-    q('#typeFeedback').textContent = `${state.typeWord.de} added to difficult words.`;
-  }
-}
-
-function renderDifficultWords() {
-  const items = state.data.vocab.filter(v => store.difficultWords.includes(v.de));
-  q('#difficultWordsList').innerHTML = items.map(v => `<div class="list-item"><div class="top"><strong>${escapeHtml(v.de)}</strong><span class="badge">Difficult</span></div><div class="mt12">${escapeHtml(v.en)}</div><div class="small muted mt12">${escapeHtml(v.example_de || '')}</div></div>`).join('') || '<div class="muted small">No difficult words saved yet.</div>';
-}
-
-// Grammar
-function setupGrammar() {
-  const keys = Object.keys(state.data.notes);
-  q('#grammarNoteSelect').innerHTML = keys.map(k => `<option value="${escapeHtml(k)}">${escapeHtml(prettyNoteKey(k))}</option>`).join('');
-  q('#grammarNoteSelect').onchange = renderGrammarNote;
-  renderGrammarMaster();
-  renderGrammarNote();
-}
-
-function renderGrammarMaster() {
-  const cards = [
-    ['Articles + kein', 'grammar_master_articles'],
-    ['Personal pronouns', 'grammar_personal_pronouns_full'],
-    ['Possessive words', 'grammar_possessive_pronouns'],
-    ['Reflexive pronouns', 'grammar_reflexive_pronouns'],
-    ['Adjective endings', 'grammar_adjective_endings'],
-    ['Connectors', 'grammar_connectors_master'],
-    ['Da-words', 'grammar_da_words'],
-    ['Case signals', 'grammar_case_signals'],
-    ['Sentence patterns', 'grammar_sentence_patterns_b1b2']
-  ];
-  q('#grammarMasterGrid').innerHTML = cards.map(([title, key]) => `<div class="grammar-table-card"><h3>${escapeHtml(title)}</h3><pre>${escapeHtml(state.data.notes[key] || 'Missing')}</pre></div>`).join('');
-}
-
-function renderGrammarNote() {
-  const key = q('#grammarNoteSelect').value;
-  q('#grammarNoteView').textContent = state.data.notes[key] || 'No note selected.';
-}
-
-// Exercises
-function setupExercises() {
-  const types = ['All', ...new Set(state.data.exercises.map(e => e.type))];
-  const levels = ['All', ...new Set(state.data.exercises.map(e => e.level))];
-  q('#exerciseTypeFilter').innerHTML = types.map(v => `<option>${escapeHtml(v)}</option>`).join('');
-  q('#exerciseLevelFilter').innerHTML = levels.map(v => `<option>${escapeHtml(v)}</option>`).join('');
-  q('#exerciseTypeFilter').onchange = () => { buildExercisePool(); nextExercise(); };
-  q('#exerciseLevelFilter').onchange = () => { buildExercisePool(); nextExercise(); };
-  q('#exerciseSortFilter').onchange = () => { buildExercisePool(); nextExercise(); };
-  q('#submitExerciseBtn').onclick = submitExercise;
-  q('#nextExerciseBtn').onclick = nextExercise;
-  q('#showHintBtn').onclick = () => {
-    if (state.currentExercise) q('#exerciseHintBox').textContent = state.currentExercise.hint || 'No extra hint.';
-  };
-  buildExercisePool();
-  nextExercise();
-}
-
-function switchPractice(name) {
-  state.ui.practice = name;
-  store.progress.lastPractice = name;
-  saveStore();
-  qa('[data-practice]').forEach(btn => btn.classList.toggle('active', btn.dataset.practice === name));
-  qa('.practice-panel').forEach(p => p.classList.add('hidden'));
-  q('#practice-' + name).classList.remove('hidden');
-}
-
-function buildExercisePool() {
-  const type = q('#exerciseTypeFilter').value;
-  const level = q('#exerciseLevelFilter').value;
-  let pool = state.data.exercises.filter(e => (type === 'All' || e.type === type) && (level === 'All' || e.level === level));
-  if (q('#exerciseSortFilter').value === 'weak') {
-    pool = pool.sort((a,b) => (store.weakAreas[b.type] || 0) - (store.weakAreas[a.type] || 0));
-  }
-  state.exercisePool = shuffle(pool);
-  q('#exerciseBadge').textContent = `${state.exercisePool.length} exercises`;
-}
-
-function nextExercise() {
-  if (!state.exercisePool.length) buildExercisePool();
-  state.currentExercise = state.exercisePool.pop() || null;
-  q('#exerciseAnswer').value = '';
-  if (!state.currentExercise) {
-    q('#exerciseQuestionBox').textContent = 'No exercises available.';
-    return;
-  }
-  q('#exerciseQuestionBox').innerHTML = `<strong>${escapeHtml(prettyType(state.currentExercise.type))}</strong><div class="mt12">${escapeHtml(state.currentExercise.question)}</div>`;
-  q('#exerciseHintBox').textContent = 'Use the hint button if you want help.';
-  q('#exerciseFeedback').innerHTML = '<div class="muted">Submit your answer to see feedback.</div>';
-}
-
-function submitExercise() {
-  const ex = state.currentExercise;
-  if (!ex) return;
-  const answer = q('#exerciseAnswer').value.trim();
-  const correct = normalise(answer) === normalise(ex.answer || '');
-  const today = getToday();
-  today.attemptedExercises += 1;
-  const explanation = EXPLANATIONS[ex.type] || EXPLANATIONS.default;
-  if (correct) {
-    today.correctExercises += 1;
-    decreaseWeak(ex.type);
-    q('#exerciseFeedback').innerHTML = `
-      <div class="ok"><strong>Correct.</strong></div>
-      <div class="mt12"><strong>Rule:</strong> ${escapeHtml(explanation.rule)}</div>
-      <div class="mt12"><strong>Example:</strong> ${escapeHtml(explanation.example)}</div>`;
-  } else {
-    increaseWeak(ex.type);
-    q('#exerciseFeedback').innerHTML = `
-      <div class="bad"><strong>Your answer:</strong> ${escapeHtml(answer || '(empty)')}</div>
-      <div class="mt12"><strong>Correct answer:</strong> ${escapeHtml(ex.answer || '(empty)')}</div>
-      <div class="mt12"><strong>Why:</strong> ${escapeHtml(explanation.rule)}</div>
-      <div class="mt12"><strong>Example:</strong> ${escapeHtml(explanation.example)}</div>
-      <div class="mt12 small muted">Hint: ${escapeHtml(ex.hint || 'Read the full sentence carefully.')}</div>`;
-  }
-  saveStore();
-  updateDashboard();
-}
-
-// Typing / passages
-function setupTyping() {
-  const levels = ['All', ...new Set(state.data.passages.map(p => normaliseLevel(p.level)))];
-  q('#typingLevelFilter').innerHTML = levels.map(v => `<option>${escapeHtml(v)}</option>`).join('');
-  q('#typingLevelFilter').onchange = renderTypingSelect;
-  q('#typingPassageSelect').onchange = () => {
-    state.currentTypingIndex = Number(q('#typingPassageSelect').value || 0);
-    renderTypingPassage();
-  };
-  q('#playAudioBtn').onclick = playCurrentPassageAudio;
-  q('#stopAudioBtn').onclick = stopAudio;
-  q('#checkTypingBtn').onclick = checkTyping;
-  q('#clearTypingBtn').onclick = () => { q('#typingInput').value = ''; q('#typingFeedback').textContent = 'Cleared.'; };
-  renderTypingSelect();
-}
-
-function normaliseLevel(level) {
-  const s = String(level || '').toUpperCase();
-  if (s.startsWith('A1')) return 'A1';
-  if (s.startsWith('A2')) return 'A2';
-  if (s.startsWith('B1')) return 'B1';
-  if (s.startsWith('B2')) return 'B2';
-  return s || 'Other';
-}
-
-function getTypingPool() {
-  const level = q('#typingLevelFilter').value;
-  return state.data.passages.filter(p => level === 'All' || normaliseLevel(p.level) === level);
-}
-
-function renderTypingSelect() {
-  const pool = getTypingPool();
-  q('#typingPassageSelect').innerHTML = pool.map((p, idx) => `<option value="${idx}">${escapeHtml(p.title)} — ${escapeHtml(p.chapter || 'General')} (${escapeHtml(normaliseLevel(p.level))})</option>`).join('');
-  state.currentTypingIndex = 0;
-  renderTypingPassage();
-}
-
-function currentTypingPassage() {
-  return getTypingPool()[state.currentTypingIndex] || null;
-}
-
-function renderTypingPassage() {
-  const p = currentTypingPassage();
-  q('#typingReference').value = p ? p.german : 'No passage.';
-  q('#typingInput').value = '';
-  q('#typingFeedback').textContent = p ? `English: ${p.english}` : 'No passage.';
-  q('#typingStatusBadge').textContent = p ? `${normaliseLevel(p.level)} passage` : 'Ready';
-}
-
-function playCurrentPassageAudio() {
-  const p = currentTypingPassage();
-  if (!p) return;
-  stopAudio();
-  const u = new SpeechSynthesisUtterance(p.german);
-  u.lang = 'de-DE';
-  u.rate = Number(q('#audioSpeedSelect').value || 1);
-  state.currentUtterance = u;
-  speechSynthesis.speak(u);
-}
-
-function stopAudio() {
-  speechSynthesis.cancel();
-  state.currentUtterance = null;
-}
-
-function checkTyping() {
-  const p = currentTypingPassage();
-  if (!p) return;
-  const typed = q('#typingInput').value.trim();
-  const ref = p.german.trim();
-  const accuracy = computeAccuracy(ref, typed);
-  const today = getToday();
-  today.typingChecks += 1;
-  const passageKey = `${p.title}||${p.chapter}`;
-  let msg = `Accuracy: ${accuracy}%`;
-  if (accuracy >= 70) {
-    if (!today.uniquePassages.includes(passageKey)) {
-      today.uniquePassages.push(passageKey);
-      if (!store.progress.uniquePassagesEver.includes(passageKey)) store.progress.uniquePassagesEver.push(passageKey);
-      msg += ' • Counted as a unique passage today.';
-    } else {
-      today.repeatedPassages += 1;
-      msg += ' • Good review. Counted as a repeat, not a new passage.';
-    }
-  } else {
-    msg += ' • Need 70%+ to count for the mission.';
-  }
-  q('#typingFeedback').textContent = msg;
-  saveStore();
-  updateDashboard();
-}
-
-function computeAccuracy(a, b) {
-  const aa = a.replace(/\s+/g, ' ').trim();
-  const bb = b.replace(/\s+/g, ' ').trim();
-  if (!aa.length) return 0;
-  let matches = 0;
-  const len = Math.max(aa.length, bb.length);
-  for (let i = 0; i < Math.min(aa.length, bb.length); i++) if (aa[i] === bb[i]) matches += 1;
-  return Math.round((matches / len) * 100);
-}
-
-// Writing
-function setupWriting() {
-  q('#writingTaskSelect').innerHTML = WRITING_TASKS.map((t, i) => `<option value="${i}">${escapeHtml(t.title)}</option>`).join('');
-  q('#writingTaskSelect').onchange = () => {
-    state.currentWritingIndex = Number(q('#writingTaskSelect').value || 0);
-    renderWritingTask();
-  };
-  q('#submitWritingBtn').onclick = submitWriting;
-  q('#nextWritingBtn').onclick = () => {
-    state.currentWritingIndex = (state.currentWritingIndex + 1) % WRITING_TASKS.length;
-    q('#writingTaskSelect').value = state.currentWritingIndex;
-    renderWritingTask();
-  };
-  renderWritingTask();
-}
-
-function renderWritingTask() {
-  const task = WRITING_TASKS[state.currentWritingIndex];
-  q('#writingPrompt').textContent = task.prompt;
-  q('#writingInput').value = '';
-  q('#writingFeedback').innerHTML = '<div class="muted">Use connectors, good word order, and enough detail.</div>';
-}
-
-function submitWriting() {
-  const text = q('#writingInput').value.trim();
-  const issues = [];
-  if (text.length < 40) issues.push('Write a little more so the task becomes useful practice.');
-  if (!/[A-ZÄÖÜ]/.test(text[0] || '')) issues.push('Start with a capital letter.');
-  if (text.includes(' weil ') && !/[a-zäöüß]$/.test((text.split(' weil ')[1] || '').trim().split(' ')[0] || '')) {
-    // very light heuristic, do nothing strong
-  }
-  if (!/[.!?]$/.test(text)) issues.push('Add a full stop or final punctuation.');
-  const goodPatterns = ['dass', 'weil', 'damit', 'andererseits', 'meiner Meinung nach'].filter(p => text.toLowerCase().includes(p.toLowerCase()));
-  const qualifies = text.length >= 40;
-  if (qualifies) {
-    getToday().writingDone += 1;
-    saveStore();
-    updateDashboard();
-  }
-  q('#writingFeedback').innerHTML = `
-    <div><strong>Status:</strong> ${qualifies ? '<span class="ok">Counted for today.</span>' : '<span class="warn">Too short to count.</span>'}</div>
-    <div class="mt12"><strong>Useful structures you used:</strong> ${goodPatterns.length ? escapeHtml(goodPatterns.join(', ')) : 'Try using weil, dass, damit, or opinion phrases.'}</div>
-    <div class="mt12"><strong>Coach notes:</strong><ul>${issues.length ? issues.map(i => `<li>${escapeHtml(i)}</li>`).join('') : '<li>Good job. Next step: add one more connector and one longer sentence.</li>'}</ul></div>`;
-}
-
-// Conjugation
-function setupConjugation() {
-  const levels = ['All', ...new Set(state.data.conjugation.map(v => v.level || 'Other'))];
-  q('#conjLevelFilter').innerHTML = levels.map(v => `<option>${escapeHtml(v)}</option>`).join('');
-  q('#conjLevelFilter').onchange = renderConjSelect;
-  q('#conjVerbSelect').onchange = () => renderConjCard();
-  q('#checkConjBtn').onclick = checkConjQuiz;
-  q('#nextConjBtn').onclick = nextConjQuiz;
-  renderConjSelect();
-}
-
-function conjFiltered() {
-  const level = q('#conjLevelFilter').value;
-  return state.data.conjugation.filter(v => level === 'All' || v.level === level);
-}
-
-function renderConjSelect() {
-  const pool = conjFiltered();
-  q('#conjVerbSelect').innerHTML = pool.map((v, i) => `<option value="${i}">${escapeHtml(v.infinitive)} — ${escapeHtml(v.english)}</option>`).join('');
-  renderConjCard();
-}
-
-function currentVerb() {
-  return conjFiltered()[Number(q('#conjVerbSelect').value || 0)] || null;
-}
-
-function renderConjCard() {
-  const verb = currentVerb();
-  if (!verb) return;
-  q('#conjCard').innerHTML = `<div><strong>${escapeHtml(verb.infinitive)}</strong> — ${escapeHtml(verb.english)} <span class="badge">${escapeHtml(verb.level)} • ${escapeHtml(verb.type)}</span></div>
-  <div class="conj-grid">${Object.entries(verb.forms || {}).map(([k,v]) => `<div class="conj-form"><span>${escapeHtml(k)}</span><strong>${escapeHtml(v)}</strong></div>`).join('')}</div>`;
-  nextConjQuiz();
-}
-
-function nextConjQuiz() {
-  const verb = currentVerb();
-  if (!verb) return;
-  const entries = Object.entries(verb.forms || {});
-  const [pronoun, form] = entries[Math.floor(Math.random() * entries.length)];
-  state.conjQuiz = { pronoun, form, infinitive: verb.infinitive };
-  q('#conjQuizPrompt').textContent = `${verb.infinitive} → ${pronoun}`;
-  q('#conjQuizAnswer').value = '';
-  q('#conjQuizFeedback').textContent = 'Type the correct form.';
-}
-
-function checkConjQuiz() {
-  if (!state.conjQuiz) return;
-  const answer = q('#conjQuizAnswer').value.trim();
-  if (normalise(answer) === normalise(state.conjQuiz.form)) {
-    q('#conjQuizFeedback').innerHTML = `<span class="ok">Correct.</span> ${state.conjQuiz.pronoun} ${state.conjQuiz.form}`;
-  } else {
-    q('#conjQuizFeedback').innerHTML = `<span class="bad">Correct form:</span> ${state.conjQuiz.pronoun} ${state.conjQuiz.form}`;
-  }
-}
-
-// Review
-function setupReview() {
-  const categories = ['All', ...new Set(state.data.flashcards.map(f => f.category || 'General'))];
-  q('#flashCategoryFilter').innerHTML = categories.map(c => `<option>${escapeHtml(c)}</option>`).join('');
-  q('#flashCategoryFilter').onchange = buildFlashPool;
-  q('#flipFlashBtn').onclick = flipFlash;
-  q('#nextFlashBtn').onclick = nextFlash;
-  q('#flashCard').onclick = flipFlash;
-  buildFlashPool();
-}
-
-function buildFlashPool() {
-  const cat = q('#flashCategoryFilter').value;
-  state.flashPool = shuffle(state.data.flashcards.filter(f => cat === 'All' || f.category === cat));
-  state.flashIndex = 0;
-  state.flashFlipped = false;
-  renderFlash();
-}
-
-function currentFlash() { return state.flashPool[state.flashIndex] || null; }
-function renderFlash() {
-  const item = currentFlash();
-  q('#flashCard').textContent = item ? (state.flashFlipped ? item.back : item.front) : 'No flashcards';
-}
-function flipFlash() { state.flashFlipped = !state.flashFlipped; renderFlash(); }
-function nextFlash() { if (!state.flashPool.length) return; state.flashIndex = (state.flashIndex + 1) % state.flashPool.length; state.flashFlipped = false; renderFlash(); }
-
-// Helpers
-function prettyType(type) {
-  return String(type || '').replaceAll('_', ' ').replace(/\b\w/g, m => m.toUpperCase());
-}
-function prettyNoteKey(key) {
-  return String(key || '').replaceAll('_', ' ').replace(/\b\w/g, m => m.toUpperCase());
-}
-function suggestionForType(type) {
-  const map = {
-    connectors: 'Review weil, dass, damit, and verb-final clauses.',
-    word_order: 'Read the clause from left to right and place the verb at the end.',
-    prepositions: 'Group prepositions by case and learn them in chunks.',
-    articles: 'Use the grammar master table and compare der / den / dem.',
-    adjectives: 'Focus first on nominative, accusative masculine, and dative.',
-    passive: 'Remember: werden + Partizip II.',
-    konjunktiv_ii: 'Use würde / hätte / wäre for polite or hypothetical meaning.'
-  };
-  return map[type] || 'Repeat the explanation and try 5 more items in this category.';
-}
-function normalise(s) { return String(s || '').trim().toLowerCase().replace(/[.,!?]/g, '').replace(/\s+/g, ' '); }
-function shuffle(arr) { return arr.sort(() => Math.random() - 0.5); }
-function escapeHtml(s) { return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-
-document.addEventListener('keydown', (e) => {
-  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'b') {
-    e.preventDefault();
-    q('#sidebar').classList.toggle('open');
-  }
-});
-
+function loadStore(){try{return {...STORE_DEFAULT,...JSON.parse(localStorage.getItem(LS_KEY)||'{}')}}catch{return structuredClone(STORE_DEFAULT)}}
+function saveStore(){localStorage.setItem(LS_KEY,JSON.stringify(store))}
+function todayKey(){return new Date().toISOString().slice(0,10)}
+function ensureToday(){const k=todayKey();if(!store.daily[k])store.daily[k]={uniquePassages:[],repeatedPassages:0,correctExercises:0,attemptedExercises:0,uniqueVocab:[],writingDone:0,listeningDone:0,xp:0}};
+function today(){ensureToday();return store.daily[todayKey()]}
+function mission(){return store.missionPreset==='custom'?store.missionCustom:(MISSION_TARGETS[store.missionPreset]||MISSION_TARGETS.medium)}
+async function loadJson(p){for(const x of [p,'./'+p]){try{const r=await fetch(x,{cache:'no-store'});if(r.ok)return await r.json()}catch{}} throw new Error('Failed to load '+p)}
+function t(key){return (I18N[store.lang]||I18N.en)[key]||key}
+function applyTranslations(){qa('[data-i18n]').forEach(el=>el.textContent=t(el.dataset.i18n)); q('#pageTitle').textContent=labelForSection(state.ui.section)}
+function labelForSection(sec){const map={practice:t('nav_practice'),vocab:t('nav_vocab'),grammar:t('nav_grammar'),flashcards:t('nav_flashcards'),conjugation:t('nav_conjugation'),exam:t('nav_exam'),app:t('nav_app')}; return map[sec]||sec}
+function setTheme(theme){store.theme=theme;document.body.className=theme; q('#themeSelect').value=theme; q('#settingsTheme').value=theme; saveStore()}
+function setLang(lang){store.lang=lang; state.ui.lang=lang; q('#languageSelect').value=lang; q('#settingsLanguage').value=lang; applyTranslations(); renderGrammar(); renderVocabList(); updateHeader(); renderWritingPrompt();}
+function updateHeader(){const d=today(), m=mission(); const entries=[['Passages','mPassages',d.uniquePassages.length,m.passages],['Exercises','mExercises',d.correctExercises,m.exercises],['Vocab','mVocab',d.uniqueVocab.length,m.vocab],['Writing','mWriting',d.writingDone,m.writing]]; let sum=0,max=0; entries.forEach(([_,id,val,target])=>{sum+=Math.min(val,target);max+=target;q('#'+id+'Text').textContent=`${val}/${target}`;q('#'+id+'Bar').style.width=`${Math.min(100,(val/Math.max(1,target))*100)}%`}); const pct=Math.round(sum/max*100)||0; q('#dailyPill').textContent=`${pct}%`; q('#streakPill').textContent=`🔥 ${store.streak}`; q('#xpPill').textContent=`⭐ ${store.xp} XP`; q('#todayDrop').innerHTML=`<div>${d.uniquePassages.length} unique passages</div><div>${d.repeatedPassages} repeats</div><div>${d.correctExercises}/${d.attemptedExercises} exercises</div><div>${d.uniqueVocab.length} vocab</div><div>${d.writingDone} writing</div><div>${d.listeningDone} listening</div>`; q('#smartCoachText').textContent=coachText();}
+function coachText(){const weak=getWeakAreas().slice(0,1)[0]; if(weak) return (store.lang==='de'?`Schwerpunkt heute: ${weak.type}`:`Focus today: ${weak.type}`); return store.lang==='de'?'Schritt für Schritt lernen.':'Focus on one task at a time.'}
+function updateStreak(){const tk=todayKey(); if(store.lastActive===tk) return; const todayDate=new Date(tk); const last=new Date(store.lastActive||0); const diff=Math.round((todayDate-last)/86400000); if(!store.lastActive) store.streak=1; else if(diff===1) store.streak+=1; else if(diff>1) store.streak=1; store.lastActive=tk; saveStore()}
+function addXP(n){store.xp+=n; today().xp=(today().xp||0)+n; saveStore(); updateHeader()}
+function recordWeak(type, ok){store.weak[type] ??= {wrong:0,right:0}; ok?store.weak[type].right++:store.weak[type].wrong++; saveStore()}
+function getWeakAreas(){return Object.entries(store.weak).map(([type,v])=>({type,score:(v.wrong*2-v.right)})).sort((a,b)=>b.score-a.score).filter(x=>x.score>0)}
+function norm(s){return (s||'').toString().trim().toLowerCase().replace(/[“”"']/g,'').replace(/\s+/g,' ')}
+function shuffle(a){const arr=[...a]; for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [arr[i],arr[j]]=[arr[j],arr[i]]} return arr}
+function uniqueBy(arr,keyFn){const seen=new Set(), out=[]; arr.forEach(x=>{const k=keyFn(x); if(!seen.has(k)){seen.add(k); out.push(x)}}); return out}
+function speak(text,speed=1){window.speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(text); u.lang='de-DE'; u.rate=Number(speed)||1; state.speech=u; speechSynthesis.speak(u)}
+function stopSpeak(){window.speechSynthesis.cancel(); state.speech=null}
+function sentenceReason(sentence){const s=sentence.toLowerCase(); if(s.includes('weil ')||s.includes('dass ')||s.includes('damit ')) return store.lang==='de'?'Nebensatz: Das Verb steht am Ende.':'Subordinate clause: the verb goes to the end.'; if(/mit|bei|von|zu|nach/.test(s)) return store.lang==='de'?'Diese Präposition braucht meistens den Dativ.':'This preposition usually takes the dative.'; if(/für|ohne|durch|gegen|um/.test(s)) return store.lang==='de'?'Diese Präposition braucht den Akkusativ.':'This preposition takes the accusative.'; if(s.includes(' habe ')||s.includes(' ist ')) return store.lang==='de'?'Im Perfekt benutzt man haben/sein + Partizip II.':'Perfekt uses haben/sein + past participle.'; return store.lang==='de'?'Achte auf Artikel, Fall und Verbposition.':'Check article, case, and verb position.'}
+async function init(){
+ try{
+  const [passages,notes,exercises,flashcards,conjugation,sentences,vocab]=await Promise.all(['passages','notes','exercises','flashcards','conjugation','sentences','vocab'].map(n=>loadJson(`data/${n}.json`)));
+  state.data.passages=passages; state.data.notes=notes; state.data.exercises=exercises.exercises; state.data.flashcards=flashcards.flashcards; state.data.conjugation=conjugation.verbs; state.data.sentences=sentences; state.data.vocab=vocab;
+  bootstrap();
+ }catch(err){console.error(err); alert('Data failed to load. Keep index.html, styles.css, app.js, data/, and assets/ together.');}
+}
+function bootstrap(){updateStreak(); bindGlobal(); setTheme(store.theme); setLang(store.lang); q('#missionPreset').value=store.missionPreset; applyCustomMission(); fillExerciseTypeFilter(); fillVocabFilters(); fillFlashFilters(); fillWritingSelect(); renderTypingOptions(); newExercise(); newListeningRound(); newStructureRound(); renderWritingPrompt(); newMatchRound(); newTypeWordRound(); newConjRound(); nextFlash(); goSection(store.last.section||'practice'); switchPractice(store.last.practice||'exercises'); renderGrammar(); renderAppPage(); updateHeader();}
+function bindGlobal(){
+ q('#sidebarOpen').onclick=()=>q('#sidebar').classList.add('open'); q('#sidebarClose').onclick=()=>q('#sidebar').classList.remove('open');
+ qa('.navbtn').forEach(b=>b.onclick=()=>goSection(b.dataset.section));
+ qa('.subbtn').forEach(b=>b.onclick=()=>switchPractice(b.dataset.practice)); qa('.vocabbtn').forEach(b=>b.onclick=()=>switchVocab(b.dataset.vmode));
+ q('#themeSelect').onchange=e=>setTheme(e.target.value); q('#settingsTheme').onchange=e=>setTheme(e.target.value); q('#languageSelect').onchange=e=>setLang(e.target.value); q('#settingsLanguage').onchange=e=>setLang(e.target.value);
+ q('#missionPreset').onchange=e=>{store.missionPreset=e.target.value; saveStore(); updateHeader()}; ['customPassages','customExercises','customVocab','customWriting'].forEach(id=>q('#'+id).onchange=()=>{store.missionCustom={passages:+q('#customPassages').value,exercises:+q('#customExercises').value,vocab:+q('#customVocab').value,writing:+q('#customWriting').value}; saveStore(); updateHeader()});
+ q('#continueBtn').onclick=()=>{if(getWeakAreas()[0]){goSection('practice');switchPractice('exercises');q('#exerciseFocusFilter').value='weak';newExercise()} else {goSection(store.last.section||'practice');switchPractice(store.last.practice||'exercises')}};
+ q('#resetTodayBtn').onclick=()=>{store.daily[todayKey()]={uniquePassages:[],repeatedPassages:0,correctExercises:0,attemptedExercises:0,uniqueVocab:[],writingDone:0,listeningDone:0,xp:0}; saveStore(); updateHeader()};
+ q('#countRepeatsToggle').checked=!!store.countRepeats; q('#countRepeatsToggle').onchange=e=>{store.countRepeats=e.target.checked; saveStore()};
+ // practice exercises
+ q('#nextExerciseBtn').onclick=newExercise; q('#checkExerciseBtn').onclick=checkExercise; q('#showExerciseAnswerBtn').onclick=()=>showExerciseAnswer(true); q('#exerciseLevelFilter').onchange=newExercise; q('#exerciseTypeFilter').onchange=newExercise; q('#exerciseFocusFilter').onchange=newExercise; q('#exerciseAnswerInput').addEventListener('keydown',e=>{if(e.key==='Enter') checkExercise()});
+ // typing
+ q('#typingLevelFilter').onchange=renderTypingOptions; q('#typingSelect').onchange=loadTypingPassage; q('#typingShowEnglish').onchange=()=>q('#typingEnglishWrap').classList.toggle('hidden',!q('#typingShowEnglish').checked); q('#playPassageBtn').onclick=()=>speak(currentTyping().german,q('#audioSpeed').value); q('#stopPassageBtn').onclick=stopSpeak; q('#repeatPassageBtn').onclick=()=>speak(currentTyping().german,q('#audioSpeed').value); q('#checkTypingBtn').onclick=checkTyping; q('#clearTypingBtn').onclick=()=>q('#typingInput').value='';
+ // listening
+ q('#newListeningBtn').onclick=newListeningRound; q('#playListenBtn').onclick=()=>speak(state.currentListen.german,q('#listenSpeed').value); q('#stopListenBtn').onclick=stopSpeak; q('#replayListenBtn').onclick=()=>speak(state.currentListen.german,q('#listenSpeed').value); q('#revealListenBtn').onclick=()=>q('#listenAnswer').classList.remove('hidden'); q('#checkListenBtn').onclick=checkListening;
+ // structure
+ q('#newStructureBtn').onclick=newStructureRound; q('#checkStructureBtn').onclick=checkStructure; q('#showStructureBtn').onclick=()=>showStructure(true);
+ // writing
+ q('#writingTaskSelect').onchange=renderWritingPrompt; q('#newWritingBtn').onclick=()=>{state.currentWriting=(state.currentWriting+1)%WRITING_SAMPLES.length; q('#writingTaskSelect').value=state.currentWriting; renderWritingPrompt()}; q('#checkWritingBtn').onclick=checkWriting; q('#showWritingSampleBtn').onclick=()=>{q('#writingSample').classList.remove('hidden')};
+ // vocab
+ q('#vocabSearch').oninput=renderVocabList; q('#vocabLevelFilter').onchange=renderVocabList; q('#vocabTopicFilter').onchange=renderVocabList; q('#vocabDifficultOnly').onchange=renderVocabList; q('#newMatchBtn').onclick=newMatchRound; q('#newTypeWordBtn').onclick=newTypeWordRound; q('#checkTypeWordBtn').onclick=checkTypeWord; q('#showTypeWordBtn').onclick=()=>typeWordFeedback(false,true);
+ // grammar
+ q('#grammarSearch').oninput=renderGrammar;
+ // flash
+ q('#nextFlashBtn').onclick=nextFlash; q('#flashCard').onclick=flipFlash; q('#flashCategoryFilter').onchange=nextFlash;
+ // conj
+ q('#newConjBtn').onclick=newConjRound; q('#checkConjBtn').onclick=checkConj; q('#showConjBtn').onclick=()=>showConj(true);
+ // exam
+ q('#startExamBtn').onclick=startExam; q('#finishExamBtn').onclick=finishExam;
+}
+function goSection(sec){state.ui.section=sec; store.last.section=sec; saveStore(); qa('.app-section').forEach(s=>s.classList.add('hidden')); q('#section-'+sec).classList.remove('hidden'); qa('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.section===sec)); q('#pageTitle').textContent=labelForSection(sec); q('#sidebar').classList.remove('open');}
+function switchPractice(name){state.ui.practice=name; store.last.practice=name; saveStore(); qa('.subbtn').forEach(b=>b.classList.toggle('active',b.dataset.practice===name)); qa('.practice-panel').forEach(p=>p.classList.add('hidden')); q('#practice-'+name).classList.remove('hidden');}
+function switchVocab(name){state.ui.vocab=name; qa('.vocabbtn').forEach(b=>b.classList.toggle('active',b.dataset.vmode===name)); ['list','match','type'].forEach(x=>q('#vocab-'+x).classList.toggle('hidden',x!==name));}
+function fillExerciseTypeFilter(){const types=uniqueBy(state.data.exercises,e=>e.type).map(e=>e.type).sort(); q('#exerciseTypeFilter').innerHTML='<option value="ALL">All types</option>'+types.map(t=>`<option value="${t}">${t}</option>`).join('')}
+function exercisePool(){let arr=[...state.data.exercises]; const lvl=q('#exerciseLevelFilter').value, typ=q('#exerciseTypeFilter').value, focus=q('#exerciseFocusFilter').value; if(lvl!=='ALL') arr=arr.filter(x=>x.level===lvl); if(typ!=='ALL') arr=arr.filter(x=>x.type===typ); if(focus==='weak'){const weak=getWeakAreas().map(w=>w.type); if(weak.length) arr=arr.filter(x=>weak.includes(x.type)||weak.some(w=>x.question.toLowerCase().includes(w.toLowerCase())))} return uniqueBy(arr,x=>`${x.type}|${x.question}|${x.answer}`)}
+function newExercise(){const pool=exercisePool(); state.currentExercise=pool[Math.floor(Math.random()*pool.length)]||state.data.exercises[0]; q('#exerciseMeta').textContent=`${state.currentExercise.level} • ${state.currentExercise.type}`; q('#exerciseQuestion').textContent=state.currentExercise.question; q('#exerciseAnswerInput').value=''; q('#exerciseResult').textContent=''; q('#exerciseResult').className='result'; q('#exerciseExplanation').classList.add('hidden');}
+function explanationFor(type){return EXPLANATIONS[type]||EXPLANATIONS[(type||'').replace('_quiz','')]||EXPLANATIONS.default}
+function showExerciseAnswer(fromButton=false){const ex=state.currentExercise, exp=explanationFor(ex.type); q('#exerciseResult').textContent=(store.lang==='de'?`Richtig: ${ex.answer}`:`Correct: ${ex.answer}`); q('#exerciseResult').className='result'; q('#exerciseExplanation').classList.remove('hidden'); q('#exerciseExplanation').innerHTML=`<strong>${store.lang==='de'?'Regel':'Rule'}:</strong> ${store.lang==='de'?exp.rule_de:exp.rule_en}<br><strong>${store.lang==='de'?'Beispiel':'Example'}:</strong> ${exp.example}`; if(fromButton){recordWeak(ex.type,false)} }
+function checkExercise(){const ex=state.currentExercise; const user=norm(q('#exerciseAnswerInput').value); const ok=user===norm(ex.answer); const d=today(); d.attemptedExercises++; if(ok){d.correctExercises++; addXP(store.missionPreset==='easy'?1:store.missionPreset==='medium'?2:3)}; saveStore(); recordWeak(ex.type,ok); q('#exerciseResult').textContent=ok?(store.lang==='de'?'Richtig!':'Correct!'):(store.lang==='de'?`Nicht ganz. Richtige Antwort: ${ex.answer}`:`Not quite. Correct answer: ${ex.answer}`); q('#exerciseResult').className='result '+(ok?'good':'bad'); const exp=explanationFor(ex.type); q('#exerciseExplanation').classList.remove('hidden'); q('#exerciseExplanation').innerHTML=`<div><strong>${store.lang==='de'?'Deine Antwort':'Your answer'}:</strong> ${q('#exerciseAnswerInput').value||'—'}</div><div><strong>${store.lang==='de'?'Richtige Antwort':'Correct answer'}:</strong> ${ex.answer}</div><div><strong>${store.lang==='de'?'Regel':'Rule'}:</strong> ${store.lang==='de'?exp.rule_de:exp.rule_en}</div><div><strong>${store.lang==='de'?'Beispiel':'Example'}:</strong> ${exp.example}</div>`; updateHeader();}
+function typingPool(){const lvl=q('#typingLevelFilter').value; return state.data.passages.filter(p=>lvl==='ALL'||p.level===lvl)}
+function renderTypingOptions(){const arr=typingPool(); q('#typingSelect').innerHTML=arr.map((p,i)=>`<option value="${i}">${p.level} • ${p.title}</option>`).join(''); loadTypingPassage()}
+function currentTyping(){return typingPool()[+q('#typingSelect').value||0]||typingPool()[0]||state.data.passages[0]}
+function loadTypingPassage(){const p=currentTyping(); state.currentPassage=p; q('#typingReference').value=p.german; q('#typingEnglish').value=p.english||''; q('#typingEnglishWrap').classList.toggle('hidden',!q('#typingShowEnglish').checked); q('#typingFeedback').textContent=''}
+function completePassage(pass){const d=today(); const id=(pass.title||'')+'|'+(pass.german||'').slice(0,40); if(!d.uniquePassages.includes(id)){d.uniquePassages.push(id); addXP(store.missionPreset==='easy'?1:store.missionPreset==='medium'?2:3)} else d.repeatedPassages++; saveStore(); updateHeader()}
+function checkTyping(){const p=currentTyping(); const user=norm(q('#typingInput').value); const ref=norm(p.german); const ok=user===ref; q('#typingFeedback').textContent=ok?(store.lang==='de'?'Perfekt!':'Perfect!'):(store.lang==='de'?'Noch nicht ganz.':'Not yet exact.'); q('#typingFeedback').className='result '+(ok?'good':'bad'); if(ok) completePassage(p)}
+function listeningPool(){const lvl=q('#listenLevelFilter').value; return state.data.passages.filter(p=>lvl==='ALL'||p.level===lvl)}
+function newListeningRound(){const arr=listeningPool(); state.currentListen=arr[Math.floor(Math.random()*arr.length)]||state.data.passages[0]; q('#listenInput').value=''; q('#listenFeedback').textContent=''; q('#listenAnswer').textContent=state.currentListen.german; q('#listenAnswer').classList.add('hidden')}
+function checkListening(){const ok=norm(q('#listenInput').value)===norm(state.currentListen.german); q('#listenFeedback').textContent=ok?(store.lang==='de'?'Richtig gehört!':'Heard correctly!'):(store.lang==='de'?'Vergleiche mit der Lösung.':'Compare with the answer.'); q('#listenFeedback').className='result '+(ok?'good':'bad'); if(ok){today().listeningDone++; completePassage(state.currentListen); addXP(store.missionPreset==='easy'?1:store.missionPreset==='medium'?2:3); saveStore(); updateHeader()}}
+function sentencePool(){const groups=Object.entries(state.data.sentences).flatMap(([lvl,items])=>items.map(it=>({...it,level:lvl.toUpperCase()}))); const lvl=q('#structureLevelFilter').value; return groups.filter(x=>lvl==='ALL'||x.level===lvl)}
+function scrambleWords(sentence){return shuffle(sentence.replace(/[?.!]/g,'').split(/\s+/))}
+function newStructureRound(){const arr=sentencePool(); state.currentStructure=arr[Math.floor(Math.random()*arr.length)]||arr[0]; q('#structurePrompt').textContent=(store.lang==='de'?'Baue den Satz: ':'Build the sentence: ')+(state.currentStructure.en||state.currentStructure.de); const words=scrambleWords(state.currentStructure.de); q('#structureWords').innerHTML=words.map(w=>`<button class="chip" type="button">${w}</button>`).join(''); qa('#structureWords .chip').forEach(ch=>ch.onclick=()=>q('#structureAnswer').value+=(q('#structureAnswer').value?' ':'')+ch.textContent); q('#structureAnswer').value=''; q('#structureFeedback').textContent=''; q('#structureReason').classList.add('hidden')}
+function showStructure(force=false){q('#structureFeedback').textContent=(store.lang==='de'?`Richtiger Satz: ${state.currentStructure.de}`:`Correct sentence: ${state.currentStructure.de}`); q('#structureReason').classList.remove('hidden'); q('#structureReason').innerHTML=`<strong>${store.lang==='de'?'Warum?':'Why?'}</strong> ${sentenceReason(state.currentStructure.de)}`}
+function checkStructure(){const ans=q('#structureAnswer').value; const ok=norm(ans)===norm(state.currentStructure.de); q('#structureFeedback').textContent=ok?(store.lang==='de'?'Richtig!':'Correct!'):(store.lang==='de'?`Nicht ganz. ${state.currentStructure.de}`:`Not quite. ${state.currentStructure.de}`); q('#structureFeedback').className='result '+(ok?'good':'bad'); q('#structureReason').classList.remove('hidden'); q('#structureReason').innerHTML=`<strong>${store.lang==='de'?'Warum?':'Why?'}</strong> ${sentenceReason(state.currentStructure.de)}`; recordWeak('sentence_structure',ok); if(ok){today().correctExercises++; today().attemptedExercises++; addXP(store.missionPreset==='easy'?1:store.missionPreset==='medium'?2:3); saveStore(); updateHeader()}}
+function fillWritingSelect(){q('#writingTaskSelect').innerHTML=WRITING_SAMPLES.map((w,i)=>`<option value="${i}">${w.title}</option>`).join('')}
+function renderWritingPrompt(){state.currentWriting=+q('#writingTaskSelect').value||state.currentWriting; const w=WRITING_SAMPLES[state.currentWriting]; q('#writingPrompt').textContent=store.lang==='de'?w.prompt_de:w.prompt_en; q('#writingSample').innerHTML=`<strong>${store.lang==='de'?'Musterantwort':'Sample answer'}:</strong><br>${w.sample.replace(/\n/g,'<br>')}`; q('#writingSample').classList.add('hidden');}
+function checkWriting(){const txt=q('#writingInput').value.trim(); const ok=txt.split(/\s+/).length>=20; q('#writingFeedback').textContent=ok?(store.lang==='de'?'Gut. Du hast genug Inhalt geschrieben.':'Good. You wrote enough content.'):(store.lang==='de'?'Schreibe noch etwas mehr. Ziel: mindestens 20 Wörter.':'Write a bit more. Aim for at least 20 words.'); q('#writingFeedback').className='result '+(ok?'good':'bad'); if(ok){today().writingDone++; addXP(store.missionPreset==='easy'?1:store.missionPreset==='medium'?2:3); saveStore(); updateHeader();} q('#writingSample').classList.remove('hidden')}
+function fillVocabFilters(){const topics=uniqueBy(state.data.vocab,v=>v.topic||'General').map(v=>v.topic||'General').sort(); q('#vocabTopicFilter').innerHTML='<option value="ALL">All topics</option>'+topics.map(t=>`<option>${t}</option>`).join('')}
+function effectiveExample(item){if(item.example_de&& !item.example_de.startsWith('Beispiel:')) return item.example_de; return 'Ich lerne heute: '+item.de+'.'}
+function renderVocabList(){let arr=[...state.data.vocab]; const s=norm(q('#vocabSearch').value), lvl=q('#vocabLevelFilter').value, topic=q('#vocabTopicFilter').value; if(lvl!=='ALL') arr=arr.filter(v=>v.level===lvl); if(topic!=='ALL') arr=arr.filter(v=>(v.topic||'General')===topic); if(q('#vocabDifficultOnly').checked) arr=arr.filter(v=>store.difficultWords.includes(v.de)); if(s) arr=arr.filter(v=>norm(v.de).includes(s)||norm(v.en).includes(s)); q('#vocabListWrap').innerHTML=arr.slice(0,200).map(v=>`<div class="vocab-item"><div class="vocab-top"><div><div class="vocab-word">${v.de}</div><div class="muted">${v.en}</div><div class="tiny badge">${v.level||'A1'} • ${v.topic||'General'}</div></div><div class="row gap8"><button class="ghost tinyBtn" data-speak="${encodeURIComponent(v.de)}">🔊</button><button class="ghost tinyBtn" data-diff="${encodeURIComponent(v.de)}">${store.difficultWords.includes(v.de)?'★':'☆'}</button></div></div><div class="vocab-example">${effectiveExample(v)}</div></div>`).join(''); qa('[data-speak]').forEach(b=>b.onclick=()=>speak(decodeURIComponent(b.dataset.speak),1)); qa('[data-diff]').forEach(b=>b.onclick=()=>toggleDifficult(decodeURIComponent(b.dataset.diff)))}
+function toggleDifficult(word){if(store.difficultWords.includes(word)) store.difficultWords=store.difficultWords.filter(w=>w!==word); else store.difficultWords.push(word); saveStore(); renderVocabList(); renderAppPage()}
+function newMatchRound(){const items=shuffle(state.data.vocab).slice(0,6); state.match.pairs=items; state.match.selected=null; q('#matchDe').innerHTML=items.map((v,i)=>`<button class="match-btn" data-side="de" data-idx="${i}">${v.de}</button>`).join(''); q('#matchEn').innerHTML=shuffle(items.map((v,i)=>({i,en:v.en}))).map(v=>`<button class="match-btn" data-side="en" data-idx="${v.i}">${v.en}</button>`).join(''); q('#matchFeedback').textContent=''; qa('.match-btn').forEach(b=>b.onclick=onMatchClick)}
+function onMatchClick(e){const btn=e.currentTarget, side=btn.dataset.side, idx=btn.dataset.idx; qa(`.match-btn[data-side="${side}"]`).forEach(x=>x.classList.remove('selected')); btn.classList.add('selected'); state.match[side]=idx; if(state.match.de!=null && state.match.en!=null){const ok=state.match.de===state.match.en; q('#matchFeedback').textContent=ok?(store.lang==='de'?'Treffer!':'Match!'):(store.lang==='de'?'Nicht passend.':'Not a match.'); q('#matchFeedback').className='result '+(ok?'good':'bad'); const word=state.match.pairs[+state.match.de]; if(ok){if(!today().uniqueVocab.includes(word.de)){today().uniqueVocab.push(word.de); addXP(1)} saveStore(); updateHeader()} state.match.de=null; state.match.en=null; setTimeout(newMatchRound, ok?450:700)}}
+function newTypeWordRound(){state.typeWord=state.data.vocab[Math.floor(Math.random()*state.data.vocab.length)]; q('#typeWordMeta').textContent=`${state.typeWord.level} • ${state.typeWord.topic||'General'}`; q('#typeWordPrompt').textContent=(store.lang==='de'?'Schreibe das deutsche Wort für: ':'Type the German word for: ')+state.typeWord.en; q('#typeWordInput').value=''; q('#typeWordFeedback').textContent=''}
+function typeWordFeedback(ok,show=false){const w=state.typeWord; if(show) ok=false; q('#typeWordFeedback').textContent=show?(store.lang==='de'?`Richtig: ${w.de}`:`Correct: ${w.de}`):(ok?(store.lang==='de'?'Richtig!':'Correct!'):(store.lang==='de'?`Nicht ganz. ${w.de}`:`Not quite. ${w.de}`)); q('#typeWordFeedback').className='result '+(ok?'good':'bad'); if(ok){if(!today().uniqueVocab.includes(w.de)){today().uniqueVocab.push(w.de); addXP(1)} saveStore(); updateHeader()}}
+function checkTypeWord(){typeWordFeedback(norm(q('#typeWordInput').value)===norm(state.typeWord.de),false)}
+function renderGrammar(){const s=norm(q('#grammarSearch').value); const notes=Object.entries(state.data.notes).filter(([k,v])=>!s||norm(k).includes(s)||norm(v).includes(s)); const masters=[
+  {title:'Cases & Articles',html:tableCases()},
+  {title:'Pronouns',html:tablePronouns()},
+  {title:'Adjective Endings',html:tableAdjectives()},
+  {title:'Connectors',html:tableConnectors()},
+  {title:'Da-words',html:tableDaWords()}
+ ];
+ q('#grammarWrap').innerHTML=masters.map(m=>`<div class="grammar-section"><h4>${m.title}</h4>${m.html}</div>`).join('') + notes.slice(0,120).map(([k,v])=>`<div class="grammar-section"><h4>${k.replaceAll('_',' ')}</h4><div class="note-block">${String(v).replace(/\n/g,'<br>')}</div></div>`).join('')
+}
+function tableCases(){return `<table class="grammar-table"><tr><th>Case</th><th>der</th><th>ein</th><th>kein</th></tr><tr><td>Nominativ</td><td>der Mann</td><td>ein Mann</td><td>kein Mann</td></tr><tr><td>Akkusativ</td><td>den Mann</td><td>einen Mann</td><td>keinen Mann</td></tr><tr><td>Dativ</td><td>dem Mann</td><td>einem Mann</td><td>keinem Mann</td></tr><tr><td>Genitiv</td><td>des Mannes</td><td>eines Mannes</td><td>keines Mannes</td></tr></table>`}
+function tablePronouns(){return `<table class="grammar-table"><tr><th>Function</th><th>ich</th><th>du</th><th>er</th><th>sie</th><th>wir</th></tr><tr><td>Nominativ</td><td>ich</td><td>du</td><td>er</td><td>sie</td><td>wir</td></tr><tr><td>Akkusativ</td><td>mich</td><td>dich</td><td>ihn</td><td>sie</td><td>uns</td></tr><tr><td>Dativ</td><td>mir</td><td>dir</td><td>ihm</td><td>ihr</td><td>uns</td></tr></table>`}
+function tableAdjectives(){return `<table class="grammar-table"><tr><th>Pattern</th><th>Nominativ</th><th>Akkusativ</th><th>Dativ</th></tr><tr><td>definite article</td><td>der gute Mann</td><td>den guten Mann</td><td>dem guten Mann</td></tr><tr><td>indefinite article</td><td>ein guter Mann</td><td>einen guten Mann</td><td>einem guten Mann</td></tr><tr><td>no article</td><td>guter Kaffee</td><td>guten Kaffee</td><td>gutem Kaffee</td></tr></table>`}
+function tableConnectors(){return `<table class="grammar-table"><tr><th>Word</th><th>Pattern</th><th>Example</th></tr><tr><td>weil</td><td>verb at end</td><td>..., weil ich müde bin.</td></tr><tr><td>dass</td><td>verb at end</td><td>Ich denke, dass er kommt.</td></tr><tr><td>damit</td><td>verb at end</td><td>Ich lerne, damit ich bestehe.</td></tr><tr><td>deshalb</td><td>verb position 1</td><td>Es regnet. Deshalb bleibe ich zu Hause.</td></tr></table>`}
+function tableDaWords(){return `<table class="grammar-table"><tr><th>Word</th><th>Use</th><th>Example</th></tr><tr><td>damit</td><td>with it / so that</td><td>Ich fahre damit.</td></tr><tr><td>davon</td><td>of it / from it</td><td>Ich träume davon.</td></tr><tr><td>daran</td><td>on it / about it</td><td>Ich denke daran.</td></tr><tr><td>darauf</td><td>on it / for it</td><td>Ich warte darauf.</td></tr><tr><td>dazu</td><td>to it / for that</td><td>Was sagst du dazu?</td></tr></table>`}
+function fillFlashFilters(){const cats=uniqueBy(state.data.flashcards,f=>f.category).map(f=>f.category).sort(); q('#flashCategoryFilter').innerHTML='<option value="ALL">All categories</option>'+cats.map(c=>`<option>${c}</option>`).join('')}
+function flashPool(){const c=q('#flashCategoryFilter').value; return state.data.flashcards.filter(f=>c==='ALL'||f.category===c)}
+function nextFlash(){const pool=flashPool(); state.currentFlash=Math.floor(Math.random()*pool.length); state.flashFlipped=false; q('#flashCard').textContent=pool[state.currentFlash]?.front||'—'}
+function flipFlash(){const pool=flashPool(); const card=pool[state.currentFlash]; if(!card) return; state.flashFlipped=!state.flashFlipped; q('#flashCard').textContent=state.flashFlipped?`${card.back}`:`${card.front}`}
+function conjPool(){const lvl=q('#conjLevelFilter').value; return state.data.conjugation.filter(v=>lvl==='ALL'||v.level===lvl)}
+function newConjRound(){const pool=conjPool(); const verb=pool[Math.floor(Math.random()*pool.length)]||pool[0]; const pronouns=Object.keys(verb.forms); const pron=pronouns[Math.floor(Math.random()*pronouns.length)]; state.currentConj={verb,pron,answer:verb.forms[pron]}; q('#conjQuestion').textContent=`${verb.infinitive} (${verb.english}) → ${pron} = ?`; q('#conjInput').value=''; q('#conjFeedback').textContent=''; q('#conjReveal').classList.add('hidden');}
+function showConj(force=false){const c=state.currentConj; q('#conjReveal').classList.remove('hidden'); q('#conjReveal').innerHTML=`<strong>${store.lang==='de'?'Antwort':'Answer'}:</strong> ${c.pron} ${c.answer}<br><strong>${store.lang==='de'?'Alle Formen':'All forms'}:</strong> ${Object.entries(c.verb.forms).map(([k,v])=>`${k} ${v}`).join(' • ')}`}
+function checkConj(){const ok=norm(q('#conjInput').value)===norm(state.currentConj.answer); q('#conjFeedback').textContent=ok?(store.lang==='de'?'Richtig!':'Correct!'):(store.lang==='de'?`Nicht ganz. ${state.currentConj.pron} ${state.currentConj.answer}`:`Not quite. ${state.currentConj.pron} ${state.currentConj.answer}`); q('#conjFeedback').className='result '+(ok?'good':'bad'); recordWeak('conjugation',ok); if(ok){today().correctExercises++; today().attemptedExercises++; addXP(store.missionPreset==='easy'?1:store.missionPreset==='medium'?2:3); saveStore(); updateHeader()} showConj()}
+function startExam(){const level=q('#examLevel').value; const pool=state.data.exercises.filter(e=>e.level===level||e.level==='B1'||e.level==='B2'); const examQs=shuffle(uniqueBy(pool,e=>e.question)).slice(0,18).map((e,i)=>({...e,points:i<15?3:5})); const passage=state.data.passages.find(p=>p.level===level)||state.data.passages[0]; state.exam={qs:examQs,passage,writing:WRITING_SAMPLES[1]}; q('#examWrap').innerHTML=`<div class="note-block"><strong>Reading/Use of German:</strong> ${passage.title}<br>${passage.german}</div>`+examQs.map((e,i)=>`<div class="note-block"><div><strong>Q${i+1} (${e.points}pt)</strong> ${e.question}</div><input class="exam-input" data-i="${i}" type="text"></div>`).join('')+`<div class="note-block"><strong>Writing (15pt)</strong><br>${store.lang==='de'?state.exam.writing.prompt_de:state.exam.writing.prompt_en}<textarea id="examWriting"></textarea></div>`; q('#examResult').textContent=''}
+function finishExam(){if(!state.exam) return; let pts=0; state.exam.qs.forEach((e,i)=>{const val=q(`.exam-input[data-i="${i}"]`)?.value||''; if(norm(val)===norm(e.answer)) pts+=e.points}); const w=(q('#examWriting').value||'').trim().split(/\s+/).length; if(w>=35) pts+=15; q('#examResult').textContent=`${store.lang==='de'?'Ergebnis':'Result'}: ${pts}/60`; q('#examResult').className='result '+(pts>=36?'good':'bad')}
+function renderAppPage(){const weak=getWeakAreas().slice(0,5).map(w=>`<div>${w.type}</div>`).join('')||'<div>None</div>'; q('#weakAreaText').innerHTML=`<strong>${store.lang==='de'?'Schwache Bereiche':'Weak areas'}</strong>${weak}`; q('#aboutText').innerHTML=`<div>${state.data.passages.length} passages</div><div>${state.data.exercises.length} exercises</div><div>${state.data.vocab.length} words</div><div>${state.data.conjugation.length} verbs</div>`}
+function applyCustomMission(){q('#customPassages').value=store.missionCustom.passages; q('#customExercises').value=store.missionCustom.exercises; q('#customVocab').value=store.missionCustom.vocab; q('#customWriting').value=store.missionCustom.writing; q('#settingsLanguage').value=store.lang; q('#settingsTheme').value=store.theme; q('#languageSelect').value=store.lang; q('#themeSelect').value=store.theme;}
 init();
