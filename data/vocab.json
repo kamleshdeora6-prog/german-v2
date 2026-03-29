@@ -7998,5 +7998,349 @@
     "level": "B1",
     "example_de": "Wir möchten eine Entscheidung erklären heute üben.",
     "example_en": "We want to practice to explain a decision today."
+  },
+  {
+    "de": "der Umsatz",
+    "en": "revenue",
+    "level": "B2",
+    "topic": "Finance",
+    "example_de": "Der Umsatz ist im letzten Quartal gestiegen.",
+    "example_en": "Revenue rose in the last quarter."
+  },
+  {
+    "de": "der Gewinn",
+    "en": "profit",
+    "level": "B2",
+    "topic": "Finance",
+    "example_de": "Das Unternehmen hat mehr Gewinn gemacht.",
+    "example_en": "The company made more profit."
+  },
+  {
+    "de": "der Verlust",
+    "en": "loss",
+    "level": "B2",
+    "topic": "Finance",
+    "example_de": "Im Januar gab es einen kleinen Verlust.",
+    "example_en": "There was a small loss in January."
+  },
+  {
+    "de": "die Steuererklärung",
+    "en": "tax return",
+    "level": "B2",
+    "topic": "Tax",
+    "example_de": "Ich mache meine Steuererklärung online.",
+    "example_en": "I do my tax return online."
+  },
+  {
+    "de": "das Finanzamt",
+    "en": "tax office",
+    "level": "B2",
+    "topic": "Tax",
+    "example_de": "Das Finanzamt hat mir einen Brief geschickt.",
+    "example_en": "The tax office sent me a letter."
+  },
+  {
+    "de": "die Buchhaltung",
+    "en": "accounting",
+    "level": "B2",
+    "topic": "Finance",
+    "example_de": "Sie arbeitet in der Buchhaltung.",
+    "example_en": "She works in accounting."
+  },
+  {
+    "de": "der Beleg",
+    "en": "receipt / voucher",
+    "level": "B1",
+    "topic": "Finance",
+    "example_de": "Bitte bewahren Sie alle Belege auf.",
+    "example_en": "Please keep all receipts."
+  },
+  {
+    "de": "die Quittung",
+    "en": "receipt",
+    "level": "A2",
+    "topic": "Finance",
+    "example_de": "Kann ich bitte eine Quittung bekommen?",
+    "example_en": "Can I get a receipt, please?"
+  },
+  {
+    "de": "die Bilanz",
+    "en": "balance sheet",
+    "level": "B2",
+    "topic": "Finance",
+    "example_de": "Die Bilanz wird am Jahresende erstellt.",
+    "example_en": "The balance sheet is prepared at the end of the year."
+  },
+  {
+    "de": "das Geschäftskonto",
+    "en": "business account",
+    "level": "B2",
+    "topic": "Finance",
+    "example_de": "Die Firma hat ein Geschäftskonto bei der Bank.",
+    "example_en": "The company has a business account at the bank."
+  },
+  {
+    "de": "fristgerecht",
+    "en": "on time / by deadline",
+    "level": "B2",
+    "topic": "Office",
+    "example_de": "Der Antrag wurde fristgerecht eingereicht.",
+    "example_en": "The application was submitted on time."
+  },
+  {
+    "de": "die Unterschrift",
+    "en": "signature",
+    "level": "A2",
+    "topic": "Office",
+    "example_de": "Hier fehlt noch Ihre Unterschrift.",
+    "example_en": "Your signature is still missing here."
+  },
+  {
+    "de": "das Formular",
+    "en": "form",
+    "level": "A2",
+    "topic": "Office",
+    "example_de": "Bitte füllen Sie dieses Formular aus.",
+    "example_en": "Please fill out this form."
+  },
+  {
+    "de": "einreichen",
+    "en": "to submit",
+    "level": "B1",
+    "topic": "Office",
+    "example_de": "Sie müssen die Unterlagen heute einreichen.",
+    "example_en": "You must submit the documents today."
+  },
+  {
+    "de": "der Antrag",
+    "en": "application",
+    "level": "B1",
+    "topic": "Office",
+    "example_de": "Der Antrag ist noch nicht vollständig.",
+    "example_en": "The application is not complete yet."
+  },
+  {
+    "de": "genehmigen",
+    "en": "to approve",
+    "level": "B2",
+    "topic": "Office",
+    "example_de": "Der Chef hat das Budget genehmigt.",
+    "example_en": "The boss approved the budget."
+  },
+  {
+    "de": "das Protokoll",
+    "en": "minutes / record",
+    "level": "B2",
+    "topic": "Office",
+    "example_de": "Ich schreibe heute das Protokoll.",
+    "example_en": "I am writing the meeting minutes today."
+  },
+  {
+    "de": "der Tagesordnungspunkt",
+    "en": "agenda item",
+    "level": "B2",
+    "topic": "Office",
+    "example_de": "Der nächste Tagesordnungspunkt ist das Budget.",
+    "example_en": "The next agenda item is the budget."
+  },
+  {
+    "de": "die Personalabteilung",
+    "en": "HR department",
+    "level": "B2",
+    "topic": "Management",
+    "example_de": "Die Personalabteilung sucht neue Mitarbeiter.",
+    "example_en": "The HR department is looking for new employees."
+  },
+  {
+    "de": "der Vorgesetzte",
+    "en": "supervisor",
+    "level": "B2",
+    "topic": "Management",
+    "example_de": "Mein Vorgesetzter ist heute im Homeoffice.",
+    "example_en": "My supervisor is working from home today."
+  },
+  {
+    "de": "die Führungskraft",
+    "en": "manager / executive",
+    "level": "B2",
+    "topic": "Management",
+    "example_de": "Sie ist eine erfahrene Führungskraft.",
+    "example_en": "She is an experienced manager."
+  },
+  {
+    "de": "delegieren",
+    "en": "to delegate",
+    "level": "B2",
+    "topic": "Management",
+    "example_de": "Gute Manager delegieren Aufgaben.",
+    "example_en": "Good managers delegate tasks."
+  },
+  {
+    "de": "zuständig sein für",
+    "en": "to be responsible for",
+    "level": "B1",
+    "topic": "Management",
+    "example_de": "Ich bin für den Einkauf zuständig.",
+    "example_en": "I am responsible for purchasing."
+  },
+  {
+    "de": "die Vereinbarung",
+    "en": "agreement",
+    "level": "B2",
+    "topic": "Law",
+    "example_de": "Wir haben eine schriftliche Vereinbarung.",
+    "example_en": "We have a written agreement."
+  },
+  {
+    "de": "das Gesetz",
+    "en": "law",
+    "level": "B1",
+    "topic": "Law",
+    "example_de": "Alle müssen das Gesetz beachten.",
+    "example_en": "Everyone must respect the law."
+  },
+  {
+    "de": "rechtlich",
+    "en": "legal",
+    "level": "B2",
+    "topic": "Law",
+    "example_de": "Wir brauchen rechtliche Beratung.",
+    "example_en": "We need legal advice."
+  },
+  {
+    "de": "die Beratung",
+    "en": "advice / consultation",
+    "level": "B1",
+    "topic": "Office",
+    "example_de": "Danke für Ihre Beratung.",
+    "example_en": "Thank you for your advice."
+  },
+  {
+    "de": "der Anspruch",
+    "en": "claim / entitlement",
+    "level": "B2",
+    "topic": "Law",
+    "example_de": "Habe ich Anspruch auf Urlaub?",
+    "example_en": "Am I entitled to leave?"
+  },
+  {
+    "de": "die Vollmacht",
+    "en": "power of attorney",
+    "level": "B2",
+    "topic": "Law",
+    "example_de": "Für den Antrag brauchen Sie eine Vollmacht.",
+    "example_en": "You need a power of attorney for the application."
+  },
+  {
+    "de": "die Mahnung",
+    "en": "payment reminder",
+    "level": "B2",
+    "topic": "Finance",
+    "example_de": "Wir haben eine Mahnung erhalten.",
+    "example_en": "We received a payment reminder."
+  },
+  {
+    "de": "der Zinssatz",
+    "en": "interest rate",
+    "level": "B2",
+    "topic": "Finance",
+    "example_de": "Der Zinssatz ist im Moment hoch.",
+    "example_en": "The interest rate is high at the moment."
+  },
+  {
+    "de": "die Rate",
+    "en": "instalment",
+    "level": "B1",
+    "topic": "Finance",
+    "example_de": "Ich zahle das Gerät in Raten.",
+    "example_en": "I pay for the device in instalments."
+  },
+  {
+    "de": "der Kredit",
+    "en": "loan / credit",
+    "level": "B1",
+    "topic": "Finance",
+    "example_de": "Die Bank prüft meinen Kredit.",
+    "example_en": "The bank is reviewing my loan."
+  },
+  {
+    "de": "die Richtlinie",
+    "en": "guideline",
+    "level": "B2",
+    "topic": "Management",
+    "example_de": "Bitte lesen Sie die neue Richtlinie.",
+    "example_en": "Please read the new guideline."
+  },
+  {
+    "de": "die Vorschrift",
+    "en": "regulation",
+    "level": "B2",
+    "topic": "Law",
+    "example_de": "Diese Vorschrift gilt ab morgen.",
+    "example_en": "This regulation applies from tomorrow."
+  },
+  {
+    "de": "die Akte",
+    "en": "file / record",
+    "level": "B1",
+    "topic": "Office",
+    "example_de": "Die Akte liegt auf dem Tisch.",
+    "example_en": "The file is on the desk."
+  },
+  {
+    "de": "der Ordner",
+    "en": "folder",
+    "level": "A2",
+    "topic": "Office",
+    "example_de": "Der Ordner steht im Regal.",
+    "example_en": "The folder is on the shelf."
+  },
+  {
+    "de": "die Unterlage",
+    "en": "document",
+    "level": "B1",
+    "topic": "Office",
+    "example_de": "Bitte bringen Sie alle Unterlagen mit.",
+    "example_en": "Please bring all documents."
+  },
+  {
+    "de": "die Geschäftsreise",
+    "en": "business trip",
+    "level": "B1",
+    "topic": "Office",
+    "example_de": "Nächste Woche habe ich eine Geschäftsreise.",
+    "example_en": "Next week I have a business trip."
+  },
+  {
+    "de": "der Terminplan",
+    "en": "schedule",
+    "level": "B1",
+    "topic": "Management",
+    "example_de": "Mein Terminplan ist heute voll.",
+    "example_en": "My schedule is full today."
+  },
+  {
+    "de": "die Zielgruppe",
+    "en": "target group",
+    "level": "B2",
+    "topic": "Management",
+    "example_de": "Wer ist unsere Zielgruppe?",
+    "example_en": "Who is our target group?"
+  },
+  {
+    "de": "die Lieferung",
+    "en": "delivery",
+    "level": "B1",
+    "topic": "Office",
+    "example_de": "Die Lieferung kommt morgen an.",
+    "example_en": "The delivery arrives tomorrow."
+  },
+  {
+    "de": "fristlos",
+    "en": "without notice",
+    "level": "B2",
+    "topic": "Law",
+    "example_de": "Der Vertrag wurde fristlos gekündigt.",
+    "example_en": "The contract was terminated without notice."
   }
 ]

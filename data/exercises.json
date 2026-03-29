@@ -17999,6 +17999,204 @@
       "question": "Extra passive 1305: Das Thema ___ heute diskutiert. [wird / war / werden]",
       "answer": "wird",
       "hint": "Present passive uses wird."
+    },
+    {
+      "id": 2001,
+      "level": "A2",
+      "type": "question_to_answer",
+      "mode": "typing",
+      "question": "Wo wohnst du?",
+      "answer": "Ich wohne in Berlin.",
+      "hint": "Answer the question in a full sentence."
+    },
+    {
+      "id": 2002,
+      "level": "A2",
+      "type": "question_to_answer",
+      "mode": "typing",
+      "question": "Was machst du am Wochenende?",
+      "answer": "Am Wochenende besuche ich meine Freunde.",
+      "hint": "Answer in a full sentence."
+    },
+    {
+      "id": 2003,
+      "level": "B1",
+      "type": "question_to_answer",
+      "mode": "typing",
+      "question": "Warum lernst du Deutsch?",
+      "answer": "Ich lerne Deutsch, weil ich in Deutschland arbeiten möchte.",
+      "hint": "Use a full sentence with weil."
+    },
+    {
+      "id": 2004,
+      "level": "B1",
+      "type": "question_to_answer",
+      "mode": "typing",
+      "question": "Wie kommst du zur Arbeit?",
+      "answer": "Ich fahre mit dem Bus zur Arbeit.",
+      "hint": "Answer in a full sentence."
+    },
+    {
+      "id": 2005,
+      "level": "B2",
+      "type": "question_to_answer",
+      "mode": "typing",
+      "question": "Welche Aufgaben hat eine Führungskraft?",
+      "answer": "Eine Führungskraft plant Ziele, delegiert Aufgaben und motiviert das Team.",
+      "hint": "Give a complete answer."
+    },
+    {
+      "id": 2006,
+      "level": "A2",
+      "type": "answer_to_question",
+      "mode": "typing",
+      "question": "Ich wohne seit zwei Jahren in Berlin.",
+      "answer": "Wie lange wohnst du schon in Berlin?",
+      "hint": "Write the matching question."
+    },
+    {
+      "id": 2007,
+      "level": "B1",
+      "type": "answer_to_question",
+      "mode": "typing",
+      "question": "Weil ich krank bin, bleibe ich heute zu Hause.",
+      "answer": "Warum bleibst du heute zu Hause?",
+      "hint": "Write the correct question word."
+    },
+    {
+      "id": 2008,
+      "level": "B1",
+      "type": "answer_to_question",
+      "mode": "typing",
+      "question": "Ich habe die Rechnung gestern überwiesen.",
+      "answer": "Wann hast du die Rechnung überwiesen?",
+      "hint": "Make a fitting question."
+    },
+    {
+      "id": 2009,
+      "level": "B2",
+      "type": "answer_to_question",
+      "mode": "typing",
+      "question": "Ich interessiere mich besonders für Steuerrecht.",
+      "answer": "Wofür interessierst du dich besonders?",
+      "hint": "Use the right preposition in the question."
+    },
+    {
+      "id": 2010,
+      "level": "B2",
+      "type": "answer_to_question",
+      "mode": "typing",
+      "question": "Das Unternehmen hat den Vertrag fristlos gekündigt.",
+      "answer": "Wie hat das Unternehmen den Vertrag gekündigt?",
+      "hint": "Ask about the manner."
+    },
+    {
+      "id": 2011,
+      "level": "A1",
+      "type": "sentence_structure_reason",
+      "mode": "typing",
+      "question": "Words: ich / heute / im Büro / arbeite",
+      "answer": "Ich arbeite heute im Büro.",
+      "hint": "Verb in position 2 in a main clause."
+    },
+    {
+      "id": 2012,
+      "level": "A2",
+      "type": "sentence_structure_reason",
+      "mode": "typing",
+      "question": "Words: ich / mit dem Bus / fahre / zur Arbeit",
+      "answer": "Ich fahre mit dem Bus zur Arbeit.",
+      "hint": "mit needs dative: dem Bus."
+    },
+    {
+      "id": 2013,
+      "level": "A2",
+      "type": "sentence_structure_reason",
+      "mode": "typing",
+      "question": "Words: ich / hole / das Paket / morgen / ab",
+      "answer": "Ich hole morgen das Paket ab.",
+      "hint": "Separable verb: abholen -> ab at the end."
+    },
+    {
+      "id": 2014,
+      "level": "B1",
+      "type": "sentence_structure_reason",
+      "mode": "typing",
+      "question": "Words: ich / glaube / dass / er / morgen / kommt",
+      "answer": "Ich glaube, dass er morgen kommt.",
+      "hint": "dass sends the verb to the end."
+    },
+    {
+      "id": 2015,
+      "level": "B1",
+      "type": "sentence_structure_reason",
+      "mode": "typing",
+      "question": "Words: ich / habe / das Formular / ausgefüllt",
+      "answer": "Ich habe das Formular ausgefüllt.",
+      "hint": "Perfekt: haben + Partizip II."
+    },
+    {
+      "id": 2016,
+      "level": "B2",
+      "type": "sentence_structure_reason",
+      "mode": "typing",
+      "question": "Words: der Manager / hat / dem Kunden / eine Lösung / angeboten",
+      "answer": "Der Manager hat dem Kunden eine Lösung angeboten.",
+      "hint": "anbieten takes a dative receiver and an accusative thing."
+    },
+    {
+      "id": 2017,
+      "level": "B1",
+      "type": "office_vocab",
+      "mode": "typing",
+      "question": "Fill the gap: Die ______ muss bis Freitag bezahlt werden.",
+      "answer": "Rechnung",
+      "hint": "The company invoice is due."
+    },
+    {
+      "id": 2018,
+      "level": "B2",
+      "type": "finance_vocab",
+      "mode": "typing",
+      "question": "Fill the gap: Im letzten Quartal ist der ______ gestiegen.",
+      "answer": "Umsatz",
+      "hint": "Revenue rose in the last quarter."
+    },
+    {
+      "id": 2019,
+      "level": "B2",
+      "type": "tax_vocab",
+      "mode": "typing",
+      "question": "Fill the gap: Ich mache meine ______ im April.",
+      "answer": "Steuererklärung",
+      "hint": "Tax return."
+    },
+    {
+      "id": 2020,
+      "level": "B1",
+      "type": "office_vocab",
+      "mode": "typing",
+      "question": "Translate: Please submit the documents today.",
+      "answer": "Bitte reichen Sie die Unterlagen heute ein.",
+      "hint": "Use einreichen."
+    },
+    {
+      "id": 2021,
+      "level": "B2",
+      "type": "management_vocab",
+      "mode": "typing",
+      "question": "Translate: Good managers delegate tasks.",
+      "answer": "Gute Manager delegieren Aufgaben.",
+      "hint": "Use delegieren correctly."
+    },
+    {
+      "id": 2022,
+      "level": "B2",
+      "type": "law_vocab",
+      "mode": "typing",
+      "question": "Fill the gap: Diese ______ gilt ab morgen.",
+      "answer": "Vorschrift",
+      "hint": "Regulation / rule."
     }
   ]
 }

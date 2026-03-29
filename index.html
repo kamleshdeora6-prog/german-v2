@@ -3,71 +3,67 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>German Coach V4</title>
+  <title>German Coach</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="theme-focus">
 <div id="app">
   <aside id="sidebar" class="sidebar">
-    <div class="brand"><span class="mascot">🦋</span><div><strong>German Coach</strong><div class="muted tiny">A1 → B2</div></div></div>
-    <button id="sidebarClose" class="mobile-only iconbtn">✕</button>
+    <div class="brand-row">
+      <div class="brand"><span class="mascot">🦋</span><div><strong>German Coach</strong><div class="muted tiny">A1 → B2</div></div></div>
+      <button id="sidebarClose" class="mobile-only iconbtn">✕</button>
+    </div>
     <nav>
-      <div class="navgroup"><div class="navtitle" data-i18n="nav_study">Study</div>
-        <button class="navbtn active" data-section="practice" data-i18n="nav_practice">Practice</button>
-        <button class="navbtn" data-section="vocab" data-i18n="nav_vocab">Vocabulary</button>
-        <button class="navbtn" data-section="grammar" data-i18n="nav_grammar">Grammar</button>
+      <div class="navgroup">
+        <div class="navtitle">Study</div>
+        <button class="navbtn active" data-section="practice">Practice</button>
+        <button class="navbtn" data-section="vocab">Vocabulary</button>
+        <button class="navbtn" data-section="grammar">Grammar</button>
       </div>
-      <div class="navgroup"><div class="navtitle" data-i18n="nav_train">Train</div>
-        <button class="navbtn" data-section="flashcards" data-i18n="nav_flashcards">Flashcards</button>
-        <button class="navbtn" data-section="conjugation" data-i18n="nav_conjugation">Conjugation</button>
-        <button class="navbtn" data-section="exam" data-i18n="nav_exam">Exam Mode</button>
+      <div class="navgroup">
+        <div class="navtitle">Train</div>
+        <button class="navbtn" data-section="flashcards">Flashcards</button>
+        <button class="navbtn" data-section="conjugation">Conjugation</button>
+        <button class="navbtn" data-section="exam">Exam Mode</button>
+        <button class="navbtn" data-section="lid">Leben in Deutschland</button>
       </div>
-      <div class="navgroup"><div class="navtitle" data-i18n="nav_more">More</div>
-        <button class="navbtn" data-section="app" data-i18n="nav_app">App</button>
+      <div class="navgroup">
+        <div class="navtitle">More</div>
+        <button class="navbtn" data-section="app">App</button>
       </div>
     </nav>
   </aside>
 
   <main class="main">
-    <header class="topbar">
-      <div class="top-left">
+    <header class="topbar compact-card">
+      <div class="top-left row gap10 wrap">
         <button id="sidebarOpen" class="mobile-only iconbtn">☰</button>
-        <div class="titlewrap">
-          <span class="mascot small">🦋</span>
-          <div>
-            <div id="pageTitle" class="page-title">Practice</div>
-            <div class="muted tiny" id="smartCoachText">Focus on one task at a time.</div>
-          </div>
-        </div>
+        <span class="mascot small">🦋</span>
+        <strong id="topTitle">Practice</strong>
+        <span class="pill" id="coachPill">Step by step</span>
       </div>
-      <div class="top-mission compact-row">
-        <label class="tiny" for="missionPreset" data-i18n="mission_level">Mission</label>
-        <select id="missionPreset">
-          <option value="easy">Easy</option>
-          <option value="medium">Medium</option>
-          <option value="hard">Hard</option>
-          <option value="custom">Custom</option>
-        </select>
-        <div class="pill" id="streakPill">🔥 0</div>
-        <div class="pill" id="xpPill">⭐ 0 XP</div>
-        <div class="pill" id="dailyPill">0%</div>
-        <select id="languageSelect"><option value="en">EN</option><option value="de">DE</option></select>
-        <select id="themeSelect"><option value="theme-focus">Focus</option><option value="theme-light">Light</option><option value="theme-dark">Dark</option></select>
+      <div class="top-right row gap10 wrap end">
+        <label class="stack mini"><span class="tiny">Mission</span><select id="missionPreset"><option value="easy">Easy</option><option value="medium">Medium</option><option value="hard">Hard</option><option value="custom">Custom</option></select></label>
+        <label class="stack mini"><span class="tiny">Language</span><select id="languageSelect"><option value="en">EN</option><option value="de">DE</option></select></label>
+        <label class="stack mini"><span class="tiny">Theme</span><select id="themeSelect"><option value="theme-focus">Focus</option><option value="theme-light">Light</option><option value="theme-dark">Dark</option></select></label>
+        <span class="pill" id="streakPill">🔥 0</span>
+        <span class="pill" id="xpPill">⭐ 0 XP</span>
+        <span class="pill" id="dailyPill">0%</span>
       </div>
     </header>
 
-    <section class="mission-strip card">
+    <section class="mission-strip compact-card">
       <div class="mission-grid">
-        <div class="metric"><div class="metric-head"><span data-i18n="label_passages">Passages</span><span id="mPassagesText">0/0</span></div><div class="bar"><span id="mPassagesBar"></span></div></div>
-        <div class="metric"><div class="metric-head"><span data-i18n="label_exercises">Exercises</span><span id="mExercisesText">0/0</span></div><div class="bar"><span id="mExercisesBar"></span></div></div>
-        <div class="metric"><div class="metric-head"><span data-i18n="label_vocab">Vocab</span><span id="mVocabText">0/0</span></div><div class="bar"><span id="mVocabBar"></span></div></div>
-        <div class="metric"><div class="metric-head"><span data-i18n="label_writing">Writing</span><span id="mWritingText">0/0</span></div><div class="bar"><span id="mWritingBar"></span></div></div>
+        <div class="metric"><div class="metric-head"><span>Passages</span><span id="mPassagesText">0/0</span></div><div class="bar"><span id="mPassagesBar"></span></div></div>
+        <div class="metric"><div class="metric-head"><span>Exercises</span><span id="mExercisesText">0/0</span></div><div class="bar"><span id="mExercisesBar"></span></div></div>
+        <div class="metric"><div class="metric-head"><span>Vocab</span><span id="mVocabText">0/0</span></div><div class="bar"><span id="mVocabBar"></span></div></div>
+        <div class="metric"><div class="metric-head"><span>Writing</span><span id="mWritingText">0/0</span></div><div class="bar"><span id="mWritingBar"></span></div></div>
       </div>
-      <div class="compact-row end gap8">
-        <button id="continueBtn" data-i18n="continue_btn">Continue</button>
-        <details class="details-inline"><summary data-i18n="today_done">Today</summary><div id="todayDrop"></div></details>
-        <details class="details-inline"><summary data-i18n="mission_custom">Custom</summary>
-          <div class="grid2 mini-settings">
+      <div class="row gap8 wrap end right-utilities">
+        <button id="continueBtn">Continue</button>
+        <details class="details-inline"><summary>Today</summary><div id="todayDrop" class="dropdown-box"></div></details>
+        <details class="details-inline"><summary>Custom</summary>
+          <div class="grid2 mini-settings dropdown-box">
             <label>Passages<input id="customPassages" type="number" min="1" max="20"></label>
             <label>Exercises<input id="customExercises" type="number" min="1" max="200"></label>
             <label>Vocab<input id="customVocab" type="number" min="1" max="100"></label>
@@ -78,157 +74,192 @@
     </section>
 
     <section id="section-practice" class="app-section">
-      <div class="subtabs">
-        <button class="subbtn active" data-practice="exercises" data-i18n="sub_exercises">Exercises</button>
-        <button class="subbtn" data-practice="typing" data-i18n="sub_typing">Typing</button>
-        <button class="subbtn" data-practice="listening" data-i18n="sub_listening">Listening</button>
-        <button class="subbtn" data-practice="structure" data-i18n="sub_structure">Sentence Structure</button>
-        <button class="subbtn" data-practice="writing" data-i18n="sub_writing">Writing</button>
+      <div class="subtabs compact-row">
+        <button class="subbtn active" data-practice="exercises">Exercises</button>
+        <button class="subbtn" data-practice="typing">Typing</button>
+        <button class="subbtn" data-practice="listening">Listening Q&amp;A</button>
+        <button class="subbtn" data-practice="structure">Sentence Structure</button>
+        <button class="subbtn" data-practice="writing">Writing</button>
       </div>
 
-      <div id="practice-exercises" class="practice-panel card">
+      <div id="practice-exercises" class="practice-panel compact-card">
         <div class="toolbar wrap">
           <select id="exerciseLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select>
           <select id="exerciseTypeFilter"></select>
           <select id="exerciseFocusFilter"><option value="all">All</option><option value="weak">Weak areas</option></select>
-          <button id="nextExerciseBtn" data-i18n="next_btn">Next</button>
+          <button id="nextExerciseBtn">New round</button>
         </div>
         <div class="question-box">
           <div id="exerciseMeta" class="badge"></div>
           <div id="exerciseQuestion" class="question"></div>
-          <input id="exerciseAnswerInput" type="text" placeholder="Type answer">
-          <div class="row gap8"><button id="checkExerciseBtn" data-i18n="check_btn">Check</button><button class="ghost" id="showExerciseAnswerBtn" data-i18n="show_answer">Show answer</button></div>
+          <input id="exerciseAnswerInput" type="text" placeholder="Type your answer">
+          <div class="row gap8 wrap"><button id="checkExerciseBtn">Check</button><button class="ghost" id="showExerciseAnswerBtn">Show answer</button></div>
           <div id="exerciseResult" class="result"></div>
           <div id="exerciseExplanation" class="explanation hidden"></div>
         </div>
       </div>
 
-      <div id="practice-typing" class="practice-panel card hidden">
+      <div id="practice-typing" class="practice-panel compact-card hidden">
         <div class="toolbar wrap">
           <select id="typingLevelFilter"><option value="ALL">All levels</option><option>A2</option><option>B1</option><option>B2</option></select>
           <select id="typingSelect"></select>
-          <label class="checkline"><input type="checkbox" id="typingShowEnglish"> <span data-i18n="show_english">Show English</span></label>
-          <label class="tiny">Speed<select id="audioSpeed"><option value="0.75">0.75x</option><option value="1" selected>1x</option><option value="1.25">1.25x</option></select></label>
+          <label class="checkline"><input type="checkbox" id="typingShowEnglish"> Show English</label>
+          <label class="stack mini"><span class="tiny">Speed</span><select id="audioSpeed"><option value="0.75">0.75x</option><option value="1" selected>1x</option><option value="1.25">1.25x</option></select></label>
         </div>
-        <div class="row gap8 wrap"><button id="playPassageBtn">▶</button><button id="stopPassageBtn">■</button><button id="repeatPassageBtn">↻</button></div>
+        <div class="row gap8 wrap"><button id="playPassageBtn">▶ Play</button><button id="stopPassageBtn" class="orange">■ Stop</button><button id="repeatPassageBtn" class="teal">↻ Repeat</button></div>
         <div class="twocol">
           <div><div class="smallhead">German</div><textarea id="typingReference" readonly></textarea><div id="typingEnglishWrap" class="hidden"><div class="smallhead">English</div><textarea id="typingEnglish" readonly></textarea></div></div>
-          <div><div class="smallhead" data-i18n="type_here">Type here</div><textarea id="typingInput"></textarea><div class="row gap8"><button id="checkTypingBtn" data-i18n="check_btn">Check</button><button class="ghost" id="clearTypingBtn">Clear</button></div><div id="typingFeedback" class="result"></div></div>
+          <div><div class="smallhead">Type here</div><textarea id="typingInput"></textarea><div class="row gap8 wrap"><button id="checkTypingBtn">Check</button><button class="ghost" id="clearTypingBtn">Clear</button></div><div id="typingFeedback" class="result"></div></div>
         </div>
       </div>
 
-      <div id="practice-listening" class="practice-panel card hidden">
+      <div id="practice-listening" class="practice-panel compact-card hidden">
         <div class="toolbar wrap">
-          <select id="listenLevelFilter"><option value="ALL">All levels</option><option>A2</option><option>B1</option><option>B2</option></select>
-          <button id="newListeningBtn" data-i18n="new_round">New round</button>
-          <label class="tiny">Speed<select id="listenSpeed"><option value="0.75">0.75x</option><option value="1" selected>1x</option><option value="1.25">1.25x</option></select></label>
+          <select id="listenLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select>
+          <button id="newListeningBtn">New round</button>
+          <label class="stack mini"><span class="tiny">Speed</span><select id="listenSpeed"><option value="0.75">0.75x</option><option value="1" selected>1x</option><option value="1.25">1.25x</option></select></label>
         </div>
-        <div class="row gap8 wrap"><button id="playListenBtn">▶</button><button id="stopListenBtn">■</button><button id="replayListenBtn">↻</button><button class="ghost" id="revealListenBtn" data-i18n="show_answer">Show answer</button></div>
-        <textarea id="listenInput" placeholder="Type what you hear"></textarea>
-        <div class="row gap8"><button id="checkListenBtn" data-i18n="check_btn">Check</button></div>
+        <div id="listenPrompt" class="note-block"></div>
+        <div class="row gap8 wrap"><button id="playListenBtn">▶ Play</button><button id="stopListenBtn" class="orange">■ Stop</button><button id="replayListenBtn" class="teal">↻ Repeat</button><button class="ghost" id="revealListenBtn">Show answer</button></div>
+        <textarea id="listenInput" placeholder="Answer in a full sentence"></textarea>
+        <div class="row gap8 wrap"><button id="checkListenBtn">Check</button></div>
         <div id="listenFeedback" class="result"></div>
         <div id="listenAnswer" class="hidden note-block"></div>
       </div>
 
-      <div id="practice-structure" class="practice-panel card hidden">
+      <div id="practice-structure" class="practice-panel compact-card hidden">
         <div class="toolbar wrap">
           <select id="structureLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select>
-          <button id="newStructureBtn" data-i18n="new_round">New round</button>
+          <button id="newStructureBtn">New round</button>
         </div>
         <div id="structurePrompt" class="question"></div>
         <div id="structureWords" class="chips"></div>
         <textarea id="structureAnswer" placeholder="Build the correct sentence"></textarea>
-        <div class="row gap8"><button id="checkStructureBtn" data-i18n="check_btn">Check</button><button class="ghost" id="showStructureBtn" data-i18n="show_answer">Show answer</button></div>
+        <div class="row gap8 wrap"><button id="checkStructureBtn">Check</button><button class="ghost" id="showStructureBtn">Show answer</button></div>
         <div id="structureFeedback" class="result"></div>
         <div id="structureReason" class="explanation hidden"></div>
       </div>
 
-      <div id="practice-writing" class="practice-panel card hidden">
-        <div class="toolbar wrap"><select id="writingTaskSelect"></select><button id="newWritingBtn" data-i18n="new_round">New task</button></div>
+      <div id="practice-writing" class="practice-panel compact-card hidden">
+        <div class="toolbar wrap"><select id="writingTaskSelect"></select><button id="newWritingBtn">New round</button></div>
         <div id="writingPrompt" class="note-block"></div>
+        <div id="writingPhotoWrap" class="hidden media-wrap"><img id="writingPhoto" alt="Prompt image"></div>
         <textarea id="writingInput" placeholder="Write here"></textarea>
-        <div class="row gap8"><button id="checkWritingBtn" data-i18n="check_btn">Check</button><button class="ghost" id="showWritingSampleBtn" data-i18n="show_sample">Show sample</button></div>
+        <div class="row gap8 wrap"><button id="checkWritingBtn">Check</button><button class="ghost" id="showWritingSampleBtn">Show sample</button></div>
         <div id="writingFeedback" class="result"></div>
         <div id="writingSample" class="explanation hidden"></div>
       </div>
     </section>
 
     <section id="section-vocab" class="app-section hidden">
-      <div class="subtabs">
-        <button class="vocabbtn active" data-vmode="list" data-i18n="vocab_list">List</button>
-        <button class="vocabbtn" data-vmode="match" data-i18n="vocab_match">Match</button>
-        <button class="vocabbtn" data-vmode="type" data-i18n="vocab_type">Type</button>
+      <div class="subtabs compact-row">
+        <button class="vocabbtn active" data-vmode="list">List</button>
+        <button class="vocabbtn" data-vmode="match">Match Game</button>
+        <button class="vocabbtn" data-vmode="type">Type the Word</button>
       </div>
-      <div id="vocab-list" class="card">
+      <div id="vocab-list" class="compact-card">
         <div class="toolbar wrap">
-          <input id="vocabSearch" placeholder="Search vocab">
           <select id="vocabLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select>
-          <select id="vocabTopicFilter"><option value="ALL">All topics</option></select>
+          <select id="vocabTopicFilter"></select>
+          <input id="vocabSearch" placeholder="Search German or English">
           <label class="checkline"><input type="checkbox" id="vocabDifficultOnly"> Difficult only</label>
         </div>
         <div id="vocabListWrap" class="list-wrap"></div>
       </div>
-      <div id="vocab-match" class="card hidden">
-        <div class="toolbar wrap"><button id="newMatchBtn" data-i18n="new_round">New round</button></div>
-        <div class="match-grid"><div><div class="smallhead">Deutsch</div><div id="matchDe"></div></div><div><div class="smallhead">English</div><div id="matchEn"></div></div></div>
+      <div id="vocab-match" class="compact-card hidden">
+        <div class="toolbar wrap"><button id="newMatchBtn">New round</button></div>
+        <div class="match-grid"><div id="matchDe"></div><div id="matchEn"></div></div>
         <div id="matchFeedback" class="result"></div>
       </div>
-      <div id="vocab-type" class="card hidden">
-        <div class="toolbar wrap"><button id="newTypeWordBtn" data-i18n="new_round">New round</button><div id="typeWordMeta" class="badge"></div></div>
+      <div id="vocab-type" class="compact-card hidden">
+        <div class="toolbar wrap"><button id="newTypeWordBtn">New round</button></div>
+        <div id="typeWordMeta" class="badge"></div>
         <div id="typeWordPrompt" class="question"></div>
         <input id="typeWordInput" type="text" placeholder="Type German word">
-        <div class="row gap8"><button id="checkTypeWordBtn" data-i18n="check_btn">Check</button><button class="ghost" id="showTypeWordBtn" data-i18n="show_answer">Show answer</button></div>
+        <div class="row gap8 wrap"><button id="checkTypeWordBtn">Check</button><button class="ghost" id="showTypeWordBtn">Show answer</button></div>
         <div id="typeWordFeedback" class="result"></div>
       </div>
     </section>
 
     <section id="section-grammar" class="app-section hidden">
-      <div class="card">
+      <div class="compact-card">
         <div class="toolbar wrap"><input id="grammarSearch" placeholder="Search grammar"></div>
         <div id="grammarWrap"></div>
       </div>
     </section>
 
     <section id="section-flashcards" class="app-section hidden">
-      <div class="card">
-        <div class="toolbar wrap"><select id="flashCategoryFilter"><option value="ALL">All categories</option></select><button id="nextFlashBtn" data-i18n="next_btn">Next</button></div>
+      <div class="compact-card">
+        <div class="toolbar wrap"><select id="flashCategoryFilter"><option value="ALL">All categories</option></select><button id="nextFlashBtn">Next</button></div>
         <div id="flashCard" class="flash-card">Tap to flip</div>
       </div>
     </section>
 
     <section id="section-conjugation" class="app-section hidden">
-      <div class="card">
-        <div class="toolbar wrap"><select id="conjLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select><button id="newConjBtn" data-i18n="new_round">New round</button></div>
+      <div class="compact-card">
+        <div class="toolbar wrap"><select id="conjLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select><button id="newConjBtn">New round</button></div>
         <div id="conjQuestion" class="question"></div>
         <input id="conjInput" type="text" placeholder="Type form">
-        <div class="row gap8"><button id="checkConjBtn" data-i18n="check_btn">Check</button><button class="ghost" id="showConjBtn" data-i18n="show_answer">Show answer</button></div>
+        <div class="row gap8 wrap"><button id="checkConjBtn">Check</button><button class="ghost" id="showConjBtn">Show answer</button></div>
         <div id="conjFeedback" class="result"></div>
         <div id="conjReveal" class="explanation hidden"></div>
       </div>
     </section>
 
     <section id="section-exam" class="app-section hidden">
-      <div class="card">
-        <div class="toolbar wrap"><select id="examLevel"><option>B1</option><option>B2</option></select><button id="startExamBtn">Start exam</button><button class="ghost" id="finishExamBtn">Finish</button></div>
-        <div id="examIntro" class="note-block">60-point mixed exam: grammar, reading, listening, and writing. Speaking is not included.</div>
+      <div class="subtabs compact-row">
+        <button class="exambtn active" data-emode="cefr">A1–B2 Exam</button>
+        <button class="exambtn" data-emode="photo">Photo description</button>
+        <button class="exambtn" data-emode="qa">Q ↔ A</button>
+      </div>
+      <div id="exam-cefr" class="exam-panel compact-card">
+        <div class="toolbar wrap"><select id="examLevel"><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option value="freestyle">Freestyle</option></select><button id="startExamBtn">Start exam</button><button class="ghost" id="finishExamBtn">Finish</button></div>
+        <div id="examIntro" class="note-block">60-point exam without speaking. The score also gives an estimated level.</div>
         <div id="examWrap"></div>
         <div id="examResult" class="result"></div>
+      </div>
+      <div id="exam-photo" class="exam-panel compact-card hidden">
+        <div class="toolbar wrap"><select id="photoTaskSelect"></select><button id="newPhotoTaskBtn">New round</button></div>
+        <div class="media-wrap"><img id="photoExamImage" alt="Photo prompt"></div>
+        <div id="photoExamPrompt" class="note-block"></div>
+        <textarea id="photoExamInput" placeholder="Describe the photo in German"></textarea>
+        <div class="row gap8 wrap"><button id="checkPhotoExamBtn">Check</button><button class="ghost" id="showPhotoSampleBtn">Show sample</button></div>
+        <div id="photoExamFeedback" class="result"></div>
+        <div id="photoExamSample" class="explanation hidden"></div>
+      </div>
+      <div id="exam-qa" class="exam-panel compact-card hidden">
+        <div class="toolbar wrap"><select id="qaMode"><option value="answer">Questions → full answers</option><option value="question">Answers → make questions</option></select><button id="newQARoundBtn">New round</button></div>
+        <div id="qaPrompt" class="question"></div>
+        <textarea id="qaInput" placeholder="Write here"></textarea>
+        <div class="row gap8 wrap"><button id="checkQABtn">Check</button><button class="ghost" id="showQABtn">Show answer</button></div>
+        <div id="qaFeedback" class="result"></div>
+        <div id="qaExplanation" class="explanation hidden"></div>
+      </div>
+    </section>
+
+    <section id="section-lid" class="app-section hidden">
+      <div class="compact-card">
+        <div class="toolbar wrap"><button id="newLidBtn">New round</button><button class="ghost" id="showLidAnswerBtn">Show answer</button></div>
+        <div class="badge">Leben in Deutschland / Orientierungskurs – practice style</div>
+        <div id="lidQuestion" class="question"></div>
+        <div id="lidChoices" class="chips vertical"></div>
+        <div id="lidFeedback" class="result"></div>
+        <div id="lidExplain" class="explanation hidden"></div>
       </div>
     </section>
 
     <section id="section-app" class="app-section hidden">
-      <div class="card">
-        <h3>App</h3>
+      <div class="compact-card">
         <div class="grid2">
           <div>
-            <div class="smallhead">Settings</div>
+            <h3>Settings</h3>
             <label class="stack">Language<select id="settingsLanguage"><option value="en">English</option><option value="de">Deutsch</option></select></label>
             <label class="stack">Theme<select id="settingsTheme"><option value="theme-focus">Focus</option><option value="theme-light">Light</option><option value="theme-dark">Dark</option></select></label>
             <label class="checkline"><input id="countRepeatsToggle" type="checkbox"> Count repeat attempts in today totals</label>
             <button id="resetTodayBtn" class="ghost">Reset today</button>
           </div>
           <div>
-            <div class="smallhead">About</div>
+            <h3>About</h3>
             <div id="aboutText" class="note-block"></div>
             <div id="weakAreaText" class="note-block"></div>
           </div>
