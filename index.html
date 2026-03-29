@@ -23,6 +23,7 @@
       <div class="navgroup">
         <div class="navtitle">Train</div>
         <button class="navbtn" data-section="flashcards">Flashcards</button>
+        <button class="navbtn" data-section="weak">Weak Areas</button>
         <button class="navbtn" data-section="conjugation">Conjugation</button>
         <button class="navbtn" data-section="exam">Exam Mode</button>
         <button class="navbtn" data-section="lid">Leben in Deutschland</button>
@@ -239,12 +240,20 @@
 
     <section id="section-lid" class="app-section hidden">
       <div class="compact-card">
-        <div class="toolbar wrap"><button id="newLidBtn">New round</button><button class="ghost" id="showLidAnswerBtn">Show answer</button></div>
+        <div class="toolbar wrap"><button id="newLidBtn">New round</button><button class="ghost" id="showLidAnswerBtn">Show answer</button><label class="checkline"><input type="checkbox" id="lidShowEnglish"> Show English</label></div>
         <div class="badge">Leben in Deutschland / Orientierungskurs – practice style</div>
         <div id="lidQuestion" class="question"></div>
         <div id="lidChoices" class="chips vertical"></div>
         <div id="lidMeta" class="smallhead"></div><div id="lidFeedback" class="result"></div>
         <div id="lidExplain" class="explanation hidden"></div>
+      </div>
+    </section>
+
+
+    <section id="section-weak" class="app-section hidden">
+      <div class="compact-card">
+        <div class="toolbar wrap"><button id="refreshWeakBtn">Refresh</button><button class="ghost" id="practiceWeakBtn">Practice weak areas</button></div>
+        <div id="weakWrap"></div>
       </div>
     </section>
 

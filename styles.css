@@ -45,3 +45,6 @@ button:hover{filter:brightness(1.04)}
 .wrong-option{background:linear-gradient(180deg,color-mix(in srgb,var(--bad) 14%, white),color-mix(in srgb,var(--bad) 9%, white))!important;color:#8a1f11!important;border-color:var(--bad)!important}
 #structureWords .chip{background:linear-gradient(180deg,color-mix(in srgb,var(--accent-5) 75%, white),var(--card))!important;color:var(--accent-4)!important;border-color:color-mix(in srgb,var(--accent) 35%, var(--line))!important}
 #structureWords .chip:hover{background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 12%, white),var(--card))!important}
+
+.lid-choice{width:100%;text-align:left;background:#ffffff;color:#0f172a;border:1px solid #9bb7d0;border-radius:14px;padding:14px 16px;font-weight:700;}
+.theme-dark .lid-choice,.theme-focus .lid-choice{background:#10203b;color:#ecf4ff;border-color:#4aa3c8;}
