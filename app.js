@@ -55,6 +55,43 @@ function xpStep(){ return store.missionPreset==='easy'?1:store.missionPreset==='
 function norm(s){ return (s||'').toString().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[“”"'.,!?;:()]/g,' ').replace(/\s+/g,' ').trim(); }
 function shuffle(a){ a=[...a]; for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
 function uniqueBy(arr,keyFn){ const s=new Set(); return arr.filter(x=>{const k=keyFn(x); if(s.has(k)) return false; s.add(k); return true;}); }
+
+function asArray(v){ return Array.isArray(v)?v:(v&&Array.isArray(v.items)?v.items:(v&&Array.isArray(v.data)?v.data:[])); }
+function normalizeVocabItem(v){
+  const de=v.de||v.word||v.german||v.front||v.term||v.infinitive||'';
+  const en=v.en||v.translation||v.english||v.back||v.meaning||'';
+  return {...v,de,en,word:de,translation:en,topic:v.topic||v.category||v.type||'General',level:v.level||'A1',example_de:v.example_de||v.example||'',example_en:v.example_en||''};
+}
+function normalizePassageItem(p){
+  return {...p,german:p.german||p.text_de||p.de||p.text||'',english:p.english||p.text_en||p.en||'',title:p.title||p.topic||p.name||'Passage',level:p.level||'A1'};
+}
+function normalizeConjugationVerb(v){
+  const forms=v.forms||v.conjugation||v.persons||null;
+  return {...v,infinitive:v.infinitive||v.verb||v.base||'',english:v.english||v.translation||v.en||'',forms};
+}
+function normalizeFlashcard(f){
+  return {...f,front:f.front||f.de||f.word||f.prompt||'',back:f.back||f.en||f.translation||f.answer||'',topic:f.topic||f.category||f.type||'General',level:f.level||'A1'};
+}
+function normalizeTopicPractice(tp){
+  const topics=(tp&&Array.isArray(tp.topics)?tp.topics:[]).map(t=>({
+    ...t,
+    title_en:t.title_en||t.title||t.key||'Topic',
+    title_de:t.title_de||t.title||t.key||'Thema',
+    rule_en:t.rule_en||t.rule||'',
+    rule_de:t.rule_de||t.rule||'',
+    table:Array.isArray(t.table)?t.table.map(r=>Array.isArray(r)?r:[String(r)]):[],
+    examples_en:Array.isArray(t.examples_en)?t.examples_en:(t.examples_en?[String(t.examples_en)]:[]),
+    examples_de:Array.isArray(t.examples_de)?t.examples_de:(t.examples_de?[String(t.examples_de)]:[]),
+    sets:Array.isArray(t.sets)?t.sets.map(set=>Array.isArray(set)?set.map(q=>({
+      ...q,
+      prompt:q.prompt||q.question||q.title||q.q_de||q.q_en||'',
+      answer:q.answer||q.solution||q.correct||'',
+      options:Array.isArray(q.options)?q.options:(Array.isArray(q.choices)?q.choices:[]),
+      ruleTag:q.ruleTag||q.rule||q.topic||''
+    })):[ ]):[]
+  }));
+  return {topics};
+}
 async function loadJson(p){
   const tried=[];
   const urls=[new URL(p, BASE_URL).toString(), new URL('./'+p.replace(/^\.\//,''), BASE_URL).toString(), p, './'+p.replace(/^\.\//,'')];
@@ -167,7 +204,7 @@ function checkExercise(){ if(!state.currentExercise) return; const ex=state.curr
 function typingPassages(){ const lvl=$('#typingLevelFilter').value; return state.data.passages.filter(p=>lvl==='ALL'||p.level===lvl); }
 function renderTypingOptions(){ const opts=typingPassages(); $('#typingSelect').innerHTML=opts.map((p,i)=>`<option value="${i}">${p.level} • ${p.title}</option>`).join(''); loadTypingPassage(); }
 function currentPassage(){ const list=typingPassages(); const idx=+($('#typingSelect').value||0); return list[idx]||list[0]||null; }
-function loadTypingPassage(){ const p=currentPassage(); if(!p) return; state.currentPassage=p; $('#typingReference').value=p.german; $('#typingEnglish').value=p.english||''; $('#typingEnglishWrap').classList.toggle('hidden',!$('#typingShowEnglish').checked); $('#typingInput').value=''; $('#typingFeedback').textContent=''; }
+function loadTypingPassage(){ const p=currentPassage(); if(!p) return; state.currentPassage=normalizePassageItem(p); $('#typingReference').value=state.currentPassage.german||'—'; $('#typingEnglish').value=state.currentPassage.english||''; $('#typingEnglishWrap').classList.toggle('hidden',!$('#typingShowEnglish').checked); $('#typingInput').value=''; $('#typingFeedback').textContent=''; }
 function checkTyping(){ const p=currentPassage(); if(!p) return; const ok=norm($('#typingInput').value)===norm(p.german); $('#typingFeedback').textContent=ok?t('Perfect match.','Perfekte Übereinstimmung.'):t('Check the reference and try again.','Prüfe den Referenztext und versuche es noch einmal.'); $('#typingFeedback').className='result '+(ok?'good':'bad'); if(ok){ markPassageDone(`${p.level}|${p.title}`); updateHeader(); } else { queueReview('passage', `${p.level}|${p.title}`, {prompt:p.title, passage:p}, 1); } }
 function levenshtein(a,b){ a=norm(a); b=norm(b); const m=a.length,n=b.length; const dp=Array.from({length:m+1},()=>Array(n+1).fill(0)); for(let i=0;i<=m;i++) dp[i][0]=i; for(let j=0;j<=n;j++) dp[0][j]=j; for(let i=1;i<=m;i++) for(let j=1;j<=n;j++) dp[i][j]=Math.min(dp[i-1][j]+1,dp[i][j-1]+1,dp[i-1][j-1]+(a[i-1]===b[j-1]?0:1)); return dp[m][n]; }
 
@@ -288,18 +325,19 @@ ${task.prompt_en}` : task.sample; $('#writingPhotoWrap').classList.toggle('hidde
 function checkWriting(){ const wc=$('#writingInput').value.trim().split(/\s+/).filter(Boolean).length; const ok=wc>=25; $('#writingFeedback').textContent=ok?t('Good start.','Guter Anfang.'):t('Write a little more.','Schreibe noch etwas mehr.'); $('#writingFeedback').className='result '+(ok?'good':'bad'); if(ok){ today().writingDone++; addXP(xpStep()); saveStore(); updateHeader(); } }
 function vocabPool(){ let arr=[...state.data.vocab]; const lvl=$('#vocabLevelFilter').value, topic=$('#vocabTopicFilter').value, s=norm($('#vocabSearch').value), diff=$('#vocabDifficultOnly').checked; if(lvl!=='ALL') arr=arr.filter(v=>v.level===lvl); if(topic!=='ALL') arr=arr.filter(v=>v.topic===topic); if(diff) arr=arr.filter(v=>store.difficultWords.includes(v.de)); if(s) arr=arr.filter(v=>norm(v.de).includes(s)||norm(v.en).includes(s)||norm(v.example_de||'').includes(s)||norm(v.example_en||'').includes(s)); return arr; }
 function renderVocabList(){
-  const list=vocabPool();
+  const list=vocabPool().map(normalizeVocabItem);
   $('#vocabListWrap').innerHTML=list.slice(0,300).map(v=>{
     const helper = $('#vocabShowEnglish') && $('#vocabShowEnglish').checked;
-    const meta = `${v.level} • ${v.topic||'Allgemein'}`;
-    return `<div class="vocab-item"><div class="vocab-top"><div><div class="vocab-word">${v.de}</div><div class="muted">${meta}${helper?` • ${v.en}`:''}</div></div><button class="ghost diff-btn" data-word="${String(v.de).replace(/"/g,'&quot;')}">${store.difficultWords.includes(v.de)?'★':'☆'}</button></div><div class="vocab-example"><strong>DE:</strong> ${v.example_de||'—'}${helper?`<br><strong>EN:</strong> ${v.example_en||'—'}`:''}</div></div>`;
+    const meta = `${v.level} • ${v.topic||'General'}`;
+    const de=v.de||'—'; const en=v.en||'—';
+    return `<div class="vocab-item"><div class="vocab-top"><div><div class="vocab-word">${de}</div><div class="muted">${meta}${helper?` • ${en}`:''}</div></div><button class="ghost diff-btn" data-word="${String(de).replace(/"/g,'&quot;')}">${store.difficultWords.includes(de)?'★':'☆'}</button></div><div class="vocab-example"><strong>DE:</strong> ${v.example_de||'—'}${helper?`<br><strong>EN:</strong> ${v.example_en||en||'—'}`:''}</div></div>`;
   }).join('') || `<div class="note-block">${t('No vocabulary found for this filter.','Kein Wortschatz für diesen Filter gefunden.')}</div>`;
   $$('.diff-btn').forEach(b=>b.onclick=()=>toggleDifficult(b.dataset.word.replace(/&quot;/g,'"')));
 }
 function toggleDifficult(word){ if(store.difficultWords.includes(word)) store.difficultWords=store.difficultWords.filter(w=>w!==word); else store.difficultWords.push(word); saveStore(); renderVocabList(); renderApp(); }
-function newMatch(){ const items=shuffle(state.data.vocab).slice(0,6); state.matchItems=items; state.sel={}; $('#matchFeedback').textContent=''; $('#matchDe').innerHTML=items.map((v,i)=>`<button class="match-btn" data-side="de" data-idx="${i}">${v.de}</button>`).join(''); $('#matchEn').innerHTML=shuffle(items.map((v,i)=>({i,en:v.en}))).map(v=>`<button class="match-btn" data-side="en" data-idx="${v.i}">${v.en}</button>`).join(''); $$('.match-btn').forEach(b=>b.onclick=onMatchClick); }
+function newMatch(){ const items=shuffle(state.data.vocab.map(normalizeVocabItem).filter(v=>v.de&&v.en)).slice(0,6); state.matchItems=items; state.sel={}; $('#matchFeedback').textContent=''; $('#matchDe').innerHTML=items.map((v,i)=>`<button class="match-btn" data-side="de" data-idx="${i}">${v.de||'—'}</button>`).join(''); $('#matchEn').innerHTML=shuffle(items.map((v,i)=>({i,en:v.en}))).map(v=>`<button class="match-btn" data-side="en" data-idx="${v.i}">${v.en||'—'}</button>`).join(''); $$('.match-btn').forEach(b=>b.onclick=onMatchClick); }
 function onMatchClick(e){ const btn=e.currentTarget, side=btn.dataset.side, idx=btn.dataset.idx; $$(`.match-btn[data-side="${side}"]`).forEach(x=>x.classList.remove('selected')); btn.classList.add('selected'); state.sel[side]=idx; if(state.sel.de!=null&&state.sel.en!=null){ const ok=state.sel.de===state.sel.en; $('#matchFeedback').textContent=ok?t('Match!','Treffer!'):t('Not a match.','Kein Treffer.'); $('#matchFeedback').className='result '+(ok?'good':'bad'); if(ok) addVocabSeen(state.matchItems[+state.sel.de].de); state.sel={}; setTimeout(newMatch, ok?400:700); } }
-function newTypeWord(){ state.currentWord=state.data.vocab[Math.floor(Math.random()*state.data.vocab.length)]; $('#typeWordMeta').textContent=`${state.currentWord.level} • ${state.currentWord.topic||'General'}`; $('#typeWordPrompt').textContent=t('Type the German word for: ','Schreibe das deutsche Wort für: ')+state.currentWord.en; $('#typeWordInput').value=''; $('#typeWordFeedback').textContent=''; }
+function newTypeWord(){ const pool=state.data.vocab.map(normalizeVocabItem).filter(v=>v.de&&v.en); state.currentWord=pool[Math.floor(Math.random()*pool.length)]||normalizeVocabItem({}); $('#typeWordMeta').textContent=`${state.currentWord.level||'A1'} • ${state.currentWord.topic||'General'}`; $('#typeWordPrompt').textContent=t('Type the German word for: ','Schreibe das deutsche Wort für: ')+(state.currentWord.en||'—'); $('#typeWordInput').value=''; $('#typeWordFeedback').textContent=''; }
 function showTypeWord(force=false){ const w=state.currentWord; const ok=!force && norm($('#typeWordInput').value)===norm(w.de); $('#typeWordFeedback').textContent=ok?t('Correct!','Richtig!'):t('Correct: ','Richtig: ')+w.de; $('#typeWordFeedback').className='result '+(ok?'good':'bad'); if(ok){ addVocabSeen(w.de); addXP(1); } else if(!force){ queueReview('vocab', w.de, {prompt:w.en, answer:w.de}, 0); } }
 
 function masterTablesHtml(){
@@ -366,12 +404,12 @@ function renderGrammar(){
   }
 }
 
-function nextFlash(){ let list=state.data.flashcards; const cat=$('#flashCategoryFilter').value; if(cat&&cat!=='ALL') list=list.filter(f=>(f.category||f.topic||f.type)===cat); state.currentFlash=list[Math.floor(Math.random()*list.length)]||state.data.flashcards[0]; state.flashFront=true; renderFlash(); }
+function nextFlash(){ let list=state.data.flashcards; const cat=$('#flashCategoryFilter').value; if(cat&&cat!=='ALL') list=list.filter(f=>(f.category||f.topic||f.type)===cat); state.currentFlash=list[Math.floor(Math.random()*list.length)]||state.data.flashcards[0]||null; state.flashFront=true; renderFlash(); }
 function renderFlash(){ if(!state.currentFlash){ $('#flashCard').textContent=t('No flashcard available.','Keine Karte verfügbar.'); return; } $('#flashCard').textContent=state.flashFront?state.currentFlash.front:state.currentFlash.back; }
 function flipFlash(){ state.flashFront=!state.flashFront; renderFlash(); }
-function newConj(){ let list=state.data.conjugation; const lvl=$('#conjLevelFilter').value; if(lvl!=='ALL') list=list.filter(v=>v.level===lvl); const verb=list[Math.floor(Math.random()*list.length)]||state.data.conjugation[0]; const persons=Object.keys(verb.forms); const p=persons[Math.floor(Math.random()*persons.length)]; state.currentConj={verb,person:p,answer:verb.forms[p]}; $('#conjQuestion').textContent=`${verb.infinitive} → ${p}`; $('#conjInput').value=''; $('#conjFeedback').textContent=''; $('#conjReveal').classList.add('hidden'); }
-function checkConj(){ const ok=norm($('#conjInput').value)===norm(state.currentConj.answer); $('#conjFeedback').textContent=ok?t('Correct!','Richtig!'):t('Not quite.','Nicht ganz.'); $('#conjFeedback').className='result '+(ok?'good':'bad'); recordWeak('conjugation',ok); if(ok) addXP(xpStep()); else queueReview('conjugation', state.currentConj.question, {prompt:state.currentConj.question, answer:state.currentConj.answer}, 0); saveStore(); updateHeader(); }
-function showConj(){ $('#conjReveal').innerHTML=`<strong>${t('Answer','Antwort')}:</strong> ${state.currentConj.answer}<br><strong>${t('Full forms','Alle Formen')}:</strong> ${Object.entries(state.currentConj.verb.forms).map(([k,v])=>`${k}: ${v}`).join(' • ')}`; $('#conjReveal').classList.remove('hidden'); }
+function newConj(){ let list=(state.data.conjugation||[]).map(normalizeConjugationVerb).filter(v=>v.infinitive&&v.forms); const lvl=$('#conjLevelFilter').value; if(lvl!=='ALL') list=list.filter(v=>v.level===lvl); const verb=list[Math.floor(Math.random()*list.length)]||list[0]; if(!verb || !verb.forms){ $('#conjQuestion').textContent=t('No verb available.','Kein Verb verfügbar.'); $('#conjInput').value=''; $('#conjFeedback').textContent=''; return; } const persons=Object.keys(verb.forms||{}); const p=persons[Math.floor(Math.random()*persons.length)]||'ich'; const question=`${verb.infinitive} → ${p}`; state.currentConj={verb,person:p,answer:(verb.forms&&verb.forms[p])||'',question}; $('#conjQuestion').textContent=question; $('#conjInput').value=''; $('#conjFeedback').textContent=''; $('#conjReveal').classList.add('hidden'); }
+function checkConj(){ if(!state.currentConj) return; const ok=norm($('#conjInput').value)===norm(state.currentConj.answer); $('#conjFeedback').textContent=ok?t('Correct!','Richtig!'):t('Not quite.','Nicht ganz.'); $('#conjFeedback').className='result '+(ok?'good':'bad'); recordWeak('conjugation',ok); if(ok) addXP(xpStep()); else queueReview('conjugation', state.currentConj.question||state.currentConj.verb.infinitive, {prompt:state.currentConj.question||state.currentConj.verb.infinitive, answer:state.currentConj.answer}, 0); saveStore(); updateHeader(); }
+function showConj(){ if(!state.currentConj) return; $('#conjReveal').innerHTML=`<strong>${t('Answer','Antwort')}:</strong> ${state.currentConj.answer||'—'}<br><strong>${t('Full forms','Alle Formen')}:</strong> ${Object.entries(state.currentConj.verb.forms||{}).map(([k,v])=>`${k}: ${v}`).join(' • ')}`; $('#conjReveal').classList.remove('hidden'); }
 function sampleExercisesForExam(level){ let pool=state.data.exercises.filter(e=>level==='freestyle'||e.level===level); pool=shuffle(uniqueBy(pool,e=>e.question+'|'+e.answer)).slice(0,15); state.currentExam={level,items:pool,answers:{}}; const wrap=$('#examWrap'); wrap.innerHTML=pool.map((q,i)=>`<div class="note-block"><div><strong>${i+1}.</strong> ${q.question}</div><input data-exam="${i}" placeholder="${t('Type your answer','Deine Antwort')}"></div>`).join(''); $$('[data-exam]').forEach(inp=>inp.oninput=e=>state.currentExam.answers[e.target.dataset.exam]=e.target.value); $('#examResult').textContent=''; }
 function startExam(){ sampleExercisesForExam($('#examLevel').value); }
 function finishExam(){ if(!state.currentExam) return; let correct=0; state.currentExam.items.forEach((q,i)=>{ if(norm(state.currentExam.answers[i])===norm(q.answer)) correct++; }); const score=Math.round(correct/Math.max(state.currentExam.items.length,1)*60); const est=score<20?'A1':score<35?'A2':score<48?'B1':'B2'; $('#examResult').textContent=`${t('Score','Punktzahl')}: ${score}/60 • ${t('Estimated level','Geschätztes Niveau')}: ${est}`; $('#examResult').className='result good'; }
@@ -492,11 +530,11 @@ function showLidAnswer(){ if(!state.currentLid) return; const showEn=$('#lidShow
 function topicPracticeList(){ return (state.data.topicPractice&&state.data.topicPractice.topics)||[]; }
 function fillFlowTopics(){ const sel=$('#flowTopicSelect'); if(!sel) return; const topics=topicPracticeList(); sel.innerHTML=topics.map((t,i)=>`<option value="${i}">${store.lang==='de'?t.title_de:t.title_en}</option>`).join(''); fillFlowSets(); renderRevisionTopics(); }
 function fillFlowSets(){ const sel=$('#flowSetSelect'); const idx=+($('#flowTopicSelect')?$('#flowTopicSelect').value:0); const topic=topicPracticeList()[idx]; if(!sel||!topic) return; sel.innerHTML=topic.sets.map((_,i)=>`<option value="${i}">${t('Set','Set')} ${i+1}/5</option>`).join(''); renderFlowIntro(); }
-function renderFlowIntro(){ const idx=+($('#flowTopicSelect')?$('#flowTopicSelect').value:0); const topic=topicPracticeList()[idx]; if(!topic) return; const tableRows=(topic.table||[]).map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join(''); $('#flowIntro').innerHTML=`<strong>${store.lang==='de'?topic.title_de:topic.title_en}</strong><br>${store.lang==='de'?topic.rule_de:topic.rule_en}<div class="grammar-table-wrap"><table class="grammar-table"><tbody>${tableRows}</tbody></table></div><div class="tiny"><strong>${t('Examples','Beispiele')}:</strong><br>${(store.lang==='de'?topic.examples_de:topic.examples_en).map(x=>`• ${x}`).join('<br>')}</div>`; $('#flowProgress').textContent=''; $('#flowQuestionWrap').classList.add('hidden'); $('#flowSetResult').classList.add('hidden'); }
+function renderFlowIntro(){ const idx=+($('#flowTopicSelect')?$('#flowTopicSelect').value:0); const topic=topicPracticeList()[idx]; if(!topic) return; const tableRows=(topic.table||[]).map(r=>{ const cells=(Array.isArray(r)?r:[String(r)]).map(c=>`<td>${c||''}</td>`).join(''); return `<tr>${cells}</tr>`; }).join(''); const ex=(store.lang==='de'?topic.examples_de:topic.examples_en)||[]; $('#flowIntro').innerHTML=`<strong>${store.lang==='de'?topic.title_de:topic.title_en}</strong><br>${store.lang==='de'?(topic.rule_de||topic.rule_en||''):(topic.rule_en||topic.rule_de||'')}<div class="grammar-table-wrap"><table class="grammar-table"><tbody>${tableRows}</tbody></table></div><div class="tiny"><strong>${t('Examples','Beispiele')}:</strong><br>${(Array.isArray(ex)?ex:[]).map(x=>`• ${x}`).join('<br>')}</div>`; $('#flowProgress').textContent=''; $('#flowQuestionWrap').classList.add('hidden'); $('#flowSetResult').classList.add('hidden'); }
 function startFlowSet(){ const tIdx=+$('#flowTopicSelect').value, sIdx=+$('#flowSetSelect').value; const topic=topicPracticeList()[tIdx]; if(!topic) return; state.topicFlow={topic:tIdx,set:sIdx,index:0,correct:0,answers:[]}; $('#flowQuestionWrap').classList.remove('hidden'); renderFlowQuestion(); }
 function currentFlowQuestion(){ const f=state.topicFlow; if(!f) return null; const topic=topicPracticeList()[f.topic]; return topic&&topic.sets[f.set]&&topic.sets[f.set][f.index]; }
-function renderFlowQuestion(){ const q=currentFlowQuestion(); const total=20; if(!q){ finishFlowSet(); return; } $('#flowProgress').textContent=`${t('Question','Frage')} ${state.topicFlow.index+1}/${total}`; $('#flowQuestion').textContent=q.prompt; $('#flowInput').value=''; $('#flowFeedback').textContent=''; $('#flowRule').classList.add('hidden'); const needsChoices=Array.isArray(q.options)&&q.options.length; $('#flowChoices').innerHTML=needsChoices?q.options.map(o=>`<button class="chip flow-choice">${o}</button>`).join(' '):''; $$('.flow-choice').forEach(btn=>btn.onclick=()=>$('#flowInput').value=btn.textContent); }
-function checkFlow(){ const q=currentFlowQuestion(); if(!q) return; const ans=$('#flowInput').value.trim(); const ok=norm(ans)===norm(q.answer); state.topicFlow.answers.push({id:q.id,ok}); if(ok) state.topicFlow.correct++; recordWeak(q.ruleTag||'topic_flow',ok); $('#flowFeedback').textContent=ok?t('Correct!','Richtig!'):t('Not quite. Correct: ','Nicht ganz. Richtig: ')+q.answer; $('#flowFeedback').className='result '+(ok?'good':'bad'); $('#flowRule').textContent=q.ruleTag||''; $('#flowRule').classList.remove('hidden'); saveStore(); updateHeader(); }
+function renderFlowQuestion(){ const q=currentFlowQuestion(); const total=20; if(!q){ finishFlowSet(); return; } $('#flowProgress').textContent=`${t('Question','Frage')} ${state.topicFlow.index+1}/${total}`; $('#flowQuestion').textContent=q.prompt||q.question||q.title||'—'; $('#flowInput').value=''; $('#flowFeedback').textContent=''; $('#flowRule').classList.add('hidden'); const opts=Array.isArray(q.options)?q.options:(Array.isArray(q.choices)?q.choices:[]); const needsChoices=opts.length; $('#flowChoices').innerHTML=needsChoices?opts.map(o=>`<button class="chip flow-choice">${o}</button>`).join(' '):''; $$('.flow-choice').forEach(btn=>btn.onclick=()=>$('#flowInput').value=btn.textContent); }
+function checkFlow(){ const q=currentFlowQuestion(); if(!q) return; const ans=$('#flowInput').value.trim(); const expected=q.answer||q.solution||q.correct||''; const ok=norm(ans)===norm(expected); state.topicFlow.answers.push({id:q.id,ok}); if(ok) state.topicFlow.correct++; recordWeak(q.ruleTag||q.rule||'topic_flow',ok); $('#flowFeedback').textContent=ok?t('Correct!','Richtig!'):t('Not quite. Correct: ','Nicht ganz. Richtig: ')+expected; $('#flowFeedback').className='result '+(ok?'good':'bad'); $('#flowRule').textContent=q.ruleTag||q.rule||''; $('#flowRule').classList.remove('hidden'); saveStore(); updateHeader(); }
 function nextFlow(){ if(!state.topicFlow) return; state.topicFlow.index++; if(state.topicFlow.index>=20) finishFlowSet(); else renderFlowQuestion(); }
 function showFlow(){ const q=currentFlowQuestion(); if(!q) return; $('#flowFeedback').textContent=t('Correct: ','Richtig: ')+q.answer; $('#flowRule').textContent=q.ruleTag||''; $('#flowRule').classList.remove('hidden'); }
 function finishFlowSet(){ const pct=Math.round((state.topicFlow.correct/20)*100); $('#flowSetResult').innerHTML=`<strong>${t('Set result','Set-Ergebnis')}:</strong> ${state.topicFlow.correct}/20 • ${pct}%`; $('#flowSetResult').classList.remove('hidden'); $('#flowQuestionWrap').classList.add('hidden'); }
@@ -553,16 +591,22 @@ async function init(){
   const results=await Promise.all(DATA_FILES.map(async n=>{ try{ return [n, await loadJson(`data/${n}.json`)]; }catch(e){ console.error(e); return [n, null]; }}));
   const loaded=Object.fromEntries(results);
   const missing=DATA_FILES.filter(n=>loaded[n]==null);
-  state.data.passages=loaded.passages||[];
+  state.data.passages=(loaded.passages||[]).map(p=>({
+    ...p,
+    german:p.german||p.text_de||'',
+    english:p.english||p.text_en||'',
+    title:p.title||p.topic||'Passage'
+  }));
   state.data.notes=loaded.notes||{};
-  state.data.exercises=(loaded.exercises&&loaded.exercises.exercises)||[];
-  state.data.flashcards=Array.isArray(loaded.flashcards)?loaded.flashcards:((loaded.flashcards&&loaded.flashcards.flashcards)||[]);
-  state.data.conjugation=(loaded.conjugation&&loaded.conjugation.verbs)||[];
-  state.data.verbs=Array.isArray(loaded.verbs)?loaded.verbs:((loaded.verbs&&loaded.verbs.verbs)||[]);
+  state.data.exercises=Array.isArray(loaded.exercises)?loaded.exercises:((loaded.exercises&&loaded.exercises.exercises)||[]);
+  state.data.flashcards=(Array.isArray(loaded.flashcards)?loaded.flashcards:((loaded.flashcards&&loaded.flashcards.flashcards)||[])).map(normalizeFlashcard).filter(f=>f.front||f.back);
+  state.data.conjugation=((loaded.conjugation&&loaded.conjugation.verbs)||[]).map(normalizeConjugationVerb).filter(v=>v.infinitive);
+  state.data.verbs=(Array.isArray(loaded.verbs)?loaded.verbs:((loaded.verbs&&loaded.verbs.verbs)||[])).map(normalizeConjugationVerb);
   state.data.sentences=loaded.sentences||{};
-  state.data.vocab=loaded.vocab||[];
+  const rawVocab=Array.isArray(loaded.vocab)?loaded.vocab:((loaded.vocab&&loaded.vocab.vocab)||[]);
+  state.data.vocab=rawVocab.map(normalizeVocabItem).filter(v=>v.de||v.en);
   state.data.lid=Array.isArray(loaded.lid)?loaded.lid:[];
-  state.data.topicPractice=loaded.topic_practice||{topics:[]};
+  state.data.topicPractice=normalizeTopicPractice(loaded.topic_practice||{topics:[]});
   state.data.fixedRules=loaded.fixed_rules||{items:[]};
   LID_QUESTIONS=(state.data.lid&&state.data.lid.length?state.data.lid:RAW_LID).map(normalizeLidQuestion);
   updateStreak();
