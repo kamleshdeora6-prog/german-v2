@@ -1,0 +1,5044 @@
+{
+  "items": [
+    {
+      "id": "fix_0001",
+      "category": "verbs_dative",
+      "prompt": "Ich helfe ___ Kollegin. (1)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0002",
+      "category": "verbs_dative",
+      "prompt": "Wir danken ___ Lehrer. (1)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0003",
+      "category": "verbs_dative",
+      "prompt": "Er gehört ___ Firma. (1)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0004",
+      "category": "verbs_dative",
+      "prompt": "Ich helfe ___ Kollegin. (2)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0005",
+      "category": "verbs_dative",
+      "prompt": "Wir danken ___ Lehrer. (2)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0006",
+      "category": "verbs_dative",
+      "prompt": "Er gehört ___ Firma. (2)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0007",
+      "category": "verbs_dative",
+      "prompt": "Ich helfe ___ Kollegin. (3)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0008",
+      "category": "verbs_dative",
+      "prompt": "Wir danken ___ Lehrer. (3)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0009",
+      "category": "verbs_dative",
+      "prompt": "Er gehört ___ Firma. (3)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0010",
+      "category": "verbs_dative",
+      "prompt": "Ich helfe ___ Kollegin. (4)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0011",
+      "category": "verbs_dative",
+      "prompt": "Wir danken ___ Lehrer. (4)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0012",
+      "category": "verbs_dative",
+      "prompt": "Er gehört ___ Firma. (4)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0013",
+      "category": "verbs_dative",
+      "prompt": "Ich helfe ___ Kollegin. (5)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0014",
+      "category": "verbs_dative",
+      "prompt": "Wir danken ___ Lehrer. (5)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0015",
+      "category": "verbs_dative",
+      "prompt": "Er gehört ___ Firma. (5)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0016",
+      "category": "verbs_dative",
+      "prompt": "Ich helfe ___ Kollegin. (6)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0017",
+      "category": "verbs_dative",
+      "prompt": "Wir danken ___ Lehrer. (6)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0018",
+      "category": "verbs_dative",
+      "prompt": "Er gehört ___ Firma. (6)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0019",
+      "category": "verbs_dative",
+      "prompt": "Ich helfe ___ Kollegin. (7)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0020",
+      "category": "verbs_dative",
+      "prompt": "Wir danken ___ Lehrer. (7)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0021",
+      "category": "verbs_dative",
+      "prompt": "Er gehört ___ Firma. (7)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0022",
+      "category": "verbs_dative",
+      "prompt": "Ich helfe ___ Kollegin. (8)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0023",
+      "category": "verbs_dative",
+      "prompt": "Wir danken ___ Lehrer. (8)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0024",
+      "category": "verbs_dative",
+      "prompt": "Er gehört ___ Firma. (8)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0025",
+      "category": "verbs_dative",
+      "prompt": "Ich helfe ___ Kollegin. (9)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0026",
+      "category": "verbs_dative",
+      "prompt": "Wir danken ___ Lehrer. (9)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0027",
+      "category": "verbs_dative",
+      "prompt": "Er gehört ___ Firma. (9)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0028",
+      "category": "verbs_dative",
+      "prompt": "Ich helfe ___ Kollegin. (10)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0029",
+      "category": "verbs_dative",
+      "prompt": "Wir danken ___ Lehrer. (10)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0030",
+      "category": "verbs_dative",
+      "prompt": "Er gehört ___ Firma. (10)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0031",
+      "category": "verbs_dative",
+      "prompt": "Ich helfe ___ Kollegin. (11)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0032",
+      "category": "verbs_dative",
+      "prompt": "Wir danken ___ Lehrer. (11)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0033",
+      "category": "verbs_dative",
+      "prompt": "Er gehört ___ Firma. (11)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0034",
+      "category": "verbs_dative",
+      "prompt": "Ich helfe ___ Kollegin. (12)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0035",
+      "category": "verbs_dative",
+      "prompt": "Wir danken ___ Lehrer. (12)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0036",
+      "category": "verbs_dative",
+      "prompt": "Er gehört ___ Firma. (12)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "helfen + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0037",
+      "category": "verbs_accusative",
+      "prompt": "Ich brauche ___ Termin. (1)",
+      "answer": "einen",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0038",
+      "category": "verbs_accusative",
+      "prompt": "Sie sucht ___ Schlüssel. (1)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0039",
+      "category": "verbs_accusative",
+      "prompt": "Wir kaufen ___ Tasche. (1)",
+      "answer": "eine",
+      "options": [
+        "eine",
+        "einen",
+        "einem",
+        "ein"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0040",
+      "category": "verbs_accusative",
+      "prompt": "Ich brauche ___ Termin. (2)",
+      "answer": "einen",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0041",
+      "category": "verbs_accusative",
+      "prompt": "Sie sucht ___ Schlüssel. (2)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0042",
+      "category": "verbs_accusative",
+      "prompt": "Wir kaufen ___ Tasche. (2)",
+      "answer": "eine",
+      "options": [
+        "eine",
+        "einen",
+        "einem",
+        "ein"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0043",
+      "category": "verbs_accusative",
+      "prompt": "Ich brauche ___ Termin. (3)",
+      "answer": "einen",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0044",
+      "category": "verbs_accusative",
+      "prompt": "Sie sucht ___ Schlüssel. (3)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0045",
+      "category": "verbs_accusative",
+      "prompt": "Wir kaufen ___ Tasche. (3)",
+      "answer": "eine",
+      "options": [
+        "eine",
+        "einen",
+        "einem",
+        "ein"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0046",
+      "category": "verbs_accusative",
+      "prompt": "Ich brauche ___ Termin. (4)",
+      "answer": "einen",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0047",
+      "category": "verbs_accusative",
+      "prompt": "Sie sucht ___ Schlüssel. (4)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0048",
+      "category": "verbs_accusative",
+      "prompt": "Wir kaufen ___ Tasche. (4)",
+      "answer": "eine",
+      "options": [
+        "eine",
+        "einen",
+        "einem",
+        "ein"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0049",
+      "category": "verbs_accusative",
+      "prompt": "Ich brauche ___ Termin. (5)",
+      "answer": "einen",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0050",
+      "category": "verbs_accusative",
+      "prompt": "Sie sucht ___ Schlüssel. (5)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0051",
+      "category": "verbs_accusative",
+      "prompt": "Wir kaufen ___ Tasche. (5)",
+      "answer": "eine",
+      "options": [
+        "eine",
+        "einen",
+        "einem",
+        "ein"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0052",
+      "category": "verbs_accusative",
+      "prompt": "Ich brauche ___ Termin. (6)",
+      "answer": "einen",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0053",
+      "category": "verbs_accusative",
+      "prompt": "Sie sucht ___ Schlüssel. (6)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0054",
+      "category": "verbs_accusative",
+      "prompt": "Wir kaufen ___ Tasche. (6)",
+      "answer": "eine",
+      "options": [
+        "eine",
+        "einen",
+        "einem",
+        "ein"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0055",
+      "category": "verbs_accusative",
+      "prompt": "Ich brauche ___ Termin. (7)",
+      "answer": "einen",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0056",
+      "category": "verbs_accusative",
+      "prompt": "Sie sucht ___ Schlüssel. (7)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0057",
+      "category": "verbs_accusative",
+      "prompt": "Wir kaufen ___ Tasche. (7)",
+      "answer": "eine",
+      "options": [
+        "eine",
+        "einen",
+        "einem",
+        "ein"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0058",
+      "category": "verbs_accusative",
+      "prompt": "Ich brauche ___ Termin. (8)",
+      "answer": "einen",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0059",
+      "category": "verbs_accusative",
+      "prompt": "Sie sucht ___ Schlüssel. (8)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0060",
+      "category": "verbs_accusative",
+      "prompt": "Wir kaufen ___ Tasche. (8)",
+      "answer": "eine",
+      "options": [
+        "eine",
+        "einen",
+        "einem",
+        "ein"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0061",
+      "category": "verbs_accusative",
+      "prompt": "Ich brauche ___ Termin. (9)",
+      "answer": "einen",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0062",
+      "category": "verbs_accusative",
+      "prompt": "Sie sucht ___ Schlüssel. (9)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0063",
+      "category": "verbs_accusative",
+      "prompt": "Wir kaufen ___ Tasche. (9)",
+      "answer": "eine",
+      "options": [
+        "eine",
+        "einen",
+        "einem",
+        "ein"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0064",
+      "category": "verbs_accusative",
+      "prompt": "Ich brauche ___ Termin. (10)",
+      "answer": "einen",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0065",
+      "category": "verbs_accusative",
+      "prompt": "Sie sucht ___ Schlüssel. (10)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0066",
+      "category": "verbs_accusative",
+      "prompt": "Wir kaufen ___ Tasche. (10)",
+      "answer": "eine",
+      "options": [
+        "eine",
+        "einen",
+        "einem",
+        "ein"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0067",
+      "category": "verbs_accusative",
+      "prompt": "Ich brauche ___ Termin. (11)",
+      "answer": "einen",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0068",
+      "category": "verbs_accusative",
+      "prompt": "Sie sucht ___ Schlüssel. (11)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0069",
+      "category": "verbs_accusative",
+      "prompt": "Wir kaufen ___ Tasche. (11)",
+      "answer": "eine",
+      "options": [
+        "eine",
+        "einen",
+        "einem",
+        "ein"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0070",
+      "category": "verbs_accusative",
+      "prompt": "Ich brauche ___ Termin. (12)",
+      "answer": "einen",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0071",
+      "category": "verbs_accusative",
+      "prompt": "Sie sucht ___ Schlüssel. (12)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0072",
+      "category": "verbs_accusative",
+      "prompt": "Wir kaufen ___ Tasche. (12)",
+      "answer": "eine",
+      "options": [
+        "eine",
+        "einen",
+        "einem",
+        "ein"
+      ],
+      "rule": "brauchen + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0073",
+      "category": "verbs_dat_akk",
+      "prompt": "Ich gebe ___ Kind ein Buch. (1)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0074",
+      "category": "verbs_dat_akk",
+      "prompt": "Wir schicken ___ Kollegin eine E-Mail. (1)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0075",
+      "category": "verbs_dat_akk",
+      "prompt": "Er zeigt ___ Freund den Weg. (1)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "des",
+        "der"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0076",
+      "category": "verbs_dat_akk",
+      "prompt": "Ich gebe ___ Kind ein Buch. (2)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0077",
+      "category": "verbs_dat_akk",
+      "prompt": "Wir schicken ___ Kollegin eine E-Mail. (2)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0078",
+      "category": "verbs_dat_akk",
+      "prompt": "Er zeigt ___ Freund den Weg. (2)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "des",
+        "der"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0079",
+      "category": "verbs_dat_akk",
+      "prompt": "Ich gebe ___ Kind ein Buch. (3)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0080",
+      "category": "verbs_dat_akk",
+      "prompt": "Wir schicken ___ Kollegin eine E-Mail. (3)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0081",
+      "category": "verbs_dat_akk",
+      "prompt": "Er zeigt ___ Freund den Weg. (3)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "des",
+        "der"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0082",
+      "category": "verbs_dat_akk",
+      "prompt": "Ich gebe ___ Kind ein Buch. (4)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0083",
+      "category": "verbs_dat_akk",
+      "prompt": "Wir schicken ___ Kollegin eine E-Mail. (4)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0084",
+      "category": "verbs_dat_akk",
+      "prompt": "Er zeigt ___ Freund den Weg. (4)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "des",
+        "der"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0085",
+      "category": "verbs_dat_akk",
+      "prompt": "Ich gebe ___ Kind ein Buch. (5)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0086",
+      "category": "verbs_dat_akk",
+      "prompt": "Wir schicken ___ Kollegin eine E-Mail. (5)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0087",
+      "category": "verbs_dat_akk",
+      "prompt": "Er zeigt ___ Freund den Weg. (5)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "des",
+        "der"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0088",
+      "category": "verbs_dat_akk",
+      "prompt": "Ich gebe ___ Kind ein Buch. (6)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0089",
+      "category": "verbs_dat_akk",
+      "prompt": "Wir schicken ___ Kollegin eine E-Mail. (6)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0090",
+      "category": "verbs_dat_akk",
+      "prompt": "Er zeigt ___ Freund den Weg. (6)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "des",
+        "der"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0091",
+      "category": "verbs_dat_akk",
+      "prompt": "Ich gebe ___ Kind ein Buch. (7)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0092",
+      "category": "verbs_dat_akk",
+      "prompt": "Wir schicken ___ Kollegin eine E-Mail. (7)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0093",
+      "category": "verbs_dat_akk",
+      "prompt": "Er zeigt ___ Freund den Weg. (7)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "des",
+        "der"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0094",
+      "category": "verbs_dat_akk",
+      "prompt": "Ich gebe ___ Kind ein Buch. (8)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0095",
+      "category": "verbs_dat_akk",
+      "prompt": "Wir schicken ___ Kollegin eine E-Mail. (8)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0096",
+      "category": "verbs_dat_akk",
+      "prompt": "Er zeigt ___ Freund den Weg. (8)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "des",
+        "der"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0097",
+      "category": "verbs_dat_akk",
+      "prompt": "Ich gebe ___ Kind ein Buch. (9)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0098",
+      "category": "verbs_dat_akk",
+      "prompt": "Wir schicken ___ Kollegin eine E-Mail. (9)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0099",
+      "category": "verbs_dat_akk",
+      "prompt": "Er zeigt ___ Freund den Weg. (9)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "des",
+        "der"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0100",
+      "category": "verbs_dat_akk",
+      "prompt": "Ich gebe ___ Kind ein Buch. (10)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0101",
+      "category": "verbs_dat_akk",
+      "prompt": "Wir schicken ___ Kollegin eine E-Mail. (10)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0102",
+      "category": "verbs_dat_akk",
+      "prompt": "Er zeigt ___ Freund den Weg. (10)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "des",
+        "der"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0103",
+      "category": "verbs_dat_akk",
+      "prompt": "Ich gebe ___ Kind ein Buch. (11)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0104",
+      "category": "verbs_dat_akk",
+      "prompt": "Wir schicken ___ Kollegin eine E-Mail. (11)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0105",
+      "category": "verbs_dat_akk",
+      "prompt": "Er zeigt ___ Freund den Weg. (11)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "des",
+        "der"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0106",
+      "category": "verbs_dat_akk",
+      "prompt": "Ich gebe ___ Kind ein Buch. (12)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0107",
+      "category": "verbs_dat_akk",
+      "prompt": "Wir schicken ___ Kollegin eine E-Mail. (12)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0108",
+      "category": "verbs_dat_akk",
+      "prompt": "Er zeigt ___ Freund den Weg. (12)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "des",
+        "der"
+      ],
+      "rule": "geben + Dativ + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0109",
+      "category": "prep_dative",
+      "prompt": "Ich fahre mit ___ Bus. (1)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0110",
+      "category": "prep_dative",
+      "prompt": "Ich komme aus ___ Türkei. (1)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0111",
+      "category": "prep_dative",
+      "prompt": "Wir gehen zu ___ Arzt. (1)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0112",
+      "category": "prep_dative",
+      "prompt": "Ich fahre mit ___ Bus. (2)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0113",
+      "category": "prep_dative",
+      "prompt": "Ich komme aus ___ Türkei. (2)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0114",
+      "category": "prep_dative",
+      "prompt": "Wir gehen zu ___ Arzt. (2)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0115",
+      "category": "prep_dative",
+      "prompt": "Ich fahre mit ___ Bus. (3)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0116",
+      "category": "prep_dative",
+      "prompt": "Ich komme aus ___ Türkei. (3)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0117",
+      "category": "prep_dative",
+      "prompt": "Wir gehen zu ___ Arzt. (3)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0118",
+      "category": "prep_dative",
+      "prompt": "Ich fahre mit ___ Bus. (4)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0119",
+      "category": "prep_dative",
+      "prompt": "Ich komme aus ___ Türkei. (4)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0120",
+      "category": "prep_dative",
+      "prompt": "Wir gehen zu ___ Arzt. (4)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0121",
+      "category": "prep_dative",
+      "prompt": "Ich fahre mit ___ Bus. (5)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0122",
+      "category": "prep_dative",
+      "prompt": "Ich komme aus ___ Türkei. (5)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0123",
+      "category": "prep_dative",
+      "prompt": "Wir gehen zu ___ Arzt. (5)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0124",
+      "category": "prep_dative",
+      "prompt": "Ich fahre mit ___ Bus. (6)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0125",
+      "category": "prep_dative",
+      "prompt": "Ich komme aus ___ Türkei. (6)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0126",
+      "category": "prep_dative",
+      "prompt": "Wir gehen zu ___ Arzt. (6)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0127",
+      "category": "prep_dative",
+      "prompt": "Ich fahre mit ___ Bus. (7)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0128",
+      "category": "prep_dative",
+      "prompt": "Ich komme aus ___ Türkei. (7)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0129",
+      "category": "prep_dative",
+      "prompt": "Wir gehen zu ___ Arzt. (7)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0130",
+      "category": "prep_dative",
+      "prompt": "Ich fahre mit ___ Bus. (8)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0131",
+      "category": "prep_dative",
+      "prompt": "Ich komme aus ___ Türkei. (8)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0132",
+      "category": "prep_dative",
+      "prompt": "Wir gehen zu ___ Arzt. (8)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0133",
+      "category": "prep_dative",
+      "prompt": "Ich fahre mit ___ Bus. (9)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0134",
+      "category": "prep_dative",
+      "prompt": "Ich komme aus ___ Türkei. (9)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0135",
+      "category": "prep_dative",
+      "prompt": "Wir gehen zu ___ Arzt. (9)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0136",
+      "category": "prep_dative",
+      "prompt": "Ich fahre mit ___ Bus. (10)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0137",
+      "category": "prep_dative",
+      "prompt": "Ich komme aus ___ Türkei. (10)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0138",
+      "category": "prep_dative",
+      "prompt": "Wir gehen zu ___ Arzt. (10)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0139",
+      "category": "prep_dative",
+      "prompt": "Ich fahre mit ___ Bus. (11)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0140",
+      "category": "prep_dative",
+      "prompt": "Ich komme aus ___ Türkei. (11)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0141",
+      "category": "prep_dative",
+      "prompt": "Wir gehen zu ___ Arzt. (11)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0142",
+      "category": "prep_dative",
+      "prompt": "Ich fahre mit ___ Bus. (12)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0143",
+      "category": "prep_dative",
+      "prompt": "Ich komme aus ___ Türkei. (12)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0144",
+      "category": "prep_dative",
+      "prompt": "Wir gehen zu ___ Arzt. (12)",
+      "answer": "dem",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "mit / nach / aus / bei / von / zu + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0145",
+      "category": "prep_accusative",
+      "prompt": "Das Geschenk ist für ___ Kollegin. (1)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0146",
+      "category": "prep_accusative",
+      "prompt": "Wir gehen ohne ___ Chef. (1)",
+      "answer": "den",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0147",
+      "category": "prep_accusative",
+      "prompt": "Ich laufe durch ___ Park. (1)",
+      "answer": "den",
+      "options": [
+        "der",
+        "dem",
+        "den",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0148",
+      "category": "prep_accusative",
+      "prompt": "Das Geschenk ist für ___ Kollegin. (2)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0149",
+      "category": "prep_accusative",
+      "prompt": "Wir gehen ohne ___ Chef. (2)",
+      "answer": "den",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0150",
+      "category": "prep_accusative",
+      "prompt": "Ich laufe durch ___ Park. (2)",
+      "answer": "den",
+      "options": [
+        "der",
+        "dem",
+        "den",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0151",
+      "category": "prep_accusative",
+      "prompt": "Das Geschenk ist für ___ Kollegin. (3)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0152",
+      "category": "prep_accusative",
+      "prompt": "Wir gehen ohne ___ Chef. (3)",
+      "answer": "den",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0153",
+      "category": "prep_accusative",
+      "prompt": "Ich laufe durch ___ Park. (3)",
+      "answer": "den",
+      "options": [
+        "der",
+        "dem",
+        "den",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0154",
+      "category": "prep_accusative",
+      "prompt": "Das Geschenk ist für ___ Kollegin. (4)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0155",
+      "category": "prep_accusative",
+      "prompt": "Wir gehen ohne ___ Chef. (4)",
+      "answer": "den",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0156",
+      "category": "prep_accusative",
+      "prompt": "Ich laufe durch ___ Park. (4)",
+      "answer": "den",
+      "options": [
+        "der",
+        "dem",
+        "den",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0157",
+      "category": "prep_accusative",
+      "prompt": "Das Geschenk ist für ___ Kollegin. (5)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0158",
+      "category": "prep_accusative",
+      "prompt": "Wir gehen ohne ___ Chef. (5)",
+      "answer": "den",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0159",
+      "category": "prep_accusative",
+      "prompt": "Ich laufe durch ___ Park. (5)",
+      "answer": "den",
+      "options": [
+        "der",
+        "dem",
+        "den",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0160",
+      "category": "prep_accusative",
+      "prompt": "Das Geschenk ist für ___ Kollegin. (6)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0161",
+      "category": "prep_accusative",
+      "prompt": "Wir gehen ohne ___ Chef. (6)",
+      "answer": "den",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0162",
+      "category": "prep_accusative",
+      "prompt": "Ich laufe durch ___ Park. (6)",
+      "answer": "den",
+      "options": [
+        "der",
+        "dem",
+        "den",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0163",
+      "category": "prep_accusative",
+      "prompt": "Das Geschenk ist für ___ Kollegin. (7)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0164",
+      "category": "prep_accusative",
+      "prompt": "Wir gehen ohne ___ Chef. (7)",
+      "answer": "den",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0165",
+      "category": "prep_accusative",
+      "prompt": "Ich laufe durch ___ Park. (7)",
+      "answer": "den",
+      "options": [
+        "der",
+        "dem",
+        "den",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0166",
+      "category": "prep_accusative",
+      "prompt": "Das Geschenk ist für ___ Kollegin. (8)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0167",
+      "category": "prep_accusative",
+      "prompt": "Wir gehen ohne ___ Chef. (8)",
+      "answer": "den",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0168",
+      "category": "prep_accusative",
+      "prompt": "Ich laufe durch ___ Park. (8)",
+      "answer": "den",
+      "options": [
+        "der",
+        "dem",
+        "den",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0169",
+      "category": "prep_accusative",
+      "prompt": "Das Geschenk ist für ___ Kollegin. (9)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0170",
+      "category": "prep_accusative",
+      "prompt": "Wir gehen ohne ___ Chef. (9)",
+      "answer": "den",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0171",
+      "category": "prep_accusative",
+      "prompt": "Ich laufe durch ___ Park. (9)",
+      "answer": "den",
+      "options": [
+        "der",
+        "dem",
+        "den",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0172",
+      "category": "prep_accusative",
+      "prompt": "Das Geschenk ist für ___ Kollegin. (10)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0173",
+      "category": "prep_accusative",
+      "prompt": "Wir gehen ohne ___ Chef. (10)",
+      "answer": "den",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0174",
+      "category": "prep_accusative",
+      "prompt": "Ich laufe durch ___ Park. (10)",
+      "answer": "den",
+      "options": [
+        "der",
+        "dem",
+        "den",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0175",
+      "category": "prep_accusative",
+      "prompt": "Das Geschenk ist für ___ Kollegin. (11)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0176",
+      "category": "prep_accusative",
+      "prompt": "Wir gehen ohne ___ Chef. (11)",
+      "answer": "den",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0177",
+      "category": "prep_accusative",
+      "prompt": "Ich laufe durch ___ Park. (11)",
+      "answer": "den",
+      "options": [
+        "der",
+        "dem",
+        "den",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0178",
+      "category": "prep_accusative",
+      "prompt": "Das Geschenk ist für ___ Kollegin. (12)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0179",
+      "category": "prep_accusative",
+      "prompt": "Wir gehen ohne ___ Chef. (12)",
+      "answer": "den",
+      "options": [
+        "den",
+        "dem",
+        "der",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0180",
+      "category": "prep_accusative",
+      "prompt": "Ich laufe durch ___ Park. (12)",
+      "answer": "den",
+      "options": [
+        "der",
+        "dem",
+        "den",
+        "des"
+      ],
+      "rule": "für / ohne / gegen / um / durch + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0181",
+      "category": "wechsel_movement",
+      "prompt": "Ich gehe in ___ Schule. (1)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0182",
+      "category": "wechsel_movement",
+      "prompt": "Wir legen das Buch auf ___ Tisch. (1)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0183",
+      "category": "wechsel_movement",
+      "prompt": "Er hängt das Bild an ___ Wand. (1)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0184",
+      "category": "wechsel_movement",
+      "prompt": "Ich gehe in ___ Schule. (2)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0185",
+      "category": "wechsel_movement",
+      "prompt": "Wir legen das Buch auf ___ Tisch. (2)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0186",
+      "category": "wechsel_movement",
+      "prompt": "Er hängt das Bild an ___ Wand. (2)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0187",
+      "category": "wechsel_movement",
+      "prompt": "Ich gehe in ___ Schule. (3)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0188",
+      "category": "wechsel_movement",
+      "prompt": "Wir legen das Buch auf ___ Tisch. (3)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0189",
+      "category": "wechsel_movement",
+      "prompt": "Er hängt das Bild an ___ Wand. (3)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0190",
+      "category": "wechsel_movement",
+      "prompt": "Ich gehe in ___ Schule. (4)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0191",
+      "category": "wechsel_movement",
+      "prompt": "Wir legen das Buch auf ___ Tisch. (4)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0192",
+      "category": "wechsel_movement",
+      "prompt": "Er hängt das Bild an ___ Wand. (4)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0193",
+      "category": "wechsel_movement",
+      "prompt": "Ich gehe in ___ Schule. (5)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0194",
+      "category": "wechsel_movement",
+      "prompt": "Wir legen das Buch auf ___ Tisch. (5)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0195",
+      "category": "wechsel_movement",
+      "prompt": "Er hängt das Bild an ___ Wand. (5)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0196",
+      "category": "wechsel_movement",
+      "prompt": "Ich gehe in ___ Schule. (6)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0197",
+      "category": "wechsel_movement",
+      "prompt": "Wir legen das Buch auf ___ Tisch. (6)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0198",
+      "category": "wechsel_movement",
+      "prompt": "Er hängt das Bild an ___ Wand. (6)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0199",
+      "category": "wechsel_movement",
+      "prompt": "Ich gehe in ___ Schule. (7)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0200",
+      "category": "wechsel_movement",
+      "prompt": "Wir legen das Buch auf ___ Tisch. (7)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0201",
+      "category": "wechsel_movement",
+      "prompt": "Er hängt das Bild an ___ Wand. (7)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0202",
+      "category": "wechsel_movement",
+      "prompt": "Ich gehe in ___ Schule. (8)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0203",
+      "category": "wechsel_movement",
+      "prompt": "Wir legen das Buch auf ___ Tisch. (8)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0204",
+      "category": "wechsel_movement",
+      "prompt": "Er hängt das Bild an ___ Wand. (8)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0205",
+      "category": "wechsel_movement",
+      "prompt": "Ich gehe in ___ Schule. (9)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0206",
+      "category": "wechsel_movement",
+      "prompt": "Wir legen das Buch auf ___ Tisch. (9)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0207",
+      "category": "wechsel_movement",
+      "prompt": "Er hängt das Bild an ___ Wand. (9)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0208",
+      "category": "wechsel_movement",
+      "prompt": "Ich gehe in ___ Schule. (10)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0209",
+      "category": "wechsel_movement",
+      "prompt": "Wir legen das Buch auf ___ Tisch. (10)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0210",
+      "category": "wechsel_movement",
+      "prompt": "Er hängt das Bild an ___ Wand. (10)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0211",
+      "category": "wechsel_movement",
+      "prompt": "Ich gehe in ___ Schule. (11)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0212",
+      "category": "wechsel_movement",
+      "prompt": "Wir legen das Buch auf ___ Tisch. (11)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0213",
+      "category": "wechsel_movement",
+      "prompt": "Er hängt das Bild an ___ Wand. (11)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0214",
+      "category": "wechsel_movement",
+      "prompt": "Ich gehe in ___ Schule. (12)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0215",
+      "category": "wechsel_movement",
+      "prompt": "Wir legen das Buch auf ___ Tisch. (12)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0216",
+      "category": "wechsel_movement",
+      "prompt": "Er hängt das Bild an ___ Wand. (12)",
+      "answer": "die",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Wechselpräpositionen + Bewegung = Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0217",
+      "category": "wechsel_location",
+      "prompt": "Ich bin in ___ Schule. (1)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0218",
+      "category": "wechsel_location",
+      "prompt": "Das Buch liegt auf ___ Tisch. (1)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0219",
+      "category": "wechsel_location",
+      "prompt": "Das Bild hängt an ___ Wand. (1)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0220",
+      "category": "wechsel_location",
+      "prompt": "Ich bin in ___ Schule. (2)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0221",
+      "category": "wechsel_location",
+      "prompt": "Das Buch liegt auf ___ Tisch. (2)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0222",
+      "category": "wechsel_location",
+      "prompt": "Das Bild hängt an ___ Wand. (2)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0223",
+      "category": "wechsel_location",
+      "prompt": "Ich bin in ___ Schule. (3)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0224",
+      "category": "wechsel_location",
+      "prompt": "Das Buch liegt auf ___ Tisch. (3)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0225",
+      "category": "wechsel_location",
+      "prompt": "Das Bild hängt an ___ Wand. (3)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0226",
+      "category": "wechsel_location",
+      "prompt": "Ich bin in ___ Schule. (4)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0227",
+      "category": "wechsel_location",
+      "prompt": "Das Buch liegt auf ___ Tisch. (4)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0228",
+      "category": "wechsel_location",
+      "prompt": "Das Bild hängt an ___ Wand. (4)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0229",
+      "category": "wechsel_location",
+      "prompt": "Ich bin in ___ Schule. (5)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0230",
+      "category": "wechsel_location",
+      "prompt": "Das Buch liegt auf ___ Tisch. (5)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0231",
+      "category": "wechsel_location",
+      "prompt": "Das Bild hängt an ___ Wand. (5)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0232",
+      "category": "wechsel_location",
+      "prompt": "Ich bin in ___ Schule. (6)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0233",
+      "category": "wechsel_location",
+      "prompt": "Das Buch liegt auf ___ Tisch. (6)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0234",
+      "category": "wechsel_location",
+      "prompt": "Das Bild hängt an ___ Wand. (6)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0235",
+      "category": "wechsel_location",
+      "prompt": "Ich bin in ___ Schule. (7)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0236",
+      "category": "wechsel_location",
+      "prompt": "Das Buch liegt auf ___ Tisch. (7)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0237",
+      "category": "wechsel_location",
+      "prompt": "Das Bild hängt an ___ Wand. (7)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0238",
+      "category": "wechsel_location",
+      "prompt": "Ich bin in ___ Schule. (8)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0239",
+      "category": "wechsel_location",
+      "prompt": "Das Buch liegt auf ___ Tisch. (8)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0240",
+      "category": "wechsel_location",
+      "prompt": "Das Bild hängt an ___ Wand. (8)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0241",
+      "category": "wechsel_location",
+      "prompt": "Ich bin in ___ Schule. (9)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0242",
+      "category": "wechsel_location",
+      "prompt": "Das Buch liegt auf ___ Tisch. (9)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0243",
+      "category": "wechsel_location",
+      "prompt": "Das Bild hängt an ___ Wand. (9)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0244",
+      "category": "wechsel_location",
+      "prompt": "Ich bin in ___ Schule. (10)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0245",
+      "category": "wechsel_location",
+      "prompt": "Das Buch liegt auf ___ Tisch. (10)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0246",
+      "category": "wechsel_location",
+      "prompt": "Das Bild hängt an ___ Wand. (10)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0247",
+      "category": "wechsel_location",
+      "prompt": "Ich bin in ___ Schule. (11)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0248",
+      "category": "wechsel_location",
+      "prompt": "Das Buch liegt auf ___ Tisch. (11)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0249",
+      "category": "wechsel_location",
+      "prompt": "Das Bild hängt an ___ Wand. (11)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0250",
+      "category": "wechsel_location",
+      "prompt": "Ich bin in ___ Schule. (12)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0251",
+      "category": "wechsel_location",
+      "prompt": "Das Buch liegt auf ___ Tisch. (12)",
+      "answer": "dem",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0252",
+      "category": "wechsel_location",
+      "prompt": "Das Bild hängt an ___ Wand. (12)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "dem",
+        "den"
+      ],
+      "rule": "Wechselpräpositionen + Ort = Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0253",
+      "category": "verb_prep_akk",
+      "prompt": "Ich warte ___ den Bus. (1)",
+      "answer": "auf",
+      "options": [
+        "auf",
+        "an",
+        "mit",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0254",
+      "category": "verb_prep_akk",
+      "prompt": "Wir denken ___ die Prüfung. (1)",
+      "answer": "an",
+      "options": [
+        "an",
+        "auf",
+        "für",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0255",
+      "category": "verb_prep_akk",
+      "prompt": "Sie interessiert sich ___ Musik. (1)",
+      "answer": "für",
+      "options": [
+        "für",
+        "auf",
+        "an",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0256",
+      "category": "verb_prep_akk",
+      "prompt": "Ich warte ___ den Bus. (2)",
+      "answer": "auf",
+      "options": [
+        "auf",
+        "an",
+        "mit",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0257",
+      "category": "verb_prep_akk",
+      "prompt": "Wir denken ___ die Prüfung. (2)",
+      "answer": "an",
+      "options": [
+        "an",
+        "auf",
+        "für",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0258",
+      "category": "verb_prep_akk",
+      "prompt": "Sie interessiert sich ___ Musik. (2)",
+      "answer": "für",
+      "options": [
+        "für",
+        "auf",
+        "an",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0259",
+      "category": "verb_prep_akk",
+      "prompt": "Ich warte ___ den Bus. (3)",
+      "answer": "auf",
+      "options": [
+        "auf",
+        "an",
+        "mit",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0260",
+      "category": "verb_prep_akk",
+      "prompt": "Wir denken ___ die Prüfung. (3)",
+      "answer": "an",
+      "options": [
+        "an",
+        "auf",
+        "für",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0261",
+      "category": "verb_prep_akk",
+      "prompt": "Sie interessiert sich ___ Musik. (3)",
+      "answer": "für",
+      "options": [
+        "für",
+        "auf",
+        "an",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0262",
+      "category": "verb_prep_akk",
+      "prompt": "Ich warte ___ den Bus. (4)",
+      "answer": "auf",
+      "options": [
+        "auf",
+        "an",
+        "mit",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0263",
+      "category": "verb_prep_akk",
+      "prompt": "Wir denken ___ die Prüfung. (4)",
+      "answer": "an",
+      "options": [
+        "an",
+        "auf",
+        "für",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0264",
+      "category": "verb_prep_akk",
+      "prompt": "Sie interessiert sich ___ Musik. (4)",
+      "answer": "für",
+      "options": [
+        "für",
+        "auf",
+        "an",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0265",
+      "category": "verb_prep_akk",
+      "prompt": "Ich warte ___ den Bus. (5)",
+      "answer": "auf",
+      "options": [
+        "auf",
+        "an",
+        "mit",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0266",
+      "category": "verb_prep_akk",
+      "prompt": "Wir denken ___ die Prüfung. (5)",
+      "answer": "an",
+      "options": [
+        "an",
+        "auf",
+        "für",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0267",
+      "category": "verb_prep_akk",
+      "prompt": "Sie interessiert sich ___ Musik. (5)",
+      "answer": "für",
+      "options": [
+        "für",
+        "auf",
+        "an",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0268",
+      "category": "verb_prep_akk",
+      "prompt": "Ich warte ___ den Bus. (6)",
+      "answer": "auf",
+      "options": [
+        "auf",
+        "an",
+        "mit",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0269",
+      "category": "verb_prep_akk",
+      "prompt": "Wir denken ___ die Prüfung. (6)",
+      "answer": "an",
+      "options": [
+        "an",
+        "auf",
+        "für",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0270",
+      "category": "verb_prep_akk",
+      "prompt": "Sie interessiert sich ___ Musik. (6)",
+      "answer": "für",
+      "options": [
+        "für",
+        "auf",
+        "an",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0271",
+      "category": "verb_prep_akk",
+      "prompt": "Ich warte ___ den Bus. (7)",
+      "answer": "auf",
+      "options": [
+        "auf",
+        "an",
+        "mit",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0272",
+      "category": "verb_prep_akk",
+      "prompt": "Wir denken ___ die Prüfung. (7)",
+      "answer": "an",
+      "options": [
+        "an",
+        "auf",
+        "für",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0273",
+      "category": "verb_prep_akk",
+      "prompt": "Sie interessiert sich ___ Musik. (7)",
+      "answer": "für",
+      "options": [
+        "für",
+        "auf",
+        "an",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0274",
+      "category": "verb_prep_akk",
+      "prompt": "Ich warte ___ den Bus. (8)",
+      "answer": "auf",
+      "options": [
+        "auf",
+        "an",
+        "mit",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0275",
+      "category": "verb_prep_akk",
+      "prompt": "Wir denken ___ die Prüfung. (8)",
+      "answer": "an",
+      "options": [
+        "an",
+        "auf",
+        "für",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0276",
+      "category": "verb_prep_akk",
+      "prompt": "Sie interessiert sich ___ Musik. (8)",
+      "answer": "für",
+      "options": [
+        "für",
+        "auf",
+        "an",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0277",
+      "category": "verb_prep_akk",
+      "prompt": "Ich warte ___ den Bus. (9)",
+      "answer": "auf",
+      "options": [
+        "auf",
+        "an",
+        "mit",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0278",
+      "category": "verb_prep_akk",
+      "prompt": "Wir denken ___ die Prüfung. (9)",
+      "answer": "an",
+      "options": [
+        "an",
+        "auf",
+        "für",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0279",
+      "category": "verb_prep_akk",
+      "prompt": "Sie interessiert sich ___ Musik. (9)",
+      "answer": "für",
+      "options": [
+        "für",
+        "auf",
+        "an",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0280",
+      "category": "verb_prep_akk",
+      "prompt": "Ich warte ___ den Bus. (10)",
+      "answer": "auf",
+      "options": [
+        "auf",
+        "an",
+        "mit",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0281",
+      "category": "verb_prep_akk",
+      "prompt": "Wir denken ___ die Prüfung. (10)",
+      "answer": "an",
+      "options": [
+        "an",
+        "auf",
+        "für",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0282",
+      "category": "verb_prep_akk",
+      "prompt": "Sie interessiert sich ___ Musik. (10)",
+      "answer": "für",
+      "options": [
+        "für",
+        "auf",
+        "an",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0283",
+      "category": "verb_prep_akk",
+      "prompt": "Ich warte ___ den Bus. (11)",
+      "answer": "auf",
+      "options": [
+        "auf",
+        "an",
+        "mit",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0284",
+      "category": "verb_prep_akk",
+      "prompt": "Wir denken ___ die Prüfung. (11)",
+      "answer": "an",
+      "options": [
+        "an",
+        "auf",
+        "für",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0285",
+      "category": "verb_prep_akk",
+      "prompt": "Sie interessiert sich ___ Musik. (11)",
+      "answer": "für",
+      "options": [
+        "für",
+        "auf",
+        "an",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0286",
+      "category": "verb_prep_akk",
+      "prompt": "Ich warte ___ den Bus. (12)",
+      "answer": "auf",
+      "options": [
+        "auf",
+        "an",
+        "mit",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0287",
+      "category": "verb_prep_akk",
+      "prompt": "Wir denken ___ die Prüfung. (12)",
+      "answer": "an",
+      "options": [
+        "an",
+        "auf",
+        "für",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0288",
+      "category": "verb_prep_akk",
+      "prompt": "Sie interessiert sich ___ Musik. (12)",
+      "answer": "für",
+      "options": [
+        "für",
+        "auf",
+        "an",
+        "mit"
+      ],
+      "rule": "Verb + Präposition + Akkusativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0289",
+      "category": "verb_prep_dat",
+      "prompt": "Ich spreche ___ meiner Kollegin. (1)",
+      "answer": "mit",
+      "options": [
+        "mit",
+        "über",
+        "auf",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0290",
+      "category": "verb_prep_dat",
+      "prompt": "Er erzählt ___ seinem Wochenende. (1)",
+      "answer": "von",
+      "options": [
+        "von",
+        "mit",
+        "auf",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0291",
+      "category": "verb_prep_dat",
+      "prompt": "Wir träumen ___ einem Urlaub. (1)",
+      "answer": "von",
+      "options": [
+        "von",
+        "auf",
+        "mit",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0292",
+      "category": "verb_prep_dat",
+      "prompt": "Ich spreche ___ meiner Kollegin. (2)",
+      "answer": "mit",
+      "options": [
+        "mit",
+        "über",
+        "auf",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0293",
+      "category": "verb_prep_dat",
+      "prompt": "Er erzählt ___ seinem Wochenende. (2)",
+      "answer": "von",
+      "options": [
+        "von",
+        "mit",
+        "auf",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0294",
+      "category": "verb_prep_dat",
+      "prompt": "Wir träumen ___ einem Urlaub. (2)",
+      "answer": "von",
+      "options": [
+        "von",
+        "auf",
+        "mit",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0295",
+      "category": "verb_prep_dat",
+      "prompt": "Ich spreche ___ meiner Kollegin. (3)",
+      "answer": "mit",
+      "options": [
+        "mit",
+        "über",
+        "auf",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0296",
+      "category": "verb_prep_dat",
+      "prompt": "Er erzählt ___ seinem Wochenende. (3)",
+      "answer": "von",
+      "options": [
+        "von",
+        "mit",
+        "auf",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0297",
+      "category": "verb_prep_dat",
+      "prompt": "Wir träumen ___ einem Urlaub. (3)",
+      "answer": "von",
+      "options": [
+        "von",
+        "auf",
+        "mit",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0298",
+      "category": "verb_prep_dat",
+      "prompt": "Ich spreche ___ meiner Kollegin. (4)",
+      "answer": "mit",
+      "options": [
+        "mit",
+        "über",
+        "auf",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0299",
+      "category": "verb_prep_dat",
+      "prompt": "Er erzählt ___ seinem Wochenende. (4)",
+      "answer": "von",
+      "options": [
+        "von",
+        "mit",
+        "auf",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0300",
+      "category": "verb_prep_dat",
+      "prompt": "Wir träumen ___ einem Urlaub. (4)",
+      "answer": "von",
+      "options": [
+        "von",
+        "auf",
+        "mit",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0301",
+      "category": "verb_prep_dat",
+      "prompt": "Ich spreche ___ meiner Kollegin. (5)",
+      "answer": "mit",
+      "options": [
+        "mit",
+        "über",
+        "auf",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0302",
+      "category": "verb_prep_dat",
+      "prompt": "Er erzählt ___ seinem Wochenende. (5)",
+      "answer": "von",
+      "options": [
+        "von",
+        "mit",
+        "auf",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0303",
+      "category": "verb_prep_dat",
+      "prompt": "Wir träumen ___ einem Urlaub. (5)",
+      "answer": "von",
+      "options": [
+        "von",
+        "auf",
+        "mit",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0304",
+      "category": "verb_prep_dat",
+      "prompt": "Ich spreche ___ meiner Kollegin. (6)",
+      "answer": "mit",
+      "options": [
+        "mit",
+        "über",
+        "auf",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0305",
+      "category": "verb_prep_dat",
+      "prompt": "Er erzählt ___ seinem Wochenende. (6)",
+      "answer": "von",
+      "options": [
+        "von",
+        "mit",
+        "auf",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0306",
+      "category": "verb_prep_dat",
+      "prompt": "Wir träumen ___ einem Urlaub. (6)",
+      "answer": "von",
+      "options": [
+        "von",
+        "auf",
+        "mit",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0307",
+      "category": "verb_prep_dat",
+      "prompt": "Ich spreche ___ meiner Kollegin. (7)",
+      "answer": "mit",
+      "options": [
+        "mit",
+        "über",
+        "auf",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0308",
+      "category": "verb_prep_dat",
+      "prompt": "Er erzählt ___ seinem Wochenende. (7)",
+      "answer": "von",
+      "options": [
+        "von",
+        "mit",
+        "auf",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0309",
+      "category": "verb_prep_dat",
+      "prompt": "Wir träumen ___ einem Urlaub. (7)",
+      "answer": "von",
+      "options": [
+        "von",
+        "auf",
+        "mit",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0310",
+      "category": "verb_prep_dat",
+      "prompt": "Ich spreche ___ meiner Kollegin. (8)",
+      "answer": "mit",
+      "options": [
+        "mit",
+        "über",
+        "auf",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0311",
+      "category": "verb_prep_dat",
+      "prompt": "Er erzählt ___ seinem Wochenende. (8)",
+      "answer": "von",
+      "options": [
+        "von",
+        "mit",
+        "auf",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0312",
+      "category": "verb_prep_dat",
+      "prompt": "Wir träumen ___ einem Urlaub. (8)",
+      "answer": "von",
+      "options": [
+        "von",
+        "auf",
+        "mit",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0313",
+      "category": "verb_prep_dat",
+      "prompt": "Ich spreche ___ meiner Kollegin. (9)",
+      "answer": "mit",
+      "options": [
+        "mit",
+        "über",
+        "auf",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0314",
+      "category": "verb_prep_dat",
+      "prompt": "Er erzählt ___ seinem Wochenende. (9)",
+      "answer": "von",
+      "options": [
+        "von",
+        "mit",
+        "auf",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0315",
+      "category": "verb_prep_dat",
+      "prompt": "Wir träumen ___ einem Urlaub. (9)",
+      "answer": "von",
+      "options": [
+        "von",
+        "auf",
+        "mit",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0316",
+      "category": "verb_prep_dat",
+      "prompt": "Ich spreche ___ meiner Kollegin. (10)",
+      "answer": "mit",
+      "options": [
+        "mit",
+        "über",
+        "auf",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0317",
+      "category": "verb_prep_dat",
+      "prompt": "Er erzählt ___ seinem Wochenende. (10)",
+      "answer": "von",
+      "options": [
+        "von",
+        "mit",
+        "auf",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0318",
+      "category": "verb_prep_dat",
+      "prompt": "Wir träumen ___ einem Urlaub. (10)",
+      "answer": "von",
+      "options": [
+        "von",
+        "auf",
+        "mit",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0319",
+      "category": "verb_prep_dat",
+      "prompt": "Ich spreche ___ meiner Kollegin. (11)",
+      "answer": "mit",
+      "options": [
+        "mit",
+        "über",
+        "auf",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0320",
+      "category": "verb_prep_dat",
+      "prompt": "Er erzählt ___ seinem Wochenende. (11)",
+      "answer": "von",
+      "options": [
+        "von",
+        "mit",
+        "auf",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0321",
+      "category": "verb_prep_dat",
+      "prompt": "Wir träumen ___ einem Urlaub. (11)",
+      "answer": "von",
+      "options": [
+        "von",
+        "auf",
+        "mit",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0322",
+      "category": "verb_prep_dat",
+      "prompt": "Ich spreche ___ meiner Kollegin. (12)",
+      "answer": "mit",
+      "options": [
+        "mit",
+        "über",
+        "auf",
+        "für"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0323",
+      "category": "verb_prep_dat",
+      "prompt": "Er erzählt ___ seinem Wochenende. (12)",
+      "answer": "von",
+      "options": [
+        "von",
+        "mit",
+        "auf",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0324",
+      "category": "verb_prep_dat",
+      "prompt": "Wir träumen ___ einem Urlaub. (12)",
+      "answer": "von",
+      "options": [
+        "von",
+        "auf",
+        "mit",
+        "an"
+      ],
+      "rule": "Verb + Präposition + Dativ",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0325",
+      "category": "article_signals",
+      "prompt": "Maskulin Akkusativ von „der“ = ___ (1)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0326",
+      "category": "article_signals",
+      "prompt": "Maskulin Dativ von „ein“ = ___ (1)",
+      "answer": "einem",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0327",
+      "category": "article_signals",
+      "prompt": "Feminin Dativ von „die“ = ___ (1)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0328",
+      "category": "article_signals",
+      "prompt": "Maskulin Akkusativ von „der“ = ___ (2)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0329",
+      "category": "article_signals",
+      "prompt": "Maskulin Dativ von „ein“ = ___ (2)",
+      "answer": "einem",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0330",
+      "category": "article_signals",
+      "prompt": "Feminin Dativ von „die“ = ___ (2)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0331",
+      "category": "article_signals",
+      "prompt": "Maskulin Akkusativ von „der“ = ___ (3)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0332",
+      "category": "article_signals",
+      "prompt": "Maskulin Dativ von „ein“ = ___ (3)",
+      "answer": "einem",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0333",
+      "category": "article_signals",
+      "prompt": "Feminin Dativ von „die“ = ___ (3)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0334",
+      "category": "article_signals",
+      "prompt": "Maskulin Akkusativ von „der“ = ___ (4)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0335",
+      "category": "article_signals",
+      "prompt": "Maskulin Dativ von „ein“ = ___ (4)",
+      "answer": "einem",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0336",
+      "category": "article_signals",
+      "prompt": "Feminin Dativ von „die“ = ___ (4)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0337",
+      "category": "article_signals",
+      "prompt": "Maskulin Akkusativ von „der“ = ___ (5)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0338",
+      "category": "article_signals",
+      "prompt": "Maskulin Dativ von „ein“ = ___ (5)",
+      "answer": "einem",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0339",
+      "category": "article_signals",
+      "prompt": "Feminin Dativ von „die“ = ___ (5)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0340",
+      "category": "article_signals",
+      "prompt": "Maskulin Akkusativ von „der“ = ___ (6)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0341",
+      "category": "article_signals",
+      "prompt": "Maskulin Dativ von „ein“ = ___ (6)",
+      "answer": "einem",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0342",
+      "category": "article_signals",
+      "prompt": "Feminin Dativ von „die“ = ___ (6)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0343",
+      "category": "article_signals",
+      "prompt": "Maskulin Akkusativ von „der“ = ___ (7)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0344",
+      "category": "article_signals",
+      "prompt": "Maskulin Dativ von „ein“ = ___ (7)",
+      "answer": "einem",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0345",
+      "category": "article_signals",
+      "prompt": "Feminin Dativ von „die“ = ___ (7)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0346",
+      "category": "article_signals",
+      "prompt": "Maskulin Akkusativ von „der“ = ___ (8)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0347",
+      "category": "article_signals",
+      "prompt": "Maskulin Dativ von „ein“ = ___ (8)",
+      "answer": "einem",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0348",
+      "category": "article_signals",
+      "prompt": "Feminin Dativ von „die“ = ___ (8)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0349",
+      "category": "article_signals",
+      "prompt": "Maskulin Akkusativ von „der“ = ___ (9)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0350",
+      "category": "article_signals",
+      "prompt": "Maskulin Dativ von „ein“ = ___ (9)",
+      "answer": "einem",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0351",
+      "category": "article_signals",
+      "prompt": "Feminin Dativ von „die“ = ___ (9)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0352",
+      "category": "article_signals",
+      "prompt": "Maskulin Akkusativ von „der“ = ___ (10)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0353",
+      "category": "article_signals",
+      "prompt": "Maskulin Dativ von „ein“ = ___ (10)",
+      "answer": "einem",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0354",
+      "category": "article_signals",
+      "prompt": "Feminin Dativ von „die“ = ___ (10)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0355",
+      "category": "article_signals",
+      "prompt": "Maskulin Akkusativ von „der“ = ___ (11)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0356",
+      "category": "article_signals",
+      "prompt": "Maskulin Dativ von „ein“ = ___ (11)",
+      "answer": "einem",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0357",
+      "category": "article_signals",
+      "prompt": "Feminin Dativ von „die“ = ___ (11)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0358",
+      "category": "article_signals",
+      "prompt": "Maskulin Akkusativ von „der“ = ___ (12)",
+      "answer": "den",
+      "options": [
+        "der",
+        "den",
+        "dem",
+        "des"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0359",
+      "category": "article_signals",
+      "prompt": "Maskulin Dativ von „ein“ = ___ (12)",
+      "answer": "einem",
+      "options": [
+        "ein",
+        "einen",
+        "einem",
+        "einer"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    },
+    {
+      "id": "fix_0360",
+      "category": "article_signals",
+      "prompt": "Feminin Dativ von „die“ = ___ (12)",
+      "answer": "der",
+      "options": [
+        "die",
+        "der",
+        "den",
+        "dem"
+      ],
+      "rule": "Case article signals",
+      "source": "v20"
+    }
+  ]
+}

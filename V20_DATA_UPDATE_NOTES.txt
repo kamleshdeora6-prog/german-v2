@@ -1,0 +1,9 @@
+topic_practice: 20 topics
+fixed_rules: 360
+exercises: 3596
+vocab: 327
+verbs: 205
+conjugation: 536
+passages: 700
+flashcards: 1600
+notes: 106
