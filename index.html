@@ -81,9 +81,6 @@
         <button class="subbtn" data-practice="listening">Listening Q&amp;A</button>
         <button class="subbtn" data-practice="structure">Sentence Structure</button>
         <button class="subbtn" data-practice="cases">Cases</button>
-        <button class="subbtn" data-practice="fixed">Fixed Rules</button>
-        <button class="subbtn" data-practice="flow">Topic Flow</button>
-        <button class="subbtn" data-practice="revision">Revision Mix</button>
         <button class="subbtn" data-practice="writing">Writing</button>
       </div>
 
@@ -145,53 +142,6 @@
         <div id="structureReason" class="explanation hidden"></div>
       </div>
 
-
-      <div id="practice-fixed" class="practice-panel compact-card hidden">
-        <div class="toolbar wrap">
-          <select id="fixedCategoryFilter"><option value="ALL">All fixed rules</option><option value="prepositions">Prepositions</option><option value="verb_prep">Verb + Preposition</option><option value="articles">Article + Case</option></select>
-          <button id="newFixedBtn">New round</button>
-        </div>
-        <div id="fixedPrompt" class="question"></div>
-        <div id="fixedChoices" class="chips"></div>
-        <input id="fixedInput" type="text" placeholder="Type your answer">
-        <div class="row gap8 wrap"><button id="checkFixedBtn">Check</button><button class="ghost" id="showFixedBtn">Show answer</button></div>
-        <div id="fixedFeedback" class="result"></div>
-        <div id="fixedRule" class="explanation hidden"></div>
-      </div>
-
-      <div id="practice-flow" class="practice-panel compact-card hidden">
-        <div class="toolbar wrap">
-          <select id="flowTopicSelect"></select>
-          <select id="flowSetSelect"></select>
-          <button id="startFlowBtn">Start topic</button>
-        </div>
-        <div id="flowIntro" class="note-block"></div>
-        <div id="flowProgress" class="badge"></div>
-        <div id="flowQuestionWrap" class="hidden">
-          <div id="flowQuestion" class="question"></div>
-          <div id="flowChoices" class="chips"></div>
-          <input id="flowInput" type="text" placeholder="Type your answer">
-          <div class="row gap8 wrap"><button id="checkFlowBtn">Check</button><button class="ghost" id="showFlowBtn">Show answer</button><button class="ghost" id="nextFlowBtn">Next</button></div>
-          <div id="flowFeedback" class="result"></div>
-          <div id="flowRule" class="explanation hidden"></div>
-        </div>
-        <div id="flowSetResult" class="note-block hidden"></div>
-      </div>
-
-      <div id="practice-revision" class="practice-panel compact-card hidden">
-        <div class="toolbar wrap">
-          <button id="selectAllRevisionBtn">All topics</button>
-          <button id="startRevisionBtn">Start revision</button>
-        </div>
-        <div id="revisionTopicBox" class="chips"></div>
-        <div id="revisionMeta" class="badge"></div>
-        <div id="revisionQuestion" class="question"></div>
-        <div id="revisionChoices" class="chips"></div>
-        <input id="revisionInput" type="text" placeholder="Type your answer">
-        <div class="row gap8 wrap"><button id="checkRevisionBtn">Check</button><button class="ghost" id="showRevisionBtn">Show answer</button><button class="ghost" id="nextRevisionBtn">Next</button></div>
-        <div id="revisionFeedback" class="result"></div>
-        <div id="revisionRule" class="explanation hidden"></div>
-      </div>
       <div id="practice-cases" class="practice-panel compact-card hidden">
         <div class="toolbar wrap">
           <select id="caseLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select>
@@ -343,6 +293,6 @@
     </section>
   </main>
 </div>
-<script src="app.js"></script>
+<script type="module" src="src/main.js"></script>
 </body>
 </html>

@@ -65,10 +65,3 @@ button:hover{filter:brightness(1.04)}
 
 .vocabbtn.active,.subbtn.active,.navbtn.active{color:var(--btnText)!important;}
 #grammarWrap{padding-top:12px;}
-
-
-#flowIntro .grammar-table{font-size:14px;}
-#flowQuestionWrap,#revisionQuestion,.question-box{max-width:100%;}
-#revisionTopicBox{margin-bottom:12px;}
-#fixedChoices .chip,#flowChoices .chip,#revisionChoices .chip{cursor:pointer;}
-#flowSetResult{margin-top:12px;}
