@@ -1,0 +1,38 @@
+{
+  "vocab.json": {
+    "raw_type": "list",
+    "count": 268
+  },
+  "verbs.json": {
+    "raw_type": "list",
+    "count": 194
+  },
+  "flashcards.json": {
+    "raw_type": "dict",
+    "count": 200
+  },
+  "passages.json": {
+    "raw_type": "list",
+    "count": 450
+  },
+  "exercises.json": {
+    "raw_type": "dict",
+    "count": 2096
+  },
+  "conjugation.json": {
+    "raw_type": "dict",
+    "count": 526
+  },
+  "notes.json": {
+    "raw_type": "dict",
+    "count": 86
+  },
+  "sentences.json": {
+    "raw_type": "dict",
+    "count": 4
+  },
+  "lid.json": {
+    "raw_type": "list",
+    "count": 183
+  }
+}

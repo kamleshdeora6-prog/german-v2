@@ -902,17 +902,6 @@
     "example_en": "He recovered after two weeks."
   },
   {
-    "verb": "erklären",
-    "translation": "to explain",
-    "level": "A1",
-    "topic": "Communication",
-    "present": "erklärt",
-    "past": "erklärte",
-    "perfect": "hat erklärt",
-    "example_de": "Kannst du mir das bitte erklären?",
-    "example_en": "Can you explain that to me?"
-  },
-  {
     "verb": "beschweren (sich)",
     "translation": "to complain",
     "level": "B1",
@@ -1978,17 +1967,6 @@
     "perfect": "ist genesen",
     "example_de": "Er ist nach zwei Wochen genesen. (Variante)",
     "example_en": "He recovered after two weeks."
-  },
-  {
-    "verb": "erklären_2",
-    "translation": "to explain",
-    "level": "A1",
-    "topic": "Communication",
-    "present": "erklärt",
-    "past": "erklärte",
-    "perfect": "hat erklärt",
-    "example_de": "Kannst du mir das bitte erklären? (Variante)",
-    "example_en": "Can you explain that to me?"
   },
   {
     "verb": "beschweren (sich)_2",

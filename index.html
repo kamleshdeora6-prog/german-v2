@@ -15,22 +15,13 @@
     </div>
     <nav>
       <div class="navgroup">
-        <div class="navtitle">Study</div>
-        <button class="navbtn active" data-section="practice">Practice</button>
-        <button class="navbtn" data-section="vocab">Vocabulary</button>
-        <button class="navbtn" data-section="grammar">Grammar</button>
-      </div>
-      <div class="navgroup">
-        <div class="navtitle">Train</div>
-        <button class="navbtn" data-section="flashcards">Flashcards</button>
-        <button class="navbtn" data-section="weak">Weak Areas</button>
-        <button class="navbtn" data-section="conjugation">Conjugation</button>
-        <button class="navbtn" data-section="exam">Exam Mode</button>
-        <button class="navbtn" data-section="lid">Leben in Deutschland</button>
-      </div>
-      <div class="navgroup">
-        <div class="navtitle">More</div>
-        <button class="navbtn" data-section="app">App</button>
+        <div class="navtitle">Main</div>
+        <button class="navbtn active" data-section="home">Home</button>
+        <button class="navbtn" data-section="learn">Learn</button>
+        <button class="navbtn" data-section="practice">Practice</button>
+        <button class="navbtn" data-section="exam">Exam</button>
+        <button class="navbtn" data-section="progress">Progress</button>
+        <button class="navbtn" data-section="settings">Settings</button>
       </div>
     </nav>
   </aside>
@@ -40,7 +31,7 @@
       <div class="top-left row gap10 wrap">
         <button id="sidebarOpen" class="mobile-only iconbtn">☰</button>
         <span class="mascot small">🦋</span>
-        <strong id="topTitle">Practice</strong>
+        <strong id="topTitle">Home</strong>
         <span class="pill" id="coachPill">Step by step</span>
       </div>
       <div class="top-right row gap10 wrap end">
@@ -225,6 +216,86 @@
         <div id="revisionExplanation" class="explanation hidden"></div>
       </div>
 
+    </section>
+
+
+    <section id="section-home" class="app-section">
+      <div class="premium-hero compact-card">
+        <div>
+          <div class="eyebrow">German Coach Premium</div>
+          <h2 class="m0">Learn German in the right order</h2>
+          <p class="muted">Start with the topic sequence, practise deeply, then revise weak areas before moving on.</p>
+          <div class="row gap8 wrap"><button id="homeContinueBtn">Continue learning</button><button class="ghost" id="homeWeakBtn">Review weak areas</button></div>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-pill"><span>🔥</span><strong id="homeStreak">0</strong><small>streak</small></div>
+          <div class="hero-pill"><span>⭐</span><strong id="homeXP">0</strong><small>xp</small></div>
+          <div class="hero-pill"><span>📘</span><strong id="homeDue">0</strong><small>due</small></div>
+        </div>
+      </div>
+      <div class="grid2 mt16">
+        <div class="compact-card">
+          <h3 class="m0">Learning path</h3>
+          <div id="homeRoadmap" class="roadmap-list mt12"></div>
+        </div>
+        <div class="compact-card">
+          <h3 class="m0">Today</h3>
+          <div id="homeTodayPlan" class="note-block mt12"></div>
+          <h3 class="mt16 mb8">Next best step</h3>
+          <div id="homeNextStep" class="note-block"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-learn" class="app-section hidden">
+      <div class="subtabs compact-row">
+        <button class="learnbtn active" data-learn="sequence">Topic Sequence</button>
+        <button class="learnbtn" data-learn="grammarlib">Grammar Library</button>
+        <button class="learnbtn" data-learn="vocablib">Vocabulary Library</button>
+        <button class="learnbtn" data-learn="verblib">Verb Library</button>
+      </div>
+      <div id="learn-sequence" class="compact-card learn-panel">
+        <div class="toolbar wrap"><input id="learnSearch" placeholder="Search topic or rule"></div>
+        <div id="learnSequenceWrap" class="roadmap-list"></div>
+      </div>
+      <div id="learn-grammarlib" class="compact-card learn-panel hidden">
+        <div class="toolbar wrap"><input id="learnGrammarSearch" placeholder="Search grammar"></div>
+        <div id="learnGrammarWrap"></div>
+      </div>
+      <div id="learn-vocablib" class="compact-card learn-panel hidden">
+        <div class="toolbar wrap"><input id="learnVocabSearch" placeholder="Search word"><label class="checkline"><input type="checkbox" id="learnVocabEnglish" checked> Show English</label></div>
+        <div id="learnVocabWrap" class="list-wrap"></div>
+      </div>
+      <div id="learn-verblib" class="compact-card learn-panel hidden">
+        <div class="toolbar wrap"><input id="learnVerbSearch" placeholder="Search verb"></div>
+        <div id="learnVerbWrap" class="list-wrap"></div>
+      </div>
+    </section>
+
+    <section id="section-progress" class="app-section hidden">
+      <div class="grid2">
+        <div class="compact-card"><h3 class="m0">Statistics</h3><div id="progressStats" class="note-block mt12"></div><div id="progressBadges" class="badge-grid mt12"></div></div>
+        <div class="compact-card"><h3 class="m0">Study heatmap</h3><div id="progressHeatmap" class="heatmap-grid mt12"></div><h3 class="mt16 mb8">Weak areas</h3><div id="progressWeak" class="note-block"></div></div>
+      </div>
+    </section>
+
+    <section id="section-settings" class="app-section hidden">
+      <div class="compact-card">
+        <div class="grid2">
+          <div>
+            <h3>Preferences</h3>
+            <label class="stack">Language<select id="settingsLanguage2"><option value="en">English</option><option value="de">Deutsch</option></select></label>
+            <label class="stack">Theme<select id="settingsTheme2"><option value="theme-focus">Aurora</option><option value="theme-light">Light</option><option value="theme-dark">Dark</option></select></label>
+            <label class="checkline"><input id="countRepeatsToggle2" type="checkbox"> Count repeat attempts in today totals</label>
+            <div class="row gap8 wrap"><button id="resetTodayBtn2" class="ghost">Reset today</button><button id="startOnboardingBtn2" class="ghost">Onboarding</button></div>
+          </div>
+          <div>
+            <h3>Data & backup</h3>
+            <div class="row gap8 wrap"><button id="exportProgressBtn2" class="teal">Export progress</button><label class="ghost filebtn">Import progress<input id="importProgressInput2" type="file" accept="application/json" hidden></label></div>
+            <div id="settingsAbout" class="note-block mt12"></div>
+          </div>
+        </div>
+      </div>
     </section>
 
 <section id="section-vocab" class="app-section hidden">
