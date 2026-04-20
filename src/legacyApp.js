@@ -127,22 +127,619 @@ function translateStatic(){
 }
 
 const FIXED_RULES_BANK=[
-  {topic:'Prepositions', rule:'mit + Dativ', question:'Ich fahre ___ dem Bus.', answer:'mit', explanation:'mit always takes Dativ.'},
-  {topic:'Prepositions', rule:'für + Akkusativ', question:'Das Geschenk ist ___ meinen Bruder.', answer:'für', explanation:'für always takes Akkusativ.'},
-  {topic:'Verb + Preposition', rule:'warten auf + Akkusativ', question:'Ich warte ___ den Zug.', answer:'auf', explanation:'warten takes auf + Akkusativ.'},
-  {topic:'Verb + Preposition', rule:'helfen + Dativ', question:'Ich helfe ___ Frau.', answer:'der', explanation:'helfen takes Dativ.'},
-  {topic:'Cases', rule:'Movement = Akkusativ', question:'Ich gehe in ___ Schule.', answer:'die', explanation:'Wohin? movement → Akkusativ.'},
-  {topic:'Cases', rule:'Location = Dativ', question:'Ich bin in ___ Schule.', answer:'der', explanation:'Wo? location → Dativ.'},
-  {topic:'Connectors', rule:'weil → verb to the end', question:'Ich bleibe zu Hause, weil ich krank ___.', answer:'bin', explanation:'In a subordinate clause the verb goes to the end.'},
-  {topic:'Connectors', rule:'deshalb → verb in position 2', question:'Ich bin müde, deshalb ___ ich früh schlafen.', answer:'gehe', explanation:'deshalb is an adverb, so the verb stays in position 2.'}
+  {
+    "topic": "Prepositions",
+    "rule": "mit + Dativ",
+    "question": "Ich fahre ___ dem Bus zur Arbeit.",
+    "answer": "mit",
+    "explanation": "Die Präposition 'mit' steht immer mit Dativ: mit dem Bus, mit der Bahn, mit dem Auto."
+  },
+  {
+    "topic": "Prepositions",
+    "rule": "nach + Dativ",
+    "question": "Wir fahren morgen ___ Berlin.",
+    "answer": "nach",
+    "explanation": "Für Städte und Länder ohne Artikel benutzt man meistens 'nach': nach Berlin, nach Deutschland."
+  },
+  {
+    "topic": "Prepositions",
+    "rule": "bei + Dativ",
+    "question": "Am Wochenende bin ich ___ meiner Freundin.",
+    "answer": "bei",
+    "explanation": "'bei' steht immer mit Dativ: bei meiner Freundin, beim Arzt, bei der Arbeit."
+  },
+  {
+    "topic": "Prepositions",
+    "rule": "von + Dativ",
+    "question": "Der Brief ist ___ meinem Lehrer.",
+    "answer": "von",
+    "explanation": "'von' verlangt Dativ: von meinem Lehrer, von der Firma, vom Chef."
+  },
+  {
+    "topic": "Prepositions",
+    "rule": "zu + Dativ",
+    "question": "Ich gehe heute ___ meiner Tante.",
+    "answer": "zu",
+    "explanation": "'zu' verlangt Dativ. Mit Artikeln gibt es oft Kurzformen: zum, zur."
+  },
+  {
+    "topic": "Prepositions",
+    "rule": "aus + Dativ",
+    "question": "Er kommt ___ der Schweiz.",
+    "answer": "aus",
+    "explanation": "'aus' benutzt man oft für Herkunft oder Material und es verlangt Dativ."
+  },
+  {
+    "topic": "Prepositions",
+    "rule": "für + Akkusativ",
+    "question": "Das Geschenk ist ___ meinen Bruder.",
+    "answer": "für",
+    "explanation": "'für' verlangt immer Akkusativ: für meinen Bruder, für die Mutter."
+  },
+  {
+    "topic": "Prepositions",
+    "rule": "ohne + Akkusativ",
+    "question": "Ich gehe nicht ___ meinen Regenschirm raus.",
+    "answer": "ohne",
+    "explanation": "'ohne' steht immer mit Akkusativ: ohne meinen Regenschirm."
+  },
+  {
+    "topic": "Prepositions",
+    "rule": "um + Akkusativ",
+    "question": "Wir sitzen ___ den Tisch.",
+    "answer": "um",
+    "explanation": "'um' steht mit Akkusativ: um den Tisch, um die Ecke."
+  },
+  {
+    "topic": "Prepositions",
+    "rule": "durch + Akkusativ",
+    "question": "Wir gehen ___ den Park.",
+    "answer": "durch",
+    "explanation": "'durch' verlangt Akkusativ: durch den Park, durch die Stadt."
+  },
+  {
+    "topic": "Prepositions",
+    "rule": "gegen + Akkusativ",
+    "question": "Das Auto ist ___ einen Baum gefahren.",
+    "answer": "gegen",
+    "explanation": "'gegen' steht mit Akkusativ: gegen einen Baum, gegen die Wand."
+  },
+  {
+    "topic": "Verb + Preposition",
+    "rule": "warten auf + Akk",
+    "question": "Ich warte ___ den Zug.",
+    "answer": "auf",
+    "explanation": "'warten' verbindet sich mit 'auf' + Akkusativ: auf den Zug, auf den Bus."
+  },
+  {
+    "topic": "Verb + Preposition",
+    "rule": "denken an + Akk",
+    "question": "Ich denke oft ___ meine Familie.",
+    "answer": "an",
+    "explanation": "'denken' braucht hier 'an' + Akkusativ: an meine Familie, an den Termin."
+  },
+  {
+    "topic": "Verb + Preposition",
+    "rule": "sprechen mit + Dat",
+    "question": "Morgen spreche ich ___ dem Chef.",
+    "answer": "mit",
+    "explanation": "'sprechen mit' verlangt Dativ: mit dem Chef, mit der Kollegin."
+  },
+  {
+    "topic": "Verb + Preposition",
+    "rule": "sprechen über + Akk",
+    "question": "Wir sprechen ___ das Problem.",
+    "answer": "über",
+    "explanation": "'sprechen über' verlangt Akkusativ: über das Problem, über den Plan."
+  },
+  {
+    "topic": "Verb + Preposition",
+    "rule": "sich interessieren für + Akk",
+    "question": "Sie interessiert sich ___ deutsche Geschichte.",
+    "answer": "für",
+    "explanation": "'sich interessieren für' verlangt Akkusativ."
+  },
+  {
+    "topic": "Verb + Preposition",
+    "rule": "sich freuen auf + Akk",
+    "question": "Ich freue mich ___ den Urlaub.",
+    "answer": "auf",
+    "explanation": "'sich freuen auf' benutzt man für etwas in der Zukunft."
+  },
+  {
+    "topic": "Verb + Preposition",
+    "rule": "sich freuen über + Akk",
+    "question": "Er freut sich ___ das Geschenk.",
+    "answer": "über",
+    "explanation": "'sich freuen über' benutzt man für etwas, das schon da ist."
+  },
+  {
+    "topic": "Verb + Case",
+    "rule": "helfen + Dativ",
+    "question": "Ich helfe ___ Frau mit den Taschen.",
+    "answer": "der",
+    "explanation": "'helfen' verlangt Dativ: der Frau, dem Mann, den Kindern."
+  },
+  {
+    "topic": "Verb + Case",
+    "rule": "danken + Dativ",
+    "question": "Wir danken ___ Lehrer für die Hilfe.",
+    "answer": "dem",
+    "explanation": "'danken' verlangt Dativ: dem Lehrer, der Lehrerin."
+  },
+  {
+    "topic": "Verb + Case",
+    "rule": "gefallen + Dativ",
+    "question": "Der Film gefällt ___ Kindern.",
+    "answer": "den",
+    "explanation": "'gefallen' steht mit Dativ: den Kindern, der Mutter."
+  },
+  {
+    "topic": "Verb + Case",
+    "rule": "sehen + Akkusativ",
+    "question": "Ich sehe ___ Mann an der Haltestelle.",
+    "answer": "den",
+    "explanation": "'sehen' verlangt ein direktes Objekt im Akkusativ."
+  },
+  {
+    "topic": "Verb + Case",
+    "rule": "brauchen + Akkusativ",
+    "question": "Wir brauchen ___ neuen Computer.",
+    "answer": "einen",
+    "explanation": "'brauchen' verlangt Akkusativ: einen Computer, eine Wohnung."
+  },
+  {
+    "topic": "Cases",
+    "rule": "Wohin? = Akkusativ",
+    "question": "Ich gehe in ___ Küche.",
+    "answer": "die",
+    "explanation": "Bei Bewegung/Wohin? mit Wechselpräpositionen benutzt man Akkusativ: in die Küche."
+  },
+  {
+    "topic": "Cases",
+    "rule": "Wo? = Dativ",
+    "question": "Ich bin in ___ Küche.",
+    "answer": "der",
+    "explanation": "Bei Ort/Wo? mit Wechselpräpositionen benutzt man Dativ: in der Küche."
+  },
+  {
+    "topic": "Cases",
+    "rule": "auf + Akk bei Bewegung",
+    "question": "Sie legt das Buch auf ___ Tisch.",
+    "answer": "den",
+    "explanation": "Legen = Bewegung. Deshalb: auf den Tisch."
+  },
+  {
+    "topic": "Cases",
+    "rule": "auf + Dat bei Ort",
+    "question": "Das Buch liegt auf ___ Tisch.",
+    "answer": "dem",
+    "explanation": "Liegen = Ort. Deshalb: auf dem Tisch."
+  },
+  {
+    "topic": "Cases",
+    "rule": "an + Akk bei Bewegung",
+    "question": "Wir hängen das Bild an ___ Wand.",
+    "answer": "die",
+    "explanation": "Hängen (aktiv) = Bewegung → Akkusativ: an die Wand."
+  },
+  {
+    "topic": "Cases",
+    "rule": "an + Dat bei Ort",
+    "question": "Das Bild hängt an ___ Wand.",
+    "answer": "der",
+    "explanation": "Ort → Dativ: an der Wand."
+  },
+  {
+    "topic": "Articles",
+    "rule": "maskulin Akkusativ",
+    "question": "Ich habe ___ neuen Termin.",
+    "answer": "einen",
+    "explanation": "Maskulin nach 'haben' = Akkusativ: einen neuen Termin."
+  },
+  {
+    "topic": "Articles",
+    "rule": "maskulin Dativ",
+    "question": "Ich spreche mit ___ netten Nachbarn.",
+    "answer": "dem",
+    "explanation": "'mit' + Dativ; maskulin Dativ = dem netten Nachbarn."
+  },
+  {
+    "topic": "Articles",
+    "rule": "feminin Dativ",
+    "question": "Ich fahre mit ___ Kollegin zur Arbeit.",
+    "answer": "der",
+    "explanation": "'mit' verlangt Dativ; feminin Dativ = der Kollegin."
+  },
+  {
+    "topic": "Articles",
+    "rule": "neutrum Nominativ",
+    "question": "___ Kind spielt im Garten.",
+    "answer": "Das",
+    "explanation": "Subjekt im Nominativ, Neutrum = das Kind."
+  },
+  {
+    "topic": "Connectors",
+    "rule": "weil → Verb am Ende",
+    "question": "Ich bleibe zu Hause, weil ich krank ___.",
+    "answer": "bin",
+    "explanation": "Nach 'weil' steht das konjugierte Verb am Ende: weil ich krank bin."
+  },
+  {
+    "topic": "Connectors",
+    "rule": "obwohl → Verb am Ende",
+    "question": "Obwohl es regnet, ___ wir spazieren.",
+    "answer": "gehen",
+    "explanation": "Im Nebensatz mit obwohl steht das Verb am Ende; im Hauptsatz bleibt Verbposition 2."
+  },
+  {
+    "topic": "Connectors",
+    "rule": "deshalb → Verb Position 2",
+    "question": "Ich bin müde, deshalb ___ ich früh ins Bett.",
+    "answer": "gehe",
+    "explanation": "'deshalb' ist kein Nebensatz-Einleiter; das Verb bleibt in Position 2."
+  },
+  {
+    "topic": "Connectors",
+    "rule": "damit = anderer Subjektbezug",
+    "question": "Ich erkläre alles noch einmal, damit ihr es besser ___.",
+    "answer": "versteht",
+    "explanation": "Bei 'damit' folgt ein Nebensatz mit eigenem Subjekt."
+  },
+  {
+    "topic": "Sentence Order",
+    "rule": "Verb Position 2",
+    "question": "Heute ___ ich keine Zeit.",
+    "answer": "habe",
+    "explanation": "Wenn ein Zeitwort zuerst steht, bleibt das Verb auf Position 2."
+  },
+  {
+    "topic": "Separable Verbs",
+    "rule": "trennbar im Hauptsatz",
+    "question": "Ich ___ morgen früh um sechs Uhr ___.",
+    "answer": "stehe / auf",
+    "explanation": "Trennbare Verben teilen sich im Hauptsatz: Ich stehe ... auf."
+  },
+  {
+    "topic": "Perfect",
+    "rule": "sein + Bewegung",
+    "question": "Gestern ___ wir sehr spät angekommen.",
+    "answer": "sind",
+    "explanation": "Ankommen bildet das Perfekt mit 'sein': wir sind angekommen."
+  },
+  {
+    "topic": "Reflexive",
+    "rule": "sich beeilen",
+    "question": "Wir müssen ___ beeilen.",
+    "answer": "uns",
+    "explanation": "Reflexivpronomen im Präsens: ich mich, du dich, wir uns."
+  }
 ];
 const TOPIC_FLOW_BANK=[
-  {topic:'Articles', intro:'Articles: der / die / das. In Akkusativ, der becomes den.', question:'Ich sehe ___ Mann.', answer:'den', options:['der','den','dem'], explanation:'sehen takes Akkusativ.'},
-  {topic:'Cases', intro:'Nominativ = subject, Akkusativ = direct object, Dativ = indirect object.', question:'Ich gebe ___ Kind ein Buch.', answer:'dem', options:['das','den','dem'], explanation:'geben + Dativ + Akkusativ.'},
-  {topic:'Prepositions', intro:'Wechselpräpositionen: movement → Akkusativ, location → Dativ.', question:'Wir gehen auf ___ Markt.', answer:'den', options:['dem','den','der'], explanation:'Movement → Akkusativ.'},
-  {topic:'Reflexive verbs', intro:'Reflexive verbs use a reflexive pronoun: ich mich, du dich, er sich.', question:'Ich interessiere ___ für Deutsch.', answer:'mich', options:['mich','mir','dich'], explanation:'sich interessieren für → Akkusativ reflexive pronoun.'},
-  {topic:'Word order', intro:'Main clause: verb in position 2. Time first → verb still in position 2.', question:'Heute ___ ich im Büro.', answer:'arbeite', options:['arbeite','ich arbeite','arbeiten'], explanation:'Verb must be in position 2.'},
-  {topic:'Perfekt', intro:'Perfekt = haben/sein + Partizip II.', question:'Ich ___ gestern nach Berlin gefahren.', answer:'bin', options:['habe','bin','werde'], explanation:'fahren with movement usually takes sein.'}
+  {
+    "topic": "Articles",
+    "intro": "Artikel zeigen Genus und oft auch den Fall. Nominativ: der / die / das. Im Akkusativ ändert sich nur maskulin: der → den. Nach ein-Wörtern ändern sich Formen wie ein / einen / einem.",
+    "question": "Ich sehe ___ Mann im Café.",
+    "answer": "den",
+    "options": [
+      "der",
+      "den",
+      "dem"
+    ],
+    "explanation": "Das Verb 'sehen' verlangt ein direktes Objekt im Akkusativ. Maskulin Akkusativ = den."
+  },
+  {
+    "topic": "Articles",
+    "intro": "Bestimmte und unbestimmte Artikel ändern sich nach Kasus. Besonders wichtig ist maskulin: der → den → dem.",
+    "question": "Wir sprechen mit ___ neuen Lehrer.",
+    "answer": "dem",
+    "options": [
+      "den",
+      "dem",
+      "der"
+    ],
+    "explanation": "'mit' verlangt Dativ. Maskulin Dativ = dem neuen Lehrer."
+  },
+  {
+    "topic": "Cases",
+    "intro": "Nominativ = Subjekt. Akkusativ = direktes Objekt. Dativ = indirektes Objekt oder Objekt nach bestimmten Verben/Präpositionen. Fragewörter: Wer? Wen/Was? Wem?",
+    "question": "Ich gebe ___ Kind einen Ball.",
+    "answer": "dem",
+    "options": [
+      "das",
+      "den",
+      "dem"
+    ],
+    "explanation": "Bei 'geben' bekommt jemand etwas: dem Kind (Dativ) einen Ball (Akkusativ)."
+  },
+  {
+    "topic": "Cases",
+    "intro": "Bei Wechselpräpositionen musst du zwischen Bewegung (Wohin? → Akkusativ) und Ort (Wo? → Dativ) unterscheiden.",
+    "question": "Wir gehen auf ___ Markt.",
+    "answer": "den",
+    "options": [
+      "dem",
+      "den",
+      "der"
+    ],
+    "explanation": "Gehen zeigt Bewegung/Wohin? → Akkusativ: auf den Markt."
+  },
+  {
+    "topic": "Prepositions",
+    "intro": "Einige Präpositionen haben immer den gleichen Fall: mit, nach, bei, von, zu = Dativ; für, ohne, um, durch, gegen = Akkusativ.",
+    "question": "Das Geschenk ist ___ meine Mutter.",
+    "answer": "für",
+    "options": [
+      "mit",
+      "für",
+      "bei"
+    ],
+    "explanation": "'für' steht immer mit Akkusativ: für meine Mutter."
+  },
+  {
+    "topic": "Prepositions",
+    "intro": "Wechselpräpositionen können mit Akkusativ oder Dativ stehen. Entscheidend ist die Bedeutung: Bewegung oder Ort.",
+    "question": "Das Bild hängt an ___ Wand.",
+    "answer": "der",
+    "options": [
+      "die",
+      "der",
+      "dem"
+    ],
+    "explanation": "Hängt = Ort/Wo? → Dativ: an der Wand."
+  },
+  {
+    "topic": "Reflexive verbs",
+    "intro": "Reflexive Verben brauchen ein Reflexivpronomen: ich mich, du dich, er/sie sich, wir uns, ihr euch. Manche Verben sind immer reflexiv, andere nicht.",
+    "question": "Ich interessiere ___ für Deutsch und Geschichte.",
+    "answer": "mich",
+    "options": [
+      "mich",
+      "mir",
+      "dich"
+    ],
+    "explanation": "'sich interessieren für' benutzt ein Akkusativ-Reflexivpronomen: ich interessiere mich."
+  },
+  {
+    "topic": "Reflexive verbs",
+    "intro": "Im Perfekt stehen Reflexivpronomen wie gewohnt vor den Ergänzungen, das Partizip steht am Satzende.",
+    "question": "Wir haben ___ gestern sehr gefreut.",
+    "answer": "uns",
+    "options": [
+      "uns",
+      "euch",
+      "sich"
+    ],
+    "explanation": "Subjekt 'wir' → Reflexivpronomen 'uns': Wir haben uns gestern sehr gefreut."
+  },
+  {
+    "topic": "Verb + Preposition",
+    "intro": "Viele deutsche Verben verbinden sich fest mit bestimmten Präpositionen und Fällen: warten auf + Akk, sprechen mit + Dat, denken an + Akk.",
+    "question": "Er spricht morgen ___ seiner Chefin.",
+    "answer": "mit",
+    "options": [
+      "mit",
+      "an",
+      "auf"
+    ],
+    "explanation": "'sprechen mit' verlangt Dativ: mit seiner Chefin."
+  },
+  {
+    "topic": "Verb + Preposition",
+    "intro": "Lerne Verb + Präposition immer zusammen. Nur so wird der richtige Fall automatisch.",
+    "question": "Ich denke oft ___ unseren Urlaub.",
+    "answer": "an",
+    "options": [
+      "an",
+      "auf",
+      "mit"
+    ],
+    "explanation": "'denken an' verlangt Akkusativ: an unseren Urlaub."
+  },
+  {
+    "topic": "Word order",
+    "intro": "Im Hauptsatz steht das konjugierte Verb immer auf Position 2. Wenn ein anderes Element zuerst kommt, steht das Subjekt oft direkt danach.",
+    "question": "Morgen ___ ich im Homeoffice.",
+    "answer": "arbeite",
+    "options": [
+      "arbeite",
+      "ich arbeite",
+      "arbeiten"
+    ],
+    "explanation": "Zeitangabe zuerst, aber Verb bleibt auf Position 2: Morgen arbeite ich ..."
+  },
+  {
+    "topic": "Word order",
+    "intro": "Im Nebensatz mit weil, dass, wenn, obwohl steht das konjugierte Verb am Ende.",
+    "question": "Ich bleibe zu Hause, weil ich starke Kopfschmerzen ___.",
+    "answer": "habe",
+    "options": [
+      "habe",
+      "hatte",
+      "bin"
+    ],
+    "explanation": "Nach 'weil' steht das Verb am Ende: weil ich starke Kopfschmerzen habe."
+  },
+  {
+    "topic": "Perfekt",
+    "intro": "Das Perfekt bildet man mit haben oder sein + Partizip II. Bewegung und Zustandsänderung nehmen oft sein.",
+    "question": "Gestern ___ ich lange im Büro gearbeitet.",
+    "answer": "habe",
+    "options": [
+      "habe",
+      "bin",
+      "werde"
+    ],
+    "explanation": "'arbeiten' bildet das Perfekt mit 'haben': ich habe gearbeitet."
+  },
+  {
+    "topic": "Perfekt",
+    "intro": "Bei trennbaren Verben steht die Vorsilbe im Partizip vor 'ge': ankommen → angekommen, aufstehen → aufgestanden.",
+    "question": "Wann ___ ihr zu Hause angekommen?",
+    "answer": "seid",
+    "options": [
+      "habt",
+      "seid",
+      "werdet"
+    ],
+    "explanation": "'ankommen' bildet Perfekt mit 'sein': ihr seid angekommen."
+  },
+  {
+    "topic": "Imperativ",
+    "intro": "Imperativformen: du-Form meist ohne Pronomen, ihr-Form = Präsens ohne ihr, Sie-Form = Infinitiv + Sie.",
+    "question": "___ bitte leise! (du, sein)",
+    "answer": "Sei",
+    "options": [
+      "Sei",
+      "Bist",
+      "Seid"
+    ],
+    "explanation": "Der Imperativ von 'sein' in der du-Form lautet 'Sei!'."
+  },
+  {
+    "topic": "Imperativ",
+    "intro": "Bei trennbaren Verben bleibt die Vorsilbe auch im Imperativ getrennt: Ruf an! Komm mit!",
+    "question": "___ mich morgen an! (du, anrufen)",
+    "answer": "Ruf",
+    "options": [
+      "Ruf",
+      "Rufe",
+      "Anruf"
+    ],
+    "explanation": "Du-Imperativ von anrufen: Ruf ... an!"
+  },
+  {
+    "topic": "um...zu / damit",
+    "intro": "'um ... zu' benutzt man bei gleichem Subjekt. 'damit' benutzt man bei unterschiedlichem Subjekt oder wenn man einen ganzen Nebensatz braucht.",
+    "question": "Ich lerne viel, ___ ich die Prüfung bestehe.",
+    "answer": "damit",
+    "options": [
+      "damit",
+      "um",
+      "obwohl"
+    ],
+    "explanation": "Mit eigenem Subjekt 'ich' im Nebensatz benutzt man 'damit'."
+  },
+  {
+    "topic": "um...zu / damit",
+    "intro": "Bei gleichem Subjekt ist 'um ... zu' meist kürzer und natürlicher.",
+    "question": "Er spart Geld, ___ ein Auto zu kaufen.",
+    "answer": "um",
+    "options": [
+      "um",
+      "damit",
+      "weil"
+    ],
+    "explanation": "Gleiches Subjekt → um ... zu."
+  },
+  {
+    "topic": "werden",
+    "intro": "'werden' kann heißen: 1. werden = become, 2. Futur, 3. Passiv. Die Bedeutung hängt vom Zusammenhang ab.",
+    "question": "Nächstes Jahr ___ ich B1 machen.",
+    "answer": "werde",
+    "options": [
+      "werde",
+      "bin",
+      "habe"
+    ],
+    "explanation": "Hier zeigt 'werden' Futur: Ich werde B1 machen."
+  },
+  {
+    "topic": "werden",
+    "intro": "Im Passiv steht 'werden' + Partizip II: Das Auto wird repariert.",
+    "question": "Die Tür ___ morgen repariert.",
+    "answer": "wird",
+    "options": [
+      "wird",
+      "ist",
+      "hat"
+    ],
+    "explanation": "Passiv Präsens: Die Tür wird repariert."
+  },
+  {
+    "topic": "Modal verbs",
+    "intro": "Modalverben verändern die Bedeutung des Vollverbs: können, müssen, wollen, sollen, dürfen, mögen/möchten. Das Vollverb steht am Satzende im Infinitiv.",
+    "question": "Ich ___ heute lange arbeiten.",
+    "answer": "muss",
+    "options": [
+      "muss",
+      "arbeite",
+      "bin"
+    ],
+    "explanation": "Mit Modalverb steht das Vollverb am Ende: Ich muss heute lange arbeiten."
+  },
+  {
+    "topic": "Modal verbs",
+    "intro": "Im Präteritum sind Modalverben im Alltag sehr häufig: ich konnte, musste, wollte, durfte ...",
+    "question": "Früher ___ ich nicht so gut Deutsch sprechen.",
+    "answer": "konnte",
+    "options": [
+      "konnte",
+      "kann",
+      "gekonnt"
+    ],
+    "explanation": "Präteritum von können: ich konnte."
+  },
+  {
+    "topic": "Nebensätze",
+    "intro": "Häufige Nebensatz-Einleiter sind weil, dass, wenn, obwohl, nachdem. Das Verb steht am Ende des Nebensatzes.",
+    "question": "Obwohl er müde war, ___ er noch gelernt.",
+    "answer": "hat",
+    "options": [
+      "hat",
+      "war",
+      "ist"
+    ],
+    "explanation": "Im Hauptsatz bleibt das Verb auf Position 2: Obwohl ..., hat er ..."
+  },
+  {
+    "topic": "Nebensätze",
+    "intro": "Bei zwei Verben im Perfekt im Nebensatz steht das konjugierte Verb oft ganz am Ende: ..., weil er spät gekommen ist.",
+    "question": "Ich weiß, dass sie gestern sehr spät nach Hause gekommen ___.",
+    "answer": "ist",
+    "options": [
+      "ist",
+      "hat",
+      "war"
+    ],
+    "explanation": "Perfekt im Nebensatz: ... gekommen ist."
+  },
+  {
+    "topic": "Trennbare Verben",
+    "intro": "Trennbare Verben teilen sich im Hauptsatz, aber im Infinitiv und Partizip bleiben sie zusammen: aufstehen, aufzustehen, aufgestanden.",
+    "question": "Wann ___ du morgens ___?",
+    "answer": "stehst / auf",
+    "options": [
+      "stehst / auf",
+      "aufstehst /",
+      "bist / aufgestanden"
+    ],
+    "explanation": "Hauptsatz Präsens: Du stehst ... auf."
+  },
+  {
+    "topic": "Question forms",
+    "intro": "Ja/Nein-Fragen haben das Verb zuerst. W-Fragen beginnen mit einem Fragewort, danach kommt das Verb.",
+    "question": "___ kommst du heute nach Hause?",
+    "answer": "Wann",
+    "options": [
+      "Wann",
+      "Wenn",
+      "Als"
+    ],
+    "explanation": "Hier braucht man ein Fragewort: Wann kommst du ...?"
+  },
+  {
+    "topic": "Question forms",
+    "intro": "Antworten sollten als ganzer Satz geübt werden, nicht nur mit einem Wort.",
+    "question": "Forme eine Frage: 'Ich arbeite seit drei Jahren hier.' → '___ arbeitest du schon hier?'",
+    "answer": "Wie lange",
+    "options": [
+      "Wie lange",
+      "Wann",
+      "Warum"
+    ],
+    "explanation": "Für Dauer fragt man: Wie lange?"
+  }
 ];
 function fillGroupedPracticeSelectors(){
   if($('#fixedTopicSelect')) $('#fixedTopicSelect').innerHTML=uniqueBy(FIXED_RULES_BANK,x=>x.topic).map(x=>`<option>${x.topic}</option>`).join('');
@@ -160,7 +757,7 @@ function newTopicFlow(){ const topic=$('#topicFlowSelect')?.value || 'Articles';
 function checkTopicFlow(){ const q=state.currentTopicFlow; if(!q) return; const ok=compareAnswerLoose($('#topicFlowInput').value,q.answer); $('#topicFlowFeedback').textContent=ok? 'Correct':'Try again'; $('#topicFlowExplanation').classList.remove('hidden'); $('#topicFlowExplanation').textContent=q.explanation; }
 function showTopicFlow(){ const q=state.currentTopicFlow; if(!q) return; $('#topicFlowFeedback').textContent='Answer: '+q.answer; $('#topicFlowExplanation').classList.remove('hidden'); $('#topicFlowExplanation').textContent=q.explanation; }
 function renderRevisionPanel(){
-  const host=$('#revisionTopicGrid'); if(!host) return; const topics=uniqueBy(state.data.exercises.filter(x=>x.topic),x=>x.topic).map(x=>x.topic).slice(0,18);
+  const host=$('#revisionTopicGrid'); if(!host) return; const topics=uniqueBy([...(state.data.exercises.filter(x=>x.topic).map(x=>({topic:x.topic}))), ...(TOPIC_FLOW_BANK.map(x=>({topic:x.topic}))), ...(FIXED_RULES_BANK.map(x=>({topic:x.topic})))],x=>x.topic).map(x=>x.topic).slice(0,30);
   host.innerHTML=topics.map(t=>`<button type="button" class="chip-toggle" data-rtopic="${t}">${t}</button>`).join('');
   $$('#revisionTopicGrid .chip-toggle').forEach(b=>b.onclick=()=>b.classList.toggle('active'));
 }
