@@ -289,7 +289,7 @@
         <button class="exambtn" data-emode="qa">Q ↔ A</button>
       </div>
       <div id="exam-cefr" class="exam-panel compact-card">
-        <div class="toolbar wrap"><select id="examLevel"><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option value="freestyle">Freestyle</option></select><button id="startExamBtn">Start exam</button><button class="ghost" id="finishExamBtn">Finish</button></div>
+        <div class="toolbar wrap"><select id="examLevel"><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option value="freestyle">Freestyle</option></select><button id="startExamBtn">Start exam</button><button id="quickExamBtn" class="teal">Quick sim</button><button class="ghost" id="finishExamBtn">Finish</button></div>
         <div id="examIntro" class="note-block">60-point exam without speaking. The score also gives an estimated level.</div>
         <div id="examWrap"></div>
         <div id="examResult" class="result"></div>
@@ -342,7 +342,10 @@
             <label class="stack">Language<select id="settingsLanguage"><option value="en">English</option><option value="de">Deutsch</option></select></label>
             <label class="stack">Theme<select id="settingsTheme"><option value="theme-focus">Focus</option><option value="theme-light">Light</option><option value="theme-dark">Dark</option></select></label>
             <label class="checkline"><input id="countRepeatsToggle" type="checkbox"> Count repeat attempts in today totals</label>
-            <button id="resetTodayBtn" class="ghost">Reset today</button>
+            <div class="row gap8 wrap"><button id="resetTodayBtn" class="ghost">Reset today</button><button id="startOnboardingBtn" class="ghost">Onboarding</button></div>
+            <h3 class="mt16">Progress Tools</h3>
+            <div class="row gap8 wrap"><button id="exportProgressBtn" class="teal">Export progress</button><label class="ghost filebtn">Import progress<input id="importProgressInput" type="file" accept="application/json" hidden></label></div>
+            <div id="coachRoadmap" class="note-block mt12"></div>
           </div>
           <div>
             <h3>About</h3>
@@ -350,6 +353,30 @@
             <div id="appCounts" class="note-block"></div><div id="dataHealthText" class="note-block"></div>
             <div id="weakAreaText" class="note-block"></div>
           </div>
+        </div>
+        <div class="grid2 mt16">
+          <div>
+            <h3>Statistics Center</h3>
+            <div id="statsCenter" class="note-block"></div>
+            <h3 class="mt16">Achievements</h3>
+            <div id="badgesWrap" class="badge-grid"></div>
+          </div>
+          <div>
+            <h3>Study Heatmap</h3>
+            <div id="heatmapWrap" class="heatmap-grid"></div>
+            <h3 class="mt16">Smart Coach</h3>
+            <div id="smartCoachWrap" class="note-block"></div>
+          </div>
+        </div>
+      </div>
+      <div id="onboardingModal" class="modal hidden">
+        <div class="modal-card compact-card">
+          <div class="row gap8 between"><h3 class="m0">Welcome</h3><button id="closeOnboardingBtn" class="ghost">✕</button></div>
+          <div class="note-block">Set your focus so the app can guide your roadmap better.</div>
+          <label class="stack">Goal<select id="onboardingGoal"><option value="b1_exam">Pass B1 exam</option><option value="work_german">Work German</option><option value="daily_life">Daily life in Germany</option><option value="general_fluency">General fluency</option></select></label>
+          <label class="stack">Current confidence<select id="onboardingLevel"><option value="A2">A2</option><option value="B1">B1</option><option value="B2">B2</option></select></label>
+          <label class="stack">Focus topic<select id="onboardingFocus"><option value="prepositions">Prepositions</option><option value="cases">Cases</option><option value="reflexive_verbs">Reflexive verbs</option><option value="word_order">Word order</option><option value="connectors">Connectors</option></select></label>
+          <div class="row gap8 wrap end"><button id="saveOnboardingBtn">Save setup</button></div>
         </div>
       </div>
     </section>
