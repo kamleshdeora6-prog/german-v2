@@ -65,3 +65,6 @@ button:hover{filter:brightness(1.04)}
 
 .vocabbtn.active,.subbtn.active,.navbtn.active{color:var(--btnText)!important;}
 #grammarWrap{padding-top:12px;}
+
+
+.practice-group.hidden{display:none}.inner-subtabs{margin-bottom:10px}.pgroupbtn,.psubbtn{display:inline-block}.practice-group-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px}.chips.spaced{gap:10px}.chip-toggle{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:8px 12px;cursor:pointer}.chip-toggle.active{background:var(--accent);color:white;border-color:transparent}.subbtn.active,.psubbtn.active,.pgroupbtn.active{background:var(--panel);border-color:var(--line);color:var(--text)}

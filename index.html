@@ -74,17 +74,23 @@
       </div>
     </section>
 
+    
     <section id="section-practice" class="app-section">
       <div class="subtabs compact-row">
-        <button class="subbtn active" data-practice="exercises">Exercises</button>
-        <button class="subbtn" data-practice="typing">Typing</button>
-        <button class="subbtn" data-practice="listening">Listening Q&amp;A</button>
-        <button class="subbtn" data-practice="structure">Sentence Structure</button>
-        <button class="subbtn" data-practice="cases">Cases</button>
-        <button class="subbtn" data-practice="writing">Writing</button>
+        <button class="pgroupbtn active" data-pgroup="grammar">Grammar Practice</button>
+        <button class="pgroupbtn" data-pgroup="production">Production Practice</button>
+        <button class="pgroupbtn" data-pgroup="listening">Listening Practice</button>
+        <button class="pgroupbtn" data-pgroup="revision">Revision Mix</button>
       </div>
 
-      <div id="practice-exercises" class="practice-panel compact-card">
+      <div id="practice-grammar-group" class="practice-group">
+        <div class="subtabs compact-row inner-subtabs">
+          <button class="psubbtn active" data-practice="exercises">Exercises</button>
+          <button class="psubbtn" data-practice="cases">Cases</button>
+          <button class="psubbtn" data-practice="fixed">Fixed Rules</button>
+          <button class="psubbtn" data-practice="topicflow">Topic Lessons</button>
+        </div>
+        <div id="practice-exercises" class="practice-subpanel compact-card">
         <div class="toolbar wrap">
           <select id="exerciseLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select>
           <select id="exerciseTypeFilter"></select>
@@ -100,8 +106,56 @@
           <div id="exerciseExplanation" class="explanation hidden"></div>
         </div>
       </div>
+        <div id="practice-cases" class="practice-subpanel compact-card hidden">
+        <div class="toolbar wrap">
+          <select id="caseLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select>
+          <button id="newCaseBtn">New round</button>
+        </div>
+        <div id="casePrompt" class="question"></div>
+        <div id="caseChoices" class="chips"></div>
+        <div class="row gap8 wrap"><button id="showCaseBtn" class="ghost">Show answer</button></div>
+        <div id="caseFeedback" class="result"></div>
+        <div id="caseReason" class="explanation hidden"></div>
+      </div>
+        
+      <div id="practice-fixed" class="practice-subpanel compact-card hidden">
+        <div class="toolbar wrap">
+          <select id="fixedTopicSelect"></select>
+          <button id="newFixedBtn">New round</button>
+        </div>
+        <div id="fixedRuleCard" class="note-block"></div>
+        <div id="fixedQuestion" class="question"></div>
+        <div id="fixedChoices" class="chips"></div>
+        <input id="fixedInput" type="text" placeholder="Type your answer">
+        <div class="row gap8 wrap"><button id="checkFixedBtn">Check</button><button class="ghost" id="showFixedBtn">Show answer</button></div>
+        <div id="fixedFeedback" class="result"></div>
+        <div id="fixedExplanation" class="explanation hidden"></div>
+      </div>
 
-      <div id="practice-typing" class="practice-panel compact-card hidden">
+        
+      <div id="practice-topicflow" class="practice-subpanel compact-card hidden">
+        <div class="toolbar wrap">
+          <select id="topicFlowSelect"></select>
+          <button id="newTopicFlowBtn">New round</button>
+        </div>
+        <div id="topicFlowIntro" class="note-block"></div>
+        <div id="topicFlowQuestion" class="question"></div>
+        <div id="topicFlowChoices" class="chips"></div>
+        <textarea id="topicFlowInput" placeholder="Type your answer"></textarea>
+        <div class="row gap8 wrap"><button id="checkTopicFlowBtn">Check</button><button class="ghost" id="showTopicFlowBtn">Show answer</button></div>
+        <div id="topicFlowFeedback" class="result"></div>
+        <div id="topicFlowExplanation" class="explanation hidden"></div>
+      </div>
+
+      </div>
+
+      <div id="practice-production-group" class="practice-group hidden">
+        <div class="subtabs compact-row inner-subtabs">
+          <button class="psubbtn active" data-practice="typing">Typing</button>
+          <button class="psubbtn" data-practice="structure">Sentence Builder</button>
+          <button class="psubbtn" data-practice="writing">Writing</button>
+        </div>
+        <div id="practice-typing" class="practice-subpanel compact-card hidden">
         <div class="toolbar wrap">
           <select id="typingLevelFilter"><option value="ALL">All levels</option><option>A2</option><option>B1</option><option>B2</option></select>
           <select id="typingSelect"></select>
@@ -114,8 +168,31 @@
           <div><div class="smallhead">Type here</div><textarea id="typingInput"></textarea><div class="row gap8 wrap"><button id="checkTypingBtn">Check</button><button class="ghost" id="clearTypingBtn">Clear</button></div><div id="typingFeedback" class="result"></div></div>
         </div>
       </div>
+        <div id="practice-structure" class="practice-subpanel compact-card hidden">
+        <div class="toolbar wrap">
+          <select id="structureLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select>
+          <button id="newStructureBtn">New round</button>
+        </div>
+        <div id="structurePrompt" class="question"></div>
+        <div id="structureWords" class="chips"></div>
+        <textarea id="structureAnswer" placeholder="Build the correct sentence"></textarea>
+        <div class="row gap8 wrap"><button id="checkStructureBtn">Check</button><button class="ghost" id="showStructureBtn">Show answer</button></div>
+        <div id="structureFeedback" class="result"></div>
+        <div id="structureReason" class="explanation hidden"></div>
+      </div>
+        <div id="practice-writing" class="practice-subpanel compact-card hidden">
+        <div class="toolbar wrap"><select id="writingTaskSelect"></select><button id="newWritingBtn">New round</button><label class="checkline"><input type="checkbox" id="writingShowEnglish"> Show English</label></div>
+        <div id="writingPrompt" class="note-block"></div>
+        <div id="writingPhotoWrap" class="hidden media-wrap"><img id="writingPhoto" alt="Prompt image"></div>
+        <textarea id="writingInput" placeholder="Write here"></textarea>
+        <div class="row gap8 wrap"><button id="checkWritingBtn">Check</button><button class="ghost" id="showWritingSampleBtn">Show sample</button></div>
+        <div id="writingFeedback" class="result"></div>
+        <div id="writingSample" class="explanation hidden"></div>
+      </div>
+      </div>
 
-      <div id="practice-listening" class="practice-panel compact-card hidden">
+      <div id="practice-listening-group" class="practice-group hidden">
+        <div id="practice-listening" class="practice-subpanel compact-card hidden">
         <div class="toolbar wrap">
           <select id="listenLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select>
           <button id="newListeningBtn">New round</button>
@@ -128,44 +205,29 @@
         <div id="listenFeedback" class="result"></div>
         <div id="listenAnswer" class="hidden note-block"></div>
       </div>
+      </div>
 
-      <div id="practice-structure" class="practice-panel compact-card hidden">
-        <div class="toolbar wrap">
-          <select id="structureLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select>
-          <button id="newStructureBtn">New round</button>
+      
+      <div id="practice-revision" class="practice-group compact-card hidden">
+        <div class="practice-group-head">
+          <div>
+            <h3 class="m0">Revision Mix</h3>
+            <div class="muted">Choose topics you want to revise and start a mixed round.</div>
+          </div>
         </div>
-        <div id="structurePrompt" class="question"></div>
-        <div id="structureWords" class="chips"></div>
-        <textarea id="structureAnswer" placeholder="Build the correct sentence"></textarea>
-        <div class="row gap8 wrap"><button id="checkStructureBtn">Check</button><button class="ghost" id="showStructureBtn">Show answer</button></div>
-        <div id="structureFeedback" class="result"></div>
-        <div id="structureReason" class="explanation hidden"></div>
+        <div id="revisionTopicGrid" class="chips spaced"></div>
+        <div class="row gap8 wrap"><button id="startRevisionBtn">Start revision</button><button class="ghost" id="newRevisionBtn">Next round</button></div>
+        <div id="revisionMeta" class="badge hidden"></div>
+        <div id="revisionQuestion" class="question"></div>
+        <input id="revisionInput" type="text" placeholder="Type your answer">
+        <div class="row gap8 wrap"><button id="checkRevisionBtn">Check</button><button class="ghost" id="showRevisionBtn">Show answer</button></div>
+        <div id="revisionFeedback" class="result"></div>
+        <div id="revisionExplanation" class="explanation hidden"></div>
       </div>
 
-      <div id="practice-cases" class="practice-panel compact-card hidden">
-        <div class="toolbar wrap">
-          <select id="caseLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select>
-          <button id="newCaseBtn">New round</button>
-        </div>
-        <div id="casePrompt" class="question"></div>
-        <div id="caseChoices" class="chips"></div>
-        <div class="row gap8 wrap"><button id="showCaseBtn" class="ghost">Show answer</button></div>
-        <div id="caseFeedback" class="result"></div>
-        <div id="caseReason" class="explanation hidden"></div>
-      </div>
-
-      <div id="practice-writing" class="practice-panel compact-card hidden">
-        <div class="toolbar wrap"><select id="writingTaskSelect"></select><button id="newWritingBtn">New round</button><label class="checkline"><input type="checkbox" id="writingShowEnglish"> Show English</label></div>
-        <div id="writingPrompt" class="note-block"></div>
-        <div id="writingPhotoWrap" class="hidden media-wrap"><img id="writingPhoto" alt="Prompt image"></div>
-        <textarea id="writingInput" placeholder="Write here"></textarea>
-        <div class="row gap8 wrap"><button id="checkWritingBtn">Check</button><button class="ghost" id="showWritingSampleBtn">Show sample</button></div>
-        <div id="writingFeedback" class="result"></div>
-        <div id="writingSample" class="explanation hidden"></div>
-      </div>
     </section>
 
-    <section id="section-vocab" class="app-section hidden">
+<section id="section-vocab" class="app-section hidden">
       <div class="subtabs compact-row">
         <button class="vocabbtn active" data-vmode="list">List</button>
         <button class="vocabbtn" data-vmode="match">Match Game</button>
