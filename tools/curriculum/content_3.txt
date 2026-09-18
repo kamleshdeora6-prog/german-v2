@@ -1,0 +1,417 @@
+@@ 25|B1|Konjunktiv II: würde, hätte, wäre, könnte|Wünsche und Träume|party|11,18,21,22
+#expl
+Der **Konjunktiv II** drückt **Wünsche, Träume, irreale Situationen** und **Höflichkeit** aus.
+Form: meistens **würde + Infinitiv**: __Ich **würde** gern reisen.__ Bei **sein, haben** und **Modalverben** nimmt man eigene Formen: **wäre, hätte, könnte, müsste, dürfte, sollte**.
+**Irreale Bedingung:** __**Wenn** ich Zeit **hätte**, **würde** ich mehr Sport machen.__ (Ich habe keine Zeit.)
+**Höflich:** __**Könnten** Sie mir helfen? Ich **hätte** gern einen Kaffee. **Wäre** es möglich, …?__
+#use
+Prüfung Teil 1: höflich vorschlagen. Teil 2: Wünsche/Meinung. Sehr häufig in B1!
+#table
+Person|werden → würde|haben → hätte|sein → wäre|können → könnte
+ich|würde|hätte|wäre|könnte
+du|würdest|hättest|wär(e)st|könntest
+er/sie/es|würde|hätte|wäre|könnte
+wir|würden|hätten|wären|könnten
+ihr|würdet|hättet|wär(e)t|könntet
+sie/Sie|würden|hätten|wären|könnten
+#ex
+Ich würde gern eine Weltreise machen. = I'd like to travel around the world.
+Wenn ich reich wäre, würde ich ein Haus am Meer kaufen. = If I were rich, I'd buy a house by the sea.
+Könnten Sie das bitte wiederholen? = Could you repeat that, please?
+Ich hätte gern ein Glas Wasser. = I'd like a glass of water.
+Wenn ich mehr Zeit hätte, würde ich Gitarre lernen. = If I had more time, I'd learn guitar.
+Wäre es möglich, den Termin zu verschieben? = Would it be possible to postpone the appointment?
+An deiner Stelle würde ich zum Arzt gehen. = If I were you, I'd go to the doctor.
+Wir könnten am Samstag grillen. = We could have a barbecue on Saturday.
+Ich wünschte, meine Familie wäre hier. = I wish my family were here.
+Würdest du mir kurz helfen? = Would you help me for a moment?
+#vocab
+der Wunsch, ¨e = wish
+der Traum, ¨e = dream
+träumen von = to dream of
+sich wünschen = to wish for
+reich = rich
+die Weltreise, -n = world trip
+möglich = possible
+verschieben = to postpone
+höflich = polite
+die Feier, -n = celebration
+die Überraschung, -en = surprise
+das Glück = luck / happiness
+#read
+Auf Annas Geburtstagsfeier fragt Leila: „Was würdet ihr machen, wenn ihr eine Million Euro hättet?“ Jonas sagt: „Ich würde sofort kündigen und eine Weltreise machen.“ Anna meint: „Ich hätte gern ein Haus mit Garten. Dann könnten die Kinder draußen spielen.“ Ravi denkt nach: „Wenn ich reich wäre, würde ich meine Eltern nach Berlin einladen. Und ich würde eine kleine Schule in Mumbai bauen.“ Leila lächelt: „Das wäre wirklich schön.“
+#task
+Ich ___ gern nach Japan fliegen. (werden) || würde
+Wenn ich Zeit ___, würde ich kommen. (haben) || hätte
+Wenn er hier ___, wäre alles leichter. (sein) || wäre
+___ Sie mir bitte helfen? (können) || Könnten
+Ich ___ gern ein Stück Kuchen. (haben) || hätte
+Umformen (irreal): Ich habe kein Auto. Ich fahre nicht ans Meer. || Wenn ich ein Auto hätte, würde ich ans Meer fahren.
+Höflich: Gib mir das Salz! || Könntest du mir bitte das Salz geben?
+[Mix] Wenn ich ___ Chef wäre, würde ich ___ Mitarbeitern mehr Urlaub geben. (der, die – Dativ) || der / den
+[Mix] Ich würde ___ gern mit dir treffen. (sich) || mich
+[Mix] Es wäre schön, wenn du am Samstag ___. (mitkommen) || mitkommen würdest / mitkämst
+#exam
+Was würde Jonas mit einer Million machen? || Kündigen und eine Weltreise machen.
+Was hätte Anna gern? || Ein Haus mit Garten.
+Wen würde Ravi einladen? || Seine Eltern.
+Höflich: Haben Sie Zeit? || Hätten Sie Zeit?
+Irreal: Ich bin nicht krank, ich gehe zur Arbeit. → Wenn … || Wenn ich krank wäre, würde ich nicht zur Arbeit gehen.
+Ergänze: ___ es möglich, früher zu kommen? || Wäre
+Ergänze: Wir ___ uns am Montag treffen. (können, höflich) || könnten
+Was würden Sie machen, wenn Sie Bundeskanzler(in) wären?
+Wovon träumen Sie? Beschreiben Sie Ihr Traumleben in 10 Jahren.
+Bitten Sie im Hotel höflich um drei Dinge.
+#speak
+Was würdest du auf dieser Party machen?
+Wenn du Geburtstag hättest, wie würdest du feiern?
+Die Party ist zu laut. Bitte die Nachbarn höflich: __Könnten Sie …?__
+Wenn du einen Wunsch frei hättest, …
+
+@@ 26|B1|Ratschläge und Empfehlungen geben|Probleme lösen|doctor|12,19,21,25
+#expl
+Für **Ratschläge** gibt es mehrere Strukturen. Von direkt bis höflich:
+**Imperativ:** __Geh zum Arzt!__ → **sollte (Konj. II)**: __Du **solltest** zum Arzt gehen.__ → **An deiner Stelle würde ich …** → **Ich empfehle / rate dir, … zu …** → **Es wäre gut / besser, wenn du …** → **Wie wäre es, wenn du …?**
+**sollen (Präsens)** = Auftrag von anderen: __Der Arzt sagt, ich **soll** …__. **sollte (Konj. II)** = Rat: __Du **solltest** …__
+Nachfragen/Reagieren: __Das ist ein guter Tipp. Das habe ich schon versucht. Meinst du wirklich?__
+#use
+Prüfung (Goethe Teil 3 / telc): Feedback, Tipps geben; Forumsbeitrag schreiben; Alltag.
+#table
+Struktur|Beispiel|Stärke
+Imperativ|Mach eine Pause!|direkt
+du solltest + Inf.|Du solltest mehr schlafen.|normal
+An deiner Stelle würde ich …|An deiner Stelle würde ich früher ins Bett gehen.|höflich
+Ich empfehle dir, … zu + Inf.|Ich empfehle dir, Yoga zu machen.|höflich
+Es wäre besser, wenn …|Es wäre besser, wenn du weniger Kaffee trinken würdest.|sehr höflich
+Wie wäre es mit …? / Warum … nicht …?|Wie wäre es mit einem Spaziergang?|Vorschlag
+#ex
+Du solltest mehr Wasser trinken. = You should drink more water.
+An deiner Stelle würde ich mit dem Chef sprechen. = If I were you, I'd talk to the boss.
+Ich empfehle Ihnen, einen Termin zu machen. = I recommend you make an appointment.
+Es wäre gut, wenn du dich ausruhen würdest. = It would be good if you rested.
+Warum machst du nicht einen Deutschkurs? = Why don't you take a German course?
+Ihr solltet nicht so spät ins Bett gehen. = You shouldn't go to bed so late.
+Wie wäre es mit einem Tandempartner? = How about a tandem partner?
+Mein Tipp: Hör jeden Tag deutsche Podcasts. = My tip: listen to German podcasts every day.
+Der Arzt sagt, ich soll weniger Zucker essen. = The doctor says I should eat less sugar.
+Das ist ein guter Rat, danke! = That's good advice, thanks!
+#vocab
+der Rat / der Ratschlag, ¨e = advice
+der Tipp, -s = tip
+raten (rät) = to advise
+empfehlen = to recommend
+das Problem, -e = problem
+der Stress = stress
+schlafen / der Schlaf = to sleep / sleep
+die Ernährung = diet, nutrition
+sich bewegen = to exercise, move
+versuchen = to try
+aufhören mit = to stop doing
+nützlich = useful
+#read
+Jonas schläft schlecht und hat viel Stress. Er fragt Ravi um Rat. Ravi sagt: „Du solltest abends nicht so lange am Handy sein. An deiner Stelle würde ich eine Stunde vor dem Schlafen lesen.“ Leila ist Ärztin und gibt auch Tipps: „Ich empfehle dir, dich mehr zu bewegen. Und es wäre besser, wenn du nach 16 Uhr keinen Kaffee mehr trinken würdest.“ Jonas lacht: „Kein Kaffee? Das ist schwer! Aber ich versuche es.“
+#task
+Du ___ mehr schlafen. (sollen, Rat) || solltest
+An deiner Stelle ___ ich zu Hause bleiben. || würde
+Ich empfehle dir, früher ___ ___. (aufstehen) || aufzustehen
+Es wäre besser, wenn du weniger ___ ___. (arbeiten) || arbeiten würdest
+Wie wäre es ___ einem Spaziergang? || mit
+Umformen (sollte): Geh zum Arzt! || Du solltest zum Arzt gehen.
+Umformen (An deiner Stelle): Du solltest das Angebot annehmen. || An deiner Stelle würde ich das Angebot annehmen.
+[Mix] Du solltest ___ nicht so viel ärgern. (sich) || dich
+[Mix] Wenn ich du ___, ___ ich mehr Deutsch sprechen. (sein, werden) || wäre / würde
+[Mix] Ihr solltet ___ ___ Gesundheit kümmern. (sich, um, eure) || euch / um eure
+#exam
+Welche Probleme hat Jonas? || Er schläft schlecht und hat Stress.
+Was soll Jonas vor dem Schlafen machen (Ravi)? || Eine Stunde lesen.
+Was ist für Jonas schwer? || Nach 16 Uhr keinen Kaffee zu trinken.
+Gib einen Rat mit „sollte“: Mein Deutsch ist schlecht. || Du solltest jeden Tag üben.
+Gib einen Rat mit „An deiner Stelle“: Ich habe Zahnschmerzen. || An deiner Stelle würde ich zum Zahnarzt gehen.
+sollen oder sollte? Der Chef sagt, ich ___ den Bericht schreiben. || soll
+Ergänze: Ich rate dir, mehr Obst ___ ___. || zu essen
+Ein Freund findet keine Wohnung. Geben Sie 4 Ratschläge.
+Schreiben Sie einen Forumsbeitrag: Tipps für neue Deutschlerner.
+Welchen Rat würden Sie jemandem geben, der nach Deutschland ziehen möchte?
+#speak
+Welchen Rat gibt die Ärztin dem Patienten?
+Der Patient hat Stress. Gib ihm 3 Tipps mit verschiedenen Strukturen.
+Was rätst du jemandem, der nicht schlafen kann?
+Welcher Rat war für dich im Leben am wichtigsten?
+
+@@ 27|B1|Vorschläge machen und gemeinsam planen|Eine Feier organisieren|party|13,14,21,25,26
+#expl
+Das ist **Prüfungsteil „Gemeinsam etwas planen“**. Du musst **vorschlagen, reagieren, zustimmen/ablehnen, Alternativen nennen** und am Ende **eine Lösung** finden.
+**Vorschlagen:** Wie wäre es mit … / wenn wir …? · Was hältst du davon, wenn …? · Wir könnten … · Lass uns … · Sollen wir …? · Ich schlage vor, dass …
+**Zustimmen:** Gute Idee! · Einverstanden. · Das machen wir so. **Ablehnen:** Das finde ich nicht so gut, weil … · Ich weiß nicht … · Lieber …
+**Einigen:** Also, wir machen es so: … · Wer kümmert sich um …? · Ich übernehme …
+#use
+Goethe Sprechen Teil 1, telc Teil 3: Party, Ausflug, Besuch, Geschenk planen.
+#table
+Funktion|Redemittel|Grammatik
+Vorschlag|Wie wäre es, wenn wir am Samstag feiern würden?|Konj. II + wenn
+Vorschlag|Was hältst du davon, wenn wir im Park grillen?|wenn-Satz
+Vorschlag|Lass uns / Wir könnten einen Kuchen backen.|Imperativ / Konj. II
+Zustimmen|Die Idee gefällt mir, denn …|Dativ + denn
+Ablehnen|Das finde ich keine gute Idee, weil …|weil-Satz
+Einigen|Also: Du kaufst die Getränke und ich kümmere mich um das Essen.|Reflexiv + um
+#ex
+Wie wäre es, wenn wir eine Überraschungsparty machen? = How about we throw a surprise party?
+Was hältst du davon, wenn wir im Garten feiern? = What do you think about celebrating in the garden?
+Lass uns zuerst die Gästeliste schreiben. = Let's write the guest list first.
+Wir könnten Pizza bestellen. = We could order pizza.
+Das ist eine gute Idee, aber das ist zu teuer. = That's a good idea but it's too expensive.
+Ich schlage vor, dass jeder etwas mitbringt. = I suggest everyone brings something.
+Wer kümmert sich um die Musik? = Who takes care of the music?
+Ich übernehme die Einladungen. = I'll take care of the invitations.
+Sollen wir uns um 18 Uhr treffen? = Shall we meet at 6 pm?
+Also, dann machen wir es so! = OK, then let's do it that way!
+#vocab
+die Party, -s = party
+organisieren = to organise
+die Gästeliste, -n = guest list
+die Einladung, -en = invitation
+die Getränke (Pl.) = drinks
+dekorieren = to decorate
+mitbringen = to bring along
+übernehmen (übernimmt) = to take on
+sich kümmern um = to take care of
+einverstanden = agreed
+der Vorschlag, ¨e = suggestion
+die Aufgabe, -n = task
+#read
+Frau Berger geht in Rente. Ravi und Mia planen eine Feier im Büro. Mia: „Wie wäre es, wenn wir am Freitagnachmittag feiern?“ – Ravi: „Gute Idee. Was hältst du davon, wenn wir ein Buffet machen?“ – Mia: „Hm, das ist viel Arbeit. Wir könnten doch Essen bestellen.“ – Ravi: „Einverstanden. Und ein Geschenk?“ – Mia: „Ich schlage vor, dass alle Kollegen zehn Euro geben.“ – Ravi: „Gut. Also: Du kümmerst dich um das Geschenk, ich übernehme das Essen und die Einladungen.“
+#task
+Wie ___ es mit einem Picknick? || wäre
+Was ___ du davon, wenn wir ins Kino gehen? || hältst
+___ uns morgen früh losfahren! || Lass
+Wir ___ einen Kuchen backen. (können, Vorschlag) || könnten
+Ich schlage vor, dass wir den Bus ___. (nehmen) || nehmen
+Wer kümmert sich ___ ___ Getränke? || um die
+Ablehnen mit weil: Grillen? (es regnet) || Das finde ich nicht so gut, weil es regnet.
+[Mix] Ich ___ die Einladungen. (übernehmen, Präsens) || übernehme
+[Mix] Wir könnten ___ Chefin ___ Blumenstrauß schenken. (die, ein) || der / einen
+[Mix] Wie wäre es, wenn wir die Party ___ Samstag ___ 19 Uhr machen würden? || am / um
+#exam
+Warum machen Ravi und Mia eine Feier? || Frau Berger geht in Rente.
+Warum wollen sie kein Buffet machen? || Das ist viel Arbeit.
+Wer kümmert sich um das Geschenk? || Mia.
+Mache einen Vorschlag mit „Wie wäre es, wenn …“: zusammen kochen || Wie wäre es, wenn wir zusammen kochen würden?
+Reagiere positiv und gib einen Grund. || z. B. Gute Idee, denn das macht Spaß.
+Reagiere negativ und mache eine Alternative. || z. B. Das finde ich nicht so gut. Lieber …
+Formuliere eine Einigung mit zwei Aufgaben. || z. B. Also: Du kaufst …, ich kümmere mich um …
+Planen Sie mit Ihrem Partner: Ein Kollege hat ein Baby bekommen. Was schenken Sie? (Geschenk, Kosten, wer kauft, wann übergeben)
+Planen Sie einen Ausflug mit dem Deutschkurs (Ziel, Datum, Fahrt, Essen).
+Planen Sie einen Besuch bei einer kranken Freundin.
+#speak
+Die Feier ist morgen. Plant zu zweit: Essen, Musik, Deko, Geschenk.
+Was fehlt noch auf dem Bild? Mach Vorschläge.
+Lehne zwei Vorschläge deines Partners höflich ab und nenne Alternativen.
+Fasst am Ende zusammen: __Also, wir machen es so: …__
+
+@@ 28|B1|Infinitiv mit zu|Lernen und Weiterbildung|classroom|21,25,26,27
+#expl
+Nach vielen Verben, Nomen und Adjektiven folgt ein **Infinitiv mit zu** am **Satzende**: __Ich habe keine Lust, **zu kochen**.__
+**Nach Verben:** anfangen, aufhören, versuchen, vergessen, vorhaben, hoffen, beschließen, sich freuen, empfehlen, bitten, erlauben, verbieten.
+**Nach Nomen + haben:** Lust, Zeit, Angst, Spaß, die Möglichkeit. **Nach es ist + Adjektiv:** wichtig, schwer, leicht, schön, verboten.
+**Trennbare Verben:** zu in der Mitte: an**zu**rufen, auf**zu**stehen. Mit Modalverb **kein zu**: __Ich muss lernen.__
+Wenn Subjekt gleich ist → zu-Infinitiv statt dass-Satz: __Ich hoffe, dass ich bestehe = Ich hoffe, die Prüfung **zu bestehen**.__
+#use
+Prüfung: Meinung (Es ist wichtig, … zu …), Pläne (Ich habe vor, …), Gefühle.
+#table
+Auslöser|Hauptsatz|zu-Infinitiv (Ende)
+Verb|Ich versuche,|jeden Tag Deutsch **zu sprechen**.
+Verb (trennbar)|Vergiss nicht,|mich **anzurufen**.
+Nomen|Ich habe keine Zeit,|ins Kino **zu gehen**.
+Adjektiv|Es ist wichtig,|pünktlich **zu sein**.
+Perfekt-Inhalt|Ich freue mich,|dich kennengelernt **zu haben**.
+#ex
+Ich habe vor, die B1-Prüfung im Dezember zu machen. = I plan to take the B1 exam in December.
+Es ist nicht leicht, eine neue Sprache zu lernen. = It's not easy to learn a new language.
+Ravi hat angefangen, deutsche Bücher zu lesen. = Ravi has started reading German books.
+Vergiss nicht, die Hausaufgaben zu machen! = Don't forget to do the homework!
+Ich habe keine Lust, heute zu lernen. = I don't feel like studying today.
+Es macht Spaß, mit Leila Deutsch zu sprechen. = It's fun to speak German with Leila.
+Hast du Zeit, mir kurz zu helfen? = Do you have time to help me quickly?
+Die Lehrerin empfiehlt uns, Filme auf Deutsch anzusehen. = The teacher recommends we watch films in German.
+Ich hoffe, die Prüfung zu bestehen. = I hope to pass the exam.
+Er hat Angst, Fehler zu machen. = He's afraid of making mistakes.
+#vocab
+die Weiterbildung, -en = further training
+die Prüfung, -en = exam
+bestehen = to pass
+durchfallen = to fail
+üben = to practise
+wiederholen = to revise, repeat
+der Fehler, - = mistake
+vorhaben = to plan
+beschließen = to decide
+die Lust = desire, mood
+die Möglichkeit, -en = possibility
+das Zertifikat, -e = certificate
+#read
+Ravi hat beschlossen, im Dezember die B1-Prüfung zu machen. Es ist wichtig für ihn, das Zertifikat zu bekommen, denn er hat vor, sich später um eine bessere Stelle zu bewerben. Frau Klein empfiehlt ihm, jeden Tag zu üben. Manchmal hat Ravi keine Lust, nach der Arbeit noch zu lernen. Aber er versucht, jeden Abend eine halbe Stunde Deutsch zu hören. Leila hilft ihm. Es macht ihm Spaß, mit ihr zu sprechen, und er hat keine Angst mehr, Fehler zu machen.
+#task
+Ich versuche, mehr ___ ___. (lesen) || zu lesen
+Vergiss nicht, das Fenster ___. (zumachen) || zuzumachen
+Es ist wichtig, genug Wasser ___ ___. (trinken) || zu trinken
+Ich habe keine Zeit, ___. (einkaufen) || einzukaufen
+Wir haben vor, nach Italien ___ ___. (fahren) || zu fahren
+zu oder nicht? Ich möchte ___ schwimmen. || (kein zu)
+Umformen: Ich hoffe, dass ich die Prüfung bestehe. || Ich hoffe, die Prüfung zu bestehen.
+[Mix] Es macht mir Spaß, ___ ___ Freunden ___ ___. (mit, meine, kochen) || mit meinen / zu kochen
+[Mix] Ich habe angefangen, ___ jeden Morgen ___ ___. (sich, bewegen) || mich / zu bewegen
+[Mix] Es wäre schön, dich wieder ___ ___. (sehen) || zu sehen
+#exam
+Warum will Ravi das Zertifikat? || Er will sich später um eine bessere Stelle bewerben.
+Was empfiehlt Frau Klein? || Jeden Tag zu üben.
+Wovor hat Ravi keine Angst mehr? || Fehler zu machen.
+Ergänze: Hast du Lust, heute Abend ___ ___? (ausgehen) || auszugehen
+Umformen: Ich freue mich, dass ich dich sehe. || Ich freue mich, dich zu sehen.
+Ergänze: Es ist verboten, hier ___ ___. (rauchen) || zu rauchen
+Fehler? „Ich kann gut zu kochen.“ || Ich kann gut kochen.
+Was ist für Sie wichtig beim Deutschlernen? (Es ist wichtig, … zu …)
+Was haben Sie für das nächste Jahr vor?
+Wozu haben Sie manchmal keine Lust? Was machen Sie dann?
+#speak
+Was haben die Leute im Kurs vor? __Sie haben vor, …__
+Was ist schwer / leicht beim Deutschlernen? __Es ist schwer, … zu …__
+Was hast du vergessen zu machen?
+Was macht dir Spaß zu lernen?
+
+@@ 29|B1|Finalsätze: um … zu und damit|Ziele und Zwecke|office|21,24,28
+#expl
+**Finalsätze** nennen das **Ziel** (Wozu? / Warum?).
+**um … zu + Infinitiv** – wenn das **Subjekt in beiden Teilen gleich** ist: __**Ich** lerne Deutsch, **um** in Deutschland **zu arbeiten**.__
+**damit + Nebensatz** – wenn die **Subjekte verschieden** sind (bei gleichen Subjekten auch möglich): __Ich erkläre es langsam, **damit du** es **verstehst**.__
+Im damit-Satz **kein Modalverb** wollen/sollen/können nötig. Frage: **Wozu?** Auch: **für + Nomen**: __für die Prüfung__.
+#use
+Pläne und Motivation begründen (Präsentation, Bewerbung).
+#table
+Subjekte|Hauptsatz|Finalsatz
+gleich|Ravi spart Geld,|**um** nach Indien **zu fliegen**.
+gleich (trennbar)|Ich gehe früh ins Bett,|**um** früh **aufzustehen**.
+verschieden|Ravi spart Geld,|**damit** seine Eltern ihn **besuchen** können.
+verschieden|Sprich langsam,|**damit** ich dich **verstehe**.
+Nomen|Ich lerne|**für** die Prüfung.
+#ex
+Ich lerne Deutsch, um bessere Chancen zu haben. = I learn German to have better chances.
+Ravi macht Überstunden, um mehr Geld zu verdienen. = Ravi works overtime to earn more money.
+Ich schreibe alles auf, damit ich nichts vergesse. = I write everything down so that I don't forget anything.
+Die Chefin erklärt es noch einmal, damit alle es verstehen. = The boss explains it again so everyone understands.
+Wozu brauchst du den Laptop? – Um zu arbeiten. = What do you need the laptop for? – To work.
+Wir fahren früh los, um den Zug nicht zu verpassen. = We leave early so as not to miss the train.
+Ich rufe dich an, damit du Bescheid weißt. = I'll call you so you know.
+Er geht ins Fitnessstudio, um abzunehmen. = He goes to the gym to lose weight.
+Anna kocht vor, damit die Kinder etwas essen können. = Anna prepares food so the kids can eat.
+Ich brauche das Zertifikat für meine Bewerbung. = I need the certificate for my application.
+#vocab
+das Ziel, -e = goal
+der Zweck, -e = purpose
+wozu = what for
+die Chance, -n = chance
+sparen = to save
+verpassen = to miss
+Bescheid wissen / sagen = to know / let know
+aufschreiben = to write down
+die Karriere, -n = career
+die Beförderung, -en = promotion
+sich vorbereiten auf = to prepare for
+erreichen = to reach, achieve
+#read
+Ravi hat ein großes Ziel: Er möchte Teamleiter werden. Um dieses Ziel zu erreichen, macht er einen Managementkurs. Er lernt auch weiter Deutsch, damit er besser mit den Kunden sprechen kann. Seine neue Kollegin Mia hilft ihm, damit er die Präsentationen gut vorbereitet. Ravi spart auch Geld, um im Dezember nach Mumbai zu fliegen. Er ruft seine Eltern jede Woche an, damit sie sich keine Sorgen machen.
+#task
+Ich lerne viel, ___ die Prüfung ___ ___. (bestehen) || um / zu bestehen
+Ich spreche laut, ___ alle mich hören. || damit
+Er spart, ___ ein Auto ___ ___. (kaufen) || um / zu kaufen
+Wir helfen ihm, ___ er schneller fertig ist. || damit
+Sie steht früh auf, um pünktlich ___ ___. (sein) || zu sein
+Verbinde (um…zu): Ich gehe zum Bäcker. Ich kaufe Brot. || Ich gehe zum Bäcker, um Brot zu kaufen.
+Verbinde (damit): Ich gebe dir meine Nummer. Du kannst mich anrufen. || Ich gebe dir meine Nummer, damit du mich anrufen kannst.
+[Mix] Ich fahre ___ Bahnhof, um meine Mutter ___. (zu + der, abholen) || zum / abzuholen
+[Mix] Wir müssen früh losfahren, damit wir den Zug nicht ___. (verpassen) || verpassen
+[Mix] Es ist wichtig, Geld zu sparen, ___ man im Urlaub mehr hat. || damit
+#exam
+Welches Ziel hat Ravi? || Teamleiter werden.
+Warum lernt er weiter Deutsch? || Damit er besser mit den Kunden sprechen kann.
+Warum ruft er seine Eltern an? || Damit sie sich keine Sorgen machen.
+um…zu oder damit? Ich trinke Kaffee, ___ wach ___ ___. || um / zu bleiben
+um…zu oder damit? Ich mache das Licht an, ___ du lesen kannst. || damit
+Frage: „Um Deutsch zu lernen.“ → ? || Wozu / Warum … ?
+Umformen: Ich lerne, damit ich die Prüfung bestehe. (um…zu) || Ich lerne, um die Prüfung zu bestehen.
+Welche Ziele haben Sie für die nächsten 5 Jahre? Wie wollen Sie sie erreichen?
+Wozu braucht man heute ein Smartphone? Nennen Sie 5 Zwecke.
+Was machen Sie, damit Ihre Familie glücklich ist?
+#speak
+Wozu sitzt die Frau am Computer? (Vermutung)
+Wozu gehen Menschen ins Büro, statt zu Hause zu arbeiten?
+Was tust du, um gesund zu bleiben?
+Was machst du, damit deine Kollegen / Freunde dich mögen?
+
+@@ 30|B1|ohne … zu / (an)statt … zu|Gewohnheiten|kitchen|28,29
+#expl
+**ohne … zu + Infinitiv** = etwas passiert nicht (without doing): __Er geht, **ohne** tschüss **zu sagen**.__
+**(an)statt … zu + Infinitiv** = etwas passiert statt einer anderen Sache (instead of doing): __**Statt** zu kochen, bestellt er Pizza.__
+Bei **verschiedenen Subjekten**: **ohne dass / statt dass** + Nebensatz: __Er nimmt das Auto, **ohne dass** sein Vater es **weiß**.__
+Das Komma steht vor ohne/statt. Trennbare Verben: ohne an**zu**rufen.
+#use
+Gewohnheiten kritisieren, Alternativen nennen, Geschichten erzählen.
+#table
+Struktur|Beispiel|Bedeutung
+ohne … zu|Sie isst, ohne zu sprechen.|without speaking
+ohne … zu (trennbar)|Er kommt, ohne vorher anzurufen.|without calling
+statt … zu|Statt zu lernen, sieht er fern.|instead of learning
+ohne dass|Ich bin gegangen, ohne dass es jemand gemerkt hat.|without anyone noticing
+statt dass|Statt dass er hilft, schläft er.|instead of him helping
+#ex
+Max isst, ohne die Hände zu waschen. = Max eats without washing his hands.
+Statt zu kochen, bestellen wir Essen. = Instead of cooking, we order food.
+Ravi ist ins Büro gegangen, ohne zu frühstücken. = Ravi went to the office without having breakfast.
+Man sollte nicht einkaufen, ohne eine Liste zu schreiben. = You shouldn't shop without writing a list.
+Anstatt den Bus zu nehmen, fahre ich Rad. = Instead of taking the bus I cycle.
+Er hat den Kuchen gegessen, ohne dass ich es gesehen habe. = He ate the cake without me seeing.
+Statt Fleisch zu essen, isst Ravi Linsen. = Instead of eating meat, Ravi eats lentils.
+Sie hat das Handy gekauft, ohne den Preis zu vergleichen. = She bought the phone without comparing prices.
+Statt im Bett zu liegen, geh doch spazieren! = Instead of lying in bed, go for a walk!
+Ohne zu üben, kann man kein Instrument lernen. = Without practising you can't learn an instrument.
+#vocab
+die Gewohnheit, -en = habit
+gesund / ungesund = healthy / unhealthy
+bestellen = to order
+das Fertiggericht, -e = ready meal
+die Liste, -n = list
+merken = to notice
+vergleichen = to compare
+der Preis, -e = price
+die Linsen (Pl.) = lentils
+vorbereiten = to prepare
+frisch = fresh
+selbst = oneself
+#read
+Jonas hat schlechte Gewohnheiten. Oft geht er ins Büro, ohne zu frühstücken. Statt frisch zu kochen, isst er Fertiggerichte. Ravi sagt: „Statt jeden Tag Pizza zu bestellen, könntest du mit mir kochen!“ Am Samstag kochen sie zusammen. Jonas probiert das Curry, ohne zu fragen, wie scharf es ist. Sein Gesicht wird rot! Ravi gibt ihm Joghurt, ohne dass Jonas etwas sagen muss. Seitdem kocht Jonas öfter selbst.
+#task
+Er geht, ___ tschüss ___ ___. (sagen) || ohne / zu sagen
+___ zu arbeiten, spielt er am Handy. || Statt
+Sie kauft ein, ohne eine Liste ___ ___. (schreiben) || zu schreiben
+Er kommt, ohne vorher ___. (anrufen) || anzurufen
+Statt ___ Bus ___ ___, gehe ich zu Fuß. (der, nehmen) || den / zu nehmen
+Verbinde (ohne…zu): Er fährt weg. Er tankt nicht. || Er fährt weg, ohne zu tanken.
+Verbinde (ohne dass): Sie geht. Ihr Mann merkt es nicht. || Sie geht, ohne dass ihr Mann es merkt.
+[Mix] Statt ___ ___ ärgern, solltest du ___ entspannen. (sich ×2, du) || dich zu / dich
+[Mix] Ich habe das Buch gelesen, um ___ ___ Prüfung vorzubereiten. (sich, auf die) || mich auf die
+[Mix] Er ist gegangen, ohne ___ Kollegen ___ ___. (seine, helfen – Dativ!) || seinen Kollegen zu helfen
+#exam
+Was macht Jonas oft falsch? || Er geht ohne Frühstück ins Büro / isst Fertiggerichte.
+Was schlägt Ravi vor? || Zusammen kochen statt Pizza zu bestellen.
+Was passiert beim Curry? || Es ist zu scharf, Jonas' Gesicht wird rot.
+Umformen: Er lernt nicht. Er schläft. (statt … zu) || Statt zu lernen, schläft er.
+Umformen: Sie kauft das Kleid. Sie probiert es nicht an. (ohne … zu) || Sie kauft das Kleid, ohne es anzuprobieren.
+ohne zu oder ohne dass? Ich habe gegessen, ___ die Kinder etwas ___. || ohne dass / gemerkt haben
+Ergänze: Statt ___ Auto ___ ___, fahre ich Rad. (das, nehmen) || das Auto zu nehmen
+Welche Gewohnheiten möchten Sie ändern? Was machen Sie statt …?
+Was machen viele Menschen, ohne nachzudenken?
+Was sollte man nie tun, ohne vorher zu fragen?
+#speak
+Was machen die Personen in der Küche? Kochen sie oder bestellen sie?
+Was machst du oft, ohne zu überlegen?
+Was machst du lieber, statt fernzusehen?
+Gesund leben: Was sollte man statt … tun?

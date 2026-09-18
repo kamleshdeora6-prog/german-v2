@@ -1,0 +1,690 @@
+@@ 31|B1|Verben mit Präpositionen + da- und wo-Wörter|Gefühle und Interessen|classroom|6,13,16,19,21,28
+#expl
+Viele Verben haben eine **feste Präposition** mit festem Fall. Lerne sie als Einheit: **warten auf + Akk.**, **denken an + Akk.**, **sich freuen auf/über + Akk.**, **Angst haben vor + Dat.**, **träumen von + Dat.**, **teilnehmen an + Dat.**, **sprechen mit + Dat. über + Akk.**
+**Frage:** Person → Präposition + **Pronomen** (__Auf **wen** wartest du?__). Sache → **wo(r)** + Präposition (__**Worauf** wartest du?__).
+**Antwort/Verweis:** Person → Präp. + Pronomen (__auf **ihn**__). Sache → **da(r)** + Präp. (__**darauf**__). **r** wenn die Präposition mit Vokal beginnt: wo**r**an, da**r**über.
+**da-Wort + dass/zu:** __Ich freue mich **darauf**, **dass** du kommst / dich **zu** sehen.__
+#use
+Interessen, Gefühle, Meinungen – und Nachfragen in der Prüfung (Worüber sprichst du?).
+#table
+Verb + Präp.|Fall|Frage (Sache / Person)|Antwort (Sache / Person)
+warten auf|Akk.|Worauf? / Auf wen?|darauf / auf ihn
+sich interessieren für|Akk.|Wofür? / Für wen?|dafür / für sie
+denken an|Akk.|Woran? / An wen?|daran / an ihn
+sprechen über|Akk.|Worüber? / Über wen?|darüber / über ihn
+Angst haben vor|Dat.|Wovor? / Vor wem?|davor / vor ihm
+träumen von|Dat.|Wovon? / Von wem?|davon / von ihr
+#ex
+Ich warte auf den Bus. – Ich warte schon lange darauf. = I'm waiting for the bus. – I've been waiting for it a long time.
+Worüber habt ihr gesprochen? = What did you talk about?
+Ravi denkt oft an seine Eltern. = Ravi often thinks of his parents.
+Ich interessiere mich für Geschichte. = I'm interested in history.
+Hast du Angst vor der Prüfung? – Nein, keine Angst davor. = Are you afraid of the exam? – No.
+Leila träumt von einer eigenen Praxis. = Leila dreams of her own practice.
+Mit wem hast du telefoniert? = Who did you talk to on the phone?
+Ich freue mich darauf, dich zu sehen. = I'm looking forward to seeing you.
+Er nimmt an einem Kurs teil. = He's taking part in a course.
+Kannst du dich um die Blumen kümmern? – Ja, ich kümmere mich darum. = Can you look after the flowers? – Yes, I'll take care of it.
+#vocab
+warten auf = to wait for
+denken an = to think of
+sich erinnern an = to remember
+sprechen über = to talk about
+sich beschweren über = to complain about
+Angst haben vor = to be afraid of
+träumen von = to dream of
+teilnehmen an = to take part in
+sich verabreden mit = to arrange to meet
+sich entschuldigen bei / für = to apologise to / for
+bitten um = to ask for
+sich gewöhnen an = to get used to
+#read
+Im Kurs sprechen die Teilnehmer über ihre Gefühle. Frau Klein fragt: „Woran denkt ihr, wenn ihr an eure Heimat denkt?“ Ravi sagt: „Ich denke an das Essen und an meine Familie. Ich träume oft davon, mit ihnen am Strand zu sitzen.“ Leila erzählt: „Am Anfang hatte ich Angst vor dem Winter. Aber ich habe mich daran gewöhnt.“ Frau Klein fragt: „Und worauf freut ihr euch?“ Ravi: „Ich freue mich auf Dezember, denn da besuche ich meine Eltern.“
+#task
+Ich warte ___ ___ Zug. || auf den
+Er interessiert sich ___ Musik. || für
+___ denkst du? – An meinen Urlaub. || Woran
+___ wem sprichst du? – Mit Anna. || Mit
+Hast du Angst vor Spinnen? – Ja, ich habe Angst ___. || davor
+Freust du dich auf die Reise? – Ja, ich freue mich sehr ___. || darauf
+Denkst du an deinen Bruder? – Ja, ich denke oft an ___. || ihn
+[Mix] Ich habe mich ___ ___ Nachbarn über den Lärm beschwert. (bei, der) || bei dem / beim
+[Mix] Ich erinnere mich gern ___, wie wir als Kinder gespielt haben. || daran
+[Mix] Wir haben ___ ___ Prüfung gesprochen. (über, die) || über die
+#exam
+Woran denkt Ravi, wenn er an seine Heimat denkt? || An das Essen und seine Familie.
+Wovor hatte Leila Angst? || Vor dem Winter.
+Worauf freut sich Ravi? || Auf Dezember (Besuch bei seinen Eltern).
+Frage: Ich spreche über das Wetter. || Worüber sprichst du?
+Frage: Ich warte auf meine Freundin. || Auf wen wartest du?
+Antwort mit da-: Interessierst du dich für Politik? || Ja, ich interessiere mich dafür. / Nein, …
+Ergänze: Er träumt ___ ___ großen Haus. || von einem
+Wofür interessieren Sie sich? Worüber ärgern Sie sich?
+Woran erinnern Sie sich gern aus Ihrer Kindheit?
+Wovor haben viele Menschen Angst? Und Sie?
+#speak
+Worüber sprechen die Leute im Kurs? (Vermutung)
+Frag den Partner mit wo-Wörtern: __Wofür …? Worauf …? Woran …?__
+Worauf freust du dich nach der Prüfung?
+An was musstest du dich in einem neuen Land / einer neuen Stadt gewöhnen?
+
+@@ 32|B1|Indirekte Fragen|Behörden und Informationen|office|4,21,25,31
+#expl
+Indirekte Fragen sind **Nebensätze**: Das Verb steht **am Ende**. Sie sind **höflicher** als direkte Fragen.
+**W-Frage** → das W-Wort bleibt: __Wann kommt der Bus?__ → __Können Sie mir sagen, **wann** der Bus **kommt**?__
+**Ja/Nein-Frage** → **ob**: __Ist das Büro offen?__ → __Wissen Sie, **ob** das Büro offen **ist**?__
+Einleitungen: Können Sie mir sagen, … · Wissen Sie, … · Ich möchte wissen, … · Ich frage mich, … · Weißt du zufällig, … Nach „Ich weiß nicht, …“ steht ein **Punkt**, keine Frage.
+#use
+Bei Behörden, am Telefon, Informationen erfragen – sehr höflich.
+#table
+Direkte Frage|Indirekte Frage
+Wo ist das Bürgeramt?|Können Sie mir sagen, wo das Bürgeramt **ist**?
+Welche Unterlagen brauche ich?|Ich möchte wissen, welche Unterlagen ich **brauche**.
+Muss ich einen Termin machen?|Wissen Sie, ob ich einen Termin machen **muss**?
+Wann hat das Amt geöffnet?|Könnten Sie mir sagen, wann das Amt geöffnet **hat**?
+Hat er angerufen?|Ich weiß nicht, ob er angerufen **hat**.
+#ex
+Können Sie mir sagen, wo die Toiletten sind? = Can you tell me where the toilets are?
+Wissen Sie, ob ich hier parken darf? = Do you know whether I can park here?
+Ich möchte wissen, wie lange die Anmeldung dauert. = I'd like to know how long registration takes.
+Weißt du zufällig, wann der Kurs anfängt? = Do you happen to know when the course starts?
+Ich frage mich, warum er nicht gekommen ist. = I wonder why he didn't come.
+Könnten Sie mir erklären, was ich hier ausfüllen muss? = Could you explain what I have to fill in here?
+Ich weiß nicht, ob ich Zeit habe. = I don't know whether I have time.
+Darf ich fragen, wie viel das kostet? = May I ask how much that costs?
+Sie hat gefragt, wer mitkommt. = She asked who's coming along.
+Wissen Sie, welcher Bus zum Rathaus fährt? = Do you know which bus goes to the town hall?
+#vocab
+die Behörde, -n = authority
+das Amt, ¨er = office (public)
+das Bürgeramt = citizens' office
+die Anmeldung, -en = registration
+das Formular, -e = form
+ausfüllen = to fill in
+die Unterlagen (Pl.) = documents
+der Ausweis, -e = ID card
+der Reisepass, ¨e = passport
+die Aufenthaltserlaubnis = residence permit
+unterschreiben = to sign
+die Wartenummer, -n = queue number
+#read
+Ravi muss sich ummelden. Er ruft beim Bürgeramt an: „Guten Tag. Können Sie mir sagen, wann Sie geöffnet haben? Und ich möchte wissen, ob ich einen Termin brauche.“ – „Ja, Sie brauchen einen Termin. Den können Sie online buchen.“ – „Wissen Sie auch, welche Unterlagen ich mitbringen muss?“ – „Ihren Reisepass und die Bestätigung vom Vermieter.“ – „Darf ich noch fragen, wie lange es dauert?“ – „Ungefähr zehn Minuten.“ – „Vielen Dank!“
+#task
+Wo ist die Post? → Wissen Sie, wo die Post ___? || ist
+Wann beginnt der Film? → Weißt du, wann der Film ___? || beginnt
+Ist Herr Weber da? → Können Sie mir sagen, ___ Herr Weber da ist? || ob
+Wie viel kostet das? → Ich möchte wissen, ___ ___ das kostet. || wie viel
+Kommt er mit? → Ich frage mich, ___ er ___. || ob / mitkommt
+Wo hast du das gekauft? → Sag mir, wo du das ___ ___. || gekauft hast
+Muss ich zahlen? → Wissen Sie, ob ich ___ ___? || zahlen muss
+[Mix] Können Sie mir sagen, ___ ___ Formular ich ausfüllen muss? (welch-, das) || welches
+[Mix] Ich weiß nicht, ___ ___ ich mich wenden soll. (an, wer) || an wen
+[Mix] Wissen Sie, ___ ich mich beschweren kann? (bei wem / wo) || bei wem / wo
+#exam
+Warum ruft Ravi an? || Er muss sich ummelden.
+Braucht er einen Termin? || Ja.
+Welche Unterlagen braucht er? || Reisepass und Bestätigung vom Vermieter.
+Indirekt: Wo wohnen Sie? (Darf ich fragen, …) || Darf ich fragen, wo Sie wohnen?
+Indirekt: Fährt dieser Bus zum Zoo? (Wissen Sie, …) || Wissen Sie, ob dieser Bus zum Zoo fährt?
+Indirekt: Warum ist der Zug zu spät? (Ich möchte wissen, …) || Ich möchte wissen, warum der Zug zu spät ist.
+Fehler? „Können Sie mir sagen, wo ist der Bahnhof?“ || …, wo der Bahnhof ist?
+Rufen Sie bei einer Sprachschule an und fragen Sie indirekt nach 4 Informationen.
+Sie sind im Bürgeramt. Fragen Sie höflich, was Sie tun müssen.
+Welche Erfahrungen haben Sie mit Behörden gemacht?
+#speak
+Die Frau arbeitet im Amt. Stelle ihr 4 indirekte Fragen.
+Was möchtest du über das Leben in Deutschland wissen? __Ich möchte wissen, ob …__
+Ich frage mich oft, … (3 Sätze)
+Frag deinen Partner indirekt nach seinem Wochenende.
+
+@@ 33|B1|Relativsätze|Menschen und Dinge beschreiben|family|5,6,13,15,21,23
+#expl
+Ein **Relativsatz** beschreibt ein Nomen genauer. Er ist ein **Nebensatz** (Verb am Ende) und steht direkt **nach dem Nomen**.
+Das **Relativpronomen** hat das **Genus/Numerus des Nomens**, aber den **Fall aus dem Relativsatz**: __Der Mann, **den** ich kenne (kennen + Akk.)__.
+Formen = bestimmter Artikel, **außer**: Dativ Plural **denen**, Genitiv **dessen / deren**.
+Mit Präposition: Präposition steht **vor** dem Relativpronomen: __die Freundin, **mit der** ich wohne__. Nach Orten auch **wo**: __die Stadt, **wo** (in der) ich wohne__.
+#use
+Personen und Dinge genau beschreiben, Bildbeschreibung, Definitionen.
+#table
+Fall|maskulin|feminin|neutral|Plural
+Nominativ|der|die|das|die
+Akkusativ|den|die|das|die
+Dativ|dem|der|dem|**denen**
+Genitiv|**dessen**|**deren**|**dessen**|**deren**
+Beispiel|Der Mann, **der** dort steht, …|Die Frau, **der** ich helfe, …|Das Kind, **das** ich sehe, …|Die Leute, **mit denen** ich arbeite, …
+#ex
+Das ist der Kollege, der aus Hamburg kommt. = That's the colleague who comes from Hamburg.
+Das ist die Frau, die ich im Kurs kennengelernt habe. = That's the woman I met in the course.
+Der Mann, dem ich geholfen habe, war sehr nett. = The man I helped was very nice.
+Das Buch, das du mir geschenkt hast, ist super. = The book you gave me is great.
+Die Freunde, mit denen ich reise, kommen aus Indien. = The friends I travel with come from India.
+Berlin ist eine Stadt, in der viele Nationen leben. = Berlin is a city where many nations live.
+Das ist Anna, deren Sohn Fußball spielt. = That's Anna, whose son plays football.
+Ich suche eine Wohnung, die nicht so teuer ist. = I'm looking for a flat that isn't so expensive.
+Der Film, über den alle sprechen, ist langweilig. = The film everyone talks about is boring.
+Mumbai ist die Stadt, wo ich geboren bin. = Mumbai is the city where I was born.
+#vocab
+die Person, -en = person
+der Mensch, -en = human
+freundlich / unfreundlich = friendly / unfriendly
+hilfsbereit = helpful
+lustig = funny
+ehrlich = honest
+geduldig = patient
+der Charakter, -e = character
+die Eigenschaft, -en = quality
+kennenlernen = to get to know
+sich verstehen mit = to get on with
+der Mitbewohner, - = flatmate
+#read
+Ravi schreibt seiner Schwester eine E-Mail: „In Berlin habe ich Menschen kennengelernt, die mir sehr wichtig sind. Anna ist die Nachbarin, die mir immer hilft. Jonas ist der Kollege, mit dem ich am besten zusammenarbeite. Leila ist die Freundin, die ich im Deutschkurs kennengelernt habe und mit der ich oft spazieren gehe. Max, dessen Mutter Anna ist, ist ein Junge, der nur an Fußball denkt. Das sind die Leute, denen ich viel zu verdanken habe.“
+#task
+Das ist der Mann, ___ neben mir wohnt. || der
+Das ist die Frau, ___ ich liebe. || die
+Das ist das Kind, ___ ich geholfen habe. || dem
+Hier ist der Stuhl, ___ ich gekauft habe. || den
+Das sind die Kinder, mit ___ ich spiele. || denen
+Das ist die Lehrerin, ___ Kurs ich besuche. || deren
+Verbinde: Ich habe einen Freund. Er wohnt in Wien. || Ich habe einen Freund, der in Wien wohnt.
+[Mix] Das ist die Kollegin, ___ ich ___ Blumen geschenkt habe. (Dativ, die) || der / die
+[Mix] Die Wohnung, in ___ wir wohnen, ist größer ___ die alte. || der / als
+[Mix] Der Film, ___ ___ ich mich interessiere, läuft heute. (für) || für den
+#exam
+Wer ist Anna? || Die Nachbarin, die Ravi immer hilft.
+Wo hat Ravi Leila kennengelernt? || Im Deutschkurs.
+Wer ist Max? || Annas Sohn, der nur an Fußball denkt.
+Verbinde: Das ist der Bus. Ich fahre mit dem Bus zur Arbeit. || Das ist der Bus, mit dem ich zur Arbeit fahre.
+Verbinde: Ich kenne eine Frau. Ihr Mann ist Koch. || Ich kenne eine Frau, deren Mann Koch ist.
+Verbinde: Die Leute sind nett. Ich arbeite für die Leute. || Die Leute, für die ich arbeite, sind nett.
+Definiere mit Relativsatz: ein Bäcker || Ein Bäcker ist ein Mann, der Brot backt.
+Beschreiben Sie eine Person, die für Sie wichtig ist.
+Wie ist ein guter Freund? (Ein guter Freund ist jemand, der …)
+Beschreiben Sie die Stadt, in der Sie aufgewachsen sind.
+#speak
+Beschreibe die Personen mit Relativsätzen: __Die Frau, die links sitzt, …__
+Rätsel: Beschreibe ein Ding, ohne den Namen zu sagen: __Das ist etwas, das …__
+Beschreibe den Nachbarn, den du am liebsten magst.
+Was für ein Mensch möchtest du sein?
+
+@@ 34|B1|Temporalsätze: als, wenn, bevor, nachdem, während, seit, bis|Lebenslauf und Erinnerungen|family|17,18,21,24,33
+#expl
+Temporalsätze sind Nebensätze (Verb am Ende) und sagen, **wann** etwas passiert.
+**als** = **einmal** in der **Vergangenheit**: __**Als** ich 18 war, …__ · **wenn** = Gegenwart/Zukunft oder **wiederholt** (immer wenn) in der Vergangenheit.
+**bevor** = vorher · **nachdem** = nachher (+ **Plusquamperfekt**/Perfekt, siehe L35) · **während** = gleichzeitig · **seit(dem)** = von damals bis jetzt · **bis** = Endpunkt.
+#use
+Lebenslauf erzählen, Erfahrungen, Präsentation („Als ich nach Deutschland kam, …“).
+#table
+Konj.|Bedeutung|Beispiel
+als|einmal, Vergangenheit|**Als** ich nach Berlin kam, war es kalt.
+wenn|immer / Zukunft|**Wenn** ich in Mumbai war, bin ich immer ans Meer gegangen.
+bevor|before|Ich trinke Chai, **bevor** ich arbeite.
+nachdem|after|**Nachdem** ich gegessen hatte, bin ich gegangen.
+während|while|**Während** ich koche, höre ich Musik.
+seit(dem)|since|**Seit** ich hier wohne, fahre ich Rad.
+bis|until|Warte, **bis** ich komme!
+#ex
+Als ich ein Kind war, wohnten wir in Pune. = When I was a child we lived in Pune.
+Wenn ich traurig bin, rufe ich meine Mutter an. = When I'm sad I call my mother.
+Immer wenn es regnete, spielten wir drinnen. = Whenever it rained we played inside.
+Bevor ich nach Deutschland kam, habe ich Deutsch gelernt. = Before I came to Germany I learned German.
+Nachdem ich die Schule beendet hatte, studierte ich. = After I had finished school, I studied.
+Während Ravi kocht, telefoniert er mit Leila. = While Ravi cooks, he talks to Leila on the phone.
+Seit ich in Berlin wohne, spreche ich jeden Tag Deutsch. = Since I've lived in Berlin I speak German every day.
+Ich bleibe hier, bis der Regen aufhört. = I'll stay here until the rain stops.
+Als ich die Stelle bekam, war ich sehr glücklich. = When I got the job I was very happy.
+Wenn ich die Prüfung bestanden habe, feiern wir. = When I've passed the exam, we'll celebrate.
+#vocab
+der Lebenslauf, ¨e = CV / life story
+geboren = born
+aufwachsen = to grow up
+die Schule beenden = to finish school
+das Studium = university studies
+studieren = to study
+der Abschluss, ¨e = degree
+das Praktikum, Praktika = internship
+sich erinnern an = to remember
+die Erinnerung, -en = memory
+damals = back then
+die Jugend = youth
+#read
+Ravi wurde 1998 in Mumbai geboren. Als er zehn war, zog die Familie nach Pune. Wenn er Ferien hatte, besuchte er immer seine Großeltern am Meer. Nachdem er die Schule beendet hatte, studierte er Maschinenbau. Während er studierte, machte er ein Praktikum bei einer deutschen Firma. Bevor er nach Berlin kam, lernte er ein Jahr Deutsch. Seit er hier lebt, ist sein Leben ganz anders. Er bleibt in Berlin, bis er Teamleiter ist – mindestens!
+#task
+___ ich 20 war, bin ich nach Delhi gezogen. || Als
+___ ich Zeit habe, lese ich. || Wenn
+Immer ___ Oma kam, brachte sie Süßigkeiten mit. || wenn
+Putz dir die Zähne, ___ du schlafen gehst! || bevor
+___ ich wohne hier, habe ich viele Freunde. → korrigiere || Seit ich hier wohne, habe ich viele Freunde.
+___ du duschst, mache ich das Frühstück. || Während
+Warte hier, ___ ich zurückkomme! || bis
+[Mix] Als ich klein ___, ___ ich keinen Computer. (sein, haben – Prät.) || war / hatte
+[Mix] Bevor ich ___ Haus verlasse, ziehe ich ___ die Jacke an. (das, sich – Dat.) || das / mir
+[Mix] Seitdem ich ___ Leila spreche, ist mein Deutsch ___. (mit, gut – Komp.) || mit / besser
+#exam
+Wohin zog die Familie, als Ravi zehn war? || Nach Pune.
+Was machte Ravi, wenn er Ferien hatte? || Er besuchte seine Großeltern am Meer.
+Was machte er, bevor er nach Berlin kam? || Er lernte ein Jahr Deutsch.
+als oder wenn? ___ ich gestern nach Hause kam, war niemand da. || Als
+als oder wenn? ___ ich nach Hause komme, koche ich immer. || Wenn
+Verbinde (während): Ich fahre Bus. Ich lese. || Während ich Bus fahre, lese ich.
+Verbinde (bevor): Ich gehe ins Bett. Ich lese. || Bevor ich ins Bett gehe, lese ich.
+Erzählen Sie Ihren Lebenslauf mit als, nachdem, bevor, seit.
+Woran erinnern Sie sich, wenn Sie an Ihre Schulzeit denken?
+Was machen Sie immer, wenn Sie Stress haben?
+#speak
+Erzähle eine Geschichte zur Familie: __Als die Kinder klein waren, …__
+Was machst du, während du isst?
+Was war, als du zum ersten Mal in einem neuen Land warst?
+Was hat sich geändert, seit du Deutsch lernst?
+
+@@ 35|B1|Präteritum (alle Verben) und Plusquamperfekt|Geschichten erzählen|station|17,18,24,34
+#expl
+**Präteritum** benutzt man vor allem **schriftlich** (Geschichten, Zeitung, Märchen). Regelmäßig: Stamm + **-te**: machte, wohnte. Unregelmäßig: eigener Stamm: ging, kam, fuhr, sah, fand (siehe Referenz 3). ich und er/sie/es haben **keine Endung**: ich ging, er ging.
+**Plusquamperfekt** = die Vergangenheit **vor** der Vergangenheit: **hatte/war + Partizip II**: __Als ich ankam, **war** der Zug schon **abgefahren**.__
+Typisch mit **nachdem**: Plusquamperfekt im nachdem-Satz, Präteritum/Perfekt im Hauptsatz.
+#use
+Lesetexte in der Prüfung verstehen, Geschichten/E-Mails schreiben.
+#table
+Zeit|regelmäßig (reisen)|unregelmäßig (fahren)|Funktion
+Präsens|er reist|er fährt|jetzt
+Präteritum|er reis**te**|er **fuhr**|Vergangenheit (schriftlich)
+Perfekt|er ist gereist|er ist gefahren|Vergangenheit (mündlich)
+Plusquamperfekt|er **war** gereist|er **war** gefahren|vor der Vergangenheit
+Plusquamperfekt (haben)|er **hatte** gewartet|er **hatte** gegessen|vor der Vergangenheit
+#ex
+Letzten Winter fuhr Ravi nach Hamburg. = Last winter Ravi went to Hamburg.
+Der Zug kam mit einer Stunde Verspätung an. = The train arrived an hour late.
+Ravi wartete am Gleis und fror. = Ravi waited on the platform and was freezing.
+Er hatte seine Handschuhe zu Hause vergessen. = He had forgotten his gloves at home.
+Als er ankam, war das Museum schon geschlossen. = When he arrived, the museum had already closed.
+Nachdem er gegessen hatte, ging er zum Hafen. = After he had eaten he went to the harbour.
+Es war einmal ein König, der drei Töchter hatte. = Once upon a time there was a king who had three daughters.
+Sie las den Brief und weinte. = She read the letter and cried.
+Wir waren schon eingeschlafen, als das Telefon klingelte. = We had already fallen asleep when the phone rang.
+Er fand die Adresse nicht, weil er den Zettel verloren hatte. = He couldn't find the address because he had lost the note.
+#vocab
+die Geschichte, -n = story / history
+das Märchen, - = fairy tale
+plötzlich = suddenly
+zum Glück = luckily
+leider = unfortunately
+verlieren (verlor) = to lose
+frieren (fror) = to freeze
+klingeln = to ring
+der Hafen, ¨ = harbour
+das Museum, Museen = museum
+ankommen (kam an) = to arrive
+weinen = to cry
+#read
+Letzten Winter fuhr Ravi nach Hamburg. Er hatte die Fahrkarte schon vor Wochen gekauft. Leider hatte der Zug eine Stunde Verspätung. Ravi wartete am Gleis und fror, denn er hatte seine Handschuhe vergessen. Als er endlich in Hamburg ankam, war das Museum schon geschlossen. Zum Glück fand er ein kleines Café am Hafen. Nachdem er einen heißen Tee getrunken hatte, ging er am Wasser spazieren. Plötzlich sah er ein riesiges Schiff. Es war ein schöner Abend.
+#task
+Präteritum: Ich (wohnen) ___ in Pune. || wohnte
+Präteritum: Er (gehen) ___ nach Hause. || ging
+Präteritum: Wir (sehen) ___ einen Film. || sahen
+Präteritum: Sie (kommen, Sg.) ___ spät an. || kam
+Plusquamperfekt: Ich ___ schon ___. (essen) || hatte / gegessen
+Plusquamperfekt: Der Bus ___ schon ___. (abfahren) || war / abgefahren
+Nachdem er die Arbeit beendet ___, ___ er nach Hause. (haben, fahren – Prät.) || hatte / fuhr
+[Mix] Als ich ___ Bahnhof ankam, war der Zug schon weg. (an + der) || am
+[Mix] Er konnte nicht bezahlen, weil er ___ Geldbeutel verloren ___. (sein, haben) || seinen / hatte
+[Mix] Präteritum: Sie (sich freuen) ___ ___ über das Geschenk. || freute sich
+#exam
+Warum fror Ravi? || Er hatte seine Handschuhe vergessen.
+Warum konnte er nicht ins Museum? || Es war schon geschlossen.
+Was machte er, nachdem er Tee getrunken hatte? || Er ging am Wasser spazieren.
+Perfekt → Präteritum: Wir sind nach Rom gefahren. || Wir fuhren nach Rom.
+Perfekt → Präteritum: Sie hat einen Brief geschrieben. || Sie schrieb einen Brief.
+Plusquamperfekt: Ich kam an. Der Film (beginnen) … schon. || Der Film hatte schon begonnen.
+Verbinde mit nachdem: Er frühstückte. Dann ging er los. || Nachdem er gefrühstückt hatte, ging er los.
+Schreiben Sie eine kurze Geschichte (8 Sätze) im Präteritum: Ein Tag, an dem alles schiefging.
+Erzählen Sie ein Märchen aus Ihrem Land.
+Was war schon passiert, als Sie heute aufgewacht sind?
+#speak
+Erzähle eine Geschichte zum Bahnhof im Präteritum: __Der Mann wartete …__
+Was war vorher passiert? (Plusquamperfekt)
+Erzähle, was dir auf einer Reise einmal passiert ist.
+Erfinde ein Ende für Ravis Hamburg-Geschichte.
+
+@@ 36|B1|Gegensätze: obwohl und trotzdem|Arbeit und Freizeit im Gleichgewicht|office|20,21,34
+#expl
+**obwohl** (although) leitet einen **Nebensatz** ein – Verb am Ende: __Ich gehe joggen, **obwohl** es **regnet**.__
+**trotzdem** (nevertheless) ist ein **Adverb** – im Hauptsatz auf **Position 1** (Verb danach) oder in der Mitte: __Es regnet. **Trotzdem gehe** ich joggen. / Ich gehe **trotzdem** joggen.__
+Beide zeigen einen **unerwarteten Gegensatz** (Gegenteil von weil/deshalb). Vergleiche: __weil__ = Grund, __obwohl__ = Gegengrund.
+Auch: **aber** (Pos. 0) und **trotz + Genitiv** (L40).
+#use
+Differenziert argumentieren – bringt Punkte bei „Spektrum“ in der Prüfung.
+#table
+Typ|Satz 1|Satz 2
+obwohl (Nebensatz)|Ravi arbeitet,|**obwohl** er krank **ist**.
+obwohl zuerst|**Obwohl** er krank ist,|**arbeitet** er.
+trotzdem Pos. 1|Er ist krank.|**Trotzdem arbeitet** er.
+trotzdem Mitte|Er ist krank.|Er arbeitet **trotzdem**.
+aber (Pos. 0)|Er ist krank,|**aber** er arbeitet.
+#ex
+Obwohl ich müde bin, lerne ich noch. = Although I'm tired, I'm still studying.
+Jonas hat viel Arbeit. Trotzdem macht er pünktlich Feierabend. = Jonas has a lot of work. Nevertheless he finishes on time.
+Ich esse Schokolade, obwohl ich eine Diät mache. = I eat chocolate although I'm on a diet.
+Es war kalt, trotzdem sind wir geschwommen. = It was cold; we swam anyway.
+Obwohl Ravi wenig Zeit hat, geht er jede Woche joggen. = Although Ravi has little time, he goes jogging every week.
+Das Gehalt ist gut. Trotzdem ist sie nicht zufrieden. = The salary is good. Nevertheless she's not satisfied.
+Er kam zur Arbeit, obwohl er Fieber hatte. = He came to work although he had a fever.
+Ich habe gut geschlafen und bin trotzdem müde. = I slept well and am still tired.
+Obwohl die Wohnung teuer ist, haben wir sie genommen. = Although the flat is expensive, we took it.
+Sie lernt nie – trotzdem besteht sie jede Prüfung. = She never studies – yet she passes every exam.
+#vocab
+das Gleichgewicht = balance
+die Work-Life-Balance = work-life balance
+der Feierabend = end of the working day
+zufrieden / unzufrieden = satisfied / unsatisfied
+die Diät, -en = diet
+erschöpft = exhausted
+die Belastung, -en = strain
+entspannen = to relax
+die Teilzeit / Vollzeit = part-time / full-time
+flexibel = flexible
+der Druck = pressure
+sich leisten = to afford
+#read
+Mia arbeitet Vollzeit, obwohl sie zwei kleine Kinder hat. Sie ist oft erschöpft. Trotzdem ist sie mit ihrer Arbeit zufrieden, denn ihre Arbeitszeiten sind flexibel. Jonas dagegen hat keine Kinder, aber er macht viele Überstunden. Obwohl sein Gehalt gut ist, möchte er weniger arbeiten. Ravi sagt: „Ich arbeite gern viel. Trotzdem nehme ich mir am Wochenende immer Zeit für Freunde.“ Mia antwortet: „Das ist klug. Obwohl die Arbeit wichtig ist, ist das Leben wichtiger.“
+#task
+Ich gehe spazieren, ___ es kalt ist. || obwohl
+Es ist kalt. ___ gehe ich spazieren. || Trotzdem
+Er ist nicht gekommen, ___ er Zeit hatte. || obwohl
+Verbinde (obwohl): Sie ist krank. Sie arbeitet. || Obwohl sie krank ist, arbeitet sie. / Sie arbeitet, obwohl sie krank ist.
+Verbinde (trotzdem): Das Hotel war teuer. Wir haben es gebucht. || Das Hotel war teuer. Trotzdem haben wir es gebucht.
+weil oder obwohl? Ich trinke Kaffee, ___ ich müde bin. || weil
+weil oder obwohl? Ich kann nicht schlafen, ___ ich müde bin. || obwohl
+[Mix] Obwohl ich ___ gestern früh ins Bett gegangen ___, bin ich müde. (sein) || bin
+[Mix] Er hat ___ ___ Kollegen geholfen, obwohl er keine Zeit hatte. (sein, Dativ) || seinem
+[Mix] Obwohl es teuer ___, ___ ich gern eine größere Wohnung. (sein, haben – Konj. II) || ist / hätte
+#exam
+Warum ist Mia zufrieden? || Weil ihre Arbeitszeiten flexibel sind.
+Was möchte Jonas, obwohl sein Gehalt gut ist? || Weniger arbeiten.
+Wofür nimmt sich Ravi Zeit? || Für Freunde am Wochenende.
+Umformen (trotzdem → obwohl): Er hat Geld. Trotzdem kauft er nichts. || Obwohl er Geld hat, kauft er nichts.
+Umformen (obwohl → trotzdem): Obwohl es regnet, fahren wir los. || Es regnet. Trotzdem fahren wir los.
+Ergänze: Sie ist zufrieden, ___ sie wenig verdient. || obwohl
+Fehler? „Trotzdem ich arbeite viel.“ || Trotzdem arbeite ich viel.
+Was machen Sie, obwohl Sie wissen, dass es nicht gut ist?
+Ist eine gute Work-Life-Balance wichtig? Argumentieren Sie mit obwohl/trotzdem.
+Vollzeit oder Teilzeit: Nennen Sie Vor- und Nachteile.
+#speak
+Die Frau arbeitet noch, obwohl …? (Vermutung)
+Beschreibe das Bild mit trotzdem: __Es ist schon spät. Trotzdem …__
+Was hast du gemacht, obwohl du keine Lust hattest?
+Sollte man im Urlaub E-Mails lesen? Pro/Contra.
+
+@@ 37|B1|Konsequenzen: deshalb, deswegen, darum, sonst|Umwelt und Verkehr|city|20,21,29,36
+#expl
+**deshalb, deswegen, darum** (therefore) zeigen eine **Folge**. Sie sind **Adverbien**: Position 1 → Verb danach (**Inversion**): __Es regnet, **deshalb nehme** ich den Bus.__
+Vergleiche: **weil** (Grund, Nebensatz) ↔ **deshalb** (Folge, Hauptsatz): __Ich nehme den Bus, **weil** es **regnet**. = Es regnet, **deshalb nehme** ich den Bus.__
+**sonst** (otherwise) zeigt eine negative Folge: __Beeil dich, **sonst verpassen** wir den Zug.__
+Auch **also** (so) und **daher** funktionieren gleich.
+#use
+Argumentieren (Umwelt, Verkehr, Gesundheit), Präsentation: Vorteile/Nachteile.
+#table
+Konnektor|Satz 1 (Grund)|Satz 2 (Folge)
+deshalb|Die Luft ist schlecht,|**deshalb fahre** ich Rad.
+deswegen|Ich will Geld sparen.|**Deswegen kaufe** ich kein Auto.
+darum|Der Bus ist voll,|**darum gehen** wir zu Fuß.
+sonst|Wir müssen Energie sparen,|**sonst wird** der Strom teurer.
+weil (Vergleich)|Ich fahre Rad,|**weil** die Luft schlecht **ist**.
+#ex
+Ich will die Umwelt schützen, deshalb fahre ich Fahrrad. = I want to protect the environment, so I cycle.
+Die Mieten in der Stadt sind hoch, deswegen ziehen viele aufs Land. = City rents are high, so many move to the country.
+Es gibt oft Stau, darum nehme ich die S-Bahn. = There are often traffic jams, so I take the S-Bahn.
+Mach das Licht aus, sonst verbrauchen wir zu viel Strom. = Turn off the light, otherwise we use too much electricity.
+Ravi hat kein Auto, deshalb ist er flexibel mit dem Zug. = Ravi has no car, so he's flexible by train.
+Plastik ist schlecht für das Meer, deshalb benutzen wir Stofftaschen. = Plastic is bad for the sea, so we use cloth bags.
+Wir müssen den Müll trennen, sonst gibt es Ärger mit dem Vermieter. = We must separate rubbish, otherwise there's trouble with the landlord.
+Der Zug war billig, darum sind wir nicht geflogen. = The train was cheap, so we didn't fly.
+Er hat den Bus verpasst, deswegen ist er zu spät gekommen. = He missed the bus, so he came late.
+Beeil dich, sonst ist der Markt geschlossen! = Hurry up or the market will be closed!
+#vocab
+die Umwelt = environment
+schützen = to protect
+der Müll = rubbish
+trennen = to separate
+der Stau, -s = traffic jam
+die Energie = energy
+der Strom = electricity
+verbrauchen = to consume
+das Plastik = plastic
+der Klimawandel = climate change
+öffentliche Verkehrsmittel = public transport
+umweltfreundlich = eco-friendly
+#read
+In Berlin fahren viele Menschen mit dem Fahrrad, denn die Stadt hat viele Radwege. Ravi hatte in Mumbai ein Motorrad. In Berlin gibt es gute öffentliche Verkehrsmittel, deshalb braucht er kein Fahrzeug. Er möchte die Umwelt schützen, darum trennt er seinen Müll genau. Am Anfang war das schwer: „Gelbe Tonne, blaue Tonne, Biotonne – das ist kompliziert!“ Anna hat es ihm erklärt: „Du musst den Müll richtig trennen, sonst ärgert sich der Hausmeister.“
+#task
+Es regnet, ___ bleibe ich zu Hause. (Folge) || deshalb
+Ich bin krank. ___ ___ ich nicht zur Arbeit. (deswegen, gehen) || Deswegen gehe
+Zieh eine Jacke an, ___ frierst du. || sonst
+Umformen (deshalb): Ich lerne, weil ich eine Prüfung habe. || Ich habe eine Prüfung, deshalb lerne ich.
+Umformen (weil): Der Zug ist teuer, darum fahre ich mit dem Bus. || Ich fahre mit dem Bus, weil der Zug teuer ist.
+Fehler? „Ich habe Hunger, deshalb ich esse.“ || …, deshalb esse ich.
+Verbinde (sonst): Wir müssen jetzt gehen. Wir kommen zu spät. || Wir müssen jetzt gehen, sonst kommen wir zu spät.
+[Mix] Ravi möchte fit bleiben, deshalb ___ er jeden Tag ___ Fahrrad. (fahren, mit dem) || fährt / mit dem
+[Mix] Obwohl Autos praktisch sind, ___ ich keins. (wollen) || will
+[Mix] Der Müll wird getrennt, ___ er recycelt werden kann. (Zweck) || damit
+#exam
+Warum braucht Ravi in Berlin kein Fahrzeug? || Es gibt gute öffentliche Verkehrsmittel.
+Warum trennt er den Müll? || Er möchte die Umwelt schützen.
+Was passiert, wenn man den Müll nicht trennt? || Der Hausmeister ärgert sich.
+weil oder deshalb? Ich spare Energie, ___ Strom teuer ist. || weil
+weil oder deshalb? Strom ist teuer, ___ spare ich Energie. || deshalb
+Ergänze: Fahr langsam, ___ bekommst du eine Strafe. || sonst
+Verbinde (darum): Die Luft ist schmutzig. Viele Leute tragen Masken. || Die Luft ist schmutzig, darum tragen viele Leute Masken.
+Was tun Sie für die Umwelt? Begründen Sie mit deshalb/weil.
+Auto oder Fahrrad in der Stadt? Präsentieren Sie Vor- und Nachteile.
+Wie ist die Umweltsituation in Ihrem Heimatland?
+#speak
+Beschreibe den Verkehr auf dem Bild: Was ist gut / schlecht für die Umwelt?
+Der Bus ist voll, deshalb …? Mach 3 Folgen.
+Was passiert, wenn wir nichts tun? __Wir müssen … sonst …__
+Wie kommst du zur Arbeit und warum? (deshalb)
+
+@@ 38|B1|Zweiteilige Konnektoren|Medien und Internet|office|20,22,36,37
+#expl
+Zweiteilige Konnektoren verbinden zwei Informationen elegant:
+**sowohl … als auch** (both … and) · **nicht nur … sondern auch** (not only … but also) · **entweder … oder** (either … or) · **weder … noch** (neither … nor) · **zwar … aber** (it's true … but) · **je … desto** (the … the, siehe L42).
+**weder … noch** ist schon negativ – **kein** zusätzliches nicht! **zwar … aber** ist perfekt für Vor- und Nachteile.
+Wortstellung: Die Konnektoren stehen meist vor dem Satzteil, den sie betreffen: __Ich spreche **sowohl** Hindi **als auch** Englisch.__
+#use
+Prüfung Teil 2 (Präsentation): Vor- und Nachteile, Meinung – bringt höhere Punkte!
+#table
+Konnektor|Bedeutung|Beispiel
+sowohl … als auch|both … and|Ich nutze **sowohl** Instagram **als auch** WhatsApp.
+nicht nur … sondern auch|not only … but also|Das Handy ist **nicht nur** praktisch, **sondern auch** gefährlich.
+entweder … oder|either … or|**Entweder** lese ich Zeitung **oder** ich höre Podcasts.
+weder … noch|neither … nor|Er hat **weder** Facebook **noch** Instagram.
+zwar … aber|admittedly … but|Das Internet ist **zwar** nützlich, **aber** es macht süchtig.
+#ex
+Ich lese Nachrichten sowohl online als auch in der Zeitung. = I read news both online and in the newspaper.
+Soziale Medien sind nicht nur unterhaltsam, sondern auch informativ. = Social media are not only entertaining but also informative.
+Entweder schaue ich eine Serie oder ich lese ein Buch. = Either I watch a series or I read a book.
+Mein Opa hat weder ein Handy noch einen Computer. = My grandpa has neither a mobile nor a computer.
+Das Smartphone ist zwar praktisch, aber man verliert viel Zeit. = The smartphone is practical, but you lose a lot of time.
+Ravi telefoniert nicht nur mit seinen Eltern, sondern auch mit seiner Oma. = Ravi calls not only his parents but also his grandma.
+Wir können entweder einen Film streamen oder ins Kino gehen. = We can either stream a film or go to the cinema.
+Online-Shopping ist zwar bequem, aber schlecht für kleine Läden. = Online shopping is convenient but bad for small shops.
+Weder Jonas noch Mia haben die E-Mail bekommen. = Neither Jonas nor Mia got the email.
+Leila spricht sowohl Persisch als auch Deutsch fließend. = Leila speaks both Persian and German fluently.
+#vocab
+die Medien (Pl.) = media
+soziale Netzwerke = social networks
+die Nachricht, -en = news / message
+die Zeitung, -en = newspaper
+die Serie, -n = series
+streamen = to stream
+das Smartphone, -s = smartphone
+die App, -s = app
+herunterladen = to download
+süchtig = addicted
+der Datenschutz = data protection
+die Informationsquelle, -n = source of information
+#read
+Ravi nutzt sowohl WhatsApp als auch Videoanrufe, um mit seiner Familie zu sprechen. Das Internet ist für ihn nicht nur praktisch, sondern auch wichtig gegen das Heimweh. Seine Oma hat zwar ein Smartphone, aber sie benutzt es kaum. Jonas dagegen hat weder Instagram noch TikTok. Er sagt: „Entweder ich lese ein Buch oder ich treffe Freunde. Soziale Medien sind zwar interessant, aber man verliert zu viel Zeit.“ Ravi findet: „Es kommt darauf an, wie man sie nutzt.“
+#task
+Ich trinke ___ Tee ___ Kaffee. (both … and) || sowohl / als auch
+Er hat ___ Zeit ___ Geld. (neither … nor) || weder / noch
+___ kommst du mit ___ du bleibst hier. || Entweder / oder
+Das Auto ist ___ alt, ___ es fährt gut. || zwar / aber
+Sie ist ___ klug, ___ sehr nett. (not only … but also) || nicht nur / sondern auch
+Verbinde (weder … noch): Ich habe keinen Fernseher. Ich habe kein Radio. || Ich habe weder einen Fernseher noch ein Radio.
+Fehler? „Ich esse weder Fleisch noch nicht Fisch.“ || Ich esse weder Fleisch noch Fisch.
+[Mix] Das Handy ist zwar ___ (teuer, Komp.) als das alte, aber es ist auch besser. || teurer
+[Mix] Wir können entweder ___ Kino gehen oder ___ Hause bleiben. || ins / zu
+[Mix] Soziale Medien sind nicht nur gut, sondern auch gefährlich, deshalb ___ man vorsichtig sein. (sollen, Rat) || sollte
+#exam
+Wie spricht Ravi mit seiner Familie? || Über WhatsApp und Videoanrufe.
+Welche sozialen Medien hat Jonas? || Keine (weder Instagram noch TikTok).
+Was sagt Jonas über soziale Medien? || Sie sind zwar interessant, aber man verliert zu viel Zeit.
+Ergänze: Ich lerne ___ mit Büchern ___ mit Apps. (both) || sowohl / als auch
+Ergänze: ___ rufe ich dich an ___ ich schreibe dir. || Entweder / oder
+Umformen (zwar … aber): Streaming ist billig. Es gibt zu viel Auswahl. || Streaming ist zwar billig, aber es gibt zu viel Auswahl.
+Ergänze: Das Buch ist ___ spannend ___ lustig. (neither) || weder / noch
+Präsentieren Sie: „Soziale Medien – Vor- und Nachteile“ (mit zwar … aber, nicht nur … sondern auch).
+Welche Medien nutzen Sie und wofür?
+Sollten Kinder ein Smartphone haben? Diskutieren Sie.
+#speak
+Was machen die zwei am Computer? __Sie … entweder … oder …__
+Wie nutzt du dein Handy? Benutze 3 zweiteilige Konnektoren.
+Homeoffice: zwar … aber …
+Wie haben sich die Medien seit deiner Kindheit geändert?
+
+@@ 39|B1|Das Passiv|Prozesse und Produktion|kitchen|6,17,35,37
+#expl
+Im **Passiv** ist die **Handlung** wichtig, nicht die Person: __Das Brot **wird gebacken**.__
+Form **Präsens:** **werden + Partizip II** · **Präteritum:** **wurde + Partizip II** · **Perfekt:** **ist + Partizip II + worden** · **mit Modalverb:** **muss + Partizip II + werden**.
+Das **Akkusativ-Objekt** im Aktiv wird zum **Subjekt** (Nominativ) im Passiv: __Man repariert **den** Wagen → **Der** Wagen wird repariert.__
+Die Person (falls wichtig) mit **von + Dativ**: __Das Essen wird **von meiner Mutter** gekocht.__
+#use
+Rezepte, Prozesse, Regeln, Nachrichten beschreiben; Präsentationen und Lesetexte.
+#table
+Zeit|Aktiv|Passiv
+Präsens|Man kocht den Reis.|Der Reis **wird gekocht**.
+Präteritum|Man baute das Haus 1900.|Das Haus **wurde** 1900 **gebaut**.
+Perfekt|Man hat das Auto repariert.|Das Auto **ist repariert worden**.
+Modalverb|Man muss den Müll trennen.|Der Müll **muss getrennt werden**.
+mit Person|Mein Vater kocht das Essen.|Das Essen wird **von meinem Vater** gekocht.
+#ex
+Zuerst wird der Reis gewaschen. = First the rice is washed.
+Dann werden die Zwiebeln geschnitten. = Then the onions are chopped.
+Das Brandenburger Tor wurde 1791 gebaut. = The Brandenburg Gate was built in 1791.
+In Deutschland wird viel Brot gegessen. = A lot of bread is eaten in Germany.
+Der Müll wird jeden Dienstag abgeholt. = The rubbish is collected every Tuesday.
+Das Paket ist schon geschickt worden. = The parcel has already been sent.
+Hier darf nicht geraucht werden. = Smoking is not allowed here.
+Das Essen wurde von Ravi gekocht. = The food was cooked by Ravi.
+Die Formulare müssen unterschrieben werden. = The forms must be signed.
+Tee wird in Indien seit Jahrhunderten getrunken. = Tea has been drunk in India for centuries.
+#vocab
+herstellen = to produce
+die Produktion = production
+die Fabrik, -en = factory
+schneiden (geschnitten) = to cut
+braten (gebraten) = to fry
+würzen = to season
+mischen = to mix
+backen (gebacken) = to bake
+servieren = to serve
+bauen = to build
+reparieren = to repair
+liefern = to deliver
+#read
+So wird Masala Chai gemacht: Zuerst wird Wasser in einem Topf gekocht. Dann werden Ingwer, Kardamom und Zimt dazugegeben. Danach wird schwarzer Tee hinzugefügt. Nach drei Minuten wird Milch dazugegossen. Zum Schluss wird der Chai mit Zucker gesüßt und heiß serviert. Ravi erklärt Anna das Rezept. Anna sagt: „In Deutschland wird Tee meistens ohne Milch getrunken.“ Ravi lacht: „In Indien wird Chai überall verkauft – sogar im Zug!“
+#task
+Präsens Passiv: Man trinkt hier viel Kaffee. → Hier ___ viel Kaffee ___. || wird / getrunken
+Präsens Passiv: Man schneidet die Tomaten. → Die Tomaten ___ ___. || werden geschnitten
+Präteritum Passiv: Man baute die Brücke 1950. → Die Brücke ___ 1950 ___. || wurde / gebaut
+Perfekt Passiv: Man hat den Brief geschickt. → Der Brief ___ ___ ___. || ist geschickt worden
+Modal Passiv: Man muss das Fenster schließen. → Das Fenster ___ ___ ___. || muss geschlossen werden
+Mit von: Die Ärztin untersucht den Patienten. → Der Patient ___ ___ ___ Ärztin untersucht. || wird von der
+Aktiv oder Passiv? „Ich werde Lehrer.“ || Aktiv (werden = become)
+[Mix] Zuerst ___ die Zwiebeln geschnitten, danach ___ sie gebraten. (werden) || werden / werden
+[Mix] Der Tisch wurde ___ ___ Wand gestellt. (an, die) || an die
+[Mix] Das Paket konnte nicht geliefert werden, weil niemand zu Hause ___. (sein – Prät.) || war
+#exam
+Was wird zuerst gemacht? || Wasser wird gekocht.
+Wann wird Milch dazugegeben? || Nach drei Minuten.
+Wie wird Tee in Deutschland meistens getrunken? || Ohne Milch.
+Passiv: Der Mechaniker repariert das Auto. || Das Auto wird vom Mechaniker repariert.
+Passiv (Prät.): Man erfand das Telefon im 19. Jahrhundert. || Das Telefon wurde im 19. Jahrhundert erfunden.
+Passiv (Modal): Man muss die Rechnung bezahlen. || Die Rechnung muss bezahlt werden.
+Aktiv: Die Kinder werden von der Lehrerin abgeholt. || Die Lehrerin holt die Kinder ab.
+Beschreiben Sie im Passiv ein Rezept aus Ihrem Land.
+Wie wird in Ihrem Land ein Fest gefeiert?
+Was wird in Ihrer Stadt / Ihrem Land produziert?
+#speak
+Was wird in der Küche gemacht? __Das Gemüse wird …__
+Wie wird ein Brot gebacken? Beschreibe den Prozess.
+Was wird in deiner Familie am Wochenende gemacht?
+Was muss vor einer Party gemacht werden?
+
+@@ 40|B1|Genitiv und Präpositionen: wegen, trotz, während, statt|Nachrichten und Alltag|station|5,13,23,36,37
+#expl
+Der **Genitiv** zeigt **Besitz**: __das Auto **des** Mannes, die Tasche **der** Frau__. Maskulin/neutral bekommen **-s/-es** am Nomen. Bei Namen: **Ravis** Wohnung. Umgangssprachlich oft **von + Dativ**: __das Auto von dem Mann__.
+**Genitiv-Präpositionen:** **wegen** (because of), **trotz** (despite), **während** (during), **(an)statt** (instead of), **innerhalb/außerhalb** (inside/outside).
+Adjektive im Genitiv enden fast immer auf **-en**: __wegen des schlecht**en** Wetters__.
+Vergleiche: __wegen des Regens__ = __weil es regnet__ · __trotz des Regens__ = __obwohl es regnet__.
+#use
+Nachrichten verstehen, formelle Texte, Gründe/Gegengründe kurz ausdrücken.
+#table
+Fall|maskulin|feminin|neutral|Plural
+Genitiv (bestimmt)|des Zug**es**|der Bahn|des Wetter**s**|der Züge
+Genitiv (unbestimmt)|eines Mann**es**|einer Frau|eines Kind**es**|– (von + Dat.)
+wegen|wegen des Streiks|wegen der Baustelle|wegen des Unfalls|wegen der Ferien
+trotz|trotz des Regens|trotz der Kälte|trotz des Wetters|trotz der Probleme
+während|während des Films|während der Fahrt|während des Essens|während der Ferien
+#ex
+Wegen des Streiks fahren heute keine Züge. = Because of the strike no trains are running today.
+Trotz der Verspätung war Ravi pünktlich im Büro. = Despite the delay Ravi was on time at the office.
+Während der Fahrt hat er ein Buch gelesen. = During the journey he read a book.
+Das ist die Wohnung meines Bruders. = That's my brother's flat.
+Statt eines Autos kaufe ich ein Fahrrad. = Instead of a car I'm buying a bike.
+Wegen des schlechten Wetters wurde das Konzert abgesagt. = The concert was cancelled due to bad weather.
+Die Farbe des Mantels gefällt mir. = I like the colour of the coat.
+Innerhalb einer Woche müssen Sie antworten. = You must reply within a week.
+Leilas Praxis ist in der Nähe des Bahnhofs. = Leila's practice is near the station.
+Trotz des Stresses ist er gut gelaunt. = Despite the stress he's in a good mood.
+#vocab
+der Streik, -s = strike
+die Baustelle, -n = construction site
+der Unfall, ¨e = accident
+absagen = to cancel
+die Durchsage, -n = announcement
+der Fahrgast, ¨e = passenger
+der Ersatzverkehr = replacement service
+die Störung, -en = disruption
+die Kälte / die Hitze = cold / heat
+das Unwetter, - = storm
+die Nähe = vicinity
+gut gelaunt = in a good mood
+#read
+Durchsage am Bahnhof: „Liebe Fahrgäste, wegen eines Streiks fallen heute viele Züge aus. Wegen der Baustelle zwischen Berlin und Hamburg gibt es einen Ersatzverkehr mit Bussen. Wir bitten um Ihr Verständnis.“ Ravi ärgert sich. Trotz des Streiks muss er heute nach Hamburg fahren, denn der Termin seines Kunden ist wichtig. Er nimmt statt des Zuges einen Fernbus. Während der Fahrt bereitet er die Präsentation vor. Trotz der Probleme kommt er rechtzeitig an.
+#task
+Das ist das Auto ___ Nachbarn. (der) || des
+Die Tasche ___ Lehrerin ist rot. (die) || der
+Wegen ___ Regens bleiben wir zu Hause. (der) || des
+Trotz ___ Kälte gehen wir spazieren. (die) || der
+Während ___ Essens spricht man nicht. (das) || des
+Umformen (wegen): Ich komme später, weil es einen Stau gibt. || Wegen eines Staus komme ich später.
+Umformen (trotz): Obwohl es regnet, joggt er. || Trotz des Regens joggt er.
+[Mix] Wegen ___ schlecht___ Wetters wurde das Spiel abgesagt. || des schlechten
+[Mix] Das ist die Wohnung ___ Freundin, ___ ich oft besuche. (mein-, Relativpronomen) || meiner / die
+[Mix] Statt ___ Taxis ___ ___ wir den Bus. (ein, nehmen – Perfekt) || eines / haben genommen
+#exam
+Warum fallen heute viele Züge aus? || Wegen eines Streiks.
+Womit fährt Ravi statt mit dem Zug? || Mit einem Fernbus.
+Was macht er während der Fahrt? || Er bereitet die Präsentation vor.
+Ergänze: Wegen ___ Krankheit (meine) kann ich nicht kommen. || meiner
+Ergänze: Der Bruder ___ Freund___ (mein) ist Arzt. || meines Freundes
+Umformen (während): Als der Film lief, ist er eingeschlafen. || Während des Films ist er eingeschlafen.
+Umformen (weil): Wegen der Hitze bleiben wir drinnen. || Weil es heiß ist, bleiben wir drinnen.
+Sie hatten eine schwierige Reise. Erzählen Sie mit wegen, trotz, während.
+Was machen Sie während der Ferien?
+Schreiben Sie eine Entschuldigungs-E-Mail: Sie kommen wegen … zu spät.
+#speak
+Hör dir die Durchsage an (Lesetext) und erkläre sie einem Freund.
+Was machen die Leute während des Wartens?
+Warum hat der Zug vielleicht Verspätung? __Wegen …__
+Trotz welcher Probleme reist du gern?

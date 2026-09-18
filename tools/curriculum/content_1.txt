@@ -1,0 +1,834 @@
+@@ 1|A1|Sich vorstellen: Personalpronomen, sein & haben|Ich und meine Familie|family|
+#expl
+**Personalpronomen** ersetzen Namen: ich, du, er, sie, es, wir, ihr, sie, Sie (formell). **Sie** mit großem S benutzt man für fremde Erwachsene, Ärzte, Behörden.
+**sein** (to be) und **haben** (to have) sind unregelmäßig und die wichtigsten Verben im Deutschen. Du brauchst sie für Name, Alter, Herkunft, Beruf, Familie und später für das Perfekt.
+Achtung: Alter sagt man mit **sein**: __Ich bin 28 Jahre alt__ (nicht: ich habe 28 Jahre).
+#use
+Prüfung Teil 1 (Kontaktaufnahme): Name, Herkunft, Alter, Familie, Beruf.
+#table
+Person|sein|haben|Beispiel
+ich|bin|habe|Ich bin Ravi. Ich habe einen Bruder.
+du|bist|hast|Bist du müde? Hast du Zeit?
+er / sie / es|ist|hat|Sie ist Lehrerin. Er hat Hunger.
+wir|sind|haben|Wir sind aus Indien.
+ihr|seid|habt|Seid ihr Studenten?
+sie / Sie|sind|haben|Haben Sie Kinder?
+#ex
+Ich bin Ravi Sharma. = I am Ravi Sharma.
+Ich bin 28 Jahre alt. = I am 28 years old.
+Ich komme aus Indien. = I come from India.
+Meine Schwester ist Ärztin. = My sister is a doctor.
+Wir haben zwei Kinder. = We have two children.
+Du bist sehr nett. = You are very nice.
+Haben Sie ein Handy? = Do you have a mobile phone?
+Ihr seid neu hier, oder? = You (pl.) are new here, right?
+Er hat heute keine Zeit. = He has no time today.
+Sind Sie Frau Weber? = Are you Mrs. Weber?
+#vocab
+der Name, -n = name
+das Alter = age
+die Familie, -n = family
+der Vater, ¨ = father
+die Mutter, ¨ = mother
+der Bruder, ¨ = brother
+die Schwester, -n = sister
+verheiratet / ledig = married / single
+der Beruf, -e = profession
+das Land, ¨er = country
+wohnen = to live (reside)
+kommen aus = to come from
+#read
+Hallo! Ich bin Ravi Sharma. Ich bin 28 Jahre alt und komme aus Mumbai, Indien. Ich bin Ingenieur. Jetzt wohne ich in Berlin. Ich bin ledig. Meine Familie ist in Mumbai: Mein Vater ist Lehrer, meine Mutter ist Ärztin. Ich habe eine Schwester. Sie heißt Priya und ist 24. Meine Nachbarin heißt Anna Weber. Sie ist sehr nett. Sie hat einen Sohn und eine Tochter.
+#task
+Ich ___ Ravi. (sein) || bin
+Du ___ aus Mumbai, oder? (kommen) || kommst
+Anna ___ zwei Kinder. (haben) || hat
+Wir ___ Nachbarn. (sein) || sind
+___ ihr Hunger? (haben) || Habt
+___ Sie Herr Müller? (sein) || Sind
+Priya ___ 24 Jahre alt. (sein) || ist
+Ersetze durch ein Pronomen: __Anna und Ravi__ sind Nachbarn. || Sie sind Nachbarn.
+Ersetze: __Das Kind__ ist müde. || Es ist müde.
+Fehler? „Ich habe 28 Jahre.“ || Ich bin 28 Jahre alt.
+#exam
+Wie alt ist Ravi? || 28 Jahre.
+Was ist Ravis Mutter von Beruf? || Ärztin.
+Richtig oder falsch: Ravis Familie wohnt in Berlin. || Falsch (in Mumbai).
+Ergänze: ___ du verheiratet? || Bist
+Ergänze: Meine Eltern ___ ein Haus. || haben
+Formell fragen: „Wie heißt du?“ → Sie-Form || Wie heißen Sie?
+Frage zur Antwort: „Ich komme aus Indien.“ || Woher kommst du / kommen Sie?
+Stellen Sie sich vor: Name, Alter, Land, Wohnort, Beruf, Sprachen.
+Erzählen Sie über Ihre Familie (5 Sätze).
+Buchstabieren Sie Ihren Namen laut.
+#speak
+Wer ist auf dem Bild? Gib den Personen Namen: __Das ist … Er/Sie ist …__
+Wie alt sind die Personen? Was sind sie von Beruf? (Vermutung)
+Stell deine eigene Familie vor: __Ich habe … Mein Vater ist …__
+Frage einen Partner: __Hast du Geschwister? Bist du verheiratet?__
+
+@@ 2|A1|Präsens: regelmäßige und unregelmäßige Verben|Alltag und Hobbys|park|1
+#expl
+Im Präsens nimmst du den **Stamm** (Infinitiv ohne -en) und hängst Endungen an: **-e, -st, -t, -en, -t, -en**.
+Stamm auf **-t/-d** (arbeiten, finden): du arbeit**est**, er arbeit**et**. Stamm auf **-s/-ß/-z** (heißen, tanzen): du hei**ßt**.
+**Unregelmäßige Verben** ändern den Vokal nur bei **du** und **er/sie/es**: e → i (sprechen → spricht), e → ie (lesen → liest), a → ä (fahren → fährt).
+Das Präsens benutzt man auch für die **Zukunft**: __Morgen fahre ich nach Hamburg.__
+#use
+Über Gewohnheiten, Hobbys und Pläne sprechen.
+#table
+Person|spielen|arbeiten|fahren (a→ä)|sprechen (e→i)|lesen (e→ie)
+ich|spiel**e**|arbeit**e**|fahr**e**|sprech**e**|les**e**
+du|spiel**st**|arbeit**est**|f**ä**hr**st**|spr**i**ch**st**|l**ie**st
+er/sie/es|spiel**t**|arbeit**et**|f**ä**hr**t**|spr**i**ch**t**|l**ie**st
+wir|spiel**en**|arbeit**en**|fahr**en**|sprech**en**|les**en**
+ihr|spiel**t**|arbeit**et**|fahr**t**|sprech**t**|les**t**
+sie/Sie|spiel**en**|arbeit**en**|fahr**en**|sprech**en**|les**en**
+#ex
+Ich spiele gern Cricket. = I like playing cricket.
+Du arbeitest viel. = You work a lot.
+Anna liest jeden Abend. = Anna reads every evening.
+Ravi spricht Hindi, Englisch und ein bisschen Deutsch. = Ravi speaks Hindi, English and a bit of German.
+Fährst du mit dem Fahrrad? = Do you go by bike?
+Wir kochen am Sonntag zusammen. = We cook together on Sunday.
+Er isst gern scharf. = He likes eating spicy food.
+Was machst du am Wochenende? = What are you doing at the weekend?
+Sie schläft lange. = She sleeps long.
+Morgen treffe ich Jonas. = Tomorrow I'm meeting Jonas.
+#vocab
+das Hobby, -s = hobby
+spielen = to play
+kochen = to cook
+lesen (liest) = to read
+schwimmen = to swim
+laufen (läuft) = to run
+tanzen = to dance
+die Musik = music
+das Wochenende, -n = weekend
+gern = gladly (like doing)
+oft / manchmal / nie = often / sometimes / never
+treffen (trifft) = to meet
+#read
+Ravi arbeitet von Montag bis Freitag. Am Wochenende hat er Zeit. Er spielt gern Cricket, aber in Berlin spielt kaum jemand Cricket. Deshalb läuft er jetzt im Park. Seine Nachbarin Anna liest viel und tanzt gern. Ihr Sohn Max spielt Fußball. Anna fragt: „Was machst du gern, Ravi?“ Ravi sagt: „Ich koche gern indisch. Isst du gern scharf?“ Anna lacht: „Nicht so gern!“
+#task
+Ravi ___ gern. (kochen) || kocht
+Du ___ gut Deutsch. (sprechen) || sprichst
+Anna ___ ein Buch. (lesen) || liest
+___ du am Montag? (arbeiten) || Arbeitest
+Max ___ mit dem Bus. (fahren) || fährt
+Wie ___ du? (heißen) || heißt
+Er ___ Jonas im Café. (treffen) || trifft
+[Mix] ___ du Zeit? Ich ___ heute frei. (haben / sein) || Hast / bin
+[Mix] Wir ___ aus Indien und ___ Hindi. (kommen / sprechen) || kommen / sprechen
+[Mix] Ersetze: __Anna__ läuft gern. → ___ läuft gern. || Sie
+#exam
+Warum läuft Ravi jetzt im Park? || Weil in Berlin kaum jemand Cricket spielt.
+Was macht Anna gern? || Lesen und tanzen.
+Richtig oder falsch: Anna isst gern scharf. || Falsch.
+Ergänze: ___ du gern Tee? (trinken) || Trinkst
+Ergänze: Sie ___ (Sg.) jeden Tag Zeitung. (lesen) || liest
+Ergänze: Der Zug ___ um 8 Uhr. (fahren) || fährt
+Frage zu: „Ich schwimme gern.“ || Was machst du gern?
+Erzählen Sie über Ihre Hobbys (6 Sätze, mit oft/manchmal/nie).
+Was machen Sie am Wochenende?
+Fragen Sie Ihren Partner nach drei Hobbys.
+#speak
+Was machen die Leute im Park? __Der Mann … Die Frau …__
+Was machst du gern im Park?
+Wie oft machst du Sport? __Ich laufe …-mal pro Woche.__
+Vergleiche: Was machen die Leute in Indien am Wochenende?
+
+@@ 3|A1|Satzbau: Das Verb steht auf Position 2|Mein Tag|city|1,2
+#expl
+Im deutschen Hauptsatz steht das **konjugierte Verb immer auf Position 2**. Position 1 kann das Subjekt sein – oder eine Zeit, ein Ort, ein Objekt.
+Steht etwas anderes auf Position 1, kommt das **Subjekt direkt nach dem Verb** (Inversion): __Heute **gehe ich** ins Kino.__
+Eine Position kann aus mehreren Wörtern bestehen: __Am Montagmorgen um 8 Uhr__ = eine Position.
+#use
+Abwechslungsreich sprechen: Sätze mit Zeit beginnen (Zuerst…, Dann…, Am Abend…).
+#table
+Position 1|Position 2 (Verb)|Rest
+Ich|fahre|morgen nach Hamburg.
+Morgen|fahre|ich nach Hamburg.
+Nach Hamburg|fahre|ich morgen.
+Am Montagmorgen|trinke|ich immer Chai.
+In Berlin|wohnt|Ravi seit März.
+#ex
+Ich stehe um 7 Uhr auf. = I get up at 7.
+Um 7 Uhr stehe ich auf. = At 7 I get up.
+Morgens trinke ich Chai. = In the morning I drink chai.
+Dann fahre ich ins Büro. = Then I go to the office.
+Im Büro arbeite ich bis 17 Uhr. = In the office I work until 5 pm.
+Am Abend koche ich. = In the evening I cook.
+Heute hat Anna Geburtstag. = Today it's Anna's birthday.
+Leider habe ich keine Zeit. = Unfortunately I have no time.
+Am Wochenende spielt Max Fußball. = At the weekend Max plays football.
+Danach lese ich ein bisschen. = After that I read a little.
+#vocab
+der Morgen / morgens = morning / in the mornings
+der Mittag / mittags = noon
+der Abend / abends = evening
+die Nacht / nachts = night
+heute / morgen / gestern = today / tomorrow / yesterday
+zuerst = first
+dann / danach = then / after that
+aufstehen = to get up
+frühstücken = to have breakfast
+das Büro, -s = office
+die U-Bahn = underground train
+leider = unfortunately
+#read
+Ravis Tag ist voll. Um 6:30 Uhr klingelt der Wecker. Zuerst trinkt er Chai. Dann frühstückt er. Um 7:45 Uhr nimmt er die U-Bahn. Im Büro arbeitet er mit Jonas. Mittags essen sie zusammen. Am Nachmittag hat Ravi Meetings. Um 17 Uhr fährt er nach Hause. Am Abend lernt er Deutsch. Um 23 Uhr schläft er.
+#task
+Stelle um (Beginne mit „Heute“): Ich lerne Deutsch. || Heute lerne ich Deutsch.
+Stelle um (Beginne mit „Um 8 Uhr“): Ravi nimmt die U-Bahn. || Um 8 Uhr nimmt Ravi die U-Bahn.
+Ordne: arbeitet / im Büro / Jonas / heute || Heute arbeitet Jonas im Büro.
+Ordne: ich / abends / koche || Abends koche ich.
+Ordne: dann / wir / Kaffee / trinken || Dann trinken wir Kaffee.
+Fehler? „Morgen ich fahre nach Hamburg.“ || Morgen fahre ich nach Hamburg.
+Fehler? „Am Sonntag Anna liest.“ || Am Sonntag liest Anna.
+[Mix] Leider ___ ich keine Zeit. (haben) || habe
+[Mix] Am Wochenende ___ Max Fußball. (spielen) || spielt
+[Mix] Mittags ___ du mit Jonas? (essen) || isst
+#exam
+Was macht Ravi zuerst? || Er trinkt Chai.
+Mit wem isst Ravi mittags? || Mit Jonas.
+Wann lernt Ravi Deutsch? || Am Abend.
+Beginne mit „Am Abend“: Wir sehen fern. || Am Abend sehen wir fern.
+Beginne mit „Leider“: Ich kann nicht kommen. || Leider kann ich nicht kommen.
+Ordne: um 9 Uhr / der Kurs / beginnt || Um 9 Uhr beginnt der Kurs.
+Ordne: gestern / Anna / war / krank || Gestern war Anna krank.
+Beschreiben Sie Ihren Tagesablauf mit zuerst, dann, danach, am Abend.
+Was machen Sie am Montag anders als am Sonntag?
+Fragen Sie: Wann stehst du auf?
+#speak
+Beschreibe die Stadt: __Links sehe ich … Rechts steht …__
+Was macht der Mann? Wohin fährt der Bus? (Vermutung)
+Beschreibe deinen Weg zur Arbeit / zur Schule. Beginne jeden Satz anders.
+Wie ist ein Tag in Mumbai? __In Mumbai fahren viele Leute …__
+
+@@ 4|A1|Fragen: Ja/Nein-Fragen und W-Fragen|Kennenlernen|classroom|1,2,3
+#expl
+**W-Frage:** W-Wort auf Position 1, Verb auf Position 2: __**Wo wohnst** du?__
+**Ja/Nein-Frage:** Das Verb steht auf **Position 1**: __**Wohnst** du in Berlin?__
+Antwort auf eine **negative** Frage mit **doch** (= ja): __Kommst du nicht? – **Doch**, ich komme!__
+Höflich mit Sie: __Können Sie mir helfen? Woher kommen Sie?__
+#use
+In der Prüfung stellst du deinem Partner Fragen (Teil 1 und nach der Präsentation).
+#table
+Fragetyp|Position 1|Position 2|Rest|Antwort
+W-Frage|Woher|kommst|du?|Aus Indien.
+W-Frage|Wie lange|wohnst|du schon hier?|Seit drei Monaten.
+Ja/Nein|Sprichst|du|Deutsch?|Ja / Nein, nur ein bisschen.
+Ja/Nein negativ|Hast|du|keinen Hunger?|Doch! / Nein.
+Höflich|Wie|heißen|Sie?|Ich heiße …
+#ex
+Wie heißt du? = What's your name?
+Woher kommen Sie? = Where do you come from?
+Was bist du von Beruf? = What's your job?
+Welche Sprachen sprichst du? = Which languages do you speak?
+Wie lange lernst du schon Deutsch? = How long have you been learning German?
+Hast du Geschwister? = Do you have siblings?
+Wohnst du allein? = Do you live alone?
+Warum lernst du Deutsch? = Why are you learning German?
+Wie oft machst du Sport? = How often do you do sport?
+Bist du nicht müde? – Doch! = Aren't you tired? – Yes, I am!
+#vocab
+wer = who
+was = what
+wo / woher / wohin = where / from where / to where
+wann = when
+warum = why
+wie = how
+wie viel(e) = how much / many
+welch- = which
+seit = since / for
+der Kurs, -e = course
+die Sprache, -n = language
+doch = yes (to negative question)
+#read
+Im Deutschkurs fragt Frau Klein: „Wer ist neu hier?“ Ravi sagt: „Ich.“ Leila fragt ihn: „Woher kommst du?“ – „Aus Indien. Und du?“ – „Aus dem Iran. Wie lange bist du schon in Berlin?“ – „Seit drei Monaten.“ – „Und warum lernst du Deutsch?“ – „Für meine Arbeit. Sprichst du auch Englisch?“ – „Ja, ein bisschen.“ – „Hast du keinen Hunger? Die Pause beginnt!“ – „Doch! Gehen wir.“
+#task
+___ kommst du? – Aus dem Iran. || Woher
+___ heißt die Lehrerin? – Frau Klein. || Wie
+___ beginnt der Kurs? – Um 9 Uhr. || Wann
+___ Sprachen sprichst du? – Hindi und Englisch. || Welche
+___ Geschwister hast du? – Zwei. || Wie viele
+Mache eine Ja/Nein-Frage: Du wohnst in Berlin. || Wohnst du in Berlin?
+Mache eine Sie-Frage: Sie haben Zeit. || Haben Sie Zeit?
+Antworte positiv: Hast du keine Zeit? || Doch, ich habe Zeit.
+[Mix] Frage mit „wann“: Ravi steht um 6:30 Uhr auf. || Wann steht Ravi auf?
+[Mix] Frage: Anna liest gern. (Was …?) || Was macht Anna gern?
+#exam
+Woher kommt Leila? || Aus dem Iran.
+Seit wann ist Ravi in Berlin? || Seit drei Monaten.
+Warum lernt Ravi Deutsch? || Für seine Arbeit.
+Frage zur Antwort: „Ich bin Ingenieur.“ || Was bist du von Beruf?
+Frage zur Antwort: „Ich wohne in Pankow.“ || Wo wohnst du?
+Frage zur Antwort: „Nein, ich bin ledig.“ || Bist du verheiratet?
+Antworte: „Kommst du nicht mit?“ (positiv) || Doch, ich komme mit.
+Stellen Sie Ihrem Partner 6 Fragen (Name, Land, Wohnort, Beruf, Sprachen, Hobby).
+Sie treffen einen neuen Kollegen. Stellen Sie 3 höfliche Fragen mit Sie.
+Welche Fragen stellt man beim ersten Treffen nicht? Warum?
+#speak
+Wer ist die Frau vorne? Was macht sie?
+Stelle 5 Fragen zum Bild: __Wie viele Schüler …? Was steht an der Tafel?__
+Rollenspiel: Du bist neu im Kurs. Stelle dich vor und frage den Nachbarn.
+Warum lernen die Leute im Kurs Deutsch? (Vermutung)
+
+@@ 5|A1|Nomen: Genus, Artikel, Plural (Nominativ)|Wohnung und Möbel|apartment|1,2,3,4
+#expl
+Jedes Nomen hat ein **Genus**: **der** (maskulin), **die** (feminin), **das** (neutral). Lerne jedes Nomen **immer mit Artikel und Plural**.
+**Tipps:** -ung, -heit, -keit, -ion, -schaft, -e → meistens **die**. -chen, -lein, -ment, -um → **das**. Tage, Monate, Jahreszeiten, -er (Personen), -ismus → **der**.
+**Plural:** Der Artikel im Plural ist immer **die**. Endungen: -e, -¨e, -er, -¨er, -n/-en, -s, oder keine Endung.
+**Unbestimmt:** ein (der/das), eine (die), Plural ohne Artikel. Der **Nominativ** ist der Fall für das **Subjekt**.
+#use
+Wohnung beschreiben, Dinge benennen, Bilder beschreiben.
+#table
+Genus|bestimmt|unbestimmt|Beispiel|Plural
+maskulin|der|ein|der Tisch|die Tisch**e**
+feminin|die|eine|die Lampe|die Lampe**n**
+neutral|das|ein|das Bett|die Bett**en**
+neutral|das|ein|das Zimmer|die Zimmer (–)
+maskulin|der|ein|der Stuhl|die St**ü**hl**e**
+neutral|das|ein|das Sofa|die Sofa**s**
+#ex
+Das ist ein Sofa. Das Sofa ist neu. = This is a sofa. The sofa is new.
+Die Wohnung hat zwei Zimmer. = The flat has two rooms.
+Der Schrank ist groß. = The wardrobe is big.
+Die Lampe ist kaputt. = The lamp is broken.
+Das Bett steht im Schlafzimmer. = The bed is in the bedroom.
+Die Stühle sind bequem. = The chairs are comfortable.
+Ist das ein Regal? – Ja, das ist ein Regal. = Is that a shelf? – Yes.
+Die Bücher sind im Regal. = The books are on the shelf.
+Wie viel kostet der Teppich? = How much is the carpet?
+Die Küche ist klein, aber hell. = The kitchen is small but bright.
+#vocab
+die Wohnung, -en = flat
+das Zimmer, - = room
+die Küche, -n = kitchen
+das Bad, ¨er = bathroom
+der Tisch, -e = table
+der Stuhl, ¨e = chair
+das Bett, -en = bed
+der Schrank, ¨e = wardrobe
+das Regal, -e = shelf
+die Lampe, -n = lamp
+der Teppich, -e = carpet
+die Miete, -n = rent
+#read
+Ravi hat jetzt eine Wohnung in Pankow. Die Wohnung hat zwei Zimmer, eine Küche und ein Bad. Das Wohnzimmer ist hell. Dort stehen ein Sofa und ein Regal. Das Regal ist voll: Die Bücher sind aus Indien. Im Schlafzimmer steht ein Bett. Die Lampe ist leider kaputt. Die Küche ist klein. Die Miete ist nicht billig, aber die Wohnung ist schön.
+#task
+___ Wohnung (der/die/das) || die
+___ Zimmer || das
+___ Tisch || der
+___ Zeitung (Tipp: -ung) || die
+___ Mädchen (Tipp: -chen) || das
+Plural: der Stuhl → die ___ || Stühle
+Plural: das Buch → die ___ || Bücher
+[Mix] Das ist ___ Lampe. ___ Lampe ___ kaputt. (ein/e, der/die/das, sein) || eine / Die / ist
+[Mix] Frage: ___ kostet das Sofa? || Wie viel / Was
+[Mix] Ordne: steht / im Zimmer / ein Bett || Im Zimmer steht ein Bett.
+#exam
+Wo wohnt Ravi? || In Pankow.
+Wie viele Zimmer hat die Wohnung? || Zwei.
+Was ist kaputt? || Die Lampe.
+Artikel + Plural: Küche || die Küche, die Küchen
+Artikel + Plural: Bad || das Bad, die Bäder
+Artikel + Plural: Schrank || der Schrank, die Schränke
+Artikel: Freiheit / Dokument / Montag || die / das / der
+Beschreiben Sie Ihre Wohnung: Wie viele Zimmer? Was steht wo?
+Was ist Ihr Lieblingszimmer? Warum?
+Wie wohnt man in Indien? Vergleichen Sie kurz.
+#speak
+Welche Zimmer siehst du? __Links ist das …, rechts ist das …__
+Nenne 8 Möbel mit Artikel.
+Wie findest du die Wohnung? __Das Sofa ist … Die Lampe ist …__
+Beschreibe dein Traumhaus.
+
+@@ 6|A1|Der Akkusativ|Einkaufen|shop|1,2,3,5
+#expl
+Der **Akkusativ** ist das **direkte Objekt**: Wen oder was? __Ich kaufe **den** Apfel.__
+**Nur maskulin ändert sich**: der → **den**, ein → **einen**. Feminin, neutral und Plural bleiben gleich.
+Verben mit Akkusativ: haben, kaufen, brauchen, möchten, nehmen, essen, trinken, sehen, suchen, finden, besuchen, es gibt.
+**es gibt + Akkusativ**: __Es gibt **einen** Supermarkt hier.__
+#use
+Einkaufen, bestellen, sagen, was man braucht oder hat.
+#table
+Fall|maskulin|feminin|neutral|Plural
+Nominativ|der / ein Käse|die / eine Milch|das / ein Brot|die / – Äpfel
+Akkusativ|**den / einen** Käse|die / eine Milch|das / ein Brot|die / – Äpfel
+Pronomen Nom.|er|sie|es|sie
+Pronomen Akk.|**ihn**|sie|es|sie
+#ex
+Ich brauche einen Einkaufswagen. = I need a shopping trolley.
+Ravi kauft den Reis. = Ravi buys the rice.
+Möchtest du eine Tüte? = Would you like a bag?
+Wir nehmen das Brot. = We'll take the bread.
+Es gibt hier einen Markt. = There is a market here.
+Ich suche den Joghurt. – Er ist dort. = I'm looking for the yoghurt. – It's there.
+Den Käse finde ich lecker. = I find the cheese tasty.
+Kaufst du den Tee? – Ja, ich kaufe ihn. = Are you buying the tea? – Yes, I'm buying it.
+Sie trinkt einen Kaffee. = She drinks a coffee.
+Wir haben keine Zeit, aber einen Plan. = We have no time but a plan.
+#vocab
+der Supermarkt, ¨e = supermarket
+der Apfel, ¨ = apple
+der Reis = rice
+der Käse = cheese
+die Milch = milk
+das Brot, -e = bread
+das Ei, -er = egg
+die Tomate, -n = tomato
+die Tüte, -n = bag
+die Kasse, -n = checkout
+kosten = to cost
+das Angebot, -e = special offer
+#read
+Am Samstag geht Ravi in den Supermarkt. Er braucht einen Liter Milch, ein Brot, einen Käse und Tomaten. Er sucht auch den Basmatireis, aber er findet ihn nicht. Er fragt eine Verkäuferin. Sie sagt: „Den Reis haben wir dort hinten.“ An der Kasse sieht Ravi ein Angebot: Äpfel für 1,99 €. Er nimmt einen Kilo. Die Kassiererin fragt: „Brauchen Sie eine Tüte?“ – „Nein danke, ich habe einen Rucksack.“
+#task
+Ich brauche ___ Apfel. (ein) || einen
+Ravi kauft ___ Milch. (die) || die
+Wir nehmen ___ Käse. (der) || den
+Hast du ___ Tüte? (ein) || eine
+Es gibt hier ___ Bäcker. (ein) || einen
+Siehst du den Mann? – Ja, ich sehe ___. || ihn
+Wo ist die Butter? Ich finde ___ nicht. || sie
+[Mix] ___ Kinder brauchen neue Stühle. (Artikel Plural) || Die
+[Mix] Ordne: kauft / am Samstag / Ravi / einen Käse || Am Samstag kauft Ravi einen Käse.
+[Mix] Frage: Ich suche den Reis. (Was …?) || Was suchst du?
+#exam
+Was braucht Ravi? || Milch, Brot, Käse, Tomaten (und Reis).
+Wo ist der Reis? || Dort hinten.
+Warum braucht Ravi keine Tüte? || Er hat einen Rucksack.
+Nominativ oder Akkusativ? „Der Mann kauft den Tee.“ – der Mann = ? || Nominativ
+Ergänze: Ich möchte ___ Kaffee und ___ Wasser. (ein) || einen / ein
+Ersetze: Ich kaufe __den Apfel__. || Ich kaufe ihn.
+Ergänze: Gibt es hier ___ Bank? (ein) || eine
+Sie planen eine Party. Was kaufen Sie? Machen Sie eine Liste mit Artikeln.
+Was kaufen Sie jede Woche? Was kaufen Sie nie?
+Rollenspiel: Sie suchen im Supermarkt etwas und fragen einen Verkäufer.
+#speak
+Was siehst du im Supermarkt? __Ich sehe einen Mann, einen Wagen …__
+Was kauft der Mann? Was kostet das Angebot?
+Was brauchst du heute? Nenne 6 Sachen mit ein/eine/einen.
+Wo kaufst du lieber ein: Markt oder Supermarkt? Warum?
+
+@@ 7|A1|Negation: nicht und kein|Essen und Trinken|kitchen|2,3,5,6
+#expl
+**kein** verneint ein **Nomen ohne Artikel oder mit ein**: __Ich habe **keine** Zeit. Das ist **kein** Tee.__ Kein hat die Endungen von ein (+ Plural: keine).
+**nicht** verneint **alles andere**: Verben, Adjektive, Nomen mit der/mein, Orte, Zeiten.
+Position von nicht: meistens **am Ende**, aber **vor** Adjektiv, Ort, Präposition und zweitem Verbteil: __Ich komme **nicht** aus Berlin. Das ist **nicht** gut.__
+**sondern** nach nicht/kein: __Ich trinke keinen Kaffee, **sondern** Tee.__
+#use
+Etwas ablehnen, Vorlieben sagen, im Restaurant bestellen.
+#table
+Positiv|Negativ|Regel
+Ich habe einen Hund.|Ich habe **keinen** Hund.|ein → kein (Akk. m. keinen)
+Ich trinke Milch.|Ich trinke **keine** Milch.|ohne Artikel → kein
+Ich esse das Fleisch.|Ich esse das Fleisch **nicht**.|der/die/das → nicht
+Das Essen ist scharf.|Das Essen ist **nicht** scharf.|vor Adjektiv
+Er wohnt in Berlin.|Er wohnt **nicht** in Berlin.|vor Ort
+Ich koche heute.|Ich koche heute **nicht**.|am Ende
+#ex
+Ich esse kein Fleisch. = I don't eat meat.
+Das ist nicht mein Teller. = That's not my plate.
+Wir haben keine Eier mehr. = We have no more eggs.
+Die Suppe ist nicht heiß. = The soup isn't hot.
+Ravi trinkt keinen Alkohol. = Ravi doesn't drink alcohol.
+Anna kocht heute nicht. = Anna isn't cooking today.
+Das ist kein Curry, sondern ein Dal. = That's not a curry but a dal.
+Ich mag Fisch nicht. = I don't like fish.
+Er isst nicht gern süß. = He doesn't like eating sweet things.
+Haben Sie keinen Hunger? – Doch. = Aren't you hungry? – Yes, I am.
+#vocab
+das Fleisch = meat
+der Fisch, -e = fish
+das Gemüse = vegetables
+das Obst = fruit
+die Suppe, -n = soup
+der Teller, - = plate
+scharf = spicy
+süß / salzig = sweet / salty
+mögen (mag) = to like
+vegetarisch = vegetarian
+der Hunger / der Durst = hunger / thirst
+schmecken = to taste (good)
+#read
+Anna und Max essen bei Ravi. Ravi kocht Dal und Reis. Anna fragt: „Ist das Essen scharf?“ Ravi sagt: „Nein, es ist nicht scharf. Heute koche ich nicht so scharf.“ Max isst kein Gemüse, aber er mag den Reis. Anna trinkt keinen Wein, sondern Wasser. „Hast du keinen Nachtisch?“, fragt Max. „Doch! Es gibt Gulab Jamun. Aber sie sind sehr süß.“ Max sagt: „Das ist kein Problem!“
+#task
+Ich habe ___ Hunger. || keinen
+Das ist ___ Suppe, sondern Soße. || keine
+Das Essen schmeckt ___. || nicht
+Ravi isst ___ Fleisch. || kein
+Ich mag den Fisch ___. || nicht
+Max ist ___ müde. || nicht
+Wir haben ___ Eier. || keine
+[Mix] Verneine: Ich kaufe einen Apfel. || Ich kaufe keinen Apfel.
+[Mix] Verneine: Heute kocht Anna. || Heute kocht Anna nicht.
+[Mix] Antworte positiv: Isst du kein Gemüse? || Doch, ich esse Gemüse.
+#exam
+Was kocht Ravi? || Dal und Reis.
+Was trinkt Anna? || Wasser.
+Was isst Max nicht? || Gemüse.
+Verneine: Das ist ein Problem. || Das ist kein Problem.
+Verneine: Ich wohne in München. || Ich wohne nicht in München.
+Verneine: Er hat Kinder. || Er hat keine Kinder.
+Ergänze: Ich trinke keinen Kaffee, ___ Tee. || sondern
+Was essen Sie gern, was nicht? Nennen Sie 6 Beispiele.
+Sie sind im Restaurant. Sagen Sie, was Sie nicht essen, und bestellen Sie.
+Was ist typisch für das Essen in Ihrem Land?
+#speak
+Was machen die Personen in der Küche?
+Was ist im Kühlschrank? Was ist nicht da? __Es gibt keine …__
+Du kochst für Gäste. Frag: __Essen Sie kein Fleisch? Mögen Sie …?__
+Was isst du nie? Warum nicht?
+
+@@ 8|A1|Possessivartikel (Nominativ und Akkusativ)|Familie und Freunde|family|1,5,6,7
+#expl
+Possessivartikel zeigen, **wem** etwas gehört: mein, dein, sein, ihr, unser, euer, ihr/Ihr.
+Sie haben **dieselben Endungen wie ein/kein**: mein Bruder, mein**e** Schwester, mein Kind, mein**e** Kinder. Akkusativ maskulin: mein**en** Bruder.
+**sein** = von ihm (er/es), **ihr** = von ihr (sie) oder von ihnen (Plural). **Ihr** (groß) = formell.
+**euer** verliert das e mit Endung: eu**re** Mutter.
+#use
+Über Familie und Besitz sprechen: __Das ist meine Mutter. Ich besuche meinen Onkel.__
+#table
+Person|m. Nom.|m. Akk.|f. Nom./Akk.|n. Nom./Akk.|Plural
+ich|mein|mein**en**|mein**e**|mein|mein**e**
+du|dein|dein**en**|dein**e**|dein|dein**e**
+er / es|sein|sein**en**|sein**e**|sein|sein**e**
+sie|ihr|ihr**en**|ihr**e**|ihr|ihr**e**
+wir|unser|unser**en**|unser**e**|unser|unser**e**
+ihr|euer|eur**en**|eur**e**|euer|eur**e**
+sie / Sie|ihr / Ihr|ihr**en** / Ihr**en**|ihr**e** / Ihr**e**|ihr / Ihr|ihr**e** / Ihr**e**
+#ex
+Das ist meine Schwester Priya. = This is my sister Priya.
+Mein Vater ist Lehrer. = My father is a teacher.
+Ich vermisse meinen Bruder. = I miss my brother.
+Anna liebt ihren Sohn. = Anna loves her son.
+Max sucht seine Schuhe. = Max is looking for his shoes.
+Wo ist dein Handy? = Where's your phone?
+Unsere Oma wohnt in Pune. = Our grandma lives in Pune.
+Besucht ihr eure Eltern? = Are you visiting your parents?
+Ist das Ihr Koffer? = Is that your suitcase? (formal)
+Die Kinder spielen mit ihrem Hund. = The children play with their dog.
+#vocab
+die Eltern (Pl.) = parents
+die Großeltern (Pl.) = grandparents
+der Onkel, - = uncle
+die Tante, -n = aunt
+der Cousin / die Cousine = cousin
+der Sohn, ¨e = son
+die Tochter, ¨ = daughter
+der Freund, -e / die Freundin, -nen = friend / boyfriend, girlfriend
+vermissen = to miss
+besuchen = to visit
+lieben = to love
+das Foto, -s = photo
+#read
+Ravi zeigt Anna ein Foto. „Das ist meine Familie. Das ist mein Vater, und das ist meine Mutter. Das hier ist mein Onkel. Seine Frau ist auch auf dem Foto.“ Anna fragt: „Und wer ist das Mädchen?“ – „Das ist meine Schwester Priya. Ihr Hund heißt Moti.“ Anna sagt: „Eure Familie ist groß! Vermisst du deine Eltern?“ – „Ja, sehr. Ich besuche meine Eltern im Dezember.“
+#task
+Das ist ___ Mutter. (ich) || meine
+Wie heißt ___ Bruder? (du) || dein
+Anna liebt ___ Sohn. (sie) || ihren
+Max sucht ___ Ball. (er) || seinen
+Wir besuchen ___ Großeltern. (wir) || unsere
+Wo ist ___ Auto? (ihr) || euer
+Ist das ___ Tasche, Frau Weber? (Sie) || Ihre
+[Mix] Ich habe ___ Auto. (kein) || kein
+[Mix] Verneine: Das ist mein Stift. || Das ist nicht mein Stift.
+[Mix] Frage: ___ ist das? – Das ist meine Tante. || Wer
+#exam
+Wen zeigt Ravi auf dem Foto? || Seine Familie (Vater, Mutter, Onkel, Tante, Schwester).
+Wie heißt Priyas Hund? || Moti.
+Wann besucht Ravi seine Eltern? || Im Dezember.
+Ergänze: Priya und ___ Freund (sie) gehen ins Kino. || ihr
+Ergänze: Ravi ruft ___ Mutter an. (er) || seine
+Ergänze: Kinder, wo sind ___ Jacken? (ihr) || eure
+sein oder ihr? Max und ___ Schwester. || seine
+Zeigen Sie ein Familienfoto (oder erfinden Sie eins) und beschreiben Sie es.
+Wer ist Ihr bester Freund / Ihre beste Freundin? Erzählen Sie.
+Wen vermissen Sie? Warum?
+#speak
+Stell dir vor, das ist deine Familie: __Das ist mein …, das ist meine …__
+Was isst die Familie? Wer sitzt neben wem?
+Frag den Partner: __Wie heißt dein …? Was macht deine …?__
+Wie groß ist deine Familie? Wo wohnen deine Verwandten?
+
+@@ 9|A1|Zahlen, Uhrzeit und Zeitangaben (am, um, im)|Termine|office|2,3,4,6
+#expl
+**Uhrzeit offiziell:** 14:30 = vierzehn Uhr dreißig. **Inoffiziell:** halb drei (= 2:30!), Viertel nach zwei (2:15), Viertel vor drei (2:45), fünf nach zwei.
+**Achtung:** __halb drei__ = 2:30 (eine halbe Stunde **vor** drei).
+**Präpositionen:** **um** + Uhrzeit, **am** + Tag/Datum/Tageszeit, **im** + Monat/Jahreszeit, **von … bis**, Jahr ohne Präposition (__2026__ oder __im Jahr 2026__).
+**Datum:** am ersten (1.) Mai, am dritten (3.) Juni, am zwanzigsten (20.).
+#use
+Termine machen, Öffnungszeiten, Verabredungen, Arzttermine.
+#table
+Frage|Präposition|Beispiel
+Um wie viel Uhr?|um|um 8 Uhr, um halb neun
+Wann? (Tag)|am|am Montag, am Wochenende, am Abend
+Wann? (Datum)|am|am 3. Oktober (am dritten Oktober)
+Wann? (Monat/Jahreszeit)|im|im Mai, im Sommer
+Wie lange?|von … bis|von 9 bis 17 Uhr
+Wie spät ist es?|–|Es ist Viertel nach drei (15:15).
+#ex
+Wie spät ist es? – Es ist halb neun. = What time is it? – It's half past eight.
+Der Kurs beginnt um 18 Uhr. = The course starts at 6 pm.
+Am Montag habe ich einen Termin. = On Monday I have an appointment.
+Im Winter ist es kalt. = In winter it's cold.
+Mein Geburtstag ist am 12. April. = My birthday is on 12th April.
+Das Büro ist von 9 bis 17 Uhr geöffnet. = The office is open 9 to 5.
+Um Viertel vor acht nehme ich den Bus. = At quarter to eight I take the bus.
+Hast du am Freitagabend Zeit? = Do you have time on Friday evening?
+Ravi kommt 2025 nach Deutschland. = Ravi comes to Germany in 2025.
+Das Meeting dauert eine Stunde. = The meeting lasts one hour.
+#vocab
+die Uhr, -en = clock / o'clock
+die Stunde, -n = hour
+die Minute, -n = minute
+der Termin, -e = appointment
+der Tag, -e = day
+die Woche, -n = week
+der Monat, -e = month
+das Jahr, -e = year
+geöffnet / geschlossen = open / closed
+dauern = to last
+beginnen = to begin
+pünktlich = on time
+#read
+Jonas fragt Ravi: „Hast du am Donnerstag Zeit? Wir haben ein Meeting mit dem Chef.“ – „Um wie viel Uhr?“ – „Um halb zehn. Es dauert bis elf Uhr.“ – „Am Donnerstag um 9:30 Uhr? Das geht. Aber um 12 Uhr habe ich einen Arzttermin.“ – „Kein Problem. Und im Oktober haben wir ein Teamessen, am 17.“ Ravi schreibt den Termin in seinen Kalender. Er ist immer pünktlich.
+#task
+Es ist 7:30 Uhr = Es ist ___ acht. || halb
+Es ist 4:15 = Es ist Viertel ___ vier. || nach
+Es ist 10:45 = Es ist Viertel ___ elf. || vor
+Wir treffen uns ___ 8 Uhr. || um
+___ Sonntag schlafe ich lange. || Am
+___ August fliege ich nach Indien. || Im
+Das Geschäft ist ___ 8 ___ 20 Uhr geöffnet. || von / bis
+[Mix] Ordne: habe / am Montag / ich / einen Termin || Am Montag habe ich einen Termin.
+[Mix] Frage zur Antwort: „Um 9 Uhr.“ || Um wie viel Uhr / Wann beginnt …?
+[Mix] Verneine: Ich habe am Freitag Zeit. || Ich habe am Freitag keine Zeit.
+#exam
+Wann ist das Meeting? || Am Donnerstag um 9:30 Uhr.
+Was hat Ravi um 12 Uhr? || Einen Arzttermin.
+Wann ist das Teamessen? || Am 17. Oktober.
+Schreibe inoffiziell: 18:30 || halb sieben
+Schreibe inoffiziell: 9:45 || Viertel vor zehn
+Ergänze: ___ Frühling fahre ich nach Wien. || Im
+Lies laut: 1.487 / 2026 / 23,50 € || tausendvierhundertsiebenundachtzig / zweitausendsechsundzwanzig / dreiundzwanzig Euro fünfzig
+Rufen Sie beim Arzt an und machen Sie einen Termin.
+Wann haben Sie Geburtstag? Wie feiern Sie?
+Sagen Sie Ihrem Partner, wann Sie diese Woche Zeit haben.
+#speak
+Wie spät ist es vielleicht im Büro? Was machen die Leute?
+Mach einen Termin mit der Kollegin: __Hast du am … um … Zeit?__
+Was machst du um 7 Uhr, um 13 Uhr, um 20 Uhr?
+Wann sind die Geschäfte in Indien geöffnet? Und in Deutschland?
+
+@@ 10|A1|Trennbare Verben|Tagesablauf|apartment|2,3,9
+#expl
+Viele Verben haben eine **Vorsilbe**, die sich im Satz **trennt** und **ans Ende** geht: auf|stehen → __Ich **stehe** um 7 Uhr **auf**.__
+Trennbar sind z. B.: **ab-, an-, auf-, aus-, ein-, mit-, nach-, vor-, weg-, zu-, zurück-, fern-**. Die Betonung liegt auf der Vorsilbe: __AUFstehen__.
+**Nicht trennbar**: **be-, ver-, er-, ent-, ge-, zer-, emp-, miss-** (besuchen, verstehen, erklären).
+Im Nebensatz und mit Modalverb bleibt das Verb zusammen (später: __weil ich früh aufstehe__).
+#use
+Tagesablauf beschreiben, telefonieren, einkaufen, Termine.
+#table
+Infinitiv|Satz|Frage
+aufstehen|Ich **stehe** um 7 Uhr **auf**.|Wann **stehst** du **auf**?
+einkaufen|Ravi **kauft** am Samstag **ein**.|**Kaufst** du heute **ein**?
+anrufen|Ich **rufe** dich morgen **an**.|**Rufst** du mich **an**?
+fernsehen|Anna **sieht** abends **fern**.|**Siehst** du oft **fern**?
+mitkommen|**Kommst** du **mit**?|Wer **kommt mit**?
+besuchen (untrennbar)|Ich **besuche** meine Oma.|–
+#ex
+Ich stehe um 6:30 Uhr auf. = I get up at 6:30.
+Der Zug fährt um 8 Uhr ab. = The train leaves at 8.
+Ruf mich bitte heute Abend an! = Please call me tonight.
+Wir kaufen im Supermarkt ein. = We shop at the supermarket.
+Der Film fängt um 20 Uhr an. = The film starts at 8 pm.
+Ravi räumt am Sonntag die Wohnung auf. = Ravi tidies the flat on Sunday.
+Kommst du mit ins Kino? = Are you coming to the cinema?
+Ich lade dich zum Essen ein. = I'm inviting you to dinner.
+Wann kommst du zurück? = When are you coming back?
+Ich verstehe die Frage nicht. = I don't understand the question.
+#vocab
+aufstehen = to get up
+einschlafen = to fall asleep
+anrufen = to call
+einkaufen = to shop
+aufräumen = to tidy up
+anfangen (fängt an) = to begin
+aufhören = to stop
+mitkommen = to come along
+einladen (lädt ein) = to invite
+fernsehen (sieht fern) = to watch TV
+zurückkommen = to come back
+abholen = to pick up
+#read
+Am Sonntag steht Ravi spät auf. Zuerst ruft er seine Mutter in Mumbai an. Dann räumt er die Wohnung auf. Mittags kauft er ein. Um 15 Uhr holt er Leila ab. Sie gehen zusammen spazieren. Leila fragt: „Kommst du am Mittwoch mit ins Kino? Der Film fängt um 19 Uhr an.“ – „Gern!“ Abends sieht Ravi ein bisschen fern. Um 23 Uhr schläft er ein.
+#task
+Ich ___ um 7 Uhr ___. (aufstehen) || stehe / auf
+Ravi ___ seine Mutter ___. (anrufen) || ruft / an
+Wann ___ der Kurs ___? (anfangen) || fängt / an
+___ du mit? (mitkommen) || Kommst
+Anna ___ abends ___. (fernsehen) || sieht / fern
+Ich ___ dich am Bahnhof ___. (abholen) || hole / ab
+Ich ___ meine Tante. (besuchen) || besuche
+[Mix] Beginne mit „Am Samstag“: Wir kaufen ein. || Am Samstag kaufen wir ein.
+[Mix] Verneine: Ich rufe dich an. || Ich rufe dich nicht an.
+[Mix] Um ___ Uhr (7:30 inoffiziell) stehe ich auf. || halb acht
+#exam
+Wen ruft Ravi zuerst an? || Seine Mutter.
+Wann holt Ravi Leila ab? || Um 15 Uhr.
+Wann beginnt der Film? || Um 19 Uhr (am Mittwoch).
+Bilde einen Satz: einladen / Anna / Ravi / zum Essen || Anna lädt Ravi zum Essen ein.
+Bilde eine Frage: du / aufräumen / heute? || Räumst du heute auf?
+Trennbar oder nicht? verkaufen / einkaufen || verkaufen: nicht trennbar; einkaufen: trennbar
+Ergänze: Der Bus ___ um 9 Uhr ___. (abfahren) || fährt / ab
+Beschreiben Sie Ihren Sonntag mit mindestens 5 trennbaren Verben.
+Laden Sie einen Freund zu etwas ein.
+Was machen Sie am Abend, bevor Sie schlafen?
+#speak
+Was macht man im Schlafzimmer, was im Wohnzimmer? __Im Wohnzimmer sieht man fern…__
+Beschreibe deinen Morgen: __Ich stehe … auf, dann …__
+Lade deinen Partner ein: __Kommst du am … mit …?__
+Wer räumt bei dir zu Hause auf?
+
+@@ 11|A1|Modalverben|Regeln und Wünsche|station|2,3,6,7,9,10
+#expl
+Modalverben: **können** (can), **müssen** (must), **wollen** (want), **sollen** (should, Auftrag), **dürfen** (may, erlaubt), **möchten** (would like).
+Das **Modalverb** steht auf **Position 2**, das **Infinitiv** am **Ende**: __Ich **muss** heute **arbeiten**.__ Trennbare Verben bleiben am Ende zusammen: __Ich muss früh **aufstehen**.__
+Ich und er/sie/es haben **keine Endung**: ich kann, er kann.
+**nicht müssen** = not have to. **nicht dürfen** = must not! __Hier darf man nicht rauchen.__
+#use
+Planen, erlauben, verbieten, Wünsche äußern, Pflichten nennen.
+#table
+Person|können|müssen|wollen|dürfen|sollen|möchten
+ich|kann|muss|will|darf|soll|möchte
+du|kannst|musst|willst|darfst|sollst|möchtest
+er/sie/es|kann|muss|will|darf|soll|möchte
+wir|können|müssen|wollen|dürfen|sollen|möchten
+ihr|könnt|müsst|wollt|dürft|sollt|möchtet
+sie/Sie|können|müssen|wollen|dürfen|sollen|möchten
+#ex
+Ich möchte eine Fahrkarte nach München. = I'd like a ticket to Munich.
+Kann ich mit Karte zahlen? = Can I pay by card?
+Du musst am Gleis 7 einsteigen. = You have to board at platform 7.
+Hier darf man nicht rauchen. = You're not allowed to smoke here.
+Ravi will im Sommer nach Wien fahren. = Ravi wants to go to Vienna in summer.
+Wir müssen in Hamburg umsteigen. = We have to change in Hamburg.
+Der Arzt sagt, ich soll viel trinken. = The doctor says I should drink a lot.
+Darf ich hier sitzen? = May I sit here?
+Du musst nicht kommen. = You don't have to come.
+Kannst du mich vom Bahnhof abholen? = Can you pick me up from the station?
+#vocab
+der Bahnhof, ¨e = station
+der Zug, ¨e = train
+das Gleis, -e = platform
+die Fahrkarte, -n = ticket
+einsteigen / aussteigen = to get on / off
+umsteigen = to change (trains)
+die Verspätung, -en = delay
+abfahren / ankommen = to depart / arrive
+reservieren = to reserve
+der Koffer, - = suitcase
+rauchen = to smoke
+erlaubt / verboten = allowed / forbidden
+#read
+Ravi will am Freitag nach München fahren. Er möchte seinen Freund Arjun besuchen. Am Schalter fragt er: „Ich möchte eine Fahrkarte nach München. Muss ich umsteigen?“ – „Nein, der ICE fährt direkt. Sie können auch einen Platz reservieren.“ – „Kann ich mit Karte zahlen?“ – „Ja, natürlich.“ Am Bahnhof sieht Ravi ein Schild: „Rauchen verboten.“ Der Zug hat Verspätung. Ravi muss 20 Minuten warten.
+#task
+Ich ___ nach München fahren. (wollen) || will
+___ du mir helfen? (können) || Kannst
+Hier ___ man nicht parken. (dürfen) || darf
+Wir ___ in Köln umsteigen. (müssen) || müssen
+Ich ___ einen Tee, bitte. (möchten) || möchte
+Ordne: muss / früh / ich / aufstehen / morgen || Morgen muss ich früh aufstehen.
+„Du musst nicht kommen“ bedeutet: a) verboten b) nicht nötig || b) nicht nötig
+[Mix] Ich ___ dich morgen ___. (können + anrufen) || kann / anrufen
+[Mix] Du ___ keinen Alkohol trinken. (dürfen) || darfst
+[Mix] Um ___ Uhr (14:15 inoffiziell: Viertel nach …) muss ich los. || Viertel nach zwei
+#exam
+Wen will Ravi besuchen? || Seinen Freund Arjun.
+Muss Ravi umsteigen? || Nein.
+Wie lange muss Ravi warten? || 20 Minuten.
+Umformen mit „können“: Ich spreche Deutsch. || Ich kann Deutsch sprechen.
+Umformen mit „müssen“: Er räumt auf. || Er muss aufräumen.
+Frage höflich mit „dürfen“: hier / telefonieren || Darf ich hier telefonieren?
+Welches Modalverb? Der Chef sagt: „Schreiben Sie den Bericht!“ → Ich ___ den Bericht schreiben. || soll
+Was dürfen Kinder in Ihrem Land (nicht)? Nennen Sie 4 Regeln.
+Sie kaufen am Schalter eine Fahrkarte. Spielen Sie das Gespräch.
+Was möchten Sie in Deutschland machen? Was müssen Sie noch lernen?
+#speak
+Wohin fährt der Zug? Was müssen die Leute machen?
+Was darf man im Zug (nicht) machen?
+Du willst nach Hamburg. Frag am Schalter: __Ich möchte … Muss ich …?__
+Was kann man in Berlin am Wochenende machen?
+
+@@ 12|A1|Imperativ|Tipps und Anweisungen|doctor|2,6,7,10,11
+#expl
+Mit dem **Imperativ** gibt man Bitten, Tipps und Anweisungen. Drei Formen:
+**du:** Stamm ohne -st und ohne du: du kommst → **Komm!** Vokal e→i bleibt: du sprichst → **Sprich!** Aber a→ä nicht: du fährst → **Fahr!**
+**ihr:** ihr-Form ohne ihr: **Kommt!** · **Sie:** Verb + Sie: **Kommen Sie!**
+**sein:** Sei! Seid! Seien Sie! Mit **bitte**, **doch**, **mal** klingt es freundlicher. Trennbare Vorsilbe am Ende: **Ruf** mich **an**!
+#use
+Tipps geben, Wege erklären, Rezepte, beim Arzt.
+#table
+Infinitiv|du|ihr|Sie
+kommen|Komm!|Kommt!|Kommen Sie!
+nehmen|Nimm!|Nehmt!|Nehmen Sie!
+fahren|Fahr!|Fahrt!|Fahren Sie!
+anrufen|Ruf an!|Ruft an!|Rufen Sie an!
+arbeiten|Arbeite!|Arbeitet!|Arbeiten Sie!
+sein|Sei!|Seid!|Seien Sie!
+#ex
+Nehmen Sie die Tabletten dreimal am Tag. = Take the tablets three times a day.
+Trink viel Wasser! = Drink a lot of water!
+Bleib im Bett! = Stay in bed!
+Ruf mich bitte an! = Please call me!
+Seien Sie bitte pünktlich. = Please be on time.
+Macht die Hausaufgaben! = Do your homework! (pl.)
+Iss nicht so viel Zucker! = Don't eat so much sugar!
+Geh doch mal zum Arzt! = Why don't you go to the doctor!
+Warten Sie bitte einen Moment. = Please wait a moment.
+Sprich bitte langsam! = Please speak slowly!
+#vocab
+der Arzt, ¨e / die Ärztin, -nen = doctor
+die Praxis, Praxen = practice
+krank / gesund = ill / healthy
+der Kopf / Kopfschmerzen = head / headache
+der Bauch / Bauchschmerzen = belly / stomach ache
+das Fieber = fever
+die Erkältung, -en = cold
+die Tablette, -n = tablet
+das Rezept, -e = prescription / recipe
+die Apotheke, -n = pharmacy
+sich ausruhen = to rest
+die Krankmeldung = sick note
+#read
+Ravi hat Fieber und Halsschmerzen. Er geht zur Ärztin. Die Ärztin sagt: „Machen Sie bitte den Mund auf. Sie haben eine Erkältung. Bleiben Sie drei Tage zu Hause und ruhen Sie sich aus. Trinken Sie viel Tee. Nehmen Sie diese Tabletten zweimal am Tag.“ Ravi ruft Jonas an. Jonas sagt: „Werd schnell gesund! Und arbeite nicht von zu Hause!“ Anna bringt Suppe: „Iss die Suppe, solange sie heiß ist!“
+#task
+du: (trinken) ___ viel Wasser! || Trink
+du: (nehmen) ___ die Tablette! || Nimm
+Sie: (warten) ___ bitte! || Warten Sie
+ihr: (sein) ___ leise! || Seid
+du: (anrufen) ___ mich morgen ___! || Ruf / an
+du: (fahren) ___ vorsichtig! || Fahr
+du: (sein) ___ nicht traurig! || Sei
+[Mix] Umformen: Du musst im Bett bleiben. → Imperativ || Bleib im Bett!
+[Mix] Verneine: Iss Fleisch! || Iss kein Fleisch!
+[Mix] Sie-Form: Kannst du langsam sprechen? || Sprechen Sie bitte langsam!
+#exam
+Was hat Ravi? || Eine Erkältung (Fieber, Halsschmerzen).
+Wie oft soll er die Tabletten nehmen? || Zweimal am Tag.
+Was bringt Anna? || Suppe.
+du-Imperativ: lesen || Lies!
+ihr-Imperativ: aufräumen || Räumt auf!
+Sie-Imperativ: sich setzen || Setzen Sie sich!
+Mach höflich: „Tür zu!“ (Sie) || Machen Sie bitte die Tür zu!
+Ihr Freund hat Kopfschmerzen. Geben Sie 4 Tipps im Imperativ.
+Erklären Sie ein einfaches Rezept aus Ihrem Land.
+Welche Tipps geben Sie einem neuen Deutschlerner?
+#speak
+Was sagt die Ärztin zum Patienten? __Nehmen Sie … Bleiben Sie …__
+Was fehlt dem Patienten vielleicht?
+Gib einem Freund Tipps gegen Stress (du-Form).
+Was macht man in Indien bei einer Erkältung? __Trink … mit Ingwer!__

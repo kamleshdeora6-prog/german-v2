@@ -1,0 +1,136 @@
+@@ 41|B1|Futur I und die vielen Funktionen von werden|Zukunftspläne|classroom|11,25,28,29,39
+#expl
+**Futur I** = **werden (Position 2) + Infinitiv (Ende)**: __Ich **werde** nach Indien **fliegen**.__ Oft reicht das **Präsens + Zeitangabe** (__Morgen fliege ich …__). Futur benutzt man für **Pläne, Versprechen, Vorhersagen** und **Vermutungen** (+ wohl): __Er **wird wohl** krank **sein**.__
+**werden hat 4 Funktionen:** 1) Vollverb **werden** = become (__Ich werde Arzt.__) 2) **Futur** (__Ich werde lernen.__) 3) **Passiv** (__Das Haus wird gebaut.__) 4) **Konjunktiv II** würde (__Ich würde gern …__).
+Im Nebensatz steht werden am Ende: __…, dass ich die Prüfung bestehen **werde**.__
+#use
+Prüfung: über Pläne und Zukunft sprechen, Versprechen, Vermutungen bei Bildern.
+#table
+Funktion|Form|Beispiel
+Vollverb (become)|werden + Nomen/Adjektiv|Ravi **wird** Teamleiter. Es **wird** kalt.
+Futur I|werden + Infinitiv|Ich **werde** im Mai **heiraten**.
+Vermutung|werden + wohl + Infinitiv|Sie **wird wohl** im Stau **stehen**.
+Passiv|werden + Partizip II|Der Reis **wird gekocht**.
+Konjunktiv II|würde + Infinitiv|Ich **würde** gern **kommen**.
+#ex
+Ich werde nächstes Jahr die B2-Prüfung machen. = I'll take the B2 exam next year.
+Es wird morgen regnen. = It will rain tomorrow.
+Keine Sorge, ich werde dir helfen! = Don't worry, I'll help you!
+Leila wird bald Fachärztin. = Leila will soon become a specialist.
+Jonas ist nicht da. Er wird wohl krank sein. = Jonas isn't here. He's probably ill.
+Wir werden sehen. = We'll see.
+In zehn Jahren werden Autos selbst fahren. = In ten years cars will drive themselves.
+Ich hoffe, dass ich einen guten Job finden werde. = I hope I'll find a good job.
+Das Projekt wird nächste Woche präsentiert. = The project will be presented next week. (Passiv Präsens mit Zukunftsbedeutung)
+Ich verspreche dir, dass ich pünktlich sein werde. = I promise I'll be on time.
+#vocab
+die Zukunft = future
+der Plan, ¨e = plan
+planen = to plan
+versprechen = to promise
+die Vorhersage, -n = forecast
+vermuten = to assume
+wahrscheinlich = probably
+bald = soon
+in Zukunft = in future
+der Traumjob, -s = dream job
+selbstständig = self-employed
+heiraten = to marry
+#read
+Frau Klein fragt am letzten Kurstag: „Was werdet ihr nach dem Kurs machen?“ Ravi antwortet: „Ich werde im Dezember die Prüfung machen und danach werde ich meine Eltern besuchen. Nächstes Jahr werde ich hoffentlich Teamleiter.“ Leila sagt: „Ich werde als Ärztin arbeiten. Aber zuerst muss mein Diplom anerkannt werden.“ Ein Teilnehmer fehlt. Frau Klein vermutet: „Er wird wohl noch schlafen!“ Alle lachen. „Ich bin sicher, dass ihr alle die Prüfung bestehen werdet.“
+#task
+Futur: Ich fahre nach Paris. → Ich ___ nach Paris ___. || werde / fahren
+Futur: Wir lernen morgen. → Wir ___ morgen ___. || werden / lernen
+Vermutung: Er ist wohl zu Hause. → Er ___ wohl zu Hause ___. || wird / sein
+Funktion? „Sie wird Lehrerin.“ || Vollverb (become)
+Funktion? „Die Tür wird geöffnet.“ || Passiv
+Funktion? „Ich würde gern tanzen.“ || Konjunktiv II
+Nebensatz: Ich glaube, dass es morgen ___ ___. (regnen, Futur) || regnen wird
+[Mix] Ich werde ___ ___ Prüfung gut vorbereiten. (sich, auf die) || mich auf die
+[Mix] Nachdem ich die Prüfung bestanden habe, ___ ich ___ Freunden feiern. (werden, mit mein-) || werde / mit meinen
+[Mix] Wenn ich mehr Geld ___, ___ ich ein Haus kaufen. (haben, werden – Konj. II) || hätte / würde
+#exam
+Was wird Ravi im Dezember machen? || Die Prüfung machen.
+Was muss zuerst mit Leilas Diplom passieren? || Es muss anerkannt werden.
+Was vermutet Frau Klein über den fehlenden Teilnehmer? || Er wird wohl noch schlafen.
+Futur: Das Wetter wird schön. → morgen || Das Wetter wird morgen schön (sein).
+Vermutung: Wo ist Anna? (im Büro) || Sie wird wohl im Büro sein.
+Ergänze: Ich verspreche, dass ich dich anrufen ___. || werde
+Bestimme die Funktion: „Das Essen wurde serviert.“ || Passiv (Präteritum)
+Wie wird Ihr Leben in 10 Jahren aussehen?
+Wie wird die Welt im Jahr 2050 sein? Machen Sie Vorhersagen.
+Was werden Sie nach der B1-Prüfung machen?
+#speak
+Was werden die Teilnehmer nach dem Kurs machen? (Vermutung)
+Was wird wohl die Lehrerin sagen?
+Mach 3 Versprechen: __Ich werde …__
+Wie wird Berlin / Mumbai in 30 Jahren aussehen?
+
+@@ 42|B1|je … desto + Abschluss: Eine Präsentation halten|Alles zusammen: Leben in Deutschland|classroom|17,21,22,25,33,36,37,38,40,41
+#expl
+**je … desto/umso + Komparativ**: Der **je-Teil** ist ein **Nebensatz** (Verb am Ende), der **desto-Teil** hat **Inversion** (Verb direkt nach dem Komparativ): __**Je mehr** ich **übe**, **desto besser spreche** ich.__
+Diese Lektion ist dein **Abschluss**: Eine B1-Präsentation (Goethe Teil 2) mit **allen** Strukturen. Folien: 1) Thema vorstellen 2) Eigene Erfahrung 3) Situation im Heimatland 4) Vor- und Nachteile + Meinung 5) Abschluss + Dank.
+Pro Folie ca. 3–4 Sätze. Benutze **Konnektoren** (zuerst, außerdem, deshalb, obwohl, zwar … aber), **Perfekt/Präteritum** für Erfahrungen, **Komparativ** für Vergleiche, **Konjunktiv II** für Meinungen.
+#use
+Prüfung Sprechen Teil 2 + 3 (Präsentation und Rückfragen).
+#table
+Folie|Redemittel|Grammatik
+1 Thema|Ich spreche heute über das Thema … Meine Präsentation hat drei Teile: …|zuerst, dann, zum Schluss
+2 Erfahrung|Ich habe die Erfahrung gemacht, dass … Als ich nach Deutschland kam, …|Perfekt, als, dass
+3 Heimatland|In Indien ist das anders: … Dort … mehr / weniger als hier.|Komparativ, Relativsatz
+4 Vor-/Nachteile|Ein Vorteil ist, dass … Zwar …, aber … Meiner Meinung nach sollte man …|zwar…aber, sollte, obwohl
+5 Abschluss|Zum Schluss möchte ich sagen: Je …, desto … Vielen Dank fürs Zuhören! Haben Sie Fragen?|je…desto
+Rückfragen (Teil 3)|Danke für die Frage. Das ist eine gute Frage. Ich glaube, dass …|dass, weil
+#ex
+Je länger ich in Berlin wohne, desto besser gefällt es mir. = The longer I live in Berlin, the more I like it.
+Je mehr man liest, desto größer wird der Wortschatz. = The more you read, the bigger your vocabulary gets.
+Je früher du anfängst, umso schneller bist du fertig. = The earlier you start, the sooner you're done.
+Je teurer die Wohnung ist, desto kleiner ist sie oft. = The more expensive the flat, often the smaller it is.
+Ich spreche heute über das Thema „Allein leben“. = Today I'm talking about "living alone".
+Als ich nach Deutschland kam, habe ich zum ersten Mal allein gewohnt. = When I came to Germany I lived alone for the first time.
+In Indien wohnen junge Leute meistens bei ihren Eltern, bis sie heiraten. = In India young people mostly live with their parents until they marry.
+Allein leben ist zwar ruhig, aber manchmal fühlt man sich einsam. = Living alone is quiet, but sometimes you feel lonely.
+Meiner Meinung nach sollte jeder das einmal erleben. = In my opinion everyone should experience it once.
+Vielen Dank fürs Zuhören. Haben Sie noch Fragen? = Thank you for listening. Any questions?
+#vocab
+die Präsentation, -en = presentation
+die Folie, -n = slide
+das Thema, Themen = topic
+die Erfahrung, -en = experience
+das Heimatland, ¨er = home country
+der Vorteil, -e / der Nachteil, -e = advantage / disadvantage
+einsam = lonely
+unabhängig = independent
+die Verantwortung = responsibility
+zusammenfassen = to summarise
+zuhören = to listen
+die Rückfrage, -n = follow-up question
+#read
+**Musterpräsentation (Ravi): „Allein leben – ja oder nein?“** Ich spreche heute über das Thema „Allein leben“. Zuerst erzähle ich von meiner Erfahrung, dann von der Situation in Indien, und zum Schluss sage ich meine Meinung. Als ich vor einem Jahr nach Berlin gekommen bin, habe ich zum ersten Mal allein gewohnt. Am Anfang war das schwer, weil ich weder kochen noch waschen konnte. In Indien ist das anders: Die meisten jungen Leute, die nicht verheiratet sind, wohnen bei ihren Eltern. Das ist nicht nur billiger, sondern man ist auch nie allein. Ein Vorteil vom Alleinleben ist, dass man unabhängig ist. Ein Nachteil ist, dass man sich manchmal einsam fühlt. Obwohl ich meine Familie vermisse, möchte ich diese Erfahrung nicht verlieren. Meiner Meinung nach sollte jeder junge Mensch einmal allein wohnen, denn je mehr Verantwortung man hat, desto schneller wird man erwachsen. Vielen Dank fürs Zuhören!
+#task
+Je mehr ich schlafe, ___ fitter ___ ich. (sein) || desto / bin
+Je ___ (spät) es wird, desto ___ (müde) werde ich. || später / müder
+Verbinde: Man übt viel. Man spricht gut. (je … desto) || Je mehr man übt, desto besser spricht man.
+Verbinde: Die Stadt ist groß. Das Leben ist teuer. || Je größer die Stadt ist, desto teurer ist das Leben.
+Fehler? „Je mehr ich lerne, desto ich weiß mehr.“ || …, desto mehr weiß ich.
+Ergänze: Ein Vorteil ist, ___ man unabhängig ist. || dass
+Ergänze: Allein leben ist ___ ruhig, ___ manchmal einsam. || zwar / aber
+[Mix] Als ich nach Berlin ___ ___, konnte ich nicht kochen. (kommen, Perfekt) || gekommen bin
+[Mix] Die Leute, ___ ich hier kennengelernt habe, sind wie eine Familie. || die
+[Mix] Wegen ___ hoh___ Mieten wohnen viele Studenten in WGs. || der hohen
+#exam
+Wann hat Ravi zum ersten Mal allein gewohnt? || Als er vor einem Jahr nach Berlin gekommen ist.
+Warum war es am Anfang schwer? || Weil er weder kochen noch waschen konnte.
+Was ist Ravis Meinung? || Jeder junge Mensch sollte einmal allein wohnen.
+Welche zwei Vorteile hat das Wohnen bei den Eltern (laut Text)? || Es ist billiger und man ist nie allein.
+Bilde einen je…desto-Satz zum Thema Sport. || z. B. Je mehr ich Sport mache, desto gesünder fühle ich mich.
+Halten Sie eine Präsentation (3 Min.): „Homeoffice – Vor- und Nachteile“.
+Halten Sie eine Präsentation: „Kinder und Smartphones“.
+Halten Sie eine Präsentation: „Online einkaufen oder im Geschäft?“
+Geben Sie Ihrem Partner Feedback zu seiner Präsentation und stellen Sie eine Frage.
+Beantworten Sie eine Rückfrage zu Ihrer Präsentation: „Würden Sie wieder allein wohnen?“
+#speak
+Halte eine Mini-Präsentation über deinen Deutschkurs mit allen 5 Folien.
+Benutze mindestens: Perfekt, weil, obwohl, zwar … aber, Komparativ, Konjunktiv II, je … desto.
+Nimm dich auf (3 Minuten), hör zu und prüfe: Verb auf Position 2? Verb am Ende im Nebensatz?
+Gib Feedback: __Deine Präsentation war sehr interessant, weil … Ich habe eine Frage: …__

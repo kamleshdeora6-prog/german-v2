@@ -1,0 +1,836 @@
+@@ 13|A2|Der Dativ: Artikel, Pronomen und Dativ-Verben|Hilfe und Gefallen|office|1,6,8,11
+#expl
+Der **Dativ** antwortet auf **Wem?** Er zeigt meistens die **Person**, die etwas bekommt oder für die etwas passiert.
+Artikel: der → **dem**, die → **der**, das → **dem**, Plural die → **den + n** (den Kinder**n**). ein → **einem/einer**, mein → **meinem/meiner**.
+**Dativ-Verben** (nur Dativ-Objekt!): helfen, danken, gefallen, gehören, schmecken, passen, stehen (Kleidung), antworten, gratulieren, zuhören, fehlen, wehtun.
+Wichtige Ausdrücke: __Wie geht es **dir**? **Mir** ist kalt. Das ist **mir** egal. Es tut **mir** leid.__
+#use
+Hilfe anbieten, Gefallen/Meinung ausdrücken, Befinden sagen.
+#table
+Fall|maskulin|feminin|neutral|Plural|Pronomen
+Nominativ|der / ein|die / eine|das / ein|die|ich, du, er, sie, wir, ihr, sie
+Akkusativ|den / einen|die / eine|das / ein|die|mich, dich, ihn, sie, uns, euch, sie
+Dativ|**dem / einem**|**der / einer**|**dem / einem**|**den … -n**|**mir, dir, ihm, ihr, uns, euch, ihnen**
+#ex
+Kannst du mir helfen? = Can you help me?
+Ravi hilft dem Kollegen. = Ravi helps the colleague.
+Das Büro gefällt ihm. = He likes the office.
+Gehört der Laptop dir? = Does the laptop belong to you?
+Ich danke Ihnen für die Hilfe. = Thank you for the help.
+Die Jacke passt meiner Schwester nicht. = The jacket doesn't fit my sister.
+Wie geht es Ihnen? – Mir geht es gut. = How are you? – I'm fine.
+Das Essen schmeckt den Kindern. = The children like the food.
+Wir gratulieren unserer Chefin. = We congratulate our boss.
+Mir ist kalt. Dir auch? = I'm cold. You too?
+#vocab
+der Kollege, -n / die Kollegin, -nen = colleague
+der Chef, -s / die Chefin, -nen = boss
+helfen (hilft) = to help
+gefallen (gefällt) = to please (like)
+gehören = to belong
+danken = to thank
+passen = to fit / suit
+antworten = to answer
+gratulieren = to congratulate
+wehtun = to hurt
+leidtun = to be sorry
+egal = doesn't matter
+#read
+Ravi ist neu im Team. Jonas hilft ihm viel. Er zeigt ihm das System und antwortet ihm immer schnell. Die neue Arbeit gefällt Ravi sehr. Heute hat die Chefin, Frau Berger, Geburtstag. Alle gratulieren ihr. Ravi schenkt ihr indischen Tee. Der Tee schmeckt der Chefin. Sie dankt ihm: „Das ist sehr nett von Ihnen!“ Später fragt Jonas: „Gehört die Tasse dir?“ – „Nein, sie gehört meiner Kollegin Mia.“
+#task
+Ich helfe ___ Mann. (der) || dem
+Das Kleid gefällt ___ Frau. (die) || der
+Der Ball gehört ___ Kind. (das) || dem
+Wir danken ___ Kinder___. (die, Pl.) || den / Kindern
+Kannst du ___ helfen? (ich) || mir
+Wie geht es ___? (du) || dir
+Die Schuhe passen ___ nicht. (er) || ihm
+[Mix] Ich kaufe ___ Tee und schenke ___ Chefin ___ Tee. (der, meine, der) || den / meiner / den
+[Mix] ___ mir bitte! (helfen, du-Imperativ) || Hilf
+[Mix] Ich ___ dir morgen helfen. (können) || kann
+#exam
+Wer hilft Ravi? || Jonas.
+Was schenkt Ravi der Chefin? || Indischen Tee.
+Wem gehört die Tasse? || Mias (seiner Kollegin Mia).
+Akk. oder Dat.? „Ich sehe den Mann.“ / „Ich helfe dem Mann.“ || Akkusativ / Dativ
+Ergänze: Das Buch gehört ___ Lehrerin. || der
+Ersetze: Ich danke __meinem Vater__. || Ich danke ihm.
+Ergänze: Es tut ___ leid. (ich) || mir
+Was gefällt Ihnen in Deutschland? Was gefällt Ihnen nicht?
+Wem helfen Sie oft? Wie?
+Ihr Kollege ist neu. Bieten Sie ihm Hilfe an.
+#speak
+Wer hilft wem im Büro? __Die Kollegin hilft dem Mann …__
+Gefällt dir das Büro? Warum (nicht)?
+Frag deinen Partner: __Wem gehört …? Kannst du mir … helfen?__
+Wie geht es dir heute? Antworte mit __Mir ist … / Mir geht es …__
+
+@@ 14|A2|Dativ und Akkusativ im selben Satz|Geschenke|party|6,8,13
+#expl
+Verben wie **geben, schenken, zeigen, bringen, schicken, erklären, empfehlen, kaufen, leihen** haben zwei Objekte: **Person (Dativ)** und **Sache (Akkusativ)**.
+**Reihenfolge:** Zwei Nomen → **Dativ vor Akkusativ**: __Ich schenke **meiner Mutter** **einen Schal**.__
+Ein Pronomen → **Pronomen zuerst**: __Ich schenke **ihn** meiner Mutter. / Ich schenke **ihr** einen Schal.__
+Zwei Pronomen → **Akkusativ vor Dativ**: __Ich schenke **ihn ihr**.__
+#use
+Über Geschenke, Empfehlungen, Erklärungen sprechen (Teil 1 Planung: Geschenk kaufen!).
+#table
+Fall|Satz|Regel
+Nomen + Nomen|Ich gebe **dem Kind** **den Ball**.|Dativ → Akkusativ
+Pronomen + Nomen|Ich gebe **ihm** **den Ball**.|Pronomen zuerst
+Nomen + Pronomen|Ich gebe **ihn** **dem Kind**.|Pronomen zuerst
+Pronomen + Pronomen|Ich gebe **ihn ihm**.|Akkusativ → Dativ
+#ex
+Ich schenke meinem Vater ein Buch. = I give my father a book.
+Ich schenke es ihm zum Geburtstag. = I give it to him for his birthday.
+Zeig mir bitte das Foto! = Show me the photo, please.
+Kannst du mir den Weg erklären? = Can you explain the way to me?
+Anna bringt den Kindern Kuchen. = Anna brings the children cake.
+Ich empfehle dir diesen Film. = I recommend this film to you.
+Schick ihn mir bitte per E-Mail! = Please send it to me by email.
+Er leiht seiner Freundin das Fahrrad. = He lends his girlfriend the bike.
+Wir kaufen unserer Oma eine Blume. = We buy our grandma a flower.
+Gib es ihr! = Give it to her!
+#vocab
+das Geschenk, -e = present
+der Geburtstag, -e = birthday
+schenken = to give (as present)
+geben (gibt) = to give
+zeigen = to show
+schicken = to send
+erklären = to explain
+leihen = to lend
+empfehlen (empfiehlt) = to recommend
+der Gutschein, -e = voucher
+die Kerze, -n = candle
+der Blumenstrauß, ¨e = bouquet
+#read
+Anna hat am Samstag Geburtstag. Ravi und Leila überlegen: „Was schenken wir ihr?“ Leila sagt: „Wir können ihr einen Gutschein schenken.“ Ravi zeigt Leila einen schönen Schal im Internet. „Kaufen wir ihn ihr?“ – „Ja! Und Max, ihrem Sohn, bringen wir ein kleines Spiel mit.“ Am Samstag gibt Ravi Anna den Schal. Anna freut sich sehr: „Danke! Wer hat ihn euch empfohlen?“ – „Niemand. Wir haben gute Ideen!“
+#task
+Ich schenke ___ Mutter ___ Kette. (meine, eine) || meiner / eine
+Er gibt ___ Kind ___ Apfel. (das, ein) || dem / einen
+Zeig ___ (ich) das Handy! || mir
+Ordne: dem Lehrer / ich / das Heft / gebe || Ich gebe dem Lehrer das Heft.
+Ersetze das Heft: Ich gebe ___ dem Lehrer. || es
+Ersetze beides: Ich gebe ___ ___. || es ihm
+Ordne: erklärt / ihr / die Chefin / den Plan || Die Chefin erklärt ihr den Plan.
+[Mix] Wir müssen ___ Oma ___ Geschenk kaufen. (unsere, ein) || unserer / ein
+[Mix] Kannst du ___ ___ schicken? (es, ich) || es mir
+[Mix] Imperativ (Sie): mir / zeigen / den Pass || Zeigen Sie mir den Pass!
+#exam
+Wer hat Geburtstag? || Anna.
+Was bekommt Anna? || Einen Schal.
+Was bringen sie Max mit? || Ein kleines Spiel.
+Ersetze: Ich schenke __meiner Schwester__ __die Blumen__. || Ich schenke sie ihr.
+Ergänze: Kannst du ___ (wir) ___ Weg erklären? || uns / den
+Ordne: ihm / ihn / gebe / ich || Ich gebe ihn ihm.
+Ergänze: Ich empfehle ___ Gästen ___ Restaurant. (die, das) || den / das
+Planen Sie mit Ihrem Partner ein Geschenk für eine Kollegin. Was, wie teuer, wer kauft es?
+Was war Ihr schönstes Geschenk? Wer hat es Ihnen geschenkt?
+Was schenkt man in Ihrem Land zur Hochzeit?
+#speak
+Was schenken die Personen? Wem?
+Was ist im Paket? (Vermutung) __Vielleicht schenkt sie ihm …__
+Plane eine Überraschung für einen Freund. __Wir kaufen ihm … und geben es ihm …__
+Welche Geschenke findest du gut, welche nicht?
+
+@@ 15|A2|Präpositionen mit Akkusativ und mit Dativ|Wege in der Stadt|city|6,9,11,13
+#expl
+**Immer Akkusativ:** durch, für, gegen, ohne, um, bis (Merke: **DOGFU** = durch, ohne, gegen, für, um).
+**Immer Dativ:** aus, bei, mit, nach, seit, von, zu, gegenüber (Merke: **aus-bei-mit-nach-von-seit-zu**).
+**Wichtig:** __nach__ + Städte/Länder ohne Artikel (__nach Berlin__), __zu__ + Personen/Orte (__zum Arzt, zu Anna__), __nach Hause__ (Richtung) / __zu Hause__ (Ort).
+Kontraktionen: zu dem → **zum**, zu der → **zur**, bei dem → **beim**, von dem → **vom**.
+#use
+Wege beschreiben, Verkehrsmittel nennen, Herkunft und Zeit angeben.
+#table
+Präposition|Fall|Beispiel|Bedeutung
+für|Akk.|für den Chef|for
+ohne|Akk.|ohne meinen Schlüssel|without
+durch|Akk.|durch den Park|through
+mit|Dat.|mit dem Bus|with / by
+zu|Dat.|zum Bahnhof, zur Post|to
+bei|Dat.|beim Arzt, bei meiner Tante|at (someone's)
+aus|Dat.|aus dem Haus, aus Indien|out of / from
+seit|Dat.|seit einem Jahr|since / for
+#ex
+Ich fahre mit der U-Bahn zur Arbeit. = I go to work by underground.
+Gehen Sie durch den Park! = Go through the park!
+Das Geschenk ist für meinen Bruder. = The present is for my brother.
+Ravi wohnt seit einem Jahr in Berlin. = Ravi has lived in Berlin for a year.
+Ich komme gerade vom Arzt. = I'm just coming from the doctor.
+Heute Abend bin ich bei Leila. = Tonight I'm at Leila's.
+Gegenüber der Bank ist ein Café. = Opposite the bank is a café.
+Ohne dich gehe ich nicht. = I'm not going without you.
+Nach dem Kurs fahre ich nach Hause. = After the course I go home.
+Wir gehen um den See. = We walk around the lake.
+#vocab
+die Haltestelle, -n = stop
+die Straße, -n = street
+die Ampel, -n = traffic light
+die Kreuzung, -en = crossing
+geradeaus = straight ahead
+links / rechts = left / right
+abbiegen = to turn
+die Post = post office
+die Bank, -en = bank
+das Rathaus, ¨er = town hall
+das Fahrrad, ¨er = bike
+zu Fuß = on foot
+#read
+Leila besucht Ravi zum ersten Mal. Sie ruft ihn an: „Ich bin am Bahnhof. Wie komme ich zu dir?“ – „Nimm den Bus 100. Fahr bis zur Haltestelle Rathaus. Dann geh zu Fuß durch den Park. Gegenüber dem Park ist eine Bäckerei. Mein Haus ist neben der Bäckerei.“ – „Ohne Stadtplan ist das schwer!“ – „Kein Problem, ich hole dich von der Haltestelle ab.“ Nach zehn Minuten sind sie zusammen bei Ravi.
+#task
+Ich fahre ___ Bus. (mit + der) || mit dem
+Das ist ___ meine Mutter. (für) || für
+Ravi kommt ___ Indien. || aus
+Ich gehe ___ Arzt. (zu + der) || zum
+Sie wohnt ___ drei Jahren hier. || seit
+Wir gehen ___ Park. (durch + der) || durch den
+Er arbeitet ___ Siemens. || bei
+[Mix] Ich fahre heute ___ Hause, ich bin nicht gern ___ Hause. || nach / zu
+[Mix] Kannst du ___ (ich) ___ Hause bringen? || mich / nach
+[Mix] ___ geradeaus bis ___ Ampel! (gehen, du; zu + die) || Geh / zur
+#exam
+Welchen Bus nimmt Leila? || Den Bus 100.
+Wo ist Ravis Haus? || Neben der Bäckerei (gegenüber dem Park).
+Wer holt Leila ab? || Ravi.
+Ergänze: Wir treffen uns ___ Bahnhof. (an + dem) || am
+Ergänze: Wir fliegen ___ Mumbai. || nach
+Ergänze: Ich gehe ___ Freundin. (zu + meine) || zu meiner
+Ergänze: Das ist ein Film ___ Kinder. || für
+Beschreiben Sie den Weg von Ihrer Wohnung zum Supermarkt.
+Wie fahren Sie zur Arbeit / zum Kurs? Wie lange dauert das?
+Ein Tourist fragt Sie nach dem Weg zum Bahnhof. Helfen Sie.
+#speak
+Wohin fährt der Bus? Wie kommt der Mann zum Bahnhof?
+Erkläre den Weg: __Geh geradeaus bis zur …, dann …__
+Womit fährst du lieber: mit dem Bus, mit dem Rad oder mit dem Auto? Warum?
+Wie ist der Verkehr in Mumbai im Vergleich zu Berlin?
+
+@@ 16|A2|Wechselpräpositionen: Wo? (Dativ) und Wohin? (Akkusativ)|Umzug und Einrichten|moving|5,6,13,15
+#expl
+**an, auf, hinter, in, neben, über, unter, vor, zwischen** können Dativ oder Akkusativ haben.
+**Wo?** (Position, keine Bewegung) → **Dativ**: __Das Buch liegt **auf dem** Tisch.__
+**Wohin?** (Richtung, Bewegung zum Ziel) → **Akkusativ**: __Ich lege das Buch **auf den** Tisch.__
+Verbpaare: **stellen → stehen**, **legen → liegen**, **setzen → sitzen**, **hängen → hängen**. Die Verben mit Bewegung (stellen, legen, setzen, hängen) = Akkusativ.
+#use
+Umzug, Zimmer beschreiben, Bildbeschreibung (Wo ist was?).
+#table
+Präp.|Wo? (Dativ)|Wohin? (Akkusativ)
+in|Ich bin **im** Büro.|Ich gehe **ins** Büro.
+auf|Die Tasse steht **auf dem** Tisch.|Ich stelle die Tasse **auf den** Tisch.
+an|Das Bild hängt **an der** Wand.|Ich hänge das Bild **an die** Wand.
+neben|Der Stuhl steht **neben dem** Bett.|Ich stelle den Stuhl **neben das** Bett.
+unter|Die Katze liegt **unter dem** Sofa.|Die Katze läuft **unter das** Sofa.
+zwischen|Die Lampe steht **zwischen den** Sesseln.|Ich stelle sie **zwischen die** Sessel.
+#ex
+Stell den Karton in die Küche! = Put the box in the kitchen!
+Der Karton steht in der Küche. = The box is in the kitchen.
+Ich lege die Bücher ins Regal. = I put the books on the shelf.
+Die Bücher liegen im Regal. = The books are on the shelf.
+Wir hängen die Lampe über den Tisch. = We hang the lamp above the table.
+Die Lampe hängt über dem Tisch. = The lamp hangs above the table.
+Setz dich auf das Sofa! = Sit down on the sofa!
+Max sitzt auf dem Sofa. = Max is sitting on the sofa.
+Der Schlüssel liegt unter der Zeitung. = The key is under the newspaper.
+Wir fahren morgen in die Stadt. = Tomorrow we're going into town.
+#vocab
+der Umzug, ¨e = house move
+umziehen = to move house
+der Karton, -s = cardboard box
+die Wand, ¨e = wall
+der Boden, ¨ = floor
+die Ecke, -n = corner
+stellen / stehen = to put (upright) / to stand
+legen / liegen = to lay / to lie
+hängen = to hang
+setzen / sitzen = to seat / to sit
+der Sessel, - = armchair
+die Möbel (Pl.) = furniture
+#read
+Ravi zieht um. Jonas und Anna helfen ihm. Ravi sagt: „Stellt die Kartons bitte ins Wohnzimmer.“ Jonas stellt das Sofa an die Wand. Anna legt die Bücher ins Regal. „Wohin hängen wir das Bild?“ – „Über das Sofa.“ Am Abend ist alles fertig: Das Sofa steht an der Wand, das Bild hängt über dem Sofa, die Bücher liegen im Regal. Nur der Schlüssel fehlt! Endlich findet Ravi ihn: Er liegt unter einem Karton.
+#task
+Ich stelle die Vase auf ___ Tisch. || den
+Die Vase steht auf ___ Tisch. || dem
+Das Bild hängt an ___ Wand. || der
+Leg das Handy in ___ Tasche! || die
+Ich gehe ___ Kino. (in + das) || ins
+Die Katze liegt unter ___ Bett. || dem
+Wählen: Ich ___ den Teller auf den Tisch. (stelle/stehe) || stelle
+[Mix] Wo ist das Buch? – ___ liegt ___ Regal. (es, in + das) || Es / im
+[Mix] Stell ___ (er = der Stuhl) neben ___ Tür! || ihn / die
+[Mix] Wir müssen die Kartons ___ Keller bringen. (in + der) || in den
+#exam
+Wer hilft Ravi beim Umzug? || Jonas und Anna.
+Wo hängt das Bild? || Über dem Sofa.
+Wo ist der Schlüssel? || Unter einem Karton.
+Wo oder wohin? „Ich fahre in die Stadt.“ || Wohin → Akkusativ
+Ergänze: Das Auto steht vor ___ Haus. || dem
+Ergänze: Setz dich neben ___ (ich)! || mich
+Ergänze: Ich hänge die Jacke in ___ Schrank. || den
+Beschreiben Sie Ihr Zimmer genau: Was steht / liegt / hängt wo?
+Sie ziehen um. Geben Sie Ihren Freunden Anweisungen.
+Was war schwierig bei Ihrem letzten Umzug?
+#speak
+Wo stehen die Kartons? Wo steht das Sofa? __Links neben dem …__
+Was machen die Männer? Wohin tragen sie den Karton?
+Gib Anweisungen: __Stell den Karton in … Leg die Bücher auf …__
+Beschreibe ein Bild in deinem Zimmer: Wo hängt es?
+
+@@ 17|A2|Das Perfekt|Erlebnisse und Wochenende|park|2,9,10,15,16
+#expl
+Das **Perfekt** ist die wichtigste Vergangenheit **beim Sprechen**. Form: **haben/sein (Position 2) + Partizip II (Ende)**.
+**Partizip II:** regelmäßig **ge-…-t** (gemacht, gekauft), unregelmäßig **ge-…-en** oft mit Vokalwechsel (gegessen, getrunken, geschrieben).
+**Trennbare Verben:** ge in der Mitte: auf**ge**standen, ein**ge**kauft. **Ohne ge-:** Verben auf **-ieren** (studiert) und mit untrennbarer Vorsilbe be-/ver-/er-… (besucht, verstanden).
+**sein** bei Bewegung (fahren, gehen, fliegen, kommen) und Veränderung (aufstehen, einschlafen, werden) + sein, bleiben, passieren. Sonst **haben**.
+#use
+Prüfung: Erfahrungen erzählen („Ich habe schon … gemacht“), Wochenende, Reisen.
+#table
+Typ|Infinitiv|Perfekt
+regelmäßig|machen|Ich **habe** Sport **gemacht**.
+unregelmäßig|essen|Wir **haben** Pizza **gegessen**.
+trennbar|einkaufen|Er **hat** **eingekauft**.
+-ieren|telefonieren|Sie **hat** lange **telefoniert**.
+untrennbar|besuchen|Ich **habe** Oma **besucht**.
+sein: Bewegung|fahren|Wir **sind** nach Potsdam **gefahren**.
+sein: Veränderung|aufstehen|Ich **bin** spät **aufgestanden**.
+#ex
+Am Wochenende habe ich viel gelesen. = At the weekend I read a lot.
+Wir sind in den Park gegangen. = We went to the park.
+Hast du schon gegessen? = Have you eaten already?
+Ravi ist nach Potsdam gefahren. = Ravi went to Potsdam.
+Ich habe dich gestern angerufen. = I called you yesterday.
+Leila hat in Teheran Medizin studiert. = Leila studied medicine in Tehran.
+Was ist passiert? = What happened?
+Ich habe die Frage nicht verstanden. = I didn't understand the question.
+Max ist beim Film eingeschlafen. = Max fell asleep during the film.
+Seid ihr schon mal geflogen? = Have you ever flown?
+#vocab
+gestern / vorgestern = yesterday / day before yesterday
+letzte Woche = last week
+schon / noch nicht = already / not yet
+der Ausflug, ¨e = trip, outing
+spazieren gehen = to go for a walk
+das Picknick, -s = picnic
+der See, -n = lake
+passieren = to happen
+erleben = to experience
+fotografieren = to take photos
+grillen = to barbecue
+Spaß machen = to be fun
+#read
+Letztes Wochenende hat Ravi viel erlebt. Am Samstag ist er früh aufgestanden und mit Leila und Jonas nach Potsdam gefahren. Sie haben ein Picknick am See gemacht und viel fotografiert. Jonas hat Würstchen gegrillt, aber Ravi hat nur Gemüse gegessen. Am Nachmittag sind sie im Park spazieren gegangen. Am Sonntag hat Ravi seine Eltern angerufen und ihnen alles erzählt. Am Abend ist er vor dem Fernseher eingeschlafen.
+#task
+Ich ___ gestern Fußball ___. (spielen) || habe / gespielt
+Wir ___ nach Hamburg ___. (fahren) || sind / gefahren
+Anna ___ ein Buch ___. (lesen) || hat / gelesen
+___ du schon ___? (frühstücken) || Hast / gefrühstückt
+Er ___ um 6 Uhr ___. (aufstehen) || ist / aufgestanden
+Ich ___ im Supermarkt ___. (einkaufen) || habe / eingekauft
+Sie ___ in Köln ___. (studieren) || hat / studiert
+[Mix] Ich ___ meiner Mutter Blumen ___. (schenken) || habe / geschenkt
+[Mix] Wir ___ in den Park ___. (gehen) || sind / gegangen
+[Mix] Wo hast du den Schlüssel hingelegt? – Ich habe ihn auf ___ Tisch gelegt. || den
+#exam
+Wohin ist Ravi am Samstag gefahren? || Nach Potsdam.
+Was hat Jonas gemacht? || Er hat Würstchen gegrillt.
+Wen hat Ravi am Sonntag angerufen? || Seine Eltern.
+Perfekt: Ich trinke Kaffee. || Ich habe Kaffee getrunken.
+Perfekt: Er kommt spät nach Hause. || Er ist spät nach Hause gekommen.
+Perfekt: Wir verstehen alles. || Wir haben alles verstanden.
+haben oder sein? Ich ___ zu Hause geblieben. || bin
+Was haben Sie letztes Wochenende gemacht? (8 Sätze)
+Erzählen Sie von Ihrer schönsten Reise.
+Was haben Sie in Deutschland zum ersten Mal gemacht?
+#speak
+Was haben die Leute im Park gemacht? __Der Mann ist gejoggt …__
+Erzähl die Geschichte vom Hund: Was ist passiert?
+Was hast du gestern gemacht? Mindestens 6 Verben im Perfekt.
+Frag deinen Partner: __Bist du schon mal …? Hast du schon mal …?__
+
+@@ 18|A2|Präteritum von sein, haben und Modalverben|Früher und heute|family|1,8,11,17
+#expl
+Beim Sprechen benutzt man für **sein, haben** und **Modalverben** fast immer das **Präteritum** (nicht das Perfekt): __Ich **war** krank.__ (statt: Ich bin krank gewesen.)
+**sein:** war, warst, war, waren, wart, waren. **haben:** hatte, hattest, hatte, hatten, hattet, hatten.
+**Modalverben:** Stamm ohne Umlaut + **-te**: konnte, musste, durfte, wollte, sollte. **möchten → wollte**.
+Auch häufig: **es gab** (there was), **wusste** (wissen).
+#use
+Über die Kindheit, früher und heute sprechen; Entschuldigungen: __Ich konnte nicht kommen, ich hatte keine Zeit.__
+#table
+Person|sein|haben|können|müssen|wollen|dürfen
+ich|war|hatte|konnte|musste|wollte|durfte
+du|warst|hattest|konntest|musstest|wolltest|durftest
+er/sie/es|war|hatte|konnte|musste|wollte|durfte
+wir|waren|hatten|konnten|mussten|wollten|durften
+ihr|wart|hattet|konntet|musstet|wolltet|durftet
+sie/Sie|waren|hatten|konnten|mussten|wollten|durften
+#ex
+Gestern war ich müde. = Yesterday I was tired.
+Als Kind hatte ich einen Hund. = As a child I had a dog.
+Ich konnte nicht kommen. = I couldn't come.
+Wir mussten lange warten. = We had to wait a long time.
+Früher wollte ich Pilot werden. = I used to want to be a pilot.
+Als Kinder durften wir nicht allein ausgehen. = As children we weren't allowed out alone.
+Wo warst du? = Where were you?
+Früher gab es kein Internet. = In the past there was no internet.
+Hattet ihr einen schönen Urlaub? = Did you have a nice holiday?
+Ich wusste das nicht. = I didn't know that.
+#vocab
+früher = in the past
+heute = today, nowadays
+die Kindheit = childhood
+als Kind = as a child
+die Schule, -n = school
+der Lehrer, - = teacher
+streng = strict
+das Dorf, ¨er = village
+die Großstadt, ¨e = big city
+es gab = there was / were
+werden (wurde) = to become
+damals = back then
+#read
+Ravis Vater erzählt am Telefon: „Früher war alles anders. Als Kind hatte ich kein eigenes Zimmer. Wir waren sechs Kinder. Wir wollten immer draußen spielen, aber wir mussten zuerst unseren Eltern helfen. Es gab kein Handy und keinen Fernseher. Mein Lehrer war sehr streng. Ich durfte nie zu spät kommen.“ Ravi sagt: „Heute habe ich ein Handy, eine Wohnung und keine strengen Lehrer. Aber ich konnte als Kind auch nicht so viel spielen!“
+#task
+Gestern ___ ich krank. (sein) || war
+Wir ___ keine Zeit. (haben) || hatten
+Ich ___ nicht kommen. (können) || konnte
+Er ___ lange arbeiten. (müssen) || musste
+___ du gestern im Kurs? (sein) || Warst
+Als Kind ___ ich nicht fernsehen. (dürfen) || durfte
+Ihr ___ ins Kino gehen, oder? (wollen) || wolltet
+[Mix] Früher ___ es hier keinen Supermarkt. (geben) || gab
+[Mix] Letztes Jahr ___ ich nach Indien geflogen. || bin
+[Mix] Als Kind ___ meine Schwester ___ Katze. (haben, eine) || hatte / eine
+#exam
+Wie viele Kinder waren sie in der Familie von Ravis Vater? || Sechs.
+Was mussten die Kinder zuerst machen? || Den Eltern helfen.
+Wie war der Lehrer? || Sehr streng.
+Präteritum: Ich bin im Urlaub. || Ich war im Urlaub.
+Präteritum: Wir müssen früh aufstehen. || Wir mussten früh aufstehen.
+Präteritum: Hast du Glück? || Hattest du Glück?
+Präteritum: Sie können gut schwimmen. || Sie konnten gut schwimmen.
+Wie war Ihre Kindheit? Was durften / mussten Sie machen?
+Früher und heute: Was ist in Ihrer Stadt anders?
+Sie waren nicht im Kurs. Entschuldigen Sie sich und erklären Sie warum.
+#speak
+Stell dir vor, das ist die Familie vor 30 Jahren. Wie war das Leben?
+Was durftest du als Kind nicht? Was musstest du machen?
+Vergleiche: __Früher hatten wir … heute haben wir …__
+Was wolltest du als Kind werden?
+
+@@ 19|A2|Reflexive Verben|Gesundheit und Körper|doctor|12,13,17,18
+#expl
+Bei **reflexiven Verben** zeigt ein **Reflexivpronomen** zurück auf das Subjekt: __Ich wasche **mich**.__
+**Akkusativ** (normal): mich, dich, **sich**, uns, euch, **sich**.
+**Dativ**, wenn es schon ein Akkusativ-Objekt gibt: __Ich wasche **mir** die Hände. Ich putze **mir** die Zähne.__ (mir, dir, sich, uns, euch, sich)
+Viele reflexive Verben haben eine feste **Präposition**: sich freuen **auf/über**, sich interessieren **für**, sich ärgern **über**, sich kümmern **um**. Im Perfekt immer **haben**: __Ich habe mich gefreut.__
+#use
+Gefühle, Körperpflege, Gesundheit, Interessen ausdrücken.
+#table
+Person|Akkusativ|Dativ|Beispiel
+ich|mich|mir|Ich ziehe **mich** an. / Ich ziehe **mir** die Jacke an.
+du|dich|dir|Beeil **dich**! / Wasch **dir** die Hände!
+er/sie/es|sich|sich|Er rasiert **sich**.
+wir|uns|uns|Wir treffen **uns** um 8.
+ihr|euch|euch|Habt ihr **euch** erholt?
+sie/Sie|sich|sich|Setzen Sie **sich** bitte!
+#ex
+Ich fühle mich nicht gut. = I don't feel well.
+Du musst dich ausruhen. = You must rest.
+Ich putze mir zweimal am Tag die Zähne. = I brush my teeth twice a day.
+Ravi hat sich erkältet. = Ravi has caught a cold.
+Wir freuen uns auf den Urlaub. = We're looking forward to the holiday.
+Interessierst du dich für Sport? = Are you interested in sport?
+Setzen Sie sich bitte! = Please sit down.
+Ich habe mich über das Geschenk gefreut. = I was happy about the present.
+Beeil dich, der Bus kommt! = Hurry up, the bus is coming!
+Er kümmert sich um seine Mutter. = He takes care of his mother.
+#vocab
+sich fühlen = to feel
+sich erkälten = to catch a cold
+sich ausruhen = to rest
+sich waschen = to wash (oneself)
+sich die Zähne putzen = to brush one's teeth
+sich anziehen = to get dressed
+sich beeilen = to hurry
+sich freuen auf / über = to look forward to / be happy about
+sich interessieren für = to be interested in
+sich ärgern über = to be annoyed about
+sich kümmern um = to take care of
+sich erholen = to recover
+#read
+Nach dem Ausflug hat sich Ravi erkältet. Er fühlt sich schlecht und muss sich ausruhen. Die Ärztin sagt: „Setzen Sie sich bitte. Waschen Sie sich oft die Hände und ziehen Sie sich warm an.“ Ravi ärgert sich: Am Samstag wollte er zum Konzert gehen. Er hatte sich so darauf gefreut! Aber Leila kümmert sich um ihn und bringt ihm Tee. Nach vier Tagen hat er sich erholt und freut sich auf das nächste Wochenende.
+#task
+Ich fühle ___ nicht gut. || mich
+Wasch ___ die Hände! (du) || dir
+Er hat ___ erkältet. || sich
+Wir treffen ___ im Café. || uns
+Ich putze ___ die Zähne. || mir
+Interessierst du ___ für Musik? || dich
+Setzen Sie ___! || sich
+[Mix] Perfekt: Ich freue mich über den Brief. || Ich habe mich über den Brief gefreut.
+[Mix] Ihr müsst ___ beeilen! || euch
+[Mix] Imperativ (du): sich warm anziehen || Zieh dich warm an!
+#exam
+Warum geht Ravi zur Ärztin? || Er hat sich erkältet.
+Warum ärgert sich Ravi? || Er kann nicht zum Konzert gehen.
+Wer kümmert sich um Ravi? || Leila.
+Ergänze: Ich ziehe ___ die Schuhe an. || mir
+Ergänze: Anna freut ___ ___ den Sommer. || sich / auf
+Ergänze: Kümmerst du ___ ___ die Katze? || dich / um
+Perfekt: Wir erholen uns gut. || Wir haben uns gut erholt.
+Was machen Sie, wenn Sie sich nicht gut fühlen?
+Worauf freuen Sie sich? Worüber ärgern Sie sich?
+Wofür interessieren Sie sich? Erzählen Sie.
+#speak
+Wie fühlt sich der Patient? Was sagt die Ärztin?
+Was macht man jeden Morgen? __Ich wasche mich, ich putze mir …__
+Worüber freust du dich diese Woche?
+Rollenspiel beim Arzt: __Ich fühle mich … Ich habe mich …__
+
+@@ 20|A2|Konjunktionen: und, aber, oder, denn, sondern|Freizeit und Meinung|park|3,7,17,19
+#expl
+Diese Konjunktionen stehen auf **Position 0** – sie zählen nicht mit. Danach kommt ein **normaler Hauptsatz** (Verb auf Position 2).
+**und** (and), **aber** (but), **oder** (or), **denn** (because – wie weil, aber mit Hauptsatz!), **sondern** (but rather – nur nach Negation).
+Vor aber, denn, sondern steht ein **Komma**. Bei und/oder kann das Subjekt wegfallen: __Ich gehe nach Hause und (ich) koche.__
+Merke **ADUSO**: aber, denn, und, sondern, oder.
+#use
+Sätze verbinden, Gründe geben, Kontraste zeigen – mehr Punkte für „Kohärenz“ in der Prüfung.
+#table
+Satz 1|Pos. 0|Pos. 1|Pos. 2|Rest
+Ich bleibe zu Hause,|denn|ich|bin|krank.
+Ich mag Tee,|aber|Kaffee|trinke|ich nicht.
+Gehen wir ins Kino|oder|bleiben|wir|zu Hause? (Frage)
+Er fährt nicht mit dem Bus,|sondern|er|geht|zu Fuß.
+Ich koche|und|du|deckst|den Tisch.
+#ex
+Ich gehe joggen, denn ich will fit bleiben. = I go jogging because I want to stay fit.
+Das Wetter ist schön, aber es ist kalt. = The weather is nice but it's cold.
+Spielen wir Tennis oder gehen wir schwimmen? = Shall we play tennis or go swimming?
+Ich wohne nicht in München, sondern in Berlin. = I don't live in Munich but in Berlin.
+Ravi kocht und Leila macht den Salat. = Ravi cooks and Leila makes the salad.
+Ich habe keine Zeit, denn ich muss arbeiten. = I have no time because I have to work.
+Er ist müde, aber er geht noch ins Kino. = He's tired but still goes to the cinema.
+Wir sind nicht gefahren, sondern (wir sind) gelaufen. = We didn't drive, we walked.
+Ich mag Yoga, denn es entspannt mich. = I like yoga because it relaxes me.
+Möchtest du Wasser oder lieber Saft? = Would you like water or rather juice?
+#vocab
+die Freizeit = free time
+das Fitnessstudio, -s = gym
+joggen = to jog
+das Yoga = yoga
+wandern = to hike
+fit / entspannt = fit / relaxed
+die Mannschaft, -en = team
+der Verein, -e = club
+das Konzert, -e = concert
+langweilig / spannend = boring / exciting
+lieber = rather
+die Meinung, -en = opinion
+#read
+Ravi und Leila sprechen über ihre Freizeit. Ravi joggt dreimal pro Woche, denn er will fit bleiben. Er möchte auch in einen Cricket-Verein gehen, aber in Berlin gibt es nicht viele. Leila macht kein Joggen, sondern Yoga. Sie sagt: „Yoga ist nicht langweilig, sondern sehr entspannend.“ Am Wochenende wandern sie zusammen oder sie gehen auf ein Konzert. Letzten Samstag waren sie im Konzert, aber Ravi ist fast eingeschlafen!
+#task
+Ich lerne Deutsch, ___ ich will hier arbeiten. || denn
+Das Essen ist gut, ___ teuer. || aber
+Trinkst du Tee ___ Kaffee? || oder
+Er ist nicht Arzt, ___ Lehrer. || sondern
+Verbinde mit denn: Ich bleibe zu Hause. Ich bin müde. || Ich bleibe zu Hause, denn ich bin müde.
+Verbinde mit aber: Ich möchte kommen. Ich habe keine Zeit. || Ich möchte kommen, aber ich habe keine Zeit.
+Fehler? „…, denn ich bin müde bin.“ || …, denn ich bin müde.
+[Mix] Ich habe nicht gekocht, ___ ich ___ im Restaurant ___. (sondern, essen – Perfekt) || sondern / habe / gegessen
+[Mix] Leila ärgert ___, denn der Bus ___ zu spät. (sich, kommen) || sich / kommt
+[Mix] Ich wollte kommen, aber ich ___ nicht. (können, Präteritum) || konnte
+#exam
+Warum joggt Ravi? || Er will fit bleiben.
+Was macht Leila? || Yoga.
+Was ist beim Konzert passiert? || Ravi ist fast eingeschlafen.
+Verbinde mit sondern: Ich trinke keinen Wein. Ich trinke Saft. || Ich trinke keinen Wein, sondern Saft.
+Verbinde mit oder: Wir gehen ins Kino. Wir bleiben zu Hause. || Wir gehen ins Kino oder (wir) bleiben zu Hause.
+Verbinde mit denn: Er kommt nicht. Er ist krank. || Er kommt nicht, denn er ist krank.
+Ergänze: Das ist nicht mein Handy, ___ deins. || sondern
+Was machen Sie in der Freizeit und warum? (mit denn, aber)
+Ist Sport wichtig für Sie? Begründen Sie Ihre Meinung.
+Sie möchten mit Ihrem Partner etwas unternehmen. Machen Sie zwei Vorschläge (oder).
+#speak
+Was machen die Leute im Park und warum? (mit denn)
+Möchtest du lieber joggen oder auf der Bank sitzen? Warum?
+Beschreibe das Bild mit und / aber / oder.
+Was ist besser: Sport allein oder in der Gruppe?
+
+@@ 21|A2|Nebensätze mit weil, dass, wenn, ob|Arbeit und Beruf|office|11,17,18,20
+#expl
+Im **Nebensatz** steht das **konjugierte Verb am Ende**: __…, **weil** ich müde **bin**.__
+**weil** = Grund (because). **dass** = Inhalt nach Verben wie denken, glauben, finden, wissen, hoffen, sagen. **wenn** = Bedingung (if) / Wiederholung (whenever). **ob** = indirekte Ja/Nein-Frage (whether).
+Mit Modalverb / Perfekt: Hilfsverb ganz am Ende: __…, weil ich arbeiten **muss** / weil ich lange gearbeitet **habe**.__ Trennbare Verben zusammen: __…, wenn ich früh **aufstehe**.__
+**Nebensatz zuerst** → Hauptsatz beginnt mit **Verb**: __Wenn ich Zeit habe, **komme** ich.__
+#use
+In der Prüfung: Meinung (Ich finde, dass…), Gründe (weil…), Bedingungen (wenn…). Sehr wichtig!
+#table
+Hauptsatz|Konj.|Subjekt|Mitte|Verb (Ende)
+Ich komme nicht,|weil|ich|keine Zeit|habe.
+Ich glaube,|dass|er|heute|kommt.
+Ich weiß nicht,|ob|der Chef|heute im Büro|ist.
+Ich rufe dich an,|wenn|ich|morgen früh|aufstehe.
+Ravi ist müde,|weil|er|lange|gearbeitet hat.
+—|Wenn|ich|Zeit|habe, **komme** ich.
+#ex
+Ich lerne Deutsch, weil ich hier arbeiten möchte. = I learn German because I'd like to work here.
+Ich finde, dass die Arbeit interessant ist. = I think the work is interesting.
+Wenn ich Zeit habe, gehe ich schwimmen. = When I have time, I go swimming.
+Weißt du, ob Jonas heute kommt? = Do you know whether Jonas is coming today?
+Ravi hofft, dass er die Stelle bekommt. = Ravi hopes he gets the job.
+Ich bin müde, weil ich spät eingeschlafen bin. = I'm tired because I fell asleep late.
+Wenn es regnet, nehme ich die U-Bahn. = If it rains, I take the underground.
+Die Chefin fragt, ob wir morgen arbeiten können. = The boss asks whether we can work tomorrow.
+Es ist wichtig, dass man pünktlich ist. = It's important to be punctual.
+Weil der Zug Verspätung hatte, bin ich zu spät gekommen. = Because the train was late, I came late.
+#vocab
+die Stelle, -n = job, position
+sich bewerben = to apply
+die Bewerbung, -en = application
+das Vorstellungsgespräch, -e = job interview
+der Lebenslauf, ¨e = CV
+die Erfahrung, -en = experience
+verdienen = to earn
+das Gehalt, ¨er = salary
+die Überstunde, -n = overtime
+der Vertrag, ¨e = contract
+kündigen = to quit
+hoffen = to hope
+#read
+Jonas erzählt Ravi, dass er eine neue Stelle sucht. „Ich möchte wechseln, weil ich zu viele Überstunden mache.“ Ravi fragt, ob er schon eine Bewerbung geschrieben hat. „Ja, und ich hoffe, dass ich bald ein Vorstellungsgespräch habe.“ Ravi sagt: „Wenn du Hilfe beim Lebenslauf brauchst, sag Bescheid. Aber ich finde es schade, dass du gehst!“ Jonas lacht: „Keine Sorge. Wenn ich die Stelle bekomme, lade ich dich zum Essen ein.“
+#task
+Ich komme nicht, weil ich krank ___. (sein) || bin
+Ich glaube, dass er Recht ___. (haben) || hat
+Ich weiß nicht, ___ sie verheiratet ist. || ob
+___ ich Hunger habe, esse ich. || Wenn
+Verbinde mit weil: Ich bleibe zu Hause. Ich muss lernen. || Ich bleibe zu Hause, weil ich lernen muss.
+Verbinde mit dass: Ich finde. Deutsch ist schwer. || Ich finde, dass Deutsch schwer ist.
+Verbinde (Nebensatz zuerst): wenn / das Wetter schön ist / wir gehen in den Park || Wenn das Wetter schön ist, gehen wir in den Park.
+[Mix] Er ist müde, weil er gestern spät ___ ___. (einschlafen, Perfekt) || eingeschlafen ist
+[Mix] Weißt du, ob er ___ ___ hilft? (wir, Dativ) || uns
+[Mix] denn → weil: Ich komme nicht, denn ich habe keine Zeit. || Ich komme nicht, weil ich keine Zeit habe.
+#exam
+Warum will Jonas wechseln? || Weil er zu viele Überstunden macht.
+Was hofft Jonas? || Dass er bald ein Vorstellungsgespräch hat.
+Was macht Jonas, wenn er die Stelle bekommt? || Er lädt Ravi zum Essen ein.
+Indirekte Frage: „Kommst du morgen?“ → Ich frage dich, … || ob du morgen kommst.
+Verbinde: Ich bin froh. Du bist hier. (dass) || Ich bin froh, dass du hier bist.
+Verbinde: Ich kann nicht kommen. Ich muss arbeiten. (weil) || Ich kann nicht kommen, weil ich arbeiten muss.
+Beginne mit „Wenn“: Ich trinke Tee, wenn ich krank bin. || Wenn ich krank bin, trinke ich Tee.
+Was ist Ihnen bei der Arbeit wichtig? (Ich finde es wichtig, dass …)
+Warum lernen Sie Deutsch? Nennen Sie 3 Gründe mit weil.
+Was machen Sie, wenn Sie Stress bei der Arbeit haben?
+#speak
+Warum arbeiten die zwei zusammen? __Ich glaube, dass …__
+Was machst du, wenn du im Büro müde bist?
+Ist Homeoffice gut? __Ich finde, dass … weil …__
+Frag den Partner indirekt: __Ich möchte wissen, ob …__
+
+@@ 22|A2|Komparativ und Superlativ|Vergleichen: Städte und Wohnen|city|5,17,20,21
+#expl
+**Komparativ:** Adjektiv + **-er** (+ **als**): __Berlin ist groß**er als** München.__ Gleichheit: **so … wie**: __so groß wie__.
+**Superlativ:** **am** + Adjektiv + **-sten**: __am schönsten__. Vor Nomen: __der schönst**e** Park__.
+Einsilbige Adjektive mit a/o/u bekommen oft **Umlaut**: alt → älter → am ältesten, groß → größer → am größten.
+**Unregelmäßig:** gut – besser – am besten · viel – mehr – am meisten · gern – lieber – am liebsten · hoch – höher – am höchsten · nah – näher – am nächsten.
+#use
+Prüfung Teil 2: Vorteile/Nachteile, Heimatland vergleichen. Bilder vergleichen.
+#table
+Grundform|Komparativ|Superlativ|Beispiel
+klein|kleiner|am kleinsten|Mein Zimmer ist kleiner als deins.
+alt|älter|am ältesten|Mumbai ist älter als …
+teuer|teurer|am teuersten|München ist am teuersten.
+gut|besser|am besten|Tee finde ich besser als Kaffee.
+viel|mehr|am meisten|In Mumbai wohnen mehr Menschen.
+gern|lieber|am liebsten|Am liebsten fahre ich Rad.
+#ex
+Berlin ist kleiner als Mumbai. = Berlin is smaller than Mumbai.
+Im Sommer ist es in Mumbai heißer als in Berlin. = In summer it's hotter in Mumbai than in Berlin.
+Die Miete ist hier nicht so hoch wie in München. = The rent here isn't as high as in Munich.
+Das Fahrrad ist schneller als der Bus. = The bike is faster than the bus.
+Ich trinke lieber Chai als Kaffee. = I prefer chai to coffee.
+Am liebsten esse ich Biryani. = Most of all I like eating biryani.
+Das ist das beste Restaurant in der Stadt. = That's the best restaurant in town.
+Welche Stadt findest du am schönsten? = Which city do you find most beautiful?
+Heute arbeite ich mehr als gestern. = Today I'm working more than yesterday.
+Der Bahnhof ist näher, als ich dachte. = The station is closer than I thought.
+#vocab
+die Stadt, ¨e = city
+das Land = countryside
+laut / ruhig = loud / quiet
+teuer / billig (günstig) = expensive / cheap
+sauber / schmutzig = clean / dirty
+modern / alt = modern / old
+schnell / langsam = fast / slow
+der Verkehr = traffic
+die Luft = air
+die Einwohner (Pl.) = inhabitants
+der Vorteil / der Nachteil = advantage / disadvantage
+vergleichen = to compare
+#read
+Leila fragt Ravi: „Wo lebst du lieber, in Mumbai oder in Berlin?“ Ravi denkt nach: „Mumbai ist größer und lauter als Berlin. Dort wohnen viel mehr Menschen. In Berlin ist die Luft sauberer und der Verkehr ist nicht so schlimm wie in Mumbai. Aber das Essen in Mumbai ist am besten! Und im Winter ist Berlin viel kälter.“ Leila lacht: „Also, was magst du am liebsten?“ – „Am liebsten wohne ich in Berlin und esse in Mumbai!“
+#task
+Berlin ist ___ als Hamburg. (groß) || größer
+Der Zug ist ___ als das Auto. (schnell) || schneller
+Mein Bruder ist so ___ wie ich. (alt) || alt
+Ich trinke ___ Tee als Kaffee. (gern) || lieber
+Das ist das ___ Hotel. (gut, Superlativ) || beste
+Im Juli ist es am ___. (heiß) || heißesten
+Hier ist es nicht so ___ wie in München. (teuer) || teuer
+[Mix] Ich finde, dass Berlin ___ ist als Köln. (interessant) || interessanter
+[Mix] Früher war die Miete ___ als heute. (niedrig) || niedriger
+[Mix] Ich fahre lieber mit ___ Rad, denn es ist ___. (das, schnell – Komparativ) || dem / schneller
+#exam
+Welche Stadt ist lauter? || Mumbai.
+Wo ist die Luft sauberer? || In Berlin.
+Wo ist das Essen am besten (für Ravi)? || In Mumbai.
+Vergleiche: Zug / Bus / schnell || Der Zug ist schneller als der Bus.
+Superlativ: Das Wetter ist im Mai ___ (schön). || am schönsten
+Ergänze: Ich esse ___ (viel) Reis als Brot. || mehr
+Ergänze: Sie spricht so gut ___ ein Deutscher. || wie
+Vergleichen Sie Ihre Heimatstadt mit Ihrer Stadt in Deutschland.
+Stadt oder Land: Wo lebt man besser? Nennen Sie Vor- und Nachteile.
+Was ist Ihr liebstes Essen, Ihr liebster Ort, Ihre liebste Jahreszeit?
+#speak
+Vergleiche die Häuser: __Das rote Haus ist kleiner als …__
+Was ist schneller: der Bus oder der Mann zu Fuß?
+Vergleiche Berlin und deine Stadt (5 Sätze).
+Was machst du am liebsten in einer Stadt?
+
+@@ 23|A2|Adjektivdeklination (Endungen)|Kleidung und Aussehen|shop|5,6,13,14,22
+#expl
+Steht ein Adjektiv **vor einem Nomen**, bekommt es eine Endung. Nach **sein** hat es **keine** Endung: __Die Jacke ist **blau**.__ aber __die blau**e** Jacke__.
+**Typ 1 (der/die/das):** nur -e oder -en. Nominativ Singular + Akkusativ fem./neutr. = **-e**, sonst **-en**.
+**Typ 2 (ein/kein/mein):** wie Typ 1, aber wo „ein“ keine Endung hat: mask. Nom. **-er**, neutr. Nom./Akk. **-es**.
+**Typ 3 (ohne Artikel):** Das Adjektiv zeigt den Fall wie der Artikel: kalt**er** Kaffee, heiß**e** Suppe, frisch**es** Brot. Siehe Referenz 2.
+#use
+Kleidung, Personen, Dinge, Bilder beschreiben – macht dein Deutsch genauer.
+#table
+Fall|mask.|fem.|neutr.|Plural
+Nom. (der)|der rote Pulli|die rote Jacke|das rote Hemd|die roten Schuhe
+Akk. (der)|den rot**en** Pulli|die rote Jacke|das rote Hemd|die roten Schuhe
+Dat. (der)|dem rot**en** Pulli|der rot**en** Jacke|dem rot**en** Hemd|den rot**en** Schuhen
+Nom. (ein)|ein rot**er** Pulli|eine rote Jacke|ein rot**es** Hemd|rote Schuhe
+Akk. (ein)|einen rot**en** Pulli|eine rote Jacke|ein rot**es** Hemd|rote Schuhe
+Dat. (ein)|einem rot**en** Pulli|einer rot**en** Jacke|einem rot**en** Hemd|rot**en** Schuhen
+#ex
+Ich suche eine warme Jacke. = I'm looking for a warm jacket.
+Der blaue Pulli gefällt mir. = I like the blue jumper.
+Hast du einen schwarzen Gürtel? = Do you have a black belt?
+Ravi trägt ein weißes Hemd. = Ravi is wearing a white shirt.
+Mit dem neuen Mantel ist mir nicht kalt. = With the new coat I'm not cold.
+Anna hat lange, braune Haare. = Anna has long brown hair.
+Ich trinke gern heißen Tee. = I like drinking hot tea.
+Die grünen Schuhe sind zu klein. = The green shoes are too small.
+Das ist ein schönes Geschenk für meine kleine Schwester. = That's a nice present for my little sister.
+Ich wohne in einer großen Wohnung. = I live in a big flat.
+#vocab
+die Kleidung = clothes
+die Hose, -n = trousers
+der Pullover (Pulli), - = jumper
+die Jacke, -n = jacket
+der Mantel, ¨ = coat
+das Hemd, -en = shirt
+das Kleid, -er = dress
+der Schuh, -e = shoe
+anprobieren = to try on
+die Größe, -n = size
+tragen (trägt) = to wear / carry
+die Farbe, -n = colour
+#read
+Der Winter kommt, und Ravi braucht warme Kleidung. Mit Anna geht er in ein großes Kaufhaus. „Ich suche einen dicken Mantel“, sagt er. Die Verkäuferin zeigt ihm einen schwarzen Mantel und einen blauen Mantel. Ravi probiert den blauen Mantel an. Anna sagt: „Die blaue Farbe steht dir gut!“ Er kauft auch warme Handschuhe und einen roten Schal. Mit der neuen Kleidung freut er sich sogar auf den kalten Berliner Winter.
+#task
+Ich kaufe einen ___ Pulli. (warm) || warmen
+Das ist ein ___ Kleid. (schön) || schönes
+Die ___ Hose ist zu lang. (grau) || graue
+Ich suche den ___ Schal. (rot) || roten
+Er wohnt mit einer ___ Freundin zusammen. (nett) || netten
+Ich trinke ___ Kaffee. (schwarz, ohne Artikel) || schwarzen
+Das ist ein ___ Mann. (alt) || alter
+[Mix] Ich schenke meiner ___ Schwester einen ___ Rock. (klein, kurz) || kleinen / kurzen
+[Mix] Dieser Mantel ist ___ als der ___ Mantel. (warm – Komp., blau) || wärmer / blaue
+[Mix] Ich habe mir ___ ___ Schuhe gekauft. (neu, ohne Artikel, Pl.) || neue
+#exam
+Was sucht Ravi? || Einen dicken Mantel.
+Welchen Mantel probiert er an? || Den blauen Mantel.
+Was kauft er noch? || Warme Handschuhe und einen roten Schal.
+Ergänze: Ich brauche ___ neu___ Handy. (ein) || ein neues
+Ergänze: Wir wohnen in ___ klein___ Stadt. (eine) || einer kleinen
+Ergänze: Sie trägt ___ gelb___ Rock. (der, Akk.) || den gelben
+Ergänze: Mit gut___ Freunden ist alles leichter. || guten
+Beschreiben Sie, was Sie heute tragen.
+Beschreiben Sie eine Person aus Ihrer Familie genau.
+Sie kaufen im Geschäft eine Hose. Spielen Sie das Gespräch.
+#speak
+Beschreibe die Personen: __Der Mann trägt eine blaue …__
+Was liegt in den Regalen? __Es gibt rote, grüne …__
+Was ist dein Lieblingskleidungsstück?
+Beschreibe dein Traumoutfit für eine Party.
+
+@@ 24|A2|Zeit: seit, vor, nach, ab, bis + Reihenfolge (zuerst, dann, danach)|Reisen und Urlaub|station|9,15,17,18,21
+#expl
+Temporale Präpositionen mit **Dativ**: **seit** (seit einem Jahr – dauert noch an, Präsens!), **vor** (vor zwei Tagen = ago), **nach** (nach dem Essen), **ab** (ab Montag), **bei** (beim Frühstück).
+Mit **Akkusativ**: **für** (für eine Woche), **bis** (bis nächsten Freitag), **über** (über das Wochenende).
+**Reihenfolge-Adverbien** (Position 1 → Inversion!): **zuerst, dann, danach, später, anschließend, am Ende / zum Schluss**.
+Achtung: __Ich wohne **seit** drei Jahren hier__ (nicht: habe gewohnt).
+#use
+Reisen erzählen, Pläne machen, Präsentation strukturieren.
+#table
+Präposition|Fall|Beispiel|English
+seit|Dat.|seit einem Monat|for / since (still now)
+vor|Dat.|vor einer Woche|ago
+nach|Dat.|nach der Arbeit|after
+ab|Dat.|ab nächster Woche|from … on
+für|Akk.|für zwei Wochen|for (planned)
+bis|Akk.|bis nächsten Montag|until
+#ex
+Ich lerne seit sechs Monaten Deutsch. = I have been learning German for six months.
+Vor zwei Wochen war ich in Wien. = Two weeks ago I was in Vienna.
+Nach dem Frühstück sind wir losgefahren. = After breakfast we set off.
+Ab Montag habe ich Urlaub. = From Monday I'm on holiday.
+Wir fahren für eine Woche an die Ostsee. = We're going to the Baltic Sea for a week.
+Das Hotel ist bis Sonntag gebucht. = The hotel is booked until Sunday.
+Zuerst haben wir den Dom besichtigt. = First we visited the cathedral.
+Danach sind wir mit dem Schiff gefahren. = After that we went by boat.
+Zum Schluss haben wir Sachertorte gegessen. = Finally we ate Sachertorte.
+Beim Packen hört Ravi Musik. = While packing Ravi listens to music.
+#vocab
+der Urlaub, -e = holiday
+die Reise, -n = journey
+buchen = to book
+das Hotel, -s = hotel
+die Unterkunft, ¨e = accommodation
+packen = to pack
+besichtigen = to visit (sights)
+die Sehenswürdigkeit, -en = sight
+das Schiff, -e = ship
+der Strand, ¨e = beach
+das Gepäck = luggage
+anschließend = subsequently
+#read
+Vor drei Wochen hat Ravi eine Reise nach Wien gemacht. Er hat für vier Tage ein Hotel gebucht. Zuerst ist er mit dem Zug nach Wien gefahren. Die Fahrt hat acht Stunden gedauert. Nach der Ankunft hat er sich ausgeruht. Am nächsten Tag hat er zuerst das Schloss Schönbrunn besichtigt, danach ist er in ein Café gegangen. Zum Schluss hat er eine Schifffahrt auf der Donau gemacht. Seit dieser Reise liebt er Wien. Ab Januar spart er für die nächste Reise.
+#task
+Ich wohne ___ zwei Jahren in Berlin. || seit
+___ einer Woche war ich krank. (ago) || Vor
+___ dem Kurs gehe ich einkaufen. (after) || Nach
+Ich fahre ___ drei Tage nach Paris. || für
+Das Angebot gilt ___ Freitag. (until) || bis
+___ nächstem Monat arbeite ich Teilzeit. (from) || Ab
+Ordne: zuerst / wir / haben / gefrühstückt || Zuerst haben wir gefrühstückt.
+[Mix] Danach ___ wir ins Museum ___. (gehen, Perfekt) || sind / gegangen
+[Mix] Seit ___ Umzug fühle ich ___ wohler. (mein, sich) || meinem / mich
+[Mix] Ich weiß nicht, ob das Hotel ___ Sonntag frei ___. (bis, sein) || bis / ist
+#exam
+Wann war Ravi in Wien? || Vor drei Wochen.
+Wie lange hat die Zugfahrt gedauert? || Acht Stunden.
+Was hat er zum Schluss gemacht? || Eine Schifffahrt auf der Donau.
+Ergänze: Ich warte ___ einer Stunde! (still waiting) || seit
+Ergänze: Wir haben uns ___ fünf Jahren kennengelernt. (ago) || vor
+Ergänze: ___ dem Essen putze ich mir die Zähne. || Nach
+Korrigiere: Ich habe seit 2023 in Berlin gewohnt (wohne immer noch). || Ich wohne seit 2023 in Berlin.
+Erzählen Sie von Ihrer letzten Reise: zuerst, dann, danach, zum Schluss.
+Planen Sie einen Wochenendausflug mit Ihrem Partner.
+Wie lange lernen Sie schon Deutsch? Was war vor einem Jahr anders?
+#speak
+Wohin fahren die Leute? Wie lange bleiben sie? (Vermutung)
+Erzähl eine Reise mit zuerst – dann – danach – zum Schluss.
+Was packst du für eine Woche Urlaub ein?
+Wo warst du vor einem Jahr? Seit wann bist du hier?

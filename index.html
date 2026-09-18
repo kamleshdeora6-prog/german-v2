@@ -1,458 +1,53 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>German Coach</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Deutsch Coach – A1 to B1</title>
+<meta name="description" content="Learn German from A1 to B1: 42 lessons, generated practice with explanations, offline tutor, speaking, listening and exam training.">
+<meta name="theme-color" content="#1C2B36">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Deutsch Coach">
+<link rel="stylesheet" href="css/app.css">
 </head>
-<body class="theme-focus">
-<div id="app">
-  <aside id="sidebar" class="sidebar">
-    <div class="brand-row">
-      <div class="brand"><span class="mascot">🦋</span><div><strong>German Coach</strong><div class="muted tiny">A1 → B2</div></div></div>
-      <button id="sidebarClose" class="mobile-only iconbtn">✕</button>
-    </div>
-    <nav>
-      <div class="navgroup">
-        <div class="navtitle">Main</div>
-        <button class="navbtn active" data-section="home">Home</button>
-        <button class="navbtn" data-section="learn">Learn</button>
-        <button class="navbtn" data-section="practice">Practice</button>
-        <button class="navbtn" data-section="exam">Exam</button>
-        <button class="navbtn" data-section="progress">Progress</button>
-        <button class="navbtn" data-section="settings">Settings</button>
-      </div>
-    </nav>
-  </aside>
-
-  <main class="main">
-    <header class="topbar compact-card">
-      <div class="top-left row gap10 wrap">
-        <button id="sidebarOpen" class="mobile-only iconbtn">☰</button>
-        <span class="mascot small">🦋</span>
-        <strong id="topTitle">Home</strong>
-        <span class="pill" id="coachPill">Step by step</span>
-      </div>
-      <div class="top-right row gap10 wrap end">
-        <label class="stack mini"><span class="tiny">Mission</span><select id="missionPreset"><option value="easy">Easy</option><option value="medium">Medium</option><option value="hard">Hard</option><option value="custom">Custom</option></select></label>
-        <label class="stack mini"><span class="tiny">Language</span><select id="languageSelect"><option value="en">EN</option><option value="de">DE</option></select></label>
-        <label class="stack mini"><span class="tiny">Theme</span><select id="themeSelect"><option value="theme-focus">Focus</option><option value="theme-light">Light</option><option value="theme-dark">Dark</option></select></label>
-        <span class="pill" id="streakPill">🔥 0</span>
-        <span class="pill" id="xpPill">⭐ 0 XP</span>
-        <span class="pill" id="dailyPill">0%</span>
-      </div>
-    </header>
-
-    <section class="mission-strip compact-card">
-      <div class="mission-grid">
-        <div class="metric"><div class="metric-head"><span>Passages</span><span id="mPassagesText">0/0</span></div><div class="bar"><span id="mPassagesBar"></span></div></div>
-        <div class="metric"><div class="metric-head"><span>Exercises</span><span id="mExercisesText">0/0</span></div><div class="bar"><span id="mExercisesBar"></span></div></div>
-        <div class="metric"><div class="metric-head"><span>Vocab</span><span id="mVocabText">0/0</span></div><div class="bar"><span id="mVocabBar"></span></div></div>
-        <div class="metric"><div class="metric-head"><span>Writing</span><span id="mWritingText">0/0</span></div><div class="bar"><span id="mWritingBar"></span></div></div>
-      </div>
-      <div class="row gap8 wrap end right-utilities">
-        <button id="continueBtn">Continue</button>
-        <details class="details-inline"><summary>Today</summary><div id="todayDrop" class="dropdown-box"></div></details>
-        <details class="details-inline"><summary>Custom</summary>
-          <div class="grid2 mini-settings dropdown-box">
-            <label>Passages<input id="customPassages" type="number" min="1" max="20"></label>
-            <label>Exercises<input id="customExercises" type="number" min="1" max="200"></label>
-            <label>Vocab<input id="customVocab" type="number" min="1" max="100"></label>
-            <label>Writing<input id="customWriting" type="number" min="1" max="20"></label>
-          </div>
-        </details>
-      </div>
-    </section>
-
-    
-    <section id="section-practice" class="app-section">
-      <div class="subtabs compact-row">
-        <button class="pgroupbtn active" data-pgroup="grammar">Grammar Practice</button>
-        <button class="pgroupbtn" data-pgroup="production">Production Practice</button>
-        <button class="pgroupbtn" data-pgroup="listening">Listening Practice</button>
-        <button class="pgroupbtn" data-pgroup="revision">Revision Mix</button>
-      </div>
-
-      <div id="practice-grammar-group" class="practice-group">
-        <div class="subtabs compact-row inner-subtabs">
-          <button class="psubbtn active" data-practice="exercises">Exercises</button>
-          <button class="psubbtn" data-practice="cases">Cases</button>
-          <button class="psubbtn" data-practice="fixed">Fixed Rules</button>
-          <button class="psubbtn" data-practice="topicflow">Topic Lessons</button>
-        </div>
-        <div id="practice-exercises" class="practice-subpanel compact-card">
-        <div class="toolbar wrap">
-          <select id="exerciseLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select>
-          <select id="exerciseTypeFilter"></select>
-          <select id="exerciseFocusFilter"><option value="all">All</option><option value="weak">Weak areas</option></select>
-          <button id="nextExerciseBtn">New round</button>
-        </div>
-        <div class="question-box">
-          <div id="exerciseMeta" class="badge"></div>
-          <div id="exerciseQuestion" class="question"></div>
-          <input id="exerciseAnswerInput" type="text" placeholder="Type your answer">
-          <div class="row gap8 wrap"><button id="checkExerciseBtn">Check</button><button class="ghost" id="showExerciseAnswerBtn">Show answer</button></div>
-          <div id="exerciseResult" class="result"></div>
-          <div id="exerciseExplanation" class="explanation hidden"></div>
-        </div>
-      </div>
-        <div id="practice-cases" class="practice-subpanel compact-card hidden">
-        <div class="toolbar wrap">
-          <select id="caseLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select>
-          <button id="newCaseBtn">New round</button>
-        </div>
-        <div id="casePrompt" class="question"></div>
-        <div id="caseChoices" class="chips"></div>
-        <div class="row gap8 wrap"><button id="showCaseBtn" class="ghost">Show answer</button></div>
-        <div id="caseFeedback" class="result"></div>
-        <div id="caseReason" class="explanation hidden"></div>
-      </div>
-        
-      <div id="practice-fixed" class="practice-subpanel compact-card hidden">
-        <div class="toolbar wrap">
-          <select id="fixedTopicSelect"></select>
-          <button id="newFixedBtn">New round</button>
-        </div>
-        <div id="fixedRuleCard" class="note-block"></div>
-        <div id="fixedQuestion" class="question"></div>
-        <div id="fixedChoices" class="chips"></div>
-        <input id="fixedInput" type="text" placeholder="Type your answer">
-        <div class="row gap8 wrap"><button id="checkFixedBtn">Check</button><button class="ghost" id="showFixedBtn">Show answer</button></div>
-        <div id="fixedFeedback" class="result"></div>
-        <div id="fixedExplanation" class="explanation hidden"></div>
-      </div>
-
-        
-      <div id="practice-topicflow" class="practice-subpanel compact-card hidden">
-        <div class="toolbar wrap">
-          <select id="topicFlowSelect"></select>
-          <button id="newTopicFlowBtn">New round</button>
-        </div>
-        <div id="topicFlowIntro" class="note-block"></div>
-        <div id="topicFlowQuestion" class="question"></div>
-        <div id="topicFlowChoices" class="chips"></div>
-        <textarea id="topicFlowInput" placeholder="Type your answer"></textarea>
-        <div class="row gap8 wrap"><button id="checkTopicFlowBtn">Check</button><button class="ghost" id="showTopicFlowBtn">Show answer</button></div>
-        <div id="topicFlowFeedback" class="result"></div>
-        <div id="topicFlowExplanation" class="explanation hidden"></div>
-      </div>
-
-      </div>
-
-      <div id="practice-production-group" class="practice-group hidden">
-        <div class="subtabs compact-row inner-subtabs">
-          <button class="psubbtn active" data-practice="typing">Typing</button>
-          <button class="psubbtn" data-practice="structure">Sentence Builder</button>
-          <button class="psubbtn" data-practice="writing">Writing</button>
-        </div>
-        <div id="practice-typing" class="practice-subpanel compact-card hidden">
-        <div class="toolbar wrap">
-          <select id="typingLevelFilter"><option value="ALL">All levels</option><option>A2</option><option>B1</option><option>B2</option></select>
-          <select id="typingSelect"></select>
-          <label class="checkline"><input type="checkbox" id="typingShowEnglish"> Show English</label>
-          <label class="stack mini"><span class="tiny">Speed</span><select id="audioSpeed"><option value="0.75">0.75x</option><option value="1" selected>1x</option><option value="1.25">1.25x</option></select></label>
-        </div>
-        <div class="row gap8 wrap"><button id="playPassageBtn">▶ Play</button><button id="stopPassageBtn" class="orange">■ Stop</button><button id="repeatPassageBtn" class="teal">↻ Repeat</button></div>
-        <div class="twocol">
-          <div><div class="smallhead">German</div><textarea id="typingReference" readonly></textarea><div id="typingEnglishWrap" class="hidden"><div class="smallhead">English</div><textarea id="typingEnglish" readonly></textarea></div></div>
-          <div><div class="smallhead">Type here</div><textarea id="typingInput"></textarea><div class="row gap8 wrap"><button id="checkTypingBtn">Check</button><button class="ghost" id="clearTypingBtn">Clear</button></div><div id="typingFeedback" class="result"></div></div>
-        </div>
-      </div>
-        <div id="practice-structure" class="practice-subpanel compact-card hidden">
-        <div class="toolbar wrap">
-          <select id="structureLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select>
-          <button id="newStructureBtn">New round</button>
-        </div>
-        <div id="structurePrompt" class="question"></div>
-        <div id="structureWords" class="chips"></div>
-        <textarea id="structureAnswer" placeholder="Build the correct sentence"></textarea>
-        <div class="row gap8 wrap"><button id="checkStructureBtn">Check</button><button class="ghost" id="showStructureBtn">Show answer</button></div>
-        <div id="structureFeedback" class="result"></div>
-        <div id="structureReason" class="explanation hidden"></div>
-      </div>
-        <div id="practice-writing" class="practice-subpanel compact-card hidden">
-        <div class="toolbar wrap"><select id="writingTaskSelect"></select><button id="newWritingBtn">New round</button><label class="checkline"><input type="checkbox" id="writingShowEnglish"> Show English</label></div>
-        <div id="writingPrompt" class="note-block"></div>
-        <div id="writingPhotoWrap" class="hidden media-wrap"><img id="writingPhoto" alt="Prompt image"></div>
-        <textarea id="writingInput" placeholder="Write here"></textarea>
-        <div class="row gap8 wrap"><button id="checkWritingBtn">Check</button><button class="ghost" id="showWritingSampleBtn">Show sample</button></div>
-        <div id="writingFeedback" class="result"></div>
-        <div id="writingSample" class="explanation hidden"></div>
-      </div>
-      </div>
-
-      <div id="practice-listening-group" class="practice-group hidden">
-        <div id="practice-listening" class="practice-subpanel compact-card hidden">
-        <div class="toolbar wrap">
-          <select id="listenLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select>
-          <button id="newListeningBtn">New round</button>
-          <label class="stack mini"><span class="tiny">Speed</span><select id="listenSpeed"><option value="0.75">0.75x</option><option value="1" selected>1x</option><option value="1.25">1.25x</option></select></label><label class="checkline"><input type="checkbox" id="listenShowEnglish"> Show English</label>
-        </div>
-        <div id="listenPrompt" class="note-block"></div>
-        <div class="row gap8 wrap"><button id="playListenBtn">▶ Play</button><button id="stopListenBtn" class="orange">■ Stop</button><button id="replayListenBtn" class="teal">↻ Repeat</button><button class="ghost" id="revealListenBtn">Show answer</button></div>
-        <textarea id="listenInput" placeholder="Answer in a full sentence"></textarea>
-        <div class="row gap8 wrap"><button id="checkListenBtn">Check</button></div>
-        <div id="listenFeedback" class="result"></div>
-        <div id="listenAnswer" class="hidden note-block"></div>
-      </div>
-      </div>
-
-      
-      <div id="practice-revision" class="practice-group compact-card hidden">
-        <div class="practice-group-head">
-          <div>
-            <h3 class="m0">Revision Mix</h3>
-            <div class="muted">Choose topics you want to revise and start a mixed round.</div>
-          </div>
-        </div>
-        <div id="revisionTopicGrid" class="chips spaced"></div>
-        <div class="row gap8 wrap"><button id="startRevisionBtn">Start revision</button><button class="ghost" id="newRevisionBtn">Next round</button></div>
-        <div id="revisionMeta" class="badge hidden"></div>
-        <div id="revisionQuestion" class="question"></div>
-        <input id="revisionInput" type="text" placeholder="Type your answer">
-        <div class="row gap8 wrap"><button id="checkRevisionBtn">Check</button><button class="ghost" id="showRevisionBtn">Show answer</button></div>
-        <div id="revisionFeedback" class="result"></div>
-        <div id="revisionExplanation" class="explanation hidden"></div>
-      </div>
-
-    </section>
-
-
-    <section id="section-home" class="app-section">
-      <div class="premium-hero compact-card">
-        <div>
-          <div class="eyebrow">German Coach Premium</div>
-          <h2 class="m0">Learn German in the right order</h2>
-          <p class="muted">Start with the topic sequence, practise deeply, then revise weak areas before moving on.</p>
-          <div class="row gap8 wrap"><button id="homeContinueBtn">Continue learning</button><button class="ghost" id="homeWeakBtn">Review weak areas</button></div>
-        </div>
-        <div class="hero-stats">
-          <div class="hero-pill"><span>🔥</span><strong id="homeStreak">0</strong><small>streak</small></div>
-          <div class="hero-pill"><span>⭐</span><strong id="homeXP">0</strong><small>xp</small></div>
-          <div class="hero-pill"><span>📘</span><strong id="homeDue">0</strong><small>due</small></div>
-        </div>
-      </div>
-      <div class="grid2 mt16">
-        <div class="compact-card">
-          <h3 class="m0">Learning path</h3>
-          <div id="homeRoadmap" class="roadmap-list mt12"></div>
-        </div>
-        <div class="compact-card">
-          <h3 class="m0">Today</h3>
-          <div id="homeTodayPlan" class="note-block mt12"></div>
-          <h3 class="mt16 mb8">Next best step</h3>
-          <div id="homeNextStep" class="note-block"></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="section-learn" class="app-section hidden">
-      <div class="subtabs compact-row">
-        <button class="learnbtn active" data-learn="sequence">Topic Sequence</button>
-        <button class="learnbtn" data-learn="grammarlib">Grammar Library</button>
-        <button class="learnbtn" data-learn="vocablib">Vocabulary Library</button>
-        <button class="learnbtn" data-learn="verblib">Verb Library</button>
-      </div>
-      <div id="learn-sequence" class="compact-card learn-panel">
-        <div class="toolbar wrap"><input id="learnSearch" placeholder="Search topic or rule"></div>
-        <div id="learnSequenceWrap" class="roadmap-list"></div>
-      </div>
-      <div id="learn-grammarlib" class="compact-card learn-panel hidden">
-        <div class="toolbar wrap"><input id="learnGrammarSearch" placeholder="Search grammar"></div>
-        <div id="learnGrammarWrap"></div>
-      </div>
-      <div id="learn-vocablib" class="compact-card learn-panel hidden">
-        <div class="toolbar wrap"><input id="learnVocabSearch" placeholder="Search word"><label class="checkline"><input type="checkbox" id="learnVocabEnglish" checked> Show English</label></div>
-        <div id="learnVocabWrap" class="list-wrap"></div>
-      </div>
-      <div id="learn-verblib" class="compact-card learn-panel hidden">
-        <div class="toolbar wrap"><input id="learnVerbSearch" placeholder="Search verb"></div>
-        <div id="learnVerbWrap" class="list-wrap"></div>
-      </div>
-    </section>
-
-    <section id="section-progress" class="app-section hidden">
-      <div class="grid2">
-        <div class="compact-card"><h3 class="m0">Statistics</h3><div id="progressStats" class="note-block mt12"></div><div id="progressBadges" class="badge-grid mt12"></div></div>
-        <div class="compact-card"><h3 class="m0">Study heatmap</h3><div id="progressHeatmap" class="heatmap-grid mt12"></div><h3 class="mt16 mb8">Weak areas</h3><div id="progressWeak" class="note-block"></div></div>
-      </div>
-    </section>
-
-    <section id="section-settings" class="app-section hidden">
-      <div class="compact-card">
-        <div class="grid2">
-          <div>
-            <h3>Preferences</h3>
-            <label class="stack">Language<select id="settingsLanguage2"><option value="en">English</option><option value="de">Deutsch</option></select></label>
-            <label class="stack">Theme<select id="settingsTheme2"><option value="theme-focus">Aurora</option><option value="theme-light">Light</option><option value="theme-dark">Dark</option></select></label>
-            <label class="checkline"><input id="countRepeatsToggle2" type="checkbox"> Count repeat attempts in today totals</label>
-            <div class="row gap8 wrap"><button id="resetTodayBtn2" class="ghost">Reset today</button><button id="startOnboardingBtn2" class="ghost">Onboarding</button></div>
-          </div>
-          <div>
-            <h3>Data & backup</h3>
-            <div class="row gap8 wrap"><button id="exportProgressBtn2" class="teal">Export progress</button><label class="ghost filebtn">Import progress<input id="importProgressInput2" type="file" accept="application/json" hidden></label></div>
-            <div id="settingsAbout" class="note-block mt12"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-<section id="section-vocab" class="app-section hidden">
-      <div class="subtabs compact-row">
-        <button class="vocabbtn active" data-vmode="list">List</button>
-        <button class="vocabbtn" data-vmode="match">Match Game</button>
-        <button class="vocabbtn" data-vmode="type">Type the Word</button>
-      </div>
-      <div id="vocab-list" class="compact-card">
-        <div class="toolbar wrap">
-          <select id="vocabLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select>
-          <select id="vocabTopicFilter"></select>
-          <input id="vocabSearch" placeholder="Search German or English">
-          <label class="checkline"><input type="checkbox" id="vocabDifficultOnly"> Difficult only</label><label class="checkline"><input type="checkbox" id="vocabShowEnglish"> Show English</label>
-        </div>
-        <div id="vocabListWrap" class="list-wrap"></div>
-      </div>
-      <div id="vocab-match" class="compact-card hidden">
-        <div class="toolbar wrap"><button id="newMatchBtn">New round</button></div>
-        <div class="match-grid"><div id="matchDe"></div><div id="matchEn"></div></div>
-        <div id="matchFeedback" class="result"></div>
-      </div>
-      <div id="vocab-type" class="compact-card hidden">
-        <div class="toolbar wrap"><button id="newTypeWordBtn">New round</button></div>
-        <div id="typeWordMeta" class="badge"></div>
-        <div id="typeWordPrompt" class="question"></div>
-        <input id="typeWordInput" type="text" placeholder="Type German word">
-        <div class="row gap8 wrap"><button id="checkTypeWordBtn">Check</button><button class="ghost" id="showTypeWordBtn">Show answer</button></div>
-        <div id="typeWordFeedback" class="result"></div>
-      </div>
-    </section>
-
-    <section id="section-grammar" class="app-section hidden">
-      <div class="compact-card">
-        <div class="toolbar wrap"><input id="grammarSearch" placeholder="Search grammar"></div>
-        <div id="grammarWrap"></div>
-      </div>
-    </section>
-
-    <section id="section-flashcards" class="app-section hidden">
-      <div class="compact-card">
-        <div class="toolbar wrap"><select id="flashCategoryFilter"><option value="ALL">All categories</option></select><button id="nextFlashBtn">Next</button></div>
-        <div id="flashCard" class="flash-card">Tap to flip</div>
-      </div>
-    </section>
-
-    <section id="section-conjugation" class="app-section hidden">
-      <div class="compact-card">
-        <div class="toolbar wrap"><select id="conjLevelFilter"><option value="ALL">All levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option></select><button id="newConjBtn">New round</button></div>
-        <div id="conjQuestion" class="question"></div>
-        <input id="conjInput" type="text" placeholder="Type form">
-        <div class="row gap8 wrap"><button id="checkConjBtn">Check</button><button class="ghost" id="showConjBtn">Show answer</button></div>
-        <div id="conjFeedback" class="result"></div>
-        <div id="conjReveal" class="explanation hidden"></div>
-      </div>
-    </section>
-
-    <section id="section-exam" class="app-section hidden">
-      <div class="subtabs compact-row">
-        <button class="exambtn active" data-emode="cefr">A1–B2 Exam</button>
-        <button class="exambtn" data-emode="photo">Photo description</button>
-        <button class="exambtn" data-emode="qa">Q ↔ A</button>
-      </div>
-      <div id="exam-cefr" class="exam-panel compact-card">
-        <div class="toolbar wrap"><select id="examLevel"><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option value="freestyle">Freestyle</option></select><button id="startExamBtn">Start exam</button><button id="quickExamBtn" class="teal">Quick sim</button><button class="ghost" id="finishExamBtn">Finish</button></div>
-        <div id="examIntro" class="note-block">60-point exam without speaking. The score also gives an estimated level.</div>
-        <div id="examWrap"></div>
-        <div id="examResult" class="result"></div>
-      </div>
-      <div id="exam-photo" class="exam-panel compact-card hidden">
-        <div class="toolbar wrap"><select id="photoTaskSelect"></select><button id="newPhotoTaskBtn">New round</button></div>
-        <div class="media-wrap"><img id="photoExamImage" alt="Photo prompt"></div>
-        <div id="photoExamPrompt" class="note-block"></div>
-        <textarea id="photoExamInput" placeholder="Describe the photo in German"></textarea>
-        <div class="row gap8 wrap"><button id="checkPhotoExamBtn">Check</button><button class="ghost" id="showPhotoSampleBtn">Show sample</button></div>
-        <div id="photoExamFeedback" class="result"></div>
-        <div id="photoExamSample" class="explanation hidden"></div>
-      </div>
-      <div id="exam-qa" class="exam-panel compact-card hidden">
-        <div class="toolbar wrap"><select id="qaMode"><option value="answer">Questions → full answers</option><option value="question">Answers → make questions</option></select><button id="newQARoundBtn">New round</button><label class="checkline"><input type="checkbox" id="qaShowEnglish"> Show English</label></div>
-        <div id="qaPrompt" class="question"></div>
-        <textarea id="qaInput" placeholder="Write here"></textarea>
-        <div class="row gap8 wrap"><button id="checkQABtn">Check</button><button class="ghost" id="showQABtn">Show answer</button></div>
-        <div id="qaFeedback" class="result"></div>
-        <div id="qaExplanation" class="explanation hidden"></div>
-      </div>
-    </section>
-
-    <section id="section-lid" class="app-section hidden">
-      <div class="compact-card">
-        <div class="toolbar wrap"><button id="newLidBtn">New round</button><button class="ghost" id="showLidAnswerBtn">Show answer</button><label class="checkline"><input type="checkbox" id="lidShowEnglish"> Show English</label></div>
-        <div class="badge">Leben in Deutschland / Orientierungskurs – practice style</div>
-        <div id="lidQuestion" class="question"></div>
-        <div id="lidChoices" class="chips vertical"></div>
-        <div id="lidMeta" class="smallhead"></div><div id="lidFeedback" class="result"></div>
-        <div id="lidExplain" class="explanation hidden"></div>
-      </div>
-    </section>
-
-
-    <section id="section-weak" class="app-section hidden">
-      <div class="compact-card">
-        <div class="toolbar wrap"><button id="refreshWeakBtn">Refresh</button><button class="ghost" id="practiceWeakBtn">Practice weak areas</button><button class="ghost" id="startAdaptiveBtn">Adaptive review</button></div>
-        <div id="adaptivePlan" class="note-block"></div>
-        <div id="dueReviewWrap" class="note-block"></div>
-        <div id="weakWrap"></div>
-      </div>
-    </section>
-
-    <section id="section-app" class="app-section hidden">
-      <div class="compact-card">
-        <div class="grid2">
-          <div>
-            <h3>Settings</h3>
-            <label class="stack">Language<select id="settingsLanguage"><option value="en">English</option><option value="de">Deutsch</option></select></label>
-            <label class="stack">Theme<select id="settingsTheme"><option value="theme-focus">Focus</option><option value="theme-light">Light</option><option value="theme-dark">Dark</option></select></label>
-            <label class="checkline"><input id="countRepeatsToggle" type="checkbox"> Count repeat attempts in today totals</label>
-            <div class="row gap8 wrap"><button id="resetTodayBtn" class="ghost">Reset today</button><button id="startOnboardingBtn" class="ghost">Onboarding</button></div>
-            <h3 class="mt16">Progress Tools</h3>
-            <div class="row gap8 wrap"><button id="exportProgressBtn" class="teal">Export progress</button><label class="ghost filebtn">Import progress<input id="importProgressInput" type="file" accept="application/json" hidden></label></div>
-            <div id="coachRoadmap" class="note-block mt12"></div>
-          </div>
-          <div>
-            <h3>About</h3>
-            <div id="aboutText" class="note-block"></div>
-            <div id="appCounts" class="note-block"></div><div id="dataHealthText" class="note-block"></div>
-            <div id="weakAreaText" class="note-block"></div>
-          </div>
-        </div>
-        <div class="grid2 mt16">
-          <div>
-            <h3>Statistics Center</h3>
-            <div id="statsCenter" class="note-block"></div>
-            <h3 class="mt16">Achievements</h3>
-            <div id="badgesWrap" class="badge-grid"></div>
-          </div>
-          <div>
-            <h3>Study Heatmap</h3>
-            <div id="heatmapWrap" class="heatmap-grid"></div>
-            <h3 class="mt16">Smart Coach</h3>
-            <div id="smartCoachWrap" class="note-block"></div>
-          </div>
-        </div>
-      </div>
-      <div id="onboardingModal" class="modal hidden">
-        <div class="modal-card compact-card">
-          <div class="row gap8 between"><h3 class="m0">Welcome</h3><button id="closeOnboardingBtn" class="ghost">✕</button></div>
-          <div class="note-block">Set your focus so the app can guide your roadmap better.</div>
-          <label class="stack">Goal<select id="onboardingGoal"><option value="b1_exam">Pass B1 exam</option><option value="work_german">Work German</option><option value="daily_life">Daily life in Germany</option><option value="general_fluency">General fluency</option></select></label>
-          <label class="stack">Current confidence<select id="onboardingLevel"><option value="A2">A2</option><option value="B1">B1</option><option value="B2">B2</option></select></label>
-          <label class="stack">Focus topic<select id="onboardingFocus"><option value="prepositions">Prepositions</option><option value="cases">Cases</option><option value="reflexive_verbs">Reflexive verbs</option><option value="word_order">Word order</option><option value="connectors">Connectors</option></select></label>
-          <div class="row gap8 wrap end"><button id="saveOnboardingBtn">Save setup</button></div>
-        </div>
-      </div>
-    </section>
-  </main>
-</div>
-<script type="module" src="src/main.js"></script>
+<body>
+<a class="skip" href="#view">Skip to content</a>
+<header class="top">
+  <a class="brand" href="#/home" aria-label="Deutsch Coach home"><span class="logo" aria-hidden="true">D</span>Deutsch Coach</a>
+  <nav class="topnav" aria-label="Tools">
+    <a href="#/grammar">Grammar</a><a href="#/exam">Exam</a><a href="#/stats">Progress</a><a href="#/settings" aria-label="Settings">⚙︎</a>
+  </nav>
+</header>
+<main id="view" class="view" tabindex="-1"><p class="loading">Loading…</p></main>
+<nav class="nav" aria-label="Main">
+  <a href="#/home" data-tab="home"><span class="ic">⌂</span>Start</a>
+  <a href="#/path" data-tab="path"><span class="ic line-ic"></span>Line</a>
+  <a href="#/practice" data-tab="practice"><span class="ic">✎</span>Practice</a>
+  <a href="#/tutor" data-tab="tutor"><span class="ic">M</span>Max</a>
+  <a href="#/more" data-tab="more"><span class="ic">⋯</span>More</a>
+</nav>
+<noscript>Deutsch Coach needs JavaScript.</noscript>
+<script src="js/data/curriculum.js"></script>
+<script src="js/data/reference.js"></script>
+<script src="js/data/scenes.js"></script>
+<script src="js/data/vocab.js"></script>
+<script src="js/data/verbs.js"></script>
+<script src="js/data/conj.js"></script>
+<script src="js/data/notes.js"></script>
+<script src="js/data/passages.js"></script>
+<script src="js/data/bank.js"></script>
+<script src="js/data/lid.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/core.js"></script>
+<script src="js/tutor.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/views1.js"></script>
+<script src="js/views2.js"></script>
+<script src="js/views3.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
