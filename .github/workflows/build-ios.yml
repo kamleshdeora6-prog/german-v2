@@ -1,5 +1,8 @@
 name: Build iOS app (unsigned IPA)
 
+# Runs on GitHub's macOS machines, which have Xcode installed.
+# Produces an UNSIGNED .ipa that you sideload onto your iPhone with
+# AltStore or Sideloadly (both re-sign it with your own free Apple ID).
 on:
   workflow_dispatch:
   push:
@@ -17,7 +20,7 @@ jobs:
       - name: Copy the web app into the iOS project and generate the Xcode project
         run: |
           cd ios
-          bash build_ios.sh
+          ./build_ios.sh
 
       - name: Build (no code signing)
         run: |
