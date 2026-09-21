@@ -1,0 +1,401 @@
+#B1
+die Anforderung|requirement|Anforderungen|Arbeit
+die Verantwortung|responsibility|Verantwortungen|Arbeit
+die Aufgabenverteilung|division of tasks|Aufgabenverteilungen|Arbeit
+die Zusammenarbeit|cooperation||Arbeit
+das Team|team|Teams|Arbeit
+die Leitung|management|Leitungen|Arbeit
+die Führungskraft|manager|Führungskräfte|Arbeit
+der Mitarbeiter|employee|Mitarbeiter|Arbeit
+die Fortbildung|further training|Fortbildungen|Arbeit
+die Beförderung|promotion|Beförderungen|Arbeit
+die Probezeit|probation period|Probezeiten|Arbeit
+der Arbeitsvertrag|employment contract|Arbeitsverträge|Arbeit
+die Arbeitszeit|working hours|Arbeitszeiten|Arbeit
+die Gleitzeit|flexitime||Arbeit
+das Homeoffice|home office||Arbeit
+die Selbstständigkeit|self-employment||Arbeit
+die Arbeitslosigkeit|unemployment||Arbeit
+die Bewerbungsunterlagen|application documents (pl.)||Arbeit
+das Anschreiben|cover letter|Anschreiben|Arbeit
+die Anforderungen erfüllen|to meet the requirements||Arbeit
+die Wirtschaft|economy||Wirtschaft
+der Markt|market|Märkte|Wirtschaft
+das Angebot|offer, supply|Angebote|Wirtschaft
+die Nachfrage|demand|Nachfragen|Wirtschaft
+der Kunde|customer|Kunden|Wirtschaft
+die Dienstleistung|service|Dienstleistungen|Wirtschaft
+das Produkt|product|Produkte|Wirtschaft
+die Herstellung|production||Wirtschaft
+der Gewinn|profit|Gewinne|Wirtschaft
+der Verlust|loss|Verluste|Wirtschaft
+die Investition|investment|Investitionen|Wirtschaft
+das Wachstum|growth||Wirtschaft
+die Krise|crisis|Krisen|Wirtschaft
+die Konkurrenz|competition|Konkurrenzen|Wirtschaft
+der Wettbewerb|competition|Wettbewerbe|Wirtschaft
+die Rechnung stellen|to issue an invoice||Wirtschaft
+die Erhöhung|increase|Erhöhungen|Wirtschaft
+die Senkung|reduction|Senkungen|Wirtschaft
+die Beziehung|relationship|Beziehungen|Gesellschaft
+die Freundschaft|friendship|Freundschaften|Gesellschaft
+das Vertrauen|trust||Gesellschaft
+der Respekt|respect||Gesellschaft
+die Rücksicht|consideration||Gesellschaft
+die Toleranz|tolerance||Gesellschaft
+das Vorurteil|prejudice|Vorurteile|Gesellschaft
+die Integration|integration||Gesellschaft
+die Herkunft|origin|Herkünfte|Gesellschaft
+die Heimat|home country||Gesellschaft
+der Migrant|migrant|Migranten|Gesellschaft
+die Staatsangehörigkeit|citizenship|Staatsangehörigkeiten|Gesellschaft
+die Gleichberechtigung|equal rights||Gesellschaft
+die Meinungsfreiheit|freedom of opinion||Gesellschaft
+die Verpflichtung|obligation|Verpflichtungen|Gesellschaft
+das Ehrenamt|voluntary work|Ehrenämter|Gesellschaft
+die Spende|donation|Spenden|Gesellschaft
+die Unterstützung|support||Gesellschaft
+die Hilfsbereitschaft|willingness to help||Gesellschaft
+das Verhalten|behaviour||Psychologie
+das Gefühl|feeling|Gefühle|Psychologie
+die Stimmung|mood|Stimmungen|Psychologie
+die Angst|fear|Ängste|Psychologie
+die Sorge|worry|Sorgen|Psychologie
+die Hoffnung|hope|Hoffnungen|Psychologie
+der Wunsch|wish|Wünsche|Psychologie
+die Erwartung|expectation|Erwartungen|Psychologie
+die Motivation|motivation||Psychologie
+die Geduld|patience||Psychologie
+die Aufmerksamkeit|attention||Psychologie
+die Konzentration|concentration||Psychologie
+die Erinnerung|memory|Erinnerungen|Psychologie
+der Eindruck|impression|Eindrücke|Psychologie
+das Selbstbewusstsein|self-confidence||Psychologie
+die Neugier|curiosity||Psychologie
+die Enttäuschung|disappointment|Enttäuschungen|Psychologie
+die Überraschung|surprise|Überraschungen|Psychologie
+die Ernährungsgewohnheit|eating habit|Ernährungsgewohnheiten|Gesundheit
+das Übergewicht|excess weight||Gesundheit
+die Vorsorge|prevention, check-up||Gesundheit
+die Impfung|vaccination|Impfungen|Gesundheit
+die Diagnose|diagnosis|Diagnosen|Gesundheit
+die Therapie|therapy|Therapien|Gesundheit
+der Notfall|emergency|Notfälle|Gesundheit
+der Rettungsdienst|ambulance service|Rettungsdienste|Gesundheit
+die Pflege|care||Gesundheit
+das Wohlbefinden|well-being||Gesundheit
+die Schlafstörung|sleep problem|Schlafstörungen|Gesundheit
+die Belastung|strain|Belastungen|Gesundheit
+die Erholung|recovery||Gesundheit
+das Verkehrsmittel|means of transport|Verkehrsmittel|Verkehr
+der Berufsverkehr|rush hour traffic||Verkehr
+die Umleitung|diversion|Umleitungen|Verkehr
+die Baustelle|construction site|Baustellen|Verkehr
+die Geschwindigkeit|speed|Geschwindigkeiten|Verkehr
+das Bußgeld|fine|Bußgelder|Verkehr
+die Mitfahrgelegenheit|car sharing ride|Mitfahrgelegenheiten|Verkehr
+der Führerscheintest|driving test|Führerscheintests|Verkehr
+die Wohnungssuche|flat hunting||Wohnen
+die Besichtigung|viewing|Besichtigungen|Wohnen
+der Mietvertrag|rental contract|Mietverträge|Wohnen
+die Hausordnung|house rules|Hausordnungen|Wohnen
+die Mülltrennung|waste separation||Wohnen
+die Wohnfläche|living space|Wohnflächen|Wohnen
+die Einrichtung|furnishing, facility|Einrichtungen|Wohnen
+der Stadtteil|district|Stadtteile|Wohnen
+die Infrastruktur|infrastructure|Infrastrukturen|Wohnen
+die Lebenshaltungskosten|cost of living (pl.)||Wohnen
+das Bildungssystem|education system|Bildungssysteme|Bildung
+die Grundschule|primary school|Grundschulen|Bildung
+das Gymnasium|grammar school|Gymnasien|Bildung
+die Berufsschule|vocational school|Berufsschulen|Bildung
+die Hochschule|university, college|Hochschulen|Bildung
+das Semester|semester|Semester|Bildung
+die Vorlesung|lecture|Vorlesungen|Bildung
+das Seminar|seminar|Seminare|Bildung
+die Hausarbeit|term paper, housework|Hausarbeiten|Bildung
+die Bibliothek|library|Bibliotheken|Bildung
+das Stipendium|scholarship|Stipendien|Bildung
+die Anerkennung|recognition|Anerkennungen|Bildung
+der Wortschatz|vocabulary||Sprache
+die Aussprache|pronunciation|Aussprachen|Sprache
+die Grammatik|grammar|Grammatiken|Sprache
+die Redewendung|idiom|Redewendungen|Sprache
+der Ausdruck|expression|Ausdrücke|Sprache
+die Übersetzung|translation|Übersetzungen|Sprache
+der Dialekt|dialect|Dialekte|Sprache
+die Muttersprache|mother tongue|Muttersprachen|Sprache
+die Verständigung|communication||Sprache
+das Missverständnis|misunderstanding|Missverständnisse|Sprache
+die Digitalisierung|digitalisation||Technik
+die künstliche Intelligenz|artificial intelligence||Technik
+der Datenschutz|data protection||Technik
+die Sicherheitslücke|security gap|Sicherheitslücken|Technik
+die Anwendung|application|Anwendungen|Technik
+die Funktion|function|Funktionen|Technik
+die Bedienung|operation, service|Bedienungen|Technik
+das Update|update|Updates|Technik
+der Fortschritt der Technik|technological progress||Technik
+die Erfindung|invention|Erfindungen|Technik
+der Erfinder|inventor|Erfinder|Technik
+die Forschung|research|Forschungen|Wissenschaft
+die Wissenschaft|science|Wissenschaften|Wissenschaft
+das Experiment|experiment|Experimente|Wissenschaft
+die Studie|study|Studien|Wissenschaft
+die These|thesis|Thesen|Wissenschaft
+der Beweis|proof|Beweise|Wissenschaft
+die Statistik|statistics|Statistiken|Wissenschaft
+der Anteil|share, proportion|Anteile|Wissenschaft
+der Durchschnitt|average|Durchschnitte|Wissenschaft
+die Zunahme|increase|Zunahmen|Wissenschaft
+die Abnahme|decrease|Abnahmen|Wissenschaft
+behaupten|to claim||Verb
+bezweifeln|to doubt||Verb
+begründen|to justify||Verb
+betonen|to emphasise||Verb
+erwähnen|to mention||Verb
+berichten|to report||Verb
+mitteilen|to inform||Verb
+verlangen|to demand||Verb
+fordern|to demand||Verb
+fördern|to promote, support||Verb
+unterstützen|to support||Verb
+vermeiden|to avoid||Verb
+verzichten|to do without||Verb
+ersetzen|to replace||Verb
+verursachen|to cause||Verb
+verhindern|to prevent||Verb
+ermöglichen|to make possible||Verb
+beeinflussen|to influence||Verb
+berücksichtigen|to take into account||Verb
+beurteilen|to judge||Verb
+bewerten|to evaluate||Verb
+kritisieren|to criticise||Verb
+zustimmen|to agree||Verb
+ablehnen|to reject||Verb
+widersprechen|to contradict||Verb
+überzeugen|to convince||Verb
+überlegen|to consider||Verb
+planen|to plan||Verb
+organisieren|to organise||Verb
+durchführen|to carry out||Verb
+erledigen|to get done||Verb
+bearbeiten|to process, edit||Verb
+prüfen|to check||Verb
+kontrollieren|to check, control||Verb
+messen|to measure||Verb
+berechnen|to calculate||Verb
+schätzen|to estimate, appreciate||Verb
+entsprechen|to correspond to||Verb
+bestehen aus|to consist of||Verb
+sich beziehen auf|to refer to||Verb
+sich handeln um|to be about||Verb
+sich entwickeln|to develop||Verb
+sich verbessern|to improve||Verb
+sich engagieren|to get involved||Verb
+sich leisten|to afford||Verb
+sich verlassen auf|to rely on||Verb
+sich auskennen|to know one's way around||Verb
+zuverlässig|reliable||Adjektiv
+pünktlich|punctual||Adjektiv
+gründlich|thorough||Adjektiv
+sorgfältig|careful||Adjektiv
+selbstständig|independent||Adjektiv
+flexibel|flexible||Adjektiv
+belastbar|resilient||Adjektiv
+ehrgeizig|ambitious||Adjektiv
+geduldig|patient||Adjektiv
+höflich|polite||Adjektiv
+hilfsbereit|helpful||Adjektiv
+ehrlich|honest||Adjektiv
+neugierig|curious||Adjektiv
+kreativ|creative||Adjektiv
+praktisch|practical||Adjektiv
+nützlich|useful||Adjektiv
+notwendig|necessary||Adjektiv
+üblich|usual||Adjektiv
+deutlich|clear||Adjektiv
+ähnlich|similar||Adjektiv
+unterschiedlich|different||Adjektiv
+gemeinsam|joint, together||Adjektiv
+persönlich|personal||Adjektiv
+beruflich|professional||Adjektiv
+finanziell|financial||Adjektiv
+gesellschaftlich|social||Adjektiv
+gesetzlich|legal||Adjektiv
+zusätzlich|additional||Adjektiv
+grundsätzlich|fundamental||Adjektiv
+vorläufig|provisional||Adjektiv
+dringend|urgent||Adjektiv
+erfolgreich|successful||Adjektiv
+erfolglos|unsuccessful||Adjektiv
+ausreichend|sufficient||Adjektiv
+vollständig|complete||Adjektiv
+kostenlos|free of charge||Adjektiv
+preiswert|good value||Adjektiv
+umweltfreundlich|eco-friendly||Adjektiv
+gesundheitsschädlich|harmful to health||Adjektiv
+
+#B2
+die Auseinandersetzung|debate, conflict|Auseinandersetzungen|Diskussion
+die Argumentation|line of argument|Argumentationen|Diskussion
+das Argument|argument|Argumente|Diskussion
+der Einwand|objection|Einwände|Diskussion
+die Stellungnahme|statement, position|Stellungnahmen|Diskussion
+die Schlussfolgerung|conclusion|Schlussfolgerungen|Diskussion
+die Annahme|assumption|Annahmen|Diskussion
+die Voraussetzung|prerequisite|Voraussetzungen|Diskussion
+die Einschränkung|restriction|Einschränkungen|Diskussion
+der Kompromiss|compromise|Kompromisse|Diskussion
+die Übereinstimmung|agreement|Übereinstimmungen|Diskussion
+die Abweichung|deviation|Abweichungen|Diskussion
+der Widerspruch|contradiction|Widersprüche|Diskussion
+die Perspektive|perspective|Perspektiven|Diskussion
+der Standpunkt|point of view|Standpunkte|Diskussion
+die Herausforderung|challenge|Herausforderungen|Allgemein
+die Maßnahme|measure|Maßnahmen|Allgemein
+die Strategie|strategy|Strategien|Allgemein
+das Verfahren|procedure|Verfahren|Allgemein
+der Ablauf|process, sequence|Abläufe|Allgemein
+der Aufwand|effort||Allgemein
+der Umfang|extent, scope|Umfänge|Allgemein
+das Ausmaß|extent|Ausmaße|Allgemein
+die Tendenz|trend|Tendenzen|Allgemein
+die Auswirkung|impact|Auswirkungen|Allgemein
+die Konsequenz|consequence|Konsequenzen|Allgemein
+der Zweck|purpose|Zwecke|Allgemein
+das Ziel setzen|to set a goal||Allgemein
+die Priorität|priority|Prioritäten|Allgemein
+die Effizienz|efficiency||Allgemein
+die Qualität|quality|Qualitäten|Allgemein
+die Quantität|quantity|Quantitäten|Allgemein
+der Anspruch|claim, standard|Ansprüche|Allgemein
+die Zuständigkeit|responsibility|Zuständigkeiten|Arbeit
+die Verhandlung|negotiation|Verhandlungen|Arbeit
+die Vereinbarung|agreement|Vereinbarungen|Arbeit
+die Absprache|arrangement|Absprachen|Arbeit
+die Rückmeldung|feedback|Rückmeldungen|Arbeit
+die Bilanz|balance sheet|Bilanzen|Wirtschaft
+der Umsatz|turnover|Umsätze|Wirtschaft
+die Rendite|return|Renditen|Wirtschaft
+die Inflation|inflation||Wirtschaft
+die Rezession|recession|Rezessionen|Wirtschaft
+der Fachkräftemangel|skilled labour shortage||Wirtschaft
+die Globalisierung|globalisation||Wirtschaft
+der Verbraucher|consumer|Verbraucher|Wirtschaft
+die Lieferkette|supply chain|Lieferketten|Wirtschaft
+das Unternehmen|company|Unternehmen|Wirtschaft
+die Gründung|founding|Gründungen|Wirtschaft
+das Start-up|start-up|Start-ups|Wirtschaft
+die Nachhaltigkeit|sustainability||Umwelt
+die Ressource|resource|Ressourcen|Umwelt
+der Rohstoff|raw material|Rohstoffe|Umwelt
+die Emission|emission|Emissionen|Umwelt
+die Erderwärmung|global warming||Umwelt
+die Artenvielfalt|biodiversity||Umwelt
+die Verschwendung|waste, squandering||Umwelt
+der Verzicht|renunciation||Umwelt
+die Kreislaufwirtschaft|circular economy||Umwelt
+die Energiewende|energy transition||Umwelt
+der Ausstoß|emissions, output||Umwelt
+die Gerechtigkeit|justice||Gesellschaft
+die Ungleichheit|inequality|Ungleichheiten|Gesellschaft
+die Armut|poverty||Gesellschaft
+der Wohlstand|prosperity||Gesellschaft
+die Bildungschance|educational opportunity|Bildungschancen|Gesellschaft
+der demografische Wandel|demographic change||Gesellschaft
+die Überalterung|population ageing||Gesellschaft
+die Zuwanderung|immigration||Gesellschaft
+die Ausgrenzung|exclusion||Gesellschaft
+die Teilhabe|participation||Gesellschaft
+die Verantwortung übernehmen|to take responsibility||Gesellschaft
+das Grundrecht|basic right|Grundrechte|Politik
+die Verfassung|constitution|Verfassungen|Politik
+das Gesetz|law|Gesetze|Politik
+die Wahl|election, choice|Wahlen|Politik
+die Partei|party|Parteien|Politik
+die Mehrheit|majority|Mehrheiten|Politik
+die Minderheit|minority|Minderheiten|Politik
+die Debatte|debate|Debatten|Politik
+die Reform|reform|Reformen|Politik
+der Haushalt|budget, household|Haushalte|Politik
+die Steuerpolitik|tax policy||Politik
+die Verwaltung|administration|Verwaltungen|Politik
+die Bürokratie|bureaucracy||Politik
+das Ehrenamt ausüben|to do voluntary work||Politik
+die Wahrnehmung|perception|Wahrnehmungen|Psychologie
+das Bewusstsein|consciousness||Psychologie
+die Gewohnheit|habit|Gewohnheiten|Psychologie
+der Anreiz|incentive|Anreize|Psychologie
+die Zufriedenheit|satisfaction||Psychologie
+die Überforderung|excessive demand||Psychologie
+der Burnout|burnout||Psychologie
+die Achtsamkeit|mindfulness||Psychologie
+das Vorbild|role model|Vorbilder|Psychologie
+die Identität|identity|Identitäten|Psychologie
+die Wirksamkeit|effectiveness||Wissenschaft
+die Hypothese|hypothesis|Hypothesen|Wissenschaft
+die Auswertung|evaluation|Auswertungen|Wissenschaft
+die Erhebung|survey, collection|Erhebungen|Wissenschaft
+die Stichprobe|sample|Stichproben|Wissenschaft
+die Korrelation|correlation|Korrelationen|Wissenschaft
+der Zusammenhang nachweisen|to prove a connection||Wissenschaft
+die Veröffentlichung|publication|Veröffentlichungen|Wissenschaft
+die Fachzeitschrift|journal|Fachzeitschriften|Wissenschaft
+das Fachwissen|expertise||Wissenschaft
+umsetzen|to implement||Verb
+durchsetzen|to assert, push through||Verb
+festlegen|to determine||Verb
+feststellen|to determine, notice||Verb
+ermitteln|to determine, investigate||Verb
+untersuchen|to investigate||Verb
+analysieren|to analyse||Verb
+zusammenfassen|to summarise||Verb
+gliedern|to structure||Verb
+hervorheben|to highlight||Verb
+veranschaulichen|to illustrate||Verb
+verdeutlichen|to clarify||Verb
+relativieren|to put into perspective||Verb
+abwägen|to weigh up||Verb
+berücksichtigen|to consider||Verb
+voraussetzen|to presuppose||Verb
+bewältigen|to cope with||Verb
+erfordern|to require||Verb
+gewährleisten|to ensure||Verb
+sicherstellen|to ensure||Verb
+beitragen zu|to contribute to||Verb
+zurückführen auf|to attribute to||Verb
+hinweisen auf|to point out||Verb
+verweisen auf|to refer to||Verb
+eingehen auf|to address (a point)||Verb
+absehen von|to refrain from||Verb
+verfügen über|to have at one's disposal||Verb
+teilnehmen an|to participate in||Verb
+profitieren von|to benefit from||Verb
+scheitern an|to fail because of||Verb
+zunehmen|to increase||Verb
+abnehmen|to decrease||Verb
+steigen|to rise||Verb
+sinken|to fall||Verb
+schwanken|to fluctuate||Verb
+überwiegen|to predominate||Verb
+erheblich|considerable||Adjektiv
+deutlich höher|considerably higher||Adjektiv
+gering|low, slight||Adjektiv
+ausgeprägt|pronounced||Adjektiv
+umfassend|comprehensive||Adjektiv
+nachhaltig|sustainable||Adjektiv
+angemessen|appropriate||Adjektiv
+umstritten|controversial||Adjektiv
+fraglich|questionable||Adjektiv
+plausibel|plausible||Adjektiv
+nachvollziehbar|comprehensible||Adjektiv
+aufwendig|costly, elaborate||Adjektiv
+anspruchsvoll|demanding||Adjektiv
+verbindlich|binding||Adjektiv
+freiwillig|voluntary||Adjektiv
+vorübergehend|temporary||Adjektiv
+langfristig|long-term||Adjektiv
+kurzfristig|short-term||Adjektiv
+zugänglich|accessible||Adjektiv
+unvermeidlich|inevitable||Adjektiv

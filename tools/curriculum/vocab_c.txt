@@ -1,0 +1,297 @@
+#C1
+die Ambivalenz|ambivalence|Ambivalenzen|Abstrakt
+die Diskrepanz|discrepancy|Diskrepanzen|Abstrakt
+die Divergenz|divergence|Divergenzen|Abstrakt
+die Kohärenz|coherence||Abstrakt
+die Nuance|nuance|Nuancen|Abstrakt
+die Prämisse|premise|Prämissen|Abstrakt
+die Implikation|implication|Implikationen|Abstrakt
+die Relevanz|relevance||Abstrakt
+die Signifikanz|significance||Abstrakt
+die Plausibilität|plausibility||Abstrakt
+die Legitimation|legitimation||Abstrakt
+die Objektivität|objectivity||Abstrakt
+die Subjektivität|subjectivity||Abstrakt
+die Komplexität|complexity||Abstrakt
+die Dimension|dimension|Dimensionen|Abstrakt
+das Spannungsfeld|area of tension|Spannungsfelder|Abstrakt
+der Paradigmenwechsel|paradigm shift||Abstrakt
+die Wechselwirkung|interaction|Wechselwirkungen|Abstrakt
+der Sachverhalt|state of affairs|Sachverhalte|Abstrakt
+die Gegebenheit|circumstance|Gegebenheiten|Abstrakt
+die Errungenschaft|achievement|Errungenschaften|Abstrakt
+das Bestreben|endeavour||Abstrakt
+die Zielsetzung|objective|Zielsetzungen|Abstrakt
+die Vorgehensweise|approach|Vorgehensweisen|Abstrakt
+die Herangehensweise|approach|Herangehensweisen|Abstrakt
+der Stellenwert|importance, status||Abstrakt
+die Tragweite|significance, scope||Abstrakt
+die Verhältnismäßigkeit|proportionality||Abstrakt
+die Zwangsläufigkeit|inevitability||Abstrakt
+die Beliebigkeit|arbitrariness||Abstrakt
+die Grundlagenforschung|basic research||Wissenschaft
+die Fragestellung|research question|Fragestellungen|Wissenschaft
+die Methodik|methodology|Methodiken|Wissenschaft
+die Aussagekraft|significance, validity||Wissenschaft
+die Validität|validity||Wissenschaft
+die Verzerrung|bias, distortion|Verzerrungen|Wissenschaft
+die Fußnote|footnote|Fußnoten|Wissenschaft
+das Literaturverzeichnis|bibliography|Literaturverzeichnisse|Wissenschaft
+die Zusammenschau|synopsis||Wissenschaft
+die Gliederung|structure, outline|Gliederungen|Wissenschaft
+das Gutachten|expert report|Gutachten|Wissenschaft
+der Sachverständige|expert|Sachverständige|Wissenschaft
+die Fachterminologie|technical terminology||Wissenschaft
+die Erkenntnis|insight, finding|Erkenntnisse|Wissenschaft
+die Schlussfolgerung ziehen|to draw a conclusion||Wissenschaft
+die Gesetzgebung|legislation||Politik
+die Rechtsprechung|jurisdiction||Politik
+die Zuständigkeitsbereich|area of responsibility|Zuständigkeitsbereiche|Politik
+die Gewaltenteilung|separation of powers||Politik
+die Rechtsstaatlichkeit|rule of law||Politik
+die Souveränität|sovereignty||Politik
+das Abkommen|agreement, treaty|Abkommen|Politik
+die Verhandlungsbereitschaft|willingness to negotiate||Politik
+das Mandat|mandate|Mandate|Politik
+die Amtszeit|term of office|Amtszeiten|Politik
+die Koalition|coalition|Koalitionen|Politik
+die Opposition|opposition||Politik
+das Volksbegehren|petition for a referendum|Volksbegehren|Politik
+die Einflussnahme|exertion of influence||Politik
+der Interessenkonflikt|conflict of interest|Interessenkonflikte|Politik
+die Regulierung|regulation|Regulierungen|Wirtschaft
+die Subvention|subsidy|Subventionen|Wirtschaft
+die Wertschöpfung|value creation||Wirtschaft
+die Betriebswirtschaft|business administration||Wirtschaft
+die Liquidität|liquidity||Wirtschaft
+die Rentabilität|profitability||Wirtschaft
+die Insolvenz|insolvency|Insolvenzen|Wirtschaft
+die Fusion|merger|Fusionen|Wirtschaft
+der Marktanteil|market share|Marktanteile|Wirtschaft
+die Wertschätzung|appreciation||Gesellschaft
+die Verdrängung|displacement, repression||Psychologie
+die Resilienz|resilience||Psychologie
+die Empathie|empathy||Psychologie
+die Selbstwirksamkeit|self-efficacy||Psychologie
+die Voreingenommenheit|bias||Psychologie
+die Reizüberflutung|sensory overload||Psychologie
+die Gelassenheit|composure||Psychologie
+die Beharrlichkeit|persistence||Psychologie
+die Zurückhaltung|restraint||Psychologie
+die Bereitschaft|readiness, willingness||Psychologie
+die Prägung|imprint, shaping|Prägungen|Psychologie
+die Entfremdung|alienation||Gesellschaft
+die Solidarität|solidarity||Gesellschaft
+die Zivilgesellschaft|civil society||Gesellschaft
+der gesellschaftliche Zusammenhalt|social cohesion||Gesellschaft
+die Chancengleichheit|equality of opportunity||Gesellschaft
+die Meinungsbildung|opinion forming||Medien
+die Berichterstattung|reporting||Medien
+die Quelle|source|Quellen|Medien
+die Recherche|research|Recherchen|Medien
+die Falschmeldung|fake news item|Falschmeldungen|Medien
+die Schlagzeile|headline|Schlagzeilen|Medien
+die Zuspitzung|exaggeration, escalation|Zuspitzungen|Medien
+der Leitartikel|editorial|Leitartikel|Medien
+die Glaubwürdigkeit|credibility||Medien
+die Reichweite|reach|Reichweiten|Medien
+erörtern|to discuss in depth||Verb
+darlegen|to set out||Verb
+schildern|to depict, describe||Verb
+ausführen|to elaborate, carry out||Verb
+erläutern|to explain in detail||Verb
+konkretisieren|to specify||Verb
+differenzieren|to differentiate||Verb
+abgrenzen|to delimit||Verb
+gegenüberstellen|to contrast||Verb
+in Frage stellen|to call into question||Verb
+untermauern|to underpin||Verb
+widerlegen|to refute||Verb
+entkräften|to invalidate||Verb
+einräumen|to concede||Verb
+unterstreichen|to underline||Verb
+nahelegen|to suggest||Verb
+implizieren|to imply||Verb
+resultieren aus|to result from||Verb
+einhergehen mit|to go hand in hand with||Verb
+bedingen|to cause, condition||Verb
+begünstigen|to favour||Verb
+erschweren|to make difficult||Verb
+mindern|to reduce||Verb
+steigern|to increase||Verb
+ausweiten|to expand||Verb
+eindämmen|to contain, curb||Verb
+etablieren|to establish||Verb
+anstreben|to strive for||Verb
+verfolgen|to pursue||Verb
+bewerkstelligen|to accomplish||Verb
+in Kauf nehmen|to accept (a drawback)||Verb
+zur Kenntnis nehmen|to take note of||Verb
+in Betracht ziehen|to take into consideration||Verb
+Rücksicht nehmen auf|to show consideration for||Verb
+Bezug nehmen auf|to refer to||Verb
+zur Verfügung stehen|to be available||Verb
+in Anspruch nehmen|to make use of||Verb
+eine Rolle spielen|to play a role||Verb
+Wert legen auf|to attach importance to||Verb
+Abstand nehmen von|to refrain from||Verb
+maßgeblich|decisive||Adjektiv
+ausschlaggebend|decisive||Adjektiv
+grundlegend|fundamental||Adjektiv
+weitreichend|far-reaching||Adjektiv
+gravierend|serious||Adjektiv
+bedenklich|worrying||Adjektiv
+strittig|disputed||Adjektiv
+eindeutig|unambiguous||Adjektiv
+mehrdeutig|ambiguous||Adjektiv
+schlüssig|conclusive||Adjektiv
+stichhaltig|valid, sound||Adjektiv
+fundiert|well-founded||Adjektiv
+vorrangig|primary||Adjektiv
+nachrangig|secondary||Adjektiv
+unabdingbar|indispensable||Adjektiv
+unerlässlich|essential||Adjektiv
+zweckmäßig|expedient||Adjektiv
+hinreichend|sufficient||Adjektiv
+beträchtlich|considerable||Adjektiv
+marginal|marginal||Adjektiv
+tendenziell|tending to||Adjektiv
+vermeintlich|supposed||Adjektiv
+angeblich|allegedly||Adjektiv
+zweifellos|undoubtedly||Adverb
+allerdings|however||Adverb
+hingegen|on the other hand||Adverb
+demgegenüber|in contrast||Adverb
+folglich|consequently||Adverb
+infolgedessen|as a result||Adverb
+demzufolge|accordingly||Adverb
+insofern|in so far as||Adverb
+sofern|provided that||Adverb
+zumal|especially since||Adverb
+gleichwohl|nevertheless||Adverb
+dennoch|nevertheless||Adverb
+ohnehin|anyway||Adverb
+keineswegs|by no means||Adverb
+durchaus|quite, definitely||Adverb
+womöglich|possibly||Adverb
+mitunter|occasionally||Adverb
+hierbei|in this context||Adverb
+diesbezüglich|regarding this||Adverb
+letztlich|ultimately||Adverb
+
+#C2
+die Aporie|aporia, impasse|Aporien|Abstrakt
+die Dichotomie|dichotomy|Dichotomien|Abstrakt
+die Kontingenz|contingency||Abstrakt
+die Reziprozität|reciprocity||Abstrakt
+die Antinomie|antinomy|Antinomien|Abstrakt
+das Postulat|postulate|Postulate|Abstrakt
+die Maxime|maxim|Maximen|Abstrakt
+die Konnotation|connotation|Konnotationen|Sprache
+die Denotation|denotation|Denotationen|Sprache
+der Duktus|style, manner||Sprache
+die Redundanz|redundancy|Redundanzen|Sprache
+die Prägnanz|conciseness||Sprache
+der Euphemismus|euphemism|Euphemismen|Sprache
+die Ironie|irony|Ironien|Sprache
+der Sarkasmus|sarcasm||Sprache
+die Metapher|metaphor|Metaphern|Sprache
+die Anspielung|allusion|Anspielungen|Sprache
+die Untertreibung|understatement|Untertreibungen|Sprache
+die Übertreibung|exaggeration|Übertreibungen|Sprache
+der Beigeschmack|aftertaste, connotation||Sprache
+die Zwischentöne|nuances (pl.)||Sprache
+der Sprachduktus|linguistic style||Sprache
+die Floskel|empty phrase|Floskeln|Sprache
+das Schlagwort|buzzword|Schlagwörter|Sprache
+der Fachjargon|jargon||Sprache
+die Wortneuschöpfung|neologism|Wortneuschöpfungen|Sprache
+das Sprichwort|proverb|Sprichwörter|Redewendung
+die Redensart|saying|Redensarten|Redewendung
+Eulen nach Athen tragen|to carry coals to Newcastle||Redewendung
+das Kind mit dem Bade ausschütten|to throw the baby out with the bathwater||Redewendung
+den Nagel auf den Kopf treffen|to hit the nail on the head||Redewendung
+ins kalte Wasser springen|to jump in at the deep end||Redewendung
+die Daumen drücken|to keep one's fingers crossed||Redewendung
+über den Tellerrand schauen|to think outside the box||Redewendung
+mit dem Feuer spielen|to play with fire||Redewendung
+auf dem Holzweg sein|to be on the wrong track||Redewendung
+etwas auf die lange Bank schieben|to put something off||Redewendung
+jemandem die Stange halten|to stand up for someone||Redewendung
+die Katze im Sack kaufen|to buy a pig in a poke||Redewendung
+Hals über Kopf|head over heels||Redewendung
+unter vier Augen|in private||Redewendung
+auf Anhieb|straight away||Redewendung
+im Großen und Ganzen|by and large||Redewendung
+in aller Munde sein|to be the talk of the town||Redewendung
+Fuß fassen|to gain a foothold||Redewendung
+zur Sprache bringen|to bring up (a topic)||Redewendung
+ins Gewicht fallen|to carry weight||Redewendung
+außer Frage stehen|to be beyond question||Redewendung
+zu Buche schlagen|to make a dent (financially)||Redewendung
+den Ausschlag geben|to tip the scales||Redewendung
+Rede und Antwort stehen|to answer for something||Redewendung
+das Ruder herumreißen|to turn things around||Redewendung
+mit Nachdruck|emphatically||Redewendung
+in Anbetracht|in view of||Redewendung
+angesichts|in view of||Präposition
+hinsichtlich|with regard to||Präposition
+bezüglich|regarding||Präposition
+gemäß|according to||Präposition
+zufolge|according to||Präposition
+mittels|by means of||Präposition
+kraft|by virtue of||Präposition
+ungeachtet|regardless of||Präposition
+anhand|on the basis of||Präposition
+infolge|as a result of||Präposition
+zwecks|for the purpose of||Präposition
+seitens|on the part of||Präposition
+binnen|within||Präposition
+abseits|away from||Präposition
+inmitten|in the middle of||Präposition
+beharren auf|to insist on||Verb
+sich abzeichnen|to emerge, become apparent||Verb
+sich niederschlagen in|to be reflected in||Verb
+sich erweisen als|to prove to be||Verb
+sich bewähren|to prove one's worth||Verb
+sich aufdrängen|to suggest itself||Verb
+sich erübrigen|to be unnecessary||Verb
+obliegen|to be incumbent on||Verb
+entbehren|to lack, do without||Verb
+zeitigen|to produce (results)||Verb
+untergraben|to undermine||Verb
+kaschieren|to conceal||Verb
+verharmlosen|to play down||Verb
+überzeichnen|to overstate||Verb
+suggerieren|to suggest, imply||Verb
+konstatieren|to state, note||Verb
+sondieren|to explore, sound out||Verb
+eruieren|to ascertain||Verb
+antizipieren|to anticipate||Verb
+akzentuieren|to accentuate||Verb
+subsumieren|to subsume||Verb
+generieren|to generate||Verb
+akkumulieren|to accumulate||Verb
+divergieren|to diverge||Verb
+korrelieren|to correlate||Verb
+oszillieren|to oscillate||Verb
+substanziell|substantial||Adjektiv
+marginalisiert|marginalised||Adjektiv
+ubiquitär|ubiquitous||Adjektiv
+immanent|inherent||Adjektiv
+kontraproduktiv|counterproductive||Adjektiv
+diffizil|delicate, tricky||Adjektiv
+prekär|precarious||Adjektiv
+rudimentär|rudimentary||Adjektiv
+apodiktisch|apodictic, dogmatic||Adjektiv
+akribisch|meticulous||Adjektiv
+lapidar|terse||Adjektiv
+eklatant|blatant||Adjektiv
+frappierend|striking||Adjektiv
+belastbar (Daten)|robust (data)||Adjektiv
+stringent|stringent, coherent||Adjektiv
+dezidiert|decided, explicit||Adjektiv
+pauschal|blanket, sweeping||Adjektiv
+gängig|common, current||Adjektiv
+etabliert|established||Adjektiv
+obsolet|obsolete||Adjektiv

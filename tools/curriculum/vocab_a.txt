@@ -1,0 +1,590 @@
+#A1
+der Mensch|human, person|Menschen|Menschen
+die Person|person|Personen|Menschen
+der Herr|gentleman, Mr|Herren|Menschen
+die Dame|lady|Damen|Menschen
+das Baby|baby|Babys|Familie
+der Junge|boy|Jungen|Familie
+das Mädchen|girl|Mädchen|Familie
+der Opa|grandpa|Opas|Familie
+die Oma|grandma|Omas|Familie
+der Enkel|grandson|Enkel|Familie
+die Ehefrau|wife|Ehefrauen|Familie
+der Ehemann|husband|Ehemänner|Familie
+die Hochzeit|wedding|Hochzeiten|Familie
+der Geburtstag|birthday|Geburtstage|Familie
+die Adresse|address|Adressen|Persönliches
+die Telefonnummer|phone number|Telefonnummern|Persönliches
+die E-Mail|email|E-Mails|Kommunikation
+das Handy|mobile phone|Handys|Kommunikation
+die Nachricht|message, news item|Nachrichten|Kommunikation
+der Brief|letter|Briefe|Kommunikation
+die Postkarte|postcard|Postkarten|Kommunikation
+das Gespräch|conversation|Gespräche|Kommunikation
+die Frage|question|Fragen|Kommunikation
+die Antwort|answer|Antworten|Kommunikation
+das Wort|word|Wörter|Sprache
+der Satz|sentence|Sätze|Sprache
+die Sprache|language|Sprachen|Sprache
+das Beispiel|example|Beispiele|Sprache
+die Übung|exercise|Übungen|Lernen
+die Aufgabe|task|Aufgaben|Lernen
+der Fehler|mistake|Fehler|Lernen
+die Hausaufgabe|homework|Hausaufgaben|Lernen
+der Unterricht|lesson, class||Lernen
+die Klasse|class, grade|Klassen|Lernen
+der Schüler|pupil|Schüler|Lernen
+die Universität|university|Universitäten|Lernen
+das Heft|exercise book|Hefte|Lernen
+der Stift|pen|Stifte|Lernen
+das Papier|paper|Papiere|Lernen
+die Tafel|board|Tafeln|Lernen
+das Wörterbuch|dictionary|Wörterbücher|Lernen
+das Haus|house|Häuser|Wohnen
+die Tür|door|Türen|Wohnen
+das Fenster|window|Fenster|Wohnen
+der Balkon|balcony|Balkone|Wohnen
+der Garten|garden|Gärten|Wohnen
+der Keller|cellar|Keller|Wohnen
+der Aufzug|lift|Aufzüge|Wohnen
+die Treppe|stairs|Treppen|Wohnen
+das Dach|roof|Dächer|Wohnen
+der Stock|floor, storey|Stockwerke|Wohnen
+der Nachbar|neighbour|Nachbarn|Wohnen
+die Küche|kitchen|Küchen|Wohnen
+das Wohnzimmer|living room|Wohnzimmer|Wohnen
+das Schlafzimmer|bedroom|Schlafzimmer|Wohnen
+das Badezimmer|bathroom|Badezimmer|Wohnen
+die Toilette|toilet|Toiletten|Wohnen
+die Dusche|shower|Duschen|Wohnen
+das Waschbecken|sink|Waschbecken|Wohnen
+der Spiegel|mirror|Spiegel|Wohnen
+der Herd|cooker|Herde|Wohnen
+der Backofen|oven|Backöfen|Wohnen
+die Waschmaschine|washing machine|Waschmaschinen|Wohnen
+der Müll|rubbish||Wohnen
+der Schlüssel|key|Schlüssel|Wohnen
+die Heizung|heating|Heizungen|Wohnen
+das Licht|light|Lichter|Wohnen
+der Strom|electricity||Wohnen
+das Wasser|water||Essen
+der Saft|juice|Säfte|Essen
+das Bier|beer|Biere|Essen
+der Wein|wine|Weine|Essen
+der Tee|tea|Tees|Essen
+die Butter|butter||Essen
+das Salz|salt||Essen
+der Pfeffer|pepper||Essen
+der Zucker|sugar||Essen
+das Öl|oil|Öle|Essen
+das Mehl|flour||Essen
+die Nudel|noodle, pasta|Nudeln|Essen
+die Kartoffel|potato|Kartoffeln|Essen
+der Salat|salad, lettuce|Salate|Essen
+die Zwiebel|onion|Zwiebeln|Essen
+die Banane|banana|Bananen|Essen
+die Orange|orange|Orangen|Essen
+die Zitrone|lemon|Zitronen|Essen
+das Fleisch|meat||Essen
+das Hähnchen|chicken|Hähnchen|Essen
+die Wurst|sausage|Würste|Essen
+der Schinken|ham||Essen
+das Frühstück|breakfast||Essen
+das Mittagessen|lunch|Mittagessen|Essen
+das Abendessen|dinner|Abendessen|Essen
+der Nachtisch|dessert|Nachtische|Essen
+das Restaurant|restaurant|Restaurants|Essen
+das Café|café|Cafés|Essen
+die Speisekarte|menu|Speisekarten|Essen
+die Rechnung|bill, invoice|Rechnungen|Essen
+das Trinkgeld|tip|Trinkgelder|Essen
+der Kellner|waiter|Kellner|Essen
+die Bestellung|order|Bestellungen|Essen
+das Geschäft|shop, business|Geschäfte|Einkaufen
+die Bäckerei|bakery|Bäckereien|Einkaufen
+die Metzgerei|butcher's|Metzgereien|Einkaufen
+der Markt|market|Märkte|Einkaufen
+das Kaufhaus|department store|Kaufhäuser|Einkaufen
+der Preis|price|Preise|Einkaufen
+das Geld|money||Einkaufen
+der Euro|euro|Euro|Einkaufen
+der Cent|cent|Cent|Einkaufen
+die Kreditkarte|credit card|Kreditkarten|Einkaufen
+die Quittung|receipt|Quittungen|Einkaufen
+der Rabatt|discount|Rabatte|Einkaufen
+die Größe|size|Größen|Einkaufen
+das Kleid|dress|Kleider|Kleidung
+der Rock|skirt|Röcke|Kleidung
+die Socke|sock|Socken|Kleidung
+der Hut|hat|Hüte|Kleidung
+der Handschuh|glove|Handschuhe|Kleidung
+der Schal|scarf|Schals|Kleidung
+die Brille|glasses|Brillen|Kleidung
+die Tasche|bag, pocket|Taschen|Kleidung
+der Rucksack|backpack|Rucksäcke|Kleidung
+der Gürtel|belt|Gürtel|Kleidung
+der Körper|body|Körper|Gesundheit
+der Kopf|head|Köpfe|Gesundheit
+das Haar|hair|Haare|Gesundheit
+das Auge|eye|Augen|Gesundheit
+das Ohr|ear|Ohren|Gesundheit
+die Nase|nose|Nasen|Gesundheit
+der Mund|mouth|Münder|Gesundheit
+der Zahn|tooth|Zähne|Gesundheit
+der Hals|neck, throat|Hälse|Gesundheit
+die Hand|hand|Hände|Gesundheit
+der Arm|arm|Arme|Gesundheit
+das Bein|leg|Beine|Gesundheit
+der Fuß|foot|Füße|Gesundheit
+der Rücken|back|Rücken|Gesundheit
+der Bauch|belly|Bäuche|Gesundheit
+das Herz|heart|Herzen|Gesundheit
+die Schmerzen|pain (pl.)||Gesundheit
+die Grippe|flu|Grippen|Gesundheit
+der Husten|cough||Gesundheit
+das Medikament|medicine|Medikamente|Gesundheit
+das Krankenhaus|hospital|Krankenhäuser|Gesundheit
+die Versicherung|insurance|Versicherungen|Gesundheit
+das Auto|car|Autos|Verkehr
+das Motorrad|motorbike|Motorräder|Verkehr
+die Straßenbahn|tram|Straßenbahnen|Verkehr
+das Flugzeug|plane|Flugzeuge|Verkehr
+der Flughafen|airport|Flughäfen|Verkehr
+das Schiff|ship|Schiffe|Verkehr
+das Taxi|taxi|Taxis|Verkehr
+der Führerschein|driving licence|Führerscheine|Verkehr
+der Parkplatz|car park|Parkplätze|Verkehr
+die Tankstelle|petrol station|Tankstellen|Verkehr
+der Weg|way, path|Wege|Verkehr
+die Richtung|direction|Richtungen|Verkehr
+die Karte|map, card, ticket|Karten|Verkehr
+der Plan|plan, map|Pläne|Verkehr
+die Reise|journey|Reisen|Reisen
+der Koffer|suitcase|Koffer|Reisen
+das Zelt|tent|Zelte|Reisen
+die Jugendherberge|youth hostel|Jugendherbergen|Reisen
+das Zimmer|room|Zimmer|Reisen
+die Aussicht|view|Aussichten|Reisen
+die Grenze|border|Grenzen|Reisen
+das Ausland|abroad||Reisen
+die Insel|island|Inseln|Natur
+der Berg|mountain|Berge|Natur
+der Fluss|river|Flüsse|Natur
+das Meer|sea|Meere|Natur
+der Wald|forest|Wälder|Natur
+der Baum|tree|Bäume|Natur
+die Blume|flower|Blumen|Natur
+das Tier|animal|Tiere|Natur
+der Vogel|bird|Vögel|Natur
+die Sonne|sun|Sonnen|Natur
+der Mond|moon|Monde|Natur
+der Stern|star|Sterne|Natur
+der Himmel|sky|Himmel|Natur
+die Wolke|cloud|Wolken|Wetter
+der Schnee|snow||Wetter
+der Wind|wind|Winde|Wetter
+das Gewitter|thunderstorm|Gewitter|Wetter
+die Temperatur|temperature|Temperaturen|Wetter
+der Grad|degree|Grade|Wetter
+der Frühling|spring|Frühlinge|Zeit
+der Sommer|summer|Sommer|Zeit
+der Herbst|autumn|Herbste|Zeit
+der Winter|winter|Winter|Zeit
+die Woche|week|Wochen|Zeit
+der Montag|Monday|Montage|Zeit
+der Dienstag|Tuesday|Dienstage|Zeit
+der Mittwoch|Wednesday|Mittwoche|Zeit
+der Donnerstag|Thursday|Donnerstage|Zeit
+der Freitag|Friday|Freitage|Zeit
+der Samstag|Saturday|Samstage|Zeit
+der Sonntag|Sunday|Sonntage|Zeit
+der Januar|January||Zeit
+der Februar|February||Zeit
+der März|March||Zeit
+der April|April||Zeit
+der Mai|May||Zeit
+der Juni|June||Zeit
+der Juli|July||Zeit
+der August|August||Zeit
+der September|September||Zeit
+der Oktober|October||Zeit
+der November|November||Zeit
+der Dezember|December||Zeit
+die Sekunde|second|Sekunden|Zeit
+der Feiertag|public holiday|Feiertage|Zeit
+die Ferien|holidays (pl.)||Zeit
+das Spiel|game|Spiele|Freizeit
+der Sport|sport|Sportarten|Freizeit
+der Fußball|football|Fußbälle|Freizeit
+das Schwimmbad|swimming pool|Schwimmbäder|Freizeit
+das Fitnessstudio|gym|Fitnessstudios|Freizeit
+das Fahrrad|bicycle|Fahrräder|Freizeit
+das Museum|museum|Museen|Freizeit
+das Theater|theatre|Theater|Freizeit
+das Kino|cinema|Kinos|Freizeit
+die Party|party|Partys|Freizeit
+der Urlaub|holiday|Urlaube|Freizeit
+das Buch|book|Bücher|Freizeit
+die Zeitschrift|magazine|Zeitschriften|Freizeit
+der Fernseher|TV set|Fernseher|Freizeit
+der Computer|computer|Computer|Technik
+das Internet|internet||Technik
+die Webseite|website|Webseiten|Technik
+das Passwort|password|Passwörter|Technik
+die Firma|company|Firmen|Arbeit
+das Büro|office|Büros|Arbeit
+die Arbeit|work|Arbeiten|Arbeit
+der Beruf|profession|Berufe|Arbeit
+der Kollege|colleague|Kollegen|Arbeit
+die Pause|break|Pausen|Arbeit
+das Praktikum|internship|Praktika|Arbeit
+der Lohn|wage|Löhne|Arbeit
+der Verkäufer|salesperson|Verkäufer|Arbeit
+der Ingenieur|engineer|Ingenieure|Arbeit
+der Koch|cook|Köche|Arbeit
+der Polizist|police officer|Polizisten|Arbeit
+die Krankenschwester|nurse|Krankenschwestern|Arbeit
+gut|good||Adjektiv
+schlecht|bad||Adjektiv
+groß|big, tall||Adjektiv
+klein|small||Adjektiv
+neu|new||Adjektiv
+alt|old||Adjektiv
+jung|young||Adjektiv
+lang|long||Adjektiv
+kurz|short||Adjektiv
+hoch|high||Adjektiv
+tief|deep, low||Adjektiv
+breit|wide||Adjektiv
+schwer|heavy, difficult||Adjektiv
+leicht|light, easy||Adjektiv
+schnell|fast||Adjektiv
+langsam|slow||Adjektiv
+laut|loud||Adjektiv
+leise|quiet||Adjektiv
+hell|bright||Adjektiv
+dunkel|dark||Adjektiv
+warm|warm||Adjektiv
+kalt|cold||Adjektiv
+heiß|hot||Adjektiv
+kühl|cool||Adjektiv
+nass|wet||Adjektiv
+trocken|dry||Adjektiv
+sauber|clean||Adjektiv
+schmutzig|dirty||Adjektiv
+voll|full||Adjektiv
+leer|empty||Adjektiv
+reich|rich||Adjektiv
+arm|poor||Adjektiv
+freundlich|friendly||Adjektiv
+nett|nice||Adjektiv
+müde|tired||Adjektiv
+fertig|finished, ready||Adjektiv
+richtig|right, correct||Adjektiv
+falsch|wrong||Adjektiv
+wichtig|important||Adjektiv
+interessant|interesting||Adjektiv
+langweilig|boring||Adjektiv
+lustig|funny||Adjektiv
+traurig|sad||Adjektiv
+glücklich|happy||Adjektiv
+böse|angry, evil||Adjektiv
+ruhig|calm, quiet||Adjektiv
+bequem|comfortable||Adjektiv
+gesund|healthy||Adjektiv
+krank|ill||Adjektiv
+frei|free||Adjektiv
+besetzt|occupied||Adjektiv
+offen|open||Adjektiv
+geschlossen|closed||Adjektiv
+möglich|possible||Adjektiv
+nötig|necessary||Adjektiv
+sicher|safe, certain||Adjektiv
+gefährlich|dangerous||Adjektiv
+zufrieden|satisfied||Adjektiv
+gehen|to go||Verb
+kommen|to come||Verb
+machen|to do, make||Verb
+sagen|to say||Verb
+sehen|to see||Verb
+geben|to give||Verb
+nehmen|to take||Verb
+finden|to find||Verb
+denken|to think||Verb
+wissen|to know (facts)||Verb
+kennen|to know (people)||Verb
+glauben|to believe||Verb
+verstehen|to understand||Verb
+sprechen|to speak||Verb
+hören|to hear||Verb
+lesen|to read||Verb
+schreiben|to write||Verb
+lernen|to learn||Verb
+spielen|to play||Verb
+laufen|to run, walk||Verb
+fahren|to drive, go||Verb
+fliegen|to fly||Verb
+bleiben|to stay||Verb
+wohnen|to live, reside||Verb
+leben|to live||Verb
+essen|to eat||Verb
+trinken|to drink||Verb
+kochen|to cook||Verb
+kaufen|to buy||Verb
+verkaufen|to sell||Verb
+bezahlen|to pay||Verb
+kosten|to cost||Verb
+arbeiten|to work||Verb
+helfen|to help||Verb
+brauchen|to need||Verb
+suchen|to look for||Verb
+zeigen|to show||Verb
+öffnen|to open||Verb
+schließen|to close||Verb
+beginnen|to begin||Verb
+enden|to end||Verb
+warten|to wait||Verb
+fragen|to ask||Verb
+antworten|to answer||Verb
+danken|to thank||Verb
+lieben|to love||Verb
+mögen|to like||Verb
+schlafen|to sleep||Verb
+aufstehen|to get up||Verb
+anfangen|to start||Verb
+aufhören|to stop||Verb
+anrufen|to call||Verb
+mitbringen|to bring along||Verb
+einkaufen|to go shopping||Verb
+aufräumen|to tidy up||Verb
+fernsehen|to watch TV||Verb
+spazieren gehen|to go for a walk||Verb
+Rad fahren|to cycle||Verb
+
+#A2
+die Gesellschaft|society|Gesellschaften|Gesellschaft
+die Bevölkerung|population|Bevölkerungen|Gesellschaft
+der Bürger|citizen|Bürger|Gesellschaft
+die Regierung|government|Regierungen|Gesellschaft
+der Staat|state|Staaten|Gesellschaft
+die Stadtverwaltung|city administration|Stadtverwaltungen|Behörden
+das Amt|public office|Ämter|Behörden
+das Formular|form|Formulare|Behörden
+der Antrag|application, request|Anträge|Behörden
+die Bescheinigung|certificate|Bescheinigungen|Behörden
+der Ausweis|ID card|Ausweise|Behörden
+die Unterschrift|signature|Unterschriften|Behörden
+die Gebühr|fee|Gebühren|Behörden
+der Termin|appointment|Termine|Behörden
+die Anmeldung|registration|Anmeldungen|Behörden
+die Abmeldung|deregistration|Abmeldungen|Behörden
+der Vertrag|contract|Verträge|Arbeit
+die Kündigung|notice, termination|Kündigungen|Arbeit
+die Bewerbung|application|Bewerbungen|Arbeit
+der Lebenslauf|CV|Lebensläufe|Arbeit
+das Zeugnis|certificate, report|Zeugnisse|Arbeit
+das Vorstellungsgespräch|job interview|Vorstellungsgespräche|Arbeit
+die Stelle|position, job|Stellen|Arbeit
+die Abteilung|department|Abteilungen|Arbeit
+der Chef|boss|Chefs|Arbeit
+die Besprechung|meeting|Besprechungen|Arbeit
+die Konferenz|conference|Konferenzen|Arbeit
+der Termindruck|time pressure||Arbeit
+die Überstunde|overtime hour|Überstunden|Arbeit
+das Gehalt|salary|Gehälter|Arbeit
+die Steuer|tax|Steuern|Arbeit
+das Konto|bank account|Konten|Finanzen
+die Überweisung|bank transfer|Überweisungen|Finanzen
+die Miete|rent|Mieten|Wohnen
+die Nebenkosten|utility costs (pl.)||Wohnen
+die Kaution|deposit|Kautionen|Wohnen
+der Vermieter|landlord|Vermieter|Wohnen
+der Mieter|tenant|Mieter|Wohnen
+der Umzug|move|Umzüge|Wohnen
+die Wohngemeinschaft|shared flat|Wohngemeinschaften|Wohnen
+das Möbelstück|piece of furniture|Möbelstücke|Wohnen
+die Reparatur|repair|Reparaturen|Wohnen
+der Handwerker|craftsman|Handwerker|Wohnen
+der Hausmeister|caretaker|Hausmeister|Wohnen
+die Nachbarschaft|neighbourhood|Nachbarschaften|Wohnen
+der Lärm|noise||Wohnen
+die Ruhezeit|quiet hours|Ruhezeiten|Wohnen
+die Umwelt|environment||Umwelt
+der Klimawandel|climate change||Umwelt
+die Luftverschmutzung|air pollution||Umwelt
+der Abfall|waste|Abfälle|Umwelt
+das Recycling|recycling||Umwelt
+die Energie|energy|Energien|Umwelt
+die Sonnenenergie|solar energy||Umwelt
+der Verbrauch|consumption||Umwelt
+die Natur|nature||Umwelt
+der Umweltschutz|environmental protection||Umwelt
+die Gesundheit|health||Gesundheit
+die Ernährung|nutrition, diet||Gesundheit
+die Bewegung|movement, exercise|Bewegungen|Gesundheit
+der Stress|stress||Gesundheit
+die Entspannung|relaxation||Gesundheit
+die Behandlung|treatment|Behandlungen|Gesundheit
+die Untersuchung|examination|Untersuchungen|Gesundheit
+der Termin beim Arzt|doctor's appointment||Gesundheit
+die Krankmeldung|sick note|Krankmeldungen|Gesundheit
+die Apotheke|pharmacy|Apotheken|Gesundheit
+die Nebenwirkung|side effect|Nebenwirkungen|Gesundheit
+die Ausbildung|training, education|Ausbildungen|Bildung
+die Prüfung|exam|Prüfungen|Bildung
+das Studium|studies|Studien|Bildung
+der Abschluss|degree, conclusion|Abschlüsse|Bildung
+das Fach|subject|Fächer|Bildung
+die Note|grade, mark|Noten|Bildung
+der Kurs|course|Kurse|Bildung
+der Teilnehmer|participant|Teilnehmer|Bildung
+das Zertifikat|certificate|Zertifikate|Bildung
+die Erfahrung|experience|Erfahrungen|Bildung
+die Kenntnis|knowledge, skill|Kenntnisse|Bildung
+die Fähigkeit|ability|Fähigkeiten|Bildung
+die Möglichkeit|possibility|Möglichkeiten|Allgemein
+die Schwierigkeit|difficulty|Schwierigkeiten|Allgemein
+die Lösung|solution|Lösungen|Allgemein
+der Vorschlag|suggestion|Vorschläge|Allgemein
+die Entscheidung|decision|Entscheidungen|Allgemein
+der Grund|reason|Gründe|Allgemein
+die Ursache|cause|Ursachen|Allgemein
+die Folge|consequence|Folgen|Allgemein
+der Unterschied|difference|Unterschiede|Allgemein
+der Vorteil|advantage|Vorteile|Allgemein
+der Nachteil|disadvantage|Nachteile|Allgemein
+die Meinung|opinion|Meinungen|Allgemein
+die Erklärung|explanation|Erklärungen|Allgemein
+die Bedeutung|meaning|Bedeutungen|Allgemein
+die Wirkung|effect|Wirkungen|Allgemein
+der Zusammenhang|connection|Zusammenhänge|Allgemein
+das Verhältnis|relationship, ratio|Verhältnisse|Allgemein
+die Situation|situation|Situationen|Allgemein
+der Zustand|condition, state|Zustände|Allgemein
+die Veränderung|change|Veränderungen|Allgemein
+die Entwicklung|development|Entwicklungen|Allgemein
+der Fortschritt|progress|Fortschritte|Allgemein
+das Ergebnis|result|Ergebnisse|Allgemein
+die Absicht|intention|Absichten|Allgemein
+die Gelegenheit|opportunity|Gelegenheiten|Allgemein
+der Zufall|coincidence|Zufälle|Allgemein
+die Ausnahme|exception|Ausnahmen|Allgemein
+die Regel|rule|Regeln|Allgemein
+die Ordnung|order|Ordnungen|Allgemein
+die Sicherheit|safety, certainty|Sicherheiten|Allgemein
+die Gefahr|danger|Gefahren|Allgemein
+der Vorbereitung|preparation|Vorbereitungen|Allgemein
+die Verspätung|delay|Verspätungen|Verkehr
+die Ankunft|arrival|Ankünfte|Verkehr
+die Abfahrt|departure|Abfahrten|Verkehr
+die Fahrkarte|ticket|Fahrkarten|Verkehr
+der Fahrplan|timetable|Fahrpläne|Verkehr
+die Haltestelle|stop|Haltestellen|Verkehr
+der Schaffner|conductor|Schaffner|Verkehr
+der Unfall|accident|Unfälle|Verkehr
+die Panne|breakdown|Pannen|Verkehr
+die Werkstatt|garage, workshop|Werkstätten|Verkehr
+die Versicherungskarte|insurance card|Versicherungskarten|Verkehr
+die Nachrichten|news (pl.)||Medien
+die Sendung|programme|Sendungen|Medien
+die Werbung|advertising|Werbungen|Medien
+der Artikel|article|Artikel|Medien
+die Zeitung|newspaper|Zeitungen|Medien
+der Bericht|report|Berichte|Medien
+das Interview|interview|Interviews|Medien
+die Umfrage|survey|Umfragen|Medien
+der Bildschirm|screen|Bildschirme|Technik
+die Tastatur|keyboard|Tastaturen|Technik
+die Datei|file|Dateien|Technik
+der Ordner|folder|Ordner|Technik
+die Verbindung|connection|Verbindungen|Technik
+das Netzwerk|network|Netzwerke|Technik
+die Software|software||Technik
+das Programm|programme, program|Programme|Technik
+der Akku|battery|Akkus|Technik
+das Ladekabel|charging cable|Ladekabel|Technik
+das Gerät|device|Geräte|Technik
+die Einstellung|setting, attitude|Einstellungen|Technik
+verbessern|to improve||Verb
+verändern|to change||Verb
+entwickeln|to develop||Verb
+entscheiden|to decide||Verb
+erklären|to explain||Verb
+beschreiben|to describe||Verb
+vergleichen|to compare||Verb
+wiederholen|to repeat||Verb
+versuchen|to try||Verb
+schaffen|to manage, create||Verb
+erreichen|to reach, achieve||Verb
+erlauben|to allow||Verb
+verbieten|to forbid||Verb
+empfehlen|to recommend||Verb
+vorschlagen|to suggest||Verb
+bestellen|to order||Verb
+liefern|to deliver||Verb
+reparieren|to repair||Verb
+benutzen|to use||Verb
+gebrauchen|to use||Verb
+verwenden|to use, apply||Verb
+sparen|to save||Verb
+ausgeben|to spend||Verb
+verdienen|to earn||Verb
+leihen|to lend, borrow||Verb
+mieten|to rent||Verb
+umziehen|to move house||Verb
+einladen|to invite||Verb
+besuchen|to visit||Verb
+treffen|to meet||Verb
+verabreden|to arrange to meet||Verb
+absagen|to cancel||Verb
+verschieben|to postpone||Verb
+teilnehmen|to take part||Verb
+gewinnen|to win||Verb
+verlieren|to lose||Verb
+vergessen|to forget||Verb
+erinnern|to remind, remember||Verb
+sich freuen|to be glad||Verb
+sich ärgern|to be annoyed||Verb
+sich interessieren|to be interested||Verb
+sich kümmern|to take care||Verb
+sich bewerben|to apply||Verb
+sich vorstellen|to introduce oneself, imagine||Verb
+sich entschuldigen|to apologise||Verb
+sich beschweren|to complain||Verb
+sich entspannen|to relax||Verb
+sich verletzen|to hurt oneself||Verb
+sich gewöhnen|to get used to||Verb
+sich unterhalten|to chat||Verb
+wahrscheinlich|probably||Adverb
+vielleicht|maybe||Adverb
+bestimmt|certainly||Adverb
+natürlich|of course||Adverb
+eigentlich|actually||Adverb
+plötzlich|suddenly||Adverb
+endlich|finally||Adverb
+sofort|immediately||Adverb
+gerade|just (now)||Adverb
+bereits|already||Adverb
+gleich|right away, same||Adverb
+kaum|hardly||Adverb
+fast|almost||Adverb
+ungefähr|approximately||Adverb
+mindestens|at least||Adverb
+höchstens|at most||Adverb
+insgesamt|in total||Adverb
+zumindest|at least||Adverb
+außerdem|besides||Adverb
+trotzdem|nevertheless||Adverb
+deshalb|therefore||Adverb
+sonst|otherwise||Adverb
+normalerweise|normally||Adverb
+meistens|mostly||Adverb
+selten|rarely||Adverb
+regelmäßig|regularly||Adverb
+ständig|constantly||Adverb
+inzwischen|meanwhile||Adverb
+vorher|before||Adverb
+nachher|afterwards||Adverb
+damals|back then||Adverb
+neulich|recently||Adverb
+demnächst|shortly||Adverb

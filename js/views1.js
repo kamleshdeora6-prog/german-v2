@@ -108,7 +108,7 @@
       <section class="card"><h3>10 examples <button class="btn ghost sm playall">Play all</button></h3>
         <ol class="exs">${l.examples.map((e) => `<li><span class="de">${UI.colorArticles(e.de)}</span> ${UI.say(e.de)}<br><span class="en">${esc(e.en)}</span></li>`).join("")}</ol></section>
       <section class="card"><h3>Vocabulary</h3>
-        <ul class="vocab">${l.vocab.map((w) => `<li><span class="${H.genderClass(w.de)}">${esc(w.de)}</span> ${UI.say(w.de.split(",")[0])}<span class="en">${esc(w.en)}</span></li>`).join("")}</ul>
+        <ul class="vocab">${l.vocab.map((w) => `<li><span class="${H.genderClass(w.de)}">${esc(w.de)}</span> ${UI.say(w.de.split(",")[0])}<span class="en">${esc(w.en)}</span><button class="chip ext" data-url="https://www.linguee.com/german-english/search?query=${encodeURIComponent(w.de.replace(/^(der|die|das)\s+/, "").split(",")[0])}">Linguee ↗</button></li>`).join("")}</ul>
         <button class="btn sm addcards">Add these words to my review deck</button></section>
       <div class="row center"><button class="btn sign" data-go="lesson/${l.n}/read">Next: read the text</button></div>`;
     el.querySelector(".playall").onclick = async () => {
@@ -153,7 +153,7 @@
       html = guess.length ? `Probably a form of <b>${esc(guess[0].de)}</b> = ${esc(guess[0].en)}` : `„${esc(w)}“ isn't in the offline word list.`;
     }
     box.hidden = false;
-    box.innerHTML = `${html} ${UI.say(w)} <button class="link" data-ask="What does ${esc(w)} mean?">Ask Max</button>`;
+    box.innerHTML = `${html} ${UI.say(w)} <button class="link" data-ask="What does ${esc(w)} mean?">Ask Max</button><br>${UI.dictLinks(w)}`;
   };
 
   function practice(el, l, ls) {

@@ -54,6 +54,8 @@
     el.innerHTML = `<h2 class="page-title">B1 exam trainer</h2>
       <section class="grid2">
         <button class="tile hero" data-go="exam/mock"><b>Mock test</b><span>Reading, listening, language, writing (≈ 25 min)</span></button>
+        <button class="tile" data-go="readexam"><b>Reading exam</b><span>${DC.exams.reading.length} sets, A2–C1</span></button>
+        <button class="tile" data-go="write"><b>Writing exam</b><span>${DC.exams.writing.length} tasks with model texts</span></button>
         <button class="tile" data-go="exam/speak"><b>Speaking exam</b><span>Plan · present · react</span></button>
         <button class="tile" data-go="exam/lid"><b>Leben in Deutschland</b><span>${DC.lid.length} citizenship questions</span></button>
         <button class="tile" data-go="lesson/42/exam"><b>Model presentation</b><span>Lesson 42</span></button>
@@ -67,7 +69,7 @@
     const s = Store.get();
     const withQ = DC.curriculum.filter((l) => l.level !== "A1" && l.exam.slice(0, 3).every((q) => q.a));
     const [rl, ll] = H.shuffle(withQ);
-    const gens = Object.values(Engine.GEN).filter((g) => g.level !== "A1").map((g) => g.id);
+    const gens = Object.values(Engine.GEN).filter((g) => g.level !== "A1" && g.level !== "C2").map((g) => g.id);
     const lang = Array.from({ length: 12 }, () => Engine.generate(H.pick(gens))).filter(Boolean);
     const writeTopic = H.pick(["Schreiben Sie einer Freundin: Sie haben eine neue Wohnung. Beschreiben Sie die Wohnung, erzählen Sie vom Umzug und laden Sie sie ein. (80 Wörter)", "Schreiben Sie Ihrem Kursleiter: Sie können nächste Woche nicht zum Kurs kommen. Entschuldigen Sie sich, nennen Sie den Grund und fragen Sie nach den Hausaufgaben. (40 Wörter)", "Diskussion im Forum: „Braucht man in der Stadt ein Auto?“ Schreiben Sie Ihre Meinung mit Gründen. (80 Wörter)", "Schreiben Sie Ihrem Nachbarn: Sie machen am Samstag eine Party. Entschuldigen Sie sich für den Lärm und laden Sie ihn ein. (40 Wörter)"]);
     let score = 0, max = 0;
@@ -235,7 +237,7 @@
   /* ---------------- Mehr ---------------- */
   V.more = (el) => {
     el.innerHTML = `<h2 class="page-title">More</h2><section class="grid2">
-      ${[["vocab", "Words", "Spaced repetition"], ["listen", "Listening", "Dictation"], ["speak", "Speaking", "Shadowing & free talk"], ["read", "Reading", "57 texts"], ["exam", "Exam", "Mock test & LiD"], ["grammar", "Grammar", "Rules & tables"], ["stats", "Progress", "Stats & mistakes"], ["settings", "Settings", "Voice, backup, AI"]]
+      ${[["vocab", "Words", `${DC.vocab.length} words, SRS`], ["listen", "Listening", "Dictation"], ["speak", "Speaking", "Shadowing & free talk"], ["read", "Reading", `${DC.curriculum.length + DC.passages.length} texts`], ["write", "Writing", `${DC.exams.writing.length} exam tasks`], ["readexam", "Reading exam", `${DC.exams.reading.length} sets`], ["notes", "Notes", "Cheat sheets A1–C2"], ["exam", "Exam", "Mock test & LiD"], ["grammar", "Grammar", "Rules & tables"], ["stats", "Progress", "Stats & mistakes"], ["settings", "Settings", "Voice, backup, AI"]]
         .map(([g, t, d]) => `<button class="tile" data-go="${g}"><b>${t}</b><span>${d}</span></button>`).join("")}</section>`;
   };
 })();

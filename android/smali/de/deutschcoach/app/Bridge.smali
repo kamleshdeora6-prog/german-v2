@@ -51,3 +51,15 @@
     invoke-virtual {v0, v1}, Lde/deutschcoach/app/MainActivity;->runOnUiThread(Ljava/lang/Runnable;)V
     return-void
 .end method
+
+.method public openUrl(Ljava/lang/String;)V
+    .annotation runtime Landroid/webkit/JavascriptInterface;
+    .end annotation
+    .locals 3
+    iget-object v0, p0, Lde/deutschcoach/app/Bridge;->a:Lde/deutschcoach/app/MainActivity;
+    new-instance v1, Lde/deutschcoach/app/Task;
+    const/4 v2, 0x2
+    invoke-direct {v1, v0, v2, p1}, Lde/deutschcoach/app/Task;-><init>(Lde/deutschcoach/app/MainActivity;ILjava/lang/String;)V
+    invoke-virtual {v0, v1}, Lde/deutschcoach/app/MainActivity;->runOnUiThread(Ljava/lang/Runnable;)V
+    return-void
+.end method

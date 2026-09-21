@@ -24,7 +24,7 @@
     let body = "";
     if (item.kind === "choice") body = `<div class="choices">${item.options.map((o) => `<button class="choice" data-v="${esc(o)}">${esc(o)}</button>`).join("")}</div>`;
     else if (item.kind === "input") body = `<form class="q-form" autocomplete="off"><input class="q-in" type="text" autocapitalize="off" spellcheck="false" placeholder="Type your answer" aria-label="Answer"><button class="btn" type="submit">Check</button></form>${UI.umlautBar()}`;
-    else if (item.kind === "order") body = `<div class="built" aria-live="polite">${item.fixedFirst ? `<span class="tok fixed">${esc(item.fixedFirst)}</span>` : ""}</div><div class="bank">${(item.fixedFirst ? removeFirst(item.tokens, item.fixedFirst) : item.tokens).map((t, i) => `<button class="tok" data-i="${i}">${esc(t)}</button>`).join("")}</div><div class="row"><button class="btn q-check">Check</button><button class="btn ghost q-reset">Reset</button></div>`;
+    else if (item.kind === "order") body = `<div class="built" aria-live="polite">${item.fixedFirst ? `<span class="tok fixed">${esc(item.fixedFirst)}</span>` : ""}</div><div class="bank">${bankTokens(item).map((t, i) => `<button class="tok" data-i="${i}">${esc(t)}</button>`).join("")}</div><div class="row"><button class="btn q-check">Check</button><button class="btn ghost q-reset">Reset</button></div>`;
     el.innerHTML = `<div class="q ${opts.compact ? "compact" : ""}">${promptHtml}${body}<div class="q-fb" hidden></div></div>`;
     const fb = el.querySelector(".q-fb");
 
@@ -46,6 +46,15 @@
       Store.addXP(ok ? 10 : 2);
       if (full && ok) Speech.speak(full);
       fb.querySelector(".q-next").onclick = () => opts.onNext && opts.onNext(ok);
+      if (ok && item.orders && item.orders.length > 1) {
+        const left = item.orders.filter((o) => Grade.clean(o) !== Grade.clean(given));
+        fb.insertAdjacentHTML("afterbegin", `<p class="multi">German allows <b>${item.orders.length}</b> correct orders here. <button class="link show-orders">Show them all</button></p>`);
+        fb.querySelector(".show-orders").onclick = (e) => { e.target.outerHTML = `<ul class="orders">${item.orders.map((o) => `<li>${esc(o)} ${UI.say(o)}</li>`).join("")}</ul>`; };
+        const again = document.createElement("button");
+        again.className = "btn sm ghost"; again.textContent = "Try another correct order";
+        fb.querySelector(".row").prepend(again);
+        again.onclick = () => UI.item(el, Object.assign({}, item, { answer: left[0], accept: left.slice(1), orders: left, prompt: item.prompt + " <i>(a different order this time)</i>" }), opts);
+      }
       const ov = fb.querySelector(".q-override");
       if (ov) ov.onclick = () => { Store.topic(item.gen, true); Store.addXP(8); el.querySelector(".q").classList.replace("is-bad", "is-ok"); ov.remove(); fb.querySelector(".verdict").textContent = "✓ Counted as correct."; opts.onOverride && opts.onOverride(); };
       fb.querySelector(".q-ask").onclick = () => App.askMax(`${given ? `I answered „${given}“. ` : ""}Why is it „${String(item.answer)}“? ${String(item.prompt).replace(/<[^>]+>/g, "")}`);
@@ -88,8 +97,20 @@
     }
     return { finish };
   };
-  function removeFirst(tokens, first) { const t = tokens.slice(); const i = t.indexOf(first); if (i >= 0) t.splice(i, 1); else { const parts = first.replace(/,$/, "").split(" "); parts.forEach((p) => { const k = t.findIndex((x) => x.replace(/,$/, "") === p); if (k >= 0) t.splice(k, 1); }); } return t; }
+  /* The words the learner has to place: the answer minus the fixed opening (which is shown already).
+     Derived from the answer itself so repeated words (du … du, heute … heute) can never go missing. */
+  function bankTokens(item) {
+    const words = String(item.answer).replace(/[.!?]+$/, "").split(/\s+/).filter(Boolean);
+    const skip = item.fixedFirst ? String(item.fixedFirst).split(/\s+/).filter(Boolean).length : 0;
+    return Engine.R.shuffle(words.slice(skip));
+  }
 
+  /* external dictionaries – opened in the system browser (also from inside the APK) */
+  UI.dictLinks = (word) => {
+    const w = encodeURIComponent(String(word).replace(/^(der|die|das)\s+/i, "").trim());
+    const links = [["Linguee", `https://www.linguee.com/german-english/search?query=${w}`], ["DeepL", `https://www.deepl.com/translator#de/en/${w}`], ["dict.cc", `https://www.dict.cc/?s=${w}`], ["Duden", `https://www.duden.de/suchen/dudenonline/${w}`], ["Wiktionary", `https://de.wiktionary.org/wiki/${w}`]];
+    return `<span class="dictlinks">${links.map(([n, u]) => `<button class="chip ext" data-url="${u}">${n} ↗</button>`).join("")}</span>`;
+  };
   UI.umlautBar = () => `<div class="umlauts" aria-label="Special letters">${["ä", "ö", "ü", "ß", "Ä", "Ö", "Ü"].map((c) => `<button type="button" class="uml" data-c="${c}">${c}</button>`).join("")}</div>`;
   UI.bindUmlauts = (root, input) => {
     root.querySelectorAll(".uml").forEach((b) => (b.onmousedown = (e) => e.preventDefault(), b.onclick = () => {

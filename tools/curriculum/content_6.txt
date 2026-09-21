@@ -1,0 +1,565 @@
+@@ 43|B2|Konjunktiv I: indirekte Rede|Nachrichten und Berichte|office|21,32,35
+#expl
+In Zeitungen, Berichten und Protokollen wird fremde Rede mit dem **Konjunktiv I** wiedergegeben. Er zeigt: __Das sagt jemand anderes – ich behaupte es nicht selbst.__
+Bildung: Verbstamm + **-e, -est, -e, -en, -et, -en**. Am häufigsten ist die 3. Person: er **sei**, er **habe**, er **komme**, er **müsse**, er **werde**.
+Wenn die Konjunktiv-I-Form gleich wie der Indikativ aussieht (meist im Plural: sie kommen), nimmt man **Konjunktiv II**: __sie **kämen**__ oder **würde + Infinitiv**.
+Zeiten: Gegenwart → er **sei/habe/komme**; Vergangenheit → **habe/sei + Partizip II** (er habe gearbeitet, er sei gekommen); Zukunft → **werde + Infinitiv**.
+#use
+Zeitungstexte verstehen, Aussagen neutral wiedergeben, Protokolle und Berichte schreiben.
+#table
+Direkte Rede|Indirekte Rede (Konjunktiv I)|Hinweis
+„Ich bin müde.“|Er sagt, er **sei** müde.|sein: sei, seist, sei, seien
+„Ich habe keine Zeit.“|Sie erklärt, sie **habe** keine Zeit.|haben: habe, habest, habe
+„Wir kommen später.“|Sie sagen, sie **kämen** später.|Plural = Indikativ → Konjunktiv II
+„Ich habe den Bericht gelesen.“|Er behauptet, er **habe** den Bericht **gelesen**.|Vergangenheit
+„Ich werde kündigen.“|Sie kündigte an, sie **werde kündigen**.|Zukunft
+Frage: „Kommst du?“|Er fragte, **ob** sie **komme**.|indirekte Frage mit ob
+#ex
+Der Sprecher sagt, die Lage sei ernst. = The spokesperson says the situation is serious.
+Die Firma teilt mit, sie habe die Preise gesenkt. = The company announces it has lowered prices.
+Er behauptet, er wisse nichts davon. = He claims he knows nothing about it.
+Die Ministerin erklärte, man werde die Regel prüfen. = The minister said the rule would be examined.
+Laut Studie hätten viele Menschen Angst vor Veränderung. = According to the study, many people fear change.
+Der Zeuge sagte aus, er sei um acht Uhr zu Hause gewesen. = The witness stated he had been at home at eight.
+Sie fragte, ob das Projekt fertig sei. = She asked whether the project was finished.
+Der Bericht hält fest, die Zahlen seien gestiegen. = The report states the figures have risen.
+Er meinte, wir sollten noch warten. = He said we should wait.
+Die Zeitung schreibt, der Streik dauere an. = The paper writes the strike is continuing.
+#vocab
+die indirekte Rede = reported speech
+mitteilen = to announce, inform
+behaupten = to claim
+erklären = to state, explain
+aussagen = to testify
+melden = to report
+zitieren = to quote
+die Quelle, -n = source
+laut (+ Dat./Gen.) = according to
+der Sprecher, - = spokesperson
+die Stellungnahme, -n = statement
+angeblich = allegedly
+#read
+Pressemeldung: Die Stadtverwaltung teilt mit, ab Januar werde die Buslinie 100 häufiger fahren. Der Verkehrsdezernent erklärte, man habe die Fahrgastzahlen ausgewertet; sie seien im letzten Jahr deutlich gestiegen. Kritiker behaupten, das Geld fehle an anderer Stelle. Eine Anwohnerin sagte, sie nutze den Bus täglich und freue sich über den neuen Takt. Die Verwaltung betonte, weitere Linien würden geprüft.
+#task
+Direkt → indirekt: „Ich bin krank.“ Er sagt, er ___ krank. || sei
+„Wir haben Zeit.“ Sie sagen, sie ___ Zeit. (Konj. II nötig) || hätten
+„Ich komme morgen.“ Sie schreibt, sie ___ morgen. || komme
+„Ich habe den Text gelesen.“ Er sagt, er ___ den Text gelesen. || habe
+„Ich bin gestern gefahren.“ Er sagt, er ___ gestern gefahren. || sei
+„Ich werde anrufen.“ Sie sagt, sie ___ anrufen. || werde
+Frage: „Hast du Zeit?“ Er fragte, ___ ich Zeit ___. || ob / hätte
+[Mix] Obwohl er sagte, er ___ beschäftigt, ___ er gekommen. (sein Konj. I; kommen Perfekt) || sei / ist
+[Mix] Wegen ___ schlecht___ Wetters, so der Bericht, sei das Fest abgesagt worden. || des schlechten
+[Mix] Setze ins Passiv Perfekt: Man hat die Regel geändert. || Die Regel ist geändert worden.
+#exam
+Wer fährt ab Januar häufiger? || Die Buslinie 100.
+Was sagen die Kritiker? || Das Geld fehle an anderer Stelle.
+Richtig oder falsch: Die Anwohnerin nutzt den Bus selten. || Falsch – täglich.
+Konj. I: „Wir prüfen den Antrag.“ Die Behörde teilt mit, … || … sie prüfe den Antrag.
+Konj. I: „Ich habe nichts gewusst.“ Er sagt, … || … er habe nichts gewusst.
+Warum steht hier Konjunktiv II? „Sie sagen, sie kämen später.“ || Konjunktiv I „kommen“ wäre gleich dem Indikativ.
+Indirekte Frage: „Wann beginnt die Sitzung?“ Er wollte wissen, … || … wann die Sitzung beginne.
+Geben Sie eine Nachricht von heute in indirekter Rede wieder (5 Sätze).
+Berichten Sie, was ein Kollege Ihnen gestern gesagt hat.
+Warum benutzen Journalisten den Konjunktiv I? Erklären Sie.
+#speak
+Lies die Pressemeldung und erzähle sie einem Kollegen weiter: __Die Verwaltung sagt, sie …__
+Was sagen die Leute auf dem Bild vielleicht? Gib es indirekt wieder.
+Berichte über ein Gespräch dieser Woche: __Meine Chefin meinte, …__
+Wie würdest du eine Behauptung neutral wiedergeben, ohne ihr zuzustimmen?
+
+@@ 44|B2|Partizipien als Adjektive (Partizip I und II)|Produkte und Beschreibungen|shop|23,33,39
+#expl
+**Partizip I** (Infinitiv + **d**) ist **aktiv und gleichzeitig**: __die **lachenden** Kinder__ = die Kinder, die lachen.
+**Partizip II** ist **passiv oder abgeschlossen**: __der **reparierte** Wagen__ = der Wagen, der repariert wurde; __der **angekommene** Zug__ = der Zug, der angekommen ist.
+Vor dem Nomen bekommen beide **Adjektivendungen**: das wartende Kind, mit dem reservierten Platz.
+**Erweiterte Attribute**: Ergänzungen stehen **vor** dem Partizip: __der **seit Jahren in Berlin lebende** Kollege__ = der Kollege, der seit Jahren in Berlin lebt.
+#use
+Nominaler Stil in Berichten, Produkttexten, Zeitungen – und das Auflösen solcher Sätze in Relativsätze beim Lesen.
+#table
+Form|Bildung|Bedeutung|Relativsatz
+Partizip I|lachen → lachend|aktiv, gleichzeitig|die lachenden Kinder = die Kinder, die lachen
+Partizip II (transitiv)|reparieren → repariert|passiv, abgeschlossen|das reparierte Auto = das Auto, das repariert wurde
+Partizip II (sein-Verb)|ankommen → angekommen|aktiv, abgeschlossen|der angekommene Zug = der Zug, der angekommen ist
+Partizip I + zu|lösen → zu lösend|passiv, notwendig|die zu lösende Aufgabe = die Aufgabe, die gelöst werden muss
+Erweitert|—|—|der gestern von uns geprüfte Antrag = der Antrag, den wir gestern geprüft haben
+#ex
+Die steigenden Preise belasten viele Haushalte. = The rising prices burden many households.
+Das frisch gebackene Brot duftet. = The freshly baked bread smells good.
+Wir suchen einen gut ausgebildeten Techniker. = We're looking for a well-trained technician.
+Die zu prüfenden Unterlagen liegen auf dem Tisch. = The documents to be checked are on the table.
+Der aus Indien stammende Tee ist sehr beliebt. = The tea originating from India is very popular.
+Eine wachsende Zahl von Kunden bestellt online. = A growing number of customers order online.
+Das im letzten Jahr eröffnete Café schließt wieder. = The café opened last year is closing again.
+Die betroffenen Mitarbeiter wurden informiert. = The affected employees were informed.
+Bitte beachten Sie die beigefügte Rechnung. = Please note the attached invoice.
+Der vorliegende Bericht enthält alle Zahlen. = The present report contains all figures.
+#vocab
+das Partizip, -ien = participle
+das Attribut, -e = attribute
+betreffen (betrifft) = to concern, affect
+beifügen = to attach
+vorliegen = to be available, at hand
+steigend / sinkend = rising / falling
+ausgebildet = trained
+geeignet = suitable
+enthalten (enthält) = to contain
+hinweisen auf = to point out
+der Hinweis, -e = note, hint
+gebraucht = used, second-hand
+#read
+Produktbeschreibung: Das neu entwickelte Modell richtet sich an anspruchsvolle Nutzer. Der eingebaute Akku hält bis zu 20 Stunden; die verwendeten Materialien stammen aus zertifizierter Produktion. Die im Set enthaltene Software erlaubt eine individuelle Einstellung. Für die zu erwartende hohe Nachfrage haben wir die Produktion erhöht. Kunden, die das im letzten Jahr verkaufte Vorgängermodell besitzen, erhalten einen Rabatt.
+#task
+Relativsatz → Partizip: die Kinder, die spielen → die ___ Kinder || spielenden
+Relativsatz → Partizip: der Brief, der geschrieben wurde → der ___ Brief || geschriebene
+Partizip → Relativsatz: die steigenden Kosten → die Kosten, die ___ || steigen
+Partizip → Relativsatz: das reparierte Rad → das Rad, das ___ ___ ___ || repariert worden ist
+Bilde: die Aufgabe, die gelöst werden muss → die ___ ___ Aufgabe || zu lösende
+Endung: mit dem frisch gebacken___ Brot || gebackenen
+Erweitert: der Kollege, der seit 2019 in Bonn arbeitet → der ___ Kollege || seit 2019 in Bonn arbeitende
+[Mix] Die ___ (betreffen, Part. II) Kunden ___ informiert worden. (sein) || betroffenen / sind
+[Mix] Wegen ___ steigend___ Nachfrage wurde die Produktion erhöht. || der steigenden
+[Mix] Die Firma teilt mit, das Modell ___ gut verkauft worden. (Konj. I Passiv Perfekt) || sei
+#exam
+An wen richtet sich das Modell? || An anspruchsvolle Nutzer.
+Woher stammen die Materialien? || Aus zertifizierter Produktion.
+Wer bekommt einen Rabatt? || Kunden mit dem Vorgängermodell.
+Partizip I oder II? „die ___ (warten) Gäste“ || wartenden
+Partizip I oder II? „der ___ (verlieren) Schlüssel“ || verlorene
+Löse auf: die zu bezahlende Rechnung || die Rechnung, die bezahlt werden muss
+Formuliere nominal: Der Zug, der aus Hamburg kommt, hat Verspätung. || Der aus Hamburg kommende Zug hat Verspätung.
+Beschreiben Sie ein Produkt mit mindestens vier Partizipien.
+Lesen Sie eine Nachricht und lösen Sie zwei Partizipialattribute in Relativsätze auf.
+Wo begegnen Ihnen solche Konstruktionen im Alltag? Warum sind sie dort praktisch?
+#speak
+Beschreibe die Szene mit Partizipien: __die einkaufenden Menschen, die geöffneten Regale …__
+Beschreibe ein Gerät, das du besitzt (mindestens 3 Partizipien).
+Erkläre einem A2-Lerner den Unterschied zwischen „der lesende Mann“ und „das gelesene Buch“.
+Welche Produktwerbung überzeugt dich – und warum?
+
+@@ 45|B2|Nominalstil und Verbalstil|Berichte und Formulare|office|29,40,44
+#expl
+Im **Nominalstil** trägt ein **Nomen** die Information, im **Verbalstil** ein **Verb**: __nach der **Prüfung** des Antrags__ ↔ __nachdem der Antrag **geprüft** worden ist__.
+Typische Umformungen: **weil** → **wegen/aufgrund + Gen.** · **obwohl** → **trotz + Gen.** · **wenn/falls** → **bei + Dat.** · **nachdem** → **nach + Dat.** · **bevor** → **vor + Dat.** · **um … zu** → **zu/zwecks + Dat./Gen.** · **indem/dadurch, dass** → **durch + Akk.**
+Nominalisierungen entstehen mit **-ung, -heit, -keit, -nis** oder als **Infinitiv-Nomen** (das Lesen).
+Amtsdeutsch nutzt Nominalstil; **guter Text wechselt bewusst**: nominal für Kürze, verbal für Klarheit.
+#use
+Formulare und Bescheide verstehen, formelle Texte schreiben, Sätze in der Prüfung umformen.
+#table
+Verbalstil (Nebensatz)|Nominalstil (Präposition + Nomen)
+weil das Wetter schlecht war|wegen des schlechten Wetters
+obwohl es regnete|trotz des Regens
+wenn Sie ankommen|bei Ihrer Ankunft
+nachdem wir geprüft haben|nach der Prüfung
+bevor die Sitzung beginnt|vor Beginn der Sitzung
+indem man Energie spart|durch Energiesparen
+um Kosten zu senken|zur Senkung der Kosten
+#ex
+Wegen des Streiks fallen Züge aus. = Due to the strike trains are cancelled.
+Nach Prüfung Ihrer Unterlagen melden wir uns. = After checking your documents we'll contact you.
+Bei Rückfragen wenden Sie sich an Frau Weber. = For queries, please contact Ms Weber.
+Trotz mehrfacher Erinnerung ist die Zahlung offen. = Despite repeated reminders the payment is outstanding.
+Zur Verbesserung der Qualität wurden Tests eingeführt. = To improve quality, tests were introduced.
+Durch den Einsatz neuer Software sparen wir Zeit. = By using new software we save time.
+Vor Beginn der Arbeiten wird informiert. = Before the works begin, information is given.
+Die Erhöhung der Mieten belastet viele Familien. = The rise in rents burdens many families.
+Nach seiner Rückkehr hat er sofort angerufen. = After his return he called immediately.
+Mit der Einführung der Regel sank die Zahl der Unfälle. = With the introduction of the rule the number of accidents fell.
+#vocab
+der Bescheid, -e = official notice
+die Frist, -en = deadline
+der Einsatz, ¨e = use, deployment
+die Rückfrage, -n = query
+die Einführung, -en = introduction
+die Umsetzung, -en = implementation
+die Erhöhung / die Senkung = increase / reduction
+die Prüfung der Unterlagen = checking the documents
+sich wenden an = to turn to, contact
+erfolgen = to take place, occur
+gelten (gilt) = to be valid
+beantragen = to apply for
+#read
+Aus einem Bescheid: „Nach Prüfung Ihres Antrags teilen wir Ihnen mit, dass die Förderung ab dem 1. März gewährt wird. Voraussetzung ist die fristgerechte Einreichung der fehlenden Unterlagen. Bei Nichteinhaltung der Frist erfolgt eine Ablehnung. Zur Vermeidung von Rückfragen bitten wir um vollständige Angaben. Trotz hoher Antragszahlen bearbeiten wir Ihren Vorgang zügig.“
+#task
+Verbal → nominal: weil es geregnet hat → ___ des Regens || wegen
+Verbal → nominal: nachdem wir angekommen sind → nach ___ Ankunft || unserer
+Nominal → verbal: bei Rückfragen → wenn Sie ___ ___ || Fragen haben
+Nominal → verbal: trotz des Staus → obwohl ___ ___ Stau ___ || es einen / gab
+Verbal → nominal: um die Kosten zu senken → ___ ___ der Kosten || zur Senkung
+Nominalisiere: Man führte die Regel ein. → die ___ der Regel || Einführung
+Nominal → verbal: durch den Einsatz von Technik → indem man Technik ___ || einsetzt
+[Mix] ___ Einreichung der Unterlagen wird der Antrag geprüft. (nach + Dat.) || Nach
+[Mix] Der Bescheid teilt mit, die Förderung ___ gewährt. (Konj. I Passiv) || werde
+[Mix] Die ___ (fehlen, Part. I) Unterlagen müssen ___ (nachreichen) werden. || fehlenden / nachgereicht
+#exam
+Ab wann wird die Förderung gewährt? || Ab dem 1. März.
+Was passiert bei Nichteinhaltung der Frist? || Eine Ablehnung.
+Warum bittet die Behörde um vollständige Angaben? || Zur Vermeidung von Rückfragen.
+Nominal: Weil die Preise steigen, sparen viele. || Wegen steigender Preise sparen viele.
+Verbal: Nach Abschluss der Arbeiten öffnet das Bad. || Nachdem die Arbeiten abgeschlossen sind, öffnet das Bad.
+Nominal: Wenn Sie umziehen, melden Sie sich um. || Bei einem Umzug melden Sie sich um.
+Verbal: zur Verbesserung der Luftqualität || um die Luftqualität zu verbessern
+Schreiben Sie drei Sätze aus einem Formular in einfaches Deutsch um.
+Erklären Sie einem Freund einen Behördenbrief mündlich in Verbalstil.
+Wann ist Nominalstil sinnvoll, wann stört er? Begründen Sie.
+#speak
+Erkläre den Bescheid aus dem Lesetext in einfachen Worten.
+Beschreibe deinen Arbeitsablauf zuerst verbal, dann nominal.
+Was ärgert dich an Amtsdeutsch?
+Formuliere drei Schilder/Hinweise im Nominalstil (z. B. „Kein Zutritt während der Arbeiten“).
+
+@@ 46|B2|Passiv-Ersatzformen|Regeln und Anleitungen|kitchen|39,44,45
+#expl
+Statt des Passivs mit **werden** gibt es kürzere Formen mit gleicher Bedeutung:
+**man + Aktiv**: __Man repariert das Gerät nicht mehr.__ · **sich lassen + Infinitiv** (= kann … werden): __Das Gerät **lässt sich** leicht reparieren.__
+**sein + zu + Infinitiv** (= muss/kann … werden): __Die Formulare **sind** bis Freitag **abzugeben**.__
+**Adjektive auf -bar / -lich** (= kann … werden): __Der Text ist **lesbar**. Das ist **machbar**. Die Frist ist **unabänderlich**.__
+**es gibt + zu + Infinitiv**, **bleiben + zu**: __Es bleibt **abzuwarten**.__
+#use
+Anleitungen, Regeln, Hausordnungen, Produkttexte – und Abwechslung im Stil.
+#table
+Passiv|Ersatzform|Bedeutung
+Das kann repariert werden.|Das lässt sich reparieren. / Das ist reparierbar.|Möglichkeit
+Das muss heute erledigt werden.|Das ist heute zu erledigen.|Notwendigkeit
+Die Tür kann nicht geöffnet werden.|Die Tür lässt sich nicht öffnen.|Möglichkeit (negativ)
+Hier darf nicht geraucht werden.|Hier ist das Rauchen nicht gestattet. / Man raucht hier nicht.|Verbot
+Der Antrag kann online gestellt werden.|Der Antrag ist online zu stellen. (Pflicht!)|Achtung: Bedeutung verschiebt sich
+#ex
+Das Problem lässt sich schnell lösen. = The problem can be solved quickly.
+Die Rechnung ist bis zum 15. zu bezahlen. = The invoice is to be paid by the 15th.
+Diese Datei ist leider nicht lesbar. = This file is unfortunately not readable.
+Der Fehler ließ sich nicht wiederholen. = The error could not be reproduced.
+Es bleibt abzuwarten, ob die Regel hilft. = It remains to be seen whether the rule helps.
+Die Maschine lässt sich einfach bedienen. = The machine is easy to operate.
+Alle Angaben sind vollständig auszufüllen. = All details are to be filled in completely.
+Diese Ausgaben sind vermeidbar. = These expenses are avoidable.
+Man sollte den Vertrag genau lesen. = One should read the contract carefully.
+Die Tür ist verschlossen zu halten. = The door is to be kept locked.
+#vocab
+gestattet / untersagt = permitted / prohibited
+die Anleitung, -en = instructions
+bedienen = to operate, serve
+vermeidbar = avoidable
+machbar = feasible
+zumutbar = reasonable (to expect)
+verfügbar = available
+löschen = to delete, extinguish
+einhalten (hält ein) = to comply with
+die Vorschrift, -en = regulation
+abwarten = to wait and see
+das Verbot, -e = ban
+#read
+Hausordnung (Auszug): Der Müll ist getrennt zu entsorgen. Die Haustür ist ab 22 Uhr geschlossen zu halten. Lärm lässt sich nicht immer vermeiden, doch Rücksicht ist selbstverständlich. Reparaturen sind dem Hausmeister zu melden; kleinere Schäden lassen sich oft sofort beheben. Das Abstellen von Fahrrädern im Treppenhaus ist nicht gestattet. Fragen sind an die Verwaltung zu richten.
+#task
+Passiv → sich lassen: Das kann leicht gemacht werden. || Das lässt sich leicht machen.
+Passiv → sein + zu: Die Formulare müssen abgegeben werden. || Die Formulare sind abzugeben.
+Passiv → -bar: Der Plan kann umgesetzt werden. || Der Plan ist umsetzbar.
+Ersatzform → Passiv: Das lässt sich reparieren. || Das kann repariert werden.
+Ersatzform → Passiv: Die Tür ist geschlossen zu halten. || Die Tür muss geschlossen gehalten werden.
+man-Form: Hier darf nicht geparkt werden. || Hier parkt man nicht. / Man darf hier nicht parken.
+Notwendigkeit oder Möglichkeit? „Das ist zu klären.“ || Notwendigkeit (muss geklärt werden)
+[Mix] ___ Vermeidung von Lärm sind Fenster zu schließen. (Nominalstil) || Zur
+[Mix] Die ___ (melden, Part. II) Schäden lassen ___ schnell beheben. || gemeldeten / sich
+[Mix] Der Vermieter sagt, der Müll ___ getrennt zu entsorgen. (Konj. I von sein) || sei
+#exam
+Wie ist der Müll zu entsorgen? || Getrennt.
+Was ist im Treppenhaus verboten? || Das Abstellen von Fahrrädern.
+Wem sind Reparaturen zu melden? || Dem Hausmeister.
+Formuliere mit „sich lassen“: Die Software kann schnell installiert werden. || Die Software lässt sich schnell installieren.
+Formuliere mit „sein + zu“: Die Unterlagen müssen unterschrieben werden. || Die Unterlagen sind zu unterschreiben.
+Adjektiv auf -bar: Das kann nicht bezahlt werden. || Das ist unbezahlbar.
+Was bedeutet: „Es bleibt abzuwarten.“ || Man muss noch sehen, wie es ausgeht.
+Schreiben Sie fünf Regeln für Ihren Arbeitsplatz mit Ersatzformen.
+Erklären Sie mündlich eine Geräteanleitung (mit „lässt sich“).
+Welche Regeln in Deutschland finden Sie sinnvoll, welche zu streng?
+#speak
+Erkläre die Küchenregeln auf dem Bild mit „ist zu …“ und „lässt sich …“.
+Beschreibe, wie sich ein Gerät bei dir zu Hause bedienen lässt.
+Formuliere drei Hausordnungspunkte für deine Wohnung.
+Was lässt sich in deinem Alltag leicht verbessern?
+
+@@ 47|B2|Konnektoren B2: falls, sofern, indem, sodass, anstatt dass|Bedingungen und Folgen|classroom|21,29,36,37
+#expl
+**Bedingung:** **wenn / falls / sofern** (+ Nebensatz), **bei + Dat.** (nominal), **sonst** (negative Folge). __**Falls** es regnet, bleiben wir zu Hause.__
+**Mittel/Weg:** **indem** (= dadurch, dass) antwortet auf **Wie?/Wodurch?**: __Man spart Energie, **indem** man kürzer duscht.__
+**Folge:** **sodass** (Folge im Nebensatz), **so … dass**, **derart, dass**, **infolgedessen**. __Es regnete stark, **sodass** das Spiel ausfiel.__
+**Alternative:** **anstatt dass / anstatt … zu**, **statt**; **Einschränkung:** **außer wenn, es sei denn**.
+#use
+Argumentieren, Vorschläge begründen, Prozesse erklären – wichtig für Schreiben Teil 2 und Präsentationen.
+#table
+Bedeutung|Konnektor|Beispiel
+Bedingung|falls, sofern, wenn|**Sofern** Sie einverstanden sind, beginnen wir.
+Bedingung (nominal)|bei + Dat.|**Bei** Regen fällt das Fest aus.
+negative Bedingung|sonst, andernfalls|Beeil dich, **sonst** verpassen wir den Zug.
+Mittel|indem, dadurch, dass|Er hilft, **indem** er zuhört.
+Folge|sodass, so … dass|Der Text war so schwer, **dass** niemand ihn verstand.
+Alternative|anstatt … zu / anstatt dass|**Anstatt zu** klagen, sollten wir handeln.
+Ausnahme|außer wenn, es sei denn|Wir kommen, **es sei denn**, es schneit.
+#ex
+Falls Sie Fragen haben, rufen Sie mich an. = If you have questions, call me.
+Sofern das Budget reicht, kaufen wir neue Geräte. = Provided the budget is enough, we'll buy new devices.
+Man lernt Vokabeln, indem man sie täglich wiederholt. = You learn vocabulary by repeating it daily.
+Der Zug hatte Verspätung, sodass wir das Meeting verpassten. = The train was late, so we missed the meeting.
+Es war so kalt, dass der See zufror. = It was so cold that the lake froze.
+Anstatt zu diskutieren, sollten wir abstimmen. = Instead of discussing, we should vote.
+Wir fahren morgen, es sei denn, das Wetter wird schlechter. = We'll go tomorrow unless the weather gets worse.
+Bei Nichtgefallen können Sie die Ware zurückgeben. = If you don't like it, you can return the goods.
+Beeilen Sie sich, andernfalls schließt der Schalter. = Hurry up, otherwise the counter closes.
+Er verbesserte seine Noten, indem er regelmäßig übte. = He improved his marks by practising regularly.
+#vocab
+die Bedingung, -en = condition
+die Voraussetzung, -en = prerequisite
+die Folge, -n = consequence
+das Mittel, - = means
+abstimmen = to vote
+zurückgeben = to return
+einverstanden sein = to agree
+andernfalls = otherwise
+vorausgesetzt, dass = provided that
+je nachdem, ob = depending on whether
+zufrieren = to freeze over
+die Ausnahme, -n = exception
+#read
+Aus einer Kursinfo: Der Kurs findet statt, sofern sich mindestens acht Personen anmelden. Sie sichern sich einen Platz, indem Sie die Anmeldung bis Freitag abschicken. Bei Absage erstatten wir die Gebühr vollständig. Die Räume sind klein, sodass wir die Gruppengröße begrenzen. Anstatt schriftliche Tests zu schreiben, arbeiten wir mit Präsentationen. Bitte kommen Sie pünktlich, andernfalls stören Sie die Gruppe.
+#task
+___ es regnet, bleiben wir zu Hause. (Bedingung, formell) || Falls
+Man spart Zeit, ___ man Aufgaben plant. || indem
+Es war so laut, ___ ich nichts verstand. || dass
+Der Bus fiel aus, ___ wir zu Fuß gingen. || sodass
+___ zu warten, rief er sofort an. || Anstatt
+Wir fahren, ___ ___ ___, es schneit. (Ausnahme) || es sei denn
+Nominal: Wenn es regnet, … → ___ Regen … || Bei
+[Mix] ___ Sie einverstanden sind, ___ wir sofort. (sofern; beginnen) || Sofern / beginnen
+[Mix] Der Kurs finde statt, ___ sich acht Personen anmeldeten. (indirekte Rede) || sofern
+[Mix] Die Gebühr ___ vollständig ___ (erstatten, Passiv Präsens). || wird / erstattet
+#exam
+Wann findet der Kurs statt? || Wenn sich mindestens acht Personen anmelden.
+Wie sichert man sich einen Platz? || Indem man die Anmeldung bis Freitag abschickt.
+Warum ist die Gruppe klein? || Weil die Räume klein sind.
+Verbinde mit indem: Er hat abgenommen. Er isst weniger Zucker. || Er hat abgenommen, indem er weniger Zucker isst.
+Verbinde mit sodass: Es schneite stark. Die Schule fiel aus. || Es schneite stark, sodass die Schule ausfiel.
+Verbinde mit anstatt … zu: Er lernt nicht. Er spielt. || Anstatt zu lernen, spielt er.
+Ersetze „wenn“ durch „falls“ und erkläre den Unterschied. || Falls betont, dass die Bedingung unsicher ist.
+Erklären Sie, wie man in Ihrem Beruf ein Problem löst (mit indem, sodass).
+Nennen Sie drei Bedingungen für gutes Lernen (falls/sofern/vorausgesetzt).
+Diskutieren Sie: Sollte man Tests durch Präsentationen ersetzen?
+#speak
+Erkläre eine Kursregel mit falls / sofern / andernfalls.
+Wie lernst du am besten? Antworte mit __indem …__
+Was passiert, wenn du zu spät kommst? (sodass / sonst)
+Was machst du anstatt fernzusehen?
+
+@@ 48|B2|Funktionsverbgefüge und feste Verbindungen|Beruf und Verwaltung|office|31,45,46
+#expl
+**Funktionsverbgefüge** sind feste Nomen-Verb-Verbindungen: __eine Entscheidung **treffen**__ (= entscheiden), __in Betracht **ziehen**__ (= erwägen), __zur Verfügung **stellen**__ (= bereitstellen).
+Das Verb trägt kaum eigene Bedeutung; das **Nomen** trägt den Inhalt. Sie klingen **formell** und sind in Berichten, E-Mails und Verträgen sehr häufig.
+Achte auf die feste **Präposition und den Artikel**: __in Frage stellen__ (ohne Artikel), __zur Verfügung stehen__ (zu der), __in Kraft treten__.
+Lerne sie wie Vokabeln – als ganze Einheit mit Verb, Nomen und Präposition.
+#use
+Formelle E-Mails, Berichte, Präsentationen; Lesetexte in Prüfungen.
+#table
+Funktionsverbgefüge|einfaches Verb|Beispiel
+eine Entscheidung treffen|entscheiden|Wir **treffen** morgen eine **Entscheidung**.
+in Betracht ziehen|erwägen|Wir **ziehen** diese Lösung **in Betracht**.
+zur Verfügung stellen/stehen|bereitstellen|Die Daten **stehen** Ihnen **zur Verfügung**.
+in Kraft treten|gültig werden|Das Gesetz **tritt** im Mai **in Kraft**.
+Rücksicht nehmen auf|rücksichtsvoll sein|Bitte **nehmen** Sie **Rücksicht auf** die Nachbarn.
+zur Sprache bringen|ansprechen|Ich **bringe** das Thema **zur Sprache**.
+in Anspruch nehmen|nutzen|Er **nimmt** Beratung **in Anspruch**.
+Bezug nehmen auf|sich beziehen auf|Ich **nehme Bezug auf** Ihr Schreiben.
+#ex
+Wir müssen heute eine Entscheidung treffen. = We have to make a decision today.
+Ich nehme Bezug auf unser Telefonat vom Montag. = I refer to our phone call on Monday.
+Die Unterlagen stehen ab morgen zur Verfügung. = The documents are available from tomorrow.
+Diese Möglichkeit ziehen wir ernsthaft in Betracht. = We are seriously considering this option.
+Die neue Regelung tritt am 1. Juli in Kraft. = The new rule comes into force on 1 July.
+Bitte nehmen Sie Rücksicht auf die anderen Gäste. = Please be considerate of the other guests.
+Er hat die Beratung in Anspruch genommen. = He made use of the consultation.
+Ich möchte das Problem im Meeting zur Sprache bringen. = I'd like to raise the problem in the meeting.
+Das stellt unsere Planung in Frage. = That calls our planning into question.
+Wir setzen uns mit Ihnen in Verbindung. = We will get in touch with you.
+#vocab
+die Regelung, -en = regulation, arrangement
+das Schreiben, - = letter (formal)
+die Beratung, -en = consultation
+die Frist einhalten = to meet the deadline
+in Kraft treten = to come into force
+Stellung nehmen zu = to comment on
+Kritik üben an = to criticise
+eine Rolle spielen = to play a role
+Abstand nehmen von = to refrain from
+zur Kenntnis nehmen = to take note of
+Maßnahmen ergreifen = to take measures
+Wert legen auf = to attach importance to
+#read
+E-Mail: „Sehr geehrte Frau Brandt, ich nehme Bezug auf Ihr Schreiben vom 3. Mai. Wir haben Ihre Anfrage zur Kenntnis genommen und ziehen Ihren Vorschlag in Betracht. Bevor wir eine Entscheidung treffen, möchten wir weitere Angebote einholen. Sollten Rückfragen bestehen, stehen wir Ihnen gern zur Verfügung. Wir setzen uns spätestens nächste Woche mit Ihnen in Verbindung und legen Wert auf eine schnelle Klärung.“
+#task
+Setze ein: eine Entscheidung ___ || treffen
+Setze ein: in Betracht ___ || ziehen
+Setze ein: zur Verfügung ___ (etwas anbieten) || stellen
+Setze ein: in Kraft ___ || treten
+Setze ein: Rücksicht ___ auf || nehmen
+Einfaches Verb: „Wir treffen eine Entscheidung.“ || Wir entscheiden.
+Formell: „Wir nutzen Ihr Angebot.“ || Wir nehmen Ihr Angebot in Anspruch.
+[Mix] Sobald das Gesetz ___ Kraft ___, ___ die alte Regel nicht mehr. (treten; gelten) || in / tritt / gilt
+[Mix] Wir nehmen Bezug ___ Ihr Schreiben ___ 3. Mai. || auf / vom
+[Mix] Der Kollege sagte, er ___ das Thema zur Sprache bringen. (Konj. I von werden) || werde
+#exam
+Worauf nimmt die E-Mail Bezug? || Auf das Schreiben vom 3. Mai.
+Was macht die Firma vor der Entscheidung? || Sie holt weitere Angebote ein.
+Wann meldet sich die Firma? || Spätestens nächste Woche.
+Formell formulieren: „Wir überlegen das.“ || Wir ziehen das in Betracht.
+Formell formulieren: „Wir kritisieren den Plan.“ || Wir üben Kritik an dem Plan.
+Einfaches Verb: „Er nimmt Abstand von dem Vertrag.“ || Er verzichtet auf den Vertrag.
+Richtig oder falsch: „Ich mache eine Entscheidung.“ || Falsch – man trifft eine Entscheidung.
+Schreiben Sie eine formelle E-Mail (80 Wörter) mit vier Funktionsverbgefügen.
+Sprechen Sie 2 Minuten über eine Entscheidung im Beruf – formell.
+Wann klingt Amtsdeutsch unpassend? Nennen Sie Beispiele.
+#speak
+Formuliere die Bildsituation formell: __Die Kollegen treffen eine Entscheidung …__
+Sag drei Sätze aus deinem Beruf mit Funktionsverbgefügen.
+Übersetze deine letzte E-Mail in formelles Deutsch.
+Wie klingt derselbe Inhalt freundlich-informell?
+
+@@ 49|B2|Subjektive Modalverben: Vermutungen ausdrücken|Vermuten und Schlussfolgern|city|11,25,41
+#expl
+Modalverben haben eine **zweite, subjektive Bedeutung**: Sie zeigen, **wie sicher** der Sprecher ist.
+**muss** = fast sicher (logischer Schluss): __Er **muss** krank sein.__ · **dürfte** = wahrscheinlich, vorsichtig: __Das **dürfte** stimmen.__
+**könnte/kann** = möglich · **mag** = zugestanden möglich · **will** = jemand **behauptet** über sich selbst: __Er **will** nichts gewusst haben.__ · **soll** = andere behaupten: __Sie **soll** sehr streng sein.__
+Vergangenheit: **Modalverb + Partizip II + haben/sein**: __Er **muss** den Zug **verpasst haben**.__ Alternativen ohne Modalverb: **wohl, vermutlich, offenbar, anscheinend, werden + wohl**.
+#use
+Bilder beschreiben, Hypothesen formulieren, höflich distanziert berichten.
+#table
+Form|Sicherheit|Beispiel
+muss|~95 % sicher|Sie **muss** im Stau stehen.
+dürfte|~75 %, vorsichtig|Das **dürfte** teuer werden.
+könnte / kann|möglich|Er **könnte** krank sein.
+mag|eingeräumt möglich|Das **mag** stimmen, aber …
+kann nicht|ausgeschlossen|Das **kann** nicht wahr **sein**.
+will (+ P II)|Eigenbehauptung|Er **will** alles allein gemacht **haben**.
+soll (+ P II)|Fremdbehauptung|Sie **soll** befördert worden **sein**.
+#ex
+Er muss den Bus verpasst haben. = He must have missed the bus.
+Das dürfte etwa zwei Stunden dauern. = That will probably take about two hours.
+Sie könnte im Büro geblieben sein. = She might have stayed at the office.
+Das kann nicht stimmen. = That can't be right.
+Er will den Bericht nicht bekommen haben. = He claims he didn't receive the report.
+Die Firma soll Probleme haben. = The company is said to have problems.
+Das mag ungewöhnlich sein, ist aber erlaubt. = That may be unusual, but it's allowed.
+Sie wird wohl noch im Meeting sein. = She's probably still in the meeting.
+Offenbar hat niemand die E-Mail gelesen. = Apparently nobody read the email.
+Anscheinend ist der Server ausgefallen. = Apparently the server crashed.
+#vocab
+die Vermutung, -en = assumption
+vermuten = to assume
+offenbar / anscheinend = apparently
+vermutlich = presumably
+ausgeschlossen = out of the question
+der Hinweis, -e = clue
+schlussfolgern = to conclude
+zweifeln an = to doubt
+behaupten = to claim
+eindeutig = clear, unambiguous
+der Verdacht = suspicion
+nachweisen = to prove
+#read
+Im Büro: Der Server ist seit dem Morgen nicht erreichbar. „Das muss an dem Update liegen“, meint Mia. Jonas widerspricht: „Das dürfte eher ein Netzwerkproblem sein; das Update soll gut getestet worden sein.“ Ravi ergänzt: „Der Techniker will die Leitung gestern geprüft haben. Trotzdem könnte ein Kabel locker sein.“ Am Nachmittag ist klar: Das Kabel war es nicht – anscheinend hatte jemand die Firewall geändert.
+#task
+Fast sicher: Er ___ im Stau stehen. || muss
+Vorsichtige Vermutung: Das ___ stimmen. || dürfte
+Möglichkeit: Sie ___ krank sein. || könnte
+Ausgeschlossen: Das ___ nicht wahr sein. || kann
+Fremdbehauptung: Die Firma ___ Probleme haben. || soll
+Eigenbehauptung: Er ___ nichts gewusst haben. || will
+Vergangenheit: Sie muss den Termin ___ ___. (vergessen) || vergessen haben
+[Mix] Anscheinend ___ die E-Mail nicht ___ worden. (lesen, Passiv Perfekt) || ist / gelesen
+[Mix] Er sagt, er ___ die Leitung geprüft. (Konj. I von haben) || habe
+[Mix] Das Problem ___ ___ (sich lösen lassen), sobald das Kabel getauscht ist. || lässt sich lösen
+#exam
+Was vermutet Mia? || Dass es am Update liegt.
+Was behauptet der Techniker über sich? || Er habe die Leitung geprüft.
+Was war die Ursache? || Anscheinend eine Änderung an der Firewall.
+Formuliere mit „dürfte“: Wahrscheinlich kostet es 200 Euro. || Das dürfte 200 Euro kosten.
+Formuliere mit „soll“: Andere sagen, er sei umgezogen. || Er soll umgezogen sein.
+Formuliere mit „muss“ (Vergangenheit): Sicher hat sie den Zug verpasst. || Sie muss den Zug verpasst haben.
+Unterschied: „Er will es gemacht haben.“ vs. „Er soll es gemacht haben.“ || will = eigene Behauptung; soll = Behauptung anderer
+Beschreiben Sie ein Foto und stellen Sie fünf Vermutungen an.
+Ein Kollege fehlt ohne Nachricht. Äußern Sie Vermutungen höflich.
+Warum sind vorsichtige Formulierungen im Beruf wichtig?
+#speak
+Stelle fünf Vermutungen zur Straßenszene an (muss, dürfte, könnte, soll, will).
+Dein Paket ist nicht angekommen. Was könnte passiert sein?
+Was dürfte sich in deinem Beruf in zehn Jahren ändern?
+Wie sagst du höflich, dass du an einer Behauptung zweifelst?
+
+@@ 50|B2|Konjunktiv II der Vergangenheit und irreale Vergleiche|Rückblick und Bedauern|party|25,34,49
+#expl
+**Irreale Vergangenheit**: **hätte/wäre + Partizip II**: __**Hätte** ich das **gewusst**, **wäre** ich früher **gekommen**.__ (Ich wusste es nicht.)
+Mit Modalverb steht der **doppelte Infinitiv**: __Ich **hätte** früher kommen **können/müssen/sollen**.__
+Bedingungssätze ohne **wenn** beginnen mit dem Verb: __**Wäre** ich reicher, würde ich …__
+**Irreale Vergleiche**: **als ob / als wenn + Konjunktiv II** (Verb am Ende) oder **als + Konjunktiv II** direkt: __Er tut so, **als ob** er alles **wüsste**. / Er tut so, **als wüsste** er alles.__
+**Irreale Wünsche**: __**Wenn** ich nur mehr Zeit **hätte**! **Hätte** ich doch besser aufgepasst!__
+#use
+Bedauern ausdrücken, Kritik höflich formulieren, über verpasste Chancen sprechen – typisch für B2-Diskussionen.
+#table
+Funktion|Struktur|Beispiel
+Irreale Bedingung (Vergangenheit)|hätte/wäre + P II|Wenn ich Zeit **gehabt hätte**, **wäre** ich **gekommen**.
+mit Modalverb|hätte + Inf. + Modal-Inf.|Ich **hätte** anrufen **sollen**.
+ohne wenn|Verb zuerst|**Hättest** du gefragt, **hätte** ich geholfen.
+irrealer Vergleich|als ob + Konj. II (Ende)|Sie sieht aus, **als ob** sie krank **wäre**.
+irrealer Wunsch|Wenn … nur/doch + Konj. II|**Wenn** ich das **nur gewusst hätte**!
+höfliche Kritik|hätte … können/sollen|Du **hättest** Bescheid sagen **können**.
+#ex
+Wenn ich früher aufgestanden wäre, hätte ich den Zug erreicht. = If I had got up earlier I'd have caught the train.
+Ich hätte dich gern angerufen, aber mein Akku war leer. = I'd have liked to call you, but my battery was dead.
+Du hättest mir das sagen müssen. = You should have told me.
+Hätte ich das gewusst, wäre ich zu Hause geblieben. = Had I known that, I'd have stayed home.
+Er tut so, als ob er alles verstanden hätte. = He acts as if he had understood everything.
+Sie sieht aus, als hätte sie nicht geschlafen. = She looks as if she hadn't slept.
+Wenn wir nur mehr Zeit gehabt hätten! = If only we had had more time!
+An deiner Stelle hätte ich abgesagt. = In your position I'd have cancelled.
+Beinahe wäre der Vertrag gescheitert. = The contract almost failed.
+Das hätte auch schiefgehen können. = That could have gone wrong too.
+#ex_end
+#vocab
+bedauern = to regret
+das Bedauern = regret
+verpassen = to miss
+beinahe / fast = almost
+scheitern = to fail
+schiefgehen = to go wrong
+die Chance, -n = chance
+zugeben (gibt zu) = to admit
+vorwerfen (wirft vor) = to reproach
+der Vorwurf, ¨e = reproach
+rückblickend = in retrospect
+im Nachhinein = in hindsight
+#read
+Nach der Feier: „Schade, dass Leila nicht da war“, sagt Anna. „Wenn wir sie früher eingeladen hätten, wäre sie sicher gekommen.“ Ravi gibt zu: „Ich hätte ihr schreiben sollen; ich habe es im Stress vergessen.“ Jonas lacht: „Du tust immer so, als ob du alles allein organisieren müsstest. Hättest du gefragt, hätte ich geholfen.“ Anna meint: „Im Nachhinein ist man klüger. Beinahe hätten wir auch den Kuchen vergessen!“
+#task
+Wenn ich Zeit ___ ___, wäre ich gekommen. (haben) || gehabt hätte
+Du ___ mir helfen ___. (können, Vorwurf) || hättest / können
+___ ich das gewusst, wäre ich geblieben. (ohne wenn) || Hätte
+Er tut so, als ob er müde ___. (sein) || wäre
+Sie sieht aus, als ___ sie geweint. (haben) || hätte
+Irrealer Wunsch: Ich habe nicht gelernt. → Wenn ich ___ ___ ___! || doch gelernt hätte
+An deiner Stelle ___ ich abgesagt. || hätte
+[Mix] Wenn der Zug pünktlich ___ ___, ___ wir den Termin geschafft. (sein; haben) || gewesen wäre / hätten
+[Mix] Er behauptet, er ___ nichts davon gewusst. (Konj. I) || habe
+[Mix] Anstatt zu warten, ___ er sofort ___ ___. (anrufen, Konj. II Vergangenheit) || hätte / anrufen sollen
+#exam
+Warum war Leila nicht da? || Sie wurde zu spät/nicht eingeladen.
+Was gibt Ravi zu? || Dass er ihr hätte schreiben sollen.
+Was sagt Jonas über Ravi? || Er tue so, als ob er alles allein organisieren müsste.
+Umformen: Ich hatte keine Zeit, deshalb kam ich nicht. || Wenn ich Zeit gehabt hätte, wäre ich gekommen.
+Umformen (Vorwurf): Du hast nicht Bescheid gesagt. || Du hättest Bescheid sagen können/sollen.
+Umformen (als ob): Er ist nicht der Chef, aber er verhält sich so. || Er verhält sich, als ob er der Chef wäre.
+Ohne „wenn“: Wenn ich das gewusst hätte, … || Hätte ich das gewusst, …
+Erzählen Sie von einer verpassten Chance (5 Sätze im Konjunktiv II der Vergangenheit).
+Kritisieren Sie höflich das Verhalten eines Kollegen.
+Was hätten Sie in Ihrem Leben anders gemacht? Warum?
+#speak
+Die Party ist vorbei: Was hättet ihr anders machen können?
+Erzähle von einem Tag, an dem beinahe etwas schiefgegangen wäre.
+Formuliere drei höfliche Vorwürfe mit „hättest … können“.
+Wenn du noch einmal 18 wärst – was würdest du anders machen?

@@ -215,3 +215,23 @@
     invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
     return-void
 .end method
+
+.method openUrl(Ljava/lang/String;)V
+    .locals 3
+    :try_start_0
+    new-instance v0, Landroid/content/Intent;
+    const-string v1, "android.intent.action.VIEW"
+    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+    move-result-object v2
+    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+    const/high16 v1, 0x10000000
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+    invoke-virtual {p0, v0}, Lde/deutschcoach/app/MainActivity;->startActivity(Landroid/content/Intent;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    goto :done
+    :catch_0
+    move-exception v0
+    :done
+    return-void
+.end method

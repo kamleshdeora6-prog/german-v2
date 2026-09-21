@@ -1,0 +1,426 @@
+@@ 51|C1|Erweiterte Attribute und komplexe Relativsätze|Fachtexte lesen|classroom|33,44,45
+#expl
+C1-Texte packen viel Information **vor** das Nomen: __der **in den letzten Jahren stark gestiegene** Energiebedarf__. Beim Lesen löst man das rückwärts auf: Artikel → Partizip → Rest → Relativsatz (__der Energiebedarf, der in den letzten Jahren stark gestiegen ist__).
+**Relativsätze C1:** Präposition + Relativpronomen (__das Thema, **über das** wir sprachen__), **wo(r)-Formen** für Sachen (__das Thema, **worüber** wir sprachen__), **was** nach das/alles/nichts/etwas/Superlativ (__alles, **was** ich weiß__), **wer** = derjenige, der; Genitiv **dessen/deren** (__der Autor, **dessen** Buch …__).
+Relativsätze können auch einen **ganzen Satz** kommentieren: __Er kam zu spät, **was** alle störte.__
+#use
+Fachartikel, Studien, Verträge verstehen; präzise schreiben ohne Satzketten.
+#table
+Struktur|Beispiel|Auflösung
+erweitertes Partizipialattribut|die vom Ausschuss geprüften Anträge|die Anträge, die der Ausschuss geprüft hat
+Partizip I + zu|die zu erwartenden Kosten|die Kosten, die erwartet werden müssen
+Präposition + Relativpronomen|die Frage, auf die niemand antwortete|—
+wo(r)- (Sachen)|das Thema, worüber wir sprachen|über das
+Genitiv|die Firma, deren Gewinne sinken|—
+was (Satzbezug)|Er schwieg, was mich überraschte.|—
+wer … der|Wer zu spät kommt, den bestraft das Leben.|derjenige, der
+#ex
+Die von der Regierung beschlossenen Maßnahmen treten im Juli in Kraft. = The measures decided by the government come into force in July.
+Der seit Jahren diskutierte Vorschlag wurde erneut abgelehnt. = The proposal discussed for years was rejected again.
+Das ist ein Problem, für das es keine einfache Lösung gibt. = That's a problem for which there is no simple solution.
+Alles, was wir wissen, stammt aus einer Quelle. = Everything we know comes from one source.
+Der Autor, dessen Studie wir zitieren, arbeitet in Leipzig. = The author whose study we quote works in Leipzig.
+Wer sich bewirbt, sollte die Frist beachten. = Whoever applies should note the deadline.
+Sie sagte nichts, was mich beunruhigte. = She said nothing, which worried me.
+Die zu klärenden Fragen stehen auf der Agenda. = The questions to be clarified are on the agenda.
+Das Verfahren, mit dessen Hilfe wir messen, ist neu. = The method with the help of which we measure is new.
+Die Kollegen, denen wir danken, haben viel geleistet. = The colleagues whom we thank achieved a lot.
+#vocab
+der Ausschuss, ¨e = committee
+beschließen = to decide, pass
+erneut = again
+die Agenda = agenda
+zitieren = to quote
+beunruhigen = to worry
+das Verfahren, - = procedure, method
+leisten = to achieve, perform
+die Frist beachten = to observe the deadline
+ablehnen = to reject
+klären = to clarify
+umfassen = to comprise
+#read
+Aus einem Fachartikel: Die im vergangenen Jahr veröffentlichte Studie, deren Ergebnisse inzwischen mehrfach bestätigt wurden, untersucht den Zusammenhang zwischen Schlafdauer und Konzentration. Die von den Forschenden befragten Personen, unter denen auch Schichtarbeiter waren, berichteten über deutliche Leistungsunterschiede. Was die Autoren besonders betonen, ist die Rolle regelmäßiger Schlafzeiten. Die noch zu prüfende Frage lautet, wie stark einzelne Faktoren wirken.
+#task
+Auflösen: die vom Team geprüften Daten → die Daten, die ___ ___ ___ ___ || das Team geprüft hat
+Auflösen: die zu zahlenden Gebühren → die Gebühren, die ___ ___ ___ || gezahlt werden müssen
+Nominal: die Studie, die letztes Jahr erschien → die ___ ___ Studie || letztes Jahr erschienene
+Relativpronomen: das Projekt, an ___ wir arbeiten || dem
+wo-Form: das Thema, ___ wir gesprochen haben (über) || worüber
+Genitiv: die Autorin, ___ Buch wir lesen || deren
+Satzbezug: Er kam nicht, ___ uns überraschte. || was
+[Mix] Alles, ___ nicht geklärt ___ (sein), kommt auf die Agenda. || was / ist
+[Mix] Die Ergebnisse ___ mehrfach bestätigt ___ (werden, Passiv Perfekt). || sind / worden
+[Mix] Die Autoren betonen, die Schlafzeiten ___ entscheidend. (Konj. I von sein) || seien
+#exam
+Was untersucht die Studie? || Den Zusammenhang zwischen Schlafdauer und Konzentration.
+Wer wurde befragt? || Personen, darunter Schichtarbeiter.
+Was betonen die Autoren besonders? || Die Rolle regelmäßiger Schlafzeiten.
+Auflösen: die in Berlin lebenden Studierenden || die Studierenden, die in Berlin leben
+Verdichten: der Bericht, den wir gestern erhalten haben || der gestern erhaltene Bericht
+Relativsatz mit Präposition: Das ist die Kollegin. Ich arbeite mit ihr. || Das ist die Kollegin, mit der ich arbeite.
+Was oder das? „Er hat alles verstanden, ___ ich gesagt habe.“ || was
+Fassen Sie einen Fachtext in drei Sätzen mit erweiterten Attributen zusammen.
+Erklären Sie mündlich einen komplexen Satz aus Ihrem Beruf in einfachen Worten.
+Warum bevorzugen Fachtexte Attribute statt Relativsätze?
+#speak
+Erkläre den Lesetext einem B1-Lerner in einfachen Sätzen.
+Beschreibe deinen Arbeitsplatz mit drei erweiterten Attributen.
+Formuliere drei Relativsätze mit Präpositionen über deine Stadt.
+Was macht einen Text schwer lesbar? Begründe.
+
+@@ 52|C1|Modalpartikeln: doch, mal, ja, eben, wohl, halt|Gesprächston treffen|family|12,26,49
+#expl
+**Modalpartikeln** ändern nicht den Inhalt, sondern die **Haltung** des Sprechers. Sie stehen **im Mittelfeld**, nie am Satzanfang, und sind unbetont.
+**doch** = Widerspruch/Erinnerung („du weißt es ja“), **mal** = lockert Aufforderungen, **ja** = Selbstverständlichkeit oder Warnung (betont), **eben/halt** = resignierte Feststellung, **wohl** = Vermutung, **bloß/nur** = Dringlichkeit, **denn** = freundliches Interesse in Fragen, **schon** = beruhigend, **etwa** = Zweifel/Vorwurf in Fragen.
+Ohne Partikeln klingt Deutsch korrekt, aber **hart**; mit ihnen klingt es natürlich.
+#use
+Natürlich sprechen, Nuancen verstehen, Filme und Alltagsgespräche folgen.
+#table
+Partikel|Wirkung|Beispiel
+denn|freundliches Interesse (Frage)|Was machst du **denn** hier?
+mal|lockert Aufforderung|Komm **mal** her.
+doch|Erinnerung, Widerspruch|Das weißt du **doch**!
+ja|Selbstverständlichkeit / Warnung|Das ist **ja** klar. · Mach das **ja** nicht!
+eben / halt|so ist es nun mal|Dann müssen wir **eben** warten.
+wohl|Vermutung|Er ist **wohl** krank.
+bloß / nur|Dringlichkeit, Sorge|Wo ist **bloß** mein Schlüssel?
+schon|beruhigend|Das wird **schon** klappen.
+etwa|Zweifel, Vorwurf|Hast du das **etwa** vergessen?
+#ex
+Wie heißt du denn? = What's your name then? (friendly)
+Setz dich doch! = Do sit down!
+Das ist ja unglaublich! = That's really unbelievable!
+Dann machen wir es eben morgen. = Then we'll just do it tomorrow.
+Er wird wohl im Stau stehen. = He's probably stuck in traffic.
+Sag bloß nichts davon! = Don't you dare say anything about it!
+Das schaffst du schon. = You'll manage all right.
+Hast du etwa nicht angerufen? = Don't tell me you didn't call?
+Komm doch mal vorbei! = Do drop by sometime!
+Das ist halt so in Deutschland. = That's just how it is in Germany.
+#vocab
+die Modalpartikel, -n = modal particle
+die Haltung, -en = attitude
+unbetont / betont = unstressed / stressed
+der Vorwurf, ¨e = reproach
+die Aufforderung, -en = request, prompt
+locker = relaxed
+selbstverständlich = self-evident
+beruhigen = to reassure
+die Nuance, -n = nuance
+wirken = to have an effect, seem
+klingen = to sound
+der Ton, ¨e = tone
+#read
+Am Küchentisch: „Wo sind denn meine Schlüssel?“ – „Die liegen doch auf dem Tisch!“ – „Da habe ich schon geschaut. Wo sind sie bloß?“ – „Dann nimm eben meine.“ – „Du hast sie ja gestern benutzt, oder?“ – „Nein! Jetzt mach mal langsam.“ Später: „Sie waren halt in der Jacke. Das war ja klar.“ – „Siehst du, ich hab's doch gesagt. Das wird schon wieder.“
+#task
+Freundliche Frage: Wie spät ist es ___? || denn
+Lockere Bitte: Gib mir ___ das Salz. || mal
+Erinnerung: Das habe ich dir ___ gesagt! || doch
+Resignation: Dann fahren wir ___ später. || eben
+Vermutung: Sie ist ___ schon zu Hause. || wohl
+Warnung: Vergiss das ___ nicht! || ja
+Beruhigung: Das klappt ___. || schon
+[Mix] Wo ist ___ die Rechnung, die ich gestern ___ habe? (bloß; bekommen) || bloß / bekommen
+[Mix] Er tut so, als ob er ___ nichts gewusst hätte. (Partikel für Selbstverständlichkeit) || ja
+[Mix] Komm ___ ___ vorbei, wenn du Zeit hast. (zwei Partikeln) || doch mal
+#exam
+Wo waren die Schlüssel am Ende? || In der Jacke.
+Welche Partikel zeigt Resignation im Text? || eben / halt
+Welche Partikel zeigt Ungeduld bei der Suche? || bloß
+Fügen Sie eine Partikel ein: „Komm her.“ (freundlich) || Komm mal her.
+Was ändert sich? „Das ist klar.“ → „Das ist ja klar.“ || Es klingt selbstverständlich/erstaunt.
+Welche Partikel passt: „Hast du ___ alles vergessen?“ (Vorwurf) || etwa
+Warum stehen Modalpartikeln nie auf Position 1? || Sie sind unbetont und gehören ins Mittelfeld.
+Führen Sie ein kurzes Alltagsgespräch mit mindestens fünf Partikeln.
+Erklären Sie einem B1-Lerner den Unterschied zwischen „Komm!“ und „Komm doch mal!“.
+Wo benutzen Sie in Ihrer Muttersprache ähnliche Wörter?
+#speak
+Spiele die Küchenszene nach – mit Partikeln.
+Bitte jemanden dreimal um dasselbe: neutral, freundlich, dringend.
+Reagiere resigniert auf schlechte Nachrichten (eben/halt).
+Beruhige einen nervösen Freund vor der Prüfung.
+
+@@ 53|C1|Textkohäsion: Konzessiv, Adversativ, Konsekutiv|Argumentieren auf C1|office|36,37,47
+#expl
+Auf C1 verbindet man Gedanken präzise:
+**Konzessiv** (Einräumung): **obwohl, obgleich, wenngleich, auch wenn, zwar … jedoch, trotz allem, ungeachtet + Gen.**
+**Adversativ** (Gegensatz): **während, wohingegen, hingegen, dagegen, im Gegensatz dazu, vielmehr**
+**Konsekutiv** (Folge): **sodass, folglich, infolgedessen, somit, demnach, mithin**
+**Kausal/final gehoben**: **zumal, da, angesichts + Gen., zwecks + Gen., damit**
+Wortstellung beachten: **Nebensatz-Konnektoren** (obwohl, während, sodass) → Verb ans Ende; **Adverbien** (folglich, hingegen, somit) → Verb direkt danach; **Präpositionen** (ungeachtet, angesichts) → Nomen im Genitiv.
+#use
+Erörterung, Stellungnahme, Präsentationen, wissenschaftliche Texte.
+#table
+Typ|Nebensatz|Adverb|Präposition
+Konzessiv|obwohl, wenngleich|trotzdem, dennoch, gleichwohl|trotz, ungeachtet + Gen.
+Adversativ|während, wohingegen|hingegen, dagegen, vielmehr|im Gegensatz zu + Dat.
+Konsekutiv|sodass, so … dass|folglich, somit, infolgedessen|infolge + Gen.
+Kausal|weil, da, zumal|nämlich, denn (Pos. 0)|wegen, aufgrund, angesichts + Gen.
+Final|damit, um … zu|—|zwecks, zu + Dat.
+#ex
+Wenngleich die Kosten steigen, bleibt die Nachfrage hoch. = Although costs are rising, demand remains high.
+Die Zahlen sinken, wohingegen die Erwartungen unverändert bleiben. = The figures are falling, whereas expectations remain unchanged.
+Die Maschine war defekt; folglich verzögerte sich die Lieferung. = The machine was faulty; consequently the delivery was delayed.
+Angesichts der aktuellen Lage verschieben wir die Investition. = In view of the current situation we are postponing the investment.
+Ungeachtet aller Kritik hält die Firma am Kurs fest. = Regardless of all criticism the company sticks to its course.
+Zwar ist die Methode teuer, jedoch liefert sie genaue Ergebnisse. = The method is expensive, but it delivers precise results.
+Das Angebot ist begrenzt, somit steigen die Preise. = Supply is limited, hence prices rise.
+Im Gegensatz zu früheren Studien fanden wir keinen Effekt. = In contrast to earlier studies we found no effect.
+Wir prüfen den Vorschlag, zumal die Frist bald abläuft. = We're examining the proposal, especially as the deadline is approaching.
+Vielmehr sollte man die Ursachen bekämpfen. = Rather, one should tackle the causes.
+#vocab
+die Erörterung, -en = discursive essay
+die Einräumung, -en = concession
+der Gegensatz, ¨e = contrast
+die Verzögerung, -en = delay
+festhalten an = to stick to
+begrenzt = limited
+ablaufen (läuft ab) = to expire
+bekämpfen = to combat
+die Ursache, -n = cause
+unverändert = unchanged
+die Lage, -n = situation
+die Gewichtung, -en = weighting
+#read
+Aus einer Stellungnahme: Zwar hat die Stadt den Radverkehr ausgebaut, jedoch fehlen sichere Abstellplätze. Während in den Außenbezirken neue Wege entstanden sind, blieb das Zentrum weitgehend unverändert. Angesichts steigender Nutzerzahlen ist das problematisch; folglich fordern Verbände ein Gesamtkonzept. Ungeachtet der Kosten sollte die Stadt handeln, zumal Fördermittel zur Verfügung stehen. Im Gegensatz zu anderen Städten fehlt bislang eine klare Priorisierung.
+#task
+Konzessiv (Nebensatz): ___ die Kosten hoch sind, lohnt sich das Projekt. || Obwohl
+Konzessiv (Adverb): Die Kosten sind hoch. ___ lohnt sich das Projekt. || Trotzdem
+Adversativ: Die Preise steigen, ___ die Löhne stagnieren. || während
+Konsekutiv (Adverb): Die Nachfrage sank; ___ wurden Stellen gestrichen. || folglich
+Präposition + Genitiv: ___ der Kritik hält er am Plan fest. || Ungeachtet
+Kausal gehoben: Wir handeln jetzt, ___ die Frist abläuft. || zumal
+zwar … jedoch: Das Auto ist teuer. Es ist sparsam. || Zwar ist das Auto teuer, jedoch ist es sparsam.
+[Mix] ___ steigender Nutzerzahlen ist ein Konzept ___ (erstellen, sein+zu). || Angesichts / zu erstellen
+[Mix] Die Verbände fordern, die Stadt ___ handeln. (Konj. I von sollen) || solle
+[Mix] Die ___ (ausbauen, Part. II) Wege liegen in den Außenbezirken. || ausgebauten
+#exam
+Was fehlt trotz des Ausbaus? || Sichere Abstellplätze.
+Was fordern die Verbände? || Ein Gesamtkonzept.
+Warum sollte die Stadt handeln? || Weil Fördermittel zur Verfügung stehen.
+Umformen (Adverb → Nebensatz): Die Preise steigen; folglich sparen viele. || Die Preise steigen, sodass viele sparen.
+Umformen (Nebensatz → Präposition): Obwohl es regnete, fuhren wir. || Trotz des Regens fuhren wir.
+Umformen (adversativ): Im Norden regnet es. Im Süden scheint die Sonne. || Im Norden regnet es, wohingegen im Süden die Sonne scheint.
+Wortstellung prüfen: „Folglich wir haben abgesagt.“ || Folglich haben wir abgesagt.
+Schreiben Sie eine Stellungnahme (100 Wörter) mit je einem konzessiven, adversativen und konsekutiven Konnektor.
+Präsentieren Sie zwei Seiten eines Themas mit „zwar … jedoch“.
+Welche Konnektoren wirken zu formell im Gespräch?
+#speak
+Argumentiere für und gegen Homeoffice (zwar … jedoch, hingegen, folglich).
+Vergleiche zwei Städte mit adversativen Konnektoren.
+Räume einen Kritikpunkt ein und widersprich trotzdem.
+Formuliere eine Konsequenz aus dem Lesetext.
+
+@@ 54|C1|Nominalisierung, unpersönliche Konstruktionen und „es“|Wissenschaftlicher Stil|classroom|45,46,51
+#expl
+Wissenschaftliche und formelle Texte vermeiden persönliche Formen: statt __ich zeige__ → __es wird gezeigt / im Folgenden wird gezeigt / die Untersuchung zeigt__.
+**Unpersönliche Mittel:** Passiv, **man**, **es lässt sich zeigen**, **es ist davon auszugehen**, **Nominalisierung** (die Untersuchung, der Nachweis), **Funktionsverbgefüge** (Bezug nehmen auf).
+**„es“ hat mehrere Rollen:** echtes Subjekt (__Es regnet__), Platzhalter auf Position 1 (__**Es** wurden viele Fragen gestellt__ → ohne Vorfeld: __Viele Fragen wurden gestellt__), Korrelat zu Nebensätzen (__**Es** ist wichtig, **dass** …__), fester Bestandteil (__es gibt, es geht um, es handelt sich um__).
+**Gehobene Verben:** erfolgen, vorliegen, sich ergeben, bestehen in, zurückzuführen sein auf.
+#use
+Hausarbeiten, Berichte, Gutachten, C1-Schreibaufgaben.
+#table
+Persönlich|Unpersönlich / wissenschaftlich
+Ich untersuche den Effekt.|Der Effekt **wird untersucht**. / Die vorliegende Arbeit **untersucht** den Effekt.
+Wir haben herausgefunden, dass …|Es **hat sich gezeigt**, dass … / Die Ergebnisse **legen nahe**, dass …
+Man kann das leicht zeigen.|Das **lässt sich** leicht **zeigen**.
+Wir nehmen an, dass …|**Es ist davon auszugehen**, dass …
+Die Kosten sind gestiegen, weil …|Der Kostenanstieg **ist zurückzuführen auf** …
+Ich schreibe über …|**Gegenstand** dieser Arbeit **ist** …
+#ex
+Im Folgenden wird der Zusammenhang dargestellt. = In the following, the connection is presented.
+Es hat sich gezeigt, dass die Methode robust ist. = It has been shown that the method is robust.
+Die Untersuchung beruht auf 200 Interviews. = The study is based on 200 interviews.
+Daraus ergibt sich eine klare Empfehlung. = From this a clear recommendation follows.
+Es ist davon auszugehen, dass die Zahlen weiter steigen. = It can be assumed the figures will keep rising.
+Der Anstieg ist auf mehrere Faktoren zurückzuführen. = The increase is attributable to several factors.
+Es liegen bislang keine belastbaren Daten vor. = To date no robust data are available.
+Gegenstand der Arbeit ist die Wirkung von Lärm. = The subject of the paper is the effect of noise.
+Es wurde eine Befragung durchgeführt. = A survey was conducted.
+Dabei handelt es sich um einen Sonderfall. = This is a special case.
+#vocab
+die vorliegende Arbeit = the present paper
+darstellen = to present, depict
+beruhen auf = to be based on
+sich ergeben aus = to result from
+zurückzuführen sein auf = to be attributable to
+die Befragung, -en = survey
+belastbar = robust, reliable
+der Gegenstand, ¨e = subject, object
+nahelegen = to suggest
+bislang = to date
+der Sonderfall, ¨e = special case
+im Folgenden = in the following
+#read
+Aus einer Hausarbeit: Gegenstand der vorliegenden Arbeit ist der Einfluss von Homeoffice auf die Produktivität. Zunächst wird der Forschungsstand dargestellt; anschließend werden die Ergebnisse einer eigenen Befragung präsentiert. Es hat sich gezeigt, dass die Effekte stark von der Tätigkeit abhängen. Der beobachtete Produktivitätsgewinn ist vor allem auf weniger Unterbrechungen zurückzuführen. Es ist jedoch davon auszugehen, dass soziale Faktoren langfristig eine größere Rolle spielen. Belastbare Langzeitdaten liegen bislang nicht vor.
+#task
+Unpersönlich: Ich zeige im Folgenden … → Im Folgenden ___ ___ … || wird gezeigt
+Unpersönlich: Wir nehmen an, dass … → Es ist ___ ___, dass … || davon auszugehen
+Unpersönlich: Man kann das beweisen. → Das ___ ___ ___. || lässt sich beweisen
+Nominalisieren: Die Kosten steigen. → der ___ der Kosten || Anstieg
+Formell: Die Ursache ist die Hitze. → Das Problem ist ___ die Hitze ___. || auf / zurückzuführen
+es-Funktion bestimmen: „Es regnet.“ || echtes Subjekt
+es-Funktion bestimmen: „Es wurden Fragen gestellt.“ || Platzhalter im Vorfeld
+[Mix] ___ liegen bislang keine Daten ___. (es; vorliegen) || Es / vor
+[Mix] Die Autorin schreibt, die Effekte ___ von der Tätigkeit ab. (Konj. I von abhängen) || hingen
+[Mix] Die ___ (beobachten, Part. II) Unterschiede sind ___ (erklären, sein+zu). || beobachteten / zu erklären
+#exam
+Was ist Gegenstand der Arbeit? || Der Einfluss von Homeoffice auf die Produktivität.
+Worauf ist der Produktivitätsgewinn zurückzuführen? || Auf weniger Unterbrechungen.
+Was fehlt bislang? || Belastbare Langzeitdaten.
+Formeller: „Ich habe 50 Leute gefragt.“ || Es wurde eine Befragung von 50 Personen durchgeführt.
+Formeller: „Das kommt vom Wetter.“ || Das ist auf das Wetter zurückzuführen.
+Persönlicher: „Daraus ergibt sich eine Empfehlung.“ || Daraus leiten wir eine Empfehlung ab.
+Wann darf „es“ wegfallen? || Wenn ein anderes Element auf Position 1 steht (Es wurden Fragen gestellt → Fragen wurden gestellt).
+Schreiben Sie eine Einleitung (60 Wörter) für eine Arbeit zu Ihrem Fachgebiet.
+Fassen Sie eine Studie unpersönlich zusammen.
+Wann ist der persönliche Stil besser als der unpersönliche?
+#speak
+Stelle den Lesetext in zwei Minuten wissenschaftlich vor.
+Formuliere dieselbe Aussage dreimal: persönlich, neutral, formell.
+Erkläre ein Ergebnis aus deinem Beruf mit „Es hat sich gezeigt, dass …“.
+Welche Rolle spielt Objektivität in deinem Fach?
+
+@@ 55|C1|Präzision: Wortfelder, Kollokationen und Synonyme|Wortschatzarbeit|city|22,44,53
+#expl
+Auf C1 zählt nicht Menge, sondern **Präzision**: Welches Wort passt zu welchem Kontext?
+**Kollokationen** sind feste Partner: __eine Entscheidung **treffen** (nicht machen), Maßnahmen **ergreifen**, Kritik **üben**, einen Termin **wahrnehmen**, ein Problem **beheben**, Interesse **wecken**__.
+**Synonyme unterscheiden sich im Register und in der Nuance**: __groß – erheblich – gewaltig__; __schnell – zügig – rasant__; __sagen – äußern – behaupten – betonen__.
+**Wortfamilien** helfen: prüfen → die Prüfung, der Prüfer, prüfbar, überprüfen, nachprüfen. Bei Verben mit Vorsilbe verschiebt sich die Bedeutung: __suchen – besuchen – versuchen – untersuchen__.
+#use
+Genauer schreiben und sprechen, typische Wortwahlfehler vermeiden.
+#table
+Falsch üblich|Richtig (Kollokation)|Bereich
+eine Entscheidung machen|eine Entscheidung **treffen**|Beruf
+Kritik machen|Kritik **üben**|Diskussion
+einen Termin machen (ok) / haben|einen Termin **wahrnehmen** (formell)|Verwaltung
+ein Problem machen|ein Problem **lösen / beheben**|Technik
+Maßnahmen machen|Maßnahmen **ergreifen**|Politik
+Aufmerksamkeit geben|Aufmerksamkeit **schenken**|Allgemein
+eine Frage machen|eine Frage **stellen**|Allgemein
+Interesse machen|Interesse **wecken**|Marketing
+#ex
+Wir müssen geeignete Maßnahmen ergreifen. = We have to take suitable measures.
+Der Bericht übt deutliche Kritik an dem Verfahren. = The report clearly criticises the procedure.
+Bitte schenken Sie dem Hinweis Beachtung. = Please pay attention to the note.
+Der Fehler konnte schnell behoben werden. = The error could be fixed quickly.
+Die Kampagne weckte großes Interesse. = The campaign aroused great interest.
+Die Kosten fallen erheblich ins Gewicht. = The costs carry considerable weight.
+Er äußerte sich zurückhaltend zu den Plänen. = He commented cautiously on the plans.
+Die Zahlen weichen deutlich voneinander ab. = The figures differ significantly.
+Das Angebot richtet sich an Fachkräfte. = The offer is aimed at skilled workers.
+Wir legen großen Wert auf Pünktlichkeit. = We attach great importance to punctuality.
+#vocab
+die Kollokation, -en = collocation
+das Register, - = register (style level)
+die Nuance, -n = nuance
+abweichen von = to deviate from
+sich richten an = to be aimed at
+Beachtung schenken = to pay attention
+beheben = to fix, remedy
+ergreifen = to take (measures)
+zurückhaltend = reserved, cautious
+gewaltig = enormous
+zügig = swift
+erheblich = considerable
+#read
+Aus einem Projektbericht: Das Team hat geeignete Maßnahmen ergriffen, um die Verzögerungen zu beheben. Zunächst wurde eine Bestandsaufnahme durchgeführt; anschließend traf die Leitung eine Entscheidung über die Prioritäten. Kritik übten die Kunden vor allem an der Kommunikation. Daher legt das Team künftig großen Wert auf regelmäßige Rückmeldungen. Die Ergebnisse weichen zwar noch vom Plan ab, doch die Tendenz ist eindeutig positiv.
+#task
+Kollokation: eine Entscheidung ___ || treffen
+Kollokation: Maßnahmen ___ || ergreifen
+Kollokation: Kritik ___ an || üben
+Kollokation: ein Problem ___ || beheben / lösen
+Kollokation: Wert ___ auf || legen
+Kollokation: eine Frage ___ || stellen
+Präziser als „groß“ (formell): Die Kosten sind ___. || erheblich
+[Mix] Die Leitung ___ eine Entscheidung ___ (treffen, Perfekt). || hat / getroffen
+[Mix] Die Ergebnisse, ___ vom Plan abweichen, werden geprüft. (Relativpronomen) || die
+[Mix] ___ der Verzögerungen wurden Maßnahmen ergriffen. (Genitivpräposition) || Angesichts / Wegen
+#exam
+Warum übten die Kunden Kritik? || Wegen der Kommunikation.
+Was macht das Team künftig? || Es legt Wert auf regelmäßige Rückmeldungen.
+Wie ist die Tendenz? || Eindeutig positiv.
+Verbessern: „Wir haben eine Entscheidung gemacht.“ || Wir haben eine Entscheidung getroffen.
+Verbessern: „Er hat Kritik gemacht.“ || Er hat Kritik geübt.
+Synonym mit höherem Register für „sagen“ (vorsichtig): || sich äußern
+Unterschied: untersuchen – versuchen – besuchen || to investigate – to try – to visit
+Schreiben Sie fünf Sätze aus Ihrem Beruf mit typischen Kollokationen.
+Ersetzen Sie in einem eigenen Text fünf vage Wörter durch präzise.
+Welche Wortwahlfehler machen Sie am häufigsten?
+#speak
+Beschreibe die Stadtszene mit möglichst präzisen Verben.
+Erzähle von einem Projekt mit fünf Kollokationen.
+Formuliere dieselbe Kritik dreimal: direkt, neutral, diplomatisch.
+Welche deutschen Wörter verwechselst du oft? Erkläre den Unterschied.
+
+@@ 56|C1|Textsorten: Erörterung, Zusammenfassung, Stellungnahme|Schreiben auf C1|office|42,53,54
+#expl
+**Zusammenfassung:** Einleitungssatz mit Textsorte, Autor, Titel, Thema; dann die Hauptaussagen **in eigenen Worten**, im **Präsens**, ohne Beispiele und ohne eigene Meinung; **indirekte Rede** für Aussagen des Autors.
+**Erörterung:** Einleitung (Thema, Relevanz) → Argumente pro mit Beleg und Beispiel → Argumente contra → Abwägung → eigener Standpunkt.
+**Stellungnahme:** Bezug auf den Anlass → eigene Position → zwei bis drei begründete Argumente → Vorschlag/Forderung → höflicher Schluss.
+Struktur sichtbar machen mit **Gliederungssignalen**: __zunächst, darüber hinaus, andererseits, abschließend, zusammenfassend__.
+#use
+C1-Schreibprüfung, Hausarbeiten, Leserbriefe, berufliche Stellungnahmen.
+#table
+Funktion|Redemittel
+Einleitung (Zusammenfassung)|In dem Artikel „…“ von … (erschienen am …) geht es um …
+Hauptaussage|Der Autor vertritt die Ansicht, dass … · Laut Text …
+Pro|Dafür spricht, dass … · Ein wichtiges Argument ist …
+Contra|Dagegen lässt sich einwenden, dass … · Kritiker führen an, dass …
+Abwägen|Einerseits … andererseits … · Zwar …, jedoch …
+Eigene Position|Meines Erachtens … · Ich vertrete den Standpunkt, dass …
+Beispiel/Beleg|Dies zeigt sich daran, dass … · Ein Beispiel hierfür ist …
+Schluss|Zusammenfassend lässt sich sagen, dass … · Abschließend fordere ich …
+#ex
+In dem Artikel geht es um die Folgen der Digitalisierung für kleine Betriebe. = The article deals with the consequences of digitalisation for small businesses.
+Der Autor vertritt die Ansicht, dass Weiterbildung entscheidend sei. = The author takes the view that further training is decisive.
+Dafür spricht, dass Betriebe mit Schulungen seltener Fachkräfte verlieren. = In favour of this is that companies with training lose skilled workers less often.
+Dagegen lässt sich einwenden, dass die Kosten hoch sind. = Against this one can object that the costs are high.
+Einerseits spart Technik Zeit, andererseits erfordert sie Einarbeitung. = On the one hand technology saves time, on the other it requires training.
+Meines Erachtens überwiegen die Vorteile deutlich. = In my view the advantages clearly predominate.
+Dies zeigt sich daran, dass viele Betriebe bereits investieren. = This is shown by the fact that many companies are already investing.
+Zusammenfassend lässt sich sagen, dass beide Seiten Argumente haben. = In summary, both sides have arguments.
+Abschließend fordere ich eine bessere Förderung. = Finally, I call for better funding.
+Aus den genannten Gründen halte ich den Vorschlag für sinnvoll. = For the reasons given I consider the proposal sensible.
+#vocab
+die Erörterung, -en = discursive essay
+die Zusammenfassung, -en = summary
+die Stellungnahme, -n = position statement
+der Beleg, -e = evidence
+anführen = to cite, put forward
+einwenden = to object
+abwägen = to weigh up
+überwiegen = to predominate
+meines Erachtens = in my opinion
+der Anlass, ¨e = occasion, reason
+die Forderung, -en = demand
+gliedern = to structure
+#read
+Leserbrief: „Mit Interesse habe ich Ihren Artikel vom 12. Mai gelesen. Der Autor vertritt die Ansicht, dass kostenloser Nahverkehr die Städte entlasten würde. Dafür spricht, dass Familien entlastet und Emissionen gesenkt würden. Dagegen lässt sich jedoch einwenden, dass ohne Ausbau der Strecken volle Busse niemanden überzeugen. Meines Erachtens sollte zunächst in Kapazität investiert werden; erst danach ist eine Preisreform sinnvoll. Abschließend fordere ich eine transparente Kostenrechnung.“
+#task
+Redemittel Einleitung: In dem Artikel „…“ ___ ___ ___ … || geht es um
+Redemittel Pro: ___ ___, dass die Kosten sinken. || Dafür spricht
+Redemittel Contra: ___ ___ ___ ___, dass die Qualität leidet. || Dagegen lässt sich einwenden
+Redemittel Meinung: ___ ___ überwiegen die Vorteile. || Meines Erachtens
+Redemittel Schluss: ___ lässt sich sagen, dass … || Zusammenfassend
+Indirekte Rede: „Die Preise sinken“, schreibt der Autor. → Der Autor schreibt, die Preise ___. || sänken / würden sinken
+Reihenfolge Erörterung: Meinung / Contra / Einleitung / Pro / Schluss || Einleitung, Pro, Contra, Meinung, Schluss
+[Mix] ___ des hohen Aufwands ist der Plan ___ (umsetzen, sein+zu). || Trotz / umzusetzen
+[Mix] Der Autor betont, kostenloser Nahverkehr ___ die Städte entlasten. (Konj. I von werden) || werde
+[Mix] Die ___ (senken, Part. II) Emissionen sprechen für den Vorschlag. || gesenkten
+#exam
+Worum geht es im Leserbrief? || Um kostenlosen Nahverkehr.
+Welches Gegenargument nennt der Schreiber? || Ohne Streckenausbau überzeugen volle Busse niemanden.
+Was fordert er abschließend? || Eine transparente Kostenrechnung.
+Nennen Sie drei Gliederungssignale für den Hauptteil. || z. B. zunächst, darüber hinaus, andererseits
+Formulieren Sie einen Einleitungssatz für eine Zusammenfassung. || z. B. In dem Artikel „…“ von … geht es um …
+Was gehört NICHT in eine Zusammenfassung? || Eigene Meinung, Beispiele, wörtliche Zitate
+Schreiben Sie eine Stellungnahme (120 Wörter) zu: „Sollten Firmen vier Tage pro Woche arbeiten?“
+Fassen Sie den Lesetext in drei Sätzen zusammen (indirekte Rede).
+Erörtern Sie mündlich: Studiengebühren – ja oder nein?
+Welche Textsorte fällt Ihnen schwer? Warum?
+#speak
+Halte eine 3-Minuten-Erörterung zu „Homeoffice für alle?“.
+Fasse eine Nachricht von heute in vier Sätzen zusammen.
+Formuliere eine höfliche, aber klare Forderung an eine Behörde.
+Wie strukturierst du deine Argumente, wenn du wenig Zeit hast?

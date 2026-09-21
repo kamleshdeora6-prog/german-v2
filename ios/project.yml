@@ -1,0 +1,34 @@
+name: DeutschCoach
+options:
+  bundleIdPrefix: de.deutschcoach
+  deploymentTarget:
+    iOS: "14.0"
+  createIntermediateGroups: true
+targets:
+  DeutschCoach:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+      - path: www
+        type: folder          # copied as a folder reference -> Bundle "www/index.html"
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: Deutsch Coach
+        CFBundleShortVersionString: "4.0.0"
+        CFBundleVersion: "4"
+        UILaunchStoryboardName: ""
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        NSMicrophoneUsageDescription: "Deutsch Coach listens to your German so it can check your pronunciation."
+        NSSpeechRecognitionUsageDescription: "Your speech is turned into text so the app can compare it with the target sentence."
+        UIRequiresFullScreen: true
+        UIStatusBarStyle: UIStatusBarStyleDefault
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: de.deutschcoach.app
+        MARKETING_VERSION: "4.0.0"
+        CURRENT_PROJECT_VERSION: "4"
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"        # 1 = iPhone only; use "1,2" to add iPad
+        CODE_SIGN_STYLE: Automatic

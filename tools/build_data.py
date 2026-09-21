@@ -97,6 +97,25 @@ for v in vocab:
     v2.append({"de": v["word"], "en": v["translation"], "type": v.get("type", ""), "art": v.get("article") or "",
                "pl": v.get("plural") or "", "level": v.get("level", "A1"), "topic": v.get("topic", ""),
                "exDe": v.get("example_de", ""), "exEn": v.get("example_en", "")})
+# extended corpus (vocab_a/b/c.txt): de|en|plural|topic, grouped by #LEVEL
+for f in sorted(glob.glob("vocab_*.txt")):
+    level = "A1"
+    for line in open(f, encoding="utf-8"):
+        line = line.strip()
+        if not line: continue
+        if line.startswith("#"): level = line[1:].strip(); continue
+        parts = (line.split("|") + ["", "", ""])[:4]
+        de, en, pl, topic = [x.strip() for x in parts]
+        if not de or not en: continue
+        key = de.lower()
+        if key in seen: continue
+        seen.add(key)
+        m = re.match(r"^(der|die|das)\s+(.+)$", de)
+        typ = "noun" if m else ("verb" if re.search(r"(en|ern|eln)$", de.split(" ")[-1]) and topic in ("Verb",) else ("phrase" if " " in de else "word"))
+        v2.append({"de": de, "en": en, "type": typ, "art": m.group(1) if m else "",
+                   "pl": ("die " + pl) if (m and pl) else pl, "level": level, "topic": topic or "Allgemein",
+                   "exDe": "", "exEn": ""})
+
 # add curriculum vocab
 for l in cur:
     for w in l["vocab"]:

@@ -334,7 +334,8 @@
       let subjLen = PRONOUNS.has(cl[1]) ? 1 : /^(der|die|das|mein|meine|dein|sein|ihr|unser|ein|eine|anna|max|ravi|leila|jonas)$/.test(cl[1]) ? (/^(anna|max|ravi|leila|jonas)$/.test(cl[1]) ? 1 : 2) : 1;
       const vi = 1 + subjLen;
       const lastIsVerb = isFinite(cl[cl.length - 1]) || /(t|en|e)$/.test(cl[cl.length - 1]) && isFinite(cl[cl.length - 1]);
-      if (isFinite(cl[vi] || "") && vi < cl.length - 1 && !(lastIsVerb && MODAL_F.has(cl[cl.length - 1]))) {
+      const lastFinite = isFinite(cl[cl.length - 1] || "") || /^(wird|werden|wurde|wurden|worden|ist|sind|war|waren|hat|haben|hatte|hatten|sei|seien|habe|wäre|hätte)$/.test(cl[cl.length - 1] || "");
+      if (isFinite(cl[vi] || "") && vi < cl.length - 1 && !lastFinite && !(lastIsVerb && MODAL_F.has(cl[cl.length - 1]))) {
         const v = clause[vi].replace(/,$/, "");
         const rest = clause.filter((_, k) => k !== vi).map((w) => w.replace(/,$/, ""));
         const fixed = rest.concat(v);
@@ -370,7 +371,7 @@
     // modal + non-infinitive / zu after modal
     L = low();
     const mi = L.findIndex((w) => MODAL_F.has(w));
-    let mEnd = L.length; if (mi >= 0) for (let k = mi; k < L.length; k++) if (/,$/.test(words[k])) { mEnd = k + 1; break; }
+    let mEnd = L.length; if (mi >= 0) for (let k = mi; k < L.length; k++) if (/[,.!?:;]$/.test(words[k]) || /[„“"]/.test(words[k])) { mEnd = k + 1; break; }
     if (mi >= 0 && mi < L.length - 1 && !L.some((w) => SUB.has(w)) && mEnd === L.length) {
       const lastW = L[L.length - 1];
       if (L[L.length - 2] === "zu" && !/^(zu)$/.test(lastW)) { add(`<s>zu ${lastW}</s> → <b>${lastW}</b>`, "No <b>zu</b> after a modal verb.", 11); words.splice(L.length - 2, 1); }
@@ -392,7 +393,8 @@
       // infinitive not at end: "Ich kann sprechen Deutsch"
       L = low();
       const infIdx = L.findIndex((w, k) => k > mi + 1 && k < L.length - 1 && finIndex().has(w) && finIndex().get(w).some((x) => x.inf === w));
-      if (infIdx > 0 && !PRONOUNS.has(L[infIdx + 1]) && !L.includes("und")) {
+      const perfInf = /^(haben|sein|worden|werden)$/.test((L[L.length - 1] || "").replace(/[.?!]$/, ""));
+      if (infIdx > 0 && !perfInf && !PRONOUNS.has(L[infIdx + 1]) && !L.includes("und")) {
         const w = words.splice(infIdx, 1)[0]; words.push(w);
         add(`<s>${w} ${words.slice(infIdx, -1).join(" ")}</s> → <b>${words.slice(infIdx, -1).join(" ")} ${w}</b>`, "With a modal verb the infinitive goes to the very <b>end</b> (verb bracket).", 11);
       }
@@ -408,7 +410,11 @@
         if (/,$/.test(words[Math.min(a, b)])) continue;
         if (b > 0 && /^[A-ZÄÖÜ]/.test(words[b])) continue;
         if (a < b && !starts.has(a)) continue;
-        if (b < a && !(starts.has(b) || starts.has(b - 1) || starts.has(b - 2))) continue;
+        if (b < a) {
+          const before = L.slice(0, b).filter((w) => !/^(und|aber|oder|denn|sondern)$/.test(w));
+          const onlyFront = before.length === 0 || (before.length <= 3 && before.every((w) => TIME1.includes(w) || TIME2.includes(before.join(" ")) || /^(um|am|im|jeden|letzte|nächste)$/.test(w) || /^\d/.test(w) || w === "uhr"));
+          if (!onlyFront) continue;
+        }
         if (b > a && a > 0 && (DAT_P.has(L[a - 1]) || AKK_P.has(L[a - 1]))) continue;
         const cands = finIndex().get(vb).filter((x) => x.inf !== "(past)");
         if (!cands.length) continue;
@@ -458,7 +464,9 @@
       let j = i + 1; if (PRONOUNS.has(L[j])) j++;
       if (TIME1.includes(L[j])) j++;
       const a = L[j]; if (!/^(der|die|das|den|dem|ein|eine|einen|einem)$/.test(a || "")) continue;
-      const ng = nounGender((words[j + 1] || "").replace(/[,;:.]$/, "")); if (!ng || ng.pl) continue;
+      const nw = (words[j + 1] || "").replace(/[,;:.!?]$/, "");
+      if (nw.length < 2 || !/^[A-ZÄÖÜ]/.test(nw)) continue;      // German nouns are capitalised
+      const ng = nounGender(nw); if (!ng || ng.pl) continue;
       if (a === "der" && j === 1) continue;
       const kind = /^ein/.test(a) ? "indef" : "def";
       const right = E.art(kind, v.obj, ng.g);
@@ -478,7 +486,7 @@
     words = words.map((w, i) => {
       const k = w.replace(/[,;:]$/, "");
       const prev = (L[i - 1] || ""), next = words[i + 1] || "";
-      if (i > 0 && k === k.toLowerCase() && NOUNSET.has(k) && !isFinite(k) && !/^(essen|leben|arbeiten|junge|alte|kranke)$/.test(k) && !PRONOUNS.has(prev) && !/^[A-ZÄÖÜ]/.test(next) && !/^(zu|sich|mich|dich|uns|euch)$/.test(prev)) {
+      if (i > 0 && k === k.toLowerCase() && NOUNSET.has(k) && !isFinite(k) && !/^(essen|leben|arbeiten|junge|alte|kranke|recht|unrecht|leid|weh|schuld|angst)$/.test(k) && !PRONOUNS.has(prev) && !/^[A-ZÄÖÜ]/.test(next) && !/^(zu|sich|mich|dich|uns|euch)$/.test(prev)) {
         add(`<s>${k}</s> → <b>${R_cap(k)}</b>`, "All German nouns start with a capital letter.", 5);
         return R_cap(k) + w.slice(k.length);
       }

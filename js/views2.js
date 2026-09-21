@@ -43,7 +43,7 @@
       return UI.session(el, () => Engine.generate(id), { title: Engine.GEN[id].title, total: 10 });
     }
     const s = Store.get();
-    const groups = ["A1", "A2", "B1"].map((lv) => ({ lv, gens: Object.values(Engine.GEN).filter((g) => g.level === lv) }));
+    const groups = ["A1", "A2", "B1", "B2", "C1", "C2"].map((lv) => ({ lv, gens: Object.values(Engine.GEN).filter((g) => g.level === lv) }));
     el.innerHTML = `<h2 class="page-title">Practice</h2>
       <section class="grid2">
         <button class="tile hero" data-go="practice/smart"><b>Smart mix</b><span>Focuses on your weak topics</span></button>
@@ -65,7 +65,7 @@
     if (mode === "articles") return articles(el);
     if (mode === "type") return typing(el);
     const st = SRS.stats(all.map((w) => w.id));
-    const levels = ["all", "A1", "A2", "B1"];
+    const levels = ["all", "A1", "A2", "B1", "B2", "C1", "C2"];
     el.innerHTML = `<h2 class="page-title">Words</h2>
       <section class="stats3"><div><b>${st.due}</b><span>due</span></div><div><b>${st.learned}</b><span>learning</span></div><div><b>${st.mature}</b><span>known well</span></div></section>
       <section class="grid2">

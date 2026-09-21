@@ -1,0 +1,284 @@
+@@ 57|C2|Register und Idiomatik: von gehoben bis umgangssprachlich|Sprachgefühl|party|52,55,56
+#expl
+Auf C2 wählt man das **Register** bewusst: gehoben/schriftsprachlich (__erörtern, seitens, obliegen__), neutral (__besprechen, von, gehören zu__), umgangssprachlich (__durchkauen, von wegen, gehört ihm halt__).
+Dieselbe Aussage klingt je nach Register völlig anders: __Ich bitte um Mitteilung.__ – __Sag mir bitte Bescheid.__ – __Sag mal an!__
+**Idiome** sind register- und kontextgebunden: __den Nagel auf den Kopf treffen__ (neutral), __ins Gras beißen__ (salopp), __das Zeitliche segnen__ (gehoben/ironisch).
+Warnsignale für Fehlgriffe: Idiome in Sachtexten, Amtsdeutsch in privaten Mails, Jugendsprache im Bewerbungsschreiben.
+#use
+Sicher zwischen Situationen wechseln, Nuancen erkennen, Texte stilistisch überarbeiten.
+#table
+Umgangssprachlich|Neutral|Gehoben / formell
+Das geht nicht klar.|Das ist nicht in Ordnung.|Dies ist nicht hinnehmbar.
+Ich meld mich.|Ich melde mich.|Ich werde mich mit Ihnen in Verbindung setzen.
+Das kostet 'ne Stange Geld.|Das ist teuer.|Damit sind erhebliche Kosten verbunden.
+Keine Ahnung.|Das weiß ich nicht.|Hierzu liegen mir keine Informationen vor.
+Mach hin!|Beeil dich bitte.|Ich bitte um zügige Bearbeitung.
+Der ist voll gut.|Der ist sehr gut.|Dies ist von hoher Qualität.
+#ex
+Damit sind erhebliche Kosten verbunden. = Considerable costs are associated with this.
+Hierzu liegen mir derzeit keine Informationen vor. = I currently have no information on this.
+Ich erlaube mir, Sie an den Termin zu erinnern. = I take the liberty of reminding you of the appointment.
+Das trifft den Nagel auf den Kopf. = That hits the nail on the head.
+Er hat den Bericht schnell durchgekaut. = He quickly ploughed through the report. (colloquial)
+Von wegen einfach – das war die Hölle! = Easy, my foot – that was hell! (colloquial)
+Seitens der Behörde bestehen keine Bedenken. = On the part of the authority there are no objections.
+Wir sollten nicht das Kind mit dem Bade ausschütten. = We shouldn't throw the baby out with the bathwater.
+Das ist im Großen und Ganzen gelungen. = On the whole that worked out.
+Es obliegt der Leitung, darüber zu entscheiden. = It is incumbent on the management to decide.
+#vocab
+das Register, - = register
+gehoben = elevated, formal
+salopp = casual
+die Umgangssprache = colloquial language
+hinnehmbar = acceptable
+Bedenken haben = to have reservations
+obliegen = to be incumbent on
+sich erlauben = to take the liberty
+die Anrede, -n = form of address
+angemessen = appropriate
+die Wendung, -en = phrase, idiom
+überarbeiten = to revise
+#read
+Drei Fassungen derselben Nachricht. Privat: „Hey, ich schaff's morgen nicht, sorry! Machen wir Freitag?“ Neutral: „Hallo Anna, leider klappt es morgen nicht. Passt dir Freitag?“ Formell: „Sehr geehrte Frau Berger, leider muss ich den morgigen Termin absagen. Ich bitte um Verständnis und schlage Freitag als Ausweichtermin vor.“ Alle drei sind korrekt – unpassend wird es erst, wenn man sie vertauscht.
+#task
+Formeller: „Ich sag dir Bescheid.“ || Ich werde Sie informieren / in Kenntnis setzen.
+Formeller: „Das geht nicht.“ || Das ist leider nicht möglich.
+Umgangssprachlicher: „Das ist sehr teuer.“ || Das kostet 'ne Stange Geld.
+Register bestimmen: „Hierzu liegen keine Daten vor.“ || gehoben/formell
+Register bestimmen: „Keine Ahnung.“ || umgangssprachlich
+Idiom erklären: „auf dem Holzweg sein“ || sich irren / auf dem falschen Weg sein
+Idiom erklären: „etwas auf die lange Bank schieben“ || etwas aufschieben
+[Mix] ___ der Behörde bestehen keine Bedenken. (gehobene Präposition) || Seitens
+[Mix] Es ___ der Leitung, darüber ___ ___. (obliegen; entscheiden) || obliegt / zu entscheiden
+[Mix] Schreibe formell: „Sag mal, wann kommst du?“ || Dürfte ich fragen, wann Sie kommen?
+#exam
+Welche drei Fassungen zeigt der Text? || Privat, neutral, formell.
+Wann wird es unpassend? || Wenn man die Register vertauscht.
+Welches Wort im formellen Text drückt Höflichkeit aus? || „Ich bitte um Verständnis“.
+Überarbeiten Sie: „Wir haben das Ding halt verschoben.“ (formell) || Der Termin wurde verschoben.
+Überarbeiten Sie: „Es wird um Kenntnisnahme gebeten.“ (privat) || Schau dir das bitte kurz an.
+Nennen Sie ein Idiom für „etwas genau treffen“. || den Nagel auf den Kopf treffen
+Warum sind Idiome in Sachtexten riskant? || Sie wirken unpräzise und stilistisch unpassend.
+Schreiben Sie dieselbe Absage in drei Registern.
+Analysieren Sie eine E-Mail aus Ihrem Alltag: Welches Register hat sie?
+Welche Register beherrschen Sie im Deutschen schon sicher, welche nicht?
+#speak
+Sag dreimal ab: bei Freunden, bei Kollegen, beim Amt.
+Erzähle eine Anekdote und verwende drei Idiome passend.
+Übersetze einen Amtssatz spontan in Alltagssprache.
+Wann ist zu viel Höflichkeit unhöflich?
+
+@@ 58|C2|Komplexe Satzstrukturen: Partizipialsätze, Ellipsen, Inversion|Stil und Rhythmus|office|51,53,54
+#expl
+**Partizipialsätze** verkürzen Nebensätze: __**In Berlin angekommen**, rief er sofort an.__ (= Nachdem er in Berlin angekommen war …) · __**Auf die Kritik reagierend**, änderte die Firma den Plan.__
+**Infinitivkonstruktionen** ersetzen dass-Sätze: __**Ohne** lange **zu zögern**, unterschrieb sie.__
+**Ellipsen** lassen Bekanntes weg – typisch für Titel, Notizen, Dialoge: __Ende der Debatte. Kein Kommentar. Warum auch?__
+**Inversion zur Betonung**: Wichtiges auf Position 1: __**Nur selten** gelingt ein solcher Wurf.__ · __**So groß** war die Enttäuschung, dass …__
+**Vorfeld bewusst wählen**: Was dort steht, ist Thema oder Kontrast – das steuert den Textfluss (Thema-Rhema).
+#use
+Literarisch und journalistisch schreiben, Rhythmus variieren, dichte Texte entschlüsseln.
+#table
+Struktur|Beispiel|Aufgelöst
+Partizip II-Satz|**Gut vorbereitet**, ging sie in die Prüfung.|Weil sie gut vorbereitet war, …
+Partizip I-Satz|**Lachend** verließ er den Raum.|Er lachte, während er den Raum verließ.
+Infinitiv mit ohne/statt|**Ohne zu fragen**, nahm er das Auto.|Er fragte nicht und nahm …
+Ellipse|Kein Grund zur Panik.|Es gibt keinen Grund zur Panik.
+Inversion (Betonung)|**Kaum** hatte er begonnen, klingelte das Telefon.|Als er kaum begonnen hatte, …
+Vorfeld-Kontrast|**Dieses Argument** halte ich für schwach.|Ich halte dieses Argument für schwach.
+#ex
+Vom Erfolg überrascht, plante das Team eine zweite Auflage. = Surprised by the success, the team planned a second edition.
+Kaum angekommen, musste sie schon wieder los. = Hardly having arrived, she had to leave again.
+Ohne lange zu überlegen, sagte er zu. = Without thinking long, he agreed.
+Nur wenige wissen, wie das Verfahren wirklich funktioniert. = Only few know how the procedure really works.
+So überzeugend war der Vortrag, dass niemand widersprach. = So convincing was the talk that nobody objected.
+Kein Wort über die Kosten. = Not a word about the costs.
+Gestern noch Favorit, heute ausgeschieden. = Yesterday still the favourite, today knocked out.
+Auf lange Sicht betrachtet, lohnt sich die Investition. = Viewed in the long run, the investment pays off.
+Ausgerechnet am Freitag fiel der Strom aus. = Of all days, the power failed on Friday.
+Was die Kosten betrifft, so sind sie kalkulierbar. = As far as the costs are concerned, they are calculable.
+#vocab
+die Ellipse, -n = ellipsis
+die Betonung, -en = emphasis
+der Vortrag, ¨e = talk, lecture
+zusagen = to agree, accept
+ausscheiden = to drop out
+kalkulierbar = calculable
+ausgerechnet = of all things
+die Auflage, -n = edition, requirement
+widersprechen = to contradict
+verdichten = to condense
+der Rhythmus = rhythm
+knapp = concise, scarce
+#read
+Aus einer Reportage: „Kaum eröffnet, schon überlaufen. Das kleine Café in der Seitenstraße, von zwei Schwestern geführt, zieht seit Wochen Gäste aus der ganzen Stadt an. Ohne große Werbung, allein durch Empfehlungen, ist es bekannt geworden. Gefragt nach dem Geheimnis, lacht die ältere Schwester: ‚Guter Kaffee. Mehr nicht.‘ Was die Zukunft betrifft, so bleiben beide vorsichtig: Expansion? Vorerst nicht.“
+#task
+Auflösen: Gut vorbereitet, ging sie in die Prüfung. || Weil sie gut vorbereitet war, ging sie in die Prüfung.
+Auflösen: Kaum angekommen, musste er wieder los. || Kaum war er angekommen, musste er wieder los.
+Verdichten: Weil er vom Erfolg überrascht war, plante er mehr. || Vom Erfolg überrascht, plante er mehr.
+Verdichten: Er fragte nicht und nahm das Auto. || Ohne zu fragen, nahm er das Auto.
+Ellipse auflösen: Kein Grund zur Sorge. || Es gibt keinen Grund zur Sorge.
+Betonung: Ich halte dieses Argument für schwach. (Argument betonen) || Dieses Argument halte ich für schwach.
+Inversion: Der Vortrag war so gut, dass alle blieben. || So gut war der Vortrag, dass alle blieben.
+[Mix] ___ nach dem Geheimnis, lacht sie. (fragen, Part. II) || Gefragt
+[Mix] Das Café, ___ zwei Schwestern geführt, ist beliebt. (Partizip + von) || von
+[Mix] Was die Kosten ___, so sind sie tragbar. (betreffen) || betrifft
+#exam
+Wie wurde das Café bekannt? || Durch Empfehlungen, ohne große Werbung.
+Was ist das Geheimnis laut der Schwester? || Guter Kaffee.
+Planen sie eine Expansion? || Vorerst nicht.
+Nennen Sie zwei Wirkungen von Ellipsen. || Tempo, Betonung/Verdichtung
+Wann wirken Partizipialsätze unpassend? || In einfachen Alltagstexten oder gesprochener Sprache
+Formulieren Sie mit Inversion: Er hatte kaum begonnen, als es klingelte. || Kaum hatte er begonnen, klingelte es.
+Verdichten Sie: Nachdem sie das Ergebnis gesehen hatte, änderte sie den Plan. || Das Ergebnis gesehen habend / Nach Sichtung des Ergebnisses änderte sie den Plan.
+Schreiben Sie einen Reportage-Absatz (80 Wörter) mit Ellipse, Partizipialsatz und Inversion.
+Lesen Sie einen Absatz laut und variieren Sie den Rhythmus.
+Welche Wirkung hat ein sehr kurzer Satz nach mehreren langen?
+#speak
+Erzähle den Café-Text frei, mit knappem Rhythmus.
+Beschreibe deinen Tag in fünf Ellipsen.
+Betone drei verschiedene Satzteile durch die Vorfeldwahl.
+Wann klingt Verdichtung elegant, wann gekünstelt?
+
+@@ 59|C2|Nuancen: Hedging, Ironie, Intensivierung|Zwischen den Zeilen|party|49,52,57
+#expl
+C2 heißt: **Zwischentöne** treffen.
+**Abschwächen (Hedging):** __eher, tendenziell, vergleichsweise, in gewisser Hinsicht, nicht ganz unproblematisch, dürfte, scheint … zu sein, soweit ich sehe__
+**Verstärken:** __ausgesprochen, überaus, ausgesprochen gut, durchaus, gerade(zu), bei Weitem, ohne Frage, nicht zuletzt__
+**Litotes (Untertreibung durch Verneinung):** __nicht schlecht = sehr gut__, __nicht uninteressant__, __kein geringer Betrag__
+**Ironie** entsteht durch Kontrast zwischen Aussage und Kontext, oft mit Partikeln: __Na, das ist ja **großartig** gelaufen.__ Im Schriftlichen ist Ironie riskant – sie braucht klare Signale.
+**Distanz markieren:** __angeblich, vermeintlich, so genannte, „…“__
+#use
+Diplomatisch formulieren, Kritik dosieren, Texte und Gesprächstöne richtig deuten.
+#table
+Wirkung|Mittel|Beispiel
+abschwächen|eher, tendenziell, dürfte|Das Ergebnis ist **eher** überraschend.
+stark abschwächen|nicht ganz un-…|Der Plan ist **nicht ganz unproblematisch**.
+verstärken|ausgesprochen, überaus|Die Lösung ist **ausgesprochen** elegant.
+verstärken (Kontrast)|durchaus, sehr wohl|Das ist **durchaus** möglich.
+Untertreibung|nicht schlecht, kein geringer|**Kein geringer** Aufwand.
+Distanz|angeblich, vermeintlich, so genannt|Die **vermeintliche** Lösung schuf neue Probleme.
+Ironie|Partikel + Kontext|Das hat ja **wunderbar** funktioniert.
+#ex
+Das Argument ist nicht ganz unberechtigt. = The argument is not entirely unjustified.
+Die Zahlen dürften eher optimistisch sein. = The figures are likely to be rather optimistic.
+Das Konzept überzeugt durchaus, in Teilen jedoch nicht. = The concept is quite convincing, though not in parts.
+Der Aufwand war alles andere als gering. = The effort was anything but small.
+Soweit ich sehe, fehlen belastbare Daten. = As far as I can see, robust data are missing.
+Die vermeintliche Abkürzung kostete uns zwei Stunden. = The supposed shortcut cost us two hours.
+Ihr Vorschlag ist überaus hilfreich. = Your suggestion is extremely helpful.
+Na, das war ja ein voller Erfolg. = Well, that was a complete success. (ironic)
+Nicht zuletzt deshalb ist die Kritik berechtigt. = Not least for that reason the criticism is justified.
+In gewisser Hinsicht haben beide Seiten recht. = In a certain sense both sides are right.
+#vocab
+abschwächen = to soften, tone down
+verstärken = to intensify
+die Untertreibung, -en = understatement
+berechtigt = justified
+die Abkürzung, -en = shortcut, abbreviation
+dosieren = to measure out
+diplomatisch = diplomatic
+missverständlich = ambiguous
+der Unterton, ¨e = undertone
+zwischen den Zeilen = between the lines
+andeuten = to hint at
+die Zurückhaltung = restraint
+#read
+Feedbackgespräch: „Ihr Entwurf ist nicht ganz unproblematisch, in Teilen aber ausgesprochen gelungen. Die Struktur überzeugt durchaus; die Datenlage dürfte hingegen eher dünn sein. Soweit ich sehe, fehlt eine Quelle für die zentrale Zahl – kein geringes Problem, wenn der Text veröffentlicht wird. Ich würde vorschlagen, diesen Punkt zu ergänzen. Ansonsten: nicht schlecht für einen ersten Entwurf.“
+#task
+Abschwächen: Das ist falsch. → Das ist ___ ___ ___. || nicht ganz richtig
+Abschwächen mit Modalverb: Es kostet 500 Euro. → Es ___ etwa 500 Euro kosten. || dürfte
+Verstärken: Das ist gut. → Das ist ___ gut. || ausgesprochen
+Litotes: Das ist sehr gut. → Das ist ___ ___. || nicht schlecht
+Distanz: Die Lösung half nicht. → Die ___ Lösung half nicht. || vermeintliche
+Ironisch: Alles ging schief. → Das hat ja ___ geklappt. || wunderbar
+Diplomatisch ablehnen: „Nein.“ || Das halte ich in dieser Form für schwierig.
+[Mix] ___ ich sehe, fehlen Daten, ___ belastbar sind. (soweit; Relativpronomen) || Soweit / die
+[Mix] Die Datenlage ___ eher dünn sein, ___ die Struktur überzeugt. (dürfen Konj. II; adversativ) || dürfte / wohingegen
+[Mix] Es ist davon ___, dass Kritik ___ (kommen, Futur). || auszugehen / kommen wird
+#exam
+Wie bewertet der Sprecher die Struktur? || Sie überzeugt durchaus.
+Was fehlt im Entwurf? || Eine Quelle für die zentrale Zahl.
+Ist „nicht schlecht“ hier negativ? || Nein – es ist Lob durch Untertreibung.
+Schwächen Sie ab: „Ihr Plan funktioniert nicht.“ || Ihr Plan ist in dieser Form vermutlich schwer umsetzbar.
+Verstärken Sie: „Das war hilfreich.“ || Das war überaus hilfreich.
+Welche Signale braucht schriftliche Ironie? || Kontext, Partikeln, ggf. Anführungszeichen – sonst missverständlich.
+Was bedeutet „kein geringer Aufwand“? || Ein sehr großer Aufwand.
+Geben Sie schriftlich kritisches Feedback zu einem Text – diplomatisch, aber klar.
+Formulieren Sie dieselbe Ablehnung dreimal: direkt, neutral, sehr vorsichtig.
+Wo in Ihrer Kultur ist Untertreibung üblich? Vergleichen Sie.
+#speak
+Gib Feedback zum Bild – erst lobend, dann kritisch, dann diplomatisch.
+Sag dreimal „nein“, jedes Mal höflicher.
+Erzähle etwas ironisch – und dann sachlich.
+Wie erkennst du Ironie im Deutschen?
+
+@@ 60|C2|Prüfungsfinale: Vortrag, Diskussion, Textproduktion|Alles zusammen|classroom|42,53,56,58
+#expl
+Die C2-Prüfung (Goethe C2 / telc C2) verlangt: **Zusammenfassen** (Lesen/Hören → eigener Text), **Vortrag** (strukturiert, 3–5 Min.), **Diskussion** (Position halten, auf Gegenargumente eingehen), **Textproduktion** (Erörterung oder Kommentar, klar gegliedert, stilistisch sicher).
+Bewertet werden: **Erfüllung der Aufgabe, Kohärenz, Wortschatzbreite und -präzision, grammatische Vielfalt, Register**.
+Strategie: 2 Minuten planen (These, drei Stützen, Gegenargument, Schluss), Signale setzen (__erstens, ferner, gleichwohl, abschließend__), auf Einwände eingehen (__Sie sprechen einen wichtigen Punkt an; dennoch …__), am Ende **zusammenfassen und pointieren**.
+#use
+Prüfungstag, Fachvorträge, Meetings, Bewerbungsgespräche auf höchstem Niveau.
+#table
+Phase|Redemittel
+These setzen|Ich vertrete die Auffassung, dass … · Meine zentrale These lautet: …
+Gliedern|Erstens … zweitens … ferner … abschließend
+Belegen|Dies belegt eine Studie von … · Hierfür spricht, dass …
+Einräumen|Zugegeben: … · Das mag zutreffen, gleichwohl …
+Widersprechen|Dem möchte ich entgegenhalten, dass … · Das greift meines Erachtens zu kurz.
+Nachfragen|Habe ich Sie richtig verstanden, dass …? · Worauf stützen Sie diese Annahme?
+Zusammenfassen|Fasse ich zusammen: … · Unterm Strich bleibt festzuhalten: …
+Pointieren|Entscheidend ist letztlich nicht …, sondern …
+#ex
+Meine zentrale These lautet: Bildung entscheidet über Teilhabe. = My central thesis is: education determines participation.
+Zugegeben, die Kosten sind hoch; gleichwohl überwiegt der Nutzen. = Admittedly the costs are high; nevertheless the benefit predominates.
+Dem möchte ich entgegenhalten, dass die Datenlage dünn ist. = To that I would counter that the data are thin.
+Das greift meines Erachtens zu kurz. = In my view that falls short.
+Worauf stützen Sie diese Annahme? = What do you base this assumption on?
+Unterm Strich bleibt festzuhalten, dass beide Wege gangbar sind. = On balance it should be noted that both routes are viable.
+Entscheidend ist letztlich nicht die Technik, sondern die Organisation. = Ultimately what matters is not the technology but the organisation.
+Ich würde die Frage gern etwas differenzierter betrachten. = I'd like to look at the question in a more differentiated way.
+Erlauben Sie mir, das an einem Beispiel zu verdeutlichen. = Allow me to illustrate that with an example.
+Damit komme ich zum Schluss meiner Ausführungen. = With that I come to the end of my remarks.
+#vocab
+die Auffassung, -en = view, opinion
+die Ausführungen (Pl.) = remarks
+entgegenhalten = to counter
+zu kurz greifen = to fall short
+sich stützen auf = to be based on
+gangbar = viable
+pointieren = to make a point sharply
+die Teilhabe = participation
+der Nutzen = benefit
+differenziert = differentiated
+zutreffen = to be true, apply
+festhalten = to note, state
+#read
+Prüfungsmitschnitt (Auszug): „Meine zentrale These lautet: Kurzarbeit hat in der Krise Arbeitsplätze gesichert. Erstens zeigen die Zahlen einen deutlich geringeren Stellenabbau; zweitens blieb Fachwissen in den Betrieben; ferner konnten Unternehmen schneller wieder hochfahren. Zugegeben, das Instrument ist teuer und kann Strukturwandel verzögern – dem möchte ich entgegenhalten, dass die Alternativkosten höher gewesen wären. Unterm Strich bleibt festzuhalten: Entscheidend ist nicht die Existenz des Instruments, sondern seine zeitliche Begrenzung.“
+#task
+These setzen: ___ ___ ___ lautet: Sprache schafft Zugang. || Meine zentrale These
+Einräumen: ___, das Verfahren ist teuer; ___ lohnt es sich. || Zugegeben / gleichwohl
+Widersprechen: ___ möchte ich ___, dass die Studie alt ist. || Dem / entgegenhalten
+Gliedern: erstens, zweitens, ___, abschließend || ferner
+Nachfragen: ___ ___ Sie diese Annahme? || Worauf stützen
+Zusammenfassen: ___ ___ bleibt festzuhalten, dass … || Unterm Strich
+Pointieren: Entscheidend ist nicht X, ___ Y. || sondern
+[Mix] Der Prüfling betont, das Instrument ___ Arbeitsplätze gesichert. (Konj. I Perfekt von haben) || habe
+[Mix] ___ der hohen Kosten überwiegt der Nutzen. (Genitivpräposition, konzessiv) || Trotz
+[Mix] Die ___ (sichern, Part. II) Arbeitsplätze sind ___ (belegen, sein+zu). || gesicherten / zu belegen
+#exam
+Welche These vertritt der Prüfling? || Kurzarbeit hat Arbeitsplätze gesichert.
+Welche drei Argumente nennt er? || Geringerer Stellenabbau, Fachwissen blieb, schnelleres Hochfahren.
+Welchen Einwand räumt er ein? || Das Instrument ist teuer und kann den Strukturwandel verzögern.
+Formulieren Sie ein Gegenargument zu seiner These.
+Fassen Sie den Auszug in zwei Sätzen zusammen (indirekte Rede).
+Nennen Sie zwei Redemittel, um höflich zu widersprechen.
+Wie strukturieren Sie einen 4-Minuten-Vortrag? Skizzieren Sie die Gliederung.
+Halten Sie einen Vortrag: „Künstliche Intelligenz im Beruf – Chance oder Risiko?“
+Schreiben Sie einen Kommentar (150 Wörter) zu einem aktuellen Thema.
+Diskutieren Sie mit einem Partner und gehen Sie dreimal auf Gegenargumente ein.
+#speak
+Halte einen 3-Minuten-Vortrag zu einem Thema deines Fachs – mit These, drei Stützen, Einwand, Schluss.
+Reagiere auf drei Gegenargumente, ohne deine Position aufzugeben.
+Fasse einen gehörten Beitrag zusammen und bewerte ihn.
+Nimm dich auf: Wo fehlt Präzision, wo Register, wo Struktur?

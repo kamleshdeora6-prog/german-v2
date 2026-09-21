@@ -16,12 +16,17 @@
 .end method
 
 .method public run()V
-    .locals 3
+    .locals 4
     iget-object v0, p0, Lde/deutschcoach/app/Task;->a:Lde/deutschcoach/app/MainActivity;
     iget-object v1, p0, Lde/deutschcoach/app/Task;->arg:Ljava/lang/String;
     iget v2, p0, Lde/deutschcoach/app/Task;->kind:I
-    if-nez v2, :share
+    if-nez v2, :not_listen
     invoke-virtual {v0, v1}, Lde/deutschcoach/app/MainActivity;->startListen(Ljava/lang/String;)V
+    return-void
+    :not_listen
+    const/4 v3, 0x2
+    if-ne v2, v3, :share
+    invoke-virtual {v0, v1}, Lde/deutschcoach/app/MainActivity;->openUrl(Ljava/lang/String;)V
     return-void
     :share
     invoke-virtual {v0, v1}, Lde/deutschcoach/app/MainActivity;->startShare(Ljava/lang/String;)V

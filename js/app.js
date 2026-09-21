@@ -1,7 +1,7 @@
 /* Deutsch Coach – app shell: router, navigation, theme, install */
 (function () {
   "use strict";
-  const ROUTES = { home: "home", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more" };
+  const ROUTES = { home: "home", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more", readexam: "readexam", write: "write", notes: "notes" };
   const TAB_OF = { home: "home", path: "path", lesson: "path", practice: "practice", vocab: "practice", tutor: "tutor" };
   const App = (window.App = { version: "3.0.0", pendingAsk: null });
 
@@ -26,7 +26,13 @@
     view.focus({ preventScroll: true });
   };
 
+  App.openLink = (url) => {
+    if (window.AndroidBridge && AndroidBridge.openUrl) { try { AndroidBridge.openUrl(url); return; } catch (e) {} }
+    window.open(url, "_blank", "noopener");
+  };
   document.addEventListener("click", (e) => {
+    const ext = e.target.closest("[data-url]");
+    if (ext) { e.preventDefault(); App.openLink(ext.dataset.url); return; }
     const t = e.target.closest("[data-go],[data-tts],[data-ask],[data-say]");
     if (!t) return;
     if (t.dataset.tts !== undefined) { e.preventDefault(); e.stopPropagation(); Speech.speak(t.dataset.tts); return; }
