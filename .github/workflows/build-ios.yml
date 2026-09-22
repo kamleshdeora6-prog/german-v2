@@ -20,7 +20,7 @@ jobs:
       - name: Copy the web app into the iOS project and generate the Xcode project
         run: |
           cd ios
-          ./build_ios.sh
+          bash build_ios.sh
 
       - name: Build (no code signing)
         run: |

@@ -15,6 +15,6 @@ jobs:
           curl -L -o tools/jars/apktool.jar https://github.com/iBotPeaches/Apktool/releases/download/v2.10.0/apktool_2.10.0.jar
           curl -L -o tools/jars/signer.jar   https://github.com/patrickfav/uber-apk-signer/releases/download/v1.3.0/uber-apk-signer-1.3.0.jar
       - name: Build
-        run: TOOLS=tools/jars ./build_apk.sh
+        run: TOOLS=tools/jars bash build_apk.sh
       - uses: actions/upload-artifact@v4
         with: { name: deutsch-coach-apk, path: build/deutsch-coach.apk }
