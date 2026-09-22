@@ -1,7 +1,21 @@
 /* Deutsch Coach – core services: progress store, spaced repetition, grading, speech. */
 (function () {
   "use strict";
-  const KEY = "deutschcoach.v2";
+  const KEY = "deutschcoach.v2";                 // storage of the first profile (keeps old progress)
+  const PKEY = "deutschcoach.profiles";          // { active, list: [{ id, name, color, created }] }
+  const COLORS = ["#E3A400", "#1D8F4E", "#2465B4", "#7C3F98", "#C2571A", "#0F7B8A", "#8A1C3F", "#5B6770"];
+  let profiles = null;
+  function loadProfiles() {
+    try { profiles = JSON.parse(localStorage.getItem(PKEY) || "null"); } catch (e) { profiles = null; }
+    if (!profiles || !Array.isArray(profiles.list) || !profiles.list.length) {
+      profiles = { active: "p1", list: [{ id: "p1", name: "", color: COLORS[0], created: Date.now() }] };
+      writeProfiles();
+    }
+    if (!profiles.list.some((p) => p.id === profiles.active)) profiles.active = profiles.list[0].id;
+    return profiles;
+  }
+  function writeProfiles() { try { localStorage.setItem(PKEY, JSON.stringify(profiles)); } catch (e) {} }
+  const keyOf = (id) => (id === "p1" ? KEY : KEY + "." + id);
   const today = () => new Date().toISOString().slice(0, 10);
   const DEFAULTS = () => ({
     v: 2, created: Date.now(), xp: 0, streak: { count: 0, last: "" }, days: {},
@@ -13,7 +27,8 @@
   const listeners = new Set();
   function load() {
     try {
-      const raw = localStorage.getItem(KEY) || localStorage.getItem("germanCoachProgress");
+      const pid = (profiles || loadProfiles()).active;
+      const raw = localStorage.getItem(keyOf(pid)) || (pid === "p1" ? localStorage.getItem("germanCoachProgress") : null);
       const d = DEFAULTS();
       state = raw ? deepMerge(d, JSON.parse(raw)) : d;
     } catch (e) { state = DEFAULTS(); }
@@ -30,11 +45,37 @@
   let saveT = null;
   function save() {
     clearTimeout(saveT);
-    saveT = setTimeout(() => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) { console.warn("save failed", e); } }, 150);
+    const k = keyOf((profiles || loadProfiles()).active), snap = state;
+    saveT = setTimeout(() => { try { localStorage.setItem(k, JSON.stringify(snap)); } catch (e) { console.warn("save failed", e); } }, 150);
     listeners.forEach((f) => f(state));
   }
+  function flush() { clearTimeout(saveT); if (state) try { localStorage.setItem(keyOf(profiles.active), JSON.stringify(state)); } catch (e) {} }
   const Store = {
     get: () => state || load(),
+    /* ----- local profiles: every learner on this device gets separate progress ----- */
+    profiles: () => (profiles || loadProfiles()).list.slice(),
+    profile: () => { const P = profiles || loadProfiles(); return P.list.find((p) => p.id === P.active); },
+    name: () => (Store.profile() || {}).name || "",
+    setName(name) { const p = Store.profile(); p.name = String(name).trim().slice(0, 30); writeProfiles(); listeners.forEach((f) => f(state)); },
+    switchTo(id) {
+      const P = profiles || loadProfiles();
+      if (!P.list.some((p) => p.id === id) || id === P.active) return;
+      flush(); P.active = id; writeProfiles(); state = null; load(); listeners.forEach((f) => f(state));
+    },
+    addProfile(name) {
+      const P = profiles || loadProfiles();
+      const id = "p" + Date.now().toString(36);
+      P.list.push({ id, name: String(name || "").trim().slice(0, 30), color: COLORS[P.list.length % COLORS.length], created: Date.now() });
+      writeProfiles(); Store.switchTo(id); return id;
+    },
+    deleteProfile(id) {
+      const P = profiles || loadProfiles();
+      if (P.list.length < 2) return false;
+      if (id === P.active) { flush(); const other = P.list.find((p) => p.id !== id); P.active = other.id; state = null; }
+      P.list = P.list.filter((p) => p.id !== id); writeProfiles();
+      try { localStorage.removeItem(keyOf(id)); } catch (e) {}
+      if (!state) load(); listeners.forEach((f) => f(state)); return true;
+    },
     save,
     on: (f) => listeners.add(f),
     addXP(n) {
@@ -57,8 +98,8 @@
     mistake(m) { const s = Store.get(); s.mistakes.unshift(Object.assign({ t: Date.now() }, m)); s.mistakes = s.mistakes.slice(0, 120); save(); },
     lesson(n) { const s = Store.get(); return (s.lessons[n] = s.lessons[n] || { read: false, score: 0, done: false, tasks: {}, exam: {} }); },
     unlocked(n) { const s = Store.get(); return s.settings.unlockAll || n === 1 || !!(s.lessons[n - 1] && s.lessons[n - 1].done); },
-    export() { return JSON.stringify(Store.get(), null, 1); },
-    import(txt) { const d = JSON.parse(txt); if (!d || typeof d !== "object" || !("xp" in d)) throw new Error("This file is not a Deutsch Coach backup."); state = deepMerge(DEFAULTS(), d); save(); },
+    export() { return JSON.stringify(Object.assign({}, Store.get(), { profileName: Store.name() }), null, 1); },
+    import(txt) { const d = JSON.parse(txt); if (!d || typeof d !== "object" || !("xp" in d)) throw new Error("This file is not a Deutsch Coach backup."); const nm = d.profileName; delete d.profileName; state = deepMerge(DEFAULTS(), d); if (nm && !Store.name()) Store.setName(nm); save(); },
     reset() { state = DEFAULTS(); save(); },
     today,
   };
@@ -196,5 +237,6 @@
     fmtDate: (t) => new Date(t).toLocaleDateString(),
   };
 
+  window.addEventListener("pagehide", flush);
   window.Store = Store; window.SRS = SRS; window.Grade = { grade, clean, overlap, wordDiff, lev }; window.Speech = Speech; window.H = H;
 })();

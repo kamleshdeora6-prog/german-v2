@@ -19,7 +19,7 @@
     if (!set) return (el.innerHTML = UI.empty("Set not found.", `<button class="btn" data-go="readexam">Back</button>`));
     let html = `<button class="back" data-go="readexam">‹ All sets</button><h2 class="page-title">${UI.levelDot(set.level)} ${esc(set.title)}</h2>`;
     set.parts.forEach((part, pi) => {
-      html += `<section class="card" data-p="${pi}"><p class="muted">${esc(part.instruction)}</p>`;
+      html += `<section class="card" data-p="${pi}">${UI.reportBtn({ id: `read-${idx}-p${pi + 1}`, part: `Reading exam: ${set.title}, part ${pi + 1}`, q: part.instruction })}<p class="muted">${esc(part.instruction)}</p>`;
       if (part.text) html += `<div class="reading">${esc(part.text).replace(/\n/g, "<br>")}</div><div class="row">${UI.say(part.text, "Listen")}<button class="btn ghost sm hide">Hide text</button></div>`;
       if (part.type === "match") {
         html += `<ul class="adlist">${part.ads.map((a) => `<li><b>${a.k})</b> ${esc(a.t)}</li>`).join("")}</ul>`;
@@ -89,7 +89,7 @@
     const saved = (Store.get().writings || {})[idx] || "";
     el.innerHTML = `<button class="back" data-go="write">‹ All tasks</button>
       <h2 class="page-title">${UI.levelDot(t.level)} ${esc(t.type)}</h2>
-      <section class="card wtask"><p><b>Aufgabe:</b> ${esc(t.prompt)}</p>
+      <section class="card wtask">${UI.reportBtn({ id: `write-${idx}`, part: `Writing: ${t.type}`, q: t.prompt })}<p><b>Aufgabe:</b> ${esc(t.prompt)}</p>
         <p><b>Inhaltspunkte:</b></p><ul class="wpoints">${t.points.map((p) => `<li>${esc(p)}</li>`).join("")}</ul>
         <p class="muted small">Ziel: ca. ${t.words} Wörter · Zeit: ${t.minutes} Minuten</p>
         <div class="row"><button class="btn ghost sm timer">Start timer</button><button class="btn ghost sm phrases">Phrase bank</button>${UI.mic("Dictate")}</div>
@@ -138,7 +138,7 @@
         ["structure", structOk, structOk ? "Absätze/Sätze erkennbar" : "Gliedere den Text in Absätze"],
         ["connectors", st.conn >= 4, `${st.conn} Konnektoren gefunden`],
         ["register", needFormal ? registerFormal : true, needFormal ? (registerFormal ? "formelle Anrede/Schluss vorhanden" : "Formelle Anrede und Grußformel fehlen") : "Register passt zur Aufgabe"],
-        ["errors", errs === 0, errs === 0 ? "keine Regelverstöße gefunden" : `${errs} mögliche Fehler`],
+        ["errors", errs === 0, errs === 0 ? "Max found no rule errors (he doesn't catch everything yet)" : `${errs} mögliche Fehler`],
       ];
       const score = Math.round((crit.filter((c) => c[1]).length / crit.length) * 100);
       Store.get().exams.unshift({ date: Date.now(), type: `Schreiben ${t.level}`, score });

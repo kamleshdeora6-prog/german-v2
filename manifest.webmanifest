@@ -1,7 +1,7 @@
 {
-  "name": "Deutsch Coach – A1 to B1",
+  "name": "Deutsch Coach – German A1 to C2",
   "short_name": "Deutsch Coach",
-  "description": "German A1–B1 course with generated practice, offline tutor and exam training.",
+  "description": "German A1–C2 course: 60 lessons, generated practice with explanations, offline tutor, exam training and translator. By Zombieland.",
   "start_url": "./index.html#/home",
   "scope": "./",
   "display": "standalone",

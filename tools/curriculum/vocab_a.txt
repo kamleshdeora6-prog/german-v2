@@ -1,4 +1,68 @@
 #A1
+die Zeit|time|Zeiten|Zeit
+der Mann|man, husband|Männer|Menschen
+die Frau|woman, wife, Mrs|Frauen|Menschen
+das Kind|child|Kinder|Familie
+die Freundin|(girl)friend|Freundinnen|Menschen
+die Eltern|parents (pl.)||Familie
+die Kollegin|colleague (f)|Kolleginnen|Arbeit
+der Kaffee|coffee|Kaffees|Essen
+der Kuchen|cake|Kuchen|Essen
+der Bus|bus|Busse|Verkehr
+das Ticket|ticket|Tickets|Verkehr
+der Stadtplan|city map|Stadtpläne|Verkehr
+der Hund|dog|Hunde|Natur
+die Katze|cat|Katzen|Natur
+die Welt|world|Welten|Allgemein
+das Wetter|weather||Wetter
+der Regen|rain||Wetter
+der Hunger|hunger||Essen
+der Durst|thirst||Essen
+die Liebe|love||Gefühle
+der Pullover|jumper, sweater|Pullover|Kleidung
+der Morgen|morning|Morgen|Zeit
+der Mittag|midday, noon|Mittage|Zeit
+der Abend|evening|Abende|Zeit
+die Nacht|night|Nächte|Zeit
+der Moment|moment|Momente|Zeit
+der Anfang|beginning|Anfänge|Zeit
+das Ende|end|Enden|Zeit
+der Film|film|Filme|Freizeit
+das Lied|song|Lieder|Freizeit
+das Bild|picture|Bilder|Freizeit
+der Park|park|Parks|Stadt
+die Kirche|church|Kirchen|Stadt
+die Polizei|police||Stadt
+die Brücke|bridge|Brücken|Stadt
+der Platz|square, seat, space|Plätze|Stadt
+die Idee|idea|Ideen|Allgemein
+die Hilfe|help||Allgemein
+der Spaß|fun||Freizeit
+die Nummer|number|Nummern|Allgemein
+die Seite|page, side|Seiten|Allgemein
+Deutsch|German (language)||Sprache
+Englisch|English (language)||Sprache
+morgen|tomorrow||Adverb
+gestern|yesterday||Adverb
+jetzt|now||Adverb
+immer|always||Adverb
+oft|often||Adverb
+nie|never||Adverb
+hier|here||Adverb
+dort|there||Adverb
+sehr|very||Adverb
+viel|much, a lot||Adverb
+wenig|little, few||Adverb
+schön|beautiful, nice||Adjektiv
+billig|cheap||Adjektiv
+teuer|expensive||Adjektiv
+alle|all, everyone||Wort
+etwas|something||Wort
+nichts|nothing||Wort
+ja|yes||Wort
+nein|no||Wort
+danke|thank you||Wort
+bitte|please, you're welcome||Wort
 der Mensch|human, person|Menschen|Menschen
 die Person|person|Personen|Menschen
 der Herr|gentleman, Mr|Herren|Menschen

@@ -257,3 +257,45 @@ pre { white-space: pre-wrap; font: .92rem/1.55 var(--font); margin: 0; }
 .levelbar { display: flex; gap: 4px; overflow-x: auto; margin: 10px 0; }
 .levelbar button { border: 0; background: var(--soft); border-radius: 999px; padding: 6px 12px; font-weight: 700; cursor: pointer; }
 .levelbar button.on { background: var(--lc, var(--ink)); color: #fff; }
+
+/* ---------- v4.1: profiles, translate tab, credits ---------- */
+.top .topnav { margin-left: auto; }
+.pchip { display: flex; align-items: center; gap: 6px; border: 1px solid rgba(255,255,255,.18); background: rgba(255,255,255,.06); color: #fff; border-radius: 999px; padding: 3px 10px 3px 3px; cursor: pointer; font: inherit; font-size: .88rem; max-width: 150px; }
+.pchip .pname { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.av { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; color: #fff; font-weight: 800; font-size: .9rem; flex: none; }
+.plist { list-style: none; padding: 0; margin: 10px 0; display: grid; gap: 6px; }
+.plist li { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.plist .pick { display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: var(--r); padding: 8px 10px; cursor: pointer; font: inherit; }
+.plist .pick.on { border-color: var(--sign); box-shadow: 0 0 0 2px color-mix(in srgb, var(--sign) 40%, transparent); }
+.psheet input, .onb input.obname { flex: 1; min-width: 0; }
+.namebox { display: grid; gap: 6px; font-weight: 700; margin: 6px 0 12px; }
+.hello { margin: 4px 0 12px; font-size: 1.35rem; } .hello span { color: var(--sign-ink, inherit); }
+.credit { text-align: center; margin: 18px 0 6px; }
+.about p { margin: 4px 0; }
+.seg { display: flex; gap: 4px; background: var(--soft); border-radius: 999px; padding: 3px; margin-bottom: 10px; overflow-x: auto; }
+.seg button { flex: 1; border: 0; background: transparent; border-radius: 999px; padding: 7px 10px; font: inherit; font-weight: 700; font-size: .86rem; white-space: nowrap; cursor: pointer; color: var(--ink-2); }
+.seg button.on { background: var(--card); color: var(--ink); box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+.tin { width: 100%; font-size: 1.05rem; }
+.tlinks { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 6px; }
+.tlink { display: grid; gap: 2px; text-align: left; border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: var(--r); padding: 8px 10px; cursor: pointer; font: inherit; }
+.tlink span { font-size: .78rem; color: var(--ink-2); }
+.tbest .big { font-size: 1.3rem; font-weight: 700; margin: 4px 0; }
+.tword { border-bottom: 1px solid var(--line); padding: 6px 0 10px; } .tword:last-child { border-bottom: 0; }
+.gloss { display: flex; flex-wrap: wrap; gap: 6px; }
+.gloss .g { display: grid; text-align: center; border: 1px solid var(--line); border-radius: 10px; padding: 4px 8px; background: var(--soft); }
+.gloss .g i { font-style: normal; font-size: .8rem; color: var(--ink-2); }
+@media (max-width: 420px) { .pchip .pname { display: none; } .pchip { padding: 3px; } }
+
+/* report a problem */
+.q, .task, .eq, .card[data-p], .wtask { position: relative; }
+.rflag { position: absolute; top: 4px; right: 4px; border: 0; background: transparent; color: var(--ink-2); opacity: .55; font-size: 1rem; cursor: pointer; padding: 4px 6px; border-radius: 8px; line-height: 1; }
+.rflag:hover, .rflag:focus-visible { opacity: 1; background: var(--soft); }
+.rflag.inline { position: static; opacity: 1; font-size: .86rem; }
+.q > .rflag + * , .task > .rflag + *, .eq > .rflag + * { padding-right: 28px; }
+.rbox { background: var(--soft); border-radius: var(--r); padding: 8px 12px; margin: 8px 0 12px; } .rbox p { margin: 4px 0; }
+.rsheet textarea { width: 100%; margin-top: 6px; }
+.ul.plain, ul.plain { padding-left: 18px; } ul.plain li { margin: 6px 0; }
+.ob-box { background: var(--soft); border-radius: var(--r); padding: 6px 12px; margin: 8px 0; } .ob-box p { margin: 6px 0; }
+.voicehelp ul { padding-left: 18px; } .voicehelp li { margin: 4px 0; }
+.remind { border-left: 4px solid var(--sign); }
+.sheet { max-height: calc(100vh - 24px); overflow-y: auto; }

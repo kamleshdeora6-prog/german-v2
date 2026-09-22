@@ -27,7 +27,10 @@
       { t: "10 smart drills", go: "practice/smart", done: todayXP >= goal * 0.6 },
       { t: "Speak about the lesson picture", go: `lesson/${l.n}/speak`, done: !!ls.spoke },
     ];
+    const hr = new Date().getHours();
+    const hello = hr < 11 ? "Guten Morgen" : hr < 18 ? "Guten Tag" : "Guten Abend";
     el.innerHTML = `
+    <h2 class="hello">${hello}${Store.name() ? `, <span>${esc(Store.name())}</span>` : ""}!</h2>
     <section class="board" aria-label="Next lesson">
       <div class="board-top"><span>Nächster Halt</span><span>${UI.levelDot(l.level)} Linie ${l.level}</span></div>
       <div class="board-main"><span class="board-n">${l.n}</span><span class="board-title">${esc(l.title)}</span></div>
@@ -36,7 +39,7 @@
     </section>
     <section class="stats3">
       <div><b>${s.streak.count}</b><span>day streak</span></div>
-      <div><b>${p.done}/42</b><span>lessons</span></div>
+      <div><b>${p.done}/${DC.curriculum.length}</b><span>lessons</span></div>
       <div><b>${p.due}</b><span>words due</span></div>
     </section>
     <section class="card">
@@ -51,13 +54,22 @@
       <button class="tile" data-go="speak"><b>Speak</b><span>Shadowing & free talk</span></button>
       <button class="tile" data-go="exam"><b>B1 exam</b><span>Mock test & Leben in D.</span></button>
     </section>
-    ${s.mistakes.length ? `<section class="card"><h3>Recent mistakes</h3>${s.mistakes.slice(0, 3).map((m) => `<p class="mist">${m.prompt}<br><span class="muted">You: ${esc(m.given || "–")} · Right: <b>${esc(m.answer)}</b></span></p>`).join("")}<button class="btn ghost sm" data-go="stats">Review all</button></section>` : ""}`;
+    ${s.mistakes.length ? `<section class="card"><h3>Recent mistakes</h3>${s.mistakes.slice(0, 3).map((m) => `<p class="mist">${m.prompt}<br><span class="muted">You: ${esc(m.given || "–")} · Right: <b>${esc(m.answer)}</b></span></p>`).join("")}<button class="btn ghost sm" data-go="stats">Review all</button></section>` : ""}
+    ${(() => { const month = 30 * 864e5, last = s.lastBackup || 0, snooze = s.backupSnooze || 0;
+      return s.xp >= 60 && Date.now() - last > month && Date.now() > snooze && Date.now() - (s.created || 0) > 7 * 864e5
+        ? `<section class="card remind"><p>💾 <b>Back up your progress?</b> ${last ? "Your last backup is over a month old." : "You haven't saved a backup yet."} Progress lives only on this device.</p><div class="row"><button class="btn sign sm bk-now">Export backup</button><button class="btn ghost sm bk-later">Remind me later</button></div></section>` : ""; })()}
+    <div class="novoice"></div>
+    <section class="card quick"><div class="row"><button class="btn ghost" data-go="translate">⇄ Translate a word or sentence</button><button class="btn ghost" data-go="write">✍ Writing exam</button></div></section>
+    <p class="credit muted small">${App.credit()}</p>`;
+    const bn = el.querySelector(".bk-now"); if (bn) bn.onclick = () => { App.backup(); el.querySelector(".remind").remove(); };
+    const bl = el.querySelector(".bk-later"); if (bl) bl.onclick = () => { s.backupSnooze = Date.now() + 30 * 864e5; Store.save(); el.querySelector(".remind").remove(); };
+    if (!s.voiceWarned) App.voiceStatus().then((v) => { if (v === "none" && document.body.contains(el)) { const nv = el.querySelector(".novoice"); if (nv) nv.innerHTML = `<section class="card">${App.voiceHelp()}<button class="btn ghost sm nv-ok">Got it</button></section>`; const ok = el.querySelector(".nv-ok"); if (ok) ok.onclick = () => { s.voiceWarned = true; Store.save(); nv.innerHTML = ""; }; } });
   };
 
   /* ---------------- Linie (path as a transit line) ---------------- */
   V.path = (el) => {
     const s = Store.get();
-    let html = `<h2 class="page-title">Your line from A1 to B1</h2><p class="muted">Each stop is a lesson. Finish a stop (score ≥ 70 %) to open the next one. Later stops reuse earlier grammar.</p><ol class="line">`;
+    let html = `<h2 class="page-title">Your line from A1 to C2</h2><p class="muted">Each stop is a lesson. Finish a stop (score ≥ 70 %) to open the next one. Later stops reuse earlier grammar.</p><ol class="line">`;
     let prevLvl = null;
     LESSONS().forEach((l) => {
       if (l.level !== prevLvl) {
@@ -162,7 +174,7 @@
     const scoreNow = () => Math.round((Object.values(ls.tasks).filter(Boolean).length / tasks.length) * 100);
     el.innerHTML = `
       <section class="card"><h3>Lesson exercises</h3><p class="muted small">Type the answer. Several gaps: write them in order (e.g. „stehe auf“). [Mix] tasks combine earlier lessons.</p>
-        <ol class="tasks">${tasks.map((t, i) => `<li class="task ${ls.tasks[i] === true ? "ok" : ls.tasks[i] === false ? "bad" : ""}" data-i="${i}">
+        <ol class="tasks">${tasks.map((t, i) => `<li class="task ${ls.tasks[i] === true ? "ok" : ls.tasks[i] === false ? "bad" : ""}" data-i="${i}">${UI.reportBtn({ id: `L${l.n}-task${i + 1}`, lesson: l.n, part: "Practice " + (i + 1), q: t.q, a: t.a })}
           <p>${md(t.q).replace("[Mix]", '<span class="mix">Mix</span>')}</p>
           <form class="q-form"><input class="q-in" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Answer"><button class="btn sm">Check</button></form>
           <div class="tfb" hidden></div></li>`).join("")}</ol>
@@ -211,7 +223,7 @@
 
   function exam(el, l, ls) {
     el.innerHTML = `<section class="card"><h3>10 exam questions</h3><p class="muted small">Closed questions are checked automatically. Open questions: write or speak, then let Max check your German.</p>
-      ${l.exam.map((q, i) => `<div class="eq" data-i="${i}"><p><b>${i + 1}.</b> ${md(q.q)}</p>
+      ${l.exam.map((q, i) => `<div class="eq" data-i="${i}">${UI.reportBtn({ id: `L${l.n}-exam${i + 1}`, lesson: l.n, part: "Exam " + (i + 1), q: q.q, a: q.a })}<p><b>${i + 1}.</b> ${md(q.q)}</p>
         ${q.a && !/^z\.\s?B\./.test(q.a) ? `<form class="q-form"><input class="q-in" autocomplete="off" placeholder="Answer"><button class="btn sm">Check</button></form>` :
           `<textarea rows="3" placeholder="Write your answer in German…"></textarea><div class="row">${UI.mic("Speak")}<button class="btn sm chk">Check with Max</button>${q.a ? `<button class="btn ghost sm model">Model answer</button>` : ""}</div>`}
         <div class="efb" hidden></div></div>`).join("")}</section>`;

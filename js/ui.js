@@ -17,6 +17,8 @@
   /* ---------- exercise item ----------
      item: {kind: choice|input|order, prompt, answer, options, tokens, why, whyNot, full, en, hint, accept}
      opts: {onDone(ok, given), compact} */
+  UI.reportBtn = (ctx) => `<button class="rflag" type="button" title="Report a problem" aria-label="Report a problem with this question" data-report="${esc(JSON.stringify(ctx))}">⚑</button>`;
+  const itemCtx = (item, given) => ({ id: item.gen ? `${item.gen}` : undefined, lesson: item.lesson || undefined, part: item.title || item.topic, q: item.prompt, a: item.answer, accept: (item.accept || []).slice(0, 6), given });
   UI.item = (el, item, opts = {}) => {
     const st = Store.get().settings;
     let answered = false;
@@ -25,7 +27,7 @@
     if (item.kind === "choice") body = `<div class="choices">${item.options.map((o) => `<button class="choice" data-v="${esc(o)}">${esc(o)}</button>`).join("")}</div>`;
     else if (item.kind === "input") body = `<form class="q-form" autocomplete="off"><input class="q-in" type="text" autocapitalize="off" spellcheck="false" placeholder="Type your answer" aria-label="Answer"><button class="btn" type="submit">Check</button></form>${UI.umlautBar()}`;
     else if (item.kind === "order") body = `<div class="built" aria-live="polite">${item.fixedFirst ? `<span class="tok fixed">${esc(item.fixedFirst)}</span>` : ""}</div><div class="bank">${bankTokens(item).map((t, i) => `<button class="tok" data-i="${i}">${esc(t)}</button>`).join("")}</div><div class="row"><button class="btn q-check">Check</button><button class="btn ghost q-reset">Reset</button></div>`;
-    el.innerHTML = `<div class="q ${opts.compact ? "compact" : ""}">${promptHtml}${body}<div class="q-fb" hidden></div></div>`;
+    el.innerHTML = `<div class="q ${opts.compact ? "compact" : ""}">${UI.reportBtn(itemCtx(item))}${promptHtml}${body}<div class="q-fb" hidden></div></div>`;
     const fb = el.querySelector(".q-fb");
 
     function finish(ok, given, gradeInfo = {}) {
@@ -40,7 +42,7 @@
         ${item.why ? `<div class="why"><b>Why:</b> ${item.why}</div>` : ""}
         ${full ? `<p class="ex">${UI.colorArticles(full)} ${UI.say(full)}</p>` : ""}
         ${item.en && st.showEn ? `<p class="muted">${esc(item.en)}</p>` : ""}
-        <div class="row">${!ok && item.kind !== "choice" ? `<button class="btn ghost sm q-override">I was right</button>` : ""}<button class="btn sm q-next">${opts.nextLabel || "Next"}</button><button class="btn ghost sm q-ask">Ask Max</button></div>`;
+        <div class="row">${!ok && item.kind !== "choice" ? `<button class="btn ghost sm q-override">I was right</button>` : ""}<button class="btn sm q-next">${opts.nextLabel || "Next"}</button><button class="btn ghost sm q-ask">Ask Max</button>${UI.reportBtn(itemCtx(item, given)).replace('class="rflag"', 'class="btn ghost sm rflag inline"').replace(">⚑<", ">⚑ Report<")}</div>`;
       Store.topic(item.gen, ok);
       if (!ok) Store.mistake({ prompt: item.prompt, answer: item.answer, given, gen: item.gen, why: item.why });
       Store.addXP(ok ? 10 : 2);
@@ -108,7 +110,7 @@
   /* external dictionaries – opened in the system browser (also from inside the APK) */
   UI.dictLinks = (word) => {
     const w = encodeURIComponent(String(word).replace(/^(der|die|das)\s+/i, "").trim());
-    const links = [["Linguee", `https://www.linguee.com/german-english/search?query=${w}`], ["DeepL", `https://www.deepl.com/translator#de/en/${w}`], ["dict.cc", `https://www.dict.cc/?s=${w}`], ["Duden", `https://www.duden.de/suchen/dudenonline/${w}`], ["Wiktionary", `https://de.wiktionary.org/wiki/${w}`]];
+    const links = [["Linguee", `https://www.linguee.com/german-english/search?query=${w}`], ["DeepL", `https://www.deepl.com/translator#de/en/${w}`], ["dict.cc", `https://www.dict.cc/?s=${w}`], ["LEO", `https://dict.leo.org/englisch-deutsch/${w}`], ["Duden", `https://www.duden.de/suchen/dudenonline/${w}`], ["Wiktionary", `https://de.wiktionary.org/wiki/${w}`]];
     return `<span class="dictlinks">${links.map(([n, u]) => `<button class="chip ext" data-url="${u}">${n} ↗</button>`).join("")}</span>`;
   };
   UI.umlautBar = () => `<div class="umlauts" aria-label="Special letters">${["ä", "ö", "ü", "ß", "Ä", "Ö", "Ü"].map((c) => `<button type="button" class="uml" data-c="${c}">${c}</button>`).join("")}</div>`;

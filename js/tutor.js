@@ -241,8 +241,27 @@
   const DAT_P = new Set(["mit", "bei", "von", "aus", "nach", "seit", "zu", "gegenüber"]);
   const AKK_P = new Set(["für", "ohne", "durch", "gegen", "um"]);
   const PRONOUNS = new Set(["ich", "du", "er", "sie", "es", "wir", "ihr", "man"]);
+  const DAT_VERBS = new Set(["helfen", "danken", "gehören", "gefallen", "gratulieren", "antworten", "folgen", "vertrauen", "zuhören", "schmecken", "passen", "fehlen", "zustimmen", "widersprechen", "begegnen", "gehorchen", "wehtun", "verzeihen", "raten"]);
+  const AKK_ONLY = new Set(["sehen", "besuchen", "lieben", "kennen", "fragen", "treffen", "anrufen", "einladen", "vermissen", "verstehen", "hören", "heiraten", "abholen", "brauchen", "suchen", "unterstützen", "überzeugen", "informieren", "kontaktieren"]);
+  const AKK_VERBS = AKK_ONLY;
+  const AKK2DAT = { mich: "mir", dich: "dir", ihn: "ihm" };
+  const DAT2AKK = { mir: "mich", dir: "dich", ihm: "ihn" };
+  const PLACES = new Set(["deutschland", "österreich", "schweiz", "indien", "china", "japan", "amerika", "england", "frankreich", "italien", "spanien", "polen", "russland", "türkei", "europa", "asien", "afrika", "berlin", "hamburg", "münchen", "köln", "frankfurt", "leipzig", "dresden", "stuttgart", "düsseldorf", "bonn", "wien", "zürich", "mumbai", "delhi", "pune", "bangalore", "london", "paris"]);
+  const LANGS = new Set(["deutsch", "englisch", "hindi", "marathi", "französisch", "spanisch", "italienisch", "türkisch", "russisch", "arabisch", "chinesisch"]);
+  // plural-only nouns and nouns whose plural looks like the singular (der Lehrer – die Lehrer)
+  const PL_ONLY = /^(Eltern|Leute|Ferien|Kosten|Nebenkosten|Lebenshaltungskosten|Geschwister|Lebensmittel|Möbel|Daten|Zwischentöne|Ausführungen)$/;
+  function maybePlural(nw) {
+    if (PL_ONLY.test(nw)) return true;
+    const hit = (DC.vocab || []).find((v) => v.de.replace(/^(der|die|das)\s+/, "") === nw);
+    if (hit && (hit.pl || "").replace(/^die\s+/, "") === nw) return true;
+    if ((E.NOUNS || []).some((n) => n.de === nw && (n.pl === "-" || n.pl === nw))) return true;
+    return !hit && /(er|el|en|chen|lein)$/.test(nw);
+  }
+  let NON_NOUN_SET = null;
+  const NON_NOUN = () => (NON_NOUN_SET = NON_NOUN_SET || new Set((DC.vocab || []).filter((v) => !/^(der|die|das)\s/.test(v.de)).map((v) => v.de.toLowerCase())));
 
   function nounGender(word) {
+    if (PL_ONLY.test(String(word))) return { de: word, g: "f", pl: true };
     const n = E.lookupNoun(word);
     if (n) return { g: n.g, de: n.de, pl: n.pl.toLowerCase() === word.toLowerCase() };
     const v = (DC.vocab || []).find((x) => x.art && x.de.split(" ").slice(1).join(" ").toLowerCase() === word.toLowerCase());
@@ -303,7 +322,7 @@
         const commaAt = words.findIndex((w, i) => i > ppIdx && /,$/.test(words[i - 1] || "") );
         if (ppIdx < words.length - 1 && !words.slice(0, ppIdx).some((w) => /,$/.test(w)) && !SUB.has(L[0]) && commaAt < 0 && !/,$/.test(words[ppIdx])) {
           const tail = words.slice(ppIdx + 1);
-          if (tail.length && !SUB.has(tail[0].toLowerCase()) && !/^(und|aber|oder|denn|sondern|als|wie)$/i.test(tail[0])) {
+          if (tail.length && !/^[(\[–-]/.test(tail[0]) && !SUB.has(tail[0].toLowerCase()) && !/^(und|aber|oder|denn|sondern|als|wie)$/i.test(tail[0])) {
             add(`<s>${words[ppIdx]} ${tail.join(" ")}</s> → <b>${tail.join(" ")} ${words[ppIdx]}</b>`, "The Partizip II closes the sentence (verb bracket): everything else goes between the auxiliary and the participle.", 17);
             const pp2 = words.splice(ppIdx, 1)[0]; words.push(pp2);
           }
@@ -392,11 +411,15 @@
       }
       // infinitive not at end: "Ich kann sprechen Deutsch"
       L = low();
-      const infIdx = L.findIndex((w, k) => k > mi + 1 && k < L.length - 1 && finIndex().has(w) && finIndex().get(w).some((x) => x.inf === w));
+      const infIdx = L.findIndex((w, k) => k > mi && k < L.length - 1 && !PRONOUNS.has(w) && finIndex().has(w) && finIndex().get(w).some((x) => x.inf === w));
       const perfInf = /^(haben|sein|worden|werden)$/.test((L[L.length - 1] || "").replace(/[.?!]$/, ""));
       if (infIdx > 0 && !perfInf && !PRONOUNS.has(L[infIdx + 1]) && !L.includes("und")) {
         const w = words.splice(infIdx, 1)[0]; words.push(w);
         add(`<s>${w} ${words.slice(infIdx, -1).join(" ")}</s> → <b>${words.slice(infIdx, -1).join(" ")} ${w}</b>`, "With a modal verb the infinitive goes to the very <b>end</b> (verb bracket).", 11);
+        // "nicht morgen kommen" → "morgen nicht kommen": time words come before nicht
+        L = low();
+        const nt = L.findIndex((x, k) => x === "nicht" && TIME1.includes(L[k + 1] || ""));
+        if (nt >= 0) { const t = words[nt + 1]; words[nt + 1] = words[nt]; words[nt] = t; }
       }
     }
     // subject-verb agreement for ich/du/er/wir/ihr
@@ -463,18 +486,90 @@
       if (/^[A-ZÄÖÜ]/.test(words[i]) && i > 0) continue;
       let j = i + 1; if (PRONOUNS.has(L[j])) j++;
       if (TIME1.includes(L[j])) j++;
-      const a = L[j]; if (!/^(der|die|das|den|dem|ein|eine|einen|einem)$/.test(a || "")) continue;
+      const a = L[j]; if (!/^(der|die|das|den|dem|k?ein|k?eine|k?einen|k?einem)$/.test(a || "")) continue;
       const nw = (words[j + 1] || "").replace(/[,;:.!?]$/, "");
       if (nw.length < 2 || !/^[A-ZÄÖÜ]/.test(nw)) continue;      // German nouns are capitalised
       const ng = nounGender(nw); if (!ng || ng.pl) continue;
       if (a === "der" && j === 1) continue;
-      const kind = /^ein/.test(a) ? "indef" : "def";
-      const right = E.art(kind, v.obj, ng.g);
+      const kind = /^k?ein/.test(a) ? "indef" : "def";
+      const right = (a[0] === "k" ? "k" : "") + E.art(kind, v.obj, ng.g);
       if (right !== a) {
         add(`<s>${a} ${ng.de}</s> → <b>${right} ${ng.de}</b>`, `<b>${v.inf}</b> takes the <b>${v.obj === "dat" ? "Dativ" : "Akkusativ"}</b>. ${ng.de} is ${{ m: "masculine", f: "feminine", n: "neuter" }[ng.g]} → ${right}.`, v.obj === "dat" ? 13 : 6);
         words[j] = right;
       }
     }
+    // ---------- lexicon rules ----------
+    // 1) verbs that always take the Dativ / Akkusativ, checked against the pronoun
+    L = low();
+    const infOf = (w) => { const c = finIndex().get(w); return c ? c.map((x) => x.inf) : []; };
+    const hasInf = (w, set) => infOf(w).some((x) => set.has(x)) || set.has(w);
+    const AKK_PREP = /^(für|durch|gegen|ohne|um)$/;
+    for (let i = 0; i < L.length; i++) {
+      if (hasInf(L[i], DAT_VERBS)) {
+        for (let j = Math.max(0, i - 3); j <= Math.min(L.length - 1, i + 3); j++) {
+          if (j === i || !AKK2DAT[L[j]] || AKK_PREP.test(L[j - 1] || "")) continue;
+          if (words.slice(Math.min(i, j), Math.max(i, j)).some((x) => /[,;:]$/.test(x))) continue;   // different clause (Ich freue mich, dir zu helfen)
+          if (L.slice(0, i).some((w) => hasInf(w, AKK_VERBS))) break;
+          const v = infOf(L[i])[0] || L[i];
+          add(`<s>${L[i]} … ${L[j]}</s> → <b>${L[i]} … ${AKK2DAT[L[j]]}</b>`, `<b>${v}</b> always takes the <b>Dativ</b>: mir, dir, ihm, ihr, uns, euch, ihnen. (${v === "helfen" ? "Ich helfe dir." : v === "danken" ? "Ich danke dir." : "Das gehört mir."})`, 13);
+          words[j] = AKK2DAT[L[j]] + (words[j].match(/[,;:]$/) || [""])[0]; L = low(); break;
+        }
+      } else if (hasInf(L[i], AKK_ONLY)) {
+        const j = i + 1 < L.length && DAT2AKK[L[i + 1]] ? i + 1 : (PRONOUNS.has(L[i + 1]) && DAT2AKK[L[i + 2]] ? i + 2 : -1);
+        if (j < 0 || /^(der|die|das|den|dem|ein|eine|einen|einem|mein|meine|meinen|dein|deine|deinen)$/.test(L[j + 1] || "")) continue;
+        const v = infOf(L[i])[0] || L[i];
+        add(`<s>${L[i]} … ${L[j]}</s> → <b>${L[i]} … ${DAT2AKK[L[j]]}</b>`, `<b>${v}</b> takes the <b>Akkusativ</b>: mich, dich, ihn, sie, uns, euch.`, 6);
+        words[j] = DAT2AKK[L[j]] + (words[j].match(/[,;:]$/) || [""])[0]; L = low();
+      }
+    }
+    // 2) possessive / kein after a preposition: "mit mein Auto" → "mit meinem Auto"
+    for (let i = 0; i < L.length - 2; i++) {
+      const p = L[i]; const isD = DAT_P.has(p), isA = AKK_P.has(p); if (!isD && !isA) continue;
+      const m = (L[i + 1] || "").match(/^(mein|dein|sein|ihr|unser|eu(?:e)?r|kein)(e|en|em|er|es)?$/); if (!m) continue;
+      const nw = (words[i + 2] || "").replace(/[,;:.!?]$/, ""); if (!/^[A-ZÄÖÜ]/.test(nw)) continue;
+      let ng = nounGender(nw); if (!ng) continue;
+      if (PL_ONLY.test(nw)) ng = Object.assign({}, ng, { pl: true });
+      if (!ng.pl && maybePlural(nw) && /^(e|en)$/.test(m[2] || "") ) continue;   // "mit seinen Lehrern/Kollegen" – may be plural
+      const stem = m[1] === "euer" || m[1] === "eur" ? "eur" : m[1];
+      const base = m[1] === "eur" ? "euer" : m[1];
+      const end = ng.pl ? (isD ? "en" : "e") : isD ? (ng.g === "f" ? "er" : "em") : (ng.g === "m" ? "en" : ng.g === "f" ? "e" : "");
+      const right = end ? stem + end : base;
+      if (right !== L[i + 1]) {
+        add(`<s>${p} ${L[i + 1]} ${nw}</s> → <b>${p} ${right} ${nw}</b>`, `<b>${p}</b> takes the <b>${isD ? "Dativ" : "Akkusativ"}</b>. ${nw} is ${ng.pl ? "plural" : { m: "masculine", f: "feminine", n: "neuter" }[ng.g]} → <b>${right}</b>.`, isD ? 15 : 14);
+        words[i + 1] = right; L = low();
+      }
+    }
+    // 3) article–noun pairs that are wrong in every case (die Tisch, das Frau, der Auto …)
+    for (let i = 0; i < L.length - 1; i++) {
+      const a = L[i]; if (!/^(der|die|das)$/.test(a)) continue;
+      const nw = (words[i + 1] || "").replace(/[,;:.!?]$/, ""); if (!/^[A-ZÄÖÜ]/.test(nw)) continue;
+      const ng = nounGender(nw); if (!ng || ng.pl) continue;
+      if (a === "die" && maybePlural(nw)) continue;
+      const impossible = (a === "die" && ng.g !== "f") || (a === "das" && ng.g !== "n") || (a === "der" && ng.g === "n");
+      if (!impossible) continue;
+      const prev = L[i - 1] || "";
+      const c = DAT_P.has(prev) ? "dat" : AKK_P.has(prev) ? "akk" : "nom";
+      const right = E.art("def", c, ng.g);
+      const shown = i === 0 ? R_cap(right) : right;
+      add(`<s>${words[i]} ${nw}</s> → <b>${shown} ${nw}</b>`, `<b>${nw}</b> is ${{ m: "masculine (der)", f: "feminine (die)", n: "neuter (das)" }[ng.g]} – “${a} ${nw}” is wrong in every case. Learn nouns with their article.`, 4);
+      words[i] = shown; L = low();
+    }
+    // 4) double negation: kein … nicht
+    const ki = L.findIndex((w) => /^kein(e|en|em|er|es)?$/.test(w));
+    if (ki >= 0) {
+      const nn = L.findIndex((w, k) => k > ki && w === "nicht" && L[k + 1] !== "nur" && !words.slice(ki, k).some((x) => /,$/.test(x)));
+      if (nn > 0) { add(`<s>${L[ki]} … nicht</s> → <b>${L[ki]} …</b>`, "German uses only <b>one</b> negation: <b>kein</b> already negates the noun, so <b>nicht</b> must go.", 7); words.splice(nn, 1); L = low(); }
+    }
+    // 5) place names and languages are capitalised
+    words = words.map((w, i) => {
+      const k = w.replace(/[,;:]$/, "");
+      if (i > 0 && (PLACES.has(k) || (LANGS.has(k) && /^(sprech|sprich|lern|versteh|auf$|kann$|kannst$)/.test(L[i - 1] || "")))) {
+        add(`<s>${k}</s> → <b>${R_cap(k)}</b>`, "Names of countries, cities and languages are capitalised.", 1);
+        return R_cap(k) + w.slice(k.length);
+      }
+      return w;
+    });
+
     // als vs wenn
     L = low();
     if (L[0] === "wenn" && L.slice(0, 6).some((w) => /^(war|hatte|waren|kam|ging|wohnte)$/.test(w)) && !L.includes("immer")) {
@@ -486,7 +581,7 @@
     words = words.map((w, i) => {
       const k = w.replace(/[,;:]$/, "");
       const prev = (L[i - 1] || ""), next = words[i + 1] || "";
-      if (i > 0 && k === k.toLowerCase() && NOUNSET.has(k) && !isFinite(k) && !/^(essen|leben|arbeiten|junge|alte|kranke|recht|unrecht|leid|weh|schuld|angst)$/.test(k) && !PRONOUNS.has(prev) && !/^[A-ZÄÖÜ]/.test(next) && !/^(zu|sich|mich|dich|uns|euch)$/.test(prev)) {
+      if (i > 0 && k === k.toLowerCase() && NOUNSET.has(k) && !isFinite(k) && !NON_NOUN().has(k) && !(FUNC && FUNC[k]) && !/^(essen|leben|arbeiten|junge|alte|kranke|recht|unrecht|leid|weh|schuld|angst)$/.test(k) && !PRONOUNS.has(prev) && !/^[A-ZÄÖÜ]/.test(next) && !/^(zu|sich|mich|dich|uns|euch)$/.test(prev)) {
         add(`<s>${k}</s> → <b>${R_cap(k)}</b>`, "All German nouns start with a capital letter.", 5);
         return R_cap(k) + w.slice(k.length);
       }
@@ -625,7 +720,7 @@
     if ((m = t.match(/^(?:check|korrigiere?|correct|prüfe?|is this (?:right|correct)\??)\s*[:\-]?\s*(.+)$/i)) || (looksGerman(t) && t.split(" ").length >= 3 && !/\?$/.test(t) && !/^(explain|erkläre|what|why|how|was|warum|wie)\b/i.test(t))) {
       const s = m ? m[1] : t;
       const r = check(s);
-      if (!r.issues.length) return { html: `<p>I found no rule problems in:</p><p class="ex">${esc(s)} <button class="say" data-tts="${esc(s)}">🔊</button></p><p class="muted">My checker covers word order, verb endings, haben/sein, cases after verbs & prepositions, modal verbs, kein/nicht and capitalisation. It can't judge meaning or style.</p>` };
+      if (!r.issues.length) return { html: `<p>I didn't spot a mistake in:</p><p class="ex">${esc(s)} <button class="say" data-tts="${esc(s)}">🔊</button></p><p class="muted">But I don't catch everything yet. I check word order, verb endings, haben/sein, cases after verbs, prepositions and possessives, articles, modal verbs, kein/nicht and capitalisation – not meaning, word choice or style. If you're unsure, compare with DeepL or LEO in the Translate tab.</p>` };
       return { html: `<p><b>Corrected:</b></p><p class="ex ok">${esc(r.fixed)} <button class="say" data-tts="${esc(r.fixed)}">🔊</button></p><ul class="nots">${r.issues.map((i) => `<li>${i.rule}<br><span class="muted">${i.why}</span>${i.lesson ? ` <button class="link" data-go="lesson/${i.lesson}">Lesson ${i.lesson}</button>` : ""}</li>`).join("")}</ul>`, weak: r.issues.map((i) => i.lesson) };
     }
     if ((m = t.match(/(?:conjugat\w*|konjugier\w*|forms? of|konjugation (?:von)?)\s+(?:the verb\s+)?([a-zäöüß]+)/i))) return { html: conjugateHtml(m[1]) };

@@ -185,16 +185,16 @@
     const pool = V.filter((v) => tags.includes(v.tag) && (!opts.noSep || !v.sep) && (!opts.dat || v.obj === "dat"));
     const v = R.pick(pool);
     const s = opts.subj || (Math.random() < 0.25 && !opts.pronounOnly ? subjNoun() : randSubj());
-    let obj = "", objEn = "";
+    let obj = "", objEn = "", o = null, okind = "";
     if (v.obj) {
-      const o = R.pick(objs(v.tag));
-      const kind = o.person ? "def" : R.pick(["def", "indef"]);
+      o = R.pick(objs(v.tag));
+      const kind = o.person ? "def" : R.pick(["def", "indef"]); okind = kind;
       obj = np(o, v.obj, kind); objEn = (kind === "def" ? "the " : /^[aeiou]/.test(o.en) ? "an " : "a ") + o.en;
       if (["Milch", "Wasser", "Kaffee"].includes(o.de) && kind === "indef") { obj = v.obj === "akk" && o.g === "m" ? "einen Kaffee" : o.de; objEn = o.en; }
     } else if (v.tag === "move") { const d = R.pick(DEST); obj = d[0]; objEn = d[1]; }
     const [fin, pre] = conjSplit(v, s.p);
     const time = opts.time || R.pick(TIMES);
-    return { v, s, fin, pre, obj, objEn, time,
+    return { v, s, fin, pre, obj, objEn, time, o, okind,
       main: () => [R.cap(s.de), fin, time[0], obj, pre].filter(Boolean).join(" ") + ".",
       endClause: () => [s.de, time[0], obj, (pre || "") + fin].filter(Boolean).join(" "),
       en: () => `${R.cap(s.en)} ${v.tag === "move" && v.inf === "fahren" ? (s.p === "3s" ? "goes" : "go") : en3(v, s)}${objEn ? " " + objEn : ""} ${time[1]}.`,
@@ -575,7 +575,7 @@
     const pre = role === "mit" ? "mit " : "";
     const sent = `Das ist ${np(n, "nom")}, ${pre}${rel} ${tail}.`;
     return choice("relativ", 33, sent.replace(`, ${pre}${rel} `, `, ${pre}${blank} `), rel, ["der", "die", "das", "den", "dem"].filter((x) => x !== rel).slice(0, 3),
-      `Gender from the noun (<b>${n.de}</b>, ${G[n.g]}), case from the relative clause: ${role === "nom" ? "it is the subject of „" + tail + "“ → Nominativ" : role === "akk" ? "„" + tail.split(" ").pop() + "“ needs an Akkusativ object → Akkusativ" : role === "dat" ? "helfen takes the Dativ" : "mit + Dativ"} → <b>${rel}</b>. The verb goes to the end.`);
+      `Gender from the noun (<b>${n.de}</b>, ${G[n.g]}), case from the relative clause: ${role === "nom" ? "it is the subject of „" + tail + "“ → Nominativ" : role === "akk" ? (() => { const pp = tail.split(" ").find((w) => /^ge\w+(t|en)$/.test(w)); const inf = pp ? { gesehen: "sehen", gekauft: "kaufen" }[pp] || pp : tail.split(" ").pop(); return "„" + inf + "“ needs an Akkusativ object (" + (pp ? "ich habe <b>ihn/sie/es</b> " + pp : "") + ") → Akkusativ. „habe“ is only the helper verb"; })() : role === "dat" ? "helfen takes the Dativ" : "mit + Dativ"} → <b>${rel}</b>. The verb goes to the end.`);
   });
 
   def("als_wenn", { title: "als or wenn", level: "B1", lessons: [34] }, () => {
@@ -629,7 +629,29 @@
     const c = clause({ pronounOnly: true, noSep: true, tags: ["buy", "eat", "read", "see", "person", "plain"] });
     const de = c.main();
     const alt = [R.cap(c.time[0]), c.fin, c.s.de, c.obj].filter(Boolean).join(" ") + ".";
-    return input("translate", 2, `Translate: <i>${c.en()}</i>`, de, `Model: <b>${de}</b><br>Also correct: ${alt}<br>Check: verb in position 2${c.v.obj ? `, ${c.v.inf} + ${CASE_NAME[c.v.obj]}` : ""}.`, { accept: [alt], full: de });
+    /* English is ambiguous where German is not: "you" = du / ihr / Sie, "the doctor" = der Arzt / die Ärztin.
+       Accept every German version the English allows, in both word orders. */
+    const subs = [c.s];
+    if (c.s.en === "you") subs.push({ de: "Sie", p: "3p", formal: true });
+    if (c.s.en === "you (all)") subs.push({ de: "Sie", p: "3p", formal: true });
+    const objsAlt = [c.obj];
+    let other = null;
+    if (c.o && c.o.person) {
+      other = PEOPLE.find((x) => x !== c.o && x.en === c.o.en);
+      if (other) objsAlt.push(np(other, c.v.obj, c.okind));
+    }
+    const accept = new Set([alt]);
+    subs.forEach((sb) => objsAlt.forEach((ob) => {
+      const [f, pr] = conjSplit(c.v, sb.p);
+      const sd = sb.formal ? "Sie" : sb.de;
+      accept.add([R.cap(sd), f, c.time[0], ob, pr].filter(Boolean).join(" ") + ".");
+      accept.add([R.cap(c.time[0]), f, sd, ob, pr].filter(Boolean).join(" ") + ".");
+    }));
+    accept.delete(de);
+    const notes = [];
+    if (other) notes.push(`“the ${c.o.en}” can be a man or a woman, so <b>${np(c.o, c.v.obj, c.okind)}</b> and <b>${np(other, c.v.obj, c.okind)}</b> are both right`);
+    if (subs.length > 1) notes.push(`“you” can be <b>${c.s.de}</b> or polite <b>Sie</b>`);
+    return input("translate", 2, `Translate: <i>${c.en()}</i>`, de, `Model: <b>${de}</b><br>Also correct: ${alt}${notes.length ? "<br>" + notes.join("; ") + "." : ""}<br>Check: verb in position 2${c.v.obj ? `, ${c.v.inf} + ${CASE_NAME[c.v.obj]}` : ""}.`, { accept: [...accept], full: de });
   });
 
   // ---------------- public API ----------------

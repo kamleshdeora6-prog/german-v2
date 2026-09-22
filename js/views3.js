@@ -208,13 +208,32 @@
         <label>API key <input data-k="aiKey" type="password" autocomplete="off" placeholder="sk-ant-…"></label>
         <label>Model <input data-k="aiModel" type="text"></label>
       </section>
+      <section class="card"><h3>Learner profiles</h3>
+        <p class="muted small">Each learner on this device has separate progress. Nothing leaves the device.</p>
+        <label>Your name <input class="pn" maxlength="30" value="${H.esc(Store.name())}"></label>
+        <ul class="plist">${Store.profiles().map((p) => `<li><span class="av" style="background:${p.color}">${H.esc((p.name || "?").charAt(0).toUpperCase())}</span> ${H.esc(p.name || "Unnamed")} ${p.id === Store.profile().id ? '<span class="muted small">· active</span>' : `<button class="btn ghost sm psw" data-id="${p.id}">Switch</button><button class="btn bad sm pdel" data-id="${p.id}">Delete</button>`}</li>`).join("")}</ul>
+        <div class="row"><button class="btn padd">Add a learner</button></div></section>
       <section class="card"><h3>Your data</h3><p class="muted small">Progress is saved on this device. Export a backup to move it to another phone or browser.</p>
         <div class="row"><button class="btn exp">Export backup</button><label class="btn ghost">Import backup<input type="file" accept="application/json,.json" class="imp" hidden></label><button class="btn bad rst">Reset progress</button></div></section>
       <section class="card"><h3>Install the app</h3>
         <p><b>Android (Chrome):</b> menu ⋮ → “Install app” / “Add to Home screen”. Or install the APK.</p>
         <p><b>iPhone (Safari):</b> Share → “Add to Home Screen”. Works offline after the first visit.</p>
         <p><b>Desktop Chrome:</b> install icon in the address bar.</p>
-        <p class="muted small">Deutsch Coach ${App.version} · ${DC.curriculum.length} lessons · ${DC.vocab.length} words · ${Object.keys(Engine.GEN).length} sentence generators</p></section>`;
+        <p class="muted small">${DC.curriculum.length} lessons · ${DC.vocab.length} words · ${Object.keys(Engine.GEN).length} sentence generators</p></section>
+      <section class="card about"><h3>About</h3>
+        <p>Deutsch Coach <b>${App.version}</b></p>
+        <p>Created by <b>${App.author}</b></p>
+        <p>Last updated: ${App.updated}</p>
+        <p class="muted small">© ${new Date().getFullYear()} ${App.author}. All rights reserved.</p>
+        <div class="row"><button class="btn ghost sm" data-go="about">About & privacy</button><button class="btn ghost sm" data-report='{"part":"General feedback"}'>⚑ Report a problem</button></div></section>`;
+    const pn = el.querySelector(".pn");
+    pn.onchange = () => { if (!pn.value.trim()) { pn.value = Store.name(); return; } Store.setName(pn.value); App.renderChip(); H.toast("Name saved."); };
+    el.querySelectorAll(".psw").forEach((b) => (b.onclick = () => { Store.switchTo(b.dataset.id); App.afterSwitch(); }));
+    el.querySelectorAll(".pdel").forEach((b) => (b.onclick = () => {
+      const p = Store.profiles().find((x) => x.id === b.dataset.id);
+      if (confirm(`Delete ${p.name || "this profile"} and all of its progress? This cannot be undone.`)) { Store.deleteProfile(p.id); V.settings(el); }
+    }));
+    el.querySelector(".padd").onclick = App.profileSheet;
     el.querySelectorAll("[data-k]").forEach((inp) => {
       const k = inp.dataset.k;
       if (inp.type === "checkbox") inp.checked = !!st[k]; else inp.value = st[k] ?? "";
@@ -225,11 +244,7 @@
       };
     });
     el.querySelector(".test").onclick = () => Speech.speak("Guten Tag! Ich heiße Max und helfe dir beim Deutschlernen.");
-    el.querySelector(".exp").onclick = () => {
-      const data = Store.export();
-      if (window.AndroidBridge && AndroidBridge.share) return AndroidBridge.share(data);
-      const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([data], { type: "application/json" })); a.download = `deutsch-coach-backup-${Store.today()}.json`; a.click();
-    };
+    el.querySelector(".exp").onclick = App.backup;
     el.querySelector(".imp").onchange = async (e) => { try { Store.import(await e.target.files[0].text()); H.toast("Backup imported.", "good"); App.route(); } catch (err) { H.toast(err.message, "bad"); } };
     el.querySelector(".rst").onclick = () => { if (confirm("Delete all progress on this device? This can't be undone.")) { Store.reset(); H.toast("Progress reset."); App.go("home"); } };
   };
@@ -237,7 +252,8 @@
   /* ---------------- Mehr ---------------- */
   V.more = (el) => {
     el.innerHTML = `<h2 class="page-title">More</h2><section class="grid2">
-      ${[["vocab", "Words", `${DC.vocab.length} words, SRS`], ["listen", "Listening", "Dictation"], ["speak", "Speaking", "Shadowing & free talk"], ["read", "Reading", `${DC.curriculum.length + DC.passages.length} texts`], ["write", "Writing", `${DC.exams.writing.length} exam tasks`], ["readexam", "Reading exam", `${DC.exams.reading.length} sets`], ["notes", "Notes", "Cheat sheets A1–C2"], ["exam", "Exam", "Mock test & LiD"], ["grammar", "Grammar", "Rules & tables"], ["stats", "Progress", "Stats & mistakes"], ["settings", "Settings", "Voice, backup, AI"]]
-        .map(([g, t, d]) => `<button class="tile" data-go="${g}"><b>${t}</b><span>${d}</span></button>`).join("")}</section>`;
+      ${[["translate", "Translate", "Words & sentences, DeepL, LEO"], ["vocab", "Words", `${DC.vocab.length} words, SRS`], ["listen", "Listening", "Dictation"], ["speak", "Speaking", "Shadowing & free talk"], ["read", "Reading", `${DC.curriculum.length + DC.passages.length} texts`], ["write", "Writing", `${DC.exams.writing.length} exam tasks`], ["readexam", "Reading exam", `${DC.exams.reading.length} sets`], ["notes", "Notes", "Cheat sheets A1–C2"], ["exam", "Exam", "Mock test & LiD"], ["grammar", "Grammar", "Rules & tables"], ["stats", "Progress", "Stats & mistakes"], ["settings", "Settings", "Profiles, voice, backup"], ["about", "About & privacy", "Who made this, your data"]]
+        .map(([g, t, d]) => `<button class="tile" data-go="${g}"><b>${t}</b><span>${d}</span></button>`).join("")}</section>
+      <p class="credit muted small">${App.credit()}</p>`;
   };
 })();
