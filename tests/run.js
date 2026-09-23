@@ -4,8 +4,13 @@
 const path = require("path");
 const ROOT = path.join(__dirname, "..");
 global.window = global;
-for (const f of ["curriculum", "reference", "scenes", "vocab", "verbs", "conj", "notes", "passages", "bank", "lid", "exams"]) require(path.join(ROOT, "js/data", f + ".js"));
+for (const f of ["curriculum", "reference", "scenes", "vocab", "verbs", "conj", "notes", "passages", "bank", "lid", "exams", "placement"]) require(path.join(ROOT, "js/data", f + ".js"));
 require(path.join(ROOT, "js/engine.js")); require(path.join(ROOT, "js/engine_plus.js")); require(path.join(ROOT, "js/tutor.js"));
+/* Weber needs a tiny Store/H stub outside the browser */
+global.H = global.H || { esc: (x) => String(x) };
+const _s = { settings: { tone: "streng" } };
+global.Store = global.Store || { get: () => _s, save() {} };
+require(path.join(ROOT, "js/weber.js"));
 
 let failed = 0;
 const ok = (cond, msg) => { if (!cond) { failed++; console.log("  ✗ " + msg); } };
@@ -28,6 +33,20 @@ ok(DC.lid.every((q) => q.a >= 0 && q.a < q.choices.length), "every citizenship q
 DC.bank.filter((b) => /\[.*\]/.test(b.q)).forEach((b) => ok(b.q.match(/\[(.*)\]/)[1].split("/").map((x) => x.trim()).includes(b.a), `bank item options contain the answer: ${b.q}`));
 DC.exams.reading.forEach((s) => s.parts.forEach((p) => p.items.forEach((it) => ok(it.why, `reading exam "${s.title}": every item needs a reason`))));
 console.log(`  ${DC.curriculum.length} lessons, ${DC.vocab.length} words, ${DC.bank.length} bank items`);
+
+section("1b. Placement bank and Frau Weber");
+const stages = {};
+DC.placement.forEach((i) => { stages[i.s] = (stages[i.s] || 0) + 1; ok(i.o.length === 4, `placement item “${i.q}” must have 4 options`); ok(i.w, `placement item “${i.q}” needs a reason`); ok(i.o[i.a] !== undefined, "answer index inside options"); });
+for (let s = 1; s <= 12; s++) ok((stages[s] || 0) >= 6, `stage ${s} has ${stages[s] || 0} items, expected at least 6`);
+["planOk", "planMad", "planLazy", "shortcut", "repeat", "streak", "rough", "behind", "ahead", "stakes"].forEach((k) => {
+  ["streng", "neutral", "freundlich"].forEach((tone) => {
+    Store.get().settings.tone = tone;
+    const line = Weber.say(k, { level: "B1", weeks: 12, days: 84, min: 45, hours: 300, lessons: 1, words: 15, realWeeks: 18, year: 2031, topic: "Dativ", n: 6, gap: 9 });
+    ok(line && !/\{\w+\}/.test(line), `Weber ${k}/${tone} left a placeholder: ${line}`);
+  });
+});
+Store.get().settings.tone = "streng";
+console.log(`  ${DC.placement.length} placement items, 12 stages, 3 tones`);
 
 section("2. Exercise generators");
 const lower = (s) => s.split(/\s+/).map((x) => x.toLowerCase().replace(/[.!?]+$/, "")).sort().join("|");

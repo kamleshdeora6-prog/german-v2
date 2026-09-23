@@ -59,7 +59,11 @@
       return s.xp >= 60 && Date.now() - last > month && Date.now() > snooze && Date.now() - (s.created || 0) > 7 * 864e5
         ? `<section class="card remind"><p>💾 <b>Back up your progress?</b> ${last ? "Your last backup is over a month old." : "You haven't saved a backup yet."} Progress lives only on this device.</p><div class="row"><button class="btn sign sm bk-now">Export backup</button><button class="btn ghost sm bk-later">Remind me later</button></div></section>` : ""; })()}
     <div class="novoice"></div>
-    ${!s.placement && p.done < 2 ? `<section class="card"><p>🎯 <b>Not sure where to start?</b> A short placement test finds your level.</p><div class="row"><button class="btn sign sm" data-go="placement">Take the placement test</button></div></section>` : ""}
+    ${(() => { const r = s.resume; return r && Date.now() - r.at < 3 * 864e5 && r.route !== "home"
+        ? `<section class="card"><p>↩︎ <b>Continue where you left off</b><span class="muted small"> · ${esc(r.route)}</span></p><div class="row"><button class="btn sign sm" data-go="${esc(r.route)}">Continue</button></div></section>` : ""; })()}
+    ${s.plan ? (() => { const pl = s.plan, left = Math.max(0, Math.round((pl.deadline - Date.now()) / 864e5));
+        return `<section class="card lvl-${pl.level}"><p>🎯 <b>${pl.level} in ${left} days</b> · ${pl.minutes} min and ${pl.words} words a day</p><div class="row"><button class="btn sign sm" data-go="daily">Today's session</button><button class="btn ghost sm" data-go="plan">Plan</button></div></section>`; })()
+      : `<section class="card"><p>🎯 <b>${s.placement ? "You have a level – now give it a date." : "Not sure where to start?"}</b> ${s.placement ? "A plan turns 60 lessons into one thing a day." : "The placement test finds your level in about 15 minutes."}</p><div class="row"><button class="btn sign sm" data-go="${s.placement ? "plan" : "placement"}">${s.placement ? "Make a plan" : "Take the placement test"}</button>${s.placement ? "" : '<button class="btn ghost sm" data-go="refresh">I learnt before and forgot</button>'}</div></section>`}
     <section class="card quick"><div class="row"><button class="btn ghost" data-go="translate">⇄ Translate a word or sentence</button><button class="btn ghost" data-go="write">✍ Writing exam</button></div></section>
     <p class="credit muted small">${App.credit()}</p>`;
     const bn = el.querySelector(".bk-now"); if (bn) bn.onclick = () => { App.backup(); el.querySelector(".remind").remove(); };

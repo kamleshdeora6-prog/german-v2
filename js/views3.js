@@ -208,6 +208,12 @@
         <label>API key <input data-k="aiKey" type="password" autocomplete="off" placeholder="sk-ant-…"></label>
         <label>Model <input data-k="aiModel" type="text"></label>
       </section>
+      <section class="card"><h3>Look and feel</h3>
+        <label>Theme <select data-k="theme">${[["auto", "System (follows your phone)"], ["light", "Hell – light"], ["dark", "Dunkel – dark"], ["paper", "Papier – warm, easy on the eyes"]].map(([v, t]) => `<option value="${v}" ${(s.settings.theme || "auto") === v ? "selected" : ""}>${t}</option>`).join("")}</select></label>
+        <label>Text size <select data-k="textSize">${[["s", "Small"], ["m", "Normal"], ["l", "Large"], ["xl", "Very large"]].map(([v, t]) => `<option value="${v}" ${(s.settings.textSize || "m") === v ? "selected" : ""}>${t}</option>`).join("")}</select></label>
+        <label>Teacher's tone <select data-k="tone">${[["streng", "Streng – Frau Weber, no excuses (default)"], ["neutral", "Neutral – plain feedback"], ["freundlich", "Freundlich – gentle encouragement"]].map(([v, t]) => `<option value="${v}" ${(s.settings.tone || "streng") === v ? "selected" : ""}>${t}</option>`).join("")}</select></label>
+        <p class="muted small">Frau Weber comments on your plan, repeated mistakes and broken streaks. She's blunt about the work, never about you.</p>
+      </section>
       <section class="card"><h3>Learner profiles</h3>
         <p class="muted small">Each learner on this device has separate progress. Nothing leaves the device.</p>
         <label>Your name <input class="pn" maxlength="30" value="${H.esc(Store.name())}"></label>
@@ -252,7 +258,7 @@
   /* ---------------- Mehr ---------------- */
   V.more = (el) => {
     el.innerHTML = `<h2 class="page-title">More</h2><section class="grid2">
-      ${[["translate", "Translate", "Words & sentences, DeepL, LEO"], ["vocab", "Words", `${DC.vocab.length} words, SRS`], ["listen", "Listening", "Dictation"], ["speak", "Speaking", "Shadowing & free talk"], ["read", "Reading", `${DC.curriculum.length + DC.passages.length} texts`], ["write", "Writing", `${DC.exams.writing.length} exam tasks`], ["readexam", "Reading exam", `${DC.exams.reading.length} sets`], ["notes", "Notes", "Cheat sheets A1–C2"], ["exam", "Exam", "Mock test & LiD"], ["grammar", "Grammar", "Rules & tables"], ["stats", "Progress", "Stats & mistakes"], ["settings", "Settings", "Profiles, voice, backup"], ["placement", "Placement test", "Find your level in 20 questions"], ["pronounce", "Pronunciation", "ü/u, ö/o, ich/sch and more"], ["news", "What's new", `Version ${App.version}`], ["about", "About & privacy", "Who made this, your data"]]
+      ${[["translate", "Translate", "Words & sentences, DeepL, LEO"], ["vocab", "Words", `${DC.vocab.length} words, SRS`], ["listen", "Listening", "Dictation"], ["speak", "Speaking", "Shadowing & free talk"], ["read", "Reading", `${DC.curriculum.length + DC.passages.length} texts`], ["write", "Writing", `${DC.exams.writing.length} exam tasks`], ["readexam", "Reading exam", `${DC.exams.reading.length} sets`], ["notes", "Notes", "Cheat sheets A1–C2"], ["exam", "Exam", "Mock test & LiD"], ["grammar", "Grammar", "Rules & tables"], ["stats", "Progress", "Stats & mistakes"], ["settings", "Settings", "Profiles, voice, backup"], ["plan", "My plan", "Goal, deadline, daily load"], ["daily", "Practice day", "Today's session in order"], ["weak", "Weak topics", "What you actually get wrong"], ["refresh", "Refresher", "Learnt it once, forgot it"], ["placement", "Placement test", "Find your level, 12 stages"], ["pronounce", "Pronunciation", "ü/u, ö/o, ich/sch and more"], ["news", "What's new", `Version ${App.version}`], ["about", "About & privacy", "Who made this, your data"]]
         .map(([g, t, d]) => `<button class="tile" data-go="${g}"><b>${t}</b><span>${d}</span></button>`).join("")}</section>
       <p class="credit muted small">${App.credit()}</p>`;
   };

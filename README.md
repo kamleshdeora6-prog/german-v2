@@ -1,7 +1,7 @@
 # Deutsch Coach
 
 **Learn German from A1 to C2 — free, offline, and every answer explained.**
-Created by **Zombieland** · version 4.4.0 · last updated 22 September 2026
+Created by **Zombieland** · version 5.0.0 · last updated 23 September 2026
 
 **Open the app:** https://kamleshdeora6-prog.github.io/german-v2/
 
@@ -20,7 +20,10 @@ A complete German course that runs in the browser, installs like an app, and wor
 - **Translate tab.** Offline meanings, article and conjugation tables, word-by-word breakdowns and a grammar check — plus one-tap links to DeepL, Google Translate, Reverso, LEO, Linguee, dict.cc, Duden and Wiktionary.
 - **Exam training.** Reading exam sets (A2–C1) with reasons for every answer, 10 writing tasks (A2–C2) with phrase banks, timer and model texts, a mock test, speaking practice and 183 *Leben in Deutschland* practice questions.
 - **Learner profiles.** Several people can learn on one device, each with their own name and progress.
-- **Placement test.** About 20 adaptive questions find your level and suggest a starting lesson.
+- **Placement test.** 96 items in 12 adaptive stages test rule knowledge, not typing speed, and give you a level, a sub-level and your weakest topics.
+- **Learning plan.** A goal, a date, and one thing to do each day — with an honest verdict when the deadline can't work.
+- **Practice day, weak topics and a refresher** for anyone coming back after a break.
+- **Frau Weber**, the strict teacher's voice (switchable: streng / neutral / freundlich).
 - **Pronunciation drills.** Eight sound pairs (ü/u, ö/o, ich/sch, long vs. short vowels, w/v, z/s …) with listening tests and a microphone check.
 - **Report a problem.** Every question has a ⚑ button that opens a pre-filled report.
 

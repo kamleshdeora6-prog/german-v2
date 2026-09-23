@@ -2,6 +2,17 @@
 
 All dates are the release dates of the app version shown in Settings → About.
 
+## 5.0.0 — 23 September 2026
+- **Real placement test**: 96 original items in 12 stages (A1 → C2), four options, one rule each. Adaptive with a stop rule; result gives level, sub-level (e.g. B1.2), a starting lesson and the topics to fix first.
+- **Learning plan**: pick a goal level and either a date or minutes per day. The app computes lessons, hours, daily minutes and words, warns when the maths doesn't work, and recalculates when you fall behind.
+- **Practice day**: one session in order — lesson, word review, drills, weak topics, writing — with progress kept per day.
+- **Weak topics**: what you actually get wrong, from your answers and the placement test, with drills.
+- **Refresher** for returners: a 16-question check at the level you reached, then a ranked must-do list.
+- **Frau Weber**, a strict teacher's voice on plans, repeated mistakes and broken streaks — blunt about the work, never about the person. Three tones in Settings (streng / neutral / freundlich).
+- **Max is now available on every screen** as a floating button, with the context of what you're doing.
+- **Screens keep their place**: leaving a session and coming back resumes where you were; the start screen offers "continue where you left off".
+- **New themes**: System, Hell, Dunkel and Papier (warm, low contrast), plus four text sizes.
+
 ## 4.4.0 — 23 September 2026
 - **Placement test** (More → Placement test): about 20 adaptive questions, a recommended starting lesson and your weakest topics.
 - **Pronunciation drills** (Speak → Sounds): eight minimal-pair groups with audio, a listening quiz and a microphone check.

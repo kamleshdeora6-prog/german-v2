@@ -1,9 +1,9 @@
 /* Deutsch Coach – app shell: router, navigation, theme, install */
 (function () {
   "use strict";
-  const ROUTES = { home: "home", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more", readexam: "readexam", write: "write", notes: "notes", translate: "translate", about: "about", placement: "placement", pronounce: "pronounce", news: "news" };
-  const TAB_OF = { home: "home", path: "path", lesson: "path", practice: "practice", vocab: "practice", tutor: "tutor", translate: "translate" };
-  const App = (window.App = { version: "4.4.0", updated: "23 September 2026", author: "Zombieland", pendingAsk: null });
+  const ROUTES = { home: "home", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more", readexam: "readexam", write: "write", notes: "notes", translate: "translate", about: "about", placement: "placement", pronounce: "pronounce", news: "news", plan: "plan", daily: "daily", weak: "weak", refresh: "refresh" };
+  const TAB_OF = { home: "home", path: "path", lesson: "path", practice: "practice", vocab: "practice", tutor: "tutor", translate: "translate", daily: "path", plan: "path", weak: "practice", refresh: "path" };
+  const App = (window.App = { version: "5.0.0", updated: "23 September 2026", author: "Zombieland", pendingAsk: null });
   /* Where problem reports go. Put an email address here to offer email as well. */
   App.contact = { github: "https://github.com/kamleshdeora6-prog/german-v2", email: "" };
   App.report = (ctx) => {
@@ -81,24 +81,79 @@
   App.afterSwitch = () => { App.applyTheme(); App.renderChip(); H.toast(`Hallo, ${Store.name() || "du"}!`); onboarding(); App.go("home"); };
 
   App.go = (h) => { if (location.hash === "#/" + h) App.route(); else location.hash = "#/" + h; };
-  App.askMax = (q) => { App.pendingAsk = q; App.go("tutor"); };
-  App.applyTheme = () => {
-    const t = Store.get().settings.theme;
-    const dark = t === "dark" || (t === "auto" && matchMedia("(prefers-color-scheme: dark)").matches);
-    document.documentElement.dataset.theme = dark ? "dark" : "light";
-    const m = document.querySelector('meta[name="theme-color"]'); if (m) m.content = dark ? "#0F1A21" : "#1C2B36";
+  App.askMax = (q) => { App.maxPanel(true); setTimeout(() => (V0().tutorSend ? V0().tutorSend(q) : App.pendingAsk = q), 60); };
+  const V0 = () => window.Views;
+  /* Floating Max: opens over whatever you are doing, so you never lose your place. */
+  App.maxPanel = (open) => {
+    let p = document.getElementById("maxpanel");
+    if (!p) {
+      p = document.createElement("div"); p.id = "maxpanel"; p.className = "maxpanel"; p.hidden = true;
+      p.innerHTML = `<div class="maxhead"><b>Max</b><span class="muted small ctx"></span><button class="x" aria-label="Close">✕</button></div><div class="maxbody"></div>`;
+      document.body.appendChild(p);
+      p.querySelector(".x").onclick = () => App.maxPanel(false);
+    }
+    if (open === false) { p.hidden = true; document.body.classList.remove("max-open"); return; }
+    Views.tutor(p.querySelector(".maxbody"), [], { embedded: true });   // rebuild so replies land in the panel
+    p.querySelector(".ctx").textContent = App.contextLabel();
+    p.hidden = false; document.body.classList.add("max-open");
+    const ta = p.querySelector("textarea"); if (ta) setTimeout(() => ta.focus(), 50);
   };
+  App.contextLabel = () => {
+    const r = (App.lastRoute || "").split("/");
+    if (r[0] === "lesson") { const l = DC.curriculum[+r[1] - 1]; return l ? `you're on lesson ${l.n}: ${l.title}` : ""; }
+    if (r[0] === "practice") return r[1] ? `you're practising ${(Engine.GEN[r[1]] || {}).title || r[1]}` : "you're practising";
+    if (r[0] === "write") return "you're writing";
+    if (r[0] === "readexam") return "you're in the reading exam";
+    if (r[0] === "placement") return "you're in the placement test";
+    return "";
+  };
+  App.applyTheme = () => {
+    const st = Store.get().settings;
+    const t = st.theme || "auto";
+    const dark = t === "dark" || (t === "auto" && matchMedia("(prefers-color-scheme: dark)").matches);
+    const r = document.documentElement;
+    r.dataset.theme = t === "paper" ? "paper" : dark ? "dark" : "light";
+    r.dataset.size = st.textSize || "m";
+    const m = document.querySelector('meta[name="theme-color"]');
+    if (m) m.content = t === "paper" ? "#F6F1E7" : dark ? "#0F1A21" : "#1C2B36";
+  };
+  /* Screens that hold your place (a session you are in the middle of) are kept alive in the
+     background instead of being rebuilt, so leaving to ask Max and coming back resumes where you were. */
+  const KEEP = /^(practice|lesson|write|readexam|placement|vocab|listen|speak|exam|daily|weak|refresh)/;
+  const cache = new Map();          // route key -> detached element
+  const MAX_KEEP = 6;
+  App.lastRoute = null;
   App.route = () => {
-    const parts = (location.hash.replace(/^#\/?/, "") || "home").split("/");
+    const raw = (location.hash.replace(/^#\/?/, "") || "home");
+    const parts = raw.split("/");
     const name = ROUTES[parts[0]] ? parts[0] : "home";
-    const view = document.getElementById("view");
+    const host = document.getElementById("view");
+    const key = raw;
     Speech.stop();
-    view.className = "view v-" + name;
+    if (KEEP.test(name) && !/^(home|more)$/.test(name)) { const s = Store.get(); s.resume = { route: key, at: Date.now() }; Store.save(); }
+    App.lastRoute = key;
+    // park the current screen if it is worth keeping
+    const cur = host.firstElementChild;
+    if (cur && cur.dataset.key && KEEP.test(cur.dataset.key.split("/")[0])) {
+      cache.set(cur.dataset.key, cur);
+      while (cache.size > MAX_KEEP) cache.delete(cache.keys().next().value);
+    }
+    host.innerHTML = "";
+    host.className = "view v-" + name;
+    const cached = cache.get(key);
+    if (cached) { cache.delete(key); host.appendChild(cached); App.afterRoute(name); return; }
+    const view = document.createElement("div");
+    view.className = "screen"; view.dataset.key = key;
+    host.appendChild(view);
     try { Views[name](view, parts.slice(1)); }
     catch (e) { console.error(e); view.innerHTML = `<div class="empty"><p>This screen hit an error: ${H.esc(e.message)}</p><button class="btn" data-go="home">Go home</button></div>`; }
+    App.afterRoute(name);
+  };
+  App.dropCache = (re) => { [...cache.keys()].forEach((k) => { if (!re || re.test(k)) cache.delete(k); }); };
+  App.afterRoute = (name) => {
     document.querySelectorAll(".nav a").forEach((a) => a.classList.toggle("on", a.dataset.tab === (TAB_OF[name] || "more")));
     if (name !== "tutor") window.scrollTo(0, 0);
-    view.focus({ preventScroll: true });
+    document.getElementById("view").focus({ preventScroll: true });
   };
 
   App.openLink = (url) => {
@@ -161,11 +216,21 @@
     d.querySelector(".obname").onkeydown = (e) => { if (e.key === "Enter") go(); };
   }
 
+  App.resume = () => (Store.get().resume || null);
+  App.mountMaxButton = () => {
+    if (document.querySelector(".maxfab")) return;
+    const b = document.createElement("button");
+    b.className = "maxfab"; b.type = "button"; b.title = "Ask Max (anywhere)"; b.setAttribute("aria-label", "Ask Max");
+    b.innerHTML = "<span>M</span>";
+    b.onclick = () => App.maxPanel(document.getElementById("maxpanel") ? document.getElementById("maxpanel").hidden : true);
+    document.body.appendChild(b);
+  };
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") App.maxPanel(false); });
   window.addEventListener("hashchange", App.route);
   window.addEventListener("DOMContentLoaded", () => {
     Store.get(); App.applyTheme();
     matchMedia("(prefers-color-scheme: dark)").addEventListener("change", App.applyTheme);
-    App.renderChip();
+    App.renderChip(); App.mountMaxButton();
     document.querySelector(".pchip").onclick = App.profileSheet;
     App.route(); onboarding(); App.newsBadge && App.newsBadge();
     if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) navigator.serviceWorker.register("sw.js").catch(() => {});
