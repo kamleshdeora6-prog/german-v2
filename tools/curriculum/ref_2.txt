@@ -1,0 +1,73 @@
+@@ 0|A2|Referenz 5: n-Deklination|x|x|
+#text
+Eine kleine Gruppe **maskuliner** Nomen bekommt in allen Fällen außer dem Nominativ Singular die Endung **-n** oder **-en**: __der Kollege → den Kolleg**en**, dem Kolleg**en**, des Kolleg**en**__. Das ist ein typischer Prüfungspunkt ab A2/B1 – und ein häufiger Fehler: **nicht** „Ich frage den Kollege“, sondern „Ich frage den **Kollegen**“.
+#table:Welche Nomen? (alle maskulin)
+Gruppe|Beispiele
+auf -e (Personen, Tiere)|der Kollege, der Kunde, der Junge, der Neffe, der Zeuge, der Experte, der Löwe, der Affe
+auf -ent, -ant, -ist, -at, -oge (oft aus dem Lateinischen/Griechischen)|der Student, der Präsident, der Praktikant, der Tourist, der Journalist, der Kandidat, der Soldat, der Automat, der Biologe, der Psychologe
+einige ohne -e|der Mensch, der Herr, der Bär, der Held, der Nachbar, der Bauer
+Sonderfälle mit Genitiv -ns|der Name → des Namens · der Gedanke → des Gedankens · der Buchstabe → des Buchstabens · der Glaube → des Glaubens · der Wille → des Willens · der Friede(n) → des Friedens
+#table:Deklination
+Fall|der Kollege|der Mensch|der Herr|der Name
+Nominativ|der Kollege|der Mensch|der Herr|der Name
+Akkusativ|den Kollege**n**|den Mensch**en**|den Herr**n**|den Name**n**
+Dativ|dem Kollege**n**|dem Mensch**en**|dem Herr**n**|dem Name**n**
+Genitiv|des Kollege**n**|des Mensch**en**|des Herr**n**|des Name**ns**
+Plural (alle Fälle)|die Kollege**n**|die Mensch**en**|die Herr**en**|die Name**n**
+#Beispiele
+Ich habe **den Kunden** angerufen. · Wir helfen **dem Nachbarn**. · Das ist das Büro **des Präsidenten**. · Kennst du **den Namen** des Hotels? · Die Polizei sucht **einen Zeugen**.
+#Achtung
+Nicht jedes Nomen auf -e gehört dazu: **der Käse** (dem Käse), **das Auge**, **die Blume** bleiben normal. Und **das Herz** ist ein Sonderfall: dem Herz**en**, des Herz**ens**.
+
+@@ 0|B2|Referenz 6: Futur II und Zeitenüberblick|x|x|
+#text
+Das **Futur II** beschreibt etwas, das in der Zukunft **abgeschlossen sein wird**, oder – viel häufiger im Alltag – eine **Vermutung über die Vergangenheit**. Bildung: **werden** (Position 2) + **Partizip II** + **haben/sein** (am Ende).
+#table:Bildung
+Person|mit haben|mit sein
+ich|werde … gemacht haben|werde … gekommen sein
+du|wirst … gemacht haben|wirst … gekommen sein
+er/sie/es|wird … gemacht haben|wird … gekommen sein
+wir|werden … gemacht haben|werden … gekommen sein
+ihr|werdet … gemacht haben|werdet … gekommen sein
+sie/Sie|werden … gemacht haben|werden … gekommen sein
+#table:Zwei Bedeutungen
+Bedeutung|Beispiel|Paraphrase
+abgeschlossen in der Zukunft|Bis Freitag **werde** ich den Bericht **geschrieben haben**.|Am Freitag ist der Bericht fertig.
+Vermutung über Vergangenes|Er **wird** den Zug **verpasst haben**.|Wahrscheinlich hat er den Zug verpasst.
+Vermutung (mit wohl)|Sie **wird** wohl schon **angekommen sein**.|Sie ist vermutlich schon da.
+#table:Alle Zeiten auf einen Blick (Verb: fahren)
+Zeit|Beispiel|Gebrauch
+Präsens|Ich fahre nach Bonn.|jetzt, Gewohnheit, nahe Zukunft
+Perfekt|Ich bin nach Bonn gefahren.|Vergangenheit, gesprochen
+Präteritum|Ich fuhr nach Bonn.|Vergangenheit, geschrieben; immer bei sein, haben, Modalverben
+Plusquamperfekt|Ich war nach Bonn gefahren.|Vorvergangenheit (vor einem Ereignis in der Vergangenheit)
+Futur I|Ich werde nach Bonn fahren.|Zukunft, Absicht, Vermutung über die Gegenwart
+Futur II|Ich werde nach Bonn gefahren sein.|abgeschlossen in der Zukunft, Vermutung über die Vergangenheit
+#Tipp
+Im Alltag ersetzt man Futur II oft durch Perfekt + Zeitangabe: __Bis Freitag habe ich den Bericht geschrieben.__ Für die Prüfung sollten Sie beide Formen erkennen.
+
+@@ 0|B1|Referenz 7: Adjektivendungen komplett (mit Genitiv und ohne Artikel)|x|x|
+#text
+Drei Tabellen genügen für alle Adjektivendungen. Faustregel: **Der Artikel oder das Adjektiv zeigt den Fall – aber nicht beide doppelt.** Wenn der Artikel das Signal schon trägt (der, dem, des …), bekommt das Adjektiv nur **-e** oder **-en**.
+#table:Typ 1 – nach dem bestimmten Artikel (der, dieser, jeder, welcher, alle)
+Fall|maskulin|feminin|neutral|Plural
+Nominativ|der gut**e** Wein|die gut**e** Milch|das gut**e** Brot|die gut**en** Äpfel
+Akkusativ|den gut**en** Wein|die gut**e** Milch|das gut**e** Brot|die gut**en** Äpfel
+Dativ|dem gut**en** Wein|der gut**en** Milch|dem gut**en** Brot|den gut**en** Äpfeln
+Genitiv|des gut**en** Wein(e)s|der gut**en** Milch|des gut**en** Brot(e)s|der gut**en** Äpfel
+#table:Typ 2 – nach ein, kein, mein, dein, unser …
+Fall|maskulin|feminin|neutral|Plural (kein/mein)
+Nominativ|ein gut**er** Wein|eine gut**e** Milch|ein gut**es** Brot|keine gut**en** Äpfel
+Akkusativ|einen gut**en** Wein|eine gut**e** Milch|ein gut**es** Brot|keine gut**en** Äpfel
+Dativ|einem gut**en** Wein|einer gut**en** Milch|einem gut**en** Brot|keinen gut**en** Äpfeln
+Genitiv|eines gut**en** Wein(e)s|einer gut**en** Milch|eines gut**en** Brot(e)s|keiner gut**en** Äpfel
+#table:Typ 3 – ohne Artikel (Nullartikel)
+Fall|maskulin|feminin|neutral|Plural
+Nominativ|gut**er** Wein|gut**e** Milch|gut**es** Brot|gut**e** Äpfel
+Akkusativ|gut**en** Wein|gut**e** Milch|gut**es** Brot|gut**e** Äpfel
+Dativ|gut**em** Wein|gut**er** Milch|gut**em** Brot|gut**en** Äpfeln
+Genitiv|gut**en** Wein(e)s|gut**er** Milch|gut**en** Brot(e)s|gut**er** Äpfel
+#Beispiele
+Wegen **des schlechten** Wetters fällt das Fest aus. · Trotz **eines langen** Tages war sie gut gelaunt. · Mit **frischem** Brot und **heißem** Kaffee beginnt der Tag. · Das ist das Haus **meiner älteren** Schwester. · **Liebe** Grüße!
+#Achtung
+Typ 3 im Genitiv maskulin/neutral endet auf **-en**, nicht -es: __trotz schlechten Wetters__. Adjektive auf -el/-er verlieren oft das e: __dunkel → ein dunkles Zimmer__, __teuer → ein teures Auto__. **rosa, lila, orange, prima** bleiben ohne Endung.

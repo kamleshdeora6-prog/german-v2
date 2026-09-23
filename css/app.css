@@ -1,10 +1,10 @@
 /* Deutsch Coach – visual system
-   Ink slate + signal yellow (Berlin transit signage). Level lines: A1 green, A2 blue, B1 purple.
+   Ink slate + signal yellow. Level colours: A1 green, A2 blue, B1 purple, B2 orange, C1 teal, C2 wine.
    Grammatical gender colours are functional: der blue, die red, das green. */
 :root {
   --ink: #1C2B36; --ink-2: #4A5A66; --paper: #F3F5F7; --card: #FFFFFF; --line: #DCE2E7; --soft: #EBEFF2;
   --sign: #F2B705; --sign-ink: #1C2B36; --ok: #1D7F45; --bad: #C0392B;
-  --a1: #1D8F4E; --a2: #2465B4; --b1: #7C3F98; --b2: #C2571A; --c1: #0F7B8A; --c2: #8A1C3F;
+  --a1: #177A42; --a2: #2465B4; --b1: #7C3F98; --b2: #A94A14; --c1: #0F7B8A; --c2: #8A1C3F;
   --der: #2462B0; --die: #C23A2E; --das: #23844F;
   --board: #16222B; --board-ink: #FFC933;
   --r-lg: 18px; --r: 12px; --r-sm: 8px;
@@ -90,7 +90,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--a2); outline: no
 .stats3 div { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 10px; text-align: center; }
 .stats3 b { display: block; font-size: 1.4rem; font-variant-numeric: tabular-nums; } .stats3 span { font-size: .8rem; color: var(--ink-2); }
 .goal { margin-bottom: 14px; } .goal span { font-size: .9rem; font-weight: 600; display: block; margin-bottom: 6px; }
-.plan { margin: 0; padding-left: 22px; } .plan li { margin: 6px 0; } .plan .link { display: inline; } .plan li.done { opacity: .55; } .plan li.done .link { text-decoration: line-through; }
+.plan { margin: 0; padding-left: 22px; } .plan li { margin: 6px 0; } .plan .link { display: inline; } .plan li.done .link { color: var(--ink-2); } .plan li.done .link { text-decoration: line-through; }
 .grid2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 12px 0; }
 @media (min-width: 640px) { .grid2 { grid-template-columns: repeat(4, 1fr); } }
 .tile { text-align: left; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-lg); padding: 14px; cursor: pointer; display: flex; flex-direction: column; gap: 4px; min-height: 86px; }
@@ -299,3 +299,20 @@ pre { white-space: pre-wrap; font: .92rem/1.55 var(--font); margin: 0; }
 .voicehelp ul { padding-left: 18px; } .voicehelp li { margin: 4px 0; }
 .remind { border-left: 4px solid var(--sign); }
 .sheet { max-height: calc(100vh - 24px); overflow-y: auto; }
+
+/* accessibility (WCAG AA contrast) */
+[data-theme="dark"] .lvl, [data-theme="dark"] .btn.bad { color: #0F1A21; }
+[data-theme="dark"] .btn.bad { background: #ff6b5c; }
+.tablewrap:focus-visible { outline: 2px solid var(--sign); outline-offset: 2px; }
+[data-theme="dark"] .lhead, [data-theme="dark"] .lhead * { color: #0F1A21; } [data-theme="dark"] .lhead .back { border-color: rgba(15,26,33,.35); }
+[data-theme="dark"] .gt th { color: #0F1A21; }
+
+/* v4.4: placement test, pronunciation, news */
+.prow { display: grid; grid-template-columns: 1fr auto 1fr; gap: 8px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.prow .try { grid-column: 1 / -1; justify-self: start; }
+.pfb { margin: 4px 0 8px; }
+.checklist.points label { display: flex; gap: 8px; align-items: flex-start; cursor: pointer; }
+.checklist.points input { margin-top: 3px; }
+.result .big { font-size: 1.35rem; font-weight: 800; margin: 6px 0; }
+.pbar { height: 6px; background: var(--soft); border-radius: 999px; overflow: hidden; margin: 6px 0 12px; }
+.pbar span { display: block; height: 100%; background: var(--sign); transition: width .3s; }

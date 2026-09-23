@@ -490,7 +490,7 @@ der Stress|stress||Gesundheit
 die Entspannung|relaxation||Gesundheit
 die Behandlung|treatment|Behandlungen|Gesundheit
 die Untersuchung|examination|Untersuchungen|Gesundheit
-der Termin beim Arzt|doctor's appointment||Gesundheit
+der Arzttermin|doctor's appointment|Arzttermine|Gesundheit
 die Krankmeldung|sick note|Krankmeldungen|Gesundheit
 die Apotheke|pharmacy|Apotheken|Gesundheit
 die Nebenwirkung|side effect|Nebenwirkungen|Gesundheit
@@ -537,7 +537,7 @@ die Regel|rule|Regeln|Allgemein
 die Ordnung|order|Ordnungen|Allgemein
 die Sicherheit|safety, certainty|Sicherheiten|Allgemein
 die Gefahr|danger|Gefahren|Allgemein
-der Vorbereitung|preparation|Vorbereitungen|Allgemein
+die Vorbereitung|preparation|Vorbereitungen|Allgemein
 die Verspätung|delay|Verspätungen|Verkehr
 die Ankunft|arrival|Ankünfte|Verkehr
 die Abfahrt|departure|Abfahrten|Verkehr

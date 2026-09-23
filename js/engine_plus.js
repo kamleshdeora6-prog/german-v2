@@ -230,6 +230,79 @@
     return choice("nuancen", 59, it[0], it[1], it[2], it[3]);
   });
 
+
+  /* ================= v4.3: n-Deklination, Futur II, complete adjective endings ================= */
+  const NNOUNS = [
+    ["Kollege", "Kollegen", "colleague"], ["Kunde", "Kunden", "customer"], ["Nachbar", "Nachbarn", "neighbour"], ["Student", "Studenten", "student"],
+    ["Präsident", "Präsidenten", "president"], ["Tourist", "Touristen", "tourist"], ["Journalist", "Journalisten", "journalist"], ["Herr", "Herrn", "gentleman"],
+    ["Mensch", "Menschen", "person"], ["Zeuge", "Zeugen", "witness"], ["Experte", "Experten", "expert"], ["Praktikant", "Praktikanten", "intern"], ["Architekt", "Architekten", "architect"],
+  ];
+  def("ndeklination", { title: "n-Deklination", level: "B1", lessons: [13, 40] }, () => {
+    const [n, obl] = R.pick(NNOUNS);
+    const frames = [
+      [`Ich frage den ${blank}.`, "akk", "fragen + Akkusativ"],
+      [`Wir helfen dem ${blank}.`, "dat", "helfen + Dativ"],
+      [`Das ist das Büro des ${blank}.`, "gen", "Genitiv (wessen?)"],
+      [`Der ${blank} kommt heute.`, "nom", "Subjekt → Nominativ"],
+      [`Ich habe mit dem ${blank} gesprochen.`, "dat", "mit + Dativ"],
+      [`Kennst du den neuen ${blank}?`, "akk", "kennen + Akkusativ"],
+    ];
+    const [f, c, why] = R.pick(frames);
+    const ans = c === "nom" ? n : n === "Herr" && c !== "nom" ? "Herrn" : obl;
+    const wrong = c === "nom" ? [obl, n + "s"] : [n, n + "s"];
+    return choice("ndeklination", 13, f, ans, wrong,
+      `<b>der ${n}</b> belongs to the n-Deklination: every case except Nominativ singular ends in <b>-(e)n</b>. Here: ${why} → <b>${ans}</b>.`,
+      { [n]: c === "nom" ? "" : `Without -n the noun looks like a Nominativ – but this is ${c === "akk" ? "Akkusativ" : c === "dat" ? "Dativ" : "Genitiv"}.`, [n + "s"]: "n-nouns never take -s (except des Namens/Gedankens …)." });
+  });
+
+  def("futur2", { title: "Futur II", level: "B2", lessons: [49, 50] }, () => {
+    const it = R.pick([
+      ["Er hat den Zug wahrscheinlich verpasst.", "Er wird den Zug verpasst haben.", "Vermutung über die Vergangenheit → Futur II (werden … Partizip II + haben)."],
+      ["Sie ist vermutlich schon angekommen.", "Sie wird schon angekommen sein.", "ankommen bildet das Perfekt mit sein → Futur II mit sein."],
+      ["Bis Freitag ist der Bericht fertig. (ich / schreiben)", "Bis Freitag werde ich den Bericht geschrieben haben.", "Abgeschlossen in der Zukunft → Futur II."],
+      ["Wahrscheinlich hat sie den Termin vergessen.", "Sie wird den Termin vergessen haben.", "Vermutung über Vergangenes: wird + vergessen + haben."],
+      ["Im Juni haben wir die Prüfung bestanden. (Zukunft, abgeschlossen)", "Im Juni werden wir die Prüfung bestanden haben.", "werden (Position 2) … bestanden haben (Ende)."],
+      ["Vermutlich ist er krank geworden.", "Er wird krank geworden sein.", "werden als Vollverb im Perfekt: ist geworden → wird geworden sein."],
+    ]);
+    return input("futur2", 50, `Formulieren Sie mit Futur II: <i>${it[0]}</i>`, it[1], it[2], { accept: [it[1].replace(/ wohl /, " ")] });
+  });
+
+  /* adjective endings for all three types and all four cases */
+  const AEND = {
+    def: { nom: { m: "e", f: "e", n: "e", pl: "en" }, akk: { m: "en", f: "e", n: "e", pl: "en" }, dat: { m: "en", f: "en", n: "en", pl: "en" }, gen: { m: "en", f: "en", n: "en", pl: "en" } },
+    indef: { nom: { m: "er", f: "e", n: "es", pl: "en" }, akk: { m: "en", f: "e", n: "es", pl: "en" }, dat: { m: "en", f: "en", n: "en", pl: "en" }, gen: { m: "en", f: "en", n: "en", pl: "en" } },
+    zero: { nom: { m: "er", f: "e", n: "es", pl: "e" }, akk: { m: "en", f: "e", n: "es", pl: "e" }, dat: { m: "em", f: "er", n: "em", pl: "en" }, gen: { m: "en", f: "er", n: "en", pl: "er" } },
+  };
+  E.adjEnding = (type, c, g) => AEND[type][c][g];
+  const ANOUNS = [
+    { m: "Wein", nomP: "schmeckt zum Essen", g: "m", gen: "Weins", a: ["gut", "teuer", "kalt"] }, { m: "Kaffee", nomP: "riecht am Morgen gut", g: "m", gen: "Kaffees", a: ["heiß", "kalt", "frisch", "gut"] },
+    { m: "Tag", nomP: "ist bald vorbei", g: "m", gen: "Tages", a: ["lang", "gut", "schlecht", "heiß", "kalt"] }, { m: "Regen", nomP: "ist unangenehm", g: "m", gen: "Regens", a: ["kalt", "stark", "lang"] },
+    { m: "Milch", nomP: "steht im Kühlschrank", g: "f", gen: "Milch", a: ["frisch", "kalt", "heiß"] }, { m: "Luft", nomP: "tut gut", g: "f", gen: "Luft", a: ["frisch", "kalt", "schlecht"] },
+    { m: "Brot", nomP: "schmeckt am besten", g: "n", gen: "Brotes", a: ["frisch", "gut", "dunkel", "teuer"] }, { m: "Wetter", nomP: "macht gute Laune", g: "n", gen: "Wetters", a: ["gut", "schlecht", "kalt", "heiß"] },
+    { m: "Wasser", nomP: "ist gesund", g: "n", gen: "Wassers", a: ["kalt", "heiß", "frisch"] },
+  ];
+  const STEM = { teuer: "teur", dunkel: "dunkl" };
+  def("adjektiv_komplett", { title: "Adjective endings: Genitiv & no article", level: "B1", lessons: [23, 40] }, () => {
+    const type = R.pick(["def", "indef", "zero", "zero"]);
+    const n = R.pick(ANOUNS.filter((x) => type !== "zero" || x.m !== "Tag")); const adj = R.pick(n.a); const stem = STEM[adj] || adj;
+    const c = type === "zero" ? R.pick(["nom", "akk", "dat", "gen"]) : "gen";
+    const e = AEND[type][c][n.g];
+    const art = { def: { m: "des", f: "der", n: "des" }, indef: { m: "eines", f: "einer", n: "eines" } };
+    const noun = c === "gen" ? n.gen : n.m;
+    let frame;
+    if (c === "gen") frame = `${R.pick(["Wegen", "Trotz"])} ${type === "zero" ? "" : art[type][n.g] + " "}${blank} ${noun} …`;
+    else if (c === "nom") frame = `Das ist ${blank} ${noun}.`;
+    else if (c === "akk") frame = `${n.m === "Tag" || n.m === "Regen" || n.m === "Wetter" || n.m === "Luft" ? "Ich mag" : "Ich möchte"} ${blank} ${noun}.`;
+    else frame = `${n.m === "Tag" || n.m === "Regen" || n.m === "Wetter" || n.m === "Luft" ? "Bei" : "Mit"} ${blank} ${noun} ${n.m === "Tag" || n.m === "Regen" || n.m === "Wetter" || n.m === "Luft" ? "…" : "schmeckt es besser."}`;
+    const ans = stem + e;
+    const opts = ["e", "en", "er", "es", "em"].map((x) => stem + x).filter((x) => x !== ans).slice(0, 3);
+    const G2 = { m: "masculine", f: "feminine", n: "neuter" };
+    const why = type === "zero"
+      ? `No article, so the adjective carries the signal itself: ${n.m} is ${G2[n.g]}, ${{ nom: "Nominativ", akk: "Akkusativ", dat: "Dativ", gen: "Genitiv" }[c]} → <b>-${e}</b>${c === "gen" && n.g !== "f" ? " (Genitiv m/n: -en, because the noun already shows -s)" : ""}.`
+      : `After <b>${art[type][n.g]}</b> the article shows the Genitiv, so the adjective takes <b>-en</b>.`;
+    return choice("adjektiv_komplett", 23, frame.replace(blank, `${blank} (${adj})`).replace(/^ +/, ""), ans, opts, why);
+  });
+
   /* ================= free word order: several correct answers ================= */
   const TIMES = [["heute", "today"], ["morgen", "tomorrow"], ["am Montag", "on Monday"], ["nach der Arbeit", "after work"], ["jeden Tag", "every day"], ["um acht Uhr", "at eight"]];
   const PLACES = [["im Park", "in the park"], ["in der Stadt", "in town"], ["zu Hause", "at home"], ["im Büro", "at the office"], ["auf dem Markt", "at the market"]];

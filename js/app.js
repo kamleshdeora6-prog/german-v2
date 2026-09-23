@@ -1,9 +1,9 @@
 /* Deutsch Coach – app shell: router, navigation, theme, install */
 (function () {
   "use strict";
-  const ROUTES = { home: "home", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more", readexam: "readexam", write: "write", notes: "notes", translate: "translate", about: "about" };
+  const ROUTES = { home: "home", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more", readexam: "readexam", write: "write", notes: "notes", translate: "translate", about: "about", placement: "placement", pronounce: "pronounce", news: "news" };
   const TAB_OF = { home: "home", path: "path", lesson: "path", practice: "practice", vocab: "practice", tutor: "tutor", translate: "translate" };
-  const App = (window.App = { version: "4.2.0", updated: "22 September 2026", author: "Zombieland", pendingAsk: null });
+  const App = (window.App = { version: "4.4.0", updated: "23 September 2026", author: "Zombieland", pendingAsk: null });
   /* Where problem reports go. Put an email address here to offer email as well. */
   App.contact = { github: "https://github.com/kamleshdeora6-prog/german-v2", email: "" };
   App.report = (ctx) => {
@@ -126,7 +126,7 @@
     d.className = "modal onb";
     d.innerHTML = `<div class="sheet" role="dialog" aria-labelledby="ob-t"><h2 id="ob-t">Willkommen!</h2>
       <label class="namebox">What should Max call you? <input class="obname" maxlength="30" autocomplete="given-name" placeholder="Your name" value="${H.esc(Store.name())}"></label>
-      <p>Deutsch Coach takes you from A1 to C2 in ${DC.curriculum.length} lessons – like stops on a train line. Every lesson has an explanation, examples, words, a text, exercises, exam questions and a picture to talk about.</p>
+      <p>Deutsch Coach takes you from A1 to C2 in ${DC.curriculum.length} lessons, one step at a time. Every lesson has an explanation, examples, words, a text, exercises, exam questions and a picture to talk about.</p>
       <p>Practice sentences are generated fresh each time, and every answer tells you <b>why</b>. Max, your tutor, checks your German offline.</p>
       <div class="ob-box"><p>🔊 <b>Sound check</b> – every lesson reads German aloud. <button class="btn ghost sm obvoice" type="button">Test the voice</button></p><div class="obvres"></div></div>
       <div class="ob-box"><p>💾 <b>Your progress is saved only on this device.</b> If you clear your browser data or uninstall, it's gone – use <i>Settings → Export backup</i> now and then. The app will remind you once a month.</p></div>
@@ -167,7 +167,7 @@
     matchMedia("(prefers-color-scheme: dark)").addEventListener("change", App.applyTheme);
     App.renderChip();
     document.querySelector(".pchip").onclick = App.profileSheet;
-    App.route(); onboarding();
+    App.route(); onboarding(); App.newsBadge && App.newsBadge();
     if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) navigator.serviceWorker.register("sw.js").catch(() => {});
     document.body.classList.toggle("in-app", !!window.AndroidBridge);
   });

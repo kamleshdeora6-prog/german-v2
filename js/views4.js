@@ -24,10 +24,10 @@
       if (part.type === "match") {
         html += `<ul class="adlist">${part.ads.map((a) => `<li><b>${a.k})</b> ${esc(a.t)}</li>`).join("")}</ul>`;
         html += part.items.map((it, i) => `<div class="rsit" data-i="${i}"><span>${i + 1}. ${esc(it.q)}</span>
-          <select><option value="">–</option>${part.ads.map((a) => `<option>${a.k}</option>`).join("")}<option>x</option></select></div><p class="fb muted" hidden></p>`).join("");
+          <select aria-label="Answer for situation ${i + 1}"><option value="">–</option>${part.ads.map((a) => `<option>${a.k}</option>`).join("")}<option>x</option></select></div><p class="fb muted" hidden></p>`).join("");
       } else if (part.type === "tf") {
         html += part.items.map((it, i) => `<div class="rsit" data-i="${i}"><span>${i + 1}. ${esc(it.q)}</span>
-          <select><option value="">–</option><option value="r">richtig</option><option value="f">falsch</option></select></div><p class="fb muted" hidden></p>`).join("");
+          <select aria-label="Statement ${i + 1}: richtig oder falsch"><option value="">–</option><option value="r">richtig</option><option value="f">falsch</option></select></div><p class="fb muted" hidden></p>`).join("");
       } else {
         html += part.items.map((it, i) => `<div class="mcq" data-i="${i}"><p><b>${i + 1}.</b> ${esc(it.q)}</p>
           <div class="choices">${it.options.map((o, k) => `<button class="choice" data-k="${k}">${esc(o)}</button>`).join("")}</div><p class="fb muted" hidden></p></div>`).join("");
@@ -133,6 +133,12 @@
       const structOk = /\n/.test(st.v) || st.sents.length >= 4;
       const registerFormal = /Sehr geehrte|Mit freundlichen Grüßen|Sie /.test(st.v);
       const needFormal = /formell|Beschwerde|Bewerbung|Stellungnahme|Bericht|Kommentar|Leserbrief/i.test(t.type);
+      const conn = (st.v.match(/\b(weil|dass|wenn|falls|obwohl|trotzdem|deshalb|außerdem|zwar|jedoch|damit|indem|sodass|zunächst|danach|abschließend|einerseits|andererseits|dagegen|folglich|zumal|denn|aber|sondern|nachdem|bevor|während|seitdem)\b/gi) || []);
+      const uniqConn = new Set(conn.map((x) => x.toLowerCase())).size;
+      const words = st.v.toLowerCase().match(/[a-zäöüß]+/g) || [];
+      const variety = words.length ? new Set(words).size / words.length : 0;     // type-token ratio
+      const structures = ["Nebensatz mit dass/weil/wenn", "Perfekt oder Präteritum", "Modalverb", "Passiv oder Konjunktiv"]
+        .filter((_, k) => [/\b(dass|weil|wenn|obwohl|damit)\b/i, /\b(habe|hat|haben|bin|ist|sind|war|waren|wurde)\b.*\bge\w+(t|en)\b|\b(ging|kam|machte|sagte|hatte)\b/i, /\b(kann|könnte|muss|müsste|soll|sollte|will|möchte|darf)\b/i, /\b(wird|werden|wurde|worden)\b|\b(würde|hätte|wäre)\b/i][k].test(st.v)).length;
       const crit = [
         ["length", lenOk, `${st.words} von ~${t.words} Wörtern`],
         ["structure", structOk, structOk ? "Absätze/Sätze erkennbar" : "Gliedere den Text in Absätze"],
@@ -140,12 +146,24 @@
         ["register", needFormal ? registerFormal : true, needFormal ? (registerFormal ? "formelle Anrede/Schluss vorhanden" : "Formelle Anrede und Grußformel fehlen") : "Register passt zur Aufgabe"],
         ["errors", errs === 0, errs === 0 ? "Max found no rule errors (he doesn't catch everything yet)" : `${errs} mögliche Fehler`],
       ];
+      /* the four criteria used by Goethe/telc markers, scored 0-5 each */
+      const rub = [
+        ["Erfüllung der Aufgabe", Math.min(5, Math.round((lenOk ? 3 : st.words / t.words * 3) + (st.sents.length >= 4 ? 2 : 1))), `${t.points.length} Inhaltspunkte, ${st.words} Wörter (Ziel ${t.words})`],
+        ["Kohärenz", Math.min(5, uniqConn + (structOk ? 1 : 0)), `${uniqConn} verschiedene Konnektoren, ${structOk ? "Absätze erkennbar" : "keine Absätze"}`],
+        ["Wortschatz", Math.min(5, Math.round(variety * 7)), `${Math.round(variety * 100)} % verschiedene Wörter`],
+        ["Strukturen", Math.min(5, structures + (errs === 0 ? 1 : 0)), `${structures} von 4 Satzstrukturen, ${errs} Regelfehler`],
+      ];
+      const rubTotal = rub.reduce((a, r) => a + r[1], 0);
       const score = Math.round((crit.filter((c) => c[1]).length / crit.length) * 100);
       Store.get().exams.unshift({ date: Date.now(), type: `Schreiben ${t.level}`, score });
       Store.addXP(25); Store.save();
       fb.innerHTML = `<section class="card"><h3>Feedback · ${score}%</h3>
         <ul class="checklist">${crit.map((c) => `<li class="${c[1] ? "y" : "n"}">${c[1] ? "✓" : "✗"} ${esc(c[2])}</li>`).join("")}</ul>
-        <p class="muted small">Die Inhaltspunkte prüfst du selbst: ${t.points.map((p) => esc(p)).join(" · ")}</p>
+        <h4>Prüfungskriterien (wie in der Prüfung, je 0–5 Punkte)</h4>
+        ${UI.table([["Kriterium", "Punkte", "Grundlage"]].concat(rub.map((r) => [r[0], "**" + r[1] + "/5**", r[2]])))}
+        <p class="muted small">${rubTotal}/20 Punkten. Das ist eine <b>Schätzung nach Form</b> – Inhalt, Logik und Stil kann nur ein Mensch bewerten.</p>
+        <h4>Inhaltspunkte – hast du alle bearbeitet?</h4>
+        <ul class="checklist points">${t.points.map((p, k) => `<li><label><input type="checkbox" data-p="${k}"> ${esc(p)}</label></li>`).join("")}</ul>
         ${checks.filter((c) => c.r.issues.length).map((c) => `<div class="mist"><p>${esc(c.s)}</p><p class="ex ok">${esc(c.r.fixed)}</p><ul class="nots">${c.r.issues.map((i) => `<li>${i.rule}<br><span class="muted">${i.why}</span></li>`).join("")}</ul></div>`).join("")}
         <div class="row"><button class="btn ghost model2">Model text</button><button class="btn ghost" data-ask="${esc("Give me tips for writing a " + t.type + " in German")}">Ask Max for tips</button></div></section>`;
       fb.querySelector(".model2").onclick = () => el.querySelector(".model").click();

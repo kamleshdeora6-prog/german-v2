@@ -184,13 +184,14 @@
         <ul class="plain">
           <li><b>Everything stays on this device.</b> Progress, profiles, names, flashcards, drafts and history are stored in this browser (or in the Android app) and are never uploaded.</li>
           <li><b>No accounts, no ads, no tracking, no analytics.</b></li>
+          <li><b>Hosting:</b> the web version is served by GitHub Pages. Like every web host, GitHub records technical access data such as IP addresses in its server logs; see GitHub's privacy statement. The Android app loads nothing from the internet.</li>
           <li><b>Clearing browser data deletes your progress.</b> Use <i>Settings → Export backup</i> to keep a copy; you can import it on any device.</li>
           <li><b>Speech:</b> text-to-speech runs on your device. Speech recognition uses your browser's or phone's service (on Chrome and Android this is Google's), only while the microphone button is active.</li>
           <li><b>Translate and dictionary buttons</b> (DeepL, Google, LEO, Linguee, dict.cc, Duden, Wiktionary, Reverso) open those websites with the word or sentence you searched. Their own privacy policies apply.</li>
           <li><b>Optional AI key:</b> if you add your own Anthropic API key in Settings, it is stored only on this device and sent only to api.anthropic.com when Max answers an open question. Without a key, nothing is sent anywhere.</li>
           <li><b>Problem reports</b> contain only the question, the expected answer, your answer and your note – never your name or progress – and are sent only when you press Send.</li>
         </ul>
-        <div class="row"><button class="btn ghost" data-go="settings">Settings & backup</button></div>
+        <div class="row"><button class="btn ghost" data-go="settings">Settings & backup</button><button class="btn ghost" data-go="news">What's new</button><button class="btn ghost" data-url="docs/Deutsch_Coach_Master_Report.pdf">Master report (PDF) ↗</button></div>
       </section>
       <p class="credit muted small">© ${new Date().getFullYear()} ${App.author}. All rights reserved.</p>`;
   };

@@ -11,7 +11,16 @@ mkdir -p "$BUILD/assets/www"
 cp -r "$ROOT/index.html" "$ROOT/css" "$ROOT/js" "$ROOT/icons" "$ROOT/manifest.webmanifest" "$BUILD/assets/www/"
 rm -f "$BUILD/assets/www/sw.js"          # no service worker inside the APK
 java -jar "$TOOLS/apktool.jar" b "$BUILD" -o "$ROOT/build/deutsch-coach-unsigned.apk"
-java -jar "$TOOLS/signer.jar" -a "$ROOT/build/deutsch-coach-unsigned.apk" -o "$ROOT/build" --allowResign
-mv "$ROOT/build"/*-aligned-debugSigned.apk "$ROOT/build/deutsch-coach.apk"
+# Signing: set KEYSTORE, KS_ALIAS, KS_PASS (and optionally KEY_PASS) to sign with YOUR release key.
+# Without them the public Android debug key is used – fine for testing, never for distribution.
+if [ -n "${KEYSTORE:-}" ]; then
+  echo "Signing with release keystore $KEYSTORE (alias $KS_ALIAS)"
+  java -jar "$TOOLS/signer.jar" -a "$ROOT/build/deutsch-coach-unsigned.apk" -o "$ROOT/build" --allowResign \
+    --ks "$KEYSTORE" --ksAlias "$KS_ALIAS" --ksPass "$KS_PASS" --ksKeyPass "${KEY_PASS:-$KS_PASS}"
+else
+  echo "WARNING: no KEYSTORE set – signing with the public DEBUG key (testing only)"
+  java -jar "$TOOLS/signer.jar" -a "$ROOT/build/deutsch-coach-unsigned.apk" -o "$ROOT/build" --allowResign
+fi
+mv "$ROOT/build"/*-aligned-*[sS]igned.apk "$ROOT/build/deutsch-coach.apk"
 rm -f "$ROOT/build/deutsch-coach-unsigned.apk" "$ROOT/build"/*.idsig
 echo "APK: $ROOT/build/deutsch-coach.apk"

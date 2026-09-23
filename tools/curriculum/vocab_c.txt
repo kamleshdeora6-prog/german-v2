@@ -46,7 +46,7 @@ die Erkenntnis|insight, finding|Erkenntnisse|Wissenschaft
 die Schlussfolgerung ziehen|to draw a conclusion||Wissenschaft
 die Gesetzgebung|legislation||Politik
 die Rechtsprechung|jurisdiction||Politik
-die Zuständigkeitsbereich|area of responsibility|Zuständigkeitsbereiche|Politik
+der Zuständigkeitsbereich|area of responsibility|Zuständigkeitsbereiche|Politik
 die Gewaltenteilung|separation of powers||Politik
 die Rechtsstaatlichkeit|rule of law||Politik
 die Souveränität|sovereignty||Politik

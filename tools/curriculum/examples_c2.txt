@@ -1,0 +1,157 @@
+# word|German example|English
+die Aporie|Die Debatte endet in einer Aporie: Keine Lösung ist befriedigend.|The debate ends in an impasse: no solution is satisfactory.
+die Dichotomie|Die Dichotomie von Stadt und Land greift zu kurz.|The dichotomy of town and country falls short.
+die Kontingenz|Die Autorin betont die Kontingenz historischer Entwicklungen.|The author stresses the contingency of historical developments.
+die Reziprozität|Freundschaft beruht auf Reziprozität.|Friendship is based on reciprocity.
+die Antinomie|Zwischen Freiheit und Sicherheit besteht eine Antinomie.|There is an antinomy between freedom and security.
+das Postulat|Das Postulat der Gleichheit steht im Grundgesetz.|The postulate of equality is in the Basic Law.
+die Maxime|Seine Maxime lautet: erst denken, dann handeln.|His maxim is: think first, then act.
+die Konnotation|Das Wort hat eine negative Konnotation.|The word has a negative connotation.
+die Denotation|Die Denotation eines Wortes ist seine Grundbedeutung.|The denotation of a word is its basic meaning.
+der Duktus|Der Duktus des Briefes ist sehr förmlich.|The style of the letter is very formal.
+die Redundanz|Streichen Sie die Redundanzen im zweiten Absatz.|Cut the redundancies in the second paragraph.
+die Prägnanz|Ihre Reden zeichnen sich durch Prägnanz aus.|Her speeches are marked by conciseness.
+der Euphemismus|„Freisetzen“ ist ein Euphemismus für „entlassen“.|"Release" is a euphemism for "dismiss".
+die Ironie|Die Ironie in seiner Stimme war nicht zu überhören.|The irony in his voice was unmistakable.
+der Sarkasmus|Mit Sarkasmus kommt man in Verhandlungen nicht weit.|Sarcasm won't get you far in negotiations.
+die Metapher|„Das Licht am Ende des Tunnels“ ist eine Metapher.|"The light at the end of the tunnel" is a metaphor.
+die Anspielung|Die Anspielung auf den Skandal verstand jeder.|Everyone understood the allusion to the scandal.
+die Untertreibung|„Nicht schlecht“ war eine bewusste Untertreibung.|"Not bad" was a deliberate understatement.
+die Übertreibung|Das ist eine maßlose Übertreibung.|That is a gross exaggeration.
+der Beigeschmack|Der Sieg hat einen bitteren Beigeschmack.|The victory has a bitter aftertaste.
+die Zwischentöne|Sie achtet auf die Zwischentöne im Gespräch.|She pays attention to the nuances in the conversation.
+der Sprachduktus|Sein Sprachduktus verrät den Juristen.|His way of speaking gives away the lawyer.
+die Floskel|„Wir melden uns“ ist oft nur eine Floskel.|"We'll be in touch" is often just an empty phrase.
+das Schlagwort|„Nachhaltigkeit“ ist zum Schlagwort geworden.|"Sustainability" has become a buzzword.
+der Fachjargon|Bitte erklären Sie das ohne Fachjargon.|Please explain that without jargon.
+die Wortneuschöpfung|„Homeschooling“ war eine Wortneuschöpfung der Pandemie.|"Homeschooling" was a coinage of the pandemic.
+das Sprichwort|Ein Sprichwort sagt: Übung macht den Meister.|A proverb says: practice makes perfect.
+die Redensart|Diese Redensart kennt fast jeder.|Almost everyone knows this saying.
+Eulen nach Athen tragen|Ihm Mathe zu erklären hieße, Eulen nach Athen zu tragen.|Explaining maths to him would be carrying coals to Newcastle.
+das Kind mit dem Bade ausschütten|Wir sollten nicht das Kind mit dem Bade ausschütten.|We shouldn't throw the baby out with the bathwater.
+den Nagel auf den Kopf treffen|Mit dieser Frage hast du den Nagel auf den Kopf getroffen.|With that question you hit the nail on the head.
+ins kalte Wasser springen|Im neuen Job musste sie ins kalte Wasser springen.|In the new job she had to jump in at the deep end.
+die Daumen drücken|Ich drücke dir für die Prüfung die Daumen!|I'll keep my fingers crossed for your exam!
+über den Tellerrand schauen|Gute Teams schauen über den Tellerrand.|Good teams think outside the box.
+mit dem Feuer spielen|Wer die Frist ignoriert, spielt mit dem Feuer.|Anyone who ignores the deadline is playing with fire.
+auf dem Holzweg sein|Wenn du das glaubst, bist du auf dem Holzweg.|If you believe that, you are on the wrong track.
+etwas auf die lange Bank schieben|Er schiebt die Steuererklärung auf die lange Bank.|He keeps putting off his tax return.
+jemandem die Stange halten|Ihre Freunde haben ihr die Stange gehalten.|Her friends stood by her.
+die Katze im Sack kaufen|Ohne Besichtigung kaufst du die Katze im Sack.|Without a viewing you're buying a pig in a poke.
+Hals über Kopf|Sie sind Hals über Kopf abgereist.|They left head over heels.
+unter vier Augen|Können wir das unter vier Augen besprechen?|Can we discuss that in private?
+auf Anhieb|Er hat die Prüfung auf Anhieb bestanden.|He passed the exam at the first attempt.
+im Großen und Ganzen|Im Großen und Ganzen bin ich zufrieden.|By and large I am satisfied.
+in aller Munde sein|Das neue Café ist in aller Munde.|The new café is the talk of the town.
+Fuß fassen|Es dauerte ein Jahr, bis sie in Berlin Fuß fasste.|It took a year before she gained a foothold in Berlin.
+zur Sprache bringen|Ich möchte das Thema im Meeting zur Sprache bringen.|I'd like to bring up the topic in the meeting.
+ins Gewicht fallen|Die Mehrkosten fallen kaum ins Gewicht.|The extra costs hardly matter.
+außer Frage stehen|Seine Kompetenz steht außer Frage.|His competence is beyond question.
+zu Buche schlagen|Die Reparatur schlägt mit 800 Euro zu Buche.|The repair makes a dent of 800 euros.
+den Ausschlag geben|Am Ende gab der Preis den Ausschlag.|In the end the price tipped the scales.
+Rede und Antwort stehen|Der Minister musste der Presse Rede und Antwort stehen.|The minister had to answer to the press.
+das Ruder herumreißen|Mit der neuen Strategie riss die Firma das Ruder herum.|With the new strategy the company turned things around.
+mit Nachdruck|Sie forderte mit Nachdruck eine Antwort.|She emphatically demanded an answer.
+in Anbetracht|In Anbetracht der Lage verschieben wir die Reise.|In view of the situation we are postponing the trip.
+angesichts|Angesichts der hohen Kosten wurde das Projekt gestoppt.|In view of the high costs the project was stopped.
+hinsichtlich|Hinsichtlich der Kosten gibt es noch Fragen.|There are still questions regarding the costs.
+bezüglich|Bezüglich Ihrer Anfrage melde ich mich morgen.|Regarding your enquiry I'll get back to you tomorrow.
+gemäß|Gemäß der Hausordnung ist das Rauchen verboten.|According to the house rules smoking is prohibited.
+zufolge|Einer Studie zufolge schlafen Jugendliche zu wenig.|According to a study, teenagers sleep too little.
+mittels|Die Daten werden mittels Fragebogen erhoben.|The data are collected by means of a questionnaire.
+kraft|Kraft seines Amtes darf er das entscheiden.|By virtue of his office he may decide that.
+ungeachtet|Ungeachtet der Kritik hält sie an ihrem Plan fest.|Regardless of the criticism she sticks to her plan.
+anhand|Anhand dieses Beispiels wird die Regel klar.|On the basis of this example the rule becomes clear.
+infolge|Infolge des Streiks fielen viele Züge aus.|As a result of the strike many trains were cancelled.
+zwecks|Zwecks Terminabsprache rufe ich Sie an.|I will call you for the purpose of arranging an appointment.
+seitens|Seitens der Behörde gibt es keine Einwände.|There are no objections on the part of the authority.
+binnen|Bitte antworten Sie binnen einer Woche.|Please reply within one week.
+abseits|Das Hotel liegt abseits der Hauptstraße.|The hotel is away from the main road.
+inmitten|Inmitten der Altstadt liegt ein kleiner Park.|In the middle of the old town there is a small park.
+beharren auf|Er beharrt auf seiner Meinung.|He insists on his opinion.
+sich abzeichnen|Eine Lösung zeichnet sich ab.|A solution is emerging.
+sich niederschlagen in|Die Krise schlägt sich in den Zahlen nieder.|The crisis is reflected in the figures.
+sich erweisen als|Die Entscheidung erwies sich als richtig.|The decision proved to be right.
+sich bewähren|Das System hat sich in der Praxis bewährt.|The system has proved itself in practice.
+sich aufdrängen|Hier drängt sich eine Frage auf.|A question suggests itself here.
+sich erübrigen|Damit erübrigt sich jede weitere Diskussion.|That makes any further discussion unnecessary.
+obliegen|Die Entscheidung obliegt der Geschäftsführung.|The decision is incumbent on the management.
+entbehren|Der Vorwurf entbehrt jeder Grundlage.|The accusation lacks any basis.
+zeitigen|Die Reform zeitigt erste Erfolge.|The reform is producing its first successes.
+untergraben|Solche Aussagen untergraben das Vertrauen.|Such statements undermine trust.
+kaschieren|Mit Humor kaschierte er seine Unsicherheit.|He concealed his insecurity with humour.
+verharmlosen|Man darf das Problem nicht verharmlosen.|One must not play down the problem.
+überzeichnen|Der Film überzeichnet die Figuren bewusst.|The film deliberately overdraws the characters.
+suggerieren|Die Werbung suggeriert, dass alles ganz einfach sei.|The advert suggests that everything is very easy.
+konstatieren|Der Bericht konstatiert erhebliche Mängel.|The report notes considerable shortcomings.
+sondieren|Die Parteien sondieren eine mögliche Koalition.|The parties are exploring a possible coalition.
+eruieren|Wir müssen noch eruieren, wer zuständig ist.|We still have to find out who is responsible.
+antizipieren|Gute Planer antizipieren Probleme.|Good planners anticipate problems.
+akzentuieren|Die Rednerin akzentuierte jedes Wort.|The speaker accentuated every word.
+subsumieren|Diese Fälle lassen sich unter einem Begriff subsumieren.|These cases can be subsumed under one term.
+generieren|Die Plattform generiert hohe Einnahmen.|The platform generates high revenue.
+akkumulieren|Über die Jahre akkumulierte sich viel Wissen.|Over the years a lot of knowledge accumulated.
+divergieren|Die Schätzungen divergieren stark.|The estimates diverge sharply.
+korrelieren|Einkommen und Bildung korrelieren miteinander.|Income and education correlate with each other.
+oszillieren|Die Stimmung oszilliert zwischen Hoffnung und Angst.|The mood oscillates between hope and fear.
+substanziell|Es gab keine substanziellen Änderungen.|There were no substantial changes.
+marginalisiert|Marginalisierte Gruppen werden oft übersehen.|Marginalised groups are often overlooked.
+ubiquitär|Smartphones sind heute ubiquitär.|Smartphones are ubiquitous today.
+immanent|Das Risiko ist dem System immanent.|The risk is inherent in the system.
+kontraproduktiv|Druck wäre in dieser Lage kontraproduktiv.|Pressure would be counterproductive in this situation.
+diffizil|Das ist eine diffizile Frage.|That is a delicate question.
+prekär|Viele Künstler leben in prekären Verhältnissen.|Many artists live in precarious circumstances.
+rudimentär|Seine Deutschkenntnisse sind noch rudimentär.|His German is still rudimentary.
+apodiktisch|Er äußert seine Meinung stets apodiktisch.|He always states his opinion dogmatically.
+akribisch|Sie hat die Daten akribisch geprüft.|She checked the data meticulously.
+lapidar|Die Antwort war lapidar: „Nein.“|The answer was terse: "No."
+eklatant|Das ist ein eklatanter Verstoß gegen die Regeln.|That is a blatant breach of the rules.
+frappierend|Die Ähnlichkeit ist frappierend.|The similarity is striking.
+belastbar (Daten)|Für eine Prognose fehlen belastbare Daten.|Robust data for a forecast are lacking.
+stringent|Die Argumentation ist stringent aufgebaut.|The argument is rigorously structured.
+dezidiert|Sie hat sich dezidiert gegen den Plan ausgesprochen.|She spoke out explicitly against the plan.
+pauschal|Man kann das nicht pauschal beurteilen.|One cannot judge that across the board.
+gängig|Das ist eine gängige Methode.|That is a common method.
+etabliert|Die Firma ist eine etablierte Marke.|The company is an established brand.
+obsolet|Mit dem neuen Gesetz ist die Regel obsolet.|With the new law the rule is obsolete.
+gehoben|In der Rede verwendet er einen gehobenen Stil.|In the speech he uses an elevated style.
+salopp|Salopp gesagt: Das war ein Reinfall.|To put it casually: that was a flop.
+die Umgangssprache|In der Umgangssprache sagt man „Kohle“ für Geld.|Colloquially people say "Kohle" for money.
+hinnehmbar|Diese Verzögerung ist nicht hinnehmbar.|This delay is not acceptable.
+Bedenken haben|Ich habe Bedenken gegen diesen Vertrag.|I have reservations about this contract.
+sich erlauben|Ich erlaube mir, Sie an die Frist zu erinnern.|I take the liberty of reminding you of the deadline.
+die Anrede|Die Anrede „Sehr geehrte Damen und Herren“ ist formell.|The salutation "Dear Sir or Madam" is formal.
+die Wendung|Diese Wendung klingt etwas veraltet.|This phrase sounds a bit old-fashioned.
+überarbeiten|Bitte überarbeiten Sie den Entwurf bis Montag.|Please revise the draft by Monday.
+die Ellipse|„Kein Kommentar“ ist eine Ellipse.|"No comment" is an ellipsis.
+die Betonung|Die Betonung liegt auf der ersten Silbe.|The stress is on the first syllable.
+der Vortrag|Ihr Vortrag über Klimapolitik war hervorragend.|Her talk on climate policy was excellent.
+zusagen|Er hat die Einladung sofort zugesagt.|He accepted the invitation immediately.
+ausscheiden|Die Mannschaft ist im Viertelfinale ausgeschieden.|The team was knocked out in the quarter-final.
+kalkulierbar|Das Risiko ist kalkulierbar.|The risk is calculable.
+ausgerechnet|Ausgerechnet heute ist der Drucker kaputt.|Of all days, the printer is broken today.
+die Auflage|Das Buch erscheint in der dritten Auflage.|The book is appearing in its third edition.
+verdichten|Verdichten Sie den Text auf die Hälfte.|Condense the text to half its length.
+der Rhythmus|Kurze Sätze geben dem Text Rhythmus.|Short sentences give the text rhythm.
+knapp|Die Zeit ist knapp.|Time is short.
+abschwächen|Er schwächte seine Kritik später ab.|He toned down his criticism later.
+verstärken|Die Maßnahme verstärkt den Effekt.|The measure intensifies the effect.
+berechtigt|Die Kritik ist durchaus berechtigt.|The criticism is quite justified.
+die Abkürzung|„z. B.“ ist eine Abkürzung.|"z. B." is an abbreviation.
+dosieren|Man sollte Kritik gut dosieren.|One should measure out criticism carefully.
+diplomatisch|Sie hat sehr diplomatisch geantwortet.|She answered very diplomatically.
+missverständlich|Die Anweisung war missverständlich formuliert.|The instruction was ambiguously worded.
+der Unterton|In seiner Stimme lag ein ironischer Unterton.|There was an ironic undertone in his voice.
+zwischen den Zeilen|Man muss hier zwischen den Zeilen lesen.|You have to read between the lines here.
+andeuten|Sie deutete an, dass sie kündigen will.|She hinted that she wants to resign.
+die Auffassung|Ich bin der Auffassung, dass wir warten sollten.|I am of the view that we should wait.
+die Ausführungen (Pl.)|Vielen Dank für Ihre interessanten Ausführungen.|Thank you for your interesting remarks.
+entgegenhalten|Dem möchte ich entgegenhalten, dass die Daten alt sind.|To that I would counter that the data are old.
+zu kurz greifen|Diese Erklärung greift zu kurz.|This explanation falls short.
+sich stützen auf|Die Autorin stützt sich auf aktuelle Studien.|The author relies on recent studies.
+gangbar|Das ist ein gangbarer Weg.|That is a viable route.
+pointieren|Sie pointiert ihre Argumente geschickt.|She makes her points sharply and skilfully.
+der Nutzen|Der Nutzen überwiegt die Kosten.|The benefit outweighs the costs.
+differenziert|Er sieht das Thema sehr differenziert.|He takes a very nuanced view of the topic.
+zutreffen|Diese Beschreibung trifft auf ihn zu.|This description applies to him.
+festhalten|Es bleibt festzuhalten, dass beide Seiten recht haben.|It should be noted that both sides are right.

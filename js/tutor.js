@@ -257,13 +257,38 @@
     if ((E.NOUNS || []).some((n) => n.de === nw && (n.pl === "-" || n.pl === nw))) return true;
     return !hit && /(er|el|en|chen|lein)$/.test(nw);
   }
+  /* adjectives the checker knows: base form → stem used before endings */
+  let ADJ_MAP = null;
+  function adjBase(w) {
+    if (!ADJ_MAP) {
+      ADJ_MAP = new Map();
+      const list = (DC.vocab || []).filter((v) => v.topic === "Adjektiv" && /^[a-zäöüß]+$/.test(v.de)).map((v) => v.de)
+        .concat(["neu", "alt", "rot", "blau", "grün", "gelb", "schwarz", "weiß", "schön", "klein", "groß", "gut", "lang", "kurz", "jung", "billig", "teuer", "dunkel", "müde", "leise", "nett", "toll", "frisch", "kalt", "warm", "heiß", "interessant", "wichtig", "lecker", "gesund", "krank", "deutsch", "hoch"]);
+      list.forEach((a) => {
+        if (a === "hoch") ADJ_MAP.set("hoh", { stem: "hoh", e: false });
+        else if (/e$/.test(a)) ADJ_MAP.set(a, { stem: a, e: true });                    // müde → müden
+        else if (/el$/.test(a) || /(eu|au|ei)er$/.test(a)) { const st = { stem: a.slice(0, -2) + a.slice(-1), e: false }; ADJ_MAP.set(st.stem, st); ADJ_MAP.set(a, st); } // dunkel → dunkl, teuer → teur, sauer → saur (lecker, bitter, sicher keep the e)
+        else ADJ_MAP.set(a, { stem: a, e: false });
+      });
+    }
+    const lw = w.toLowerCase();
+    for (const e of ["em", "en", "er", "es", "e"]) {
+      if (!lw.endsWith(e)) continue;
+      const st = lw.slice(0, -e.length);
+      if (ADJ_MAP.has(st) && !ADJ_MAP.get(st).e) return ADJ_MAP.get(st);
+      if (ADJ_MAP.has(st + "e") && ADJ_MAP.get(st + "e").e) return ADJ_MAP.get(st + "e");
+    }
+    if (ADJ_MAP.has(lw) && ADJ_MAP.get(lw).e) return ADJ_MAP.get(lw);            // "müde" itself
+    if (ADJ_MAP.has(lw) && !ADJ_MAP.get(lw).e) return ADJ_MAP.get(lw);           // bare "neu" before a noun → wrong
+    return null;
+  }
   let NON_NOUN_SET = null;
   const NON_NOUN = () => (NON_NOUN_SET = NON_NOUN_SET || new Set((DC.vocab || []).filter((v) => !/^(der|die|das)\s/.test(v.de)).map((v) => v.de.toLowerCase())));
 
   function nounGender(word) {
     if (PL_ONLY.test(String(word))) return { de: word, g: "f", pl: true };
     const n = E.lookupNoun(word);
-    if (n) return { g: n.g, de: n.de, pl: n.pl.toLowerCase() === word.toLowerCase() };
+    if (n) return { g: n.g, de: n.de, pl: n.pl.toLowerCase() === word.toLowerCase() && n.de.toLowerCase() !== word.toLowerCase() };
     const v = (DC.vocab || []).find((x) => x.art && x.de.split(" ").slice(1).join(" ").toLowerCase() === word.toLowerCase());
     if (v) return { g: { der: "m", die: "f", das: "n" }[v.art], de: v.de.split(" ").slice(1).join(" ") };
     return null;
@@ -353,7 +378,7 @@
       let subjLen = PRONOUNS.has(cl[1]) ? 1 : /^(der|die|das|mein|meine|dein|sein|ihr|unser|ein|eine|anna|max|ravi|leila|jonas)$/.test(cl[1]) ? (/^(anna|max|ravi|leila|jonas)$/.test(cl[1]) ? 1 : 2) : 1;
       const vi = 1 + subjLen;
       const lastIsVerb = isFinite(cl[cl.length - 1]) || /(t|en|e)$/.test(cl[cl.length - 1]) && isFinite(cl[cl.length - 1]);
-      const lastFinite = isFinite(cl[cl.length - 1] || "") || /^(wird|werden|wurde|wurden|worden|ist|sind|war|waren|hat|haben|hatte|hatten|sei|seien|habe|wäre|hätte)$/.test(cl[cl.length - 1] || "");
+      const lastFinite = isFinite(cl[cl.length - 1] || "") || /^(wird|werden|wurde|wurden|worden|ist|sind|war|waren|hat|haben|hatte|hatten|sei|seien|habe|wäre|wären|hätte|hätten|würde|würden|(soll|woll|konn|könn|muss|müss|durf|dürf|möch)te(n|st|t)?|kann|muss|will|soll|darf|mag|können|müssen|wollen|sollen|dürfen)$/.test((cl[cl.length - 1] || "").replace(/[.,!?;:]$/, ""));
       if (isFinite(cl[vi] || "") && vi < cl.length - 1 && !lastFinite && !(lastIsVerb && MODAL_F.has(cl[cl.length - 1]))) {
         const v = clause[vi].replace(/,$/, "");
         const rest = clause.filter((_, k) => k !== vi).map((w) => w.replace(/,$/, ""));
@@ -490,6 +515,7 @@
       const nw = (words[j + 1] || "").replace(/[,;:.!?]$/, "");
       if (nw.length < 2 || !/^[A-ZÄÖÜ]/.test(nw)) continue;      // German nouns are capitalised
       const ng = nounGender(nw); if (!ng || ng.pl) continue;
+      if (maybePlural(nw) && ((v.obj === "dat" && a === "den") || (v.obj === "akk" && a === "die"))) continue;   // "den Mädchen" = Dativ plural
       if (a === "der" && j === 1) continue;
       const kind = /^k?ein/.test(a) ? "indef" : "def";
       const right = (a[0] === "k" ? "k" : "") + E.art(kind, v.obj, ng.g);
@@ -554,6 +580,37 @@
       add(`<s>${words[i]} ${nw}</s> → <b>${shown} ${nw}</b>`, `<b>${nw}</b> is ${{ m: "masculine (der)", f: "feminine (die)", n: "neuter (das)" }[ng.g]} – “${a} ${nw}” is wrong in every case. Learn nouns with their article.`, 4);
       words[i] = shown; L = low();
     }
+    // 3b) adjective endings after an article: the article form + noun gender fix the ending (den neuen Tisch)
+    for (let i = 0; i < L.length - 2; i++) {
+      const det = L[i];
+      const m = det.match(/^(der|die|das|den|dem|des|(?:k?ein|mein|dein|sein|ihr|unser|eu(?:e)?r)(e|en|em|er|es)?)$/); if (!m) continue;
+      const adjW = (words[i + 1] || "").replace(/[,;:.!?]$/, ""); if (!/^[a-zäöüß]+$/.test(adjW)) continue;
+      const nw = (words[i + 2] || "").replace(/[,;:.!?]$/, ""); if (!/^[A-ZÄÖÜ]/.test(nw)) continue;
+      const base = adjBase(adjW); if (!base) continue;
+      let ng = nounGender(nw); if (!ng) continue;
+      const pl = ng.pl || (maybePlural(nw) && /^(die|den|der|keine|keinen|keiner|meine|meinen|meiner|deine|seine|ihre|unsere|eure)$/.test(det) && ng.g !== "f");
+      const g = pl ? "pl" : ng.g;
+      let want = null;
+      const indef = /^(k?ein|mein|dein|sein|ihr|unser|eu(?:e)?r)/.test(det);
+      const end = indef ? (m[2] || "") : det;
+      if (!indef) {
+        if (det === "der") want = g === "m" ? "e" : (g === "f" || g === "pl") ? "en" : null;
+        else if (det === "die") want = g === "f" ? "e" : g === "pl" ? "en" : null;
+        else if (det === "das") want = g === "n" ? "e" : null;
+        else want = "en";                                       // den, dem, des
+      } else {
+        if (end === "") want = g === "m" ? "er" : g === "n" ? "es" : null;
+        else if (end === "e") want = g === "f" ? "e" : g === "pl" ? "en" : null;
+        else want = "en";                                       // -en, -em, -er, -es
+      }
+      if (!want) continue;
+      const right = base.stem + (base.e && want[0] === "e" ? want.slice(1) : want);
+      if (right !== adjW.toLowerCase()) {
+        add(`<s>${det} ${adjW} ${nw}</s> → <b>${det} ${right} ${nw}</b>`, `Adjective ending after <b>${det}</b> with a ${pl ? "plural" : { m: "masculine", f: "feminine", n: "neuter" }[ng.g]} noun: <b>-${want}</b>. ${indef && (end === "" || end === "e") ? "When the article has no ending of its own, the adjective shows the gender (-er, -es, -e)." : "The article already shows the case, so the adjective only needs -e or -en."}`, 23);
+        words[i + 1] = right + (words[i + 1].match(/[,;:.!?]$/) || [""])[0]; L = low();
+      }
+    }
+
     // 4) double negation: kein … nicht
     const ki = L.findIndex((w) => /^kein(e|en|em|er|es)?$/.test(w));
     if (ki >= 0) {

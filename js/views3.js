@@ -57,7 +57,7 @@
         <button class="tile" data-go="readexam"><b>Reading exam</b><span>${DC.exams.reading.length} sets, A2–C1</span></button>
         <button class="tile" data-go="write"><b>Writing exam</b><span>${DC.exams.writing.length} tasks with model texts</span></button>
         <button class="tile" data-go="exam/speak"><b>Speaking exam</b><span>Plan · present · react</span></button>
-        <button class="tile" data-go="exam/lid"><b>Leben in Deutschland</b><span>${DC.lid.length} citizenship questions</span></button>
+        <button class="tile" data-go="exam/lid"><b>Leben in Deutschland</b><span>Practice selection: ${DC.lid.length} of the 310 official questions</span></button>
         <button class="tile" data-go="lesson/42/exam"><b>Model presentation</b><span>Lesson 42</span></button>
       </section>
       <section class="card"><h3>What the Goethe B1 speaking test looks like</h3>
@@ -252,7 +252,7 @@
   /* ---------------- Mehr ---------------- */
   V.more = (el) => {
     el.innerHTML = `<h2 class="page-title">More</h2><section class="grid2">
-      ${[["translate", "Translate", "Words & sentences, DeepL, LEO"], ["vocab", "Words", `${DC.vocab.length} words, SRS`], ["listen", "Listening", "Dictation"], ["speak", "Speaking", "Shadowing & free talk"], ["read", "Reading", `${DC.curriculum.length + DC.passages.length} texts`], ["write", "Writing", `${DC.exams.writing.length} exam tasks`], ["readexam", "Reading exam", `${DC.exams.reading.length} sets`], ["notes", "Notes", "Cheat sheets A1–C2"], ["exam", "Exam", "Mock test & LiD"], ["grammar", "Grammar", "Rules & tables"], ["stats", "Progress", "Stats & mistakes"], ["settings", "Settings", "Profiles, voice, backup"], ["about", "About & privacy", "Who made this, your data"]]
+      ${[["translate", "Translate", "Words & sentences, DeepL, LEO"], ["vocab", "Words", `${DC.vocab.length} words, SRS`], ["listen", "Listening", "Dictation"], ["speak", "Speaking", "Shadowing & free talk"], ["read", "Reading", `${DC.curriculum.length + DC.passages.length} texts`], ["write", "Writing", `${DC.exams.writing.length} exam tasks`], ["readexam", "Reading exam", `${DC.exams.reading.length} sets`], ["notes", "Notes", "Cheat sheets A1–C2"], ["exam", "Exam", "Mock test & LiD"], ["grammar", "Grammar", "Rules & tables"], ["stats", "Progress", "Stats & mistakes"], ["settings", "Settings", "Profiles, voice, backup"], ["placement", "Placement test", "Find your level in 20 questions"], ["pronounce", "Pronunciation", "ü/u, ö/o, ich/sch and more"], ["news", "What's new", `Version ${App.version}`], ["about", "About & privacy", "Who made this, your data"]]
         .map(([g, t, d]) => `<button class="tile" data-go="${g}"><b>${t}</b><span>${d}</span></button>`).join("")}</section>
       <p class="credit muted small">${App.credit()}</p>`;
   };

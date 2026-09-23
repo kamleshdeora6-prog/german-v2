@@ -1,0 +1,236 @@
+# word|German example|English
+die Ambivalenz|Die Ambivalenz des Ergebnisses zeigt sich in beiden Interpretationen.|The ambivalence of the result shows in both interpretations.
+die Diskrepanz|Zwischen Anspruch und Wirklichkeit besteht eine deutliche Diskrepanz.|There is a clear discrepancy between aspiration and reality.
+die Divergenz|Die Divergenz der Meinungen erschwert eine Einigung.|The divergence of opinions makes agreement difficult.
+die Kohärenz|Dem Text fehlt es an Kohärenz.|The text lacks coherence.
+die Nuance|Er achtet auf jede sprachliche Nuance.|He pays attention to every linguistic nuance.
+die Prämisse|Die Argumentation beruht auf einer falschen Prämisse.|The argument rests on a false premise.
+die Implikation|Welche Implikationen hat diese Entscheidung für uns?|What implications does this decision have for us?
+die Relevanz|Die Studie hat große Relevanz für die Praxis.|The study is highly relevant for practice.
+die Signifikanz|Die statistische Signifikanz der Daten ist gering.|The statistical significance of the data is low.
+die Plausibilität|Wir prüfen die Plausibilität der Zahlen.|We are checking the plausibility of the figures.
+die Legitimation|Der Regierung fehlt die Legitimation für diesen Schritt.|The government lacks legitimacy for this step.
+die Objektivität|Journalisten sollten um Objektivität bemüht sein.|Journalists should strive for objectivity.
+die Subjektivität|Die Subjektivität des Urteils lässt sich nicht vermeiden.|The subjectivity of the judgement cannot be avoided.
+die Komplexität|Die Komplexität des Themas wird oft unterschätzt.|The complexity of the topic is often underestimated.
+die Dimension|Das Problem hat auch eine soziale Dimension.|The problem also has a social dimension.
+das Spannungsfeld|Die Pflege bewegt sich im Spannungsfeld zwischen Kosten und Qualität.|Care operates in the tension between cost and quality.
+der Paradigmenwechsel|Die Digitalisierung bedeutet einen Paradigmenwechsel in der Bildung.|Digitalisation means a paradigm shift in education.
+die Wechselwirkung|Die Wechselwirkung beider Medikamente ist unbekannt.|The interaction of the two drugs is unknown.
+der Sachverhalt|Bitte schildern Sie den Sachverhalt genau.|Please describe the facts of the matter precisely.
+die Gegebenheit|Wir müssen uns den örtlichen Gegebenheiten anpassen.|We have to adapt to local circumstances.
+die Errungenschaft|Die Pressefreiheit ist eine wichtige Errungenschaft.|Freedom of the press is an important achievement.
+das Bestreben|Das Bestreben der Firma ist es, klimaneutral zu werden.|The company's aim is to become climate-neutral.
+die Zielsetzung|Die Zielsetzung des Projekts ist klar formuliert.|The objective of the project is clearly stated.
+die Vorgehensweise|Wir müssen unsere Vorgehensweise überdenken.|We need to rethink our approach.
+die Herangehensweise|Ihre Herangehensweise an das Problem ist ungewöhnlich.|Her approach to the problem is unusual.
+der Stellenwert|Bildung hat in der Familie einen hohen Stellenwert.|Education has a high status in the family.
+die Tragweite|Die Tragweite dieser Entscheidung war niemandem bewusst.|Nobody was aware of the scope of this decision.
+die Verhältnismäßigkeit|Das Gericht prüft die Verhältnismäßigkeit der Maßnahme.|The court examines the proportionality of the measure.
+die Zwangsläufigkeit|Mit einer gewissen Zwangsläufigkeit kam es zum Streit.|With a certain inevitability it came to a dispute.
+die Beliebigkeit|Die Auswahl der Beispiele wirkt von großer Beliebigkeit.|The choice of examples seems highly arbitrary.
+die Grundlagenforschung|Die Grundlagenforschung braucht langfristige Finanzierung.|Basic research needs long-term funding.
+die Fragestellung|Die zentrale Fragestellung der Arbeit lautet …|The central research question of the paper is …
+die Methodik|Die Methodik der Studie wird kritisiert.|The methodology of the study is criticised.
+die Aussagekraft|Die Umfrage hat nur begrenzte Aussagekraft.|The survey has only limited significance.
+die Validität|Die Validität des Tests ist gut belegt.|The validity of the test is well documented.
+die Verzerrung|Kleine Stichproben führen oft zu Verzerrungen.|Small samples often lead to bias.
+die Fußnote|Die Quelle steht in der Fußnote.|The source is in the footnote.
+das Literaturverzeichnis|Das Literaturverzeichnis steht am Ende der Arbeit.|The bibliography is at the end of the paper.
+die Zusammenschau|In der Zusammenschau ergibt sich ein klares Bild.|Taken together, a clear picture emerges.
+die Gliederung|Eine gute Gliederung erleichtert das Lesen.|A good structure makes reading easier.
+das Gutachten|Das Gericht hat ein Gutachten in Auftrag gegeben.|The court has commissioned an expert report.
+der Sachverständige|Der Sachverständige bestätigte den Schaden.|The expert confirmed the damage.
+die Fachterminologie|Ohne Fachterminologie ist der Text leichter zu verstehen.|Without technical terminology the text is easier to understand.
+die Erkenntnis|Die Studie liefert neue Erkenntnisse.|The study provides new insights.
+die Schlussfolgerung ziehen|Daraus können wir eine klare Schlussfolgerung ziehen.|From this we can draw a clear conclusion.
+die Gesetzgebung|Die Gesetzgebung ist Aufgabe des Parlaments.|Legislation is the task of parliament.
+die Rechtsprechung|Die Rechtsprechung hat sich in diesem Punkt geändert.|Case law has changed on this point.
+der Zuständigkeitsbereich|Das fällt nicht in meinen Zuständigkeitsbereich.|That is not within my area of responsibility.
+die Gewaltenteilung|Die Gewaltenteilung schützt vor Machtmissbrauch.|The separation of powers protects against abuse of power.
+die Rechtsstaatlichkeit|Rechtsstaatlichkeit ist eine Grundlage der EU.|The rule of law is a foundation of the EU.
+die Souveränität|Das Land verteidigt seine Souveränität.|The country defends its sovereignty.
+das Abkommen|Beide Staaten haben ein Abkommen unterzeichnet.|Both states have signed an agreement.
+die Verhandlungsbereitschaft|Beide Seiten signalisierten Verhandlungsbereitschaft.|Both sides signalled willingness to negotiate.
+das Mandat|Die Abgeordnete hat ihr Mandat niedergelegt.|The MP has resigned her seat.
+die Amtszeit|Seine Amtszeit endet im nächsten Jahr.|His term of office ends next year.
+die Koalition|Die Koalition hat sich auf einen Haushalt geeinigt.|The coalition has agreed on a budget.
+die Opposition|Die Opposition kritisiert den Plan scharf.|The opposition sharply criticises the plan.
+das Volksbegehren|Über 20.000 Menschen unterstützten das Volksbegehren.|Over 20,000 people supported the petition for a referendum.
+die Einflussnahme|Man wirft der Firma politische Einflussnahme vor.|The company is accused of political interference.
+der Interessenkonflikt|Als Gutachter hätte er einen Interessenkonflikt.|As an assessor he would have a conflict of interest.
+die Regulierung|Die Branche fordert weniger Regulierung.|The industry calls for less regulation.
+die Subvention|Ohne Subventionen wäre das Produkt zu teuer.|Without subsidies the product would be too expensive.
+die Wertschöpfung|Ein Großteil der Wertschöpfung findet im Ausland statt.|Much of the value creation takes place abroad.
+die Betriebswirtschaft|Sie studiert Betriebswirtschaft in Köln.|She studies business administration in Cologne.
+die Liquidität|Die Firma hat Probleme mit der Liquidität.|The company has liquidity problems.
+die Rentabilität|Die Rentabilität des Projekts ist fraglich.|The profitability of the project is questionable.
+die Insolvenz|Das Unternehmen musste Insolvenz anmelden.|The company had to file for insolvency.
+die Fusion|Die Fusion der beiden Banken wurde genehmigt.|The merger of the two banks was approved.
+der Marktanteil|Der Marktanteil ist auf zwölf Prozent gestiegen.|The market share has risen to twelve per cent.
+die Wertschätzung|Mitarbeitende wünschen sich mehr Wertschätzung.|Employees want more appreciation.
+die Verdrängung|Die Verdrängung alter Mieter ist ein großes Problem.|The displacement of long-standing tenants is a big problem.
+die Resilienz|Sport kann die psychische Resilienz stärken.|Sport can strengthen psychological resilience.
+die Empathie|Gute Ärztinnen zeigen Empathie.|Good doctors show empathy.
+die Selbstwirksamkeit|Erfolgserlebnisse stärken die Selbstwirksamkeit.|Experiences of success strengthen self-efficacy.
+die Voreingenommenheit|Die Jury muss jede Voreingenommenheit vermeiden.|The jury must avoid any bias.
+die Reizüberflutung|In der Großstadt leiden viele unter Reizüberflutung.|In the big city many suffer from sensory overload.
+die Gelassenheit|Sie reagierte mit großer Gelassenheit.|She reacted with great composure.
+die Beharrlichkeit|Mit Beharrlichkeit hat er sein Ziel erreicht.|With persistence he reached his goal.
+die Zurückhaltung|Die Kunden zeigen beim Kauf Zurückhaltung.|Customers are showing restraint when buying.
+die Bereitschaft|Die Bereitschaft zur Weiterbildung ist hoch.|The willingness to undertake further training is high.
+die Prägung|Seine religiöse Prägung merkt man bis heute.|His religious upbringing is still noticeable today.
+die Entfremdung|Viele spüren eine Entfremdung von der Politik.|Many feel alienated from politics.
+die Solidarität|In der Krise zeigte sich große Solidarität.|Great solidarity was shown in the crisis.
+die Zivilgesellschaft|Die Zivilgesellschaft spielt eine wichtige Rolle.|Civil society plays an important role.
+der gesellschaftliche Zusammenhalt|Der gesellschaftliche Zusammenhalt wird auf die Probe gestellt.|Social cohesion is being put to the test.
+die Chancengleichheit|Chancengleichheit beginnt in der Kita.|Equality of opportunity begins in nursery school.
+die Meinungsbildung|Soziale Medien beeinflussen die Meinungsbildung.|Social media influence opinion forming.
+die Berichterstattung|Die Berichterstattung über den Fall war einseitig.|The reporting on the case was one-sided.
+die Quelle|Bitte geben Sie immer die Quelle an.|Please always cite the source.
+die Recherche|Die Recherche dauerte drei Monate.|The research took three months.
+die Falschmeldung|Die Falschmeldung verbreitete sich rasend schnell.|The fake news spread extremely fast.
+die Schlagzeile|Die Schlagzeile ist stark übertrieben.|The headline is greatly exaggerated.
+die Zuspitzung|Die Zuspitzung des Konflikts war absehbar.|The escalation of the conflict was foreseeable.
+der Leitartikel|Im Leitartikel kritisiert die Zeitung die Regierung.|In the editorial the paper criticises the government.
+die Glaubwürdigkeit|Die Partei hat an Glaubwürdigkeit verloren.|The party has lost credibility.
+die Reichweite|Der Kanal hat eine große Reichweite.|The channel has a large reach.
+erörtern|In der Arbeit werden Vor- und Nachteile erörtert.|The paper discusses the pros and cons.
+darlegen|Bitte legen Sie Ihre Gründe schriftlich dar.|Please set out your reasons in writing.
+schildern|Der Zeuge schilderte den Unfall genau.|The witness described the accident precisely.
+ausführen|Die Autorin führt diesen Gedanken im dritten Kapitel aus.|The author elaborates on this idea in chapter three.
+erläutern|Können Sie diese Zahlen kurz erläutern?|Can you briefly explain these figures?
+konkretisieren|Wir müssen den Plan noch konkretisieren.|We still need to make the plan more concrete.
+differenzieren|Man muss zwischen Ursache und Wirkung differenzieren.|One must distinguish between cause and effect.
+abgrenzen|Die Begriffe lassen sich schwer voneinander abgrenzen.|The terms are hard to distinguish from each other.
+gegenüberstellen|Die Tabelle stellt Kosten und Nutzen gegenüber.|The table contrasts costs and benefits.
+in Frage stellen|Die neuen Daten stellen die These in Frage.|The new data call the thesis into question.
+untermauern|Sie untermauert ihre These mit Zahlen.|She backs up her thesis with figures.
+widerlegen|Die Behauptung wurde inzwischen widerlegt.|The claim has since been refuted.
+entkräften|Er konnte den Vorwurf nicht entkräften.|He could not refute the accusation.
+einräumen|Der Minister räumte Fehler ein.|The minister admitted mistakes.
+unterstreichen|Das Ergebnis unterstreicht die Bedeutung der Bildung.|The result underlines the importance of education.
+nahelegen|Die Daten legen einen Zusammenhang nahe.|The data suggest a connection.
+implizieren|Seine Antwort impliziert, dass er zustimmt.|His answer implies that he agrees.
+resultieren aus|Die Verzögerung resultiert aus Personalmangel.|The delay results from staff shortages.
+einhergehen mit|Wohlstand geht oft mit höherem Konsum einher.|Prosperity often goes hand in hand with higher consumption.
+bedingen|Die Krise wurde durch mehrere Faktoren bedingt.|The crisis was caused by several factors.
+begünstigen|Niedrige Zinsen begünstigen Investitionen.|Low interest rates favour investment.
+erschweren|Der Regen erschwerte die Rettungsarbeiten.|The rain made the rescue work more difficult.
+mindern|Die Maßnahme soll das Risiko mindern.|The measure is intended to reduce the risk.
+steigern|Das Unternehmen konnte seinen Umsatz steigern.|The company was able to increase its turnover.
+ausweiten|Das Angebot wird auf ganz Deutschland ausgeweitet.|The offer is being extended to all of Germany.
+eindämmen|Man versucht, die Ausbreitung einzudämmen.|They are trying to contain the spread.
+etablieren|Das Modell hat sich inzwischen etabliert.|The model has become established by now.
+anstreben|Sie strebt eine Karriere in der Forschung an.|She is aiming for a career in research.
+verfolgen|Welches Ziel verfolgt die Kampagne?|What aim is the campaign pursuing?
+bewerkstelligen|Wie sollen wir das bis Freitag bewerkstelligen?|How are we supposed to manage that by Friday?
+in Kauf nehmen|Für den Job nimmt er lange Fahrtzeiten in Kauf.|For the job he accepts long commutes.
+zur Kenntnis nehmen|Wir haben Ihre Beschwerde zur Kenntnis genommen.|We have taken note of your complaint.
+in Betracht ziehen|Wir ziehen auch eine Teilzeitlösung in Betracht.|We are also considering a part-time solution.
+Rücksicht nehmen auf|Bitte nehmen Sie Rücksicht auf ältere Fahrgäste.|Please be considerate of older passengers.
+Bezug nehmen auf|Ich nehme Bezug auf Ihr Schreiben vom 3. Mai.|I refer to your letter of 3 May.
+zur Verfügung stehen|Für Fragen stehe ich Ihnen gern zur Verfügung.|I am happy to answer any questions.
+in Anspruch nehmen|Sie hat eine Beratung in Anspruch genommen.|She made use of a consultation.
+eine Rolle spielen|Das Geld spielt dabei keine Rolle.|Money plays no role in this.
+Wert legen auf|Wir legen großen Wert auf Qualität.|We attach great importance to quality.
+Abstand nehmen von|Die Firma hat von dem Plan Abstand genommen.|The company has refrained from the plan.
+maßgeblich|Sie war maßgeblich an dem Erfolg beteiligt.|She played a decisive part in the success.
+ausschlaggebend|Der Preis war für uns ausschlaggebend.|The price was decisive for us.
+grundlegend|Das Gesetz wurde grundlegend reformiert.|The law was fundamentally reformed.
+weitreichend|Die Entscheidung hat weitreichende Folgen.|The decision has far-reaching consequences.
+gravierend|Es gibt gravierende Mängel im Bericht.|There are serious shortcomings in the report.
+bedenklich|Die Entwicklung ist bedenklich.|The development is worrying.
+strittig|Der letzte Punkt ist noch strittig.|The last point is still disputed.
+eindeutig|Die Ergebnisse sind eindeutig.|The results are unambiguous.
+mehrdeutig|Die Formulierung im Vertrag ist mehrdeutig.|The wording in the contract is ambiguous.
+schlüssig|Seine Argumentation ist schlüssig.|His line of argument is conclusive.
+stichhaltig|Dafür gibt es keine stichhaltigen Beweise.|There is no sound evidence for that.
+fundiert|Sie hat fundierte Kenntnisse im Steuerrecht.|She has well-founded knowledge of tax law.
+vorrangig|Vorrangig geht es um die Sicherheit.|Primarily it is about safety.
+nachrangig|Die Kosten sind hier nachrangig.|The costs are of secondary importance here.
+unabdingbar|Gute Deutschkenntnisse sind unabdingbar.|Good German skills are indispensable.
+unerlässlich|Eine sorgfältige Planung ist unerlässlich.|Careful planning is essential.
+zweckmäßig|Es wäre zweckmäßig, früher anzufangen.|It would be expedient to start earlier.
+hinreichend|Das Problem ist hinreichend bekannt.|The problem is sufficiently well known.
+beträchtlich|Die Kosten sind beträchtlich gestiegen.|The costs have risen considerably.
+marginal|Die Unterschiede sind nur marginal.|The differences are only marginal.
+tendenziell|Tendenziell steigen die Preise weiter.|Prices tend to keep rising.
+vermeintlich|Die vermeintliche Lösung schuf neue Probleme.|The supposed solution created new problems.
+angeblich|Er war angeblich krank.|He was allegedly ill.
+zweifellos|Das ist zweifellos die beste Lösung.|That is undoubtedly the best solution.
+allerdings|Die Wohnung ist schön, allerdings sehr teuer.|The flat is nice, but very expensive.
+hingegen|Er mag Kaffee, sie hingegen trinkt nur Tee.|He likes coffee, she on the other hand only drinks tea.
+demgegenüber|Demgegenüber sind die Kosten gering.|By contrast, the costs are low.
+folglich|Es regnete; folglich fiel das Konzert aus.|It rained; consequently the concert was cancelled.
+infolgedessen|Der Server fiel aus, infolgedessen ruhte die Arbeit.|The server failed; as a result, work stopped.
+demzufolge|Demzufolge ist der Antrag abzulehnen.|Accordingly, the application is to be rejected.
+insofern|Insofern hast du recht.|In that respect you are right.
+sofern|Sofern nichts dagegen spricht, fangen wir an.|Provided nothing speaks against it, we will start.
+zumal|Wir bleiben zu Hause, zumal es regnet.|We are staying at home, especially as it is raining.
+gleichwohl|Die Aufgabe war schwer; gleichwohl hat sie sie gelöst.|The task was hard; nevertheless she solved it.
+dennoch|Er war müde und ging dennoch zur Arbeit.|He was tired and still went to work.
+ohnehin|Ich fahre ohnehin in die Stadt.|I am going into town anyway.
+keineswegs|Das ist keineswegs selbstverständlich.|That is by no means a matter of course.
+durchaus|Das ist durchaus möglich.|That is quite possible.
+womöglich|Womöglich hat er den Termin vergessen.|He may possibly have forgotten the appointment.
+mitunter|Mitunter dauert die Bearbeitung Wochen.|Processing sometimes takes weeks.
+hierbei|Hierbei handelt es sich um einen Sonderfall.|This is a special case.
+diesbezüglich|Diesbezüglich haben wir noch keine Informationen.|We do not have any information on this yet.
+letztlich|Letztlich entscheidet der Kunde.|Ultimately the customer decides.
+der Ausschuss|Der Ausschuss tagt einmal im Monat.|The committee meets once a month.
+erneut|Der Zug hatte erneut Verspätung.|The train was late again.
+die Agenda|Das Thema steht ganz oben auf der Agenda.|The topic is at the top of the agenda.
+beunruhigen|Die Nachricht hat mich sehr beunruhigt.|The news worried me a lot.
+leisten|Das Team hat Großes geleistet.|The team has achieved great things.
+die Frist beachten|Bitte beachten Sie die Frist.|Please observe the deadline.
+klären|Diese Frage müssen wir noch klären.|We still have to clarify this question.
+umfassen|Der Kurs umfasst zwölf Termine.|The course comprises twelve sessions.
+die Modalpartikel|„Doch“ ist hier eine Modalpartikel.|"Doch" is a modal particle here.
+die Haltung|Seine Haltung zu dem Thema ist klar.|His attitude to the topic is clear.
+unbetont / betont|Modalpartikeln sind meist unbetont.|Modal particles are usually unstressed.
+die Aufforderung|Er folgte der Aufforderung sofort.|He complied with the request immediately.
+locker|Das Gespräch war ganz locker.|The conversation was very relaxed.
+selbstverständlich|Das ist doch selbstverständlich!|That goes without saying!
+beruhigen|Die Ärztin konnte den Patienten beruhigen.|The doctor was able to reassure the patient.
+wirken|Er wirkt heute sehr müde.|He seems very tired today.
+klingen|Das klingt nach einem guten Plan.|That sounds like a good plan.
+der Ton|Achten Sie auf den Ton Ihrer E-Mail.|Pay attention to the tone of your email.
+die Erörterung|Die Erörterung hat eine klare Gliederung.|The discursive essay has a clear structure.
+die Einräumung|Nach einer Einräumung folgt meist ein Gegenargument.|A concession is usually followed by a counter-argument.
+der Gegensatz|Im Gegensatz zu ihm bin ich optimistisch.|In contrast to him I am optimistic.
+die Verzögerung|Es kam zu einer Verzögerung von zwei Stunden.|There was a delay of two hours.
+festhalten an|Die Regierung hält an ihrem Plan fest.|The government is sticking to its plan.
+begrenzt|Die Teilnehmerzahl ist begrenzt.|The number of participants is limited.
+ablaufen (läuft ab)|Mein Pass läuft im Mai ab.|My passport expires in May.
+bekämpfen|Wir müssen die Ursachen bekämpfen.|We have to tackle the causes.
+unverändert|Die Lage ist unverändert.|The situation is unchanged.
+die Lage|Die Lage hat sich entspannt.|The situation has eased.
+die Gewichtung|Die Gewichtung der Kriterien ist umstritten.|The weighting of the criteria is disputed.
+die vorliegende Arbeit|Die vorliegende Arbeit untersucht den Wohnungsmarkt.|The present paper examines the housing market.
+darstellen|Die Grafik stellt die Entwicklung dar.|The chart shows the development.
+beruhen auf|Die Studie beruht auf 500 Interviews.|The study is based on 500 interviews.
+sich ergeben aus|Daraus ergibt sich ein neues Problem.|A new problem results from this.
+zurückzuführen sein auf|Der Unfall ist auf Glätte zurückzuführen.|The accident is attributable to icy roads.
+die Befragung|An der Befragung nahmen 800 Personen teil.|800 people took part in the survey.
+der Gegenstand|Gegenstand der Untersuchung ist der Stadtverkehr.|The subject of the study is urban traffic.
+bislang|Bislang gibt es keine Lösung.|So far there is no solution.
+der Sonderfall|Das ist ein Sonderfall, keine Regel.|That is a special case, not a rule.
+im Folgenden|Im Folgenden werden die Ergebnisse dargestellt.|In the following, the results are presented.
+die Kollokation|„Eine Entscheidung treffen“ ist eine Kollokation.|"Make a decision" is a collocation.
+das Register|Im Bewerbungsschreiben ist ein formelles Register nötig.|A formal register is needed in an application letter.
+abweichen von|Das Ergebnis weicht stark von der Prognose ab.|The result deviates sharply from the forecast.
+sich richten an|Das Angebot richtet sich an Studierende.|The offer is aimed at students.
+Beachtung schenken|Diesem Detail sollten Sie Beachtung schenken.|You should pay attention to this detail.
+beheben|Der Fehler wurde inzwischen behoben.|The error has since been fixed.
+ergreifen|Die Stadt ergreift Maßnahmen gegen den Lärm.|The city is taking measures against the noise.
+zurückhaltend|Sie äußerte sich zurückhaltend.|She commented cautiously.
+gewaltig|Der Unterschied ist gewaltig.|The difference is enormous.
+zügig|Wir bearbeiten Ihren Antrag zügig.|We will process your application swiftly.
+die Zusammenfassung|Schreiben Sie eine Zusammenfassung von 100 Wörtern.|Write a summary of 100 words.
+der Beleg|Gibt es dafür einen Beleg?|Is there any evidence for that?
+anführen|Sie führte drei Gründe an.|She put forward three reasons.
+einwenden|Dagegen lässt sich einwenden, dass es teuer ist.|Against this one can object that it is expensive.
+meines Erachtens|Meines Erachtens ist das zu riskant.|In my opinion that is too risky.
+der Anlass|Aus aktuellem Anlass fällt der Kurs aus.|Due to current events the course is cancelled.
+die Forderung|Die Gewerkschaft stellt klare Forderungen.|The union is making clear demands.

@@ -1,4 +1,4 @@
-/* Deutsch Coach – views: Start, Linie (learning path), Lektion */
+/* Deutsch Coach – views: Start, course map, lesson */
 (function () {
   "use strict";
   const { esc, md } = H;
@@ -32,7 +32,7 @@
     el.innerHTML = `
     <h2 class="hello">${hello}${Store.name() ? `, <span>${esc(Store.name())}</span>` : ""}!</h2>
     <section class="board" aria-label="Next lesson">
-      <div class="board-top"><span>Nächster Halt</span><span>${UI.levelDot(l.level)} Linie ${l.level}</span></div>
+      <div class="board-top"><span>Nächste Lektion</span><span>${UI.levelDot(l.level)} Niveau ${l.level}</span></div>
       <div class="board-main"><span class="board-n">${l.n}</span><span class="board-title">${esc(l.title)}</span></div>
       <div class="board-sub">${esc(l.theme)}${l.rec.length ? ` · reuses ${l.rec.length} earlier lessons` : ""}</div>
       <button class="btn sign" data-go="lesson/${l.n}">${ls.read ? "Continue" : "Start"} lesson ${l.n}</button>
@@ -59,6 +59,7 @@
       return s.xp >= 60 && Date.now() - last > month && Date.now() > snooze && Date.now() - (s.created || 0) > 7 * 864e5
         ? `<section class="card remind"><p>💾 <b>Back up your progress?</b> ${last ? "Your last backup is over a month old." : "You haven't saved a backup yet."} Progress lives only on this device.</p><div class="row"><button class="btn sign sm bk-now">Export backup</button><button class="btn ghost sm bk-later">Remind me later</button></div></section>` : ""; })()}
     <div class="novoice"></div>
+    ${!s.placement && p.done < 2 ? `<section class="card"><p>🎯 <b>Not sure where to start?</b> A short placement test finds your level.</p><div class="row"><button class="btn sign sm" data-go="placement">Take the placement test</button></div></section>` : ""}
     <section class="card quick"><div class="row"><button class="btn ghost" data-go="translate">⇄ Translate a word or sentence</button><button class="btn ghost" data-go="write">✍ Writing exam</button></div></section>
     <p class="credit muted small">${App.credit()}</p>`;
     const bn = el.querySelector(".bk-now"); if (bn) bn.onclick = () => { App.backup(); el.querySelector(".remind").remove(); };
@@ -66,14 +67,14 @@
     if (!s.voiceWarned) App.voiceStatus().then((v) => { if (v === "none" && document.body.contains(el)) { const nv = el.querySelector(".novoice"); if (nv) nv.innerHTML = `<section class="card">${App.voiceHelp()}<button class="btn ghost sm nv-ok">Got it</button></section>`; const ok = el.querySelector(".nv-ok"); if (ok) ok.onclick = () => { s.voiceWarned = true; Store.save(); nv.innerHTML = ""; }; } });
   };
 
-  /* ---------------- Linie (path as a transit line) ---------------- */
+  /* ---------------- course map ---------------- */
   V.path = (el) => {
     const s = Store.get();
-    let html = `<h2 class="page-title">Your line from A1 to C2</h2><p class="muted">Each stop is a lesson. Finish a stop (score ≥ 70 %) to open the next one. Later stops reuse earlier grammar.</p><ol class="line">`;
+    let html = `<h2 class="page-title">Your course from A1 to C2</h2><p class="muted">Finish a lesson (score ≥ 70 %) to open the next one. Later lessons reuse earlier grammar.</p><ol class="line">`;
     let prevLvl = null;
     LESSONS().forEach((l) => {
       if (l.level !== prevLvl) {
-        html += `<li class="transfer lvl-${l.level}"><span class="dot"></span><span>${prevLvl ? `Change to line ${l.level}` : `Line ${l.level} starts`}</span></li>`;
+        html += `<li class="transfer lvl-${l.level}"><span class="dot"></span><span>${prevLvl ? `Level ${l.level} starts` : `Level ${l.level} starts`}</span></li>`;
         prevLvl = l.level;
       }
       const st = s.lessons[l.n] || {};

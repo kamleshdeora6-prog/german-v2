@@ -1,0 +1,102 @@
+# de|en|plural|topic|example|example (English)
+#A2
+der Präsident|president|Präsidenten|n-Deklination|Wir haben den Präsidenten im Fernsehen gesehen.|We saw the president on TV.
+der Tourist|tourist|Touristen|n-Deklination|Die Stadt ist voll von Touristen.|The city is full of tourists.
+der Journalist|journalist|Journalisten|n-Deklination|Ich habe mit einem Journalisten gesprochen.|I spoke to a journalist.
+der Architekt|architect|Architekten|n-Deklination|Wir brauchen einen Architekten für den Umbau.|We need an architect for the conversion.
+der Löwe|lion|Löwen|n-Deklination|Im Zoo haben wir den Löwen gefüttert.|At the zoo we fed the lion.
+der Affe|monkey|Affen|n-Deklination|Das Kind lacht über den Affen.|The child laughs at the monkey.
+der Bär|bear|Bären|n-Deklination|Hast du schon einmal einen Bären gesehen?|Have you ever seen a bear?
+der Held|hero|Helden|n-Deklination|Alle feiern den Helden des Spiels.|Everyone celebrates the hero of the match.
+der Name|name|Namen|n-Deklination|Ich habe seinen Namen vergessen.|I have forgotten his name.
+der Buchstabe|letter (of the alphabet)|Buchstaben|n-Deklination|Das Wort hat acht Buchstaben.|The word has eight letters.
+der Gedanke|thought|Gedanken|n-Deklination|Der Gedanke an Urlaub macht mich froh.|The thought of holidays makes me happy.
+die Rechnung bezahlen|to pay the bill||Einkaufen|Kann ich die Rechnung mit Karte bezahlen?|Can I pay the bill by card?
+das Rezept|recipe, prescription|Rezepte|Gesundheit|Die Ärztin gibt mir ein Rezept für Tabletten.|The doctor gives me a prescription for tablets.
+die Tablette|tablet, pill|Tabletten|Gesundheit|Nehmen Sie morgens eine Tablette.|Take one tablet in the morning.
+das Fieber|fever||Gesundheit|Das Kind hat seit gestern Fieber.|The child has had a fever since yesterday.
+die Erkältung|cold (illness)|Erkältungen|Gesundheit|Ich habe eine starke Erkältung.|I have a bad cold.
+der Schalter|counter, switch|Schalter|Behörden|Bitte gehen Sie zu Schalter drei.|Please go to counter three.
+die Wartenummer|queue number|Wartenummern|Behörden|Ziehen Sie bitte eine Wartenummer.|Please take a queue number.
+der Aufenthalt|stay|Aufenthalte|Behörden|Wie lange dauert Ihr Aufenthalt?|How long is your stay?
+die Staatsbürgerschaft|citizenship|Staatsbürgerschaften|Behörden|Er hat die deutsche Staatsbürgerschaft beantragt.|He has applied for German citizenship.
+das Paket|parcel|Pakete|Post|Das Paket liegt beim Nachbarn.|The parcel is at the neighbour's.
+die Briefmarke|stamp|Briefmarken|Post|Eine Briefmarke für Indien, bitte.|A stamp for India, please.
+der Absender|sender|Absender|Post|Der Absender steht links oben.|The sender goes at the top left.
+der Empfänger|recipient|Empfänger|Post|Der Empfänger war nicht zu Hause.|The recipient was not at home.
+die Lieferung|delivery|Lieferungen|Einkaufen|Die Lieferung kommt morgen.|The delivery is coming tomorrow.
+der Umtausch|exchange (of goods)||Einkaufen|Ein Umtausch ist nur mit Kassenbon möglich.|An exchange is only possible with a receipt.
+die Garantie|guarantee|Garantien|Einkaufen|Das Gerät hat zwei Jahre Garantie.|The device has a two-year guarantee.
+das Sonderangebot|special offer|Sonderangebote|Einkaufen|Die Jacke war im Sonderangebot.|The jacket was on special offer.
+die Kasse|till, checkout|Kassen|Einkaufen|Bitte zahlen Sie an der Kasse.|Please pay at the checkout.
+der Einkaufswagen|shopping trolley|Einkaufswagen|Einkaufen|Der Einkaufswagen kostet einen Euro Pfand.|The trolley needs a one-euro deposit.
+das Pfand|deposit (bottles)||Einkaufen|Auf die Flasche gibt es 25 Cent Pfand.|There is a 25-cent deposit on the bottle.
+der Feierabend|end of the working day||Arbeit|Nach Feierabend gehe ich ins Fitnessstudio.|After work I go to the gym.
+der Urlaubsantrag|leave request|Urlaubsanträge|Arbeit|Ich habe meinen Urlaubsantrag gestellt.|I have submitted my leave request.
+die Schicht|shift|Schichten|Arbeit|Sie arbeitet diese Woche in der Nachtschicht.|She is working the night shift this week.
+#B1
+der Kandidat|candidate|Kandidaten|n-Deklination|Die Partei unterstützt den Kandidaten.|The party supports the candidate.
+der Automat|machine (vending/ticket)|Automaten|n-Deklination|Die Fahrkarte kaufst du am Automaten.|You buy the ticket from the machine.
+der Planet|planet|Planeten|n-Deklination|Wir müssen den Planeten schützen.|We have to protect the planet.
+der Biologe|biologist|Biologen|n-Deklination|Sie hat einen Biologen interviewt.|She interviewed a biologist.
+der Psychologe|psychologist|Psychologen|n-Deklination|Er spricht regelmäßig mit einem Psychologen.|He talks to a psychologist regularly.
+der Soldat|soldier|Soldaten|n-Deklination|Der Film erzählt von einem jungen Soldaten.|The film tells the story of a young soldier.
+der Experte|expert|Experten|n-Deklination|Wir sollten einen Experten fragen.|We should ask an expert.
+der Zeuge|witness|Zeugen|n-Deklination|Die Polizei sucht Zeugen des Unfalls.|The police are looking for witnesses to the accident.
+der Glaube|faith, belief||n-Deklination|Den Glauben an eine Lösung habe ich nicht verloren.|I haven't lost faith in a solution.
+der Wille|will||n-Deklination|Gegen seinen Willen musste er umziehen.|He had to move against his will.
+der Friede|peace||n-Deklination|Alle wünschen sich Frieden.|Everyone longs for peace.
+die Mietwohnung|rented flat|Mietwohnungen|Wohnen|In Berlin gibt es zu wenige Mietwohnungen.|There are too few rented flats in Berlin.
+der Nachmieter|next tenant|Nachmieter|Wohnen|Wir suchen einen Nachmieter für unsere Wohnung.|We are looking for someone to take over our flat.
+die Warmmiete|rent incl. heating|Warmmieten|Wohnen|Die Warmmiete beträgt 950 Euro.|The rent including heating is 950 euros.
+die Kaltmiete|rent excl. utilities|Kaltmieten|Wohnen|Die Kaltmiete ist gestiegen.|The basic rent has gone up.
+die Hausverwaltung|property management|Hausverwaltungen|Wohnen|Melden Sie den Schaden der Hausverwaltung.|Report the damage to the property management.
+der Schimmel|mould||Wohnen|Im Bad ist Schimmel an der Wand.|There is mould on the bathroom wall.
+lüften|to air (a room)||Wohnen|Man sollte mehrmals täglich lüften.|You should air the room several times a day.
+die Rundfunkgebühr|broadcasting fee|Rundfunkgebühren|Behörden|Jeder Haushalt zahlt die Rundfunkgebühr.|Every household pays the broadcasting fee.
+die Steuer-ID|tax ID|Steuer-IDs|Behörden|Für den Arbeitsvertrag brauchen Sie Ihre Steuer-ID.|You need your tax ID for the employment contract.
+die Krankenkasse|health insurance fund|Krankenkassen|Gesundheit|Bei welcher Krankenkasse sind Sie versichert?|Which health insurance fund are you insured with?
+die Überweisung (Arzt)|referral||Gesundheit|Für den Facharzt brauchen Sie eine Überweisung.|You need a referral for the specialist.
+der Facharzt|specialist doctor|Fachärzte|Gesundheit|Ich habe erst in sechs Wochen einen Termin beim Facharzt.|I only have a specialist appointment in six weeks.
+die Notaufnahme|emergency room|Notaufnahmen|Gesundheit|Nachts ist nur die Notaufnahme offen.|At night only the emergency room is open.
+die Zuzahlung|co-payment|Zuzahlungen|Gesundheit|Für das Medikament gibt es eine Zuzahlung von fünf Euro.|There is a five-euro co-payment for the medicine.
+die Elternzeit|parental leave||Arbeit|Er nimmt sechs Monate Elternzeit.|He is taking six months of parental leave.
+die Kündigungsfrist|notice period|Kündigungsfristen|Arbeit|Die Kündigungsfrist beträgt drei Monate.|The notice period is three months.
+der Betriebsrat|works council|Betriebsräte|Arbeit|Der Betriebsrat vertritt die Beschäftigten.|The works council represents the employees.
+die Gewerkschaft|trade union|Gewerkschaften|Arbeit|Die Gewerkschaft fordert höhere Löhne.|The union is demanding higher wages.
+das Arbeitszeugnis|employer's reference|Arbeitszeugnisse|Arbeit|Ein gutes Arbeitszeugnis hilft bei der Bewerbung.|A good reference helps with applications.
+die Weiterbildung|further training|Weiterbildungen|Arbeit|Die Firma bezahlt meine Weiterbildung.|The company pays for my further training.
+der Arbeitgeber|employer|Arbeitgeber|Arbeit|Mein Arbeitgeber erlaubt Homeoffice.|My employer allows working from home.
+der Arbeitnehmer|employee|Arbeitnehmer|Arbeit|Arbeitnehmer haben Anspruch auf Urlaub.|Employees are entitled to holiday.
+der Anspruch|entitlement, claim|Ansprüche|Arbeit|Sie haben Anspruch auf 25 Urlaubstage.|You are entitled to 25 days' holiday.
+die Nachricht hinterlassen|to leave a message||Kommunikation|Sie können eine Nachricht hinterlassen.|You can leave a message.
+der Anrufbeantworter|answering machine|Anrufbeantworter|Kommunikation|Ich habe dir auf den Anrufbeantworter gesprochen.|I left you a message on the answering machine.
+die Verabredung|date, arrangement|Verabredungen|Freizeit|Ich habe heute Abend eine Verabredung.|I have a date this evening.
+die Ausstellung|exhibition|Ausstellungen|Freizeit|Die Ausstellung ist bis Juni geöffnet.|The exhibition is open until June.
+die Eintrittskarte|ticket (admission)|Eintrittskarten|Freizeit|Die Eintrittskarten sind ausverkauft.|The tickets are sold out.
+der Verein|club, association|Vereine|Freizeit|Er spielt Fußball in einem Verein.|He plays football in a club.
+das Ehrenamt|voluntary role|Ehrenämter|Gesellschaft|Viele Deutsche engagieren sich im Ehrenamt.|Many Germans do voluntary work.
+die Mülltonne|dustbin|Mülltonnen|Umwelt|Das Papier gehört in die blaue Mülltonne.|Paper goes into the blue bin.
+der Biomüll|organic waste||Umwelt|Kaffeesatz kommt in den Biomüll.|Coffee grounds go into the organic waste.
+der Wertstoff|recyclable material|Wertstoffe|Umwelt|Verpackungen sind Wertstoffe.|Packaging is recyclable material.
+die Fahrgemeinschaft|car pool|Fahrgemeinschaften|Verkehr|Wir bilden eine Fahrgemeinschaft zur Arbeit.|We share a car to work.
+der Stau|traffic jam|Staus|Verkehr|Auf der Autobahn gibt es einen langen Stau.|There is a long traffic jam on the motorway.
+der Anschluss|connection (train)|Anschlüsse|Verkehr|Ich habe meinen Anschluss verpasst.|I missed my connection.
+das Gleis|platform, track|Gleise|Verkehr|Der Zug fährt heute von Gleis 7.|The train leaves from platform 7 today.
+die Durchsage|announcement|Durchsagen|Verkehr|Haben Sie die Durchsage verstanden?|Did you understand the announcement?
+#B2
+der Kollege|colleague|Kollegen|n-Deklination|Ich habe dem Kollegen die Unterlagen gegeben.|I gave the documents to the colleague.
+der Bauer|farmer|Bauern|n-Deklination|Wir kaufen Eier direkt beim Bauern.|We buy eggs directly from the farmer.
+der Mensch|human being|Menschen|n-Deklination|Man muss jeden Menschen respektieren.|One must respect every human being.
+der Herr|gentleman|Herren|n-Deklination|Ich habe den Herrn nach dem Weg gefragt.|I asked the gentleman for directions.
+der Fachkräftebedarf|demand for skilled workers||Wirtschaft|Der Fachkräftebedarf in der Pflege steigt.|The demand for skilled workers in care is rising.
+die Tarifverhandlung|collective wage negotiation|Tarifverhandlungen|Arbeit|Die Tarifverhandlungen sind gescheitert.|The wage negotiations have failed.
+der Mindestlohn|minimum wage|Mindestlöhne|Arbeit|Der Mindestlohn wurde erhöht.|The minimum wage was raised.
+die Rente|pension|Renten|Gesellschaft|Mit 67 geht er in Rente.|He is retiring at 67.
+die Altersvorsorge|retirement provision||Gesellschaft|Private Altersvorsorge wird immer wichtiger.|Private retirement provision is becoming ever more important.
+die Anerkennung (Abschluss)|recognition (of a degree)||Bildung|Die Anerkennung meines Abschlusses dauerte vier Monate.|The recognition of my degree took four months.
+die Einbürgerung|naturalisation|Einbürgerungen|Gesellschaft|Für die Einbürgerung braucht man B1-Kenntnisse.|For naturalisation you need B1 German.
+der Wohnungsmarkt|housing market|Wohnungsmärkte|Wohnen|Der Wohnungsmarkt in München ist angespannt.|The housing market in Munich is tight.
+die Mietpreisbremse|rent cap||Wohnen|Die Mietpreisbremse soll Mieter schützen.|The rent cap is meant to protect tenants.
+die Datenschutzerklärung|privacy policy|Datenschutzerklärungen|Technik|Lesen Sie die Datenschutzerklärung aufmerksam.|Read the privacy policy carefully.
+die Cybersicherheit|cyber security||Technik|Unternehmen investieren in Cybersicherheit.|Companies are investing in cyber security.

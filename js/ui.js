@@ -8,7 +8,7 @@
   UI.table = (rows, cls = "") => {
     if (!rows || !rows.length) return "";
     const [head, ...body] = rows;
-    return `<div class="tablewrap"><table class="gt ${cls}"><thead><tr>${head.map((c) => `<th>${md(c)}</th>`).join("")}</tr></thead><tbody>${body.map((r) => `<tr>${r.map((c) => `<td>${md(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+    return `<div class="tablewrap" tabindex="0" role="region" aria-label="Table"><table class="gt ${cls}"><thead><tr>${head.map((c) => `<th>${md(c)}</th>`).join("")}</tr></thead><tbody>${body.map((r) => `<tr>${r.map((c) => `<td>${md(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
   };
   UI.levelDot = (lvl) => `<span class="lvl lvl-${lvl}">${lvl}</span>`;
   UI.empty = (msg, btn) => `<div class="empty"><p>${msg}</p>${btn || ""}</div>`;

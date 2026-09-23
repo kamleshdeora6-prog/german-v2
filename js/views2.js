@@ -169,12 +169,13 @@
     const lessons = DC.curriculum.filter((l) => s.settings.unlockAll || l.n <= maxL);
     const sentences = H.shuffle(lessons.flatMap((l) => l.examples.map((e) => e.de)));
     const l = H.pick(lessons);
-    el.innerHTML = `<h2 class="page-title">Speaking</h2>
+    el.innerHTML = `<p class="muted small notice">🎙️ Speech recognition checks <b>which words</b> it heard, not your accent or pronunciation. Record yourself and compare with the audio for pronunciation.</p><h2 class="page-title">Speaking</h2>
       ${Speech.canListen() ? "" : `<p class="warn">Speech recognition isn't available here. Use Chrome on Android/desktop or the Android app. You can still listen and practise aloud.</p>`}
       <section class="card"><h3>Shadowing</h3><div class="shadow"></div></section>
       <section class="card"><h3>Free talk: ${esc(l.theme)}</h3><div class="scene">${DC.scenes[l.scene]}</div>
         <ol class="prompts">${l.speak.map((p) => `<li>${md(p)}</li>`).join("")}</ol>
         <div class="row">${UI.mic("Speak")}<button class="btn ghost sm" data-go="speak">Other picture</button></div><div class="transcript"></div></section>
+      <section class="card"><h3>Sounds</h3><p class="muted small">Train the sounds that decide whether you are understood: ü/u, ö/o, ich/sch, long and short vowels.</p><div class="row"><button class="btn ghost sm" data-go="pronounce">Pronunciation drills</button></div></section>
       <section class="card"><h3>Question & answer</h3><p class="muted small">Max asks, you answer out loud.</p><div class="qa"></div></section>`;
     V.shadow(el.querySelector(".shadow"), sentences);
     const free = el.querySelectorAll(".card")[1];
