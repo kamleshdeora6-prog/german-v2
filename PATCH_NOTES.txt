@@ -1,0 +1,1 @@
+Patched app.js to support flashcards array/object and verbs.json merge.\nFlashcards count: 400\nConjugation merged count: 526\nVocab count: 268\nPassages count: 450\n

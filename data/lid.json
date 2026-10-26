@@ -1,0 +1,3113 @@
+[
+  {
+    "q": "What is the German constitution called?",
+    "choices": [
+      "Das Grundgesetz",
+      "Die Bundesordnung",
+      "Das Reichsgesetz"
+    ],
+    "a": 0,
+    "ex": "Germany's constitution is called the Grundgesetz.",
+    "q_de": "Wie heißt die deutsche Verfassung?",
+    "choices_de": [
+      "Das Grundgesetz",
+      "die Bundesordnung",
+      "das Reichsgesetz"
+    ],
+    "ex_de": "Die deutsche Verfassung heißt Grundgesetz."
+  },
+  {
+    "q": "Who elects the Bundestag?",
+    "choices": [
+      "The Länder governments",
+      "Citizens with voting rights",
+      "Only the Federal President"
+    ],
+    "a": 1,
+    "ex": "Citizens elect the Bundestag in democratic elections.",
+    "q_de": "Wer wählt den Bundestag?",
+    "choices_de": [
+      "die Landesregierungen",
+      "wahlberechtigte Bürgerinnen und Bürger",
+      "nur der Bundespräsident"
+    ],
+    "ex_de": "Bürgerinnen und Bürger wählen den Bundestag in demokratischen Wahlen."
+  },
+  {
+    "q": "What is forbidden in a democracy?",
+    "choices": [
+      "Election fraud",
+      "Different opinions",
+      "Peaceful criticism"
+    ],
+    "a": 0,
+    "ex": "Election fraud damages free democratic elections.",
+    "q_de": "Was ist in einer Demokratie verboten?",
+    "choices_de": [
+      "Wahlbetrug",
+      "unterschiedliche Meinungen",
+      "friedliche Kritik"
+    ],
+    "ex_de": "Wahlbetrug schadet freien demokratischen Wahlen."
+  },
+  {
+    "q": "What do you do in an election?",
+    "choices": [
+      "You vote secretly",
+      "You show your ballot publicly",
+      "You ask the police to decide"
+    ],
+    "a": 0,
+    "ex": "Voting is secret.",
+    "q_de": "Was macht man bei einer Wahl?",
+    "choices_de": [
+      "man wählt geheim",
+      "man zeigt seinen Stimmzettel öffentlich",
+      "man bittet die Polizei zu entscheiden"
+    ],
+    "ex_de": "Wahlen sind geheim."
+  },
+  {
+    "q": "Why are several parties important?",
+    "choices": [
+      "So one party controls everything",
+      "So different opinions can be represented",
+      "So elections become unnecessary"
+    ],
+    "a": 1,
+    "ex": "Pluralism allows different political positions.",
+    "q_de": "Warum sind mehrere Parteien wichtig?",
+    "choices_de": [
+      "damit eine Partei alles kontrolliert",
+      "damit unterschiedliche Meinungen vertreten werden",
+      "damit Wahlen überflüssig werden"
+    ],
+    "ex_de": "Pluralismus ermöglicht verschiedene politische Positionen."
+  },
+  {
+    "q": "What does freedom of the press mean?",
+    "choices": [
+      "Newspapers need permission from one party",
+      "Media may report freely within the law",
+      "Only state media may publish"
+    ],
+    "a": 1,
+    "ex": "Press freedom is a protected basic right.",
+    "q_de": "Was bedeutet Pressefreiheit?",
+    "choices_de": [
+      "Zeitungen brauchen die Erlaubnis einer Partei",
+      "Medien dürfen im Rahmen des Gesetzes frei berichten",
+      "nur staatliche Medien dürfen veröffentlichen"
+    ],
+    "ex_de": "Pressefreiheit ist ein geschütztes Grundrecht."
+  },
+  {
+    "q": "Who can be a member of a political party?",
+    "choices": [
+      "Only teachers",
+      "Citizens and residents according to party rules",
+      "Only judges"
+    ],
+    "a": 1,
+    "ex": "Political parties are open according to their statutes.",
+    "q_de": "Wer kann Mitglied einer politischen Partei sein?",
+    "choices_de": [
+      "nur Lehrkräfte",
+      "Bürger und Einwohner nach den Parteiregeln",
+      "nur Richter"
+    ],
+    "ex_de": "Politische Parteien sind nach ihren Satzungen offen organisiert."
+  },
+  {
+    "q": "What does equality before the law mean?",
+    "choices": [
+      "The same law applies regardless of origin or gender",
+      "Rich people may ignore the law",
+      "Men and women have different basic rights"
+    ],
+    "a": 0,
+    "ex": "Everyone is equal before the law.",
+    "q_de": "Was bedeutet Gleichheit vor dem Gesetz?",
+    "choices_de": [
+      "Für alle gilt dasselbe Gesetz – unabhängig von Herkunft oder Geschlecht",
+      "reiche Menschen dürfen das Gesetz ignorieren",
+      "Männer und Frauen haben unterschiedliche Grundrechte"
+    ],
+    "ex_de": "Vor dem Gesetz sind alle gleich."
+  },
+  {
+    "q": "What is the role of the opposition in parliament?",
+    "choices": [
+      "To control and criticise the government",
+      "To close parliament",
+      "To appoint police officers"
+    ],
+    "a": 0,
+    "ex": "Opposition is part of democratic control.",
+    "q_de": "Welche Aufgabe hat die Opposition im Parlament?",
+    "choices_de": [
+      "die Regierung zu kontrollieren und zu kritisieren",
+      "das Parlament zu schließen",
+      "Polizeibeamte zu ernennen"
+    ],
+    "ex_de": "Die Opposition ist Teil der demokratischen Kontrolle."
+  },
+  {
+    "q": "What is guaranteed by freedom of religion?",
+    "choices": [
+      "A boss chooses your religion",
+      "You may choose and practise a religion freely",
+      "Only one religion is allowed"
+    ],
+    "a": 1,
+    "ex": "Freedom of religion protects individual choice.",
+    "q_de": "Was garantiert die Religionsfreiheit?",
+    "choices_de": [
+      "der Arbeitgeber wählt deine Religion",
+      "man darf eine Religion frei wählen und ausüben",
+      "nur eine Religion ist erlaubt"
+    ],
+    "ex_de": "Die Religionsfreiheit schützt die freie persönliche Entscheidung."
+  },
+  {
+    "q": "What is a Land in Germany?",
+    "choices": [
+      "A federal state",
+      "A district office",
+      "A city bus line"
+    ],
+    "a": 0,
+    "ex": "Germany is a federal state made up of Länder.",
+    "q_de": "Was ist ein Land in Deutschland?",
+    "choices_de": [
+      "ein Bundesland",
+      "ein Bezirksamt",
+      "eine Stadtbuslinie"
+    ],
+    "ex_de": "Deutschland ist ein Bundesstaat aus Ländern."
+  },
+  {
+    "q": "How many federal states does Germany have?",
+    "choices": [
+      "12",
+      "16",
+      "20"
+    ],
+    "a": 1,
+    "ex": "Germany has 16 Länder.",
+    "q_de": "Wie viele Bundesländer hat Deutschland?",
+    "choices_de": [
+      "12",
+      "16",
+      "20"
+    ],
+    "ex_de": "Deutschland hat 16 Bundesländer."
+  },
+  {
+    "q": "What is the capital of Germany?",
+    "choices": [
+      "Munich",
+      "Berlin",
+      "Frankfurt"
+    ],
+    "a": 1,
+    "ex": "Berlin is the capital.",
+    "q_de": "Was ist die Hauptstadt von Deutschland?",
+    "choices_de": [
+      "München",
+      "Berlin",
+      "Frankfurt"
+    ],
+    "ex_de": "Berlin ist die Hauptstadt."
+  },
+  {
+    "q": "What is the job of the police?",
+    "choices": [
+      "To write laws",
+      "To protect public safety and enforce the law",
+      "To elect parliament"
+    ],
+    "a": 1,
+    "ex": "Police protect safety and enforce the law.",
+    "q_de": "Welche Aufgabe hat die Polizei?",
+    "choices_de": [
+      "Gesetze zu schreiben",
+      "die öffentliche Sicherheit zu schützen und das Gesetz durchzusetzen",
+      "das Parlament zu wählen"
+    ],
+    "ex_de": "Police protect safety and enforce the law."
+  },
+  {
+    "q": "What is the Federal Constitutional Court for?",
+    "choices": [
+      "To check whether laws fit the constitution",
+      "To organise school holidays",
+      "To issue passports"
+    ],
+    "a": 0,
+    "ex": "It protects the constitution.",
+    "q_de": "Wofür ist das Bundesverfassungsgericht da?",
+    "choices_de": [
+      "zu prüfen, ob Gesetze mit der Verfassung vereinbar sind",
+      "Schulferien zu organisieren",
+      "Pässe auszustellen"
+    ],
+    "ex_de": "It protects the constitution."
+  },
+  {
+    "q": "Who signs federal laws after they are passed?",
+    "choices": [
+      "The Federal President",
+      "The mayor of Berlin",
+      "The chief of police"
+    ],
+    "a": 0,
+    "ex": "The Federal President signs laws.",
+    "q_de": "Wer unterschreibt Bundesgesetze, nachdem sie beschlossen wurden?",
+    "choices_de": [
+      "der Bundespräsident",
+      "der Bürgermeister von Berlin",
+      "der Polizeichef"
+    ],
+    "ex_de": "The Federal President signs laws."
+  },
+  {
+    "q": "What does federalism mean?",
+    "choices": [
+      "All power is only in one city",
+      "Power is shared between federation and Länder",
+      "Only Europe may make laws"
+    ],
+    "a": 1,
+    "ex": "Federalism divides responsibilities.",
+    "q_de": "Was bedeutet Föderalismus?",
+    "choices_de": [
+      "alle Macht liegt nur in einer Stadt",
+      "die Macht wird zwischen Bund und Ländern geteilt",
+      "nur Europa darf Gesetze machen"
+    ],
+    "ex_de": "Federalism divides responsibilities."
+  },
+  {
+    "q": "What is a municipality responsible for?",
+    "choices": [
+      "Local services like roads and registration",
+      "The national anthem",
+      "Foreign policy"
+    ],
+    "a": 0,
+    "ex": "Municipalities handle local administration.",
+    "q_de": "Wofür ist eine Gemeinde zuständig?",
+    "choices_de": [
+      "lokale Aufgaben wie Straßen und Anmeldung",
+      "die Nationalhymne",
+      "Außenpolitik"
+    ],
+    "ex_de": "Municipalities handle local administration."
+  },
+  {
+    "q": "Where do you usually register your address?",
+    "choices": [
+      "At the Bürgeramt / Einwohnermeldeamt",
+      "At the bank",
+      "At the train station"
+    ],
+    "a": 0,
+    "ex": "Address registration is done with local authorities.",
+    "q_de": "Wo meldet man normalerweise seinen Wohnsitz an?",
+    "choices_de": [
+      "beim Bürgeramt / Einwohnermeldeamt",
+      "bei der Bank",
+      "am Bahnhof"
+    ],
+    "ex_de": "Address registration is done with local authorities."
+  },
+  {
+    "q": "What is the Bundestag?",
+    "choices": [
+      "The federal parliament",
+      "A television station",
+      "A trade union"
+    ],
+    "a": 0,
+    "ex": "The Bundestag is the federal parliament.",
+    "q_de": "Was ist der Bundestag?",
+    "choices_de": [
+      "das Bundesparlament",
+      "ein Fernsehsender",
+      "eine Gewerkschaft"
+    ],
+    "ex_de": "The Bundestag is the federal parliament."
+  },
+  {
+    "q": "What is freedom of expression?",
+    "choices": [
+      "You may express opinions within the law",
+      "Only the government may speak",
+      "You must repeat the opinion of your employer"
+    ],
+    "a": 0,
+    "ex": "Freedom of expression protects opinion within legal limits.",
+    "q_de": "Was ist Meinungsfreiheit?",
+    "choices_de": [
+      "man darf im Rahmen des Gesetzes seine Meinung äußern",
+      "nur die Regierung darf sprechen",
+      "man muss die Meinung des Arbeitgebers wiederholen"
+    ],
+    "ex_de": "Freedom of expression protects opinion within legal limits."
+  },
+  {
+    "q": "What protects human dignity?",
+    "choices": [
+      "The Basic Law",
+      "A company contract",
+      "A sports club rule"
+    ],
+    "a": 0,
+    "ex": "Human dignity is protected by the Basic Law.",
+    "q_de": "Was schützt die Menschenwürde?",
+    "choices_de": [
+      "das Grundgesetz",
+      "ein Firmenvertrag",
+      "eine Sportvereinsregel"
+    ],
+    "ex_de": "Human dignity is protected by the Basic Law."
+  },
+  {
+    "q": "What is not allowed even if someone is angry?",
+    "choices": [
+      "Violence against other people",
+      "Peaceful protest",
+      "Writing a complaint"
+    ],
+    "a": 0,
+    "ex": "Violence is illegal.",
+    "q_de": "Was ist nicht erlaubt, auch wenn jemand wütend ist?",
+    "choices_de": [
+      "Gewalt gegen andere Menschen",
+      "friedlicher Protest",
+      "eine Beschwerde schreiben"
+    ],
+    "ex_de": "Violence is illegal."
+  },
+  {
+    "q": "What does equal opportunity in education aim for?",
+    "choices": [
+      "Only wealthy children may study",
+      "Access should not depend on origin",
+      "Schools should only exist in big cities"
+    ],
+    "a": 1,
+    "ex": "Education should be accessible regardless of background.",
+    "q_de": "Was will Chancengleichheit in der Bildung erreichen?",
+    "choices_de": [
+      "nur wohlhabende Kinder dürfen lernen",
+      "Zugang soll nicht von der Herkunft abhängen",
+      "Schulen soll es nur in Großstädten geben"
+    ],
+    "ex_de": "Education should be accessible regardless of background."
+  },
+  {
+    "q": "What right helps workers organise together?",
+    "choices": [
+      "Freedom of association",
+      "Ban on contracts",
+      "Compulsory party membership"
+    ],
+    "a": 0,
+    "ex": "Workers may organise in unions and associations.",
+    "q_de": "Welches Recht hilft Arbeitnehmern, sich gemeinsam zu organisieren?",
+    "choices_de": [
+      "Vereinigungsfreiheit",
+      "Verbot von Verträgen",
+      "Pflicht zur Parteimitgliedschaft"
+    ],
+    "ex_de": "Workers may organise in unions and associations."
+  },
+  {
+    "q": "What may you do if an office makes a wrong decision?",
+    "choices": [
+      "Use legal remedies like an objection or lawsuit",
+      "Ignore all deadlines forever",
+      "Bribe an official"
+    ],
+    "a": 0,
+    "ex": "Administrative decisions can be challenged legally.",
+    "q_de": "Was darf man tun, wenn ein Amt eine falsche Entscheidung trifft?",
+    "choices_de": [
+      "Rechtsmittel wie Widerspruch oder Klage nutzen",
+      "alle Fristen einfach ignorieren",
+      "einen Beamten bestechen"
+    ],
+    "ex_de": "Administrative decisions can be challenged legally."
+  },
+  {
+    "q": "What is discrimination?",
+    "choices": [
+      "Unfair unequal treatment because of traits like origin or religion",
+      "Following a queue",
+      "Speaking politely"
+    ],
+    "a": 0,
+    "ex": "Discrimination is unfair treatment.",
+    "q_de": "Was ist Diskriminierung?",
+    "choices_de": [
+      "ungerechte Benachteiligung wegen Merkmalen wie Herkunft oder Religion",
+      "sich in eine Schlange einreihen",
+      "höflich sprechen"
+    ],
+    "ex_de": "Discrimination is unfair treatment."
+  },
+  {
+    "q": "What is protected by the right to privacy?",
+    "choices": [
+      "Private life and personal data",
+      "Only public speeches",
+      "Only company profits"
+    ],
+    "a": 0,
+    "ex": "Privacy protects private life and data.",
+    "q_de": "Was wird durch das Recht auf Privatsphäre geschützt?",
+    "choices_de": [
+      "Privatleben und persönliche Daten",
+      "nur öffentliche Reden",
+      "nur Unternehmensgewinne"
+    ],
+    "ex_de": "Privacy protects private life and data."
+  },
+  {
+    "q": "What may the state not do?",
+    "choices": [
+      "Torture people",
+      "Protect rights",
+      "Hold elections"
+    ],
+    "a": 0,
+    "ex": "Torture is prohibited.",
+    "q_de": "Was darf der Staat nicht tun?",
+    "choices_de": [
+      "Menschen foltern",
+      "Rechte schützen",
+      "Wahlen durchführen"
+    ],
+    "ex_de": "Torture is prohibited."
+  },
+  {
+    "q": "What is the purpose of social rights and protections?",
+    "choices": [
+      "To support people in need and protect social participation",
+      "To ban all work",
+      "To replace democracy"
+    ],
+    "a": 0,
+    "ex": "Social protections support participation and security.",
+    "q_de": "Wozu dienen soziale Rechte und Schutzsysteme?",
+    "choices_de": [
+      "Menschen in Not zu unterstützen und soziale Teilhabe zu schützen",
+      "jede Arbeit zu verbieten",
+      "die Demokratie zu ersetzen"
+    ],
+    "ex_de": "Social protections support participation and security."
+  },
+  {
+    "q": "What happened on 3 October?",
+    "choices": [
+      "Day of German Unity",
+      "Constitution Day of Bavaria",
+      "Election Day every year"
+    ],
+    "a": 0,
+    "ex": "3 October marks German reunification.",
+    "q_de": "Was geschah am 3. Oktober?",
+    "choices_de": [
+      "Tag der Deutschen Einheit",
+      "Verfassungstag von Bayern",
+      "jedes Jahr Wahltag"
+    ],
+    "ex_de": "3 October marks German reunification."
+  },
+  {
+    "q": "What happened in 1989 in Berlin?",
+    "choices": [
+      "The Berlin Wall fell",
+      "Germany joined the euro",
+      "The Bundestag moved to Bonn"
+    ],
+    "a": 0,
+    "ex": "The fall of the Berlin Wall was a key event in 1989.",
+    "q_de": "Was geschah 1989 in Berlin?",
+    "choices_de": [
+      "die Berliner Mauer fiel",
+      "Deutschland trat dem Euro bei",
+      "der Bundestag zog nach Bonn"
+    ],
+    "ex_de": "The fall of the Berlin Wall was a key event in 1989."
+  },
+  {
+    "q": "What does “Nie wieder” refer to in German remembrance culture?",
+    "choices": [
+      "A commitment against dictatorship and persecution",
+      "A football slogan",
+      "A tax rule"
+    ],
+    "a": 0,
+    "ex": "It refers to responsibility after National Socialism.",
+    "q_de": "Worauf bezieht sich „Nie wieder“ in der deutschen Erinnerungskultur?",
+    "choices_de": [
+      "eine Verpflichtung gegen Diktatur und Verfolgung",
+      "ein Fußballspruch",
+      "eine Steuerregel"
+    ],
+    "ex_de": "It refers to responsibility after National Socialism."
+  },
+  {
+    "q": "Why are memorials important?",
+    "choices": [
+      "They remember victims and historical responsibility",
+      "They replace schools",
+      "They decide elections"
+    ],
+    "a": 0,
+    "ex": "Memorials help preserve remembrance.",
+    "q_de": "Warum sind Gedenkstätten wichtig?",
+    "choices_de": [
+      "sie erinnern an die Opfer und an historische Verantwortung",
+      "sie ersetzen Schulen",
+      "sie entscheiden Wahlen"
+    ],
+    "ex_de": "Memorials help preserve remembrance."
+  },
+  {
+    "q": "What was divided after the Second World War?",
+    "choices": [
+      "Germany",
+      "The Bundestag",
+      "The euro"
+    ],
+    "a": 0,
+    "ex": "Germany was divided into East and West.",
+    "q_de": "Was war nach dem Zweiten Weltkrieg geteilt?",
+    "choices_de": [
+      "Deutschland",
+      "The Bundestag",
+      "der Euro"
+    ],
+    "ex_de": "Germany was divided into East and West."
+  },
+  {
+    "q": "What is a central lesson from the Nazi period?",
+    "choices": [
+      "Human rights and democracy must be protected",
+      "Only one party should rule",
+      "Press freedom is dangerous"
+    ],
+    "a": 0,
+    "ex": "The Nazi period showed why democracy and rights matter.",
+    "q_de": "Was ist eine zentrale Lehre aus der NS-Zeit?",
+    "choices_de": [
+      "Menschenrechte und Demokratie müssen geschützt werden",
+      "nur eine Partei soll herrschen",
+      "Pressefreiheit ist gefährlich"
+    ],
+    "ex_de": "The Nazi period showed why democracy and rights matter."
+  },
+  {
+    "q": "What was the Berlin Wall?",
+    "choices": [
+      "A border barrier dividing East and West Berlin",
+      "A museum from Roman times",
+      "The first German parliament"
+    ],
+    "a": 0,
+    "ex": "The Wall divided Berlin until 1989.",
+    "q_de": "Was war die Berliner Mauer?",
+    "choices_de": [
+      "eine Grenzanlage zwischen Ost- und West-Berlin",
+      "ein Museum aus der Römerzeit",
+      "das erste deutsche Parlament"
+    ],
+    "ex_de": "The Wall divided Berlin until 1989."
+  },
+  {
+    "q": "When did Germany become reunified?",
+    "choices": [
+      "1990",
+      "1972",
+      "2005"
+    ],
+    "a": 0,
+    "ex": "Reunification happened in 1990.",
+    "q_de": "Wann wurde Deutschland wiedervereinigt?",
+    "choices_de": [
+      "1990",
+      "1972",
+      "2005"
+    ],
+    "ex_de": "Reunification happened in 1990."
+  },
+  {
+    "q": "What does a democracy need from citizens?",
+    "choices": [
+      "Participation and responsibility",
+      "Silence",
+      "Only military service"
+    ],
+    "a": 0,
+    "ex": "Democracy depends on active citizens.",
+    "q_de": "Was braucht eine Demokratie von ihren Bürgern?",
+    "choices_de": [
+      "Beteiligung und Verantwortung",
+      "Schweigen",
+      "nur Militärdienst"
+    ],
+    "ex_de": "Democracy depends on active citizens."
+  },
+  {
+    "q": "Why do schools teach National Socialist history?",
+    "choices": [
+      "To understand responsibility and protect democracy",
+      "To glorify dictatorship",
+      "To replace history of other periods"
+    ],
+    "a": 0,
+    "ex": "History teaching helps prevent repetition of injustice.",
+    "q_de": "Warum wird in Schulen die Geschichte des Nationalsozialismus behandelt?",
+    "choices_de": [
+      "um Verantwortung zu verstehen und Demokratie zu schützen",
+      "um Diktatur zu verherrlichen",
+      "um andere Epochen zu ersetzen"
+    ],
+    "ex_de": "History teaching helps prevent repetition of injustice."
+  },
+  {
+    "q": "What is compulsory schooling?",
+    "choices": [
+      "Children must attend school for a number of years",
+      "Only university is free",
+      "School is optional for everyone"
+    ],
+    "a": 0,
+    "ex": "School attendance is compulsory.",
+    "q_de": "Was bedeutet Schulpflicht?",
+    "choices_de": [
+      "Kinder müssen mehrere Jahre zur Schule gehen",
+      "nur die Universität ist kostenlos",
+      "Schule ist für alle freiwillig"
+    ],
+    "ex_de": "School attendance is compulsory."
+  },
+  {
+    "q": "What is the purpose of health insurance?",
+    "choices": [
+      "To help cover medical care",
+      "To choose election results",
+      "To register a marriage"
+    ],
+    "a": 0,
+    "ex": "Health insurance covers medical treatment.",
+    "q_de": "Wozu dient die Krankenversicherung?",
+    "choices_de": [
+      "um medizinische Versorgung mitzufinanzieren",
+      "um Wahlergebnisse festzulegen",
+      "um eine Ehe anzumelden"
+    ],
+    "ex_de": "Health insurance covers medical treatment."
+  },
+  {
+    "q": "What should you do if you move house?",
+    "choices": [
+      "Register your new address on time",
+      "Nothing at all",
+      "Only tell your neighbours"
+    ],
+    "a": 0,
+    "ex": "Address registration is required.",
+    "q_de": "Was sollte man tun, wenn man umzieht?",
+    "choices_de": [
+      "die neue Adresse rechtzeitig anmelden",
+      "gar nichts tun",
+      "nur den Nachbarn Bescheid sagen"
+    ],
+    "ex_de": "Address registration is required."
+  },
+  {
+    "q": "What can parents usually do in Germany?",
+    "choices": [
+      "Share childcare and parental leave",
+      "Stop compulsory schooling permanently",
+      "Ignore child protection laws"
+    ],
+    "a": 0,
+    "ex": "Parents may share care responsibilities.",
+    "q_de": "Was können Eltern in Deutschland normalerweise tun?",
+    "choices_de": [
+      "Kinderbetreuung und Elternzeit teilen",
+      "die Schulpflicht dauerhaft beenden",
+      "Kinderschutzgesetze ignorieren"
+    ],
+    "ex_de": "Parents may share care responsibilities."
+  },
+  {
+    "q": "What is a rental contract?",
+    "choices": [
+      "An agreement between tenant and landlord",
+      "A school certificate",
+      "A passport form"
+    ],
+    "a": 0,
+    "ex": "A rental contract regulates renting a home.",
+    "q_de": "Was ist ein Mietvertrag?",
+    "choices_de": [
+      "eine Vereinbarung zwischen Mieter und Vermieter",
+      "ein Schulzeugnis",
+      "ein Passformular"
+    ],
+    "ex_de": "A rental contract regulates renting a home."
+  },
+  {
+    "q": "What is a trade union?",
+    "choices": [
+      "An organisation representing workers' interests",
+      "A political party in every company",
+      "A private police force"
+    ],
+    "a": 0,
+    "ex": "Trade unions represent employees.",
+    "q_de": "Was ist eine Gewerkschaft?",
+    "choices_de": [
+      "eine Organisation, die Arbeitnehmerinteressen vertritt",
+      "eine politische Partei in jeder Firma",
+      "eine private Polizei"
+    ],
+    "ex_de": "Trade unions represent employees."
+  },
+  {
+    "q": "What may you do if you lose your job?",
+    "choices": [
+      "Register with the employment agency",
+      "Burn your documents",
+      "Avoid all communication"
+    ],
+    "a": 0,
+    "ex": "The employment agency can support job seekers.",
+    "q_de": "Was darf man tun, wenn man seine Arbeit verliert?",
+    "choices_de": [
+      "sich bei der Arbeitsagentur melden",
+      "Dokumente verbrennen",
+      "jede Kommunikation vermeiden"
+    ],
+    "ex_de": "The employment agency can support job seekers."
+  },
+  {
+    "q": "Why are taxes paid?",
+    "choices": [
+      "To finance public tasks like schools and roads",
+      "Only to punish drivers",
+      "To choose a religion"
+    ],
+    "a": 0,
+    "ex": "Taxes finance public services.",
+    "q_de": "Warum zahlt man Steuern?",
+    "choices_de": [
+      "um öffentliche Aufgaben wie Schulen und Straßen zu finanzieren",
+      "nur um Autofahrer zu bestrafen",
+      "um eine Religion auszuwählen"
+    ],
+    "ex_de": "Taxes finance public services."
+  },
+  {
+    "q": "What does integration mean?",
+    "choices": [
+      "Participating in society with rights and responsibilities",
+      "Forgetting your own history completely",
+      "Living without any contact to others"
+    ],
+    "a": 0,
+    "ex": "Integration is participation in society.",
+    "q_de": "Was bedeutet Integration?",
+    "choices_de": [
+      "am gesellschaftlichen Leben mit Rechten und Pflichten teilzunehmen",
+      "die eigene Geschichte völlig zu vergessen",
+      "ohne jeden Kontakt zu anderen zu leben"
+    ],
+    "ex_de": "Integration is participation in society."
+  },
+  {
+    "q": "What should happen in a workplace team?",
+    "choices": [
+      "Respect, cooperation and following the rules",
+      "Insults and discrimination",
+      "No communication"
+    ],
+    "a": 0,
+    "ex": "Workplaces require cooperation and respect.",
+    "q_de": "Was sollte in einem Arbeitsteam passieren?",
+    "choices_de": [
+      "Respekt, Zusammenarbeit und Regelbeachtung",
+      "Beleidigungen und Diskriminierung",
+      "keine Kommunikation"
+    ],
+    "ex_de": "Workplaces require cooperation and respect."
+  },
+  {
+    "q": "In Germany, what is the Basic Law?",
+    "choices": [
+      "the German constitution",
+      "a museum ticket",
+      "a bank contract"
+    ],
+    "a": 0,
+    "ex": "The Basic Law is the constitution of Germany.",
+    "q_de": "Was ist in Deutschland the Basic Law?",
+    "choices_de": [
+      "die deutsche Verfassung",
+      "eine Museumskarte",
+      "ein Bankvertrag"
+    ],
+    "ex_de": "The Basic Law is the constitution of Germany."
+  },
+  {
+    "q": "Which statement about the Basic Law is correct?",
+    "choices": [
+      "the German constitution",
+      "a museum ticket",
+      "a bank contract"
+    ],
+    "a": 0,
+    "ex": "The Basic Law is the constitution of Germany.",
+    "q_de": "Welche Aussage zu the Basic Law ist richtig?",
+    "choices_de": [
+      "die deutsche Verfassung",
+      "eine Museumskarte",
+      "ein Bankvertrag"
+    ],
+    "ex_de": "The Basic Law is the constitution of Germany."
+  },
+  {
+    "q": "What best describes the Basic Law?",
+    "choices": [
+      "the German constitution",
+      "a museum ticket",
+      "a bank contract"
+    ],
+    "a": 0,
+    "ex": "The Basic Law is the constitution of Germany.",
+    "q_de": "Welche Aussage beschreibt das Grundgesetz am besten?",
+    "choices_de": [
+      "die deutsche Verfassung",
+      "eine Museumskarte",
+      "ein Bankvertrag"
+    ],
+    "ex_de": "The Basic Law is the constitution of Germany."
+  },
+  {
+    "q": "In Germany, what is secret voting?",
+    "choices": [
+      "ballots are cast without pressure and in secret",
+      "votes must be shown to neighbours",
+      "the police chooses for you"
+    ],
+    "a": 0,
+    "ex": "German elections are free and secret.",
+    "q_de": "Was ist in Deutschland secret voting?",
+    "choices_de": [
+      "Stimmen werden ohne Druck und geheim abgegeben",
+      "Stimmen müssen den Nachbarn gezeigt werden",
+      "die Polizei wählt für dich"
+    ],
+    "ex_de": "German elections are free and secret."
+  },
+  {
+    "q": "Which statement about secret voting is correct?",
+    "choices": [
+      "ballots are cast without pressure and in secret",
+      "votes must be shown to neighbours",
+      "the police chooses for you"
+    ],
+    "a": 0,
+    "ex": "German elections are free and secret.",
+    "q_de": "Welche Aussage zu secret voting ist richtig?",
+    "choices_de": [
+      "Stimmen werden ohne Druck und geheim abgegeben",
+      "Stimmen müssen den Nachbarn gezeigt werden",
+      "die Polizei wählt für dich"
+    ],
+    "ex_de": "German elections are free and secret."
+  },
+  {
+    "q": "What best describes secret voting?",
+    "choices": [
+      "ballots are cast without pressure and in secret",
+      "votes must be shown to neighbours",
+      "the police chooses for you"
+    ],
+    "a": 0,
+    "ex": "German elections are free and secret.",
+    "q_de": "Welche Aussage beschreibt die geheime Wahl am besten?",
+    "choices_de": [
+      "Stimmen werden ohne Druck und geheim abgegeben",
+      "Stimmen müssen den Nachbarn gezeigt werden",
+      "die Polizei wählt für dich"
+    ],
+    "ex_de": "German elections are free and secret."
+  },
+  {
+    "q": "In Germany, what is freedom of assembly?",
+    "choices": [
+      "people may gather peacefully",
+      "only companies may meet",
+      "street names decide politics"
+    ],
+    "a": 0,
+    "ex": "Peaceful assembly is protected.",
+    "q_de": "Was ist in Deutschland freedom of assembly?",
+    "choices_de": [
+      "Menschen dürfen sich friedlich versammeln",
+      "nur Firmen dürfen sich treffen",
+      "Straßennamen entscheiden Politik"
+    ],
+    "ex_de": "Peaceful assembly is protected."
+  },
+  {
+    "q": "Which statement about freedom of assembly is correct?",
+    "choices": [
+      "people may gather peacefully",
+      "only companies may meet",
+      "street names decide politics"
+    ],
+    "a": 0,
+    "ex": "Peaceful assembly is protected.",
+    "q_de": "Welche Aussage zu freedom of assembly ist richtig?",
+    "choices_de": [
+      "Menschen dürfen sich friedlich versammeln",
+      "nur Firmen dürfen sich treffen",
+      "Straßennamen entscheiden Politik"
+    ],
+    "ex_de": "Peaceful assembly is protected."
+  },
+  {
+    "q": "What best describes freedom of assembly?",
+    "choices": [
+      "people may gather peacefully",
+      "only companies may meet",
+      "street names decide politics"
+    ],
+    "a": 0,
+    "ex": "Peaceful assembly is protected.",
+    "q_de": "Welche Aussage beschreibt die Versammlungsfreiheit am besten?",
+    "choices_de": [
+      "Menschen dürfen sich friedlich versammeln",
+      "nur Firmen dürfen sich treffen",
+      "Straßennamen entscheiden Politik"
+    ],
+    "ex_de": "Peaceful assembly is protected."
+  },
+  {
+    "q": "In Germany, what is freedom of occupation?",
+    "choices": [
+      "people may choose a profession",
+      "employers choose every citizen's job",
+      "only officials may work"
+    ],
+    "a": 0,
+    "ex": "People may choose their profession.",
+    "q_de": "Was ist in Deutschland freedom of occupation?",
+    "choices_de": [
+      "Menschen dürfen ihren Beruf frei wählen",
+      "Arbeitgeber wählen den Beruf jedes Bürgers",
+      "nur Beamte dürfen arbeiten"
+    ],
+    "ex_de": "People may choose their profession."
+  },
+  {
+    "q": "Which statement about freedom of occupation is correct?",
+    "choices": [
+      "people may choose a profession",
+      "employers choose every citizen's job",
+      "only officials may work"
+    ],
+    "a": 0,
+    "ex": "People may choose their profession.",
+    "q_de": "Welche Aussage zu freedom of occupation ist richtig?",
+    "choices_de": [
+      "Menschen dürfen ihren Beruf frei wählen",
+      "Arbeitgeber wählen den Beruf jedes Bürgers",
+      "nur Beamte dürfen arbeiten"
+    ],
+    "ex_de": "People may choose their profession."
+  },
+  {
+    "q": "What best describes freedom of occupation?",
+    "choices": [
+      "people may choose a profession",
+      "employers choose every citizen's job",
+      "only officials may work"
+    ],
+    "a": 0,
+    "ex": "People may choose their profession.",
+    "q_de": "Welche Aussage beschreibt die Berufsfreiheit am besten?",
+    "choices_de": [
+      "Menschen dürfen ihren Beruf frei wählen",
+      "Arbeitgeber wählen den Beruf jedes Bürgers",
+      "nur Beamte dürfen arbeiten"
+    ],
+    "ex_de": "People may choose their profession."
+  },
+  {
+    "q": "In Germany, what is the Federal Constitutional Court?",
+    "choices": [
+      "it checks constitutionality",
+      "it runs local buses",
+      "it collects rent"
+    ],
+    "a": 0,
+    "ex": "The court reviews constitutional questions.",
+    "q_de": "Was ist in Deutschland the Federal Constitutional Court?",
+    "choices_de": [
+      "es prüft die Verfassungsmäßigkeit",
+      "es betreibt lokale Busse",
+      "es kassiert Miete"
+    ],
+    "ex_de": "The court reviews constitutional questions."
+  },
+  {
+    "q": "Which statement about the Federal Constitutional Court is correct?",
+    "choices": [
+      "it checks constitutionality",
+      "it runs local buses",
+      "it collects rent"
+    ],
+    "a": 0,
+    "ex": "The court reviews constitutional questions.",
+    "q_de": "Welche Aussage zu the Federal Constitutional Court ist richtig?",
+    "choices_de": [
+      "es prüft die Verfassungsmäßigkeit",
+      "es betreibt lokale Busse",
+      "es kassiert Miete"
+    ],
+    "ex_de": "The court reviews constitutional questions."
+  },
+  {
+    "q": "What best describes the Federal Constitutional Court?",
+    "choices": [
+      "it checks constitutionality",
+      "it runs local buses",
+      "it collects rent"
+    ],
+    "a": 0,
+    "ex": "The court reviews constitutional questions.",
+    "q_de": "Welche Aussage beschreibt das Bundesverfassungsgericht am besten?",
+    "choices_de": [
+      "es prüft die Verfassungsmäßigkeit",
+      "es betreibt lokale Busse",
+      "es kassiert Miete"
+    ],
+    "ex_de": "The court reviews constitutional questions."
+  },
+  {
+    "q": "In Germany, what is the Bundesrat?",
+    "choices": [
+      "it represents the Länder at federal level",
+      "it is a television show",
+      "it replaces all local councils"
+    ],
+    "a": 0,
+    "ex": "The Bundesrat represents the Länder.",
+    "q_de": "Was ist in Deutschland the Bundesrat?",
+    "choices_de": [
+      "it represents the Länder at federal level",
+      "es ist eine Fernsehsendung",
+      "es ersetzt alle Gemeinderäte"
+    ],
+    "ex_de": "The Bundesrat represents the Länder."
+  },
+  {
+    "q": "Which statement about the Bundesrat is correct?",
+    "choices": [
+      "it represents the Länder at federal level",
+      "it is a television show",
+      "it replaces all local councils"
+    ],
+    "a": 0,
+    "ex": "The Bundesrat represents the Länder.",
+    "q_de": "Welche Aussage zu the Bundesrat ist richtig?",
+    "choices_de": [
+      "it represents the Länder at federal level",
+      "es ist eine Fernsehsendung",
+      "es ersetzt alle Gemeinderäte"
+    ],
+    "ex_de": "The Bundesrat represents the Länder."
+  },
+  {
+    "q": "What best describes the Bundesrat?",
+    "choices": [
+      "it represents the Länder at federal level",
+      "it is a television show",
+      "it replaces all local councils"
+    ],
+    "a": 0,
+    "ex": "The Bundesrat represents the Länder.",
+    "q_de": "Welche Aussage beschreibt den Bundesrat am besten?",
+    "choices_de": [
+      "it represents the Länder at federal level",
+      "es ist eine Fernsehsendung",
+      "es ersetzt alle Gemeinderäte"
+    ],
+    "ex_de": "The Bundesrat represents the Länder."
+  },
+  {
+    "q": "In Germany, what is human dignity?",
+    "choices": [
+      "it must be respected and protected",
+      "it depends on salary",
+      "it only applies to politicians"
+    ],
+    "a": 0,
+    "ex": "Human dignity is protected by the Basic Law.",
+    "q_de": "Was ist in Deutschland human dignity?",
+    "choices_de": [
+      "sie muss geachtet und geschützt werden",
+      "sie hängt vom Gehalt ab",
+      "sie gilt nur für Politiker"
+    ],
+    "ex_de": "Human dignity is protected by the Basic Law."
+  },
+  {
+    "q": "Which statement about human dignity is correct?",
+    "choices": [
+      "it must be respected and protected",
+      "it depends on salary",
+      "it only applies to politicians"
+    ],
+    "a": 0,
+    "ex": "Human dignity is protected by the Basic Law.",
+    "q_de": "Welche Aussage zu human dignity ist richtig?",
+    "choices_de": [
+      "sie muss geachtet und geschützt werden",
+      "sie hängt vom Gehalt ab",
+      "sie gilt nur für Politiker"
+    ],
+    "ex_de": "Human dignity is protected by the Basic Law."
+  },
+  {
+    "q": "What best describes human dignity?",
+    "choices": [
+      "it must be respected and protected",
+      "it depends on salary",
+      "it only applies to politicians"
+    ],
+    "a": 0,
+    "ex": "Human dignity is protected by the Basic Law.",
+    "q_de": "Welche Aussage beschreibt die Menschenwürde am besten?",
+    "choices_de": [
+      "sie muss geachtet und geschützt werden",
+      "sie hängt vom Gehalt ab",
+      "sie gilt nur für Politiker"
+    ],
+    "ex_de": "Human dignity is protected by the Basic Law."
+  },
+  {
+    "q": "In Germany, what is social insurance?",
+    "choices": [
+      "it supports people in cases like illness or unemployment",
+      "it decides election campaigns",
+      "it replaces schools"
+    ],
+    "a": 0,
+    "ex": "Social insurance protects people against major risks.",
+    "q_de": "Was ist in Deutschland social insurance?",
+    "choices_de": [
+      "sie unterstützt Menschen bei Krankheit oder Arbeitslosigkeit",
+      "sie entscheidet über Wahlkämpfe",
+      "sie ersetzt Schulen"
+    ],
+    "ex_de": "Social insurance protects people against major risks."
+  },
+  {
+    "q": "Which statement about social insurance is correct?",
+    "choices": [
+      "it supports people in cases like illness or unemployment",
+      "it decides election campaigns",
+      "it replaces schools"
+    ],
+    "a": 0,
+    "ex": "Social insurance protects people against major risks.",
+    "q_de": "Welche Aussage zu social insurance ist richtig?",
+    "choices_de": [
+      "sie unterstützt Menschen bei Krankheit oder Arbeitslosigkeit",
+      "sie entscheidet über Wahlkämpfe",
+      "sie ersetzt Schulen"
+    ],
+    "ex_de": "Social insurance protects people against major risks."
+  },
+  {
+    "q": "What best describes social insurance?",
+    "choices": [
+      "it supports people in cases like illness or unemployment",
+      "it decides election campaigns",
+      "it replaces schools"
+    ],
+    "a": 0,
+    "ex": "Social insurance protects people against major risks.",
+    "q_de": "Welche Aussage beschreibt die Sozialversicherung am besten?",
+    "choices_de": [
+      "sie unterstützt Menschen bei Krankheit oder Arbeitslosigkeit",
+      "sie entscheidet über Wahlkämpfe",
+      "sie ersetzt Schulen"
+    ],
+    "ex_de": "Social insurance protects people against major risks."
+  },
+  {
+    "q": "In Germany, what is the Bürgeramt?",
+    "choices": [
+      "it handles many local registrations and documents",
+      "it decides criminal cases",
+      "it runs airports"
+    ],
+    "a": 0,
+    "ex": "The Bürgeramt handles common local administrative tasks.",
+    "q_de": "Was ist in Deutschland the Bürgeramt?",
+    "choices_de": [
+      "es erledigt viele lokale Anmeldungen und Dokumente",
+      "es entscheidet Strafverfahren",
+      "es betreibt Flughäfen"
+    ],
+    "ex_de": "The Bürgeramt handles common local administrative tasks."
+  },
+  {
+    "q": "Which statement about the Bürgeramt is correct?",
+    "choices": [
+      "it handles many local registrations and documents",
+      "it decides criminal cases",
+      "it runs airports"
+    ],
+    "a": 0,
+    "ex": "The Bürgeramt handles common local administrative tasks.",
+    "q_de": "Welche Aussage zu the Bürgeramt ist richtig?",
+    "choices_de": [
+      "es erledigt viele lokale Anmeldungen und Dokumente",
+      "es entscheidet Strafverfahren",
+      "es betreibt Flughäfen"
+    ],
+    "ex_de": "The Bürgeramt handles common local administrative tasks."
+  },
+  {
+    "q": "What best describes the Bürgeramt?",
+    "choices": [
+      "it handles many local registrations and documents",
+      "it decides criminal cases",
+      "it runs airports"
+    ],
+    "a": 0,
+    "ex": "The Bürgeramt handles common local administrative tasks.",
+    "q_de": "Welche Aussage beschreibt das Bürgeramt am besten?",
+    "choices_de": [
+      "es erledigt viele lokale Anmeldungen und Dokumente",
+      "es entscheidet Strafverfahren",
+      "es betreibt Flughäfen"
+    ],
+    "ex_de": "The Bürgeramt handles common local administrative tasks."
+  },
+  {
+    "q": "In Germany, what is compulsory schooling?",
+    "choices": [
+      "children must attend school",
+      "school is voluntary for all children",
+      "only city children go to school"
+    ],
+    "a": 0,
+    "ex": "School attendance is compulsory.",
+    "q_de": "Was ist in Deutschland compulsory schooling?",
+    "choices_de": [
+      "Kinder müssen zur Schule gehen",
+      "Schule ist für alle Kinder freiwillig",
+      "nur Stadtkinder gehen zur Schule"
+    ],
+    "ex_de": "School attendance is compulsory."
+  },
+  {
+    "q": "Which statement about compulsory schooling is correct?",
+    "choices": [
+      "children must attend school",
+      "school is voluntary for all children",
+      "only city children go to school"
+    ],
+    "a": 0,
+    "ex": "School attendance is compulsory.",
+    "q_de": "Welche Aussage zu compulsory schooling ist richtig?",
+    "choices_de": [
+      "Kinder müssen zur Schule gehen",
+      "Schule ist für alle Kinder freiwillig",
+      "nur Stadtkinder gehen zur Schule"
+    ],
+    "ex_de": "School attendance is compulsory."
+  },
+  {
+    "q": "What best describes compulsory schooling?",
+    "choices": [
+      "children must attend school",
+      "school is voluntary for all children",
+      "only city children go to school"
+    ],
+    "a": 0,
+    "ex": "School attendance is compulsory.",
+    "q_de": "Welche Aussage beschreibt die Schulpflicht am besten?",
+    "choices_de": [
+      "Kinder müssen zur Schule gehen",
+      "Schule ist für alle Kinder freiwillig",
+      "nur Stadtkinder gehen zur Schule"
+    ],
+    "ex_de": "School attendance is compulsory."
+  },
+  {
+    "q": "In Germany, what is the right to vote?",
+    "choices": [
+      "eligible citizens may elect representatives",
+      "only celebrities can vote",
+      "children choose all laws directly every week"
+    ],
+    "a": 0,
+    "ex": "Eligible citizens vote in elections.",
+    "q_de": "Was ist in Deutschland the right to vote?",
+    "choices_de": [
+      "wahlberechtigte Bürger dürfen Abgeordnete wählen",
+      "nur Prominente dürfen wählen",
+      "Kinder entscheiden jede Woche direkt über alle Gesetze"
+    ],
+    "ex_de": "Eligible citizens vote in elections."
+  },
+  {
+    "q": "Which statement about the right to vote is correct?",
+    "choices": [
+      "eligible citizens may elect representatives",
+      "only celebrities can vote",
+      "children choose all laws directly every week"
+    ],
+    "a": 0,
+    "ex": "Eligible citizens vote in elections.",
+    "q_de": "Welche Aussage zum Wahlrecht ist richtig?",
+    "choices_de": [
+      "wahlberechtigte Bürger dürfen Abgeordnete wählen",
+      "nur Prominente dürfen wählen",
+      "Kinder entscheiden jede Woche direkt über alle Gesetze"
+    ],
+    "ex_de": "Eligible citizens vote in elections."
+  },
+  {
+    "q": "What best describes the right to vote?",
+    "choices": [
+      "eligible citizens may elect representatives",
+      "only celebrities can vote",
+      "children choose all laws directly every week"
+    ],
+    "a": 0,
+    "ex": "Eligible citizens vote in elections.",
+    "q_de": "Welche Aussage beschreibt das Wahlrecht am besten?",
+    "choices_de": [
+      "wahlberechtigte Bürger dürfen Abgeordnete wählen",
+      "nur Prominente dürfen wählen",
+      "Kinder entscheiden jede Woche direkt über alle Gesetze"
+    ],
+    "ex_de": "Eligible citizens vote in elections."
+  },
+  {
+    "q": "In Germany, what is freedom of conscience?",
+    "choices": [
+      "people may follow their convictions",
+      "the employer chooses your values",
+      "there may be only one worldview"
+    ],
+    "a": 0,
+    "ex": "Freedom of conscience protects personal convictions.",
+    "q_de": "Was ist in Deutschland freedom of conscience?",
+    "choices_de": [
+      "Menschen dürfen ihrem Gewissen folgen",
+      "der Arbeitgeber wählt deine Werte",
+      "es darf nur eine Weltanschauung geben"
+    ],
+    "ex_de": "Freedom of conscience protects personal convictions."
+  },
+  {
+    "q": "Which statement about freedom of conscience is correct?",
+    "choices": [
+      "people may follow their convictions",
+      "the employer chooses your values",
+      "there may be only one worldview"
+    ],
+    "a": 0,
+    "ex": "Freedom of conscience protects personal convictions.",
+    "q_de": "Welche Aussage zu freedom of conscience ist richtig?",
+    "choices_de": [
+      "Menschen dürfen ihrem Gewissen folgen",
+      "der Arbeitgeber wählt deine Werte",
+      "es darf nur eine Weltanschauung geben"
+    ],
+    "ex_de": "Freedom of conscience protects personal convictions."
+  },
+  {
+    "q": "What best describes freedom of conscience?",
+    "choices": [
+      "people may follow their convictions",
+      "the employer chooses your values",
+      "there may be only one worldview"
+    ],
+    "a": 0,
+    "ex": "Freedom of conscience protects personal convictions.",
+    "q_de": "Welche Aussage beschreibt die Gewissensfreiheit am besten?",
+    "choices_de": [
+      "Menschen dürfen ihrem Gewissen folgen",
+      "der Arbeitgeber wählt deine Werte",
+      "es darf nur eine Weltanschauung geben"
+    ],
+    "ex_de": "Freedom of conscience protects personal convictions."
+  },
+  {
+    "q": "In Germany, what is municipal council?",
+    "choices": [
+      "it decides local matters in a city or town",
+      "it commands the army",
+      "it prints euro banknotes"
+    ],
+    "a": 0,
+    "ex": "Municipal councils make local decisions.",
+    "q_de": "Was ist in Deutschland municipal council?",
+    "choices_de": [
+      "es entscheidet lokale Angelegenheiten in einer Stadt oder Gemeinde",
+      "es befehligt die Armee",
+      "es druckt Euro-Banknoten"
+    ],
+    "ex_de": "Municipal councils make local decisions."
+  },
+  {
+    "q": "Which statement about municipal council is correct?",
+    "choices": [
+      "it decides local matters in a city or town",
+      "it commands the army",
+      "it prints euro banknotes"
+    ],
+    "a": 0,
+    "ex": "Municipal councils make local decisions.",
+    "q_de": "Welche Aussage zu municipal council ist richtig?",
+    "choices_de": [
+      "es entscheidet lokale Angelegenheiten in einer Stadt oder Gemeinde",
+      "es befehligt die Armee",
+      "es druckt Euro-Banknoten"
+    ],
+    "ex_de": "Municipal councils make local decisions."
+  },
+  {
+    "q": "What best describes municipal council?",
+    "choices": [
+      "it decides local matters in a city or town",
+      "it commands the army",
+      "it prints euro banknotes"
+    ],
+    "a": 0,
+    "ex": "Municipal councils make local decisions.",
+    "q_de": "Welche Aussage beschreibt den Gemeinderat am besten?",
+    "choices_de": [
+      "es entscheidet lokale Angelegenheiten in einer Stadt oder Gemeinde",
+      "es befehligt die Armee",
+      "es druckt Euro-Banknoten"
+    ],
+    "ex_de": "Municipal councils make local decisions."
+  },
+  {
+    "q": "In Germany, what is the police?",
+    "choices": [
+      "it protects safety and enforces the law",
+      "it writes the constitution",
+      "it appoints teachers nationally"
+    ],
+    "a": 0,
+    "ex": "Police protect safety and enforce the law.",
+    "q_de": "Was ist in Deutschland the police?",
+    "choices_de": [
+      "sie schützt die Sicherheit und setzt das Gesetz durch",
+      "es schreibt die Verfassung",
+      "es ernennt Lehrkräfte bundesweit"
+    ],
+    "ex_de": "Police protect safety and enforce the law."
+  },
+  {
+    "q": "Which statement about the police is correct?",
+    "choices": [
+      "it protects safety and enforces the law",
+      "it writes the constitution",
+      "it appoints teachers nationally"
+    ],
+    "a": 0,
+    "ex": "Police protect safety and enforce the law.",
+    "q_de": "Welche Aussage zu the police ist richtig?",
+    "choices_de": [
+      "sie schützt die Sicherheit und setzt das Gesetz durch",
+      "es schreibt die Verfassung",
+      "es ernennt Lehrkräfte bundesweit"
+    ],
+    "ex_de": "Police protect safety and enforce the law."
+  },
+  {
+    "q": "What best describes the police?",
+    "choices": [
+      "it protects safety and enforces the law",
+      "it writes the constitution",
+      "it appoints teachers nationally"
+    ],
+    "a": 0,
+    "ex": "Police protect safety and enforce the law.",
+    "q_de": "Welche Aussage beschreibt die Polizei am besten?",
+    "choices_de": [
+      "sie schützt die Sicherheit und setzt das Gesetz durch",
+      "es schreibt die Verfassung",
+      "es ernennt Lehrkräfte bundesweit"
+    ],
+    "ex_de": "Police protect safety and enforce the law."
+  },
+  {
+    "q": "In Germany, what is taxes?",
+    "choices": [
+      "they finance public services",
+      "they replace elections",
+      "they are paid only by tourists"
+    ],
+    "a": 0,
+    "ex": "Taxes help finance public services.",
+    "q_de": "Was ist in Deutschland taxes?",
+    "choices_de": [
+      "sie finanzieren öffentliche Leistungen",
+      "sie ersetzen Wahlen",
+      "sie werden nur von Touristen bezahlt"
+    ],
+    "ex_de": "Taxes help finance public services."
+  },
+  {
+    "q": "Which statement about taxes is correct?",
+    "choices": [
+      "they finance public services",
+      "they replace elections",
+      "they are paid only by tourists"
+    ],
+    "a": 0,
+    "ex": "Taxes help finance public services.",
+    "q_de": "Welche Aussage zu taxes ist richtig?",
+    "choices_de": [
+      "sie finanzieren öffentliche Leistungen",
+      "sie ersetzen Wahlen",
+      "sie werden nur von Touristen bezahlt"
+    ],
+    "ex_de": "Taxes help finance public services."
+  },
+  {
+    "q": "What best describes taxes?",
+    "choices": [
+      "they finance public services",
+      "they replace elections",
+      "they are paid only by tourists"
+    ],
+    "a": 0,
+    "ex": "Taxes help finance public services.",
+    "q_de": "Welche Aussage beschreibt Steuern am besten?",
+    "choices_de": [
+      "sie finanzieren öffentliche Leistungen",
+      "sie ersetzen Wahlen",
+      "sie werden nur von Touristen bezahlt"
+    ],
+    "ex_de": "Taxes help finance public services."
+  },
+  {
+    "q": "In Germany, what is an objection to an official decision?",
+    "choices": [
+      "it is a legal way to challenge a decision",
+      "it means ignoring the letter forever",
+      "it is a party membership"
+    ],
+    "a": 0,
+    "ex": "Official decisions can often be challenged legally.",
+    "q_de": "Was ist in Deutschland an objection to an official decision?",
+    "choices_de": [
+      "es ist ein rechtlicher Weg, eine Entscheidung anzufechten",
+      "es bedeutet, den Brief für immer zu ignorieren",
+      "es ist eine Parteimitgliedschaft"
+    ],
+    "ex_de": "Official decisions can often be challenged legally."
+  },
+  {
+    "q": "Which statement about an objection to an official decision is correct?",
+    "choices": [
+      "it is a legal way to challenge a decision",
+      "it means ignoring the letter forever",
+      "it is a party membership"
+    ],
+    "a": 0,
+    "ex": "Official decisions can often be challenged legally.",
+    "q_de": "Welche Aussage zu an objection to an official decision ist richtig?",
+    "choices_de": [
+      "es ist ein rechtlicher Weg, eine Entscheidung anzufechten",
+      "es bedeutet, den Brief für immer zu ignorieren",
+      "es ist eine Parteimitgliedschaft"
+    ],
+    "ex_de": "Official decisions can often be challenged legally."
+  },
+  {
+    "q": "What best describes an objection to an official decision?",
+    "choices": [
+      "it is a legal way to challenge a decision",
+      "it means ignoring the letter forever",
+      "it is a party membership"
+    ],
+    "a": 0,
+    "ex": "Official decisions can often be challenged legally.",
+    "q_de": "Welche Aussage beschreibt einen Widerspruch gegen einen Behördenbescheid am besten?",
+    "choices_de": [
+      "es ist ein rechtlicher Weg, eine Entscheidung anzufechten",
+      "es bedeutet, den Brief für immer zu ignorieren",
+      "es ist eine Parteimitgliedschaft"
+    ],
+    "ex_de": "Official decisions can often be challenged legally."
+  },
+  {
+    "q": "In Germany, what is equal rights for women and men?",
+    "choices": [
+      "both have the same rights",
+      "men may vote twice",
+      "women cannot work"
+    ],
+    "a": 0,
+    "ex": "Women and men have equal rights.",
+    "q_de": "Was ist in Deutschland equal rights for women and men?",
+    "choices_de": [
+      "beide haben die gleichen Rechte",
+      "Männer dürfen zweimal wählen",
+      "Frauen dürfen nicht arbeiten"
+    ],
+    "ex_de": "Women and men have equal rights."
+  },
+  {
+    "q": "Which statement about equal rights for women and men is correct?",
+    "choices": [
+      "both have the same rights",
+      "men may vote twice",
+      "women cannot work"
+    ],
+    "a": 0,
+    "ex": "Women and men have equal rights.",
+    "q_de": "Welche Aussage zur Gleichberechtigung von Frauen und Männern ist richtig?",
+    "choices_de": [
+      "beide haben die gleichen Rechte",
+      "Männer dürfen zweimal wählen",
+      "Frauen dürfen nicht arbeiten"
+    ],
+    "ex_de": "Women and men have equal rights."
+  },
+  {
+    "q": "What best describes equal rights for women and men?",
+    "choices": [
+      "both have the same rights",
+      "men may vote twice",
+      "women cannot work"
+    ],
+    "a": 0,
+    "ex": "Women and men have equal rights.",
+    "q_de": "Welche Aussage beschreibt die Gleichberechtigung von Frauen und Männern am besten?",
+    "choices_de": [
+      "beide haben die gleichen Rechte",
+      "Männer dürfen zweimal wählen",
+      "Frauen dürfen nicht arbeiten"
+    ],
+    "ex_de": "Women and men have equal rights."
+  },
+  {
+    "q": "In Germany, what is the Day of German Unity?",
+    "choices": [
+      "it commemorates reunification on 3 October",
+      "it marks the start of summer",
+      "it is always an election day"
+    ],
+    "a": 0,
+    "ex": "The Day of German Unity is celebrated on 3 October.",
+    "q_de": "Was ist in Deutschland the Day of German Unity?",
+    "choices_de": [
+      "es erinnert am 3. Oktober an die Wiedervereinigung",
+      "es markiert den Beginn des Sommers",
+      "es ist immer Wahltag"
+    ],
+    "ex_de": "The Day of German Unity is celebrated on 3 October."
+  },
+  {
+    "q": "Which statement about the Day of German Unity is correct?",
+    "choices": [
+      "it commemorates reunification on 3 October",
+      "it marks the start of summer",
+      "it is always an election day"
+    ],
+    "a": 0,
+    "ex": "The Day of German Unity is celebrated on 3 October.",
+    "q_de": "Welche Aussage zu the Day of German Unity ist richtig?",
+    "choices_de": [
+      "es erinnert am 3. Oktober an die Wiedervereinigung",
+      "es markiert den Beginn des Sommers",
+      "es ist immer Wahltag"
+    ],
+    "ex_de": "The Day of German Unity is celebrated on 3 October."
+  },
+  {
+    "q": "What best describes the Day of German Unity?",
+    "choices": [
+      "it commemorates reunification on 3 October",
+      "it marks the start of summer",
+      "it is always an election day"
+    ],
+    "a": 0,
+    "ex": "The Day of German Unity is celebrated on 3 October.",
+    "q_de": "Welche Aussage beschreibt den Tag der Deutschen Einheit am besten?",
+    "choices_de": [
+      "es erinnert am 3. Oktober an die Wiedervereinigung",
+      "es markiert den Beginn des Sommers",
+      "es ist immer Wahltag"
+    ],
+    "ex_de": "The Day of German Unity is celebrated on 3 October."
+  },
+  {
+    "q": "In Germany, what is the Berlin Wall?",
+    "choices": [
+      "it divided Berlin until 1989",
+      "it is Germany's current national border",
+      "it is the name of parliament"
+    ],
+    "a": 0,
+    "ex": "The Berlin Wall divided Berlin until 1989.",
+    "q_de": "Was ist in Deutschland the Berlin Wall?",
+    "choices_de": [
+      "it divided Berlin until 1989",
+      "it is Germany's current national border",
+      "es ist der Name des Parlaments"
+    ],
+    "ex_de": "The Berlin Wall divided Berlin until 1989."
+  },
+  {
+    "q": "Which statement about the Berlin Wall is correct?",
+    "choices": [
+      "it divided Berlin until 1989",
+      "it is Germany's current national border",
+      "it is the name of parliament"
+    ],
+    "a": 0,
+    "ex": "The Berlin Wall divided Berlin until 1989.",
+    "q_de": "Welche Aussage zu the Berlin Wall ist richtig?",
+    "choices_de": [
+      "it divided Berlin until 1989",
+      "it is Germany's current national border",
+      "es ist der Name des Parlaments"
+    ],
+    "ex_de": "The Berlin Wall divided Berlin until 1989."
+  },
+  {
+    "q": "What best describes the Berlin Wall?",
+    "choices": [
+      "it divided Berlin until 1989",
+      "it is Germany's current national border",
+      "it is the name of parliament"
+    ],
+    "a": 0,
+    "ex": "The Berlin Wall divided Berlin until 1989.",
+    "q_de": "Welche Aussage beschreibt die Berliner Mauer am besten?",
+    "choices_de": [
+      "it divided Berlin until 1989",
+      "it is Germany's current national border",
+      "es ist der Name des Parlaments"
+    ],
+    "ex_de": "The Berlin Wall divided Berlin until 1989."
+  },
+  {
+    "q": "In Germany, what is the Länder?",
+    "choices": [
+      "they are the federal states",
+      "they are only football clubs",
+      "they are trade unions"
+    ],
+    "a": 0,
+    "ex": "Germany consists of Länder, its federal states.",
+    "q_de": "Was ist in Deutschland the Länder?",
+    "choices_de": [
+      "sie sind die Bundesländer",
+      "sie sind nur Fußballvereine",
+      "sie sind Gewerkschaften"
+    ],
+    "ex_de": "Germany consists of Länder, its federal states."
+  },
+  {
+    "q": "Which statement about the Länder is correct?",
+    "choices": [
+      "they are the federal states",
+      "they are only football clubs",
+      "they are trade unions"
+    ],
+    "a": 0,
+    "ex": "Germany consists of Länder, its federal states.",
+    "q_de": "Welche Aussage zu the Länder ist richtig?",
+    "choices_de": [
+      "sie sind die Bundesländer",
+      "sie sind nur Fußballvereine",
+      "sie sind Gewerkschaften"
+    ],
+    "ex_de": "Germany consists of Länder, its federal states."
+  },
+  {
+    "q": "What best describes the Länder?",
+    "choices": [
+      "they are the federal states",
+      "they are only football clubs",
+      "they are trade unions"
+    ],
+    "a": 0,
+    "ex": "Germany consists of Länder, its federal states.",
+    "q_de": "Welche Aussage beschreibt die Bundesländer am besten?",
+    "choices_de": [
+      "sie sind die Bundesländer",
+      "sie sind nur Fußballvereine",
+      "sie sind Gewerkschaften"
+    ],
+    "ex_de": "Germany consists of Länder, its federal states."
+  },
+  {
+    "q": "What should you do before starting a business in Germany?",
+    "choices": [
+      "Check registrations, taxes and legal form",
+      "Only buy a briefcase",
+      "Wait for a neighbour to decide"
+    ],
+    "a": 0,
+    "ex": "Starting a business usually requires checking registration, taxes and legal form.",
+    "q_de": "Was sollte man tun, bevor man in Deutschland ein Unternehmen gründet?",
+    "choices_de": [
+      "Check registrations, taxes and legal form",
+      "Only buy a briefcase",
+      "Wait for a neighbour to decide"
+    ],
+    "ex_de": "Starting a business usually requires checking registration, taxes and legal form."
+  },
+  {
+    "q": "Which institution often helps with unemployment support?",
+    "choices": [
+      "Employment agency / Jobcenter",
+      "Football club",
+      "Hotel reception"
+    ],
+    "a": 0,
+    "ex": "Employment services help with job seeking and benefits.",
+    "q_de": "Welche Institution hilft oft bei unemployment support?",
+    "choices_de": [
+      "Employment agency / Jobcenter",
+      "Football club",
+      "Hotel reception"
+    ],
+    "ex_de": "Employment services help with job seeking and benefits."
+  },
+  {
+    "q": "What belongs to a democratic debate?",
+    "choices": [
+      "Different opinions and respectful discussion",
+      "Violence against opponents",
+      "Fake counting of votes"
+    ],
+    "a": 0,
+    "ex": "Democracy needs open debate without violence.",
+    "q_de": "Was gehört zu einer demokratischen Debatte?",
+    "choices_de": [
+      "Different opinions and respectful discussion",
+      "Violence against opponents",
+      "Fake counting of votes"
+    ],
+    "ex_de": "Democracy needs open debate without violence."
+  },
+  {
+    "q": "Why is paying into health insurance important?",
+    "choices": [
+      "Medical care is financed when needed",
+      "It replaces your passport",
+      "It chooses your apartment"
+    ],
+    "a": 0,
+    "ex": "Health insurance helps cover treatment costs.",
+    "q_de": "Warum ist das Einzahlen in die Krankenversicherung wichtig?",
+    "choices_de": [
+      "Medical care is financed when needed",
+      "It replaces your passport",
+      "It chooses your apartment"
+    ],
+    "ex_de": "Health insurance helps cover treatment costs."
+  },
+  {
+    "q": "What can you do if you are treated unfairly because of your religion?",
+    "choices": [
+      "Seek advice and legal help against discrimination",
+      "Accept it because it is always legal",
+      "Change your name by force"
+    ],
+    "a": 0,
+    "ex": "Discrimination can be challenged with advice and legal remedies.",
+    "q_de": "Was kann man tun, wenn man wegen seiner Religion unfair behandelt wird?",
+    "choices_de": [
+      "Seek advice and legal help against discrimination",
+      "Accept it because it is always legal",
+      "Change your name by force"
+    ],
+    "ex_de": "Discrimination can be challenged with advice and legal remedies."
+  },
+  {
+    "q": "Which institution can issue a passport or ID card locally?",
+    "choices": [
+      "The local authority / Bürgeramt",
+      "The supermarket",
+      "The cinema"
+    ],
+    "a": 0,
+    "ex": "Local registration offices issue many documents.",
+    "q_de": "Welche Institution kann einen passport or ID card locally ausstellen?",
+    "choices_de": [
+      "The local authority / Bürgeramt",
+      "The supermarket",
+      "The cinema"
+    ],
+    "ex_de": "Local registration offices issue many documents."
+  },
+  {
+    "q": "What is the purpose of a constitution?",
+    "choices": [
+      "To define basic state order and rights",
+      "To advertise products",
+      "To replace local laws with songs"
+    ],
+    "a": 0,
+    "ex": "A constitution defines the legal foundation of the state.",
+    "q_de": "Wozu dient eine Verfassung?",
+    "choices_de": [
+      "To define basic state order and rights",
+      "To advertise products",
+      "To replace local laws with songs"
+    ],
+    "ex_de": "A constitution defines the legal foundation of the state."
+  },
+  {
+    "q": "What shows respect for religious diversity?",
+    "choices": [
+      "Allowing people to practise different religions peacefully",
+      "Forcing everyone into one religion",
+      "Banning all holidays"
+    ],
+    "a": 0,
+    "ex": "Religious freedom protects diversity.",
+    "q_de": "Was zeigt Respekt vor religiöser Vielfalt?",
+    "choices_de": [
+      "Allowing people to practise different religions peacefully",
+      "Forcing everyone into one religion",
+      "Banning all holidays"
+    ],
+    "ex_de": "Religious freedom protects diversity."
+  },
+  {
+    "q": "What should happen in a free election?",
+    "choices": [
+      "Votes are counted correctly and secretly",
+      "One party fills in all ballots",
+      "Only officials may stand as candidates"
+    ],
+    "a": 0,
+    "ex": "Free elections require secrecy and fair counting.",
+    "q_de": "Was muss bei einer freien Wahl passieren?",
+    "choices_de": [
+      "Votes are counted correctly and secretly",
+      "One party fills in all ballots",
+      "Only officials may stand as candidates"
+    ],
+    "ex_de": "Free elections require secrecy and fair counting."
+  },
+  {
+    "q": "What belongs to responsible citizenship?",
+    "choices": [
+      "Informing yourself and participating lawfully",
+      "Ignoring all rules",
+      "Threatening officials"
+    ],
+    "a": 0,
+    "ex": "Citizenship includes lawful participation.",
+    "q_de": "Was gehört zu verantwortungsbewusstem Bürgersein?",
+    "choices_de": [
+      "Informing yourself and participating lawfully",
+      "Ignoring all rules",
+      "Threatening officials"
+    ],
+    "ex_de": "Citizenship includes lawful participation."
+  },
+  {
+    "q": "Which option is the German constitution called?",
+    "choices": [
+      "Das Grundgesetz",
+      "Die Bundesordnung",
+      "Das Reichsgesetz"
+    ],
+    "a": 0,
+    "ex": "Germany's constitution is called the Grundgesetz.",
+    "q_de": "Welche Aussage ist richtig zu: the German constitution called?",
+    "choices_de": [
+      "Das Grundgesetz",
+      "die Bundesordnung",
+      "das Reichsgesetz"
+    ],
+    "ex_de": "Die deutsche Verfassung heißt Grundgesetz."
+  },
+  {
+    "q": "Which option is forbidden in a democracy?",
+    "choices": [
+      "Election fraud",
+      "Different opinions",
+      "Peaceful criticism"
+    ],
+    "a": 0,
+    "ex": "Election fraud damages free democratic elections.",
+    "q_de": "Welche Aussage ist richtig zu: forbidden in a democracy?",
+    "choices_de": [
+      "Wahlbetrug",
+      "unterschiedliche Meinungen",
+      "friedliche Kritik"
+    ],
+    "ex_de": "Wahlbetrug schadet freien demokratischen Wahlen."
+  },
+  {
+    "q": "Which option do you do in an election?",
+    "choices": [
+      "You vote secretly",
+      "You show your ballot publicly",
+      "You ask the police to decide"
+    ],
+    "a": 0,
+    "ex": "Voting is secret.",
+    "q_de": "Was macht man bei einer Wahl?",
+    "choices_de": [
+      "man wählt geheim",
+      "man zeigt seinen Stimmzettel öffentlich",
+      "man bittet die Polizei zu entscheiden"
+    ],
+    "ex_de": "Wahlen sind geheim."
+  },
+  {
+    "q": "Which option does freedom of the press mean?",
+    "choices": [
+      "Newspapers need permission from one party",
+      "Media may report freely within the law",
+      "Only state media may publish"
+    ],
+    "a": 1,
+    "ex": "Press freedom is a protected basic right.",
+    "q_de": "Was bedeutet Pressefreiheit?",
+    "choices_de": [
+      "Zeitungen brauchen die Erlaubnis einer Partei",
+      "Medien dürfen im Rahmen des Gesetzes frei berichten",
+      "nur staatliche Medien dürfen veröffentlichen"
+    ],
+    "ex_de": "Pressefreiheit ist ein geschütztes Grundrecht."
+  },
+  {
+    "q": "Which option does equality before the law mean?",
+    "choices": [
+      "The same law applies regardless of origin or gender",
+      "Rich people may ignore the law",
+      "Men and women have different basic rights"
+    ],
+    "a": 0,
+    "ex": "Everyone is equal before the law.",
+    "q_de": "Was bedeutet Gleichheit vor dem Gesetz?",
+    "choices_de": [
+      "Für alle gilt dasselbe Gesetz – unabhängig von Herkunft oder Geschlecht",
+      "reiche Menschen dürfen das Gesetz ignorieren",
+      "Männer und Frauen haben unterschiedliche Grundrechte"
+    ],
+    "ex_de": "Vor dem Gesetz sind alle gleich."
+  },
+  {
+    "q": "Which option is the role of the opposition in parliament?",
+    "choices": [
+      "To control and criticise the government",
+      "To close parliament",
+      "To appoint police officers"
+    ],
+    "a": 0,
+    "ex": "Opposition is part of democratic control.",
+    "q_de": "Welche Aussage ist richtig zu: the role of the opposition in parliament?",
+    "choices_de": [
+      "die Regierung zu kontrollieren und zu kritisieren",
+      "das Parlament zu schließen",
+      "Polizeibeamte zu ernennen"
+    ],
+    "ex_de": "Die Opposition ist Teil der demokratischen Kontrolle."
+  },
+  {
+    "q": "Which option is guaranteed by freedom of religion?",
+    "choices": [
+      "A boss chooses your religion",
+      "You may choose and practise a religion freely",
+      "Only one religion is allowed"
+    ],
+    "a": 1,
+    "ex": "Freedom of religion protects individual choice.",
+    "q_de": "Welche Aussage ist richtig zu: guaranteed by freedom of religion?",
+    "choices_de": [
+      "der Arbeitgeber wählt deine Religion",
+      "man darf eine Religion frei wählen und ausüben",
+      "nur eine Religion ist erlaubt"
+    ],
+    "ex_de": "Die Religionsfreiheit schützt die freie persönliche Entscheidung."
+  },
+  {
+    "q": "Which option is a Land in Germany?",
+    "choices": [
+      "A federal state",
+      "A district office",
+      "A city bus line"
+    ],
+    "a": 0,
+    "ex": "Germany is a federal state made up of Länder.",
+    "q_de": "Welche Aussage ist richtig zu: a Land in Germany?",
+    "choices_de": [
+      "ein Bundesland",
+      "ein Bezirksamt",
+      "eine Stadtbuslinie"
+    ],
+    "ex_de": "Deutschland ist ein Bundesstaat aus Ländern."
+  },
+  {
+    "q": "Which option is the capital of Germany?",
+    "choices": [
+      "Munich",
+      "Berlin",
+      "Frankfurt"
+    ],
+    "a": 1,
+    "ex": "Berlin is the capital.",
+    "q_de": "Welche Aussage ist richtig zu: the capital of Germany?",
+    "choices_de": [
+      "München",
+      "Berlin",
+      "Frankfurt"
+    ],
+    "ex_de": "Berlin ist die Hauptstadt."
+  },
+  {
+    "q": "Which option is the job of the police?",
+    "choices": [
+      "To write laws",
+      "To protect public safety and enforce the law",
+      "To elect parliament"
+    ],
+    "a": 1,
+    "ex": "Police protect safety and enforce the law.",
+    "q_de": "Welche Aussage ist richtig zu: the job of the police?",
+    "choices_de": [
+      "Gesetze zu schreiben",
+      "die öffentliche Sicherheit zu schützen und das Gesetz durchzusetzen",
+      "das Parlament zu wählen"
+    ],
+    "ex_de": "Police protect safety and enforce the law."
+  },
+  {
+    "q": "Which option is the Federal Constitutional Court for?",
+    "choices": [
+      "To check whether laws fit the constitution",
+      "To organise school holidays",
+      "To issue passports"
+    ],
+    "a": 0,
+    "ex": "It protects the constitution.",
+    "q_de": "Welche Aussage ist richtig zu: the Federal Constitutional Court for?",
+    "choices_de": [
+      "zu prüfen, ob Gesetze mit der Verfassung vereinbar sind",
+      "Schulferien zu organisieren",
+      "Pässe auszustellen"
+    ],
+    "ex_de": "It protects the constitution."
+  },
+  {
+    "q": "Which option does federalism mean?",
+    "choices": [
+      "All power is only in one city",
+      "Power is shared between federation and Länder",
+      "Only Europe may make laws"
+    ],
+    "a": 1,
+    "ex": "Federalism divides responsibilities.",
+    "q_de": "Was bedeutet Föderalismus?",
+    "choices_de": [
+      "alle Macht liegt nur in einer Stadt",
+      "die Macht wird zwischen Bund und Ländern geteilt",
+      "nur Europa darf Gesetze machen"
+    ],
+    "ex_de": "Federalism divides responsibilities."
+  },
+  {
+    "q": "Which option is a municipality responsible for?",
+    "choices": [
+      "Local services like roads and registration",
+      "The national anthem",
+      "Foreign policy"
+    ],
+    "a": 0,
+    "ex": "Municipalities handle local administration.",
+    "q_de": "Welche Aussage ist richtig zu: a municipality responsible for?",
+    "choices_de": [
+      "lokale Aufgaben wie Straßen und Anmeldung",
+      "die Nationalhymne",
+      "Außenpolitik"
+    ],
+    "ex_de": "Municipalities handle local administration."
+  },
+  {
+    "q": "Which option is the Bundestag?",
+    "choices": [
+      "The federal parliament",
+      "A television station",
+      "A trade union"
+    ],
+    "a": 0,
+    "ex": "The Bundestag is the federal parliament.",
+    "q_de": "Welche Aussage ist richtig zu: the Bundestag?",
+    "choices_de": [
+      "das Bundesparlament",
+      "ein Fernsehsender",
+      "eine Gewerkschaft"
+    ],
+    "ex_de": "The Bundestag is the federal parliament."
+  },
+  {
+    "q": "Which option is freedom of expression?",
+    "choices": [
+      "You may express opinions within the law",
+      "Only the government may speak",
+      "You must repeat the opinion of your employer"
+    ],
+    "a": 0,
+    "ex": "Freedom of expression protects opinion within legal limits.",
+    "q_de": "Welche Aussage ist richtig zu: freedom of expression?",
+    "choices_de": [
+      "man darf im Rahmen des Gesetzes seine Meinung äußern",
+      "nur die Regierung darf sprechen",
+      "man muss die Meinung des Arbeitgebers wiederholen"
+    ],
+    "ex_de": "Freedom of expression protects opinion within legal limits."
+  },
+  {
+    "q": "Which option protects human dignity?",
+    "choices": [
+      "The Basic Law",
+      "A company contract",
+      "A sports club rule"
+    ],
+    "a": 0,
+    "ex": "Human dignity is protected by the Basic Law.",
+    "q_de": "Welche Aussage schützt die Menschenwürde?",
+    "choices_de": [
+      "das Grundgesetz",
+      "ein Firmenvertrag",
+      "eine Sportvereinsregel"
+    ],
+    "ex_de": "Human dignity is protected by the Basic Law."
+  },
+  {
+    "q": "Which option is not allowed even if someone is angry?",
+    "choices": [
+      "Violence against other people",
+      "Peaceful protest",
+      "Writing a complaint"
+    ],
+    "a": 0,
+    "ex": "Violence is illegal.",
+    "q_de": "Welche Aussage ist richtig zu: not allowed even if someone is angry?",
+    "choices_de": [
+      "Gewalt gegen andere Menschen",
+      "friedlicher Protest",
+      "eine Beschwerde schreiben"
+    ],
+    "ex_de": "Violence is illegal."
+  },
+  {
+    "q": "Which option does equal opportunity in education aim for?",
+    "choices": [
+      "Only wealthy children may study",
+      "Access should not depend on origin",
+      "Schools should only exist in big cities"
+    ],
+    "a": 1,
+    "ex": "Education should be accessible regardless of background.",
+    "q_de": "Was ist das Ziel von Chancengleichheit in der Bildung?",
+    "choices_de": [
+      "nur wohlhabende Kinder dürfen lernen",
+      "Zugang soll nicht von der Herkunft abhängen",
+      "Schulen soll es nur in Großstädten geben"
+    ],
+    "ex_de": "Education should be accessible regardless of background."
+  },
+  {
+    "q": "Which option right helps workers organise together?",
+    "choices": [
+      "Freedom of association",
+      "Ban on contracts",
+      "Compulsory party membership"
+    ],
+    "a": 0,
+    "ex": "Workers may organise in unions and associations.",
+    "q_de": "Welches Recht hilft Arbeitnehmern, sich gemeinsam zu organisieren?",
+    "choices_de": [
+      "Vereinigungsfreiheit",
+      "Verbot von Verträgen",
+      "Pflicht zur Parteimitgliedschaft"
+    ],
+    "ex_de": "Workers may organise in unions and associations."
+  },
+  {
+    "q": "Which option may you do if an office makes a wrong decision?",
+    "choices": [
+      "Use legal remedies like an objection or lawsuit",
+      "Ignore all deadlines forever",
+      "Bribe an official"
+    ],
+    "a": 0,
+    "ex": "Administrative decisions can be challenged legally.",
+    "q_de": "Was darf man tun, wenn ein Amt eine falsche Entscheidung trifft?",
+    "choices_de": [
+      "Rechtsmittel wie Widerspruch oder Klage nutzen",
+      "alle Fristen einfach ignorieren",
+      "einen Beamten bestechen"
+    ],
+    "ex_de": "Administrative decisions can be challenged legally."
+  },
+  {
+    "q": "Which option is discrimination?",
+    "choices": [
+      "Unfair unequal treatment because of traits like origin or religion",
+      "Following a queue",
+      "Speaking politely"
+    ],
+    "a": 0,
+    "ex": "Discrimination is unfair treatment.",
+    "q_de": "Welche Aussage ist richtig zu: discrimination?",
+    "choices_de": [
+      "ungerechte Benachteiligung wegen Merkmalen wie Herkunft oder Religion",
+      "sich in eine Schlange einreihen",
+      "höflich sprechen"
+    ],
+    "ex_de": "Discrimination is unfair treatment."
+  },
+  {
+    "q": "Which option is protected by the right to privacy?",
+    "choices": [
+      "Private life and personal data",
+      "Only public speeches",
+      "Only company profits"
+    ],
+    "a": 0,
+    "ex": "Privacy protects private life and data.",
+    "q_de": "Welche Aussage ist richtig zu: protected by the right to privacy?",
+    "choices_de": [
+      "Privatleben und persönliche Daten",
+      "nur öffentliche Reden",
+      "nur Unternehmensgewinne"
+    ],
+    "ex_de": "Privacy protects private life and data."
+  },
+  {
+    "q": "Which option may the state not do?",
+    "choices": [
+      "Torture people",
+      "Protect rights",
+      "Hold elections"
+    ],
+    "a": 0,
+    "ex": "Torture is prohibited.",
+    "q_de": "Was darf der Staat nicht tun?",
+    "choices_de": [
+      "Menschen foltern",
+      "Rechte schützen",
+      "Wahlen durchführen"
+    ],
+    "ex_de": "Torture is prohibited."
+  },
+  {
+    "q": "Which option is the purpose of social rights and protections?",
+    "choices": [
+      "To support people in need and protect social participation",
+      "To ban all work",
+      "To replace democracy"
+    ],
+    "a": 0,
+    "ex": "Social protections support participation and security.",
+    "q_de": "Welche Aussage beschreibt den Zweck von social rights and protections?",
+    "choices_de": [
+      "Menschen in Not zu unterstützen und soziale Teilhabe zu schützen",
+      "jede Arbeit zu verbieten",
+      "die Demokratie zu ersetzen"
+    ],
+    "ex_de": "Social protections support participation and security."
+  },
+  {
+    "q": "Which option happened on 3 October?",
+    "choices": [
+      "Day of German Unity",
+      "Constitution Day of Bavaria",
+      "Election Day every year"
+    ],
+    "a": 0,
+    "ex": "3 October marks German reunification.",
+    "q_de": "Was geschah am 3. Oktober?",
+    "choices_de": [
+      "Tag der Deutschen Einheit",
+      "Verfassungstag von Bayern",
+      "jedes Jahr Wahltag"
+    ],
+    "ex_de": "3 October marks German reunification."
+  },
+  {
+    "q": "Which option happened in 1989 in Berlin?",
+    "choices": [
+      "The Berlin Wall fell",
+      "Germany joined the euro",
+      "The Bundestag moved to Bonn"
+    ],
+    "a": 0,
+    "ex": "The fall of the Berlin Wall was a key event in 1989.",
+    "q_de": "Was geschah 1989 in Berlin?",
+    "choices_de": [
+      "die Berliner Mauer fiel",
+      "Deutschland trat dem Euro bei",
+      "der Bundestag zog nach Bonn"
+    ],
+    "ex_de": "The fall of the Berlin Wall was a key event in 1989."
+  },
+  {
+    "q": "Which option does “Nie wieder” refer to in German remembrance culture?",
+    "choices": [
+      "A commitment against dictatorship and persecution",
+      "A football slogan",
+      "A tax rule"
+    ],
+    "a": 0,
+    "ex": "It refers to responsibility after National Socialism.",
+    "q_de": "Worauf bezieht sich „Nie wieder“ in der deutschen Erinnerungskultur?",
+    "choices_de": [
+      "eine Verpflichtung gegen Diktatur und Verfolgung",
+      "ein Fußballspruch",
+      "eine Steuerregel"
+    ],
+    "ex_de": "It refers to responsibility after National Socialism."
+  },
+  {
+    "q": "Which option was divided after the Second World War?",
+    "choices": [
+      "Germany",
+      "The Bundestag",
+      "The euro"
+    ],
+    "a": 0,
+    "ex": "Germany was divided into East and West.",
+    "q_de": "Was war nach dem Zweiten Weltkrieg geteilt?",
+    "choices_de": [
+      "Deutschland",
+      "The Bundestag",
+      "der Euro"
+    ],
+    "ex_de": "Germany was divided into East and West."
+  },
+  {
+    "q": "Which option is a central lesson from the Nazi period?",
+    "choices": [
+      "Human rights and democracy must be protected",
+      "Only one party should rule",
+      "Press freedom is dangerous"
+    ],
+    "a": 0,
+    "ex": "The Nazi period showed why democracy and rights matter.",
+    "q_de": "Welche Aussage ist richtig zu: a central lesson from the Nazi period?",
+    "choices_de": [
+      "Menschenrechte und Demokratie müssen geschützt werden",
+      "nur eine Partei soll herrschen",
+      "Pressefreiheit ist gefährlich"
+    ],
+    "ex_de": "The Nazi period showed why democracy and rights matter."
+  },
+  {
+    "q": "Which option was the Berlin Wall?",
+    "choices": [
+      "A border barrier dividing East and West Berlin",
+      "A museum from Roman times",
+      "The first German parliament"
+    ],
+    "a": 0,
+    "ex": "The Wall divided Berlin until 1989.",
+    "q_de": "Was war die Berliner Mauer?",
+    "choices_de": [
+      "eine Grenzanlage zwischen Ost- und West-Berlin",
+      "ein Museum aus der Römerzeit",
+      "das erste deutsche Parlament"
+    ],
+    "ex_de": "The Wall divided Berlin until 1989."
+  },
+  {
+    "q": "Which option does a democracy need from citizens?",
+    "choices": [
+      "Participation and responsibility",
+      "Silence",
+      "Only military service"
+    ],
+    "a": 0,
+    "ex": "Democracy depends on active citizens.",
+    "q_de": "Was braucht eine Demokratie von ihren Bürgern?",
+    "choices_de": [
+      "Beteiligung und Verantwortung",
+      "Schweigen",
+      "nur Militärdienst"
+    ],
+    "ex_de": "Democracy depends on active citizens."
+  },
+  {
+    "q": "Which option is compulsory schooling?",
+    "choices": [
+      "Children must attend school for a number of years",
+      "Only university is free",
+      "School is optional for everyone"
+    ],
+    "a": 0,
+    "ex": "School attendance is compulsory.",
+    "q_de": "Welche Aussage ist richtig zu: compulsory schooling?",
+    "choices_de": [
+      "Kinder müssen mehrere Jahre zur Schule gehen",
+      "nur die Universität ist kostenlos",
+      "Schule ist für alle freiwillig"
+    ],
+    "ex_de": "School attendance is compulsory."
+  },
+  {
+    "q": "Which option is the purpose of health insurance?",
+    "choices": [
+      "To help cover medical care",
+      "To choose election results",
+      "To register a marriage"
+    ],
+    "a": 0,
+    "ex": "Health insurance covers medical treatment.",
+    "q_de": "Welche Aussage beschreibt den Zweck von health insurance?",
+    "choices_de": [
+      "um medizinische Versorgung mitzufinanzieren",
+      "um Wahlergebnisse festzulegen",
+      "um eine Ehe anzumelden"
+    ],
+    "ex_de": "Health insurance covers medical treatment."
+  },
+  {
+    "q": "Which option should you do if you move house?",
+    "choices": [
+      "Register your new address on time",
+      "Nothing at all",
+      "Only tell your neighbours"
+    ],
+    "a": 0,
+    "ex": "Address registration is required.",
+    "q_de": "Was sollte man tun, wenn man umzieht?",
+    "choices_de": [
+      "die neue Adresse rechtzeitig anmelden",
+      "gar nichts tun",
+      "nur den Nachbarn Bescheid sagen"
+    ],
+    "ex_de": "Address registration is required."
+  },
+  {
+    "q": "Which option can parents usually do in Germany?",
+    "choices": [
+      "Share childcare and parental leave",
+      "Stop compulsory schooling permanently",
+      "Ignore child protection laws"
+    ],
+    "a": 0,
+    "ex": "Parents may share care responsibilities.",
+    "q_de": "Was können Eltern in Deutschland normalerweise tun?",
+    "choices_de": [
+      "Kinderbetreuung und Elternzeit teilen",
+      "die Schulpflicht dauerhaft beenden",
+      "Kinderschutzgesetze ignorieren"
+    ],
+    "ex_de": "Parents may share care responsibilities."
+  },
+  {
+    "q": "Which option is a rental contract?",
+    "choices": [
+      "An agreement between tenant and landlord",
+      "A school certificate",
+      "A passport form"
+    ],
+    "a": 0,
+    "ex": "A rental contract regulates renting a home.",
+    "q_de": "Welche Aussage ist richtig zu: a rental contract?",
+    "choices_de": [
+      "eine Vereinbarung zwischen Mieter und Vermieter",
+      "ein Schulzeugnis",
+      "ein Passformular"
+    ],
+    "ex_de": "A rental contract regulates renting a home."
+  },
+  {
+    "q": "Which option is a trade union?",
+    "choices": [
+      "An organisation representing workers' interests",
+      "A political party in every company",
+      "A private police force"
+    ],
+    "a": 0,
+    "ex": "Trade unions represent employees.",
+    "q_de": "Welche Aussage ist richtig zu: a trade union?",
+    "choices_de": [
+      "eine Organisation, die Arbeitnehmerinteressen vertritt",
+      "eine politische Partei in jeder Firma",
+      "eine private Polizei"
+    ],
+    "ex_de": "Trade unions represent employees."
+  },
+  {
+    "q": "Which option may you do if you lose your job?",
+    "choices": [
+      "Register with the employment agency",
+      "Burn your documents",
+      "Avoid all communication"
+    ],
+    "a": 0,
+    "ex": "The employment agency can support job seekers.",
+    "q_de": "Was darf man tun, wenn man seine Arbeit verliert?",
+    "choices_de": [
+      "sich bei der Arbeitsagentur melden",
+      "Dokumente verbrennen",
+      "jede Kommunikation vermeiden"
+    ],
+    "ex_de": "The employment agency can support job seekers."
+  },
+  {
+    "q": "Which option does integration mean?",
+    "choices": [
+      "Participating in society with rights and responsibilities",
+      "Forgetting your own history completely",
+      "Living without any contact to others"
+    ],
+    "a": 0,
+    "ex": "Integration is participation in society.",
+    "q_de": "Was bedeutet Integration?",
+    "choices_de": [
+      "am gesellschaftlichen Leben mit Rechten und Pflichten teilzunehmen",
+      "die eigene Geschichte völlig zu vergessen",
+      "ohne jeden Kontakt zu anderen zu leben"
+    ],
+    "ex_de": "Integration is participation in society."
+  },
+  {
+    "q": "Which option should happen in a workplace team?",
+    "choices": [
+      "Respect, cooperation and following the rules",
+      "Insults and discrimination",
+      "No communication"
+    ],
+    "a": 0,
+    "ex": "Workplaces require cooperation and respect.",
+    "q_de": "Was sollte in einem Arbeitsteam passieren?",
+    "choices_de": [
+      "Respekt, Zusammenarbeit und Regelbeachtung",
+      "Beleidigungen und Diskriminierung",
+      "keine Kommunikation"
+    ],
+    "ex_de": "Workplaces require cooperation and respect."
+  },
+  {
+    "q": "Which option best describes the Basic Law?",
+    "choices": [
+      "the German constitution",
+      "a museum ticket",
+      "a bank contract"
+    ],
+    "a": 0,
+    "ex": "The Basic Law is the constitution of Germany.",
+    "q_de": "Welche Aussage beschreibt the Basic Law am besten?",
+    "choices_de": [
+      "die deutsche Verfassung",
+      "eine Museumskarte",
+      "ein Bankvertrag"
+    ],
+    "ex_de": "The Basic Law is the constitution of Germany."
+  },
+  {
+    "q": "Which option best describes secret voting?",
+    "choices": [
+      "ballots are cast without pressure and in secret",
+      "votes must be shown to neighbours",
+      "the police chooses for you"
+    ],
+    "a": 0,
+    "ex": "German elections are free and secret.",
+    "q_de": "Welche Aussage beschreibt secret voting am besten?",
+    "choices_de": [
+      "Stimmen werden ohne Druck und geheim abgegeben",
+      "Stimmen müssen den Nachbarn gezeigt werden",
+      "die Polizei wählt für dich"
+    ],
+    "ex_de": "German elections are free and secret."
+  },
+  {
+    "q": "Which option best describes freedom of assembly?",
+    "choices": [
+      "people may gather peacefully",
+      "only companies may meet",
+      "street names decide politics"
+    ],
+    "a": 0,
+    "ex": "Peaceful assembly is protected.",
+    "q_de": "Welche Aussage beschreibt freedom of assembly am besten?",
+    "choices_de": [
+      "Menschen dürfen sich friedlich versammeln",
+      "nur Firmen dürfen sich treffen",
+      "Straßennamen entscheiden Politik"
+    ],
+    "ex_de": "Peaceful assembly is protected."
+  },
+  {
+    "q": "What does freedom of religion mean in Germany?",
+    "choices": [
+      "Only one religion is allowed",
+      "Everyone may choose and practise a religion freely",
+      "Religion is decided by the employer"
+    ],
+    "a": 1,
+    "ex": "Freedom of religion means people may choose, change and practise a religion freely within the law.",
+    "q_de": "Was bedeutet freedom of religion in Deutschland?",
+    "choices_de": [
+      "nur eine Religion ist erlaubt",
+      "Everyone may choose and practise a religion freely",
+      "Religion is decided by the employer"
+    ],
+    "ex_de": "Freedom of religion means people may choose, change and practise a religion freely within the law."
+  },
+  {
+    "q": "How often are Bundestag elections normally held?",
+    "choices": [
+      "Every 2 years",
+      "Every 4 years",
+      "Every 8 years"
+    ],
+    "a": 1,
+    "ex": "The Bundestag is normally elected every four years.",
+    "q_de": "Wie oft finden Bundestagswahlen normalerweise statt?",
+    "choices_de": [
+      "Every 2 years",
+      "Every 4 years",
+      "Every 8 years"
+    ],
+    "ex_de": "The Bundestag is normally elected every four years."
+  },
+  {
+    "q": "Which colors are on the German flag?",
+    "choices": [
+      "Black, red, gold",
+      "Blue, white, red",
+      "Green, white, black"
+    ],
+    "a": 0,
+    "ex": "The German flag is black, red and gold.",
+    "q_de": "Welche Farben hat die deutsche Flagge?",
+    "choices_de": [
+      "Black, red, gold",
+      "Blue, white, red",
+      "Green, white, black"
+    ],
+    "ex_de": "The German flag is black, red and gold."
+  },
+  {
+    "q": "What is the role of the Bundesrat?",
+    "choices": [
+      "It represents the federal states",
+      "It elects the mayors",
+      "It leads the courts"
+    ],
+    "a": 0,
+    "ex": "The Bundesrat represents the Länder in federal lawmaking.",
+    "q_de": "Welche Aufgabe hat der Bundesrat?",
+    "choices_de": [
+      "It represents the federal states",
+      "It elects the mayors",
+      "It leads the courts"
+    ],
+    "ex_de": "The Bundesrat represents the Länder in federal lawmaking."
+  },
+  {
+    "q": "What does the rule of law mean?",
+    "choices": [
+      "The government may ignore the courts",
+      "State action is bound by law",
+      "Only police decide what is legal"
+    ],
+    "a": 1,
+    "ex": "In a Rechtsstaat, state institutions are bound by law and can be checked by courts.",
+    "q_de": "Was bedeutet Rechtsstaatlichkeit?",
+    "choices_de": [
+      "The government may ignore the courts",
+      "State action is bound by law",
+      "Only police decide what is legal"
+    ],
+    "ex_de": "In a Rechtsstaat, state institutions are bound by law and can be checked by courts."
+  },
+  {
+    "q": "Who can join a political party in Germany?",
+    "choices": [
+      "Only members of parliament",
+      "Adults who meet the legal requirements",
+      "Only civil servants"
+    ],
+    "a": 1,
+    "ex": "Political participation through parties is generally open to adults who meet the legal requirements.",
+    "q_de": "Wer kann in Deutschland einer politischen Partei beitreten?",
+    "choices_de": [
+      "Only members of parliament",
+      "Erwachsene, die die gesetzlichen Voraussetzungen erfüllen",
+      "nur Beamte"
+    ],
+    "ex_de": "Political participation through parties is generally open to adults who meet the legal requirements."
+  },
+  {
+    "q": "What is protected by freedom of opinion?",
+    "choices": [
+      "Peaceful expression of opinions",
+      "Insults without limits",
+      "Election fraud"
+    ],
+    "a": 0,
+    "ex": "Freedom of opinion protects expressing views within the limits of the law.",
+    "q_de": "Was schützt die Meinungsfreiheit?",
+    "choices_de": [
+      "friedlicher Ausdruck von Meinungen",
+      "Beleidigungen ohne Grenzen",
+      "Wahlbetrug"
+    ],
+    "ex_de": "Freedom of opinion protects expressing views within the limits of the law."
+  },
+  {
+    "q": "Why are taxes important for the state?",
+    "choices": [
+      "They finance public tasks",
+      "They are paid only by tourists",
+      "They replace all laws"
+    ],
+    "a": 0,
+    "ex": "Taxes help finance schools, roads, administration and many public services.",
+    "q_de": "Warum sind Steuern für den Staat wichtig?",
+    "choices_de": [
+      "They finance public tasks",
+      "They are paid only by tourists",
+      "They replace all laws"
+    ],
+    "ex_de": "Taxes help finance schools, roads, administration and many public services."
+  },
+  {
+    "q": "Which institution decides whether a law is constitutional?",
+    "choices": [
+      "The Federal Constitutional Court",
+      "The local tax office",
+      "The city library"
+    ],
+    "a": 0,
+    "ex": "The Bundesverfassungsgericht reviews constitutional questions.",
+    "q_de": "Welche Institution entscheidet, ob ein Gesetz verfassungsgemäß ist?",
+    "choices_de": [
+      "das Bundesverfassungsgericht",
+      "das örtliche Finanzamt",
+      "die Stadtbibliothek"
+    ],
+    "ex_de": "The Bundesverfassungsgericht reviews constitutional questions."
+  },
+  {
+    "q": "What is equal treatment before the law?",
+    "choices": [
+      "Everyone is judged by the same laws",
+      "Only citizens have rights",
+      "Rich people have separate rules"
+    ],
+    "a": 0,
+    "ex": "Equality before the law means the same legal standards apply to everyone.",
+    "q_de": "Was bedeutet Gleichbehandlung vor dem Gesetz?",
+    "choices_de": [
+      "für alle gelten dieselben Gesetze",
+      "nur Bürger haben Rechte",
+      "reiche Menschen haben eigene Regeln"
+    ],
+    "ex_de": "Equality before the law means the same legal standards apply to everyone."
+  },
+  {
+    "q": "Which level of government is responsible for local matters like a town hall?",
+    "choices": [
+      "The municipality",
+      "The European Parliament",
+      "The weather service"
+    ],
+    "a": 0,
+    "ex": "Local matters are mainly handled by municipalities.",
+    "q_de": "Welche staatliche Ebene ist für lokale Angelegenheiten wie das Rathaus zuständig?",
+    "choices_de": [
+      "die Gemeinde",
+      "das Europäische Parlament",
+      "der Wetterdienst"
+    ],
+    "ex_de": "Local matters are mainly handled by municipalities."
+  },
+  {
+    "q": "What is one important task of the police in a democracy?",
+    "choices": [
+      "Protect public safety under the law",
+      "Write school exams",
+      "Collect church tax"
+    ],
+    "a": 0,
+    "ex": "The police protect public safety and must act within the law.",
+    "q_de": "Was ist eine wichtige Aufgabe der Polizei in einer Demokratie?",
+    "choices_de": [
+      "Protect public safety under the law",
+      "Write school exams",
+      "Collect church tax"
+    ],
+    "ex_de": "The police protect public safety and must act within the law."
+  },
+  {
+    "q": "What may citizens do in a democracy?",
+    "choices": [
+      "Take part in elections and public discussion",
+      "Ignore all laws",
+      "Choose judges directly in every case"
+    ],
+    "a": 0,
+    "ex": "Citizens participate through voting and public debate.",
+    "q_de": "Was dürfen Bürger in einer Demokratie tun?",
+    "choices_de": [
+      "an Wahlen und öffentlichen Diskussionen teilnehmen",
+      "alle Gesetze ignorieren",
+      "in jedem Fall Richter direkt wählen"
+    ],
+    "ex_de": "Citizens participate through voting and public debate."
+  },
+  {
+    "q": "Why is an independent press important?",
+    "choices": [
+      "It informs the public and can criticise power",
+      "It replaces the parliament",
+      "It decides court cases"
+    ],
+    "a": 0,
+    "ex": "A free press helps control political power by informing the public.",
+    "q_de": "Warum ist eine unabhängige Presse wichtig?",
+    "choices_de": [
+      "sie informiert die Öffentlichkeit und kann Macht kritisieren",
+      "sie ersetzt das Parlament",
+      "sie entscheidet Gerichtsverfahren"
+    ],
+    "ex_de": "A free press helps control political power by informing the public."
+  },
+  {
+    "q": "What does social security support?",
+    "choices": [
+      "People in situations like illness, unemployment or old age",
+      "Only sports clubs",
+      "Only large companies"
+    ],
+    "a": 0,
+    "ex": "The social system supports people in specific life situations.",
+    "q_de": "Wobei unterstützt die soziale Sicherung?",
+    "choices_de": [
+      "Menschen in Situationen wie Krankheit, Arbeitslosigkeit oder Alter",
+      "nur Sportvereine",
+      "nur große Unternehmen"
+    ],
+    "ex_de": "The social system supports people in specific life situations."
+  },
+  {
+    "q": "What happens if someone does not agree with an administrative decision?",
+    "choices": [
+      "They can often use legal remedies",
+      "They must accept it immediately in every case",
+      "They ask the football club"
+    ],
+    "a": 0,
+    "ex": "Legal remedies and courts are part of the rule of law.",
+    "q_de": "Was passiert, wenn jemand mit einer Behördenentscheidung nicht einverstanden ist?",
+    "choices_de": [
+      "sie können oft Rechtsmittel nutzen",
+      "sie müssen es in jedem Fall sofort akzeptieren",
+      "sie fragen den Fußballverein"
+    ],
+    "ex_de": "Legal remedies and courts are part of the rule of law."
+  },
+  {
+    "q": "What is the purpose of the Constitution?",
+    "choices": [
+      "It defines fundamental rights and the state order",
+      "It sets supermarket prices",
+      "It replaces school books"
+    ],
+    "a": 0,
+    "ex": "A constitution structures the state and protects fundamental rights.",
+    "q_de": "Wozu dient eine Verfassung?",
+    "choices_de": [
+      "sie legt Grundrechte und die Staatsordnung fest",
+      "sie legt Supermarktpreise fest",
+      "sie ersetzt Schulbücher"
+    ],
+    "ex_de": "A constitution structures the state and protects fundamental rights."
+  },
+  {
+    "q": "What does gender equality mean?",
+    "choices": [
+      "Women and men have equal rights",
+      "Only men may vote",
+      "Only women may work part-time"
+    ],
+    "a": 0,
+    "ex": "Equal rights for women and men are protected in Germany.",
+    "q_de": "Was bedeutet Gleichberechtigung von Frauen und Männern?",
+    "choices_de": [
+      "Frauen und Männer haben gleiche Rechte",
+      "nur Männer dürfen wählen",
+      "nur Frauen dürfen Teilzeit arbeiten"
+    ],
+    "ex_de": "Equal rights for women and men are protected in Germany."
+  },
+  {
+    "q": "What is volunteering?",
+    "choices": [
+      "Free civic engagement for others",
+      "A paid tax duty",
+      "A school punishment"
+    ],
+    "a": 0,
+    "ex": "Volunteering means people freely contribute time and effort.",
+    "q_de": "Was ist Ehrenamt?",
+    "choices_de": [
+      "freiwilliges Engagement für andere",
+      "eine bezahlte Steuerpflicht",
+      "eine Schulstrafe"
+    ],
+    "ex_de": "Volunteering means people freely contribute time and effort."
+  },
+  {
+    "q": "What can help integration?",
+    "choices": [
+      "Language learning and participation",
+      "Avoiding all contact",
+      "Ignoring official letters"
+    ],
+    "a": 0,
+    "ex": "Language, contact and participation support integration.",
+    "q_de": "Was kann Integration fördern?",
+    "choices_de": [
+      "Sprachlernen und Teilhabe",
+      "jeden Kontakt vermeiden",
+      "amtliche Briefe ignorieren"
+    ],
+    "ex_de": "Language, contact and participation support integration."
+  }
+]

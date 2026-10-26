@@ -1,0 +1,22 @@
+German Coach V31 Verified Complete
+Verification summary
+- Base: corrected V30 rebuild
+- Source docs included: Part1, Part2, Part3
+- JS syntax checked: legacyApp.js, main.js, loader.js, normalize.js, grading.js
+- Core dataset duplicate scan: vocab, verbs, flashcards, passages, exercises, conjugation
+
+Counts
+- vocab.json: 268
+- verbs.json: 194
+- flashcards.json: 200
+- passages.json: 450
+- exercises.json: 2096
+- conjugation.json: 526
+- notes.json: 86
+- sentences.json: 4
+- lid.json: 183
+
+Notes
+- This package is a verified base plus workbook source docs.
+- It does not claim that every line from the workbook docs is already imported into the app UI.
+- It is intended as the clean V31 app package and source bundle for the next import pass.
