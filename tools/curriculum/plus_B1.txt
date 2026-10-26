@@ -1,0 +1,1062 @@
+@@ 25
+#vocab
+würde = would
+hätte = would have
+wäre = would be
+könnte = could
+sollte = should
+müsste = would have to
+dürfte = might, would be allowed to
+der Lottogewinn, -e = lottery win
+die Insel, -n = island
+das Abenteuer, - = adventure
+kündigen = to quit (a job)
+das Gehalt erhöhen = to raise the salary
+die Fantasie = imagination
+unbedingt = absolutely
+vielleicht = perhaps
+an deiner Stelle = in your place
+Wie wäre es mit …? = How about …?
+Hätten Sie einen Moment Zeit? = Would you have a moment?
+#ex
+Wenn ich mehr Zeit hätte, würde ich ein Instrument lernen. = If I had more time, I would learn an instrument.
+Wenn ich reich wäre, würde ich um die Welt reisen. = If I were rich, I would travel around the world.
+An deiner Stelle würde ich die Stelle annehmen. = In your place I would accept the job.
+Könnten Sie mir bitte helfen? = Could you help me, please?
+Ich hätte gern einen Cappuccino. = I'd like a cappuccino.
+Es wäre schön, wenn du mitkommen könntest. = It would be nice if you could come along.
+Du solltest mehr schlafen. = You should sleep more.
+Wie wäre es mit einem Spaziergang? = How about a walk?
+Ich wünschte, ich wäre am Meer. = I wish I were at the seaside.
+Würden Sie das Fenster schließen? = Would you close the window?
+#read2
+Was wäre, wenn …?
+Im Deutschkurs spricht Frau Krüger heute über Träume. Sie fragt: „Was würden Sie machen, wenn Sie eine Million Euro gewinnen würden?“ Tomás antwortet sofort: „Ich würde meiner Familie in Brasilien ein Haus kaufen. Dann würde ich ein Jahr lang reisen, zuerst nach Asien, dann nach Australien.“ Aiko ist vorsichtiger. „Ich würde den größten Teil sparen. Aber ich hätte gern ein eigenes Designstudio. Das wäre mein Traum.“ Leila lacht: „Ich würde meinen Job nicht kündigen, denn ich liebe meine Arbeit. Aber ich würde weniger arbeiten und mehr Zeit mit meiner Tochter verbringen.“ Ravi denkt lange nach. „Ehrlich gesagt würde ich mir nicht viel kaufen. Wenn ich so viel Geld hätte, würde ich eine Schule in meinem Heimatdorf bauen. Mein Großvater hatte keine richtige Schule.“ Alle sind still. Dann sagt Frau Krüger: „Das wäre ein wunderbares Projekt. Und wissen Sie was? Für manche Träume braucht man gar keine Million.“ Am Ende der Stunde schreibt jeder einen Text: „Wenn ich ein Jahr frei hätte …“
+#dialog
+Jonas: Mia, du siehst gestresst aus. Was ist los?
+Mia: Ich habe nächste Woche drei Prüfungen. Ich wünschte, ich hätte mehr Zeit.
+Jonas: An deiner Stelle würde ich einen Lernplan machen.
+Mia: Das wäre gut, aber ich weiß nicht, wo ich anfangen soll.
+Jonas: Wie wäre es, wenn wir den Plan zusammen machen? Ich hätte heute Abend Zeit.
+Mia: Wirklich? Das wäre super! Könntest du mir auch bei Statistik helfen?
+Jonas: Klar. Statistik würde ich sogar gern wiederholen.
+Mia: Du bist der Beste. Ich würde dich zum Essen einladen, aber ich bin pleite.
+#dq
+Warum ist Mia gestresst? || Sie hat nächste Woche drei Prüfungen.
+Was schlägt Jonas vor? || Einen Lernplan (zusammen) zu machen.
+Warum lädt Mia Jonas nicht zum Essen ein? || Sie hat kein Geld (ist pleite).
+#task
+Wenn ich Zeit ___, ___ ich dich besuchen. (haben / werden) || hätte / würde
+Wenn er reich ___, ___ er ein Haus kaufen. (sein / werden) || wäre / würde
+___ Sie mir bitte das Salz geben? (können) || Könnten
+Ich ___ gern ein Glas Wasser. (haben) || hätte
+Du ___ mehr Sport machen. (sollen, Rat) || solltest
+Höflich: Gib mir den Stift! → ___ du mir den Stift geben? || Würdest
+Irreal: Ich habe kein Auto. → Wenn ich ein Auto ___, … || hätte
+Irreal: Sie ist nicht hier. → Wenn sie hier ___, … || wäre
+Wunsch: Ich bin nicht am Meer. → Ich wünschte, ich ___ am Meer. || wäre
+Fehler? „Wenn ich hätte Zeit, ich würde kommen.“ || Wenn ich Zeit hätte, würde ich kommen.
+
+@@ 26
+#vocab
+der Ratgeber, - = advice guide
+die Lösung, -en = solution
+lösen = to solve
+vorschlagen = to suggest
+probieren = to try
+sich Zeit nehmen = to take time
+die Pause, -n = break
+ausreichend = sufficient
+regelmäßig = regularly
+der Ärger = trouble, annoyance
+der Streit = argument
+sich streiten = to argue
+sich beruhigen = to calm down
+offen sprechen = to speak openly
+an deiner Stelle = if I were you
+es wäre besser, wenn … = it would be better if …
+Ich empfehle dir, … zu … = I recommend you …
+Hast du schon mal versucht, …? = Have you ever tried …?
+#ex
+Du solltest öfter Pausen machen. = You should take breaks more often.
+Ich empfehle dir, früher ins Bett zu gehen. = I recommend you go to bed earlier.
+An deiner Stelle würde ich mit dem Chef sprechen. = If I were you, I'd talk to the boss.
+Es wäre besser, wenn du weniger Kaffee trinken würdest. = It would be better if you drank less coffee.
+Hast du schon mal versucht, ohne Handy einzuschlafen? = Have you ever tried falling asleep without your phone?
+Mein Tipp: Mach jeden Tag einen kurzen Spaziergang. = My tip: take a short walk every day.
+Warum sprichst du nicht offen mit ihm? = Why don't you talk to him openly?
+Sie sollten Ihren Arzt fragen. = You should ask your doctor.
+Ich rate dir, die Rechnung sofort zu bezahlen. = I advise you to pay the bill immediately.
+Das ist eine gute Idee, aber das habe ich schon probiert. = That's a good idea, but I've already tried that.
+#read2
+Leserbriefe: Frag Frau Doktor
+Liebe Frau Doktor Brandt, ich bin 34 Jahre alt und arbeite in einem Callcenter. Seit einigen Monaten schlafe ich sehr schlecht. Ich wache nachts oft auf und denke an die Arbeit. Morgens bin ich müde und tagsüber trinke ich viel Kaffee. Was soll ich tun? Ihr Stefan K.
+Lieber Stefan, Sie sind nicht allein: Viele Menschen haben Schlafprobleme, besonders wenn sie viel Stress haben. Zuerst sollten Sie nach 15 Uhr keinen Kaffee mehr trinken. Koffein bleibt viele Stunden im Körper. Außerdem empfehle ich Ihnen, jeden Tag zur gleichen Zeit ins Bett zu gehen und aufzustehen, auch am Wochenende. Eine Stunde vor dem Schlafen sollten Sie Handy und Laptop ausmachen. Das blaue Licht macht wach. Hilfreich ist auch, die Gedanken aufzuschreiben: Legen Sie einen Block neben das Bett und notieren Sie, was Sie morgen erledigen müssen. Dann muss Ihr Kopf es nicht mehr behalten. Bewegung am Tag hilft ebenfalls, aber nicht direkt vor dem Schlafen. Wenn das alles nicht hilft, sollten Sie mit Ihrem Hausarzt sprechen. Vielleicht wäre auch ein Gespräch mit Ihrem Arbeitgeber sinnvoll. Ich wünsche Ihnen gute Nächte! Ihre Dr. Brandt
+#dialog
+Tomás: Leila, ich habe ein Problem mit meinem Mitbewohner. Er ist total unordentlich.
+Leila: Was genau macht er denn?
+Tomás: Er wäscht nie ab, und seine Sachen liegen überall.
+Leila: Hast du schon mal mit ihm darüber gesprochen?
+Tomás: Nein, ich will keinen Streit.
+Leila: An deiner Stelle würde ich trotzdem offen mit ihm reden. Ganz ruhig.
+Tomás: Und wenn das nichts bringt?
+Leila: Dann solltet ihr einen Putzplan machen. Jeder hat feste Aufgaben.
+Tomás: Ein Putzplan … Das ist eine gute Idee. Ich probiere es.
+#dq
+Was ist Tomás' Problem? || Sein Mitbewohner ist unordentlich (wäscht nie ab, lässt Sachen liegen).
+Was rät Leila zuerst? || Offen und ruhig mit ihm reden.
+Was sollen sie machen, wenn das nicht hilft? || Einen Putzplan machen.
+#task
+Rat mit sollen: Du ___ zum Arzt gehen. || solltest
+Rat mit sollen: Ihr ___ mehr schlafen. || solltet
+Rat mit sollen: Sie (formell) ___ weniger arbeiten. || sollten
+An deiner Stelle ___ ich mit ihm sprechen. (werden) || würde
+Ich empfehle dir, mehr Wasser ___ trinken. || zu
+Ich rate Ihnen, den Termin ___. (absagen) || abzusagen
+Es wäre besser, wenn du früher ___ würdest. (aufstehen) || aufstehen
+Umformen: Mach mehr Pausen! → Du solltest ___ ___ machen. || mehr Pausen
+Umformen: Trink weniger Kaffee! → An deiner Stelle würde ich weniger Kaffee ___. || trinken
+Fehler? „Du solltest zu schlafen mehr.“ || Du solltest mehr schlafen.
+
+@@ 27
+#vocab
+Lass uns … = Let's …
+Wollen wir …? = Shall we …?
+Was hältst du von …? = What do you think of …?
+Ich schlage vor, dass … = I suggest that …
+Das klingt gut. = That sounds good.
+Ich bin dagegen. = I'm against it.
+einen Kompromiss finden = to find a compromise
+sich einigen auf = to agree on
+abstimmen über = to vote on
+die Stimmung = mood, atmosphere
+die Musikanlage, -n = sound system
+das Buffet, -s = buffet
+der Termin passt = the date suits
+absprechen = to coordinate
+verteilen = to distribute
+die Kosten teilen = to split the costs
+zusagen / absagen = to accept / decline (an invitation)
+die Überraschungsparty, -s = surprise party
+#ex
+Lass uns am Samstag grillen! = Let's have a barbecue on Saturday!
+Wollen wir zusammen kochen? = Shall we cook together?
+Was hältst du davon, wenn jeder etwas mitbringt? = What do you think about everyone bringing something?
+Ich schlage vor, dass wir die Kosten teilen. = I suggest that we split the costs.
+Das klingt gut, aber Samstag passt mir nicht. = That sounds good, but Saturday doesn't suit me.
+Wie wäre es mit Sonntagnachmittag? = How about Sunday afternoon?
+Ich kümmere mich um die Getränke. = I'll take care of the drinks.
+Wer übernimmt die Musik? = Who will take care of the music?
+Dann machen wir es so. = Then let's do it that way.
+Leider muss ich absagen. = Unfortunately I have to decline.
+#read2
+Die Überraschungsparty
+Frau Krüger, die Lehrerin des Deutschkurses, geht im Juni in Rente. Die Teilnehmer wollen ihr eine Überraschungsparty organisieren. Aber das ist gar nicht so einfach, denn alle haben andere Ideen. Tomás schlägt vor, in einem Restaurant zu feiern. Aiko ist dagegen: „Das ist zu teuer, und dann können wir nicht frei sprechen.“ Leila hat eine andere Idee: „Lasst uns die Party im Kursraum machen. Jeder bringt ein Gericht aus seinem Land mit. Das wäre ein internationales Buffet!“ Alle finden die Idee toll. Dann müssen die Aufgaben verteilt werden. Ravi übernimmt die Getränke, Tomás kümmert sich um die Musik, Aiko gestaltet eine Karte und ein Fotoalbum. Mia, Leilas Freundin, backt einen Kuchen. Schwierig ist nur der Termin. Frau Krüger darf nichts merken. Leila spricht deshalb heimlich mit der Schulleiterin. Sie einigen sich auf den letzten Kurstag. Die Schulleiterin verspricht, Frau Krüger um zehn Uhr in ihr Büro zu bitten. In dieser Zeit können die Teilnehmer den Raum dekorieren. Am Ende teilen sich alle die Kosten: zwölf Euro pro Person. „Hoffentlich weint sie nicht“, sagt Tomás. „Doch“, sagt Leila, „bestimmt. Aber vor Freude.“
+#dialog
+Ravi: Also, Leute, wann wollen wir die Party machen?
+Aiko: Wie wäre es mit Freitag, dem letzten Kurstag?
+Tomás: Freitag passt mir nicht. Da habe ich eine Prüfung an der Uni.
+Leila: Und wenn wir nach dem Unterricht feiern, so ab eins? Hast du dann Zeit?
+Tomás: Meine Prüfung ist um zwei. Das wird knapp.
+Ravi: Dann schlage ich vor, dass wir in der großen Pause feiern, um halb elf.
+Tomás: Das klingt gut. Dann bin ich dabei.
+Aiko: Einverstanden. Wer spricht mit der Schulleiterin?
+Leila: Das übernehme ich.
+#dq
+Warum passt Tomás der Freitagnachmittag nicht? || Er hat um zwei Uhr eine Prüfung an der Uni.
+Wann feiern sie am Ende? || In der großen Pause um halb elf.
+Wer spricht mit der Schulleiterin? || Leila.
+#task
+Vorschlag: ___ uns ins Kino gehen! (lassen) || Lass
+Vorschlag mit „Wollen“: Wir kochen zusammen. → || Wollen wir zusammen kochen?
+Was hältst du ___, wenn wir früher anfangen? || davon
+Ich schlage vor, ___ wir den Bus nehmen. || dass
+Ich kümmere mich ___ die Einladungen. || um
+Wie wäre es ___ einem Picknick? || mit
+Zustimmen: „Das ___ gut!“ (klingen) || klingt
+Ablehnen: „Tut mir leid, Samstag ___ mir nicht.“ (passen) || passt
+Wir haben uns ___ Sonntag geeinigt. || auf
+Fehler? „Ich schlage vor, dass wir gehen ins Restaurant.“ || Ich schlage vor, dass wir ins Restaurant gehen.
+
+@@ 28
+#vocab
+anfangen zu = to begin to
+versuchen zu = to try to
+vergessen zu = to forget to
+aufhören zu = to stop (doing)
+es ist wichtig, … zu … = it is important to …
+es ist schwer, … zu … = it is hard to …
+Lust haben, … zu … = to feel like …
+Zeit haben, … zu … = to have time to …
+die Gelegenheit, -en = opportunity
+der Abendkurs, -e = evening class
+die Volkshochschule (VHS) = adult education centre
+die Anmeldung, -en = registration
+die Kursgebühr, -en = course fee
+die Teilnahmebescheinigung, -en = certificate of attendance
+sich anmelden für = to register for
+fördern = to support, to promote
+der Fortschritt, -e = progress
+motiviert = motivated
+#ex
+Ich habe angefangen, Spanisch zu lernen. = I've started learning Spanish.
+Vergiss nicht, dich für den Kurs anzumelden! = Don't forget to register for the course!
+Es ist wichtig, jeden Tag zu üben. = It's important to practise every day.
+Hast du Lust, mit mir ins Museum zu gehen? = Do you feel like going to the museum with me?
+Er versucht, jeden Tag zehn neue Wörter zu lernen. = He tries to learn ten new words every day.
+Ich habe keine Zeit, die Hausaufgaben zu machen. = I have no time to do the homework.
+Sie hat aufgehört zu rauchen. = She has stopped smoking.
+Es macht Spaß, mit anderen zusammen zu lernen. = It's fun to learn together with others.
+Ich habe vor, im Herbst die B1-Prüfung zu machen. = I'm planning to take the B1 exam in autumn.
+Es ist nicht leicht, nach der Arbeit noch zu lernen. = It isn't easy to study after work.
+#read2
+Lernen ein Leben lang
+In Deutschland ist es ganz normal, auch nach der Schule und der Ausbildung weiterzulernen. Viele Menschen besuchen Kurse an der Volkshochschule, kurz VHS. Dort kann man fast alles lernen: Sprachen, Kochen, Fotografieren, Computerprogramme oder Yoga. Die Kurse finden meistens abends oder am Wochenende statt, damit auch Berufstätige teilnehmen können. Die Gebühren sind relativ niedrig. Auch viele Arbeitgeber fördern die Weiterbildung ihrer Mitarbeiter. Sie bezahlen zum Beispiel einen Sprachkurs oder geben den Angestellten frei, um ein Seminar zu besuchen. Herr Petrović ist 52 und arbeitet als Busfahrer. Vor einem Jahr hat er angefangen, Englisch zu lernen. „Ich hatte schon lange vor, Englisch zu lernen, aber ich hatte nie Zeit“, erzählt er. „Jetzt sind meine Kinder groß, und ich habe endlich die Gelegenheit.“ Am Anfang war es nicht leicht, nach einem langen Arbeitstag noch Vokabeln zu wiederholen. „Aber es macht mir Spaß, mit anderen Menschen zu lernen. Und letzten Sommer habe ich zum ersten Mal versucht, in London nach dem Weg zu fragen. Es hat funktioniert!“ Herr Petrović plant schon den nächsten Kurs. Er hat Lust, auch noch Italienisch zu lernen.
+#dialog
+Mitarbeiterin: Volkshochschule Mitte, guten Tag.
+Ravi: Guten Tag. Ich möchte mich für einen Deutschkurs anmelden. Ist es noch möglich, in den B1-Abendkurs zu kommen?
+Mitarbeiterin: Einen Moment … Ja, es gibt noch drei freie Plätze.
+Ravi: Wann findet der Kurs statt?
+Mitarbeiterin: Dienstags und donnerstags von 18 bis 20:15 Uhr.
+Ravi: Und wie hoch ist die Kursgebühr?
+Mitarbeiterin: 240 Euro für zwölf Wochen. Vergessen Sie nicht, sich online zu registrieren.
+Ravi: Bekomme ich am Ende eine Bescheinigung?
+Mitarbeiterin: Ja, wenn Sie an mindestens achtzig Prozent der Termine teilnehmen.
+#dq
+Wann findet der Kurs statt? || Dienstags und donnerstags von 18 bis 20:15 Uhr.
+Was kostet der Kurs? || 240 Euro für zwölf Wochen.
+Wann bekommt man eine Bescheinigung? || Wenn man an mindestens 80 % der Termine teilnimmt.
+#task
+Ich habe keine Lust, heute ___ kochen. || zu
+Es ist wichtig, pünktlich ___ sein. || zu
+Vergiss nicht, den Müll ___. (rausbringen) || rauszubringen
+Er versucht, früher ___. (aufstehen) || aufzustehen
+Ich habe vor, nach Wien ___. (fahren) || zu fahren
+Sie hat angefangen, Gitarre ___ spielen. || zu
+Mit Modalverb kein zu: Ich muss heute ___. (arbeiten) || arbeiten
+Umformen: Ich lerne Deutsch. Es macht mir Spaß. → Es macht mir Spaß, Deutsch ___ ___. || zu lernen
+Umformen: Ich rufe dich an. Ich vergesse es nicht. → Ich vergesse nicht, dich ___. || anzurufen
+Fehler? „Ich habe keine Zeit zu ins Kino gehen.“ || Ich habe keine Zeit, ins Kino zu gehen.
+
+@@ 29
+#vocab
+um … zu = in order to
+damit = so that
+die Absicht, -en = intention
+der Grund, ¨e = reason
+die Fortbildung, -en = training course
+der Führerschein, -e = driving licence
+die Fahrschule, -n = driving school
+das Konto, Konten = (bank) account
+eröffnen = to open (an account)
+sich erkundigen = to enquire
+sich informieren über = to find out about
+überweisen = to transfer (money)
+die Wohnungssuche = flat hunting
+der Nachweis, -e = proof
+die Kaution, -en = deposit
+der Mietvertrag, ¨e = tenancy agreement
+dafür = for that (purpose)
+zu diesem Zweck = for this purpose
+#ex
+Ich lerne Deutsch, um in Deutschland zu studieren. = I'm learning German in order to study in Germany.
+Er spart Geld, damit seine Kinder studieren können. = He's saving money so that his children can study.
+Sie macht eine Fortbildung, um befördert zu werden. = She's doing a training course in order to be promoted.
+Wozu brauchst du einen Führerschein? – Um aufs Land zu fahren. = What do you need a driving licence for? – To drive to the countryside.
+Ich schreibe es auf, damit ich es nicht vergesse. = I'm writing it down so that I don't forget it.
+Wir gehen früh los, um den Zug nicht zu verpassen. = We're leaving early so as not to miss the train.
+Er erklärt es langsam, damit alle es verstehen. = He explains it slowly so that everyone understands it.
+Um ein Konto zu eröffnen, braucht man einen Ausweis. = To open an account you need an ID.
+Ich rufe an, um mich über den Kurs zu informieren. = I'm calling to find out about the course.
+Sie gibt ihm den Schlüssel, damit er die Pflanzen gießen kann. = She gives him the key so that he can water the plants.
+#read2
+Ein neues Leben in Leipzig
+Aiko hat eine neue Stelle in Leipzig bekommen. Um dort anzufangen, muss sie viel organisieren. Zuerst sucht sie eine Wohnung. Um schneller etwas zu finden, schaut sie jeden Morgen auf drei Internetportalen. Sie schreibt den Vermietern sofort, damit sie zu den ersten Bewerbern gehört. Für die Bewerbung braucht sie mehrere Unterlagen: einen Gehaltsnachweis, damit der Vermieter weiß, dass sie die Miete bezahlen kann, und eine Bescheinigung von ihrem alten Vermieter. Nach drei Wochen hat sie Glück: eine kleine Zweizimmerwohnung in der Südvorstadt. Um den Mietvertrag zu unterschreiben, fährt sie extra nach Leipzig. Die Kaution beträgt drei Monatsmieten. Damit sie die Kaution bezahlen kann, leiht ihr Vater ihr etwas Geld. Dann muss sie sich beim Bürgeramt anmelden. Um einen Termin zu bekommen, ruft sie schon zwei Wochen vorher an. Außerdem eröffnet sie ein Konto bei einer Bank in Leipzig, damit ihr neuer Arbeitgeber das Gehalt überweisen kann. Zum Schluss meldet sie sich in einem Sportverein an, um schnell neue Leute kennenzulernen. „Umziehen ist anstrengend“, sagt Aiko, „aber ich freue mich auf den Neuanfang.“
+#dialog
+Bankberaterin: Guten Tag, was kann ich für Sie tun?
+Aiko: Ich möchte ein Girokonto eröffnen, damit mein Arbeitgeber mein Gehalt überweisen kann.
+Bankberaterin: Gern. Haben Sie Ihren Ausweis dabei?
+Aiko: Ja, hier ist mein Reisepass. Und meine Meldebescheinigung.
+Bankberaterin: Sehr gut. Um das Konto online zu nutzen, brauchen Sie noch unsere App.
+Aiko: Kostet das Konto etwas?
+Bankberaterin: Fünf Euro im Monat. Damit Sie es kostenlos bekommen, müssen jeden Monat mindestens tausend Euro eingehen.
+Aiko: Das ist kein Problem. Mein Gehalt ist höher.
+#dq
+Warum möchte Aiko ein Konto eröffnen? || Damit ihr Arbeitgeber das Gehalt überweisen kann.
+Welche Dokumente hat sie dabei? || Ihren Reisepass und ihre Meldebescheinigung.
+Wann ist das Konto kostenlos? || Wenn jeden Monat mindestens 1000 Euro eingehen.
+#task
+Ich gehe zur Bank, ___ Geld abzuheben. (um/damit) || um
+Er spricht laut, ___ alle ihn hören. (um/damit) || damit
+Wir nehmen ein Taxi, um pünktlich ___ sein. || zu
+Verbinde mit um … zu: Ich lerne viel. Ich will die Prüfung bestehen. || Ich lerne viel, um die Prüfung zu bestehen.
+Verbinde mit damit: Ich gebe dir meine Nummer. Du kannst mich anrufen. || Ich gebe dir meine Nummer, damit du mich anrufen kannst.
+Verbinde mit um … zu: Sie fährt nach Berlin. Sie besucht ihre Freundin. || Sie fährt nach Berlin, um ihre Freundin zu besuchen.
+Verbinde mit damit: Die Mutter kocht. Die Kinder haben etwas zu essen. || Die Mutter kocht, damit die Kinder etwas zu essen haben.
+Frage nach dem Zweck: ___ brauchst du das Geld? || Wozu
+Trennbares Verb: Ich komme früher, um dir ___. (helfen) || zu helfen
+Fehler? „Ich spare Geld, um ich ein Auto kaufe.“ || Ich spare Geld, um ein Auto zu kaufen.
+
+@@ 30
+#vocab
+ohne … zu = without (doing)
+statt … zu / anstatt … zu = instead of (doing)
+die Angewohnheit, -en = habit (often bad)
+der Vorsatz, ¨e = resolution
+der Alltag = everyday life
+die Routine, -n = routine
+das Handy weglegen = to put the phone away
+der Bildschirm, -e = screen
+die Bildschirmzeit = screen time
+der Snack, -s = snack
+naschen = to nibble sweets
+die Treppe, -n = stairs
+der Aufzug, ¨e = lift
+zu Fuß gehen = to walk
+sich angewöhnen = to get into the habit of
+sich abgewöhnen = to break the habit of
+durchhalten = to persevere
+rückfällig werden = to relapse
+#ex
+Er geht aus dem Haus, ohne zu frühstücken. = He leaves the house without having breakfast.
+Statt den Aufzug zu nehmen, gehe ich die Treppe hoch. = Instead of taking the lift, I walk up the stairs.
+Sie hat das Formular unterschrieben, ohne es zu lesen. = She signed the form without reading it.
+Anstatt zu lernen, hat er den ganzen Abend gespielt. = Instead of studying, he played all evening.
+Ich habe mir angewöhnt, jeden Morgen Wasser zu trinken. = I've got into the habit of drinking water every morning.
+Er möchte sich das Rauchen abgewöhnen. = He wants to give up smoking.
+Statt Chips zu essen, nimm doch einen Apfel! = Instead of eating crisps, why not take an apple!
+Wir sind losgefahren, ohne die Tür abzuschließen. = We drove off without locking the door.
+Mein Vorsatz: weniger Bildschirmzeit, mehr Schlaf. = My resolution: less screen time, more sleep.
+Es ist schwer, durchzuhalten. = It's hard to keep it up.
+#read2
+Neue Gewohnheiten – so klappt es
+Jedes Jahr im Januar fassen Millionen Menschen gute Vorsätze: mehr Sport, gesünder essen, weniger Zeit am Handy. Doch schon im Februar haben die meisten wieder aufgegeben. Warum ist es so schwer, Gewohnheiten zu ändern? Unser Gehirn liebt Routinen. Viele Dinge tun wir automatisch, ohne darüber nachzudenken: Wir greifen zum Handy, statt aus dem Fenster zu schauen, oder wir nehmen den Aufzug, ohne an die Treppe zu denken. Experten empfehlen deshalb, klein anzufangen. Statt sich vorzunehmen, jeden Tag eine Stunde zu joggen, sollte man lieber mit zehn Minuten beginnen. Hilfreich ist es auch, eine neue Gewohnheit an eine alte zu koppeln: Nach dem Zähneputzen macht man zum Beispiel fünf Kniebeugen. Wer sich etwas abgewöhnen will, sollte es sich schwer machen. Wer abends weniger am Handy sein möchte, kann es in die Küche legen, statt es mit ins Schlafzimmer zu nehmen. Und wenn man doch einmal rückfällig wird? „Kein Problem“, sagt die Psychologin Dr. Lena Vogt. „Wichtig ist, nicht gleich aufzugeben. Ein schlechter Tag macht keine schlechte Gewohnheit.“ Nach etwa zwei Monaten, so die Forschung, läuft eine neue Gewohnheit fast automatisch.
+#dialog
+Mia: Jonas, du isst schon wieder Chips, statt zu kochen?
+Jonas: Ich hatte keine Zeit. Ich bin direkt vom Büro zum Sofa.
+Mia: Du wolltest doch gesünder leben. Das war dein Vorsatz!
+Jonas: Ich weiß. Aber ich komme nach Hause und esse, ohne nachzudenken.
+Mia: Dann kauf einfach keine Chips mehr. Leg stattdessen Obst auf den Tisch.
+Jonas: Und wenn ich trotzdem Lust auf Chips habe?
+Mia: Dann gehst du zum Kiosk. Zu Fuß. Das ist gleichzeitig Sport.
+Jonas: Sehr witzig. Aber vielleicht hast du recht.
+#dq
+Was macht Jonas, statt zu kochen? || Er isst Chips.
+Was war Jonas' Vorsatz? || Gesünder zu leben.
+Was soll Jonas statt Chips auf den Tisch legen? || Obst.
+#task
+Er geht weg, ___ sich zu verabschieden. (ohne/statt) || ohne
+___ zu arbeiten, schläft er. (Ohne/Statt) || Statt
+Verbinde mit ohne … zu: Sie fährt los. Sie tankt nicht. || Sie fährt los, ohne zu tanken.
+Verbinde mit statt … zu: Ich nehme die Treppe. Ich nehme nicht den Aufzug. || Ich nehme die Treppe, statt den Aufzug zu nehmen.
+Verbinde mit ohne … zu: Er antwortet. Er überlegt nicht. || Er antwortet, ohne zu überlegen.
+Verbinde mit anstatt … zu: Wir gehen spazieren. Wir sehen nicht fern. || Wir gehen spazieren, anstatt fernzusehen.
+Trennbar: Sie ging, ohne die Tür ___. (zumachen) || zuzumachen
+Ich möchte mir das Naschen ___. (abgewöhnen) || abgewöhnen
+Ich habe mir ___, früh aufzustehen. (angewöhnen, Perfekt) || angewöhnt
+Fehler? „Er hat gegessen ohne zu bezahlen er.“ || Er hat gegessen, ohne zu bezahlen.
+
+@@ 31
+#vocab
+sich interessieren für = to be interested in
+sich freuen auf = to look forward to
+sich freuen über = to be pleased about
+sich ärgern über = to be annoyed about
+sich kümmern um = to take care of
+sich verlassen auf = to rely on
+sich bedanken für = to say thank you for
+sich bewerben um = to apply for
+sich konzentrieren auf = to concentrate on
+sich sorgen um = to worry about
+achten auf = to pay attention to
+abhängen von = to depend on
+gehören zu = to be part of
+handeln von = to be about
+nachdenken über = to think about
+reagieren auf = to react to
+stolz sein auf = to be proud of
+zufrieden sein mit = to be satisfied with
+#ex
+Worauf freust du dich am meisten? – Auf die Ferien. = What are you looking forward to most? – The holidays.
+Ich freue mich darauf, dich zu sehen. = I'm looking forward to seeing you.
+Wofür interessierst du dich? – Für Politik. = What are you interested in? – Politics.
+An wen denkst du? – An meine Oma. = Who are you thinking of? – My grandma.
+Ich ärgere mich über den Lärm. Du ärgerst dich auch darüber? = I'm annoyed about the noise. You're annoyed about it too?
+Kann ich mich auf dich verlassen? = Can I rely on you?
+Der Film handelt von einer Familie in Berlin. = The film is about a family in Berlin.
+Es hängt vom Wetter ab, ob wir grillen. = It depends on the weather whether we have a barbecue.
+Sie ist sehr stolz auf ihren Sohn. = She is very proud of her son.
+Worüber habt ihr gesprochen? = What did you talk about?
+#read2
+Was uns glücklich macht
+Eine Zeitschrift hat Menschen gefragt: Worüber freuen Sie sich im Alltag? Worüber ärgern Sie sich? Hier einige Antworten. Monika, 67, Rentnerin: „Ich freue mich jeden Tag über meinen Garten. Und ich freue mich auf die Wochenenden, wenn meine Enkel kommen. Ärgern? Ich ärgere mich über Leute, die ihren Müll in den Park werfen.“ Deniz, 24, Student: „Ich interessiere mich sehr für Musik und spiele in einer Band. Ich bin stolz darauf, dass wir bald unser erstes Konzert haben. Was mich ärgert? Wenn die Bahn wieder Verspätung hat. Darüber rege ich mich fast jeden Tag auf.“ Petra, 45, Krankenschwester: „Ich kümmere mich den ganzen Tag um andere Menschen. Deshalb freue ich mich über ruhige Abende mit einem Buch. Ich ärgere mich darüber, dass Pflegekräfte so wenig verdienen.“ Karim, 38, Taxifahrer: „Mein Glück hängt nicht von Geld ab. Ich bin zufrieden mit meinem Leben, wenn meine Familie gesund ist. Ich denke oft an meine Eltern in Marokko und telefoniere jeden Sonntag mit ihnen. Darauf freue ich mich die ganze Woche.“ Die Umfrage zeigt: Es sind oft die kleinen Dinge, die zählen.
+#dialog
+Leila: Ravi, du siehst so glücklich aus! Worüber freust du dich?
+Ravi: Ich habe die Zusage von GreenTech bekommen!
+Leila: Wirklich? Herzlichen Glückwunsch! Darauf hast du so lange gewartet.
+Ravi: Ja, ich kann es noch gar nicht glauben. Ich habe mich um die Stelle beworben und jetzt …
+Leila: Und worauf freust du dich am meisten?
+Ravi: Auf das Team. Und darauf, dass ich endlich in meinem Bereich arbeiten kann.
+Leila: Wann fängst du an?
+Ravi: Am ersten Oktober. Aber ich muss mich noch um viele Dinge kümmern.
+#dq
+Worüber freut sich Ravi? || Über die Zusage von GreenTech.
+Worauf freut er sich am meisten? || Auf das Team (und darauf, in seinem Bereich zu arbeiten).
+Wann fängt Ravi an? || Am ersten Oktober.
+#task
+Ich warte ___ den Bus. || auf
+Sie denkt oft ___ ihre Familie. || an
+Wir sprechen ___ das Wetter. || über
+Er interessiert sich ___ Kunst. || für
+Frage nach Sache: Ich freue mich auf das Wochenende. → ___ freust du dich? || Worauf
+Frage nach Person: Ich denke an meinen Bruder. → ___ ___ denkst du? || An wen
+da-Wort: Ärgerst du dich über den Lärm? – Ja, ich ärgere mich ___. || darüber
+da-Wort: Interessierst du dich für Fußball? – Nein, ich interessiere mich nicht ___. || dafür
+Das hängt ___ dir ab. || von
+Fehler? „Ich freue mich für die Ferien im Sommer.“ || Ich freue mich auf die Ferien im Sommer.
+
+@@ 32
+#vocab
+wissen, ob = to know whether
+fragen, wann/wo/wie = to ask when/where/how
+Können Sie mir sagen, …? = Can you tell me …?
+Wissen Sie, …? = Do you know …?
+Ich möchte wissen, … = I would like to know …
+Ich frage mich, … = I wonder …
+die Meldebescheinigung, -en = registration certificate
+die Steuer-ID = tax ID
+die Krankenversicherung, -en = health insurance
+der Antrag, ¨e = application (form)
+einen Antrag stellen = to submit an application
+die Gebühr, -en = fee
+der Schalter, - = counter
+zuständig sein für = to be responsible for
+die Öffnungszeiten (Pl.) = opening hours
+verlängern = to extend
+die Bescheinigung, -en = certificate
+beglaubigt = certified
+#ex
+Können Sie mir sagen, wo das Bürgeramt ist? = Can you tell me where the citizens' office is?
+Wissen Sie, wann die Behörde geöffnet hat? = Do you know when the office is open?
+Ich möchte wissen, ob ich einen Termin brauche. = I'd like to know whether I need an appointment.
+Weißt du, wie viel der Ausweis kostet? = Do you know how much the ID card costs?
+Ich frage mich, warum das so lange dauert. = I wonder why it takes so long.
+Könnten Sie mir erklären, welche Unterlagen ich mitbringen muss? = Could you explain which documents I need to bring?
+Er hat gefragt, ob wir das Formular schon ausgefüllt haben. = He asked whether we've already filled in the form.
+Wer ist für Aufenthaltstitel zuständig? = Who is responsible for residence permits?
+Ich weiß nicht, an wen ich mich wenden soll. = I don't know who to turn to.
+Können Sie mir sagen, wie lange die Bearbeitung dauert? = Can you tell me how long processing takes?
+#read2
+Anmeldung in Deutschland – was man wissen muss
+Wer nach Deutschland zieht, muss sich innerhalb von zwei Wochen beim Bürgeramt anmelden. Viele Neuankömmlinge fragen sich, wie das funktioniert und welche Unterlagen sie brauchen. Zuerst sollte man herausfinden, welches Bürgeramt zuständig ist. In großen Städten kann man meistens jedes Bürgeramt der Stadt wählen. Man braucht fast immer einen Termin, den man online buchen kann. In Berlin ist es manchmal schwierig, schnell einen Termin zu bekommen. Ein Tipp: Morgens früh nachsehen, ob neue Termine freigeschaltet wurden. Zur Anmeldung muss man den Pass oder Personalausweis mitbringen, das ausgefüllte Anmeldeformular und die Wohnungsgeberbestätigung. Das ist ein Dokument vom Vermieter, das bestätigt, dass man wirklich dort wohnt. Viele wissen nicht, dass die Anmeldung kostenlos ist. Nach der Anmeldung bekommt man eine Meldebescheinigung. Diese braucht man später für viele andere Dinge: um ein Bankkonto zu eröffnen, einen Handyvertrag abzuschließen oder sich bei der Krankenversicherung anzumelden. Einige Wochen später kommt außerdem ein Brief mit der Steuer-Identifikationsnummer per Post. Wer nicht weiß, ob alle Unterlagen vollständig sind, kann vorher bei der Behörde anrufen und nachfragen.
+#dialog
+Mitarbeiter: Guten Tag, die Wartenummer 147? Bitte nehmen Sie Platz.
+Leila: Guten Tag. Ich möchte wissen, ob ich hier meine Aufenthaltserlaubnis verlängern kann.
+Mitarbeiter: Nein, dafür ist die Ausländerbehörde zuständig, nicht das Bürgeramt.
+Leila: Ach so. Können Sie mir sagen, wo die Ausländerbehörde ist?
+Mitarbeiter: In der Friedrich-Krause-Straße. Aber Sie brauchen dort auch einen Termin.
+Leila: Wissen Sie, wie lange man auf einen Termin warten muss?
+Mitarbeiter: Das kann ich Ihnen leider nicht sagen. Manchmal mehrere Wochen.
+Leila: Und wissen Sie, welche Unterlagen ich brauche?
+Mitarbeiter: Das steht auf der Webseite. Ihr Pass, ein biometrisches Foto und Ihr Arbeitsvertrag, glaube ich.
+#dq
+Was möchte Leila verlängern? || Ihre Aufenthaltserlaubnis.
+Wer ist dafür zuständig? || Die Ausländerbehörde.
+Welche Unterlagen braucht sie wahrscheinlich? || Pass, biometrisches Foto und Arbeitsvertrag.
+#task
+Indirekte Frage: Wo ist der Bahnhof? → Können Sie mir sagen, ___ ___ ___ ___? || wo der Bahnhof ist
+Indirekte Frage: Wann beginnt der Kurs? → Wissen Sie, ___ ___ ___ ___? || wann der Kurs beginnt
+Indirekte Frage: Hat die Bank geöffnet? → Ich weiß nicht, ___ ___ ___ ___ ___. || ob die Bank geöffnet hat
+Indirekte Frage: Wie viel kostet das? → Weißt du, ___ ___ ___ ___? || wie viel das kostet
+Indirekte Frage: Brauche ich einen Termin? → Ich möchte wissen, ob ich einen Termin ___. || brauche
+Indirekte Frage: Wer ist zuständig? → Können Sie mir sagen, wer ___ ___? || zuständig ist
+ob oder wenn? Ich weiß nicht, ___ er heute kommt. || ob
+Trennbar: Wann kommt der Zug an? → Wissen Sie, wann der Zug ___? || ankommt
+Modalverb: Wo kann ich parken? → Können Sie mir sagen, wo ich ___ ___? || parken kann
+Fehler? „Können Sie mir sagen, wo ist die Toilette?“ || Können Sie mir sagen, wo die Toilette ist?
+
+@@ 33
+#vocab
+der, die, das (Relativpronomen) = who, which, that
+dessen / deren = whose
+wo (Relativadverb) = where
+was (nach alles, etwas, nichts) = that, which
+die Nachbarschaft, -en = neighbourhood
+zuverlässig = reliable
+neugierig = curious
+großzügig = generous
+egoistisch = selfish
+schüchtern = shy
+selbstbewusst = self-confident
+humorvoll = humorous
+ordentlich = tidy
+die Persönlichkeit, -en = personality
+das Vorbild, -er = role model
+beschreiben = to describe
+der Eindruck, ¨e = impression
+#ex
+Das ist der Mann, der neben uns wohnt. = That's the man who lives next to us.
+Die Frau, die ich gestern getroffen habe, ist Ärztin. = The woman I met yesterday is a doctor.
+Das ist das Buch, von dem ich dir erzählt habe. = That's the book I told you about.
+Ich habe einen Freund, dem ich alles erzählen kann. = I have a friend I can tell everything to.
+Die Kollegin, deren Mann Koch ist, bringt oft Kuchen mit. = The colleague whose husband is a cook often brings cake.
+Das ist die Stadt, in der ich geboren bin. = That's the city where I was born.
+Das Café, wo wir uns kennengelernt haben, gibt es nicht mehr. = The café where we met no longer exists.
+Alles, was er sagt, ist interessant. = Everything he says is interesting.
+Die Leute, mit denen ich arbeite, sind sehr nett. = The people I work with are very nice.
+Mein Vorbild ist meine Oma, die nie aufgegeben hat. = My role model is my grandma, who never gave up.
+#read2
+Menschen in unserem Haus
+Im Haus in der Goethestraße wohnen ganz unterschiedliche Menschen. Im Erdgeschoss wohnt Herr Kaya, der seit vierzig Jahren in Berlin lebt und früher einen Gemüseladen hatte. Er ist ein Mann, dem man sofort vertraut. Jeden Morgen gießt er die Blumen, die vor dem Haus stehen. Im ersten Stock lebt Anna Weber, deren Sohn Paul gern Fußball spielt. Anna ist Grafikerin und arbeitet oft zu Hause. Sie ist die Person, an die sich alle wenden, wenn es Probleme gibt. Neben ihr wohnt Frau Lindner, eine alte Dame, die sehr neugierig ist. Es gibt nichts, was sie nicht weiß. Im zweiten Stock ist die WG, in der Jonas, Mia und früher Ravi gewohnt haben. Ganz oben wohnt ein junges Paar, das erst vor Kurzem eingezogen ist. Die beiden, über die Frau Lindner natürlich schon alles weiß, kommen aus Spanien. Einmal im Jahr gibt es ein Hoffest, bei dem jeder etwas mitbringt. Herr Kaya macht Börek, Anna bringt Salat mit, und die WG kümmert sich um die Musik. „Ein Haus, in dem man sich kennt, ist ein Zuhause“, sagt Herr Kaya.
+#dialog
+Mia: Kennst du schon die Leute, die oben eingezogen sind?
+Jonas: Meinst du das Paar, das immer so laut Musik hört?
+Mia: Genau. Die Frau, mit der ich im Treppenhaus gesprochen habe, heißt Carmen.
+Jonas: Ist das die Frau, deren Fahrrad immer im Flur steht?
+Mia: Ja, aber sie ist sehr nett. Sie hat uns zu ihrer Einweihungsparty eingeladen.
+Jonas: Eine Party? Dann ist das die Musik, über die sich Frau Lindner beschwert.
+Mia: Wahrscheinlich. Aber alles, was Frau Lindner sagt, muss man nicht glauben.
+#dq
+Wer ist oben eingezogen? || Ein Paar (Carmen und ihr Partner).
+Wo steht Carmens Fahrrad? || Im Flur.
+Worüber beschwert sich Frau Lindner? || Über die (laute) Musik.
+#task
+Das ist der Kollege, ___ mir geholfen hat. || der
+Das ist die Frau, ___ ich gestern gesehen habe. || die
+Das ist das Kind, ___ ich ein Buch geschenkt habe. || dem
+Das ist der Mann, ___ Auto vor der Tür steht. || dessen
+Das sind die Freunde, mit ___ ich in Urlaub fahre. || denen
+Das ist die Stadt, in ___ ich wohne. || der
+Alles, ___ du sagst, stimmt. || was
+Das ist der Film, von ___ ich dir erzählt habe. || dem
+Verbinde: Ich kenne eine Frau. Die Frau spricht fünf Sprachen. || Ich kenne eine Frau, die fünf Sprachen spricht.
+Fehler? „Das ist der Mann, der ich gestern getroffen habe.“ || Das ist der Mann, den ich gestern getroffen habe.
+
+@@ 34
+#vocab
+als = when (single event in the past)
+wenn = when, whenever
+bevor = before
+nachdem = after
+während = while
+seitdem = since
+bis = until
+sobald = as soon as
+die Grundschule, -n = primary school
+das Gymnasium, Gymnasien = grammar school
+das Abitur = school-leaving exam (A levels)
+die Ausbildung, -en = vocational training
+der Berufseinstieg = entry into working life
+der Wendepunkt, -e = turning point
+auswandern = to emigrate
+die Heimat = home(land)
+das Heimweh = homesickness
+sich verändern = to change
+#ex
+Als ich zehn Jahre alt war, sind wir nach Pune gezogen. = When I was ten, we moved to Pune.
+Immer wenn ich meine Oma besuchte, backte sie Kuchen. = Whenever I visited my grandma, she baked cake.
+Bevor ich nach Deutschland kam, habe ich ein Jahr Deutsch gelernt. = Before I came to Germany, I learned German for a year.
+Nachdem er das Abitur gemacht hatte, machte er eine Weltreise. = After he had finished school, he travelled around the world.
+Während ich studierte, arbeitete ich in einem Café. = While I was studying, I worked in a café.
+Seitdem ich in Berlin wohne, fahre ich nur noch Fahrrad. = Since I've been living in Berlin, I only cycle.
+Warte, bis ich zurück bin! = Wait until I'm back!
+Sobald ich die Ergebnisse habe, rufe ich dich an. = As soon as I have the results, I'll call you.
+Als ich in Deutschland ankam, hatte ich großes Heimweh. = When I arrived in Germany, I was very homesick.
+Wenn ich Heimweh habe, koche ich indisches Essen. = When I feel homesick, I cook Indian food.
+#read2
+Lebensstationen: Leila erzählt
+„Ich bin 1993 in Schiras geboren, einer Stadt im Süden des Iran. Als ich klein war, wohnten wir bei meinen Großeltern. Immer wenn mein Großvater von der Arbeit kam, erzählte er mir Geschichten aus der persischen Literatur. Bevor ich in die Schule kam, konnte ich deshalb schon viele Gedichte auswendig. Nachdem ich das Abitur bestanden hatte, studierte ich Medizin in Teheran. Während ich studierte, lernte ich meinen Mann kennen. Er war damals Ingenieurstudent. Als unsere Tochter geboren wurde, arbeitete ich schon als Ärztin im Krankenhaus. Vor vier Jahren bekam mein Mann ein Angebot von einer Firma in Berlin. Das war ein großer Wendepunkt. Bevor wir auswanderten, lernte ich ein Jahr lang Deutsch, abends nach der Arbeit. Als wir in Berlin ankamen, war alles neu und fremd. Meine Approbation, also die Erlaubnis, in Deutschland als Ärztin zu arbeiten, dauerte fast zwei Jahre. Seitdem arbeite ich wieder im Krankenhaus. Manchmal habe ich Heimweh, besonders wenn ich an das Essen meiner Mutter denke. Aber sobald ich mit meiner Tochter durch den Park gehe und sie Deutsch mit anderen Kindern spricht, weiß ich: Hier ist jetzt auch unser Zuhause.“
+#dialog
+Paul: Herr Kaya, wie war das, als Sie nach Deutschland gekommen sind?
+Herr Kaya: Das ist lange her. Als ich ankam, war ich zweiundzwanzig und sprach kein Wort Deutsch.
+Paul: Und wie haben Sie Deutsch gelernt?
+Herr Kaya: Während ich in der Fabrik arbeitete, habe ich von den Kollegen gelernt. Einen Kurs gab es nicht.
+Paul: Hatten Sie Heimweh?
+Herr Kaya: Am Anfang sehr. Immer wenn ein Brief von meiner Mutter kam, habe ich geweint.
+Paul: Und wann haben Sie den Gemüseladen aufgemacht?
+Herr Kaya: Nachdem ich zehn Jahre gespart hatte. Seitdem ist Berlin meine zweite Heimat.
+#dq
+Wie alt war Herr Kaya, als er nach Deutschland kam? || Zweiundzwanzig.
+Wie hat er Deutsch gelernt? || Bei der Arbeit in der Fabrik, von den Kollegen.
+Wann hat er den Gemüseladen aufgemacht? || Nachdem er zehn Jahre gespart hatte.
+#task
+___ ich ein Kind war, wohnte ich auf dem Land. (als/wenn) || Als
+Immer ___ es regnet, bleibe ich zu Hause. (als/wenn) || wenn
+___ du gehst, mach bitte das Licht aus. (bevor/nachdem) || Bevor
+___ er gegessen hatte, ging er spazieren. (bevor/nachdem) || Nachdem
+___ ich koche, höre ich Radio. (während/bis) || Während
+Warte hier, ___ ich zurückkomme. (bis/seit) || bis
+___ ich in Berlin wohne, fahre ich Fahrrad. (seitdem/bevor) || Seitdem
+___ ich Zeit habe, rufe ich dich an. (sobald/als) || Sobald
+Verbinde mit als: Ich kam in Deutschland an. Es war kalt. || Als ich in Deutschland ankam, war es kalt.
+Fehler? „Wenn ich gestern nach Hause kam, war niemand da.“ || Als ich gestern nach Hause kam, war niemand da.
+
+@@ 35
+#vocab
+ging (gehen) = went
+kam (kommen) = came
+sah (sehen) = saw
+fand (finden) = found
+lief (laufen) = ran
+rief (rufen) = called
+stand (stehen) = stood
+saß (sitzen) = sat
+nahm (nehmen) = took
+gab (geben) = gave
+dachte (denken) = thought
+wusste (wissen) = knew
+brachte (bringen) = brought
+hatte … gemacht = had done (Plusquamperfekt)
+war … gegangen = had gone (Plusquamperfekt)
+der Wald, ¨er = forest
+die Hexe, -n = witch
+erschrecken (erschrak) = to be frightened
+#ex
+Es war einmal ein König, der drei Töchter hatte. = Once upon a time there was a king who had three daughters.
+Plötzlich klingelte das Telefon. = Suddenly the phone rang.
+Er nahm seine Jacke und ging hinaus. = He took his jacket and went out.
+Als sie nach Hause kam, war ihr Mann schon gegangen. = When she came home, her husband had already left.
+Nachdem wir gegessen hatten, spielten wir Karten. = After we had eaten, we played cards.
+Ich wusste nicht, was ich sagen sollte. = I didn't know what I should say.
+Sie dachte lange nach. = She thought for a long time.
+Zum Glück fand er den Schlüssel unter der Matte. = Luckily he found the key under the mat.
+Das Kind lief schnell zu seiner Mutter. = The child ran quickly to its mother.
+Der Zug war schon abgefahren, als wir ankamen. = The train had already left when we arrived.
+#read2
+Hänsel und Gretel – nacherzählt
+Vor langer Zeit lebte an einem großen Wald ein armer Holzfäller mit seiner Frau und seinen zwei Kindern, Hänsel und Gretel. Die Familie hatte kaum etwas zu essen. Eines Abends sagte die Stiefmutter: „Morgen bringen wir die Kinder in den Wald und lassen sie dort allein.“ Hänsel hatte alles gehört. In der Nacht ging er hinaus und sammelte weiße Steine. Am nächsten Tag warf er die Steine auf den Weg, und so fanden die Kinder im Mondlicht nach Hause zurück. Doch beim zweiten Mal hatte Hänsel nur Brot dabei, und die Vögel fraßen die Krümel. Drei Tage liefen die Kinder durch den Wald. Plötzlich standen sie vor einem Haus aus Lebkuchen und Zucker. Weil sie so hungrig waren, aßen sie davon. Da kam eine alte Frau heraus. Sie war freundlich und gab ihnen zu essen. Aber sie war eine böse Hexe! Sie sperrte Hänsel in einen Stall, denn sie wollte ihn dick machen und dann essen. Gretel musste für sie arbeiten. Als die Hexe eines Tages den Ofen geheizt hatte, sagte Gretel: „Ich weiß nicht, wie man hineinkommt.“ Die Hexe zeigte es ihr, und Gretel stieß sie in den Ofen. Dann befreite sie ihren Bruder. Mit den Schätzen der Hexe kehrten sie nach Hause zurück. Die Stiefmutter war inzwischen gestorben, und der Vater war überglücklich.
+#dialog
+Tomás: Du wirst nicht glauben, was mir gestern passiert ist!
+Mia: Erzähl!
+Tomás: Ich wollte nach dem Kurs nach Hause fahren. Ich ging zur U-Bahn, aber sie fuhr nicht.
+Mia: Ein Streik?
+Tomás: Nein, eine Störung. Also nahm ich den Bus. Im Bus merkte ich, dass ich mein Handy im Kursraum vergessen hatte.
+Mia: Oh nein! Bist du zurückgefahren?
+Tomás: Ja. Aber als ich ankam, hatte der Hausmeister schon abgeschlossen.
+Mia: Und dann?
+Tomás: Zum Glück wohnte er im Haus. Ich klingelte, und er gab mir das Handy. Er hatte es schon gefunden!
+#dq
+Warum fuhr die U-Bahn nicht? || Es gab eine Störung.
+Was hatte Tomás vergessen? || Sein Handy (im Kursraum).
+Wer gab ihm das Handy? || Der Hausmeister.
+#task
+Präteritum: Er ___ nach Hause. (gehen) || ging
+Präteritum: Wir ___ einen Film. (sehen) || sahen
+Präteritum: Sie ___ spät. (kommen) || kam
+Präteritum: Ich ___ den Schlüssel nicht. (finden) || fand
+Präteritum: Du ___ mir ein Geschenk. (geben) || gabst
+Präteritum: Ich ___ nicht, was ich tun sollte. (wissen) || wusste
+Plusquamperfekt: Nachdem er ___ ___, ging er ins Bett. (essen) || gegessen hatte
+Plusquamperfekt: Als ich ankam, ___ der Zug schon ___. (abfahren) || war / abgefahren
+Plusquamperfekt: Sie war müde, weil sie schlecht ___ ___. (schlafen) || geschlafen hatte
+Fehler? „Nachdem sie gegessen hat, ging sie spazieren.“ || Nachdem sie gegessen hatte, ging sie spazieren.
+
+@@ 36
+#vocab
+obwohl = although
+trotzdem = nevertheless, still
+dennoch = nevertheless
+trotz (+ Gen.) = despite
+zwar … aber = admittedly … but
+die Überstunden (Pl.) = overtime
+die Erschöpfung = exhaustion
+das Burn-out = burnout
+das Homeoffice = working from home
+die Erreichbarkeit = availability (being reachable)
+abschalten = to switch off (mentally)
+der Ausgleich = balance, compensation
+das Ehrenamt, ¨er = volunteer work
+die Elternzeit = parental leave
+die Gleitzeit = flexitime
+priorisieren = to prioritise
+Nein sagen = to say no
+sich überfordert fühlen = to feel overwhelmed
+#ex
+Obwohl er müde ist, arbeitet er weiter. = Although he is tired, he keeps working.
+Er ist müde. Trotzdem arbeitet er weiter. = He is tired. He keeps working nevertheless.
+Obwohl es regnete, sind wir spazieren gegangen. = Although it was raining, we went for a walk.
+Das Gehalt ist zwar gut, aber die Arbeitszeiten sind schlecht. = The salary is good, admittedly, but the hours are bad.
+Trotz des Stresses ist sie zufrieden. = Despite the stress she is satisfied.
+Ich hatte keine Zeit. Dennoch habe ich ihm geholfen. = I had no time. Nevertheless I helped him.
+Obwohl sie Teilzeit arbeitet, hat sie viel zu tun. = Although she works part-time, she has a lot to do.
+Nach Feierabend kann ich nicht abschalten. = I can't switch off after work.
+Er macht viele Überstunden, obwohl er nicht muss. = He does a lot of overtime although he doesn't have to.
+Es ist schwer, Nein zu sagen. Trotzdem muss ich es lernen. = It's hard to say no. Still, I have to learn it.
+#read2
+Immer erreichbar?
+Durch Smartphones und Homeoffice hat sich die Arbeitswelt stark verändert. Viele Beschäftigte lesen ihre E-Mails, obwohl sie längst Feierabend haben. Eine Studie zeigt: Fast die Hälfte der Angestellten in Deutschland ist auch in der Freizeit für den Arbeitgeber erreichbar. Zwar finden viele die Flexibilität gut, aber sie fühlen sich trotzdem häufiger gestresst. „Obwohl ich zu Hause bin, bin ich nicht wirklich zu Hause“, sagt Katrin, 41, Projektmanagerin. „Mein Kopf ist immer im Büro.“ Ärzte warnen: Wer nie abschalten kann, riskiert Schlafstörungen und im schlimmsten Fall ein Burn-out. Einige Firmen reagieren darauf. Bei manchen großen Unternehmen werden abends keine E-Mails mehr an die Mitarbeiter weitergeleitet. Andere haben feste Regeln: Nach 19 Uhr erwartet niemand eine Antwort. Trotz dieser Maßnahmen bleibt die Verantwortung oft beim Einzelnen. Experten raten, das Diensthandy am Abend bewusst auszuschalten und klare Grenzen zu setzen. Wichtig ist auch ein Ausgleich: Sport, Hobbys, ein Ehrenamt oder einfach Zeit mit der Familie. Katrin hat inzwischen eine Regel für sich gefunden: „Obwohl es mir am Anfang schwerfiel, lasse ich das Diensthandy jetzt am Wochenende im Schrank. Und die Firma existiert trotzdem noch.“
+#dialog
+Leila: Ravi, es ist schon zehn Uhr abends. Warum arbeitest du noch?
+Ravi: Obwohl ich den ganzen Tag gearbeitet habe, bin ich nicht fertig geworden.
+Leila: Du bist doch erst seit drei Wochen in der neuen Firma. Erwartet dein Chef das?
+Ravi: Nein, eigentlich nicht. Trotzdem will ich einen guten Eindruck machen.
+Leila: Das verstehe ich. Aber wenn du jetzt schon jeden Abend arbeitest, wird das zur Gewohnheit.
+Ravi: Du hast zwar recht, aber das Projekt ist wirklich wichtig.
+Leila: Dann sprich mit deinem Chef darüber. Obwohl es schwer ist: Du musst lernen, Prioritäten zu setzen.
+#dq
+Warum arbeitet Ravi noch um zehn Uhr abends? || Er ist nicht fertig geworden (und will einen guten Eindruck machen).
+Erwartet der Chef, dass Ravi abends arbeitet? || Nein, eigentlich nicht.
+Was rät Leila ihm? || Mit dem Chef zu sprechen und Prioritäten zu setzen.
+#task
+___ es kalt ist, geht er schwimmen. (obwohl/trotzdem) || Obwohl
+Es ist kalt. ___ geht er schwimmen. (obwohl/trotzdem) || Trotzdem
+Verbinde mit obwohl: Sie ist krank. Sie geht zur Arbeit. || Obwohl sie krank ist, geht sie zur Arbeit.
+Verbinde mit trotzdem: Er hat wenig Geld. Er fährt in Urlaub. || Er hat wenig Geld. Trotzdem fährt er in Urlaub.
+Verbinde mit obwohl (Satz 2): Wir gingen spazieren. Es regnete. || Wir gingen spazieren, obwohl es regnete.
+Genitiv: ___ des Regens gingen wir spazieren. || Trotz
+zwar … aber: Die Wohnung ist ___ klein, ___ sie ist günstig. || zwar / aber
+Satzstellung: Trotzdem ___ ich mitkommen. (wollen) || will
+weil oder obwohl? Er ist glücklich, ___ er wenig verdient. || obwohl
+Fehler? „Obwohl er ist müde, er arbeitet.“ || Obwohl er müde ist, arbeitet er.
+
+@@ 37
+#vocab
+deshalb = therefore
+deswegen = that's why
+darum = that's why
+daher = hence
+sonst = otherwise
+also = so, therefore
+folglich = consequently
+die Folge, -n = consequence
+die Ursache, -n = cause
+der Treibhauseffekt = greenhouse effect
+die Emission, -en = emission
+erneuerbare Energien (Pl.) = renewable energy
+die Solaranlage, -n = solar system (panels)
+das Elektroauto, -s = electric car
+der Fleischkonsum = meat consumption
+die Mehrwegflasche, -n = returnable bottle
+das Pfand = deposit (on bottles)
+nachhaltig = sustainable
+#ex
+Der Bus ist billiger. Deshalb fahre ich mit dem Bus. = The bus is cheaper. That's why I take the bus.
+Es gibt oft Stau, deswegen fahre ich mit dem Fahrrad. = There are often traffic jams, so I cycle.
+Beeil dich, sonst verpassen wir den Zug! = Hurry up, otherwise we'll miss the train!
+Plastik ist schlecht für die Umwelt, darum kaufe ich Mehrwegflaschen. = Plastic is bad for the environment, that's why I buy returnable bottles.
+Wir trennen den Müll, sonst müssen wir mehr bezahlen. = We separate our rubbish, otherwise we have to pay more.
+Die Preise sind gestiegen, daher fahren viele weniger Auto. = Prices have risen, hence many people drive less.
+Ich habe kein Auto, also nehme ich die Bahn. = I don't have a car, so I take the train.
+Der Klimawandel hat viele Ursachen. = Climate change has many causes.
+Auf Mehrwegflaschen gibt es Pfand. = There's a deposit on returnable bottles.
+Wir sollten nachhaltiger leben. = We should live more sustainably.
+#read2
+Müll trennen – eine deutsche Wissenschaft?
+Wer neu in Deutschland ist, wundert sich oft über die vielen Mülltonnen. In den meisten Häusern gibt es mindestens vier: die gelbe Tonne für Verpackungen aus Plastik und Metall, die blaue für Papier, die braune für Bioabfälle und die schwarze oder graue für den Restmüll. Glas bringt man zu großen Containern auf der Straße, getrennt nach Weiß-, Grün- und Braunglas. Warum ist das so kompliziert? Deutschland produziert pro Kopf sehr viel Verpackungsmüll. Deshalb hat man schon früh begonnen, Wertstoffe zu sammeln und zu recyceln. Aus altem Papier wird neues Papier, aus Bioabfällen entsteht Kompost oder Biogas. Wer den Müll nicht richtig trennt, verursacht Probleme: Die Sortieranlagen müssen mehr arbeiten, und manchmal müssen alle Mieter mehr Müllgebühren bezahlen. Deswegen achten Hausverwaltungen und Nachbarn genau darauf. Ein anderes typisch deutsches System ist das Pfand. Für viele Flaschen und Dosen bezahlt man beim Kauf 8 bis 25 Cent extra. Bringt man sie zurück in den Supermarkt, bekommt man das Geld wieder. Darum liegen in Deutschland vergleichsweise wenige Flaschen auf der Straße. Allerdings gibt es auch Kritik: Viele Menschen kaufen trotzdem zu viel Verpackung. Am besten wäre es also, Müll gar nicht erst entstehen zu lassen.
+#dialog
+Frau Lindner: Junger Mann! Sie haben schon wieder den Karton in die schwarze Tonne geworfen!
+Jonas: Oh, Entschuldigung. Wohin gehört er denn?
+Frau Lindner: In die blaue Tonne, das ist doch Papier! Sonst bekommen wir Ärger mit der Hausverwaltung.
+Jonas: Sie haben recht. Ich mache das sofort.
+Frau Lindner: Und die Joghurtbecher gehören in die gelbe Tonne. Aber bitte leer!
+Jonas: Und die leeren Flaschen?
+Frau Lindner: Die mit Pfand bringen Sie in den Supermarkt. Deswegen bezahlen Sie ja das Pfand.
+Jonas: Danke, Frau Lindner. Ohne Sie wäre ich verloren.
+#dq
+In welche Tonne gehört der Karton? || In die blaue Tonne (Papier).
+Wohin gehören die Joghurtbecher? || In die gelbe Tonne (leer).
+Was macht man mit Pfandflaschen? || Man bringt sie in den Supermarkt.
+#task
+Es regnet. ___ nehme ich einen Schirm. (deshalb/obwohl) || Deshalb
+Beeil dich, ___ kommen wir zu spät! (sonst/deshalb) || sonst
+Verbinde mit deshalb: Ich bin krank. Ich bleibe zu Hause. || Ich bin krank, deshalb bleibe ich zu Hause.
+Verbinde mit sonst: Du musst lernen. Du bestehst die Prüfung nicht. || Du musst lernen, sonst bestehst du die Prüfung nicht.
+Verbinde mit darum: Er hat keine Zeit. Er kommt nicht mit. || Er hat keine Zeit, darum kommt er nicht mit.
+Satzstellung: Deswegen ___ wir mit dem Zug. (fahren) || fahren
+weil → deshalb: Ich fahre Fahrrad, weil es gesund ist. → Es ist gesund, ___ ___ ich Fahrrad. || deshalb fahre
+Pfand: Wo bekommt man das Pfand zurück? Im ___. || Supermarkt
+also oder sonst? Ich habe Hunger, ___ koche ich jetzt. || also
+Fehler? „Ich habe kein Geld, deshalb ich bleibe zu Hause.“ || Ich habe kein Geld, deshalb bleibe ich zu Hause.
+
+@@ 38
+#vocab
+sowohl … als auch = both … and
+weder … noch = neither … nor
+entweder … oder = either … or
+nicht nur … sondern auch = not only … but also
+je … desto = the … the
+zwar … aber = admittedly … but
+einerseits … andererseits = on the one hand … on the other hand
+der Beitrag, ¨e = post, contribution
+teilen = to share
+liken = to like (online)
+der Kommentar, -e = comment
+die Falschmeldung, -en = fake news
+der Podcast, -s = podcast
+der Bildschirm, -e = screen
+die Werbung = advertising
+das Abonnement (Abo), -s = subscription
+kündigen = to cancel (a subscription)
+online / offline = online / offline
+#ex
+Ich lese Nachrichten sowohl in der Zeitung als auch im Internet. = I read the news both in the paper and online.
+Er hat weder einen Fernseher noch ein Radio. = He has neither a TV nor a radio.
+Entweder wir streamen einen Film oder wir gehen ins Kino. = Either we stream a film or we go to the cinema.
+Soziale Medien sind nicht nur unterhaltsam, sondern auch informativ. = Social media are not only entertaining but also informative.
+Einerseits ist das Internet praktisch, andererseits macht es süchtig. = On the one hand the internet is practical, on the other it's addictive.
+Je mehr ich am Handy bin, desto müder werde ich. = The more I'm on my phone, the more tired I get.
+Diese Nachricht ist eine Falschmeldung, teile sie nicht! = This news is fake, don't share it!
+Ich habe mein Streaming-Abo gekündigt. = I've cancelled my streaming subscription.
+Ich höre jeden Morgen einen Podcast auf Deutsch. = I listen to a podcast in German every morning.
+Wie viele Stunden am Tag verbringst du vor dem Bildschirm? = How many hours a day do you spend in front of a screen?
+#read2
+Digital Detox – eine Woche ohne Smartphone
+Die Journalistin Sara Becker hat ein Experiment gemacht: eine Woche ganz ohne Smartphone. „Ich war weder auf Instagram noch auf WhatsApp. Ich habe mein Handy einfach in eine Schublade gelegt.“ Der erste Tag war schwierig. Sara griff ständig in ihre Tasche, obwohl das Handy gar nicht da war. Sie wusste weder, wie spät es war, noch, wie das Wetter wird. „Ich musste mir sogar einen Wecker kaufen!“ Am zweiten Tag merkte sie, wie oft sie früher gewartet hatte, ohne sich zu langweilen: Sie hatte einfach auf das Handy geschaut. Jetzt beobachtete sie in der U-Bahn die Menschen, las ein Buch oder dachte nach. Nicht nur ihre Konzentration wurde besser, sondern auch ihr Schlaf. „Je weniger Zeit ich vor dem Bildschirm verbrachte, desto ruhiger wurde ich.“ Natürlich gab es auch Probleme. Einerseits genoss sie die Ruhe, andererseits verpasste sie eine Einladung, die nur in einer Gruppe verschickt worden war. Und ohne Navigation verlief sie sich zweimal in der Stadt. Nach einer Woche nahm Sara das Handy wieder aus der Schublade. Ihr Fazit: „Ich will nicht ohne Smartphone leben. Aber ich nutze es jetzt bewusster. Entweder ich arbeite damit, oder es liegt in einem anderen Zimmer.“
+#dialog
+Mia: Hast du gehört? Morgen soll der Unterricht an der Uni ausfallen.
+Jonas: Wer sagt das?
+Mia: Das steht in einem Beitrag, den alle teilen.
+Jonas: Hm. Steht das sowohl auf der Webseite der Uni als auch in der offiziellen E-Mail?
+Mia: Weder noch, glaube ich. Nur in diesem Beitrag.
+Jonas: Dann wäre ich vorsichtig. Je mehr Leute so etwas teilen, desto glaubwürdiger wirkt es. Aber es kann eine Falschmeldung sein.
+Mia: Du hast recht. Entweder ich schreibe meiner Professorin, oder ich gehe einfach hin.
+#dq
+Was soll morgen passieren? || Der Unterricht an der Uni soll ausfallen.
+Wo steht die Information? || Nur in einem Beitrag in den sozialen Medien (nicht auf der Webseite / in der E-Mail).
+Was will Mia tun? || Entweder ihrer Professorin schreiben oder einfach hingehen.
+#task
+Er spricht ___ Englisch ___ Französisch. (beides) || sowohl / als auch
+Ich habe ___ Zeit ___ Geld. (nichts davon) || weder / noch
+___ du kommst mit, ___ du bleibst zu Hause. || Entweder / oder
+Sie ist ___ klug, ___ auch sehr nett. || nicht nur / sondern
+Je länger ich lerne, ___ besser verstehe ich. || desto
+Je ___ (viel) du übst, desto sicherer wirst du. || mehr
+___ ist die Stadt teuer, andererseits gibt es viele Jobs. || Einerseits
+Satzstellung nach desto: Je später es ist, desto müder ___ ich. (sein) || bin
+Verbinde: Er trinkt keinen Kaffee. Er trinkt keinen Tee. (weder … noch) || Er trinkt weder Kaffee noch Tee.
+Fehler? „Je mehr ich lerne, desto ich weiß mehr.“ || Je mehr ich lerne, desto mehr weiß ich.
+
+@@ 39
+#vocab
+werden + Partizip II = passive
+wurde + Partizip II = passive (past)
+von (+ Dat.) = by (agent)
+erfinden = to invent
+entdecken = to discover
+gründen = to found
+verkaufen = to sell
+verpacken = to pack
+transportieren = to transport
+kontrollieren = to check
+der Rohstoff, -e = raw material
+das Produkt, -e = product
+das Werk, -e = plant, works
+der Ablauf, ¨e = process
+die Maschine, -n = machine
+die Qualität = quality
+der Kunde, -n / die Kundin, -nen = customer
+hergestellt in = made in
+#ex
+Das Auto wird in Wolfsburg hergestellt. = The car is made in Wolfsburg.
+Die Pakete werden morgen geliefert. = The parcels will be delivered tomorrow.
+Der Brief wurde gestern abgeschickt. = The letter was sent yesterday.
+Die Kartoffeln werden zuerst geschält. = The potatoes are peeled first.
+Das Buch wurde von einer jungen Autorin geschrieben. = The book was written by a young author.
+Hier wird nicht geraucht! = There is no smoking here!
+Die Firma wurde 1950 gegründet. = The company was founded in 1950.
+Der Fehler wurde schnell entdeckt. = The mistake was quickly discovered.
+Am Ende wird die Qualität kontrolliert. = At the end the quality is checked.
+Wann wurde das Telefon erfunden? = When was the telephone invented?
+#read2
+Wie wird Schokolade gemacht?
+Schokolade gehört zu den beliebtesten Süßigkeiten der Deutschen. Aber wie wird sie eigentlich hergestellt? Der wichtigste Rohstoff ist Kakao. Kakaobäume wachsen nur in tropischen Ländern, zum Beispiel in der Elfenbeinküste, in Ghana oder in Ecuador. Die Früchte werden mit der Hand geerntet und geöffnet. Dann werden die Kakaobohnen einige Tage fermentiert. Dabei entsteht das typische Aroma. Danach werden die Bohnen in der Sonne getrocknet und in Säcken nach Europa transportiert. In der Fabrik werden sie zuerst gereinigt und geröstet. Anschließend werden die Bohnen gebrochen und zu einer flüssigen Masse gemahlen. Für Milchschokolade wird diese Masse mit Zucker, Milchpulver und Kakaobutter gemischt. Die Mischung wird stundenlang gerührt, damit die Schokolade schön glatt wird. Dieser Schritt wurde 1879 von dem Schweizer Rodolphe Lindt erfunden. Zum Schluss wird die Schokolade in Formen gegossen, gekühlt und verpackt. Ein Problem wird oft vergessen: Auf vielen Kakaoplantagen werden die Arbeiter sehr schlecht bezahlt. Deshalb wird empfohlen, Schokolade mit einem Fairtrade-Siegel zu kaufen.
+#dialog
+Führerin: Willkommen in unserer Brauerei! Hier wird seit 1832 Bier gebraut.
+Ravi: Wie wird das Bier hergestellt?
+Führerin: Zuerst wird das Malz mit Wasser gemischt und erhitzt. Dann wird Hopfen dazugegeben.
+Mia: Und wann kommt die Hefe dazu?
+Führerin: Nachdem die Flüssigkeit abgekühlt wurde. Dann gärt das Bier einige Wochen.
+Ravi: Wird das Bier hier auch abgefüllt?
+Führerin: Ja, in der Halle nebenan werden täglich zwanzigtausend Flaschen abgefüllt.
+Mia: Und wohin wird es geliefert?
+Führerin: Vor allem in die Region. Aber ein Teil wird sogar nach Japan exportiert.
+#dq
+Seit wann wird in der Brauerei Bier gebraut? || Seit 1832.
+Wann kommt die Hefe dazu? || Nachdem die Flüssigkeit abgekühlt wurde.
+Wie viele Flaschen werden täglich abgefüllt? || Zwanzigtausend.
+#task
+Passiv Präsens: Man repariert das Auto. → Das Auto ___ ___. || wird repariert
+Passiv Präsens: Man trennt den Müll. → Der Müll ___ ___. || wird getrennt
+Passiv Präsens: Man baut neue Häuser. → Neue Häuser ___ ___. || werden gebaut
+Passiv Präteritum: Man fand den Schlüssel. → Der Schlüssel ___ ___. || wurde gefunden
+Passiv Präteritum: Man gründete die Firma 1990. → Die Firma ___ 1990 ___. || wurde / gegründet
+Passiv mit von: Der Arzt untersucht den Patienten. → Der Patient wird ___ ___ Arzt untersucht. || von dem
+Passiv Präsens: Hier ___ Deutsch ___. (sprechen) || wird / gesprochen
+Aktiv oder Passiv? Das Paket ___ morgen geliefert. || wird
+Passiv mit Modalverb: Der Brief muss heute ___ ___. (schicken) || geschickt werden
+Fehler? „Das Haus wird 1900 gebaut wurde.“ || Das Haus wurde 1900 gebaut.
+
+@@ 40
+#vocab
+wegen (+ Gen.) = because of
+trotz (+ Gen.) = despite
+während (+ Gen.) = during
+statt / anstatt (+ Gen.) = instead of
+innerhalb (+ Gen.) = within
+außerhalb (+ Gen.) = outside of
+die Schlagzeile, -n = headline
+der Bericht, -e = report
+die Ursache, -n = cause
+die Polizei = police
+die Feuerwehr = fire brigade
+der Rettungsdienst = ambulance service
+verletzt = injured
+gesperrt = closed (road)
+die Umleitung, -en = diversion
+der Stromausfall, ¨e = power cut
+das Hochwasser = flood
+die Warnung, -en = warning
+#ex
+Wegen des Streiks fahren heute keine Züge. = Because of the strike there are no trains today.
+Trotz des schlechten Wetters kamen viele Besucher. = Despite the bad weather, many visitors came.
+Während der Bauarbeiten ist die Straße gesperrt. = During the construction work the road is closed.
+Statt eines Busses fährt ein Taxi. = A taxi runs instead of a bus.
+Innerhalb einer Woche müssen Sie antworten. = You must reply within a week.
+Wegen eines Stromausfalls war das Kaufhaus geschlossen. = Because of a power cut the department store was closed.
+Die Feuerwehr war schnell vor Ort. = The fire brigade was quickly on the scene.
+Wegen des Unwetters gibt es eine Warnung. = There's a warning because of the storm.
+Bitte beachten Sie die Umleitung. = Please follow the diversion.
+Der Grund des Unfalls ist noch unklar. = The cause of the accident is still unclear.
+#read2
+Lokalnachrichten
+Unwetter über Berlin: Wegen eines heftigen Gewitters ist es am Dienstagabend in mehreren Stadtteilen zu Problemen gekommen. Innerhalb einer Stunde fiel so viel Regen wie sonst in zwei Wochen. Zahlreiche Keller liefen voll, und die Feuerwehr musste über 300 Mal ausrücken. Während des Sturms stürzten mehrere Bäume auf Straßen und Gleise. Deshalb war der S-Bahn-Verkehr zwischen Ostkreuz und Erkner bis Mittwochmorgen unterbrochen. Statt der S-Bahn fuhren Ersatzbusse. Trotz des Chaos wurde niemand schwer verletzt. Eine Radfahrerin wurde von einem Ast leicht am Arm verletzt und vom Rettungsdienst behandelt. In Teilen von Köpenick gab es wegen eines umgestürzten Strommasts für etwa drei Stunden einen Stromausfall. Der Deutsche Wetterdienst hatte bereits am Nachmittag eine Warnung herausgegeben. Die Polizei bittet die Bürger, sich in den nächsten Tagen von Parks und Wäldern fernzuhalten, da wegen der beschädigten Bäume weiterhin Gefahr besteht. Für das Wochenende wird wieder sonniges Wetter erwartet.
+#dialog
+Durchsage: Sehr geehrte Fahrgäste, wegen einer Signalstörung hat der RE1 nach Frankfurt (Oder) circa vierzig Minuten Verspätung.
+Ravi: Vierzig Minuten! Ich habe um zehn einen Termin.
+Frau: Sie können auch mit der S-Bahn fahren und in Erkner umsteigen.
+Durchsage: Aufgrund von Bauarbeiten fährt die S-Bahn zwischen Ostkreuz und Erkner nicht. Bitte nutzen Sie den Ersatzverkehr mit Bussen.
+Ravi: Na toll. Trotz der Bauarbeiten gibt es also keine schnelle Alternative.
+Frau: Rufen Sie doch an und sagen Sie, dass Sie später kommen.
+Ravi: Ja, das mache ich. Wegen der Bahn bin ich diese Woche schon zum zweiten Mal zu spät.
+#dq
+Warum hat der RE1 Verspätung? || Wegen einer Signalstörung.
+Warum fährt die S-Bahn nicht? || Wegen Bauarbeiten.
+Was macht Ravi? || Er ruft an und sagt, dass er später kommt.
+#task
+___ des Regens bleiben wir zu Hause. (wegen/trotz) || Wegen
+___ der Kälte gehen wir schwimmen. (wegen/trotz) || Trotz
+Genitiv: wegen ___ Streiks (der) || des
+Genitiv: trotz ___ Hitze (die) || der
+Genitiv: während ___ Unterrichts (der) || des
+Genitiv: das Auto ___ Nachbarn (mein) || meines
+Genitiv: das Ende ___ Films (der) || des
+Statt ___ Kuchens nehme ich ein Eis. (ein) || eines
+Umformen: Weil es regnet, bleiben wir zu Hause. → ___ ___ Regens bleiben wir zu Hause. || Wegen des
+Fehler? „Wegen dem schlechten Wetter fällt das Fest aus.“ (schriftlich) || Wegen des schlechten Wetters fällt das Fest aus.
+
+@@ 41
+#vocab
+werden (wird) = will, to become
+die Prognose, -n = forecast
+die Entwicklung, -en = development
+künstliche Intelligenz (KI) = artificial intelligence
+der Roboter, - = robot
+die Digitalisierung = digitalisation
+ersetzen = to replace
+entstehen = to arise
+sich entwickeln = to develop
+voraussichtlich = probably, expected
+vermutlich = presumably
+bestimmt = certainly
+eines Tages = one day
+in zehn Jahren = in ten years
+der Ruhestand = retirement
+die Familie gründen = to start a family
+sich selbstständig machen = to become self-employed
+der Vorsatz, ¨e = resolution
+#ex
+Ich werde nächstes Jahr die B1-Prüfung machen. = I will take the B1 exam next year.
+Es wird morgen regnen. = It will rain tomorrow.
+Er wird wohl schon zu Hause sein. = He'll probably be at home already.
+In Zukunft werden Roboter viele Arbeiten übernehmen. = In future robots will take over a lot of work.
+Ich verspreche dir, ich werde pünktlich sein. = I promise you, I'll be on time.
+Sie wird Ärztin. = She is going to be a doctor.
+Was wirst du nach dem Studium machen? = What will you do after your studies?
+Das wird schon klappen! = It'll work out!
+Wir werden sehen. = We'll see.
+Eines Tages werde ich mich selbstständig machen. = One day I'll become self-employed.
+#read2
+Die Arbeitswelt von morgen
+Wie werden wir in zwanzig Jahren arbeiten? Diese Frage beschäftigt Wissenschaftler, Politiker und Unternehmen. Fest steht: Die Digitalisierung wird viele Berufe verändern. Experten erwarten, dass künstliche Intelligenz einfache Routineaufgaben übernehmen wird, zum Beispiel in der Buchhaltung, im Kundenservice oder in Lagern. Viele Menschen haben deshalb Angst, dass Maschinen sie ersetzen werden. Doch die meisten Forscher sind optimistischer. Sie glauben, dass gleichzeitig neue Berufe entstehen werden, die wir heute noch gar nicht kennen. Vor zwanzig Jahren gab es schließlich auch noch keine App-Entwickler oder Social-Media-Manager. Wichtiger als ein bestimmter Beruf wird in Zukunft die Fähigkeit sein, ständig Neues zu lernen. Auch der Arbeitsort wird sich verändern: Viele werden voraussichtlich teilweise von zu Hause arbeiten. Und die Menschen werden vermutlich länger arbeiten, weil die Gesellschaft älter wird. Manche Berufe werden aber bestimmt bleiben: Pflegekräfte, Erzieher oder Handwerker werden auch in Zukunft dringend gebraucht. „Ein Roboter wird keine Heizung reparieren und kein Kind trösten“, sagt die Zukunftsforscherin Anja Helm. Ihr Rat an junge Menschen: „Lernt Sprachen, lernt mit Technik umzugehen – und bleibt neugierig.“
+#dialog
+Mia: Was wirst du machen, wenn du mit dem Studium fertig bist?
+Tomás: Ich werde wahrscheinlich ein Jahr in Deutschland arbeiten. Und dann sehen wir weiter.
+Mia: Wirst du nach Brasilien zurückgehen?
+Tomás: Vielleicht eines Tages. Meine Eltern werden langsam älter.
+Mia: Ich werde bestimmt in Freiburg bleiben. Ich möchte Lehrerin werden.
+Tomás: Du wirst eine super Lehrerin! Du erklärst so gut.
+Mia: Danke! Und wer weiß, vielleicht werde ich dich in Brasilien besuchen.
+Tomás: Das wirst du! Ich zeige dir dann São Paulo.
+#dq
+Was wird Tomás nach dem Studium wahrscheinlich machen? || Ein Jahr in Deutschland arbeiten.
+Warum denkt er an Brasilien? || Seine Eltern werden älter.
+Was möchte Mia werden? || Lehrerin.
+#task
+Futur I: Ich ___ morgen anrufen. || werde
+Futur I: Du ___ das schaffen! || wirst
+Futur I: Es ___ bald regnen. || wird
+Futur I: Wir ___ im Sommer heiraten. || werden
+Futur I: ___ ihr zur Party kommen? || Werdet
+Futur I: Sie (Pl.) ___ uns besuchen. || werden
+Baue Futur I: ich / nächstes Jahr / nach Japan / fliegen || Ich werde nächstes Jahr nach Japan fliegen.
+Vermutung: Er ist bestimmt krank. → Er ___ wohl krank ___. || wird / sein
+werden als Vollverb: Sie möchte Ärztin werden. → Sie ___ Ärztin. || wird
+Fehler? „Ich werde morgen gehe ins Kino.“ || Ich werde morgen ins Kino gehen.
+
+@@ 42
+#vocab
+je … desto / umso = the … the
+die Gliederung, -en = structure, outline
+die Einleitung, -en = introduction
+der Hauptteil, -e = main part
+der Schluss = conclusion
+zunächst = first of all
+anschließend = afterwards
+abschließend = finally, to conclude
+Ich möchte euch heute … vorstellen. = Today I'd like to present … to you.
+Wie ihr auf der Folie sehen könnt, … = As you can see on the slide, …
+Das bringt mich zum nächsten Punkt. = That brings me to the next point.
+Zusammenfassend kann man sagen, … = In summary one can say …
+Vielen Dank für eure Aufmerksamkeit. = Thank you for your attention.
+Gibt es noch Fragen? = Are there any more questions?
+die Integration = integration
+der Alltag = everyday life
+die Gemeinsamkeit, -en = similarity, common ground
+der Unterschied, -e = difference
+#ex
+Je öfter du sprichst, desto sicherer wirst du. = The more often you speak, the more confident you get.
+Je früher wir losfahren, umso weniger Stau gibt es. = The earlier we set off, the less traffic there is.
+Ich möchte euch heute mein Heimatland vorstellen. = Today I'd like to present my home country to you.
+Zunächst erzähle ich etwas über die Geschichte. = First of all I'll tell you something about the history.
+Wie ihr auf dieser Folie sehen könnt, ist Indien sehr groß. = As you can see on this slide, India is very big.
+Das bringt mich zum nächsten Punkt: dem Essen. = That brings me to the next point: food.
+Abschließend möchte ich von meinen Erfahrungen berichten. = Finally, I'd like to report on my experiences.
+Zusammenfassend kann man sagen, dass es viele Gemeinsamkeiten gibt. = In summary, one can say that there are many similarities.
+Je länger ich hier lebe, desto besser verstehe ich die Kultur. = The longer I live here, the better I understand the culture.
+Vielen Dank für eure Aufmerksamkeit! Gibt es noch Fragen? = Thank you for your attention! Any questions?
+#read2
+Ravis Präsentation: Mein Weg nach Deutschland
+„Liebe Kursteilnehmer, liebe Frau Krüger, ich möchte euch heute erzählen, wie mein Leben in Deutschland in den letzten zwei Jahren war. Meine Präsentation hat drei Teile: zuerst meine Ankunft, dann die größten Schwierigkeiten und zum Schluss, was ich gelernt habe. Als ich vor zwei Jahren in Berlin ankam, sprach ich nur ein paar Sätze Deutsch. Ich wohnte in einer WG und arbeitete in einem englischsprachigen Team. Deshalb habe ich am Anfang wenig Deutsch gesprochen. Das bringt mich zum ersten Problem: Je weniger ich gesprochen habe, desto unsicherer wurde ich. Das zweite Problem war die Bürokratie. Für fast alles brauchte man einen Termin, ein Formular und viel Geduld. Wie ihr auf der Folie seht, habe ich im ersten Jahr elf Mal eine Behörde besucht! Das dritte Problem war das Wetter. Im November wird es hier schon um vier Uhr dunkel. Aber es gab auch viele schöne Erfahrungen. Meine Nachbarn, meine Mitbewohner und dieser Kurs haben mir sehr geholfen. Je mehr Menschen ich kennengelernt habe, desto mehr habe ich mich zu Hause gefühlt. Heute arbeite ich in einer deutschen Firma und spreche jeden Tag Deutsch. Zusammenfassend kann ich sagen: Der Anfang war schwer, aber es hat sich gelohnt. Mein Tipp: Habt keine Angst vor Fehlern. Vielen Dank für eure Aufmerksamkeit. Habt ihr noch Fragen?“
+#dialog
+Aiko: Danke, Ravi, das war sehr interessant. Darf ich eine Frage stellen?
+Ravi: Natürlich, gern.
+Aiko: Was war für dich der wichtigste Moment beim Deutschlernen?
+Ravi: Ich glaube, als ich zum ersten Mal ein ganzes Telefonat mit dem Vermieter auf Deutsch geführt habe.
+Aiko: Und was vermisst du am meisten aus Indien?
+Ravi: Das Essen und meine Familie. Aber je besser ich koche, desto weniger vermisse ich das Essen.
+Frau Krüger: Sehr schön. Ravi, du hast frei gesprochen und deine Präsentation war klar gegliedert. Wirklich ausgezeichnet!
+#dq
+Was war für Ravi der wichtigste Moment beim Deutschlernen? || Sein erstes ganzes Telefonat mit dem Vermieter auf Deutsch.
+Was vermisst Ravi am meisten? || Das Essen und seine Familie.
+Was lobt Frau Krüger? || Er hat frei gesprochen und die Präsentation war klar gegliedert.
+#task
+Je mehr du liest, ___ mehr Wörter kennst du. || desto
+Je ___ (früh) du kommst, desto besser. || früher
+Je älter man wird, desto ___ ist man. (erfahren) || erfahrener
+Umformen: Du übst viel. Du wirst gut. → Je mehr du übst, desto ___ ___ du. || besser wirst
+Präsentation: ___ möchte ich über die Geschichte sprechen. (zuerst, formell) || Zunächst
+Präsentation: Das bringt mich zum nächsten ___. || Punkt
+Präsentation: ___ kann man sagen, dass … (zusammenfassen) || Zusammenfassend
+Präsentation: Vielen Dank für eure ___. || Aufmerksamkeit
+Satzstellung: Je länger der Film dauert, desto müder ___ ich. (werden) || werde
+Fehler? „Je mehr ich arbeite, desto ich bin müder.“ || Je mehr ich arbeite, desto müder bin ich.

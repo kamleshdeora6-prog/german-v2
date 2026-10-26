@@ -1,0 +1,486 @@
+@@ 43
+#vocab
+er sei = he is (Konj. I)
+er habe = he has (Konj. I)
+er werde = he will (Konj. I)
+er könne = he can (Konj. I)
+er müsse = he must (Konj. I)
+die Pressemitteilung, -en = press release
+die Pressekonferenz, -en = press conference
+der Korrespondent, -en = correspondent
+die Agentur, -en = (news) agency
+bestätigen = to confirm
+dementieren = to deny (officially)
+betonen = to emphasise
+ankündigen = to announce
+einräumen = to admit, to concede
+warnen vor = to warn of
+fordern = to demand
+zufolge (nachgestellt, + Dat.) = according to
+nach eigenen Angaben = by his/her own account
+die Verhandlung, -en = negotiation
+die Einigung, -en = agreement
+#ex
+Der Minister sagte, er sei mit dem Ergebnis zufrieden. = The minister said he was satisfied with the result.
+Die Firma teilte mit, sie habe keine Kenntnis von dem Vorfall. = The company stated it had no knowledge of the incident.
+Ein Sprecher betonte, man werde die Vorwürfe prüfen. = A spokesperson stressed that the allegations would be examined.
+Laut Polizei sei niemand verletzt worden. = According to the police, nobody was injured.
+Der Zeuge behauptete, er habe den Täter genau gesehen. = The witness claimed he had seen the perpetrator clearly.
+Die Gewerkschaft fordert, die Löhne müssten steigen. = The union demands that wages must rise.
+Sie fragte, ob die Lieferung pünktlich ankomme. = She asked whether the delivery would arrive on time.
+Er sagte, sie hätten keine Zeit gehabt. = He said they had had no time.
+Den Angaben zufolge wurde eine Einigung erzielt. = According to the information, an agreement was reached.
+Die Ministerin räumte ein, es habe Fehler gegeben. = The minister admitted there had been mistakes.
+#read2
+Tarifstreit bei der Bahn beigelegt
+Nach wochenlangen Verhandlungen haben sich die Deutsche Bahn und die Gewerkschaft der Lokführer auf einen neuen Tarifvertrag geeinigt. Wie beide Seiten am Freitag in einer gemeinsamen Pressekonferenz mitteilten, sollen die Löhne in zwei Stufen um insgesamt elf Prozent steigen. Außerdem werde die Wochenarbeitszeit für Schichtarbeiter schrittweise von 38 auf 36 Stunden reduziert. Der Gewerkschaftsvorsitzende sagte, man habe „ein historisches Ergebnis“ erreicht. Die Beschäftigten hätten lange genug auf eine faire Bezahlung gewartet. Ohne die Streiks wäre diese Einigung nicht möglich gewesen, betonte er. Die Personalvorständin der Bahn räumte ein, der Kompromiss sei für das Unternehmen teuer. Man sei jedoch froh, dass die Fahrgäste nun Planungssicherheit hätten. Weitere Streiks werde es bis zum Ende der Laufzeit nicht geben. Verbraucherschützer begrüßten die Einigung, warnten aber vor steigenden Ticketpreisen. Ein Sprecher des Fahrgastverbandes erklärte, die Kosten dürften nicht allein an die Kunden weitergegeben werden. Die Bahn wollte sich dazu zunächst nicht äußern. Nach Angaben des Unternehmens waren durch die Streiks in den vergangenen Monaten mehr als zwei Millionen Reisende betroffen. Der Vertrag soll rückwirkend zum ersten des Monats gelten und eine Laufzeit von 26 Monaten haben. Ökonomen zufolge könnte der Abschluss auch Signalwirkung für andere Branchen haben, in denen derzeit verhandelt wird.
+#dialog
+Moderatorin: Frau Dr. Seidel, die Regierung sagt, die Inflation sei unter Kontrolle. Stimmt das?
+Dr. Seidel: Zum Teil. Die Zahlen sind zwar gesunken, aber viele Haushalte merken davon noch wenig.
+Moderatorin: Der Finanzminister hat gestern erklärt, es werde keine weiteren Entlastungen geben.
+Dr. Seidel: Das halte ich für problematisch. Er sagte ja auch, man müsse die Schulden reduzieren. Das ist richtig, aber nicht auf Kosten der Schwächsten.
+Moderatorin: Kritiker behaupten, die Entlastungen hätten die Inflation sogar verstärkt.
+Dr. Seidel: Einige Ökonomen sehen das so. Die Studienlage ist aber nicht eindeutig.
+Moderatorin: Was würden Sie der Regierung raten?
+Dr. Seidel: Gezielte Hilfe für Menschen mit kleinen Einkommen statt Geld für alle.
+#dq
+Was sagt die Regierung über die Inflation? || Sie sei unter Kontrolle.
+Was hat der Finanzminister angekündigt? || Es werde keine weiteren Entlastungen geben.
+Was rät Dr. Seidel? || Gezielte Hilfe für Menschen mit kleinen Einkommen statt Geld für alle.
+#task
+Indirekte Rede: Er sagt: „Ich bin krank.“ → Er sagt, er ___ krank. || sei
+Indirekte Rede: Sie sagt: „Ich habe keine Zeit.“ → Sie sagt, sie ___ keine Zeit. || habe
+Indirekte Rede: Er sagt: „Ich komme morgen.“ → Er sagt, er ___ morgen. || komme
+Indirekte Rede: Sie sagen: „Wir haben das Geld.“ → Sie sagen, sie ___ das Geld. (Ersatzform) || hätten
+Indirekte Rede: Er sagt: „Ich werde helfen.“ → Er sagt, er ___ helfen. || werde
+Indirekte Rede Vergangenheit: Sie sagt: „Ich habe ihn gesehen.“ → Sie sagt, sie ___ ihn gesehen. || habe
+Indirekte Rede Vergangenheit: Er sagt: „Ich bin gefahren.“ → Er sagt, er ___ gefahren. || sei
+Indirekte Frage: Er fragt: „Kommst du?“ → Er fragt, ___ ich ___. || ob / komme
+Indirekte Aufforderung: Sie sagt: „Warte!“ → Sie sagt, ich ___ warten. || solle
+Fehler? „Der Sprecher sagte, die Firma ist bankrott sei.“ || Der Sprecher sagte, die Firma sei bankrott.
+
+@@ 44
+#vocab
+die steigenden Preise = the rising prices
+das gestohlene Fahrrad = the stolen bicycle
+die zu erledigende Aufgabe = the task to be done
+die Gebrauchsanweisung, -en = instructions for use
+die Garantie, -n = guarantee
+der Hersteller, - = manufacturer
+die Inhaltsstoffe (Pl.) = ingredients
+das Haltbarkeitsdatum = best-before date
+umweltschonend = environmentally friendly
+wiederverwendbar = reusable
+recycelt = recycled
+handgefertigt = handmade
+energiesparend = energy-saving
+wasserdicht = waterproof
+leistungsstark = powerful
+die Bewertung, -en = review, rating
+die Reklamation, -en = complaint
+zurücksenden = to send back
+fehlerhaft = faulty
+beschädigt = damaged
+#ex
+Die steigenden Mieten sind ein großes Problem. = The rising rents are a big problem.
+Das reparierte Fahrrad fährt wieder gut. = The repaired bike runs well again.
+Die lachenden Kinder spielten im Garten. = The laughing children played in the garden.
+Bitte senden Sie das beschädigte Gerät zurück. = Please send back the damaged device.
+Der seit Jahren geplante Umbau beginnt endlich. = The renovation planned for years is finally starting.
+Die im Text genannten Zahlen sind veraltet. = The figures mentioned in the text are outdated.
+Wir suchen gut ausgebildete Fachkräfte. = We are looking for well-trained specialists.
+Das ist ein schnell wachsender Markt. = That's a rapidly growing market.
+Die Rücksendung des fehlerhaften Produkts ist kostenlos. = Returning the faulty product is free of charge.
+Die zu erledigenden Aufgaben stehen auf der Liste. = The tasks to be done are on the list.
+#read2
+Produkttest: Der Rucksack „Urban Pro“
+Gesucht wird ein Rucksack für den täglichen Weg ins Büro, der auch auf Reisen eine gute Figur macht. Der von einem Berliner Start-up entwickelte „Urban Pro“ verspricht genau das. Wir haben ihn vier Wochen lang getestet. Erster Eindruck: Das aus recycelten PET-Flaschen hergestellte Material wirkt hochwertig und ist angenehm leicht. Laut Hersteller ist der Rucksack wasserdicht. Bei einem einstündigen Spaziergang im strömenden Regen blieb der Inhalt tatsächlich trocken; nur die seitlichen, nicht verschließbaren Taschen wurden nass. Positiv fällt das gut durchdachte Innenleben auf: Ein gepolstertes Fach schützt den Laptop, ein im Rücken versteckter Reißverschluss erschwert Taschendieben die Arbeit. Die verstellbaren Schultergurte sind auch bei schwerem Gepäck bequem. Weniger überzeugend ist die Größe: Für Wochenendreisende ist das angegebene Volumen von 22 Litern knapp bemessen. Wer viel Kleidung mitnehmen will, sollte zur größeren Variante greifen. Auch der Preis von 149 Euro ist nicht gerade niedrig. Dafür gewährt das Unternehmen eine Garantie von fünf Jahren und repariert beschädigte Rucksäcke kostenlos. In Zeiten steigender Müllberge ist das ein überzeugendes Argument. Unser Fazit: Ein gut verarbeiteter, umweltschonend produzierter Rucksack für Pendler, der seinen Preis weitgehend rechtfertigt. Bewertung: vier von fünf Sternen.
+#dialog
+Kundendienst: Kundenservice Elektro-Haus, mein Name ist Bauer. Was kann ich für Sie tun?
+Jonas: Guten Tag. Ich habe vor zwei Wochen einen Staubsauger bestellt. Das gelieferte Gerät ist beschädigt.
+Kundendienst: Das tut mir leid. Was genau ist beschädigt?
+Jonas: Das Gehäuse hat einen Riss, und der mitgelieferte Akku lädt nicht.
+Kundendienst: Verstehe. Haben Sie die Bestellnummer?
+Jonas: Ja, die steht auf der beigefügten Rechnung: 4471-B.
+Kundendienst: Danke. Ich schicke Ihnen einen vorausgefüllten Rücksendeschein per E-Mail. Die Rücksendung ist für Sie kostenlos.
+Jonas: Bekomme ich ein neues Gerät oder mein Geld zurück?
+Kundendienst: Wie Sie möchten. Ein Ersatzgerät könnten wir innerhalb von drei Tagen liefern.
+#dq
+Was ist mit dem Staubsauger los? || Das Gehäuse hat einen Riss und der Akku lädt nicht.
+Wo steht die Bestellnummer? || Auf der beigefügten Rechnung.
+Wie schnell kann ein Ersatzgerät kommen? || Innerhalb von drei Tagen.
+#task
+Partizip I als Adjektiv: das Kind, das schläft → das ___ Kind || schlafende
+Partizip I als Adjektiv: die Preise, die steigen → die ___ Preise || steigenden
+Partizip II als Adjektiv: das Auto, das repariert wurde → das ___ Auto || reparierte
+Partizip II als Adjektiv: der Brief, der geschrieben wurde → der ___ Brief || geschriebene
+Partizip II als Adjektiv: die Tür, die geschlossen ist → die ___ Tür || geschlossene
+Endung: mit dem ___ Gerät (beschädigen, Partizip II) || beschädigten
+Endung: ein ___ Markt (wachsen, Partizip I) || wachsender
+Erweitertes Attribut: die Häuser, die im letzten Jahr gebaut wurden → die im letzten Jahr ___ Häuser || gebauten
+Gerundiv: die Aufgabe, die erledigt werden muss → die zu ___ Aufgabe || erledigende
+Fehler? „Die gestohlen Fahrräder wurden gefunden.“ || Die gestohlenen Fahrräder wurden gefunden.
+
+@@ 45
+#vocab
+die Antragstellung = submission of an application
+die Bearbeitung = processing
+die Genehmigung, -en = approval, permit
+die Ablehnung, -en = rejection
+der Widerspruch, ¨e = objection, appeal
+die Zustellung = delivery (of a letter)
+die Kenntnisnahme = acknowledgement
+die Inanspruchnahme = use, claiming
+die Vorlage = presentation (of documents)
+die Erstattung, -en = refund, reimbursement
+die Berechtigung = entitlement
+fristgerecht = within the deadline
+ordnungsgemäß = properly
+unverzüglich = without delay
+vorbehaltlich (+ Gen.) = subject to
+aufgrund (+ Gen.) = due to
+infolge (+ Gen.) = as a result of
+bei Nichtbeachtung = in case of non-compliance
+gemäß (+ Dat.) = in accordance with
+zwecks (+ Gen.) = for the purpose of
+#ex
+Nach Eingang Ihres Antrags beginnt die Bearbeitung. = After receipt of your application, processing begins.
+Wenn Ihr Antrag eingegangen ist, beginnen wir mit der Bearbeitung. = When your application has arrived, we begin processing.
+Bei Verlust der Karte informieren Sie uns bitte sofort. = In case of loss of the card, please inform us immediately.
+Wenn Sie die Karte verlieren, informieren Sie uns bitte sofort. = If you lose the card, please inform us immediately.
+Zur Beantragung des Ausweises benötigen Sie ein Foto. = To apply for the ID card you need a photo.
+Aufgrund der hohen Nachfrage kommt es zu Verzögerungen. = Due to high demand there are delays.
+Weil die Nachfrage hoch ist, kommt es zu Verzögerungen. = Because demand is high, there are delays.
+Gegen diesen Bescheid kann innerhalb eines Monats Widerspruch eingelegt werden. = An objection to this decision can be lodged within a month.
+Die Erstattung erfolgt nach Vorlage der Quittung. = The refund is made upon presentation of the receipt.
+Bei Nichtbeachtung der Frist entfällt der Anspruch. = If the deadline is not observed, the claim lapses.
+#read2
+Ein Brief vom Amt – und seine Übersetzung
+Leila hat Post bekommen. Im Briefkasten liegt ein Schreiben der Familienkasse. Sie liest: „Sehr geehrte Frau Ahmadi, nach Prüfung Ihres Antrags auf Kindergeld vom 3. März teilen wir Ihnen mit, dass eine abschließende Entscheidung aufgrund fehlender Unterlagen derzeit nicht möglich ist. Zur weiteren Bearbeitung ist die Vorlage einer Geburtsurkunde Ihres Kindes in beglaubigter Übersetzung erforderlich. Wir bitten um Einreichung innerhalb von vier Wochen nach Zustellung dieses Schreibens. Bei Nichtbeachtung dieser Frist erfolgt eine Ablehnung des Antrags. Gegen diese Entscheidung ist die Einlegung eines Einspruchs möglich.“ Leila versteht die Wörter, aber die Sätze sind kompliziert. Ihre Nachbarin Anna hilft ihr, den Brief in normales Deutsch zu „übersetzen“: „Sie haben deinen Antrag auf Kindergeld geprüft. Sie können noch nicht entscheiden, weil Unterlagen fehlen. Damit sie weitermachen können, musst du die Geburtsurkunde deiner Tochter schicken – übersetzt und beglaubigt. Das musst du tun, bevor vier Wochen vorbei sind. Wenn du die Frist nicht einhältst, lehnen sie den Antrag ab.“ Leila lacht erleichtert. „Warum schreiben sie das nicht gleich so?“ Anna zuckt mit den Schultern: „Im Nominalstil klingt alles offizieller. Und mit vielen Substantiven kann man sehr viel Information in einen Satz packen.“ Am nächsten Tag lässt Leila die Urkunde bei einem vereidigten Übersetzer übersetzen und schickt sie per Einschreiben ab. Drei Wochen später kommt der Bescheid: Das Kindergeld wurde bewilligt.
+#dialog
+Anna: Und, hast du den Brief verstanden?
+Leila: Teilweise. Was bedeutet „nach erfolgter Prüfung“?
+Anna: Das heißt einfach: nachdem sie es geprüft haben.
+Leila: Und „bei Nichtvorlage der Unterlagen“?
+Anna: Wenn du die Unterlagen nicht schickst.
+Leila: Ah. Warum schreiben Behörden so kompliziert?
+Anna: Weil der Nominalstil kurz und genau ist – zumindest für Juristen. Für alle anderen ist er ein Rätsel.
+Leila: Dann brauche ich in Zukunft eine Übersetzung von Behördendeutsch in normales Deutsch.
+#dq
+Was bedeutet „nach erfolgter Prüfung“? || Nachdem sie es geprüft haben.
+Was bedeutet „bei Nichtvorlage der Unterlagen“? || Wenn man die Unterlagen nicht schickt.
+Warum schreiben Behörden im Nominalstil? || Weil er kurz und genau ist (für Juristen).
+#task
+Nominal → verbal: nach Ihrer Ankunft → nachdem Sie ___ ___ || angekommen sind
+Nominal → verbal: bei Regen → wenn es ___ || regnet
+Nominal → verbal: wegen der Erkrankung des Kollegen → weil der Kollege ___ ___ || erkrankt ist
+Nominal → verbal: zur Verbesserung der Qualität → um die Qualität ___ ___ || zu verbessern
+Nominal → verbal: trotz der hohen Kosten → obwohl die Kosten hoch ___ || sind
+Verbal → nominal: bevor die Sitzung beginnt → vor ___ ___ ___ || Beginn der Sitzung
+Verbal → nominal: weil das Wetter schlecht ist → wegen ___ ___ Wetters || des schlechten
+Verbal → nominal: wenn Sie den Vertrag kündigen → bei ___ ___ Vertrags || Kündigung des
+Verbal → nominal: während wir renovieren → während ___ ___ || der Renovierung
+Nominalisierung: beantragen → die ___ || Beantragung
+
+@@ 46
+#vocab
+lässt sich + Infinitiv = can be done
+sein + zu + Infinitiv = must / can be done
+-bar (lesbar, machbar) = -able
+-lich (verständlich) = -ible / -able
+man = one, you, people
+bekommen + Partizip II = to get something done (passive)
+das Gerät, -e = device, appliance
+der Akku, -s = rechargeable battery
+aufladen = to charge
+der Stecker, - = plug
+die Steckdose, -n = socket
+die Fernbedienung, -en = remote control
+einstellen = to set, to adjust
+zurücksetzen = to reset
+die Werkseinstellung, -en = factory setting
+das Passwort, ¨er = password
+die Sicherheitshinweise (Pl.) = safety instructions
+ausschließlich = exclusively
+unsachgemäß = improper
+die Haftung = liability
+#ex
+Das Formular ist bis Freitag auszufüllen. = The form must be filled in by Friday.
+Das Problem lässt sich leicht lösen. = The problem can be solved easily.
+Die Schrift ist kaum lesbar. = The writing is barely legible.
+Dieser Fleck ist nicht zu entfernen. = This stain can't be removed.
+Man darf das Gerät nicht in Wasser tauchen. = You mustn't immerse the device in water.
+Das ist eine verständliche Reaktion. = That's an understandable reaction.
+Die Batterie ist vor Gebrauch vollständig aufzuladen. = The battery must be fully charged before use.
+Der Termin lässt sich leider nicht verschieben. = Unfortunately the appointment can't be postponed.
+Die Kosten sind vom Mieter zu tragen. = The costs are to be borne by the tenant.
+Er bekam das Paket direkt nach Hause geliefert. = He got the parcel delivered straight to his home.
+#read2
+Bedienungsanleitung: Smarter Heizkörperthermostat „ThermoCasa“
+Wichtige Sicherheitshinweise: Das Gerät ist ausschließlich für den Gebrauch in geschlossenen Räumen bestimmt. Es ist vor Feuchtigkeit und direkter Sonneneinstrahlung zu schützen. Bei unsachgemäßer Montage übernimmt der Hersteller keine Haftung. Installation: Der Thermostat lässt sich ohne Werkzeug an fast allen gängigen Heizkörpern montieren. Zunächst ist der alte Thermostatkopf abzuschrauben. Dazu ist der Heizkörper auf Stufe 5 zu drehen, damit sich der Kopf leichter lösen lässt. Anschließend ist der passende Adapter aufzusetzen; welcher Adapter benötigt wird, ist der beiliegenden Tabelle zu entnehmen. Die Batterien sind vor dem ersten Gebrauch einzulegen. Achten Sie dabei auf die richtige Polung. Einrichtung: Das Gerät lässt sich bequem über die kostenlose App steuern. Dafür ist zunächst ein Benutzerkonto anzulegen. Das Passwort sollte mindestens zwölf Zeichen lang sein. Die Raumtemperatur ist anschließend für jeden Tag individuell einstellbar. Erkennt der Thermostat ein geöffnetes Fenster, wird die Heizung automatisch heruntergeregelt. Fehlerbehebung: Reagiert das Gerät nicht, sind zunächst die Batterien zu überprüfen. Sollte sich das Problem dadurch nicht beheben lassen, kann das Gerät auf die Werkseinstellungen zurückgesetzt werden: Halten Sie dazu beide Tasten zehn Sekunden lang gedrückt. Persönliche Einstellungen sind danach leider nicht wiederherstellbar. Entsorgung: Altgeräte und Batterien dürfen nicht über den Hausmüll entsorgt werden. Sie sind bei den kommunalen Sammelstellen abzugeben.
+#dialog
+Ravi: Jonas, mein neuer Thermostat lässt sich nicht mit der App verbinden.
+Jonas: Hast du schon die Batterien überprüft?
+Ravi: Ja, die sind neu. In der Anleitung steht, das Gerät sei dann zurückzusetzen.
+Jonas: Und? Lässt es sich zurücksetzen?
+Ravi: Ich habe beide Tasten gedrückt, aber es passiert nichts.
+Jonas: Wie lange? Man muss sie zehn Sekunden gedrückt halten, das ist leicht zu übersehen.
+Ravi: Oh. Ich habe nur drei Sekunden gedrückt. Moment … jetzt blinkt es!
+Jonas: Siehst du. Das Problem war lösbar – mit ein bisschen Geduld.
+#dq
+Was ist Ravis Problem? || Der Thermostat lässt sich nicht mit der App verbinden.
+Was steht in der Anleitung? || Man muss das Gerät zurücksetzen.
+Was hat Ravi falsch gemacht? || Er hat die Tasten nur drei statt zehn Sekunden gedrückt.
+#task
+Ersatzform: Das Problem kann gelöst werden. → Das Problem lässt sich ___. || lösen
+Ersatzform: Das Formular muss ausgefüllt werden. → Das Formular ist ___. || auszufüllen
+Ersatzform: Der Text kann gelesen werden. → Der Text ist ___. (Adjektiv) || lesbar
+Ersatzform: Das Fenster kann nicht geöffnet werden. → Das Fenster lässt sich nicht ___. || öffnen
+Ersatzform: Die Regel muss beachtet werden. → Die Regel ist ___ ___. || zu beachten
+Ersatzform: Das kann man nicht ändern. → Das ist nicht ___ ___. || zu ändern
+Ersatzform mit man: Das Gerät darf nicht nass werden. → ___ darf das Gerät nicht nass machen. || Man
+Passiv: Die Batterien sind zu wechseln. → Die Batterien müssen ___ ___. || gewechselt werden
+-bar: Das kann man essen. → Das ist ___. || essbar
+Fehler? „Das Problem lässt sich nicht lösen werden.“ || Das Problem lässt sich nicht lösen.
+
+@@ 47
+#vocab
+falls = in case, if
+sofern = provided that
+soweit = as far as
+indem = by (doing)
+sodass / so … dass = so that (result)
+anstatt dass = instead of
+ohne dass = without
+je nachdem (ob/wie) = depending on whether/how
+es sei denn = unless
+geschweige denn = let alone
+insofern = in that respect
+dadurch, dass = by (the fact) that
+die Kündigungsfrist, -en = notice period
+die Versicherung, -en = insurance
+der Schaden, ¨ = damage
+haften für = to be liable for
+der Vertrag, ¨e = contract
+verlängern = to extend
+das Kleingedruckte = the small print
+rechtzeitig = in good time
+#ex
+Falls es regnet, findet das Fest in der Halle statt. = If it rains, the party will take place in the hall.
+Sofern Sie einverstanden sind, schicken wir den Vertrag. = Provided you agree, we'll send the contract.
+Man spart Energie, indem man die Heizung herunterdreht. = You save energy by turning down the heating.
+Es regnete so stark, dass die Straßen überflutet wurden. = It rained so heavily that the streets were flooded.
+Er ging, ohne dass es jemand bemerkte. = He left without anyone noticing.
+Anstatt dass er sich entschuldigte, schrie er herum. = Instead of apologising, he shouted around.
+Wir kommen, es sei denn, das Wetter ist schlecht. = We'll come unless the weather is bad.
+Je nachdem, wie viel es kostet, buchen wir das Hotel. = Depending on how much it costs, we'll book the hotel.
+Er kann kaum laufen, geschweige denn Fußball spielen. = He can hardly walk, let alone play football.
+Soweit ich weiß, ist das Büro heute geschlossen. = As far as I know, the office is closed today.
+#read2
+Der Handyvertrag – das Kleingedruckte lesen lohnt sich
+Tomás wollte eigentlich nur einen günstigeren Handytarif. Im Laden versprach ihm der Verkäufer: „Sie zahlen nur 9,99 Euro im Monat, sofern Sie den Vertrag heute abschließen.“ Tomás unterschrieb, ohne dass er die Vertragsbedingungen genau gelesen hatte. Drei Monate später kam die erste Überraschung: Die Rechnung war doppelt so hoch. Es stellte sich heraus, dass der günstige Preis nur in den ersten drei Monaten galt. Danach kostete der Tarif 24,99 Euro. Außerdem hatte der Verkäufer ihm eine Zusatzoption für Musikstreaming verkauft, die automatisch kostenpflichtig wurde, falls man sie nicht innerhalb von vier Wochen kündigte. Tomás war wütend. Er fragte Leila um Rat, die ihm empfahl, sich an die Verbraucherzentrale zu wenden. Die Beraterin dort erklärte ihm, dass er die Zusatzoption zwar bezahlen müsse, er aber einiges tun könne, indem er sofort schriftlich kündige. Seit einer Gesetzesänderung können Verbraucher nach Ablauf der Mindestlaufzeit monatlich kündigen, sodass sie nicht mehr automatisch für ein weiteres Jahr gebunden sind. Die erste Laufzeit von 24 Monaten musste Tomás allerdings einhalten, es sei denn, der Anbieter hätte ihn nachweislich falsch beraten. Das ließ sich jedoch nicht beweisen, da es keine Zeugen gab. Tomás’ Fazit: „Ich unterschreibe nie wieder etwas, ohne das Kleingedruckte zu lesen. Und falls mir jemand ein Angebot macht, das nur heute gilt, gehe ich erst recht nach Hause und denke nach.“
+#dialog
+Beraterin: Verbraucherzentrale, guten Tag. Worum geht es?
+Tomás: Ich habe einen Handyvertrag abgeschlossen, und jetzt ist die Rechnung viel höher als versprochen.
+Beraterin: Haben Sie die Vertragsunterlagen vor sich? Sofern der höhere Preis dort steht, ist er leider gültig.
+Tomás: Er steht im Kleingedruckten. Kann ich trotzdem etwas tun?
+Beraterin: Sie können Zusatzoptionen kündigen, indem Sie dem Anbieter schriftlich mitteilen, dass Sie sie nicht mehr wünschen.
+Tomás: Und den ganzen Vertrag?
+Beraterin: Nach Ablauf der Mindestlaufzeit können Sie monatlich kündigen, es sei denn, Sie verlängern ihn ausdrücklich.
+Tomás: Gut. Und falls der Anbieter nicht reagiert?
+Beraterin: Dann melden Sie sich wieder bei uns, sodass wir Ihnen einen Musterbrief schicken können.
+#dq
+Wann ist der höhere Preis leider gültig? || Sofern er in den Vertragsunterlagen steht.
+Wie kann Tomás Zusatzoptionen kündigen? || Indem er dem Anbieter schriftlich mitteilt, dass er sie nicht mehr wünscht.
+Wann kann er monatlich kündigen? || Nach Ablauf der Mindestlaufzeit.
+#task
+___ du Hilfe brauchst, ruf mich an. (falls/indem) || Falls
+Er hält sich fit, ___ er jeden Tag läuft. (indem/sodass) || indem
+Es war so laut, ___ ich nicht schlafen konnte. || dass
+Sie verließ den Raum, ___ ___ jemand es merkte. || ohne dass
+Wir fahren morgen, es ___ ___, es schneit. || sei denn
+Verbinde mit indem: Man lernt Vokabeln. Man wiederholt sie täglich. || Man lernt Vokabeln, indem man sie täglich wiederholt.
+Verbinde mit sodass: Der Zug hatte Verspätung. Ich verpasste den Anschluss. || Der Zug hatte Verspätung, sodass ich den Anschluss verpasste.
+Verbinde mit sofern: Wir helfen gern. Wir haben Zeit. || Wir helfen gern, sofern wir Zeit haben.
+___ ich weiß, ist er schon abgereist. (soweit/sofern) || Soweit
+Fehler? „Er sparte Geld, indem er kochte selbst.“ || Er sparte Geld, indem er selbst kochte.
+
+@@ 48
+#vocab
+eine Entscheidung treffen = to make a decision
+in Anspruch nehmen = to make use of
+zur Verfügung stehen = to be available
+zur Verfügung stellen = to make available
+in Frage kommen = to be an option
+in Betracht ziehen = to consider
+einen Antrag stellen = to submit an application
+eine Frage stellen = to ask a question
+Rücksicht nehmen auf = to show consideration for
+Einfluss nehmen auf = to influence
+zum Ausdruck bringen = to express
+zur Sprache bringen = to raise (a topic)
+in Gang setzen = to set in motion
+zu Ende bringen = to complete
+Bescheid geben = to let know
+einen Vorschlag machen = to make a suggestion
+Verantwortung übernehmen = to take responsibility
+unter Druck stehen = to be under pressure
+in Verbindung setzen mit = to get in touch with
+#ex
+Wir müssen bis Freitag eine Entscheidung treffen. = We have to make a decision by Friday.
+Für Fragen stehe ich Ihnen gern zur Verfügung. = I'm happy to be available for any questions.
+Diese Lösung kommt für uns nicht in Frage. = This solution is not an option for us.
+Haben Sie in Betracht gezogen, den Vertrag zu verlängern? = Have you considered extending the contract?
+Bitte nehmen Sie Rücksicht auf die Nachbarn. = Please be considerate of the neighbours.
+In der Sitzung brachte sie das Problem zur Sprache. = In the meeting she raised the problem.
+Er übernahm die volle Verantwortung für den Fehler. = He took full responsibility for the mistake.
+Ich setze mich morgen mit dem Kunden in Verbindung. = I'll get in touch with the customer tomorrow.
+Das Team steht unter großem Druck. = The team is under a lot of pressure.
+Gib mir bitte Bescheid, wenn du fertig bist. = Please let me know when you're finished.
+#read2
+Protokoll der Teamsitzung
+Teilnehmende: Frau Lange (Leitung), Herr Sharma, Frau Öztürk, Herr Brandt. Protokoll: Herr Brandt. TOP 1 – Projekt „Smart Home“: Frau Lange teilte mit, dass der Kunde Änderungen am Design in Auftrag gegeben habe. Das Team stehe deshalb unter erheblichem Zeitdruck. Herr Sharma brachte zur Sprache, dass die ursprüngliche Planung keine Puffer vorgesehen habe. Er machte den Vorschlag, externe Unterstützung in Anspruch zu nehmen. Frau Öztürk gab zu bedenken, dass dies das Budget belaste. Nach kurzer Diskussion wurde vereinbart, zunächst eine interne Lösung in Betracht zu ziehen. Frau Lange wird sich mit der Personalabteilung in Verbindung setzen, um zu klären, ob Kolleginnen und Kollegen aus anderen Abteilungen zur Verfügung stehen. Eine endgültige Entscheidung soll bis Mittwoch getroffen werden. TOP 2 – Homeoffice-Regelung: Herr Brandt brachte zum Ausdruck, dass die aktuelle Regelung zu unflexibel sei. Frau Lange betonte, die Geschäftsführung lege großen Wert auf persönliche Zusammenarbeit, sei aber für Vorschläge offen. Herr Sharma übernimmt die Verantwortung dafür, bis zur nächsten Sitzung ein Konzept auszuarbeiten. TOP 3 – Verschiedenes: Frau Öztürk gab Bescheid, dass sie ab Mitte des Monats für zwei Wochen Urlaub in Anspruch nehmen werde. Herr Sharma übernimmt ihre Vertretung. Die nächste Sitzung findet am kommenden Montag um 10 Uhr statt.
+#dialog
+Frau Lange: Herr Sharma, haben Sie schon eine Entscheidung zum Homeoffice-Konzept getroffen?
+Ravi: Ich habe zwei Varianten ausgearbeitet. Beide kommen meiner Meinung nach in Frage.
+Frau Lange: Stellen Sie sie bitte kurz vor.
+Ravi: Variante A: zwei feste Bürotage für alle. Variante B: Jedes Team trifft die Entscheidung selbst.
+Frau Lange: Bei Variante B hätten die Teams mehr Einfluss. Aber die Geschäftsführung legt Wert auf Einheitlichkeit.
+Ravi: Das habe ich in Betracht gezogen. Deshalb würde ich Variante A empfehlen, mit Ausnahmen in Notfällen.
+Frau Lange: Gut. Bringen Sie das bitte in der nächsten Sitzung zur Sprache.
+#dq
+Wie viele Varianten hat Ravi ausgearbeitet? || Zwei.
+Was ist Variante B? || Jedes Team entscheidet selbst.
+Welche Variante empfiehlt Ravi? || Variante A (zwei feste Bürotage, mit Ausnahmen in Notfällen).
+#task
+eine Entscheidung ___ (treffen/machen) || treffen
+eine Frage ___ (stellen/machen) || stellen
+zur Verfügung ___ (stehen/liegen) || stehen
+in Betracht ___ (ziehen/nehmen) || ziehen
+Rücksicht ___ auf (nehmen/geben) || nehmen
+zur Sprache ___ (bringen/stellen) || bringen
+Verantwortung ___ (übernehmen/machen) || übernehmen
+Umformen: Wir entscheiden morgen. → Wir ___ morgen eine Entscheidung. || treffen
+Umformen: Sie beantragt ein Visum. → Sie ___ einen Antrag auf ein Visum. || stellt
+Fehler? „Er hat eine Entscheidung gemacht.“ || Er hat eine Entscheidung getroffen.
+
+@@ 49
+#vocab
+müssen (Vermutung) = must (≈ certainly)
+dürfte = is likely to
+können (Vermutung) = could, might
+mögen (Vermutung) = may (concessive)
+sollen (Gerücht) = is said to
+wollen (Behauptung) = claims to
+werden … wohl = probably will
+höchstwahrscheinlich = most probably
+womöglich = possibly
+zweifellos = undoubtedly
+das Indiz, -ien = circumstantial evidence
+der Zeuge, -n / die Zeugin, -nen = witness
+die Spur, -en = trace, clue
+das Alibi, -s = alibi
+der Täter, - = perpetrator
+verdächtig = suspicious
+das Gerücht, -e = rumour
+die Schlussfolgerung, -en = conclusion
+ausschließen = to rule out
+widerlegen = to refute
+#ex
+Er muss krank sein, er sieht sehr blass aus. = He must be ill, he looks very pale.
+Sie dürfte schon zu Hause sein. = She is probably home already.
+Das kann ein Missverständnis gewesen sein. = That could have been a misunderstanding.
+Der Schauspieler soll sehr reich sein. = The actor is said to be very rich.
+Er will den Unfall nicht gesehen haben. = He claims not to have seen the accident.
+Sie wird wohl im Stau stehen. = She's probably stuck in traffic.
+Er mag recht haben, aber ich bin anderer Meinung. = He may be right, but I disagree.
+Der Dieb muss durch das Fenster gekommen sein. = The thief must have come through the window.
+Das Paket dürfte morgen ankommen. = The parcel should arrive tomorrow.
+Man kann nicht ausschließen, dass es ein Fehler war. = One can't rule out that it was a mistake.
+#read2
+Der rätselhafte Fall im Treppenhaus
+Am Montagmorgen fand Frau Lindner vor ihrer Wohnungstür einen Blumenstrauß. Kein Zettel, kein Name. „Das muss ein Irrtum sein“, dachte sie zuerst. „Wer sollte mir schon Blumen schenken?“ Sie klingelte bei Anna Weber. Anna betrachtete die Blumen genau. „Rosen und Lavendel – die dürften ziemlich teuer gewesen sein. Und sie sind frisch, sie können erst heute Morgen gekauft worden sein.“ Frau Lindner ging im Kopf die Verdächtigen durch. Der junge Mann aus dem zweiten Stock? Er will sie letzte Woche gar nicht gegrüßt haben, als sie sich über die laute Musik beschwert hatte. Ein schlechtes Gewissen könnte ein Motiv sein. Oder Herr Kaya? Er soll früher in seinem Gemüseladen auch Blumen verkauft haben. Anna fand eine weitere Spur: Auf der Treppe lag ein Kassenbon von einem Blumenladen in der Schönhauser Allee, gekauft um 7:42 Uhr. „Um diese Zeit muss der Täter schon unterwegs gewesen sein. Jonas schläft bis neun, der scheidet also aus.“ Am Nachmittag löste sich das Rätsel. Paul, Annas Sohn, kam von der Schule nach Hause und fragte: „Haben Sie meine Blumen gefunden, Frau Lindner? Sie haben mir doch letzte Woche bei den Mathehausaufgaben geholfen.“ Frau Lindner war sprachlos. „Ich muss wohl vergessen haben, wie nett junge Leute sein können“, sagte sie später – und backte Paul einen Kuchen.
+#dialog
+Jonas: Hast du gehört? Der Bäcker an der Ecke soll schließen.
+Mia: Wirklich? Woher weißt du das?
+Jonas: Frau Lindner hat es erzählt. Der Besitzer will in Rente gehen.
+Mia: Das kann aber auch nur ein Gerücht sein. Frau Lindner erzählt viel.
+Jonas: Stimmt. Aber im Schaufenster hängt ein Zettel „Nachfolger gesucht“.
+Mia: Dann dürfte es stimmen. Das wäre schade, das Brot ist so gut.
+Jonas: Vielleicht findet sich ja ein Nachfolger. Das Geschäft muss eigentlich gut laufen, es ist immer voll.
+#dq
+Was soll mit dem Bäcker passieren? || Er soll schließen.
+Warum will der Besitzer aufhören? || Er will in Rente gehen.
+Was hängt im Schaufenster? || Ein Zettel „Nachfolger gesucht“.
+#task
+Vermutung (sehr sicher): Er ist bestimmt zu Hause. → Er ___ zu Hause sein. || muss
+Vermutung (wahrscheinlich): Sie ist wahrscheinlich krank. → Sie ___ krank sein. || dürfte
+Vermutung (möglich): Vielleicht hat er recht. → Er ___ recht haben. || könnte
+Gerücht: Man sagt, er ist reich. → Er ___ reich sein. || soll
+Behauptung: Er behauptet, er war zu Hause. → Er ___ zu Hause gewesen sein. || will
+Vergangenheit: Sie ist bestimmt schon gegangen. → Sie muss schon gegangen ___. || sein
+Vergangenheit: Er hat es wahrscheinlich vergessen. → Er dürfte es vergessen ___. || haben
+Futur: Er ist wohl müde. → Er ___ wohl müde sein. || wird
+Objektiv oder subjektiv? „Er muss früh aufstehen, weil er um sechs arbeitet.“ (o/s) || o
+Fehler? „Er soll gestern im Kino war.“ || Er soll gestern im Kino gewesen sein.
+
+@@ 50
+#vocab
+hätte … gemacht = would have done
+wäre … gegangen = would have gone
+hätte … machen sollen = should have done
+hätte … können = could have
+als ob / als wenn + Konj. II = as if
+als + Konj. II (Verb vorn) = as if
+an deiner Stelle hätte ich … = in your place I would have …
+wenn ich das gewusst hätte = if I had known that
+die Reue = regret, remorse
+bereuen = to regret
+die Gelegenheit verpassen = to miss the opportunity
+die falsche Entscheidung = the wrong decision
+der Umweg, -e = detour
+der Zufall, ¨e = coincidence
+das Schicksal = fate
+glücklicherweise = fortunately
+ansonsten = otherwise
+um ein Haar = by a hair's breadth
+wenigstens = at least
+sich ärgern über = to be annoyed about
+#ex
+Wenn ich früher losgefahren wäre, hätte ich den Zug erreicht. = If I had left earlier, I would have caught the train.
+Hätte ich das gewusst, wäre ich nicht gekommen. = Had I known that, I wouldn't have come.
+Du hättest mich anrufen sollen! = You should have called me!
+Ich hätte gern Medizin studiert. = I would have liked to study medicine.
+Er tut so, als ob er nichts gehört hätte. = He acts as if he hadn't heard anything.
+Sie sieht aus, als wäre sie die ganze Nacht wach gewesen. = She looks as if she had been awake all night.
+Wir hätten fast den Flug verpasst. = We almost missed the flight.
+Ohne deine Hilfe hätte ich es nicht geschafft. = Without your help I wouldn't have managed it.
+Ich bereue nichts, aber manches würde ich heute anders machen. = I regret nothing, but I'd do some things differently today.
+Um ein Haar wäre der Unfall passiert. = The accident very nearly happened.
+#read2
+„Ich hätte damals …“ – Leserinnen und Leser erzählen
+Wir haben gefragt: Welche Entscheidung würden Sie heute anders treffen? Hier eine Auswahl der Antworten. Bernd, 58: „Mit 20 bekam ich das Angebot, für ein Jahr in Kanada zu arbeiten. Ich habe abgelehnt, weil meine damalige Freundin nicht mitwollte. Ein halbes Jahr später hat sie sich getrennt. Hätte ich das Angebot angenommen, wäre mein Leben wohl ganz anders verlaufen. Aber vielleicht hätte ich dann meine Frau nie kennengelernt. Insofern bereue ich es nicht wirklich.“ Sevgi, 34: „Ich hätte früher auf meinen Körper hören sollen. Jahrelang habe ich gearbeitet, als ob ich keine Pausen bräuchte. Erst nach einem Burn-out habe ich verstanden, dass ich mich hätte schützen müssen. Heute arbeite ich Teilzeit und bin viel glücklicher.“ Lukas, 27: „Wenn ich in der Schule mehr Englisch gelernt hätte, hätte ich mir später viel Stress erspart. Im Studium musste ich alles nachholen.“ Margarete, 81: „Ich habe immer gedacht, ich hätte noch Zeit. Ich hätte meine Schwester öfter besuchen sollen, bevor sie krank wurde. Mein Rat an junge Leute: Wartet nicht auf den perfekten Moment.“ Die Psychologin Dr. Weiß kommentiert: „Interessant ist, dass Menschen langfristig eher bereuen, was sie nicht getan haben, als ihre Fehler. Wer etwas versucht und scheitert, hat wenigstens etwas gelernt.“
+#dialog
+Mia: Ich habe die Prüfung leider nicht bestanden.
+Leila: Oh nein. Was ist passiert?
+Mia: Ich hätte mehr lernen müssen. Und ich hätte nicht bis drei Uhr nachts Serien schauen sollen.
+Leila: Das klingt, als ob du dir große Vorwürfe machen würdest.
+Mia: Ja. Wenn ich früher angefangen hätte, wäre es bestimmt besser gelaufen.
+Leila: Vielleicht. Aber im Nachhinein ist man immer klüger. Du kannst sie doch wiederholen, oder?
+Mia: Ja, im März. Diesmal mache ich einen Lernplan.
+Leila: Siehst du. Dann war es wenigstens eine gute Lektion.
+#dq
+Warum hat Mia die Prüfung nicht bestanden? || Sie hat zu wenig gelernt (und zu lange Serien geschaut).
+Wann kann sie die Prüfung wiederholen? || Im März.
+Was macht sie diesmal anders? || Sie macht einen Lernplan.
+#task
+Irreal Vergangenheit: Ich hatte keine Zeit, deshalb kam ich nicht. → Wenn ich Zeit gehabt ___, ___ ich gekommen. || hätte / wäre
+Irreal Vergangenheit: Er hat nicht gelernt. → Wenn er gelernt ___, hätte er bestanden. || hätte
+Ohne wenn: Wenn ich das gewusst hätte, … → ___ ich das gewusst, … || Hätte
+Vorwurf: Warum hast du nicht angerufen? → Du ___ anrufen sollen! || hättest
+Modalverb Vergangenheit: Ich musste es tun (irreal). → Ich ___ es tun müssen. || hätte
+Wunsch: Ich habe nicht studiert. → Ich ___ gern studiert. || hätte
+als ob: Er tut so, als ob er krank ___. (sein, Gegenwart) || wäre
+als ob Vergangenheit: Sie tut so, als ob sie nichts gesehen ___. || hätte
+als + Verb: Er sieht aus, als ___ er nicht geschlafen. (haben) || hätte
+Fehler? „Wenn ich früher gegangen hätte, hätte ich den Bus bekommen.“ || Wenn ich früher gegangen wäre, hätte ich den Bus bekommen.

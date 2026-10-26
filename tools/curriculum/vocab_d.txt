@@ -1,0 +1,1013 @@
+#A1
+rot|red||Farben
+blau|blue||Farben
+grün|green||Farben
+gelb|yellow||Farben
+schwarz|black||Farben
+weiß|white||Farben
+grau|grey||Farben
+braun|brown||Farben
+orange|orange||Farben
+rosa|pink||Farben
+lila|purple||Farben
+die Hand|hand|Hände|Körper
+der Finger|finger|Finger|Körper
+der Mund|mouth|Münder|Körper
+die Nase|nose|Nasen|Körper
+das Haar|hair|Haare|Körper
+das Gesicht|face|Gesichter|Körper
+der Bauch|belly|Bäuche|Körper
+das Knie|knee|Knie|Körper
+das Herz|heart|Herzen|Körper
+sitzen|to sit||Verb
+stehen|to stand||Verb
+liegen|to lie (be lying)||Verb
+legen|to lay, to put (flat)||Verb
+stellen|to put (upright)||Verb
+holen|to fetch||Verb
+tragen|to carry, to wear||Verb
+bekommen|to get, to receive||Verb
+rennen|to run||Verb
+springen|to jump||Verb
+fühlen|to feel||Verb
+riechen|to smell||Verb
+singen|to sing||Verb
+lachen|to laugh||Verb
+weinen|to cry||Verb
+malen|to paint||Verb
+zeichnen|to draw||Verb
+rufen|to call, to shout||Verb
+sagen|to say||Verb
+erzählen|to tell||Verb
+zählen|to count||Verb
+rechnen|to calculate||Verb
+schließen|to close||Verb
+öffnen|to open||Verb
+waschen|to wash||Verb
+putzen|to clean||Verb
+bügeln|to iron||Verb
+wohnen|to live (reside)||Verb
+leben|to live||Verb
+reisen|to travel||Verb
+fliegen|to fly||Verb
+warten|to wait||Verb
+zeigen|to show||Verb
+suchen|to look for||Verb
+finden|to find||Verb
+kennen|to know (be familiar with)||Verb
+wissen|to know (a fact)||Verb
+mögen|to like||Verb
+brauchen|to need||Verb
+benutzen|to use||Verb
+schenken|to give (as a present)||Verb
+glücklich|happy||Gefühle
+traurig|sad||Gefühle
+wütend|angry||Gefühle
+froh|glad||Gefühle
+nervös|nervous||Gefühle
+müde|tired||Gefühle
+hungrig|hungry||Gefühle
+durstig|thirsty||Gefühle
+krank|ill||Gesundheit
+schön|beautiful||Allgemein
+hässlich|ugly||Allgemein
+gut|good||Allgemein
+schlecht|bad||Allgemein
+richtig|right, correct||Allgemein
+falsch|wrong||Allgemein
+leicht|easy, light||Allgemein
+schwer|difficult, heavy||Allgemein
+voll|full||Allgemein
+leer|empty||Allgemein
+offen|open||Allgemein
+zu|closed||Allgemein
+warm|warm||Wetter
+kalt|cold||Wetter
+heiß|hot||Wetter
+nass|wet||Wetter
+trocken|dry||Wetter
+sonnig|sunny||Wetter
+der Schnee|snow||Wetter
+der Wind|wind|Winde|Wetter
+die Wolke|cloud|Wolken|Wetter
+das Gewitter|thunderstorm|Gewitter|Wetter
+der Frühling|spring|Frühlinge|Zeit
+der Herbst|autumn|Herbste|Zeit
+das Wochenende|weekend|Wochenenden|Zeit
+der Feiertag|public holiday|Feiertage|Zeit
+die Ferien|holidays (school)||Zeit
+das Datum|date|Daten|Zeit
+der Kalender|calendar|Kalender|Zeit
+der Vormittag|morning (before noon)|Vormittage|Zeit
+der Nachmittag|afternoon|Nachmittage|Zeit
+die Sekunde|second|Sekunden|Zeit
+eins|one||Zahlen
+zwei|two||Zahlen
+drei|three||Zahlen
+zehn|ten||Zahlen
+zwanzig|twenty||Zahlen
+hundert|hundred||Zahlen
+tausend|thousand||Zahlen
+die Million|million|Millionen|Zahlen
+die Zahl|number|Zahlen|Zahlen
+der Preis|price|Preise|Einkaufen
+das Geld|money||Einkaufen
+die Kreditkarte|credit card|Kreditkarten|Einkaufen
+die Quittung|receipt|Quittungen|Einkaufen
+der Laden|shop|Läden|Einkaufen
+die Bäckerei|bakery|Bäckereien|Einkaufen
+die Metzgerei|butcher's|Metzgereien|Einkaufen
+das Kaufhaus|department store|Kaufhäuser|Einkaufen
+die Wurst|sausage|Würste|Essen
+der Schinken|ham|Schinken|Essen
+das Hähnchen|chicken|Hähnchen|Essen
+die Nudel|noodle, pasta|Nudeln|Essen
+der Salat|salad, lettuce|Salate|Essen
+die Gurke|cucumber|Gurken|Essen
+die Karotte|carrot|Karotten|Essen
+die Orange|orange|Orangen|Essen
+die Erdbeere|strawberry|Erdbeeren|Essen
+die Zitrone|lemon|Zitronen|Essen
+das Eis|ice cream, ice||Essen
+der Pfeffer|pepper||Essen
+das Öl|oil|Öle|Essen
+die Sahne|cream||Essen
+der Kakao|cocoa||Essen
+die Pizza|pizza|Pizzen|Essen
+das Mittagessen|lunch|Mittagessen|Essen
+die Tasse|cup|Tassen|Essen
+der Teller|plate|Teller|Essen
+die Schüssel|bowl|Schüsseln|Essen
+die Kanne|pot, jug|Kannen|Essen
+das Auto|car|Autos|Verkehr
+die Straßenbahn|tram|Straßenbahnen|Verkehr
+das Taxi|taxi|Taxis|Verkehr
+das Flugzeug|aeroplane|Flugzeuge|Verkehr
+die Haltestelle|stop|Haltestellen|Verkehr
+die Ampel|traffic light|Ampeln|Verkehr
+der Parkplatz|car park, parking space|Parkplätze|Verkehr
+die Tankstelle|petrol station|Tankstellen|Verkehr
+die Schule|school|Schulen|Bildung
+die Klasse|class|Klassen|Bildung
+der Schüler|pupil|Schüler|Bildung
+die Schülerin|pupil (f)|Schülerinnen|Bildung
+das Heft|exercise book|Hefte|Bildung
+der Kuli|ballpoint pen|Kulis|Bildung
+der Bleistift|pencil|Bleistifte|Bildung
+das Papier|paper|Papiere|Bildung
+die Tafel|board|Tafeln|Bildung
+das Wörterbuch|dictionary|Wörterbücher|Bildung
+die Prüfung|exam|Prüfungen|Bildung
+die Note|mark, grade|Noten|Bildung
+der Computer|computer|Computer|Technik
+der Laptop|laptop|Laptops|Technik
+das Internet|internet||Technik
+die Nachricht|message, news|Nachrichten|Technik
+das Passwort|password|Passwörter|Technik
+der Drucker|printer|Drucker|Technik
+die Kamera|camera|Kameras|Technik
+das Radio|radio|Radios|Technik
+das Tier|animal|Tiere|Natur
+der Vogel|bird|Vögel|Natur
+das Pferd|horse|Pferde|Natur
+die Kuh|cow|Kühe|Natur
+das Schwein|pig|Schweine|Natur
+die Maus|mouse|Mäuse|Natur
+der Baum|tree|Bäume|Natur
+die Blume|flower|Blumen|Natur
+der Berg|mountain|Berge|Natur
+das Meer|sea|Meere|Natur
+der Fluss|river|Flüsse|Natur
+der Park|park|Parks|Natur
+der Himmel|sky|Himmel|Natur
+der Mond|moon|Monde|Natur
+der Stern|star|Sterne|Natur
+der Polizist|police officer|Polizisten|Berufe
+die Polizistin|police officer (f)|Polizistinnen|Berufe
+der Koch|cook|Köche|Berufe
+die Köchin|cook (f)|Köchinnen|Berufe
+der Verkäufer|shop assistant|Verkäufer|Berufe
+die Verkäuferin|shop assistant (f)|Verkäuferinnen|Berufe
+der Kellner|waiter|Kellner|Berufe
+die Kellnerin|waitress|Kellnerinnen|Berufe
+der Friseur|hairdresser|Friseure|Berufe
+der Fahrer|driver|Fahrer|Berufe
+die Krankenschwester|nurse|Krankenschwestern|Berufe
+der Mechaniker|mechanic|Mechaniker|Berufe
+der Bauer|farmer|Bauern|Berufe
+das Krankenhaus|hospital|Krankenhäuser|Stadt
+das Kino|cinema|Kinos|Stadt
+der Markt|market|Märkte|Stadt
+das Zentrum|centre|Zentren|Stadt
+die Bibliothek|library|Bibliotheken|Stadt
+der Zoo|zoo|Zoos|Stadt
+das Schwimmbad|swimming pool|Schwimmbäder|Stadt
+die Toilette|toilet|Toiletten|Wohnen
+der Schlüssel|key|Schlüssel|Wohnen
+die Treppe|stairs|Treppen|Wohnen
+der Aufzug|lift|Aufzüge|Wohnen
+die Heizung|heating|Heizungen|Wohnen
+die Dusche|shower|Duschen|Wohnen
+die Badewanne|bathtub|Badewannen|Wohnen
+das Kissen|cushion, pillow|Kissen|Wohnen
+das Handtuch|towel|Handtücher|Wohnen
+der Junge|boy|Jungen|Menschen
+das Mädchen|girl|Mädchen|Menschen
+das Baby|baby|Babys|Menschen
+der Erwachsene|adult|Erwachsenen|Menschen
+die Leute|people||Menschen
+der Gast|guest|Gäste|Menschen
+ja|yes||Allgemein
+nein|no||Allgemein
+bitte|please||Allgemein
+danke|thank you||Allgemein
+hier|here||Allgemein
+dort|there||Allgemein
+immer|always||Allgemein
+oft|often||Allgemein
+manchmal|sometimes||Allgemein
+nie|never||Allgemein
+jetzt|now||Allgemein
+später|later||Allgemein
+sofort|immediately||Allgemein
+schon|already||Allgemein
+noch|still, yet||Allgemein
+auch|also||Allgemein
+nur|only||Allgemein
+sehr|very||Allgemein
+viel|much, a lot||Allgemein
+wenig|little||Allgemein
+alle|all, everyone||Allgemein
+nichts|nothing||Allgemein
+etwas|something||Allgemein
+jemand|somebody||Allgemein
+niemand|nobody||Allgemein
+links|left||Orientierung
+rechts|right||Orientierung
+oben|above, upstairs||Orientierung
+unten|below, downstairs||Orientierung
+vorne|at the front||Orientierung
+hinten|at the back||Orientierung
+draußen|outside||Orientierung
+drinnen|inside||Orientierung
+#A2
+das Abenteuer|adventure|Abenteuer|Freizeit
+das Hobby|hobby|Hobbys|Freizeit
+die Kunst|art|Künste|Kultur
+die Kultur|culture|Kulturen|Kultur
+das Bild|picture|Bilder|Kultur
+der Roman|novel|Romane|Kultur
+das Gedicht|poem|Gedichte|Kultur
+die Band|band|Bands|Kultur
+das Lied|song|Lieder|Kultur
+der Sänger|singer|Sänger|Kultur
+die Sängerin|singer (f)|Sängerinnen|Kultur
+das Instrument|instrument|Instrumente|Kultur
+das Klavier|piano|Klaviere|Kultur
+die Eintrittskarte|ticket (admission)|Eintrittskarten|Kultur
+die Vorstellung|performance; idea|Vorstellungen|Kultur
+der Erfolg|success|Erfolge|Arbeit
+die Politik|politics||Gesellschaft
+die Technik|technology||Technik
+das Gerät|device|Geräte|Technik
+der Akku|battery (rechargeable)|Akkus|Technik
+das Ladegerät|charger|Ladegeräte|Technik
+der Bildschirm|screen|Bildschirme|Technik
+die Tastatur|keyboard|Tastaturen|Technik
+die Datei|file|Dateien|Technik
+der Ordner|folder|Ordner|Technik
+speichern|to save||Verb
+löschen|to delete||Verb
+drucken|to print||Verb
+klicken|to click||Verb
+installieren|to install||Verb
+chatten|to chat||Verb
+posten|to post||Verb
+der Gruß|greeting|Grüße|Kommunikation
+der Absender|sender|Absender|Kommunikation
+der Empfänger|recipient|Empfänger|Kommunikation
+die Briefmarke|stamp|Briefmarken|Kommunikation
+der Umschlag|envelope|Umschläge|Kommunikation
+das Gespräch|conversation|Gespräche|Kommunikation
+die Einladung|invitation|Einladungen|Kommunikation
+die Absage|cancellation, refusal|Absagen|Kommunikation
+die Zusage|acceptance|Zusagen|Kommunikation
+sich melden|to get in touch||Verb
+erreichen|to reach||Verb
+mitteilen|to inform||Verb
+beschreiben|to describe||Verb
+berichten|to report||Verb
+diskutieren|to discuss||Verb
+streiten|to argue||Verb
+lügen|to lie (tell lies)||Verb
+loben|to praise||Verb
+kritisieren|to criticise||Verb
+ändern|to change||Verb
+wechseln|to change, to exchange||Verb
+wählen|to choose, to vote||Verb
+entscheiden|to decide||Verb
+erlauben|to allow||Verb
+verbieten|to forbid||Verb
+zwingen|to force||Verb
+erfahren|to find out, to experience||Verb
+merken|to notice||Verb
+bemerken|to notice, to remark||Verb
+vorstellen|to introduce||Verb
+sich vorstellen|to imagine||Verb
+feiern|to celebrate||Verb
+gewinnen|to win||Verb
+verlieren|to lose||Verb
+fallen|to fall||Verb
+fangen|to catch||Verb
+werfen|to throw||Verb
+ziehen|to pull; to move||Verb
+drücken|to push, to press||Verb
+schieben|to push||Verb
+heben|to lift||Verb
+füllen|to fill||Verb
+schneiden|to cut||Verb
+kleben|to stick||Verb
+reparieren|to repair||Verb
+bauen|to build||Verb
+pflanzen|to plant||Verb
+wachsen|to grow||Verb
+sterben|to die||Verb
+retten|to save, to rescue||Verb
+schützen|to protect||Verb
+stören|to disturb||Verb
+klopfen|to knock||Verb
+klingeln|to ring||Verb
+erwarten|to expect||Verb
+bemühen|to try hard (sich)||Verb
+die Ehe|marriage|Ehen|Familie
+der Ehemann|husband|Ehemänner|Familie
+die Ehefrau|wife|Ehefrauen|Familie
+der Partner|partner|Partner|Familie
+die Partnerin|partner (f)|Partnerinnen|Familie
+die Beziehung|relationship|Beziehungen|Familie
+die Verwandten|relatives||Familie
+der Schwiegervater|father-in-law|Schwiegerväter|Familie
+die Schwiegermutter|mother-in-law|Schwiegermütter|Familie
+das Paar|couple|Paare|Familie
+die Liebe|love||Gefühle
+die Freude|joy|Freuden|Gefühle
+die Angst|fear|Ängste|Gefühle
+die Sorge|worry|Sorgen|Gefühle
+die Wut|anger||Gefühle
+die Hoffnung|hope|Hoffnungen|Gefühle
+das Gefühl|feeling|Gefühle|Gefühle
+die Laune|mood|Launen|Gefühle
+überrascht|surprised||Gefühle
+enttäuscht|disappointed||Gefühle
+stolz|proud||Gefühle
+einsam|lonely||Gefühle
+neidisch|envious||Gefühle
+verliebt|in love||Gefühle
+die Gesundheit|health||Gesundheit
+die Krankheit|illness|Krankheiten|Gesundheit
+der Schmerz|pain|Schmerzen|Gesundheit
+die Wunde|wound|Wunden|Gesundheit
+das Pflaster|plaster|Pflaster|Gesundheit
+die Spritze|injection|Spritzen|Gesundheit
+die Allergie|allergy|Allergien|Gesundheit
+der Zahnarzt|dentist|Zahnärzte|Gesundheit
+die Krankenkasse|health insurance fund|Krankenkassen|Gesundheit
+der Notfall|emergency|Notfälle|Gesundheit
+der Krankenwagen|ambulance|Krankenwagen|Gesundheit
+die Untersuchung|examination|Untersuchungen|Gesundheit
+verletzt|injured||Gesundheit
+schwanger|pregnant||Gesundheit
+das Medikament|medicine|Medikamente|Gesundheit
+die Bewegung|movement, exercise|Bewegungen|Gesundheit
+das Gewicht|weight|Gewichte|Gesundheit
+abnehmen|to lose weight||Verb
+zunehmen|to put on weight||Verb
+der Haushalt|household|Haushalte|Wohnen
+der Staubsauger|vacuum cleaner|Staubsauger|Wohnen
+die Spülmaschine|dishwasher|Spülmaschinen|Wohnen
+der Mieter|tenant|Mieter|Wohnen
+der Vermieter|landlord|Vermieter|Wohnen
+die Nebenkosten|additional costs (utilities)||Wohnen
+die Kaution|deposit|Kautionen|Wohnen
+das Erdgeschoss|ground floor|Erdgeschosse|Wohnen
+der Stock|floor, storey|Stockwerke|Wohnen
+das Dach|roof|Dächer|Wohnen
+der Hausmeister|caretaker|Hausmeister|Wohnen
+die Hausordnung|house rules|Hausordnungen|Wohnen
+die Nachbarschaft|neighbourhood|Nachbarschaften|Wohnen
+möbliert|furnished||Wohnen
+der Strom|electricity||Wohnen
+das Gas|gas|Gase|Wohnen
+der Reisepass|passport|Reisepässe|Reisen
+das Visum|visa|Visa|Reisen
+der Zoll|customs|Zölle|Reisen
+die Grenze|border|Grenzen|Reisen
+das Ausland|abroad||Reisen
+die Landkarte|map|Landkarten|Reisen
+der Reiseführer|travel guide|Reiseführer|Reisen
+der Campingplatz|campsite|Campingplätze|Reisen
+das Zelt|tent|Zelte|Reisen
+die Jugendherberge|youth hostel|Jugendherbergen|Reisen
+die Pension|guesthouse|Pensionen|Reisen
+die Aussicht|view|Aussichten|Reisen
+die Insel|island|Inseln|Reisen
+die Küste|coast|Küsten|Reisen
+der Wald|forest|Wälder|Natur
+das Tal|valley|Täler|Natur
+der Hügel|hill|Hügel|Natur
+das Feld|field|Felder|Natur
+die Wiese|meadow|Wiesen|Natur
+das Gras|grass|Gräser|Natur
+der Stein|stone|Steine|Natur
+die Erde|earth, soil||Natur
+die Luft|air||Natur
+das Klima|climate|Klimas|Natur
+die Temperatur|temperature|Temperaturen|Wetter
+der Grad|degree|Grad|Wetter
+der Nebel|fog|Nebel|Wetter
+das Eis|ice||Wetter
+bewölkt|cloudy||Wetter
+neblig|foggy||Wetter
+die Firma|company|Firmen|Arbeit
+der Betrieb|business, company|Betriebe|Arbeit
+das Büro|office|Büros|Arbeit
+die Abteilung|department|Abteilungen|Arbeit
+der Mitarbeiter|employee|Mitarbeiter|Arbeit
+die Mitarbeiterin|employee (f)|Mitarbeiterinnen|Arbeit
+der Kunde|customer|Kunden|Arbeit
+die Kundin|customer (f)|Kundinnen|Arbeit
+der Auftrag|order, assignment|Aufträge|Arbeit
+das Projekt|project|Projekte|Arbeit
+die Sitzung|meeting|Sitzungen|Arbeit
+der Termin|appointment|Termine|Arbeit
+der Lohn|wage|Löhne|Arbeit
+die Rente|pension|Renten|Arbeit
+arbeitslos|unemployed||Arbeit
+die Ausbildung|training, apprenticeship|Ausbildungen|Arbeit
+der Azubi|trainee, apprentice|Azubis|Arbeit
+das Praktikum|internship|Praktika|Arbeit
+die Schicht|shift|Schichten|Arbeit
+der Urlaub|holiday, leave|Urlaube|Arbeit
+#B1
+die Gesellschaft|society|Gesellschaften|Gesellschaft
+die Regierung|government|Regierungen|Gesellschaft
+der Staat|state|Staaten|Gesellschaft
+das Gesetz|law|Gesetze|Gesellschaft
+das Recht|right; law|Rechte|Gesellschaft
+die Pflicht|duty|Pflichten|Gesellschaft
+die Wahl|election, choice|Wahlen|Gesellschaft
+die Partei|party (political)|Parteien|Gesellschaft
+der Bürger|citizen|Bürger|Gesellschaft
+die Bürgerin|citizen (f)|Bürgerinnen|Gesellschaft
+die Demokratie|democracy|Demokratien|Gesellschaft
+die Freiheit|freedom|Freiheiten|Gesellschaft
+die Gleichberechtigung|equal rights||Gesellschaft
+die Religion|religion|Religionen|Gesellschaft
+die Tradition|tradition|Traditionen|Gesellschaft
+die Gemeinschaft|community|Gemeinschaften|Gesellschaft
+die Minderheit|minority|Minderheiten|Gesellschaft
+die Mehrheit|majority|Mehrheiten|Gesellschaft
+die Bevölkerung|population|Bevölkerungen|Gesellschaft
+die Generation|generation|Generationen|Gesellschaft
+die Armut|poverty||Gesellschaft
+der Reichtum|wealth|Reichtümer|Gesellschaft
+die Arbeitslosigkeit|unemployment||Gesellschaft
+die Integration|integration||Gesellschaft
+der Flüchtling|refugee|Flüchtlinge|Gesellschaft
+die Einwanderung|immigration||Gesellschaft
+die Wirtschaft|economy|Wirtschaften|Wirtschaft
+der Markt|market|Märkte|Wirtschaft
+der Handel|trade||Wirtschaft
+das Unternehmen|company, enterprise|Unternehmen|Wirtschaft
+die Industrie|industry|Industrien|Wirtschaft
+der Umsatz|turnover|Umsätze|Wirtschaft
+der Gewinn|profit|Gewinne|Wirtschaft
+der Verlust|loss|Verluste|Wirtschaft
+die Steuer|tax|Steuern|Wirtschaft
+der Kredit|loan, credit|Kredite|Wirtschaft
+die Schulden|debts||Wirtschaft
+die Zinsen|interest||Wirtschaft
+die Inflation|inflation||Wirtschaft
+der Verbraucher|consumer|Verbraucher|Wirtschaft
+die Werbung|advertising||Wirtschaft
+die Marke|brand|Marken|Wirtschaft
+die Qualität|quality|Qualitäten|Wirtschaft
+die Menge|quantity, crowd|Mengen|Allgemein
+der Teil|part|Teile|Allgemein
+die Hälfte|half|Hälften|Allgemein
+das Drittel|third|Drittel|Allgemein
+das Viertel|quarter; district|Viertel|Allgemein
+der Unterschied|difference|Unterschiede|Allgemein
+die Ähnlichkeit|similarity|Ähnlichkeiten|Allgemein
+die Art|kind, way|Arten|Allgemein
+die Weise|manner|Weisen|Allgemein
+das Beispiel|example|Beispiele|Allgemein
+der Fall|case; fall|Fälle|Allgemein
+die Situation|situation|Situationen|Allgemein
+der Zustand|condition, state|Zustände|Allgemein
+die Ursache|cause|Ursachen|Allgemein
+die Wirkung|effect|Wirkungen|Allgemein
+die Entwicklung|development|Entwicklungen|Allgemein
+die Veränderung|change|Veränderungen|Allgemein
+der Vorteil|advantage|Vorteile|Allgemein
+der Nachteil|disadvantage|Nachteile|Allgemein
+die Bedeutung|meaning, importance|Bedeutungen|Allgemein
+die Erfahrung|experience|Erfahrungen|Allgemein
+das Ergebnis|result|Ergebnisse|Allgemein
+die Lösung|solution|Lösungen|Allgemein
+die Möglichkeit|possibility|Möglichkeiten|Allgemein
+die Gelegenheit|opportunity|Gelegenheiten|Allgemein
+die Voraussetzung|requirement|Voraussetzungen|Allgemein
+die Absicht|intention|Absichten|Allgemein
+das Ziel|goal|Ziele|Allgemein
+der Zweck|purpose|Zwecke|Allgemein
+der Sinn|sense, meaning|Sinne|Allgemein
+die Ansicht|view, opinion|Ansichten|Meinung
+die Einstellung|attitude; setting|Einstellungen|Meinung
+der Standpunkt|point of view|Standpunkte|Meinung
+das Argument|argument|Argumente|Meinung
+die Kritik|criticism|Kritiken|Meinung
+der Vorschlag|suggestion|Vorschläge|Meinung
+die Zustimmung|approval||Meinung
+die Ablehnung|rejection|Ablehnungen|Meinung
+zustimmen|to agree||Verb
+ablehnen|to reject||Verb
+behaupten|to claim||Verb
+überzeugen|to convince||Verb
+beweisen|to prove||Verb
+vermuten|to suspect, to assume||Verb
+annehmen|to accept; to assume||Verb
+bezweifeln|to doubt||Verb
+befürchten|to fear||Verb
+betonen|to emphasise||Verb
+erwähnen|to mention||Verb
+beschließen|to decide||Verb
+bestimmen|to determine||Verb
+beeinflussen|to influence||Verb
+verbessern|to improve||Verb
+verschlechtern|to worsen||Verb
+erhöhen|to increase||Verb
+senken|to lower||Verb
+steigen|to rise||Verb
+sinken|to fall, to sink||Verb
+wachsen|to grow||Verb
+entstehen|to arise||Verb
+existieren|to exist||Verb
+gelingen|to succeed||Verb
+scheitern|to fail||Verb
+schaffen|to manage; to create||Verb
+leisten|to achieve; to afford (sich)||Verb
+nutzen|to use||Verb
+verwenden|to use||Verb
+gebrauchen|to use||Verb
+ersetzen|to replace||Verb
+vergleichen|to compare||Verb
+unterscheiden|to distinguish||Verb
+bewerten|to assess||Verb
+prüfen|to check, to test||Verb
+kontrollieren|to check||Verb
+überprüfen|to verify||Verb
+bestätigen|to confirm||Verb
+garantieren|to guarantee||Verb
+fordern|to demand||Verb
+verlangen|to demand||Verb
+anbieten|to offer||Verb
+liefern|to deliver||Verb
+erledigen|to deal with, to complete||Verb
+verschieben|to postpone||Verb
+absagen|to cancel||Verb
+vorbereiten|to prepare||Verb
+teilnehmen|to take part||Verb
+veranstalten|to organise (an event)||Verb
+stattfinden|to take place||Verb
+ausfallen|to be cancelled||Verb
+die Veranstaltung|event|Veranstaltungen|Freizeit
+das Ereignis|event|Ereignisse|Allgemein
+die Ausstellung|exhibition|Ausstellungen|Kultur
+das Festival|festival|Festivals|Kultur
+die Bühne|stage|Bühnen|Kultur
+das Publikum|audience||Kultur
+der Zuschauer|spectator|Zuschauer|Kultur
+die Sendung|broadcast, programme|Sendungen|Medien
+der Sender|channel, station|Sender|Medien
+die Zeitschrift|magazine|Zeitschriften|Medien
+der Artikel|article|Artikel|Medien
+die Schlagzeile|headline|Schlagzeilen|Medien
+der Journalist|journalist|Journalisten|Medien
+die Journalistin|journalist (f)|Journalistinnen|Medien
+das Interview|interview|Interviews|Medien
+die Umfrage|survey|Umfragen|Medien
+das Gerücht|rumour|Gerüchte|Medien
+die Werbung|advertisement||Medien
+die Wissenschaft|science|Wissenschaften|Wissenschaft
+die Forschung|research|Forschungen|Wissenschaft
+der Forscher|researcher|Forscher|Wissenschaft
+die Forscherin|researcher (f)|Forscherinnen|Wissenschaft
+das Experiment|experiment|Experimente|Wissenschaft
+die Erfindung|invention|Erfindungen|Wissenschaft
+die Entdeckung|discovery|Entdeckungen|Wissenschaft
+die Universität|university|Universitäten|Bildung
+die Hochschule|university, college|Hochschulen|Bildung
+das Semester|semester|Semester|Bildung
+die Vorlesung|lecture|Vorlesungen|Bildung
+das Seminar|seminar|Seminare|Bildung
+der Professor|professor|Professoren|Bildung
+die Professorin|professor (f)|Professorinnen|Bildung
+das Fach|subject|Fächer|Bildung
+das Stipendium|scholarship|Stipendien|Bildung
+das Zeugnis|report; reference|Zeugnisse|Bildung
+die Bildung|education||Bildung
+die Erziehung|upbringing||Bildung
+der Kindergarten|nursery school|Kindergärten|Bildung
+die Kita|day care centre|Kitas|Bildung
+der Unfall|accident|Unfälle|Verkehr
+der Stau|traffic jam|Staus|Verkehr
+die Autobahn|motorway|Autobahnen|Verkehr
+die Geschwindigkeit|speed|Geschwindigkeiten|Verkehr
+die Strafe|fine, punishment|Strafen|Verkehr
+der Führerschein|driving licence|Führerscheine|Verkehr
+der Fußgänger|pedestrian|Fußgänger|Verkehr
+der Radweg|cycle path|Radwege|Verkehr
+die Verbindung|connection|Verbindungen|Verkehr
+der Anschluss|connection (train)|Anschlüsse|Verkehr
+die Umwelt|environment||Umwelt
+der Umweltschutz|environmental protection||Umwelt
+die Verschmutzung|pollution||Umwelt
+der Abfall|waste|Abfälle|Umwelt
+die Verpackung|packaging|Verpackungen|Umwelt
+die Energie|energy|Energien|Umwelt
+die Sonnenenergie|solar energy||Umwelt
+die Windkraft|wind power||Umwelt
+das Erdöl|crude oil||Umwelt
+die Kohle|coal||Umwelt
+die Natur|nature||Umwelt
+die Tierart|species|Tierarten|Umwelt
+die Dürre|drought|Dürren|Umwelt
+die Überschwemmung|flood|Überschwemmungen|Umwelt
+recyceln|to recycle||Verb
+sparen|to save||Verb
+verschwenden|to waste||Verb
+die Behörde|authority|Behörden|Behörden
+der Antrag|application|Anträge|Behörden
+die Bescheinigung|certificate|Bescheinigungen|Behörden
+die Genehmigung|permit|Genehmigungen|Behörden
+die Unterschrift|signature|Unterschriften|Behörden
+der Termin|appointment|Termine|Behörden
+die Frist|deadline|Fristen|Behörden
+die Gebühr|fee|Gebühren|Behörden
+die Staatsangehörigkeit|nationality|Staatsangehörigkeiten|Behörden
+der Wohnsitz|place of residence|Wohnsitze|Behörden
+der Familienstand|marital status||Behörden
+die Geburtsurkunde|birth certificate|Geburtsurkunden|Behörden
+beantragen|to apply for||Verb
+genehmigen|to approve||Verb
+abholen|to collect||Verb
+einreichen|to submit||Verb
+die Charaktereigenschaft|character trait|Charaktereigenschaften|Menschen
+zuverlässig|reliable||Menschen
+ehrgeizig|ambitious||Menschen
+fleißig|hard-working||Menschen
+faul|lazy||Menschen
+großzügig|generous||Menschen
+geizig|stingy||Menschen
+höflich|polite||Menschen
+unhöflich|rude||Menschen
+ordentlich|tidy||Menschen
+unordentlich|untidy||Menschen
+selbstständig|independent||Menschen
+tolerant|tolerant||Menschen
+neugierig|curious||Menschen
+vorsichtig|careful||Menschen
+mutig|brave||Menschen
+ängstlich|anxious||Menschen
+sympathisch|likeable||Menschen
+unsympathisch|unpleasant||Menschen
+das Verhalten|behaviour||Menschen
+das Vertrauen|trust||Menschen
+die Freundschaft|friendship|Freundschaften|Menschen
+der Streit|argument|Streitigkeiten|Menschen
+das Missverständnis|misunderstanding|Missverständnisse|Menschen
+die Entschuldigung|apology|Entschuldigungen|Menschen
+der Respekt|respect||Menschen
+plötzlich|suddenly||Allgemein
+eigentlich|actually||Allgemein
+tatsächlich|actually, really||Allgemein
+wirklich|really||Allgemein
+ziemlich|quite, fairly||Allgemein
+besonders|especially||Allgemein
+vor allem|above all||Allgemein
+außerdem|besides, furthermore||Allgemein
+trotzdem|nevertheless||Allgemein
+deshalb|therefore||Allgemein
+allerdings|however||Allgemein
+jedenfalls|in any case||Allgemein
+inzwischen|meanwhile||Allgemein
+damals|back then||Allgemein
+bisher|so far||Allgemein
+künftig|in future||Allgemein
+ungefähr|approximately||Allgemein
+genau|exactly||Allgemein
+fast|almost||Allgemein
+kaum|hardly||Allgemein
+sogar|even||Allgemein
+nämlich|namely, you see||Allgemein
+übrigens|by the way||Allgemein
+#B2
+die Auswirkung|effect, impact|Auswirkungen|Allgemein
+die Folge|consequence|Folgen|Allgemein
+der Einfluss|influence|Einflüsse|Allgemein
+die Herausforderung|challenge|Herausforderungen|Allgemein
+die Maßnahme|measure|Maßnahmen|Allgemein
+die Strategie|strategy|Strategien|Allgemein
+das Konzept|concept|Konzepte|Allgemein
+der Ansatz|approach|Ansätze|Allgemein
+die Umsetzung|implementation|Umsetzungen|Allgemein
+die Grundlage|basis|Grundlagen|Allgemein
+der Rahmen|framework|Rahmen|Allgemein
+der Bereich|area, field|Bereiche|Allgemein
+der Aspekt|aspect|Aspekte|Allgemein
+der Faktor|factor|Faktoren|Allgemein
+die Tendenz|tendency|Tendenzen|Allgemein
+der Trend|trend|Trends|Allgemein
+die Zunahme|increase|Zunahmen|Allgemein
+die Abnahme|decrease|Abnahmen|Allgemein
+der Anstieg|rise|Anstiege|Allgemein
+der Rückgang|decline|Rückgänge|Allgemein
+der Anteil|share, proportion|Anteile|Allgemein
+die Mehrzahl|majority||Allgemein
+der Durchschnitt|average|Durchschnitte|Allgemein
+die Statistik|statistics|Statistiken|Allgemein
+die Prognose|forecast|Prognosen|Allgemein
+die Krise|crisis|Krisen|Gesellschaft
+der Konflikt|conflict|Konflikte|Gesellschaft
+die Debatte|debate|Debatten|Gesellschaft
+die Forderung|demand|Forderungen|Gesellschaft
+der Protest|protest|Proteste|Gesellschaft
+die Demonstration|demonstration|Demonstrationen|Gesellschaft
+der Streik|strike|Streiks|Gesellschaft
+die Gewerkschaft|trade union|Gewerkschaften|Gesellschaft
+der Arbeitgeberverband|employers' association|Arbeitgeberverbände|Gesellschaft
+die Verantwortung|responsibility|Verantwortungen|Gesellschaft
+die Gerechtigkeit|justice||Gesellschaft
+die Ungleichheit|inequality|Ungleichheiten|Gesellschaft
+die Diskriminierung|discrimination|Diskriminierungen|Gesellschaft
+die Vielfalt|diversity||Gesellschaft
+der Wohlstand|prosperity||Gesellschaft
+die Globalisierung|globalisation||Gesellschaft
+die Nachhaltigkeit|sustainability||Umwelt
+der Klimaschutz|climate protection||Umwelt
+der Ausstoß|emission(s)||Umwelt
+die Ressource|resource|Ressourcen|Umwelt
+die Erderwärmung|global warming||Umwelt
+der Verkehrswandel|transport transition||Umwelt
+die Energiewende|energy transition||Umwelt
+der Verbrauch|consumption||Umwelt
+die Gesundheitsversorgung|healthcare||Gesundheit
+die Pflege|care, nursing||Gesundheit
+die Vorsorge|prevention, provision||Gesundheit
+die Behandlung|treatment|Behandlungen|Gesundheit
+die Therapie|therapy|Therapien|Gesundheit
+die Nebenwirkung|side effect|Nebenwirkungen|Gesundheit
+die Diagnose|diagnosis|Diagnosen|Gesundheit
+die Ernährung|nutrition||Gesundheit
+der Arbeitsmarkt|labour market|Arbeitsmärkte|Arbeit
+die Fachkraft|skilled worker|Fachkräfte|Arbeit
+der Fachkräftemangel|shortage of skilled workers||Arbeit
+die Qualifikation|qualification|Qualifikationen|Arbeit
+die Kompetenz|competence|Kompetenzen|Arbeit
+die Führungskraft|manager|Führungskräfte|Arbeit
+die Geschäftsführung|management||Arbeit
+der Vorgesetzte|superior, boss|Vorgesetzten|Arbeit
+die Kündigung|dismissal, notice|Kündigungen|Arbeit
+die Bewerbung|application|Bewerbungen|Arbeit
+das Arbeitsverhältnis|employment relationship|Arbeitsverhältnisse|Arbeit
+die Vergütung|remuneration|Vergütungen|Arbeit
+die Verhandlung|negotiation|Verhandlungen|Arbeit
+der Wettbewerb|competition|Wettbewerbe|Wirtschaft
+die Konkurrenz|competition, competitors||Wirtschaft
+die Nachfrage|demand||Wirtschaft
+das Angebot|supply, offer|Angebote|Wirtschaft
+die Investition|investment|Investitionen|Wirtschaft
+der Aufschwung|upturn||Wirtschaft
+der Abschwung|downturn||Wirtschaft
+die Insolvenz|insolvency|Insolvenzen|Wirtschaft
+die Digitalisierung|digitalisation||Technik
+die Datenschutzerklärung|privacy policy|Datenschutzerklärungen|Technik
+die Software|software||Technik
+die Anwendung|application, use|Anwendungen|Technik
+der Algorithmus|algorithm|Algorithmen|Technik
+die Sicherheitslücke|security gap|Sicherheitslücken|Technik
+die Überwachung|surveillance||Technik
+analysieren|to analyse||Verb
+argumentieren|to argue (a case)||Verb
+begründen|to justify||Verb
+widersprechen|to contradict||Verb
+einräumen|to concede||Verb
+hervorheben|to highlight||Verb
+darstellen|to present, to represent||Verb
+erläutern|to explain||Verb
+zusammenfassen|to summarise||Verb
+berücksichtigen|to take into account||Verb
+gewährleisten|to ensure||Verb
+ermöglichen|to make possible||Verb
+verhindern|to prevent||Verb
+vermeiden|to avoid||Verb
+fördern|to promote, to support||Verb
+unterstützen|to support||Verb
+bewältigen|to cope with||Verb
+übernehmen|to take over||Verb
+umsetzen|to implement||Verb
+durchsetzen|to enforce||Verb
+verwirklichen|to realise||Verb
+beitragen|to contribute||Verb
+betreffen|to concern||Verb
+beziehen|to obtain; to refer (sich)||Verb
+verfügen über|to have at one's disposal||Verb
+verzichten auf|to do without||Verb
+sich auseinandersetzen mit|to deal with||Verb
+sich einsetzen für|to stand up for||Verb
+sich herausstellen|to turn out||Verb
+offensichtlich|obviously||Allgemein
+grundsätzlich|fundamentally, in principle||Allgemein
+erheblich|considerable||Allgemein
+deutlich|clear(ly)||Allgemein
+wesentlich|essential(ly)||Allgemein
+zunehmend|increasingly||Allgemein
+weitgehend|largely||Allgemein
+ausschließlich|exclusively||Allgemein
+hauptsächlich|mainly||Allgemein
+vergleichsweise|comparatively||Allgemein
+angemessen|appropriate||Allgemein
+zahlreich|numerous||Allgemein
+umstritten|controversial||Allgemein
+nachvollziehbar|comprehensible||Allgemein
+#C1
+die Annahme|assumption|Annahmen|Wissenschaft
+die Behauptung|claim|Behauptungen|Wissenschaft
+der Beleg|evidence|Belege|Wissenschaft
+die Erkenntnis|insight|Erkenntnisse|Wissenschaft
+die Hypothese|hypothesis|Hypothesen|Wissenschaft
+die Theorie|theory|Theorien|Wissenschaft
+die Methode|method|Methoden|Wissenschaft
+die Quelle|source|Quellen|Wissenschaft
+das Zitat|quotation|Zitate|Wissenschaft
+die Fußnote|footnote|Fußnoten|Wissenschaft
+die Gliederung|outline|Gliederungen|Wissenschaft
+die Abhandlung|treatise|Abhandlungen|Wissenschaft
+die Fragestellung|research question|Fragestellungen|Wissenschaft
+die Schlussfolgerung|conclusion|Schlussfolgerungen|Wissenschaft
+die Wechselwirkung|interaction|Wechselwirkungen|Wissenschaft
+der Widerspruch|contradiction|Widersprüche|Wissenschaft
+die Gegebenheit|circumstance, given fact|Gegebenheiten|Allgemein
+der Sachverhalt|facts of the matter|Sachverhalte|Allgemein
+der Gesichtspunkt|point of view, aspect|Gesichtspunkte|Allgemein
+der Stellenwert|significance|Stellenwerte|Allgemein
+die Tragweite|scope, implications||Allgemein
+das Ausmaß|extent|Ausmaße|Allgemein
+die Beschaffenheit|nature, condition||Allgemein
+die Voraussicht|foresight||Allgemein
+die Vorgehensweise|procedure|Vorgehensweisen|Allgemein
+das Spannungsfeld|area of conflict|Spannungsfelder|Allgemein
+die Kehrseite|downside|Kehrseiten|Allgemein
+das Dilemma|dilemma|Dilemmata|Allgemein
+der Kompromiss|compromise|Kompromisse|Allgemein
+der Konsens|consensus|Konsense|Allgemein
+die Legitimation|legitimacy|Legitimationen|Gesellschaft
+die Teilhabe|participation||Gesellschaft
+die Zivilgesellschaft|civil society||Gesellschaft
+das Ehrenamt|voluntary work|Ehrenämter|Gesellschaft
+die Gesetzgebung|legislation||Gesellschaft
+die Verordnung|regulation|Verordnungen|Gesellschaft
+die Bürokratie|bureaucracy|Bürokratien|Gesellschaft
+die Rechtsprechung|jurisdiction||Gesellschaft
+die Verfassung|constitution|Verfassungen|Gesellschaft
+der Rechtsstaat|state under the rule of law|Rechtsstaaten|Gesellschaft
+die Haushaltslage|budget situation||Wirtschaft
+die Subvention|subsidy|Subventionen|Wirtschaft
+die Konjunktur|economic situation||Wirtschaft
+die Rendite|return (on investment)|Renditen|Wirtschaft
+der Strukturwandel|structural change||Wirtschaft
+ableiten|to derive||Verb
+abwägen|to weigh up||Verb
+anknüpfen an|to link up with||Verb
+anstreben|to aim for||Verb
+aufgreifen|to take up||Verb
+ausblenden|to fade out, to ignore||Verb
+beanspruchen|to claim, to require||Verb
+bemängeln|to criticise, to find fault||Verb
+beurteilen|to judge||Verb
+einbeziehen|to include||Verb
+entgegenwirken|to counteract||Verb
+erörtern|to discuss||Verb
+gewichten|to weight||Verb
+hinterfragen|to question||Verb
+infrage stellen|to call into question||Verb
+konkretisieren|to specify||Verb
+relativieren|to put into perspective||Verb
+resultieren aus|to result from||Verb
+untermauern|to underpin||Verb
+veranschaulichen|to illustrate||Verb
+verdeutlichen|to clarify||Verb
+vernachlässigen|to neglect||Verb
+verallgemeinern|to generalise||Verb
+voraussetzen|to presuppose||Verb
+zugrunde liegen|to underlie||Verb
+zurückführen auf|to attribute to||Verb
+sich abzeichnen|to emerge||Verb
+sich niederschlagen in|to be reflected in||Verb
+ambivalent|ambivalent||Allgemein
+eindeutig|unambiguous||Allgemein
+fundiert|well-founded||Allgemein
+gravierend|serious||Allgemein
+immens|immense||Allgemein
+kontrovers|controversial||Allgemein
+maßgeblich|decisive||Allgemein
+nachhaltig|sustainable, lasting||Allgemein
+plausibel|plausible||Allgemein
+prägnant|concise||Allgemein
+schlüssig|conclusive||Allgemein
+stichhaltig|valid, sound||Allgemein
+tiefgreifend|profound||Allgemein
+unabdingbar|indispensable||Allgemein
+unumgänglich|unavoidable||Allgemein
+vielschichtig|complex, multi-layered||Allgemein
+zwangsläufig|inevitably||Allgemein
+gewissermaßen|so to speak||Allgemein
+mitunter|at times||Allgemein
+nahezu|almost||Allgemein
+schließlich|finally; after all||Allgemein
+überdies|moreover||Allgemein
+#C2
+die Besonnenheit|level-headedness||Menschen
+die Gelassenheit|composure||Menschen
+die Hybris|hubris||Menschen
+die Eitelkeit|vanity||Menschen
+der Scharfsinn|astuteness||Menschen
+die Schlagfertigkeit|quick-wittedness||Menschen
+der Hochmut|arrogance||Menschen
+die Arglist|malice||Menschen
+der Zwiespalt|inner conflict|Zwiespalte|Gefühle
+die Wehmut|melancholy||Gefühle
+die Schadenfreude|malicious joy||Gefühle
+die Genugtuung|satisfaction (vindication)||Gefühle
+das Unbehagen|unease||Gefühle
+die Fassungslosigkeit|bewilderment||Gefühle
+die Bredouille|predicament||Redewendungen
+der Spagat|balancing act|Spagate|Redewendungen
+die Gratwanderung|tightrope walk|Gratwanderungen|Redewendungen
+das Pulverfass|powder keg|Pulverfässer|Redewendungen
+der Etikettenschwindel|false labelling||Redewendungen
+die Augenwischerei|eyewash||Redewendungen
+der Tropfen auf den heißen Stein|a drop in the ocean||Redewendungen
+etwas aufs Spiel setzen|to put something at stake||Redewendungen
+etwas auf die Goldwaage legen|to take something too literally||Redewendungen
+jemandem den Rücken stärken|to back someone up||Redewendungen
+etwas unter den Teppich kehren|to sweep something under the carpet||Redewendungen
+mit offenen Karten spielen|to put one's cards on the table||Redewendungen
+den Faden verlieren|to lose the thread||Redewendungen
+ins Gewicht fallen|to be of importance||Redewendungen
+auf der Hand liegen|to be obvious||Redewendungen
+zur Debatte stehen|to be up for discussion||Redewendungen
+aus dem Ruder laufen|to get out of hand||Redewendungen
+Schritt halten mit|to keep pace with||Redewendungen
+beipflichten|to concur||Verb
+erwidern|to reply||Verb
+entgegnen|to retort||Verb
+konstatieren|to state||Verb
+monieren|to criticise||Verb
+postulieren|to postulate||Verb
+suggerieren|to suggest, to insinuate||Verb
+untergraben|to undermine||Verb
+verklausulieren|to phrase in a convoluted way||Verb
+verschleiern|to disguise||Verb
+beschönigen|to gloss over||Verb
+anprangern|to denounce||Verb
+erschweren|to make more difficult||Verb
+erodieren|to erode||Verb
+obliegen|to be incumbent upon||Verb
+bewerkstelligen|to manage, to accomplish||Verb
+anberaumen|to schedule (formally)||Verb
+abwiegeln|to play down||Verb
+lavieren|to manoeuvre||Verb
+sich anmaßen|to presume||Verb
+akribisch|meticulous||Allgemein
+antiquiert|antiquated||Allgemein
+apodiktisch|apodictic, dogmatic||Allgemein
+eklatant|blatant||Allgemein
+ephemer|ephemeral||Allgemein
+fragil|fragile||Allgemein
+hanebüchen|outrageous, absurd||Allgemein
+inhärent|inherent||Allgemein
+lapidar|terse||Allgemein
+obsolet|obsolete||Allgemein
+pragmatisch|pragmatic||Allgemein
+prekär|precarious||Allgemein
+subtil|subtle||Allgemein
+süffisant|smug||Allgemein
+unverhohlen|undisguised||Allgemein
+virulent|virulent, pressing||Allgemein
+zwiespältig|ambivalent||Allgemein
+gleichwohl|nonetheless||Allgemein
+mithin|consequently||Allgemein
+indes|however, meanwhile||Allgemein
+schlechterdings|utterly||Allgemein

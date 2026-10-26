@@ -1,0 +1,720 @@
+@@ 1
+#vocab
+die Eltern (Pl.) = parents
+das Kind, -er = child
+der Sohn, ¨e = son
+die Tochter, ¨ = daughter
+der Mann, ¨er = man, husband
+die Frau, -en = woman, wife, Mrs
+heißen = to be called
+sprechen (spricht) = to speak
+die Stadt, ¨e = city, town
+die Adresse, -n = address
+die Telefonnummer, -n = phone number
+geboren = born
+alt / jung = old / young
+geschieden = divorced
+der Ingenieur, -e / die Ingenieurin, -nen = engineer
+der Student, -en / die Studentin, -nen = student
+Herr / Frau = Mr / Mrs
+Freut mich! = Nice to meet you!
+#ex
+Wie heißen Sie? – Ich heiße Leila Ahmadi. = What is your name? – My name is Leila Ahmadi.
+Woher kommst du? – Aus Spanien. = Where are you from? – From Spain.
+Ich spreche Hindi, Englisch und ein bisschen Deutsch. = I speak Hindi, English and a little German.
+Das ist mein Mann. Er heißt Jonas. = This is my husband. His name is Jonas.
+Wir sind nicht verheiratet. = We are not married.
+Hast du Geschwister? – Ja, einen Bruder. = Do you have siblings? – Yes, a brother.
+Meine Eltern sind schon alt. = My parents are already old.
+Ihr habt eine schöne Wohnung. = You (pl.) have a nice flat.
+Die Kinder sind in der Schule. = The children are at school.
+Freut mich, Frau Weber! = Nice to meet you, Mrs Weber!
+#read2
+Ein Formular im Sprachkurs
+Heute ist der erste Tag im Deutschkurs. Die Lehrerin heißt Frau Krüger. Sie sagt: „Bitte füllen Sie das Formular aus.“ Leila schreibt: Name: Ahmadi. Vorname: Leila. Alter: 31 Jahre. Land: Iran. Wohnort: Berlin. Beruf: Ärztin. Familienstand: verheiratet. Kinder: eine Tochter. Sprachen: Persisch, Englisch, ein bisschen Deutsch. Neben Leila sitzt ein Mann. Er heißt Tomás und kommt aus Brasilien. Er ist 25 und Student. Er hat keine Kinder, aber er hat drei Schwestern. Tomás fragt: „Bist du auch neu hier?“ Leila sagt: „Ja. Ich bin seit zwei Monaten in Berlin.“ Die beiden sind sofort Freunde. Nach dem Kurs trinken sie zusammen einen Kaffee.
+#dialog
+Frau Krüger: Guten Morgen! Ich bin Frau Krüger, Ihre Lehrerin. Wie heißen Sie?
+Tomás: Guten Morgen. Ich heiße Tomás Silva.
+Frau Krüger: Woher kommen Sie, Herr Silva?
+Tomás: Ich komme aus Brasilien, aus São Paulo.
+Frau Krüger: Und was machen Sie hier in Berlin?
+Tomás: Ich bin Student. Ich studiere Informatik.
+Frau Krüger: Sehr schön. Welche Sprachen sprechen Sie?
+Tomás: Portugiesisch, Englisch und jetzt ein bisschen Deutsch.
+Frau Krüger: Sehr gut! Herzlich willkommen im Kurs.
+#dq
+Woher kommt Tomás? || Aus Brasilien (São Paulo).
+Was studiert Tomás? || Informatik.
+Welche Sprachen spricht er? || Portugiesisch, Englisch und ein bisschen Deutsch.
+#task
+Wie ___ du? – Ich heiße Tomás. (heißen) || heißt
+Leila ___ Ärztin. (sein) || ist
+___ ihr Kinder? (haben) || Habt
+Ich ___ Deutsch und Englisch. (sprechen) || spreche
+Er ___ Persisch. (sprechen) || spricht
+Wir ___ aus Brasilien. (kommen) || kommen
+Formell: „Woher kommst du?“ → || Woher kommen Sie?
+Ersetze: __Tomás__ ist Student. || Er ist Student.
+Ersetze: __Leila und ich__ sind Freunde. || Wir sind Freunde.
+Fehler? „Er hat 25 Jahre alt.“ || Er ist 25 Jahre alt.
+
+@@ 2
+#vocab
+machen = to do, to make
+hören = to listen, to hear
+lernen = to learn, to study
+arbeiten = to work
+fahren (fährt) = to drive, to go (by vehicle)
+schlafen (schläft) = to sleep
+essen (isst) = to eat
+sehen (sieht) = to see
+nehmen (nimmt) = to take
+das Fahrrad, ¨er = bicycle
+der Sport = sport
+der Fußball = football
+die Gitarre, -n = guitar
+das Buch, ¨er = book
+der Film, -e = film
+zusammen = together
+am Abend = in the evening
+jeden Tag = every day
+#ex
+Was machst du am Wochenende? = What are you doing at the weekend?
+Ich höre gern Musik. = I like listening to music.
+Er fährt jeden Tag mit dem Fahrrad. = He cycles every day.
+Sie liest abends ein Buch. = She reads a book in the evenings.
+Am Sonntag schläft Jonas lange. = On Sunday Jonas sleeps in.
+Isst du gern Pizza? = Do you like eating pizza?
+Wir spielen zusammen Fußball. = We play football together.
+Du sprichst sehr gut Deutsch! = You speak German very well!
+Ihr arbeitet viel. = You (pl.) work a lot.
+Nimmst du einen Tee? = Will you have a tea?
+#read2
+Die WG in der Goethestraße
+In einer Wohnung in der Goethestraße wohnen drei Personen zusammen: Jonas, Mia und Ravi. Das ist eine WG, eine Wohngemeinschaft. Jonas ist 29 und arbeitet in einer Bank. Er fährt jeden Morgen mit dem Fahrrad zur Arbeit. Am Abend spielt er Gitarre. Mia ist Studentin. Sie lernt viel und liest gern. Am Wochenende arbeitet sie in einem Café. Ravi kocht sehr gern, am liebsten indisch. Er isst kein Fleisch. Am Samstag kocht er für alle. Dann essen sie zusammen und sprechen über die Woche. Mia sagt: „Ravi, du kochst fantastisch!“ Am Sonntag schlafen alle lange. Am Nachmittag sehen sie oft zusammen einen Film. Manchmal spielen Jonas und Ravi Fußball im Park. Mia spielt nie mit. Sie findet Fußball langweilig.
+#dialog
+Mia: Hallo Ravi! Was machst du heute Abend?
+Ravi: Ich koche. Isst du mit?
+Mia: Gern! Was kochst du denn?
+Ravi: Gemüsecurry mit Reis. Und Jonas bringt Brot mit.
+Mia: Super. Ich lerne noch bis sieben Uhr.
+Ravi: Kein Problem. Wir essen um halb acht.
+Mia: Und danach? Sehen wir einen Film?
+Ravi: Ja, aber Jonas spielt danach Gitarre. Er übt für ein Konzert.
+Mia: Oh nein! Dann lese ich lieber ein Buch.
+#dq
+Was kocht Ravi? || Gemüsecurry mit Reis.
+Wann essen sie? || Um halb acht.
+Was macht Jonas nach dem Essen? || Er spielt Gitarre / übt für ein Konzert.
+#task
+Er ___ jeden Tag Fahrrad. (fahren) || fährt
+Du ___ gern Bücher. (lesen) || liest
+Mia ___ am Sonntag lange. (schlafen) || schläft
+___ du Fleisch? (essen) || Isst
+Wir ___ heute Abend zusammen. (kochen) || kochen
+Ihr ___ zu viel. (arbeiten) || arbeitet
+Sie (Sg.) ___ einen Film. (sehen) || sieht
+Er ___ einen Kaffee. (nehmen) || nimmt
+Du ___ in einer Bank. (arbeiten) || arbeitest
+Fehler? „Jonas fahrt zur Arbeit.“ || Jonas fährt zur Arbeit.
+
+@@ 3
+#vocab
+der Wecker, - = alarm clock
+duschen = to shower
+der Kaffee = coffee
+die Arbeit = work
+die Pause, -n = break
+das Mittagessen = lunch
+das Abendessen = dinner
+nach Hause = (to) home
+zu Hause = at home
+spät / früh = late / early
+um sieben Uhr = at seven o'clock
+endlich = finally
+müde = tired
+schnell = quickly, fast
+lange = for a long time
+am Wochenende = at the weekend
+das Handy, -s = mobile phone
+die E-Mail, -s = email
+#ex
+Um sieben Uhr klingelt der Wecker. = At seven the alarm clock rings.
+Dann dusche ich schnell. = Then I take a quick shower.
+Im Büro trinke ich zuerst einen Kaffee. = In the office I first drink a coffee.
+Heute arbeitet Ravi bis fünf Uhr. = Today Ravi works until five.
+Am Mittag macht er eine Pause. = At midday he takes a break.
+Nach der Arbeit fährt er nach Hause. = After work he goes home.
+Abends ist er sehr müde. = In the evenings he is very tired.
+Leider habe ich heute keine Zeit. = Unfortunately I have no time today.
+Morgen schreibe ich die E-Mail. = Tomorrow I will write the email.
+Am Wochenende schläft Mia lange. = At the weekend Mia sleeps for a long time.
+#read2
+Ein Montag von Leila
+Leila ist Ärztin in einem Krankenhaus. Ihr Tag beginnt sehr früh. Um halb sechs klingelt der Wecker. Zuerst duscht Leila, dann frühstückt sie mit ihrem Mann. Um Viertel nach sechs fährt sie mit der U-Bahn zur Arbeit. Im Krankenhaus trinkt sie zuerst einen Kaffee. Dann sieht sie die Patienten. Am Mittag isst sie in der Kantine. Die Pause ist kurz, nur zwanzig Minuten. Am Nachmittag hat sie viele Termine. Um vier Uhr ist die Arbeit zu Ende. Danach holt sie ihre Tochter vom Kindergarten ab. Zu Hause spielen sie zusammen. Um acht Uhr schläft die Tochter. Leila liest noch ein bisschen. Um zehn Uhr ist sie sehr müde. Montags ist ihr Tag immer lang.
+#dialog
+Jonas: Morgen, Ravi! Du bist ja schon wach!
+Ravi: Ja, heute beginnt meine Arbeit um acht.
+Jonas: Um acht? Das ist früh. Frühstückst du noch?
+Ravi: Nein, keine Zeit. Ich trinke nur schnell einen Kaffee.
+Jonas: Und wann kommst du nach Hause?
+Ravi: Heute spät, so um sieben. Wir haben ein Meeting.
+Jonas: Dann koche ich heute. Okay?
+Ravi: Super, danke! Bis heute Abend!
+#dq
+Wann beginnt Ravis Arbeit? || Um acht Uhr.
+Was macht Ravi zum Frühstück? || Er trinkt nur einen Kaffee.
+Wer kocht heute? || Jonas.
+#task
+Satz mit „Heute“ beginnen: Ich arbeite bis fünf. || Heute arbeite ich bis fünf.
+Satz mit „Dann“ beginnen: Sie duscht. || Dann duscht sie.
+Satz mit „Am Abend“ beginnen: Wir sehen fern. || Am Abend sehen wir fern.
+Satz mit „Leider“ beginnen: Ich habe keine Zeit. || Leider habe ich keine Zeit.
+Satz mit „Um sieben Uhr“ beginnen: Der Wecker klingelt. || Um sieben Uhr klingelt der Wecker.
+Satz mit „Morgen“ beginnen: Er fährt nach Hamburg. || Morgen fährt er nach Hamburg.
+Fehler? „Am Mittag er isst in der Kantine.“ || Am Mittag isst er in der Kantine.
+Fehler? „Zuerst ich trinke Kaffee.“ || Zuerst trinke ich Kaffee.
+Ordne: um acht / beginnt / die Arbeit || Die Arbeit beginnt um acht.
+Ordne: nach Hause / fährt / Leila / um vier || Leila fährt um vier nach Hause.
+
+@@ 4
+#vocab
+wie lange = how long
+wie alt = how old
+wie spät = what time
+fragen = to ask
+antworten = to answer
+die Frage, -n = question
+die Antwort, -en = answer
+verstehen = to understand
+wiederholen = to repeat
+buchstabieren = to spell
+langsam = slowly
+noch einmal = once more, again
+das Wort, ¨er = word
+bedeuten = to mean
+die Hausaufgabe, -n = homework
+die Lehrerin, -nen = teacher (f)
+richtig / falsch = right / wrong
+Entschuldigung! = Excuse me! / Sorry!
+#ex
+Wie lange wohnst du schon hier? = How long have you lived here?
+Was bedeutet das Wort „Feierabend“? = What does the word "Feierabend" mean?
+Können Sie das bitte wiederholen? = Can you repeat that, please?
+Wie schreibt man das? = How do you write that?
+Sprechen Sie bitte langsam! = Please speak slowly!
+Verstehst du die Frage? = Do you understand the question?
+Wo ist hier die Toilette? = Where is the toilet here?
+Wann beginnt der Kurs? = When does the course start?
+Wohin fährst du am Wochenende? = Where are you going at the weekend?
+Hast du keine Zeit? – Doch, ich habe Zeit. = Don't you have time? – Yes, I do have time.
+#read2
+Fragen in der Pause
+In der Pause sitzen die Kursteilnehmer zusammen. Sie fragen und antworten. Tomás fragt Aiko: „Woher kommst du?“ Aiko antwortet: „Aus Japan, aus Osaka.“ – „Und wie lange bist du schon in Berlin?“ – „Seit drei Wochen.“ Dann fragt Aiko: „Was machst du in Berlin?“ Tomás sagt: „Ich studiere. Und du?“ – „Ich arbeite als Designerin.“ Leila hat eine Frage für die Lehrerin: „Frau Krüger, was bedeutet ‚Feierabend‘?“ Frau Krüger erklärt: „Feierabend ist das Ende der Arbeit. Um fünf Uhr habe ich Feierabend.“ Leila versteht das Wort nicht sofort. Sie fragt: „Können Sie das bitte noch einmal sagen?“ Frau Krüger wiederholt es langsam. Jetzt ist alles klar. Feierabend ist ein schönes Wort.
+#dialog
+Aiko: Entschuldigung, ist der Platz hier frei?
+Leila: Ja, natürlich. Bist du neu im Kurs?
+Aiko: Ja, heute ist mein erster Tag. Ich heiße Aiko.
+Leila: Ich bin Leila. Woher kommst du, Aiko?
+Aiko: Aus Japan. Und du?
+Leila: Aus dem Iran. Wie lange bist du schon in Deutschland?
+Aiko: Erst drei Wochen. Wie spät ist es jetzt?
+Leila: Kurz vor zehn. Die Pause ist gleich zu Ende.
+Aiko: Wann ist der Kurs zu Ende?
+Leila: Um halb eins.
+#dq
+Woher kommt Aiko? || Aus Japan.
+Wie lange ist Aiko schon in Deutschland? || Drei Wochen.
+Wann ist der Kurs zu Ende? || Um halb eins.
+#task
+Ja/Nein-Frage: Du kommst aus Japan. || Kommst du aus Japan?
+Ja/Nein-Frage: Sie wohnt in Berlin. || Wohnt sie in Berlin?
+W-Frage zur Antwort: „Ich wohne in Köln.“ || Wo wohnst du?
+W-Frage zur Antwort: „Ich komme aus Polen.“ || Woher kommst du?
+W-Frage zur Antwort: „Der Kurs beginnt um neun.“ || Wann beginnt der Kurs?
+W-Frage zur Antwort: „Ich bin 30.“ || Wie alt bist du?
+W-Frage zur Antwort: „Das kostet zwei Euro.“ || Wie viel kostet das?
+Antworte positiv: Hast du keinen Hunger? – ___, ich habe Hunger. || Doch
+Antworte: Kommst du nicht mit? – Doch, ich ___ mit. || komme
+Fehler? „Wo du wohnst?“ || Wo wohnst du?
+
+@@ 5
+#vocab
+das Sofa, -s = sofa
+der Kühlschrank, ¨e = fridge
+der Herd, -e = cooker, stove
+die Waschmaschine, -n = washing machine
+das Fenster, - = window
+die Tür, -en = door
+der Balkon, -e = balcony
+der Flur, -e = hallway
+das Wohnzimmer, - = living room
+das Schlafzimmer, - = bedroom
+der Garten, ¨ = garden
+das Haus, ¨er = house
+der Spiegel, - = mirror
+die Uhr, -en = clock, watch
+hell / dunkel = bright / dark
+groß / klein = big / small
+neu / alt = new / old
+gemütlich = cosy
+#ex
+Das ist der Kühlschrank. Er ist neu. = This is the fridge. It is new.
+Die Küche ist klein, aber hell. = The kitchen is small but bright.
+Das Wohnzimmer hat zwei Fenster. = The living room has two windows.
+Die Stühle sind alt. = The chairs are old.
+Wo ist das Bad? – Das Bad ist links. = Where is the bathroom? – The bathroom is on the left.
+Der Balkon ist sehr schön. = The balcony is very nice.
+Die Lampen sind modern. = The lamps are modern.
+Ist das ein Sofa oder ein Bett? = Is that a sofa or a bed?
+Das sind keine Regale, das sind Schränke. = Those aren't shelves, those are cupboards.
+Die Wohnung ist gemütlich. = The flat is cosy.
+#read2
+Eine Wohnung zu vermieten
+Anzeige: Schöne 3-Zimmer-Wohnung in Berlin-Pankow, 72 Quadratmeter, 2. Stock. Die Wohnung hat ein Wohnzimmer, zwei Schlafzimmer, eine Küche, ein Bad und einen Balkon. Die Küche ist neu: Herd, Kühlschrank und Spülmaschine sind da. Das Bad hat eine Dusche und ein Fenster. Die Zimmer sind hell und ruhig. Der Balkon ist groß, perfekt für Pflanzen. Die Miete ist 980 Euro warm. Die Wohnung ist frei ab dem 1. März. Haustiere sind leider nicht erlaubt. Die U-Bahn ist nur fünf Minuten entfernt. Ein Supermarkt und ein Park sind auch in der Nähe. Interesse? Rufen Sie an: Hausverwaltung Schmidt, Telefon 030 4455 6677.
+#dialog
+Ravi: Guten Tag, ich rufe wegen der Wohnung in Pankow an.
+Frau Schmidt: Guten Tag. Ja, die Wohnung ist noch frei.
+Ravi: Wie groß ist die Wohnung?
+Frau Schmidt: Zweiundsiebzig Quadratmeter, drei Zimmer.
+Ravi: Ist die Küche möbliert?
+Frau Schmidt: Ja, die Küche ist neu, mit Herd und Kühlschrank.
+Ravi: Und wie hoch ist die Miete?
+Frau Schmidt: Neunhundertachtzig Euro warm.
+Ravi: Kann ich die Wohnung sehen?
+Frau Schmidt: Natürlich. Am Donnerstag um fünf?
+Ravi: Ja, das passt. Vielen Dank!
+#dq
+Wie viele Zimmer hat die Wohnung? || Drei.
+Wie hoch ist die Miete? || 980 Euro warm.
+Wann sieht Ravi die Wohnung? || Am Donnerstag um fünf.
+#task
+___ Kühlschrank ist neu. (der/die/das) || Der
+___ Küche ist klein. (der/die/das) || Die
+___ Fenster ist groß. (der/die/das) || Das
+Plural: der Stuhl → die ___ || Stühle
+Plural: das Zimmer → die ___ || Zimmer
+Plural: die Lampe → die ___ || Lampen
+Plural: das Bett → die ___ || Betten
+Plural: der Schrank → die ___ || Schränke
+Ersetze mit Pronomen: __Die Wohnung__ ist hell. || Sie ist hell.
+Ersetze mit Pronomen: __Der Balkon__ ist groß. || Er ist groß.
+
+@@ 6
+#vocab
+die Banane, -n = banana
+die Kartoffel, -n = potato
+die Zwiebel, -n = onion
+die Butter = butter
+der Joghurt, -s = yoghurt
+das Wasser = water
+der Saft, ¨e = juice
+die Flasche, -n = bottle
+das Kilo, -s = kilo
+das Gramm = gram
+das Stück, -e = piece
+der Euro, -s = euro
+kaufen = to buy
+brauchen = to need
+suchen = to look for
+bezahlen = to pay
+billig / teuer = cheap / expensive
+die Einkaufsliste, -n = shopping list
+#ex
+Ich brauche ein Kilo Kartoffeln. = I need a kilo of potatoes.
+Wir kaufen einen Saft und zwei Flaschen Wasser. = We are buying a juice and two bottles of water.
+Hast du einen Stift? Ich schreibe eine Einkaufsliste. = Do you have a pen? I'm writing a shopping list.
+Er sucht den Käse. = He is looking for the cheese.
+Möchten Sie eine Tüte? = Would you like a bag?
+Ich nehme den Joghurt und die Butter. = I'll take the yoghurt and the butter.
+Sie bezahlt an der Kasse. = She pays at the till.
+Die Tomaten kosten 2,50 Euro das Kilo. = The tomatoes cost 2.50 euros a kilo.
+Das Brot ist heute im Angebot. = The bread is on special offer today.
+Kennst du den Supermarkt hier? = Do you know the supermarket here?
+#read2
+Einkaufen auf dem Markt
+Jeden Samstag geht Anna Weber auf den Markt. Sie hat immer eine Einkaufsliste. Heute braucht sie ein Kilo Äpfel, einen Salat, sechs Eier und einen Käse. Zuerst kauft sie das Obst. Der Verkäufer sagt: „Die Äpfel sind heute im Angebot, nur 1,99 Euro das Kilo.“ Anna nimmt zwei Kilo. Dann sucht sie den Käse. Am Käsestand gibt es viele Sorten. Anna probiert einen Bergkäse. Er ist sehr gut, aber teuer. Sie kauft nur 200 Gramm. Die Eier kauft sie bei einem Bauern. Er hat auch frische Milch. Anna braucht keine Milch, aber sie kauft einen Joghurt. Am Ende hat sie eine schwere Tasche. Sie bezahlt fast überall bar. Zu Hause kocht sie eine Suppe.
+#dialog
+Verkäufer: Guten Morgen! Was darf es sein?
+Anna: Guten Morgen. Ich brauche Tomaten. Was kosten die?
+Verkäufer: Drei Euro das Kilo. Sie sind ganz frisch.
+Anna: Gut, dann nehme ich ein Kilo. Haben Sie auch Zwiebeln?
+Verkäufer: Ja, natürlich. Wie viele möchten Sie?
+Anna: Fünf Stück, bitte.
+Verkäufer: Sonst noch etwas?
+Anna: Nein, danke. Das ist alles. Was macht das?
+Verkäufer: Das macht vier Euro zwanzig.
+Anna: Hier, bitte. Stimmt so.
+#dq
+Was kostet ein Kilo Tomaten? || Drei Euro.
+Wie viele Zwiebeln kauft Anna? || Fünf.
+Wie viel bezahlt Anna? || Vier Euro zwanzig.
+#task
+Ich kaufe ___ Apfel. (ein) || einen
+Sie braucht ___ Tüte. (ein) || eine
+Wir nehmen ___ Brot. (das) || das
+Er sucht ___ Supermarkt. (der) || den
+Hast du ___ Stift? (ein) || einen
+Ich möchte ___ Kaffee. (ein) || einen
+Kennst du ___ Verkäufer? (der) || den
+Akkusativ? „Der Käse ist teuer.“ – Ich kaufe ___ Käse. || den
+Fehler? „Ich brauche ein Salat.“ || Ich brauche einen Salat.
+Fehler? „Er kauft der Saft.“ || Er kauft den Saft.
+
+@@ 7
+#vocab
+das Frühstück = breakfast
+das Brötchen, - = bread roll
+die Marmelade, -n = jam
+der Tee, -s = tea
+das Bier, -e = beer
+der Wein, -e = wine
+das Restaurant, -s = restaurant
+die Speisekarte, -n = menu
+bestellen = to order
+die Rechnung, -en = bill
+lecker = tasty
+satt = full (after eating)
+das Messer, - = knife
+die Gabel, -n = fork
+der Löffel, - = spoon
+das Glas, ¨er = glass
+der Zucker = sugar
+das Salz = salt
+#ex
+Ich esse kein Fleisch. = I don't eat meat.
+Er trinkt keinen Alkohol. = He doesn't drink alcohol.
+Die Suppe ist nicht scharf. = The soup is not spicy.
+Wir haben keine Milch mehr. = We have no more milk.
+Das schmeckt nicht gut. = That doesn't taste good.
+Ich trinke den Kaffee ohne Zucker. = I drink the coffee without sugar.
+Sie isst heute nicht im Restaurant. = She is not eating at the restaurant today.
+Möchtest du noch etwas? – Nein, danke, ich bin satt. = Would you like anything else? – No thanks, I'm full.
+Hier ist kein Messer. = There is no knife here.
+Die Rechnung, bitte! = The bill, please!
+#read2
+Ein Abend im Restaurant
+Am Freitag gehen Ravi, Leila und Jonas in ein italienisches Restaurant. Der Kellner bringt die Speisekarte. Ravi ist Vegetarier. Er isst kein Fleisch und keinen Fisch. Er bestellt eine Pizza mit Gemüse. Leila isst gern Fisch, aber heute nimmt sie keinen. Sie bestellt Spaghetti mit Tomatensoße. Jonas hat großen Hunger. Er nimmt ein Schnitzel mit Pommes. Zum Trinken bestellen sie Wasser und Saft. Jonas trinkt ein Bier. Ravi trinkt nie Alkohol. Das Essen ist sehr lecker. Nur Leilas Soße ist nicht warm. Der Kellner ist sehr nett und bringt eine neue Soße. Am Ende sind alle satt. Zum Nachtisch bestellen sie nichts. Sie bezahlen zusammen: 58 Euro.
+#dialog
+Kellner: Guten Abend! Möchten Sie schon bestellen?
+Leila: Ja. Ich nehme die Spaghetti mit Tomatensoße.
+Kellner: Und was möchten Sie trinken?
+Leila: Ein Wasser, bitte. Ohne Kohlensäure.
+Ravi: Ist die Gemüsesuppe vegetarisch?
+Kellner: Nein, leider nicht. Sie ist mit Fleischbrühe.
+Ravi: Dann nehme ich keine Suppe. Ich nehme die Pizza mit Gemüse.
+Kellner: Sehr gern. Möchten Sie auch einen Salat?
+Ravi: Nein, danke. Keinen Salat.
+#dq
+Was trinkt Leila? || Wasser ohne Kohlensäure.
+Warum nimmt Ravi die Suppe nicht? || Sie ist mit Fleischbrühe / nicht vegetarisch.
+Was bestellt Ravi? || Die Pizza mit Gemüse.
+#task
+Verneine mit kein: Ich habe einen Löffel. || Ich habe keinen Löffel.
+Verneine mit kein: Das ist eine Gabel. || Das ist keine Gabel.
+Verneine mit kein: Wir trinken Wein. || Wir trinken keinen Wein.
+Verneine mit nicht: Die Suppe ist warm. || Die Suppe ist nicht warm.
+Verneine mit nicht: Er kommt heute. || Er kommt heute nicht.
+Verneine mit nicht: Ich mag den Käse. || Ich mag den Käse nicht.
+Verneine mit kein: Sie isst Fleisch. || Sie isst kein Fleisch.
+nicht oder kein? Das ist ___ Restaurant, das ist ein Café. || kein
+nicht oder kein? Das Restaurant ist ___ teuer. || nicht
+Fehler? „Ich habe nicht Zeit.“ || Ich habe keine Zeit.
+
+@@ 8
+#vocab
+mein / meine = my
+dein / deine = your (informal)
+sein / seine = his, its
+ihr / ihre = her, their
+unser / unsere = our
+euer / eure = your (pl.)
+Ihr / Ihre (formell) = your (formal)
+der Opa, -s = grandpa
+die Oma, -s = grandma
+der Enkel, - = grandson
+die Enkelin, -nen = granddaughter
+die Geschwister (Pl.) = siblings
+der Neffe, -n = nephew
+die Nichte, -n = niece
+die Hochzeit, -en = wedding
+der Geburtstag, -e = birthday
+feiern = to celebrate
+ähnlich = similar
+#ex
+Das ist meine Oma. Sie ist 82. = This is my grandma. She is 82.
+Ist das dein Bruder? = Is that your brother?
+Sein Vater wohnt in Hamburg. = His father lives in Hamburg.
+Ihre Tochter heißt Sara. = Her daughter is called Sara.
+Unsere Eltern feiern heute ihren Hochzeitstag. = Our parents are celebrating their wedding anniversary today.
+Wo ist euer Auto? = Where is your (pl.) car?
+Ich besuche meinen Onkel in Köln. = I'm visiting my uncle in Cologne.
+Er liebt seine Frau. = He loves his wife.
+Haben Sie Ihren Ausweis? = Do you have your ID?
+Ich vermisse meine Familie sehr. = I miss my family a lot.
+#read2
+Ein Fotoalbum
+Ravi zeigt Mia ein Foto von seiner Familie in Mumbai. „Das ist mein Vater, Arjun. Er ist Lehrer. Und das ist meine Mutter, Sunita. Sie ist Ärztin.“ Mia fragt: „Und wer ist das Mädchen?“ – „Das ist meine Schwester Priya. Ihr Mann heißt Vikram. Sie haben einen Sohn. Er ist mein Neffe und heißt Arun.“ Auf dem Foto sind auch Ravis Großeltern. Sein Opa ist 85, seine Oma ist 80. „Deine Familie ist groß!“, sagt Mia. „Ja, und das ist nur ein Teil. Meine Tante und mein Onkel wohnen in Delhi.“ Mia zeigt dann ihr Foto. „Das ist unser Haus in Freiburg. Hier sind meine Eltern und unser Hund Bello.“ Ravi lacht: „Euer Hund ist auch auf dem Familienfoto?“ – „Natürlich! Er ist ein Familienmitglied.“
+#dialog
+Anna: Ravi, wer ist das auf deinem Handy?
+Ravi: Das ist meine Schwester Priya. Sie hat heute Geburtstag.
+Anna: Oh, wie schön! Wie alt ist sie?
+Ravi: Vierundzwanzig. Ich rufe sie gleich an.
+Anna: Wohnt deine Schwester auch in Berlin?
+Ravi: Nein, sie wohnt in Mumbai, mit ihrem Mann.
+Anna: Vermisst du deine Familie?
+Ravi: Ja, sehr. Aber im Dezember besuche ich meine Eltern.
+#dq
+Wer hat heute Geburtstag? || Ravis Schwester Priya.
+Wo wohnt Priya? || In Mumbai.
+Wann besucht Ravi seine Eltern? || Im Dezember.
+#task
+Das ist Ravi. Das ist ___ Schwester. (sein) || seine
+Das ist Anna. Das ist ___ Sohn. (ihr) || ihr
+Ich suche ___ Schlüssel. (mein) || meinen
+Wir besuchen ___ Großeltern. (unser) || unsere
+Hast du ___ Handy? (dein) || dein
+Herr Müller, ist das ___ Tasche? (Ihr) || Ihre
+Kinder, wo ist ___ Lehrerin? (euer) || eure
+Er liebt ___ Frau. (sein) || seine
+Sie ruft ___ Vater an. (ihr) || ihren
+Fehler? „Ich besuche mein Onkel.“ || Ich besuche meinen Onkel.
+
+@@ 9
+#vocab
+der Montag = Monday
+der Dienstag = Tuesday
+der Mittwoch = Wednesday
+der Donnerstag = Thursday
+der Freitag = Friday
+der Samstag = Saturday
+der Sonntag = Sunday
+der Januar = January
+der Sommer = summer
+der Winter = winter
+halb = half (past)
+Viertel nach / vor = quarter past / to
+die Öffnungszeiten (Pl.) = opening hours
+der Arzttermin, -e = doctor's appointment
+vereinbaren = to arrange
+absagen = to cancel
+früher / später = earlier / later
+um Mitternacht = at midnight
+#ex
+Es ist halb acht. = It's half past seven.
+Der Kurs beginnt um Viertel nach neun. = The course starts at a quarter past nine.
+Am Montag habe ich einen Arzttermin. = On Monday I have a doctor's appointment.
+Im Sommer fahren wir nach Italien. = In summer we're going to Italy.
+Die Bank ist von neun bis sechzehn Uhr geöffnet. = The bank is open from nine to four.
+Der Film dauert zwei Stunden. = The film lasts two hours.
+Kann ich den Termin auf Freitag verschieben? = Can I move the appointment to Friday?
+Mein Geburtstag ist im Mai. = My birthday is in May.
+Um Mitternacht schlafe ich schon. = At midnight I'm already asleep.
+Bitte sei pünktlich! = Please be on time!
+#read2
+Leilas Woche
+Leila hat eine volle Woche. Am Montag arbeitet sie von sieben bis fünfzehn Uhr. Am Dienstag hat sie frei. Um zehn Uhr hat sie einen Termin beim Bürgeramt. Am Nachmittag geht sie mit ihrer Tochter schwimmen. Am Mittwoch und am Donnerstag arbeitet sie wieder, aber erst ab Mittag. Am Donnerstagabend um halb acht ist ihr Deutschkurs. Der Kurs dauert neunzig Minuten. Am Freitag hat ihr Mann Geburtstag. Sie essen zusammen im Restaurant, der Tisch ist für acht Uhr reserviert. Am Samstag kommen Freunde zum Frühstück, um elf Uhr. Am Sonntag macht die Familie nichts. Das ist der beste Tag! Im Juli hat Leila drei Wochen Urlaub. Dann fliegt die Familie nach Teheran.
+#dialog
+Praxis: Praxis Dr. Becker, guten Tag.
+Ravi: Guten Tag, mein Name ist Sharma. Ich brauche einen Termin.
+Praxis: Was haben Sie denn für Beschwerden?
+Ravi: Ich habe seit drei Tagen Halsschmerzen.
+Praxis: Können Sie morgen um zehn Uhr kommen?
+Ravi: Morgen um zehn arbeite ich leider. Geht es auch am Nachmittag?
+Praxis: Um Viertel nach vier ist noch ein Termin frei.
+Ravi: Das passt sehr gut.
+Praxis: Gut, dann morgen um sechzehn Uhr fünfzehn. Bringen Sie bitte Ihre Versichertenkarte mit.
+#dq
+Warum braucht Ravi einen Termin? || Er hat seit drei Tagen Halsschmerzen.
+Warum kann Ravi nicht um zehn Uhr kommen? || Er arbeitet.
+Wann ist der Termin? || Morgen um Viertel nach vier (16:15).
+#task
+am, um oder im? ___ Montag || am
+am, um oder im? ___ acht Uhr || um
+am, um oder im? ___ Juli || im
+am, um oder im? ___ Wochenende || am
+am, um oder im? ___ Winter || im
+am, um oder im? ___ Abend || am
+Uhrzeit informell: 7:30 → || halb acht
+Uhrzeit informell: 9:15 → || Viertel nach neun
+Uhrzeit informell: 10:45 → || Viertel vor elf
+Wie lange? Der Film beginnt um 20 Uhr und endet um 22 Uhr. Er dauert ___ Stunden. || zwei
+
+@@ 10
+#vocab
+aufwachen = to wake up
+ausgehen = to go out
+mitbringen = to bring along
+vorbereiten = to prepare
+abwaschen = to wash up
+ausmachen = to switch off
+anmachen = to switch on
+aufschreiben = to write down
+anziehen = to put on (clothes)
+ausziehen = to take off; to move out
+weggehen = to leave, to go away
+zumachen / aufmachen = to close / to open
+spazieren gehen = to go for a walk
+der Müll = rubbish
+das Licht, -er = light
+der Fernseher, - = TV set
+das Essen = food, meal
+die Wäsche = laundry
+#ex
+Ich stehe um halb sieben auf. = I get up at half past six.
+Machst du bitte das Fenster zu? = Will you close the window, please?
+Wann kommst du zurück? = When are you coming back?
+Er räumt sein Zimmer nie auf. = He never tidies his room.
+Wir laden unsere Nachbarn zum Essen ein. = We are inviting our neighbours to dinner.
+Ich hole dich um acht ab. = I'll pick you up at eight.
+Mach bitte das Licht aus! = Please switch off the light!
+Kommst du heute Abend mit? = Are you coming along this evening?
+Sie bringt einen Kuchen mit. = She is bringing a cake.
+Der Film fängt um 20 Uhr an. = The film starts at 8 pm.
+#read2
+Ein Samstag in der WG
+Am Samstag ist in der WG viel los. Jonas wacht um acht Uhr auf, aber er steht erst um neun auf. Zuerst macht er Musik an. Mia schläft noch, sie findet das gar nicht lustig. Um zehn Uhr kaufen Jonas und Ravi im Supermarkt ein. Mia räumt die Küche auf und wäscht ab. Am Nachmittag bereitet Ravi das Abendessen vor, denn heute Abend kommen Gäste. Die WG lädt die Nachbarn ein: Anna Weber und ihren Sohn Paul. Anna bringt einen Kuchen mit. Paul ist zwölf und sieht gern fern. Nach dem Essen spielen alle zusammen Karten. Um elf Uhr gehen Anna und Paul nach Hause. Jonas macht den Fernseher aus. Mia bringt den Müll weg. Um Mitternacht schlafen alle. Morgen ist Sonntag, da stehen sie spät auf.
+#dialog
+Mia: Jonas, stehst du bitte auf? Es ist schon zehn!
+Jonas: Ja, ja … ich stehe gleich auf.
+Mia: Wir kaufen heute ein. Kommst du mit?
+Jonas: Wann fahrt ihr los?
+Mia: In einer halben Stunde. Und dann räumen wir auf.
+Jonas: Oh nein. Muss ich auch aufräumen?
+Mia: Natürlich! Heute Abend kommen Gäste. Ravi kocht, du wäschst ab.
+Jonas: Okay. Und was machst du?
+Mia: Ich bringe den Müll weg und kaufe Blumen.
+#dq
+Wann fahren Mia und Ravi los? || In einer halben Stunde.
+Was macht Jonas heute Abend? || Er wäscht ab.
+Was macht Mia? || Sie bringt den Müll weg und kauft Blumen.
+#task
+Ich ___ um sieben ___. (aufstehen) || stehe / auf
+Er ___ seine Mutter ___. (anrufen) || ruft / an
+Wir ___ heute ___. (einkaufen) || kaufen / ein
+___ du ___? (mitkommen) || Kommst / mit
+Sie ___ den Fernseher ___. (ausmachen) || macht / aus
+Der Kurs ___ um neun ___. (anfangen) || fängt / an
+Ich ___ dich um acht ___. (abholen) || hole / ab
+Mia ___ die Küche ___. (aufräumen) || räumt / auf
+Ordne: am Abend / fern / sieht / Paul || Paul sieht am Abend fern.
+Fehler? „Ich anrufe meine Mutter.“ || Ich rufe meine Mutter an.
+
+@@ 11
+#vocab
+können (kann) = can, to be able to
+müssen (muss) = must, to have to
+wollen (will) = to want
+dürfen (darf) = may, to be allowed to
+sollen (soll) = should, to be supposed to
+möchten = would like
+die Regel, -n = rule
+das Ticket, -s = ticket
+der Fahrplan, ¨e = timetable
+der Automat, -en = (ticket) machine
+die Abfahrt = departure
+die Ankunft = arrival
+der Bahnsteig, -e = platform
+der Platz, ¨e = seat, place
+die Durchsage, -n = announcement
+pünktlich = on time
+spät = late
+die Klasse, -n = class
+#ex
+Kann ich hier ein Ticket kaufen? = Can I buy a ticket here?
+Sie müssen in Hannover umsteigen. = You have to change trains in Hanover.
+Hier darf man nicht rauchen. = You aren't allowed to smoke here.
+Ich möchte einen Platz am Fenster reservieren. = I'd like to reserve a window seat.
+Der Zug soll um 14:10 Uhr ankommen. = The train is supposed to arrive at 2:10 pm.
+Wir wollen morgen nach München fahren. = We want to go to Munich tomorrow.
+Kannst du mir helfen? Der Automat funktioniert nicht. = Can you help me? The machine isn't working.
+Du musst dein Ticket entwerten. = You have to validate your ticket.
+Darf ich meinen Hund mitnehmen? = May I take my dog with me?
+Der Zug hat zwanzig Minuten Verspätung. = The train is twenty minutes late.
+#read2
+Eine Reise nach Hamburg
+Ravi will am Wochenende nach Hamburg fahren. Dort wohnt sein Freund Daniel. Er kauft das Ticket online, denn am Automaten ist es teurer. Der ICE fährt am Samstag um 8:36 Uhr ab. Ravi muss früh aufstehen. Am Bahnhof sieht er auf die Anzeige: Gleis 12. Dann hört er eine Durchsage: „Der ICE nach Hamburg hat etwa fünfzehn Minuten Verspätung.“ Ravi kauft einen Kaffee und wartet. Im Zug hat er einen reservierten Platz am Fenster. Im ICE darf man nicht rauchen, aber man kann im Bordrestaurant essen. Der Schaffner kontrolliert die Tickets. Ravi muss seinen Ausweis zeigen. Um 10:55 Uhr kommt der Zug in Hamburg an. Daniel wartet schon am Bahnsteig. „Willkommen in Hamburg! Du sollst unbedingt den Hafen sehen!“
+#dialog
+Durchsage: Achtung an Gleis 12: Der ICE 802 nach Hamburg fährt heute von Gleis 14 ab.
+Ravi: Entschuldigung, wo ist Gleis 14?
+Frau: Da hinten, die Treppe hoch.
+Ravi: Danke! Muss ich ein neues Ticket kaufen?
+Frau: Nein, Ihr Ticket gilt. Nur das Gleis ist anders.
+Ravi: Und hat der Zug Verspätung?
+Frau: Ja, zehn Minuten. Sie können noch einen Kaffee kaufen.
+Ravi: Super, vielen Dank!
+#dq
+Von welchem Gleis fährt der ICE heute ab? || Von Gleis 14.
+Muss Ravi ein neues Ticket kaufen? || Nein, sein Ticket gilt.
+Wie viel Verspätung hat der Zug? || Zehn Minuten.
+#task
+Ich ___ heute nicht kommen. (können) || kann
+Du ___ in Köln umsteigen. (müssen) || musst
+Hier ___ man nicht rauchen. (dürfen) || darf
+Er ___ nach Hamburg fahren. (wollen) || will
+Ich ___ einen Kaffee, bitte. (möchten) || möchte
+Wir ___ um acht da sein. (sollen) || sollen
+___ ihr mitkommen? (wollen) || Wollt
+Baue den Satz: ich / müssen / früh / aufstehen || Ich muss früh aufstehen.
+Baue den Satz: man / dürfen / hier / nicht / parken || Man darf hier nicht parken.
+Fehler? „Ich kann nicht kommen heute.“ || Ich kann heute nicht kommen.
+
+@@ 12
+#vocab
+der Hals, ¨e = throat, neck
+der Rücken, - = back
+der Arm, -e = arm
+das Bein, -e = leg
+der Fuß, ¨e = foot
+das Auge, -n = eye
+das Ohr, -en = ear
+der Zahn, ¨e = tooth
+der Husten = cough
+der Schnupfen = runny nose
+wehtun = to hurt
+trinken = to drink
+nehmen (nimmt) = to take
+bleiben = to stay
+das Bett = bed
+die Salbe, -n = ointment
+dreimal täglich = three times a day
+gute Besserung! = get well soon!
+#ex
+Bleib im Bett und trink viel Tee! = Stay in bed and drink lots of tea!
+Nehmen Sie die Tabletten dreimal täglich. = Take the tablets three times a day.
+Geh zum Arzt! = Go to the doctor!
+Mach das Fenster auf! = Open the window!
+Seid bitte leise! = Please be quiet! (to several people)
+Ruf mich morgen an! = Call me tomorrow!
+Iss nicht so viel Schokolade! = Don't eat so much chocolate!
+Sprechen Sie bitte langsamer! = Please speak more slowly!
+Lies die Packungsbeilage! = Read the package leaflet!
+Gute Besserung! = Get well soon!
+#read2
+Tipps gegen eine Erkältung
+Im Herbst sind viele Menschen erkältet. Sie haben Husten, Schnupfen und manchmal Fieber. Was hilft? Hier sind ein paar Tipps von Doktor Becker. Erstens: Trinken Sie viel, am besten Wasser oder Tee. Zweitens: Schlafen Sie viel und bleiben Sie zu Hause. Gehen Sie mit Fieber nicht zur Arbeit! Drittens: Essen Sie Obst und Gemüse. Viertens: Waschen Sie oft die Hände. So bekommt Ihre Familie die Erkältung nicht. Und für Kinder: Spielt lieber drinnen und zieht eine warme Jacke an! Nehmen Sie Tabletten nur nach Plan. Lesen Sie immer die Packungsbeilage. Haben Sie nach drei Tagen noch Fieber? Dann rufen Sie bitte in der Praxis an. In Deutschland brauchen Sie ab dem vierten Tag eine Krankmeldung für den Arbeitgeber.
+#dialog
+Dr. Becker: Guten Tag, Herr Sharma. Was fehlt Ihnen denn?
+Ravi: Ich habe Halsschmerzen und Husten. Und mein Kopf tut weh.
+Dr. Becker: Haben Sie Fieber?
+Ravi: Ja, gestern Abend achtunddreißig Grad.
+Dr. Becker: Machen Sie bitte den Mund auf. … Ja, der Hals ist rot. Das ist eine Erkältung.
+Ravi: Muss ich Tabletten nehmen?
+Dr. Becker: Nehmen Sie diese Tabletten dreimal täglich nach dem Essen. Und trinken Sie viel Tee.
+Ravi: Kann ich morgen arbeiten?
+Dr. Becker: Nein, bleiben Sie drei Tage zu Hause. Hier ist Ihre Krankmeldung. Gute Besserung!
+#dq
+Welche Beschwerden hat Ravi? || Halsschmerzen, Husten und Kopfschmerzen (und Fieber).
+Wie oft soll er die Tabletten nehmen? || Dreimal täglich nach dem Essen.
+Wie lange soll Ravi zu Hause bleiben? || Drei Tage.
+#task
+Imperativ (du): trinken → ___ viel Wasser! || Trink
+Imperativ (du): schlafen → ___ viel! || Schlaf
+Imperativ (du): nehmen → ___ eine Tablette! || Nimm
+Imperativ (du): lesen → ___ den Text! || Lies
+Imperativ (ihr): kommen → ___ bitte pünktlich! || Kommt
+Imperativ (Sie): warten → ___ Sie bitte hier! || Warten
+Imperativ (du): aufstehen → ___ jetzt ___! || Steh / auf
+Imperativ (du): sein → ___ bitte leise! || Sei
+Imperativ (Sie): anrufen → ___ Sie morgen ___! || Rufen / an
+Fehler? „Nehmst du die Tablette!“ || Nimm die Tablette!

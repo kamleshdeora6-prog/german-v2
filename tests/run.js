@@ -19,7 +19,11 @@ const section = (t) => console.log("\n" + t);
 section("1. Course data");
 ok(DC.curriculum.every((l, i) => l.n === i + 1), "lessons are numbered 1..n without gaps");
 DC.curriculum.forEach((l) => {
-  ["examples", "tasks", "exam"].forEach((k) => ok(l[k].length === 10, `lesson ${l.n}: ${k} has ${l[k].length}, expected 10`));
+  ["examples", "tasks"].forEach((k) => ok(l[k].length >= 10, `lesson ${l.n}: ${k} has ${l[k].length}, expected at least 10`));
+  ok(l.exam.length === 10, `lesson ${l.n}: exam has ${l.exam.length}, expected 10`);
+  if (l.dialog) { ok(l.dialog.every((d) => d.who && d.de), `lesson ${l.n}: dialogue lines need "Name: text"`); ok((l.dq || []).every((q) => q.a), `lesson ${l.n}: dialogue questions need answers`); }
+  if (l.reading2) ok(l.reading2.title && l.reading2.text.length > 200, `lesson ${l.n}: second text too short`);
+  const vk = l.vocab.map((v) => v.de.split(",")[0].toLowerCase()); ok(vk.length === new Set(vk).size, `lesson ${l.n}: duplicate word in lesson vocabulary`);
   ok(l.reading && l.reading.length > 80, `lesson ${l.n}: reading text too short`);
   ok(DC.scenes[l.scene], `lesson ${l.n}: picture "${l.scene}" missing`);
   l.rec.forEach((r) => ok(r < l.n, `lesson ${l.n}: prerequisite ${r} is not an earlier lesson`));
@@ -28,7 +32,7 @@ const keys = DC.vocab.map((v) => v.de.toLowerCase());
 ok(keys.length === new Set(keys).size, "no duplicate vocabulary entries");
 ok(!DC.vocab.some((v) => /_\d+$/.test(v.de) || /\(Variante\)/.test(v.exDe || "")), "no template copies like „die Erklärung_2“");
 const FEM = /(ung|heit|keit|schaft|ion|tät)$/;
-DC.vocab.forEach((v) => { const m = v.de.match(/^(der|die|das) ([A-ZÄÖÜ][a-zäöüß]+)$/); if (m && FEM.test(m[2])) ok(m[1] === "die", `${v.de}: -ung/-heit/-keit/-schaft/-ion/-tät nouns are feminine`); });
+DC.vocab.forEach((v) => { const m = v.de.match(/^(der|die|das) ([A-ZÄÖÜ][a-zäöüß]+)$/); if (m && FEM.test(m[2]) && !/(schwung|sprung|ursprung|stadion|religion)$/i.test(m[2])) ok(m[1] === "die", `${v.de}: -ung/-heit/-keit/-schaft/-ion/-tät nouns are feminine`); });
 ok(DC.lid.every((q) => q.a >= 0 && q.a < q.choices.length), "every citizenship question has a valid answer index");
 DC.bank.filter((b) => /\[.*\]/.test(b.q)).forEach((b) => ok(b.q.match(/\[(.*)\]/)[1].split("/").map((x) => x.trim()).includes(b.a), `bank item options contain the answer: ${b.q}`));
 DC.exams.reading.forEach((s) => s.parts.forEach((p) => p.items.forEach((it) => ok(it.why, `reading exam "${s.title}": every item needs a reason`))));
@@ -63,6 +67,14 @@ for (const id of Object.keys(Engine.GEN)) for (let i = 0; i < 200; i++) {
 }
 console.log(`  ${Object.keys(Engine.GEN).length} generators, ${items} items`);
 
+
+section("2b. Verb forms the generators build");
+const PARADIGM = { kommen: "komme kommst kommt kommen kommt kommen", öffnen: "öffne öffnest öffnet öffnen öffnet öffnen", arbeiten: "arbeite arbeitest arbeitet arbeiten arbeitet arbeiten",
+  einladen: "lade lädst lädt laden ladet laden", fahren: "fahre fährst fährt fahren fahrt fahren", tanzen: "tanze tanzt tanzt tanzen tanzt tanzen", lesen: "lese liest liest lesen lest lesen" };
+Object.entries(PARADIGM).forEach(([inf, forms]) => { const got = ["1s", "2s", "3s", "1p", "2p", "3p"].map((p) => Engine.conj(inf, p)).join(" "); ok(got === forms, `${inf}: got "${got}", expected "${forms}"`); });
+for (let i = 0; i < 400; i++) { const it = Engine.generate(["fragen", "negation", "praeteritum", "praesens", "wortstellung"][i % 5]); ok(!/\b(kommet|nennet|warn|warst e)\b/.test(it.prompt + " " + it.answer + " " + (it.full || "")), `wrong verb form in: ${it.answer}`); }
+console.log("  conjugation tables and 400 generated sentences checked");
+
 section("3. Max corrects typical mistakes");
 const CASES = [
   ["Gestern ich habe nach Berlin gefahren.", "Gestern bin ich nach Berlin gefahren."],
@@ -88,7 +100,7 @@ console.log(`  ${CASES.length} cases`);
 
 section("4. Max leaves correct German alone");
 const good = [];
-DC.curriculum.forEach((l) => { l.examples.forEach((e) => good.push(e.de)); good.push(...l.reading.split(/(?<=[.!?])\s+/).filter((x) => x.trim().length > 12)); });
+DC.curriculum.forEach((l) => { l.examples.forEach((e) => good.push(e.de)); [l.reading, l.reading2 ? l.reading2.text : ""].forEach((t) => good.push(...t.split(/(?<=[.!?])\s+/).filter((x) => x.trim().length > 12 && !/[„“"]/.test(x)))); (l.dialog || []).forEach((d) => good.push(...d.de.split(/(?<=[.!?])\s+/).filter((x) => x.trim().length > 12))); });
 DC.vocab.forEach((v) => { if (v.exDe) good.push(v.exDe); });
 for (let i = 0; i < 3000; i++) { const it = Engine.generate(); if (it && it.full) good.push(it.full); if (it && it.kind === "order") good.push(it.answer); }
 let fp = 0;

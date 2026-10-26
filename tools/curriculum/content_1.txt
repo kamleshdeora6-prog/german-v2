@@ -383,7 +383,7 @@ die Kasse, -n = checkout
 kosten = to cost
 das Angebot, -e = special offer
 #read
-Am Samstag geht Ravi in den Supermarkt. Er braucht einen Liter Milch, ein Brot, einen Käse und Tomaten. Er sucht auch den Basmatireis, aber er findet ihn nicht. Er fragt eine Verkäuferin. Sie sagt: „Den Reis haben wir dort hinten.“ An der Kasse sieht Ravi ein Angebot: Äpfel für 1,99 €. Er nimmt einen Kilo. Die Kassiererin fragt: „Brauchen Sie eine Tüte?“ – „Nein danke, ich habe einen Rucksack.“
+Am Samstag geht Ravi in den Supermarkt. Er braucht einen Liter Milch, ein Brot, einen Käse und Tomaten. Er sucht auch den Basmatireis, aber er findet ihn nicht. Er fragt eine Verkäuferin. Sie sagt: „Den Reis haben wir dort hinten.“ An der Kasse sieht Ravi ein Angebot: Äpfel für 1,99 €. Er nimmt ein Kilo. Die Kassiererin fragt: „Brauchen Sie eine Tüte?“ – „Nein danke, ich habe einen Rucksack.“
 #task
 Ich brauche ___ Apfel. (ein) || einen
 Ravi kauft ___ Milch. (die) || die

@@ -1,0 +1,713 @@
+@@ 13
+#vocab
+der Nachbar, -n / die Nachbarin, -nen = neighbour
+die Hilfe = help
+der Gefallen, - = favour
+bitten um = to ask for
+zuhören = to listen to
+glauben = to believe
+vertrauen = to trust
+folgen = to follow
+fehlen = to be missing; to miss
+schmecken = to taste (good)
+stehen (+ Dat.) = to suit
+die Schlüssel (Pl.) = keys
+das Paket, -e = parcel
+die Pflanze, -n = plant
+gießen = to water
+der Briefkasten, ¨ = letterbox
+kaputt = broken
+zum Glück = luckily
+#ex
+Kannst du mir einen Gefallen tun? = Can you do me a favour?
+Das Paket gehört meinem Nachbarn. = The parcel belongs to my neighbour.
+Wie geht es Ihnen? – Danke, mir geht es gut. = How are you? – Thanks, I'm fine.
+Die Jacke steht dir super! = The jacket really suits you!
+Das Essen schmeckt den Kindern nicht. = The children don't like the food.
+Hör mir bitte zu! = Please listen to me!
+Ich glaube dir kein Wort. = I don't believe a word you say.
+Mir ist kalt. = I'm cold.
+Was fehlt dir? = What's wrong with you?
+Es tut mir leid, ich habe keine Zeit. = I'm sorry, I don't have time.
+#read2
+Nachbarschaftshilfe
+Anna Weber fährt für eine Woche zu ihrer Schwester nach München. Vorher klingelt sie bei der WG. Ravi öffnet die Tür. „Hallo Ravi, kannst du mir einen Gefallen tun?“ – „Klar, wie kann ich dir helfen?“ Anna erklärt: „Meine Pflanzen brauchen Wasser. Kannst du sie zweimal gießen? Hier sind meine Schlüssel.“ Ravi nimmt die Schlüssel. „Kein Problem. Gehört dir auch das Fahrrad im Hof?“ – „Nein, das gehört Paul, meinem Sohn. Er bleibt bei seinem Vater.“ Anna gibt Ravi noch ihre Telefonnummer. „Und bitte nimm meine Post aus dem Briefkasten.“ Am Mittwoch kommt ein großes Paket für Anna. Der Paketbote fragt Ravi: „Können Sie das Paket für Ihre Nachbarin annehmen?“ Ravi unterschreibt. Am Sonntag kommt Anna zurück. Sie dankt Ravi und schenkt ihm eine Flasche Wein. „Ich trinke doch keinen Alkohol!“, lacht Ravi. „Oh, das tut mir leid! Dann bekommst du Schokolade.“
+#dialog
+Ravi: Hallo, Herr Kaya! Kann ich Ihnen helfen? Die Tasche sieht schwer aus.
+Herr Kaya: Oh, danke, das ist sehr nett von Ihnen. Mir tut der Rücken weh.
+Ravi: Wohin soll ich die Tasche bringen?
+Herr Kaya: In den dritten Stock. Der Aufzug ist leider kaputt.
+Ravi: Kein Problem. Gehört Ihnen auch der Karton hier?
+Herr Kaya: Nein, der gehört Frau Weber, glaube ich.
+Ravi: Gut, dann frage ich sie später.
+Herr Kaya: Ich danke Ihnen sehr! Möchten Sie einen Tee?
+#dq
+Warum braucht Herr Kaya Hilfe? || Ihm tut der Rücken weh und der Aufzug ist kaputt.
+Wohin bringt Ravi die Tasche? || In den dritten Stock.
+Wem gehört der Karton? || Frau Weber (vermutlich).
+#task
+Ich helfe ___ Nachbarin. (die) || der
+Das Buch gehört ___ Lehrer. (der) || dem
+Wie geht es ___? (du) || dir
+Die Jacke gefällt ___. (ich) || mir
+Kannst du ___ helfen? (wir) || uns
+Ich danke ___ für die Blumen. (Sie) || Ihnen
+Das Auto gehört ___ Eltern. (meine) || meinen
+Hör ___ bitte zu! (ich) || mir
+Fehler? „Ich helfe dich.“ || Ich helfe dir.
+Fehler? „Das gefällt mich.“ || Das gefällt mir.
+
+@@ 14
+#vocab
+bringen = to bring
+kaufen = to buy
+schreiben = to write
+bestellen = to order
+wünschen = to wish
+überraschen = to surprise
+einpacken = to wrap
+das Geschenkpapier = wrapping paper
+die Karte, -n = card
+die Schokolade, -n = chocolate
+das Parfüm, -s = perfume
+der Schmuck = jewellery
+die Kette, -n = necklace
+das Spiel, -e = game
+der Gast, ¨e = guest
+die Idee, -n = idea
+umtauschen = to exchange (goods)
+zurückgeben = to give back
+#ex
+Ich schenke meiner Mutter Blumen. = I'm giving my mother flowers.
+Ich schenke sie ihr. = I'm giving them to her.
+Kannst du mir das Salz geben? = Can you pass me the salt?
+Er zeigt den Gästen die Wohnung. = He shows the guests the flat.
+Er zeigt sie ihnen. = He shows it to them.
+Wir kaufen unserem Sohn ein Fahrrad. = We are buying our son a bike.
+Leihst du mir dein Auto? = Will you lend me your car?
+Ich erkläre dir die Aufgabe. = I'll explain the task to you.
+Kannst du es mir erklären? = Can you explain it to me?
+Ich wünsche dir alles Gute zum Geburtstag! = I wish you a happy birthday!
+#read2
+Was schenken wir Jonas?
+Nächsten Samstag hat Jonas Geburtstag. Er wird dreißig. Mia und Ravi wollen ihm etwas Besonderes schenken. Mia hat eine Idee: „Wir schenken ihm ein Konzertticket. Er liebt doch Jazz.“ Ravi findet die Idee gut, aber das Ticket ist teuer. „Dann fragen wir auch Leila und Tomás. Zusammen ist es billiger.“ Leila findet die Idee super. Sie kauft noch eine Karte und schreibt Jonas ein Gedicht. Tomás bringt ihm einen Kuchen aus einer brasilianischen Bäckerei. Am Samstagmorgen packt Mia das Geschenk ein. Um zehn Uhr stehen alle vor Jonas’ Tür und singen. Jonas öffnet das Geschenk. Er freut sich sehr. „Wer hat euch die Idee gegeben?“ – „Mia!“ Jonas umarmt sie. Am Abend zeigt er seinen Eltern das Ticket. Seine Mutter sagt: „Du hast wirklich gute Freunde.“
+#dialog
+Verkäuferin: Guten Tag! Suchen Sie etwas Bestimmtes?
+Leila: Ja, ein Geschenk für meine Schwiegermutter. Sie hat Geburtstag.
+Verkäuferin: Was mag sie denn? Schmuck, Parfüm, ein Buch?
+Leila: Sie liest gern. Können Sie mir ein Buch empfehlen?
+Verkäuferin: Dieser Roman ist gerade sehr beliebt. Ich zeige ihn Ihnen.
+Leila: Schön. Und wenn sie das Buch schon hat?
+Verkäuferin: Dann kann sie es innerhalb von vierzehn Tagen umtauschen.
+Leila: Perfekt. Können Sie es mir als Geschenk einpacken?
+Verkäuferin: Natürlich, sehr gern.
+#dq
+Für wen sucht Leila ein Geschenk? || Für ihre Schwiegermutter.
+Was empfiehlt die Verkäuferin? || Einen Roman / ein Buch.
+Wie lange kann man das Buch umtauschen? || Vierzehn Tage.
+#task
+Ich gebe ___ Kind ___ Ball. (das / der) || dem / den
+Sie schenkt ___ Freundin ___ Kette. (ihre / eine) || ihrer / eine
+Er zeigt ___ Gästen ___ Garten. (die / der) || den / den
+Pronomen: Ich schenke meiner Mutter die Blumen. → Ich schenke ___ ___. || sie ihr
+Pronomen: Er gibt dem Kind das Buch. → Er gibt ___ ___. || es ihm
+Pronomen: Wir zeigen den Gästen die Stadt. → Wir zeigen ___ ___. || sie ihnen
+Ordne: dir / ich / leihe / mein Fahrrad || Ich leihe dir mein Fahrrad.
+Ordne: es / ich / dir / erkläre || Ich erkläre es dir.
+Ordne: ihm / ich / es / gebe || Ich gebe es ihm.
+Fehler? „Sie schenkt ihr ihn.“ || Sie schenkt ihn ihr.
+
+@@ 15
+#vocab
+durch = through
+für = for
+gegen = against
+ohne = without
+um = around
+aus = out of, from
+bei = at, near
+mit = with
+nach = to, after
+seit = since, for
+von = from, of
+zu = to
+gegenüber = opposite
+die Apotheke, -n = pharmacy
+die Kirche, -n = church
+der Platz, ¨e = square
+die Brücke, -n = bridge
+der Weg, -e = way, path
+#ex
+Gehen Sie hier geradeaus und dann links. = Go straight on here and then left.
+Die Post ist gegenüber vom Bahnhof. = The post office is opposite the station.
+Ich fahre mit dem Bus zur Arbeit. = I go to work by bus.
+Wir gehen durch den Park. = We walk through the park.
+Das Geschenk ist für dich. = The present is for you.
+Er kommt gerade aus der Bank. = He's just coming out of the bank.
+Ich wohne bei meiner Tante. = I'm staying with my aunt.
+Nach dem Kino gehen wir essen. = After the cinema we'll go and eat.
+Seit einem Jahr lerne ich Deutsch. = I've been learning German for a year.
+Wie komme ich zum Rathaus? = How do I get to the town hall?
+#read2
+Der Weg zum Bürgeramt
+Leila hat morgen um neun Uhr einen Termin beim Bürgeramt. Sie kennt den Weg noch nicht und fragt Anna. Anna erklärt: „Das ist ganz einfach. Du fährst mit der U-Bahn bis zum Alexanderplatz. Dort steigst du aus. Dann gehst du durch den Bahnhof und am Ausgang links. Du gehst geradeaus bis zur Ampel. An der Kreuzung gehst du über die Straße. Das Bürgeramt ist gegenüber von einer Apotheke, neben einem Café.“ Leila schreibt alles auf. Am nächsten Morgen fährt sie mit der U-Bahn. Aber am Alexanderplatz gibt es viele Ausgänge. Sie nimmt den falschen Ausgang und steht plötzlich vor dem Fernsehturm. Sie fragt einen Mann nach dem Weg. „Zum Bürgeramt? Gehen Sie um den Turm herum und dann die zweite Straße rechts.“ Leila kommt fünf Minuten zu spät, aber die Mitarbeiterin ist freundlich. „Kein Problem, Sie sind ja jetzt da.“
+#dialog
+Tourist: Entschuldigung, wie komme ich zum Museum?
+Ravi: Zum Museum? Das ist nicht weit. Gehen Sie hier geradeaus bis zur Brücke.
+Tourist: Bis zur Brücke, okay.
+Ravi: Dann gehen Sie über die Brücke und biegen Sie rechts ab.
+Tourist: Und dann?
+Ravi: Dann sehen Sie eine Kirche. Das Museum ist gleich neben der Kirche.
+Tourist: Kann ich auch mit dem Bus fahren?
+Ravi: Ja, mit der Linie 100. Aber zu Fuß sind es nur zehn Minuten.
+Tourist: Vielen Dank!
+#dq
+Wo ist das Museum? || Neben der Kirche.
+Was macht der Tourist nach der Brücke? || Er biegt rechts ab.
+Wie lange dauert es zu Fuß? || Zehn Minuten.
+#task
+Ich fahre mit ___ Bus. (der) || dem
+Das Geschenk ist für ___ Chef. (der) || den
+Wir gehen durch ___ Park. (der) || den
+Sie kommt aus ___ Küche. (die) || der
+Er geht zu ___ Arzt. (der) || zum
+Ich gehe zu ___ Post. (die) || zur
+Seit ___ Woche ist er krank. (eine) || einer
+Nach ___ Arbeit gehe ich einkaufen. (die) || der
+Ich trinke Kaffee ohne ___ Zucker. (der) || den
+Fehler? „Ich fahre mit den Zug.“ || Ich fahre mit dem Zug.
+
+@@ 16
+#vocab
+das Regal, -e = shelf
+die Kommode, -n = chest of drawers
+das Bild, -er = picture
+der Vorhang, ¨e = curtain
+die Decke, -n = ceiling; blanket
+an = at, on (vertical)
+auf = on (horizontal)
+hinter = behind
+in = in, into
+neben = next to
+über = above, over
+unter = under
+vor = in front of
+zwischen = between
+der Hof, ¨e = courtyard
+der Keller, - = cellar
+der Stock / die Etage = floor, storey
+tragen (trägt) = to carry
+#ex
+Das Bild hängt an der Wand. = The picture is hanging on the wall.
+Ich hänge das Bild an die Wand. = I hang the picture on the wall.
+Die Bücher stehen im Regal. = The books are on the shelf.
+Stell die Bücher bitte ins Regal! = Put the books on the shelf, please!
+Die Katze liegt unter dem Sofa. = The cat is lying under the sofa.
+Leg die Decke auf das Sofa! = Put the blanket on the sofa!
+Der Sessel steht zwischen dem Fenster und der Tür. = The armchair is between the window and the door.
+Wohin kommt die Lampe? – Über den Tisch. = Where does the lamp go? – Above the table.
+Die Kartons sind noch im Keller. = The boxes are still in the cellar.
+Setz dich doch auf den Stuhl! = Do sit down on the chair!
+#read2
+Umzug in die neue Wohnung
+Ravi zieht um. Er hat endlich eine eigene Wohnung gefunden, zwei Zimmer in Pankow. Am Samstag helfen Jonas, Tomás und Mia. Morgens um acht steht der Transporter vor dem Haus. Die Freunde tragen die Kartons in den zweiten Stock. „Wohin kommen die Bücher?“, fragt Tomás. „Ins Wohnzimmer, neben das Regal“, sagt Ravi. Das Sofa stellen sie an die Wand, gegenüber vom Fenster. Der Teppich liegt bald vor dem Sofa. Mia hängt die Vorhänge auf. Jonas baut das Bett im Schlafzimmer auf. „Wo ist der Schraubenzieher?“ – „Er liegt auf dem Tisch in der Küche.“ Am Nachmittag sind fast alle Kartons leer. Nur die Lampe fehlt. Sie ist noch im Auto, unter einer Decke. Ravi hängt sie über den Esstisch. Am Abend sitzen alle müde auf dem Boden und essen Pizza. „Deine Wohnung ist wirklich schön“, sagt Mia. „Aber wo ist dein Fernseher?“ – „Den kaufe ich nächste Woche.“
+#dialog
+Jonas: Ravi, wohin soll ich den Spiegel hängen?
+Ravi: Ins Bad, bitte. Über das Waschbecken.
+Jonas: Okay. Und die Kiste mit den Schuhen?
+Ravi: Die stellst du in den Flur, neben die Tür.
+Jonas: Wo sind eigentlich die Nägel?
+Ravi: Sie liegen in der kleinen Kiste auf dem Stuhl.
+Jonas: Ich sehe sie nicht. Auf welchem Stuhl?
+Ravi: Auf dem Stuhl in der Küche. Ah nein, warte, sie sind in meiner Jackentasche!
+#dq
+Wohin kommt der Spiegel? || Ins Bad, über das Waschbecken.
+Wohin stellt Jonas die Schuhkiste? || In den Flur, neben die Tür.
+Wo sind die Nägel am Ende? || In Ravis Jackentasche.
+#task
+Wo? Das Buch liegt auf ___ Tisch. (der) || dem
+Wohin? Ich lege das Buch auf ___ Tisch. (der) || den
+Wo? Der Hund schläft unter ___ Bett. (das) || dem
+Wohin? Ich stelle die Vase in ___ Küche. (die) || die
+Wo? Die Lampe hängt über ___ Sofa. (das) || dem
+Wohin? Er hängt das Bild an ___ Wand. (die) || die
+stehen oder stellen? Ich ___ die Flasche in den Kühlschrank. || stelle
+liegen oder legen? Das Handy ___ auf dem Bett. || liegt
+hängen: Das Bild ___ schon an der Wand. || hängt
+Fehler? „Ich lege das Buch auf dem Tisch.“ || Ich lege das Buch auf den Tisch.
+
+@@ 17
+#vocab
+das Wochenende, -n = weekend
+der Strand, ¨e = beach
+das Wetter = weather
+der Regen = rain
+die Sonne = sun
+wandern = to hike
+schwimmen = to swim
+besichtigen = to visit (sights)
+treffen (getroffen) = to meet
+bleiben (geblieben) = to stay
+schreiben (geschrieben) = to write
+finden (gefunden) = to find
+vergessen (vergessen) = to forget
+verlieren (verloren) = to lose
+bekommen (bekommen) = to receive
+einschlafen (eingeschlafen) = to fall asleep
+zum ersten Mal = for the first time
+noch nie = never (yet)
+#ex
+Was hast du am Wochenende gemacht? = What did you do at the weekend?
+Ich bin zu Hause geblieben. = I stayed at home.
+Hast du schon mal Sushi gegessen? = Have you ever eaten sushi?
+Ich habe meinen Schlüssel verloren. = I've lost my key.
+Wir sind am Samstag gewandert. = We went hiking on Saturday.
+Sie hat eine E-Mail von ihrem Chef bekommen. = She got an email from her boss.
+Er ist noch nie geflogen. = He has never flown.
+Wann bist du nach Hause gekommen? = When did you get home?
+Ich habe es vergessen. Entschuldigung! = I forgot it. Sorry!
+Gestern hat es den ganzen Tag geregnet. = Yesterday it rained all day.
+#read2
+Ein Wochenende an der Ostsee
+Letztes Wochenende ist Leila mit ihrer Familie an die Ostsee gefahren. Am Freitagabend haben sie die Koffer gepackt. Am Samstag sind sie um sieben Uhr losgefahren. Die Fahrt hat drei Stunden gedauert. Ihre Tochter hat im Auto geschlafen. In Warnemünde haben sie zuerst ein Hotel gesucht. Dann sind sie zum Strand gegangen. Das Wasser war kalt, aber Leilas Mann ist trotzdem geschwommen. Leila hat lieber Fotos gemacht. Zum Mittagessen haben sie Fisch gegessen. Am Nachmittag hat es plötzlich geregnet. Sie sind in ein Café gegangen und haben Kuchen bestellt. Am Abend sind sie am Hafen spazieren gegangen und haben die großen Schiffe gesehen. Am Sonntag haben sie ein Museum besichtigt. Auf dem Rückweg hat die Tochter gefragt: „Wann fahren wir wieder ans Meer?“ Leila hat gelacht: „Bald, versprochen!“
+#dialog
+Mia: Hallo Tomás! Wie war dein Wochenende?
+Tomás: Super! Ich bin mit Freunden nach Dresden gefahren.
+Mia: Oh, schön! Was habt ihr gemacht?
+Tomás: Wir haben die Altstadt besichtigt und sind an der Elbe spazieren gegangen.
+Mia: Und das Wetter?
+Tomás: Am Samstag hat die Sonne geschienen, am Sonntag hat es geregnet.
+Mia: Habt ihr auch etwas Typisches gegessen?
+Tomás: Ja, ich habe zum ersten Mal Eierschecke probiert. Ein sächsischer Kuchen. Sehr lecker!
+Mia: Und ich? Ich habe das ganze Wochenende für meine Prüfung gelernt.
+#dq
+Wohin ist Tomás gefahren? || Nach Dresden.
+Wie war das Wetter am Sonntag? || Es hat geregnet.
+Was hat Mia am Wochenende gemacht? || Sie hat für ihre Prüfung gelernt.
+#task
+Wir ___ ins Kino ___. (gehen) || sind / gegangen
+Ich ___ einen Brief ___. (schreiben) || habe / geschrieben
+Er ___ lange ___. (schlafen) || hat / geschlafen
+___ du deinen Schlüssel ___? (finden) || Hast / gefunden
+Sie ___ zu Hause ___. (bleiben) || ist / geblieben
+Ich ___ mein Handy ___. (verlieren) || habe / verloren
+Wann ___ ihr ___? (aufstehen) || seid / aufgestanden
+Partizip II: einkaufen → || eingekauft
+Partizip II: verstehen → || verstanden
+Fehler? „Ich habe nach Berlin gefahren.“ || Ich bin nach Berlin gefahren.
+
+@@ 18
+#vocab
+war (sein) = was
+hatte (haben) = had
+konnte (können) = could
+musste (müssen) = had to
+wollte (wollen) = wanted
+durfte (dürfen) = was allowed to
+sollte (sollen) = was supposed to
+das Spielzeug, -e = toy
+der Spielplatz, ¨e = playground
+der Kindergarten, ¨ = nursery school
+die Hausaufgaben (Pl.) = homework
+der Fernseher, - = TV set
+das Handy, -s = mobile phone
+der Brief, -e = letter
+schüchtern = shy
+frech = cheeky
+früher war alles anders = everything used to be different
+heutzutage = nowadays
+#ex
+Als Kind war ich sehr schüchtern. = As a child I was very shy.
+Früher hatten wir keinen Fernseher. = We didn't have a TV in the past.
+Ich musste jeden Tag zu Fuß zur Schule gehen. = I had to walk to school every day.
+Wir durften abends nicht lange draußen bleiben. = We weren't allowed to stay outside long in the evening.
+Er wollte Pilot werden. = He wanted to become a pilot.
+Konntest du schon mit fünf Jahren lesen? = Could you already read at five?
+Damals gab es keine Handys. = Back then there were no mobile phones.
+Wo warst du gestern? = Where were you yesterday?
+Ihr wart sehr laut! = You (pl.) were very loud!
+Meine Oma hatte einen großen Garten. = My grandma had a big garden.
+#read2
+Früher und heute
+Ravis Großvater erzählt gern von früher. „Als ich ein Kind war, hatten wir kein Auto und keinen Fernseher. Unser Dorf war klein. Es gab nur eine Schule, einen Laden und einen Tempel. Ich musste jeden Morgen um fünf Uhr aufstehen und meinem Vater auf dem Feld helfen. Danach ging ich zu Fuß zur Schule, vier Kilometer! Wir durften im Unterricht nicht sprechen. Die Lehrer waren sehr streng. Am Abend wollte ich spielen, aber ich musste Hausaufgaben machen. Wir hatten kein Licht, nur eine Öllampe.“ Ravi hört zu und denkt an seine Kindheit in Mumbai. Er hatte schon einen Computer, und er konnte mit dem Bus zur Schule fahren. Heute ist alles noch einmal anders: Seine Nichte hat mit acht Jahren schon ein Handy. „Früher war das Leben schwer“, sagt der Großvater, „aber wir waren auch glücklich.“
+#dialog
+Paul: Mama, wie war es früher in der Schule?
+Anna: Ach, ganz anders. Wir hatten keine Computer im Klassenzimmer.
+Paul: Echt? Und wie konntet ihr dann lernen?
+Anna: Mit Büchern und Heften. Wir mussten viel schreiben.
+Paul: Durftet ihr Handys mitnehmen?
+Anna: Es gab noch keine Handys! Wir hatten nur ein Telefon zu Hause.
+Paul: Und was wolltest du als Kind werden?
+Anna: Ich wollte Tierärztin werden. Ich hatte zwei Katzen und einen Hasen.
+#dq
+Was gab es früher nicht im Klassenzimmer? || Computer.
+Was hatte Anna zu Hause zum Telefonieren? || Nur ein Telefon (zu Hause).
+Was wollte Anna als Kind werden? || Tierärztin.
+#task
+Präteritum: Ich ___ gestern krank. (sein) || war
+Präteritum: Wir ___ keine Zeit. (haben) || hatten
+Präteritum: Du ___ nicht kommen. (können) || konntest
+Präteritum: Er ___ lange arbeiten. (müssen) || musste
+Präteritum: Ihr ___ ins Kino gehen. (wollen) || wolltet
+Präteritum: Sie (Pl.) ___ nicht rauchen. (dürfen) || durften
+Präteritum: ___ du gestern zu Hause? (sein) || Warst
+Präteritum: Ich ___ eine Katze. (haben) || hatte
+Präteritum: Damals ___ es kein Internet. (es gibt) || gab
+Fehler? „Als Kind ich war schüchtern.“ || Als Kind war ich schüchtern.
+
+@@ 19
+#vocab
+sich setzen = to sit down
+sich treffen = to meet (each other)
+sich duschen = to shower
+sich kämmen = to comb one's hair
+sich rasieren = to shave
+sich schminken = to put on make-up
+sich verletzen = to injure oneself
+sich bewegen = to move, to exercise
+sich entspannen = to relax
+sich konzentrieren = to concentrate
+sich langweilen = to be bored
+sich verspäten = to be late
+sich unterhalten = to chat
+sich verlieben = to fall in love
+sich Sorgen machen = to worry
+die Gesundheit = health
+der Körper, - = body
+die Erkältung, -en = cold
+#ex
+Ich fühle mich heute nicht gut. = I don't feel well today.
+Wir treffen uns um acht vor dem Kino. = We'll meet at eight in front of the cinema.
+Er hat sich beim Fußball verletzt. = He hurt himself playing football.
+Setz dich bitte! = Please sit down!
+Beeil dich, der Zug fährt gleich! = Hurry up, the train is about to leave!
+Ich putze mir die Zähne. = I brush my teeth.
+Kannst du dich nicht konzentrieren? = Can't you concentrate?
+Sie freut sich auf den Urlaub. = She is looking forward to the holiday.
+Mach dir keine Sorgen! = Don't worry!
+Ihr müsst euch mehr bewegen. = You (pl.) need to exercise more.
+#read2
+Gesund durch den Winter
+Im Winter erkälten sich viele Menschen. Wie kann man sich schützen? Die Krankenkasse gibt Tipps. Bewegen Sie sich jeden Tag an der frischen Luft, auch bei Kälte. Ziehen Sie sich warm an und vergessen Sie Mütze und Schal nicht. Waschen Sie sich oft die Hände, besonders nach der U-Bahn. Ernähren Sie sich gesund mit viel Obst und Gemüse. Schlafen Sie genug, denn im Schlaf erholt sich der Körper. Stress ist auch ein Problem: Wer sich ständig ärgert oder sich Sorgen macht, wird schneller krank. Nehmen Sie sich also Zeit für sich. Treffen Sie sich mit Freunden, lesen Sie ein Buch oder entspannen Sie sich in der Sauna. Und wenn Sie sich doch krank fühlen? Dann ruhen Sie sich aus und bleiben Sie zu Hause. So stecken Sie Ihre Kollegen nicht an.
+#dialog
+Leila: Hallo Jonas, was ist los? Du siehst müde aus.
+Jonas: Ich fühle mich nicht so gut. Ich glaube, ich habe mich erkältet.
+Leila: Oh je. Hast du Fieber?
+Jonas: Nein, aber Halsschmerzen. Und ich kann mich nicht konzentrieren.
+Leila: Dann geh nach Hause und ruh dich aus!
+Jonas: Ich kann nicht. Ich muss mich noch um das Projekt kümmern.
+Leila: Das Projekt kann warten. Du musst dich erholen.
+Jonas: Du hast recht. Ich melde mich beim Chef ab.
+#dq
+Wie fühlt sich Jonas? || Nicht gut, er hat sich erkältet.
+Welche Beschwerden hat er? || Halsschmerzen, er kann sich nicht konzentrieren.
+Was macht Jonas am Ende? || Er meldet sich beim Chef ab (und geht nach Hause).
+#task
+Ich wasche ___. (mich/mir) || mich
+Ich wasche ___ die Hände. (mich/mir) || mir
+Du musst ___ beeilen. || dich
+Er rasiert ___ jeden Morgen. || sich
+Wir treffen ___ morgen. || uns
+Habt ihr ___ gut erholt? || euch
+Ich putze ___ die Zähne. || mir
+Sie interessiert ___ für Musik. || sich
+Freust du ___ auf das Wochenende? || dich
+Fehler? „Ich fühle mir nicht gut.“ || Ich fühle mich nicht gut.
+
+@@ 20
+#vocab
+und = and
+aber = but
+oder = or
+denn = because, for
+sondern = but (rather)
+die Sportart, -en = type of sport
+der Tennisschläger, - = tennis racket
+das Schwimmbad, ¨er = swimming pool
+das Training = training
+trainieren = to train
+gewinnen = to win
+verlieren = to lose
+das Spiel, -e = game, match
+der Fan, -s = fan
+der Ausflug, ¨e = trip
+das Theater, - = theatre
+die Ausstellung, -en = exhibition
+das Gesellschaftsspiel, -e = board game
+#ex
+Ich gehe gern schwimmen, aber ich mag kein Tennis. = I like swimming, but I don't like tennis.
+Wir fahren nicht ans Meer, sondern in die Berge. = We're not going to the sea but to the mountains.
+Er bleibt zu Hause, denn er ist müde. = He's staying at home because he is tired.
+Möchtest du Fußball spielen oder ins Kino gehen? = Would you like to play football or go to the cinema?
+Sie trainiert dreimal pro Woche und spielt am Wochenende. = She trains three times a week and plays at weekends.
+Das Konzert war nicht langweilig, sondern total spannend. = The concert wasn't boring but really exciting.
+Ich komme mit, aber ich habe nur eine Stunde Zeit. = I'll come along, but I only have an hour.
+Meiner Meinung nach ist Yoga sehr gesund. = In my opinion yoga is very healthy.
+Ich finde Museen langweilig. = I find museums boring.
+Lieber gehe ich ins Theater. = I'd rather go to the theatre.
+#read2
+Freizeit in Deutschland – eine Umfrage
+Was machen die Deutschen in ihrer Freizeit? Eine Umfrage zeigt: Fernsehen und Internet sind auf Platz eins. Aber viele Menschen wollen auch aktiv sein. Etwa ein Drittel macht regelmäßig Sport. Sehr beliebt sind Fußball, Radfahren und Schwimmen. Viele Deutsche sind Mitglied in einem Verein, denn dort trifft man Freunde. Es gibt Sportvereine, aber auch Musikvereine, Schachvereine und sogar Kleingartenvereine. Junge Menschen treffen ihre Freunde oft im Café oder im Park, ältere Menschen gehen lieber wandern oder arbeiten im Garten. Am Wochenende machen Familien gern Ausflüge, zum Beispiel in den Zoo oder an einen See. Ins Theater oder in die Oper gehen nicht so viele Menschen, aber Konzerte und Festivals sind sehr populär. Und was ist die Lieblingsbeschäftigung? Nicht Sport, sondern … Schlafen! Viele Befragte sagen: „Am Wochenende will ich mich vor allem ausruhen.“
+#dialog
+Tomás: Mia, hast du Lust auf Tennis am Samstag?
+Mia: Tennis? Nein, danke. Ich spiele nicht gern Tennis, denn ich bin total schlecht.
+Tomás: Dann gehen wir schwimmen oder Rad fahren?
+Mia: Schwimmen ist gut, aber nicht am Vormittag. Da arbeite ich im Café.
+Tomás: Kein Problem. Wir gehen am Nachmittag.
+Mia: Und am Abend? Gehen wir ins Konzert oder bleiben wir zu Hause?
+Tomás: Nicht ins Konzert, sondern zu Leila. Sie macht einen Spieleabend.
+Mia: Oh, super! Ich liebe Gesellschaftsspiele.
+#dq
+Warum will Mia nicht Tennis spielen? || Sie ist total schlecht.
+Wann gehen Mia und Tomás schwimmen? || Am Nachmittag.
+Was machen sie am Abend? || Sie gehen zu Leilas Spieleabend.
+#task
+Ich trinke Tee, ___ ich mag keinen Kaffee. (aber/denn) || aber
+Er geht nicht ins Kino, ___ ins Theater. (aber/sondern) || sondern
+Wir bleiben zu Hause, ___ es regnet. (denn/oder) || denn
+Spielst du Gitarre ___ Klavier? || oder
+Sie ist nicht müde, ___ hungrig. || sondern
+Verbinde mit denn: Ich lerne viel. Ich habe eine Prüfung. || Ich lerne viel, denn ich habe eine Prüfung.
+Verbinde mit aber: Das Hotel ist teuer. Es ist schön. || Das Hotel ist teuer, aber es ist schön.
+Verbinde mit sondern: Er kommt nicht heute. Er kommt morgen. || Er kommt nicht heute, sondern morgen.
+Fehler? „Ich bleibe zu Hause, denn ich bin krank bin.“ || Ich bleibe zu Hause, denn ich bin krank.
+Fehler? „Ich komme nicht, denn habe ich keine Zeit.“ || Ich komme nicht, denn ich habe keine Zeit.
+
+@@ 21
+#vocab
+die Firma, Firmen = company
+der Arbeitgeber, - = employer
+der Arbeitnehmer, - = employee
+die Anzeige, -n = advertisement
+die Voraussetzung, -en = requirement
+die Kenntnisse (Pl.) = knowledge, skills
+die Teamarbeit = teamwork
+zuverlässig = reliable
+die Arbeitszeit, -en = working hours
+der Urlaubstag, -e = day of holiday
+die Probezeit = probation period
+der Kollege, -n / die Kollegin, -nen = colleague
+das Team, -s = team
+die Besprechung, -en = meeting
+krank sein = to be ill
+ob = whether
+wissen (weiß) = to know
+die Absage, -n = rejection
+#ex
+Ich bewerbe mich, weil die Stelle interessant ist. = I'm applying because the job is interesting.
+Ich glaube, dass ich gute Chancen habe. = I think that I have a good chance.
+Wenn ich die Stelle bekomme, ziehe ich nach München. = If I get the job, I'll move to Munich.
+Ich weiß nicht, ob ich morgen arbeiten muss. = I don't know whether I have to work tomorrow.
+Er kommt nicht, weil er krank ist. = He isn't coming because he is ill.
+Sie sagt, dass das Gehalt gut ist. = She says the salary is good.
+Kannst du mich anrufen, wenn du Zeit hast? = Can you call me when you have time?
+Weißt du, ob die Firma Leute sucht? = Do you know whether the company is looking for people?
+Ich hoffe, dass das Vorstellungsgespräch gut läuft. = I hope the interview goes well.
+Weil ich Erfahrung habe, bekomme ich die Stelle. = Because I have experience, I'll get the job.
+#read2
+Eine Stellenanzeige
+Die Firma GreenTech GmbH in Berlin sucht ab sofort eine Softwareentwicklerin oder einen Softwareentwickler in Vollzeit. Ihre Aufgaben: Sie entwickeln Apps für unsere Kunden und arbeiten in einem internationalen Team. Voraussetzungen: ein abgeschlossenes Studium in Informatik, zwei Jahre Berufserfahrung und gute Englischkenntnisse. Deutschkenntnisse auf B1-Niveau sind von Vorteil. Wir bieten: flexible Arbeitszeiten, die Möglichkeit, zwei Tage pro Woche im Homeoffice zu arbeiten, 30 Urlaubstage und ein gutes Gehalt. Die Probezeit dauert sechs Monate. Wenn Sie zuverlässig sind und gern im Team arbeiten, freuen wir uns auf Ihre Bewerbung. Schicken Sie bitte Ihren Lebenslauf und Ihre Zeugnisse per E-Mail an Frau Lange. Ravi liest die Anzeige zweimal. Er denkt, dass die Stelle perfekt ist. Er hofft, dass seine Deutschkenntnisse reichen.
+#dialog
+Frau Lange: Herr Sharma, warum möchten Sie bei uns arbeiten?
+Ravi: Weil Ihre Firma umweltfreundliche Technik entwickelt. Das finde ich sehr wichtig.
+Frau Lange: Was sind Ihre Stärken?
+Ravi: Ich glaube, dass ich sehr zuverlässig bin. Und ich arbeite gern im Team.
+Frau Lange: Sie wissen, dass wir viel auf Deutsch kommunizieren?
+Ravi: Ja. Ich lerne jeden Tag, und ich mache bald die B1-Prüfung.
+Frau Lange: Sehr gut. Haben Sie noch Fragen?
+Ravi: Ja. Ich möchte wissen, ob ich auch im Homeoffice arbeiten kann.
+Frau Lange: Ja, zwei Tage pro Woche. Wir melden uns nächste Woche bei Ihnen.
+#dq
+Warum möchte Ravi bei der Firma arbeiten? || Weil sie umweltfreundliche Technik entwickelt.
+Was sagt Ravi über seine Stärken? || Er ist zuverlässig und arbeitet gern im Team.
+Was möchte Ravi wissen? || Ob er im Homeoffice arbeiten kann.
+#task
+Verbinde mit weil: Ich bleibe zu Hause. Ich bin krank. || Ich bleibe zu Hause, weil ich krank bin.
+Verbinde mit dass: Ich glaube. Er kommt heute. || Ich glaube, dass er heute kommt.
+Verbinde mit wenn: Ich habe Zeit. Ich rufe dich an. (Wenn …) || Wenn ich Zeit habe, rufe ich dich an.
+Verbinde mit ob: Ich weiß nicht. Die Bank ist offen. || Ich weiß nicht, ob die Bank offen ist.
+Verbinde mit weil: Sie lernt Deutsch. Sie möchte in Berlin arbeiten. || Sie lernt Deutsch, weil sie in Berlin arbeiten möchte.
+Verbinde mit dass: Er sagt. Er hat keine Zeit. || Er sagt, dass er keine Zeit hat.
+Verbinde mit ob: Weißt du? Der Zug hat Verspätung. || Weißt du, ob der Zug Verspätung hat?
+weil oder denn? Ich komme nicht, ___ ich muss arbeiten. || denn
+weil oder denn? Ich komme nicht, ___ ich arbeiten muss. || weil
+Fehler? „Ich lerne Deutsch, weil ich will in Deutschland studieren.“ || Ich lerne Deutsch, weil ich in Deutschland studieren will.
+
+@@ 22
+#vocab
+groß – größer – am größten = big – bigger – biggest
+gut – besser – am besten = good – better – best
+viel – mehr – am meisten = much – more – most
+gern – lieber – am liebsten = gladly – rather – most of all
+hoch – höher – am höchsten = high – higher – highest
+nah – näher – am nächsten = near – nearer – nearest
+als = than
+genauso … wie = just as … as
+das Dorf, ¨er = village
+die Großstadt, ¨e = big city
+die Natur = nature
+die Nachbarschaft = neighbourhood
+die Miete, -n = rent
+das Angebot, -e = offer, range
+die Lebensqualität = quality of life
+gefährlich = dangerous
+sicher = safe
+bequem = comfortable
+#ex
+Berlin ist größer als München. = Berlin is bigger than Munich.
+Auf dem Land ist die Miete billiger als in der Stadt. = In the country the rent is cheaper than in the city.
+Hamburg ist genauso schön wie Berlin. = Hamburg is just as beautiful as Berlin.
+Mit dem Fahrrad bin ich schneller als mit dem Bus. = I'm faster by bike than by bus.
+Ich wohne lieber in der Stadt. = I prefer living in the city.
+Am liebsten trinke ich Tee. = Most of all I like drinking tea.
+Die Zugspitze ist der höchste Berg Deutschlands. = The Zugspitze is Germany's highest mountain.
+Welche Stadt gefällt dir am besten? = Which city do you like best?
+Im Dorf ist es ruhiger und die Luft ist sauberer. = In the village it's quieter and the air is cleaner.
+Das ist die teuerste Wohnung, die ich kenne. = That's the most expensive flat I know.
+#read2
+Stadt oder Land?
+Mia kommt aus einem kleinen Dorf im Schwarzwald. Seit zwei Jahren studiert sie in Berlin. Was gefällt ihr besser? „In Berlin gibt es mehr Kultur, mehr Cafés und mehr junge Leute. Die Stadt ist viel lebendiger als mein Dorf. Aber sie ist auch lauter und schmutziger.“ In ihrem Dorf kennt jeder jeden. Das ist schön, aber manchmal auch anstrengend. In Berlin ist man freier. Die Mieten sind in Berlin natürlich höher. Für ein kleines Zimmer bezahlt Mia 550 Euro, im Dorf zahlt man für eine ganze Wohnung weniger. Auch die Natur fehlt ihr. „Im Schwarzwald ist die Luft sauberer und der Wald ist direkt vor der Tür.“ Am liebsten möchte Mia später in einer mittelgroßen Stadt wohnen, zum Beispiel in Freiburg. „Freiburg ist kleiner als Berlin, aber genauso jung. Und die Berge sind ganz nah. Für mich ist das die beste Mischung.“
+#dialog
+Jonas: Ravi, du suchst doch eine Wohnung. Was ist dir am wichtigsten?
+Ravi: Am wichtigsten ist die Lage. Ich will nicht länger als dreißig Minuten zur Arbeit fahren.
+Jonas: Und lieber Altbau oder Neubau?
+Ravi: Ein Altbau ist schöner, aber ein Neubau ist moderner und wärmer im Winter.
+Jonas: Die Wohnung in Pankow ist billiger als die in Mitte, oder?
+Ravi: Ja, sie kostet zweihundert Euro weniger. Aber sie ist auch kleiner.
+Jonas: Und Pankow ist ruhiger. Für dich ist das besser, glaube ich.
+Ravi: Stimmt. Ich nehme die Wohnung in Pankow.
+#dq
+Was ist Ravi am wichtigsten? || Die Lage (nicht länger als 30 Minuten zur Arbeit).
+Welche Wohnung ist billiger? || Die Wohnung in Pankow.
+Welche Wohnung nimmt Ravi? || Die Wohnung in Pankow.
+#task
+Komparativ: Der Zug ist ___ als das Auto. (schnell) || schneller
+Komparativ: Im Sommer ist es ___ als im Winter. (warm) || wärmer
+Komparativ: Mein Bruder ist ___ als ich. (alt) || älter
+Komparativ: Tee trinke ich ___ als Kaffee. (gern) || lieber
+Superlativ: Der Mount Everest ist am ___. (hoch) || höchsten
+Superlativ: Mein Opa erzählt die ___ Geschichten. (gut, Plural) || besten
+als oder wie? Er ist größer ___ ich. || als
+als oder wie? Sie ist genauso alt ___ ihr Mann. || wie
+Komparativ: Berlin hat ___ Einwohner als Hamburg. (viel) || mehr
+Fehler? „Mein Auto ist schneller wie dein Auto.“ || Mein Auto ist schneller als dein Auto.
+
+@@ 23
+#vocab
+der Rock, ¨e = skirt
+die Bluse, -n = blouse
+das T-Shirt, -s = T-shirt
+die Jeans, - = jeans
+der Anzug, ¨e = suit
+die Mütze, -n = woollen hat
+der Schal, -s = scarf
+die Stiefel (Pl.) = boots
+die Handschuhe (Pl.) = gloves
+die Umkleidekabine, -n = changing room
+eng / weit = tight / loose
+kurz / lang = short / long
+bunt = colourful
+gestreift / kariert = striped / checked
+schick = smart, chic
+bequem = comfortable
+passen = to fit
+das Sonderangebot, -e = special offer
+#ex
+Ich suche einen warmen Mantel. = I'm looking for a warm coat.
+Die blaue Jacke gefällt mir. = I like the blue jacket.
+Hast du ein schwarzes Kleid? = Do you have a black dress?
+Er trägt heute ein weißes Hemd und eine rote Krawatte. = Today he's wearing a white shirt and a red tie.
+Die neuen Schuhe sind sehr bequem. = The new shoes are very comfortable.
+Kann ich die grüne Hose anprobieren? = Can I try on the green trousers?
+Die Hose ist zu eng. Haben Sie eine größere? = The trousers are too tight. Do you have a bigger pair?
+Mit dem neuen Schal siehst du toll aus. = You look great with the new scarf.
+Sie hat lange, braune Haare. = She has long brown hair.
+Ich nehme den gestreiften Pullover. = I'll take the striped jumper.
+#read2
+Was ziehe ich an?
+Leila hat am Freitag ein wichtiges Vorstellungsgespräch in einem großen Krankenhaus. Was soll sie anziehen? Sie öffnet ihren Kleiderschrank. Das rote Kleid ist zu elegant, die alte Jeans zu locker. Ihre Freundin Aiko ist Designerin und hilft ihr gern. „Für ein Vorstellungsgespräch brauchst du ein klassisches Outfit“, sagt sie. Am Samstag gehen die beiden in ein großes Kaufhaus. Leila probiert eine dunkelblaue Hose und eine weiße Bluse an. Die Bluse passt perfekt, aber die Hose ist zu lang. Die Verkäuferin bringt eine kürzere Hose. Dazu nimmt Leila einen grauen Blazer. „Du siehst sehr professionell aus“, sagt Aiko. Für die Füße kauft Leila bequeme schwarze Schuhe, denn sie muss vielleicht lange stehen. Am Ende bezahlt sie 189 Euro. Das ist viel Geld, aber die Kleidung kann sie auch bei der Arbeit tragen. Am Freitag fühlt sie sich sicher und schick.
+#dialog
+Verkäufer: Kann ich Ihnen helfen?
+Jonas: Ja, ich suche eine Jacke für den Winter.
+Verkäufer: Welche Größe haben Sie?
+Jonas: Größe L, glaube ich.
+Verkäufer: Hier haben wir eine warme Jacke in Schwarz und eine in Dunkelgrün.
+Jonas: Die dunkelgrüne gefällt mir. Kann ich sie anprobieren?
+Verkäufer: Natürlich, die Umkleidekabine ist dort hinten.
+Jonas: Hm, sie ist ein bisschen zu eng. Haben Sie die Jacke eine Nummer größer?
+Verkäufer: Ja, in XL. Und sie ist gerade im Sonderangebot: nur 99 Euro.
+#dq
+Was sucht Jonas? || Eine Jacke für den Winter.
+Welche Farbe gefällt ihm? || Dunkelgrün.
+Was kostet die Jacke im Angebot? || 99 Euro.
+#task
+Ich kaufe einen ___ Pullover. (warm) || warmen
+Das ist eine ___ Bluse. (schön) || schöne
+Er trägt ein ___ Hemd. (weiß) || weißes
+Die ___ Schuhe sind bequem. (neu) || neuen
+Ich suche den ___ Schal. (rot) || roten
+Hast du eine ___ Jacke? (schwarz) || schwarze
+Mit dem ___ Mantel siehst du toll aus. (lang) || langen
+Sie hat ___ Haare. (lang, ohne Artikel) || lange
+Das ___ Kleid gefällt mir. (blau) || blaue
+Fehler? „Ich habe einen neue Hose.“ || Ich habe eine neue Hose.
+
+@@ 24
+#vocab
+seit = since, for (duration up to now)
+vor = ago
+nach = after
+ab = from (on)
+bis = until
+während = during
+zuerst = first
+danach = after that
+zum Schluss = finally
+der Flug, ¨e = flight
+der Flughafen, ¨ = airport
+das Visum, Visa = visa
+der Reisepass, ¨e = passport
+die Rezeption, -en = reception
+das Einzelzimmer / Doppelzimmer = single / double room
+die Übernachtung, -en = overnight stay
+die Halbpension = half board
+stornieren = to cancel (a booking)
+#ex
+Ich wohne seit drei Jahren in Berlin. = I've been living in Berlin for three years.
+Vor zwei Wochen war ich in Wien. = Two weeks ago I was in Vienna.
+Nach dem Frühstück besichtigen wir die Altstadt. = After breakfast we'll visit the old town.
+Ab Montag habe ich Urlaub. = I'm on holiday from Monday.
+Das Hotel ist bis Sonntag ausgebucht. = The hotel is fully booked until Sunday.
+Zuerst checken wir ein, danach gehen wir an den Strand. = First we check in, then we go to the beach.
+Der Flug dauert neun Stunden. = The flight takes nine hours.
+Haben Sie noch ein Doppelzimmer frei? = Do you still have a double room available?
+Die Übernachtung kostet 80 Euro mit Frühstück. = The night costs 80 euros with breakfast.
+Ich muss die Reise leider stornieren. = Unfortunately I have to cancel the trip.
+#read2
+Eine Reise nach Wien
+Vor einem Monat haben Tomás und Mia eine Reise nach Wien gebucht. Seit Wochen freuen sie sich darauf. Am Freitag fahren sie ab. Zuerst nehmen sie den Nachtzug von Berlin, denn er ist umweltfreundlicher als das Flugzeug. Die Fahrt dauert elf Stunden. Nach der Ankunft frühstücken sie in einem typischen Wiener Kaffeehaus. Danach checken sie im Hotel ein. Das Zimmer ist erst ab 14 Uhr frei, deshalb lassen sie das Gepäck an der Rezeption. Am Vormittag besichtigen sie den Stephansdom. Mia steigt bis ganz nach oben, über 300 Stufen! Am Nachmittag fahren sie mit dem Riesenrad im Prater. Am Abend gehen sie in ein Konzert. Am Samstag besuchen sie das Schloss Schönbrunn, und während der Führung lernen sie viel über die Kaiserin Sisi. Zum Schluss essen sie natürlich ein Wiener Schnitzel. Am Sonntag fahren sie müde, aber glücklich zurück. „Bis bald, Wien!“, sagt Mia.
+#dialog
+Rezeption: Hotel Am Park, guten Tag. Was kann ich für Sie tun?
+Tomás: Guten Tag. Haben Sie vom 14. bis zum 16. Mai ein Doppelzimmer frei?
+Rezeption: Einen Moment … Ja, wir haben noch ein Zimmer mit Balkon.
+Tomás: Wie viel kostet die Übernachtung?
+Rezeption: Hundertzehn Euro pro Nacht, mit Frühstück.
+Tomás: Ab wann können wir am Freitag einchecken?
+Rezeption: Ab vierzehn Uhr. Ihr Gepäck können Sie aber schon früher bei uns lassen.
+Tomás: Super. Kann ich bis zum Mittwoch kostenlos stornieren?
+Rezeption: Ja, bis achtundvierzig Stunden vor der Ankunft.
+#dq
+Von wann bis wann bucht Tomás das Zimmer? || Vom 14. bis zum 16. Mai.
+Was kostet eine Nacht? || 110 Euro mit Frühstück.
+Bis wann kann man kostenlos stornieren? || Bis 48 Stunden vor der Ankunft.
+#task
+Ich lerne ___ zwei Jahren Deutsch. (seit/vor) || seit
+___ drei Tagen war ich beim Arzt. (seit/vor) || Vor
+___ dem Essen trinken wir Kaffee. (nach/seit) || Nach
+Das Geschäft ist ___ 20 Uhr geöffnet. (bis/ab) || bis
+___ nächster Woche arbeite ich wieder. (ab/vor) || Ab
+Er wohnt ___ einem Monat in Wien. (seit/vor) || seit
+___ des Urlaubs habe ich viel gelesen. (während/seit) || Während
+Ordne mit „Zuerst“: frühstücken wir || Zuerst frühstücken wir.
+Ordne mit „Danach“: gehen wir an den Strand || Danach gehen wir an den Strand.
+Fehler? „Ich wohne hier vor zwei Jahren.“ || Ich wohne hier seit zwei Jahren.

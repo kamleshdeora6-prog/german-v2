@@ -1,0 +1,607 @@
+@@ 51
+#vocab
+die Studie, -n = study
+die Untersuchung, -en = investigation, examination
+die Stichprobe, -n = sample
+der Befund, -e = finding
+die Hypothese, -n = hypothesis
+belegen = to prove, to document
+widerlegen = to refute
+auswerten = to evaluate (data)
+erheben (Daten) = to collect (data)
+signifikant = significant
+repräsentativ = representative
+die Fachzeitschrift, -en = academic journal
+die Abbildung, -en = figure, illustration
+der Zusammenhang, ¨e = connection, correlation
+die Wechselwirkung, -en = interaction
+maßgeblich = decisive, significant
+hinsichtlich (+ Gen.) = with regard to
+im Hinblick auf = with regard to
+sich beziehen auf = to refer to
+die Fachsprache, -n = technical language
+#ex
+Die von der Universität Leipzig durchgeführte Studie bestätigt diesen Befund. = The study carried out by the University of Leipzig confirms this finding.
+Die an der Untersuchung beteiligten Personen wurden zufällig ausgewählt. = The persons involved in the investigation were selected at random.
+Der im Jahr 2019 erschienene Bericht wird häufig zitiert. = The report published in 2019 is frequently cited.
+Die in Abbildung 3 dargestellten Werte sind signifikant. = The values shown in Figure 3 are significant.
+Ein seit Jahren diskutiertes Problem ist der Fachkräftemangel. = A problem discussed for years is the shortage of skilled workers.
+Die Daten, auf deren Grundlage die Berechnung erfolgte, sind öffentlich. = The data on the basis of which the calculation was made are public.
+Die von vielen Experten vertretene These ließ sich nicht belegen. = The thesis advocated by many experts could not be proven.
+Die zu prüfenden Unterlagen liegen der Kommission vor. = The documents to be examined have been submitted to the commission.
+Der Zusammenhang zwischen Schlaf und Gedächtnis ist gut erforscht. = The connection between sleep and memory is well researched.
+Hinsichtlich der Kosten gibt es noch offene Fragen. = With regard to the costs there are still open questions.
+#read2
+Schlaf und Lernen – was die Forschung sagt
+Dass ausreichender Schlaf für das Lernen von zentraler Bedeutung ist, gilt in der Gedächtnisforschung inzwischen als gesichert. Eine in einer renommierten Fachzeitschrift veröffentlichte Studie hat diesen Zusammenhang nun genauer untersucht. Die an der Untersuchung teilnehmenden 120 Studierenden mussten am Abend eine Liste mit 40 Wortpaaren einer ihnen unbekannten Sprache lernen. Anschließend wurden sie in zwei Gruppen aufgeteilt: Die eine Gruppe schlief normal, die andere wurde die ganze Nacht wach gehalten und durfte erst in der darauffolgenden Nacht schlafen. Die nach drei Tagen durchgeführte Abfrage ergab einen deutlichen Unterschied. Die Teilnehmenden der ersten Gruppe erinnerten sich an durchschnittlich 28 Wortpaare, die der zweiten Gruppe lediglich an 19. Der in der Nachholnacht gewonnene Schlaf konnte den Verlust also nicht ausgleichen. Die Forschenden erklären dies mit Prozessen, die vor allem im sogenannten Tiefschlaf ablaufen: Die tagsüber im Hippocampus zwischengespeicherten Informationen werden in dieser Phase wiederholt aktiviert und in die Großhirnrinde übertragen, wo sie langfristig verankert werden. Bemerkenswert ist ein weiterer Befund: Bei den Teilnehmenden, die vor dem Einschlafen die gelernten Wörter noch einmal kurz wiederholt hatten, fiel der Lerneffekt am stärksten aus. Die Autorinnen und Autoren räumen allerdings ein, dass die Stichprobe hinsichtlich Alter und Bildungsstand nicht repräsentativ sei. Ob sich die Ergebnisse auf ältere Menschen oder auf komplexere Lerninhalte übertragen lassen, müsse in weiteren Studien geprüft werden. Für Prüfungskandidaten lässt sich dennoch eine klare Empfehlung ableiten: Die oft praktizierte Nachtschicht vor der Prüfung ist eher kontraproduktiv.
+#dialog
+Moderator: Professor Lehmann, Ihre Studie zeigt, dass Schlaf für das Gedächtnis entscheidend ist. Was ist neu daran?
+Prof. Lehmann: Neu ist vor allem, dass der in der folgenden Nacht nachgeholte Schlaf den Verlust nicht kompensiert. Das hatten viele angenommen.
+Moderator: Welche Rolle spielt dabei der Tiefschlaf?
+Prof. Lehmann: Eine maßgebliche. In dieser Phase werden die tagsüber aufgenommenen Informationen gewissermaßen neu abgespielt und dauerhaft gespeichert.
+Moderator: Ihre Kritiker sagen, die Stichprobe sei zu klein.
+Prof. Lehmann: Hundertzwanzig Personen sind für ein Laborexperiment durchaus üblich. Aber es stimmt, dass wir nur junge Erwachsene untersucht haben.
+Moderator: Was raten Sie Schülerinnen und Schülern vor einer Prüfung?
+Prof. Lehmann: Am Abend vorher das Wichtigste kurz wiederholen – und dann schlafen gehen. Die Nacht durchzulernen ist der schlechteste Plan.
+#dq
+Was ist laut Prof. Lehmann neu an der Studie? || Dass nachgeholter Schlaf den Verlust nicht kompensiert.
+Was passiert im Tiefschlaf? || Die tagsüber aufgenommenen Informationen werden neu abgespielt und dauerhaft gespeichert.
+Was ist die Schwäche der Studie? || Es wurden nur junge Erwachsene untersucht.
+#task
+Attribut: die Studie, die 2020 veröffentlicht wurde → die 2020 ___ Studie || veröffentlichte
+Attribut: die Teilnehmer, die an der Studie teilnahmen → die an der Studie ___ Teilnehmer || teilnehmenden
+Attribut: das Problem, das seit Jahren diskutiert wird → das seit Jahren ___ Problem || diskutierte
+Attribut: die Werte, die in der Tabelle dargestellt sind → die in der Tabelle ___ Werte || dargestellten
+Auflösen: der von der Firma entwickelte Motor → der Motor, ___ von der Firma entwickelt ___ ___ || der / worden ist
+Auflösen: die schnell steigenden Preise → die Preise, die schnell ___ || steigen
+Relativsatz mit Präposition: die Daten, ___ ___ Grundlage wir rechnen (deren/auf) || auf deren
+Relativsatz: die Forscherin, ___ Ergebnisse überraschten || deren
+Gerundiv: die Fragen, die noch geklärt werden müssen → die noch zu ___ Fragen || klärenden
+Fehler? „Die gestern veröffentlichten Studie ist interessant.“ || Die gestern veröffentlichte Studie ist interessant.
+
+@@ 52
+#vocab
+denn (Frage) = (friendly interest in questions)
+bloß / nur = (urgency, worry)
+etwa = (doubt, reproach in questions)
+schon = (reassurance)
+eigentlich = (by the way; topic change)
+ruhig = (permission: go ahead)
+eh / sowieso = anyway
+mal eben = just quickly
+na ja = well …
+ach so = oh, I see
+echt = really (colloquial)
+quasi = more or less
+genervt = annoyed
+gelassen = calm, relaxed
+die Ungeduld = impatience
+die Ermutigung, -en = encouragement
+die Zustimmung = agreement
+der Unterton, -e = undertone
+höflich = polite
+schroff = brusque
+#ex
+Was ist denn hier los? = What's going on here then?
+Wo ist bloß mein Schlüssel? = Where on earth is my key?
+Hast du etwa schon wieder vergessen, einzukaufen? = Don't tell me you forgot to go shopping again?
+Keine Sorge, das wird schon. = Don't worry, it'll be fine.
+Wie heißt du eigentlich? = What's your name, by the way?
+Nimm dir ruhig noch ein Stück Kuchen! = Go ahead, have another piece of cake!
+Ich muss eh noch zur Post. = I have to go to the post office anyway.
+Kannst du mal eben das Fenster zumachen? = Could you just close the window?
+Das ist halt so, da kann man nichts machen. = That's just the way it is, nothing you can do.
+Mach das ja nicht noch einmal! = Don't you dare do that again!
+#read2
+Kleine Wörter, große Wirkung
+Modalpartikeln gehören zu den schwierigsten Kapiteln für Deutschlernende – und zu den wichtigsten. In Grammatikbüchern werden sie oft nur am Rande behandelt, im gesprochenen Deutsch sind sie dagegen allgegenwärtig. Wer sie weglässt, spricht zwar korrekt, klingt aber schnell unhöflich, kühl oder wie ein Lehrbuch. Ein Beispiel: Der Satz „Komm her!“ wirkt wie ein Befehl. „Komm mal her!“ ist schon deutlich freundlicher, „Komm doch mal her!“ klingt fast wie eine Einladung. Die Wörter verändern nicht den Inhalt, sondern die Beziehung zwischen den Sprechenden. Ähnlich verhält es sich mit Fragen. „Wie heißt du?“ ist neutral, beinahe wie in einem Formular. „Wie heißt du denn?“ signalisiert Interesse, im Gespräch mit einem Kind wirkt es warm. Eine besondere Herausforderung besteht darin, dass viele Partikeln mehrere Funktionen haben. „Ja“ ist ein Antwortwort, im Satz „Das ist ja interessant!“ drückt es Überraschung aus, im Satz „Mach das ja nicht!“ – betont gesprochen – eine Drohung. „Doch“ kann einer Verneinung widersprechen („Kommst du nicht? – Doch!“), an etwas Bekanntes erinnern („Du weißt doch, dass …“) oder eine Aufforderung verstärken („Setz dich doch!“). Hinzu kommt, dass Partikeln sich kombinieren lassen: „Ruf doch mal an!“, „Das ist ja eben das Problem.“ Linguisten empfehlen Lernenden deshalb, Partikeln nicht isoliert zu lernen, sondern in typischen Situationen: beim Bitten, beim Trösten, beim Widersprechen, beim Sich-Wundern. Wer viel Alltagsdeutsch hört, etwa in Serien oder Podcasts, entwickelt mit der Zeit ein Gefühl dafür. Und ein Trost: Auch Muttersprachler können meist nicht erklären, warum sie „halt“ statt „eben“ sagen. Sie wissen es einfach.
+#dialog
+Mia: Na, wie war denn dein Vorstellungsgespräch?
+Tomás: Ach, ganz okay, glaube ich. Ich war halt total nervös.
+Mia: Das ist doch normal. Hast du etwa wieder zu schnell gesprochen?
+Tomás: Ein bisschen. Aber die Chefin war echt nett. Sie hat gesagt: „Nehmen Sie sich ruhig Zeit.“
+Mia: Siehst du! Das klappt schon.
+Tomás: Hoffentlich. Wann melden die sich bloß?
+Mia: Jetzt warte doch erst mal ab. Du hast das Gespräch ja erst seit zwei Stunden hinter dir!
+#dq
+Wie fühlte sich Tomás im Gespräch? || Er war total nervös.
+Was sagte die Chefin? || „Nehmen Sie sich ruhig Zeit.“
+Welche Partikel zeigt Tomás' Ungeduld in „Wann melden die sich bloß?“ || bloß
+#task
+Freundliches Interesse: Was machst du ___ hier? || denn
+Ungeduld/Sorge: Wo bleibt er ___? || bloß
+Vorwurf: Hast du ___ mein Handy benutzt? || etwa
+Beruhigung: Keine Panik, das klappt ___. || schon
+Erlaubnis: Komm ___ rein, die Tür ist offen. || ruhig
+Resignation: Das ist ___ so. (halt/doch) || halt
+Bekanntes: Du weißt ___, dass ich keine Zeit habe. || doch
+Themenwechsel: Woher kommst du ___? || eigentlich
+Aufforderung abschwächen: Gib mir ___ den Stift. || mal
+Zwei Partikeln: Ruf ___ ___ an! (Ermunterung) || doch mal
+
+@@ 53
+#vocab
+dennoch = nevertheless
+gleichwohl = nonetheless
+wenngleich = albeit, although
+zumal = especially since
+insofern als = insofar as
+wohingegen = whereas
+hingegen = on the other hand
+demgegenüber = in contrast
+folglich = consequently
+infolgedessen = as a result
+demzufolge = accordingly
+somit = thus
+ungeachtet (+ Gen.) = regardless of
+nichtsdestotrotz = nonetheless
+das Gegenargument, -e = counter-argument
+die These, -n = thesis
+die Abwägung, -en = weighing up
+überzeugend = convincing
+einwenden = to object
+entkräften = to invalidate (an argument)
+#ex
+Die Maßnahme ist teuer, dennoch halten viele sie für notwendig. = The measure is expensive, yet many consider it necessary.
+Wenngleich die Idee überzeugt, bleibt die Umsetzung schwierig. = Although the idea is convincing, implementation remains difficult.
+Das Angebot ist attraktiv, zumal die Kosten gering sind. = The offer is attractive, especially since the costs are low.
+In der Stadt sind die Mieten gestiegen, wohingegen sie auf dem Land stabil blieben. = In the city rents have risen, whereas they remained stable in the country.
+Die Firma hat Verluste gemacht; infolgedessen werden Stellen abgebaut. = The company made losses; as a result jobs are being cut.
+Ungeachtet der Kritik hält die Regierung an ihrem Plan fest. = Regardless of the criticism, the government is sticking to its plan.
+Die Studie ist klein, somit sind die Ergebnisse nur begrenzt aussagekräftig. = The study is small, thus the results are of limited significance.
+Man könnte einwenden, dass dies zu teuer sei. = One could object that this would be too expensive.
+Dieses Argument lässt sich leicht entkräften. = This argument can easily be refuted.
+Junge Menschen nutzen eher digitale Medien, ältere hingegen lesen häufiger Zeitung. = Young people tend to use digital media, older people, on the other hand, read newspapers more often.
+#read2
+Erörterung: Sollte die Vier-Tage-Woche zur Regel werden?
+Seit einigen Jahren wird in Deutschland über die Einführung der Vier-Tage-Woche diskutiert. Befürworter versprechen sich davon zufriedenere und gesündere Beschäftigte, Kritiker befürchten hingegen Einbußen bei der Wirtschaftsleistung. Im Folgenden sollen beide Positionen gegeneinander abgewogen werden. Für eine Verkürzung der Arbeitszeit spricht zunächst, dass Erschöpfung und psychische Erkrankungen in den vergangenen Jahren deutlich zugenommen haben. Ein zusätzlicher freier Tag könnte hier entlastend wirken. Pilotprojekte in Großbritannien und Deutschland deuten darauf hin, dass die Produktivität kaum sinkt, zumal konzentrierte Arbeit in kürzerer Zeit oft effizienter ist. Darüber hinaus könnten Arbeitgeber, die eine Vier-Tage-Woche anbieten, im Wettbewerb um Fachkräfte punkten. Dennoch dürfen die Gegenargumente nicht unterschätzt werden. In Branchen wie der Pflege, dem Handel oder dem Handwerk lässt sich die Arbeit nicht beliebig verdichten. Ein Krankenhaus muss rund um die Uhr besetzt sein; infolgedessen würde eine kürzere Arbeitszeit dort zusätzliches Personal erfordern, das ohnehin knapp ist. Wenngleich die Ergebnisse der Pilotprojekte ermutigend sind, nahmen daran überwiegend Büro- und Dienstleistungsunternehmen teil, sodass sie nur bedingt verallgemeinerbar sind. Zudem besteht die Gefahr, dass die gleiche Arbeit in weniger Zeit erledigt werden muss, was den Stress eher erhöhen als verringern würde. Wägt man die Argumente ab, so erscheint eine flächendeckende, gesetzlich vorgeschriebene Vier-Tage-Woche derzeit wenig realistisch. Gleichwohl spricht vieles dafür, flexible Modelle dort zu fördern, wo sie praktikabel sind. Nicht die Zahl der Arbeitstage sollte im Mittelpunkt stehen, sondern die Frage, wie Arbeit so gestaltet werden kann, dass Menschen ihr langfristig gewachsen sind.
+#dialog
+Moderatorin: Herr Krause, Sie sind gegen die Vier-Tage-Woche. Warum?
+Herr Krause: Weil wir uns das schlicht nicht leisten können, zumal uns schon heute Hunderttausende Fachkräfte fehlen.
+Frau Arslan: Das Argument greift zu kurz. Gerade weil Fachkräfte fehlen, müssen Arbeitgeber attraktiver werden.
+Herr Krause: Attraktiv schon, aber nicht um jeden Preis. Ein Handwerksbetrieb mit fünf Leuten kann nicht einfach einen Tag schließen.
+Frau Arslan: Das verlangt auch niemand. Wohingegen es in vielen Büros problemlos ginge.
+Moderatorin: Gibt es denn einen Kompromiss?
+Frau Arslan: Ich denke schon. Flexible Modelle, die von Branche zu Branche unterschiedlich sind.
+Herr Krause: Dem könnte ich mich anschließen, sofern es freiwillig bleibt.
+#dq
+Welches Argument nennt Herr Krause? || Wir können es uns nicht leisten, weil schon jetzt viele Fachkräfte fehlen.
+Wie reagiert Frau Arslan? || Gerade weil Fachkräfte fehlen, müssen Arbeitgeber attraktiver werden.
+Worauf können sich beide einigen? || Auf flexible Modelle je nach Branche, sofern sie freiwillig sind.
+#task
+Konzessiv: Er ist krank. ___ geht er zur Arbeit. (dennoch/folglich) || Dennoch
+Konsekutiv: Der Umsatz sank; ___ wurden Stellen gestrichen. (infolgedessen/wohingegen) || infolgedessen
+Adversativ: Sie liebt Kaffee, ___ er Tee bevorzugt. (wohingegen/zumal) || wohingegen
+Begründung (zusätzlich): Ich bleibe zu Hause, ___ es regnet. (zumal/somit) || zumal
+Konzessiv: ___ das Wetter schlecht war, fand das Fest statt. (wenngleich/infolgedessen) || Wenngleich
+Präposition + Genitiv: ___ der Bedenken wurde das Projekt gestartet. || Ungeachtet
+Satzstellung: Die Kosten sind hoch, dennoch ___ sich das Projekt. (lohnen) || lohnt
+Umformen mit obwohl → wenngleich: Obwohl die Idee gut ist, fehlt das Geld. → ___ die Idee gut ist, fehlt das Geld. || Wenngleich
+somit oder hingegen? Alle Bedingungen sind erfüllt, ___ kann der Vertrag unterschrieben werden. || somit
+Fehler? „Er war müde, dennoch er arbeitete weiter.“ || Er war müde, dennoch arbeitete er weiter.
+
+@@ 54
+#vocab
+es gilt, … zu … = it is necessary to …
+es handelt sich um = it is a matter of
+es ist davon auszugehen, dass = it can be assumed that
+es lässt sich feststellen, dass = it can be stated that
+es zeigt sich, dass = it becomes apparent that
+es bleibt abzuwarten, ob = it remains to be seen whether
+die Erhebung, -en = survey, data collection
+die Fragestellung, -en = research question
+die Methodik = methodology
+die Auswertung, -en = evaluation
+die Erkenntnis, -se = insight, finding
+der Forschungsstand = state of research
+die Literatur = (academic) literature
+herausarbeiten = to work out
+untermauern = to support (with evidence)
+verdeutlichen = to illustrate
+in Bezug auf = with regard to
+im Rahmen (+ Gen.) = within the framework of
+anhand (+ Gen.) = on the basis of
+mithilfe (+ Gen.) = with the help of
+#ex
+Es gilt, die Ursachen genauer zu untersuchen. = It is necessary to examine the causes more closely.
+Bei dem Phänomen handelt es sich um einen weltweiten Trend. = The phenomenon is a worldwide trend.
+Es ist davon auszugehen, dass die Zahlen weiter steigen. = It can be assumed that the figures will continue to rise.
+Anhand von drei Beispielen soll dies verdeutlicht werden. = This will be illustrated by means of three examples.
+Im Rahmen der Untersuchung wurden 500 Personen befragt. = Within the framework of the investigation, 500 people were interviewed.
+Die Durchführung der Befragung erfolgte im Frühjahr. = The survey was carried out in spring.
+Es zeigt sich, dass jüngere Befragte anders antworten. = It becomes apparent that younger respondents answer differently.
+Es bleibt abzuwarten, ob sich der Trend fortsetzt. = It remains to be seen whether the trend will continue.
+Die Ergebnisse lassen sich mithilfe einer Grafik darstellen. = The results can be presented with the help of a chart.
+In Bezug auf das Alter ergaben sich keine Unterschiede. = With regard to age, no differences emerged.
+#read2
+Aus einer Seminararbeit: Mehrsprachigkeit im Berufsalltag
+Die vorliegende Arbeit befasst sich mit der Frage, welche Rolle Mehrsprachigkeit im Berufsalltag internationaler Unternehmen in Deutschland spielt. Im Mittelpunkt steht dabei die Nutzung des Deutschen neben dem Englischen als Unternehmenssprache. Zunächst wird der aktuelle Forschungsstand dargestellt. Anschließend werden die Methodik sowie die Ergebnisse einer im Rahmen dieser Arbeit durchgeführten Befragung erläutert. Zur Datenerhebung wurde ein Online-Fragebogen eingesetzt, der von 214 Beschäftigten aus zwölf Unternehmen beantwortet wurde. Die Auswertung erfolgte mithilfe deskriptiver Statistik. Bereits ein erster Blick auf die Daten verdeutlicht die Diskrepanz zwischen offizieller und tatsächlicher Sprachpraxis: Obwohl in neun der zwölf Unternehmen Englisch als Konzernsprache festgelegt ist, gaben 68 Prozent der Befragten an, im informellen Austausch mit Kolleginnen und Kollegen überwiegend Deutsch zu verwenden. Es zeigt sich zudem, dass mangelnde Deutschkenntnisse in Bezug auf die soziale Integration als hinderlich empfunden werden. So berichten Beschäftigte ohne Deutschkenntnisse signifikant häufiger davon, sich bei Gesprächen in der Kaffeeküche oder bei Betriebsfeiern ausgeschlossen zu fühlen. Für die berufliche Leistung hingegen scheint die Sprache eine geringere Rolle zu spielen; hier ließen sich keine nennenswerten Unterschiede feststellen. Es ist allerdings davon auszugehen, dass die Ergebnisse durch die Art der Stichprobe beeinflusst sind, da vor allem Beschäftigte aus der IT-Branche teilgenommen haben. Abschließend lässt sich festhalten, dass Englisch zwar die formale Zusammenarbeit ermöglicht, Deutsch jedoch für das Zugehörigkeitsgefühl von erheblicher Bedeutung bleibt. Es gilt daher, Sprachangebote am Arbeitsplatz nicht als Zusatzleistung, sondern als Teil der Personalentwicklung zu verstehen.
+#dialog
+Betreuerin: Frau Ahmadi, ich habe Ihre Gliederung gelesen. Die Fragestellung ist gut, aber noch zu breit.
+Leila: Was würden Sie vorschlagen?
+Betreuerin: Konzentrieren Sie sich auf einen Aspekt, etwa auf die Kommunikation zwischen Ärzten und Pflegepersonal.
+Leila: Das wäre machbar. Ich könnte im Rahmen meiner Arbeit im Krankenhaus Interviews führen.
+Betreuerin: Sehr gut. Achten Sie aber darauf, dass Sie die Methodik sauber begründen. Es handelt sich ja um eine qualitative Untersuchung.
+Leila: Wie viele Interviews wären angemessen?
+Betreuerin: Acht bis zehn reichen. Wichtiger ist eine gründliche Auswertung anhand klarer Kategorien.
+Leila: Verstanden. Ich überarbeite die Gliederung bis nächste Woche.
+#dq
+Was kritisiert die Betreuerin? || Die Fragestellung ist noch zu breit.
+Worauf soll Leila sich konzentrieren? || Auf die Kommunikation zwischen Ärzten und Pflegepersonal.
+Wie viele Interviews reichen? || Acht bis zehn.
+#task
+Nominalisieren: Die Daten wurden im Mai erhoben. → Die ___ der Daten erfolgte im Mai. || Erhebung
+Nominalisieren: Man wertete die Ergebnisse aus. → Die ___ der Ergebnisse … || Auswertung
+Unpersönlich: Man kann annehmen, dass … → Es ist davon ___, dass … || auszugehen
+Unpersönlich: Wir müssen die Ursachen prüfen. → Es ___, die Ursachen zu prüfen. || gilt
+Unpersönlich: Man weiß noch nicht, ob … → Es bleibt ___, ob … || abzuwarten
+Präposition: ___ von Beispielen wird gezeigt, dass … (anhand/aufgrund) || Anhand
+Präposition: ___ der Studie wurden 500 Personen befragt. (Im Rahmen/Mithilfe) || Im Rahmen
+„es“ als Platzhalter: ___ handelt sich um ein neues Phänomen. || Es
+Passiv statt man: Man befragte 200 Personen. → 200 Personen ___ ___. || wurden befragt
+Fehler? „Es handelt sich über ein Problem.“ || Es handelt sich um ein Problem.
+
+@@ 55
+#vocab
+eine Frage aufwerfen = to raise a question
+ein Problem beheben = to fix a problem
+Kritik üben = to criticise
+Bedenken äußern = to voice concerns
+eine Lösung erarbeiten = to work out a solution
+einen Beitrag leisten = to make a contribution
+Maßnahmen ergreifen = to take measures
+Anforderungen erfüllen = to meet requirements
+einen Kompromiss eingehen = to make a compromise
+eine Krise bewältigen = to overcome a crisis
+Vertrauen gewinnen = to gain trust
+Fortschritte erzielen = to make progress
+Erfahrungen sammeln = to gain experience
+Wissen erwerben = to acquire knowledge
+eine Gelegenheit ergreifen = to seize an opportunity
+Interesse wecken = to arouse interest
+in Kauf nehmen = to accept (a disadvantage)
+zur Folge haben = to result in
+Abhilfe schaffen = to provide a remedy
+Anklang finden = to meet with approval
+#ex
+Die Regierung muss endlich Maßnahmen ergreifen. = The government must finally take measures.
+Der Bericht wirft eine Reihe von Fragen auf. = The report raises a number of questions.
+Die Opposition übte scharfe Kritik an dem Gesetz. = The opposition sharply criticised the law.
+Die Technikerin konnte das Problem schnell beheben. = The technician was able to fix the problem quickly.
+Im Praktikum habe ich wertvolle Erfahrungen gesammelt. = During the internship I gained valuable experience.
+Für eine Einigung müssen beide Seiten einen Kompromiss eingehen. = For an agreement both sides must make a compromise.
+Der Vorschlag fand bei den Mitarbeitern großen Anklang. = The proposal met with great approval among the staff.
+Die Verspätung hatte zur Folge, dass viele den Anschluss verpassten. = The delay resulted in many missing their connection.
+Für die schöne Lage nehmen wir die hohe Miete in Kauf. = We accept the high rent for the nice location.
+Mit dem neuen Konzept soll Abhilfe geschaffen werden. = The new concept is intended to provide a remedy.
+#read2
+Wortschatz präzise wählen: Warum „machen“ nicht immer reicht
+In der Alltagssprache lässt sich vieles mit wenigen Verben ausdrücken. Man macht eine Pause, macht einen Fehler, macht einen Vorschlag. Wer jedoch auf C1-Niveau schreibt, wird schnell merken, dass solche Allzweckverben in anspruchsvollen Texten blass und ungenau wirken. Prüferinnen und Prüfer achten deshalb besonders auf feste Wortverbindungen, sogenannte Kollokationen. Eine Kollokation ist eine typische Kombination von Wörtern, die Muttersprachler intuitiv verwenden: Man trifft eine Entscheidung, man stellt eine Frage, man leistet einen Beitrag. Grammatisch wären auch andere Verben denkbar, doch sie klingen falsch. Wer „eine Entscheidung macht“, wird zwar verstanden, verrät sich aber als Lernender, vermutlich weil er aus dem Englischen übersetzt. Ebenso wichtig ist die Unterscheidung zwischen Synonymen, die sich in Bedeutung oder Stil unterscheiden. „Bekommen“, „erhalten“ und „kriegen“ bedeuten im Kern dasselbe, gehören aber unterschiedlichen Registern an: „Kriegen“ ist umgangssprachlich, „erhalten“ eher formell. In einem Bewerbungsschreiben wirkt „Ich habe Ihre Antwort gekriegt“ daher unangemessen. Auch scheinbar gleichbedeutende Adjektive können feine Unterschiede aufweisen: Eine „erhebliche“ Verbesserung ist deutlicher als eine „spürbare“, eine „gewaltige“ Herausforderung größer als eine „beträchtliche“. Wie lässt sich dieser Wortschatz aufbauen? Bewährt hat sich, Wörter nie isoliert, sondern stets mit ihren typischen Partnern zu lernen: nicht nur „Kritik“, sondern „Kritik üben an“, nicht nur „Maßnahme“, sondern „Maßnahmen ergreifen“. Einsprachige Wörterbücher wie das Digitale Wörterbuch der deutschen Sprache zeigen zu jedem Wort häufige Verbindungen aus echten Texten. Wer beim Lesen von Zeitungsartikeln gezielt auf solche Kombinationen achtet und sie notiert, erweitert seinen aktiven Wortschatz deutlich schneller als mit herkömmlichen Vokabellisten.
+#dialog
+Aiko: Leila, kannst du mal meinen Text lesen? Ich habe das Gefühl, dass er irgendwie einfach klingt.
+Leila: Klar. Hier schreibst du: „Die Firma hat viele Probleme gemacht, um die Krise zu stoppen.“
+Aiko: Ist das falsch?
+Leila: Nicht falsch, aber unpräzise. Besser wäre: „Die Firma hat zahlreiche Maßnahmen ergriffen, um die Krise zu bewältigen.“
+Aiko: Ah, „Maßnahmen ergreifen“ und „eine Krise bewältigen“. Das klingt viel professioneller.
+Leila: Und hier: „Die Idee hat den Mitarbeitern gut gefallen.“ Da könntest du sagen: „Die Idee fand großen Anklang.“
+Aiko: Wo lernt man solche Ausdrücke?
+Leila: Beim Zeitungslesen. Ich schreibe mir jede Woche zehn Kollokationen auf.
+#dq
+Was ist an Aikos erstem Satz problematisch? || Er ist unpräzise (nicht falsch).
+Wie lautet Leilas Verbesserung? || „Die Firma hat zahlreiche Maßnahmen ergriffen, um die Krise zu bewältigen.“
+Wie lernt Leila solche Ausdrücke? || Beim Zeitungslesen; sie notiert jede Woche zehn Kollokationen.
+#task
+Kollokation: Maßnahmen ___ (ergreifen/machen) || ergreifen
+Kollokation: einen Beitrag ___ (leisten/geben) || leisten
+Kollokation: Kritik ___ an (üben/machen) || üben
+Kollokation: Erfahrungen ___ (sammeln/machen, formeller) || sammeln
+Kollokation: eine Krise ___ (bewältigen/lösen) || bewältigen
+Kollokation: Interesse ___ (wecken/bringen) || wecken
+Kollokation: Fortschritte ___ (erzielen/bekommen) || erzielen
+Register: „kriegen“ formell → || erhalten
+Synonym (stärker): eine spürbare Verbesserung → eine ___ Verbesserung (erhebliche/leichte) || erhebliche
+Fehler? „Wir müssen eine Entscheidung machen.“ || Wir müssen eine Entscheidung treffen.
+
+@@ 56
+#vocab
+die These, -n = thesis
+die Antithese, -n = antithesis
+die Synthese, -n = synthesis
+die Leserschaft = readership
+der Kommentar, -e = commentary
+die Rezension, -en = review
+die Inhaltsangabe, -n = summary of content
+der Leserbrief, -e = letter to the editor
+die Kernaussage, -n = key statement
+die Argumentationskette, -n = chain of argument
+die Überleitung, -en = transition
+eingangs = at the beginning
+im Folgenden = in what follows
+des Weiteren = furthermore
+nicht zuletzt = not least
+abschließend = in conclusion
+es sei darauf hingewiesen, dass = it should be pointed out that
+der Verfasser / die Verfasserin = the author
+in Anbetracht (+ Gen.) = in view of
+vor diesem Hintergrund = against this background
+#ex
+Eingangs möchte ich die zentrale Frage skizzieren. = At the beginning I would like to outline the central question.
+Im Folgenden werden die wichtigsten Argumente dargestellt. = In what follows the most important arguments are presented.
+Des Weiteren ist zu berücksichtigen, dass die Kosten steigen. = Furthermore it has to be taken into account that the costs are rising.
+Nicht zuletzt spielt auch der Umweltschutz eine Rolle. = Not least, environmental protection also plays a role.
+Der Verfasser vertritt die These, dass Bildung der Schlüssel sei. = The author advocates the thesis that education is the key.
+Zusammenfassend lässt sich sagen, dass die Vorteile überwiegen. = In summary one can say that the advantages outweigh.
+In Anbetracht der Umstände ist dies ein gutes Ergebnis. = In view of the circumstances this is a good result.
+Vor diesem Hintergrund erscheint die Entscheidung nachvollziehbar. = Against this background the decision seems understandable.
+Meines Erachtens greift diese Argumentation zu kurz. = In my opinion this line of argument falls short.
+Es sei darauf hingewiesen, dass die Daten veraltet sind. = It should be pointed out that the data are outdated.
+#read2
+Musterlösung: Stellungnahme zu einem Leserbrief
+Aufgabe: In einem Leserbrief fordert ein Leser, Smartphones an Schulen vollständig zu verbieten. Nehmen Sie Stellung.
+In seinem Leserbrief vom 12. März vertritt Herr Dietrich die These, Smartphones hätten an Schulen nichts verloren und sollten daher vollständig verboten werden. Er begründet dies vor allem mit der mangelnden Konzentration der Schülerinnen und Schüler sowie mit der Zunahme von Cybermobbing. Diese Bedenken sind meines Erachtens durchaus berechtigt. Zahlreiche Lehrkräfte berichten, dass Benachrichtigungen den Unterricht stören und Pausen zunehmend schweigend vor dem Bildschirm verbracht werden. Auch der Zusammenhang zwischen ständiger Erreichbarkeit und Mobbing ist gut dokumentiert. Insofern ist der Wunsch nach klaren Regeln nachvollziehbar. Gleichwohl halte ich ein generelles Verbot für den falschen Weg. Erstens gehört der verantwortungsvolle Umgang mit digitalen Medien zu den Kompetenzen, die Schule vermitteln sollte. Ein Verbot verlagert dieses Lernen lediglich in den unbeaufsichtigten Raum außerhalb der Schule. Zweitens lassen sich Smartphones sinnvoll im Unterricht einsetzen, etwa für Recherchen, Vokabeltrainer oder Lernvideos. Drittens ist ein vollständiges Verbot in der Praxis kaum durchsetzbar und führt erfahrungsgemäß eher zu heimlicher Nutzung. Vor diesem Hintergrund plädiere ich für einen Mittelweg: Während des Unterrichts sollten Smartphones grundsätzlich ausgeschaltet bleiben, es sei denn, die Lehrkraft setzt sie gezielt ein. Für die Pausen könnten Schulen handyfreie Zonen einrichten, ohne die Nutzung ganz zu untersagen. Nicht zuletzt sollte Medienbildung fest im Lehrplan verankert werden. Abschließend lässt sich festhalten: Herr Dietrich benennt reale Probleme, doch seine Lösung greift zu kurz. Nicht das Gerät ist das Problem, sondern der Umgang damit – und diesen können Kinder nur lernen, wenn man ihn ihnen beibringt.
+#dialog
+Prüferin: Sie haben in Ihrer Stellungnahme einen Mittelweg vorgeschlagen. Können Sie das kurz begründen?
+Kandidat: Gern. Ein Verbot löst das Problem meines Erachtens nicht, es verschiebt es nur.
+Prüferin: Aber wäre ein Verbot nicht zumindest einfacher umzusetzen?
+Kandidat: Auf den ersten Blick ja. Allerdings zeigen Erfahrungen aus anderen Ländern, dass viele Schüler die Geräte dann heimlich nutzen.
+Prüferin: Welches Argument halten Sie für das stärkste?
+Kandidat: Dass Medienkompetenz gelernt werden muss. Und wo, wenn nicht in der Schule?
+Prüferin: Danke. Das war gut strukturiert und überzeugend.
+#dq
+Was schlägt der Kandidat vor? || Einen Mittelweg statt eines Verbots.
+Warum ist ein Verbot laut Kandidat problematisch? || Es verschiebt das Problem nur; viele Schüler nutzen die Geräte dann heimlich.
+Welches Argument hält er für das stärkste? || Dass Medienkompetenz (in der Schule) gelernt werden muss.
+#task
+Einleitung: ___ möchte ich die Frage kurz umreißen. (Eingangs/Abschließend) || Eingangs
+Überleitung: ___ ___ werden die Argumente dargestellt. (im Folgenden) || Im Folgenden
+Ergänzung: Des ___ ist zu bedenken, dass … || Weiteren
+Gewichtung: Nicht ___ spielt das Geld eine Rolle. || zuletzt
+Eigene Meinung: Meines ___ ist das falsch. || Erachtens
+Schluss: ___ lässt sich sagen, dass … (zusammenfassen) || Zusammenfassend
+Einräumen: Diese Bedenken sind ___ berechtigt. Gleichwohl … (durchaus/niemals) || durchaus
+Hinweis: Es sei darauf ___, dass … || hingewiesen
+Kontext: Vor diesem ___ erscheint die Entscheidung logisch. || Hintergrund
+Fehler? „Meiner Erachtens ist die These falsch.“ || Meines Erachtens ist die These falsch.
+
+@@ 57
+#vocab
+geziemend = seemly (elevated)
+beschwerlich = arduous
+die Obrigkeit = authorities (elevated, dated)
+mitnichten = by no means (elevated)
+fürwahr = indeed (archaic)
+abkratzen = to kick the bucket (vulgar)
+pennen = to sleep (colloquial)
+die Kohle = dough, cash (colloquial)
+blechen = to cough up (money) (colloquial)
+der Kumpel, - = mate (colloquial)
+krass = extreme, awesome (youth language)
+Bock haben auf = to fancy (colloquial)
+jemandem auf den Keks gehen = to get on someone's nerves
+die Nase voll haben = to be fed up
+ins Fettnäpfchen treten = to put one's foot in it
+etwas auf die lange Bank schieben = to put something off
+jemandem reinen Wein einschenken = to tell someone the plain truth
+den Nagel auf den Kopf treffen = to hit the nail on the head
+um den heißen Brei herumreden = to beat about the bush
+Tomaten auf den Augen haben = to be blind to the obvious
+#ex
+Ich habe keinen Bock auf diese Party. = I don't fancy this party at all.
+Mitnichten ist dies eine leichte Aufgabe. = By no means is this an easy task.
+Für das Konzert mussten wir ganz schön blechen. = We had to cough up quite a bit for the concert.
+Er geht mir mit seinen Fragen total auf den Keks. = He really gets on my nerves with his questions.
+Ich habe die Nase voll von den ständigen Verspätungen. = I'm fed up with the constant delays.
+Mit dieser Bemerkung ist sie ins Fettnäpfchen getreten. = She put her foot in it with that remark.
+Hör auf, um den heißen Brei herumzureden! = Stop beating about the bush!
+Du hast den Nagel auf den Kopf getroffen. = You've hit the nail on the head.
+Wir sollten die Steuererklärung nicht länger auf die lange Bank schieben. = We shouldn't put off the tax return any longer.
+Hast du Tomaten auf den Augen? Das Schild ist doch riesig! = Are you blind? The sign is huge!
+#read2
+Ein Ereignis, drei Register
+Wie stark das Register die Wirkung einer Aussage bestimmt, zeigt sich, wenn man denselben Sachverhalt in verschiedenen Stilebenen wiedergibt. Angenommen, ein Mitarbeiter hat einen wichtigen Termin verpasst. In der gehobenen Schriftsprache, etwa in einem offiziellen Entschuldigungsschreiben, könnte es heißen: „Ich bedaure zutiefst, dass ich den vereinbarten Termin aufgrund eines bedauerlichen Versehens nicht wahrnehmen konnte, und bitte Sie, mein Versäumnis zu entschuldigen. Selbstverständlich stehe ich Ihnen für einen Ersatztermin jederzeit zur Verfügung.“ Die Sprache ist distanziert, nominal und höflich bis an die Grenze der Unterwürfigkeit. Im neutralen Standarddeutsch, wie man es einem Kollegen am Telefon sagen würde, klingt dasselbe deutlich direkter: „Tut mir leid, ich habe den Termin vergessen. Können wir einen neuen ausmachen?“ Unter Freunden schließlich wird der Ton salopp: „Mist, das Meeting hab ich total verpennt! Peinlich, oder?“ Hier fallen Endungen weg, Kraftausdrücke und Modewörter tauchen auf, und gerade die Selbstironie schafft Nähe. Für fortgeschrittene Lernende liegt die eigentliche Herausforderung nicht darin, diese Varianten zu verstehen, sondern sie situationsgerecht einzusetzen. Wer im Gespräch mit der Vorgesetzten „verpennt“ sagt, wirkt respektlos; wer im Freundeskreis von einem „bedauerlichen Versehen“ spricht, erntet bestenfalls Gelächter. Besonders tückisch sind Redewendungen. Ihr Reiz liegt in der Bildhaftigkeit, doch nicht jede passt in jeden Kontext. „Jemandem reinen Wein einschenken“ ist in einer Besprechung durchaus angemessen, „jemandem auf den Keks gehen“ eher nicht. Ein guter Indikator ist die Frage, ob man den Ausdruck in einer seriösen Tageszeitung lesen würde. Lautet die Antwort Nein, gehört er in die Kaffeeküche, nicht in die E-Mail an die Geschäftsführung.
+#dialog
+Tomás: Leila, ich habe meinem Chef geschrieben: „Ich hab null Bock auf das Meeting.“ War das zu krass?
+Leila: Wie bitte? Das hast du nicht wirklich geschrieben!
+Tomás: Doch … Er hat bisher nicht geantwortet.
+Leila: Da bist du aber ganz schön ins Fettnäpfchen getreten. „Bock haben“ sagt man unter Freunden, aber nicht zum Chef.
+Tomás: Und was hätte ich schreiben sollen?
+Leila: Zum Beispiel: „Leider sehe ich mich nicht in der Lage, an dem Meeting teilzunehmen.“ Oder neutral: „Leider kann ich nicht am Meeting teilnehmen.“
+Tomás: Okay, ich schreibe ihm sofort eine Entschuldigung. Ganz gehoben.
+Leila: Nicht übertreiben! Sonst klingt es ironisch. Neutral und ehrlich reicht völlig.
+#dq
+Was hat Tomás seinem Chef geschrieben? || „Ich hab null Bock auf das Meeting.“
+Was wäre eine neutrale Formulierung? || „Leider kann ich nicht am Meeting teilnehmen.“
+Warum soll Tomás nicht übertreiben? || Sonst klingt es ironisch.
+#task
+Umgangssprache → neutral: pennen → || schlafen
+Umgangssprache → neutral: die Kohle → das ___ || Geld
+Umgangssprache → neutral: blechen → || bezahlen
+Umgangssprache → neutral: Ich habe keinen Bock. → Ich habe keine ___. || Lust
+Redewendung: Ich habe die ___ voll. (= Ich habe genug.) || Nase
+Redewendung: Er redet um den heißen ___ herum. || Brei
+Redewendung: Du hast den Nagel auf den ___ getroffen. || Kopf
+Redewendung: etwas auf die lange ___ schieben || Bank
+Gehoben → neutral: mitnichten → || keineswegs
+Register? „Ich bedaure das Versäumnis zutiefst.“ (gehoben/salopp) || gehoben
+
+@@ 58
+#vocab
+kaum dass = no sooner had … than
+geschweige denn = let alone
+von … ganz zu schweigen = not to mention …
+ob … oder = whether … or
+sei es … sei es = be it … or
+wie dem auch sei = be that as it may
+so … auch = however … may
+die Inversion, -en = inversion
+der Partizipialsatz, ¨e = participial clause
+das Satzgefüge, - = complex sentence
+die Satzklammer, -n = sentence bracket
+das Vorfeld = first position (before the verb)
+das Mittelfeld = middle field
+das Nachfeld = final field (after the bracket)
+die Ausklammerung = moving elements after the bracket
+das Stilmittel, - = stylistic device
+die Wiederholung, -en = repetition
+der Spannungsbogen, ¨ = arc of suspense
+die Prägnanz = conciseness
+gestelzt = stilted
+#ex
+Kaum dass er angekommen war, klingelte das Telefon. = No sooner had he arrived than the phone rang.
+In Berlin angekommen, suchte sie sich sofort eine Wohnung. = Having arrived in Berlin, she immediately looked for a flat.
+Vom Lärm geweckt, stand er auf. = Woken by the noise, he got up.
+So schwierig die Aufgabe auch sein mag, wir lösen sie. = However difficult the task may be, we'll solve it.
+Sei es aus Angst, sei es aus Bequemlichkeit – er schwieg. = Be it out of fear or out of convenience – he remained silent.
+Er spricht kaum Englisch, geschweige denn Chinesisch. = He hardly speaks English, let alone Chinese.
+Wie dem auch sei, wir müssen eine Entscheidung treffen. = Be that as it may, we have to make a decision.
+Nicht der Preis ist das Problem, sondern die Qualität. = It's not the price that's the problem, but the quality.
+Gestern Abend, nach einem langen Tag im Büro, kam er endlich nach Hause. = Last night, after a long day at the office, he finally came home.
+Er hat mehr verdient als erwartet. = He earned more than expected. (Vergleich im Nachfeld)
+#read2
+Stilübung: Ein Satz, viele Möglichkeiten
+Die deutsche Satzstellung gilt als streng, doch gerade die feste Verbposition eröffnet erstaunliche stilistische Freiräume. Das Vorfeld, also die Position vor dem konjugierten Verb, kann fast jedes Satzglied aufnehmen – und was dort steht, erhält besonderes Gewicht. Man vergleiche: „Die Ministerin hat den Bericht gestern nach heftiger Kritik zurückgezogen.“ Neutral, sachlich, das Subjekt im Vorfeld. „Gestern hat die Ministerin den Bericht nach heftiger Kritik zurückgezogen“ rückt den Zeitpunkt in den Vordergrund, etwa als Anschluss an eine vorherige Meldung. „Nach heftiger Kritik hat die Ministerin den Bericht gestern zurückgezogen“ betont die Ursache. Und „Zurückgezogen hat die Ministerin den Bericht erst nach heftiger Kritik“ legt den Fokus auf die Handlung selbst, oft mit einem kritischen Unterton. Ebenso wirkungsvoll sind Partizipialkonstruktionen, die einen Nebensatz verdichten: Aus „Nachdem sie in Berlin angekommen war, rief sie ihre Mutter an“ wird „In Berlin angekommen, rief sie ihre Mutter an“. Der Satz gewinnt an Tempo und Prägnanz, verliert allerdings an Präzision, denn das zeitliche Verhältnis wird nur angedeutet. In literarischen Texten finden sich zudem Ellipsen, also bewusst unvollständige Sätze: „Ein Knall. Dann Stille. Niemand rührte sich.“ Solche Fragmente erzeugen Spannung, weil sie den Leser zwingen, die Lücken selbst zu füllen. Wer diese Mittel einsetzt, sollte jedoch Maß halten. Ein Text, der ausschließlich aus Inversionen und Partizipialsätzen besteht, wirkt schnell gestelzt. Guter Stil entsteht durch Abwechslung: kurze Sätze neben langen, einfache Hauptsätze neben kunstvollen Satzgefügen. Oder, wie es ein Schreiblehrer formulierte: Der Rhythmus eines Textes ist wie der Atem eines Menschen – nur wer ihn variiert, wirkt lebendig.
+#dialog
+Lektorin: Ihr Manuskript gefällt mir, aber einige Sätze sind schwer lesbar.
+Autor: Zum Beispiel?
+Lektorin: Hier: „Der von der seit Jahren mit finanziellen Problemen kämpfenden Firma entlassene Mitarbeiter klagte.“
+Autor: Zugegeben, das ist etwas verschachtelt.
+Lektorin: Etwas? Teilen Sie es auf: „Die Firma kämpft seit Jahren mit Geldproblemen. Ein entlassener Mitarbeiter klagte.“
+Autor: Dann geht aber die Verdichtung verloren.
+Lektorin: Wie dem auch sei – Verständlichkeit geht vor. Und im dritten Kapitel könnten Sie mehr mit kurzen Sätzen arbeiten. Gerade in der Verfolgungsjagd.
+Autor: Sie meinen Ellipsen? „Schritte. Ein Schatten. Dann nichts.“
+Lektorin: Genau so.
+#dq
+Was kritisiert die Lektorin? || Einige Sätze sind schwer lesbar (zu verschachtelt).
+Was schlägt sie für den langen Satz vor? || Ihn in zwei Sätze aufzuteilen.
+Wo soll der Autor kurze Sätze verwenden? || Im dritten Kapitel, in der Verfolgungsjagd.
+#task
+Partizipialsatz: Nachdem sie in Berlin angekommen war, rief sie an. → In Berlin ___, rief sie an. || angekommen
+Partizipialsatz: Weil er vom Lärm geweckt worden war, stand er auf. → Vom Lärm ___, stand er auf. || geweckt
+kaum dass: Er war gerade eingeschlafen, da klingelte es. → Kaum ___ er eingeschlafen war, klingelte es. || dass
+Konzessiv: Auch wenn es schwer ist … → So schwer es ___ ist, … || auch
+geschweige denn: Er kann nicht laufen, ___ ___ rennen. || geschweige denn
+Vorfeld (Ursache betonen): Die Firma schloss wegen der Krise. → Wegen der Krise ___ die Firma. || schloss
+Vorfeld (Handlung betonen): Er hat das Buch nie gelesen. → Gelesen ___ er das Buch nie. || hat
+sei es … sei es: ___ es aus Zeitmangel, sei es aus Desinteresse – er kam nicht. || Sei
+Konnektor: Wie dem ___ sei, wir fangen an. || auch
+Fehler? „Kaum dass er war angekommen, rief er an.“ || Kaum dass er angekommen war, rief er an.
+
+@@ 59
+#vocab
+gewissermaßen = to a certain extent
+gewiss = certainly
+tendenziell = tendentially, tend to
+unter Umständen = possibly, under certain circumstances
+in gewisser Hinsicht = in a certain respect
+nicht ganz unproblematisch = not entirely unproblematic
+ausbaufähig = with room for improvement
+suboptimal = less than ideal
+bemerkenswert = remarkable
+schlichtweg = simply, downright
+ausgesprochen = decidedly
+überaus = extremely
+keineswegs = by no means
+geradezu = virtually, downright
+die Ironie = irony
+der Euphemismus, Euphemismen = euphemism
+die Litotes = litotes (understatement by negation)
+die Andeutung, -en = hint, insinuation
+etwas durch die Blume sagen = to say something in a roundabout way
+jemandem etwas unterstellen = to insinuate something about someone
+#ex
+Das Ergebnis ist durchaus ausbaufähig. = There is definitely room for improvement in the result.
+Ihre Präsentation war nicht ganz unproblematisch. = Your presentation was not entirely without problems.
+Das ist, gelinde gesagt, eine Überraschung. = That is, to put it mildly, a surprise.
+Na, das hast du ja wieder großartig hingekriegt! = Well, you've done a brilliant job again! (ironic)
+Der Vorschlag ist nicht uninteressant. = The proposal is not uninteresting.
+Die Kommunikation lief suboptimal. = Communication was less than ideal.
+Das Konzept ist schlichtweg genial. = The concept is simply brilliant.
+Sie hat es ihm durch die Blume gesagt. = She told him in a roundabout way.
+Unter Umständen könnte man die Frist verlängern. = Under certain circumstances the deadline could be extended.
+Das ist keineswegs selbstverständlich. = That is by no means a matter of course.
+#read2
+Das Arbeitszeugnis – eine Geheimsprache
+Kaum eine Textsorte veranschaulicht die Kunst des Andeutens so gut wie das deutsche Arbeitszeugnis. Da Arbeitgeber gesetzlich verpflichtet sind, ein „wohlwollendes“ Zeugnis auszustellen, dürfen sie keine offen negativen Formulierungen verwenden. Über Jahrzehnte hat sich deshalb ein Code entwickelt, in dem scheinbar positive Aussagen sehr unterschiedliche Bewertungen transportieren. Der bekannteste Maßstab betrifft die Zufriedenheit: „Er erledigte die ihm übertragenen Aufgaben stets zu unserer vollsten Zufriedenheit“ entspricht der Note „sehr gut“. Fehlt das Wort „stets“, ist es nur noch „gut“. „Zu unserer Zufriedenheit“ bedeutet „befriedigend“, „im Großen und Ganzen zu unserer Zufriedenheit“ dagegen „ausreichend“ – obwohl kein einziges negatives Wort fällt. Noch subtiler sind Formulierungen, die durch das wirken, was sie verschweigen. Wird bei einer Führungskraft nur das Verhältnis zu den Kollegen gelobt, nicht aber das zu den Vorgesetzten, liegt die Vermutung nahe, dass es dort Konflikte gab. Und der Satz „Sie trug durch ihre Geselligkeit zur Verbesserung des Betriebsklimas bei“ kann, je nach Kontext, ein harmloses Lob oder eine diskrete Anspielung auf übermäßige Feierlaune sein. Kritiker halten dieses System für überholt. Es benachteilige Menschen, die den Code nicht kennen, etwa Zugewanderte, und führe dazu, dass Zeugnisse kaum noch aussagekräftig seien, da ohnehin fast alle „sehr gut“ oder „gut“ ausfielen. Befürworter wenden ein, das Zeugnis sei gerade wegen seiner Feinheiten ein differenziertes Instrument. Für Bewerberinnen und Bewerber gilt in jedem Fall: Ein Zeugnis sollte man nicht nur lesen, sondern entschlüsseln – oder von jemandem prüfen lassen, der die Sprache zwischen den Zeilen beherrscht.
+#dialog
+Ravi: Leila, mein alter Chef hat mir ein Zeugnis geschrieben. Hier steht: „Herr Sharma bemühte sich, die Aufgaben zu unserer Zufriedenheit zu erledigen.“ Klingt doch gut, oder?
+Leila: Hm. Ehrlich gesagt: Das ist keineswegs ein gutes Zeugnis.
+Ravi: Wieso? Da steht nichts Negatives.
+Leila: „Bemühte sich“ bedeutet: Er hat es versucht, aber nicht geschafft. Und ohne „vollsten“ und „stets“ ist das eher eine Drei.
+Ravi: Das ist ja geradezu absurd! Ich war einer der Besten im Team.
+Leila: Dann solltest du um eine Korrektur bitten. Du hast ein Recht auf ein wahres und wohlwollendes Zeugnis.
+Ravi: Gut, dass du mir das gesagt hast. Ich hätte es sonst einfach so verschickt.
+#dq
+Was steht in Ravis Zeugnis? || Er bemühte sich, die Aufgaben zu unserer Zufriedenheit zu erledigen.
+Was bedeutet „bemühte sich“? || Er hat es versucht, aber nicht geschafft.
+Was soll Ravi tun? || Um eine Korrektur bitten.
+#task
+Abschwächen: Das ist schlecht. → Das ist ___. (Euphemismus: Es gibt Raum für Verbesserung.) || ausbaufähig
+Litotes: Das ist interessant. → Das ist nicht ___. || uninteressant
+Euphemismus: Die Firma entlässt Mitarbeiter. → Die Firma ___ Stellen ab. (bauen) || baut
+Verstärken: Das ist ___ genial. (schlichtweg/kaum) || schlichtweg
+Zeugnis-Code (sehr gut): stets zu unserer ___ Zufriedenheit || vollsten
+Zeugnis-Code: „bemühte sich“ bedeutet: Er hatte ___ Erfolg. (keinen/großen) || keinen
+Hedging: Das könnte ___ ___ problematisch sein. (unter Umständen) || unter Umständen
+Ironie erkennen: „Super, schon wieder Stau!“ meint der Sprecher wörtlich? (ja/nein) || nein
+durch die ___ sagen (= indirekt) || Blume
+Fehler? „Kaum ein Textsorte ist so typisch deutsch.“ || Kaum eine Textsorte ist so typisch deutsch.
+
+@@ 60
+#vocab
+die Diskussionsleitung = chairing the discussion
+das Plädoyer, -s = plea, closing argument
+die Replik, -en = reply, rejoinder
+der Einwand, ¨e = objection
+die Gegenposition, -en = opposing position
+einlenken = to give way, to compromise
+zuspitzen = to bring to a head; to sharpen
+relativieren = to put into perspective
+auf etwas eingehen = to address something
+etwas ins Feld führen = to put forward (an argument)
+etwas zu bedenken geben = to ask someone to consider something
+einen Standpunkt vertreten = to hold a position
+Ich gebe Ihnen insofern recht, als … = I agree with you insofar as …
+Da muss ich Ihnen widersprechen. = I have to disagree with you there.
+Lassen Sie mich ausreden. = Let me finish.
+Darf ich kurz einhaken? = May I just come in here?
+Um auf Ihren Punkt zurückzukommen, … = To come back to your point, …
+Das ist ein berechtigter Einwand. = That's a fair objection.
+die Schlussfolgerung, -en = conclusion
+das Fazit, -s = conclusion, summary
+#ex
+Ich gebe Ihnen insofern recht, als die Kosten gestiegen sind. = I agree with you insofar as costs have risen.
+Da muss ich Ihnen entschieden widersprechen. = I must strongly disagree with you there.
+Darf ich kurz einhaken? = May I just come in here?
+Lassen Sie mich bitte ausreden. = Please let me finish.
+Das ist ein berechtigter Einwand, den ich ernst nehme. = That's a fair objection that I take seriously.
+Um auf Ihren Punkt zurückzukommen: Die Zahlen sprechen eine andere Sprache. = To come back to your point: the figures tell a different story.
+Ich möchte zu bedenken geben, dass nicht alle davon profitieren. = I'd ask you to consider that not everyone benefits from it.
+Er führte vor allem ökologische Argumente ins Feld. = He mainly put forward ecological arguments.
+Lassen Sie mich das kurz relativieren. = Let me put that into perspective briefly.
+Mein Fazit lautet daher: Wir brauchen beides. = My conclusion is therefore: we need both.
+#read2
+Vortrag: Sprache als Schlüssel zur Teilhabe – Abschlussrede im C2-Kurs
+„Sehr geehrte Damen und Herren, liebe Mitlernende, als ich vor vier Jahren meinen ersten Deutschkurs besuchte, bestand mein Wortschatz aus etwa zwanzig Wörtern, von denen ich die Hälfte falsch aussprach. Heute darf ich vor Ihnen über eine Frage sprechen, die mich seither begleitet: Inwiefern ist Sprache der Schlüssel zur gesellschaftlichen Teilhabe? Gemeinhin wird diese Frage schnell bejaht. Wer die Sprache des Landes beherrscht, findet leichter Arbeit, versteht Behördenbriefe und kann sich politisch einbringen. Das ist zweifellos richtig. Doch ich möchte die These ein wenig zuspitzen: Sprache ist nicht nur ein Schlüssel, sie ist auch eine Tür, die von beiden Seiten geöffnet werden muss. Lassen Sie mich das an einem Beispiel verdeutlichen. In meinem ersten Jahr in Berlin habe ich mich nach Kräften bemüht, Deutsch zu sprechen. Allzu oft antwortete man mir jedoch auf Englisch, gut gemeint, aber mit der Folge, dass ich kaum Gelegenheit zum Üben hatte. Teilhabe setzt also nicht nur Lernbereitschaft voraus, sondern auch Geduld auf Seiten der Gesellschaft. Man könnte einwenden, dies sei eine Frage der Höflichkeit und nicht der Integrationspolitik. Ich gebe Ihnen insofern recht, als niemand verpflichtet ist, langsamer zu sprechen. Dennoch zeigen Studien, dass Zugewanderte, die regelmäßig Kontakt zu Muttersprachlern haben, die Sprache deutlich schneller erwerben. Sprachförderung endet folglich nicht im Kursraum. Sie findet in Vereinen statt, am Arbeitsplatz, im Treppenhaus. Ein weiterer Aspekt wird häufig übersehen: Sprache ist nie nur Werkzeug, sie ist auch Identität. Wer Deutsch lernt, gibt seine Erstsprache nicht auf. Mehrsprachigkeit sollte daher nicht als Defizit, sondern als Ressource betrachtet werden – für den Einzelnen ebenso wie für die Gesellschaft. Mein Fazit lautet deshalb: Ja, Sprache ist der Schlüssel zur Teilhabe. Aber ein Schlüssel nützt wenig, wenn niemand die Tür öffnet. Ich danke Ihnen allen, die mir in den vergangenen vier Jahren die Tür geöffnet haben – und Ihnen für Ihre Aufmerksamkeit.“
+#dialog
+Moderatorin: Vielen Dank für Ihren Vortrag. Herr Dr. Hahn, Sie sehen das etwas anders?
+Dr. Hahn: Teilweise. Ich gebe Ihnen insofern recht, als Kontakt wichtig ist. Aber Sie verlagern die Verantwortung zu sehr auf die Gesellschaft.
+Leila: Darf ich kurz einhaken? Ich spreche ja von beiden Seiten, nicht nur von einer.
+Dr. Hahn: Lassen Sie mich bitte ausreden. Der Staat bietet Integrationskurse an. Wer sie nutzt, hat sehr gute Chancen.
+Leila: Das ist ein berechtigter Einwand. Allerdings enden diese Kurse meist auf B1-Niveau, und für viele Berufe reicht das nicht.
+Dr. Hahn: Da muss ich Ihnen zustimmen. Die Finanzierung höherer Kurse ist tatsächlich ausbaufähig.
+Moderatorin: Dann haben wir ja doch einen gemeinsamen Nenner gefunden.
+#dq
+Was wirft Dr. Hahn Leila vor? || Sie verlagere die Verantwortung zu sehr auf die Gesellschaft.
+Welches Argument bringt Leila zu den Integrationskursen? || Sie enden meist auf B1-Niveau, das reicht für viele Berufe nicht.
+Worin stimmen beide am Ende überein? || Die Finanzierung höherer Kurse ist ausbaufähig.
+#task
+Zustimmen mit Einschränkung: Ich gebe Ihnen ___ recht, als … || insofern
+Widersprechen: Da muss ich Ihnen ___. || widersprechen
+Unterbrechen: Darf ich kurz ___? || einhaken
+Sich wehren: Lassen Sie mich bitte ___. || ausreden
+Anerkennen: Das ist ein ___ Einwand. || berechtigter
+Zurückkommen: Um auf Ihren Punkt ___, … || zurückzukommen
+Argumente: Er führte wirtschaftliche Gründe ins ___. || Feld
+Bedenken: Ich möchte zu ___ geben, dass … || bedenken
+Schluss: Mein ___ lautet: Wir brauchen beides. || Fazit
+Fehler? „Ich gebe Ihnen recht insofern, dass die Zahlen stimmen.“ || Ich gebe Ihnen insofern recht, als die Zahlen stimmen.

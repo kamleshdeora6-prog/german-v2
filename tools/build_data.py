@@ -10,9 +10,9 @@ def parse(path):                     # lesson text parser
     for raw in open(path, encoding="utf-8"):
         line = raw.rstrip("\n")
         if line.startswith("@@"):
-            f = [x.strip() for x in line[2:].split("|")]
+            f = [x.strip() for x in line[2:].split("|")] + ["", "", "", "", ""]   # plus files only give the number
             cur = dict(n=int(f[0]), lvl=f[1], title=f[2], theme=f[3], scene=f[4],
-                       rec=[x for x in f[5].split(",") if x.strip()] if len(f) > 5 else [], sec={})
+                       rec=[x for x in f[5].split(",") if x.strip()], sec={})
             topics.append(cur); sec = None; continue
         if line.startswith("#") and cur is not None:
             sec = line[1:].strip(); cur["sec"][sec] = []; continue
@@ -60,6 +60,26 @@ for t in lessons:
         "exam": [split_ans(l) for l in s.get("exam", [])],
         "speak": s.get("speak", []),
     })
+# ---------- v6 deepening: plus_*.txt adds words, examples, a second text, a listening dialogue and tasks ----------
+#   @@ <lesson n>
+#   #vocab   de, plural = en          (appended)
+#   #ex      German = English         (appended)
+#   #read2   first line = title, then the text
+#   #dialog  Name: line               (a listening scene; two or three speakers)
+#   #dq      question || answer       (listening comprehension for the dialogue)
+#   #task    question || answer       (appended)
+byn = {l["n"]: l for l in cur}
+for p in sorted(glob.glob("plus_*.txt")):
+    for t in parse(p):
+        l = byn.get(t["n"]);  s = t["sec"]
+        if not l: raise SystemExit(f"{p}: lesson {t['n']} does not exist")
+        l["vocab"] += [dict(zip(("de", "en"), (x.split(" = ", 1) + [""])[:2])) for x in s.get("vocab", [])]
+        l["examples"] += [dict(zip(("de", "en"), (x.split(" = ", 1) + [""])[:2])) for x in s.get("ex", [])]
+        l["tasks"] += [split_ans(x) for x in s.get("task", [])]
+        if s.get("read2"): l["reading2"] = {"title": s["read2"][0], "text": " ".join(s["read2"][1:])}
+        if s.get("dialog"):
+            l["dialog"] = [dict(zip(("who", "de"), [y.strip() for y in x.split(":", 1)])) for x in s["dialog"]]
+            l["dq"] = [split_ans(x) for x in s.get("dq", [])]
 js("curriculum", cur)
 
 ref = []

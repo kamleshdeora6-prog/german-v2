@@ -1,0 +1,521 @@
+#A1
+der Mantel|coat|Mäntel|Kleidung
+die Socke|sock|Socken|Kleidung
+die Unterwäsche|underwear||Kleidung
+der Gürtel|belt|Gürtel|Kleidung
+die Brille|glasses|Brillen|Kleidung
+die Tasche|bag; pocket|Taschen|Kleidung
+der Rucksack|backpack|Rucksäcke|Kleidung
+der Regenschirm|umbrella|Regenschirme|Kleidung
+die Sonnenbrille|sunglasses|Sonnenbrillen|Kleidung
+der Hut|hat|Hüte|Kleidung
+die Hausschuhe|slippers||Kleidung
+der Turnschuh|trainer|Turnschuhe|Kleidung
+das Frühstücksei|breakfast egg|Frühstückseier|Essen
+das Müsli|muesli|Müslis|Essen
+der Honig|honey||Essen
+die Kirsche|cherry|Kirschen|Essen
+die Birne|pear|Birnen|Essen
+die Traube|grape|Trauben|Essen
+die Paprika|pepper (vegetable)|Paprikas|Essen
+der Knoblauch|garlic||Essen
+die Bohne|bean|Bohnen|Essen
+die Erbse|pea|Erbsen|Essen
+der Pilz|mushroom|Pilze|Essen
+die Soße|sauce|Soßen|Essen
+das Steak|steak|Steaks|Essen
+die Pommes|chips, fries||Essen
+der Senf|mustard||Essen
+der Ketchup|ketchup||Essen
+der Keks|biscuit|Kekse|Essen
+die Limonade|lemonade|Limonaden|Essen
+der Sprudel|sparkling water||Essen
+die Mahlzeit|meal|Mahlzeiten|Essen
+der Nachtisch|dessert|Nachtische|Essen
+die Vorspeise|starter|Vorspeisen|Essen
+das Hauptgericht|main course|Hauptgerichte|Essen
+die Kneipe|pub|Kneipen|Essen
+die Kantine|canteen|Kantinen|Essen
+der Imbiss|snack bar|Imbisse|Essen
+frühstücken|to have breakfast||Verb
+kochen|to cook||Verb
+backen|to bake||Verb
+braten|to fry||Verb
+schneiden|to cut||Verb
+probieren|to try, to taste||Verb
+bestellen|to order||Verb
+der Großvater|grandfather|Großväter|Familie
+die Großmutter|grandmother|Großmütter|Familie
+das Enkelkind|grandchild|Enkelkinder|Familie
+der Zwilling|twin|Zwillinge|Familie
+die Hausfrau|housewife|Hausfrauen|Familie
+der Hausmann|house husband|Hausmänner|Familie
+die Hochzeit|wedding|Hochzeiten|Familie
+der Freund|friend|Freunde|Menschen
+die Freundin|friend (f)|Freundinnen|Menschen
+der Mensch|human, person|Menschen|Menschen
+die Person|person|Personen|Menschen
+der Herr|gentleman|Herren|Menschen
+die Dame|lady|Damen|Menschen
+der Name|name|Namen|Menschen
+der Vorname|first name|Vornamen|Menschen
+der Nachname|surname|Nachnamen|Menschen
+das Geburtsdatum|date of birth|Geburtsdaten|Menschen
+der Geburtsort|place of birth|Geburtsorte|Menschen
+die Adresse|address|Adressen|Menschen
+die Hausnummer|house number|Hausnummern|Menschen
+die Postleitzahl|postcode|Postleitzahlen|Menschen
+das Land|country|Länder|Länder
+Deutschland|Germany||Länder
+Österreich|Austria||Länder
+die Schweiz|Switzerland||Länder
+Indien|India||Länder
+die Türkei|Turkey||Länder
+Frankreich|France||Länder
+Spanien|Spain||Länder
+Italien|Italy||Länder
+England|England||Länder
+die USA|the USA||Länder
+China|China||Länder
+Japan|Japan||Länder
+Europa|Europe||Länder
+Asien|Asia||Länder
+Afrika|Africa||Länder
+Deutsch|German (language)||Sprachen
+Englisch|English||Sprachen
+Französisch|French||Sprachen
+Spanisch|Spanish||Sprachen
+Arabisch|Arabic||Sprachen
+Russisch|Russian||Sprachen
+Türkisch|Turkish||Sprachen
+Hindi|Hindi||Sprachen
+#A2
+die Wohnungsanzeige|flat advertisement|Wohnungsanzeigen|Wohnen
+die Wohngemeinschaft|shared flat|Wohngemeinschaften|Wohnen
+der Altbau|old building|Altbauten|Wohnen
+der Neubau|new building|Neubauten|Wohnen
+das Hochhaus|high-rise|Hochhäuser|Wohnen
+das Reihenhaus|terraced house|Reihenhäuser|Wohnen
+das Einfamilienhaus|detached house|Einfamilienhäuser|Wohnen
+die Garage|garage|Garagen|Wohnen
+der Quadratmeter|square metre|Quadratmeter|Wohnen
+die Warmmiete|rent incl. heating||Wohnen
+die Kaltmiete|rent excl. utilities||Wohnen
+der Mietvertrag|tenancy agreement|Mietverträge|Wohnen
+einziehen|to move in||Verb
+ausziehen|to move out||Verb
+renovieren|to renovate||Verb
+streichen|to paint (walls)||Verb
+tapezieren|to wallpaper||Verb
+aufbauen|to assemble||Verb
+abbauen|to dismantle||Verb
+die Glühbirne|light bulb|Glühbirnen|Wohnen
+die Steckdose|socket|Steckdosen|Wohnen
+der Wasserhahn|tap|Wasserhähne|Wohnen
+das Waschbecken|washbasin|Waschbecken|Wohnen
+die Mikrowelle|microwave|Mikrowellen|Wohnen
+der Backofen|oven|Backöfen|Wohnen
+die Pfanne|frying pan|Pfannen|Wohnen
+der Topf|pot|Töpfe|Wohnen
+der Mülleimer|bin|Mülleimer|Wohnen
+der Besen|broom|Besen|Wohnen
+der Eimer|bucket|Eimer|Wohnen
+die Bettdecke|duvet|Bettdecken|Wohnen
+der Kleiderschrank|wardrobe|Kleiderschränke|Wohnen
+der Schreibtisch|desk|Schreibtische|Wohnen
+der Esstisch|dining table|Esstische|Wohnen
+die Pflanze|plant|Pflanzen|Wohnen
+die Innenstadt|city centre|Innenstädte|Stadt
+die Altstadt|old town|Altstädte|Stadt
+der Stadtteil|district|Stadtteile|Stadt
+der Vorort|suburb|Vororte|Stadt
+die Fußgängerzone|pedestrian zone|Fußgängerzonen|Stadt
+das Einkaufszentrum|shopping centre|Einkaufszentren|Stadt
+der Spielplatz|playground|Spielplätze|Stadt
+der Friedhof|cemetery|Friedhöfe|Stadt
+das Schloss|castle; lock|Schlösser|Stadt
+der Turm|tower|Türme|Stadt
+der Dom|cathedral|Dome|Stadt
+das Denkmal|monument|Denkmäler|Stadt
+der Brunnen|fountain|Brunnen|Stadt
+die Feuerwache|fire station|Feuerwachen|Stadt
+das Polizeirevier|police station|Polizeireviere|Stadt
+das Fundbüro|lost property office|Fundbüros|Stadt
+die Reinigung|dry cleaner's|Reinigungen|Stadt
+der Kiosk|kiosk|Kioske|Stadt
+der Fahrschein|ticket|Fahrscheine|Verkehr
+die Monatskarte|monthly ticket|Monatskarten|Verkehr
+der Schaffner|conductor|Schaffner|Verkehr
+der Fahrplan|timetable|Fahrpläne|Verkehr
+der Ausgang|exit|Ausgänge|Verkehr
+der Eingang|entrance|Eingänge|Verkehr
+die Kreuzung|crossroads|Kreuzungen|Verkehr
+der Kreisverkehr|roundabout|Kreisverkehre|Verkehr
+der Zebrastreifen|zebra crossing|Zebrastreifen|Verkehr
+das Motorrad|motorbike|Motorräder|Verkehr
+der Lastwagen|lorry|Lastwagen|Verkehr
+der Helm|helmet|Helme|Verkehr
+tanken|to refuel||Verb
+parken|to park||Verb
+bremsen|to brake||Verb
+überholen|to overtake||Verb
+abbiegen|to turn||Verb
+verpassen|to miss||Verb
+der Sportverein|sports club|Sportvereine|Sport
+das Fitnessstudio|gym|Fitnessstudios|Sport
+das Stadion|stadium|Stadien|Sport
+der Ball|ball|Bälle|Sport
+das Tor|goal; gate|Tore|Sport
+der Spieler|player|Spieler|Sport
+die Spielerin|player (f)|Spielerinnen|Sport
+der Trainer|coach|Trainer|Sport
+der Sieg|victory|Siege|Sport
+die Niederlage|defeat|Niederlagen|Sport
+das Unentschieden|draw||Sport
+die Meisterschaft|championship|Meisterschaften|Sport
+Rad fahren|to cycle||Sport
+Ski fahren|to ski||Sport
+klettern|to climb||Verb
+segeln|to sail||Verb
+angeln|to fish||Verb
+reiten|to ride (a horse)||Verb
+das Geschäft|shop; business|Geschäfte|Einkaufen
+die Filiale|branch|Filialen|Einkaufen
+der Kassenbon|receipt|Kassenbons|Einkaufen
+das Wechselgeld|change||Einkaufen
+die Packung|pack|Packungen|Einkaufen
+die Dose|can, tin|Dosen|Einkaufen
+der Becher|cup, pot|Becher|Einkaufen
+das Glas|jar; glass|Gläser|Einkaufen
+der Liter|litre|Liter|Einkaufen
+die Größe|size|Größen|Einkaufen
+der Rabatt|discount|Rabatte|Einkaufen
+reduziert|reduced||Einkaufen
+umtauschen|to exchange||Verb
+reklamieren|to complain about||Verb
+der Kassierer|cashier|Kassierer|Einkaufen
+die Kassiererin|cashier (f)|Kassiererinnen|Einkaufen
+die Lieferung|delivery|Lieferungen|Einkaufen
+der Onlineshop|online shop|Onlineshops|Einkaufen
+das Fieberthermometer|thermometer|Fieberthermometer|Gesundheit
+die Versichertenkarte|health insurance card|Versichertenkarten|Gesundheit
+die Sprechstunde|consultation hours|Sprechstunden|Gesundheit
+das Wartezimmer|waiting room|Wartezimmer|Gesundheit
+der Termin beim Arzt|doctor's appointment||Gesundheit
+husten|to cough||Verb
+niesen|to sneeze||Verb
+bluten|to bleed||Verb
+untersuchen|to examine||Verb
+behandeln|to treat||Verb
+operieren|to operate||Verb
+#B1
+die Abmachung|agreement|Abmachungen|Kommunikation
+die Bitte|request|Bitten|Kommunikation
+die Beschwerde|complaint|Beschwerden|Kommunikation
+die Auskunft|information|Auskünfte|Kommunikation
+die Anfrage|enquiry|Anfragen|Kommunikation
+der Hinweis|hint, note|Hinweise|Kommunikation
+die Ansage|announcement|Ansagen|Kommunikation
+die Diskussion|discussion|Diskussionen|Kommunikation
+der Rat|advice||Kommunikation
+der Witz|joke|Witze|Kommunikation
+die Ausrede|excuse|Ausreden|Kommunikation
+das Kompliment|compliment|Komplimente|Kommunikation
+die Begrüßung|greeting|Begrüßungen|Kommunikation
+der Abschied|farewell|Abschiede|Kommunikation
+sich beschweren|to complain||Verb
+sich entschuldigen|to apologise||Verb
+sich bedanken|to say thank you||Verb
+sich verabschieden|to say goodbye||Verb
+sich verabreden|to arrange to meet||Verb
+sich unterhalten|to chat||Verb
+sich einigen|to agree||Verb
+überreden|to persuade||Verb
+überraschen|to surprise||Verb
+beruhigen|to calm||Verb
+trösten|to comfort||Verb
+ermutigen|to encourage||Verb
+warnen|to warn||Verb
+beleidigen|to insult||Verb
+verzeihen|to forgive||Verb
+vertrauen|to trust||Verb
+der Vorgang|process|Vorgänge|Arbeit
+die Aufgabe|task|Aufgaben|Arbeit
+der Arbeitsplatz|workplace|Arbeitsplätze|Arbeit
+die Arbeitsstelle|job|Arbeitsstellen|Arbeit
+der Arbeitsvertrag|employment contract|Arbeitsverträge|Arbeit
+die Teilzeit|part-time||Arbeit
+die Vollzeit|full-time||Arbeit
+die Gleitzeit|flexitime||Arbeit
+der Feierabend|end of the working day||Arbeit
+die Dienstreise|business trip|Dienstreisen|Arbeit
+die Konferenz|conference|Konferenzen|Arbeit
+das Protokoll|minutes|Protokolle|Arbeit
+die Tagesordnung|agenda|Tagesordnungen|Arbeit
+der Kollege|colleague|Kollegen|Arbeit
+die Kollegin|colleague (f)|Kolleginnen|Arbeit
+der Chef|boss|Chefs|Arbeit
+die Chefin|boss (f)|Chefinnen|Arbeit
+der Selbstständige|self-employed person|Selbstständigen|Arbeit
+das Handwerk|craft, trade|Handwerke|Arbeit
+der Handwerker|craftsman|Handwerker|Arbeit
+der Elektriker|electrician|Elektriker|Berufe
+der Klempner|plumber|Klempner|Berufe
+der Tischler|carpenter|Tischler|Berufe
+der Maler|painter|Maler|Berufe
+der Anwalt|lawyer|Anwälte|Berufe
+die Anwältin|lawyer (f)|Anwältinnen|Berufe
+der Richter|judge|Richter|Berufe
+der Apotheker|pharmacist|Apotheker|Berufe
+der Pfleger|carer, nurse|Pfleger|Berufe
+die Pflegerin|carer, nurse (f)|Pflegerinnen|Berufe
+der Erzieher|nursery teacher|Erzieher|Berufe
+die Erzieherin|nursery teacher (f)|Erzieherinnen|Berufe
+der Architekt|architect|Architekten|Berufe
+die Architektin|architect (f)|Architektinnen|Berufe
+der Programmierer|programmer|Programmierer|Berufe
+der Buchhalter|accountant|Buchhalter|Berufe
+der Beamte|civil servant|Beamten|Berufe
+die Beamtin|civil servant (f)|Beamtinnen|Berufe
+der Briefträger|postman|Briefträger|Berufe
+der Bäcker|baker|Bäcker|Berufe
+der Metzger|butcher|Metzger|Berufe
+der Soldat|soldier|Soldaten|Berufe
+der Pilot|pilot|Piloten|Berufe
+der Hausarzt|GP|Hausärzte|Gesundheit
+der Facharzt|specialist|Fachärzte|Gesundheit
+die Überweisung|referral; bank transfer|Überweisungen|Gesundheit
+die Impfung|vaccination|Impfungen|Gesundheit
+die Verletzung|injury|Verletzungen|Gesundheit
+die Erkältung|cold|Erkältungen|Gesundheit
+die Grippe|flu|Grippen|Gesundheit
+der Blutdruck|blood pressure||Gesundheit
+das Rezept|prescription; recipe|Rezepte|Gesundheit
+das Bankkonto|bank account|Bankkonten|Geld
+die Kontonummer|account number|Kontonummern|Geld
+die IBAN|IBAN||Geld
+der Geldautomat|cash machine|Geldautomaten|Geld
+das Bargeld|cash||Geld
+die Gebühr|fee|Gebühren|Geld
+der Betrag|amount|Beträge|Geld
+die Rate|instalment|Raten|Geld
+der Dauerauftrag|standing order|Daueraufträge|Geld
+die Lastschrift|direct debit|Lastschriften|Geld
+das Einkommen|income|Einkommen|Geld
+die Ausgaben|expenses||Geld
+die Einnahmen|income, revenue||Geld
+abheben|to withdraw (money)||Verb
+einzahlen|to deposit||Verb
+überweisen|to transfer||Verb
+leihen|to lend; to borrow||Verb
+ausgeben|to spend||Verb
+der Haushaltsplan|budget plan|Haushaltspläne|Geld
+die Gebrauchsanweisung|instructions|Gebrauchsanweisungen|Technik
+der Knopf|button|Knöpfe|Technik
+der Schalter|switch; counter|Schalter|Technik
+das Kabel|cable|Kabel|Technik
+die Verbindung|connection|Verbindungen|Technik
+das WLAN|Wi-Fi||Technik
+das Netz|network|Netze|Technik
+die Webseite|website|Webseiten|Technik
+der Link|link|Links|Technik
+der Benutzer|user|Benutzer|Technik
+das Benutzerkonto|user account|Benutzerkonten|Technik
+die Anmeldung|login; registration|Anmeldungen|Technik
+herunterladen|to download||Verb
+hochladen|to upload||Verb
+sich einloggen|to log in||Verb
+sich ausloggen|to log out||Verb
+aktualisieren|to update||Verb
+einschalten|to switch on||Verb
+ausschalten|to switch off||Verb
+die Stimmung|mood, atmosphere|Stimmungen|Gefühle
+die Eifersucht|jealousy||Gefühle
+die Scham|shame||Gefühle
+die Dankbarkeit|gratitude||Gefühle
+die Geduld|patience||Gefühle
+die Neugier|curiosity||Gefühle
+die Sehnsucht|longing||Gefühle
+die Zufriedenheit|satisfaction||Gefühle
+die Begeisterung|enthusiasm||Gefühle
+die Langeweile|boredom||Gefühle
+erleichtert|relieved||Gefühle
+verzweifelt|desperate||Gefühle
+gelangweilt|bored||Gefühle
+begeistert|enthusiastic||Gefühle
+dankbar|grateful||Gefühle
+eifersüchtig|jealous||Gefühle
+peinlich|embarrassing||Gefühle
+gestresst|stressed||Gefühle
+#B2
+die Anforderung|requirement|Anforderungen|Arbeit
+die Leistung|performance; benefit|Leistungen|Arbeit
+die Belastbarkeit|resilience||Arbeit
+die Eigenverantwortung|personal responsibility||Arbeit
+die Teamfähigkeit|ability to work in a team||Arbeit
+die Weiterbildung|further training|Weiterbildungen|Arbeit
+der Werdegang|career path|Werdegänge|Arbeit
+die Aufstiegsmöglichkeit|promotion prospect|Aufstiegsmöglichkeiten|Arbeit
+das Arbeitsklima|working atmosphere||Arbeit
+die Kündigungsfrist|notice period|Kündigungsfristen|Arbeit
+der Betriebsrat|works council|Betriebsräte|Arbeit
+die Elternzeit|parental leave||Arbeit
+das Elterngeld|parental allowance||Arbeit
+das Arbeitslosengeld|unemployment benefit||Arbeit
+die Sozialversicherung|social insurance||Gesellschaft
+die Rentenversicherung|pension insurance||Gesellschaft
+die Pflegeversicherung|long-term care insurance||Gesellschaft
+die Haftpflichtversicherung|liability insurance||Gesellschaft
+der Steuerbescheid|tax assessment|Steuerbescheide|Gesellschaft
+die Steuererklärung|tax return|Steuererklärungen|Gesellschaft
+der Mindestlohn|minimum wage||Gesellschaft
+die Sozialhilfe|social welfare||Gesellschaft
+das Bürgergeld|citizen's income||Gesellschaft
+der Wohnungsmarkt|housing market||Gesellschaft
+die Mietpreisbremse|rent cap||Gesellschaft
+der Zuzug|influx||Gesellschaft
+die Abwanderung|migration away||Gesellschaft
+der Pendler|commuter|Pendler|Verkehr
+der Nahverkehr|local transport||Verkehr
+der Fernverkehr|long-distance transport||Verkehr
+die Infrastruktur|infrastructure||Verkehr
+das Tempolimit|speed limit|Tempolimits|Verkehr
+die Ladestation|charging station|Ladestationen|Verkehr
+das Carsharing|car sharing||Verkehr
+der Klimawandel|climate change||Umwelt
+die Artenvielfalt|biodiversity||Umwelt
+der Lebensraum|habitat|Lebensräume|Umwelt
+die Landwirtschaft|agriculture||Umwelt
+der Biomarkt|organic supermarket|Biomärkte|Umwelt
+regional|regional||Umwelt
+saisonal|seasonal||Umwelt
+klimaneutral|climate-neutral||Umwelt
+die Medienkompetenz|media literacy||Medien
+die Berichterstattung|reporting||Medien
+die Pressefreiheit|freedom of the press||Medien
+die Zensur|censorship||Medien
+die Meinungsfreiheit|freedom of expression||Medien
+der Shitstorm|online outrage|Shitstorms|Medien
+die Reichweite|reach|Reichweiten|Medien
+der Influencer|influencer|Influencer|Medien
+die Glaubwürdigkeit|credibility||Medien
+die Quelle|source|Quellen|Medien
+recherchieren|to research||Verb
+veröffentlichen|to publish||Verb
+verbreiten|to spread||Verb
+manipulieren|to manipulate||Verb
+die Erziehung|upbringing||Bildung
+das Schulsystem|school system|Schulsysteme|Bildung
+die Chancengleichheit|equal opportunities||Bildung
+der Bildungsabschluss|educational qualification|Bildungsabschlüsse|Bildung
+die Berufsschule|vocational school|Berufsschulen|Bildung
+das duale System|dual (vocational) system||Bildung
+die Studiengebühren|tuition fees||Bildung
+die Hausarbeit|term paper; housework|Hausarbeiten|Bildung
+die Abschlussarbeit|thesis|Abschlussarbeiten|Bildung
+der Lehrplan|curriculum|Lehrpläne|Bildung
+die Ehrlichkeit|honesty||Menschen
+die Zuverlässigkeit|reliability||Menschen
+die Hilfsbereitschaft|helpfulness||Menschen
+das Selbstbewusstsein|self-confidence||Menschen
+die Rücksicht|consideration||Menschen
+die Vorurteile|prejudices||Menschen
+das Klischee|cliché|Klischees|Menschen
+die Gewohnheit|habit|Gewohnheiten|Menschen
+die Lebensweise|way of life|Lebensweisen|Menschen
+die Einsamkeit|loneliness||Menschen
+die Zugehörigkeit|belonging||Menschen
+die Herkunft|origin||Menschen
+die Muttersprache|mother tongue|Muttersprachen|Sprachen
+die Fremdsprache|foreign language|Fremdsprachen|Sprachen
+der Dialekt|dialect|Dialekte|Sprachen
+die Aussprache|pronunciation||Sprachen
+der Wortschatz|vocabulary||Sprachen
+die Rechtschreibung|spelling||Sprachen
+die Zeichensetzung|punctuation||Sprachen
+die Mehrsprachigkeit|multilingualism||Sprachen
+übersetzen|to translate||Verb
+dolmetschen|to interpret||Verb
+#C1
+die Zuständigkeit|responsibility, jurisdiction|Zuständigkeiten|Behörden
+der Bescheid|official notification|Bescheide|Behörden
+der Einspruch|objection|Einsprüche|Behörden
+die Beglaubigung|certification|Beglaubigungen|Behörden
+die Vollmacht|power of attorney|Vollmachten|Behörden
+die Aufenthaltsgenehmigung|residence permit|Aufenthaltsgenehmigungen|Behörden
+die Einbürgerung|naturalisation||Behörden
+die Arbeitserlaubnis|work permit|Arbeitserlaubnisse|Behörden
+das Anerkennungsverfahren|recognition procedure|Anerkennungsverfahren|Behörden
+die Approbation|licence to practise (medicine)||Behörden
+der Datenschutz|data protection||Technik
+die Verschlüsselung|encryption||Technik
+die künstliche Intelligenz|artificial intelligence||Technik
+die Automatisierung|automation||Technik
+der Fortschritt|progress|Fortschritte|Technik
+die Innovation|innovation|Innovationen|Technik
+die Nachvollziehbarkeit|traceability, comprehensibility||Allgemein
+die Wahrnehmung|perception|Wahrnehmungen|Allgemein
+die Wertvorstellung|values|Wertvorstellungen|Allgemein
+das Menschenbild|view of humanity|Menschenbilder|Allgemein
+die Weltanschauung|world view|Weltanschauungen|Allgemein
+die Ethik|ethics||Allgemein
+die Moral|morality||Allgemein
+das Bewusstsein|awareness, consciousness||Allgemein
+die Eigenschaft|property, quality|Eigenschaften|Allgemein
+der Anspruch|claim; standard|Ansprüche|Allgemein
+die Bedingung|condition|Bedingungen|Allgemein
+der Umstand|circumstance|Umstände|Allgemein
+die Zielsetzung|objective|Zielsetzungen|Allgemein
+der Leitgedanke|guiding principle|Leitgedanken|Allgemein
+die Schlussfolgerung|conclusion|Schlussfolgerungen|Allgemein
+anfechten|to contest||Verb
+beanstanden|to object to||Verb
+befürworten|to advocate||Verb
+bekräftigen|to reaffirm||Verb
+darlegen|to set out||Verb
+einfordern|to demand||Verb
+entkräften|to invalidate||Verb
+erachten|to consider||Verb
+ergründen|to fathom||Verb
+gegenüberstellen|to contrast||Verb
+nachweisen|to prove||Verb
+verfechten|to champion||Verb
+vorbeugen|to prevent||Verb
+wahrnehmen|to perceive; to attend||Verb
+sich erübrigen|to be unnecessary||Verb
+sich ergeben|to result||Verb
+sich vergegenwärtigen|to realise, to visualise||Verb
+#C2
+die Zäsur|turning point|Zäsuren|Allgemein
+das Novum|novelty|Nova|Allgemein
+das Paradigma|paradigm|Paradigmen|Allgemein
+der Paradigmenwechsel|paradigm shift|Paradigmenwechsel|Allgemein
+die Prämisse|premise|Prämissen|Allgemein
+die Ambiguität|ambiguity|Ambiguitäten|Allgemein
+die Konnotation|connotation|Konnotationen|Sprachen
+die Denotation|denotation|Denotationen|Sprachen
+die Rhetorik|rhetoric||Sprachen
+die Polemik|polemic|Polemiken|Sprachen
+die Metapher|metaphor|Metaphern|Sprachen
+die Ironie|irony||Sprachen
+der Sarkasmus|sarcasm||Sprachen
+die Floskel|empty phrase|Floskeln|Sprachen
+der Jargon|jargon|Jargons|Sprachen
+das Wortspiel|pun|Wortspiele|Sprachen
+die Pointe|punchline|Pointen|Sprachen
+die Anspielung|allusion|Anspielungen|Sprachen
+die Untertreibung|understatement|Untertreibungen|Sprachen
+die Übertreibung|exaggeration|Übertreibungen|Sprachen
+abwägen|to weigh up||Verb
+anmahnen|to urge||Verb
+desavouieren|to disavow||Verb
+diskreditieren|to discredit||Verb
+instrumentalisieren|to exploit (for purposes)||Verb
+konterkarieren|to counteract||Verb
+nivellieren|to level out||Verb
+pauschalisieren|to generalise||Verb
+polarisieren|to polarise||Verb
+revidieren|to revise||Verb
+tangieren|to affect||Verb
+verabsolutieren|to absolutise||Verb
+zementieren|to cement||Verb
