@@ -105,7 +105,7 @@
         <p class="muted small center">Think of the German word (with article), then tap the card.</p></div>`;
       const card = el.querySelector(".flash");
       card.onclick = () => { card.querySelector(".back").hidden = false; el.querySelector(".grades").hidden = false; Speech.speak(w.de); };
-      el.querySelectorAll("[data-g]").forEach((b) => (b.onclick = () => { const g = +b.dataset.g; SRS.grade(w.id, g); Store.addXP(g ? 3 : 1); if (g === 0) q.push(w.id); i++; draw(); }));
+      el.querySelectorAll("[data-g]").forEach((b) => (b.onclick = () => { const g = +b.dataset.g; SRS.grade(w.id, g); if (window.Habit) Habit.track("words"); Store.addXP(g ? 3 : 1); if (g === 0) q.push(w.id); i++; draw(); }));
     };
     draw();
   }
@@ -148,12 +148,12 @@
         <div class="dfb"></div></section>`;
       setTimeout(() => Speech.speak(it.de), 300);
       box.querySelector(".slow").onclick = () => Speech.speak(it.de, 0.6);
-      box.querySelector(".words").onclick = async () => { for (const w of it.de.split(" ")) { Speech.speak(w, 0.7); await new Promise((r) => setTimeout(r, 700 + w.length * 60)); } };
+      box.querySelector(".words").onclick = () => Speech.play(it.de.replace(/[.,!?„“"]/g, "").split(/\s+/), { rate: 0.7, key: "words:" + it.de });
       const inp = box.querySelector("input"); UI.bindUmlauts(box, inp);
       box.querySelector("form").onsubmit = (e) => {
         e.preventDefault();
         const d = Grade.wordDiff(it.de, inp.value);
-        Store.topic("dictation", d.score >= 90); Store.addXP(d.score >= 90 ? 10 : 3);
+        Store.topic("dictation", d.score >= 90); if (window.Habit) Habit.track("listen"); Store.addXP(d.score >= 90 ? 10 : 3);
         box.querySelector(".dfb").innerHTML = `<p class="diff">${d.words.map((w) => `<span class="${w.ok ? "hit" : "miss"}">${esc(w.w)}</span>`).join(" ")}</p><p><b>${d.score}%</b>${it.en ? ` · <span class="muted">${esc(it.en)}</span>` : ""}</p><button class="btn nx">Next sentence</button>`;
         box.querySelector(".nx").onclick = round;
       };
@@ -180,7 +180,7 @@
     V.shadow(el.querySelector(".shadow"), sentences);
     const free = el.querySelectorAll(".card")[1];
     UI.bindMic(free, (t) => {
-      const r = Tutor.check(t); Store.addXP(6);
+      const r = Tutor.check(t); if (window.Habit) Habit.track("speak"); Store.addXP(6);
       free.querySelector(".transcript").insertAdjacentHTML("beforeend", `<div class="said"><p>🗣️ ${esc(t)}</p>${r.issues.length ? `<p class="ex ok">${esc(r.fixed)}</p><p class="muted">${r.issues.map((x) => x.why).join(" ")}</p>` : `<p class="muted">✓ No rule problems found.</p>`}</div>`);
     });
     const QS = ["Wie heißt du und woher kommst du?", "Was machst du am Wochenende?", "Was hast du gestern gemacht?", "Warum lernst du Deutsch?", "Wie ist das Wetter heute?", "Was isst du gern?", "Wie kommst du zur Arbeit?", "Was würdest du mit viel Geld machen?", "Was ist in deinem Heimatland anders als in Deutschland?", "Wohnst du lieber in der Stadt oder auf dem Land? Warum?", "Was sind Vorteile und Nachteile von Homeoffice?", "Worauf freust du dich?"];
@@ -193,7 +193,7 @@
       UI.bindMic(qa, (t) => {
         const r = Tutor.check(t); const words = t.split(/\s+/).length;
         qa.querySelector(".qafb").innerHTML = `<p>🗣️ ${esc(t)}</p><p class="muted">${words} words${words < 6 ? " – try a longer answer with weil/denn." : ""}</p>${r.issues.length ? `<p class="ex ok">${esc(r.fixed)}</p><p class="muted">${r.issues.map((x) => x.why).join(" ")}</p>` : ""}`;
-        Store.addXP(words >= 6 ? 8 : 3);
+        if (window.Habit) Habit.track("speak"); Store.addXP(words >= 6 ? 8 : 3);
       });
     };
     ask();

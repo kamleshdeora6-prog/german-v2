@@ -2,7 +2,7 @@ name: DeutschCoach
 options:
   bundleIdPrefix: de.deutschcoach
   deploymentTarget:
-    iOS: "14.0"
+    iOS: "15.0"
   createIntermediateGroups: true
 targets:
   DeutschCoach:
@@ -10,25 +10,41 @@ targets:
     platform: iOS
     sources:
       - path: Sources
+      - path: Assets.xcassets
       - path: www
         type: folder          # copied as a folder reference -> Bundle "www/index.html"
+        buildPhase: resources
     info:
       path: Info.plist
       properties:
         CFBundleDisplayName: Deutsch Coach
-        CFBundleShortVersionString: "5.0.0"
-        CFBundleVersion: "4"
-        UILaunchStoryboardName: ""
-        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        CFBundleShortVersionString: "6.0.0"
+        CFBundleVersion: "6"
+        # Without a launch screen iOS runs the app in old 3.5-inch "letterbox" mode. This empty dictionary is enough.
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
         NSMicrophoneUsageDescription: "Deutsch Coach listens to your German so it can check your pronunciation."
         NSSpeechRecognitionUsageDescription: "Your speech is turned into text so the app can compare it with the target sentence."
         UIRequiresFullScreen: true
-        UIStatusBarStyle: UIStatusBarStyleDefault
+        UIStatusBarStyle: UIStatusBarStyleLightContent
+        UIViewControllerBasedStatusBarAppearance: false
+        ITSAppUsesNonExemptEncryption: false
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: de.deutschcoach.app
-        MARKETING_VERSION: "5.0.0"
-        CURRENT_PROJECT_VERSION: "4"
+        MARKETING_VERSION: "6.0.0"
+        CURRENT_PROJECT_VERSION: "6"
         SWIFT_VERSION: "5.0"
         TARGETED_DEVICE_FAMILY: "1"        # 1 = iPhone only; use "1,2" to add iPad
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         CODE_SIGN_STYLE: Automatic
+        GENERATE_INFOPLIST_FILE: NO
+schemes:
+  DeutschCoach:                         # a shared scheme, so `xcodebuild -scheme DeutschCoach` works on CI
+    build:
+      targets:
+        DeutschCoach: all
+    run:
+      config: Debug
+    archive:
+      config: Release

@@ -141,6 +141,16 @@
 
   /* ---------------- 3. What's new ---------------- */
   const NEWS = [
+    { v: "6.0.0", date: "26 October 2026", items: [
+      "<b>New start screen “Heute”</b>: one big button always shows your best next step. Daily goal ring, streak, week view.",
+      "<b>Streak freezes</b>: every 7 days in a row earns a freeze (max. 2). A missed day no longer wipes out your streak.",
+      "<b>Daily quests</b>, <b>combos</b> for answers in a row, levels with titles, and an end-of-round summary.",
+      "<b>Familien-Liga</b>: all learners on this device compete in a friendly weekly league.",
+      "<b>Audio player</b>: pause, stop, back one sentence, skip and speed – no more audio that restarts by itself.",
+      "<b>Twice the content</b>: every lesson now has 30 words, 20 examples, a second (longer) text, a listening scene with questions and 20 exercises. The word list grew from 1,995 to 3,548 words.",
+      "<b>Corrected German</b>: wrong verb forms in generated sentences (<i>kommet → kommt</i>, <i>warn → waren</i>) and „einen Kilo“ in lesson 6. Max no longer flags correct Konjunktiv I, passive infinitives or colons.",
+      "<b>New look</b> (Mitternacht & Bernstein), new menu, calendar reminder, sounds and vibration, Resources page, and an update bar so you always get the newest version.",
+    ] },
     { v: "4.4.0", date: "23 September 2026", items: [
       "<b>Placement test</b> – about 20 adaptive questions find your level and suggest a starting lesson.",
       "<b>Pronunciation drills</b> – eight sound pairs (ü/u, ö/o, ich/sch, long/short vowels …) with listening tests and a microphone check.",

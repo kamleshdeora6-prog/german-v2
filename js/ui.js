@@ -45,7 +45,9 @@
         <div class="row">${!ok && item.kind !== "choice" ? `<button class="btn ghost sm q-override">I was right</button>` : ""}<button class="btn sm q-next">${opts.nextLabel || "Next"}</button><button class="btn ghost sm q-ask">Ask Max</button>${UI.reportBtn(itemCtx(item, given)).replace('class="rflag"', 'class="btn ghost sm rflag inline"').replace(">⚑<", ">⚑ Report<")}</div>`;
       Store.topic(item.gen, ok);
       if (!ok) Store.mistake({ prompt: item.prompt, answer: item.answer, given, gen: item.gen, why: item.why });
-      Store.addXP(ok ? 10 : 2);
+      const cb = window.Habit ? Habit.answer(ok) : { combo: 0, bonus: 0 };
+      Store.addXP((ok ? 10 : 2) + cb.bonus);
+      if (cb.combo >= 3) fb.insertAdjacentHTML("afterbegin", `<p class="combo" aria-live="polite">🔥 ${cb.combo} in a row${cb.bonus ? ` · +${cb.bonus} bonus XP` : ""}</p>`);
       if (full && ok) Speech.speak(full);
       fb.querySelector(".q-next").onclick = () => opts.onNext && opts.onNext(ok);
       if (ok && item.orders && item.orders.length > 1) {
@@ -138,25 +140,76 @@
 
   /* ---------- simple session runner for a list of item factories ---------- */
   UI.session = (el, nextItem, { total = 10, title = "", onEnd } = {}) => {
-    let i = 0, right = 0;
+    let i = 0, right = 0, xp0 = Store.get().xp;
     const wrap = document.createElement("div");
-    el.innerHTML = `<div class="session"><div class="sess-head"><span class="sess-title">${title}</span><span class="sess-count"></span></div><div class="bar"><i></i></div><div class="sess-body"></div></div>`;
+    el.innerHTML = `<div class="session"><div class="sess-head"><button class="sess-x" data-go="practice" aria-label="Leave">✕</button><div class="bar"><i></i></div><span class="sess-count"></span></div><div class="sess-title muted small">${title}</div><div class="sess-body"></div></div>`;
     const body = el.querySelector(".sess-body"), cnt = el.querySelector(".sess-count"), bar = el.querySelector(".bar i");
+    if (window.Habit) Habit.resetCombo();
     function step() {
       if (i >= total) {
-        const pct = Math.round((right / total) * 100);
-        body.innerHTML = `<div class="result"><p class="big">${right}/${total}</p><p>${pct >= 80 ? "Sehr gut! Keep this streak going." : pct >= 60 ? "Gut. Review the explanations of the ones you missed." : "Keep practising – read the “Why” boxes, then try again."}</p><div class="row"><button class="btn again">Another round</button><button class="btn ghost" data-go="practice">All topics</button></div></div>`;
-        body.querySelector(".again").onclick = () => { i = 0; right = 0; step(); };
+        const pct = Math.round((right / total) * 100), gained = Store.get().xp - xp0;
+        bar.style.width = "100%"; cnt.textContent = "";
+        if (window.Habit && pct >= 90) Habit.track("perfect");
+        const st = Store.get(), goal = st.settings.goal || 50, todayXP = st.days[Store.today()] || 0;
+        const nx = window.Habit ? Habit.next() : null;
+        body.innerHTML = `<div class="result summary arming">
+          <div class="sum-head">${pct >= 90 ? "Ausgezeichnet!" : pct >= 70 ? "Sehr gut!" : pct >= 50 ? "Gut gemacht!" : "Weiter üben!"}</div>
+          <div class="sum-grid">
+            <div class="sum-tile xp"><b>+${gained}</b><span>XP</span></div>
+            <div class="sum-tile acc"><b>${pct}%</b><span>${right}/${total} right</span></div>
+            <div class="sum-tile cmb"><b>${window.Habit ? Habit.bestCombo() : 0}</b><span>best combo</span></div>
+          </div>
+          ${window.Habit ? `<div class="sum-goal">${Habit.ring(Math.round((todayXP / goal) * 100), 72, 8, `<b>${Math.min(999, Math.round((todayXP / goal) * 100))}%</b>`)}<div><b>Daily goal</b><br><span class="muted">${todayXP} / ${goal} XP today</span></div></div>` : ""}
+          <p class="muted small">${pct >= 80 ? "Strong round – these topics will come back less often." : "The ones you missed are saved under “My mistakes” and will come back."}</p>
+          <div class="col">${nx ? `<button class="btn sign big-btn" data-go="${nx.go}">Next: ${H.esc(nx.label)}</button>` : ""}<div class="row center"><button class="btn ghost again">Another round</button><button class="btn ghost" data-go="home">Done for now</button></div></div></div>`;
+        setTimeout(() => { const sm = body.querySelector(".summary"); if (sm) sm.classList.remove("arming"); }, 700);   // a double-tap on the last “Next” must not skip the summary
+        body.querySelector(".again").onclick = () => { i = 0; right = 0; xp0 = Store.get().xp; if (window.Habit) Habit.resetCombo(); step(); };
         onEnd && onEnd(right, total);
+        if (window.Habit) Habit.flush();
         return;
       }
       cnt.textContent = `${i + 1} / ${total}`; bar.style.width = (i / total) * 100 + "%";
       const it = nextItem(i);
       if (!it) { body.innerHTML = UI.empty("No questions available for this selection."); return; }
-      UI.item(body, it, { onDone: (ok) => { if (ok) right++; }, onOverride: () => right++, onNext: () => { i++; step(); } });
+      UI.item(body, it, { onDone: (ok) => { if (ok) right++; bar.style.width = ((i + 1) / total) * 100 + "%"; }, onOverride: () => right++, onNext: () => { i++; step(); } });
     }
     step();
     return wrap;
+  };
+
+
+  /* ---------- audio player bar: appears whenever something longer than a word is being read aloud ---------- */
+  UI.mountPlayer = () => {
+    if (document.querySelector(".player")) return;
+    const bar = document.createElement("div"); bar.className = "player"; bar.hidden = true; bar.setAttribute("role", "region"); bar.setAttribute("aria-label", "Audio player");
+    bar.innerHTML = `<div class="pl-text" aria-live="off"></div><div class="pl-ctrl">
+      <button class="pl-b pl-back" aria-label="Back: replay this sentence (tap twice for the previous one)" title="Back">⏮</button>
+      <button class="pl-b pl-play" aria-label="Pause">⏸</button>
+      <button class="pl-b pl-next" aria-label="Skip to the next sentence" title="Next">⏭</button>
+      <button class="pl-b pl-rate" aria-label="Speed">0.9×</button>
+      <span class="pl-pos"></span>
+      <button class="pl-b pl-stop" aria-label="Stop" title="Stop">■</button></div><div class="pl-prog"><i></i></div>`;
+    document.body.appendChild(bar);
+    const $ = (c) => bar.querySelector(c);
+    $(".pl-back").onclick = () => Speech.back();
+    $(".pl-next").onclick = () => Speech.next();
+    $(".pl-stop").onclick = () => Speech.stop();
+    $(".pl-play").onclick = () => { const st = Speech.status(); if (st.state === "playing") Speech.pause(); else if (st.state === "paused") Speech.resume(); else Speech.back(); };
+    const RATES = [0.6, 0.75, 0.9, 1.0, 1.15];
+    $(".pl-rate").onclick = () => { const r = Speech.status().rate; const nx = RATES.find((x) => x > r + 0.01) || RATES[0]; Speech.setRate(nx); };
+    Speech.onChange((st) => {
+      const show = st.state !== "idle" && (st.n > 1 || st.text.length > 40);
+      bar.hidden = !show; document.body.classList.toggle("has-player", show);
+      document.querySelectorAll("[data-tts].playing,[data-tts].paused").forEach((b) => b.classList.remove("playing", "paused"));
+      if (st.state !== "idle") document.querySelectorAll("[data-tts]").forEach((b) => { if (b.dataset.tts === st.key) b.classList.add(st.state); });
+      if (!show) return;
+      bar.classList.toggle("locked", !!st.locked);
+      $(".pl-text").textContent = st.text;
+      $(".pl-play").textContent = st.state === "playing" ? "⏸" : "▶"; $(".pl-play").setAttribute("aria-label", st.state === "playing" ? "Pause" : "Play");
+      $(".pl-rate").textContent = (Math.round(st.rate * 100) / 100) + "×";
+      $(".pl-pos").textContent = st.n > 1 ? `${Math.min(st.i + 1, st.n)} / ${st.n}` : "";
+      bar.querySelector(".pl-prog i").style.width = st.n ? (Math.min(st.i + (st.state === "paused" ? 0 : 0.5), st.n) / st.n) * 100 + "%" : "0";
+    });
   };
 
   window.UI = UI;

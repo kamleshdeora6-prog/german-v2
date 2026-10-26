@@ -156,7 +156,7 @@
     if (v.ch && (p === "2s" || p === "3s")) stem = v.ch;
     let e = END[p];
     if (/[^e](er|el)$/.test(stem) && /(eln|ern)$/.test(v.inf)) { if (p === "1p" || p === "3p") return stem + "n"; }
-    const needE = /(t|d)$/.test(stem) || /[^aeiouäöülrh]n$/.test(stem) || /[^aeiouäöülrh]m$/.test(stem);
+    const needE = /(t|d)$/.test(stem) || /[^aeiouäöülrhmn][mn]$/.test(stem);   // atmen, öffnen, rechnen – but not kommen, nennen
     if (needE && !(v.ch && (p === "2s" || p === "3s")) && (p === "2s" || p === "3s" || p === "2p")) e = "e" + e;
     if (p === "2s" && /[sßzx]$/.test(stem)) e = "t";
     if (v.ch === "läd" && p === "3s") return "lädt";
@@ -165,7 +165,7 @@
     return stem + e;
   }
   function conjSplit(v, p) { const f = conj(v, p); return v.sep ? [f, v.sep] : [f, ""]; }
-  function pret(inf, p) { return PRET[inf] + PRET_END[p]; }
+  function pret(inf, p) { const b = PRET[inf]; const e = PRET_END[p]; return b + (e === "n" && !/e$/.test(b) ? "en" : e); }   // war → waren, hatte → hatten
   function kii(inf, p) { const b = KII[inf]; return b + (p === "2s" ? "st" : p === "1p" || p === "3p" ? "n" : p === "2p" ? "t" : ""); }
   function en3(v, s) { return s.p === "3s" ? v.en[1] : v.en[0]; }
   function enBe(s) { return s.p === "1s" ? "am" : s.p === "3s" ? "is" : "are"; }

@@ -228,6 +228,14 @@
     return FIN;
   }
   const isFinite = (w) => finIndex().has(w.toLowerCase());
+  /* "Dann dusche ich" – dusche is a verb form here, not the noun Dusche. Any word that is a regular
+     present-tense form of a verb in the word list is never forced to a capital letter. */
+  let VINF = null;
+  const maybeVerb = (k) => {
+    if (!VINF) { VINF = new Set(); (DC.vocab || []).forEach((v) => { if (!v.art) String(v.de).toLowerCase().split(/[\s/(),]+/).forEach((x) => { if (/(en|ern|eln)$/.test(x)) VINF.add(x); }); }); (E.VERBS || []).forEach((v) => VINF.add(v.inf)); }
+    const st = k.replace(/(e|st|t|en|et|est)$/, "");
+    return VINF.has(k + "n") || VINF.has(st + "en") || VINF.has(st + "n") || VINF.has(k);
+  };
   const PRON_P = { ich: "1s", du: "2s", er: "3s", es: "3s", wir: "1p", ihr: "2p" };
   const SEIN_PP = new Set("gegangen gefahren gekommen geflogen gelaufen aufgestanden eingeschlafen geblieben gewesen passiert geworden umgezogen gereist geschwommen gestorben angekommen abgefahren eingestiegen ausgestiegen umgestiegen zurückgekommen mitgekommen losgefahren gewandert gefallen aufgewacht gerannt gesprungen".split(" "));
   const HABEN_PP = new Set("gegessen gekauft gemacht gearbeitet gelernt gesehen getrunken gelesen geschrieben gespielt gekocht gewohnt gehört gesagt gefragt genommen gefunden gebracht geholfen besucht verstanden studiert telefoniert gewartet geschlafen getroffen angerufen eingekauft ferngesehen bekommen vergessen gewaschen bestellt repariert".split(" "));
@@ -301,7 +309,16 @@
   };
   let NOUNSET = null;
 
+  /* A colon starts a new clause ("Er hat gefragt: Worüber …?") – check each side on its own. */
   function check(sentence) {
+    const m = /^(.+?\S)([:;])\s+(\S.*)$/.exec(String(sentence).trim());
+    if (m && m[1].split(/\s+/).length >= 2) {
+      const a = checkOne(m[1] + "."), b = checkOne(m[3], true);
+      return { fixed: a.fixed.replace(/[.]$/, "") + m[2] + " " + b.fixed, issues: a.issues.concat(b.issues) };
+    }
+    return checkOne(sentence);
+  }
+  function checkOne(sentence, afterColon = false) {
     const raw = sentence.trim();
     const endP = /[.!?]$/.test(raw) ? raw.slice(-1) : ".";
     let words = raw.replace(/[.!?]+$/, "").split(/\s+/);
@@ -368,7 +385,7 @@
     for (let i = 0; i < L.length; i++) {
       if (!SUB.has(L[i])) continue;
       if (L[i] === "seit" && !(i === 0 || /,$/.test(words[i - 1] || ""))) continue;
-      if ((L[i] === "während" || L[i] === "seit") && /^(der|des|dem|den|einer|eines|einem|zwei|drei|vier|fünf|sechs|wenigen|langem)$/.test(L[i + 1] || "")) continue;
+      if (/^(während|seit|bis)$/.test(L[i]) && (/^(der|des|dem|den|einer|eines|einem|zwei|drei|vier|fünf|sechs|wenigen|langem|kurzem|gestern|heute|morgen|jahren|wochen|monaten|tagen|stunden)$/.test(L[i + 1] || "") || /^\d/.test(L[i + 1] || ""))) continue;   // preposition, not a conjunction
       if (L[i] === "während" && !(i === 0 || /,$/.test(words[i - 1] || ""))) continue;
       if (L[i] === "bis" && !/,$/.test(words[i - 1] || "")) continue;
       let end = L.length; for (let j = i + 1; j < L.length; j++) if (/,$/.test(words[j])) { end = j + 1; break; }
@@ -418,8 +435,9 @@
     let mEnd = L.length; if (mi >= 0) for (let k = mi; k < L.length; k++) if (/[,.!?:;]$/.test(words[k]) || /[„“"]/.test(words[k])) { mEnd = k + 1; break; }
     if (mi >= 0 && mi < L.length - 1 && !L.some((w) => SUB.has(w)) && mEnd === L.length) {
       const lastW = L[L.length - 1];
+      const passInf = /^(werden|worden|sein|haben)$/.test(lastW);   // „muss verteilt werden“ / „kann gekommen sein“
       if (L[L.length - 2] === "zu" && !/^(zu)$/.test(lastW)) { add(`<s>zu ${lastW}</s> → <b>${lastW}</b>`, "No <b>zu</b> after a modal verb.", 11); words.splice(L.length - 2, 1); }
-      else if (isFinite(lastW) && !/en$|ern$|eln$/.test(lastW) && !MODAL_F.has(lastW)) {
+      else if (!passInf && isFinite(lastW) && !/en$|ern$|eln$/.test(lastW) && !/^(tun|sein)$/.test(lastW) && !MODAL_F.has(lastW)) {
         const inf = finIndex().get(lastW)[0].inf;
         if (inf && inf !== "(past)" && !/^(sein|haben)$/.test(inf) || /^(bin|ist|habe|hat)$/.test(lastW)) {
           add(`<s>${lastW}</s> → <b>${inf}</b>`, `After a modal verb (<b>${L[mi]}</b>) the second verb is an <b>infinitive</b> at the end.`, 11);
@@ -428,7 +446,7 @@
       } else if (mi + 1 < L.length - 1 && isFinite(L[mi + 2] || "") && /en$/.test(L[mi + 2] || "") === false) { /* skip */ }
       // conjugated form instead of infinitive: "Ich kann spreche Deutsch"
       L = low();
-      const badK = L.findIndex((w, k) => k > mi && words[k] === w && !/n$/.test(w) && finIndex().has(w) && !finIndex().get(w).some((x) => x.inf === w) && !MODAL_F.has(w) && !PRONOUNS.has(w) && finIndex().get(w)[0].inf !== "(past)");
+      const badK = L.findIndex((w, k) => k > mi && words[k] === w && !(k === L.length - 2 && /^(werden|worden|sein|haben)$/.test(L[L.length - 1])) && !/n$/.test(w) && finIndex().has(w) && !finIndex().get(w).some((x) => x.inf === w) && !MODAL_F.has(w) && !PRONOUNS.has(w) && finIndex().get(w)[0].inf !== "(past)");
       if (badK > 0) {
         const inf = finIndex().get(L[badK])[0].inf;
         add(`<s>${L[badK]}</s> → <b>${inf}</b> (at the end)`, `After a modal verb (<b>${L[mi]}</b>) the second verb is an <b>infinitive</b> and goes to the <b>end</b>.`, 11);
@@ -464,11 +482,13 @@
           if (!onlyFront) continue;
         }
         if (b > a && a > 0 && (DAT_P.has(L[a - 1]) || AKK_P.has(L[a - 1]))) continue;
+        if (pr === "ihr" && /^[A-ZÄÖÜ]/.test(words[a + 1] || "")) continue;   // "hat ihr Mann": ihr is a possessive here
         const cands = finIndex().get(vb).filter((x) => x.inf !== "(past)");
         if (!cands.length) continue;
         const ok = cands.some((x) => x.p === PRON_P[pr] || (pr === "ihr" && x.p === "3s" && false));
         if (ok) continue;
         if (pr === "es" || pr === "er") { if (cands.some((x) => x.p === "3s")) continue; }
+        if ((pr === "es" || pr === "er") && (vb === "sei" || cands.some((x) => x.p === "1s" && /e$/.test(vb)))) continue;   // Konjunktiv I: er habe, es werde, er komme
         const inf = cands[0].inf;
         let right;
         try { right = E.conj(E.VERBS.find((v) => v.inf === inf) || inf, PRON_P[pr]); } catch (e) { right = null; }
@@ -638,13 +658,13 @@
     words = words.map((w, i) => {
       const k = w.replace(/[,;:]$/, "");
       const prev = (L[i - 1] || ""), next = words[i + 1] || "";
-      if (i > 0 && k === k.toLowerCase() && NOUNSET.has(k) && !isFinite(k) && !NON_NOUN().has(k) && !(FUNC && FUNC[k]) && !/^(essen|leben|arbeiten|junge|alte|kranke|recht|unrecht|leid|weh|schuld|angst)$/.test(k) && !PRONOUNS.has(prev) && !/^[A-ZÄÖÜ]/.test(next) && !/^(zu|sich|mich|dich|uns|euch)$/.test(prev)) {
+      if (i > 0 && k === k.toLowerCase() && NOUNSET.has(k) && !isFinite(k) && !NON_NOUN().has(k) && !(FUNC && FUNC[k]) && !/^(essen|leben|arbeiten|junge|alte|kranke|recht|unrecht|leid|weh|schuld|angst|weg|heim|fest|statt|teil|stand|halt|mal|morgen|abend)$/.test(k) && !maybeVerb(k) && !(/en$/.test(k) && !/^(der|die|das|den|dem|des|ein|eine|einen|einem|eines|kein|keine|keinen|keinem|mein|dein|sein|ihr|unser|euer|zum|beim|vom|im|am)$/.test(prev)) && !PRONOUNS.has(prev) && !/^[A-ZÄÖÜ]/.test(next) && !/^(zu|sich|mich|dich|uns|euch)$/.test(prev)) {
         add(`<s>${k}</s> → <b>${R_cap(k)}</b>`, "All German nouns start with a capital letter.", 5);
         return R_cap(k) + w.slice(k.length);
       }
       return w;
     });
-    if (words[0] && words[0][0] !== words[0][0].toUpperCase()) { add("Capital letter at the start", "Every sentence starts with a capital letter.", 3); words[0] = R_cap(words[0]); }
+    if (!afterColon && words[0] && words[0][0] !== words[0][0].toUpperCase()) { add("Capital letter at the start", "Every sentence starts with a capital letter.", 3); words[0] = R_cap(words[0]); }
     if (L.includes("wegen") && /wegen (dem|den)/.test(L.join(" "))) add("<s>wegen dem</s> → <b>wegen des</b>", "Spoken German often uses the Dativ, but in writing/exams wegen takes the <b>Genitiv</b>.", 40);
     // dedupe
     const seen = new Set();

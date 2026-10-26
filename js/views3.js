@@ -80,7 +80,7 @@
       <section class="card"><h3>4 · Schreiben</h3><p>${esc(writeTopic)}</p><textarea rows="7" class="wr" placeholder="Ihr Text …"></textarea><p class="muted small wc">0 words</p></section>
       <div class="row center"><button class="btn sign finish">Finish and score</button></div><div class="mres"></div>`;
     let plays = 2;
-    el.querySelector(".play").onclick = (e) => { if (!plays) return; plays--; Speech.speak(ll.reading); el.querySelector(".plays").textContent = `(${plays} left)`; if (!plays) e.currentTarget.disabled = true; };
+    el.querySelector(".play").onclick = (e) => { if (!plays) return; plays--; Speech.play(Speech.split(ll.reading), { locked: true, key: "exam-listen" }); el.querySelector(".plays").textContent = `(${plays} left)`; if (!plays) e.currentTarget.disabled = true; };
     const wr = el.querySelector(".wr"); wr.oninput = () => (el.querySelector(".wc").textContent = wr.value.split(/\s+/).filter(Boolean).length + " words");
     let left = 25 * 60; const tl = el.querySelector(".tl");
     const tick = setInterval(() => { if (!document.body.contains(tl)) return clearInterval(tick); left--; tl.textContent = `${Math.floor(left / 60)}:${String(left % 60).padStart(2, "0")}`; if (left <= 0) { clearInterval(tick); el.querySelector(".finish").click(); } }, 1000);
@@ -195,12 +195,17 @@
     const voices = Speech.voices();
     el.innerHTML = `<h2 class="page-title">Settings</h2>
       <section class="card form">
-        <label>Theme <select data-k="theme"><option value="auto">System</option><option value="light">Light</option><option value="dark">Dark</option></select></label>
-        <label>Daily goal (XP) <input data-k="goal" type="number" min="10" max="500" step="10"></label>
+        <label>Daily goal <select data-k="goal" data-num="1"><option value="20">Locker – 20 XP (~5 min)</option><option value="50">Normal – 50 XP (~10 min)</option><option value="100">Ernsthaft – 100 XP (~20 min)</option><option value="150">Intensiv – 150 XP (~30 min)</option></select></label>
         <label>Speaking speed <input data-k="rate" type="range" min="0.5" max="1.3" step="0.05"> <button class="btn ghost sm test">Test voice</button></label>
         ${voices.length ? `<label>German voice <select data-k="voice"><option value="">Automatic</option>${voices.map((v) => `<option>${esc(v.name)}</option>`).join("")}</select></label>` : `<p class="muted small">${window.AndroidBridge ? "Using the phone's text-to-speech engine." : "No German voice found. Install one in your system's speech settings."}</p>`}
         <label class="chk"><input data-k="showEn" type="checkbox"> Show English translations</label>
         <label class="chk"><input data-k="unlockAll" type="checkbox"> Open all lessons (skip the order)</label>
+      </section>
+      <section class="card form"><h3>Habit</h3>
+        <label>Daily reminder <span class="row inline"><input class="remt" type="time" value="${H.esc(st.reminder || "19:00")}" style="max-width:140px"><button class="btn sign sm addcal">Add to my calendar</button></span></label>
+        <p class="muted small">Downloads a repeating calendar event with an alarm – works with Google Calendar, iPhone and Outlook. Learning at a fixed time is the strongest habit trigger.</p>
+        <label class="chk"><input data-k="sound" type="checkbox"> Sounds for right/wrong answers</label>
+        <label class="chk"><input data-k="haptics" type="checkbox"> Vibration (phones)</label>
       </section>
       <section class="card form"><h3>Online AI for Max (optional)</h3>
         <p class="muted small">Max works fully offline. With your own Anthropic API key he can also answer open questions. The key is stored only on this device and sent only to api.anthropic.com.</p>
@@ -221,6 +226,7 @@
         <div class="row"><button class="btn padd">Add a learner</button></div></section>
       <section class="card"><h3>Your data</h3><p class="muted small">Progress is saved on this device. Export a backup to move it to another phone or browser.</p>
         <div class="row"><button class="btn exp">Export backup</button><label class="btn ghost">Import backup<input type="file" accept="application/json,.json" class="imp" hidden></label><button class="btn bad rst">Reset progress</button></div></section>
+      <section class="card"><h3>App version</h3><p class="muted small">If the app looks old after an update, reload it. Your progress is kept.</p><div class="row"><button class="btn ghost appreset">Reload newest version</button></div></section>
       <section class="card"><h3>Install the app</h3>
         <p><b>Android (Chrome):</b> menu ⋮ → “Install app” / “Add to Home screen”. Or install the APK.</p>
         <p><b>iPhone (Safari):</b> Share → “Add to Home Screen”. Works offline after the first visit.</p>
@@ -244,22 +250,17 @@
       const k = inp.dataset.k;
       if (inp.type === "checkbox") inp.checked = !!st[k]; else inp.value = st[k] ?? "";
       inp.onchange = () => {
-        st[k] = inp.type === "checkbox" ? inp.checked : inp.type === "number" || inp.type === "range" ? +inp.value : inp.value.trim();
+        st[k] = inp.type === "checkbox" ? inp.checked : inp.type === "number" || inp.type === "range" || inp.dataset.num ? +inp.value : inp.value.trim();
         Store.save(); if (k === "theme") App.applyTheme();
         if (k === "aiOnline" && st.aiOnline && !st.aiKey) H.toast("Add your API key below to use online AI.");
       };
     });
     el.querySelector(".test").onclick = () => Speech.speak("Guten Tag! Ich heiße Max und helfe dir beim Deutschlernen.");
     el.querySelector(".exp").onclick = App.backup;
+    el.querySelector(".addcal").onclick = () => { Habit.reminderICS(el.querySelector(".remt").value || "19:00", Math.max(5, Math.round((st.goal || 50) / 5))); H.toast("Open the downloaded file to add the reminder.", "good"); };
+    el.querySelector(".appreset").onclick = App.hardReload;
     el.querySelector(".imp").onchange = async (e) => { try { Store.import(await e.target.files[0].text()); H.toast("Backup imported.", "good"); App.route(); } catch (err) { H.toast(err.message, "bad"); } };
     el.querySelector(".rst").onclick = () => { if (confirm("Delete all progress on this device? This can't be undone.")) { Store.reset(); H.toast("Progress reset."); App.go("home"); } };
   };
 
-  /* ---------------- Mehr ---------------- */
-  V.more = (el) => {
-    el.innerHTML = `<h2 class="page-title">More</h2><section class="grid2">
-      ${[["translate", "Translate", "Words & sentences, DeepL, LEO"], ["vocab", "Words", `${DC.vocab.length} words, SRS`], ["listen", "Listening", "Dictation"], ["speak", "Speaking", "Shadowing & free talk"], ["read", "Reading", `${DC.curriculum.length + DC.passages.length} texts`], ["write", "Writing", `${DC.exams.writing.length} exam tasks`], ["readexam", "Reading exam", `${DC.exams.reading.length} sets`], ["notes", "Notes", "Cheat sheets A1–C2"], ["exam", "Exam", "Mock test & LiD"], ["grammar", "Grammar", "Rules & tables"], ["stats", "Progress", "Stats & mistakes"], ["settings", "Settings", "Profiles, voice, backup"], ["plan", "My plan", "Goal, deadline, daily load"], ["daily", "Practice day", "Today's session in order"], ["weak", "Weak topics", "What you actually get wrong"], ["refresh", "Refresher", "Learnt it once, forgot it"], ["placement", "Placement test", "Find your level, 12 stages"], ["pronounce", "Pronunciation", "ü/u, ö/o, ich/sch and more"], ["news", "What's new", `Version ${App.version}`], ["about", "About & privacy", "Who made this, your data"]]
-        .map(([g, t, d]) => `<button class="tile" data-go="${g}"><b>${t}</b><span>${d}</span></button>`).join("")}</section>
-      <p class="credit muted small">${App.credit()}</p>`;
-  };
 })();

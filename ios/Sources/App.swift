@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
-class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDelegate {
+class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDelegate, AVSpeechSynthesizerDelegate {
     private var webView: WKWebView!
     private let synth = AVSpeechSynthesizer()
     private var recognizer: SFSpeechRecognizer? = SFSpeechRecognizer(locale: Locale(identifier: "de-DE"))
@@ -30,11 +30,16 @@ class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDele
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor(red: 0.08, green: 0.09, blue: 0.17, alpha: 1)
+        synth.delegate = self
+        // playback category: speech is audible even with the silent switch on
+        try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .spokenAudio, options: [.duckOthers])
         let cfg = WKWebViewConfiguration()
         let ucc = WKUserContentController()
         // Bridge shim: mirrors the Android JavascriptInterface API.
         let shim = """
         window.AndroidBridge = {
+          hasEndEvent: true,
           speak: (t, rate) => webkit.messageHandlers.bridge.postMessage({fn:'speak', text:t, rate:rate}),
           stop:  () => webkit.messageHandlers.bridge.postMessage({fn:'stop'}),
           listen:(id) => webkit.messageHandlers.bridge.postMessage({fn:'listen', id:id}),
@@ -51,6 +56,9 @@ class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDele
         webView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         webView.navigationDelegate = self
         webView.scrollView.bounces = false
+        webView.isOpaque = false
+        webView.backgroundColor = view.backgroundColor
+        webView.scrollView.contentInsetAdjustmentBehavior = .never   // the web app handles safe areas itself
         view.addSubview(webView)
 
         if let url = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "www") {
@@ -76,6 +84,7 @@ class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDele
             let u = AVSpeechUtterance(string: body["text"] as? String ?? "")
             u.voice = AVSpeechSynthesisVoice(language: "de-DE")
             u.rate = Float(body["rate"] as? Double ?? 1.0) * AVSpeechUtteranceDefaultSpeechRate
+            synth.stopSpeaking(at: .immediate)
             synth.speak(u)
         case "stop":
             synth.stopSpeaking(at: .immediate)
@@ -93,8 +102,10 @@ class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDele
 
     private func startListening() {
         task?.cancel(); task = nil
+        synth.stopSpeaking(at: .immediate)
         let session = AVAudioSession.sharedInstance()
-        try? session.setCategory(.record, mode: .measurement, options: .duckOthers)
+        // playAndRecord (not .record): with .record all text-to-speech stays silent after the first microphone use
+        try? session.setCategory(.playAndRecord, mode: .measurement, options: [.defaultToSpeaker, .allowBluetooth, .duckOthers])
         try? session.setActive(true, options: .notifyOthersOnDeactivation)
         let req = SFSpeechAudioBufferRecognitionRequest()
         req.shouldReportPartialResults = false
@@ -119,9 +130,17 @@ class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDele
     }
 
     private func finishListening(_ text: String) {
+        guard engine.isRunning || request != nil else { return }        // finish only once
         engine.stop(); engine.inputNode.removeTap(onBus: 0)
         request = nil; task = nil
-        let escaped = text.replacingOccurrences(of: "\\", with: "\\\\").replacingOccurrences(of: "'", with: "\\'")
-        webView.evaluateJavaScript("window.__sttResult && window.__sttResult('\(listenId)', '\(escaped)')")
+        try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .spokenAudio, options: [.duckOthers])
+        // JSON-encode the strings so quotes, backslashes and line breaks can't break the JavaScript
+        let payload = (try? JSONSerialization.data(withJSONObject: [listenId, text])).flatMap { String(data: $0, encoding: .utf8) } ?? "[\"\",\"\"]"
+        DispatchQueue.main.async { self.webView.evaluateJavaScript("window.__sttResult && window.__sttResult.apply(null, \(payload))") }
+    }
+
+    // tell the page when a sentence has really finished, so the player moves on exactly on time
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
+        webView.evaluateJavaScript("window.__ttsDone && window.__ttsDone()")
     }
 }

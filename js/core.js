@@ -16,11 +16,11 @@
   }
   function writeProfiles() { try { localStorage.setItem(PKEY, JSON.stringify(profiles)); } catch (e) {} }
   const keyOf = (id) => (id === "p1" ? KEY : KEY + "." + id);
-  const today = () => new Date().toISOString().slice(0, 10);
+  const today = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };   // local day, not UTC: a streak must follow the learner's clock
   const DEFAULTS = () => ({
     v: 2, created: Date.now(), xp: 0, streak: { count: 0, last: "" }, days: {},
     lessons: {}, topics: {}, srs: {}, chat: [], exams: [], mistakes: [],
-    settings: { theme: "auto", rate: 0.9, voice: "", goal: 30, unlockAll: false, showEn: true, aiOnline: false, aiKey: "", aiModel: "claude-haiku-4-5-20251001", onboarded: false },
+    settings: { theme: "auto", rate: 0.9, voice: "", goal: 50, sound: true, haptics: true, tone: "neutral", unlockAll: false, showEn: true, aiOnline: false, aiKey: "", aiModel: "claude-haiku-4-5-20251001", onboarded: false },
   });
 
   let state = null;
@@ -79,13 +79,10 @@
     save,
     on: (f) => listeners.add(f),
     addXP(n) {
-      const s = Store.get(); const d = today();
-      s.xp += n; s.days[d] = (s.days[d] || 0) + n;
-      if (s.streak.last !== d) {
-        const y = new Date(Date.now() - 864e5).toISOString().slice(0, 10);
-        s.streak.count = s.streak.last === y ? s.streak.count + 1 : 1;
-        s.streak.last = d;
-      }
+      const s = Store.get(); const d = today(); const before = s.days[d] || 0;
+      s.xp += n; s.days[d] = before + n;
+      if (window.Habit) Habit.onXP(n, before);       // streak (with freezes), quests, goal and level celebrations
+      else if (s.streak.last !== d) { s.streak.count = (s.streak.count || 0) + 1; s.streak.last = d; }
       save();
     },
     topic(id, ok) {
@@ -179,23 +176,70 @@
   let voices = [];
   function loadVoices() { if (window.speechSynthesis) voices = speechSynthesis.getVoices().filter((v) => /^de/i.test(v.lang)); return voices; }
   if (window.speechSynthesis) { loadVoices(); speechSynthesis.onvoiceschanged = loadVoices; }
+  /* ---------- audio player ----------
+     Text is split into sentences and spoken one at a time, so the learner can pause, stop,
+     jump back a sentence ("let me hear that again"), skip ahead and change speed while listening.
+     A generation counter makes every old callback harmless: tapping Play twice, leaving the screen
+     or starting another text can never leave a second voice running in the background. */
+  const splitSentences = (t) => String(t).replace(/<[^>]+>/g, "").replace(/_{2,}/g, " … ").replace(/\s+/g, " ").trim()
+    .split(/(?<=[.!?…:;])\s+(?=[„"A-ZÄÖÜ0-9–-])/).map((x) => x.trim()).filter(Boolean);
+  const P = { list: [], i: 0, state: "idle", rate: null, gen: 0, key: "", started: 0, timer: null };
+  const subs = new Set();
+  const emit = () => subs.forEach((f) => { try { f(Speech.status()); } catch (e) {} });
+  function sayOne(text, rate, done, pitch) {
+    const g = P.gen;
+    const end = () => { if (g === P.gen) done(); };
+    if (bridge() && bridge().speak) {
+      try { bridge().stop && bridge().stop(); bridge().speak(text, rate); } catch (e) {}
+      // iOS reports the real end (window.__ttsDone); Android doesn't, so estimate it (about 14 characters a second at rate 1)
+      P.bridgeEnd = end;
+      const est = bridge().hasEndEvent ? 3000 + (text.length * 200) / rate : 500 + (text.length * 72) / rate;
+      clearTimeout(P.timer); P.timer = setTimeout(end, est);
+      return;
+    }
+    if (!window.speechSynthesis) return end();
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    const st = Store.get().settings;
+    u.lang = "de-DE"; u.rate = rate; if (pitch) u.pitch = pitch;
+    const v = loadVoices().find((x) => x.name === st.voice) || loadVoices().find((x) => /de-DE/i.test(x.lang)) || loadVoices()[0];
+    if (v) u.voice = v;
+    u.onend = end; u.onerror = (e) => { if (e.error !== "interrupted" && e.error !== "canceled") end(); };
+    // safety net: some browsers never fire onend
+    clearTimeout(P.timer); P.timer = setTimeout(end, 4000 + (text.length * 160) / rate);
+    speechSynthesis.speak(u);
+  }
+  function playCurrent() {
+    P.gen++; clearTimeout(P.timer);
+    if (P.i >= P.list.length) { P.state = "idle"; P.gen++; emit(); return; }
+    P.state = "playing"; P.started = Date.now(); emit();
+    sayOne(P.list[P.i], P.rate || Store.get().settings.rate || 0.9, () => { P.i++; playCurrent(); }, P.pitches && P.pitches[P.i]);
+  }
+  function hardStop() { P.gen++; clearTimeout(P.timer); if (bridge() && bridge().stop) try { bridge().stop(); } catch (e) {} if (window.speechSynthesis) speechSynthesis.cancel(); }
   const Speech = {
     canSpeak: () => !!(bridge() && bridge().speak) || !!window.speechSynthesis,
     canListen: () => !!(bridge() && bridge().listen) || !!(window.SpeechRecognition || window.webkitSpeechRecognition),
     voices: () => loadVoices(),
-    speak(text, rate) {
-      const st = Store.get().settings; const r = rate || st.rate || 0.9;
-      const t = String(text).replace(/<[^>]+>/g, "").replace(/_{2,}/g, " … ");
-      if (bridge() && bridge().speak) { try { bridge().speak(t, r); return; } catch (e) { /* fall back */ } }
-      if (!window.speechSynthesis) return;
-      speechSynthesis.cancel();
-      const u = new SpeechSynthesisUtterance(t);
-      u.lang = "de-DE"; u.rate = r;
-      const v = loadVoices().find((x) => x.name === st.voice) || loadVoices().find((x) => /de-DE/i.test(x.lang)) || loadVoices()[0];
-      if (v) u.voice = v;
-      speechSynthesis.speak(u);
+    split: splitSentences,
+    /* speak(text) – a text of any length; play(list) – a list of sentences (e.g. "Play all") */
+    speak(text, rate) { Speech.play(splitSentences(text), { rate, key: String(text) }); },
+    play(list, { rate, key, start = 0, locked = false, pitches = null } = {}) {
+      hardStop();
+      P.list = (list || []).map(String).filter((x) => x.trim()); P.i = Math.max(0, Math.min(start, P.list.length - 1)); P.rate = rate || null; P.key = key || P.list.join(" "); P.locked = !!locked; P.pitches = pitches;
+      if (!P.list.length) { P.state = "idle"; emit(); return; }
+      playCurrent();
     },
-    stop() { if (bridge() && bridge().stop) try { bridge().stop(); } catch (e) {} if (window.speechSynthesis) speechSynthesis.cancel(); },
+    pause() { if (P.state !== "playing") return; P.elapsed = Date.now() - P.started; hardStop(); P.state = "paused"; emit(); },
+    resume() { if (P.state === "paused") playCurrent(); },
+    toggle() { P.state === "playing" ? Speech.pause() : P.state === "paused" ? Speech.resume() : null; },
+    /* like a music player: within the first 2 s go to the previous sentence, otherwise restart this one */
+    back() { if (!P.list.length) return; const into = P.state === "playing" ? Date.now() - P.started : P.state === "paused" ? P.elapsed : 0; const deep = into > 2000; if (!deep) P.i = Math.max(0, Math.min(P.i, P.list.length) - 1); playCurrent(); },
+    next() { if (!P.list.length) return; if (P.i < P.list.length - 1) { P.i++; playCurrent(); } else Speech.stop(); },
+    setRate(r) { P.rate = r; if (P.state === "playing") playCurrent(); else emit(); },
+    stop() { hardStop(); P.state = "idle"; P.list = []; P.i = 0; P.key = ""; emit(); },
+    isPlaying: (key) => P.state !== "idle" && (!key || P.key === String(key)),
+    status: () => ({ locked: P.locked, state: P.state, i: P.i, n: P.list.length, text: P.list[P.i] || "", key: P.key, rate: P.rate || Store.get().settings.rate || 0.9 }),
+    onChange: (f) => subs.add(f),
     listen() {
       return new Promise((resolve, reject) => {
         if (bridge() && bridge().listen) {
@@ -216,6 +260,7 @@
       });
     },
   };
+  window.__ttsDone = () => { const f = P.bridgeEnd; P.bridgeEnd = null; if (f) setTimeout(f, 120); };
   // callbacks from the Android wrapper
   window.__sttResult = (id, text) => { const p = window.__stt && window.__stt[id]; if (p) { p.resolve(text || ""); delete window.__stt[id]; } };
   window.__sttError = (id, msg) => { const p = window.__stt && window.__stt[id]; if (p) { p.reject(new Error(msg || "Speech recognition failed.")); delete window.__stt[id]; } };

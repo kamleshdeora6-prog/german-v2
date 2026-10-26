@@ -1,9 +1,9 @@
 /* Deutsch Coach – app shell: router, navigation, theme, install */
 (function () {
   "use strict";
-  const ROUTES = { home: "home", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more", readexam: "readexam", write: "write", notes: "notes", translate: "translate", about: "about", placement: "placement", pronounce: "pronounce", news: "news", plan: "plan", daily: "daily", weak: "weak", refresh: "refresh" };
-  const TAB_OF = { home: "home", path: "path", lesson: "path", practice: "practice", vocab: "practice", tutor: "tutor", translate: "translate", daily: "path", plan: "path", weak: "practice", refresh: "path" };
-  const App = (window.App = { version: "5.0.0", updated: "23 September 2026", author: "Zombieland", pendingAsk: null });
+  const ROUTES = { home: "home", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more", readexam: "readexam", write: "write", notes: "notes", translate: "translate", about: "about", placement: "placement", pronounce: "pronounce", news: "news", plan: "plan", daily: "daily", weak: "weak", refresh: "refresh", resources: "resources" };
+  const TAB_OF = { home: "home", path: "path", lesson: "path", practice: "practice", vocab: "practice", listen: "practice", speak: "practice", pronounce: "practice", tutor: "tutor", daily: "home", plan: "more", weak: "practice", refresh: "path" };
+  const App = (window.App = { version: "6.0.0", updated: "26 October 2026", author: "Zombieland", pendingAsk: null });
   /* Where problem reports go. Put an email address here to offer email as well. */
   App.contact = { github: "https://github.com/kamleshdeora6-prog/german-v2", email: "" };
   App.report = (ctx) => {
@@ -139,7 +139,7 @@
       while (cache.size > MAX_KEEP) cache.delete(cache.keys().next().value);
     }
     host.innerHTML = "";
-    host.className = "view v-" + name;
+    host.className = "view v-" + name; document.body.dataset.route = name;
     const cached = cache.get(key);
     if (cached) { cache.delete(key); host.appendChild(cached); App.afterRoute(name); return; }
     const view = document.createElement("div");
@@ -167,41 +167,53 @@
     if (ext) { e.preventDefault(); App.openLink(ext.dataset.url); return; }
     const t = e.target.closest("[data-go],[data-tts],[data-ask],[data-say]");
     if (!t) return;
-    if (t.dataset.tts !== undefined) { e.preventDefault(); e.stopPropagation(); Speech.speak(t.dataset.tts); return; }
+    if (t.dataset.tts !== undefined) { e.preventDefault(); e.stopPropagation(); const k = t.dataset.tts; const st = Speech.status(); if (st.key === k && st.state === "playing") Speech.pause(); else if (st.key === k && st.state === "paused") Speech.resume(); else Speech.speak(k); return; }
     if (t.dataset.go) { e.preventDefault(); App.go(t.dataset.go); return; }
     if (t.dataset.ask) { e.preventDefault(); App.askMax(t.dataset.ask); return; }
     if (t.dataset.say) { e.preventDefault(); if (Views.tutorSend && document.querySelector(".v-tutor")) Views.tutorSend(t.dataset.say); else App.askMax(t.dataset.say); }
   });
 
+  /* Onboarding: three taps, then straight into the first exercise. Everything else can wait. */
   function onboarding() {
     const st = Store.get().settings;
     document.querySelectorAll(".modal.onb").forEach((m) => m.remove());
     if (st.onboarded) { if (!Store.name()) askName(); return; }
     const d = document.createElement("div");
     d.className = "modal onb";
-    d.innerHTML = `<div class="sheet" role="dialog" aria-labelledby="ob-t"><h2 id="ob-t">Willkommen!</h2>
-      <label class="namebox">What should Max call you? <input class="obname" maxlength="30" autocomplete="given-name" placeholder="Your name" value="${H.esc(Store.name())}"></label>
-      <p>Deutsch Coach takes you from A1 to C2 in ${DC.curriculum.length} lessons, one step at a time. Every lesson has an explanation, examples, words, a text, exercises, exam questions and a picture to talk about.</p>
-      <p>Practice sentences are generated fresh each time, and every answer tells you <b>why</b>. Max, your tutor, checks your German offline.</p>
-      <div class="ob-box"><p>🔊 <b>Sound check</b> – every lesson reads German aloud. <button class="btn ghost sm obvoice" type="button">Test the voice</button></p><div class="obvres"></div></div>
-      <div class="ob-box"><p>💾 <b>Your progress is saved only on this device.</b> If you clear your browser data or uninstall, it's gone – use <i>Settings → Export backup</i> now and then. The app will remind you once a month.</p></div>
-      <p>Where do you want to start?</p>
-      <div class="col"><button class="btn sign" data-lvl="1">From the beginning (A1)</button><button class="btn ghost" data-lvl="13">I know A1 – start at A2</button><button class="btn ghost" data-lvl="25">I know A2 – start at B1</button><button class="btn ghost" data-lvl="43">I know B1 – start at B2</button><button class="btn ghost" data-lvl="51">I know B2 – start at C1</button></div>
-      <p class="muted small credit">${App.credit()}</p></div>`;
-    document.body.appendChild(d);
-    d.querySelector(".obvoice").onclick = async () => {
-      Speech.speak("Hallo! Willkommen bei Deutsch Coach.");
-      const st = await App.voiceStatus();
-      d.querySelector(".obvres").innerHTML = st === "none" ? App.voiceHelp() : `<p class="muted small">Did you hear “Hallo! Willkommen bei Deutsch Coach”? If not, turn up the volume or check <i>Settings → Voice</i>.</p>`;
+    let goal = 50, start = 1, tone = "neutral";
+    const draw = (step) => {
+      const dots = `<div class="obdots">${[1, 2, 3].map((i) => `<i class="${i <= step ? "on" : ""}"></i>`).join("")}</div>`;
+      if (step === 1) d.innerHTML = `<div class="sheet ob" role="dialog" aria-labelledby="ob-t">${dots}<div class="ob-hero">🇩🇪</div><h2 id="ob-t">Willkommen!</h2>
+        <p>German from A1 to C2 in short daily steps. Every answer tells you <b>why</b>.</p>
+        <label class="namebox">What should we call you? <input class="obname" maxlength="30" autocomplete="given-name" placeholder="Your name" value="${H.esc(Store.name())}"></label>
+        <button class="btn sign big-btn ob-next">Weiter</button></div>`;
+      if (step === 2) d.innerHTML = `<div class="sheet ob" role="dialog" aria-labelledby="ob-t">${dots}<h2 id="ob-t">How much a day?</h2>
+        <p class="muted">Small and daily beats big and rare. You can change this any time.</p>
+        <div class="col goalpick">${[[20, "Locker", "5 min"], [50, "Normal", "10 min"], [100, "Ernsthaft", "20 min"], [150, "Intensiv", "30 min"]].map(([g, t, m]) => `<button class="pickrow ${g === goal ? "on" : ""}" data-goal="${g}"><b>${t}</b><span>${m} a day</span></button>`).join("")}</div>
+        <p class="muted small" style="margin-top:14px">Coach style</p>
+        <div class="seg tonepick">${[["freundlich", "Freundlich"], ["neutral", "Neutral"], ["streng", "Streng"]].map(([v, t]) => `<button class="${v === tone ? "on" : ""}" data-tone="${v}">${t}</button>`).join("")}</div>
+        <button class="btn sign big-btn ob-next">Weiter</button></div>`;
+      if (step === 3) d.innerHTML = `<div class="sheet ob" role="dialog" aria-labelledby="ob-t">${dots}<h2 id="ob-t">Where do you start?</h2>
+        <div class="col">${[[1, "I'm new to German", "Start at lesson 1 (A1)"], [0, "I know some German", "15-minute placement test"], [13, "I finished A1", "Start at A2"], [25, "I finished A2", "Start at B1"], [43, "I finished B1", "Start at B2"], [51, "I finished B2", "Start at C1"]].map(([n, t, sub]) => `<button class="pickrow" data-lvl="${n}"><b>${t}</b><span>${sub}</span></button>`).join("")}</div>
+        <p class="muted small credit">${App.credit()}</p></div>`;
+      const nm = d.querySelector(".obname"); if (nm) { setTimeout(() => nm.focus(), 50); nm.onkeydown = (e) => { if (e.key === "Enter") d.querySelector(".ob-next").click(); }; }
+      d.querySelectorAll("[data-goal]").forEach((b) => (b.onclick = () => { goal = +b.dataset.goal; d.querySelectorAll("[data-goal]").forEach((x) => x.classList.toggle("on", x === b)); }));
+      d.querySelectorAll("[data-tone]").forEach((b) => (b.onclick = () => { tone = b.dataset.tone; d.querySelectorAll("[data-tone]").forEach((x) => x.classList.toggle("on", x === b)); }));
+      const nx = d.querySelector(".ob-next");
+      if (nx) nx.onclick = () => {
+        if (step === 1) { const v = nm.value.trim(); if (!v) { H.toast("Please type your name first."); nm.focus(); return; } Store.setName(v); App.renderChip(); }
+        draw(step + 1);
+      };
+      d.querySelectorAll("[data-lvl]").forEach((b) => (b.onclick = () => {
+        const n = +b.dataset.lvl; const s = Store.get();
+        s.settings.goal = goal; s.settings.tone = tone;
+        for (let i = 1; i < n; i++) { const l = Store.lesson(i); l.done = true; l.read = true; l.score = l.score || 70; }
+        s.settings.onboarded = true; Store.save(); d.remove();
+        App.go(n === 0 ? "placement" : `lesson/${Math.max(1, n)}`);
+      }));
     };
-    d.querySelectorAll("[data-lvl]").forEach((b) => (b.onclick = () => {
-      const n = +b.dataset.lvl; const s = Store.get();
-      const nm = d.querySelector(".obname").value.trim();
-      if (!nm) { H.toast("Please type your name first."); d.querySelector(".obname").focus(); return; }
-      Store.setName(nm); App.renderChip();
-      for (let i = 1; i < n; i++) { const l = Store.lesson(i); l.done = true; l.read = true; l.score = l.score || 70; }
-      st.onboarded = true; Store.save(); d.remove(); App.go(n > 1 ? `lesson/${n}` : "home");
-    }));
+    draw(1);
+    document.body.appendChild(d);
   }
 
   // learners who already had progress before profiles existed: just ask for the name once
@@ -225,15 +237,33 @@
     b.onclick = () => App.maxPanel(document.getElementById("maxpanel") ? document.getElementById("maxpanel").hidden : true);
     document.body.appendChild(b);
   };
-  document.addEventListener("keydown", (e) => { if (e.key === "Escape") App.maxPanel(false); });
+  /* Reload the newest version: drop the offline cache (never the progress) and fetch everything again. */
+  App.hardReload = async () => {
+    try { Store.save(); if (window.caches) for (const k of await caches.keys()) await caches.delete(k); } catch (e) {}
+    try { if (navigator.serviceWorker) for (const r of await navigator.serviceWorker.getRegistrations()) await r.unregister(); } catch (e) {}
+    location.reload();
+  };
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") { App.maxPanel(false); Speech.stop(); }
+    // space = pause/resume while audio plays (unless you are typing)
+    if (e.key === " " && !/INPUT|TEXTAREA|SELECT|BUTTON/.test(document.activeElement.tagName) && Speech.status().state !== "idle") { e.preventDefault(); Speech.status().state === "playing" ? Speech.pause() : Speech.resume(); }
+  });
   window.addEventListener("hashchange", App.route);
   window.addEventListener("DOMContentLoaded", () => {
     Store.get(); App.applyTheme();
     matchMedia("(prefers-color-scheme: dark)").addEventListener("change", App.applyTheme);
-    App.renderChip(); App.mountMaxButton();
+    App.renderChip(); App.mountMaxButton(); UI.mountPlayer();
     document.querySelector(".pchip").onclick = App.profileSheet;
     App.route(); onboarding(); App.newsBadge && App.newsBadge();
-    if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) navigator.serviceWorker.register("sw.js").catch(() => {});
+    if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
+      navigator.serviceWorker.register("sw.js").then((reg) => {
+        reg.update().catch(() => {});
+        // a new version was installed in the background: offer it instead of silently showing the old one
+        const offer = () => { if (document.querySelector(".updbar")) return; const b = document.createElement("div"); b.className = "updbar"; b.innerHTML = `<span>✨ A new version of Deutsch Coach is ready.</span><button class="btn sign sm">Update</button>`; b.querySelector("button").onclick = App.hardReload; document.body.appendChild(b); };
+        if (reg.waiting && navigator.serviceWorker.controller) offer();
+        reg.addEventListener("updatefound", () => { const w = reg.installing; if (w) w.addEventListener("statechange", () => { if (w.state === "installed" && navigator.serviceWorker.controller) offer(); }); });
+      }).catch(() => {});
+    }
     document.body.classList.toggle("in-app", !!window.AndroidBridge);
   });
   // Android hardware back
