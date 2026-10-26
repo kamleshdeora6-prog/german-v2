@@ -46,7 +46,7 @@
         if (!ok) b.classList.add("wrong");
         const f = box.querySelector(".fb"); f.hidden = false; f.innerHTML = `${ok ? "✓" : "✗"} ${esc(it.why || "")}`;
         box.dataset.ok = ok ? "1" : "0";
-        Store.topic("lesen", ok); Store.addXP(ok ? 5 : 1);
+        Store.topic("lesen", ok); Store.addXP(ok ? 5 : 1); if (window.Habit) Habit.track("read");
       }));
     });
     el.querySelector(".check").onclick = (e) => {
@@ -156,7 +156,7 @@
       const rubTotal = rub.reduce((a, r) => a + r[1], 0);
       const score = Math.round((crit.filter((c) => c[1]).length / crit.length) * 100);
       Store.get().exams.unshift({ date: Date.now(), type: `Schreiben ${t.level}`, score });
-      Store.addXP(25); Store.save();
+      Store.addXP(25); Store.save(); if (window.Habit) Habit.track("write");
       fb.innerHTML = `<section class="card"><h3>Feedback · ${score}%</h3>
         <ul class="checklist">${crit.map((c) => `<li class="${c[1] ? "y" : "n"}">${c[1] ? "✓" : "✗"} ${esc(c[2])}</li>`).join("")}</ul>
         <h4>Prüfungskriterien (wie in der Prüfung, je 0–5 Punkte)</h4>

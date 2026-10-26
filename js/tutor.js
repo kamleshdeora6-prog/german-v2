@@ -356,7 +356,7 @@
           const r = { habe: "bin", hast: "bist", hat: "ist", haben: "sind", habt: "seid" }[aux];
           add(`<s>${aux} … ${pp}</s> → <b>${r} … ${pp}</b>`, `<b>${pp}</b> describes movement or a change of state → Perfekt with <b>sein</b>. (Exception: <i>Ich habe das Auto gefahren</i> – with an object.)`, 17);
           words[auxIdx] = words[auxIdx][0] === words[auxIdx][0].toUpperCase() ? R_cap(r) : r;
-        } else if (SEIN_F.has(aux) && HABEN_PP.has(pp)) {
+        } else if (SEIN_F.has(aux) && HABEN_PP.has(pp) && (/^ge(arbeit|wohn|schlaf|lach|wein|tanz|wart|spiel|leb|feier|frühstück|träum|red|sag)\w*$|^telefoniert$|^studiert$/.test(pp) || /^(ich|du|wir|ihr)$/.test(L[auxIdx + 1] || "") || /^(ich|du|wir|ihr)$/.test(L[auxIdx - 1] || ""))) {
           const r = { bin: "habe", bist: "hast", ist: "hat", sind: "haben", seid: "habt" }[aux];
           add(`<s>${aux} … ${pp}</s> → <b>${r} … ${pp}</b>`, `<b>${pp}</b> has no movement from A to B → Perfekt with <b>haben</b>.${pp === "gegessen" ? " (Careful: „ich bin gegessen“ means someone ate you!)" : ""}`, 17);
           words[auxIdx] = words[auxIdx][0] === words[auxIdx][0].toUpperCase() ? R_cap(r) : r;
@@ -458,7 +458,7 @@
       L = low();
       const infIdx = L.findIndex((w, k) => k > mi && k < L.length - 1 && !PRONOUNS.has(w) && finIndex().has(w) && finIndex().get(w).some((x) => x.inf === w));
       const perfInf = /^(haben|sein|worden|werden)$/.test((L[L.length - 1] || "").replace(/[.?!]$/, ""));
-      if (infIdx > 0 && !perfInf && !PRONOUNS.has(L[infIdx + 1]) && !L.includes("und")) {
+      if (infIdx > 0 && !perfInf && !PRONOUNS.has(L[infIdx + 1]) && !L.some((x) => /^(und|oder|aber|denn|sondern)$/.test(x))) {
         const w = words.splice(infIdx, 1)[0]; words.push(w);
         add(`<s>${w} ${words.slice(infIdx, -1).join(" ")}</s> → <b>${words.slice(infIdx, -1).join(" ")} ${w}</b>`, "With a modal verb the infinitive goes to the very <b>end</b> (verb bracket).", 11);
         // "nicht morgen kommen" → "morgen nicht kommen": time words come before nicht
@@ -505,7 +505,7 @@
     }
     // nicht ein → kein
     L = low();
-    const ni = /^warum\b/i.test(raw) ? -1 : L.findIndex((w, i) => w === "nicht" && /^ein(e|en|em|er)?$/.test(L[i + 1] || ""));
+    const ni = /^warum\b/i.test(raw) ? -1 : L.findIndex((w, i) => w === "nicht" && /^ein(e|en|em|er)?$/.test(L[i + 1] || "") && !(L[i + 1] === "ein" && (i + 2 >= L.length || /[,;:]$/.test(words[i + 1] || ""))));
     if (ni >= 0) { const k = "k" + L[ni + 1]; add(`<s>nicht ${L[ni + 1]}</s> → <b>${k}</b>`, "A noun with <b>ein</b> is negated with <b>kein</b> (same ending).", 7); words.splice(ni, 2, k); }
     // preposition + article case
     L = low();

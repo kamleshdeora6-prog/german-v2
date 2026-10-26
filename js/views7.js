@@ -189,7 +189,7 @@
         ${diff < -1 ? Weber.html("behind", { n: -diff, weeks: Math.max(1, Math.round(elapsed / 7)) }) : diff > 1 ? Weber.html("ahead", { n: diff }) : ""}
       </section>
       <section class="card"><h3>Today</h3>
-        ${next ? `<button class="tile wide lvl-${next.level}" data-go="lesson/${next.n}"><b>Lesson ${next.pos}: ${esc(next.title)}</b><span>${esc(next.theme)}</span></button>` : "<p>All lessons in this plan are done. Set a new goal.</p>"}
+        ${next ? `<button class="tile wide lvl-${next.level}" data-go="lesson/${next.n}"><b>Lesson ${next.pos}: ${H.lt(next)}</b><span>${H.lt(next, "theme")}</span></button>` : "<p>All lessons in this plan are done. Set a new goal.</p>"}
         <div class="row"><button class="btn sign" data-go="daily">Start today's session</button><button class="btn ghost" data-go="weak">Weak topics</button></div>
       </section>
       <section class="card"><h3>Change the plan</h3>
@@ -197,41 +197,95 @@
         <p class="muted small">Falling behind isn't fatal – the daily number simply goes up, which is exactly why it's better to know.</p></section>`;
   }
 
-  /* ============ 3. Übungstag – the daily session ============ */
+  /* ============ 3. Übungstag – the daily session ============
+     Filled to the minutes the plan asks for (or the daily goal), in a sensible order: the next lesson part
+     by part, then words, drills, listening, reading, speaking and writing – and the next lesson again.
+     Every item ticks itself when the work is done (lesson parts, cards reviewed, drills answered …).
+     Finished early? “Add 15 minutes” always gives more. */
+  const PARTS = [["learn", "Learn the rule", 6], ["read", "Read & listen", 6], ["practice", "Practise (20 exercises)", 10], ["exam", "Exam questions", 8], ["speak", "Speak", 5]];
+  const BLOCKS = {
+    words: { label: (n) => `Words: review ${n} cards`, go: () => "vocab/review", mins: 6, size: 15, icon: "🗂" },
+    drill: { label: (n) => `Sentence drills: ${n} items`, go: () => "practice/smart", mins: 8, size: 10, icon: "✎" },
+    listen: { label: (n) => `Listening: ${n} dictation${n > 1 ? "s" : ""}`, go: () => "listen", mins: 8, size: 4, icon: "🎧" },
+    read: { label: () => "Reading: one text with questions", go: () => "read", mins: 8, size: 1, icon: "📖" },
+    speak: { label: (n) => `Speaking: shadow ${n} sentences`, go: () => "speak", mins: 5, size: 5, icon: "🎙" },
+    write: { label: () => "Writing: one short task", go: () => "write", mins: 12, size: 1, icon: "✍️" },
+    weak: { label: (n) => `Weak topics: ${n} items`, go: () => "weak", mins: 6, size: 10, icon: "🩹" },
+    starter: { label: () => "First steps: one picture round", go: () => "starter", mins: 4, size: 1, icon: "🐣" },
+  };
+  const dailyTarget = (p, s) => (p && p.minutes) || ({ 20: 10, 50: 20, 100: 30, 150: 45 }[s.settings.goal] || 20);
+  function lessonParts(p, skip) {
+    const out = [];
+    DC.curriculum.filter((l) => (!p || l.pos >= p.from)).some((l) => {
+      const ls = Store.lesson(l.n); const parts = ls.parts || {};
+      if (ls.done) return false;                       // a finished lesson: move on, don't send the learner back
+      PARTS.forEach(([k, t, m]) => { if (!(parts[k] || (k === "practice" && ls.done)) && !skip.has(`part:${l.n}:${k}`)) out.push({ id: `part:${l.n}:${k}`, k: "part", n: l.n, part: k, label: `Lesson ${l.pos} · ${t}`, sub: H.ltText(l), go: `lesson/${l.n}/${k}`, mins: m }); });
+      return out.length >= 15;
+    });
+    return out;
+  }
+  function buildDay(minutes, state, p) {
+    const s = Store.get(); const items = state.items || [];
+    const have = new Set(items.map((x) => x.id)); const need = {}; items.forEach((x) => { if (x.need) need[x.k] = Math.max(need[x.k] || 0, x.need); });
+    let total = items.reduce((a, x) => a + x.mins, 0);
+    const parts = lessonParts(p, have);
+    const weak = Object.entries(s.topics || {}).some(([k, v]) => Engine.GEN[k] && (v.r || 0) + (v.w || 0) >= 4 && (v.r || 0) / ((v.r || 0) + (v.w || 0)) < 0.8);
+    const block = (k) => { const B = BLOCKS[k]; need[k] = (need[k] || 0) + B.size; return { id: `${k}:${need[k]}`, k, need: need[k], label: B.label(B.size), go: B.go(), mins: B.mins, icon: B.icon }; };
+    const order = [];
+    if (s.starterMode && window.Views.starterProgress && Views.starterProgress().next) order.push("starter");
+    order.push("parts2", "words", "drill", "parts3", "listen", "read", "speak", "write", "drill", weak ? "weak" : "words", "listen", "speak", "drill", "words", "read");
+    let guard = 0;
+    while (total < minutes && guard++ < 60) {
+      const k = order[(guard - 1) % order.length];
+      if (k.startsWith("parts")) { const n = +k.slice(5); for (let i = 0; i < n && parts.length && total < minutes; i++) { const it = parts.shift(); items.push(it); total += it.mins; } continue; }
+      const it = block(k); items.push(it); total += it.mins;
+    }
+    state.items = items; state.minutes = Math.max(state.minutes || 0, minutes);
+    return state;
+  }
+  const isDone = (x, state) => {
+    if ((state.manual || []).includes(x.id)) return true;
+    if (x.k === "part") { const ls = Store.lesson(x.n); return !!((ls.parts || {})[x.part] || (x.part === "practice" && ls.done)); }
+    return window.Habit && Habit.count(x.k === "starter" ? "starter" : x.k) >= x.need;
+  };
   V.daily = (el) => {
-    const s = Store.get();
-    const today = Store.today();
-    const p = activePlan();
-    const plan = [];
-    const next = DC.curriculum.find((l) => (!p || l.pos >= p.from) && !Store.lesson(l.n).done);
-    if (next) plan.push({ k: "lesson", label: `Lesson ${next.pos}: ${next.title}`, go: "lesson/" + next.n, mins: 15 });
-    plan.push({ k: "words", label: `Word review (${(V.dueCount ? V.dueCount() : "")} due)`, go: "vocab/review", mins: 8 });
-    plan.push({ k: "drill", label: "Sentence drills – 10 items", go: "practice/smart", mins: 8 });
-    if ((s.weakTopics || []).length) plan.push({ k: "weak", label: "Weak topics", go: "weak", mins: 6 });
-    plan.push({ k: "write", label: "Short writing task", go: "write", mins: 12 });
-    const state = (s.daily && s.daily.date === today) ? s.daily : { date: today, done: [] };
+    const s = Store.get(); const today = Store.today(); const p = activePlan();
+    const target = dailyTarget(p, s);
+    let state = s.daily && s.daily.date === today && s.daily.items ? s.daily : { date: today, items: [], manual: [] };
+    if (!state.items.length || (state.minutes || 0) < target) state = buildDay(target, state, p);
     s.daily = state; Store.save();
-    const pct = Math.round((state.done.length / plan.length) * 100);
-    el.innerHTML = `<h2 class="page-title">Practice day</h2>
-      <section class="card"><p class="muted">One session, in order. About ${plan.reduce((a, x) => a + x.mins, 0)} minutes – ${p ? `your plan asks for ${p.minutes}` : "set a plan to get a target"}.</p>
+    const items = state.items; const done = items.filter((x) => isDone(x, state));
+    const minsDone = done.reduce((a, x) => a + x.mins, 0), minsAll = items.reduce((a, x) => a + x.mins, 0);
+    const pct = Math.round((minsDone / Math.max(1, minsAll)) * 100);
+    const allDone = done.length === items.length;
+    const first = items.find((x) => !isDone(x, state));
+    el.innerHTML = `<h2 class="page-title">${H.bi("Übungstag", "Practice day")}</h2>
+      <section class="card">
+        <p>${p ? `Your plan asks for <b>${target} minutes</b> a day.` : `Your daily goal: about <b>${target} minutes</b>.`} Today's list: <b>${minsAll} min</b> in ${items.length} steps – they tick themselves when you finish them.</p>
         <div class="pbar"><span style="width:${pct}%"></span></div>
-        <ol class="daylist">${plan.map((x, i) => `<li class="${state.done.includes(x.k) ? "ok" : ""}"><label><input type="checkbox" data-k="${x.k}" ${state.done.includes(x.k) ? "checked" : ""}></label>
-          <button class="link" data-go="${x.go}">${esc(x.label)}</button><span class="muted small">${x.mins} min</span></li>`).join("")}</ol>
-        ${pct === 100 ? `<p class="big">Done for today.</p>${Weber.html("planOk", { level: p ? p.level : "your goal", weeks: "", min: p ? p.minutes : 30, lessons: 1, words: p ? p.words : 15 })}` : ""}
+        <p class="muted small">${minsDone} of ${minsAll} min done · ${done.length}/${items.length} steps</p>
+        ${first ? `<button class="btn sign big-btn" data-go="${first.go}">${done.length ? "Continue" : "Start"}: ${esc(first.label)}</button>` : ""}
+        <ol class="daylist">${items.map((x) => { const ok = isDone(x, state); const sz = x.need ? BLOCKS[x.k].size : 0; const prog = sz > 1 && !ok && window.Habit ? ` · ${Math.max(0, Math.min(sz, Habit.count(x.k) - (x.need - sz)))}/${sz}` : "";
+          return `<li class="${ok ? "ok" : ""}"><label title="Tick by hand"><input type="checkbox" data-id="${esc(x.id)}" ${ok ? "checked" : ""}></label>
+          <button class="link" data-go="${x.go}">${x.icon ? x.icon + " " : ""}${esc(x.label)}${x.sub ? `<small class="muted"> · ${esc(x.sub)}</small>` : ""}</button><span class="muted small">${x.mins} min${prog}</span></li>`; }).join("")}</ol>
+        ${allDone ? `<div class="daydone"><p class="big">🎉 ${H.bi("Geschafft für heute!", "Done for today!")} ${minsDone} minutes.</p>${p ? Weber.html("planOk", { level: p.level, weeks: "", min: p.minutes, lessons: 1, words: p.words }) : ""}</div>` : ""}
+        <div class="row">${allDone ? `<button class="btn sign more15">+ 15 more minutes</button>` : `<button class="btn ghost more15">+ Add 15 minutes</button>`}<button class="btn ghost" data-go="practice/smart">Free practice</button></div>
       </section>
-      ${!p ? `<section class="card"><p>No plan yet – without a date this is just a list of good intentions.</p><div class="row"><button class="btn sign" data-go="plan">Make a plan</button></div></section>` : ""}`;
+      ${!p ? `<section class="card"><p>No plan yet – make one and the practice day fills the minutes your goal needs.</p><div class="row"><button class="btn sign" data-go="plan">Make a plan</button></div></section>` : ""}`;
     el.querySelectorAll("input[type=checkbox]").forEach((c) => (c.onchange = () => {
-      const st = Store.get(); const d = st.daily;
-      d.done = c.checked ? [...new Set([...d.done, c.dataset.k])] : d.done.filter((x) => x !== c.dataset.k);
+      const st = Store.get().daily; st.manual = st.manual || [];
+      st.manual = c.checked ? [...new Set([...st.manual, c.dataset.id])] : st.manual.filter((x) => x !== c.dataset.id);
       Store.save(); V.daily(el);
     }));
+    el.querySelector(".more15").onclick = () => { const st = Store.get().daily; buildDay(st.items.reduce((a, x) => a + x.mins, 0) + 15, st, p); Store.save(); V.daily(el); H.toast("15 more minutes added."); };
   };
 
   /* ============ 4. Schwachstellen ============ */
   V.weak = (el, [id]) => {
     const s = Store.get();
     const topics = Object.entries(s.topics || {})
-      .map(([k, v]) => ({ k, ...v, rate: v.n ? v.ok / v.n : 1 }))
+      .filter(([k]) => Engine.GEN[k])
+      .map(([k, v]) => { const n = (v.r || 0) + (v.w || 0); return { k, ...v, n, ok: v.r || 0, rate: n ? (v.r || 0) / n : 1 }; })
       .filter((t) => t.n >= 4 && t.rate < 0.8)
       .sort((a, b) => a.rate - b.rate);
     const fromTest = (s.weakTopics || []).filter((t) => !topics.some((x) => x.k === t));

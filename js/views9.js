@@ -333,7 +333,7 @@
           if (rec.lvl === 1) { const i = UNITS().indexOf(opts.unit); const nx = UNITS()[i + 1]; sub = nx ? `New unit unlocked: ${nx.icon} ${nx.en}` : "That was the last unit – you're ready for Lesson 1."; }
         }
       }
-      Store.addXP(gain); Store.save();
+      Store.addXP(gain); Store.save(); if (Habit.track) Habit.track("starter");
       const mins = Math.max(1, Math.round((Date.now() - t0) / 60000));
       const nextBtn = opts.unit ? (lvlOf(opts.unit.id) < 3 ? `<button class="btn sign big-btn" data-go="starter/u/${opts.unit.id}">Next: level ${lvlOf(opts.unit.id) + 1}</button>` : (() => { const nx = V.starterProgress().next; return nx ? `<button class="btn sign big-btn" data-go="starter/u/${nx.id}">Next unit: ${esc(nx.en)}</button>` : `<button class="btn sign big-btn" data-go="lesson/1">Start Lesson 1 →</button>`; })()) : `<button class="btn sign big-btn" data-go="starter/review">Another review</button>`;
       el.innerHTML = `<div class="st-done summary arming"><div class="st-pic big">${acc >= 90 ? "🏆" : acc >= 70 ? "🎉" : "💪"}</div><h2>${esc(head)}</h2>${sub ? `<p><b>${esc(sub)}</b></p>` : ""}

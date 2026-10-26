@@ -59,6 +59,14 @@
 
   /* ---------------- 3. What's new ---------------- */
   const NEWS = [
+    { v: "6.3.0", date: "26 October 2026", items: [
+      "<b>Always a next step</b>: Practice, Exam and Speak now end with a button to the next part, and Speak with “Finish – next lesson”.",
+      "<b>Feedback that teaches</b>: a wrong answer shows what you typed, marks the letters that differ and explains why – e.g. „sprechen changes e → i with du and er/sie/es“. Lower-case answers get a note about capital letters. Typing again after a check marks the old verdict as out of date.",
+      "<b>Open exam and speaking answers</b> get a score and a checklist: German or not, length, the words the task asks for, questions vs. statements, this lesson's grammar, corrections and capital letters – plus a model answer for every question (232 new).",
+      "<b>Speaking without a microphone</b>: type what you would say and get the same feedback.",
+      "<b>Practice day</b> now fills the minutes your plan asks for (e.g. 158 min → 23 steps), ticks every step itself when you finish it, skips lessons you have already finished, and “+15 minutes” always gives you more.",
+      "<b>Fixed</b>: weak topics were never found; “Word review ( due)” showed no number; celebrations no longer cover the screen while you're answering; messages no longer pile on top of each other.",
+    ] },
     { v: "6.2.0", date: "26 October 2026", items: [
       "<b>Erste Schritte · First steps</b> – a picture course for people who know zero German: 18 units, 192 words with pictures and sound, 86 everyday sentences. Short rounds with picture questions, listening, pair matching, der/die/das, typing and sentence building. Wrong answers come back until they're right.",
       "<b>Picture flashcards</b> for every unit: flip, listen, slow audio, “Again” / “I knew it”.",

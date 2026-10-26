@@ -1,7 +1,7 @@
 # Deutsch Coach
 
 **Learn German from A1 to C2 — free, offline, and every answer explained.**
-Created by **Zombieland** · version 6.2.0 · last updated 26 October 2026
+Created by **Zombieland** · version 6.3.0 · last updated 26 October 2026
 
 **Open the app:** https://kamleshdeora6-prog.github.io/german-v2/
 

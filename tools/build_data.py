@@ -109,6 +109,24 @@ for line in open("english.txt", encoding="utf-8"):
     if k == "expl": en_cur["en"]["expl"].append(v.strip())
     elif k in ("title", "theme", "use"): en_cur["en"][k] = v.strip()
     else: raise SystemExit(f"english.txt: unknown field {k!r}")
+# ---------- v6.3 model answers for open exam questions + lesson-grammar checks (models.txt) ----------
+m_cur = None
+for line in open("models.txt", encoding="utf-8"):
+    line = line.rstrip("\n")
+    if not line.strip() or line.startswith("#"): continue
+    if line.startswith("@@"):
+        n = int(line[2:].strip()); m_cur = byn.get(n)
+        if not m_cur: raise SystemExit(f"models.txt: lesson {n} does not exist")
+        m_cur["check"] = []; continue
+    k, _, v = line.partition("=")
+    if k == "use":
+        rx, _, label = v.rpartition(" | ")
+        m_cur["check"].append({"re": rx.strip(), "label": label.strip()})
+    elif k.strip().isdigit():
+        i = int(k) - 1
+        if not (0 <= i < len(m_cur["exam"])): raise SystemExit(f"models.txt: lesson {m_cur['n']} has no exam question {k}")
+        m_cur["exam"][i]["m"] = v.strip()
+    else: raise SystemExit(f"models.txt: unknown line {line[:40]!r}")
 missing = [l["n"] for l in cur if not (l.get("en") and l["en"]["title"] and l["en"]["expl"])]
 if missing: raise SystemExit(f"english.txt: no English for lessons {missing}")
 js("curriculum", cur)

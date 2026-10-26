@@ -1,0 +1,465 @@
+# Model answers for open exam questions + "did you use this lesson's grammar?" checks.
+# @@ <lesson id>
+# use=<JS regex, case-insensitive> | <what the learner should use>     (one or more; checked in exam and speak answers)
+# <question number>=<model answer>
+# Models are examples, not the only right answer. Keep them at the level of the lesson.
+
+@@ 1
+use=\b(bin|bist|ist|sind|seid)\b | a form of sein (bin, ist, sind …)
+use=\b(habe|hast|hat|haben|habt)\b | a form of haben (habe, hat …)
+8=Ich heiße Ravi Sharma. Ich bin 28 Jahre alt. Ich komme aus Indien und wohne jetzt in Berlin. Ich bin Ingenieur. Ich spreche Hindi, Englisch und ein bisschen Deutsch.
+9=Meine Familie ist nicht groß. Mein Vater ist Lehrer und meine Mutter ist Ärztin. Ich habe eine Schwester. Sie heißt Priya und ist 24 Jahre alt. Meine Eltern wohnen in Mumbai.
+10=R – A – V – I. S – H – A – R – M – A. (Say each letter in German: er, a, vau, i …)
+
+@@ 2
+use=\b(oft|manchmal|nie|immer|selten)\b | oft / manchmal / nie
+use=\b(spiele|lese|koche|tanze|laufe|schwimme|höre|fahre|mache|treffe|sehe|spielst|liest|kochst|machst)\b | a present-tense verb with the right ending
+8=Ich habe viele Hobbys. Ich lese oft Bücher. Am Wochenende koche ich gern. Manchmal spiele ich Cricket mit Freunden. Ich tanze nie, denn ich tanze schlecht. Ich laufe oft im Park.
+9=Am Wochenende schlafe ich lange. Dann frühstücke ich mit meiner Familie. Am Nachmittag treffe ich Freunde. Am Abend sehe ich einen Film.
+10=Was machst du gern? Spielst du Fußball? Liest du gern? Kochst du oft?
+
+@@ 3
+use=\b(zuerst|dann|danach|am abend|am morgen|um \d+ uhr)\b | time words (zuerst, dann, danach …)
+use=\b(zuerst|dann|danach|heute|morgen|am \w+|um \d+ uhr) (stehe|gehe|frühstücke|fahre|arbeite|esse|trinke|komme|lerne|mache|sehe|dusche|koche|lese|bin|habe)\b | verb right after the time word (position 2)
+8=Zuerst stehe ich um 7 Uhr auf. Dann dusche ich und frühstücke. Danach fahre ich mit dem Bus zur Arbeit. Am Abend koche ich und sehe fern.
+9=Am Montag stehe ich früh auf und arbeite. Am Sonntag schlafe ich lange. Am Montag habe ich wenig Zeit, aber am Sonntag treffe ich Freunde.
+10=Wann stehst du auf? – Ich stehe um halb sieben auf.
+
+@@ 4
+use=\?\s*$|\? | questions with a question mark
+use=\b(wie|wo|woher|wohin|was|wann|warum|wer)\b | W-words (wie, wo, woher …)
+8=Wie heißt du? Woher kommst du? Wo wohnst du? Was bist du von Beruf? Welche Sprachen sprichst du? Was ist dein Hobby?
+9=Wie heißen Sie? Woher kommen Sie? Arbeiten Sie schon lange hier?
+10=Beim ersten Treffen fragt man nicht: Wie viel verdienen Sie? Wie alt sind Sie? Das ist zu privat.
+
+@@ 5
+use=\b(der|die|das|ein|eine)\s+[A-ZÄÖÜ] | nouns with der / die / das or ein / eine
+8=Meine Wohnung hat drei Zimmer, eine Küche und ein Bad. Im Wohnzimmer steht ein Sofa. Das Bett steht im Schlafzimmer. Die Küche ist klein, aber hell.
+9=Mein Lieblingszimmer ist das Wohnzimmer. Es ist groß und hell. Dort ist mein Sofa, und ich lese da gern.
+10=In Indien wohnen oft viele Personen zusammen. Die Familie ist groß. In Deutschland wohnen viele Leute allein. Die Wohnungen sind oft klein.
+
+@@ 6
+use=\b(einen|den|keinen|meinen)\b | accusative masculine: einen / den
+use=\b(kaufe|brauche|nehme|möchte|suche|esse|trinke|gibt)\b | an accusative verb (kaufen, brauchen …)
+8=Ich kaufe einen Kuchen, eine Pizza, ein Brot, einen Käse und zwei Flaschen Saft. Ich brauche auch Gläser und Teller.
+9=Jede Woche kaufe ich Milch, Brot, Eier und einen Salat. Ich kaufe nie Fleisch.
+10=Entschuldigung, ich suche den Reis. – Der Reis ist dort hinten. – Und haben Sie auch einen Mangosaft? – Ja, im Regal links. – Danke!
+
+@@ 7
+use=\b(nicht|kein|keine|keinen)\b | nicht or kein
+8=Ich esse gern Reis, Gemüse und Obst. Ich esse gern Pizza. Ich esse kein Fleisch. Ich trinke keinen Alkohol. Ich mag keinen Fisch. Scharfes Essen finde ich nicht schlecht.
+9=Entschuldigung, ich esse kein Fleisch. Ich nehme die Gemüsesuppe und einen Salat, bitte. Und ein Wasser, aber nicht zu kalt.
+10=In Indien isst man oft Reis und Curry. Das Essen ist scharf. Viele Menschen essen kein Fleisch.
+
+@@ 8
+use=\b(mein|meine|meinen|dein|sein|seine|ihr|ihre|unser|unsere)\b | possessive articles (mein, seine, ihr …)
+8=Das ist meine Familie. Links ist mein Vater, rechts ist meine Mutter. In der Mitte sitzt meine Schwester. Ihr Mann steht hinter ihr. Unser Hund heißt Bobby.
+9=Mein bester Freund heißt Jonas. Er wohnt in Hamburg. Seine Frau heißt Mia. Wir telefonieren jede Woche. Sein Hobby ist Fußball.
+10=Ich vermisse meine Mutter und meinen Vater. Sie wohnen in Indien. Ich vermisse auch ihr Essen!
+
+@@ 9
+use=\b(um \d|am (montag|dienstag|mittwoch|donnerstag|freitag|samstag|sonntag|wochenende|abend|morgen|nachmittag)|im (januar|februar|märz|april|mai|juni|juli|august|september|oktober|november|dezember|sommer|winter|frühling|herbst)|uhr|halb)\b | time words: um … Uhr, am Montag, im Mai
+8=Guten Tag, hier ist Ravi Sharma. Ich möchte einen Termin machen. Haben Sie am Dienstag Zeit? – Ja, um 10 Uhr. – Das passt gut. Vielen Dank, auf Wiederhören!
+9=Ich habe am 12. Mai Geburtstag. Ich feiere mit meiner Familie und meinen Freunden. Wir essen Kuchen.
+10=Am Montag habe ich keine Zeit. Am Mittwoch habe ich ab 17 Uhr Zeit. Am Freitag um halb acht geht es auch.
+
+@@ 10
+use=\b(auf|an|ein|aus|mit|fern|ab|zu|vor|zurück|los)\b[.!?]?\s*$|\b(stehe|rufe|kaufe|sehe|räume|komme|fange|höre|lade|mache|ziehe|gehe) \w+.*\b(auf|an|ein|aus|mit|fern|ab|zu|vor|zurück|los)\b | a separable verb with the prefix at the end
+8=Am Sonntag stehe ich spät auf. Dann rufe ich meine Mutter an. Am Mittag kaufe ich nicht ein, denn die Geschäfte sind zu. Am Nachmittag räume ich auf. Am Abend sehe ich fern.
+9=Hast du am Samstag Zeit? Ich lade dich zum Essen ein. Kommst du mit?
+10=Am Abend räume ich die Küche auf. Dann sehe ich fern oder lese. Um elf Uhr mache ich das Licht aus.
+
+@@ 11
+use=\b(kann|kannst|können|muss|musst|müssen|darf|darfst|dürfen|will|willst|wollen|soll|sollst|sollen|möchte|möchtest|möchten)\b | a modal verb (kann, muss, darf …)
+8=Kinder dürfen nicht allein Auto fahren. Sie müssen in die Schule gehen. Sie dürfen nicht rauchen. Sie sollen früh ins Bett gehen.
+9=Guten Tag, ich möchte eine Fahrkarte nach Hamburg. – Einfach oder hin und zurück? – Hin und zurück, bitte. Kann ich mit Karte zahlen? – Ja, natürlich.
+10=Ich möchte in Deutschland arbeiten. Ich muss noch viel Deutsch lernen. Ich will auch Freunde finden.
+
+@@ 12
+use=^\s*(trink|nimm|geh|schlaf|mach|iss|lies|sprich|hör|komm|sei|bleib|lern|wiederhole|schreib|seht|trinkt|nehmen sie|gehen sie)\b|[.!]\s*(trink|nimm|geh|schlaf|mach|iss|lies|sprich|hör|komm|sei|bleib|lern|schreib)\b | imperative (Trink …! Geh …!)
+8=Trink viel Wasser! Nimm eine Tablette! Geh früh ins Bett! Mach eine Pause vom Handy!
+9=Nimm Reis und Linsen. Koch die Linsen mit Wasser. Schneid eine Zwiebel und brate sie in Öl. Gib Salz und Gewürze dazu. Iss das Dal mit Reis.
+10=Lern jeden Tag zehn Minuten. Sprich viel, auch mit Fehlern. Hör deutsche Podcasts. Hab keine Angst!
+
+@@ 61
+use=\b(habe|hast|hat|haben|habt|bin|bist|ist|sind|seid)\b.*\bge\w+(t|en)\b | Perfekt: haben/sein + ge…t / ge…en
+8=Gestern habe ich gearbeitet. Am Abend habe ich gekocht. Dann habe ich einen Film gesehen. Ich bin um elf Uhr ins Bett gegangen.
+9=Am Samstag habe ich lange geschlafen. Dann habe ich Freunde getroffen. Wir sind in die Stadt gefahren und haben Kaffee getrunken. Am Sonntag habe ich meine Mutter angerufen.
+10=Hallo Mia! Heute habe ich viel gemacht: Ich habe Deutsch gelernt und eingekauft. Am Abend habe ich Pizza gegessen. Und du?
+
+@@ 13
+use=\b(mir|dir|ihm|ihr|uns|euch|ihnen|dem|der|den \w+n)\b | a dative form (mir, ihm, dem …)
+use=\b(gefällt|gefallen|hilft|helfe|helfen|gehört|danke|schmeckt|passt)\b | a dative verb (gefallen, helfen …)
+8=Mir gefällt die Natur in Deutschland. Die Parks gefallen mir sehr. Das Wetter gefällt mir nicht, es ist oft kalt. Auch die Bürokratie gefällt mir nicht.
+9=Ich helfe oft meiner Nachbarin. Sie ist alt, und ich trage ihr die Einkaufstaschen. Ich helfe auch meinem Bruder bei den Hausaufgaben.
+10=Hallo, ich bin Ravi. Kann ich dir helfen? Ich zeige dir gern das Büro. Wenn du Fragen hast, sag es mir einfach.
+
+@@ 14
+use=\b(mir|dir|ihm|ihr|uns|ihnen|meiner|meinem|der|dem)\b.*\b(einen|eine|ein|den|die|das|es|ihn)\b | person (dative) + thing (accusative)
+8=Wir schenken Anna einen Gutschein. Er kostet 30 Euro. Ich kaufe ihn morgen, und du schreibst ihr eine Karte. Wir geben ihr das Geschenk am Freitag.
+9=Mein schönstes Geschenk war eine Uhr. Meine Eltern haben sie mir zum Abitur geschenkt.
+10=In Indien schenkt man dem Brautpaar oft Geld oder Gold. Man gibt ihnen auch Kleidung.
+
+@@ 15
+use=\b(mit|nach|zu|zum|zur|aus|bei|beim|von|vom|seit|durch|für|ohne|um|gegen|bis)\b | prepositions (mit, zum, durch …)
+8=Ich gehe aus dem Haus und dann links. Ich gehe durch den Park und über die Straße. Der Supermarkt ist gegenüber der Bank, direkt neben der Apotheke.
+9=Ich fahre mit dem Bus zur Arbeit. Die Fahrt dauert zwanzig Minuten. Manchmal fahre ich mit dem Fahrrad.
+10=Zum Bahnhof? Gehen Sie hier geradeaus bis zur Ampel. Dann gehen Sie rechts. Der Bahnhof ist nach 200 Metern auf der linken Seite.
+
+@@ 16
+use=\b(auf|in|an|neben|unter|über|vor|hinter|zwischen) (dem|der|den|die|das|einem|einer|im|am)\b|\b(im|am)\b | two-way prepositions (auf dem Tisch / auf den Tisch)
+use=\b(steht|liegt|hängt|stellt|legt|hängen|stellen|legen|stell|leg|häng)\b | stehen/liegen/hängen or stellen/legen/hängen
+8=Mein Bett steht am Fenster. Neben dem Bett steht ein kleiner Tisch. Auf dem Tisch liegt ein Buch. An der Wand hängt ein Bild. Der Schrank steht zwischen der Tür und dem Fenster.
+9=Stellt das Sofa bitte an die Wand! Legt die Bücher in den Schrank! Hängt die Lampe über den Tisch! Und stellt die Kisten in die Küche.
+10=Mein letzter Umzug war schwierig. Der Schrank hat nicht in den Aufzug gepasst. Wir mussten ihn in den vierten Stock tragen.
+
+@@ 17
+use=\b(habe|hast|hat|haben|habt|bin|bist|ist|sind|seid)\b.*\b(ge\w+(t|en)|\w+iert|be\w+t|ver\w+(t|en))\b | Perfekt: haben/sein + Partizip II
+8=Letztes Wochenende habe ich viel gemacht. Am Samstag bin ich früh aufgestanden. Ich habe eingekauft und dann gekocht. Am Nachmittag habe ich Freunde besucht. Wir sind spazieren gegangen. Am Abend haben wir zusammen gegessen. Am Sonntag habe ich lange geschlafen. Danach habe ich Deutsch gelernt.
+9=Meine schönste Reise war nach Kerala. Ich bin mit meiner Familie geflogen. Wir haben am Strand gewohnt und viel Fisch gegessen. Wir sind mit einem Boot gefahren. Das war wunderbar.
+10=In Deutschland habe ich zum ersten Mal Schnee gesehen. Ich habe auch zum ersten Mal Sauerkraut gegessen.
+
+@@ 18
+use=\b(war|warst|waren|wart|hatte|hattest|hatten|konnte|musste|durfte|wollte|sollte|konnten|mussten|durften|wollten)\b | Präteritum: war, hatte, konnte, musste …
+8=Meine Kindheit war schön. Wir hatten ein großes Haus. Ich musste viel für die Schule lernen. Ich durfte nicht lange draußen spielen. Am Sonntag konnten wir ins Kino gehen.
+9=Früher war meine Stadt klein. Es gab nur wenige Autos. Heute ist die Stadt groß und laut. Früher hatten wir keinen Supermarkt, heute gibt es viele.
+10=Liebe Frau Krüger, es tut mir leid, ich war gestern nicht im Kurs. Ich war krank und musste zum Arzt gehen. Ich hole die Aufgaben nach.
+
+@@ 19
+use=\b(mich|dich|sich|uns|euch|mir|dir)\b | a reflexive pronoun (mich, dich, sich …)
+8=Wenn ich mich nicht gut fühle, lege ich mich ins Bett. Ich ruhe mich aus und trinke Tee. Manchmal erkälte ich mich im Winter.
+9=Ich freue mich auf den Urlaub. Ich ärgere mich über den Verkehr und über lange Wartezeiten.
+10=Ich interessiere mich für Musik und Technik. Ich interessiere mich auch für Geschichte und lese viel darüber.
+
+@@ 20
+use=\b(und|aber|oder|denn|sondern)\b | und, aber, oder, denn, sondern
+use=,\s*(aber|denn|sondern)\b | a comma before aber / denn / sondern
+8=In der Freizeit spiele ich Cricket, denn das macht mir Spaß. Ich lese auch gern, aber ich habe wenig Zeit. Am Wochenende koche ich oder ich treffe Freunde.
+9=Ja, Sport ist wichtig für mich, denn er ist gut für die Gesundheit. Ich mache nicht viel Sport, aber ich gehe jeden Tag spazieren.
+10=Wollen wir ins Kino gehen oder wollen wir lieber im Park spazieren gehen? Wir können auch essen gehen oder zu Hause kochen.
+
+@@ 21
+use=,\s*(weil|dass|wenn|ob)\b | weil / dass / wenn / ob with a comma
+use=\b(weil|dass|wenn|ob)\b[^.!?,]*\b(bin|ist|sind|habe|hat|haben|kann|muss|will|möchte|lerne|arbeite|gibt|macht|mag|finde|brauche|wohne|spreche)[.!?]? | the verb at the end of the weil/dass clause
+8=Ich finde es wichtig, dass die Kollegen nett sind. Mir ist auch wichtig, dass die Arbeit interessant ist. Es ist gut, wenn ich flexibel arbeiten kann.
+9=Ich lerne Deutsch, weil ich in Deutschland arbeite. Ich lerne Deutsch, weil ich deutsche Freunde habe. Und ich lerne Deutsch, weil ich die B1-Prüfung machen möchte.
+10=Wenn ich Stress bei der Arbeit habe, mache ich eine Pause. Ich gehe spazieren, wenn ich Zeit habe. Ich spreche mit Kollegen, wenn ich ein Problem habe.
+
+@@ 22
+use=\b\w+er als\b|\bso \w+ wie\b|\bam \w+sten\b|\b(besser|mehr|lieber|größer|kleiner|älter|teurer|billiger)\b | comparative (-er als) or superlative (am …sten)
+8=Mumbai ist viel größer als Berlin. In Mumbai ist es wärmer und lauter. Berlin ist grüner und ruhiger. Das Essen in Mumbai ist besser, aber die Busse in Berlin sind pünktlicher.
+9=Auf dem Land ist es ruhiger und die Luft ist besser. In der Stadt gibt es mehr Arbeit und mehr Kultur. Die Mieten auf dem Land sind billiger. Ich lebe lieber in der Stadt.
+10=Mein liebstes Essen ist Biryani. Mein liebster Ort ist der Strand in Goa. Meine liebste Jahreszeit ist der Frühling, denn er ist am schönsten.
+
+@@ 23
+use=\b\w+(e|en|er|es|em)\s+[A-ZÄÖÜ]\w+ | adjective endings before a noun (eine blaue Jacke)
+8=Heute trage ich eine blaue Jeans und ein weißes Hemd. Darüber trage ich einen grauen Pullover. Ich trage schwarze Schuhe und eine kleine Uhr.
+9=Meine Schwester hat lange, schwarze Haare und braune Augen. Sie trägt gern bunte Kleider. Sie ist eine fröhliche und freundliche Person.
+10=Guten Tag, ich suche eine schwarze Hose. – Welche Größe? – Größe 32. – Hier ist eine schöne Hose aus Baumwolle. – Kann ich sie anprobieren? – Natürlich, die Kabine ist dort.
+
+@@ 24
+use=\b(zuerst|dann|danach|zum schluss|später|seit|vor|nach|ab|bis)\b | zuerst, dann, danach / seit, vor, nach
+8=Letzten Sommer war ich in München. Zuerst habe ich das Hotel gesucht. Dann habe ich die Altstadt besichtigt. Danach habe ich Weißwurst gegessen. Zum Schluss bin ich in den Englischen Garten gegangen.
+9=Wir fahren am Samstag ab acht Uhr mit dem Zug nach Potsdam. Zuerst besuchen wir das Schloss. Danach essen wir im Park. Bis Sonntagabend bleiben wir dort.
+10=Ich lerne seit acht Monaten Deutsch. Vor einem Jahr konnte ich nur „Hallo“ sagen. Jetzt kann ich einfache Gespräche führen.
+
+@@ 25
+use=\b(würde|würdest|würden|wäre|wären|hätte|hätten|könnte|könnten)\b | Konjunktiv II (würde, wäre, hätte, könnte)
+8=Wenn ich Bundeskanzlerin wäre, würde ich mehr Geld für Schulen ausgeben. Ich würde die Bahn billiger machen. Außerdem würde ich mehr für den Klimaschutz tun.
+9=Ich träume von einem kleinen Haus mit Garten. In zehn Jahren hätte ich gern eine eigene Firma. Ich würde viel reisen und meine Familie öfter besuchen.
+10=Könnten Sie mir bitte ein zweites Kissen bringen? Ich hätte gern ein ruhigeres Zimmer. Wäre es möglich, morgen später auszuchecken?
+
+@@ 26
+use=\b(solltest|sollten|würde ich|an deiner stelle|empfehle|rate|wäre es|wie wäre es)\b | advice structures (du solltest, an deiner Stelle …)
+8=Du solltest jeden Tag die Anzeigen lesen. An deiner Stelle würde ich auch Freunde fragen. Es wäre gut, wenn du eine Mappe mit allen Dokumenten hast. Wie wäre es mit einer WG für den Anfang?
+9=Hallo zusammen! Mein Tipp: Lernt jeden Tag ein bisschen, nicht einmal pro Woche viel. Ihr solltet viel sprechen, auch mit Fehlern. Ich empfehle euch, deutsche Serien mit Untertiteln zu sehen.
+10=Ich würde ihm raten, schon vor dem Umzug Deutsch zu lernen. Er sollte früh eine Wohnung suchen. Außerdem wäre es gut, eine Krankenversicherung abzuschließen.
+
+@@ 27
+use=\b(wie wäre es|was hältst du|wir könnten|lass uns|sollen wir|ich schlage vor|gute idee|einverstanden|lieber)\b | suggesting and reacting (Wir könnten …, Gute Idee!)
+8=Wir könnten einen Gutschein für einen Babyladen schenken. – Gute Idee! Wie viel soll er kosten? – Vielleicht 50 Euro, jeder gibt 5 Euro. – Einverstanden. Ich kaufe ihn morgen, und du schreibst die Karte. – Super, wir übergeben ihn am Freitag.
+9=Wie wäre es mit einem Ausflug nach Potsdam? – Gute Idee, aber lieber im Mai, dann ist es wärmer. – Einverstanden. Wir fahren mit dem Zug. – Und jeder bringt etwas zu essen mit.
+10=Sollen wir Mia am Samstag besuchen? – Am Samstag kann ich nicht, lieber am Sonntag. – Gut. Ich bringe Suppe mit. – Und ich kaufe Blumen.
+
+@@ 28
+use=\bzu \w+(en|n)\b|\b\w+zu\w+en\b | zu + infinitive
+8=Es ist wichtig, jeden Tag zu üben. Es ist auch wichtig, keine Angst vor Fehlern zu haben. Ich versuche, viel mit Deutschen zu sprechen.
+9=Ich habe vor, die B1-Prüfung zu machen. Außerdem plane ich, eine neue Wohnung zu suchen. Ich hoffe, mehr Zeit für meine Familie zu haben.
+10=Manchmal habe ich keine Lust, Hausaufgaben zu machen. Dann versuche ich, nur zehn Minuten zu lernen. Oft mache ich danach weiter.
+
+@@ 29
+use=\bum\b[^.!?]*\bzu \w+en\b|\bdamit\b | um … zu or damit
+8=In den nächsten fünf Jahren möchte ich C1 erreichen. Um das zu schaffen, lerne ich jeden Tag. Ich spare Geld, damit ich eine Wohnung kaufen kann.
+9=Man braucht ein Smartphone, um zu telefonieren, um Nachrichten zu schreiben, um Fotos zu machen, um im Internet zu suchen und um den Weg zu finden.
+10=Ich arbeite viel, damit meine Kinder eine gute Ausbildung bekommen. Ich koche am Wochenende, damit wir zusammen essen.
+
+@@ 30
+use=\b(ohne|statt|anstatt)\b[^.!?]*\bzu\b|\b(ohne|statt) dass\b | ohne … zu / statt … zu
+8=Ich möchte weniger am Handy sein. Statt abends Serien zu sehen, möchte ich lesen. Statt mit dem Auto zu fahren, nehme ich öfter das Fahrrad.
+9=Viele Menschen kaufen Dinge, ohne nachzudenken. Sie essen schnell, ohne zu schmecken. Viele klicken auf „Akzeptieren“, ohne die Bedingungen zu lesen.
+10=Man sollte nie das Handy von anderen nehmen, ohne vorher zu fragen. Man sollte auch nie Fotos von Menschen posten, ohne zu fragen.
+
+@@ 31
+use=\b(wo|da)r?(auf|an|über|für|von|mit|vor|nach|um)\b|\b(interessiere|freue|ärgere|erinnere|denke|warte|träume|habe angst)\b | verb + preposition (sich interessieren für, sich erinnern an …)
+8=Ich interessiere mich für Technik und für Fußball. Ich ärgere mich über unpünktliche Züge. Darüber spreche ich oft mit meinen Kollegen.
+9=Ich erinnere mich gern an die Sommerferien bei meinen Großeltern. Ich denke oft an die Mangos aus ihrem Garten.
+10=Viele Menschen haben Angst vor Krankheiten oder vor der Zukunft. Ich habe ein bisschen Angst vor Prüfungen.
+
+@@ 32
+use=\b(können sie mir sagen|wissen sie|ich möchte wissen|ich würde gern wissen|könnten sie mir sagen)\b | an indirect question opener (Können Sie mir sagen, …)
+use=,\s*(ob|wann|wo|wie|was|wie viel|welche\w*)\b | ob / W-word + verb at the end
+8=Guten Tag, können Sie mir sagen, wann der nächste Kurs beginnt? Ich möchte auch wissen, wie viel der Kurs kostet. Wissen Sie, ob man dort eine Prüfung machen kann? Und könnten Sie mir sagen, wie groß die Gruppen sind?
+9=Entschuldigung, können Sie mir sagen, was ich für die Anmeldung brauche? Wissen Sie, ob ich einen Termin machen muss?
+10=Meine Erfahrungen mit Behörden sind gemischt. Die Mitarbeiter waren meistens freundlich, aber ich musste lange warten. Ich wusste oft nicht, welche Formulare ich brauche.
+
+@@ 33
+use=,\s*(der|die|das|den|dem|denen|dessen|deren)\b[^.!?]*\b\w+[.!?]?|,\s*(in|mit|bei|von|für|an|auf) (der|dem|den|die|das)\b | a relative clause (…, der/die/das …)
+8=Eine Person, die für mich wichtig ist, ist meine Großmutter. Sie ist eine Frau, die immer Zeit für mich hat. Sie hat mir Dinge beigebracht, die ich nie vergesse.
+9=Ein guter Freund ist jemand, der zuhört. Er ist ein Mensch, dem man vertrauen kann. Ein guter Freund ist jemand, der auch in schweren Zeiten da ist.
+10=Die Stadt, in der ich aufgewachsen bin, heißt Pune. Es ist eine Stadt, die viele Universitäten hat. Der Markt, auf dem ich mit meiner Mutter eingekauft habe, ist sehr alt.
+@@ 34
+use=\b(als|nachdem|bevor|seit|seitdem|während|bis|wenn)\b | als, nachdem, bevor, seit …
+8=Als ich sechs war, kam ich in die Schule. Nachdem ich das Abitur gemacht hatte, studierte ich Informatik. Bevor ich nach Deutschland kam, arbeitete ich in Mumbai. Seit ich in Berlin wohne, lerne ich Deutsch.
+9=Wenn ich an meine Schulzeit denke, erinnere ich mich an meine Freunde. Als ich zwölf war, hatte ich einen sehr guten Mathelehrer.
+10=Wenn ich Stress habe, gehe ich immer joggen. Bevor ich schlafe, höre ich ruhige Musik.
+
+@@ 35
+use=\b(ging|kam|fuhr|sah|fand|nahm|stand|saß|lief|rief|schlief|aß|trank|wollte|musste|war|hatte|\w+te)\b | Präteritum (ging, kam, machte …)
+use=\b(hatte|war)\b[^.!?]*\bge\w+(t|en)\b | Plusquamperfekt (hatte/war + Partizip II)
+8=Am Montag ging alles schief. Zuerst klingelte mein Wecker nicht. Ich stand zu spät auf und verpasste den Bus. Im Büro merkte ich, dass ich mein Handy vergessen hatte. Mittags fiel mir der Kaffee auf die Hose. Am Nachmittag stürzte mein Computer ab. Abends regnete es, und ich hatte keinen Schirm. Zu Hause schlief ich sofort ein.
+9=Es war einmal ein König, der drei Söhne hatte. Er wollte wissen, wer am klügsten war. Er gab jedem eine Münze. Der jüngste Sohn kaufte Kerzen und füllte den Palast mit Licht. So wurde er König.
+10=Als ich heute aufgewacht bin, hatte meine Frau schon Kaffee gekocht. Es hatte in der Nacht geregnet.
+
+@@ 36
+use=\bobwohl\b|\btrotzdem\b | obwohl or trotzdem
+8=Ich esse oft Schokolade, obwohl ich weiß, dass sie ungesund ist. Ich schlafe zu wenig. Trotzdem sehe ich abends lange Serien.
+9=Eine gute Work-Life-Balance ist sehr wichtig. Obwohl viele Menschen gern arbeiten, brauchen sie Freizeit. Die Arbeit ist manchmal stressig, trotzdem sollte man Pausen machen.
+10=Vollzeit bringt mehr Geld und bessere Chancen im Beruf. Obwohl man in Teilzeit weniger verdient, hat man mehr Zeit für die Familie. Trotzdem können sich nicht alle Teilzeit leisten.
+
+@@ 37
+use=\b(deshalb|deswegen|darum|sonst|weil)\b | deshalb / deswegen / darum (+ verb right after)
+8=Ich fahre mit dem Fahrrad, weil das gut für die Umwelt ist. Ich kaufe wenig Plastik, deshalb nehme ich immer eine Tasche mit. Ich esse wenig Fleisch, deswegen ist mein CO2-Fußabdruck kleiner.
+9=Mit dem Fahrrad ist man in der Stadt oft schneller, deshalb fahren viele Leute Rad. Man braucht keinen Parkplatz. Mit dem Auto kann man mehr transportieren, aber man steht oft im Stau. Darum finde ich das Fahrrad besser.
+10=In meinem Heimatland ist die Luft in den Großstädten sehr schlecht. Es gibt viele Autos, deshalb gibt es viel Smog. Die Regierung pflanzt jetzt mehr Bäume.
+
+@@ 38
+use=\b(zwar|nicht nur|sowohl|entweder|weder)\b | two-part connectors (zwar … aber, nicht nur … sondern auch)
+8=Soziale Medien sind zwar praktisch, aber sie kosten viel Zeit. Sie helfen nicht nur beim Kontakt mit Freunden, sondern auch bei der Jobsuche. Allerdings sind sie weder privat noch immer ehrlich.
+9=Ich nutze sowohl WhatsApp als auch Instagram. WhatsApp benutze ich für meine Familie, Instagram für Fotos. Nachrichten lese ich online.
+10=Kinder brauchen zwar ein Handy für Notfälle, aber kein Smartphone mit Internet. Ein Smartphone bringt nicht nur Spaß, sondern auch Gefahren.
+
+@@ 39
+use=\b(wird|werden|wurde|wurden)\b[^.!?]*\b(ge\w+(t|en)|\w+iert)\b | Passiv (wird/wurde + Partizip II)
+8=Zuerst wird der Reis gewaschen. Dann werden die Zwiebeln geschnitten und in Öl gebraten. Danach werden die Gewürze dazugegeben. Zum Schluss wird alles zusammen gekocht.
+9=Diwali wird im Herbst gefeiert. Die Häuser werden mit Lichtern geschmückt. Es werden Süßigkeiten gegessen und Geschenke verteilt.
+10=In meiner Stadt werden Autos und Medikamente produziert. In meinem Land wird viel Tee angebaut.
+
+@@ 40
+use=\b(wegen|trotz|während|statt|anstatt)\b | wegen, trotz, während, statt (+ Genitiv)
+8=Wegen eines Streiks fuhr mein Zug nicht. Trotz des schlechten Wetters nahm ich ein Taxi. Während der Fahrt telefonierte ich mit meinem Chef.
+9=Während der Ferien besuche ich meine Familie. Ich schlafe lange und lese viel.
+10=Sehr geehrte Frau Lange, leider komme ich heute wegen eines Unfalls auf der Autobahn etwa 30 Minuten zu spät. Ich bitte um Entschuldigung. Mit freundlichen Grüßen, Ravi Sharma
+@@ 41
+use=\b(werde|wirst|wird|werden|werdet)\b[^.!?]*\b\w+(en|n)[.!?]?\s*$|\b(werde|wirst|wird|werden)\b | Futur I (werden + Infinitiv)
+8=In zehn Jahren werde ich hoffentlich eine eigene Wohnung haben. Ich werde gut Deutsch sprechen. Vielleicht werde ich Kinder haben.
+9=Im Jahr 2050 werden mehr Menschen in Städten leben. Autos werden selbst fahren. Wahrscheinlich wird es wärmer sein.
+10=Nach der B1-Prüfung werde ich feiern. Dann werde ich mit B2 anfangen.
+
+@@ 42
+use=\bje\b[^.!?]*\b(desto|umso)\b | je … desto
+use=\b(zuerst|erstens|außerdem|einerseits|andererseits|zum schluss|meiner meinung nach)\b | presentation phrases (zuerst, außerdem, meiner Meinung nach)
+6=Mein Thema ist Homeoffice. Ich arbeite selbst zwei Tage pro Woche zu Hause. Ein Vorteil ist, dass man keine Zeit für den Weg braucht. Ein Nachteil ist, dass man die Kollegen selten sieht. In Indien ist Homeoffice in großen Firmen normal. Meiner Meinung nach ist eine Mischung am besten. Je flexibler die Arbeit ist, desto zufriedener sind die Mitarbeiter. Vielen Dank fürs Zuhören.
+7=Mein Thema ist „Kinder und Smartphones“. Viele Kinder haben schon mit zehn Jahren ein Smartphone. Einerseits können Eltern ihre Kinder anrufen. Andererseits spielen Kinder oft zu lange. Meiner Meinung nach sollten Kinder erst mit zwölf ein Smartphone bekommen. Je später, desto besser. Danke!
+8=Ich spreche über Online-Shopping. Ich kaufe oft online, weil es bequem ist. Außerdem sind die Preise oft niedriger. Aber im Geschäft kann man die Sachen anprobieren. Meiner Meinung nach ist das Geschäft besser für Kleidung und online besser für Technik.
+9=Vielen Dank für deine Präsentation. Sie war gut strukturiert und deine Beispiele waren interessant. Ich habe eine Frage: Wie oft kaufst du selbst online?
+10=Gute Frage. Ja, ich würde wieder allein wohnen, weil ich Ruhe brauche. Aber ich würde gern näher bei meinen Freunden wohnen.
+
+@@ 43
+use=\b(sei|seien|habe|werde|könne|müsse|solle|wolle|gebe|komme|hätten|wären)\b | Konjunktiv I (er sei, sie habe …)
+8=Die Regierung teilte mit, die Preise seien gestiegen. Der Minister sagte, man habe einen Plan. Er erklärte, die Hilfe komme im Frühling. Experten meinen, das reiche nicht. Die Opposition sagt, die Regierung habe zu spät reagiert.
+9=Mein Kollege sagte, er sei krank gewesen. Er habe deshalb das Treffen verpasst. Er wolle die Präsentation am Montag halten.
+10=Journalisten benutzen den Konjunktiv I, um zu zeigen, dass sie eine fremde Aussage wiedergeben. So bleiben sie neutral und behaupten nichts selbst.
+
+@@ 44
+use=\b\w+(end|ende|enden|ender|endes)\s+[A-ZÄÖÜ]|\bge\w+(te|ten|ter|tes)\s+[A-ZÄÖÜ] | participles as adjectives (das wartende Kind, der reparierte Wagen)
+8=Das neue Smartphone hat einen leuchtenden Bildschirm und eine lang haltende Batterie. Das mitgelieferte Ladekabel ist kurz. Die verbesserte Kamera macht auch bei Nacht gute Fotos.
+9=„Der vor zwei Wochen gestartete Zug“ = der Zug, der vor zwei Wochen gestartet ist. „Die steigenden Preise“ = die Preise, die steigen.
+10=Solche Konstruktionen findet man in Zeitungen, auf Produkten und in Anleitungen. Sie sind praktisch, weil sie viel Information kurz zusammenfassen.
+
+@@ 45
+use=\b(nachdem|weil|wenn|bevor|um)\b|\b(wegen|nach|vor|bei|zur|zum)\b | turning nominal style into verbal style (or the reverse)
+8=„Bei Nichteinhaltung der Frist erfolgt eine Ablehnung.“ → Wenn Sie die Frist nicht einhalten, wird der Antrag abgelehnt. „Nach Prüfung der Unterlagen“ → Nachdem wir die Unterlagen geprüft haben. „Zur Vermeidung von Rückfragen“ → Damit wir nicht nachfragen müssen.
+9=Also, in dem Brief steht: Du musst bis zum 1. März alle Unterlagen schicken. Wenn du das nicht machst, lehnen sie den Antrag ab. Danach prüfen sie alles und schicken dir eine Antwort.
+10=Nominalstil ist sinnvoll in Formularen und Berichten, weil er kurz und präzise ist. Im Gespräch stört er, weil er schwer und unpersönlich klingt.
+
+@@ 46
+use=\b(lässt sich|lassen sich|ist zu|sind zu|man)\b|\b\w+(bar|lich)\b | passive alternatives (lässt sich, ist zu …, man, -bar)
+8=Die Tür ist abends abzuschließen. Man trinkt im Labor keinen Kaffee. Der Drucker lässt sich nur mit Karte benutzen. Pausen sind im Kalender einzutragen. Private Anrufe sind nicht erlaubt.
+9=Das Gerät lässt sich ganz einfach einschalten: Du drückst diesen Knopf. Der Wassertank lässt sich herausnehmen und leicht reinigen.
+10=Die Mülltrennung finde ich sinnvoll. Die Ruhezeiten am Sonntag finde ich manchmal zu streng, weil man nicht einmal staubsaugen darf.
+
+@@ 47
+use=\b(falls|sofern|indem|sodass|so dass|anstatt dass|vorausgesetzt)\b | falls, sofern, indem, sodass
+8=In meinem Beruf löst man ein Problem, indem man zuerst die Ursache sucht. Wir testen jede Änderung, sodass keine neuen Fehler entstehen. Falls es nicht klappt, fragen wir das Team.
+9=Man lernt gut, sofern man regelmäßig übt. Falls man müde ist, sollte man eine Pause machen. Vorausgesetzt, man hat ein klares Ziel, lernt man schneller.
+10=Präsentationen sind sinnvoll, indem sie das freie Sprechen trainieren. Falls man aber nur Präsentationen macht, lernt man die Grammatik weniger genau. Ich finde eine Mischung am besten.
+
+@@ 48
+use=\b(treffen|stellen|nehmen|bringen|ziehen|kommen|führen|leisten|stehen|geben|setzen)\b | noun–verb phrases (eine Entscheidung treffen, zur Verfügung stellen)
+8=Sehr geehrte Frau Lange, ich möchte Bezug auf Ihre Anfrage nehmen. Wir stellen Ihnen die Unterlagen gern zur Verfügung. Bitte treffen Sie bis Freitag eine Entscheidung. Für Rückfragen stehe ich Ihnen gern zur Verfügung. Mit freundlichen Grüßen, Ravi Sharma
+9=Im letzten Jahr mussten wir eine wichtige Entscheidung treffen. Wir haben verschiedene Lösungen in Betracht gezogen. Am Ende haben wir das Projekt zum Abschluss gebracht.
+10=Amtsdeutsch klingt unpassend unter Freunden. „Ich nehme Ihre Einladung zur Kenntnis“ klingt kalt. Besser ist: „Danke, ich komme gern!“
+
+@@ 49
+use=\b(muss|müsste|dürfte|könnte|kann|mag|wird wohl|soll|will)\b | modal verbs for guesses (muss, dürfte, könnte)
+8=Die Frau auf dem Foto dürfte etwa 40 sein. Sie muss gerade von der Arbeit kommen. Sie könnte Ärztin sein. Das Wetter dürfte kalt sein. Sie wird wohl müde sein.
+9=Herr Klein ist noch nicht da. Er könnte im Stau stehen. Vielleicht dürfte er krank sein. Er wird wohl gleich anrufen.
+10=Vorsichtige Formulierungen sind wichtig, weil man nicht unhöflich wirken will. Sie lassen Raum für andere Meinungen.
+
+@@ 50
+use=\b(hätte|hätten|wäre|wären)\b[^.!?]*\b(ge\w+(t|en)|\w+iert)\b|\bals (ob|wenn)\b | hätte/wäre + Partizip II, als ob
+8=Ich hätte nach dem Abitur ein Jahr im Ausland verbringen können. Wenn ich das gemacht hätte, wäre mein Englisch besser. Ich hätte mehr Mut haben sollen. Hätte ich das Stipendium angenommen, wäre ich nach Kanada gegangen. Heute bereue ich das ein bisschen.
+9=Es wäre schön gewesen, wenn du mich vorher informiert hättest. Du hättest mich auch fragen können.
+10=Ich hätte früher mit Deutsch anfangen sollen. Dann wäre der Umzug leichter gewesen.
+
+@@ 62
+use=\b(muss|müssen|soll|sollte|kann|könnte)\b[^.!?]*\b(ge\w+(t|en)|\w+iert) werden\b|\b(ist|sind) \w*ge\w+(t|en)\b | Passiv mit Modalverb (muss repariert werden) / Zustandspassiv
+8=Sehr geehrte Damen und Herren, seit einer Woche ist die Heizung in meiner Wohnung kaputt. Die Wohnung ist sehr kalt. Die Heizung muss dringend repariert werden. Ich habe schon zweimal angerufen, aber es ist nichts passiert. Bitte schicken Sie bis Freitag einen Techniker. Mit freundlichen Grüßen, Aiko Tanaka
+9=In meiner Wohnung müsste das Bad renoviert werden. Die Fenster müssten ausgetauscht werden. Außerdem sollte die Küche neu gestrichen werden.
+10=„Das Fenster wird geöffnet“ beschreibt den Vorgang: Jemand öffnet es gerade. „Das Fenster ist geöffnet“ beschreibt den Zustand: Es ist offen.
+
+@@ 63
+use=\b(wer|was|wo(r)?(an|auf|über|für|von|mit))\b | wer / was / wo(r)- + preposition
+8=In Hindi sagt man: „Ein Tropfen nach dem anderen füllt den Topf.“ Das bedeutet: Wer jeden Tag ein bisschen macht, erreicht viel.
+9=Mir gefällt „Wer rastet, der rostet“. Es bedeutet: Wer sich nicht bewegt, wird alt und schwach. Das ist etwas, woran ich oft denke.
+10=Das Beste, was mir passiert ist, war mein Umzug. Alles, was ich hier gelernt habe, hilft mir. Wer Deutsch lernt, braucht Geduld. Das ist etwas, worauf ich stolz bin. Vieles, was neu war, ist jetzt normal.
+
+@@ 64
+use=\b(stolz auf|interesse an|angst vor|zufrieden mit|engagieren für|freude über|bereit zu|verantwortlich für|abhängig von)\b | fixed prepositions (stolz auf, zufrieden mit …)
+8=Ich bin stolz auf meine Familie. Ich bin auch stolz auf mein Studium. Besonders stolz bin ich darauf, dass ich in Deutschland arbeite. Ich bin zufrieden mit meinem Deutsch. Ich bin dankbar für meine Freunde.
+9=Ja, ich würde mich gern für Kinder engagieren. Ich habe großes Interesse an Bildung, deshalb würde ich bei Hausaufgaben helfen.
+10=Sehr geehrte Damen und Herren, ich interessiere mich für Ihr Projekt und möchte mich als Lesepate engagieren. Ich habe Erfahrung mit Kindern und Freude an Sprachen. Mit freundlichen Grüßen
+@@ 65
+use=\b(sehr geehrte|mit freundlichen grüßen|ich würde mich freuen|ich wäre ihnen dankbar|bitte|könnten sie)\b | formal letter phrases (Sehr geehrte …, Mit freundlichen Grüßen)
+8=Sehr geehrte Damen und Herren, ich interessiere mich für einen B2-Kurs an Ihrer Sprachschule. Könnten Sie mir bitte mitteilen, was der Kurs kostet und wann er beginnt? Außerdem würde ich gern wissen, ob man am Ende eine Prüfung machen kann und wie groß die Gruppen sind. Mit freundlichen Grüßen, Ravi Sharma
+9=Sehr geehrte Damen und Herren, am 3. Oktober habe ich bei Ihnen einen Schreibtisch bestellt. Die Lieferung war für den 10. Oktober angekündigt. Leider habe ich den Tisch bis heute nicht erhalten. Ich habe zweimal angerufen, aber niemand konnte mir helfen. Ich bitte Sie, den Tisch bis spätestens Freitag zu liefern. Andernfalls trete ich vom Vertrag zurück. Mit freundlichen Grüßen, Aiko Tanaka
+10=Sehr geehrte Frau Tanaka, vielen Dank für Ihre Nachricht. Wir bitten um Entschuldigung für die Verspätung. Ihr Schreibtisch wird am Donnerstag geliefert. Als kleine Entschädigung erhalten Sie einen Gutschein über 20 Euro. Mit freundlichen Grüßen, Ihr Kundenservice
+
+@@ 66
+use=\b(indem|wobei|solange|sobald|kaum|dadurch, dass)\b | indem, sobald, solange, dadurch, dass
+8=Ich lerne Vokabeln, indem ich sie auf Karten schreibe. Sobald ich ein neues Wort höre, notiere ich es. Solange ich ein Wort nicht sicher kann, wiederhole ich es jeden Tag.
+9=Zuerst sucht man im Internet, wobei man schnell reagieren muss. Sobald man eine Anzeige findet, schreibt man eine Nachricht. Dann besichtigt man die Wohnung. Man unterschreibt den Vertrag, sobald alles klar ist.
+10=Man spart Energie, indem man kürzer duscht. Dadurch, dass man die Heizung nachts herunterdreht, sinken die Kosten. Man spart auch Strom, indem man Geräte ganz ausschaltet.
+
+@@ 67
+use=\b(meiner meinung nach|ich bin der ansicht|da stimme ich|das sehe ich|da bin ich anderer meinung|einerseits|andererseits|kompromiss|einigen)\b | discussion phrases (Meiner Meinung nach …, Da stimme ich zu …)
+7=Da bin ich anderer Meinung. Ich verstehe, dass viele Menschen ein Auto brauchen. Aber die Autos machen die Städte laut und gefährlich. Meiner Meinung nach brauchen wir mehr Platz für Fußgänger.
+8=Ich bin der Ansicht, dass eine autofreie Innenstadt Vorteile hat: Die Luft wird besser und es gibt mehr Platz. Andererseits haben Geschäfte Angst, Kunden zu verlieren. Außerdem brauchen ältere Menschen gute Busse.
+9=Ich schlage vor, dass wir die Hauptstraße für einen Tag sperren. – Einverstanden. Wie wäre es mit Musik? – Gute Idee. Und wir einigen uns darauf, dass es Fahrräder zum Ausleihen gibt.
+10=Frau Krämer ist der Ansicht, dass Autos die Innenstadt zerstören. Herr Yıldız meint dagegen, die Geschäfte bräuchten Kunden mit dem Auto. Am Ende einigen sie sich auf einen Kompromiss.
+
+@@ 51
+use=\b(der|die|das|den|dem|des)\s+(\w+\s+){1,5}\w+(ten|ende|enden|te|ene|enen)\s+[A-ZÄÖÜ] | an extended attribute (der stark gestiegene Bedarf)
+8=Der Text beschreibt den in den letzten Jahren stark gestiegenen Energiebedarf. Die von der Regierung geplanten Maßnahmen sollen ihn senken. Die bisher erzielten Ergebnisse sind gering.
+9=In meinem Beruf heißt es: „Die nach dem Update aufgetretenen Fehler wurden behoben.“ Einfach gesagt: Nach dem Update gab es Fehler. Jetzt sind sie repariert.
+10=Fachtexte bevorzugen Attribute, weil sie viel Information kompakt vor dem Nomen bündeln. Der Text wird dadurch kürzer, aber schwerer zu lesen.
+
+@@ 52
+use=\b(doch|mal|ja|eben|halt|wohl|bloß|schon|denn)\b | modal particles (doch, mal, ja, halt …)
+8=Komm doch mal rein! – Danke. Du hast ja eine schöne Wohnung. – Na ja, sie ist halt klein. – Das ist doch egal. – Stimmt eben. Möchtest du denn einen Tee?
+9=„Komm!“ ist ein direkter Befehl. „Komm doch mal!“ ist eine freundliche Einladung. „doch“ und „mal“ machen den Satz weicher.
+10=Im Hindi benutze ich Wörter wie „na“ oder „to“, um einen Satz freundlicher zu machen. Sie funktionieren ähnlich wie „doch“ oder „mal“.
+
+@@ 53
+use=\b(obwohl|obgleich|wenngleich|zwar|jedoch|hingegen|wohingegen|dagegen|folglich|infolgedessen|somit|demnach|sodass)\b | concessive / adversative / consecutive connectors
+8=Zwar ist Homeoffice praktisch, jedoch fehlt vielen der Kontakt zu Kollegen. Während junge Mitarbeiter flexibel arbeiten wollen, bevorzugen ältere häufig das Büro. Viele Firmen bieten folglich ein Mischmodell an. Obwohl es Kosten spart, muss die Technik stimmen. Somit ist eine klare Regelung notwendig.
+9=Zwar sind Elektroautos leiser und sauberer, jedoch ist ihre Herstellung energieintensiv. Zwar sinken die Preise, jedoch fehlen noch viele Ladestationen.
+10=Im Gespräch wirken „infolgedessen“, „mithin“ und „wohingegen“ zu formell. Man sagt eher „deshalb“, „also“ oder „aber“.
+
+@@ 54
+use=\b(es wird|wird gezeigt|lässt sich|es ist davon auszugehen|im folgenden|die untersuchung|der vorliegende|man)\b | impersonal style (es wird gezeigt, im Folgenden …)
+8=Die vorliegende Arbeit befasst sich mit der Digitalisierung kleiner Unternehmen. Im Folgenden wird untersucht, welche Hindernisse bestehen. Es ist davon auszugehen, dass vor allem Kosten und fehlendes Wissen eine Rolle spielen. Abschließend werden Lösungsansätze diskutiert.
+9=In der Studie wurden 500 Personen befragt. Es zeigte sich, dass die Mehrheit täglich mehrere Stunden online verbringt. Ein Zusammenhang mit Schlafproblemen ließ sich nachweisen.
+10=Der persönliche Stil ist besser in E-Mails an Kollegen, in Präsentationen und in Erfahrungsberichten, weil er direkter und lebendiger wirkt.
+
+@@ 55
+use=\b(treffen|ergreifen|üben|wahrnehmen|beheben|wecken|erheben|leisten|einlegen|stellen)\b | collocations (eine Entscheidung treffen, Maßnahmen ergreifen …)
+8=Wir müssen schnell Maßnahmen ergreifen. Der Chef hat eine Entscheidung getroffen. Ich nehme morgen einen Termin beim Kunden wahr. Wir beheben das Problem bis Freitag. Unser Produkt soll Interesse wecken.
+9=„Das ist ein großes Problem“ → „Das ist ein gravierendes Problem.“ „Wir machen eine Entscheidung“ → „Wir treffen eine Entscheidung.“ „Die Sache ist gut“ → „Die Lösung ist überzeugend.“
+10=Ich sage oft „machen“, wo ein genaueres Verb passt, zum Beispiel „eine Pause machen“ statt „eine Pause einlegen“ im formellen Text.
+
+@@ 56
+use=\b(zunächst|darüber hinaus|andererseits|einerseits|zusammenfassend|abschließend|meines erachtens|in dem artikel|geht es um)\b | text structure signals (zunächst, darüber hinaus, abschließend)
+7=Eine Viertagewoche hat Vorteile. Zunächst sind die Mitarbeiter erholter und motivierter. Darüber hinaus wird die Firma für Bewerber attraktiver. Andererseits ist sie nicht in jeder Branche möglich, etwa in Krankenhäusern. Meines Erachtens sollten Firmen das Modell testen, bevor sie entscheiden.
+8=In dem Text geht es um die Viertagewoche. Der Autor berichtet, viele Firmen hätten gute Erfahrungen gemacht. Er betont jedoch, das Modell passe nicht zu jeder Branche.
+9=Einerseits sind Studiengebühren gerecht, weil Akademiker später mehr verdienen. Andererseits schrecken sie Kinder aus ärmeren Familien ab. Abschließend bin ich gegen Studiengebühren.
+10=Die Erörterung fällt mir schwer, weil ich beide Seiten ausgewogen darstellen muss.
+
+@@ 68
+use=\b(sei|seien|habe|hätten|wäre|werde|könne)\b|\b(betonte|erklärte|räumte|bestritt|kritisierte|forderte|behauptete|teilte)\b | Konjunktiv I and reporting verbs (betonte, räumte ein …)
+8=Die Ministerin erklärte, die Inflation sei gesunken. Sie betonte, die Regierung habe die richtigen Maßnahmen ergriffen. Kritiker bestritten das. Sie forderten, die Hilfen müssten verlängert werden.
+9=„Er sagte, er sei krank“ gibt die Aussage neutral wieder; der Sprecher bewertet sie nicht. „Er sagte, er ist krank“ ist umgangssprachlich und klingt, als ob der Sprecher es selbst glaubt.
+10=Herr Klein betonte, das Projekt sei im Zeitplan. Frau Ali räumte ein, das Budget sei knapp. Beide forderten ein weiteres Treffen im Mai.
+
+@@ 69
+use=\b(unterhalten|umfahren|übersetzen|wiederholen|wiederholt|durchsuchen|übergehen|unterstellen)\b | prefix verbs with two meanings
+6=Wir haben uns lange über Politik unterhalten. Die Firma unterhält drei Filialen in Bayern.
+7=„Sie hat die Prüfung wiederholt“ bedeutet, sie hat sie noch einmal gemacht. „Sie hat ihr Fahrrad wiedergeholt“ bedeutet, sie hat es zurückgeholt.
+8=Der Fahrer wollte den Stau umfahren. Er fuhr zu schnell und fuhr fast ein Schild um. Am Ende umfuhr er die Stadt und kam pünktlich an.
+9=Im Englischen hat „to run“ viele Bedeutungen, ähnlich wie „übergehen“ im Deutschen, das je nach Betonung etwas anderes bedeutet.
+10=Übersetzen: einen Text in eine andere Sprache bringen. Überlegen: über etwas nachdenken. Übernehmen: eine Aufgabe annehmen.
+
+@@ 70
+use=\b(zeigt|stieg|sank|gestiegen|gesunken|prozent|anteil|im vergleich|verdoppelt|höchststand|tiefststand|ist zu erkennen)\b | graph language (stieg, sank, im Vergleich zu …)
+8=Das Säulendiagramm zeigt den Fleischkonsum in Deutschland von 2015 bis 2024. Die Daten stammen vom Statistischen Bundesamt. Im Jahr 2015 aß jeder Deutsche etwa 60 Kilogramm Fleisch. Seitdem ist der Konsum stetig gesunken. 2024 erreichte er mit 52 Kilogramm einen Tiefststand. Insgesamt ist ein klarer Rückgang zu erkennen. Es ist zu erwarten, dass sich dieser Trend fortsetzt.
+9=Im Vergleich zu Deutschland steigt der Fleischkonsum in Indien leicht an, er ist aber insgesamt deutlich niedriger.
+10=Ein Grund könnte sein, dass mehr Menschen auf ihre Gesundheit achten. Möglicherweise spielt auch der Klimaschutz eine Rolle. Es ist anzunehmen, dass höhere Preise ebenfalls wichtig sind.
+
+@@ 71
+use=\b\w{12,}\b | long compound words
+7=Arbeitszeit, Arbeitsplatz, Arbeitsvertrag, Arbeitgeber, Arbeitsamt.
+8=„-bar“ bedeutet „kann gemacht werden“: lesbar, machbar. „-los“ bedeutet „ohne“: arbeitslos, hilflos. „un-“ bedeutet „nicht“: unklar, unmöglich.
+9=Krankenversicherungsbeitrag = Kranken + Versicherung + Beitrag. Wohnungsmarkt = Wohnung + Markt. Geschwindigkeitsbegrenzung = Geschwindigkeit + Begrenzung.
+10=Im Deutschen schreibt man Komposita zusammen. Im Englischen schreibt man sie oft getrennt, zum Beispiel „health insurance“ statt „Krankenversicherung“.
+
+@@ 57
+use=\b(leider|bedauerlicherweise|sorry|schade|ich muss absagen|kann ich nicht)\b | register variety (bedauerlicherweise / leider / sorry)
+8=Formell: Bedauerlicherweise ist es mir nicht möglich, an der Sitzung teilzunehmen. Neutral: Leider kann ich morgen nicht zum Treffen kommen. Umgangssprachlich: Sorry, morgen klappt's bei mir nicht.
+9=Die E-Mail meiner Vermieterin ist formell: Sie benutzt „Sehr geehrter Herr“, den Konjunktiv und Nominalstil wie „zur Kenntnisnahme“.
+10=Den neutralen Stil beherrsche ich sicher. Formelle Briefe gelingen mir meistens. Umgangssprache und Dialekt verstehe ich oft noch nicht.
+
+@@ 58
+use=^\s*\w+[^.!?]{0,40}(gekommen|angekommen|geworden|reagierend|gesehen|angelangt),|^\s*(nie|selten|kaum|erst)\s+\w+ | participle clause or inversion
+8=Sechs Uhr morgens. Der Markt erwacht. Kisten voller Mangos werden abgeladen, Händler rufen ihre Preise, irgendwo zischt eine Kaffeemaschine. Am Stand angekommen, packt die alte Frau ihre Waren aus: Tomaten, Kräuter, Eier vom eigenen Hof. Nie hat sie einen Markttag verpasst. Vierzig Jahre lang. Bei Regen, bei Hitze, bei Schnee. Ihre Kunden kennt sie mit Namen, ihre Geschichten auch. Gefragt, warum sie nicht aufhöre, lacht sie nur. Dann wiegt sie die nächsten Tomaten ab.
+9=Langsam und ruhig: „Der Abend war still.“ Dann schnell: „Plötzlich klingelte das Telefon!“ So entsteht Spannung.
+10=Ein sehr kurzer Satz nach langen Sätzen wirkt wie ein Schlag. Er betont eine wichtige Aussage und erzeugt Spannung.
+
+@@ 59
+use=\b(eher|tendenziell|vergleichsweise|gewisser|nicht ganz|dürfte|scheint|möglicherweise|durchaus|ausgesprochen)\b | hedging and intensifying (eher, nicht ganz unproblematisch, durchaus)
+8=Der Text ist insgesamt gut lesbar und durchaus überzeugend. Die Einleitung erscheint mir jedoch etwas lang. An einigen Stellen dürfte eine klarere Struktur helfen. Die Argumente im Mittelteil sind nicht ganz unproblematisch, da Belege fehlen.
+9=Direkt: Das machen wir nicht. Neutral: Das ist leider nicht möglich. Sehr vorsichtig: Ich fürchte, das dürfte im Moment eher schwierig werden.
+10=In Indien sagt man selten direkt „nein“. Man sagt eher „Mal sehen“ oder „Vielleicht später“. In Deutschland ist man direkter.
+
+@@ 72
+use=\b(erzähler|perspektive|metapher|vergleich|wirkt|symbol|deutet|ironie|stilmittel)\b | analysis terms (Erzähler, Perspektive, Metapher, wirkt …)
+7=Der Titel „Rückfahrt“ deutet nicht nur auf die Zugfahrt nach Hause hin, sondern auch auf eine Reise in die Vergangenheit. Die Figur kehrt innerlich zu ihrer Kindheit zurück.
+8=Das Gedicht beschreibt einen Herbsttag. Der Sprecher bleibt distanziert. Die Metapher der fallenden Blätter steht für das Altern. Wiederholungen erzeugen einen ruhigen Rhythmus. Insgesamt wirkt der Text melancholisch, aber auch versöhnlich.
+9=Sie sah aus dem Fenster. Die Felder flogen vorbei, und sie dachte an ihre Mutter. Hatte sie damals wirklich nichts gesagt? Der Zug wurde langsamer.
+10=Ein Ich-Erzähler wirkt nah und subjektiv; der Leser fühlt mit. Ein auktorialer Erzähler schafft Distanz und Überblick.
+
+@@ 73
+use=\b(bescheid|aktenzeichen|widerspruch|gemäß|frist|hiermit|fristgerecht|begründung)\b | legal / administrative terms (Bescheid, Frist, hiermit, gemäß …)
+7=Aktenzeichen 123/45 – Bescheid vom 1. März 2026. Sehr geehrte Damen und Herren, hiermit lege ich fristgerecht Widerspruch gegen den oben genannten Bescheid ein. Meine Einkünfte wurden falsch berechnet; die Belege liegen bei. Ich bitte um erneute Prüfung. Mit freundlichen Grüßen
+8=Also: Du hast drei Monate Probezeit. In der Zeit kann man mit zwei Wochen kündigen. Du hast 28 Tage Urlaub. Überstunden werden bezahlt oder mit Freizeit ausgeglichen.
+9=Im Deutschen benutzt man in der Rechtssprache viele Nomen und das Passiv. Im Englischen sind Gesetzestexte ebenfalls kompliziert, aber anders aufgebaut.
+10=Juristische Texte sind so formuliert, weil sie eindeutig sein müssen. Allerdings versteht sie dadurch kaum jemand ohne Hilfe. Meiner Meinung nach sollten Behörden mehr einfache Sprache benutzen.
+
+@@ 60
+use=\b(einerseits|andererseits|zunächst|darüber hinaus|abschließend|meines erachtens|ich gebe zu bedenken|zwar)\b | structure and argument phrases
+4=Dem kann man entgegenhalten, dass Technik allein keine Probleme löst. Entscheidend ist, wie Menschen sie einsetzen.
+5=Der Autor vertritt die Ansicht, Bildung sei der Schlüssel zur Integration. Er betont, ohne Sprache sei Teilhabe kaum möglich.
+6=„Da möchte ich widersprechen …“ und „Ich sehe das etwas anders, denn …“.
+7=Einleitung mit Frage und Thema, dann Gliederung. Hauptteil: drei Argumente mit Beispielen, ein Gegenargument. Schluss: Fazit und Ausblick.
+8=Künstliche Intelligenz verändert die Arbeitswelt grundlegend. Einerseits übernimmt sie Routineaufgaben, sodass Menschen sich auf kreative Arbeit konzentrieren können. Andererseits drohen in manchen Berufen Stellen wegzufallen. Darüber hinaus stellen sich Fragen des Datenschutzes. Meines Erachtens ist KI eine Chance, sofern wir rechtzeitig in Weiterbildung investieren.
+9=Die Viertagewoche wird immer häufiger diskutiert. Befürworter betonen, sie steigere die Zufriedenheit. Kritiker geben zu bedenken, dass nicht jede Branche mitmachen könne. Meines Erachtens sollte man das Modell zunächst testen. Abschließend bleibt festzuhalten, dass Flexibilität wichtiger ist als starre Regeln.
+10=Ich verstehe Ihr Argument, sehe aber einen anderen Punkt. Zwar haben Sie recht, was die Kosten angeht, jedoch überwiegen die Vorteile. Darüber hinaus gebe ich zu bedenken, dass sich die Investition langfristig lohnt.

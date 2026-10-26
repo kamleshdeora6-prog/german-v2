@@ -285,9 +285,12 @@
     shuffle: (a) => Engine.R.shuffle(a),
     pick: (a) => Engine.R.pick(a),
     toast(msg, kind = "") {
+      // toasts stack in one column instead of covering each other
+      let box = document.querySelector(".toasts"); if (!box) { box = document.createElement("div"); box.className = "toasts"; document.body.appendChild(box); }
+      if (box.children.length >= 3) box.firstElementChild.remove();
       const t = document.createElement("div"); t.className = "toast " + kind; t.textContent = msg;
-      document.body.appendChild(t); setTimeout(() => t.classList.add("in"), 10);
-      setTimeout(() => { t.classList.remove("in"); setTimeout(() => t.remove(), 300); }, 2600);
+      box.appendChild(t); setTimeout(() => t.classList.add("in"), 10);
+      setTimeout(() => { t.classList.remove("in"); setTimeout(() => t.remove(), 300); }, 2600 + box.children.length * 600);
     },
     genderClass(de) { const m = /^(der|die|das)\s/i.exec(de || ""); return m ? "g-" + { der: "m", die: "f", das: "n" }[m[1].toLowerCase()] : ""; },
     fmtDate: (t) => new Date(t).toLocaleDateString(),

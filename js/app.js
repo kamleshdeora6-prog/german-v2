@@ -3,7 +3,7 @@
   "use strict";
   const ROUTES = { home: "home", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more", readexam: "readexam", write: "write", notes: "notes", translate: "translate", about: "about", placement: "placement", pronounce: "pronounce", news: "news", plan: "plan", daily: "daily", weak: "weak", refresh: "refresh", resources: "resources", starter: "starter" };
   const TAB_OF = { home: "home", path: "path", lesson: "path", practice: "practice", vocab: "practice", listen: "practice", speak: "practice", pronounce: "practice", tutor: "tutor", daily: "home", plan: "more", weak: "practice", refresh: "path", starter: "path" };
-  const App = (window.App = { version: "6.2.0", updated: "26 October 2026", author: "Zombieland", pendingAsk: null });
+  const App = (window.App = { version: "6.3.0", updated: "26 October 2026", author: "Zombieland", pendingAsk: null });
   /* Where problem reports go. Put an email address here to offer email as well. */
   App.contact = { github: "https://github.com/kamleshdeora6-prog/german-v2", email: "" };
   App.report = (ctx) => {
@@ -120,7 +120,7 @@
   };
   /* Screens that hold your place (a session you are in the middle of) are kept alive in the
      background instead of being rebuilt, so leaving to ask Max and coming back resumes where you were. */
-  const KEEP = /^(practice|lesson|write|readexam|placement|vocab|listen|speak|exam|daily|weak|refresh)/;
+  const KEEP = /^(practice|lesson|write|readexam|placement|vocab|listen|speak|exam|weak|refresh)/;
   const cache = new Map();          // route key -> detached element
   const MAX_KEEP = 6;
   App.lastRoute = null;

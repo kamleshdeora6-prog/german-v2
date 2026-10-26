@@ -72,6 +72,35 @@ ST.forEach((u) => {
 });
 console.log(`  ${DC.curriculum.length} lessons with English explanations · First steps: ${ST.length} units, ${stWords} words`);
 
+section("1d. Feedback on answers");
+global.H.bi = global.H.bi || ((a, b) => a + " " + b);
+global.UI = global.UI || { say: () => "" };
+require(path.join(ROOT, "js/feedback.js"));
+const why = (q, a) => FB._verbWhy(q, a).replace(/<[^>]+>/g, "");
+ok(/e → i/.test(why("Du ___ gut Deutsch. (sprechen)", "sprichst")), "explains sprechen → sprichst (vowel change)");
+ok(/extra e/.test(why("Du ___ in einer Bank. (arbeiten)", "arbeitest")), "explains arbeitest (extra e)");
+ok(/^du/.test(why("___ du Fleisch? (essen)", "Isst")), "Isst is the du-form, not er");
+ok(/irregular/.test(why("Ich ___ Ravi. (sein)", "bin")), "sein is explained as irregular");
+ok(why("Das ist ___ Schwester. (sein)", "seine") === "", "possessive (sein) → seine is not treated as a verb");
+ok(why("Hast du ___ Tüte? (ein)", "eine") === "", "(ein) gaps are not verbs");
+const c1 = FB.closed("Du ___ gut Deutsch. (sprechen)", "sprechst", "sprichst", { ok: false, level: "close", note: "Almost – one letter is different." });
+ok(/You wrote/.test(c1) && /<mark>i<\/mark>/.test(c1), "wrong answer shows what was typed and marks the different letter");
+ok(/Capital/.test(FB.closed("Fehler?", "jonas fährt zur arbeit", "Jonas fährt zur Arbeit.", { ok: true })), "lower-case answer accepted with a note about capital letters");
+let models = 0, low = [];
+DC.curriculum.forEach((l) => {
+  (l.check || []).forEach((c) => { let okRe = true; try { new RegExp(c.re, "im"); } catch (e) { okRe = false; } ok(okRe, `lesson ${l.n}: check regex does not compile: ${c.re}`); });
+  l.exam.forEach((q, i) => { if (!q.m) return; models++;
+    const r = FB.open(q.m, { prompt: q.q, lesson: l, model: q.m });
+    if (r.score < 60) low.push(`L${l.n}/${i + 1}: ${r.score}`);
+  });
+});
+ok(low.length <= Math.round(models * 0.08), `model answers should score well with the app's own feedback (${low.length} of ${models} below 60: ${low.slice(0, 12).join(", ")})`);
+const L2 = DC.curriculum.find((l) => l.n === 2);
+ok(FB.open("I like reading and I play football with my friends.", { prompt: L2.exam[7].q, lesson: L2 }).score <= 20, "an English answer scores low");
+ok(FB.open("", { prompt: L2.exam[7].q, lesson: L2 }).score === 0, "an empty answer scores 0");
+ok(FB.open("Ich lese.", { prompt: L2.exam[7].q, lesson: L2 }).score < FB.open(L2.exam[7].m, { prompt: L2.exam[7].q, lesson: L2 }).score, "a one-sentence answer scores lower than a full one");
+console.log(`  ${models} model answers checked, ${low.length} scored below 60`);
+
 section("2. Exercise generators");
 const lower = (s) => s.split(/\s+/).map((x) => x.toLowerCase().replace(/[.!?]+$/, "")).sort().join("|");
 let items = 0;
@@ -123,6 +152,7 @@ const good = [];
 DC.curriculum.forEach((l) => { l.examples.forEach((e) => good.push(e.de)); [l.reading, l.reading2 ? l.reading2.text : ""].forEach((t) => good.push(...t.split(/(?<=[.!?])\s+/).filter((x) => x.trim().length > 12 && !/[„“"]/.test(x)))); (l.dialog || []).forEach((d) => good.push(...d.de.split(/(?<=[.!?])\s+/).filter((x) => x.trim().length > 12))); });
 DC.vocab.forEach((v) => { if (v.exDe) good.push(v.exDe); });
 (DC.starter || []).forEach((u) => (u.phrases || []).forEach((p) => good.push(p[0])));
+DC.curriculum.forEach((l) => l.exam.forEach((q) => { if (q.m) good.push(...q.m.split(/(?<=[.!?])\s+/).filter((x) => x.trim().length > 12 && !/[„“"–:=→()]/.test(x))); }));
 for (let i = 0; i < 3000; i++) { const it = Engine.generate(); if (it && it.full) good.push(it.full); if (it && it.kind === "order") good.push(it.answer); }
 let fp = 0;
 good.forEach((s) => { const r = Tutor.check(s); if (r.issues.length) { fp++; if (fp <= 10) console.log(`  ✗ false alarm: "${s}" → "${r.fixed}"`); } });

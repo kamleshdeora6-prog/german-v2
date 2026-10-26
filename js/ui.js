@@ -44,6 +44,7 @@
         ${item.en && st.showEn ? `<p class="muted">${esc(item.en)}</p>` : ""}
         <div class="row">${!ok && item.kind !== "choice" ? `<button class="btn ghost sm q-override">I was right</button>` : ""}<button class="btn sm q-next">${opts.nextLabel || "Next"}</button><button class="btn ghost sm q-ask">Ask Max</button>${UI.reportBtn(itemCtx(item, given)).replace('class="rflag"', 'class="btn ghost sm rflag inline"').replace(">⚑<", ">⚑ Report<")}</div>`;
       Store.topic(item.gen, ok);
+      if (window.Habit) { Habit.track("drill"); if (/^weak/.test(App.lastRoute || "")) Habit.track("weak"); }
       if (!ok) Store.mistake({ prompt: item.prompt, answer: item.answer, given, gen: item.gen, why: item.why });
       const cb = window.Habit ? Habit.answer(ok) : { combo: 0, bonus: 0 };
       Store.addXP((ok ? 10 : 2) + cb.bonus);

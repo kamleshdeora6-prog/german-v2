@@ -132,6 +132,20 @@
     ({ learn, read, practice, exam, speak }[tab] || learn)(body, l, ls);
   };
 
+  /* the button at the end of every part: always a way forward */
+  function partNav(l, ls, part) {
+    const nx = Course.next(l.n);
+    if (part === "practice") return `<div class="partnav"><button class="btn sign big-btn nextpart" data-go="lesson/${l.n}/exam">Next: exam questions →</button>
+      <p class="muted small">${ls.done ? `✓ Lesson complete (${ls.score}%).` : `Your score: <b class="sc2">${ls.score || 0}%</b>. 70 % here opens ${nx ? `lesson ${nx.pos}` : "the certificate"} – you can come back any time.`}</p></div>`;
+    if (part === "exam") return `<div class="partnav"><button class="btn sign big-btn nextpart" data-go="lesson/${l.n}/speak">Next: speaking →</button><p class="muted small">Answer at least 4 questions to tick off this part.</p></div>`;
+    if (part === "speak") {
+      const go = nx && Store.unlocked(nx.n) ? `lesson/${nx.n}` : ls.done ? "home" : `lesson/${l.n}/practice`;
+      const label = nx && Store.unlocked(nx.n) ? `Finish – next: lesson ${nx.pos} →` : ls.done ? "Finish lesson ✓" : "Finish – back to practice (70 % opens the next lesson)";
+      return `<div class="partnav"><button class="btn sign big-btn nextpart finish" data-go="${go}">${label}</button><button class="btn ghost" data-go="home">${H.bi("Heute", "Today")}</button></div>`;
+    }
+    return "";
+  }
+
   function learn(el, l, ls) {
     ls.read = true; Store.save();
     el.innerHTML = `
@@ -196,7 +210,7 @@
         const v = box.querySelector("input").value; const sc = Grade.overlap(v, q.a);
         const f = box.querySelector(".rfb"); f.hidden = false;
         f.innerHTML = `${sc >= 0.5 ? "✓ Good." : "Compare:"} Model answer: <b>${esc(q.a)}</b>`;
-        if (sc >= 0.5) Store.addXP(5); if (window.Habit) Habit.markPart(l.n, "read");
+        if (sc >= 0.5) Store.addXP(5); if (window.Habit) { Habit.markPart(l.n, "read"); Habit.track("read"); }
       };
     });
   }
@@ -227,7 +241,8 @@
         ${UI.umlautBar()}
         <div class="scorebox"><span>Score: <b class="sc">${scoreNow()}%</b></span><span class="muted">70 % completes the lesson</span></div>
       </section>
-      ${gens.length ? `<section class="card"><h3>Unlimited practice</h3><p class="muted small">New sentences are generated every time, with the reasoning for each answer.</p><div class="genbox"></div></section>` : ""}`;
+      ${gens.length ? `<section class="card"><h3>Unlimited practice</h3><p class="muted small">New sentences are generated every time, with the reasoning for each answer.</p><div class="genbox"></div></section>` : ""}
+      ${partNav(l, ls, "practice")}`;
     let lastInput = null;
     el.querySelectorAll(".q-in").forEach((i) => i.addEventListener("focus", () => (lastInput = i)));
     UI.bindUmlauts(el, { get value() { return lastInput ? lastInput.value : ""; }, set value(v) { if (lastInput) lastInput.value = v; }, get selectionStart() { return lastInput ? lastInput.selectionStart : 0; }, get selectionEnd() { return lastInput ? lastInput.selectionEnd : 0; }, focus() { lastInput && lastInput.focus(); }, setSelectionRange(a, b) { lastInput && lastInput.setSelectionRange(a, b); } });
@@ -237,23 +252,27 @@
       const mark = (ok) => {
         ls.tasks[i] = ok; li.className = "task " + (ok ? "ok" : "bad");
         ls.score = Math.max(ls.score || 0, scoreNow());
-        el.querySelector(".sc").textContent = scoreNow() + "%";
+        el.querySelector(".sc").textContent = scoreNow() + "%"; const s2 = el.querySelector(".sc2"); if (s2) s2.textContent = scoreNow() + "%";
         if (!ls.done && scoreNow() >= 70) { ls.done = true; if (window.Habit) Habit.markPart(l.n, "practice"); Store.addXP(50); setTimeout(() => window.Habit && Habit.celebrate(`Lektion ${l.pos} geschafft! (Lesson done)`, `${scoreNow()} % · ${Course.next(l.n) ? "Lesson " + Course.next(l.n).pos + " is now open." : "Course complete!"}`), 300);  }
         Store.save();
       };
+      // typing again after a check: the old verdict no longer belongs to this answer
+      li.querySelector("input").addEventListener("input", () => { if (!f.hidden && !f.classList.contains("stale")) { f.classList.add("stale"); f.insertAdjacentHTML("afterbegin", '<span class="stale-note">✎ Changed – press Check again.</span><br>'); } });
       li.querySelector("form").onsubmit = (e) => {
         e.preventDefault();
-        const inp = li.querySelector("input"); if (!inp.value.trim()) return;
+        const inp = li.querySelector("input"); if (!inp.value.trim()) { H.toast("Type your answer first."); return; }
         const open = !t.a || /^z\.\s?B\./.test(t.a);
         const g = open ? { ok: true } : Grade.grade(inp.value, t.a);
         f.hidden = false;
         if (open) {
           const r = Tutor.check(inp.value);
-          f.innerHTML = r.issues.length ? `Max suggests: <b>${esc(r.fixed)}</b><br><span class="muted">${r.issues.map((x) => x.why).join(" ")}</span>` : "✓ No rule problems found.";
+          f.classList.remove("stale");
+          f.innerHTML = r.issues.length ? `Max suggests: <b>${esc(r.fixed)}</b><br><span class="muted">${r.issues.map((x) => x.why).join(" ")}</span>` : `✓ No rule problems found.${t.a ? ` Example: <b>${esc(t.a)}</b>` : ""}`;
           mark(!r.issues.length);
           return;
         }
-        f.innerHTML = `${g.ok ? "✓" : "✗"} <b>${esc(t.a)}</b> ${g.note ? `<span class="muted">${esc(g.note)}</span>` : ""} ${!g.ok ? `<button class="link ov">I was right</button> <button class="link" data-ask="${esc(`Why is the answer „${t.a}“ in: ${t.q}`)}">Why?</button>` : ""}`;
+        f.classList.remove("stale");
+        f.innerHTML = `${FB.closed(t.q, inp.value, t.a, g)} ${!g.ok ? `<br><button class="link ov">My answer is also correct</button> · <button class="link" data-ask="${esc(`Why is the answer „${t.a}“ in: ${t.q}`)}">Ask Max why</button>` : ""}`;
         const ov = f.querySelector(".ov"); if (ov) ov.onclick = () => { mark(true); ov.remove(); };
         Store.topic("lesson" + l.n, g.ok); Store.addXP(g.ok ? 5 : 1);
         if (!g.ok) Store.mistake({ prompt: md(t.q), answer: t.a, given: inp.value, lesson: l.n });
@@ -271,48 +290,63 @@
     el.innerHTML = `<section class="card"><h3>10 exam questions</h3><p class="muted small">Closed questions are checked automatically. Open questions: write or speak, then let Max check your German.</p>
       ${l.exam.map((q, i) => `<div class="eq" data-i="${i}">${UI.reportBtn({ id: `L${l.n}-exam${i + 1}`, lesson: l.n, part: "Exam " + (i + 1), q: q.q, a: q.a })}<p><b>${i + 1}.</b> ${md(q.q)} ${UI.hint(q.q)}</p>
         ${q.a && !/^z\.\s?B\./.test(q.a) ? `<form class="q-form"><input class="q-in" autocomplete="off" placeholder="Answer"><button class="btn sm">Check</button></form>` :
-          `<textarea rows="3" placeholder="Write your answer in German…"></textarea><div class="row">${UI.mic("Speak")}<button class="btn sm chk">Check with Max</button>${q.a ? `<button class="btn ghost sm model">Model answer</button>` : ""}</div>`}
-        <div class="efb" hidden></div></div>`).join("")}</section>`;
+          `<textarea rows="3" placeholder="Write your answer in German…"></textarea><div class="row">${UI.mic("Speak")}<button class="btn sm chk">Check my answer</button>${q.a || q.m ? `<button class="btn ghost sm model">Model answer</button>` : ""}</div>`}
+        <div class="efb" hidden></div></div>`).join("")}</section>
+      ${partNav(l, ls, "exam")}`;
     el.querySelectorAll(".eq").forEach((box) => {
       const q = l.exam[+box.dataset.i]; const f = box.querySelector(".efb");
       const form = box.querySelector("form");
+      const inp0 = box.querySelector("input"); if (inp0) inp0.addEventListener("input", () => { if (!f.hidden) f.classList.add("stale"); });
       if (form) form.onsubmit = (e) => {
         e.preventDefault(); const v = box.querySelector("input").value;
+        if (!v.trim()) { H.toast("Type your answer first."); return; }
         const g = Grade.grade(v, q.a); const ov = Grade.overlap(v, q.a);
         const ok = g.ok || ov >= 0.6;
-        f.hidden = false; f.innerHTML = `${ok ? "✓" : "✗"} Model answer: <b>${esc(q.a)}</b>`;
+        const short = q.a.split(/\s+/).length <= 4;      // one-word / short answers: show the exact difference; longer ones: the content counts
+        f.hidden = false; f.classList.remove("stale");
+        f.innerHTML = short || g.ok ? FB.closed(q.q, v, q.a, ok && !g.ok ? { ok: true } : g) : `${ok ? `<span class="fb-ok">✓ ${H.bi("Inhalt stimmt", "The content is right")}</span>` : `<span class="fb-bad">✗ Not quite.</span>`} Model answer: <b>${esc(q.a)}</b>${ok ? "" : `<br><span class="muted small">Look for the answer in the reading text (part 2), then try again.</span>`}`;
+        if (!ok) f.insertAdjacentHTML("beforeend", ` <br><button class="link ov">My answer is also correct</button>`);
+        const ovb = f.querySelector(".ov"); if (ovb) ovb.onclick = () => { ls.exam[box.dataset.i] = true; Store.save(); ovb.replaceWith("✓ Counted as correct."); };
         ls.exam[box.dataset.i] = ok; if (window.Habit && Object.keys(ls.exam).length >= 4) Habit.markPart(l.n, "exam"); Store.addXP(ok ? 5 : 1); Store.save();
       };
       const ta = box.querySelector("textarea");
       if (ta) {
         UI.bindMic(box, (t) => { ta.value = (ta.value ? ta.value + " " : "") + t; });
         box.querySelector(".chk").onclick = () => {
-          const sents = ta.value.split(/(?<=[.!?])\s+/).filter((x) => x.trim());
-          if (!sents.length) return H.toast("Write or speak an answer first.");
-          const res = sents.map((s) => Tutor.check(s));
-          const errs = res.reduce((a, r) => a + r.issues.length, 0);
-          const conn = (ta.value.match(/\b(weil|dass|wenn|obwohl|deshalb|trotzdem|aber|denn|außerdem|zuerst|dann|danach)\b/gi) || []).length;
-          f.hidden = false;
-          f.innerHTML = `<p>${sents.length} sentence(s), ${ta.value.split(/\s+/).filter(Boolean).length} words, ${conn} connector(s). ${errs ? `${errs} possible error(s):` : "No rule problems found."}</p>${res.filter((r) => r.issues.length).map((r) => `<p class="ex ok">${esc(r.fixed)}</p><ul class="nots">${r.issues.map((x) => `<li>${x.rule}<br><span class="muted">${x.why}</span></li>`).join("")}</ul>`).join("")}${conn < 2 ? `<p class="muted">Tip: link your ideas with weil, deshalb, außerdem, obwohl.</p>` : ""}`;
-          ls.exam[box.dataset.i] = ls.exam[box.dataset.i] || true; if (window.Habit && Object.keys(ls.exam).length >= 4) Habit.markPart(l.n, "exam"); Store.addXP(8);
+          if (!ta.value.trim()) return H.toast("Write or speak an answer first.");
+          const r = FB.open(ta.value, { prompt: q.q, lesson: l, model: q.m || (q.a ? q.a.replace(/^z\.\s?B\.\s*/, "") : "") });
+          f.hidden = false; f.innerHTML = r.html;
+          ls.exam[box.dataset.i] = r.score >= 50; ls.examScore = Object.assign(ls.examScore || {}, { [box.dataset.i]: r.score });
+          if (window.Habit && Object.keys(ls.exam).length >= 4) Habit.markPart(l.n, "exam"); Store.addXP(r.score >= 65 ? 10 : 4); Store.save();
         };
-        const m = box.querySelector(".model"); if (m) m.onclick = () => { f.hidden = false; f.innerHTML = `Model: <b>${esc(q.a)}</b>`; };
+        const m = box.querySelector(".model"); if (m) m.onclick = () => { const mt = q.m || q.a.replace(/^z\.\s?B\.\s*/, ""); f.hidden = false; f.innerHTML = `<div class="fb-model"><b>📝 Model answer</b><p class="ex">${esc(mt)} ${UI.say(mt)}</p><p class="muted small">One possible answer. Write your own, then press “Check my answer”.</p></div>`; };
       }
     });
   }
 
   function speak(el, l, ls) {
     el.innerHTML = `<section class="card"><h3>Speak about the picture</h3><div class="scene">${DC.scenes[l.scene] || ""}</div>
-      <ol class="prompts">${l.speak.map((p) => `<li>${md(p)} ${UI.hint(p)}</li>`).join("")}</ol>
-      <p class="muted small">Goal: talk for 2 minutes and use „${esc(l.title)}“ at least 3 times. Useful starters: Auf dem Bild sehe ich … · Links/rechts … · Ich glaube, dass …</p>
-      <div class="row"><button class="btn ghost timer">Start 2-min timer</button>${UI.mic("Speak a sentence")}</div>
-      <div class="transcript"></div></section>
-      <section class="card"><h3>Shadow the examples</h3><p class="muted small">Listen, then repeat. You get a score for each word.</p><div class="shadow"></div></section>`;
-    const tr = el.querySelector(".transcript");
-    UI.bindMic(el.querySelector(".card"), (t) => {
-      const r = Tutor.check(t);
-      ls.spoke = true; if (window.Habit) { Habit.track("speak"); Habit.markPart(l.n, "speak"); } Store.addXP(6); Store.save();
-      tr.insertAdjacentHTML("beforeend", `<div class="said"><p>🗣️ ${esc(t)}</p>${r.issues.length ? `<p class="ex ok">${esc(r.fixed)} ${UI.say(r.fixed)}</p><p class="muted">${r.issues.map((x) => x.why).join(" ")}</p>` : `<p class="muted">✓ No rule problems found.</p>`}</div>`);
+      <p class="muted small">Answer each question out loud – or type what you would say if you have no microphone. You get feedback on every answer.</p>
+      <ol class="prompts sprompts">${l.speak.map((p, i) => `<li data-i="${i}"><p>${md(p)} ${UI.hint(p)}</p>
+        <div class="row">${UI.mic("Speak")}<button class="btn ghost sm typeit">⌨ Type instead</button></div>
+        <textarea rows="2" class="sp-in" placeholder="What you say appears here – or type it" hidden></textarea>
+        <div class="row sp-row" hidden><button class="btn sm sp-chk">Check my answer</button></div><div class="efb" hidden></div></li>`).join("")}</ol>
+      <p class="muted small">Goal: talk for 2 minutes and use this lesson's grammar at least 3 times. Useful starters: Auf dem Bild sehe ich … · Links/rechts … · Ich glaube, dass …</p>
+      <div class="row"><button class="btn ghost timer">Start 2-min timer</button></div></section>
+      <section class="card"><h3>Shadow the examples</h3><p class="muted small">Listen, then repeat. You get a score for each word.</p><div class="shadow"></div></section>
+      ${partNav(l, ls, "speak")}`;
+    el.querySelectorAll(".sprompts > li").forEach((li) => {
+      const p = l.speak[+li.dataset.i], ta = li.querySelector(".sp-in"), row = li.querySelector(".sp-row"), f = li.querySelector(".efb");
+      const check = () => {
+        if (!ta.value.trim()) return H.toast("Say or type an answer first.");
+        const r = FB.open(ta.value, { prompt: p.replace(/__/g, ""), lesson: l });
+        f.hidden = false; f.innerHTML = r.html;
+        ls.spoke = true; if (window.Habit) { Habit.track("speak"); Habit.markPart(l.n, "speak"); } Store.addXP(r.score >= 65 ? 8 : 3); Store.save();
+      };
+      const open = () => { ta.hidden = false; row.hidden = false; };
+      li.querySelector(".typeit").onclick = () => { open(); ta.focus(); };
+      li.querySelector(".sp-chk").onclick = check;
+      UI.bindMic(li, (t) => { open(); ta.value = (ta.value ? ta.value + " " : "") + t; check(); });
     });
     const tb = el.querySelector(".timer"); let tm = null;
     tb.onclick = () => {
@@ -321,6 +355,7 @@
       tm = setInterval(() => { left--; tb.textContent = `${Math.floor(left / 60)}:${String(left % 60).padStart(2, "0")}`; if (left <= 0 || !document.body.contains(tb)) { clearInterval(tm); tm = null; tb.textContent = "Time's up – well done!"; ls.spoke = true; Store.addXP(10); } }, 1000);
     };
     V.shadow(el.querySelector(".shadow"), l.examples.map((e) => e.de));
+    el.querySelector(".finish").addEventListener("click", () => { if (ls.spoke && window.Habit) Habit.markPart(l.n, "speak"); });
   }
 
   V.shadow = (box, sentences) => {

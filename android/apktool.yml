@@ -15,7 +15,7 @@ usesFramework:
   tag: null
 version: 2.10.0
 versionInfo:
-  versionCode: '13'
-  versionName: 6.2.0
+  versionCode: '14'
+  versionName: 6.3.0
 doNotCompress:
 - resources.arsc

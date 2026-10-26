@@ -6,6 +6,7 @@
 
   let VOCAB = null;
   V.vocabList = () => (VOCAB = VOCAB || DC.vocab.map((w) => Object.assign({ id: "v:" + w.de.toLowerCase() }, w)));
+  V.dueCount = () => SRS.due(V.vocabIds()).length;
   V.vocabIds = () => V.vocabList().filter((w) => Store.get().srs[w.id]).map((w) => w.id);
 
   /* ---------------- Üben ---------------- */
@@ -97,7 +98,7 @@
     const byId = Object.fromEntries(V.vocabList().map((w) => [w.id, w]));
     let q = reviewQueue(); let i = 0;
     const draw = () => {
-      if (i >= q.length) { el.innerHTML = UI.empty(`Done! ${q.length} cards reviewed. Come back tomorrow for the next ones.`, `<button class="btn" data-go="vocab">Back to words</button>`); return; }
+      if (i >= q.length) { el.innerHTML = UI.empty(`Done! ${q.length} cards reviewed.`, `<div class="row center"><button class="btn sign" data-go="vocab/review">Another round</button><button class="btn ghost" data-go="daily">Practice day</button><button class="btn ghost" data-go="vocab">Back to words</button></div>`); return; }
       const w = byId[q[i]]; const isNew = !SRS.card(w.id);
       el.innerHTML = `<div class="session"><div class="sess-head"><span class="sess-title">${isNew ? "New word" : "Review"}</span><span>${i + 1}/${q.length}</span></div><div class="bar"><i style="width:${(i / q.length) * 100}%"></i></div>
         <button class="flash" aria-label="Show answer"><span class="front">${esc(w.en)}</span><span class="back" hidden><b class="${w.art ? "g-" + { der: "m", die: "f", das: "n" }[w.art] : ""}">${esc(w.de)}</b>${w.pl ? `<small>Pl. ${esc(w.pl)}</small>` : ""}${w.exDe ? `<i>${esc(w.exDe)}</i>` : ""}</span></button>
@@ -219,7 +220,7 @@
         b.onclick = () => {
           p.hidden = false;
           if (b.classList.contains("chk")) { const c = Tutor.check(r.querySelector("textarea").value || "…"); p.innerHTML = c.issues.length ? `Suggestion: <b>${esc(c.fixed)}</b>` : "✓ No rule problems found."; }
-          Store.addXP(3);
+          Store.addXP(3); if (window.Habit) Habit.track("read");
         };
       });
       return;

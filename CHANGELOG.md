@@ -2,6 +2,14 @@
 
 All dates are the release dates of the app version shown in Settings → About.
 
+## 6.3.0 — 26 October 2026
+- **Next-part buttons** at the end of Practice, Exam and Speak (Speak → next lesson).
+- **Feedback engine** (`js/feedback.js`): closed answers show the typed answer, a letter/word diff, capital-letter notes and a rule explanation for verb gaps (ending, extra -e-, vowel change, full table for irregular verbs); stale feedback is marked after editing. Open answers (exam + speaking) get a 0–100 score with a checklist (German, length, required words, questions, lesson grammar, Max corrections, capitals, lesson words) and a model answer.
+- **232 model answers** and per-lesson grammar checks (`tools/curriculum/models.txt`); tests check that every model scores ≥ 60 with the app's own feedback and passes Max.
+- **Speak**: answer each prompt by microphone or by typing.
+- **Practice day** rebuilt: fills the plan's minutes, auto-ticks from real activity (lesson parts, cards, drills, dictations, reading, speaking, writing), skips finished lessons, “+15 minutes”.
+- **Fixes**: weak topics read the wrong fields (always empty); “Word review ( due)”; celebrations blocked exercise screens; overlapping toasts; three Max false alarms (separable *ein* before a comma, modal + second clause with *oder*, state passive *sind repariert*).
+
 ## 6.2.0 — 26 October 2026
 - **First steps (Erste Schritte)**: a Duolingo-style picture course for complete beginners – 18 units, 192 words with pictures, 86 sentences; 3 levels per unit (introduce → practise → recall); picture, listening, meaning, pair-matching, der/die/das, typing and tile-building exercises; mistakes return at the end of the round; flip flashcards and a mixed review on spaced repetition.
 - **Complete English mode**: Settings → App language → English. All 73 lessons have an English title, topic and grammar explanation (German + English mode shows the English as a fold-out). German questions and speaking prompts have an **EN?** word-by-word hint.
