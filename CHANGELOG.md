@@ -2,6 +2,17 @@
 
 All dates are the release dates of the app version shown in Settings → About.
 
+## 6.0.0 — 26 October 2026
+- **New start screen “Heute”** with one next-step button, daily goal ring, streak and week view.
+- **Habit system**: streak freezes, daily quests, combos, levels, Familien-Liga, calendar reminder, sounds and vibration.
+- **Audio player** with pause, stop, back one sentence, skip and speed (fixes audio restarting by itself).
+- **Content doubled**: 30 words, 20 examples, a second text, a listening dialogue with questions and 20 exercises in every lesson; 3,548 words in total.
+- **Corrections**: verb forms in generated sentences (*kommet*, *warn*), *ein Kilo*, eight false alarms in Max.
+- **New design** (Mitternacht & Bernstein), five-tab navigation, grouped “Mehr”, Resources page.
+- **Updates arrive**: network-first offline cache, update bar, “Reload newest version”.
+- **iOS build fixed** (launch screen, icon, scheme, audio session); guide for Windows in `docs/IOS_ON_WINDOWS.md`.
+- Full review in `docs/REVIEW_v6.md`.
+
 ## 5.0.0 — 23 September 2026
 - **Real placement test**: 96 original items in 12 stages (A1 → C2), four options, one rule each. Adaptive with a stop rule; result gives level, sub-level (e.g. B1.2), a starting lesson and the topics to fix first.
 - **Learning plan**: pick a goal level and either a date or minutes per day. The app computes lessons, hours, daily minutes and words, warns when the maths doesn't work, and recalculates when you fall behind.
