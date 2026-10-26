@@ -18,3 +18,4 @@ jobs:
         run: TOOLS=tools/jars bash build_apk.sh
       - uses: actions/upload-artifact@v4
         with: { name: deutsch-coach-apk, path: build/deutsch-coach.apk }
+
