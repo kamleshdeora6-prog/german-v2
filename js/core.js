@@ -20,7 +20,7 @@
   const DEFAULTS = () => ({
     v: 2, created: Date.now(), xp: 0, streak: { count: 0, last: "" }, days: {},
     lessons: {}, topics: {}, srs: {}, chat: [], exams: [], mistakes: [],
-    settings: { theme: "auto", rate: 0.9, voice: "", goal: 50, sound: true, haptics: true, tone: "neutral", labels: "both", textSize: "m", unlockAll: false, showEn: true, aiOnline: false, aiKey: "", aiModel: "claude-haiku-4-5-20251001", onboarded: false },
+    settings: { theme: "auto", rate: 0.9, voice: "", goal: 50, sound: true, haptics: true, tone: "neutral", labels: "both", textSize: "m", unlockAll: false, showEn: true, aiProvider: "local", llmModel: "1b", aiOnline: true, aiKey: "", aiModel: "claude-haiku-5-5", asr: "auto", onboarded: false },
   });
 
   let state = null;
@@ -106,8 +106,8 @@
     mistake(m) { const s = Store.get(); s.mistakes.unshift(Object.assign({ t: Date.now() }, m)); s.mistakes = s.mistakes.slice(0, 120); save(); },
     lesson(n) { const s = Store.get(); return (s.lessons[n] = s.lessons[n] || { read: false, score: 0, done: false, tasks: {}, exam: {} }); },
     unlocked(n) { const s = Store.get(); const p = Course.prev(n); return s.settings.unlockAll || !p || !!(s.lessons[p.n] && s.lessons[p.n].done); },
-    export() { return JSON.stringify(Object.assign({}, Store.get(), { profileName: Store.name() }), null, 1); },
-    import(txt) { const d = JSON.parse(txt); if (!d || typeof d !== "object" || !("xp" in d)) throw new Error("This file is not a Deutsch Coach backup."); const nm = d.profileName; delete d.profileName; state = deepMerge(DEFAULTS(), d); if (nm && !Store.name()) Store.setName(nm); save(); },
+    export() { const s = Store.get(); return JSON.stringify(Object.assign({}, s, { profileName: Store.name(), settings: Object.assign({}, s.settings, { aiKey: "" }) }), null, 1); },   // the API key never goes into a backup file
+    import(txt) { const d = JSON.parse(txt); if (!d || typeof d !== "object" || !("xp" in d)) throw new Error("This file is not a Deutsch Coach backup."); const nm = d.profileName; delete d.profileName; const key = (state && state.settings && state.settings.aiKey) || ""; state = deepMerge(DEFAULTS(), d); if (!state.settings.aiKey) state.settings.aiKey = key; if (nm && !Store.name()) Store.setName(nm); save(); },
     reset() { state = DEFAULTS(); save(); },
     today,
   };
@@ -229,7 +229,7 @@
   function hardStop() { P.gen++; clearTimeout(P.timer); if (bridge() && bridge().stop) try { bridge().stop(); } catch (e) {} if (window.speechSynthesis) speechSynthesis.cancel(); }
   const Speech = {
     canSpeak: () => !!(bridge() && bridge().speak) || !!window.speechSynthesis,
-    canListen: () => !!(bridge() && bridge().listen) || !!(window.SpeechRecognition || window.webkitSpeechRecognition),
+    canListen: () => !!(bridge() && bridge().listen) || !!(window.SpeechRecognition || window.webkitSpeechRecognition) || !!(window.ASR && ASR.supported()),
     voices: () => loadVoices(),
     split: splitSentences,
     /* speak(text) – a text of any length; play(list) – a list of sentences (e.g. "Play all") */
@@ -251,7 +251,18 @@
     isPlaying: (key) => P.state !== "idle" && (!key || P.key === String(key)),
     status: () => ({ locked: P.locked, state: P.state, i: P.i, n: P.list.length, text: P.list[P.i] || "", key: P.key, rate: P.rate || Store.get().settings.rate || 0.9 }),
     onChange: (f) => subs.add(f),
-    listen() {
+    /* opts: { onStage, onLevel, stopSignal } – used by Whisper (recording, then transcribing) */
+    async listen(opts = {}) {
+      if (!(bridge() && bridge().listen) && window.ASR && ASR.active()) {
+        try { return await ASR.listen(opts); }
+        catch (e) {
+          if (/Microphone|didn't hear/i.test(e.message) || !(window.SpeechRecognition || window.webkitSpeechRecognition)) throw e;
+          H.toast("Offline recognition had a problem – using the browser's recognition instead.");
+        }
+      }
+      return Speech.listenBrowser();
+    },
+    listenBrowser() {
       return new Promise((resolve, reject) => {
         if (bridge() && bridge().listen) {
           const id = "s" + Date.now();

@@ -2,6 +2,41 @@
 
 All dates are the release dates of the app version shown in Settings → About.
 
+## 6.6.0 — 26 October 2026
+- On-device models: Gemma 4 E2B (f16/f32 WebGPU libraries vendored, `model_manifest` and 192 MB buffer requirement passed through; `LLM.fits()` checks `maxStorageBufferBindingSize`); per-device recommendation.
+- `LLM.chat` streams (`stream: true`, usage stats → tokens/s); never sends `extra_body.enable_thinking` (WebLLM would inject Qwen `<think>` tags into any model's prompt).
+- German self-test (`LLM.selfTest`): six learner sentences, replies scored by Max (German only, rule problems, length, question), speed measured; results in Settings and in the model list.
+- Partner: live streaming bubble; A1/A2 replies with over-long sentences are regenerated shorter; the model is preloaded on the scenario list; idle unload after 5 minutes.
+- Max: new rule for ein/kein/mein/dein/sein/unser/euer without ending before feminine or plural nouns (3 new test cases; no new false alarms in the 8,000-sentence corpus).
+
+## 6.5.0 — 26 October 2026
+- **On-device AI (default)** – `js/llm.js`, `js/llm-worker.js`: WebLLM 0.2.86 in a module worker with Llama 3.2 1B (default) or 3B; f16 build on GPUs with `shader-f16`, f32 build otherwise (detected automatically). Downloaded once, then offline; delete button frees the space.
+  - Speaking partner in local mode: German-only prompt at the learner's level, output cleaned (speaker labels, quotes, stage directions), one retry if Max flags the reply or it contains English, corrections of the learner by Max, summary built from Max's checks, scenario idea phrases, EN? gloss.
+  - Max: open questions answered by the local model, labelled “can be wrong”.
+  - Detailed AI feedback and AI exercises stay Claude-only (answer keys must be right).
+- **Self-contained**: `vendor/` holds web-llm 0.2.86 (+ Llama 3.2 WebGPU libraries), transformers.js 4.3.1 and onnxruntime-web 1.31.0 (asyncify wasm). No CDN at runtime.
+- **Models on your own site**: workflow “Add the offline AI models to the site” copies Llama 3.2 1B and Whisper base into `models/` (checks GitHub's 100 MB file and ~1 GB site limits, requests a Pages build). The app prefers `models/` and falls back to Hugging Face.
+- Service worker: never caches `models/`; caches `vendor/` once (cache-first). `.nojekyll` added (faster Pages builds).
+- Settings: AI tutor section with “On this device” / “Claude” choice.
+
+## 6.4.1 — 26 October 2026
+Sandbox review of the AI features (simulated API with broken, cut-off, malicious and failing replies; fake microphone input):
+- `stop_reason: max_tokens` is detected and retried with a doubled budget (thinking shares `max_tokens`); higher budgets for all AI calls; the retry loop always ends with a clear error.
+- Speaking partner: consecutive same-role turns are merged (the API requires alternation – this broke conversations after a failed reply); only the last 20 turns are sent; English answers are caught; hints only on request (and counted in the summary).
+- Whisper: hallucinated subtitle credits and empty/noise transcripts are filtered.
+- AI exercises: the model lists alternative correct answers (`accept`), each checked by Max.
+- Backups never contain the API key; importing a backup keeps the key already on the device.
+
+## 6.4.0 — 26 October 2026
+- **AI tutor** (`js/ai.js`, `js/views10.js`): Claude via the learner's own API key (Haiku 5.5 default, Sonnet 5.5 optional, `low`/`medium` effort), retries and plain-English errors, monthly usage and cost estimate, learner profile in every request, tutor notes ("memory") with a forget button.
+  - Speaking partner: 13 role-plays (A1–B2) + "today's lesson topic", spoken replies, inline corrections, end-of-talk summary; mistakes go to "My mistakes".
+  - Detailed AI feedback under exam, speaking and writing answers (rule-based feedback stays first).
+  - Exercises from my mistakes: generated items are dropped unless Max finds no error and the answer is valid.
+  - Max uses Claude for questions his rules can't answer; script tags and event handlers in replies are removed.
+  - Practice day adds an AI conversation block when the tutor is available.
+- **Offline speech recognition** (`js/asr.js`, `js/asr-worker.js`): Whisper base (Xenova/whisper-base, 8-bit, WebAssembly) via transformers.js 4.3.1 in a module worker; silence detection, tap-to-stop, 16 kHz resampling; automatic fallback to the browser's recognition. The Android/iOS apps keep using native recognition.
+- Settings: new AI tutor and speech-recognition sections; About & privacy updated.
+
 ## 6.3.0 — 26 October 2026
 - **Next-part buttons** at the end of Practice, Exam and Speak (Speak → next lesson).
 - **Feedback engine** (`js/feedback.js`): closed answers show the typed answer, a letter/word diff, capital-letter notes and a rule explanation for verb gaps (ending, extra -e-, vowel change, full table for irregular verbs); stale feedback is marked after editing. Open answers (exam + speaking) get a 0–100 score with a checklist (German, length, required words, questions, lesson grammar, Max corrections, capitals, lesson words) and a model answer.

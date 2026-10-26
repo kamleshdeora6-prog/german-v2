@@ -1,0 +1,82 @@
+name: Add the offline AI models to the site
+
+# Run once: GitHub → Actions → "Add the offline AI models to the site" → Run workflow.
+# It copies the on-device AI (Llama 3.2 1B, ~0.7 GB) and the offline speech model (Whisper base, ~80 MB)
+# from Hugging Face into models/ in this repo. GitHub Pages then serves them from your own site, so every
+# device downloads them once from *your* app – no third-party server – and then runs them offline.
+# GitHub limits: no single file over 100 MB (checked below) and about 1 GB per Pages site, so only the
+# small model is stored here; the bigger 3B model is downloaded from Hugging Face if someone picks it.
+on:
+  workflow_dispatch:
+    inputs:
+      llm:
+        description: "Store the on-device AI (Llama 3.2 1B)"
+        type: boolean
+        default: true
+      whisper:
+        description: "Store the offline speech model (Whisper base)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  models:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Download the models from Hugging Face
+        env:
+          WANT_LLM: ${{ inputs.llm }}
+          WANT_WHISPER: ${{ inputs.whisper }}
+        run: |
+          pip install --quiet "huggingface_hub>=0.25"
+          python - <<'PY'
+          import json, os, pathlib
+          from huggingface_hub import snapshot_download
+          root = pathlib.Path("models"); root.mkdir(exist_ok=True)
+          man_path = root / "manifest.json"
+          man = json.loads(man_path.read_text()) if man_path.exists() else {"llm": [], "whisper": []}
+          if os.environ["WANT_LLM"] == "true":
+              mid = "Llama-3.2-1B-Instruct-q4f16_1-MLC"
+              # the app asks for <site>/models/<id>/resolve/main/<file> – the same layout as Hugging Face
+              snapshot_download(f"mlc-ai/{mid}", local_dir=root / mid / "resolve" / "main", allow_patterns=["*.json", "*.bin", "*.txt", "*.model"])
+              man["llm"] = sorted(set(man.get("llm", []) + [mid]))
+          if os.environ["WANT_WHISPER"] == "true":
+              wid = "Xenova/whisper-base"
+              snapshot_download(wid, local_dir=root / wid, allow_patterns=["*.json", "onnx/encoder_model_quantized.onnx", "onnx/decoder_model_merged_quantized.onnx"])
+              man["whisper"] = sorted(set(man.get("whisper", []) + [wid]))
+          for junk in root.rglob(".cache"):
+              import shutil; shutil.rmtree(junk, ignore_errors=True)
+          man_path.write_text(json.dumps(man, indent=1))
+          big = [(p, p.stat().st_size) for p in root.rglob("*") if p.is_file() and p.stat().st_size > 95_000_000]
+          total = sum(p.stat().st_size for p in root.rglob("*") if p.is_file())
+          print(f"models/: {total/1e6:.0f} MB")
+          if big: raise SystemExit("Files over GitHub's 100 MB limit: " + ", ".join(f"{p} ({s/1e6:.0f} MB)" for p, s in big))
+          if total > 950_000_000: raise SystemExit(f"models/ is {total/1e6:.0f} MB – over the ~1 GB GitHub Pages limit")
+          PY
+
+      - name: Commit them to the repo (GitHub Pages publishes them)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add models
+          if git diff --cached --quiet; then echo "Models already up to date."; exit 0; fi
+          git commit -m "Add offline AI models (Llama 3.2 1B, Whisper base)"
+          git push
+          echo "Done. GitHub Pages updates in a few minutes; the app then downloads the models from your own site."
+
+      # pushes made by this workflow don't start the normal Pages build on their own – ask for one
+      - name: Publish the site again
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh api -X POST "repos/${{ github.repository }}/pages/builds"; then echo "Pages build requested."; else echo "If the app does not find the models after a few minutes, open Settings, Pages and save again, or push any small change."; fi

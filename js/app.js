@@ -1,9 +1,9 @@
 /* Deutsch Coach – app shell: router, navigation, theme, install */
 (function () {
   "use strict";
-  const ROUTES = { home: "home", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more", readexam: "readexam", write: "write", notes: "notes", translate: "translate", about: "about", placement: "placement", pronounce: "pronounce", news: "news", plan: "plan", daily: "daily", weak: "weak", refresh: "refresh", resources: "resources", starter: "starter" };
-  const TAB_OF = { home: "home", path: "path", lesson: "path", practice: "practice", vocab: "practice", listen: "practice", speak: "practice", pronounce: "practice", tutor: "tutor", daily: "home", plan: "more", weak: "practice", refresh: "path", starter: "path" };
-  const App = (window.App = { version: "6.3.0", updated: "26 October 2026", author: "Zombieland", pendingAsk: null });
+  const ROUTES = { home: "home", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more", readexam: "readexam", write: "write", notes: "notes", translate: "translate", about: "about", placement: "placement", pronounce: "pronounce", news: "news", plan: "plan", daily: "daily", weak: "weak", refresh: "refresh", resources: "resources", starter: "starter", partner: "partner" };
+  const TAB_OF = { home: "home", path: "path", lesson: "path", practice: "practice", vocab: "practice", listen: "practice", speak: "practice", pronounce: "practice", tutor: "tutor", daily: "home", plan: "more", weak: "practice", refresh: "path", starter: "path", partner: "practice" };
+  const App = (window.App = { version: "6.6.0", updated: "26 October 2026", author: "Zombieland", pendingAsk: null });
   /* Where problem reports go. Put an email address here to offer email as well. */
   App.contact = { github: "https://github.com/kamleshdeora6-prog/german-v2", email: "" };
   App.report = (ctx) => {

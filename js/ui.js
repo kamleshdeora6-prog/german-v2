@@ -129,13 +129,24 @@
   UI.mic = (label = "Speak") => `<button class="btn mic" ${Speech.canListen() ? "" : "disabled title='Not supported here'"}>🎙️ ${label}</button>`;
   UI.bindMic = (root, onText) => {
     const b = root.querySelector(".mic"); if (!b) return;
+    let stop = null;
     b.onclick = async () => {
-      if (b.classList.contains("rec")) return;
+      if (b.classList.contains("rec")) { if (stop) stop.stop = true; return; }   // second tap = "I'm done talking"
       Speech.stop();
-      b.classList.add("rec"); const old = b.innerHTML; b.innerHTML = "● Listening…";
-      try { const t = await Speech.listen(); onText(t); }
+      const whisper = window.ASR && ASR.active() && !window.AndroidBridge;
+      if (whisper && !ASR.downloaded() && !Store.get().settings.asrAsked) {
+        Store.get().settings.asrAsked = true; Store.save();
+        H.toast(`First use: the offline speech model (${ASR.SIZE_MB} MB) downloads once – this takes a minute.`);
+      }
+      stop = { stop: false };
+      b.classList.add("rec"); const old = b.innerHTML; b.innerHTML = whisper ? "● Listening… (tap when done)" : "● Listening…";
+      try {
+        const t = await Speech.listen({ stopSignal: stop, onLevel: (v) => b.style.setProperty("--lvl", v), onStage: () => { b.innerHTML = ASR.downloaded() ? "⏳ Writing it down…" : "⏳ Loading the speech model…"; } });
+        if (!t || !t.trim()) throw new Error("I didn't catch any words. Try again a little slower.");
+        onText(t);
+      }
       catch (e) { H.toast(e.message, "bad"); }
-      finally { b.classList.remove("rec"); b.innerHTML = old; }
+      finally { b.classList.remove("rec"); b.innerHTML = old; b.style.removeProperty("--lvl"); stop = null; }
     };
   };
 

@@ -315,7 +315,7 @@
         box.querySelector(".chk").onclick = () => {
           if (!ta.value.trim()) return H.toast("Write or speak an answer first.");
           const r = FB.open(ta.value, { prompt: q.q, lesson: l, model: q.m || (q.a ? q.a.replace(/^z\.\s?B\.\s*/, "") : "") });
-          f.hidden = false; f.innerHTML = r.html;
+          f.hidden = false; f.innerHTML = r.html + V.aiButton(q.q, l.n);
           ls.exam[box.dataset.i] = r.score >= 50; ls.examScore = Object.assign(ls.examScore || {}, { [box.dataset.i]: r.score });
           if (window.Habit && Object.keys(ls.exam).length >= 4) Habit.markPart(l.n, "exam"); Store.addXP(r.score >= 65 ? 10 : 4); Store.save();
         };
@@ -332,7 +332,7 @@
         <textarea rows="2" class="sp-in" placeholder="What you say appears here – or type it" hidden></textarea>
         <div class="row sp-row" hidden><button class="btn sm sp-chk">Check my answer</button></div><div class="efb" hidden></div></li>`).join("")}</ol>
       <p class="muted small">Goal: talk for 2 minutes and use this lesson's grammar at least 3 times. Useful starters: Auf dem Bild sehe ich … · Links/rechts … · Ich glaube, dass …</p>
-      <div class="row"><button class="btn ghost timer">Start 2-min timer</button></div></section>
+      <div class="row"><button class="btn ghost timer">Start 2-min timer</button><button class="btn ghost" data-go="partner/lesson">🗣 Talk about it with the AI partner</button></div></section>
       <section class="card"><h3>Shadow the examples</h3><p class="muted small">Listen, then repeat. You get a score for each word.</p><div class="shadow"></div></section>
       ${partNav(l, ls, "speak")}`;
     el.querySelectorAll(".sprompts > li").forEach((li) => {
@@ -340,7 +340,7 @@
       const check = () => {
         if (!ta.value.trim()) return H.toast("Say or type an answer first.");
         const r = FB.open(ta.value, { prompt: p.replace(/__/g, ""), lesson: l });
-        f.hidden = false; f.innerHTML = r.html;
+        f.hidden = false; f.innerHTML = r.html + V.aiButton(p.replace(/__/g, ""), l.n);
         ls.spoke = true; if (window.Habit) { Habit.track("speak"); Habit.markPart(l.n, "speak"); } Store.addXP(r.score >= 65 ? 8 : 3); Store.save();
       };
       const open = () => { ta.hidden = false; row.hidden = false; };

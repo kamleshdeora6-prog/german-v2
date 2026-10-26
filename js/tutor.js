@@ -637,6 +637,20 @@
       }
     }
 
+    // 3b) ein/kein/mein … without an ending before a feminine or plural noun: "kein Zeit" → "keine Zeit"
+    L = low();
+    for (let i = 0; i < L.length - 1; i++) {
+      const det = L[i]; if (!/^(ein|kein|mein|dein|sein|unser|euer)$/.test(det) || /[,;:.!?]$/.test(words[i])) continue;
+      if (det === "sein" && /^(muss|kann|soll|will|darf|mag|wird|werden|zu|möchte|könnte|müsste|sollte|würde)$/.test(L[i - 1] || "")) continue;   // the verb sein
+      if (/^(mit|von|zu|bei|aus|nach|seit|für|durch|ohne|gegen|um|in|an|auf|über|unter|vor|hinter|neben|zwischen|wegen|trotz|während|statt)$/.test(L[i - 1] || "")) continue;   // the case rules after prepositions handle these
+      const nw = (words[i + 1] || "").replace(/[,;:.!?]$/, ""); if (!/^[A-ZÄÖÜ][a-zäöüß]+$/.test(nw)) continue;
+      const ng = nounGender(nw); if (!ng) continue;
+      if (!(ng.g === "f" || ng.pl)) continue;
+      const right = (det === "euer" ? "eure" : det + "e");
+      add(`<s>${det} ${nw}</s> → <b>${right} ${nw}</b>`, `${ng.pl ? "Plural nouns" : `<b>${H.esc ? H.esc(nw) : nw}</b> is feminine (die ${nw}), so it`} need${ng.pl ? "" : "s"} <b>${right}</b>. Without an ending, ${det} is only for der- and das-words (${det} Hund, ${det} Auto).`, 8);
+      words[i] = words[i][0] === words[i][0].toUpperCase() ? right[0].toUpperCase() + right.slice(1) : right; L = low();
+    }
+
     // 4) double negation: kein … nicht
     const ki = L.findIndex((w) => /^kein(e|en|em|er|es)?$/.test(w));
     if (ki >= 0) {
@@ -777,19 +791,19 @@
   const looksGerman = (s) => /\b(ich|du|er|wir|ihr|ist|bin|habe|hat|der|die|das|den|dem|nicht|und|mit|weil|dass|gestern|heute|morgen)\b/i.test(s) && !/\b(the|is|what|how|why|explain|does|mean|should|can you)\b/i.test(s);
 
   // ---------- online model (optional) ----------
-  async function online(history, text, profile) {
-    const st = window.Store && Store.get().settings;
-    if (!st || !st.aiKey || !st.aiOnline) return null;
-    const sys = `You are Max, a patient German tutor for an English-speaking learner at level ${profile.level} preparing for the B1 exam (Goethe/telc). Always answer in English with German examples. Structure grammar answers as: What / How / How NOT (typical mistakes) / Why. When correcting a sentence, show the corrected sentence first, then each error with the reason. Keep answers under 200 words. Use simple HTML (<b>, <i>, <ul>, <li>, <p>) and no markdown.`;
-    const msgs = history.slice(-8).map((m) => ({ role: m.role, content: m.text })).concat([{ role: "user", content: text }]);
-    const res = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: { "content-type": "application/json", "x-api-key": st.aiKey, "anthropic-version": "2023-06-01", "anthropic-dangerous-direct-browser-access": "true" },
-      body: JSON.stringify({ model: st.aiModel || "claude-haiku-4-5-20251001", max_tokens: 700, system: sys, messages: msgs }),
-    });
-    if (!res.ok) throw new Error("Online model error " + res.status);
-    const data = await res.json();
-    return (data.content || []).filter((b) => b.type === "text").map((b) => b.text).join("\n");
+  async function online(history, text) {
+    if (!window.AI || !AI.ready()) return null;
+    const P = AI.profile();
+    const sys = `You are Max, a patient German tutor inside the Deutsch Coach app. ${P.text}\nAnswer in English with German examples, at the learner's level. Structure grammar answers as: What / How / How NOT (typical mistakes) / Why. When correcting a sentence, show the corrected sentence first, then each error with the reason. Keep answers under 200 words. Use simple HTML (<b>, <i>, <ul>, <li>, <p>) and no markdown.`;
+    const msgs = history.slice(-8).filter((m) => m.text).map((m) => ({ role: m.role === "assistant" ? "assistant" : "user", content: m.text }));
+    while (msgs.length && msgs[0].role !== "user") msgs.shift();
+    const merged = []; msgs.concat([{ role: "user", content: text }]).forEach((m) => { const last = merged[merged.length - 1]; if (last && last.role === m.role) last.content += "\n" + m.content; else merged.push(Object.assign({}, m)); });
+    if (AI.local()) {   // small model: plain text, clearly labelled
+      const out = await AI.call({ system: `You are Max, a German tutor. ${P.text}\nAnswer in simple English in at most 5 short sentences with one or two German examples. No lists.`, messages: merged, maxTokens: 300 });
+      return `<p>${H.esc(out).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/\n+/g, "<br>")}</p><p class="muted small">⚠️ Answered by the small AI on this device – it can be wrong. The lessons and Max's rule checks are verified.</p>`;
+    }
+    const out = await AI.call({ system: sys, messages: merged, maxTokens: 900 });
+    return out.replace(/<script[\s\S]*?<\/script>/gi, "").replace(/\son\w+="[^"]*"/gi, "");
   }
 
   // ---------- main reply ----------
@@ -844,7 +858,7 @@
     return { html: `<p>I'm not sure what you mean. ${ctx.aiOnline ? "" : "Offline, I understand grammar topics, sentence checks, conjugations, articles, word meanings and quizzes."}</p>` + HELP };
   }
   async function tryOnline(ctx, t) {
-    try { const txt = await online(ctx.history || [], t, ctx.profile); if (txt) return { html: txt, online: true }; } catch (e) { return { html: `<p class="muted">Online AI failed (${esc(e.message)}). Answering offline.</p>` }; }
+    try { const txt = await online(ctx.history || [], t); if (txt) return { html: txt + (AI.local() ? "" : `<p class="muted small">✨ Answered by Claude</p>`), online: true }; } catch (e) { return { html: `<p class="muted">The online tutor couldn't answer: ${esc(e.message)}</p>` }; }
     return null;
   }
 

@@ -207,11 +207,29 @@
         <label class="chk"><input data-k="sound" type="checkbox"> Sounds for right/wrong answers</label>
         <label class="chk"><input data-k="haptics" type="checkbox"> Vibration (phones)</label>
       </section>
-      <section class="card form"><h3>Online AI for Max (optional)</h3>
-        <p class="muted small">Max works fully offline. With your own Anthropic API key he can also answer open questions. The key is stored only on this device and sent only to api.anthropic.com.</p>
-        <label class="chk"><input data-k="aiOnline" type="checkbox"> Use online AI when available</label>
-        <label>API key <input data-k="aiKey" type="password" autocomplete="off" placeholder="sk-ant-…"></label>
-        <label>Model <input data-k="aiModel" type="text"></label>
+      <section class="card form aiset"><h3>✨ ${H.bi("KI-Tutor", "AI tutor")}</h3>
+        <p class="muted small">The AI tutor powers the <b>speaking partner</b> and answers open questions in Max. Everything else in the app works without it.</p>
+        <label>Where the AI runs <select data-k="aiProvider">${[["local", "On this device – free, no account, offline (recommended)"], ["claude", "Claude – online, needs an Anthropic API key, best quality"]].map(([v, t]) => `<option value="${v}" ${(st.aiProvider || "local") === v ? "selected" : ""}>${t}</option>`).join("")}</select></label>
+        ${(st.aiProvider || "local") === "local" ? `
+          ${LLM.supported() ? `
+            <label>Model <select data-k="llmModel">${LLM.MODELS.map((m) => `<option value="${m.key}" ${LLM.current().key === m.key ? "selected" : ""}>${m.name} · ${m.size} · ${m.hint}${LLM.recommended() === m.key ? " · recommended here" : ""}${(st.llmTest || {})[m.key] ? ` · tested ${st.llmTest[m.key].score}/100` : ""}</option>`).join("")}</select></label>
+            <div class="row"><button class="btn sm llm-dl">${LLM.downloaded() ? "✓ Ready – test it" : `Download (${LLM.current().size}, once)`}</button>${LLM.downloaded() ? `<button class="btn ghost sm llm-rm">Delete from this device</button>` : ""}<span class="muted small llm-prog"></span></div>
+            <p class="muted small llm-fit"></p>
+            ${LLM.downloaded() ? `<div class="row"><button class="btn ghost sm llm-test">🧪 Test its German on this device</button><span class="muted small llm-tres">${(st.llmTest || {})[LLM.current().key] ? `Last test: German ${st.llmTest[LLM.current().key].score}/100 · ${st.llmTest[LLM.current().key].tps} tokens/s` : ""}</span></div><div class="llm-trows"></div>` : ""}
+            <p class="muted small">Runs on your graphics chip (WebGPU). Downloaded once from <span class="llm-src">…</span>, then offline. Uses the battery more than the rest of the app while it talks. Small models write simple German and can slip – your answers are always corrected by Max's checked rules, not by the model.</p>`
+          : `<p class="muted small">⚠️ ${H.esc(LLM.why())}</p>`}`
+        : `
+          <p class="muted small">Get a key at <button class="link" data-url="https://console.anthropic.com/settings/keys">console.anthropic.com</button> (paid, a few cents a month). The key stays on this device and is sent only to api.anthropic.com – with your answers and a short learning profile. With Claude you also get <b>detailed feedback</b> on free answers and writing and <b>new exercises from your mistakes</b>.</p>
+          <label>API key <input data-k="aiKey" type="password" autocomplete="off" spellcheck="false" placeholder="sk-ant-…"></label>
+          <label>Model <select data-k="aiModel">${AI.MODELS.map(([v, t]) => `<option value="${v}" ${AI.model() === v ? "selected" : ""}>${t}</option>`).join("")}</select></label>
+          <label class="chk"><input data-k="aiOnline" type="checkbox"> Use Claude when I'm online</label>
+          <div class="row"><button class="btn sm ai-test">Test connection</button><span class="muted small ai-status">${AI.hasKey() ? `This month: ${AI.usage().calls} requests · about $${AI.usage().usd.toFixed(AI.usage().usd < 1 ? 3 : 2)}` : "No key yet."}</span></div>
+          <details><summary>What the tutor has learnt about you (${(s.aiNotes || []).length} notes)</summary>${(s.aiNotes || []).length ? `<ul class="small">${s.aiNotes.map((n) => `<li>${H.esc(n)}</li>`).join("")}</ul><button class="btn ghost sm ai-forget">Forget these notes</button>` : `<p class="muted small">After your first conversation with the speaking partner, the tutor keeps a few short notes (recurring mistakes, interests) so later lessons fit you better. They stay on this device.</p>`}</details>`}
+      </section>
+      <section class="card form"><h3>🎙 ${H.bi("Spracherkennung", "Speech recognition")}</h3>
+        <p class="muted small"><b>Offline (Whisper)</b> runs on this device: it downloads once (about ${ASR.SIZE_MB} MB), then works without internet, sends no audio anywhere and understands learners better. <b>Browser</b> uses the browser's built-in recognition (Chrome sends audio to Google). ${window.AndroidBridge ? "In the Android app, the phone's own recognition is used." : ""}</p>
+        <label>Use <select data-k="asr">${[["auto", "Automatic – offline once downloaded (recommended)"], ["whisper", "Always offline (Whisper)"], ["browser", "Always the browser's recognition"]].map(([v, t]) => `<option value="${v}" ${(st.asr || "auto") === v ? "selected" : ""}>${t}</option>`).join("")}</select></label>
+        ${ASR.supported() ? `<div class="row"><button class="btn sm asr-dl" ${ASR.downloaded() ? "disabled" : ""}>${ASR.downloaded() ? "✓ Offline model ready" : `Download offline model (${ASR.SIZE_MB} MB)`}</button><span class="muted small asr-prog"></span></div>` : `<p class="muted small">Offline recognition isn't available here${window.AndroidBridge ? " (the app uses the phone's recognition)" : " – open the app over https in Chrome, Edge or Firefox"}.</p>`}
       </section>
       <section class="card"><h3>Look and feel</h3>
         <label>Theme <select data-k="theme">${[["auto", "System (follows your phone)"], ["light", "Hell – light"], ["dark", "Dunkel – dark"], ["paper", "Papier – warm, easy on the eyes"]].map(([v, t]) => `<option value="${v}" ${(s.settings.theme || "auto") === v ? "selected" : ""}>${t}</option>`).join("")}</select></label>
@@ -253,9 +271,54 @@
       inp.onchange = () => {
         st[k] = inp.type === "checkbox" ? inp.checked : inp.type === "number" || inp.type === "range" || inp.dataset.num ? +inp.value : inp.value.trim();
         Store.save(); if (k === "theme" || k === "labels" || k === "textSize") App.applyTheme();
-        if (k === "aiOnline" && st.aiOnline && !st.aiKey) H.toast("Add your API key below to use online AI.");
+        if (k === "aiProvider" || k === "llmModel") { V.settings(el); setTimeout(() => { const x = el.querySelector(".aiset"); if (x) x.scrollIntoView({ block: "center" }); }, 30); return; }
+        if (k === "aiOnline" && st.aiOnline && !st.aiKey) H.toast("Add your API key to use the AI tutor.");
+        if (k === "aiKey" && st.aiKey) { st.aiOnline = true; Store.save(); const c = el.querySelector('[data-k="aiOnline"]'); if (c) c.checked = true; H.toast("Key saved. Press “Test connection” to check it."); }
       };
     });
+    const lsrc = el.querySelector(".llm-src"); if (lsrc) LLM.source().then((t) => (lsrc.textContent = t));
+    const lfit = el.querySelector(".llm-fit"); if (lfit) LLM.fits().then((ok) => { if (!ok) lfit.innerHTML = `⚠️ This device's graphics chip is too small for ${H.esc(LLM.current().name)} – pick a smaller model.`; });
+    const ltest = el.querySelector(".llm-test");
+    if (ltest) ltest.onclick = async () => {
+      const out = el.querySelector(".llm-tres"), rows = el.querySelector(".llm-trows"); ltest.disabled = true;
+      try {
+        out.textContent = "Starting…";
+        const r = await LLM.selfTest(LLM.current(), (i, n) => (out.textContent = `Testing ${i + 1}/${n}…`));
+        const verdict = r.score >= 80 && r.tps >= 8 ? "✓ Good for conversation practice." : r.score >= 80 ? "Good German, but slow on this device – try the smaller model." : r.score >= 60 ? "Usable, with some slips – a bigger model would be better if this device can run it." : "Not reliable on this device – use a bigger model, or Claude online.";
+        out.innerHTML = `<b>German ${r.score}/100</b> · ${r.tps} tokens/s · ${verdict}`;
+        rows.innerHTML = `<details><summary class="small">See the 6 test replies</summary><ul class="small">${r.rows.map((x) => `<li><span class="muted">${H.esc(x.user)}</span><br>→ ${H.esc(x.reply)} <b>${x.score}</b>${x.issues ? ` · Max found ${x.issues} problem${x.issues > 1 ? "s" : ""}` : ""}${x.german ? "" : " · not only German"}</li>`).join("")}</ul></details>`;
+      } catch (err) { out.textContent = "✗ " + err.message; }
+      ltest.disabled = false;
+    };
+    const ldl = el.querySelector(".llm-dl");
+    if (ldl) ldl.onclick = async () => {
+      const pr = el.querySelector(".llm-prog"); ldl.disabled = true; ldl.textContent = LLM.downloaded() ? "Starting…" : "Downloading…";
+      const off = LLM.onProgress((p) => { pr.textContent = `${Math.round((p.progress || 0) * 100)} % · ${String(p.text || "").replace(/\[.*?\]/g, "").slice(0, 70)}`; });
+      try {
+        await LLM.load();
+        pr.textContent = "Testing…";
+        const t = await LLM.chat({ system: "Antworte mit einem kurzen, freundlichen deutschen Satz.", messages: [{ role: "user", content: "Sag hallo zu einem Deutschlerner." }], maxTokens: 60 });
+        pr.innerHTML = `✓ Works offline: <i>${H.esc(t.slice(0, 120))}</i>`; ldl.textContent = "✓ Ready – test it";
+      } catch (err) { pr.textContent = "✗ " + err.message; ldl.textContent = "Try again"; }
+      ldl.disabled = false; off();
+    };
+    const lrm = el.querySelector(".llm-rm"); if (lrm) lrm.onclick = async () => { if (!confirm(`Delete ${LLM.current().name} (${LLM.current().size}) from this device? You can download it again later.`)) return; await LLM.remove(); V.settings(el); H.toast("Model deleted – space freed."); };
+    const aitest = el.querySelector(".ai-test");
+    if (aitest) aitest.onclick = async (e) => {
+      const out = el.querySelector(".ai-status"); e.target.disabled = true; out.textContent = "Testing…";
+      try { const r = await AI.call({ system: "Reply with one short friendly German sentence for a language learner.", messages: [{ role: "user", content: "Sag hallo." }], maxTokens: 200 }); out.innerHTML = `✓ Works (${H.esc(AI.model())}): <i>${H.esc(r.slice(0, 120))}</i>`; }
+      catch (err) { out.textContent = "✗ " + err.message; }
+      e.target.disabled = false;
+    };
+    const fg = el.querySelector(".ai-forget"); if (fg) fg.onclick = () => { AI.forget(); V.settings(el); H.toast("Notes deleted."); };
+    const dl = el.querySelector(".asr-dl");
+    if (dl) dl.onclick = async () => {
+      const pr = el.querySelector(".asr-prog"); dl.disabled = true; dl.textContent = "Downloading…";
+      const files = {}; const off = ASR.onProgress((p) => { files[p.file] = [p.loaded || 0, p.total || 0]; const v = Object.values(files); const a = v.reduce((x, y) => x + y[0], 0), b = v.reduce((x, y) => x + y[1], 0); pr.textContent = b ? `${Math.round(a / 1e6)} / ${Math.round(b / 1e6)} MB` : ""; });
+      try { await ASR.load(); dl.textContent = "✓ Offline model ready"; pr.textContent = "Speech recognition now works offline."; }
+      catch (err) { dl.disabled = false; dl.textContent = "Try the download again"; pr.textContent = "✗ " + err.message; }
+      off();
+    };
     el.querySelector(".test").onclick = () => Speech.speak("Guten Tag! Ich heiße Max und helfe dir beim Deutschlernen.");
     el.querySelector(".exp").onclick = App.backup;
     el.querySelector(".addcal").onclick = () => { Habit.reminderICS(el.querySelector(".remt").value || "19:00", Math.max(5, Math.round((st.goal || 50) / 5))); H.toast("Open the downloaded file to add the reminder.", "good"); };

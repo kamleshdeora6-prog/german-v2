@@ -126,6 +126,9 @@ console.log("  conjugation tables and 400 generated sentences checked");
 
 section("3. Max corrects typical mistakes");
 const CASES = [
+  ["Ich habe kein Zeit.", "Ich habe keine Zeit."],
+  ["Das ist mein Schwester.", "Das ist meine Schwester."],
+  ["Wir haben kein Kinder.", "Wir haben keine Kinder."],
   ["Gestern ich habe nach Berlin gefahren.", "Gestern bin ich nach Berlin gefahren."],
   ["Ich komme nicht, weil ich bin krank.", "Ich komme nicht, weil ich krank bin."],
   ["Ich kann spreche Deutsch.", "Ich kann Deutsch sprechen."],

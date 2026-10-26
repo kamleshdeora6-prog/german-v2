@@ -27,6 +27,7 @@
   V.practice = (el, [id]) => {
     if (id) {
       if (id === "smart") return UI.session(el, () => Engine.generate(smartPick()), { title: "Smart mix", total: 10 });
+      if (id === "ai") return V.aiPractice(el);
       if (id === "mistakes") {
         const ms = Store.get().mistakes.filter((m) => m.gen && Engine.GEN[m.gen]);
         if (!ms.length) return (el.innerHTML = UI.empty("No mistakes saved yet.", `<button class="btn" data-go="practice">Back</button>`));
@@ -47,7 +48,7 @@
     const groups = ["A1", "A2", "B1", "B2", "C1", "C2"].map((lv) => ({ lv, gens: Object.values(Engine.GEN).filter((g) => g.level === lv) }));
     el.innerHTML = `<h2 class="page-title">Practice</h2>
       <section class="grid2">
-        <button class="tile hero" data-go="practice/smart"><b>Smart mix</b><span>Focuses on your weak topics</span></button><button class="tile" data-go="starter"><b>🐣 ${H.bi("Erste Schritte", "First steps")}</b><span>Picture flashcards for beginners</span></button>
+        <button class="tile hero" data-go="practice/smart"><b>Smart mix</b><span>Focuses on your weak topics</span></button><button class="tile" data-go="starter"><b>🐣 ${H.bi("Erste Schritte", "First steps")}</b><span>Picture flashcards for beginners</span></button><button class="tile" data-go="partner"><b>🗣 ${H.bi("Sprechpartner", "Speaking partner")}</b><span>${window.AI && AI.local() ? (window.LLM && LLM.supported() ? "AI on this device · free" : "Needs Chrome/Edge with WebGPU") : AI.hasKey() ? "Talk with Claude at your level" : "AI · needs your Claude key"}</span></button><button class="tile" data-go="practice/ai"><b>✨ ${H.bi("Aus meinen Fehlern", "From my mistakes")}</b><span>${window.AI && AI.canJudge() ? "New exercises made for you" : "From your saved mistakes"}</span></button>
         <button class="tile" data-go="practice/mistakes"><b>My mistakes</b><span>${s.mistakes.length} saved</span></button>
         <button class="tile" data-go="vocab"><b>Words</b><span>${SRS.due(V.vocabIds()).length} due today</span></button>
         <button class="tile" data-go="practice/bank"><b>Question bank</b><span>${DC.bank.length} classic items</span></button>

@@ -59,6 +59,32 @@
 
   /* ---------------- 3. What's new ---------------- */
   const NEWS = [
+    { v: "6.6.0", date: "26 October 2026", items: [
+      "<b>Gemma 4 E2B</b> (Google, 2026) as a third on-device model for PCs with a graphics card – the strongest German of the three. Settings also marks the model recommended for your device.",
+      "<b>🧪 German self-test</b>: Settings → AI tutor tests the downloaded model on this device with six sentences, checks every reply with Max and measures the speed – so you can see which model works best here.",
+      "<b>Faster conversations</b>: replies appear word by word while the AI writes; the model warms up while you pick a scenario; replies too long for A1/A2 are made shorter automatically.",
+      "<b>Saves battery</b>: the on-device AI frees the graphics chip after 5 minutes without use.",
+      "<b>Max catches more</b>: „kein Zeit“, „mein Schwester“, „kein Kinder“ → keine / meine.",
+    ] },
+    { v: "6.5.0", date: "26 October 2026", items: [
+      "<b>AI on your own device – free, no account, no internet</b>: the speaking partner now runs locally with Llama 3.2 (Settings → AI tutor → Download, about 0.7 GB once). Every family member can use it on their own device – no API key needed.",
+      "Your answers are corrected by <b>Max's checked rules</b>, not by the small model, so corrections stay reliable. Each partner reply has an <b>EN?</b> word-by-word help.",
+      "<b>Everything from your own repo</b>: the AI and speech libraries are now part of the app (no third-party servers), and a GitHub Action can store the models on your own site.",
+      "Claude (online, own key) is still available in Settings for the best quality, detailed feedback and AI exercises.",
+    ] },
+    { v: "6.4.1", date: "26 October 2026", items: [
+      "<b>AI tutor, safer and more reliable</b>: answers cut off by the AI are retried with more room; long conversations stay fast and cheap (last 20 turns); a failed reply no longer breaks the conversation.",
+      "<b>Speaking partner</b>: answers in English get a friendly “try it in German”; ideas for what to say appear only when you ask (“💡 Stuck?”), so you practise your own words.",
+      "<b>Offline speech</b>: Whisper's typical German noise phrases („Untertitel im Auftrag des ZDF …“) are filtered out instead of being sent as your answer.",
+      "<b>Exercises from my mistakes</b> accept every correct answer, not only one.",
+      "<b>Your API key is never saved into backup files.</b>",
+    ] },
+    { v: "6.4.0", date: "26 October 2026", items: [
+      "<b>AI tutor (Claude)</b> with your own Anthropic API key: a <b>speaking partner</b> for role-plays at your level (it answers out loud, corrects real mistakes and gives feedback at the end), <b>detailed feedback</b> on exam answers, speaking and writing, and <b>new exercises from your own mistakes</b> – every AI sentence is checked by Max before you see it.",
+      "<b>It grows with you</b>: the tutor knows your level, lesson, weak topics and recent mistakes, and keeps short notes about you after each conversation (see and delete them in Settings).",
+      "<b>Offline speech recognition</b> with Whisper on your device: download once (80 MB), then speaking works without internet and no audio leaves your device. If it ever fails, the browser's recognition takes over.",
+      "Tap the microphone a second time when you're done talking.",
+    ] },
     { v: "6.3.0", date: "26 October 2026", items: [
       "<b>Always a next step</b>: Practice, Exam and Speak now end with a button to the next part, and Speak with “Finish – next lesson”.",
       "<b>Feedback that teaches</b>: a wrong answer shows what you typed, marks the letters that differ and explains why – e.g. „sprechen changes e → i with du and er/sie/es“. Lower-case answers get a note about capital letters. Typing again after a check marks the old verdict as out of date.",

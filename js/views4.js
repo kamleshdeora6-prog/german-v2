@@ -165,7 +165,8 @@
         <h4>Inhaltspunkte – hast du alle bearbeitet?</h4>
         <ul class="checklist points">${t.points.map((p, k) => `<li><label><input type="checkbox" data-p="${k}"> ${esc(p)}</label></li>`).join("")}</ul>
         ${checks.filter((c) => c.r.issues.length).map((c) => `<div class="mist"><p>${esc(c.s)}</p><p class="ex ok">${esc(c.r.fixed)}</p><ul class="nots">${c.r.issues.map((i) => `<li>${i.rule}<br><span class="muted">${i.why}</span></li>`).join("")}</ul></div>`).join("")}
-        <div class="row"><button class="btn ghost model2">Model text</button><button class="btn ghost" data-ask="${esc("Give me tips for writing a " + t.type + " in German")}">Ask Max for tips</button></div></section>`;
+        <div class="row"><button class="btn ghost model2">Model text</button><button class="btn ghost" data-ask="${esc("Give me tips for writing a " + t.type + " in German")}">Ask Max for tips</button></div>
+        ${Views.aiButton(`${t.type} (${t.level}, about ${t.words} words): ${t.prompt} Content points: ${t.points.join("; ")}`, "", ".wtext", t.level)}</section>`;
       fb.querySelector(".model2").onclick = () => el.querySelector(".model").click();
       fb.scrollIntoView({ behavior: "smooth", block: "nearest" });
     };
