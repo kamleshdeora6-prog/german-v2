@@ -32,6 +32,8 @@
       <button class="lvchip" data-go="stats" aria-label="Level ${lv.n}, ${lv.pct}% to next level"><b>Lv ${lv.n}</b><span>${esc(lv.title)}</span><i style="--p:${lv.pct}%"></i></button></div>
     <div class="home-grid"><div class="col-a">
     ${back ? `<section class="card welcome"><p>👋 <b>Willkommen zurück!</b> <i class="muted">(Welcome back!)</i> Breaks happen. One short session today starts a new streak – and you keep everything you learned.</p></section>` : ""}
+    ${(() => { const sp = Views.starterProgress && Views.starterProgress(); const l1 = s.lessons[DC.curriculum[0].n] || {};
+        return sp && sp.done < sp.total && !l1.done && (s.starterMode || sp.done > 0 || !s.xp) ? `<button class="st-entry" data-go="${sp.next ? "starter/u/" + sp.next.id : "starter"}"><span class="st-pic">🐣</span><span><b>${H.bi("Erste Schritte", "First steps – German from zero")}</b><span>Picture cards and 3-minute rounds · ${sp.done}/${sp.total} units${sp.next ? " · next: " + esc(sp.next.en) : ""}</span></span></button>` : ""; })()}
     <section class="hero" aria-label="Today">
       <div class="hero-row">
         ${Habit.ring(pct, 116, 12, `<b>${todayXP}</b><span>/ ${goal} XP</span>`)}
@@ -50,8 +52,8 @@
     </div><div class="col-b">
     <section class="board lvl-${l.level}" aria-label="Your lesson">
       <div class="board-top"><span>Lesson ${l.pos} of ${DC.curriculum.length}</span><span>${UI.levelDot(l.level)}</span></div>
-      <div class="board-title">${esc(l.title)}</div>
-      <div class="board-sub">${esc(l.theme)}</div>
+      <div class="board-title">${H.lt(l)}</div>
+      <div class="board-sub">${H.lt(l, "theme")}</div>
       <div class="dots" aria-label="${partsDone} of 5 parts done">${[0, 1, 2, 3, 4].map((i) => `<i class="${i < partsDone ? "on" : ""}"></i>`).join("")}<span>${partsDone}/5</span></div>
       <button class="btn ghost-light sm" data-go="lesson/${l.n}">${ls.read ? "Open lesson" : "Start lesson"}</button>
     </section>
@@ -85,7 +87,10 @@
   /* ---------------- course map ---------------- */
   V.path = (el) => {
     const s = Store.get();
-    let html = `<h2 class="page-title">Your course from A1 to C2</h2><p class="muted">Finish a lesson (score ≥ 70 %) to open the next one. Later lessons reuse earlier grammar.</p><ol class="line">`;
+    const sp = Views.starterProgress ? Views.starterProgress() : null;
+    let html = `<h2 class="page-title">${H.bi("Dein Kurs von A1 bis C2", "Your course from A1 to C2")}</h2>
+      <button class="st-entry" data-go="starter"><span class="st-pic">🐣</span><span><b>${H.bi("Erste Schritte", "First steps")}${sp && sp.done ? ` · ${sp.done}/${sp.total}` : ""}</b><span>New to German? Start here: picture cards, sound and tiny rounds before Lesson 1.</span></span></button>
+      <p class="muted">Finish a lesson (score ≥ 70 %) to open the next one. Later lessons reuse earlier grammar.</p><ol class="line">`;
     let prevLvl = null;
     LESSONS().forEach((l) => {
       if (l.level !== prevLvl) {
@@ -98,7 +103,7 @@
       html += `<li class="stop lvl-${l.level} ${st.done ? "done" : ""} ${cur ? "current" : ""} ${open ? "" : "locked"}">
         <span class="dot"></span>
         <button class="stop-btn" ${open ? `data-go="lesson/${l.n}"` : "disabled"}>
-          <span class="stop-n">${l.pos}</span><span class="stop-t">${esc(l.title)}<small>${esc(l.theme)}${st.score ? ` · ${st.score}%` : ""}${open ? "" : " · locked"}</small></span>
+          <span class="stop-n">${l.pos}</span><span class="stop-t">${H.lt(l)}<small>${esc(H.ltText(l, "theme"))}${st.score ? ` · ${st.score}%` : ""}${open ? "" : " · locked"}</small></span>
         </button></li>`;
     });
     el.innerHTML = html + `</ol><p class="muted small">Already know some topics? Turn on “Open all lessons” in Settings.</p>`;
@@ -117,7 +122,7 @@
     el.innerHTML = `
       <header class="lhead lvl-${l.level}">
         <div class="lhead-row"><button class="back" data-go="path" aria-label="Back">‹</button><span>Lesson ${l.pos} · ${l.level}</span>${ls.done ? `<span class="badge">done ${ls.score}%</span>` : ""}</div>
-        <h2>${esc(l.title)}</h2><p>${esc(l.theme)}</p>
+        <h2>${H.lt(l)}</h2><p>${H.lt(l, "theme")}</p>
       </header>
       ${l.rec.length ? `<details class="recap"><summary>Builds on ${l.rec.length} earlier lesson${l.rec.length > 1 ? "s" : ""}</summary>${l.rec.map((r) => `<button class="chip" data-go="lesson/${r}">L${r} ${esc(titles[r])}</button>`).join("")}</details>` : ""}
       <nav class="tabs steps" role="tablist">${TABS.map(([k, t], i) => { const dn = (ls.parts && ls.parts[k]) || (k === "practice" && ls.done); return `<button role="tab" aria-selected="${k === tab}" class="tab ${k === tab ? "on" : ""} ${dn ? "dn" : ""}" data-go="lesson/${n}/${k}"><span class="stepn">${dn ? "✓" : i + 1}</span>${t}${k === "practice" && ls.score ? ` <small>${ls.score}%</small>` : ""}</button>`; }).join("")}</nav>
@@ -130,8 +135,7 @@
   function learn(el, l, ls) {
     ls.read = true; Store.save();
     el.innerHTML = `
-      <section class="card"><h3>Explanation</h3>${l.expl.map((p) => `<p>${md(p)}</p>`).join("")}
-        <p class="use"><b>When do I use it?</b> ${md(l.use)}</p>
+      <section class="card"><h3>Explanation</h3>${H.lexpl(l)}
         <button class="btn ghost sm" data-ask="Explain ${esc(l.title)} with mistakes to avoid">Ask Max: how NOT to use it</button></section>
       ${l.table.length ? `<section class="card"><h3>Grammar table</h3>${UI.table(l.table, "lvl-" + l.level)}</section>` : ""}
       <section class="card"><h3>${l.examples.length} examples <button class="btn ghost sm playall">Play all</button></h3>
@@ -159,8 +163,8 @@
       ${l.dialog ? `<section class="card"><h3>🎧 ${H.bi("Hörszene", "Listening scene")}</h3><p class="muted small">Listen first without reading. Then answer, then check the transcript.</p>
         <div class="row"><button class="btn sign sm dplay">▶ Play dialogue</button><button class="btn ghost sm dslow">Slow</button><button class="btn ghost sm dshow">Show transcript</button></div>
         <div class="dlg blur">${l.dialog.map((d) => `<p><b>${esc(d.who)}:</b> ${esc(d.de)}</p>`).join("")}</div>
-        ${(l.dq || []).map((q, i) => `<div class="rq dq" data-i="${i}"><p>${md(q.q)}</p><form class="q-form"><input class="q-in" placeholder="Answer"><button class="btn sm">Check</button></form><p class="rfb muted" hidden></p></div>`).join("")}</section>` : ""}
-      <section class="card"><h3>Did you understand?</h3>${answered.map((q, i) => `<div class="rq" data-i="${i}"><p>${md(q.q)}</p><form class="q-form"><input class="q-in" placeholder="Answer in German"><button class="btn sm">Check</button></form><p class="rfb muted" hidden></p></div>`).join("")}</section>
+        ${(l.dq || []).map((q, i) => `<div class="rq dq" data-i="${i}"><p>${md(q.q)} ${UI.hint(q.q)}</p><form class="q-form"><input class="q-in" placeholder="Answer"><button class="btn sm">Check</button></form><p class="rfb muted" hidden></p></div>`).join("")}</section>` : ""}
+      <section class="card"><h3>Did you understand?</h3>${answered.map((q, i) => `<div class="rq" data-i="${i}"><p>${md(q.q)} ${UI.hint(q.q)}</p><form class="q-form"><input class="q-in" placeholder="Answer in German"><button class="btn sm">Check</button></form><p class="rfb muted" hidden></p></div>`).join("")}</section>
       <div class="row center"><button class="btn sign big-btn nextpart" data-go="lesson/${l.n}/practice">Next: practise</button></div>`;
     el.querySelector(".nextpart").addEventListener("click", () => window.Habit && Habit.markPart(l.n, "read"));
     el.querySelector(".slow").onclick = () => Speech.speak(l.reading, 0.7);
@@ -265,7 +269,7 @@
 
   function exam(el, l, ls) {
     el.innerHTML = `<section class="card"><h3>10 exam questions</h3><p class="muted small">Closed questions are checked automatically. Open questions: write or speak, then let Max check your German.</p>
-      ${l.exam.map((q, i) => `<div class="eq" data-i="${i}">${UI.reportBtn({ id: `L${l.n}-exam${i + 1}`, lesson: l.n, part: "Exam " + (i + 1), q: q.q, a: q.a })}<p><b>${i + 1}.</b> ${md(q.q)}</p>
+      ${l.exam.map((q, i) => `<div class="eq" data-i="${i}">${UI.reportBtn({ id: `L${l.n}-exam${i + 1}`, lesson: l.n, part: "Exam " + (i + 1), q: q.q, a: q.a })}<p><b>${i + 1}.</b> ${md(q.q)} ${UI.hint(q.q)}</p>
         ${q.a && !/^z\.\s?B\./.test(q.a) ? `<form class="q-form"><input class="q-in" autocomplete="off" placeholder="Answer"><button class="btn sm">Check</button></form>` :
           `<textarea rows="3" placeholder="Write your answer in German…"></textarea><div class="row">${UI.mic("Speak")}<button class="btn sm chk">Check with Max</button>${q.a ? `<button class="btn ghost sm model">Model answer</button>` : ""}</div>`}
         <div class="efb" hidden></div></div>`).join("")}</section>`;
@@ -299,7 +303,7 @@
 
   function speak(el, l, ls) {
     el.innerHTML = `<section class="card"><h3>Speak about the picture</h3><div class="scene">${DC.scenes[l.scene] || ""}</div>
-      <ol class="prompts">${l.speak.map((p) => `<li>${md(p)}</li>`).join("")}</ol>
+      <ol class="prompts">${l.speak.map((p) => `<li>${md(p)} ${UI.hint(p)}</li>`).join("")}</ol>
       <p class="muted small">Goal: talk for 2 minutes and use „${esc(l.title)}“ at least 3 times. Useful starters: Auf dem Bild sehe ich … · Links/rechts … · Ich glaube, dass …</p>
       <div class="row"><button class="btn ghost timer">Start 2-min timer</button>${UI.mic("Speak a sentence")}</div>
       <div class="transcript"></div></section>

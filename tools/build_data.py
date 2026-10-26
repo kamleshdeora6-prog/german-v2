@@ -96,6 +96,21 @@ for p in sorted(glob.glob("plus_*.txt")):
         if s.get("dialog"):
             l["dialog"] = [dict(zip(("who", "de"), [y.strip() for y in x.split(":", 1)])) for x in s["dialog"]]
             l["dq"] = [split_ans(x) for x in s.get("dq", [])]
+# ---------- v6.2 English layer: english.txt gives every lesson an English title, theme and explanation ----------
+en_cur = None
+for line in open("english.txt", encoding="utf-8"):
+    line = line.rstrip("\n")
+    if not line.strip() or line.startswith("#"): continue
+    if line.startswith("@@"):
+        n = int(line[2:].strip()); en_cur = byn.get(n)
+        if not en_cur: raise SystemExit(f"english.txt: lesson {n} does not exist")
+        en_cur["en"] = {"title": "", "theme": "", "expl": [], "use": ""}; continue
+    k, _, v = line.partition("=")
+    if k == "expl": en_cur["en"]["expl"].append(v.strip())
+    elif k in ("title", "theme", "use"): en_cur["en"][k] = v.strip()
+    else: raise SystemExit(f"english.txt: unknown field {k!r}")
+missing = [l["n"] for l in cur if not (l.get("en") and l["en"]["title"] and l["en"]["expl"])]
+if missing: raise SystemExit(f"english.txt: no English for lessons {missing}")
 js("curriculum", cur)
 
 ref = []

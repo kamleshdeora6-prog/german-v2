@@ -76,7 +76,7 @@
     and: "und", or: "oder", but: "aber", because: "weil / denn", that: "dass / das", if: "wenn / ob", when: "wenn / als / wann", not: "nicht", no: "nein / kein", yes: "ja",
     in: "in", on: "auf / an", at: "an / bei / um", to: "zu / nach", from: "von / aus", with: "mit", without: "ohne", for: "für", of: "von", about: "über", after: "nach", before: "vor", into: "in",
     what: "was", who: "wer", where: "wo", how: "wie", why: "warum", which: "welche(r)", very: "sehr", also: "auch", too: "auch / zu", only: "nur", here: "hier", there: "dort", now: "jetzt", today: "heute", please: "bitte", thanks: "danke" };
-  function gloss(text, from) {
+  function gloss(text, from, compact) {
     const toks = text.replace(/[„“"()]/g, " ").split(/\s+/).filter(Boolean);
     return `<div class="gloss">${toks.map((tok) => {
       const w = tok.replace(/[.,!?;:]+$/, "");
@@ -84,8 +84,9 @@
       const hit = !fw && w ? Tutor.dict(w)[0] : null;
       const mean = fw || (hit ? (from === "de" ? hit.en : hit.de) : "?");
       return `<span class="g"><b>${esc(tok)}</b><i>${esc(String(mean).replace(/ \(form of .*\)$/, "").split(/[;,]/)[0])}</i></span>`;
-    }).join("")}</div><p class="muted small">Word-by-word meanings from the offline dictionary – a guide, not a finished translation. “?” means the word isn't in the offline list; use LEO or DeepL above.</p>`;
+    }).join("")}</div>${compact ? "" : `<p class="muted small">Word-by-word meanings from the offline dictionary – a guide, not a finished translation. “?” means the word isn't in the offline list; use LEO or DeepL above.</p>`}`;
   }
+  V.gloss = gloss;
 
   function lookup(el, text, dir) {
     const out = el.querySelector(".tout");

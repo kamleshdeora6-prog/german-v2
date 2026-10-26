@@ -178,8 +178,8 @@
     el.innerHTML = `<h2 class="page-title">Grammar notes</h2>
       <div class="levelbar">${LEVELS.map((l) => `<button class="${l === level ? "on" : ""} lvl-${l}" data-go="notes/${l}">${l}</button>`).join("")}</div>
       <p class="muted">Every lesson of ${level} on one page: rule, table, examples. Tap a heading to open the full lesson.</p>
-      ${lessons.map((l) => `<details class="card lvl-${l.level}"><summary>${l.n}. ${esc(l.title)}</summary>
-        ${l.expl.map((p) => `<p>${md(p)}</p>`).join("")}
+      ${lessons.map((l) => `<details class="card lvl-${l.level}"><summary>${l.pos || l.n}. ${H.lt(l)}</summary>
+        ${H.lexpl(l)}
         ${l.table.length ? UI.table(l.table, "lvl-" + l.level) : ""}
         <ol class="exs">${l.examples.slice(0, 5).map((e) => `<li>${UI.colorArticles(e.de)} ${UI.say(e.de)}<br><span class="en">${esc(e.en)}</span></li>`).join("")}</ol>
         <div class="row"><button class="btn sm" data-go="lesson/${l.n}">Open lesson</button><button class="btn ghost sm" data-go="lesson/${l.n}/practice">Practise</button></div></details>`).join("")}`;

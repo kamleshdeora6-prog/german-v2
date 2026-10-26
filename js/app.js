@@ -1,9 +1,9 @@
 /* Deutsch Coach – app shell: router, navigation, theme, install */
 (function () {
   "use strict";
-  const ROUTES = { home: "home", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more", readexam: "readexam", write: "write", notes: "notes", translate: "translate", about: "about", placement: "placement", pronounce: "pronounce", news: "news", plan: "plan", daily: "daily", weak: "weak", refresh: "refresh", resources: "resources" };
-  const TAB_OF = { home: "home", path: "path", lesson: "path", practice: "practice", vocab: "practice", listen: "practice", speak: "practice", pronounce: "practice", tutor: "tutor", daily: "home", plan: "more", weak: "practice", refresh: "path" };
-  const App = (window.App = { version: "6.1.0", updated: "26 October 2026", author: "Zombieland", pendingAsk: null });
+  const ROUTES = { home: "home", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more", readexam: "readexam", write: "write", notes: "notes", translate: "translate", about: "about", placement: "placement", pronounce: "pronounce", news: "news", plan: "plan", daily: "daily", weak: "weak", refresh: "refresh", resources: "resources", starter: "starter" };
+  const TAB_OF = { home: "home", path: "path", lesson: "path", practice: "practice", vocab: "practice", listen: "practice", speak: "practice", pronounce: "practice", tutor: "tutor", daily: "home", plan: "more", weak: "practice", refresh: "path", starter: "path" };
+  const App = (window.App = { version: "6.2.0", updated: "26 October 2026", author: "Zombieland", pendingAsk: null });
   /* Where problem reports go. Put an email address here to offer email as well. */
   App.contact = { github: "https://github.com/kamleshdeora6-prog/german-v2", email: "" };
   App.report = (ctx) => {
@@ -100,7 +100,7 @@
   };
   App.contextLabel = () => {
     const r = (App.lastRoute || "").split("/");
-    if (r[0] === "lesson") { const l = Course.byN(r[1]); return l ? `you're on lesson ${l.pos}: ${l.title}` : ""; }
+    if (r[0] === "lesson") { const l = Course.byN(r[1]); return l ? `you're on lesson ${l.pos}: ${H.ltText(l)}` : ""; }
     if (r[0] === "practice") return r[1] ? `you're practising ${(Engine.GEN[r[1]] || {}).title || r[1]}` : "you're practising";
     if (r[0] === "write") return "you're writing";
     if (r[0] === "readexam") return "you're in the reading exam";
@@ -164,6 +164,8 @@
   document.addEventListener("click", (e) => {
     const rp = e.target.closest("[data-report]");
     if (rp) { e.preventDefault(); try { App.report(JSON.parse(rp.dataset.report)); } catch (err) { App.report({}); } return; }
+    const gl = e.target.closest("[data-gloss]");
+    if (gl) { e.preventDefault(); e.stopPropagation(); const host = gl.parentElement; const old = host.querySelector(":scope > .ghint"); if (old) { old.remove(); gl.classList.remove("on"); return; } const d = document.createElement("div"); d.className = "ghint"; d.innerHTML = Views.gloss ? Views.gloss(gl.dataset.gloss, "de", true) : ""; host.appendChild(d); gl.classList.add("on"); return; }
     const ext = e.target.closest("[data-url]");
     if (ext) { e.preventDefault(); App.openLink(ext.dataset.url); return; }
     const t = e.target.closest("[data-go],[data-tts],[data-ask],[data-say]");
@@ -195,7 +197,7 @@
         <div class="seg tonepick">${[["freundlich", "Freundlich · kind"], ["neutral", "Neutral"], ["streng", "Streng · strict"]].map(([v, t]) => `<button class="${v === tone ? "on" : ""}" data-tone="${v}">${t}</button>`).join("")}</div>
         <button class="btn sign big-btn ob-next">Weiter · Next</button></div>`;
       if (step === 3) d.innerHTML = `<div class="sheet ob" role="dialog" aria-labelledby="ob-t">${dots}<h2 id="ob-t">Where do you start?</h2>
-        <div class="col">${[[1, "I'm new to German", "Start at lesson 1 (A1)"], [0, "I know some German", "15-minute placement test"], [13, "I finished A1", "Start at A2"], [25, "I finished A2", "Start at B1"], [43, "I finished B1", "Start at B2"], [51, "I finished B2", "Start at C1"]].map(([n, t, sub]) => `<button class="pickrow" data-lvl="${n}"><b>${t}</b><span>${sub}</span></button>`).join("")}</div>
+        <div class="col">${[[-1, "I know zero German", "First steps with pictures · app in English"], [1, "I know a few words", "Start at lesson 1 (A1)"], [0, "I know some German", "15-minute placement test"], [13, "I finished A1", "Start at A2"], [25, "I finished A2", "Start at B1"], [43, "I finished B1", "Start at B2"], [51, "I finished B2", "Start at C1"]].map(([n, t, sub]) => `<button class="pickrow" data-lvl="${n}"><b>${t}</b><span>${sub}</span></button>`).join("")}</div>
         <p class="muted small credit">${App.credit()}</p></div>`;
       const nm = d.querySelector(".obname"); if (nm) { setTimeout(() => nm.focus(), 50); nm.onkeydown = (e) => { if (e.key === "Enter") d.querySelector(".ob-next").click(); }; }
       d.querySelectorAll("[data-goal]").forEach((b) => (b.onclick = () => { goal = +b.dataset.goal; d.querySelectorAll("[data-goal]").forEach((x) => x.classList.toggle("on", x === b)); }));
@@ -209,8 +211,9 @@
         const n = +b.dataset.lvl; const s = Store.get();
         s.settings.goal = goal; s.settings.tone = tone;
         DC.curriculum.filter((x) => n > 1 && Course.before(x.n, n)).forEach((x) => { const l = Store.lesson(x.n); l.done = true; l.read = true; l.score = l.score || 70; });
+        if (n === -1) { s.starterMode = true; s.settings.labels = "en"; App.applyTheme(); }
         s.settings.onboarded = true; Store.save(); d.remove();
-        App.go(n === 0 ? "placement" : `lesson/${Math.max(1, n)}`);
+        App.go(n === -1 ? "starter" : n === 0 ? "placement" : `lesson/${Math.max(1, n)}`);
       }));
     };
     draw(1);

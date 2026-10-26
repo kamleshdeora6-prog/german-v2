@@ -49,6 +49,8 @@ account (99 $/year) makes it last a year.
   whole script returned 1, even though the project had been generated fine. It is now an `if` block
   followed by `exit 0`. If the build ever fails again, open the failed run: the Xcode error is shown
   as a red annotation at the top, and the full log is attached as **xcode-build-log**.
+- **"future Xcode project file format (77)" (fixed in 6.1):** new XcodeGen versions write the Xcode 16
+  project format, but the workflow used Xcode 15.4. It now runs on `macos-15` with the newest Xcode 16.
 
 ## Updating the repo from Windows
 Easiest: **GitHub Desktop** (desktop.github.com) → clone `german-v2` → copy the new files over the

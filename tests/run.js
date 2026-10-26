@@ -4,7 +4,7 @@
 const path = require("path");
 const ROOT = path.join(__dirname, "..");
 global.window = global;
-for (const f of ["curriculum", "reference", "scenes", "vocab", "verbs", "conj", "notes", "passages", "bank", "lid", "exams", "placement"]) require(path.join(ROOT, "js/data", f + ".js"));
+for (const f of ["curriculum", "reference", "scenes", "vocab", "verbs", "conj", "notes", "passages", "bank", "lid", "exams", "placement", "starter"]) require(path.join(ROOT, "js/data", f + ".js"));
 require(path.join(ROOT, "js/engine.js")); require(path.join(ROOT, "js/engine_plus.js")); require(path.join(ROOT, "js/tutor.js"));
 /* Weber needs a tiny Store/H stub outside the browser */
 global.H = global.H || { esc: (x) => String(x) };
@@ -53,6 +53,24 @@ for (let s = 1; s <= 12; s++) ok((stages[s] || 0) >= 6, `stage ${s} has ${stages
 });
 Store.get().settings.tone = "streng";
 console.log(`  ${DC.placement.length} placement items, 12 stages, 3 tones`);
+
+section("1c. English layer and First steps");
+DC.curriculum.forEach((l) => { ok(l.en && l.en.title && l.en.theme && l.en.expl.length, `lesson ${l.n}: English title/theme/explanation missing`); if (l.en) l.en.expl.forEach((p) => { const plain = p.replace(/__[^_]+__|\*\*[^*]+\*\*/g, ""); ok((plain.match(/\b(ist|sind|wird|benutzt|steht|immer|wenn|aber|nur|oder|auch)\b/g) || []).length < 3, `lesson ${l.n}: English explanation looks German: "${p.slice(0, 60)}"`); }); });
+const ST = DC.starter || [];
+ok(ST.length >= 15, `First steps has ${ST.length} units, expected at least 15`);
+ok(new Set(ST.map((u) => u.id)).size === ST.length, "First steps unit IDs are unique");
+let stWords = 0;
+ST.forEach((u) => {
+  ok(u.icon && u.en && u.de && u.tip, `unit ${u.id}: icon, titles and tip needed`);
+  ok(u.words.length >= 8, `unit ${u.id}: only ${u.words.length} words`);
+  ok((u.phrases || []).length >= 4, `unit ${u.id}: needs at least 4 sentences to build`);
+  const de = u.words.map((w) => w[0]), en = u.words.map((w) => w[1].toLowerCase());
+  ok(de.length === new Set(de).size, `unit ${u.id}: duplicate German word`);
+  ok(en.length === new Set(en).size, `unit ${u.id}: duplicate English meaning (a picture/meaning question would have two right answers)`);
+  u.words.forEach(([d, e, pic]) => { stWords++; ok(d && e && pic, `unit ${u.id}: "${d}" needs German, English and a picture`); const m = /^(der|die|das) (\S.*)$/.exec(d); if (m) ok(/^[A-ZÄÖÜ]/.test(m[2]), `unit ${u.id}: noun "${d}" must be capitalised`); });
+  (u.phrases || []).forEach(([d, e]) => ok(/[.!?]$/.test(d) && e, `unit ${u.id}: sentence "${d}" needs end punctuation and English`));
+});
+console.log(`  ${DC.curriculum.length} lessons with English explanations · First steps: ${ST.length} units, ${stWords} words`);
 
 section("2. Exercise generators");
 const lower = (s) => s.split(/\s+/).map((x) => x.toLowerCase().replace(/[.!?]+$/, "")).sort().join("|");
@@ -104,6 +122,7 @@ section("4. Max leaves correct German alone");
 const good = [];
 DC.curriculum.forEach((l) => { l.examples.forEach((e) => good.push(e.de)); [l.reading, l.reading2 ? l.reading2.text : ""].forEach((t) => good.push(...t.split(/(?<=[.!?])\s+/).filter((x) => x.trim().length > 12 && !/[„“"]/.test(x)))); (l.dialog || []).forEach((d) => good.push(...d.de.split(/(?<=[.!?])\s+/).filter((x) => x.trim().length > 12))); });
 DC.vocab.forEach((v) => { if (v.exDe) good.push(v.exDe); });
+(DC.starter || []).forEach((u) => (u.phrases || []).forEach((p) => good.push(p[0])));
 for (let i = 0; i < 3000; i++) { const it = Engine.generate(); if (it && it.full) good.push(it.full); if (it && it.kind === "order") good.push(it.answer); }
 let fp = 0;
 good.forEach((s) => { const r = Tutor.check(s); if (r.issues.length) { fp++; if (fp <= 10) console.log(`  ✗ false alarm: "${s}" → "${r.fixed}"`); } });

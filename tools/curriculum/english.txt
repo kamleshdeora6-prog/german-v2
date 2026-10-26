@@ -1,0 +1,512 @@
+# English layer: one block per lesson ID (@@ n). Shown in Settings → Menu language "English"
+# and folded under the German explanation in "Deutsch + English".
+# title= / theme= / use= once, expl= one paragraph per line. **bold**, __German example__ as in the course files.
+
+@@ 1
+title=Introducing yourself: personal pronouns, sein (to be) & haben (to have)
+theme=Me and my family
+expl=**Personal pronouns** replace names: ich (I), du (you, informal), er (he), sie (she), es (it), wir (we), ihr (you, plural), sie (they) and **Sie** (you, formal). Use **Sie** with a capital S for adults you don't know, doctors, officials – use **du** for friends, family and children.
+expl=**sein** (to be) and **haben** (to have) are irregular – you have to learn their forms by heart – and they are the most important verbs in German. You need them for your name, age, origin, job and family, and later for the past tense.
+expl=Careful: age uses **sein**, not haben: __Ich bin 28 Jahre alt.__ = I am 28 years old (not "ich habe 28 Jahre").
+use=Exam part 1 (getting to know someone): name, origin, age, family, job.
+
+@@ 2
+title=Present tense: regular and irregular verbs
+theme=Everyday life and hobbies
+expl=To make the present tense, take the **stem** (the infinitive without -en: wohn-en → **wohn**) and add the endings **-e, -st, -t, -en, -t, -en**: __ich wohne, du wohnst, er wohnt, wir wohnen, ihr wohnt, sie wohnen__.
+expl=Stems ending in **-t/-d** add an extra e so you can pronounce them: __du arbeitest, er arbeitet__. Stems ending in **-s/-ß/-z** only add -t for du: __du heißt, du tanzt__.
+expl=Irregular verbs change their vowel **only for du and er/sie/es**: e → i (__sprechen → du sprichst, er spricht__), e → ie (__lesen → er liest__), a → ä (__fahren → er fährt__). All other forms stay regular.
+expl=German has only one present tense: __Ich lerne__ means "I learn", "I am learning" and often "I will learn".
+
+@@ 3
+title=Word order: the verb is in position 2
+theme=My day
+expl=In a normal German sentence the **conjugated verb is always in position 2**. Position 1 can be the subject – or a time, a place or an object.
+expl=If something other than the subject is in position 1, the subject moves **directly after the verb**: __Heute gehe ich ins Kino.__ = Today I'm going to the cinema (literally "Today go I to the cinema").
+expl=One position can be several words: __Am Montagmorgen um 8 Uhr__ is all position 1, so the verb still comes next: __Am Montagmorgen um 8 Uhr beginnt der Kurs.__
+expl=Typical order in the middle of the sentence: time – manner – place (**te-ka-mo-lo**): __Ich fahre morgen mit dem Bus nach Berlin.__
+
+@@ 4
+title=Questions: yes/no questions and W-questions
+theme=Getting to know people
+expl=**W-questions** start with a question word (wer = who, was = what, wo = where, woher = where from, wohin = where to, wann = when, wie = how, warum = why). The question word is in position 1 and the verb in position 2: __Wo wohnst du?__ = Where do you live?
+expl=**Yes/no questions** start with the verb: __Wohnst du in Berlin?__ = Do you live in Berlin? German has no "do" for questions – you simply put the verb first.
+expl=To answer **yes** to a negative question, say **doch**: __Kommst du nicht? – Doch, ich komme!__ = Aren't you coming? – Yes, I am!
+expl=Polite with Sie: __Können Sie mir helfen? Woher kommen Sie?__
+
+@@ 5
+title=Nouns: gender, articles and plural
+theme=Flat and furniture
+expl=Every German noun has a **gender**: **der** (masculine), **die** (feminine) or **das** (neuter). It is often not logical (__das Mädchen__ = the girl), so **always learn a noun with its article and plural**. All nouns are written with a **capital letter**.
+expl=Useful tips: words ending in -ung, -heit, -keit, -ion, -schaft and most words ending in -e are **die**. Words ending in -chen, -lein, -ment, -um are **das**. Days, months, seasons, people ending in -er and words ending in -ismus are **der**.
+expl=In the plural the article is always **die**: __der Tisch → die Tische, das Bett → die Betten__. Plural endings vary (-e, -en, -n, -er, -s or none, sometimes with an umlaut), so learn them with the word.
+expl=**ein / eine** = a, an: __ein Tisch (der), eine Lampe (die), ein Sofa (das)__. There is no plural of ein: __Tische__.
+
+@@ 6
+title=The accusative case
+theme=Shopping
+expl=The **accusative** is the direct object – the person or thing the action is done to. Ask "who or what?" (Wen oder was?): __Ich kaufe den Apfel.__ = I buy the apple.
+expl=Good news: **only the masculine changes**: der → **den**, ein → **einen**, kein → **keinen**. Feminine (die/eine), neuter (das/ein) and plural (die) stay the same.
+expl=Verbs that take an accusative object: haben, kaufen, brauchen, möchten, nehmen, essen, trinken, sehen, suchen, finden, besuchen and **es gibt** (there is / there are): __Es gibt einen Supermarkt hier.__
+expl=Pronouns change too: ich → mich, du → dich, er → ihn, sie → sie, es → es, wir → uns, ihr → euch, sie/Sie → sie/Sie.
+
+@@ 7
+title=Negation: nicht and kein
+theme=Food and drink
+expl=Use **kein** to negate a noun that has **ein** or no article: __Ich habe keine Zeit.__ = I have no time. __Das ist kein Tee.__ = That isn't tea. kein has the same endings as ein (plural: keine).
+expl=Use **nicht** for everything else: verbs, adjectives, nouns with der/die/das or mein, places and times: __Ich komme nicht. Das ist nicht gut. Das ist nicht mein Kaffee.__
+expl=Position of **nicht**: usually at the end, but **before** an adjective, a place, a preposition and the second part of the verb: __Ich komme nicht aus Berlin. Ich kann heute nicht kommen.__
+
+@@ 8
+title=Possessive articles (my, your, his …)
+theme=Family and friends
+expl=Possessive articles show who something belongs to: **mein** (my), **dein** (your), **sein** (his/its), **ihr** (her/their), **unser** (our), **euer** (your, plural), **Ihr** (your, formal).
+expl=They take the same endings as ein/kein: __mein Bruder, meine Schwester, mein Kind, meine Kinder__. In the accusative only the masculine changes: __Ich besuche meinen Bruder.__
+expl=**sein** = belonging to him (er) or it (es); **ihr** = belonging to her (sie) or to them. **Ihr** with a capital I = your (formal). **euer** loses an e when it gets an ending: __eure Wohnung__.
+
+@@ 9
+title=Numbers, the time and time expressions (am, um, im)
+theme=Appointments
+expl=Official time (stations, radio): 14:30 = __vierzehn Uhr dreißig__. Everyday time: __Viertel nach zwei__ (2:15), __Viertel vor drei__ (2:45), __fünf nach zwei__ (2:05).
+expl=Careful: **halb drei** = **2:30**, not 3:30! Germans say "half (on the way to) three".
+expl=Prepositions of time: **um** + clock time (__um 8 Uhr__), **am** + day, date or part of the day (__am Montag, am Abend__), **im** + month or season (__im Mai, im Winter__), **von … bis** (from … to). Years have no preposition: __2026 ziehe ich um.__
+expl=Numbers 21–99 are said "backwards": 24 = __vierundzwanzig__ ("four-and-twenty").
+
+@@ 10
+title=Separable verbs
+theme=Daily routine
+expl=Many verbs have a prefix that **separates** and goes to the **end of the sentence**: auf|stehen (to get up) → __Ich stehe um 7 Uhr auf.__ = I get up at 7.
+expl=Separable prefixes include ab-, an-, auf-, aus-, ein-, mit-, nach-, vor-, weg-, zu-, zurück-, fern-. The stress is on the prefix: __AUFstehen, FERNsehen__.
+expl=These prefixes **never** separate: be-, ver-, er-, ent-, ge-, zer-, emp-, miss-: __Ich besuche dich. Ich verstehe das.__
+expl=With a modal verb the separable verb stays together at the end: __Ich muss früh aufstehen.__
+
+@@ 11
+title=Modal verbs (can, must, want …)
+theme=Rules and wishes
+expl=Modal verbs: **können** (can), **müssen** (must, have to), **wollen** (want), **sollen** (should – someone else wants it), **dürfen** (may, be allowed), **möchten** (would like).
+expl=The modal verb is in position 2 and the main verb goes to the **end in the infinitive**: __Ich muss heute arbeiten.__ = I have to work today.
+expl=For ich and er/sie/es modal verbs have **no ending** and often a different vowel: __ich kann, er kann; ich muss, er muss; ich will, er will__.
+expl=Careful: **nicht müssen** = don't have to; **nicht dürfen** = mustn't: __Du musst nicht kommen__ (it's optional) vs. __Du darfst nicht rauchen__ (it's forbidden).
+
+@@ 12
+title=The imperative (giving instructions)
+theme=Tips and instructions
+expl=Use the imperative for requests, tips and instructions. There are three forms.
+expl=**du**: the du-form without -st and without du: __du kommst → Komm!__ An e→i change stays: __du sprichst → Sprich!__ but a→ä does not: __du fährst → Fahr!__
+expl=**ihr**: the ihr-form without ihr: __Kommt!__ · **Sie**: verb + Sie: __Kommen Sie!__ · Irregular **sein**: __Sei! Seid! Seien Sie!__
+expl=Add **bitte**, **doch** or **mal** to sound friendlier: __Komm doch mal vorbei!__ = Why don't you drop by?
+
+@@ 61
+title=The perfect tense – first steps
+theme=My weekend
+expl=In everyday speech Germans talk about the past almost always with the **Perfekt**: __Ich habe gearbeitet.__ = I worked / I have worked. __Wir sind nach Hause gegangen.__ = We went home.
+expl=It has two parts: **haben or sein** in position 2 and the **past participle** at the end.
+expl=Regular participle: **ge- … -t**: machen → __gemacht__, kaufen → __gekauft__. Many common irregular verbs: **ge- … -en**: essen → __gegessen__, sehen → __gesehen__.
+expl=Most verbs use **haben**. Verbs of movement from A to B (gehen, fahren, kommen, fliegen) and change of state use **sein**: __Ich bin nach Berlin gefahren.__
+use=The A1 exam already expects simple sentences about yesterday and the weekend.
+
+@@ 13
+title=The dative: articles, pronouns and dative verbs
+theme=Help and favours
+expl=The **dative** answers "to whom? / for whom?" (Wem?). It usually marks the person who receives something or for whom something happens.
+expl=Articles: der → **dem**, die → **der**, das → **dem**, plural die → **den** + -n on the noun (__den Kindern__). ein → **einem/einer**, mein → **meinem/meiner**.
+expl=Some verbs take **only a dative object**: helfen, danken, gefallen, gehören, schmecken, passen, stehen (clothes), gratulieren: __Ich helfe dir. Das Buch gehört mir.__
+expl=Dative pronouns: mir, dir, ihm, ihr, ihm, uns, euch, ihnen/Ihnen: __Wie geht es Ihnen?__ = How are you?
+
+@@ 14
+title=Dative and accusative in the same sentence
+theme=Presents
+expl=Verbs like geben, schenken, zeigen, bringen, schicken, erklären, empfehlen, kaufen and leihen have two objects: the **person (dative)** and the **thing (accusative)**: __Ich schenke meiner Mutter einen Schal.__ = I give my mother a scarf.
+expl=Order: two nouns → **dative before accusative**. One pronoun → **the pronoun first**: __Ich schenke ihn meiner Mutter. / Ich schenke ihr einen Schal.__ Two pronouns → **accusative before dative**: __Ich schenke ihn ihr.__
+
+@@ 15
+title=Prepositions with the accusative and with the dative
+theme=Getting around town
+expl=**Always accusative**: durch (through), für (for), gegen (against), ohne (without), um (around), bis (until).
+expl=**Always dative**: aus (from, out of), bei (at, near), mit (with), nach (to, after), seit (since), von (from, of), zu (to), gegenüber (opposite).
+expl=Important: **nach** + cities and countries without an article (__nach Berlin__), **zu** + people and places (__zum Arzt, zu Anna__), **nach Hause** = (going) home, **zu Hause** = (being) at home.
+expl=Short forms: zu dem → **zum**, zu der → **zur**, bei dem → **beim**, von dem → **vom**.
+
+@@ 16
+title=Two-way prepositions: Where? (dative) and Where to? (accusative)
+theme=Moving and furnishing
+expl=an, auf, hinter, in, neben, über, unter, vor and zwischen can take **dative or accusative**.
+expl=**Wo?** (where – position, no movement) → **dative**: __Das Buch liegt auf dem Tisch.__ = The book is lying on the table.
+expl=**Wohin?** (where to – direction, movement to a goal) → **accusative**: __Ich lege das Buch auf den Tisch.__ = I put the book on the table.
+expl=Verb pairs: stellen (put upright, acc.) → stehen (stand, dat.), legen (lay, acc.) → liegen (lie, dat.), setzen → sitzen, hängen → hängen.
+
+@@ 17
+title=The perfect tense (Perfekt)
+theme=Experiences and weekends
+expl=The **Perfekt** is the most important past tense in speech. Form: **haben/sein** (position 2) + **past participle** (end).
+expl=Participles: regular **ge-…-t** (gemacht, gekauft); irregular **ge-…-en**, often with a vowel change (gegessen, getrunken, geschrieben). Separable verbs put **ge** in the middle: __aufgestanden, eingekauft__.
+expl=No ge-: verbs ending in -ieren (__studiert, telefoniert__) and verbs with be-, ver-, er-, ent- (__besucht, verstanden__).
+expl=**sein** for movement from A to B and change of state (gehen, fahren, kommen, aufstehen, einschlafen, werden) and for sein and bleiben: __Ich bin geblieben.__ Everything else uses haben.
+
+@@ 18
+title=Simple past of sein, haben and modal verbs
+theme=Then and now
+expl=When speaking, Germans use the **simple past (Präteritum)** – not the Perfekt – for sein, haben and the modal verbs: __Ich war krank.__ (instead of "Ich bin krank gewesen").
+expl=sein: **war, warst, war, waren, wart, waren**. haben: **hatte, hattest, hatte, hatten, hattet, hatten**.
+expl=Modal verbs: stem without umlaut + -te: __konnte, musste, durfte, wollte, sollte__ (and möchten → __wollte__ in the past).
+
+@@ 19
+title=Reflexive verbs
+theme=Health and the body
+expl=With reflexive verbs a **reflexive pronoun** points back to the subject: __Ich wasche mich.__ = I wash (myself).
+expl=Normally accusative: **mich, dich, sich, uns, euch, sich**. If there is already an accusative object, use the dative: __Ich wasche mir die Hände. Ich putze mir die Zähne.__ (mir, dir, sich, uns, euch, sich)
+expl=Many reflexive verbs have a fixed preposition: sich freuen auf/über, sich interessieren für, sich ärgern über, sich erinnern an.
+
+@@ 20
+title=Conjunctions: und, aber, oder, denn, sondern
+theme=Free time and opinions
+expl=These conjunctions are in **position 0** – they don't count. After them comes a normal main clause with the verb in position 2: __Ich bleibe zu Hause, denn ich bin müde.__
+expl=**und** (and), **aber** (but), **oder** (or), **denn** (because – like weil, but with normal word order), **sondern** (but rather – only after a negation: __nicht Tee, sondern Kaffee__).
+expl=Put a comma before aber, denn and sondern. With und/oder you can leave out a repeated subject: __Ich koche und (ich) esse.__
+
+@@ 21
+title=Subordinate clauses with weil, dass, wenn, ob
+theme=Work and jobs
+expl=In a subordinate clause the **conjugated verb goes to the end**: __…, weil ich müde bin.__ = … because I am tired.
+expl=**weil** = because (reason). **dass** = that (after verbs like denken, glauben, finden, wissen, hoffen, sagen). **wenn** = if / whenever. **ob** = whether (an indirect yes/no question).
+expl=With a modal verb or the Perfekt, the helping verb is the very last word: __…, weil ich arbeiten muss. …, dass er gekommen ist.__
+expl=If the subordinate clause comes first, the main clause starts with the verb: __Wenn ich Zeit habe, komme ich.__
+
+@@ 22
+title=Comparative and superlative
+theme=Comparing cities and homes
+expl=Comparative: adjective + **-er** (+ **als** = than): __Berlin ist größer als München.__ Equal: **so … wie**: __so groß wie__ = as big as.
+expl=Superlative: **am** + adjective + **-sten**: __am schönsten__. Before a noun: __der schönste Park__.
+expl=Short adjectives with a/o/u often get an umlaut: alt → älter → am ältesten, groß → größer → am größten.
+expl=Irregular: gut – besser – am besten, viel – mehr – am meisten, gern – lieber – am liebsten, hoch – höher – am höchsten.
+
+@@ 23
+title=Adjective endings
+theme=Clothes and appearance
+expl=An adjective **before a noun** gets an ending; after sein it has none: __Die Jacke ist blau.__ but __die blaue Jacke__.
+expl=After **der/die/das**: only **-e** or **-en**. Nominative singular and feminine/neuter accusative = -e, everything else = -en: __der blaue Mantel, den blauen Mantel__.
+expl=After **ein/kein/mein**: the same, except where ein has no ending – then the adjective shows the gender: masculine nominative **-er** (__ein blauer Mantel__), neuter nominative/accusative **-es** (__ein blaues Hemd__).
+expl=Without an article the adjective takes the ending of der/die/das: __kalter Kaffee, frische Milch, kaltes Wasser__.
+
+@@ 24
+title=Time: seit, vor, nach, ab, bis + sequence (zuerst, dann, danach)
+theme=Travel and holidays
+expl=Time prepositions with the dative: **seit** (since/for – still going on, so use the present: __Ich wohne seit einem Jahr hier.__), **vor** (ago: __vor zwei Tagen__), **nach** (after), **ab** (from … on), **bei** (during: __beim Frühstück__).
+expl=With the accusative: **für** (for a planned period: __für eine Woche__), **bis** (until), **über** (over: __über das Wochenende__).
+expl=Sequence words (they take position 1, so the verb comes next): __zuerst, dann, danach, später, zum Schluss__: __Zuerst frühstücke ich, dann gehe ich los.__
+
+@@ 25
+title=Subjunctive II: würde, hätte, wäre, könnte
+theme=Wishes and dreams
+expl=The **Konjunktiv II** expresses wishes, dreams, unreal situations and politeness. Usually: **würde + infinitive**: __Ich würde gern reisen.__ = I would like to travel.
+expl=sein, haben and the modal verbs have their own forms: **wäre, hätte, könnte, müsste, dürfte, sollte**.
+expl=Unreal condition: __Wenn ich Zeit hätte, würde ich mehr Sport machen.__ = If I had time, I would do more sport (but I don't have time).
+expl=Polite requests: __Könnten Sie mir helfen? Ich hätte gern einen Kaffee.__
+
+@@ 26
+title=Giving advice and recommendations
+theme=Solving problems
+expl=From direct to polite: imperative (__Geh zum Arzt!__) → **solltest** (__Du solltest zum Arzt gehen.__) → __An deiner Stelle würde ich …__ (If I were you …) → __Ich empfehle dir, … zu …__ → __Es wäre besser, wenn du …__ → __Wie wäre es, wenn du …?__
+expl=**sollen** in the present = an instruction from someone else: __Der Arzt sagt, ich soll mehr schlafen.__
+
+@@ 27
+title=Making suggestions and planning together
+theme=Organising a party
+expl=This is the exam task "planning something together": suggest, react, agree or disagree, offer alternatives and reach a decision.
+expl=Suggest: __Wie wäre es mit …? Wir könnten … Lass uns … Sollen wir …? Ich schlage vor, dass …__ Agree: __Gute Idee! Einverstanden. Das passt mir gut.__ Disagree politely: __Das finde ich nicht so gut, weil … Lieber …__
+expl=Always finish with a clear result: __Also, wir machen …__
+
+@@ 28
+title=Infinitive with zu
+theme=Learning and further education
+expl=After many verbs, nouns and adjectives comes an **infinitive with zu** at the end of the sentence: __Ich habe keine Lust zu kochen.__ = I don't feel like cooking.
+expl=After verbs like anfangen, aufhören, versuchen, vergessen, vorhaben, hoffen, beschließen; after nouns with haben (Lust, Zeit, Angst, Spaß); after __es ist wichtig/schwer/schön__.
+expl=Separable verbs put zu in the middle: __anzurufen, aufzustehen__. Modal verbs never take zu: __Ich muss arbeiten.__
+
+@@ 29
+title=Purpose clauses: um … zu and damit
+theme=Goals and purposes
+expl=Purpose clauses answer "what for?" (Wozu?). **um … zu** + infinitive when both parts have the **same subject**: __Ich lerne Deutsch, um in Deutschland zu arbeiten.__ = I learn German (in order) to work in Germany.
+expl=**damit** + subordinate clause when the subjects are **different**: __Ich erkläre es langsam, damit du es verstehst.__ Don't use a modal verb like wollen in a damit-clause.
+
+@@ 30
+title=ohne … zu / (an)statt … zu
+theme=Habits
+expl=**ohne … zu** = without doing something: __Er geht, ohne tschüss zu sagen.__ = He leaves without saying goodbye.
+expl=**(an)statt … zu** = instead of doing something: __Statt zu kochen, bestellt er Pizza.__ = Instead of cooking, he orders pizza.
+expl=With different subjects: **ohne dass / statt dass** + subordinate clause: __Er nimmt das Auto, ohne dass sein Vater es weiß.__
+
+@@ 31
+title=Verbs with prepositions + da- and wo- words
+theme=Feelings and interests
+expl=Many verbs have a **fixed preposition with a fixed case** – learn them as one unit: warten auf + acc. (wait for), denken an + acc. (think of), sich freuen auf + acc. (look forward to), Angst haben vor + dat. (be afraid of), träumen von + dat. (dream of).
+expl=Asking about a **person**: preposition + wen/wem: __Auf wen wartest du?__ About a **thing**: **wo(r)** + preposition: __Worauf wartest du?__
+expl=Referring back to a thing: **da(r)** + preposition: __Ich warte darauf.__ = I'm waiting for it.
+
+@@ 32
+title=Indirect questions
+theme=Offices and information
+expl=Indirect questions are subordinate clauses – **the verb goes to the end**. They are more polite than direct questions.
+expl=W-question → keep the question word: __Wann kommt der Bus?__ → __Können Sie mir sagen, wann der Bus kommt?__
+expl=Yes/no question → use **ob** (whether): __Ist das Büro offen?__ → __Wissen Sie, ob das Büro offen ist?__
+
+@@ 33
+title=Relative clauses
+theme=Describing people and things
+expl=A relative clause describes a noun more precisely (who / which / that). It is a subordinate clause (verb at the end) and comes right after the noun.
+expl=The relative pronoun takes its **gender and number from the noun** but its **case from the relative clause**: __der Mann, den ich kenne__ (kennen + acc.) = the man (whom) I know.
+expl=The forms are like der/die/das, except dative plural **denen** and genitive **dessen / deren**. With a preposition: __die Frau, mit der ich arbeite__.
+
+@@ 34
+title=Time clauses: als, wenn, bevor, nachdem, während, seit, bis
+theme=CV and memories
+expl=Time clauses are subordinate clauses (verb at the end) that say when something happens.
+expl=**als** = when (one occasion in the past: __Als ich 18 war, …__) · **wenn** = when (present/future, or "whenever" in the past) · **bevor** = before · **nachdem** = after (+ past perfect) · **während** = while · **seit(dem)** = since · **bis** = until.
+
+@@ 35
+title=Simple past (all verbs) and past perfect
+theme=Telling stories
+expl=The **Präteritum** is used mainly in writing (stories, newspapers, fairy tales). Regular: stem + **-te**: __machte, wohnte__. Irregular verbs have their own stem: __ging, kam, fuhr, sah, fand__. ich and er/sie/es have no ending: __ich ging, er ging__.
+expl=The **Plusquamperfekt** (past perfect) is the past before the past: **hatte/war + participle**: __Nachdem ich gegessen hatte, ging ich los.__ = After I had eaten, I left.
+
+@@ 36
+title=Contrasts: obwohl and trotzdem
+theme=Work–life balance
+expl=**obwohl** (although) starts a subordinate clause – verb at the end: __Ich gehe joggen, obwohl es regnet.__
+expl=**trotzdem** (nevertheless, still) is an adverb – in position 1 (verb right after it) or in the middle: __Es regnet. Trotzdem gehe ich joggen. / Ich gehe trotzdem joggen.__
+expl=Both show an unexpected contrast – the opposite of weil/deshalb.
+
+@@ 37
+title=Consequences: deshalb, deswegen, darum, sonst
+theme=Environment and traffic
+expl=**deshalb, deswegen, darum** (therefore, that's why) show a result. They are adverbs: in position 1 the verb follows directly: __Es regnet, deshalb nehme ich den Bus.__
+expl=Compare: **weil** gives the reason (subordinate clause), **deshalb** the result (main clause): __Ich nehme den Bus, weil es regnet. = Es regnet, deshalb nehme ich den Bus.__
+expl=**sonst** (otherwise) shows a negative result: __Beeil dich, sonst verpasst du den Zug.__
+
+@@ 38
+title=Two-part connectors
+theme=Media and the internet
+expl=Two-part connectors link two pieces of information elegantly: **sowohl … als auch** (both … and), **nicht nur … sondern auch** (not only … but also), **entweder … oder** (either … or), **weder … noch** (neither … nor), **zwar … aber** (admittedly … but), **je … desto** (the more … the more).
+expl=**weder … noch** is already negative – don't add nicht: __Ich habe weder Zeit noch Geld.__
+
+@@ 39
+title=The passive voice
+theme=Processes and production
+expl=In the passive the **action** matters, not who does it: __Das Brot wird gebacken.__ = The bread is (being) baked.
+expl=Present: **werden + participle** · Past: **wurde + participle** · Perfekt: **ist + participle + worden** · With a modal verb: **muss + participle + werden**.
+expl=The accusative object of the active sentence becomes the subject of the passive: __Man repariert den Wagen. → Der Wagen wird repariert.__ The person doing it can be added with **von** + dative.
+
+@@ 40
+title=Genitive and the prepositions wegen, trotz, während, statt
+theme=News and everyday life
+expl=The **genitive** shows possession: __das Auto des Mannes, die Tasche der Frau__ (the man's car, the woman's bag). Masculine and neuter nouns add -s/-es. With names just add -s: __Ravis Wohnung__.
+expl=In everyday speech **von + dative** often replaces it: __das Auto von dem Mann__.
+expl=Genitive prepositions: **wegen** (because of), **trotz** (despite), **während** (during), **(an)statt** (instead of), innerhalb/außerhalb (inside/outside of).
+
+@@ 41
+title=Future tense and the many uses of werden
+theme=Plans for the future
+expl=Future: **werden** (position 2) + **infinitive** (end): __Ich werde nach Indien fliegen.__ Often the present + a time word is enough: __Morgen fliege ich nach Indien.__
+expl=The future is used for plans, promises, predictions and guesses (+ wohl): __Er wird wohl krank sein.__ = He's probably ill.
+expl=**werden** has four jobs: become (__Ich werde Arzt.__), future (+ infinitive), passive (+ participle) and the würde-form (Konjunktiv II).
+
+@@ 42
+title=je … desto + final project: giving a presentation
+theme=Bringing it together: life in Germany
+expl=**je … desto/umso** + comparative = the more … the more. The je-part is a subordinate clause (verb at the end); the desto-part has the verb right after the comparative: __Je mehr ich übe, desto besser spreche ich.__
+expl=This lesson is your B1 final project: a presentation (Goethe B1 speaking part 2) using all the structures so far – topic, own experience, situation in your country, pros and cons, your opinion, conclusion.
+
+@@ 43
+title=Subjunctive I: reported speech
+theme=News and reports
+expl=Newspapers, reports and minutes use the **Konjunktiv I** to report what someone else said. It signals: "someone else says this – I'm not claiming it myself".
+expl=Form: stem + -e, -est, -e, -en, -et, -en. Most common is the 3rd person: __er sei, er habe, er komme, er müsse, er werde__: __Der Minister sagt, er habe keine Zeit.__
+expl=If the Konjunktiv I looks the same as the normal form, use the Konjunktiv II instead: __Sie sagen, sie hätten keine Zeit.__
+
+@@ 44
+title=Participles used as adjectives
+theme=Products and descriptions
+expl=**Present participle** (infinitive + d) is active and simultaneous: __die lachenden Kinder__ = the laughing children (the children who are laughing).
+expl=**Past participle** is passive or completed: __der reparierte Wagen__ = the repaired car; __der angekommene Zug__ = the train that has arrived.
+expl=Before a noun both take normal adjective endings: __das wartende Kind, mit dem reparierten Wagen__.
+
+@@ 45
+title=Nominal style and verbal style
+theme=Reports and forms
+expl=In the **nominal style** a noun carries the information, in the **verbal style** a verb: __nach der Prüfung des Antrags__ ↔ __nachdem der Antrag geprüft worden ist__ (after the application has been checked).
+expl=Typical conversions: weil → wegen/aufgrund + gen., obwohl → trotz + gen., wenn/falls → bei + dat., nachdem → nach + dat., bevor → vor + dat., um … zu → zur + dat.
+expl=Official texts prefer the nominal style; speech prefers the verbal style.
+
+@@ 46
+title=Alternatives to the passive
+theme=Rules and instructions
+expl=Shorter forms with the same meaning as the werden-passive: **man** + active (__Man repariert das Gerät nicht mehr.__), **sich lassen** + infinitive = can be done (__Das Gerät lässt sich leicht reparieren.__), **sein + zu** + infinitive = must/can be done (__Die Formulare sind bis Freitag abzugeben.__), adjectives in **-bar / -lich** (__reparierbar, verständlich__).
+
+@@ 47
+title=B2 connectors: falls, sofern, indem, sodass, anstatt dass
+theme=Conditions and consequences
+expl=Condition: **wenn / falls / sofern** (if, provided that): __Falls es regnet, bleiben wir zu Hause.__
+expl=Means: **indem** answers "how? by what means?": __Man spart Energie, indem man kürzer duscht.__ = You save energy by taking shorter showers.
+expl=Result: **sodass** / **so … dass** (so that, so … that): __Es regnete stark, sodass das Spiel ausfiel.__ Alternative: **anstatt dass** (instead of) with different subjects.
+
+@@ 48
+title=Noun–verb phrases and fixed combinations
+theme=Work and administration
+expl=Noun–verb phrases (**Funktionsverbgefüge**) are fixed combinations of a noun and a weak verb: __eine Entscheidung treffen__ (= entscheiden, to make a decision), __in Betracht ziehen__ (to consider), __zur Verfügung stellen__ (to provide).
+expl=The verb carries hardly any meaning – the noun carries the content. They sound formal and are very common in reports, emails and contracts.
+
+@@ 49
+title=Modal verbs for guesses (how sure are you?)
+theme=Guessing and concluding
+expl=Modal verbs have a second meaning: they show **how sure the speaker is**. **muss** = almost certain (__Er muss krank sein.__ = He must be ill), **dürfte** = probably, **könnte / kann** = possibly, **mag** = may well be.
+expl=**will** = someone claims something about themselves (__Er will nichts gewusst haben.__ = He claims he knew nothing), **soll** = people say, it's reported (__Sie soll reich sein.__ = She's said to be rich).
+
+@@ 50
+title=Past subjunctive and unreal comparisons
+theme=Looking back and regret
+expl=Unreal past: **hätte/wäre + participle**: __Hätte ich das gewusst, wäre ich früher gekommen.__ = If I had known, I would have come earlier (but I didn't know).
+expl=With a modal verb you get a double infinitive: __Ich hätte früher kommen können / müssen / sollen.__ = I could / should have come earlier.
+expl=Unreal comparisons: **als ob / als wenn** + Konjunktiv II: __Er tut so, als ob er alles wüsste.__ = He acts as if he knew everything.
+
+@@ 62
+title=Passive with modal verbs and the state passive
+theme=Building site and repairs
+expl=Passive with a modal verb: modal (position 2) + **participle + werden** (end): __Die Heizung muss repariert werden.__ = The heating must be repaired. In a subordinate clause the modal is the very last word: __…, weil die Heizung repariert werden muss.__
+expl=The **state passive** (sein + participle) describes the result, not the process: __Die Tür wird geöffnet__ (someone is opening it) vs. __Die Tür ist geöffnet__ (it is open).
+
+@@ 63
+title=Relative clauses with wer, was and wo(r) + preposition
+theme=Who dares, wins
+expl=**wer** starts a relative clause without a noun and means "whoever / anyone who": __Wer früh aufsteht, hat mehr vom Tag.__
+expl=**was** follows alles, etwas, nichts, das, superlatives and whole sentences: __Das ist alles, was ich weiß.__ __Er kam pünktlich, was mich überraschte.__
+expl=With a preposition and was, use **wo(r)** + preposition: __Das ist etwas, worüber ich oft nachdenke.__
+
+@@ 64
+title=Nouns, verbs and adjectives with fixed prepositions
+theme=Commitment and interests
+expl=Not only verbs but also nouns and adjectives have fixed prepositions you have to learn with them: __die Angst vor (fear of), das Interesse an (interest in), stolz auf (proud of), zufrieden mit (satisfied with)__.
+expl=The noun often – but not always – has the same preposition as the verb: sich freuen über → __die Freude über__, but sich interessieren für → __das Interesse an__ (!).
+
+@@ 65
+title=Formal letters and emails: enquiry, complaint, request
+theme=Correspondence
+expl=Formal texts have fixed parts: subject line (short and specific), greeting (__Sehr geehrte Frau Lange,__ / __Sehr geehrte Damen und Herren,__), introduction with the reason for writing, main part, request or demand, closing (__Mit freundlichen Grüßen__ – no comma after it).
+expl=After the greeting and its comma, the first word continues in **lower case** (unless it's a noun or Sie). Use Sie and indirect, polite forms: __Ich wäre Ihnen dankbar, wenn …__
+
+@@ 66
+title=Connectors for time and manner: indem, wobei, solange, sobald, kaum
+theme=Describing processes
+expl=**indem** = by (doing): __Man lernt Wörter, indem man sie oft wiederholt.__ **dadurch, dass** says the same more strongly.
+expl=**wobei** adds an accompanying detail or a restriction (whereby, although). **solange** = as long as, **sobald** = as soon as: __Sobald ich ankomme, rufe ich an.__ **kaum** = hardly / no sooner … than: __Kaum war er da, ging es los.__
+
+@@ 67
+title=Discussing: opinion, agreement, disagreement, compromise
+theme=City of the future
+expl=In a discussion you need four groups of phrases: **giving your opinion** (__Meiner Meinung nach … Ich bin der Ansicht, dass …__), **agreeing** (__Da stimme ich Ihnen zu. Das sehe ich genauso.__), **disagreeing** (__Da bin ich anderer Meinung. Das überzeugt mich nicht, weil …__) and **finding a compromise** (__Wie wäre es, wenn wir … Könnten wir uns darauf einigen, dass …__).
+
+@@ 51
+title=Extended attributes and complex relative clauses
+theme=Reading specialist texts
+expl=C1 texts pack a lot of information **in front of the noun**: __der in den letzten Jahren stark gestiegene Energiebedarf__ = the energy demand that has risen sharply in recent years.
+expl=To read it, unpack it: article → noun → turn the participle phrase into a relative clause: __der Energiebedarf, der in den letzten Jahren stark gestiegen ist__.
+expl=C1 relative clauses also use a preposition + relative pronoun (__das Thema, über das wir sprachen__) and the genitive dessen/deren.
+
+@@ 52
+title=Modal particles: doch, mal, ja, eben, wohl, halt
+theme=Finding the right tone
+expl=Modal particles don't change the content, they show the **speaker's attitude**. They sit in the middle of the sentence, never at the start, and are unstressed.
+expl=**doch** = contradiction or reminder ("you know"), **mal** = softens a request (__Komm mal her!__), **ja** = obvious, or a warning when stressed, **eben / halt** = that's just how it is, **wohl** = probably, **bloß / nur** = urgency (__Pass bloß auf!__).
+
+@@ 53
+title=Text cohesion: concessive, adversative, consecutive
+theme=Arguing at C1
+expl=At C1 you connect ideas precisely. **Concession**: obwohl, obgleich, wenngleich, auch wenn, zwar … jedoch, ungeachtet + gen. **Contrast**: während, wohingegen, hingegen, dagegen, vielmehr. **Result**: sodass, folglich, infolgedessen, somit, demnach.
+expl=Watch the word order: conjunctions like obwohl send the verb to the end; adverbs like folglich in position 1 take the verb straight after them.
+
+@@ 54
+title=Nominalisation, impersonal constructions and "es"
+theme=Academic style
+expl=Academic and formal texts avoid personal forms: instead of __ich zeige__ → __es wird gezeigt / im Folgenden wird gezeigt / die Untersuchung zeigt__.
+expl=Impersonal tools: passive, man, __es lässt sich zeigen__, __es ist davon auszugehen, dass__, nominalisation (__die Untersuchung, der Nachweis__) and noun–verb phrases (__Bezug nehmen auf__).
+expl=**es** can be a placeholder subject that disappears when something else takes position 1: __Es kamen viele Gäste. → Viele Gäste kamen.__
+
+@@ 55
+title=Precision: word fields, collocations and synonyms
+theme=Vocabulary work
+expl=At C1 what counts is not quantity but **precision**: which word fits which context?
+expl=**Collocations** are fixed partners: __eine Entscheidung treffen__ (not machen), __Maßnahmen ergreifen__ (take measures), __Kritik üben__ (criticise), __einen Termin wahrnehmen__ (keep an appointment), __ein Problem beheben__ (fix a problem).
+expl=Synonyms differ in **register and nuance**: groß – riesig – gewaltig – beträchtlich are not interchangeable.
+
+@@ 56
+title=Text types: argumentative essay, summary, statement
+theme=Writing at C1
+expl=**Summary**: an opening sentence with text type, author, title and topic; then the main points in your own words, in the present tense, without examples or your own opinion; reported speech for the author's claims.
+expl=**Argumentative essay (Erörterung)**: introduction (topic, relevance) → arguments for, with evidence and examples → arguments against → weighing up → your own position.
+expl=**Statement (Stellungnahme)**: your clear position from the start, supported by arguments, and a conclusion or recommendation.
+
+@@ 68
+title=Reporting speech: subjunctive I, alternatives and reporting verbs
+theme=Media and politics
+expl=In reports you separate your own statements from the ones you are passing on. The **Konjunktiv I** signals "someone said this – I'm reporting it neutrally": __Der Minister erklärte, die Lage sei stabil.__
+expl=If the Konjunktiv I is identical to the normal form (mostly 1st person singular and the plural), use the Konjunktiv II: __Sie sagten, sie hätten keine Zeit.__
+expl=Vary the reporting verbs to show nuance: behaupten (claim), betonen (stress), einräumen (concede), bestreiten (deny), kritisieren, fordern (demand).
+
+@@ 69
+title=Prefix verbs: separable or not (über-, um-, unter-, durch-, wieder-)
+theme=Meaning decides
+expl=The prefixes durch-, über-, um-, unter-, wider- and wieder- can be **separable or inseparable – and the meaning changes**.
+expl=Separable is usually the **literal, physical** meaning, stressed on the prefix: __Er setzt uns mit der Fähre über.__ (he ferries us across). Inseparable is usually the **figurative** meaning, stressed on the verb: __Sie übersetzt den Text.__ (she translates the text).
+expl=More pairs: __UMfahren__ (knock down: __Er fährt das Schild um.__) vs. __umFAHRen__ (drive around: __Er umfährt den Stau.__), __WIEDERholen__ (fetch back) vs. __wiederHOLen__ (repeat).
+
+@@ 70
+title=Describing graphs and statistics
+theme=Numbers and trends
+expl=A graph description has three steps. **Introduction**: topic, source, period and type of chart: __Das Säulendiagramm zeigt … Die Daten stammen vom Statistischen Bundesamt.__
+expl=**Main part**: the most important developments, highest and lowest values, comparisons: __ist um 5 % gestiegen, hat sich verdoppelt, erreichte einen Höchststand__.
+expl=**Conclusion**: a summary and, if asked, your interpretation or a forecast.
+
+@@ 71
+title=Word formation: compounds, derivations, nominalisation
+theme=Understanding words you don't know
+expl=German builds new words mainly by **compounding**: the **last word decides the meaning and the gender**: __die Haustür__ (a door), __der Türschlüssel__ (a key).
+expl=Between the parts there are often linking letters (-s-, -es-, -n-, -en-, -er-): __Arbeitszeit, Liebesbrief, Sonnenbrille, Kinderwagen__.
+expl=Prefixes and suffixes change meaning and word class: un- (not), -bar (-able), -los (-less), -ung / -heit / -keit (nouns). If you know the root, you can understand words you have never seen.
+
+@@ 57
+title=Register and idiom: from formal to colloquial
+theme=A feel for language
+expl=At C2 you choose the **register** deliberately: formal/written (__erörtern, seitens, obliegen__), neutral (__besprechen, von, gehören zu__) or colloquial (__durchkauen, von wegen, halt__).
+expl=The same message sounds completely different: __Ich bitte um Mitteilung.__ – __Sag mir bitte Bescheid.__ – __Sag mal Bescheid, ja?__ (all = "Please let me know").
+expl=Idioms bring colour but must match the situation: what's witty in a conversation can be out of place in a report.
+
+@@ 58
+title=Complex sentence structures: participle clauses, ellipsis, inversion
+theme=Style and rhythm
+expl=**Participle clauses** shorten subordinate clauses: __In Berlin angekommen, rief er sofort an.__ (= After he had arrived in Berlin …).
+expl=**Infinitive constructions** replace dass-clauses: __Ohne lange zu zögern, unterschrieb sie.__
+expl=**Ellipsis** leaves out what's known – typical in titles, notes and speech. **Inversion** puts the important element first for emphasis: __Nie hätte ich das gedacht.__
+
+@@ 59
+title=Nuance: hedging, irony, intensifying
+theme=Reading between the lines
+expl=C2 means hitting the **in-between tones**. **Hedging**: eher, tendenziell, vergleichsweise, in gewisser Hinsicht, nicht ganz unproblematisch, dürfte, scheint … zu sein.
+expl=**Intensifying**: ausgesprochen, überaus, durchaus, geradezu, bei Weitem, ohne Frage, nicht zuletzt.
+expl=**Litotes** (understatement): __nicht ganz unbegründet__ = quite justified. **Irony** says the opposite of what's meant – recognisable from context and tone.
+
+@@ 72
+title=Analysing literary texts: narrative perspective and stylistic devices
+theme=Reading literature
+expl=Analysing literature asks not only **what** is told but **how**. Key is the **narrative perspective**: a first-person narrator tells from their own point of view and is only partly reliable; an omniscient (auktorial) narrator knows everything and comments; a figural (personal) narrator stays inside one character without commenting.
+expl=Stylistic devices: metaphor, comparison, repetition, contrast, irony, inner monologue, time jumps. Always say **what effect** a device has.
+
+@@ 73
+title=Understanding legal and administrative language
+theme=Contracts, notices, laws
+expl=Legal texts look hard but follow fixed patterns: nominal style (__nach Ablauf der Frist__ = after the deadline expires), passive and passive alternatives (__ist zu entrichten__ = must be paid), conditions without wenn (__Erfolgt die Zahlung nicht fristgerecht, …__ = If payment is not made on time …) and references (__gemäß § 3 Abs. 2__ = according to section 3, paragraph 2).
+expl=Read the main clause first, then unpack the conditions and exceptions one by one.
+
+@@ 60
+title=Final exam: talk, discussion, writing
+theme=Bringing it all together
+expl=The C2 exam (Goethe C2 / telc C2) asks you to **summarise** (reading/listening → your own text), give a **talk** (structured, 3–5 minutes), **discuss** (hold your position and respond to counter-arguments) and **write** (an argumentative essay or commentary, clearly structured and stylistically confident).
+expl=Assessed: task fulfilment, coherence, range of vocabulary, accuracy and register. This lesson brings together everything from A1 to C2.

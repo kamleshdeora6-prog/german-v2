@@ -212,5 +212,7 @@
     });
   };
 
+  /* 🇬🇧 under a German question: word-by-word meanings for learners who can't read it yet */
+  UI.hint = (text) => `<button type="button" class="hintbtn" data-gloss="${H.esc(String(text).replace(/__|\*\*/g, ""))}" title="What does this mean? (word by word)" aria-label="Show English word by word">EN?</button>`;
   window.UI = UI;
 })();

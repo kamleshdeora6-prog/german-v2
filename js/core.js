@@ -293,6 +293,16 @@
     fmtDate: (t) => new Date(t).toLocaleDateString(),
     /* bilingual label: German word + English help underneath (Settings → Menu language) */
     bi: (de, en, cls = "") => `<span class="bi ${cls}"><span class="de-l">${de}</span><span class="en-l">${en}</span></span>`,
+    /* lesson text in the chosen menu language (Settings → Menu language): German, English, or both */
+    lt: (l, k = "title") => { const de = H.esc(l[k] || ""), en = H.esc((l.en && l.en[k]) || l[k] || ""); return de === en ? de : H.bi(de, en); },
+    ltText: (l, k = "title") => { const lab = (Store.get().settings.labels || "both"); return lab === "en" && l.en && l.en[k] ? l.en[k] : l[k] || ""; },
+    lexpl: (l) => {
+      const de = (l.expl || []).map((p) => `<p>${H.md(p)}</p>`).join("") + (l.use ? `<p class="use"><b>When do I use it?</b> ${H.md(l.use)}</p>` : "");
+      if (!l.en || !l.en.expl.length) return de;
+      const en = l.en.expl.map((p) => `<p>${H.md(p)}</p>`).join("") + (l.en.use ? `<p class="use"><b>When do I use it?</b> ${H.md(l.en.use)}</p>` : "");
+      return `<div class="x-de">${de}</div><details class="x-en-fold"><summary>🇬🇧 Explanation in English</summary>${en}</details>
+        <div class="x-en">${en}</div><details class="x-de-fold"><summary>🇩🇪 The same in German</summary>${de}</details>`;
+    },
   };
 
   window.addEventListener("pagehide", flush);

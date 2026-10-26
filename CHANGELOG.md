@@ -2,6 +2,12 @@
 
 All dates are the release dates of the app version shown in Settings → About.
 
+## 6.2.0 — 26 October 2026
+- **First steps (Erste Schritte)**: a Duolingo-style picture course for complete beginners – 18 units, 192 words with pictures, 86 sentences; 3 levels per unit (introduce → practise → recall); picture, listening, meaning, pair-matching, der/die/das, typing and tile-building exercises; mistakes return at the end of the round; flip flashcards and a mixed review on spaced repetition.
+- **Complete English mode**: Settings → App language → English. All 73 lessons have an English title, topic and grammar explanation (German + English mode shows the English as a fold-out). German questions and speaking prompts have an **EN?** word-by-word hint.
+- **Onboarding**: “I know zero German” switches the app to English and starts First steps.
+- **Fixed**: a quest celebration could pop up in the middle of a round.
+
 ## 6.1.0 — 26 October 2026
 - **Whole-screen layout on PC**: two-column start screen, lesson cards side by side, wide practice grid, two-column course path; the header logo is no longer cut off.
 - **German + English labels** on every menu, tab, button and onboarding step; Settings → Menu language (both / German / English).

@@ -1,7 +1,7 @@
 # Deutsch Coach
 
 **Learn German from A1 to C2 — free, offline, and every answer explained.**
-Created by **Zombieland** · version 6.1.0 · last updated 26 October 2026
+Created by **Zombieland** · version 6.2.0 · last updated 26 October 2026
 
 **Open the app:** https://kamleshdeora6-prog.github.io/german-v2/
 
@@ -25,6 +25,8 @@ A complete German course that runs in the browser, installs like an app, and wor
 - **Practice day, weak topics and a refresher** for anyone coming back after a break.
 - **Frau Weber**, the strict teacher's voice (switchable: streng / neutral / freundlich).
 - **Pronunciation drills.** Eight sound pairs (ü/u, ö/o, ich/sch, long vs. short vowels, w/v, z/s …) with listening tests and a microphone check.
+- **First steps for complete beginners.** 18 picture units (greetings, family, numbers, food, travel, survival phrases …) with Duolingo-style rounds and flip flashcards – before Lesson 1, no German needed.
+- **English mode.** Settings → App language → English: menus, lesson titles and every grammar explanation in English, plus an EN? word-by-word hint under German questions.
 - **Uses the whole screen.** On a PC the start screen, lessons, practice grid and course path spread over two columns; on phones everything stays in one column.
 - **German + English labels.** Every menu item shows both languages; Settings → Menu language switches to German only or English only.
 - **Report a problem.** Every question has a ⚑ button that opens a pre-filled report.

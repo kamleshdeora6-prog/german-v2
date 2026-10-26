@@ -152,14 +152,17 @@
     },
     /* the single most useful thing to do now */
     next() {
+      const UNITS_I = (u) => (DC.starter || []).indexOf(u) + 1;
       const s = Store.get(); const V = window.Views;
       const due = SRS.due(V.vocabIds()).length;
       const L = DC.curriculum; const l = L.find((x) => !(s.lessons[x.n] && s.lessons[x.n].done)) || L[L.length - 1];
       const ls = Store.lesson(l.n); const parts = ls.parts || {};
       const PARTS = [["learn", "Learn the rule", 6], ["read", "Read the text", 4], ["practice", "Practise", 8], ["exam", "Exam questions", 6], ["speak", "Speak", 4]];
       const nextPart = PARTS.find(([k]) => !parts[k] && !(k === "practice" && ls.done));
+      const sp = V.starterProgress && V.starterProgress();
+      if (sp && s.starterMode && sp.next && !(s.lessons[L[0].n] && s.lessons[L[0].n].done)) return { go: `starter/u/${sp.next.id}`, label: `First steps: ${sp.next.en}`, sub: `Unit ${UNITS_I(sp.next)} of ${sp.total} · pictures & sound`, min: 4, kind: "starter" };
       if (due >= 12) return { go: "vocab/review", label: `Review ${due} words`, sub: "Words due today – 4 minutes", min: 4, kind: "words" };
-      if (nextPart && Store.unlocked(l.n)) return { go: `lesson/${l.n}/${nextPart[0]}`, label: `${nextPart[1]}`, sub: `Lesson ${l.pos} · ${l.title}`, min: nextPart[2], kind: "lesson", lesson: l };
+      if (nextPart && Store.unlocked(l.n)) return { go: `lesson/${l.n}/${nextPart[0]}`, label: `${nextPart[1]}`, sub: `Lesson ${l.pos} · ${H.ltText(l)}`, min: nextPart[2], kind: "lesson", lesson: l };
       if (due > 0) return { go: "vocab/review", label: `Review ${due} words`, sub: "Words due today", min: 3, kind: "words" };
       return { go: "practice/smart", label: "Smart mix", sub: "10 questions on what you need most", min: 5, kind: "smart" };
     },
@@ -183,7 +186,7 @@
     /* a full-screen moment of success */
     celebrate(title, sub = "") {
       // never interrupt a question: wait for the end-of-round screen
-      if (document.querySelector(".session .sess-body .q") && !document.querySelector(".summary")) { queue.push([title, sub]); return; }
+      if ((document.querySelector(".session .sess-body .q") || document.querySelector(".st-sess")) && !document.querySelector(".summary")) { queue.push([title, sub]); return; }   // also First steps rounds
       document.querySelectorAll(".celebrate").forEach((x) => x.remove());
       const d = document.createElement("div"); d.className = "celebrate"; d.setAttribute("role", "status");
       d.innerHTML = `<div class="cel-card"><div class="cel-burst">🎉</div><h2>${H.esc(title)}</h2>${sub ? `<p>${H.esc(sub)}</p>` : ""}<button class="btn sign">Continue</button></div>`;

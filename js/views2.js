@@ -46,7 +46,7 @@
     const groups = ["A1", "A2", "B1", "B2", "C1", "C2"].map((lv) => ({ lv, gens: Object.values(Engine.GEN).filter((g) => g.level === lv) }));
     el.innerHTML = `<h2 class="page-title">Practice</h2>
       <section class="grid2">
-        <button class="tile hero" data-go="practice/smart"><b>Smart mix</b><span>Focuses on your weak topics</span></button>
+        <button class="tile hero" data-go="practice/smart"><b>Smart mix</b><span>Focuses on your weak topics</span></button><button class="tile" data-go="starter"><b>🐣 ${H.bi("Erste Schritte", "First steps")}</b><span>Picture flashcards for beginners</span></button>
         <button class="tile" data-go="practice/mistakes"><b>My mistakes</b><span>${s.mistakes.length} saved</span></button>
         <button class="tile" data-go="vocab"><b>Words</b><span>${SRS.due(V.vocabIds()).length} due today</span></button>
         <button class="tile" data-go="practice/bank"><b>Question bank</b><span>${DC.bank.length} classic items</span></button>
@@ -172,8 +172,8 @@
     el.innerHTML = `<p class="muted small notice">🎙️ Speech recognition checks <b>which words</b> it heard, not your accent or pronunciation. Record yourself and compare with the audio for pronunciation.</p><h2 class="page-title">Speaking</h2>
       ${Speech.canListen() ? "" : `<p class="warn">Speech recognition isn't available here. Use Chrome on Android/desktop or the Android app. You can still listen and practise aloud.</p>`}
       <section class="card"><h3>Shadowing</h3><div class="shadow"></div></section>
-      <section class="card"><h3>Free talk: ${esc(l.theme)}</h3><div class="scene">${DC.scenes[l.scene]}</div>
-        <ol class="prompts">${l.speak.map((p) => `<li>${md(p)}</li>`).join("")}</ol>
+      <section class="card"><h3>Free talk: ${H.lt(l, "theme")}</h3><div class="scene">${DC.scenes[l.scene]}</div>
+        <ol class="prompts">${l.speak.map((p) => `<li>${md(p)} ${UI.hint(p)}</li>`).join("")}</ol>
         <div class="row">${UI.mic("Speak")}<button class="btn ghost sm" data-go="speak">Other picture</button></div><div class="transcript"></div></section>
       <section class="card"><h3>Sounds</h3><p class="muted small">Train the sounds that decide whether you are understood: ü/u, ö/o, ich/sch, long and short vowels.</p><div class="row"><button class="btn ghost sm" data-go="pronounce">Pronunciation drills</button></div></section>
       <section class="card"><h3>Question & answer</h3><p class="muted small">Max asks, you answer out loud.</p><div class="qa"></div></section>`;
@@ -201,7 +201,7 @@
 
   /* ---------------- Lesen ---------------- */
   V.read = (el, [idx]) => {
-    const texts = DC.curriculum.map((l) => ({ id: "L" + l.n, title: `L${l.n} · ${l.theme}`, level: l.level, de: l.reading, q: l.exam.slice(0, 3).filter((x) => x.a) }))
+    const texts = DC.curriculum.map((l) => ({ id: "L" + l.n, title: `L${l.pos || l.n} · ${H.ltText(l, "theme")}`, level: l.level, de: l.reading, q: l.exam.slice(0, 3).filter((x) => x.a) }))
       .concat(DC.passages.map((p, i) => ({ id: "P" + i, title: p.title, level: p.level, de: p.de, q: p.q.map((x) => ({ q: x })) })));
     if (idx) {
       const t = texts.find((x) => x.id === idx);
@@ -209,7 +209,7 @@
       el.innerHTML = `<button class="back" data-go="read">‹ All texts</button><h2 class="page-title">${esc(t.title)}</h2>
         <section class="card"><div class="row">${UI.say(t.de, "Play")}<button class="btn ghost sm slow">Slow</button><button class="btn ghost sm hide">Hide text (listening)</button></div>
         <div class="reading">${t.de.split(/(\s+)/).map((w) => (/\S/.test(w) ? `<span class="w">${esc(w)}</span>` : w)).join("")}</div><div class="lookup" hidden></div></section>
-        <section class="card"><h3>Questions</h3>${t.q.map((q, i) => `<div class="rq"><p>${md(q.q)}</p><textarea rows="2" placeholder="Answer in German"></textarea>${q.a ? `<button class="btn ghost sm show" data-i="${i}">Show answer</button><p class="muted" hidden>${esc(q.a)}</p>` : `<button class="btn ghost sm chk">Check my German</button><p class="muted" hidden></p>`}</div>`).join("")}</section>`;
+        <section class="card"><h3>Questions</h3>${t.q.map((q, i) => `<div class="rq"><p>${md(q.q)} ${UI.hint(q.q)}</p><textarea rows="2" placeholder="Answer in German"></textarea>${q.a ? `<button class="btn ghost sm show" data-i="${i}">Show answer</button><p class="muted" hidden>${esc(q.a)}</p>` : `<button class="btn ghost sm chk">Check my German</button><p class="muted" hidden></p>`}</div>`).join("")}</section>`;
       el.querySelector(".slow").onclick = () => Speech.speak(t.de, 0.7);
       el.querySelector(".hide").onclick = (e) => { const r = el.querySelector(".reading"); r.classList.toggle("blur"); e.target.textContent = r.classList.contains("blur") ? "Show text" : "Hide text (listening)"; };
       const lk = el.querySelector(".lookup");

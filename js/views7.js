@@ -85,7 +85,7 @@
       wrap.innerHTML = `<section class="card result lvl-${level}">
           <p class="muted">${log.length - wrong}/${log.length} correct · you stopped in stage ${top}</p>
           <p class="big">Your level: ${UI.levelDot(level)} <b>${level}.${sub}</b></p>
-          <p>Start at <b>lesson ${start}</b> (${esc(atPos(start).title)}). Everything before it stays open for review.</p>
+          <p>Start at <b>lesson ${start}</b> (${esc(H.ltText(atPos(start)))}). Everything before it stays open for review.</p>
           ${weak.length ? `<p><b>Fix these first:</b></p><div class="chips">${weak.map((t) => `<span class="chip">${esc(t)}</span>`).join("")}</div>` : ""}
           <div class="row"><button class="btn sign plan">Make a plan from here</button><button class="btn ghost setl">Start at lesson ${start}</button><button class="btn ghost" data-go="placement/go">Test again</button></div>
         </section>

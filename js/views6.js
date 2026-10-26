@@ -59,6 +59,12 @@
 
   /* ---------------- 3. What's new ---------------- */
   const NEWS = [
+    { v: "6.2.0", date: "26 October 2026", items: [
+      "<b>Erste Schritte · First steps</b> – a picture course for people who know zero German: 18 units, 192 words with pictures and sound, 86 everyday sentences. Short rounds with picture questions, listening, pair matching, der/die/das, typing and sentence building. Wrong answers come back until they're right.",
+      "<b>Picture flashcards</b> for every unit: flip, listen, slow audio, “Again” / “I knew it”.",
+      "<b>The app in English</b>: Settings → App language → English. Every lesson now has an English title and an English grammar explanation; German questions have an <b>EN?</b> button with word-by-word meanings.",
+      "<b>“I know zero German”</b> at the start switches the app to English and begins with First steps.",
+    ] },
     { v: "6.1.0", date: "26 October 2026", items: [
       "<b>Uses the whole screen on a PC</b>: two columns on the start screen, lesson parts side by side, a wider practice grid and course path.",
       "<b>German + English everywhere</b>: every menu and button has an English label. Settings → Menu language switches between both, German only and English only.",
