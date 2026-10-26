@@ -262,6 +262,7 @@
     if (PL_ONLY.test(nw)) return true;
     const hit = (DC.vocab || []).find((v) => v.de.replace(/^(der|die|das)\s+/, "") === nw);
     if (hit && (hit.pl || "").replace(/^die\s+/, "") === nw) return true;
+    if (hit && /^(die\s+)?-$/.test((hit.pl || "").trim())) return true;   // "der Löffel, -": plural = singular
     if ((E.NOUNS || []).some((n) => n.de === nw && (n.pl === "-" || n.pl === nw))) return true;
     return !hit && /(er|el|en|chen|lein)$/.test(nw);
   }
@@ -294,6 +295,7 @@
   const NON_NOUN = () => (NON_NOUN_SET = NON_NOUN_SET || new Set((DC.vocab || []).filter((v) => !/^(der|die|das)\s/.test(v.de)).map((v) => v.de.toLowerCase())));
 
   function nounGender(word) {
+    if (/^(abgeordnete|angestellte|bekannte|verwandte|deutsche|erwachsene|jugendliche|kranke|vorsitzende|reisende|arbeitslose|obdachlose|verletzte|tote|fremde|selbstständige|auszubildende|studierende|geflüchtete|betroffene|beschäftigte|verlobte|alte)$/i.test(String(word))) return null;   // adjectival nouns: der/die Abgeordnete
     if (PL_ONLY.test(String(word))) return { de: word, g: "f", pl: true };
     const n = E.lookupNoun(word);
     if (n) return { g: n.g, de: n.de, pl: n.pl.toLowerCase() === word.toLowerCase() && n.de.toLowerCase() !== word.toLowerCase() };
@@ -311,7 +313,7 @@
 
   /* A colon starts a new clause ("Er hat gefragt: Worüber …?") – check each side on its own. */
   function check(sentence) {
-    const m = /^(.+?\S)([:;])\s+(\S.*)$/.exec(String(sentence).trim());
+    const m = /^(.+?\S)(:|;|\s–)\s+(\S.*)$/.exec(String(sentence).trim());
     if (m && m[1].split(/\s+/).length >= 2) {
       const a = checkOne(m[1] + "."), b = checkOne(m[3], true);
       return { fixed: a.fixed.replace(/[.]$/, "") + m[2] + " " + b.fixed, issues: a.issues.concat(b.issues) };
@@ -488,6 +490,7 @@
         const ok = cands.some((x) => x.p === PRON_P[pr] || (pr === "ihr" && x.p === "3s" && false));
         if (ok) continue;
         if (pr === "es" || pr === "er") { if (cands.some((x) => x.p === "3s")) continue; }
+        if (pr === "es" && a === 0 && b === 1 && cands.some((x) => x.p === "1p")) continue;   // dummy es: "Es fehlen tausende Pflegekräfte", "Es kommen viele"
         if ((pr === "es" || pr === "er") && (vb === "sei" || cands.some((x) => x.p === "1s" && /e$/.test(vb)))) continue;   // Konjunktiv I: er habe, es werde, er komme
         const inf = cands[0].inf;
         let right;
@@ -508,6 +511,7 @@
     L = low();
     for (let i = 0; i < L.length - 2; i++) {
       const p = L[i]; if (!DAT_P.has(p) && !AKK_P.has(p)) continue;
+      if (p === "für" && L[i - 1] === "was") continue;   // „Was für ein …“ is not the preposition für
       const a = L[i + 1]; if (!/^(der|die|das|den|dem|ein|eine|einen|einem|einer)$/.test(a)) continue;
       const ng = nounGender(words[i + 2].replace(/[,;:]$/, "")); if (!ng || ng.pl) continue;
       const c = DAT_P.has(p) ? "dat" : "akk";
@@ -527,6 +531,7 @@
       const cands = finIndex().get(L[i]); if (!cands) continue;
       const v = E.VERBS.find((x) => cands.some((c) => c.inf === x.inf) && x.obj);
       if (!v) continue;
+      if (v.sep && !L.includes(v.sep)) continue;   // „hörst“ without „zu“ is hören (+Akk), not zuhören (+Dat)
       if (!(PRONOUNS.has(L[i - 1]) || PRONOUNS.has(L[i + 1]))) continue;
       if (/^[A-ZÄÖÜ]/.test(words[i]) && i > 0) continue;
       let j = i + 1; if (PRONOUNS.has(L[j])) j++;
@@ -571,6 +576,7 @@
     // 2) possessive / kein after a preposition: "mit mein Auto" → "mit meinem Auto"
     for (let i = 0; i < L.length - 2; i++) {
       const p = L[i]; const isD = DAT_P.has(p), isA = AKK_P.has(p); if (!isD && !isA) continue;
+      if (p === "für" && L[i - 1] === "was") continue;
       const m = (L[i + 1] || "").match(/^(mein|dein|sein|ihr|unser|eu(?:e)?r|kein)(e|en|em|er|es)?$/); if (!m) continue;
       const nw = (words[i + 2] || "").replace(/[,;:.!?]$/, ""); if (!/^[A-ZÄÖÜ]/.test(nw)) continue;
       let ng = nounGender(nw); if (!ng) continue;
@@ -817,7 +823,7 @@
     if (/\b(what (?:should|to) (?:i )?(?:learn|do|study)|next|plan|progress|fortschritt|weak|schwach|recommend)\b/i.test(t)) {
       const p = ctx.profile;
       const weak = p.weak.length ? `<p>Your weakest topics right now: ${p.weak.map((w) => `<button class="chip" data-gen="${w.id}" data-say="Quiz me on ${w.title}">${w.title} (${w.pct}%)</button>`).join(" ")}</p>` : "";
-      return { html: `<p>You're on <b>lesson ${p.next.n}: ${esc(p.next.title)}</b> (${p.done}/42 done, ${p.due} cards due).</p>${weak}<p>Plan for today: 1) review due vocabulary, 2) study lesson ${p.next.n}, 3) 10 generated drills, 4) speak about the lesson picture for 2 minutes.</p><div class="row"><button class="btn sm" data-go="lesson/${p.next.n}">Continue lesson ${p.next.n}</button><button class="btn sm ghost" data-go="vocab">Review words</button></div>` };
+      return { html: `<p>You're on <b>lesson ${p.next.pos}: ${esc(p.next.title)}</b> (${p.done}/${DC.curriculum.length} done, ${p.due} cards due).</p>${weak}<p>Plan for today: 1) review due vocabulary, 2) study lesson ${p.next.n}, 3) 10 generated drills, 4) speak about the lesson picture for 2 minutes.</p><div class="row"><button class="btn sm" data-go="lesson/${p.next.n}">Continue lesson ${p.next.n}</button><button class="btn sm ghost" data-go="vocab">Review words</button></div>` };
     }
     if (/\b(exam|prüfung|goethe|telc|dtz|teil [123])\b/i.test(t) && !findRules(t).length) {
       return { html: `<p><b>B1 speaking (Goethe)</b>: Teil 1 plan something together (3 min) · Teil 2 present a topic with 5 slides (3 min) · Teil 3 react and answer questions (2 min).</p><p><b>Scoring tips:</b> use connectors (weil, obwohl, deshalb, zwar … aber), give reasons, react to your partner, correct yourself calmly.</p><div class="row"><button class="btn sm" data-go="exam">Open exam trainer</button><button class="btn sm ghost" data-go="lesson/27">Planning lesson</button><button class="btn sm ghost" data-go="lesson/42">Presentation lesson</button></div>` };

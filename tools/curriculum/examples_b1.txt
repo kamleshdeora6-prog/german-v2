@@ -1,0 +1,473 @@
+# Example sentences for B1 words (word|German|English)
+die Anforderung|Die Anforderungen der Stelle sind hoch.|The requirements of the job are high.
+die Aufgabenverteilung|Die Aufgabenverteilung im Team ist klar.|The division of tasks in the team is clear.
+die Zusammenarbeit|Vielen Dank für die gute Zusammenarbeit!|Thank you for the good cooperation!
+die Führungskraft|Sie ist eine erfahrene Führungskraft.|She is an experienced manager.
+die Probezeit|Die Probezeit dauert sechs Monate.|The probation period lasts six months.
+der Arbeitsvertrag|Lesen Sie den Arbeitsvertrag genau.|Read the employment contract carefully.
+die Gleitzeit|Wir haben Gleitzeit, ich kann zwischen sieben und neun anfangen.|We have flexitime, I can start between seven and nine.
+die Selbstständigkeit|Er hat den Schritt in die Selbstständigkeit gewagt.|He dared to take the step into self-employment.
+die Bewerbungsunterlagen|Schicken Sie Ihre Bewerbungsunterlagen per E-Mail.|Send your application documents by email.
+das Anschreiben|Im Anschreiben erklärt man seine Motivation.|In the cover letter you explain your motivation.
+die Wirtschaft|Die Wirtschaft wächst langsam.|The economy is growing slowly.
+die Dienstleistung|Die Firma bietet Dienstleistungen für Hotels an.|The company offers services for hotels.
+das Produkt|Das neue Produkt verkauft sich gut.|The new product is selling well.
+die Herstellung|Die Herstellung ist teuer.|Production is expensive.
+der Gewinn|Die Firma hat einen hohen Gewinn gemacht.|The company made a high profit.
+das Wachstum|Das Wachstum ist geringer als erwartet.|Growth is lower than expected.
+die Krise|Viele Familien leiden unter der Krise.|Many families are suffering from the crisis.
+die Konkurrenz|Die Konkurrenz ist groß.|The competition is strong.
+der Wettbewerb|Sie hat den Wettbewerb gewonnen.|She won the competition.
+die Senkung|Die Regierung plant eine Senkung der Steuern.|The government is planning a tax cut.
+die Beziehung|Sie haben eine gute Beziehung.|They have a good relationship.
+die Freundschaft|Unsere Freundschaft ist mir sehr wichtig.|Our friendship is very important to me.
+das Vertrauen|Vertrauen muss man sich verdienen.|Trust has to be earned.
+der Respekt|Wir behandeln uns mit Respekt.|We treat each other with respect.
+die Toleranz|Toleranz ist die Basis einer offenen Gesellschaft.|Tolerance is the basis of an open society.
+das Vorurteil|Er hat viele Vorurteile gegen Ausländer.|He has many prejudices against foreigners.
+die Integration|Sprache ist wichtig für die Integration.|Language is important for integration.
+die Herkunft|Ihre Herkunft spielt keine Rolle.|Her origin doesn't matter.
+die Heimat|Berlin ist meine zweite Heimat.|Berlin is my second home.
+der Migrant|Viele Migranten arbeiten im Gesundheitswesen.|Many migrants work in healthcare.
+die Staatsangehörigkeit|Welche Staatsangehörigkeit haben Sie?|What is your nationality?
+die Gleichberechtigung|Gleichberechtigung ist im Grundgesetz garantiert.|Equal rights are guaranteed in the Basic Law.
+die Meinungsfreiheit|In Deutschland gilt die Meinungsfreiheit.|Freedom of expression applies in Germany.
+die Verpflichtung|Ich habe viele Verpflichtungen.|I have many obligations.
+die Unterstützung|Danke für deine Unterstützung!|Thanks for your support!
+die Hilfsbereitschaft|Ihre Hilfsbereitschaft ist bekannt.|Her helpfulness is well known.
+das Verhalten|Sein Verhalten war unmöglich.|His behaviour was outrageous.
+die Hoffnung|Wir geben die Hoffnung nicht auf.|We're not giving up hope.
+der Wunsch|Mein größter Wunsch ist eine Reise nach Japan.|My greatest wish is a trip to Japan.
+die Motivation|Meine Motivation ist hoch.|My motivation is high.
+die Geduld|Beim Sprachenlernen braucht man Geduld.|You need patience when learning languages.
+die Konzentration|Ohne Konzentration geht es nicht.|It doesn't work without concentration.
+der Eindruck|Sie hat einen guten Eindruck gemacht.|She made a good impression.
+das Selbstbewusstsein|Durch den Erfolg wächst ihr Selbstbewusstsein.|Her self-confidence grows through success.
+die Neugier|Kinder lernen aus Neugier.|Children learn out of curiosity.
+die Enttäuschung|Die Absage war eine große Enttäuschung.|The rejection was a big disappointment.
+die Ernährungsgewohnheit|Unsere Ernährungsgewohnheiten haben sich verändert.|Our eating habits have changed.
+das Übergewicht|Viele Kinder haben Übergewicht.|Many children are overweight.
+die Vorsorge|Zur Vorsorge gehe ich jedes Jahr zum Arzt.|As a precaution I go to the doctor every year.
+die Impfung|Die Impfung ist kostenlos.|The vaccination is free.
+der Notfall|Im Notfall rufen Sie 112.|In an emergency call 112.
+der Rettungsdienst|Der Rettungsdienst war schnell da.|The ambulance service arrived quickly.
+die Pflege|Die Pflege der Großmutter ist anstrengend.|Caring for grandmother is exhausting.
+das Wohlbefinden|Sport steigert das Wohlbefinden.|Sport increases well-being.
+die Schlafstörung|Sie leidet unter Schlafstörungen.|She suffers from sleep problems.
+die Belastung|Die Belastung im Job ist hoch.|The strain at work is high.
+die Erholung|Nach der Arbeit brauche ich Erholung.|After work I need rest.
+das Verkehrsmittel|Das Fahrrad ist mein liebstes Verkehrsmittel.|The bike is my favourite means of transport.
+der Berufsverkehr|Im Berufsverkehr sind die Züge voll.|In rush hour the trains are full.
+die Baustelle|Wegen der Baustelle ist die Straße gesperrt.|The road is closed because of the construction site.
+die Geschwindigkeit|Die Geschwindigkeit ist hier begrenzt.|The speed is limited here.
+das Bußgeld|Für Falschparken zahlt man ein Bußgeld.|You pay a fine for illegal parking.
+die Mitfahrgelegenheit|Ich suche eine Mitfahrgelegenheit nach Hamburg.|I'm looking for a lift to Hamburg.
+die Wohnungssuche|Die Wohnungssuche in Berlin ist schwierig.|Flat hunting in Berlin is difficult.
+die Besichtigung|Zur Besichtigung kamen dreißig Leute.|Thirty people came to the viewing.
+der Mietvertrag|Wir haben den Mietvertrag unterschrieben.|We've signed the tenancy agreement.
+die Hausordnung|Laut Hausordnung ist Rauchen im Treppenhaus verboten.|According to the house rules, smoking in the stairwell is forbidden.
+die Mülltrennung|Mülltrennung ist in Deutschland Pflicht.|Separating rubbish is compulsory in Germany.
+die Wohnfläche|Die Wohnfläche beträgt 75 Quadratmeter.|The living space is 75 square metres.
+die Einrichtung|Die Einrichtung ist modern.|The furnishings are modern.
+der Stadtteil|In welchem Stadtteil wohnst du?|Which district do you live in?
+die Infrastruktur|Die Infrastruktur auf dem Land ist schlecht.|The infrastructure in the country is poor.
+die Lebenshaltungskosten|Die Lebenshaltungskosten in München sind hoch.|The cost of living in Munich is high.
+das Bildungssystem|Das deutsche Bildungssystem ist kompliziert.|The German education system is complicated.
+die Grundschule|Die Grundschule dauert vier Jahre.|Primary school lasts four years.
+das Gymnasium|Nach dem Gymnasium macht man das Abitur.|After grammar school you take the Abitur.
+die Berufsschule|Azubis gehen zwei Tage pro Woche in die Berufsschule.|Trainees go to vocational school two days a week.
+die Hochschule|Sie studiert an einer Hochschule für Musik.|She studies at a music college.
+das Semester|Das Semester beginnt im Oktober.|The semester starts in October.
+die Vorlesung|Die Vorlesung war sehr interessant.|The lecture was very interesting.
+das Seminar|Im Seminar diskutieren wir viel.|In the seminar we discuss a lot.
+die Hausarbeit|Ich muss noch eine Hausarbeit schreiben.|I still have to write a term paper.
+die Bibliothek|Ich lerne in der Bibliothek.|I study in the library.
+das Stipendium|Sie hat ein Stipendium bekommen.|She got a scholarship.
+die Anerkennung|Die Anerkennung meines Abschlusses dauert lange.|The recognition of my degree takes a long time.
+die Redewendung|Diese Redewendung kenne ich nicht.|I don't know this idiom.
+die Übersetzung|Die Übersetzung ist nicht ganz richtig.|The translation isn't quite right.
+der Dialekt|In Bayern spricht man Dialekt.|In Bavaria people speak dialect.
+die Muttersprache|Meine Muttersprache ist Hindi.|My mother tongue is Hindi.
+die Verständigung|Die Verständigung war schwierig.|Communication was difficult.
+der Datenschutz|Datenschutz ist in Deutschland sehr wichtig.|Data protection is very important in Germany.
+die Sicherheitslücke|Das Update schließt eine Sicherheitslücke.|The update closes a security gap.
+die Anwendung|Die Anwendung ist einfach.|The application is easy to use.
+die Funktion|Welche Funktionen hat das Handy?|What functions does the phone have?
+die Bedienung|Die Bedienung des Geräts ist kompliziert.|Operating the device is complicated.
+das Update|Installiere bitte das Update.|Please install the update.
+die Erfindung|Das Internet ist eine wichtige Erfindung.|The internet is an important invention.
+der Erfinder|Der Erfinder des Autos war Carl Benz.|The inventor of the car was Carl Benz.
+die Forschung|Die Forschung braucht mehr Geld.|Research needs more money.
+die Wissenschaft|Die Wissenschaft hat darauf noch keine Antwort.|Science doesn't have an answer to that yet.
+das Experiment|Das Experiment war erfolgreich.|The experiment was successful.
+der Beweis|Es gibt keinen Beweis dafür.|There's no proof of that.
+die Statistik|Die Statistik zeigt einen klaren Trend.|The statistics show a clear trend.
+der Durchschnitt|Im Durchschnitt schlafen wir sieben Stunden.|On average we sleep seven hours.
+die Zunahme|Es gibt eine Zunahme an Online-Käufen.|There's an increase in online purchases.
+die Abnahme|Die Abnahme der Geburten ist ein Problem.|The decrease in births is a problem.
+behaupten|Er behauptet, dass er nichts wusste.|He claims that he knew nothing.
+bezweifeln|Ich bezweifle, dass das stimmt.|I doubt that that's true.
+begründen|Bitte begründen Sie Ihre Meinung.|Please give reasons for your opinion.
+betonen|Sie betont, wie wichtig die Pause ist.|She stresses how important the break is.
+erwähnen|Er hat das Problem nicht erwähnt.|He didn't mention the problem.
+verlangen|Der Kunde verlangt sein Geld zurück.|The customer demands his money back.
+fördern|Die Stadt fördert junge Künstler.|The city supports young artists.
+unterstützen|Meine Eltern unterstützen mich.|My parents support me.
+vermeiden|Ich versuche, Zucker zu vermeiden.|I try to avoid sugar.
+verzichten|Ich verzichte auf Fleisch.|I go without meat.
+ersetzen|Kann die Maschine den Menschen ersetzen?|Can the machine replace people?
+verursachen|Der Sturm hat große Schäden verursacht.|The storm caused major damage.
+verhindern|Wir konnten den Unfall nicht verhindern.|We couldn't prevent the accident.
+ermöglichen|Das Stipendium ermöglicht mir das Studium.|The scholarship makes my studies possible.
+beeinflussen|Werbung beeinflusst unser Verhalten.|Advertising influences our behaviour.
+beurteilen|Das kann ich nicht beurteilen.|I can't judge that.
+bewerten|Die Lehrerin bewertet die Texte.|The teacher marks the texts.
+kritisieren|Er kritisiert alles.|He criticises everything.
+zustimmen|Dem kann ich nur zustimmen.|I can only agree with that.
+ablehnen|Sie hat das Angebot abgelehnt.|She turned down the offer.
+planen|Wir planen eine Reise nach Italien.|We're planning a trip to Italy.
+organisieren|Wer organisiert die Party?|Who's organising the party?
+durchführen|Die Umfrage wurde online durchgeführt.|The survey was carried out online.
+bearbeiten|Ihr Antrag wird bearbeitet.|Your application is being processed.
+berechnen|Die Kosten werden pro Stunde berechnet.|The costs are calculated per hour.
+schätzen|Ich schätze, es dauert zwei Stunden.|I estimate it'll take two hours.
+entsprechen|Das entspricht nicht meinen Erwartungen.|That doesn't meet my expectations.
+bestehen aus|Das Team besteht aus fünf Personen.|The team consists of five people.
+sich beziehen auf|Ich beziehe mich auf Ihre E-Mail vom Montag.|I'm referring to your email of Monday.
+sich handeln um|Es handelt sich um ein Missverständnis.|It's a misunderstanding.
+sich entwickeln|Die Stadt hat sich positiv entwickelt.|The city has developed positively.
+sich verbessern|Dein Deutsch hat sich sehr verbessert.|Your German has improved a lot.
+sich engagieren|Sie engagiert sich für den Umweltschutz.|She is committed to environmental protection.
+sich leisten|Ein Auto kann ich mir nicht leisten.|I can't afford a car.
+sich verlassen auf|Auf ihn kann man sich verlassen.|You can rely on him.
+sich auskennen|Kennst du dich in Hamburg aus?|Do you know your way around Hamburg?
+zuverlässig|Er ist ein zuverlässiger Kollege.|He is a reliable colleague.
+gründlich|Sie arbeitet sehr gründlich.|She works very thoroughly.
+sorgfältig|Lesen Sie den Vertrag sorgfältig.|Read the contract carefully.
+belastbar|Für den Job muss man belastbar sein.|For the job you have to be able to cope with pressure.
+ehrgeizig|Sie ist sehr ehrgeizig.|She is very ambitious.
+geduldig|Die Lehrerin ist sehr geduldig.|The teacher is very patient.
+höflich|Bitte sei höflich zu den Gästen.|Please be polite to the guests.
+hilfsbereit|Die Nachbarn sind sehr hilfsbereit.|The neighbours are very helpful.
+ehrlich|Sei bitte ehrlich zu mir.|Please be honest with me.
+kreativ|Sie hat kreative Ideen.|She has creative ideas.
+nützlich|Diese App ist sehr nützlich.|This app is very useful.
+üblich|Trinkgeld ist hier üblich.|Tipping is usual here.
+ähnlich|Die Geschwister sehen sich sehr ähnlich.|The siblings look very similar.
+unterschiedlich|Die Meinungen sind unterschiedlich.|Opinions differ.
+gemeinsam|Wir kochen gemeinsam.|We cook together.
+persönlich|Ich möchte persönlich mit ihr sprechen.|I'd like to speak to her personally.
+beruflich|Er ist beruflich viel unterwegs.|He travels a lot for work.
+finanziell|Die Familie hat finanzielle Probleme.|The family has financial problems.
+gesellschaftlich|Das ist ein gesellschaftliches Problem.|That's a social problem.
+gesetzlich|Das ist gesetzlich verboten.|That's prohibited by law.
+zusätzlich|Für Gepäck zahlt man zusätzlich.|You pay extra for luggage.
+grundsätzlich|Ich bin grundsätzlich einverstanden.|I agree in principle.
+vorläufig|Das ist nur eine vorläufige Lösung.|That's only a temporary solution.
+erfolgreich|Das Projekt war erfolgreich.|The project was successful.
+erfolglos|Die Suche blieb erfolglos.|The search was unsuccessful.
+ausreichend|Wir haben ausreichend Zeit.|We have sufficient time.
+preiswert|Das Restaurant ist gut und preiswert.|The restaurant is good and inexpensive.
+umweltfreundlich|Fahrradfahren ist umweltfreundlich.|Cycling is environmentally friendly.
+gesundheitsschädlich|Rauchen ist gesundheitsschädlich.|Smoking is harmful to health.
+die Bürgerin|Jede Bürgerin darf wählen.|Every citizen may vote.
+die Demokratie|In einer Demokratie entscheidet das Volk.|In a democracy the people decide.
+die Freiheit|Freiheit bedeutet auch Verantwortung.|Freedom also means responsibility.
+die Religion|Jeder darf seine Religion frei wählen.|Everyone may choose their religion freely.
+die Tradition|Weihnachtsmärkte sind eine alte Tradition.|Christmas markets are an old tradition.
+die Gemeinschaft|Im Dorf ist die Gemeinschaft stark.|The community is strong in the village.
+die Generation|Die junge Generation denkt anders.|The young generation thinks differently.
+der Reichtum|Reichtum macht nicht automatisch glücklich.|Wealth doesn't automatically make you happy.
+der Flüchtling|Viele Flüchtlinge lernen schnell Deutsch.|Many refugees learn German quickly.
+die Einwanderung|Deutschland braucht Einwanderung.|Germany needs immigration.
+der Handel|Der Handel mit China ist wichtig.|Trade with China is important.
+die Industrie|Die Autoindustrie ist in Deutschland groß.|The car industry is big in Germany.
+der Kredit|Wir haben einen Kredit für die Wohnung aufgenommen.|We took out a loan for the flat.
+die Schulden|Er hat viele Schulden.|He has a lot of debts.
+die Zinsen|Die Zinsen sind gestiegen.|Interest rates have risen.
+die Marke|Welche Marke ist dein Handy?|What brand is your phone?
+die Menge|Eine Menge Leute waren da.|A lot of people were there.
+der Teil|Ein Teil der Gruppe kommt später.|Part of the group is coming later.
+das Drittel|Ein Drittel der Befragten war dagegen.|A third of the respondents were against it.
+die Ähnlichkeit|Es gibt eine große Ähnlichkeit zwischen den beiden.|There is a strong similarity between the two.
+die Art|Was für eine Art Musik hörst du?|What kind of music do you listen to?
+die Weise|Auf diese Weise geht es schneller.|It's faster this way.
+der Fall|In diesem Fall rufen Sie bitte an.|In this case please call.
+die Ablehnung|Der Vorschlag stieß auf Ablehnung.|The proposal met with rejection.
+beweisen|Können Sie das beweisen?|Can you prove that?
+vermuten|Ich vermute, dass er krank ist.|I suspect that he is ill.
+befürchten|Ich befürchte, wir kommen zu spät.|I'm afraid we'll be late.
+beschließen|Wir haben beschlossen umzuziehen.|We've decided to move.
+bestimmen|Wer bestimmt hier?|Who decides here?
+verschlechtern|Das Wetter hat sich verschlechtert.|The weather has got worse.
+erhöhen|Die Miete wurde erhöht.|The rent has been increased.
+entstehen|Hier entsteht ein neues Stadtviertel.|A new neighbourhood is being built here.
+existieren|Das Geschäft existiert nicht mehr.|The shop no longer exists.
+gelingen|Der Kuchen ist mir gut gelungen.|The cake turned out well.
+unterscheiden|Ich kann die Zwillinge nicht unterscheiden.|I can't tell the twins apart.
+überprüfen|Bitte überprüfen Sie Ihre Angaben.|Please check your details.
+garantieren|Wir garantieren schnelle Lieferung.|We guarantee fast delivery.
+anbieten|Darf ich Ihnen etwas anbieten?|May I offer you something?
+vorbereiten|Ich bereite das Abendessen vor.|I'm preparing dinner.
+veranstalten|Die Schule veranstaltet ein Sommerfest.|The school is holding a summer party.
+stattfinden|Das Konzert findet im Park statt.|The concert takes place in the park.
+ausfallen|Der Unterricht fällt heute aus.|Class is cancelled today.
+die Veranstaltung|Die Veranstaltung war gut besucht.|The event was well attended.
+das Ereignis|Die Hochzeit war ein großes Ereignis.|The wedding was a big event.
+das Festival|Im Sommer fahren wir auf ein Festival.|In summer we're going to a festival.
+die Bühne|Die Band steht schon auf der Bühne.|The band is already on stage.
+das Publikum|Das Publikum hat laut geklatscht.|The audience clapped loudly.
+der Zuschauer|Das Spiel hatte 50.000 Zuschauer.|The game had 50,000 spectators.
+der Sender|Welcher Sender zeigt das Spiel?|Which channel is showing the game?
+die Journalistin|Die Journalistin stellt kritische Fragen.|The journalist asks critical questions.
+das Gerücht|Das ist nur ein Gerücht.|That's only a rumour.
+der Forscher|Der Forscher hat ein neues Medikament entwickelt.|The researcher developed a new drug.
+die Forscherin|Die Forscherin untersucht das Klima.|The researcher studies the climate.
+die Entdeckung|Das war eine wichtige Entdeckung.|That was an important discovery.
+der Professor|Der Professor erklärt sehr gut.|The professor explains very well.
+die Professorin|Die Professorin hat heute Sprechstunde.|The professor has office hours today.
+die Erziehung|Die Eltern sind für die Erziehung verantwortlich.|The parents are responsible for the upbringing.
+der Kindergarten|Mein Sohn geht in den Kindergarten.|My son goes to nursery school.
+die Kita|Wir haben endlich einen Kitaplatz.|We've finally got a place in day care.
+die Autobahn|Auf der Autobahn gibt es oft Stau.|There are often traffic jams on the motorway.
+die Strafe|Die Strafe kostet 50 Euro.|The fine costs 50 euros.
+der Fußgänger|Fußgänger haben hier Vorrang.|Pedestrians have priority here.
+die Verschmutzung|Die Verschmutzung der Meere ist ein großes Problem.|The pollution of the oceans is a big problem.
+die Verpackung|Die Verpackung ist aus Papier.|The packaging is made of paper.
+die Windkraft|Windkraft ist eine erneuerbare Energie.|Wind power is a renewable energy.
+das Erdöl|Der Preis für Erdöl steigt.|The price of crude oil is rising.
+die Kohle|Deutschland will keine Kohle mehr verbrennen.|Germany no longer wants to burn coal.
+die Tierart|Viele Tierarten sind bedroht.|Many species are endangered.
+die Dürre|Wegen der Dürre gab es wenig Ernte.|Because of the drought there was little harvest.
+die Überschwemmung|Nach dem Regen gab es Überschwemmungen.|After the rain there were floods.
+recyceln|Glas kann man gut recyceln.|Glass can be recycled well.
+die Genehmigung|Für den Umbau brauchen wir eine Genehmigung.|We need a permit for the conversion.
+der Wohnsitz|Mein Wohnsitz ist in Berlin.|My place of residence is in Berlin.
+der Familienstand|Familienstand: verheiratet.|Marital status: married.
+die Geburtsurkunde|Bitte bringen Sie Ihre Geburtsurkunde mit.|Please bring your birth certificate.
+beantragen|Ich muss einen neuen Pass beantragen.|I have to apply for a new passport.
+genehmigen|Der Chef hat den Urlaub genehmigt.|The boss approved the holiday.
+einreichen|Reichen Sie die Unterlagen bis Freitag ein.|Submit the documents by Friday.
+die Charaktereigenschaft|Geduld ist eine wichtige Charaktereigenschaft.|Patience is an important character trait.
+fleißig|Die Studentin ist sehr fleißig.|The student is very hard-working.
+faul|Am Sonntag bin ich gern faul.|On Sundays I like being lazy.
+großzügig|Er ist sehr großzügig und lädt alle ein.|He is very generous and invites everyone.
+geizig|Sei nicht so geizig!|Don't be so stingy!
+unhöflich|Das war sehr unhöflich von ihm.|That was very rude of him.
+ordentlich|Ihr Schreibtisch ist immer ordentlich.|Her desk is always tidy.
+unordentlich|Mein Zimmer ist unordentlich.|My room is untidy.
+tolerant|Wir sollten tolerant sein.|We should be tolerant.
+vorsichtig|Sei vorsichtig, die Straße ist glatt!|Be careful, the road is slippery!
+mutig|Das war sehr mutig von dir.|That was very brave of you.
+ängstlich|Das Kind ist ängstlich.|The child is anxious.
+sympathisch|Der neue Kollege ist sympathisch.|The new colleague is likeable.
+unsympathisch|Ich finde ihn unsympathisch.|I find him unpleasant.
+tatsächlich|Hat er das tatsächlich gesagt?|Did he really say that?
+vor allem|Ich mag vor allem italienisches Essen.|I especially like Italian food.
+jedenfalls|Ich komme jedenfalls später.|In any case I'm coming later.
+bisher|Bisher läuft alles gut.|So far everything is going well.
+künftig|Künftig arbeiten wir freitags von zu Hause.|In future we'll work from home on Fridays.
+sogar|Er spricht sogar Chinesisch.|He even speaks Chinese.
+nämlich|Ich komme nicht, ich bin nämlich krank.|I'm not coming – I'm ill, you see.
+übrigens|Übrigens, hast du Zeit am Freitag?|By the way, are you free on Friday?
+die Abmachung|Wir haben eine Abmachung.|We have an agreement.
+die Bitte|Ich habe eine Bitte an dich.|I have a favour to ask you.
+die Beschwerde|Ich habe eine Beschwerde geschrieben.|I've written a complaint.
+die Auskunft|Können Sie mir eine Auskunft geben?|Can you give me some information?
+die Anfrage|Vielen Dank für Ihre Anfrage.|Thank you for your enquiry.
+die Ansage|Ich habe die Ansage nicht verstanden.|I didn't understand the announcement.
+der Witz|Er erzählt gern Witze.|He likes telling jokes.
+die Ausrede|Das ist doch nur eine Ausrede!|That's just an excuse!
+das Kompliment|Danke für das Kompliment!|Thanks for the compliment!
+die Begrüßung|Zur Begrüßung gibt es Sekt.|There's sparkling wine as a welcome.
+der Abschied|Der Abschied fiel mir schwer.|Saying goodbye was hard for me.
+sich bedanken|Ich möchte mich bei Ihnen bedanken.|I'd like to thank you.
+sich verabschieden|Wir verabschieden uns am Bahnhof.|We say goodbye at the station.
+sich verabreden|Wir haben uns zum Kino verabredet.|We've arranged to go to the cinema.
+sich einigen|Wir haben uns auf einen Termin geeinigt.|We've agreed on a date.
+überreden|Sie hat mich überredet mitzukommen.|She persuaded me to come along.
+trösten|Die Mutter tröstet ihr Kind.|The mother comforts her child.
+ermutigen|Er ermutigt mich, weiterzumachen.|He encourages me to carry on.
+warnen|Ich warne dich!|I'm warning you!
+beleidigen|Er wollte dich nicht beleidigen.|He didn't want to insult you.
+verzeihen|Kannst du mir verzeihen?|Can you forgive me?
+vertrauen|Ich vertraue dir.|I trust you.
+der Vorgang|Der Vorgang dauert nur fünf Minuten.|The process takes only five minutes.
+der Arbeitsplatz|Mein Arbeitsplatz ist am Fenster.|My workplace is by the window.
+die Arbeitsstelle|Sie hat eine neue Arbeitsstelle gefunden.|She has found a new job.
+die Vollzeit|Er arbeitet Vollzeit.|He works full-time.
+die Dienstreise|Nächste Woche bin ich auf Dienstreise.|Next week I'm on a business trip.
+das Protokoll|Wer schreibt heute das Protokoll?|Who's taking the minutes today?
+die Tagesordnung|Was steht heute auf der Tagesordnung?|What's on the agenda today?
+der Selbstständige|Als Selbstständiger arbeitet er viel.|As a self-employed person he works a lot.
+das Handwerk|Handwerk hat goldenen Boden.|A trade is a sure source of income.
+der Elektriker|Der Elektriker repariert die Lampe.|The electrician repairs the lamp.
+der Klempner|Wir brauchen einen Klempner, das Rohr ist undicht.|We need a plumber, the pipe is leaking.
+der Tischler|Der Tischler baut einen Schrank.|The carpenter builds a cupboard.
+der Maler|Der Maler streicht die Wohnung.|The painter paints the flat.
+die Anwältin|Ich habe eine Anwältin gefragt.|I asked a lawyer.
+der Richter|Der Richter hat entschieden.|The judge has decided.
+der Apotheker|Fragen Sie Ihren Arzt oder Apotheker.|Ask your doctor or pharmacist.
+der Pfleger|Der Pfleger hilft dem Patienten.|The nurse helps the patient.
+die Pflegerin|Die Pflegerin kommt jeden Morgen.|The carer comes every morning.
+der Erzieher|Der Erzieher spielt mit den Kindern.|The nursery teacher plays with the children.
+die Erzieherin|Die Erzieherin liest eine Geschichte vor.|The nursery teacher reads a story aloud.
+die Architektin|Die Architektin plant das neue Museum.|The architect is planning the new museum.
+der Programmierer|Programmierer werden überall gesucht.|Programmers are in demand everywhere.
+der Buchhalter|Der Buchhalter prüft die Rechnungen.|The accountant checks the invoices.
+der Beamte|Der Beamte stempelt das Formular.|The civil servant stamps the form.
+die Beamtin|Die Beamtin ist sehr freundlich.|The civil servant is very friendly.
+der Briefträger|Der Briefträger kommt um zehn.|The postman comes at ten.
+der Bäcker|Der Bäcker steht um drei Uhr auf.|The baker gets up at three o'clock.
+der Metzger|Der Metzger hat frische Wurst.|The butcher has fresh sausage.
+der Hausarzt|Gehen Sie zuerst zu Ihrem Hausarzt.|First go to your GP.
+die Verletzung|Die Verletzung ist nicht schlimm.|The injury isn't serious.
+der Blutdruck|Mein Blutdruck ist zu hoch.|My blood pressure is too high.
+das Bankkonto|Ich eröffne ein Bankkonto.|I'm opening a bank account.
+die Kontonummer|Bitte geben Sie Ihre Kontonummer an.|Please give your account number.
+die IBAN|Die IBAN beginnt mit DE.|The IBAN starts with DE.
+der Geldautomat|Der Geldautomat ist kaputt.|The cash machine is out of order.
+das Bargeld|Hast du Bargeld dabei?|Do you have cash on you?
+die Rate|Ich zahle den Fernseher in Raten.|I'm paying for the TV in instalments.
+der Dauerauftrag|Die Miete zahle ich per Dauerauftrag.|I pay the rent by standing order.
+die Lastschrift|Die Rechnung wird per Lastschrift bezahlt.|The bill is paid by direct debit.
+das Einkommen|Ihr Einkommen ist gestiegen.|Her income has risen.
+die Einnahmen|Die Einnahmen sind geringer als die Ausgaben.|Income is lower than expenses.
+abheben|Ich muss Geld abheben.|I have to withdraw money.
+einzahlen|Er zahlt jeden Monat 100 Euro ein.|He pays in 100 euros every month.
+überweisen|Ich überweise dir das Geld morgen.|I'll transfer the money to you tomorrow.
+der Haushaltsplan|Wir machen einen Haushaltsplan für das Jahr.|We're making a budget plan for the year.
+die Gebrauchsanweisung|Lies zuerst die Gebrauchsanweisung.|Read the instructions first.
+der Knopf|Drück auf den roten Knopf.|Press the red button.
+das Kabel|Das Kabel ist zu kurz.|The cable is too short.
+das WLAN|Wie ist das WLAN-Passwort?|What's the Wi-Fi password?
+das Netz|Hier habe ich kein Netz.|I have no signal here.
+der Link|Ich schicke dir den Link.|I'll send you the link.
+der Benutzer|Der Benutzer muss sich anmelden.|The user has to log in.
+das Benutzerkonto|Erstellen Sie ein Benutzerkonto.|Create a user account.
+herunterladen|Du kannst die App kostenlos herunterladen.|You can download the app for free.
+hochladen|Ich lade die Fotos hoch.|I'm uploading the photos.
+sich einloggen|Ich kann mich nicht einloggen.|I can't log in.
+sich ausloggen|Vergiss nicht, dich auszuloggen.|Don't forget to log out.
+aktualisieren|Die Seite wird automatisch aktualisiert.|The page updates automatically.
+einschalten|Schalte bitte den Computer ein.|Please switch on the computer.
+ausschalten|Schalte das Handy im Kino aus.|Switch off your phone in the cinema.
+die Eifersucht|Eifersucht kann eine Beziehung zerstören.|Jealousy can destroy a relationship.
+die Scham|Er wurde rot vor Scham.|He went red with shame.
+die Dankbarkeit|Ich empfinde große Dankbarkeit.|I feel great gratitude.
+die Sehnsucht|Sie hat Sehnsucht nach ihrer Familie.|She longs for her family.
+die Begeisterung|Mit großer Begeisterung lernt er Deutsch.|He learns German with great enthusiasm.
+die Langeweile|Aus Langeweile spielt er am Handy.|He plays on his phone out of boredom.
+erleichtert|Ich bin so erleichtert!|I'm so relieved!
+verzweifelt|Sie war völlig verzweifelt.|She was completely desperate.
+gelangweilt|Die Schüler sehen gelangweilt aus.|The pupils look bored.
+begeistert|Ich bin von dem Buch begeistert.|I'm thrilled with the book.
+eifersüchtig|Bist du eifersüchtig?|Are you jealous?
+peinlich|Das ist mir echt peinlich.|That's really embarrassing for me.
+gestresst|Du wirkst gestresst.|You seem stressed.
+der Traum|Ich hatte einen seltsamen Traum.|I had a strange dream.
+träumen von|Sie träumt von einem Haus am Meer.|She dreams of a house by the sea.
+sich wünschen|Was wünschst du dir zum Geburtstag?|What would you like for your birthday?
+die Feier|Die Feier beginnt um sieben.|The celebration starts at seven.
+der Lottogewinn|Mit einem Lottogewinn würde ich reisen.|With a lottery win I would travel.
+die Fantasie|Kinder haben viel Fantasie.|Children have a lot of imagination.
+aufhören mit|Ich habe mit dem Rauchen aufgehört.|I've stopped smoking.
+der Ratgeber|Ich habe einen Ratgeber zum Thema Schlaf gelesen.|I read a guide on sleep.
+sich Zeit nehmen|Nimm dir Zeit für das Frühstück.|Take your time over breakfast.
+sich streiten|Die beiden streiten sich oft.|The two often argue.
+sich beruhigen|Beruhig dich erst mal!|Calm down first!
+dekorieren|Wir dekorieren den Raum für die Party.|We're decorating the room for the party.
+einen Kompromiss finden|Wir müssen einen Kompromiss finden.|We have to find a compromise.
+abstimmen über|Wir stimmen über den Vorschlag ab.|We're voting on the proposal.
+die Musikanlage|Die Musikanlage ist zu laut.|The sound system is too loud.
+das Buffet|Das Buffet ist eröffnet!|The buffet is open!
+absprechen|Das müssen wir noch absprechen.|We still have to coordinate that.
+verteilen|Die Lehrerin verteilt die Prüfungen.|The teacher hands out the exams.
+durchfallen|Er ist durch die Prüfung gefallen.|He failed the exam.
+vorhaben|Was hast du am Wochenende vor?|What are you planning for the weekend?
+der Abendkurs|Ich besuche einen Abendkurs.|I'm attending an evening class.
+die Kursgebühr|Die Kursgebühr ist bis zum 1. Mai zu bezahlen.|The course fee must be paid by 1 May.
+die Teilnahmebescheinigung|Am Ende bekommen Sie eine Teilnahmebescheinigung.|At the end you'll receive a certificate of attendance.
+motiviert|Die Schüler sind sehr motiviert.|The pupils are very motivated.
+wozu|Wozu brauchst du das?|What do you need that for?
+die Chance|Das ist deine Chance!|That's your chance!
+die Karriere|Sie hat Karriere gemacht.|She has had a successful career.
+die Fahrschule|Ich melde mich in der Fahrschule an.|I'm signing up at the driving school.
+sich erkundigen|Ich erkundige mich nach dem Preis.|I'm enquiring about the price.
+der Nachweis|Wir brauchen einen Nachweis über Ihr Einkommen.|We need proof of your income.
+das Fertiggericht|Fertiggerichte sind praktisch, aber nicht gesund.|Ready meals are practical but not healthy.
+die Angewohnheit|Das ist eine schlechte Angewohnheit.|That's a bad habit.
+die Routine|Morgens habe ich eine feste Routine.|In the morning I have a fixed routine.
+der Snack|Als Snack esse ich einen Apfel.|As a snack I eat an apple.
+naschen|Die Kinder naschen gern.|The children like nibbling sweets.
+durchhalten|Halt durch, du schaffst das!|Hang in there, you can do it!
+die Aufenthaltserlaubnis|Meine Aufenthaltserlaubnis läuft im Mai ab.|My residence permit expires in May.
+unterschreiben|Bitte unterschreiben Sie hier.|Please sign here.
+die Meldebescheinigung|Für das Konto brauchen Sie eine Meldebescheinigung.|You need a registration certificate for the account.
+die Krankenversicherung|In Deutschland ist die Krankenversicherung Pflicht.|Health insurance is compulsory in Germany.
+beglaubigt|Die Kopie muss beglaubigt sein.|The copy must be certified.
+der Charakter|Er hat einen starken Charakter.|He has a strong character.
+kennenlernen|Wo habt ihr euch kennengelernt?|Where did you meet?
+der Mitbewohner|Mein Mitbewohner kocht jeden Abend.|My flatmate cooks every evening.
+egoistisch|Das ist ziemlich egoistisch.|That's rather selfish.
+selbstbewusst|Sie tritt sehr selbstbewusst auf.|She comes across as very self-confident.
+humorvoll|Mein Chef ist sehr humorvoll.|My boss has a great sense of humour.
+die Persönlichkeit|Sie hat eine starke Persönlichkeit.|She has a strong personality.
+aufwachsen|Ich bin in Mumbai aufgewachsen.|I grew up in Mumbai.
+die Jugend|In meiner Jugend habe ich viel Sport gemacht.|In my youth I did a lot of sport.
+bevor|Ruf mich an, bevor du kommst.|Call me before you come.
+seitdem|Seitdem wohne ich in Berlin.|Since then I've lived in Berlin.
+sobald|Sobald ich fertig bin, komme ich.|As soon as I'm ready, I'll come.
+der Berufseinstieg|Der Berufseinstieg war nicht leicht.|Starting work wasn't easy.
+der Wendepunkt|Das Jahr in Deutschland war ein Wendepunkt.|The year in Germany was a turning point.
+auswandern|Sie ist nach Kanada ausgewandert.|She emigrated to Canada.
+sich verändern|Du hast dich gar nicht verändert!|You haven't changed at all!
+das Märchen|Die Oma erzählt ein Märchen.|Grandma tells a fairy tale.
+die Hexe|Die Hexe wohnt im Wald.|The witch lives in the forest.
+das Gleichgewicht|Ich suche ein Gleichgewicht zwischen Arbeit und Freizeit.|I'm looking for a balance between work and free time.
+erschöpft|Nach der Arbeit bin ich völlig erschöpft.|After work I'm completely exhausted.
+die Erschöpfung|Er leidet unter Erschöpfung.|He's suffering from exhaustion.
+das Burn-out|Zu viel Stress kann zu einem Burn-out führen.|Too much stress can lead to burnout.
+der Ausgleich|Als Ausgleich zum Büro mache ich Yoga.|To balance out office work I do yoga.
+priorisieren|Wir müssen die Aufgaben priorisieren.|We have to prioritise the tasks.
+das Plastik|Wir vermeiden Plastik im Haushalt.|We avoid plastic in the household.
+der Treibhauseffekt|CO2 verstärkt den Treibhauseffekt.|CO2 intensifies the greenhouse effect.
+die Solaranlage|Auf dem Dach ist eine Solaranlage.|There's a solar system on the roof.
+das Elektroauto|Er fährt seit einem Jahr ein Elektroauto.|He has driven an electric car for a year.
+der Fleischkonsum|Der Fleischkonsum in Deutschland sinkt.|Meat consumption in Germany is falling.
+die Mehrwegflasche|Ich kaufe nur Mehrwegflaschen.|I only buy returnable bottles.
+die App|Mit dieser App lerne ich Vokabeln.|I learn vocabulary with this app.
+die Informationsquelle|Das Internet ist meine wichtigste Informationsquelle.|The internet is my main source of information.
+der Beitrag|Ihr Beitrag hat viele Likes bekommen.|Her post got lots of likes.
+liken|Sie likt jedes Foto von ihm.|She likes every photo of his.
+der Kommentar|Lies nicht die Kommentare!|Don't read the comments!
+herstellen|Die Firma stellt Möbel her.|The company makes furniture.
+die Produktion|Die Produktion wurde nach China verlegt.|Production was moved to China.
+die Fabrik|Er arbeitet in einer Fabrik.|He works in a factory.
+würzen|Würz die Suppe mit Salz und Pfeffer.|Season the soup with salt and pepper.
+mischen|Misch das Mehl mit dem Zucker.|Mix the flour with the sugar.
+servieren|Das Essen wird um acht serviert.|Dinner is served at eight.
+erfinden|Wer hat das Telefon erfunden?|Who invented the telephone?
+gründen|Sie hat eine eigene Firma gegründet.|She founded her own company.
+verpacken|Die Ware wird sorgfältig verpackt.|The goods are carefully packed.
+transportieren|Die Möbel werden mit dem Lkw transportiert.|The furniture is transported by lorry.
+das Werk|Das Werk beschäftigt 2.000 Menschen.|The plant employs 2,000 people.
+der Fahrgast|Die Fahrgäste warten auf den Bus.|The passengers are waiting for the bus.
+der Ersatzverkehr|Zwischen den Stationen fährt Ersatzverkehr mit Bussen.|Replacement buses run between the stations.
+die Störung|Wegen einer Störung fährt die U-Bahn nicht.|The underground isn't running because of a fault.
+das Unwetter|Das Unwetter hat viele Bäume umgeworfen.|The storm knocked down many trees.
+gut gelaunt|Heute ist er gut gelaunt.|He's in a good mood today.
+der Stromausfall|Bei dem Stromausfall war es zwei Stunden dunkel.|During the power cut it was dark for two hours.
+das Hochwasser|Das Hochwasser hat die Altstadt erreicht.|The flood reached the old town.
+die Vorhersage|Laut Vorhersage wird es morgen sonnig.|According to the forecast it will be sunny tomorrow.
+der Traumjob|Sie hat ihren Traumjob gefunden.|She has found her dream job.
+voraussichtlich|Der Zug kommt voraussichtlich um zehn an.|The train is expected to arrive at ten.
+eines Tages|Eines Tages werde ich ein Buch schreiben.|One day I'll write a book.
+der Ruhestand|Mein Vater ist seit zwei Jahren im Ruhestand.|My father has been retired for two years.
+unabhängig|Sie möchte finanziell unabhängig sein.|She wants to be financially independent.
+die Rückfrage|Bei Rückfragen rufen Sie mich an.|If you have any questions, call me.
+die Einleitung|Die Einleitung sollte kurz sein.|The introduction should be short.
+der Hauptteil|Im Hauptteil stehen die Argumente.|The arguments are in the main part.
+zunächst|Zunächst möchte ich mich vorstellen.|First of all I'd like to introduce myself.
+abschließend|Abschließend möchte ich Ihnen danken.|In conclusion I'd like to thank you.
+die Gemeinsamkeit|Wir haben viele Gemeinsamkeiten.|We have a lot in common.

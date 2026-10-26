@@ -93,7 +93,7 @@
   function week() {
     const s = Store.get(); const st = streakState(); const d = parse(today());
     const mon = new Date(d); mon.setDate(d.getDate() - ((d.getDay() + 6) % 7));
-    const names = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
+    const names = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"];   // English initials: the week strip is for orientation
     return names.map((n, i) => { const x = new Date(mon); x.setDate(mon.getDate() + i); const k = dstr(x);
       return { n, k, xp: s.days[k] || 0, frozen: st.frozen.includes(k), today: k === today(), future: x > d }; });
   }
@@ -146,7 +146,7 @@
       if (ev && ev.kind === "frozen") setTimeout(() => H.toast(`❄️ A freeze saved your streak (${ev.used} day${ev.used > 1 ? "s" : ""}). Welcome back!`, "good"), 600);
       if (n > 0) Habit.track("xp", n);
       const q = qd();
-      if (before < goal && now >= goal && !q.celebrated) { q.celebrated = true; Store.save(); setTimeout(() => Habit.celebrate("Tagesziel erreicht!", `${goal} XP today · ${streakView().count}-day streak 🔥`), 700); }
+      if (before < goal && now >= goal && !q.celebrated) { q.celebrated = true; Store.save(); setTimeout(() => Habit.celebrate("Tagesziel erreicht! (Daily goal reached)", `${goal} XP today · ${streakView().count}-day streak 🔥`), 700); }
       const lb = level(s.xp - n), la = level(s.xp);
       if (la.n > lb.n) setTimeout(() => Habit.celebrate(`Level ${la.n}: ${la.title}`, "New level reached. Weiter so!"), 1500);
     },
@@ -159,7 +159,7 @@
       const PARTS = [["learn", "Learn the rule", 6], ["read", "Read the text", 4], ["practice", "Practise", 8], ["exam", "Exam questions", 6], ["speak", "Speak", 4]];
       const nextPart = PARTS.find(([k]) => !parts[k] && !(k === "practice" && ls.done));
       if (due >= 12) return { go: "vocab/review", label: `Review ${due} words`, sub: "Words due today – 4 minutes", min: 4, kind: "words" };
-      if (nextPart && Store.unlocked(l.n)) return { go: `lesson/${l.n}/${nextPart[0]}`, label: `${nextPart[1]}`, sub: `Lesson ${l.n} · ${l.title}`, min: nextPart[2], kind: "lesson", lesson: l };
+      if (nextPart && Store.unlocked(l.n)) return { go: `lesson/${l.n}/${nextPart[0]}`, label: `${nextPart[1]}`, sub: `Lesson ${l.pos} · ${l.title}`, min: nextPart[2], kind: "lesson", lesson: l };
       if (due > 0) return { go: "vocab/review", label: `Review ${due} words`, sub: "Words due today", min: 3, kind: "words" };
       return { go: "practice/smart", label: "Smart mix", sub: "10 questions on what you need most", min: 5, kind: "smart" };
     },
@@ -186,7 +186,7 @@
       if (document.querySelector(".session .sess-body .q") && !document.querySelector(".summary")) { queue.push([title, sub]); return; }
       document.querySelectorAll(".celebrate").forEach((x) => x.remove());
       const d = document.createElement("div"); d.className = "celebrate"; d.setAttribute("role", "status");
-      d.innerHTML = `<div class="cel-card"><div class="cel-burst">🎉</div><h2>${H.esc(title)}</h2>${sub ? `<p>${H.esc(sub)}</p>` : ""}<button class="btn sign">Weiter</button></div>`;
+      d.innerHTML = `<div class="cel-card"><div class="cel-burst">🎉</div><h2>${H.esc(title)}</h2>${sub ? `<p>${H.esc(sub)}</p>` : ""}<button class="btn sign">Continue</button></div>`;
       document.body.appendChild(d); confetti(d);
       tone([523, 659, 784, 1047], 0.12); buzz([20, 40, 20, 40, 60]);
       const close = () => d.remove();

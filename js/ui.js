@@ -153,7 +153,7 @@
         const st = Store.get(), goal = st.settings.goal || 50, todayXP = st.days[Store.today()] || 0;
         const nx = window.Habit ? Habit.next() : null;
         body.innerHTML = `<div class="result summary arming">
-          <div class="sum-head">${pct >= 90 ? "Ausgezeichnet!" : pct >= 70 ? "Sehr gut!" : pct >= 50 ? "Gut gemacht!" : "Weiter üben!"}</div>
+          <div class="sum-head">${pct >= 90 ? H.bi("Ausgezeichnet!", "Excellent!") : pct >= 70 ? H.bi("Sehr gut!", "Very good!") : pct >= 50 ? H.bi("Gut gemacht!", "Well done!") : H.bi("Weiter üben!", "Keep practising!")}</div>
           <div class="sum-grid">
             <div class="sum-tile xp"><b>+${gained}</b><span>XP</span></div>
             <div class="sum-tile acc"><b>${pct}%</b><span>${right}/${total} right</span></div>

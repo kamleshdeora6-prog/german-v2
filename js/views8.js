@@ -7,13 +7,13 @@
   /* ---------------- Mehr: grouped, so nothing is more than one glance away ---------------- */
   V.more = (el) => {
     const groups = [
-      ["Lernen", [["vocab", "🗂", "Wörter", `${DC.vocab.length} words, spaced repetition`], ["listen", "🎧", "Hören", "Dictation"], ["speak", "🎙", "Sprechen", "Shadowing & free talk"], ["read", "📖", "Lesen", `${DC.curriculum.length + DC.passages.length} texts`], ["write", "✍️", "Schreiben", `${DC.exams.writing.length} tasks with models`], ["pronounce", "👄", "Aussprache", "ü/u, ö/o, ich/sch …"]]],
-      ["Nachschlagen", [["translate", "⇄", "Übersetzen", "Offline + DeepL, LEO"], ["grammar", "📐", "Grammatik", "Rules & tables"], ["notes", "🧾", "Spickzettel", "Cheat sheets A1–C2"], ["resources", "🌍", "Resources", "Free courses, news, podcasts"]]],
-      ["Prüfung", [["exam", "🎓", "Prüfungstrainer", "Mock test & Leben in D."], ["readexam", "📰", "Leseprüfung", `${DC.exams.reading.length} sets`], ["placement", "🧭", "Einstufungstest", "Find your level"]]],
-      ["Planen", [["stats", "📊", "Fortschritt", "Stats & mistakes"], ["plan", "🎯", "Mein Plan", "Goal and deadline"], ["daily", "🗓", "Übungstag", "Today's session in order"], ["weak", "🩹", "Schwächen", "What you get wrong"], ["refresh", "🔁", "Auffrischen", "Learnt it once, forgot it"]]],
-      ["App", [["settings", "⚙️", "Einstellungen", "Profiles, reminder, backup"], ["news", "✨", "Neu", `Version ${App.version}`], ["about", "ℹ️", "Über & Datenschutz", "Who made this, your data"]]],
+      ["Lernen", "Learn", [["vocab", "🗂", "Wörter", "Words", `${DC.vocab.length} words, spaced repetition`], ["listen", "🎧", "Hören", "Listening", "Dictation"], ["speak", "🎙", "Sprechen", "Speaking", "Shadowing & free talk"], ["read", "📖", "Lesen", "Reading", `${DC.curriculum.length + DC.passages.length} texts`], ["write", "✍️", "Schreiben", "Writing", `${DC.exams.writing.length} tasks with models`], ["pronounce", "👄", "Aussprache", "Pronunciation", "ü/u, ö/o, ich/sch …"]]],
+      ["Nachschlagen", "Look up", [["translate", "⇄", "Übersetzen", "Translate", "Offline + DeepL, LEO"], ["grammar", "📐", "Grammatik", "Grammar", "Rules & tables"], ["notes", "🧾", "Spickzettel", "Cheat sheets", "A1–C2 on one page each"], ["resources", "🌍", "Links", "Resources", "Free courses, news, podcasts"]]],
+      ["Prüfung", "Exams", [["exam", "🎓", "Prüfungstrainer", "Exam trainer", "Mock test & Leben in D."], ["readexam", "📰", "Leseprüfung", "Reading exam", `${DC.exams.reading.length} sets`], ["placement", "🧭", "Einstufungstest", "Placement test", "Find your level"]]],
+      ["Planen", "Plan", [["stats", "📊", "Fortschritt", "Progress", "Stats & mistakes"], ["plan", "🎯", "Mein Plan", "My plan", "Goal and deadline"], ["daily", "🗓", "Übungstag", "Practice day", "Today's session in order"], ["weak", "🩹", "Schwächen", "Weak topics", "What you get wrong"], ["refresh", "🔁", "Auffrischen", "Refresher", "Learnt it once, forgot it"]]],
+      ["App", "App", [["settings", "⚙️", "Einstellungen", "Settings", "Profiles, reminder, backup"], ["news", "✨", "Neu", "What's new", `Version ${App.version}`], ["about", "ℹ️", "Über die App", "About & privacy", "Who made this, your data"]]],
     ];
-    el.innerHTML = `<h2 class="page-title">Mehr</h2>${groups.map(([g, items]) => `<h3 class="grp">${g}</h3><section class="grid2 menu">${items.map(([go, ic, t, d]) => `<button class="tile" data-go="${go}"><span class="ti">${ic}</span><b>${t}</b><span>${esc(d)}</span></button>`).join("")}</section>`).join("")}
+    el.innerHTML = `<h2 class="page-title">${H.bi("Mehr", "More")}</h2>${groups.map(([g, ge, items]) => `<h3 class="grp">${H.bi(g, ge)}</h3><section class="grid2 menu">${items.map(([go, ic, t, te, d]) => `<button class="tile" data-go="${go}"><span class="ti">${ic}</span><b>${H.bi(t, te)}</b><span>${esc(d)}</span></button>`).join("")}</section>`).join("")}
       <p class="credit muted small">${App.credit()}</p>`;
   };
 
@@ -42,7 +42,7 @@
     ]],
   ];
   V.resources = (el) => {
-    el.innerHTML = `<button class="back" data-go="more">‹ Mehr</button><h2 class="page-title">Resources</h2>
+    el.innerHTML = `<button class="back" data-go="more">‹ More</button><h2 class="page-title">Resources</h2>
       <p class="muted">The app teaches the system. Real German from real people makes it stick: one item from “Listen every day” for 10 minutes is the best habit you can add.</p>
       ${RES.map(([g, list]) => `<section class="card"><h3>${g}</h3><div class="tlinks">${list.map(([n, u, d]) => `<button class="tlink" data-url="${u}"><b>${esc(n)} ↗</b><span>${esc(d)}</span></button>`).join("")}</div></section>`).join("")}`;
   };

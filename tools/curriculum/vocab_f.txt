@@ -1,0 +1,253 @@
+#A1
+die Uhrzeit|time (of day)|Uhrzeiten|Zeit|Weißt du die Uhrzeit?|Do you know the time?
+der Wochentag|weekday|Wochentage|Zeit|Welcher Wochentag ist heute?|What day of the week is it today?
+der Geburtstagskuchen|birthday cake|Geburtstagskuchen|Feste|Der Geburtstagskuchen hat zehn Kerzen.|The birthday cake has ten candles.
+die Party|party|Partys|Feste|Kommst du zu meiner Party?|Are you coming to my party?
+das Fest|celebration, festival|Feste|Feste|Das Fest war sehr schön.|The celebration was very nice.
+Weihnachten|Christmas||Feste|Zu Weihnachten fahre ich zu meinen Eltern.|At Christmas I go to my parents'.
+Ostern|Easter||Feste|An Ostern suchen die Kinder Eier.|At Easter the children look for eggs.
+Silvester|New Year's Eve||Feste|An Silvester gibt es ein Feuerwerk.|On New Year's Eve there are fireworks.
+die Geschwister|siblings||Familie|Ich habe drei Geschwister.|I have three siblings.
+der Mitschüler|classmate|Mitschüler|Schule|Meine Mitschüler sind sehr nett.|My classmates are very nice.
+die Pause|break|Pausen|Schule|In der Pause essen wir ein Brot.|At break we eat a sandwich.
+der Stundenplan|timetable (school)|Stundenpläne|Schule|Am Montag habe ich laut Stundenplan Mathe.|According to my timetable I have maths on Monday.
+die Hausaufgabe|homework|Hausaufgaben|Schule|Hast du deine Hausaufgaben gemacht?|Have you done your homework?
+der Satz|sentence|Sätze|Sprache|Schreib bitte einen Satz.|Please write a sentence.
+der Buchstabe|letter (of the alphabet)|Buchstaben|Sprache|Das Wort hat fünf Buchstaben.|The word has five letters.
+die Seite|page; side|Seiten|Schule|Öffnet das Buch auf Seite zehn.|Open the book at page ten.
+das Beispiel|example|Beispiele|Schule|Kannst du ein Beispiel geben?|Can you give an example?
+der Text|text|Texte|Schule|Lies bitte den Text.|Please read the text.
+erklären|to explain||Verb|Kannst du mir das erklären?|Can you explain that to me?
+antworten|to answer||Verb|Bitte antworten Sie auf Deutsch.|Please answer in German.
+fragen|to ask||Verb|Darf ich Sie etwas fragen?|May I ask you something?
+helfen|to help||Verb|Kann ich Ihnen helfen?|Can I help you?
+kommen|to come||Verb|Wann kommst du?|When are you coming?
+gehen|to go, to walk||Verb|Wir gehen nach Hause.|We're going home.
+schreiben|to write||Verb|Ich schreibe eine E-Mail.|I'm writing an email.
+lesen|to read||Verb|Sie liest die Zeitung.|She's reading the newspaper.
+hören|to hear, to listen||Verb|Ich höre gern Musik.|I like listening to music.
+sprechen|to speak||Verb|Sprechen Sie Englisch?|Do you speak English?
+machen|to do, to make||Verb|Was machst du heute?|What are you doing today?
+spielen|to play||Verb|Die Kinder spielen im Garten.|The children are playing in the garden.
+kaufen|to buy||Verb|Ich kaufe Brot.|I'm buying bread.
+bezahlen|to pay||Verb|Ich möchte bitte bezahlen.|I'd like to pay, please.
+kosten|to cost||Verb|Was kostet das?|What does that cost?
+trinken|to drink||Verb|Was möchtest du trinken?|What would you like to drink?
+essen|to eat||Verb|Wir essen um sieben.|We eat at seven.
+schlafen|to sleep||Verb|Das Baby schläft.|The baby is asleep.
+arbeiten|to work||Verb|Sie arbeitet in einem Krankenhaus.|She works in a hospital.
+lernen|to learn||Verb|Ich lerne jeden Tag Deutsch.|I learn German every day.
+studieren|to study (at university)||Verb|Er studiert Medizin.|He studies medicine.
+wohnen|to live (reside)||Verb|Wo wohnst du?|Where do you live?
+heißen|to be called||Verb|Wie heißt du?|What's your name?
+glauben|to believe, to think||Verb|Ich glaube, es regnet.|I think it's raining.
+denken|to think||Verb|Was denkst du?|What do you think?
+verstehen|to understand||Verb|Ich verstehe das nicht.|I don't understand that.
+vergessen|to forget||Verb|Vergiss deinen Schlüssel nicht!|Don't forget your key!
+wiederholen|to repeat||Verb|Können Sie das wiederholen?|Can you repeat that?
+beginnen|to begin||Verb|Der Film beginnt um acht.|The film begins at eight.
+bleiben|to stay||Verb|Ich bleibe heute zu Hause.|I'm staying at home today.
+warten|to wait||Verb|Ich warte auf den Bus.|I'm waiting for the bus.
+nehmen|to take||Verb|Ich nehme den Salat.|I'll take the salad.
+geben|to give||Verb|Gib mir bitte das Buch.|Please give me the book.
+sehen|to see||Verb|Ich sehe dich morgen.|I'll see you tomorrow.
+finden|to find||Verb|Ich finde meine Brille nicht.|I can't find my glasses.
+suchen|to look for||Verb|Was suchst du?|What are you looking for?
+bringen|to bring||Verb|Bringst du mir ein Glas Wasser?|Will you bring me a glass of water?
+kennen|to know (people, places)||Verb|Kennst du Anna?|Do you know Anna?
+wissen|to know (facts)||Verb|Ich weiß es nicht.|I don't know.
+können|can, to be able to||Verb|Kannst du schwimmen?|Can you swim?
+müssen|must, to have to||Verb|Ich muss jetzt gehen.|I have to go now.
+wollen|to want||Verb|Was willst du machen?|What do you want to do?
+sollen|should, to be supposed to||Verb|Was soll ich mitbringen?|What should I bring?
+möchten|would like||Verb|Ich möchte einen Kaffee.|I'd like a coffee.
+der Fernseher|television set|Fernseher|Wohnen|Der Fernseher ist im Wohnzimmer.|The television is in the living room.
+das Licht|light|Lichter|Wohnen|Mach bitte das Licht an.|Please switch the light on.
+der Teppich|carpet|Teppiche|Wohnen|Der Teppich ist neu.|The carpet is new.
+das Fenster|window|Fenster|Wohnen|Das Fenster ist offen.|The window is open.
+die Tür|door|Türen|Wohnen|Mach bitte die Tür zu.|Please close the door.
+die Wand|wall|Wände|Wohnen|Das Bild hängt an der Wand.|The picture is hanging on the wall.
+der Balkon|balcony|Balkone|Wohnen|Wir frühstücken auf dem Balkon.|We have breakfast on the balcony.
+der Garten|garden|Gärten|Wohnen|Der Garten ist groß.|The garden is big.
+das Haus|house|Häuser|Wohnen|Das Haus hat drei Zimmer.|The house has three rooms.
+der Nachbar|neighbour|Nachbarn|Menschen|Unser Nachbar ist sehr nett.|Our neighbour is very nice.
+die Nachbarin|neighbour (f)|Nachbarinnen|Menschen|Meine Nachbarin heißt Anna.|My neighbour is called Anna.
+#A2
+der Alltag|everyday life||Alltag|Im Alltag spreche ich Deutsch.|In everyday life I speak German.
+der Haushalt|household|Haushalte|Alltag|Wir teilen die Arbeit im Haushalt.|We share the housework.
+die Hausarbeit|housework||Alltag|Er macht nicht gern Hausarbeit.|He doesn't like doing housework.
+der Einkauf|shopping, purchase|Einkäufe|Alltag|Ich mache den Einkauf am Samstag.|I do the shopping on Saturday.
+die Besorgung|errand|Besorgungen|Alltag|Ich muss noch ein paar Besorgungen machen.|I still have to run a few errands.
+erledigen|to get done||Verb|Ich erledige das morgen.|I'll get that done tomorrow.
+aufpassen|to watch out; to look after||Verb|Pass auf, das Auto!|Watch out, the car!
+ausruhen|to rest||Verb|Ich muss mich ein bisschen ausruhen.|I have to rest a bit.
+sich beeilen|to hurry||Verb|Wir müssen uns beeilen.|We have to hurry.
+verpassen|to miss||Verb|Ich habe den Bus verpasst.|I missed the bus.
+verschlafen|to oversleep||Verb|Heute habe ich verschlafen.|I overslept today.
+abholen|to pick up||Verb|Ich hole dich vom Bahnhof ab.|I'll pick you up from the station.
+mitnehmen|to take along||Verb|Kannst du mich mitnehmen?|Can you give me a lift?
+mitbringen|to bring along||Verb|Was soll ich mitbringen?|What should I bring?
+vorbeikommen|to drop by||Verb|Komm doch morgen vorbei!|Do drop by tomorrow!
+zurückrufen|to call back||Verb|Ich rufe Sie später zurück.|I'll call you back later.
+ausfüllen|to fill in||Verb|Bitte füllen Sie das Formular aus.|Please fill in the form.
+anmelden|to register||Verb|Ich melde mich für den Kurs an.|I'm registering for the course.
+abmelden|to deregister, to sign off||Verb|Vor dem Umzug muss ich mich abmelden.|Before the move I have to deregister.
+ankreuzen|to tick||Verb|Kreuzen Sie die richtige Antwort an.|Tick the correct answer.
+aussprechen|to pronounce||Verb|Wie spricht man das aus?|How do you pronounce that?
+übersetzen|to translate||Verb|Kannst du den Brief übersetzen?|Can you translate the letter?
+nachschlagen|to look up||Verb|Ich schlage das Wort im Wörterbuch nach.|I'm looking the word up in the dictionary.
+korrigieren|to correct||Verb|Die Lehrerin korrigiert die Tests.|The teacher corrects the tests.
+üben|to practise||Verb|Wir üben die Aussprache.|We're practising pronunciation.
+bestehen|to pass (an exam)||Verb|Sie hat die Prüfung bestanden.|She passed the exam.
+die Note|grade, mark|Noten|Schule|Er hat eine gute Note bekommen.|He got a good mark.
+das Ergebnis|result|Ergebnisse|Allgemein|Das Ergebnis ist gut.|The result is good.
+die Erklärung|explanation|Erklärungen|Schule|Danke für die Erklärung.|Thanks for the explanation.
+die Aufgabe|task, exercise|Aufgaben|Schule|Die Aufgabe ist schwer.|The task is difficult.
+der Fehler|mistake|Fehler|Schule|Hier ist ein Fehler.|There's a mistake here.
+die Lösung|solution|Lösungen|Schule|Die Lösung steht auf Seite 50.|The solution is on page 50.
+die Regel|rule|Regeln|Schule|Kennst du die Regel?|Do you know the rule?
+die Grammatik|grammar||Sprache|Die Grammatik ist nicht so schwer.|The grammar isn't that difficult.
+die Bedeutung|meaning|Bedeutungen|Sprache|Das Wort hat zwei Bedeutungen.|The word has two meanings.
+der Akzent|accent|Akzente|Sprache|Sie spricht mit einem leichten Akzent.|She speaks with a slight accent.
+die Wolle|wool||Kleidung|Der Pullover ist aus Wolle.|The jumper is made of wool.
+die Baumwolle|cotton||Kleidung|Das T-Shirt ist aus Baumwolle.|The T-shirt is made of cotton.
+das Leder|leather||Kleidung|Die Tasche ist aus Leder.|The bag is made of leather.
+der Knopf|button|Knöpfe|Kleidung|An der Jacke fehlt ein Knopf.|There's a button missing on the jacket.
+der Reißverschluss|zip|Reißverschlüsse|Kleidung|Der Reißverschluss ist kaputt.|The zip is broken.
+passen|to fit||Verb|Die Hose passt nicht.|The trousers don't fit.
+anprobieren|to try on||Verb|Kann ich das Kleid anprobieren?|Can I try on the dress?
+aussehen|to look (appear)||Verb|Du siehst müde aus.|You look tired.
+die Frisur|hairstyle|Frisuren|Aussehen|Deine neue Frisur gefällt mir.|I like your new hairstyle.
+der Bart|beard|Bärte|Aussehen|Er hat einen langen Bart.|He has a long beard.
+blond|blond||Aussehen|Sie hat blonde Haare.|She has blond hair.
+schlank|slim||Aussehen|Er ist groß und schlank.|He is tall and slim.
+dick|fat, thick||Aussehen|Das Buch ist sehr dick.|The book is very thick.
+hübsch|pretty||Aussehen|Das Kleid ist hübsch.|The dress is pretty.
+das Gewürz|spice|Gewürze|Essen|Ohne Gewürze schmeckt das nicht.|It doesn't taste of anything without spices.
+das Rezept|recipe|Rezepte|Essen|Kannst du mir das Rezept geben?|Can you give me the recipe?
+die Zutat|ingredient|Zutaten|Essen|Welche Zutaten brauchen wir?|What ingredients do we need?
+schälen|to peel||Verb|Ich schäle die Kartoffeln.|I'm peeling the potatoes.
+rühren|to stir||Verb|Rühr die Soße gut um.|Stir the sauce well.
+aufwärmen|to heat up||Verb|Ich wärme die Suppe auf.|I'm heating up the soup.
+roh|raw||Essen|Die Karotten kann man roh essen.|You can eat the carrots raw.
+frisch|fresh||Essen|Das Brot ist ganz frisch.|The bread is very fresh.
+fett|fatty||Essen|Das Essen ist zu fett.|The food is too fatty.
+bitter|bitter||Essen|Der Kaffee ist bitter.|The coffee is bitter.
+sauer|sour; annoyed||Essen|Die Zitrone ist sauer.|The lemon is sour.
+die Reservierung|reservation|Reservierungen|Reisen|Ich habe eine Reservierung auf den Namen Sharma.|I have a reservation in the name of Sharma.
+die Abfahrt|departure|Abfahrten|Reisen|Die Abfahrt ist um 9.15 Uhr.|Departure is at 9:15.
+die Ankunft|arrival|Ankünfte|Reisen|Die Ankunft ist für zwölf Uhr geplant.|Arrival is planned for twelve o'clock.
+der Aufenthalt|stay|Aufenthalte|Reisen|Wir wünschen Ihnen einen schönen Aufenthalt.|We wish you a pleasant stay.
+die Sehenswürdigkeit|sight, attraction|Sehenswürdigkeiten|Reisen|Das Brandenburger Tor ist eine berühmte Sehenswürdigkeit.|The Brandenburg Gate is a famous sight.
+die Führung|guided tour|Führungen|Reisen|Die Führung beginnt um elf.|The guided tour starts at eleven.
+die Postkarte|postcard|Postkarten|Reisen|Ich schicke dir eine Postkarte.|I'll send you a postcard.
+das Souvenir|souvenir|Souvenirs|Reisen|Ich kaufe ein Souvenir für meine Mutter.|I'm buying a souvenir for my mother.
+der Koffer|suitcase|Koffer|Reisen|Mein Koffer ist zu schwer.|My suitcase is too heavy.
+die Bordkarte|boarding pass|Bordkarten|Reisen|Bitte zeigen Sie Ihre Bordkarte.|Please show your boarding pass.
+der Abflug|departure (flight)|Abflüge|Reisen|Der Abflug verspätet sich.|The departure is delayed.
+landen|to land||Verb|Das Flugzeug landet pünktlich.|The plane lands on time.
+starten|to take off, to start||Verb|Das Flugzeug startet gleich.|The plane is about to take off.
+übernachten|to stay overnight||Verb|Wir übernachten in einem Hotel.|We're staying overnight in a hotel.
+besichtigen|to visit (a sight)||Verb|Morgen besichtigen wir das Schloss.|Tomorrow we're visiting the castle.
+erleben|to experience||Verb|Wir haben viel erlebt.|We experienced a lot.
+sich erholen|to recover, to relax||Verb|Im Urlaub habe ich mich gut erholt.|I had a good rest on holiday.
+die Erinnerung|memory|Erinnerungen|Gefühle|Ich habe schöne Erinnerungen an die Reise.|I have lovely memories of the trip.
+das Wunder|miracle, wonder|Wunder|Allgemein|Es ist ein Wunder, dass niemand verletzt wurde.|It's a miracle nobody was hurt.
+das Glück|luck, happiness||Gefühle|Viel Glück bei der Prüfung!|Good luck in the exam!
+das Pech|bad luck||Gefühle|So ein Pech!|What bad luck!
+die Überraschung|surprise|Überraschungen|Gefühle|Was für eine schöne Überraschung!|What a nice surprise!
+der Ärger|trouble, annoyance||Gefühle|Ich hatte Ärger mit dem Chef.|I had trouble with the boss.
+die Angst|fear|Ängste|Gefühle|Ich habe Angst vor Hunden.|I'm afraid of dogs.
+die Sorge|worry|Sorgen|Gefühle|Mach dir keine Sorgen.|Don't worry.
+glücklich|happy||Gefühle|Ich bin sehr glücklich.|I'm very happy.
+zufrieden|satisfied||Gefühle|Bist du mit dem Ergebnis zufrieden?|Are you satisfied with the result?
+unzufrieden|dissatisfied||Gefühle|Viele Kunden sind unzufrieden.|Many customers are dissatisfied.
+aufgeregt|excited, nervous||Gefühle|Vor dem Konzert bin ich aufgeregt.|Before the concert I'm excited.
+überrascht|surprised||Gefühle|Ich war sehr überrascht.|I was very surprised.
+einsam|lonely||Gefühle|Ohne Freunde fühlt sie sich einsam.|Without friends she feels lonely.
+stolz|proud||Gefühle|Ich bin stolz auf dich.|I'm proud of you.
+die Gesundheit|health||Gesundheit|Gesundheit ist das Wichtigste.|Health is the most important thing.
+gesund|healthy||Gesundheit|Obst ist gesund.|Fruit is healthy.
+ungesund|unhealthy||Gesundheit|Zu viel Zucker ist ungesund.|Too much sugar is unhealthy.
+der Patient|patient|Patienten|Gesundheit|Der Patient wartet im Wartezimmer.|The patient is waiting in the waiting room.
+die Patientin|patient (f)|Patientinnen|Gesundheit|Die Patientin hat Fieber.|The patient has a temperature.
+die Tablette|tablet|Tabletten|Gesundheit|Nehmen Sie eine Tablette nach dem Essen.|Take one tablet after meals.
+der Tropfen|drop|Tropfen|Gesundheit|Nehmen Sie zehn Tropfen am Abend.|Take ten drops in the evening.
+die Untersuchung|examination|Untersuchungen|Gesundheit|Die Untersuchung dauert eine Stunde.|The examination takes an hour.
+untersuchen|to examine||Verb|Der Arzt untersucht das Kind.|The doctor examines the child.
+verschreiben|to prescribe||Verb|Der Arzt verschreibt mir ein Medikament.|The doctor prescribes me a medicine.
+sich verletzen|to get hurt||Verb|Hast du dich verletzt?|Did you hurt yourself?
+brechen|to break||Verb|Sie hat sich das Bein gebrochen.|She broke her leg.
+die Arbeitszeit|working hours|Arbeitszeiten|Arbeit|Meine Arbeitszeit ist von 9 bis 17 Uhr.|My working hours are from 9 to 5.
+die Überstunde|overtime hour|Überstunden|Arbeit|Ich mache oft Überstunden.|I often do overtime.
+der Feierabend|end of work||Arbeit|Um fünf habe ich Feierabend.|I finish work at five.
+das Gehalt|salary|Gehälter|Arbeit|Das Gehalt kommt am Monatsende.|The salary comes at the end of the month.
+die Stelle|job, position|Stellen|Arbeit|Ich suche eine neue Stelle.|I'm looking for a new job.
+der Beruf|profession|Berufe|Arbeit|Was sind Sie von Beruf?|What do you do for a living?
+der Arbeitgeber|employer|Arbeitgeber|Arbeit|Mein Arbeitgeber ist eine Bank.|My employer is a bank.
+der Arbeitnehmer|employee|Arbeitnehmer|Arbeit|Arbeitnehmer haben Anspruch auf Urlaub.|Employees are entitled to holiday.
+die Bewerbung|application|Bewerbungen|Arbeit|Ich schreibe eine Bewerbung.|I'm writing an application.
+der Lebenslauf|CV|Lebensläufe|Arbeit|Schicken Sie uns Ihren Lebenslauf.|Send us your CV.
+das Vorstellungsgespräch|job interview|Vorstellungsgespräche|Arbeit|Morgen habe ich ein Vorstellungsgespräch.|Tomorrow I have a job interview.
+die Erfahrung|experience|Erfahrungen|Arbeit|Haben Sie Erfahrung in diesem Bereich?|Do you have experience in this field?
+der Vertrag|contract|Verträge|Arbeit|Der Vertrag ist unbefristet.|The contract is permanent.
+kündigen|to quit, to give notice||Verb|Er hat seine Stelle gekündigt.|He has quit his job.
+verdienen|to earn||Verb|Wie viel verdienst du?|How much do you earn?
+das Büro|office|Büros|Arbeit|Das Büro ist im dritten Stock.|The office is on the third floor.
+der Kollege|colleague|Kollegen|Arbeit|Mein Kollege ist heute krank.|My colleague is ill today.
+die Besprechung|meeting|Besprechungen|Arbeit|Die Besprechung beginnt um zehn.|The meeting starts at ten.
+das Telefonat|phone call|Telefonate|Kommunikation|Ich habe ein wichtiges Telefonat.|I have an important phone call.
+die Nachricht|message|Nachrichten|Kommunikation|Ich habe dir eine Nachricht geschickt.|I've sent you a message.
+der Anrufbeantworter|answering machine|Anrufbeantworter|Kommunikation|Sprich auf den Anrufbeantworter.|Leave a message on the answering machine.
+erreichen|to reach||Verb|Ich kann ihn nicht erreichen.|I can't reach him.
+die Verabredung|date, appointment|Verabredungen|Freizeit|Ich habe heute Abend eine Verabredung.|I have a date tonight.
+der Treffpunkt|meeting point|Treffpunkte|Freizeit|Unser Treffpunkt ist der Bahnhof.|Our meeting point is the station.
+der Spaziergang|walk|Spaziergänge|Freizeit|Nach dem Essen machen wir einen Spaziergang.|After the meal we go for a walk.
+der Ausflug|trip, outing|Ausflüge|Freizeit|Der Ausflug war toll.|The trip was great.
+das Konzert|concert|Konzerte|Freizeit|Das Konzert war ausverkauft.|The concert was sold out.
+das Theater|theatre|Theater|Freizeit|Wir gehen heute ins Theater.|We're going to the theatre today.
+die Ausstellung|exhibition|Ausstellungen|Freizeit|Die Ausstellung ist sehr interessant.|The exhibition is very interesting.
+das Museum|museum|Museen|Freizeit|Montags ist das Museum geschlossen.|The museum is closed on Mondays.
+die Freizeit|free time||Freizeit|Was machst du in deiner Freizeit?|What do you do in your free time?
+die Mitgliedschaft|membership|Mitgliedschaften|Freizeit|Die Mitgliedschaft kostet 30 Euro im Monat.|Membership costs 30 euros a month.
+der Verein|club|Vereine|Freizeit|Er ist Mitglied in einem Verein.|He's a member of a club.
+das Mitglied|member|Mitglieder|Freizeit|Der Verein hat 200 Mitglieder.|The club has 200 members.
+trainieren|to train||Verb|Ich trainiere dreimal pro Woche.|I train three times a week.
+gewinnen|to win||Verb|Wer hat gewonnen?|Who won?
+verlieren|to lose||Verb|Wir haben das Spiel verloren.|We lost the game.
+joggen|to jog||Verb|Jeden Morgen joggt sie im Park.|Every morning she jogs in the park.
+wandern|to hike||Verb|Am Wochenende wandern wir in den Bergen.|At the weekend we go hiking in the mountains.
+schwimmen|to swim||Verb|Im Sommer schwimmen wir im See.|In summer we swim in the lake.
+die Bank|bank; bench|Banken|Geld|Ich muss zur Bank.|I have to go to the bank.
+der Automat|machine|Automaten|Alltag|Der Automat nimmt keine Karten.|The machine doesn't take cards.
+die Gebühr|fee|Gebühren|Geld|Die Gebühr beträgt fünf Euro.|The fee is five euros.
+günstig|cheap, favourable||Geld|Das Angebot ist sehr günstig.|The offer is very good value.
+kostenlos|free of charge||Geld|Der Eintritt ist kostenlos.|Admission is free.
+teuer|expensive||Geld|Die Wohnung ist zu teuer.|The flat is too expensive.
+sparen|to save||Verb|Ich spare für ein Auto.|I'm saving for a car.
+leihen|to lend, to borrow||Verb|Kannst du mir zehn Euro leihen?|Can you lend me ten euros?
+die Post|post (office)||Kommunikation|Ich gehe zur Post.|I'm going to the post office.
+das Paket|parcel|Pakete|Kommunikation|Das Paket ist angekommen.|The parcel has arrived.
+der Brief|letter|Briefe|Kommunikation|Ich habe einen Brief bekommen.|I've received a letter.
+die Briefmarke|stamp|Briefmarken|Kommunikation|Ich brauche eine Briefmarke.|I need a stamp.
+schicken|to send||Verb|Ich schicke dir das Foto.|I'll send you the photo.
+der Absender|sender|Absender|Kommunikation|Der Absender steht oben links.|The sender is at the top left.
+der Empfänger|recipient|Empfänger|Kommunikation|Schreib den Empfänger in die Mitte.|Write the recipient in the middle.
+die Wohnung|flat, apartment|Wohnungen|Wohnen|Die Wohnung hat zwei Zimmer.|The flat has two rooms.
+die Miete|rent|Mieten|Wohnen|Die Miete ist am ersten fällig.|The rent is due on the first.
+der Vermieter|landlord|Vermieter|Wohnen|Der Vermieter wohnt im Erdgeschoss.|The landlord lives on the ground floor.
+der Mieter|tenant|Mieter|Wohnen|Die Mieter sind sehr ruhig.|The tenants are very quiet.
+das Treppenhaus|stairwell|Treppenhäuser|Wohnen|Im Treppenhaus ist es dunkel.|It's dark in the stairwell.
+der Keller|cellar|Keller|Wohnen|Die Fahrräder stehen im Keller.|The bikes are in the cellar.
+die Heizung|heating|Heizungen|Wohnen|Die Heizung ist kaputt.|The heating is broken.
+der Strom|electricity||Wohnen|Der Strom ist teuer geworden.|Electricity has become expensive.
+die Nebenkosten|additional costs||Wohnen|Die Nebenkosten sind nicht in der Miete enthalten.|The additional costs aren't included in the rent.
+der Schlüssel|key|Schlüssel|Wohnen|Ich habe meinen Schlüssel verloren.|I've lost my key.
+die Klingel|doorbell|Klingeln|Wohnen|Die Klingel funktioniert nicht.|The doorbell doesn't work.
+der Lärm|noise||Wohnen|Der Lärm stört mich.|The noise bothers me.
+ruhig|quiet||Wohnen|Die Straße ist sehr ruhig.|The street is very quiet.
+laut|loud||Wohnen|Die Musik ist zu laut.|The music is too loud.
+hell|bright||Wohnen|Das Zimmer ist hell und groß.|The room is bright and big.
+gemütlich|cosy||Wohnen|Das Café ist sehr gemütlich.|The café is very cosy.
+modern|modern||Wohnen|Die Küche ist modern.|The kitchen is modern.
+zentral|central||Wohnen|Die Wohnung liegt zentral.|The flat is centrally located.

@@ -206,7 +206,7 @@
     const Rg = [
       ["Ich melde mich.", "Ich werde mich mit Ihnen in Verbindung setzen.", "formell"],
       ["Keine Ahnung.", "Hierzu liegen mir keine Informationen vor.", "formell"],
-      ["Das geht nicht klar.", "Dies ist nicht hinnehmbar.", "gehoben"],
+      ["Das geht gar nicht.", "Dies ist nicht hinnehmbar.", "gehoben"],
       ["Mach hin!", "Ich bitte um zügige Bearbeitung.", "formell"],
       ["Das kostet echt viel.", "Damit sind erhebliche Kosten verbunden.", "formell"],
       ["Sag mal, wann kommst du?", "Dürfte ich fragen, wann Sie kommen?", "formell"],
@@ -379,4 +379,10 @@
       prompt: `Build a correct sentence. <b>${orders.length} different orders are correct</b> – find one, then try another.`,
       answer, accept: orders.slice(1), orders, tokens: R.shuffle(words), why, multi: true };
   });
+})();
+/* v6.1: the new lessons (IDs 61–73) reuse fitting generators for their unlimited practice. */
+(function () {
+  const G = window.Engine && Engine.GEN; if (!G) return;
+  [["perfekt", 61], ["passiv", 62], ["passiversatz", 62], ["relativ", 63], ["verb_praep", 64], ["nominalstil", 65], ["konnektor_b2", 66], ["obwohl_deshalb", 67], ["konjunktiv1", 68], ["trennbar", 69], ["nominalstil", 71], ["attribut_c1", 71], ["register", 72], ["nuancen", 72], ["funktionsverb", 73], ["nominalstil", 73]]
+    .forEach(([id, n]) => { if (G[id] && !G[id].lessons.includes(n)) G[id].lessons.push(n); });
 })();

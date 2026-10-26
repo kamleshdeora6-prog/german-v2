@@ -491,3 +491,53 @@ button, .tile, .choice, .tok, .tab, .nav a, .pickrow, .chip, .wd { -webkit-user-
 .dlg { margin: 10px 0; border-left: 4px solid var(--a2); padding: 2px 12px; transition: filter .2s; } .dlg p { margin: 6px 0; } .dlg.blur { filter: blur(5px); user-select: none; }
 .summary.arming { pointer-events: none; }
 .view > .back { white-space: nowrap; width: auto; padding: 0 12px; font-size: .95rem; display: inline-flex; align-items: center; }
+
+/* bilingual labels: German + small English help line (Settings → Menu language) */
+.bi { display: inline-flex; flex-direction: column; line-height: 1.15; }
+.bi .en-l { font-size: .68em; font-weight: 600; opacity: .7; letter-spacing: 0; }
+h2 .bi .en-l, h3 .bi .en-l { font-size: .62em; font-weight: 500; }
+.nav .bi { align-items: center; } .nav .bi .en-l { font-size: .62rem; font-weight: 500; }
+.grp .bi { flex-direction: row; gap: 8px; align-items: baseline; } .grp .bi .en-l { text-transform: none; font-size: .9em; }
+:root[data-labels="de"] .bi .en-l, :root[data-labels="en"] .bi .de-l { display: none; }
+:root[data-labels="en"] .bi .en-l { font-size: inherit; font-weight: inherit; opacity: 1; }
+
+/* =====================================================================
+   v6.1 – desktop / laptop layout: use the whole screen, not a phone column
+   ===================================================================== */
+@media (min-width: 900px) {
+  .top { z-index: 35; }                                   /* header above the side rail, so the logo is never cut off */
+  .nav { top: 0; padding-top: 76px; }
+  .view { max-width: 1240px; padding: 24px 36px 64px; }
+  .page-title { font-size: 2rem; }
+  .home-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 0 28px; align-items: start; }
+  .home-grid .grid2.tools { grid-template-columns: repeat(2, 1fr); }
+  .hero { padding: 24px; }
+  .hero .ring { width: 140px !important; height: 140px !important; }
+  /* lessons: cards side by side; a card that is alone takes the full width */
+  .lbody { display: grid; grid-template-columns: repeat(auto-fit, minmax(440px, 1fr)); gap: 0 20px; align-items: start; }
+  .lbody > .row.center { grid-column: 1 / -1; }
+  .lbody > .card { margin: 12px 0; }
+  .lhead { padding: 20px 24px 22px; } .lhead h2 { font-size: 1.8rem; }
+  .vocab { columns: 2 220px; }
+  /* exercises stay at a comfortable reading width */
+  .session { max-width: 860px; margin: 0 auto; padding: 24px 28px; }
+  .q-prompt { font-size: 1.35rem; }
+  .choices { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+  /* menus and topic lists spread out */
+  .grid2 { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+  .topics { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+  .menu { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
+  /* the course line runs in two columns */
+  .v-path .line { columns: 2 420px; column-gap: 40px; }
+  .v-path .line li { break-inside: avoid; }
+  /* long-text pages keep a readable line length */
+  .v-about .screen, .v-news .screen, .v-plan .screen, .v-refresh .screen, .v-placement .screen, .v-tutor .screen { max-width: 920px; margin: 0 auto; }
+  .chat { height: calc(100dvh - 120px); }
+  .player { max-width: 760px; }
+  .toast { bottom: 24px; }
+}
+@media (min-width: 1500px) {
+  .view { max-width: 1440px; }
+  .home-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) ; }
+  html { font-size: 17px; }
+}

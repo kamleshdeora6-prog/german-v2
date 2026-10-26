@@ -1,0 +1,273 @@
+#A2
+die Ente|duck|Enten|Tiere|Im Teich schwimmen Enten.|Ducks are swimming in the pond.
+das Huhn|chicken, hen|Hühner|Tiere|Die Hühner legen jeden Tag Eier.|The hens lay eggs every day.
+das Schaf|sheep|Schafe|Tiere|Auf dem Deich stehen Schafe.|There are sheep on the dyke.
+die Ziege|goat|Ziegen|Tiere|Die Ziege frisst Gras.|The goat eats grass.
+der Esel|donkey|Esel|Tiere|Der Esel ist störrisch.|The donkey is stubborn.
+der Fisch|fish|Fische|Tiere|Im See gibt es viele Fische.|There are many fish in the lake.
+die Biene|bee|Bienen|Tiere|Bienen sind wichtig für die Natur.|Bees are important for nature.
+die Spinne|spider|Spinnen|Tiere|Ich habe Angst vor Spinnen.|I'm afraid of spiders.
+die Mücke|mosquito|Mücken|Tiere|Am See gibt es viele Mücken.|There are lots of mosquitoes by the lake.
+der Schmetterling|butterfly|Schmetterlinge|Tiere|Ein Schmetterling sitzt auf der Blume.|A butterfly is sitting on the flower.
+das Kaninchen|rabbit|Kaninchen|Tiere|Die Kinder haben ein Kaninchen.|The children have a rabbit.
+der Löwe|lion|Löwen|Tiere|Im Zoo sehen wir einen Löwen.|At the zoo we see a lion.
+der Elefant|elephant|Elefanten|Tiere|Der Elefant ist sehr groß.|The elephant is very big.
+der Affe|monkey|Affen|Tiere|Die Affen klettern auf die Bäume.|The monkeys climb the trees.
+der Bär|bear|Bären|Tiere|Im Wald lebt ein Bär.|A bear lives in the forest.
+der Wolf|wolf|Wölfe|Tiere|In Deutschland gibt es wieder Wölfe.|There are wolves in Germany again.
+das Haustier|pet|Haustiere|Tiere|Hast du ein Haustier?|Do you have a pet?
+füttern|to feed||Verb|Kannst du die Katze füttern?|Can you feed the cat?
+der Tierarzt|vet|Tierärzte|Tiere|Wir bringen den Hund zum Tierarzt.|We're taking the dog to the vet.
+die Rose|rose|Rosen|Natur|Er schenkt ihr rote Rosen.|He gives her red roses.
+die Tulpe|tulip|Tulpen|Natur|Im Frühling blühen die Tulpen.|In spring the tulips bloom.
+das Blatt|leaf; sheet|Blätter|Natur|Im Herbst fallen die Blätter.|In autumn the leaves fall.
+der Ast|branch|Äste|Natur|Ein Ast ist abgebrochen.|A branch has broken off.
+die Wurzel|root|Wurzeln|Natur|Der Baum hat tiefe Wurzeln.|The tree has deep roots.
+der Strand|beach|Strände|Natur|Wir liegen am Strand.|We're lying on the beach.
+die Welle|wave|Wellen|Natur|Die Wellen sind heute hoch.|The waves are high today.
+der Sand|sand||Natur|Die Kinder spielen im Sand.|The children are playing in the sand.
+der Teich|pond|Teiche|Natur|Im Garten ist ein kleiner Teich.|There's a small pond in the garden.
+der Wasserfall|waterfall|Wasserfälle|Natur|Der Wasserfall ist beeindruckend.|The waterfall is impressive.
+die Höhle|cave|Höhlen|Natur|Wir besichtigen eine Höhle.|We're visiting a cave.
+der Gipfel|summit|Gipfel|Natur|Wir haben den Gipfel erreicht.|We've reached the summit.
+die Landschaft|landscape|Landschaften|Natur|Die Landschaft ist wunderschön.|The landscape is beautiful.
+der Sonnenaufgang|sunrise|Sonnenaufgänge|Natur|Wir stehen früh auf, um den Sonnenaufgang zu sehen.|We get up early to see the sunrise.
+der Sonnenuntergang|sunset|Sonnenuntergänge|Natur|Der Sonnenuntergang am Meer war toll.|The sunset by the sea was great.
+der Regenbogen|rainbow|Regenbogen|Wetter|Nach dem Regen sieht man einen Regenbogen.|After the rain you can see a rainbow.
+der Sturm|storm|Stürme|Wetter|Der Sturm hat Bäume umgeworfen.|The storm blew trees down.
+der Blitz|lightning|Blitze|Wetter|Der Blitz hat in den Baum eingeschlagen.|The lightning struck the tree.
+der Donner|thunder||Wetter|Hörst du den Donner?|Can you hear the thunder?
+das Glatteis|black ice||Wetter|Vorsicht, Glatteis!|Careful, black ice!
+die Hitze|heat||Wetter|Bei dieser Hitze bleibe ich drinnen.|In this heat I'm staying inside.
+die Kälte|cold||Wetter|Ich mag die Kälte nicht.|I don't like the cold.
+regnen|to rain||Verb|Es regnet seit gestern.|It has been raining since yesterday.
+schneien|to snow||Verb|In den Bergen schneit es.|It's snowing in the mountains.
+scheinen|to shine; to seem||Verb|Die Sonne scheint.|The sun is shining.
+frieren|to be cold, to freeze||Verb|Ich friere, mach bitte das Fenster zu.|I'm cold, please close the window.
+der Hammer|hammer|Hämmer|Werkzeug|Gib mir mal den Hammer.|Hand me the hammer.
+der Nagel|nail|Nägel|Werkzeug|Ich brauche einen Nagel für das Bild.|I need a nail for the picture.
+die Schraube|screw|Schrauben|Werkzeug|Die Schraube ist locker.|The screw is loose.
+der Schraubenzieher|screwdriver|Schraubenzieher|Werkzeug|Wo ist der Schraubenzieher?|Where is the screwdriver?
+die Bohrmaschine|drill|Bohrmaschinen|Werkzeug|Kannst du mir deine Bohrmaschine leihen?|Can you lend me your drill?
+die Leiter|ladder|Leitern|Werkzeug|Ich steige auf die Leiter.|I'm climbing the ladder.
+die Schere|scissors|Scheren|Werkzeug|Die Schere ist in der Schublade.|The scissors are in the drawer.
+der Kleber|glue|Kleber|Werkzeug|Hast du Kleber?|Do you have any glue?
+die Schublade|drawer|Schubladen|Wohnen|Die Löffel sind in der Schublade.|The spoons are in the drawer.
+das Bügeleisen|iron|Bügeleisen|Wohnen|Das Bügeleisen ist noch heiß.|The iron is still hot.
+der Wäschetrockner|tumble dryer|Wäschetrockner|Wohnen|Der Wäschetrockner braucht viel Strom.|The tumble dryer uses a lot of electricity.
+der Toaster|toaster|Toaster|Wohnen|Der Toaster ist kaputt.|The toaster is broken.
+der Wasserkocher|kettle|Wasserkocher|Wohnen|Ich mache den Wasserkocher an.|I'm switching on the kettle.
+die Kaffeemaschine|coffee machine|Kaffeemaschinen|Wohnen|Die Kaffeemaschine macht guten Espresso.|The coffee machine makes good espresso.
+der Gefrierschrank|freezer|Gefrierschränke|Wohnen|Das Eis ist im Gefrierschrank.|The ice cream is in the freezer.
+das Geschirr|dishes||Wohnen|Wer spült heute das Geschirr?|Who's washing the dishes today?
+das Besteck|cutlery||Wohnen|Das Besteck liegt in der Schublade.|The cutlery is in the drawer.
+die Serviette|napkin|Servietten|Wohnen|Kann ich eine Serviette haben?|Can I have a napkin?
+die Tischdecke|tablecloth|Tischdecken|Wohnen|Die Tischdecke ist weiß.|The tablecloth is white.
+der Rasen|lawn|Rasen|Wohnen|Am Samstag mähe ich den Rasen.|On Saturday I mow the lawn.
+der Zaun|fence|Zäune|Wohnen|Der Hund springt über den Zaun.|The dog jumps over the fence.
+die Terrasse|terrace|Terrassen|Wohnen|Wir sitzen auf der Terrasse.|We're sitting on the terrace.
+der Dachboden|attic|Dachböden|Wohnen|Die alten Sachen sind auf dem Dachboden.|The old things are in the attic.
+die Einbauküche|fitted kitchen|Einbauküchen|Wohnen|Die Wohnung hat eine Einbauküche.|The flat has a fitted kitchen.
+der Bruder|brother|Brüder|Familie|Mein Bruder wohnt in Hamburg.|My brother lives in Hamburg.
+die Schwester|sister|Schwestern|Familie|Meine Schwester ist Ärztin.|My sister is a doctor.
+der Stiefvater|stepfather|Stiefväter|Familie|Mein Stiefvater ist sehr nett.|My stepfather is very nice.
+die Stiefmutter|stepmother|Stiefmütter|Familie|Ihre Stiefmutter kommt aus Polen.|Her stepmother comes from Poland.
+der Schwager|brother-in-law|Schwager|Familie|Mein Schwager ist Koch.|My brother-in-law is a cook.
+die Schwägerin|sister-in-law|Schwägerinnen|Familie|Meine Schwägerin hat zwei Kinder.|My sister-in-law has two children.
+alleinerziehend|single (parent)||Familie|Sie ist alleinerziehend.|She is a single mother.
+die Taufe|baptism|Taufen|Feste|Die Taufe ist am Sonntag.|The baptism is on Sunday.
+die Beerdigung|funeral|Beerdigungen|Feste|Die Beerdigung war sehr traurig.|The funeral was very sad.
+der Jahrestag|anniversary|Jahrestage|Feste|Heute ist unser Jahrestag.|Today is our anniversary.
+das Feuerwerk|fireworks|Feuerwerke|Feste|Um Mitternacht gibt es ein Feuerwerk.|At midnight there's a firework display.
+der Weihnachtsmarkt|Christmas market|Weihnachtsmärkte|Feste|Wir trinken Glühwein auf dem Weihnachtsmarkt.|We drink mulled wine at the Christmas market.
+der Karneval|carnival||Feste|Im Februar ist in Köln Karneval.|In February it's carnival in Cologne.
+gratulieren|to congratulate||Verb|Ich gratuliere dir zum Geburtstag!|Happy birthday!
+anstoßen|to clink glasses||Verb|Lasst uns auf das Brautpaar anstoßen!|Let's drink to the bride and groom!
+die Gitarre|guitar|Gitarren|Musik|Er spielt Gitarre in einer Band.|He plays guitar in a band.
+die Geige|violin|Geigen|Musik|Sie spielt seit ihrer Kindheit Geige.|She has played the violin since childhood.
+das Schlagzeug|drums|Schlagzeuge|Musik|Das Schlagzeug ist sehr laut.|The drums are very loud.
+der Chor|choir|Chöre|Musik|Ich singe in einem Chor.|I sing in a choir.
+das Orchester|orchestra|Orchester|Musik|Das Orchester spielt Beethoven.|The orchestra is playing Beethoven.
+die Oper|opera|Opern|Musik|Wir gehen heute in die Oper.|We're going to the opera today.
+der Text (Lied)|lyrics|Texte|Musik|Ich kenne den Text des Liedes nicht.|I don't know the lyrics of the song.
+die Melodie|melody|Melodien|Musik|Die Melodie ist sehr schön.|The melody is very beautiful.
+der Kopfhörer|headphones|Kopfhörer|Technik|Ich höre Musik mit Kopfhörern.|I listen to music with headphones.
+der Lautsprecher|loudspeaker|Lautsprecher|Technik|Der Lautsprecher ist zu leise.|The speaker is too quiet.
+das Tablet|tablet|Tablets|Technik|Die Kinder spielen auf dem Tablet.|The children play on the tablet.
+der Akku|battery|Akkus|Technik|Der Akku ist fast leer.|The battery is almost flat.
+der Bildschirm|screen|Bildschirme|Technik|Der Bildschirm ist zu klein.|The screen is too small.
+die Maus (Computer)|mouse (computer)|Mäuse|Technik|Die Maus funktioniert nicht.|The mouse doesn't work.
+der Fußball|football|Fußbälle|Sport|Fußball ist in Deutschland sehr beliebt.|Football is very popular in Germany.
+der Handball|handball||Sport|Sie spielt Handball im Verein.|She plays handball at a club.
+das Tennis|tennis||Sport|Spielst du gern Tennis?|Do you like playing tennis?
+das Turnier|tournament|Turniere|Sport|Unser Team hat das Turnier gewonnen.|Our team won the tournament.
+der Schiedsrichter|referee|Schiedsrichter|Sport|Der Schiedsrichter pfeift.|The referee blows the whistle.
+der Rekord|record|Rekorde|Sport|Sie hat einen neuen Rekord aufgestellt.|She has set a new record.
+die Medaille|medal|Medaillen|Sport|Er hat eine Goldmedaille gewonnen.|He won a gold medal.
+der Muskelkater|sore muscles||Sport|Nach dem Training habe ich Muskelkater.|After training I have sore muscles.
+die Fahrradtour|bike tour|Fahrradtouren|Sport|Am Sonntag machen wir eine Fahrradtour.|On Sunday we're going on a bike tour.
+#B1
+die Hauptstadt|capital|Hauptstädte|Geografie|Berlin ist die Hauptstadt von Deutschland.|Berlin is the capital of Germany.
+das Bundesland|federal state|Bundesländer|Geografie|Deutschland hat sechzehn Bundesländer.|Germany has sixteen federal states.
+die Region|region|Regionen|Geografie|Die Region ist bekannt für ihren Wein.|The region is known for its wine.
+der Norden|north||Geografie|Im Norden ist es windig.|It's windy in the north.
+der Süden|south||Geografie|Im Süden sind die Alpen.|The Alps are in the south.
+der Osten|east||Geografie|Dresden liegt im Osten.|Dresden is in the east.
+der Westen|west||Geografie|Köln liegt im Westen.|Cologne is in the west.
+die Gegend|area, region|Gegenden|Geografie|In dieser Gegend gibt es viele Seen.|There are many lakes in this area.
+der Kontinent|continent|Kontinente|Geografie|Europa ist ein kleiner Kontinent.|Europe is a small continent.
+die Wüste|desert|Wüsten|Geografie|Die Sahara ist die größte Wüste der Welt.|The Sahara is the largest desert in the world.
+der Ozean|ocean|Ozeane|Geografie|Der Pazifik ist der größte Ozean.|The Pacific is the largest ocean.
+das Gebirge|mountain range|Gebirge|Geografie|Der Harz ist ein Gebirge in Mitteldeutschland.|The Harz is a mountain range in central Germany.
+die Grenze|border|Grenzen|Geografie|Wir fahren über die Grenze nach Polen.|We're driving across the border to Poland.
+der Einwohner|inhabitant|Einwohner|Geografie|Die Stadt hat 100.000 Einwohner.|The town has 100,000 inhabitants.
+ländlich|rural||Geografie|Sie wohnt in einer ländlichen Gegend.|She lives in a rural area.
+städtisch|urban||Geografie|Das Leben in städtischen Gebieten ist teurer.|Life in urban areas is more expensive.
+die Wahl|election|Wahlen|Politik|Die nächste Wahl ist im Herbst.|The next election is in autumn.
+wählen gehen|to go and vote||Politik|Am Sonntag gehen wir wählen.|On Sunday we're going to vote.
+die Partei|party (political)|Parteien|Politik|Welche Partei wählst du?|Which party are you voting for?
+der Politiker|politician|Politiker|Politik|Der Politiker hält eine Rede.|The politician is giving a speech.
+die Politikerin|politician (f)|Politikerinnen|Politik|Die Politikerin beantwortet Fragen.|The politician answers questions.
+der Bundestag|German parliament||Politik|Der Bundestag hat das Gesetz beschlossen.|The Bundestag passed the law.
+die Bundeskanzlerin / der Bundeskanzler|federal chancellor||Politik|Der Bundeskanzler trifft den Präsidenten.|The chancellor meets the president.
+der Bürgermeister|mayor|Bürgermeister|Politik|Der Bürgermeister eröffnet das Fest.|The mayor opens the festival.
+die Regierung|government|Regierungen|Politik|Die Regierung plant neue Gesetze.|The government is planning new laws.
+die Opposition|opposition||Politik|Die Opposition kritisiert den Plan.|The opposition criticises the plan.
+das Gesetz|law|Gesetze|Politik|Das neue Gesetz gilt ab Januar.|The new law applies from January.
+die Rede|speech|Reden|Politik|Sie hat eine gute Rede gehalten.|She gave a good speech.
+die Stimme|vote; voice|Stimmen|Politik|Jede Stimme zählt.|Every vote counts.
+die Mehrheit|majority|Mehrheiten|Politik|Die Mehrheit ist dafür.|The majority is in favour.
+das Grundgesetz|Basic Law (constitution)||Politik|Das Grundgesetz garantiert die Menschenwürde.|The Basic Law guarantees human dignity.
+die Polizei|police||Recht|Ruf die Polizei!|Call the police!
+das Gericht|court|Gerichte|Recht|Der Fall kommt vor Gericht.|The case is going to court.
+der Anwalt|lawyer|Anwälte|Recht|Ich brauche einen Anwalt.|I need a lawyer.
+die Anzeige (Polizei)|report (to the police)|Anzeigen|Recht|Ich erstatte Anzeige wegen Diebstahls.|I'm reporting a theft.
+der Diebstahl|theft|Diebstähle|Recht|Der Diebstahl wurde angezeigt.|The theft was reported.
+der Dieb|thief|Diebe|Recht|Der Dieb ist geflohen.|The thief escaped.
+der Zeuge|witness|Zeugen|Recht|Gab es Zeugen?|Were there any witnesses?
+die Strafe|punishment, fine|Strafen|Recht|Die Strafe war hoch.|The fine was high.
+erlaubt|allowed||Recht|Hier ist Parken erlaubt.|Parking is allowed here.
+verboten|forbidden||Recht|Rauchen ist hier verboten.|Smoking is forbidden here.
+illegal|illegal||Recht|Das ist illegal.|That's illegal.
+die Versicherung|insurance|Versicherungen|Geld|Die Versicherung bezahlt den Schaden.|The insurance pays for the damage.
+der Schaden|damage|Schäden|Geld|Der Schaden ist nicht groß.|The damage isn't great.
+der Unfall|accident|Unfälle|Verkehr|Bei dem Unfall wurde niemand verletzt.|Nobody was hurt in the accident.
+die Polizeikontrolle|police check|Polizeikontrollen|Verkehr|Bei der Polizeikontrolle musste ich meinen Führerschein zeigen.|At the police check I had to show my driving licence.
+der Fahrradweg|cycle path|Fahrradwege|Verkehr|Fahr bitte auf dem Fahrradweg.|Please ride on the cycle path.
+die Umleitung|diversion|Umleitungen|Verkehr|Wegen der Baustelle gibt es eine Umleitung.|There's a diversion because of the roadworks.
+die Verspätung|delay|Verspätungen|Verkehr|Der Zug hat zwanzig Minuten Verspätung.|The train is twenty minutes late.
+der Anschlusszug|connecting train|Anschlusszüge|Verkehr|Ich habe meinen Anschlusszug verpasst.|I missed my connecting train.
+die Fahrkarte|ticket|Fahrkarten|Verkehr|Ich kaufe eine Fahrkarte am Automaten.|I buy a ticket from the machine.
+das Deutschlandticket|Germany-wide transport ticket||Verkehr|Mit dem Deutschlandticket fahre ich durch ganz Deutschland.|With the Deutschlandticket I travel all over Germany.
+die Bahncard|rail discount card|Bahncards|Verkehr|Mit der Bahncard ist die Fahrt billiger.|With the Bahncard the journey is cheaper.
+die Kultur|culture|Kulturen|Kultur|Ich interessiere mich für fremde Kulturen.|I'm interested in foreign cultures.
+die Sitte|custom|Sitten|Kultur|Andere Länder, andere Sitten.|When in Rome, do as the Romans do.
+der Brauch|custom, tradition|Bräuche|Kultur|Das ist ein alter Brauch.|That's an old custom.
+die Literatur|literature||Kultur|Sie studiert deutsche Literatur.|She studies German literature.
+der Schriftsteller|writer|Schriftsteller|Kultur|Goethe ist ein berühmter Schriftsteller.|Goethe is a famous writer.
+die Schriftstellerin|writer (f)|Schriftstellerinnen|Kultur|Die Schriftstellerin liest aus ihrem neuen Buch.|The writer reads from her new book.
+der Maler (Kunst)|painter (artist)|Maler|Kultur|Der Maler stellt seine Bilder aus.|The painter is exhibiting his pictures.
+das Gemälde|painting|Gemälde|Kultur|Das Gemälde hängt im Museum.|The painting hangs in the museum.
+die Skulptur|sculpture|Skulpturen|Kultur|Im Park steht eine moderne Skulptur.|There's a modern sculpture in the park.
+der Künstler|artist|Künstler|Kultur|Er ist ein bekannter Künstler.|He is a well-known artist.
+die Künstlerin|artist (f)|Künstlerinnen|Kultur|Die Künstlerin malt mit Öl.|The artist paints with oil.
+der Schauspieler|actor|Schauspieler|Kultur|Der Schauspieler hat einen Preis gewonnen.|The actor has won a prize.
+die Schauspielerin|actress|Schauspielerinnen|Kultur|Die Schauspielerin spielt die Hauptrolle.|The actress plays the lead role.
+die Rolle|role|Rollen|Kultur|Er spielt die Rolle des Vaters.|He plays the role of the father.
+die Komödie|comedy|Komödien|Kultur|Die Komödie war sehr lustig.|The comedy was very funny.
+der Krimi|crime novel/film|Krimis|Kultur|Sonntags sehen wir einen Krimi.|On Sundays we watch a crime show.
+die Handlung|plot|Handlungen|Kultur|Die Handlung ist spannend.|The plot is exciting.
+der Regisseur|director|Regisseure|Kultur|Der Regisseur hat drei Filme gemacht.|The director has made three films.
+die Premiere|premiere|Premieren|Kultur|Die Premiere ist ausverkauft.|The premiere is sold out.
+der Applaus|applause||Kultur|Am Ende gab es großen Applaus.|At the end there was great applause.
+die Kirche|church|Kirchen|Religion|Sonntags gehen sie in die Kirche.|On Sundays they go to church.
+die Moschee|mosque|Moscheen|Religion|In der Stadt gibt es eine große Moschee.|There's a large mosque in the city.
+die Synagoge|synagogue|Synagogen|Religion|Die Synagoge wurde neu gebaut.|The synagogue was newly built.
+der Tempel|temple|Tempel|Religion|In Mumbai gibt es viele Tempel.|There are many temples in Mumbai.
+der Glaube|faith, belief||Religion|Der Glaube ist ihr wichtig.|Her faith is important to her.
+beten|to pray||Verb|Er betet jeden Morgen.|He prays every morning.
+das Ramadanfest|Eid al-Fitr||Religion|Zum Ramadanfest besuchen wir die Familie.|For Eid we visit the family.
+das Diwali|Diwali||Religion|Zu Diwali zünden wir Lichter an.|At Diwali we light lamps.
+der Körperteil|body part|Körperteile|Körper|Wie heißt dieser Körperteil auf Deutsch?|What is this body part called in German?
+die Schulter|shoulder|Schultern|Körper|Meine Schulter tut weh.|My shoulder hurts.
+der Ellenbogen|elbow|Ellenbogen|Körper|Er hat sich den Ellenbogen gestoßen.|He bumped his elbow.
+das Handgelenk|wrist|Handgelenke|Körper|Ich habe mir das Handgelenk verstaucht.|I've sprained my wrist.
+die Zehe|toe|Zehen|Körper|Ich habe mir die Zehe gestoßen.|I stubbed my toe.
+die Haut|skin|Häute|Körper|Die Sonne ist schlecht für die Haut.|The sun is bad for the skin.
+der Magen|stomach|Mägen|Körper|Mir ist schlecht, mein Magen tut weh.|I feel sick, my stomach hurts.
+die Lunge|lungs|Lungen|Körper|Rauchen schadet der Lunge.|Smoking damages the lungs.
+das Blut|blood||Körper|Der Arzt nimmt mir Blut ab.|The doctor takes a blood sample.
+der Knochen|bone|Knochen|Körper|Der Knochen ist gebrochen.|The bone is broken.
+der Muskel|muscle|Muskeln|Körper|Durch Sport werden die Muskeln stärker.|Sport makes the muscles stronger.
+die Stimme (Körper)|voice|Stimmen|Körper|Sie hat eine schöne Stimme.|She has a beautiful voice.
+das Gehirn|brain|Gehirne|Körper|Das Gehirn braucht Schlaf.|The brain needs sleep.
+der Atem|breath||Körper|Er ist außer Atem.|He is out of breath.
+atmen|to breathe||Verb|Atmen Sie tief ein.|Breathe in deeply.
+schwitzen|to sweat||Verb|Beim Sport schwitze ich viel.|I sweat a lot when doing sport.
+zittern|to tremble, to shiver||Verb|Das Kind zittert vor Kälte.|The child is shivering with cold.
+die Ohnmacht|faint||Gesundheit|Sie ist in Ohnmacht gefallen.|She fainted.
+schwindelig|dizzy||Gesundheit|Mir ist schwindelig.|I feel dizzy.
+die Übelkeit|nausea||Gesundheit|Das Medikament kann Übelkeit verursachen.|The medicine can cause nausea.
+der Durchfall|diarrhoea||Gesundheit|Das Kind hat Durchfall.|The child has diarrhoea.
+der Ausschlag|rash|Ausschläge|Gesundheit|Ich habe einen Ausschlag am Arm.|I have a rash on my arm.
+die Entzündung|inflammation|Entzündungen|Gesundheit|Er hat eine Entzündung im Hals.|He has a throat infection.
+die Operation|operation|Operationen|Gesundheit|Die Operation ist gut verlaufen.|The operation went well.
+das Krankenhaus|hospital|Krankenhäuser|Gesundheit|Er liegt im Krankenhaus.|He is in hospital.
+die Notaufnahme|emergency department|Notaufnahmen|Gesundheit|Wir fahren in die Notaufnahme.|We're going to A&E.
+die Überweisung (Arzt)|referral|Überweisungen|Gesundheit|Für den Facharzt brauchen Sie eine Überweisung.|You need a referral for the specialist.
+die Physiotherapie|physiotherapy||Gesundheit|Nach der Operation brauche ich Physiotherapie.|After the operation I need physiotherapy.
+heilen|to heal||Verb|Die Wunde heilt langsam.|The wound is healing slowly.
+der Verband|bandage|Verbände|Gesundheit|Die Krankenschwester legt einen Verband an.|The nurse applies a bandage.
+die Diät|diet|Diäten|Gesundheit|Er macht eine Diät.|He's on a diet.
+die Kalorie|calorie|Kalorien|Gesundheit|Schokolade hat viele Kalorien.|Chocolate has a lot of calories.
+das Vitamin|vitamin|Vitamine|Gesundheit|Orangen haben viel Vitamin C.|Oranges contain a lot of vitamin C.
+vegan|vegan||Essen|Sie lebt seit einem Jahr vegan.|She has been vegan for a year.
+die Bio-Qualität|organic quality||Essen|Ich kaufe Gemüse in Bio-Qualität.|I buy organic vegetables.
+das Haltbarkeitsdatum|best-before date|Haltbarkeitsdaten|Essen|Das Haltbarkeitsdatum ist abgelaufen.|The best-before date has passed.
+haltbar|durable, keeps||Essen|Die Milch ist bis Freitag haltbar.|The milk keeps until Friday.
+verderben|to go off||Verb|Das Fleisch ist verdorben.|The meat has gone off.
+die Lebensmittel|food(stuffs)||Essen|Wir werfen zu viele Lebensmittel weg.|We throw away too much food.
+der Vorrat|supply, stock|Vorräte|Essen|Wir haben einen Vorrat an Nudeln.|We have a stock of pasta.
+die Portion|portion|Portionen|Essen|Die Portion ist sehr groß.|The portion is very big.
+der Geschmack|taste|Geschmäcker|Essen|Das ist Geschmackssache.|That's a matter of taste.
+probieren|to taste, to try||Verb|Probier mal den Kuchen!|Try the cake!
+die Spezialität|speciality|Spezialitäten|Essen|Das ist eine Spezialität aus Bayern.|That's a speciality from Bavaria.
+die Kochshow|cooking show|Kochshows|Medien|Sie sieht gern Kochshows.|She likes watching cooking shows.
+der Bericht|report|Berichte|Medien|Hast du den Bericht in der Zeitung gelesen?|Did you read the report in the newspaper?
+die Reportage|report, documentary|Reportagen|Medien|Die Reportage über Indien war interessant.|The documentary about India was interesting.
+der Dokumentarfilm|documentary|Dokumentarfilme|Medien|Wir sehen einen Dokumentarfilm über Tiere.|We're watching a documentary about animals.
+die Talkshow|talk show|Talkshows|Medien|In der Talkshow diskutieren Politiker.|Politicians debate on the talk show.
+die Folge|episode; consequence|Folgen|Medien|Hast du die neue Folge gesehen?|Have you seen the new episode?
+der Podcast|podcast|Podcasts|Medien|Ich höre jeden Tag einen Podcast.|I listen to a podcast every day.
+das Abo|subscription|Abos|Medien|Ich habe ein Abo für die Zeitung.|I have a newspaper subscription.
+die Lokalzeitung|local newspaper|Lokalzeitungen|Medien|In der Lokalzeitung steht etwas über unser Fest.|There's something about our festival in the local paper.
+die Schlagzeile|headline|Schlagzeilen|Medien|Die Schlagzeile ist übertrieben.|The headline is exaggerated.
+die Meldung|news item, report|Meldungen|Medien|Laut einer Meldung gab es einen Unfall.|According to a report there was an accident.
+aktuell|current||Medien|Das sind die aktuellen Nachrichten.|Those are the latest news.
+die Umwelt|environment||Umwelt|Wir müssen die Umwelt schützen.|We have to protect the environment.
+der Klimaschutz|climate protection||Umwelt|Klimaschutz geht uns alle an.|Climate protection concerns us all.
+der Biomüll|organic waste||Umwelt|Die Schalen kommen in den Biomüll.|The peelings go in the organic waste.
+der Restmüll|residual waste||Umwelt|Das gehört in den Restmüll.|That belongs in the general waste.
+die Tonne|bin; tonne|Tonnen|Umwelt|Die gelbe Tonne ist für Verpackungen.|The yellow bin is for packaging.
+der Container|container|Container|Umwelt|Altglas bringt man zum Container.|You take used glass to the container.
+das Pfand|deposit||Umwelt|Auf die Flasche gibt es 25 Cent Pfand.|There's a 25-cent deposit on the bottle.
+der Wasserverbrauch|water consumption||Umwelt|Wir wollen den Wasserverbrauch senken.|We want to reduce water consumption.
+die Emission|emission|Emissionen|Umwelt|Autos verursachen viele Emissionen.|Cars cause a lot of emissions.
+schaden|to harm||Verb|Plastik schadet den Meeren.|Plastic harms the oceans.
+schützen|to protect||Verb|Die Creme schützt vor Sonne.|The cream protects against the sun.
+verschmutzen|to pollute||Verb|Fabriken verschmutzen die Luft.|Factories pollute the air.
+nachhaltig|sustainable||Umwelt|Wir sollten nachhaltiger leben.|We should live more sustainably.
+die Bildung|education||Bildung|Bildung ist der Schlüssel zum Erfolg.|Education is the key to success.
+der Studiengang|degree programme|Studiengänge|Bildung|Welchen Studiengang hast du gewählt?|Which degree programme did you choose?
+der Bachelor|bachelor's degree|Bachelor|Bildung|Sie macht ihren Bachelor in Informatik.|She's doing her bachelor's in computer science.
+der Master|master's degree|Master|Bildung|Nach dem Bachelor mache ich den Master.|After my bachelor's I'll do a master's.
+die Prüfungsangst|exam anxiety||Bildung|Viele Studierende haben Prüfungsangst.|Many students have exam anxiety.
+die Mensa|university canteen|Mensen|Bildung|Wir essen in der Mensa.|We eat in the university canteen.
+das Wohnheim|hall of residence|Wohnheime|Bildung|Er wohnt im Studentenwohnheim.|He lives in a student hall of residence.
+die Klausur|written exam|Klausuren|Bildung|Morgen schreiben wir eine Klausur.|Tomorrow we're writing an exam.
+das Referat|presentation (academic)|Referate|Bildung|Ich halte ein Referat über Goethe.|I'm giving a presentation on Goethe.
+die Abschlussprüfung|final exam|Abschlussprüfungen|Bildung|Die Abschlussprüfung ist im Juni.|The final exam is in June.
+die Weiterbildung|further training|Weiterbildungen|Bildung|Die Firma bezahlt die Weiterbildung.|The company pays for the further training.
+lehren|to teach||Verb|Sie lehrt an der Universität.|She teaches at the university.
+unterrichten|to teach||Verb|Er unterrichtet Mathematik.|He teaches mathematics.
+sich bilden|to educate oneself||Verb|Man sollte sich ein Leben lang bilden.|You should keep educating yourself all your life.

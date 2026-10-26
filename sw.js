@@ -2,7 +2,7 @@
    Before: cache-first, so after every deploy people kept seeing the old app until a second reload.
    Now: network-first with a short timeout for the app's own files (fresh when online, instant offline),
    and the page shows an "Update" bar when a new service worker is waiting. */
-const CACHE = "deutsch-coach-v6.0.0";
+const CACHE = "deutsch-coach-v6.1.0";
 const FILES = ["./", "index.html", "manifest.webmanifest", "css/app.css", "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png",
   "js/engine.js", "js/engine_plus.js", "js/core.js", "js/habit.js", "js/tutor.js", "js/ui.js", "js/views1.js", "js/views2.js", "js/views3.js", "js/views4.js", "js/views5.js", "js/views6.js", "js/views7.js", "js/views8.js", "js/weber.js", "js/app.js",
   ...["curriculum", "reference", "scenes", "vocab", "verbs", "conj", "notes", "passages", "bank", "lid", "exams", "placement"].map((f) => `js/data/${f}.js`)];

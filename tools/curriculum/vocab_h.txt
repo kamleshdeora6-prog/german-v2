@@ -1,0 +1,367 @@
+#B1
+die Abteilungsleiterin|head of department (f)|Abteilungsleiterinnen|Arbeit|Die Abteilungsleiterin hat das Projekt genehmigt.|The head of department approved the project.
+der Abteilungsleiter|head of department|Abteilungsleiter|Arbeit|Der Abteilungsleiter ist im Urlaub.|The head of department is on holiday.
+der Geschäftsführer|managing director|Geschäftsführer|Arbeit|Der Geschäftsführer hält eine Rede.|The managing director gives a speech.
+die Personalabteilung|HR department|Personalabteilungen|Arbeit|Bitte wenden Sie sich an die Personalabteilung.|Please contact the HR department.
+der Personalausweis|identity card|Personalausweise|Behörden|Ich habe meinen Personalausweis verloren.|I've lost my identity card.
+die Lohnabrechnung|payslip|Lohnabrechnungen|Arbeit|Auf der Lohnabrechnung steht das Nettogehalt.|The net salary is on the payslip.
+brutto|gross||Arbeit|Er verdient 3.500 Euro brutto.|He earns 3,500 euros gross.
+netto|net||Arbeit|Netto bleiben etwa 2.300 Euro.|About 2,300 euros remain net.
+der Zuschlag|surcharge, bonus|Zuschläge|Arbeit|Für Nachtarbeit gibt es einen Zuschlag.|There's a bonus for night work.
+die Nachtschicht|night shift|Nachtschichten|Arbeit|Diese Woche habe ich Nachtschicht.|This week I'm on the night shift.
+der Schichtdienst|shift work||Arbeit|Im Krankenhaus arbeitet man im Schichtdienst.|In the hospital you work shifts.
+die Krankschreibung|sick note|Krankschreibungen|Arbeit|Die Krankschreibung gilt bis Freitag.|The sick note is valid until Friday.
+der Urlaubsantrag|holiday request|Urlaubsanträge|Arbeit|Ich habe meinen Urlaubsantrag abgegeben.|I've handed in my holiday request.
+die Fortbildung|training course|Fortbildungen|Arbeit|Nächste Woche habe ich eine Fortbildung.|Next week I have a training course.
+die Beförderung|promotion|Beförderungen|Arbeit|Sie hat eine Beförderung bekommen.|She got a promotion.
+befördern|to promote; to transport||Verb|Er wurde zum Teamleiter befördert.|He was promoted to team leader.
+der Teamleiter|team leader|Teamleiter|Arbeit|Der Teamleiter verteilt die Aufgaben.|The team leader assigns the tasks.
+die Frist|deadline|Fristen|Arbeit|Die Frist endet am Freitag.|The deadline is on Friday.
+der Zeitdruck|time pressure||Arbeit|Wir arbeiten unter Zeitdruck.|We're working under time pressure.
+die Arbeitsbelastung|workload||Arbeit|Die Arbeitsbelastung ist zu hoch.|The workload is too high.
+das Gehaltsgespräch|salary negotiation|Gehaltsgespräche|Arbeit|Morgen habe ich ein Gehaltsgespräch.|Tomorrow I have a salary review.
+die Gehaltserhöhung|pay rise|Gehaltserhöhungen|Arbeit|Ich bitte um eine Gehaltserhöhung.|I'm asking for a pay rise.
+der Arbeitsweg|commute|Arbeitswege|Arbeit|Mein Arbeitsweg dauert eine Stunde.|My commute takes an hour.
+pendeln|to commute||Verb|Er pendelt jeden Tag nach Frankfurt.|He commutes to Frankfurt every day.
+der Kunde|customer|Kunden|Arbeit|Der Kunde ist König.|The customer is king.
+die Kundschaft|clientele||Arbeit|Unsere Kundschaft ist sehr zufrieden.|Our customers are very satisfied.
+die Beratung|advice, consultation|Beratungen|Arbeit|Die Beratung ist kostenlos.|The consultation is free.
+beraten|to advise||Verb|Die Verkäuferin hat mich gut beraten.|The sales assistant gave me good advice.
+die Lieferzeit|delivery time|Lieferzeiten|Wirtschaft|Die Lieferzeit beträgt drei Tage.|Delivery time is three days.
+die Rechnungsnummer|invoice number|Rechnungsnummern|Wirtschaft|Bitte geben Sie die Rechnungsnummer an.|Please state the invoice number.
+der Rabatt|discount|Rabatte|Wirtschaft|Studenten bekommen zehn Prozent Rabatt.|Students get a ten per cent discount.
+die Garantie|guarantee|Garantien|Wirtschaft|Das Gerät hat zwei Jahre Garantie.|The device has a two-year guarantee.
+die Quittung|receipt|Quittungen|Wirtschaft|Kann ich eine Quittung bekommen?|Can I have a receipt?
+der Kaufvertrag|purchase contract|Kaufverträge|Wirtschaft|Wir haben den Kaufvertrag unterschrieben.|We've signed the purchase contract.
+die Ware|goods|Waren|Wirtschaft|Die Ware ist beschädigt angekommen.|The goods arrived damaged.
+der Händler|dealer, trader|Händler|Wirtschaft|Der Händler bietet einen guten Preis.|The dealer offers a good price.
+der Verbraucher|consumer|Verbraucher|Wirtschaft|Verbraucher achten mehr auf den Preis.|Consumers pay more attention to price.
+die Verbraucherzentrale|consumer advice centre|Verbraucherzentralen|Wirtschaft|Die Verbraucherzentrale hilft bei Problemen mit Verträgen.|The consumer advice centre helps with contract problems.
+der Preisvergleich|price comparison|Preisvergleiche|Wirtschaft|Ein Preisvergleich lohnt sich.|A price comparison is worth it.
+das Schnäppchen|bargain|Schnäppchen|Wirtschaft|Die Jacke war ein Schnäppchen.|The jacket was a bargain.
+ausverkauft|sold out||Wirtschaft|Die Tickets sind leider ausverkauft.|Unfortunately the tickets are sold out.
+der Ausverkauf|clearance sale|Ausverkäufe|Wirtschaft|Im Ausverkauf ist alles billiger.|Everything is cheaper in the clearance sale.
+der Schlussverkauf|end-of-season sale|Schlussverkäufe|Wirtschaft|Im Schlussverkauf habe ich Schuhe gekauft.|I bought shoes in the sale.
+die Mahngebühr|late payment fee|Mahngebühren|Geld|Bei Verspätung kommt eine Mahngebühr dazu.|If late, a late payment fee is added.
+die Kontoführungsgebühr|account fee|Kontoführungsgebühren|Geld|Das Konto hat keine Kontoführungsgebühr.|The account has no account fee.
+der Dispo|overdraft||Geld|Ich bin im Dispo.|I'm overdrawn.
+überziehen|to overdraw||Verb|Er hat sein Konto überzogen.|He has overdrawn his account.
+die Geldbörse|purse, wallet|Geldbörsen|Geld|Meine Geldbörse ist weg!|My wallet is gone!
+das Portemonnaie|wallet|Portemonnaies|Geld|Ich habe kein Geld im Portemonnaie.|I have no money in my wallet.
+die Münze|coin|Münzen|Geld|Hast du eine Münze für den Einkaufswagen?|Do you have a coin for the shopping trolley?
+der Geldschein|banknote|Geldscheine|Geld|Der Automat nimmt keine Geldscheine.|The machine doesn't take banknotes.
+die Währung|currency|Währungen|Geld|Die Währung in der Schweiz ist der Franken.|The currency in Switzerland is the franc.
+wechseln (Geld)|to exchange (money)||Verb|Wo kann ich Geld wechseln?|Where can I change money?
+der Wechselkurs|exchange rate|Wechselkurse|Geld|Der Wechselkurs ist heute gut.|The exchange rate is good today.
+das Sparkonto|savings account|Sparkonten|Geld|Ich lege jeden Monat Geld auf das Sparkonto.|I put money into my savings account every month.
+die Rente|pension|Renten|Gesellschaft|Mit 67 bekommt man Rente.|You get a pension at 67.
+der Rentner|pensioner|Rentner|Gesellschaft|Die Rentner treffen sich im Park.|The pensioners meet in the park.
+das Kindergeld|child benefit||Gesellschaft|Für jedes Kind gibt es Kindergeld.|There is child benefit for every child.
+die Sozialwohnung|social housing flat|Sozialwohnungen|Gesellschaft|Es gibt zu wenig Sozialwohnungen.|There are too few social housing flats.
+der Wohnberechtigungsschein|housing entitlement certificate|Wohnberechtigungsscheine|Behörden|Für die Wohnung braucht man einen Wohnberechtigungsschein.|You need a housing entitlement certificate for the flat.
+das Jobcenter|job centre|Jobcenter|Behörden|Er hat einen Termin im Jobcenter.|He has an appointment at the job centre.
+die Agentur für Arbeit|employment agency||Behörden|Die Agentur für Arbeit hilft bei der Jobsuche.|The employment agency helps with job hunting.
+die Ausländerbehörde|immigration office|Ausländerbehörden|Behörden|Bei der Ausländerbehörde muss man lange warten.|You have to wait a long time at the immigration office.
+das Standesamt|registry office|Standesämter|Behörden|Sie heiraten auf dem Standesamt.|They're getting married at the registry office.
+das Finanzamt|tax office|Finanzämter|Behörden|Das Finanzamt schickt den Steuerbescheid.|The tax office sends the tax assessment.
+die Steuer-Identifikationsnummer|tax ID number||Behörden|Die Steuer-Identifikationsnummer kommt per Post.|The tax ID number comes by post.
+der Rundfunkbeitrag|broadcasting fee||Behörden|Jeder Haushalt zahlt den Rundfunkbeitrag.|Every household pays the broadcasting fee.
+die Wartezeit|waiting time|Wartezeiten|Behörden|Die Wartezeit beträgt zwei Stunden.|The waiting time is two hours.
+der Stempel|stamp|Stempel|Behörden|Auf dem Formular fehlt ein Stempel.|There's a stamp missing on the form.
+die Kopie|copy|Kopien|Behörden|Bringen Sie bitte eine Kopie mit.|Please bring a copy.
+das Original|original|Originale|Behörden|Wir brauchen das Original, keine Kopie.|We need the original, not a copy.
+die Unterlagen|documents||Behörden|Sind die Unterlagen vollständig?|Are the documents complete?
+vollständig|complete||Behörden|Bitte füllen Sie das Formular vollständig aus.|Please fill in the form completely.
+gültig|valid||Behörden|Ist dein Pass noch gültig?|Is your passport still valid?
+ungültig|invalid||Behörden|Das Ticket ist ungültig.|The ticket is invalid.
+abgelaufen|expired||Behörden|Mein Ausweis ist abgelaufen.|My ID has expired.
+verlängern|to extend||Verb|Ich muss mein Visum verlängern.|I have to extend my visa.
+der Notar|notary|Notare|Recht|Der Vertrag wird beim Notar unterschrieben.|The contract is signed at the notary's.
+das Testament|will|Testamente|Recht|Sie hat ein Testament gemacht.|She has made a will.
+erben|to inherit||Verb|Er hat das Haus geerbt.|He inherited the house.
+die Scheidung|divorce|Scheidungen|Familie|Die Scheidung dauerte ein Jahr.|The divorce took a year.
+sich trennen|to separate||Verb|Sie haben sich getrennt.|They've separated.
+das Sorgerecht|custody||Familie|Die Eltern teilen sich das Sorgerecht.|The parents share custody.
+die Kinderbetreuung|childcare||Familie|Die Kinderbetreuung ist teuer.|Childcare is expensive.
+der Babysitter|babysitter|Babysitter|Familie|Heute Abend kommt der Babysitter.|The babysitter is coming tonight.
+die Erziehungszeit|parental leave period||Familie|Nach der Erziehungszeit kehrt sie in den Job zurück.|After her parental leave she's returning to work.
+die Pubertät|puberty||Familie|Mein Sohn ist in der Pubertät.|My son is going through puberty.
+der Teenager|teenager|Teenager|Familie|Teenager schlafen gern lange.|Teenagers like to sleep in.
+erziehen|to bring up||Verb|Sie erziehen ihre Kinder zweisprachig.|They're bringing up their children bilingually.
+streng erziehen|to raise strictly||Familie|Meine Eltern haben mich streng erzogen.|My parents raised me strictly.
+verwöhnen|to spoil||Verb|Die Oma verwöhnt die Enkel.|Grandma spoils the grandchildren.
+das Taschengeld|pocket money||Familie|Wie viel Taschengeld bekommst du?|How much pocket money do you get?
+die Generationen|generations||Familie|In unserem Haus leben drei Generationen.|Three generations live in our house.
+die Großfamilie|extended family|Großfamilien|Familie|Ich komme aus einer Großfamilie.|I come from a big family.
+das Einzelkind|only child|Einzelkinder|Familie|Sie ist ein Einzelkind.|She's an only child.
+der Haushalt führen|to run the household||Familie|Er führt den Haushalt, sie arbeitet.|He runs the household, she works.
+die Gewalt|violence||Gesellschaft|Gewalt ist keine Lösung.|Violence is not a solution.
+die Kriminalität|crime||Gesellschaft|Die Kriminalität ist gesunken.|Crime has fallen.
+die Sicherheit|security, safety||Gesellschaft|Die Sicherheit der Bürger ist wichtig.|The safety of citizens is important.
+die Feuerwehr|fire brigade|Feuerwehren|Gesellschaft|Die Feuerwehr kam nach fünf Minuten.|The fire brigade came after five minutes.
+der Notruf|emergency call|Notrufe|Gesellschaft|Der Notruf ist 112.|The emergency number is 112.
+die Erste Hilfe|first aid||Gesundheit|Für den Führerschein braucht man einen Erste-Hilfe-Kurs.|You need a first aid course for the driving licence.
+der Brand|fire|Brände|Gesellschaft|Der Brand wurde schnell gelöscht.|The fire was quickly put out.
+der Rauchmelder|smoke detector|Rauchmelder|Wohnen|In jedem Schlafzimmer muss ein Rauchmelder sein.|There must be a smoke detector in every bedroom.
+die Nachbarschaftshilfe|neighbourly help||Gesellschaft|Nachbarschaftshilfe ist in unserem Haus selbstverständlich.|Neighbourly help is a matter of course in our building.
+das Ehrenamt|voluntary work|Ehrenämter|Gesellschaft|Sie arbeitet im Ehrenamt bei der Tafel.|She volunteers at the food bank.
+die Tafel (Lebensmittel)|food bank|Tafeln|Gesellschaft|Die Tafel verteilt Lebensmittel an Bedürftige.|The food bank distributes food to those in need.
+spenden|to donate||Verb|Wir spenden jedes Jahr für ein Kinderhilfswerk.|We donate to a children's charity every year.
+die Spende|donation|Spenden|Gesellschaft|Vielen Dank für Ihre Spende!|Thank you for your donation!
+die Organisation|organisation|Organisationen|Gesellschaft|Die Organisation hilft Flüchtlingen.|The organisation helps refugees.
+der Verband|association|Verbände|Gesellschaft|Der Verband vertritt die Interessen der Ärzte.|The association represents doctors' interests.
+die Gewerkschaft|trade union|Gewerkschaften|Gesellschaft|Die Gewerkschaft fordert mehr Lohn.|The union is demanding higher wages.
+streiken|to strike||Verb|Die Lokführer streiken heute.|The train drivers are on strike today.
+demonstrieren|to demonstrate||Verb|Tausende demonstrieren für den Klimaschutz.|Thousands are demonstrating for climate protection.
+die Bürgerinitiative|citizens' action group|Bürgerinitiativen|Gesellschaft|Die Bürgerinitiative kämpft gegen den Flughafen.|The action group is fighting the airport.
+die Umfrage|survey|Umfragen|Gesellschaft|Laut Umfrage ist die Mehrheit dafür.|According to the survey the majority is in favour.
+die Meinung äußern|to express an opinion||Gesellschaft|Jeder darf seine Meinung äußern.|Everyone may express their opinion.
+#B2
+die Bedarfsplanung|needs planning||Gesellschaft|Die Bedarfsplanung für Kitas ist veraltet.|The needs planning for day-care centres is outdated.
+der Wandel|change||Gesellschaft|Die Gesellschaft befindet sich im Wandel.|Society is undergoing change.
+der demografische Wandel|demographic change||Gesellschaft|Der demografische Wandel stellt die Rentenkasse vor Probleme.|Demographic change poses problems for the pension fund.
+die Überalterung|ageing (of society)||Gesellschaft|Die Überalterung der Gesellschaft schreitet voran.|The ageing of society is progressing.
+die Lebenserwartung|life expectancy||Gesellschaft|Die Lebenserwartung ist gestiegen.|Life expectancy has risen.
+die Geburtenrate|birth rate|Geburtenraten|Gesellschaft|Die Geburtenrate ist niedrig.|The birth rate is low.
+die Zuwanderung|immigration||Gesellschaft|Ohne Zuwanderung würde die Bevölkerung schrumpfen.|Without immigration the population would shrink.
+die Abschiebung|deportation|Abschiebungen|Gesellschaft|Die Abschiebung wurde gestoppt.|The deportation was stopped.
+das Asyl|asylum||Gesellschaft|Er hat in Deutschland Asyl beantragt.|He has applied for asylum in Germany.
+die Staatsbürgerschaft|citizenship|Staatsbürgerschaften|Gesellschaft|Sie hat die deutsche Staatsbürgerschaft angenommen.|She has taken German citizenship.
+die doppelte Staatsbürgerschaft|dual citizenship||Gesellschaft|Seit 2024 ist die doppelte Staatsbürgerschaft leichter möglich.|Since 2024 dual citizenship has been easier.
+die Chancengleichheit|equality of opportunity||Gesellschaft|Chancengleichheit beginnt in der Schule.|Equality of opportunity begins at school.
+die Benachteiligung|disadvantage, discrimination|Benachteiligungen|Gesellschaft|Die Benachteiligung von Frauen ist verboten.|Discrimination against women is prohibited.
+benachteiligt|disadvantaged||Gesellschaft|Kinder aus armen Familien sind oft benachteiligt.|Children from poor families are often disadvantaged.
+die Inklusion|inclusion||Gesellschaft|Inklusion bedeutet, dass alle dazugehören.|Inclusion means that everyone belongs.
+barrierefrei|barrier-free, accessible||Gesellschaft|Der Bahnhof ist jetzt barrierefrei.|The station is now accessible.
+die Behinderung|disability|Behinderungen|Gesellschaft|Menschen mit Behinderung haben besondere Rechte.|People with disabilities have special rights.
+die Würde|dignity||Gesellschaft|Die Würde des Menschen ist unantastbar.|Human dignity is inviolable.
+das Menschenrecht|human right|Menschenrechte|Gesellschaft|Bildung ist ein Menschenrecht.|Education is a human right.
+die Verfassung|constitution|Verfassungen|Politik|Die Verfassung schützt die Grundrechte.|The constitution protects fundamental rights.
+das Grundrecht|fundamental right|Grundrechte|Politik|Die Versammlungsfreiheit ist ein Grundrecht.|Freedom of assembly is a fundamental right.
+der Rechtsstaat|state under the rule of law||Politik|Im Rechtsstaat gelten die Gesetze für alle.|Under the rule of law, laws apply to everyone.
+die Gewaltenteilung|separation of powers||Politik|Die Gewaltenteilung verhindert Machtmissbrauch.|The separation of powers prevents abuse of power.
+der Föderalismus|federalism||Politik|Wegen des Föderalismus ist Bildung Ländersache.|Because of federalism, education is a matter for the states.
+die Koalition|coalition|Koalitionen|Politik|Die Koalition besteht aus drei Parteien.|The coalition consists of three parties.
+der Koalitionsvertrag|coalition agreement|Koalitionsverträge|Politik|Im Koalitionsvertrag steht ein höherer Mindestlohn.|The coalition agreement includes a higher minimum wage.
+der Wahlkampf|election campaign|Wahlkämpfe|Politik|Im Wahlkampf versprechen alle viel.|In the election campaign everyone promises a lot.
+die Wahlbeteiligung|voter turnout||Politik|Die Wahlbeteiligung lag bei 76 Prozent.|Voter turnout was 76 per cent.
+der Abgeordnete|member of parliament|Abgeordneten|Politik|Die Abgeordneten stimmen über das Gesetz ab.|The MPs vote on the law.
+das Parlament|parliament|Parlamente|Politik|Das Parlament hat das Gesetz verabschiedet.|Parliament passed the law.
+verabschieden|to pass (a law); to say goodbye||Verb|Der Bundestag hat das Gesetz verabschiedet.|The Bundestag passed the law.
+der Haushalt (Staat)|budget|Haushalte|Politik|Der Haushalt für nächstes Jahr ist beschlossen.|The budget for next year has been agreed.
+die Staatsverschuldung|national debt||Politik|Die Staatsverschuldung ist gestiegen.|National debt has risen.
+die Schuldenbremse|debt brake||Politik|Über die Schuldenbremse wird heftig gestritten.|There is fierce debate about the debt brake.
+die Subvention|subsidy|Subventionen|Wirtschaft|Der Staat zahlt Subventionen für Elektroautos.|The state pays subsidies for electric cars.
+die Konjunktur|economic situation||Wirtschaft|Die Konjunktur schwächt sich ab.|The economy is weakening.
+die Rezession|recession|Rezessionen|Wirtschaft|Experten warnen vor einer Rezession.|Experts warn of a recession.
+das Bruttoinlandsprodukt|gross domestic product||Wirtschaft|Das Bruttoinlandsprodukt ist leicht gewachsen.|GDP has grown slightly.
+die Exportquote|export ratio|Exportquoten|Wirtschaft|Deutschland hat eine hohe Exportquote.|Germany has a high export ratio.
+der Export|export|Exporte|Wirtschaft|Autos sind ein wichtiger Export.|Cars are an important export.
+der Import|import|Importe|Wirtschaft|Der Import von Energie ist teuer.|Importing energy is expensive.
+die Lieferkette|supply chain|Lieferketten|Wirtschaft|Die Lieferketten waren unterbrochen.|The supply chains were interrupted.
+der Standort|location (business)|Standorte|Wirtschaft|Die Firma sucht einen neuen Standort.|The company is looking for a new location.
+die Niederlassung|branch, subsidiary|Niederlassungen|Wirtschaft|Die Firma hat eine Niederlassung in Mumbai.|The company has a branch in Mumbai.
+der Konzern|corporation, group|Konzerne|Wirtschaft|Der Konzern beschäftigt 50.000 Menschen.|The corporation employs 50,000 people.
+das mittelständische Unternehmen|medium-sized company||Wirtschaft|Viele mittelständische Unternehmen sind Familienbetriebe.|Many medium-sized companies are family businesses.
+das Start-up|start-up|Start-ups|Wirtschaft|Sie hat ein Start-up gegründet.|She founded a start-up.
+der Gründer|founder|Gründer|Wirtschaft|Die Gründer kommen aus Berlin.|The founders come from Berlin.
+der Investor|investor|Investoren|Wirtschaft|Das Start-up sucht Investoren.|The start-up is looking for investors.
+die Aktie|share|Aktien|Wirtschaft|Die Aktie ist um fünf Prozent gestiegen.|The share price has risen by five per cent.
+die Börse|stock exchange|Börsen|Wirtschaft|An der Börse herrscht Unsicherheit.|There's uncertainty on the stock exchange.
+die Rendite|return|Renditen|Wirtschaft|Die Rendite ist gering.|The return is low.
+das Risiko|risk|Risiken|Wirtschaft|Jede Investition hat ein Risiko.|Every investment has a risk.
+der Umsatzrückgang|drop in sales|Umsatzrückgänge|Wirtschaft|Der Umsatzrückgang betrug zehn Prozent.|The drop in sales was ten per cent.
+die Kurzarbeit|short-time work||Wirtschaft|Während der Krise gab es Kurzarbeit.|During the crisis there was short-time work.
+der Stellenabbau|job cuts||Wirtschaft|Der Konzern kündigt einen Stellenabbau an.|The corporation announces job cuts.
+die Entlassung|dismissal|Entlassungen|Arbeit|Die Entlassung kam überraschend.|The dismissal came as a surprise.
+die Abfindung|severance pay|Abfindungen|Arbeit|Er bekam eine hohe Abfindung.|He received a large severance payment.
+der Tarifvertrag|collective agreement|Tarifverträge|Arbeit|Der Tarifvertrag regelt die Löhne.|The collective agreement regulates wages.
+die Tarifverhandlung|wage negotiation|Tarifverhandlungen|Arbeit|Die Tarifverhandlungen sind gescheitert.|The wage negotiations have failed.
+der Betriebsrat|works council|Betriebsräte|Arbeit|Der Betriebsrat wurde informiert.|The works council was informed.
+die Mitbestimmung|co-determination||Arbeit|In Deutschland gibt es Mitbestimmung in Unternehmen.|In Germany there is co-determination in companies.
+die Fachkraft|skilled worker|Fachkräfte|Arbeit|Pflegefachkräfte werden dringend gesucht.|Qualified care workers are urgently needed.
+die Anerkennung (Abschluss)|recognition (of qualifications)||Arbeit|Die Anerkennung ihres Abschlusses dauerte ein Jahr.|The recognition of her degree took a year.
+die Zeitarbeit|temporary work||Arbeit|Er arbeitet über eine Zeitarbeitsfirma.|He works through a temp agency.
+befristet|fixed-term||Arbeit|Der Vertrag ist auf zwei Jahre befristet.|The contract is limited to two years.
+unbefristet|permanent||Arbeit|Endlich habe ich einen unbefristeten Vertrag.|I finally have a permanent contract.
+der Minijob|mini-job (part-time job)|Minijobs|Arbeit|Neben dem Studium hat sie einen Minijob.|She has a mini-job alongside her studies.
+die Scheinselbstständigkeit|bogus self-employment||Arbeit|Scheinselbstständigkeit ist verboten.|Bogus self-employment is prohibited.
+die Work-Life-Balance|work-life balance||Arbeit|Eine gute Work-Life-Balance ist wichtig.|A good work-life balance is important.
+die Präsenzpflicht|attendance requirement||Arbeit|Im Büro gibt es zweimal pro Woche Präsenzpflicht.|Attendance in the office is required twice a week.
+das Großraumbüro|open-plan office|Großraumbüros|Arbeit|Im Großraumbüro ist es oft laut.|It's often loud in the open-plan office.
+die Videokonferenz|video conference|Videokonferenzen|Arbeit|Wir treffen uns per Videokonferenz.|We're meeting by video conference.
+die Erreichbarkeit|availability||Arbeit|Ständige Erreichbarkeit erzeugt Stress.|Constant availability creates stress.
+die Digitalisierung|digitalisation||Technik|Die Digitalisierung der Verwaltung kommt langsam voran.|The digitalisation of administration is progressing slowly.
+die Cloud|cloud||Technik|Die Fotos sind in der Cloud gespeichert.|The photos are stored in the cloud.
+der Server|server|Server|Technik|Der Server ist ausgefallen.|The server has gone down.
+die Datenbank|database|Datenbanken|Technik|Die Kundendaten liegen in einer Datenbank.|The customer data are in a database.
+der Hackerangriff|hacker attack|Hackerangriffe|Technik|Nach dem Hackerangriff waren die Daten weg.|After the hacker attack the data were gone.
+die Verschlüsselung|encryption|Verschlüsselungen|Technik|Die Nachrichten sind durch Verschlüsselung geschützt.|The messages are protected by encryption.
+die Zwei-Faktor-Authentifizierung|two-factor authentication||Technik|Aktivieren Sie die Zwei-Faktor-Authentifizierung.|Activate two-factor authentication.
+das Phishing|phishing||Technik|Vorsicht vor Phishing-Mails!|Beware of phishing emails!
+die Schadsoftware|malware||Technik|Der Computer ist mit Schadsoftware infiziert.|The computer is infected with malware.
+die Privatsphäre|privacy||Technik|Soziale Netzwerke gefährden die Privatsphäre.|Social networks endanger privacy.
+die Plattform|platform|Plattformen|Technik|Die Plattform hat Millionen Nutzer.|The platform has millions of users.
+der Nutzer|user|Nutzer|Technik|Die Nutzer müssen den Bedingungen zustimmen.|Users must accept the terms.
+der Algorithmus|algorithm|Algorithmen|Technik|Der Algorithmus entscheidet, was wir sehen.|The algorithm decides what we see.
+die Falschinformation|disinformation|Falschinformationen|Medien|Falschinformationen verbreiten sich schnell.|Disinformation spreads quickly.
+die Filterblase|filter bubble|Filterblasen|Medien|In der Filterblase sieht man nur die eigene Meinung.|In the filter bubble you only see your own opinion.
+die Meinungsbildung|opinion-forming||Medien|Medien spielen eine große Rolle bei der Meinungsbildung.|Media play a big role in opinion-forming.
+die Berichterstattung|reporting, coverage||Medien|Die Berichterstattung war einseitig.|The coverage was one-sided.
+einseitig|one-sided||Medien|Der Artikel ist sehr einseitig.|The article is very one-sided.
+ausgewogen|balanced||Medien|Eine ausgewogene Berichterstattung ist wichtig.|Balanced reporting is important.
+seriös|reputable, serious||Medien|Ist diese Quelle seriös?|Is this source reputable?
+die Boulevardzeitung|tabloid|Boulevardzeitungen|Medien|Die Boulevardzeitung liebt Skandale.|The tabloid loves scandals.
+der Skandal|scandal|Skandale|Medien|Der Skandal führte zum Rücktritt des Ministers.|The scandal led to the minister's resignation.
+der Rücktritt|resignation|Rücktritte|Politik|Die Opposition fordert den Rücktritt.|The opposition demands the resignation.
+die Pressefreiheit|press freedom||Medien|Die Pressefreiheit ist ein hohes Gut.|Press freedom is a great asset.
+das Interview führen|to conduct an interview||Medien|Die Journalistin führt ein Interview mit der Ministerin.|The journalist interviews the minister.
+die Quote|ratings; quota|Quoten|Medien|Die Sendung hatte eine gute Quote.|The programme had good ratings.
+der öffentlich-rechtliche Rundfunk|public broadcasting||Medien|Der öffentlich-rechtliche Rundfunk wird durch Beiträge finanziert.|Public broadcasting is financed by fees.
+die Erneuerbaren|renewables||Umwelt|Der Anteil der Erneuerbaren am Strom steigt.|The share of renewables in electricity is rising.
+die Windenergie|wind energy||Umwelt|Im Norden wird viel Windenergie erzeugt.|A lot of wind energy is generated in the north.
+die Photovoltaik|photovoltaics||Umwelt|Die Photovoltaikanlage auf dem Dach spart Strom.|The PV system on the roof saves electricity.
+die Wärmepumpe|heat pump|Wärmepumpen|Umwelt|Wir haben eine Wärmepumpe einbauen lassen.|We had a heat pump installed.
+der Atomausstieg|nuclear phase-out||Umwelt|Der Atomausstieg ist abgeschlossen.|The nuclear phase-out is complete.
+der Kohleausstieg|coal phase-out||Umwelt|Der Kohleausstieg ist für 2038 geplant.|The coal phase-out is planned for 2038.
+der CO2-Ausstoß|CO2 emissions||Umwelt|Der CO2-Ausstoß muss sinken.|CO2 emissions must fall.
+klimaneutral|climate-neutral||Umwelt|Die Stadt will bis 2040 klimaneutral sein.|The city wants to be climate-neutral by 2040.
+die Erderwärmung|global warming||Umwelt|Die Erderwärmung führt zu mehr Extremwetter.|Global warming leads to more extreme weather.
+das Extremwetter|extreme weather||Umwelt|Extremwetter verursacht hohe Schäden.|Extreme weather causes heavy damage.
+die Hitzewelle|heatwave|Hitzewellen|Umwelt|Die Hitzewelle dauerte zwei Wochen.|The heatwave lasted two weeks.
+die Artenvielfalt|biodiversity||Umwelt|Pestizide bedrohen die Artenvielfalt.|Pesticides threaten biodiversity.
+das Insektensterben|insect decline||Umwelt|Das Insektensterben ist besorgniserregend.|The decline of insects is worrying.
+die Abholzung|deforestation||Umwelt|Die Abholzung des Regenwaldes geht weiter.|Deforestation of the rainforest continues.
+der ökologische Fußabdruck|ecological footprint||Umwelt|Flüge vergrößern den ökologischen Fußabdruck.|Flights increase your ecological footprint.
+der Verzicht|renunciation, doing without||Umwelt|Verzicht allein wird das Klima nicht retten.|Doing without alone won't save the climate.
+die Kreislaufwirtschaft|circular economy||Umwelt|In der Kreislaufwirtschaft werden Rohstoffe wiederverwendet.|In the circular economy raw materials are reused.
+die Mobilitätswende|mobility transition||Umwelt|Die Mobilitätswende braucht bessere Radwege.|The mobility transition needs better cycle paths.
+die Gesundheitsvorsorge|preventive healthcare||Gesundheit|Gesundheitsvorsorge spart langfristig Kosten.|Preventive healthcare saves costs in the long term.
+die Vorsorgeuntersuchung|check-up|Vorsorgeuntersuchungen|Gesundheit|Ab 35 gibt es eine kostenlose Vorsorgeuntersuchung.|From 35 there's a free check-up.
+die Pflegekraft|carer, nurse|Pflegekräfte|Gesundheit|Es fehlen tausende Pflegekräfte.|Thousands of care workers are missing.
+der Pflegenotstand|care crisis||Gesundheit|Der Pflegenotstand verschärft sich.|The care crisis is getting worse.
+das Pflegeheim|nursing home|Pflegeheime|Gesundheit|Ihre Mutter lebt im Pflegeheim.|Her mother lives in a nursing home.
+die gesetzliche Krankenversicherung|statutory health insurance||Gesundheit|Die meisten sind in der gesetzlichen Krankenversicherung.|Most people have statutory health insurance.
+die private Krankenversicherung|private health insurance||Gesundheit|Beamte sind oft privat versichert.|Civil servants are often privately insured.
+die Zuzahlung|co-payment|Zuzahlungen|Gesundheit|Für Medikamente gibt es eine Zuzahlung.|There's a co-payment for medicines.
+die Wartezeit auf einen Facharzttermin|waiting time for a specialist||Gesundheit|Die Wartezeit auf einen Facharzttermin ist lang.|The wait for a specialist appointment is long.
+die psychische Gesundheit|mental health||Gesundheit|Psychische Gesundheit wird oft vernachlässigt.|Mental health is often neglected.
+die Achtsamkeit|mindfulness||Gesundheit|Achtsamkeit hilft gegen Stress.|Mindfulness helps against stress.
+die Sucht|addiction|Süchte|Gesundheit|Spielsucht ist eine ernste Krankheit.|Gambling addiction is a serious illness.
+süchtig|addicted||Gesundheit|Viele Jugendliche sind süchtig nach dem Handy.|Many young people are addicted to their phones.
+die Prävention|prevention||Gesundheit|Prävention ist besser als Behandlung.|Prevention is better than treatment.
+die Lebensqualität|quality of life||Gesellschaft|Grünflächen erhöhen die Lebensqualität.|Green spaces increase quality of life.
+die Gentrifizierung|gentrification||Gesellschaft|Die Gentrifizierung verdrängt alte Mieter.|Gentrification is displacing long-standing tenants.
+verdrängen|to displace||Verb|Hohe Mieten verdrängen Familien aus der Innenstadt.|High rents are pushing families out of the city centre.
+die Mietpreisbremse|rent cap||Wohnen|Die Mietpreisbremse gilt in vielen Städten.|The rent cap applies in many cities.
+die Eigentumswohnung|owner-occupied flat|Eigentumswohnungen|Wohnen|Sie haben eine Eigentumswohnung gekauft.|They've bought a flat.
+das Eigenkapital|equity||Wohnen|Für den Kredit braucht man Eigenkapital.|You need equity for the loan.
+die Baufinanzierung|mortgage financing||Wohnen|Die Baufinanzierung ist wegen der Zinsen teurer geworden.|Mortgage financing has become more expensive because of interest rates.
+die Hypothek|mortgage|Hypotheken|Wohnen|Die Hypothek läuft über 25 Jahre.|The mortgage runs for 25 years.
+die Nebenkostenabrechnung|utility bill statement|Nebenkostenabrechnungen|Wohnen|Die Nebenkostenabrechnung kam mit einer Nachzahlung.|The utility statement came with an additional payment.
+die Nachzahlung|additional payment|Nachzahlungen|Wohnen|Wir müssen 300 Euro Nachzahlung leisten.|We have to pay 300 euros extra.
+die Mieterhöhung|rent increase|Mieterhöhungen|Wohnen|Die Mieterhöhung ist rechtlich zulässig.|The rent increase is legally permissible.
+der Mieterverein|tenants' association|Mietervereine|Wohnen|Der Mieterverein prüft den Vertrag.|The tenants' association checks the contract.
+die Eigenbedarfskündigung|notice for personal use|Eigenbedarfskündigungen|Wohnen|Der Vermieter hat eine Eigenbedarfskündigung geschickt.|The landlord sent a notice to end the lease for personal use.
+die Wohnungsnot|housing shortage||Wohnen|In Großstädten herrscht Wohnungsnot.|There's a housing shortage in big cities.
+#C1
+die Ambivalenz|ambivalence||Abstrakt|Die Ambivalenz der Entscheidung ist offensichtlich.|The ambivalence of the decision is obvious.
+die Diskrepanz|discrepancy|Diskrepanzen|Abstrakt|Es besteht eine Diskrepanz zwischen Theorie und Praxis.|There is a discrepancy between theory and practice.
+die Divergenz|divergence|Divergenzen|Abstrakt|Die Divergenz der Meinungen ist groß.|The divergence of opinions is great.
+die Kohärenz|coherence||Abstrakt|Dem Text fehlt es an Kohärenz.|The text lacks coherence.
+die Relevanz|relevance||Abstrakt|Die Relevanz der Studie ist umstritten.|The relevance of the study is disputed.
+die Plausibilität|plausibility||Abstrakt|Die Plausibilität der Daten wurde geprüft.|The plausibility of the data was checked.
+die Tragfähigkeit|viability||Abstrakt|Die Tragfähigkeit des Konzepts muss sich zeigen.|The viability of the concept remains to be seen.
+die Nachhaltigkeit|sustainability||Abstrakt|Nachhaltigkeit ist zu einem Modewort geworden.|Sustainability has become a buzzword.
+die Verhältnismäßigkeit|proportionality||Recht|Die Maßnahme muss die Verhältnismäßigkeit wahren.|The measure must be proportionate.
+die Rechtmäßigkeit|legality||Recht|Die Rechtmäßigkeit des Bescheids wird geprüft.|The legality of the decision is being examined.
+die Zuständigkeit|responsibility, competence|Zuständigkeiten|Behörden|Die Zuständigkeiten sind nicht klar geregelt.|Responsibilities are not clearly defined.
+die Verantwortlichkeit|accountability|Verantwortlichkeiten|Abstrakt|Die Verantwortlichkeiten müssen geklärt werden.|Accountability must be clarified.
+die Rechenschaft|account (accountability)||Abstrakt|Die Regierung muss Rechenschaft ablegen.|The government must give an account.
+die Transparenz|transparency||Abstrakt|Die Bürger fordern mehr Transparenz.|Citizens demand more transparency.
+die Glaubwürdigkeit|credibility||Abstrakt|Die Partei hat an Glaubwürdigkeit verloren.|The party has lost credibility.
+die Akzeptanz|acceptance||Abstrakt|Die Akzeptanz für Windräder ist gesunken.|Acceptance of wind turbines has fallen.
+die Resonanz|response, resonance||Abstrakt|Der Vorschlag stieß auf große Resonanz.|The proposal met with a big response.
+die Bilanz|balance sheet; assessment|Bilanzen|Abstrakt|Nach einem Jahr zieht die Ministerin Bilanz.|After a year the minister takes stock.
+die Gratwanderung|balancing act|Gratwanderungen|Abstrakt|Die Reform ist eine Gratwanderung.|The reform is a balancing act.
+die Zwickmühle|dilemma|Zwickmühlen|Abstrakt|Die Regierung steckt in einer Zwickmühle.|The government is caught in a dilemma.
+der Spielraum|scope, leeway|Spielräume|Abstrakt|Der finanzielle Spielraum ist gering.|The financial leeway is small.
+die Weichenstellung|setting the course|Weichenstellungen|Abstrakt|Die Wahl ist eine wichtige Weichenstellung.|The election is an important point of decision.
+der Meilenstein|milestone|Meilensteine|Abstrakt|Das Gesetz ist ein Meilenstein.|The law is a milestone.
+der Durchbruch|breakthrough|Durchbrüche|Abstrakt|Den Forschern ist ein Durchbruch gelungen.|The researchers have achieved a breakthrough.
+der Rückschlag|setback|Rückschläge|Abstrakt|Das Urteil ist ein Rückschlag für die Regierung.|The ruling is a setback for the government.
+die Kehrtwende|U-turn|Kehrtwenden|Abstrakt|Die Partei vollzog eine Kehrtwende.|The party made a U-turn.
+der Paradigmenwechsel|paradigm shift|Paradigmenwechsel|Abstrakt|Die Energiewende ist ein Paradigmenwechsel.|The energy transition is a paradigm shift.
+die Stoßrichtung|thrust, direction||Abstrakt|Die Stoßrichtung der Reform ist richtig.|The thrust of the reform is right.
+die Begleiterscheinung|side effect, concomitant|Begleiterscheinungen|Abstrakt|Stress ist eine Begleiterscheinung des Erfolgs.|Stress is a side effect of success.
+die Kehrseite der Medaille|the other side of the coin||Abstrakt|Die Kehrseite der Medaille sind höhere Preise.|The other side of the coin is higher prices.
+die Schattenseite|downside|Schattenseiten|Abstrakt|Der Tourismus hat auch Schattenseiten.|Tourism also has its downsides.
+die Tragweite|implications, scope||Abstrakt|Die Tragweite der Entscheidung ist enorm.|The implications of the decision are enormous.
+abzeichnen (sich)|to become apparent||Verb|Es zeichnet sich ein Kompromiss ab.|A compromise is emerging.
+anregen|to stimulate, to suggest||Verb|Der Artikel regt zum Nachdenken an.|The article makes you think.
+anstreben|to aim for||Verb|Die Firma strebt Klimaneutralität an.|The company is aiming for climate neutrality.
+aufwerfen|to raise (a question)||Verb|Das wirft neue Fragen auf.|That raises new questions.
+ausloten|to sound out||Verb|Wir müssen die Möglichkeiten ausloten.|We have to sound out the possibilities.
+beimessen|to attach (importance)||Verb|Man sollte dem Ergebnis nicht zu viel Bedeutung beimessen.|One shouldn't attach too much importance to the result.
+bekunden|to express, to declare||Verb|Mehrere Firmen haben Interesse bekundet.|Several companies have expressed interest.
+bemängeln|to criticise||Verb|Der Prüfer bemängelte die fehlende Struktur.|The examiner criticised the lack of structure.
+beanstanden|to object to||Verb|Der Kunde beanstandet die Qualität.|The customer complains about the quality.
+einbüßen|to lose||Verb|Die Partei hat stark an Zustimmung eingebüßt.|The party has lost a lot of support.
+eindämmen|to contain||Verb|Man versucht, die Ausbreitung einzudämmen.|They're trying to contain the spread.
+einläuten|to herald||Verb|Die Wahl läutet eine neue Ära ein.|The election heralds a new era.
+entfachen|to spark||Verb|Die Aussage hat eine Debatte entfacht.|The statement sparked a debate.
+erschweren|to make more difficult||Verb|Die Bürokratie erschwert die Integration.|Bureaucracy makes integration more difficult.
+gewährleisten|to ensure||Verb|Die Sicherheit muss gewährleistet sein.|Safety must be ensured.
+heraufbeschwören|to conjure up||Verb|Die Politik beschwört eine Krise herauf.|Politics is conjuring up a crisis.
+hervorrufen|to cause, to evoke||Verb|Die Nachricht rief große Empörung hervor.|The news caused great outrage.
+in Kauf nehmen|to accept (a downside)||Verb|Für die Sicherheit nehmen wir höhere Kosten in Kauf.|We accept higher costs for safety.
+mildern|to soften, to mitigate||Verb|Die Hilfen sollen die Folgen mildern.|The aid is intended to mitigate the consequences.
+nachkommen|to comply with||Verb|Die Firma ist ihrer Pflicht nicht nachgekommen.|The company failed to comply with its obligation.
+untergraben|to undermine||Verb|Falschmeldungen untergraben das Vertrauen.|False reports undermine trust.
+vorantreiben|to push forward||Verb|Die Regierung will die Digitalisierung vorantreiben.|The government wants to push digitalisation forward.
+wahren|to preserve, to maintain||Verb|Beide Seiten wollen das Gesicht wahren.|Both sides want to save face.
+widerlegen|to refute||Verb|Die Studie widerlegt diese Annahme.|The study refutes this assumption.
+zuspitzen (sich)|to come to a head||Verb|Der Konflikt spitzt sich zu.|The conflict is coming to a head.
+ausschlaggebend|decisive||Allgemein|Der Preis war ausschlaggebend.|The price was decisive.
+bahnbrechend|groundbreaking||Allgemein|Das war eine bahnbrechende Entdeckung.|That was a groundbreaking discovery.
+bedenklich|questionable, worrying||Allgemein|Die Entwicklung ist bedenklich.|The development is worrying.
+beträchtlich|considerable||Allgemein|Die Kosten sind beträchtlich gestiegen.|Costs have risen considerably.
+brisant|explosive (topic)||Allgemein|Das Thema ist politisch brisant.|The issue is politically explosive.
+einschneidend|drastic||Allgemein|Die Reform bringt einschneidende Veränderungen.|The reform brings drastic changes.
+folgenschwer|momentous||Allgemein|Das war ein folgenschwerer Fehler.|That was a momentous mistake.
+nachweislich|demonstrably||Allgemein|Das Medikament ist nachweislich wirksam.|The medicine is demonstrably effective.
+richtungsweisend|pioneering||Allgemein|Das Urteil ist richtungsweisend.|The ruling is pioneering.
+strittig|contentious||Allgemein|Dieser Punkt ist noch strittig.|This point is still contentious.
+tragfähig|viable||Allgemein|Wir brauchen eine tragfähige Lösung.|We need a viable solution.
+unumstritten|undisputed||Allgemein|Ihre Kompetenz ist unumstritten.|Her competence is undisputed.
+vorrangig|primarily, priority||Allgemein|Vorrangig geht es um die Kosten.|It's primarily about the costs.
+weitreichend|far-reaching||Allgemein|Die Entscheidung hat weitreichende Folgen.|The decision has far-reaching consequences.
+wegweisend|groundbreaking, pointing the way||Allgemein|Das Projekt gilt als wegweisend.|The project is considered groundbreaking.
+zweckmäßig|expedient, practical||Allgemein|Diese Lösung ist zweckmäßig.|This solution is practical.
+#C2
+die Ägide|aegis||Abstrakt|Unter der Ägide der UNO wurde verhandelt.|Negotiations took place under the aegis of the UN.
+die Chimäre|chimera, illusion|Chimären|Abstrakt|Vollbeschäftigung ist eine Chimäre.|Full employment is a chimera.
+die Crux|crux||Abstrakt|Die Crux liegt in der Finanzierung.|The crux lies in the financing.
+die Dichotomie|dichotomy|Dichotomien|Abstrakt|Die Dichotomie von Stadt und Land ist zu einfach.|The dichotomy of city and country is too simple.
+das Kalkül|calculation||Abstrakt|Hinter der Entscheidung steckt politisches Kalkül.|There's political calculation behind the decision.
+der Konnex|connection||Abstrakt|Ein Konnex zwischen beiden Ereignissen ist nicht erkennbar.|No connection between the two events is discernible.
+die Maxime|maxim|Maximen|Abstrakt|Ihre Maxime lautet: Ehrlichkeit vor Erfolg.|Her maxim is: honesty before success.
+das Momentum|momentum||Abstrakt|Die Bewegung hat an Momentum gewonnen.|The movement has gained momentum.
+die Quintessenz|quintessence||Abstrakt|Die Quintessenz des Buches ist einfach.|The quintessence of the book is simple.
+die Usance|custom, practice|Usancen|Abstrakt|Das entspricht den Usancen der Branche.|That corresponds to the customs of the industry.
+die Vehemenz|vehemence||Abstrakt|Mit großer Vehemenz wies er die Vorwürfe zurück.|He rejected the accusations with great vehemence.
+die Zäsur|caesura, turning point|Zäsuren|Abstrakt|Die Pandemie war eine Zäsur.|The pandemic was a turning point.
+ad absurdum führen|to reduce to absurdity||Redewendungen|Diese Regel führt sich selbst ad absurdum.|This rule reduces itself to absurdity.
+auf den Prüfstand stellen|to put to the test||Redewendungen|Die Regierung stellt die Subventionen auf den Prüfstand.|The government is reviewing the subsidies.
+das Kind mit dem Bade ausschütten|to throw the baby out with the bathwater||Redewendungen|Mit dem Verbot schüttet man das Kind mit dem Bade aus.|The ban throws the baby out with the bathwater.
+die Gunst der Stunde nutzen|to seize the moment||Redewendungen|Sie nutzte die Gunst der Stunde.|She seized the moment.
+ins Hintertreffen geraten|to fall behind||Redewendungen|Europa droht technologisch ins Hintertreffen zu geraten.|Europe is in danger of falling behind technologically.
+sich ein Herz fassen|to pluck up courage||Redewendungen|Endlich fasste er sich ein Herz und fragte sie.|He finally plucked up courage and asked her.
+von der Hand weisen|to dismiss||Redewendungen|Das Argument ist nicht von der Hand zu weisen.|The argument cannot be dismissed.
+zum Tragen kommen|to come into effect||Redewendungen|Die Vorteile kommen erst langfristig zum Tragen.|The advantages only come into effect in the long term.
+eloquent|eloquent||Allgemein|Sie ist eine eloquente Rednerin.|She is an eloquent speaker.
+lakonisch|laconic||Allgemein|Seine Antwort war lakonisch: „Mal sehen.“|His answer was laconic: "We'll see."
+opportun|opportune||Allgemein|Es erschien ihm nicht opportun, sich zu äußern.|It didn't seem opportune to him to comment.
+perfide|perfidious||Allgemein|Das ist eine perfide Strategie.|That is a perfidious strategy.
+salopp|casual, sloppy||Allgemein|Salopp formuliert: Das war Mist.|To put it casually: that was rubbish.
+stringent|stringent, coherent||Allgemein|Die Argumentation ist stringent.|The argument is coherent.

@@ -4,90 +4,8 @@
   "use strict";
   const { esc } = H;
   const V = (window.Views = window.Views || {});
-  const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
-  const START_LESSON = { A1: 1, A2: 13, B1: 25, B2: 43, C1: 51, C2: 57 };
 
-  /* ---------------- 1. Placement test ---------------- */
-  const poolFor = (lv) => Object.values(Engine.GEN).filter((g) => g.level === lv && g.id !== "satzbau").map((g) => g.id);
-
-  V.placement = (el, [mode]) => {
-    if (mode !== "go") {
-      el.innerHTML = `<h2 class="page-title">Placement test</h2>
-        <section class="card"><p>Not sure where to start? Answer about 20 questions and the app finds your level.</p>
-        <ul class="plain small">
-          <li>The test <b>adapts</b>: two right answers in a row and it gets harder, two wrong and it gets easier.</li>
-          <li>It takes 5–10 minutes. Don't guess – “I don't know” is a useful answer here.</li>
-          <li>At the end you get a recommended starting lesson and your weakest topics. Nothing is deleted; you can still open any lesson.</li>
-        </ul>
-        <div class="row"><button class="btn sign" data-go="placement/go">Start the test</button><button class="btn ghost" data-go="path">Back to the course</button></div></section>`;
-      return;
-    }
-    const TOTAL = 20;
-    let lvI = 1, streakOk = 0, streakBad = 0, i = 0;
-    const log = [];
-    const wrap = document.createElement("div");
-    el.innerHTML = `<h2 class="page-title">Placement test</h2>`;
-    el.appendChild(wrap);
-    const step = () => {
-      if (i >= TOTAL) return finish();
-      const lv = LEVELS[lvI];
-      const pool = poolFor(lv);
-      const item = Engine.generate(H.pick(pool.length ? pool : poolFor("A2")));
-      wrap.innerHTML = `<div class="sess-head"><span class="sess-title">Question ${i + 1}/${TOTAL}</span><span>${UI.levelDot(lv)}</span></div>
-        <div class="pbar"><span style="width:${(i / TOTAL) * 100}%"></span></div><div class="q-host"></div>
-        <div class="row"><button class="btn ghost sm pskip">I don't know</button></div>`;
-      const host = wrap.querySelector(".q-host");
-      const record = (ok) => {
-        log.push({ lv, gen: item.gen || item.topic, ok });
-        if (ok) { streakOk++; streakBad = 0; if (streakOk >= 2 && lvI < 5) { lvI++; streakOk = 0; } }
-        else { streakBad++; streakOk = 0; if (streakBad >= 2 && lvI > 0) { lvI--; streakBad = 0; } }
-      };
-      UI.item(host, item, { compact: true, onDone: (ok) => record(ok), onNext: () => { i++; step(); } });
-      wrap.querySelector(".pskip").onclick = () => { record(false); i++; step(); };
-    };
-    const finish = () => {
-      const byLevel = {};
-      log.forEach((r) => { const b = (byLevel[r.lv] = byLevel[r.lv] || { n: 0, ok: 0 }); b.n++; if (r.ok) b.ok++; });
-      // highest level that was answered at least twice with 60 % correct
-      let level = "A1";
-      LEVELS.forEach((lv) => { const b = byLevel[lv]; if (b && b.n >= 2 && b.ok / b.n >= 0.6) level = lv; });
-      const weakCount = {};
-      log.filter((r) => !r.ok).forEach((r) => (weakCount[r.gen] = (weakCount[r.gen] || 0) + 1));
-      const weak = Object.entries(weakCount).sort((a, b) => b[1] - a[1]).slice(0, 4)
-        .map(([g]) => ({ id: g, title: (Engine.GEN[g] || {}).title || g }));
-      const start = START_LESSON[level];
-      const right = log.filter((r) => r.ok).length;
-      const s = Store.get();
-      s.placement = { date: Date.now(), level, right, total: log.length };
-      Store.save();
-      wrap.innerHTML = `<section class="card result lvl-${level}">
-          <p class="muted">${right}/${log.length} correct</p>
-          <p class="big">Your level looks like ${UI.levelDot(level)}</p>
-          <p>We suggest starting at <b>lesson ${start}</b>. Everything before it stays open – use it to review.</p>
-          ${weak.length ? `<p><b>Weakest topics:</b></p><div class="chips">${weak.map((w) => `<button class="chip" data-go="practice/${w.id}">${esc(w.title)}</button>`).join("")}</div>` : ""}
-          <div class="row"><button class="btn sign setl">Start at lesson ${start}</button><button class="btn ghost" data-go="placement/go">Test again</button><button class="btn ghost" data-go="path">Just show the course</button></div>
-          <p class="muted small">A placement test is a guide, not a certificate. If lesson ${start} feels too hard, start earlier – the course is free to move around in.</p>
-        </section>`;
-      wrap.querySelector(".setl").onclick = () => {
-        const st = Store.get();
-        for (let n = 1; n < start; n++) { const L = Store.lesson(n); if (!L.done) { L.done = true; L.score = Math.max(L.score || 0, 70); L.placed = true; } }
-        Store.save(); H.toast(`Lessons 1–${start - 1} marked as known.`); App.go("lesson/" + start);
-      };
-    };
-    step();
-  };
-
-  /* ---------------- 2. Pronunciation drills ---------------- */
-  const PAIRS = [
-    { s: "ü vs. u", tip: "For <b>ü</b>: say “ee” and round your lips. Indian learners often say “u” – then <i>Mütter</i> (mothers) sounds like <i>Mutter</i> (mother).", pairs: [["Mütter", "Mutter"], ["Tür", "Tour"], ["müde", "Mode"], ["fühlen", "fuhren"]] },
-    { s: "ö vs. o", tip: "For <b>ö</b>: say “e” as in <i>Bett</i> and round your lips. <i>schön</i> ≠ <i>schon</i>.", pairs: [["schön", "schon"], ["Höhle", "hohle"], ["Töne", "Tonne"], ["Söhne", "Sonne"]] },
-    { s: "ich-Laut vs. sch", tip: "<b>ch</b> after i, e, ä, ö, ü, ei, eu is soft (like a whispered “h” in “huge”) – not “sh”.", pairs: [["mich", "misch"], ["Kirche", "Kirsche"], ["Fichte", "fischte"], ["Kichern", "Kirschen"]] },
-    { s: "ach-Laut vs. k", tip: "<b>ch</b> after a, o, u, au is a scrape at the back of the mouth – not a hard k.", pairs: [["Bach", "back"], ["Loch", "Lok"], ["doch", "Dock"], ["Nacht", "nackt"]] },
-    { s: "long vs. short vowel", tip: "A doubled vowel or a vowel + h is <b>long</b>; a double consonant after it makes it <b>short</b>. This changes the word.", pairs: [["Staat", "Stadt"], ["Beet", "Bett"], ["Ofen", "offen"], ["ihn", "in"]] },
-    { s: "w vs. v", tip: "German <b>w</b> = English v (<i>Wein</i>). German <b>v</b> is usually f (<i>Vater</i>), but v in foreign words is v (<i>Vase</i>).", pairs: [["Wein", "fein"], ["wir", "vier"], ["warm", "Farm"], ["Welt", "Feld"]] },
-    { s: "z and s", tip: "<b>z</b> = ts (<i>Zeit</i>). <b>s</b> before a vowel is voiced like English z (<i>Sonne</i>), never “s” as in “sun”.", pairs: [["Zeit", "seit"], ["heizen", "heißen"], ["Zoo", "so"], ["reizen", "reisen"]] },
-    { s: "final -e and -er", tip: "Final <b>-e</b> is a weak “uh” (<i>Name</i>); final <b>-er</b> sounds almost like “a” (<i>Vater</i>) – not an Indian rolled r.", pairs: [["Name", "Namen"], ["bitte", "bitter"], ["eine", "einer"], ["leere", "Lehrer"]] },
-  ];
+  /* (The placement test lives in views7.js.) */
 
   V.pronounce = (el, [idx]) => {
     if (idx === undefined) {
@@ -141,6 +59,13 @@
 
   /* ---------------- 3. What's new ---------------- */
   const NEWS = [
+    { v: "6.1.0", date: "26 October 2026", items: [
+      "<b>Uses the whole screen on a PC</b>: two columns on the start screen, lesson parts side by side, a wider practice grid and course path.",
+      "<b>German + English everywhere</b>: every menu and button has an English label. Settings → Menu language switches between both, German only and English only.",
+      "<b>13 new lessons</b> – 73 in total, including Perfekt already in A1 and new B2, C1 and C2 topics.",
+      "<b>4,297 words</b> with example sentences; Max makes fewer false corrections.",
+      "<b>Your progress is safe</b> when lessons are added: it is now saved under a permanent lesson ID.",
+    ] },
     { v: "6.0.0", date: "26 October 2026", items: [
       "<b>New start screen “Heute”</b>: one big button always shows your best next step. Daily goal ring, streak, week view.",
       "<b>Streak freezes</b>: every 7 days in a row earns a freeze (max. 2). A missed day no longer wipes out your streak.",

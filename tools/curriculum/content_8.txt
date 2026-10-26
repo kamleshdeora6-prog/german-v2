@@ -8,7 +8,7 @@ Warnsignale für Fehlgriffe: Idiome in Sachtexten, Amtsdeutsch in privaten Mails
 Sicher zwischen Situationen wechseln, Nuancen erkennen, Texte stilistisch überarbeiten.
 #table
 Umgangssprachlich|Neutral|Gehoben / formell
-Das geht nicht klar.|Das ist nicht in Ordnung.|Dies ist nicht hinnehmbar.
+Das geht gar nicht.|Das ist nicht in Ordnung.|Dies ist nicht hinnehmbar.
 Ich meld mich.|Ich melde mich.|Ich werde mich mit Ihnen in Verbindung setzen.
 Das kostet 'ne Stange Geld.|Das ist teuer.|Damit sind erhebliche Kosten verbunden.
 Keine Ahnung.|Das weiß ich nicht.|Hierzu liegen mir keine Informationen vor.

@@ -20,7 +20,7 @@
   const DEFAULTS = () => ({
     v: 2, created: Date.now(), xp: 0, streak: { count: 0, last: "" }, days: {},
     lessons: {}, topics: {}, srs: {}, chat: [], exams: [], mistakes: [],
-    settings: { theme: "auto", rate: 0.9, voice: "", goal: 50, sound: true, haptics: true, tone: "neutral", unlockAll: false, showEn: true, aiOnline: false, aiKey: "", aiModel: "claude-haiku-4-5-20251001", onboarded: false },
+    settings: { theme: "auto", rate: 0.9, voice: "", goal: 50, sound: true, haptics: true, tone: "neutral", labels: "both", textSize: "m", unlockAll: false, showEn: true, aiOnline: false, aiKey: "", aiModel: "claude-haiku-4-5-20251001", onboarded: false },
   });
 
   let state = null;
@@ -50,6 +50,17 @@
     listeners.forEach((f) => f(state));
   }
   function flush() { clearTimeout(saveT); if (state) try { localStorage.setItem(keyOf(profiles.active), JSON.stringify(state)); } catch (e) {} }
+  /* Course order. A lesson's number n is its permanent ID; pos is its place in the course. */
+  const CL = () => (window.DC && DC.curriculum) || [];
+  const Course = (window.Course = {
+    byN: (n) => CL().find((l) => l.n === +n),
+    pos: (n) => { const l = Course.byN(n); return l ? l.pos || CL().indexOf(l) + 1 : 0; },
+    prev: (n) => { const i = CL().findIndex((l) => l.n === +n); return i > 0 ? CL()[i - 1] : null; },
+    next: (n) => { const i = CL().findIndex((l) => l.n === +n); return i >= 0 && i < CL().length - 1 ? CL()[i + 1] : null; },
+    first: (lv) => CL().find((l) => l.level === lv),
+    last: (lv) => CL().filter((l) => l.level === lv).pop(),
+    before: (a, b) => Course.pos(a) < Course.pos(b),
+  });
   const Store = {
     get: () => state || load(),
     /* ----- local profiles: every learner on this device gets separate progress ----- */
@@ -94,7 +105,7 @@
     },
     mistake(m) { const s = Store.get(); s.mistakes.unshift(Object.assign({ t: Date.now() }, m)); s.mistakes = s.mistakes.slice(0, 120); save(); },
     lesson(n) { const s = Store.get(); return (s.lessons[n] = s.lessons[n] || { read: false, score: 0, done: false, tasks: {}, exam: {} }); },
-    unlocked(n) { const s = Store.get(); return s.settings.unlockAll || n === 1 || !!(s.lessons[n - 1] && s.lessons[n - 1].done); },
+    unlocked(n) { const s = Store.get(); const p = Course.prev(n); return s.settings.unlockAll || !p || !!(s.lessons[p.n] && s.lessons[p.n].done); },
     export() { return JSON.stringify(Object.assign({}, Store.get(), { profileName: Store.name() }), null, 1); },
     import(txt) { const d = JSON.parse(txt); if (!d || typeof d !== "object" || !("xp" in d)) throw new Error("This file is not a Deutsch Coach backup."); const nm = d.profileName; delete d.profileName; state = deepMerge(DEFAULTS(), d); if (nm && !Store.name()) Store.setName(nm); save(); },
     reset() { state = DEFAULTS(); save(); },
@@ -280,6 +291,8 @@
     },
     genderClass(de) { const m = /^(der|die|das)\s/i.exec(de || ""); return m ? "g-" + { der: "m", die: "f", das: "n" }[m[1].toLowerCase()] : ""; },
     fmtDate: (t) => new Date(t).toLocaleDateString(),
+    /* bilingual label: German word + English help underneath (Settings → Menu language) */
+    bi: (de, en, cls = "") => `<span class="bi ${cls}"><span class="de-l">${de}</span><span class="en-l">${en}</span></span>`,
   };
 
   window.addEventListener("pagehide", flush);

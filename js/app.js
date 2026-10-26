@@ -3,7 +3,7 @@
   "use strict";
   const ROUTES = { home: "home", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more", readexam: "readexam", write: "write", notes: "notes", translate: "translate", about: "about", placement: "placement", pronounce: "pronounce", news: "news", plan: "plan", daily: "daily", weak: "weak", refresh: "refresh", resources: "resources" };
   const TAB_OF = { home: "home", path: "path", lesson: "path", practice: "practice", vocab: "practice", listen: "practice", speak: "practice", pronounce: "practice", tutor: "tutor", daily: "home", plan: "more", weak: "practice", refresh: "path" };
-  const App = (window.App = { version: "6.0.0", updated: "26 October 2026", author: "Zombieland", pendingAsk: null });
+  const App = (window.App = { version: "6.1.0", updated: "26 October 2026", author: "Zombieland", pendingAsk: null });
   /* Where problem reports go. Put an email address here to offer email as well. */
   App.contact = { github: "https://github.com/kamleshdeora6-prog/german-v2", email: "" };
   App.report = (ctx) => {
@@ -100,7 +100,7 @@
   };
   App.contextLabel = () => {
     const r = (App.lastRoute || "").split("/");
-    if (r[0] === "lesson") { const l = DC.curriculum[+r[1] - 1]; return l ? `you're on lesson ${l.n}: ${l.title}` : ""; }
+    if (r[0] === "lesson") { const l = Course.byN(r[1]); return l ? `you're on lesson ${l.pos}: ${l.title}` : ""; }
     if (r[0] === "practice") return r[1] ? `you're practising ${(Engine.GEN[r[1]] || {}).title || r[1]}` : "you're practising";
     if (r[0] === "write") return "you're writing";
     if (r[0] === "readexam") return "you're in the reading exam";
@@ -114,6 +114,7 @@
     const r = document.documentElement;
     r.dataset.theme = t === "paper" ? "paper" : dark ? "dark" : "light";
     r.dataset.size = st.textSize || "m";
+    r.dataset.labels = st.labels || "both";   // menu language: both | de | en
     const m = document.querySelector('meta[name="theme-color"]');
     if (m) m.content = t === "paper" ? "#F6F1E7" : dark ? "#0F1A21" : "#1C2B36";
   };
@@ -183,16 +184,16 @@
     let goal = 50, start = 1, tone = "neutral";
     const draw = (step) => {
       const dots = `<div class="obdots">${[1, 2, 3].map((i) => `<i class="${i <= step ? "on" : ""}"></i>`).join("")}</div>`;
-      if (step === 1) d.innerHTML = `<div class="sheet ob" role="dialog" aria-labelledby="ob-t">${dots}<div class="ob-hero">🇩🇪</div><h2 id="ob-t">Willkommen!</h2>
+      if (step === 1) d.innerHTML = `<div class="sheet ob" role="dialog" aria-labelledby="ob-t">${dots}<div class="ob-hero">🇩🇪</div><h2 id="ob-t">Willkommen! <span class="muted small">Welcome!</span></h2>
         <p>German from A1 to C2 in short daily steps. Every answer tells you <b>why</b>.</p>
         <label class="namebox">What should we call you? <input class="obname" maxlength="30" autocomplete="given-name" placeholder="Your name" value="${H.esc(Store.name())}"></label>
-        <button class="btn sign big-btn ob-next">Weiter</button></div>`;
+        <button class="btn sign big-btn ob-next">Weiter · Next</button></div>`;
       if (step === 2) d.innerHTML = `<div class="sheet ob" role="dialog" aria-labelledby="ob-t">${dots}<h2 id="ob-t">How much a day?</h2>
         <p class="muted">Small and daily beats big and rare. You can change this any time.</p>
-        <div class="col goalpick">${[[20, "Locker", "5 min"], [50, "Normal", "10 min"], [100, "Ernsthaft", "20 min"], [150, "Intensiv", "30 min"]].map(([g, t, m]) => `<button class="pickrow ${g === goal ? "on" : ""}" data-goal="${g}"><b>${t}</b><span>${m} a day</span></button>`).join("")}</div>
+        <div class="col goalpick">${[[20, "Locker", "Casual", "5 min"], [50, "Normal", "Regular", "10 min"], [100, "Ernsthaft", "Serious", "20 min"], [150, "Intensiv", "Intense", "30 min"]].map(([g, t, te, m]) => `<button class="pickrow ${g === goal ? "on" : ""}" data-goal="${g}"><b>${t} <span class="muted small">· ${te}</span></b><span>${m} a day</span></button>`).join("")}</div>
         <p class="muted small" style="margin-top:14px">Coach style</p>
-        <div class="seg tonepick">${[["freundlich", "Freundlich"], ["neutral", "Neutral"], ["streng", "Streng"]].map(([v, t]) => `<button class="${v === tone ? "on" : ""}" data-tone="${v}">${t}</button>`).join("")}</div>
-        <button class="btn sign big-btn ob-next">Weiter</button></div>`;
+        <div class="seg tonepick">${[["freundlich", "Freundlich · kind"], ["neutral", "Neutral"], ["streng", "Streng · strict"]].map(([v, t]) => `<button class="${v === tone ? "on" : ""}" data-tone="${v}">${t}</button>`).join("")}</div>
+        <button class="btn sign big-btn ob-next">Weiter · Next</button></div>`;
       if (step === 3) d.innerHTML = `<div class="sheet ob" role="dialog" aria-labelledby="ob-t">${dots}<h2 id="ob-t">Where do you start?</h2>
         <div class="col">${[[1, "I'm new to German", "Start at lesson 1 (A1)"], [0, "I know some German", "15-minute placement test"], [13, "I finished A1", "Start at A2"], [25, "I finished A2", "Start at B1"], [43, "I finished B1", "Start at B2"], [51, "I finished B2", "Start at C1"]].map(([n, t, sub]) => `<button class="pickrow" data-lvl="${n}"><b>${t}</b><span>${sub}</span></button>`).join("")}</div>
         <p class="muted small credit">${App.credit()}</p></div>`;
@@ -207,7 +208,7 @@
       d.querySelectorAll("[data-lvl]").forEach((b) => (b.onclick = () => {
         const n = +b.dataset.lvl; const s = Store.get();
         s.settings.goal = goal; s.settings.tone = tone;
-        for (let i = 1; i < n; i++) { const l = Store.lesson(i); l.done = true; l.read = true; l.score = l.score || 70; }
+        DC.curriculum.filter((x) => n > 1 && Course.before(x.n, n)).forEach((x) => { const l = Store.lesson(x.n); l.done = true; l.read = true; l.score = l.score || 70; });
         s.settings.onboarded = true; Store.save(); d.remove();
         App.go(n === 0 ? "placement" : `lesson/${Math.max(1, n)}`);
       }));

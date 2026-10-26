@@ -1,7 +1,7 @@
 # Deutsch Coach
 
 **Learn German from A1 to C2 — free, offline, and every answer explained.**
-Created by **Zombieland** · version 6.0.0 · last updated 26 October 2026
+Created by **Zombieland** · version 6.1.0 · last updated 26 October 2026
 
 **Open the app:** https://kamleshdeora6-prog.github.io/german-v2/
 
@@ -13,9 +13,9 @@ Created by **Zombieland** · version 6.0.0 · last updated 26 October 2026
 
 A complete German course that runs in the browser, installs like an app, and works without internet after the first visit.
 
-- **60 lessons** from A1 to C2, in a fixed order: A1 (1–12), A2 (13–24), B1 (25–42), B2 (43–50), C1 (51–56), C2 (57–60). Each lesson has five parts: *Learn* (rule, table, 20 examples with audio, 30 words), *Read* (two texts with tap-to-translate and a listening dialogue), *Practice* (20 exercises plus unlimited new ones), *Exam* (10 exam-style questions) and *Speak* (a picture, prompts, timer, speech recognition).
+- **73 lessons** from A1 to C2, in a fixed order: A1 (1–13), A2 (14–25), B1 (26–43), B2 (44–57), C1 (58–67), C2 (68–73). Progress is saved under a permanent lesson ID, so new lessons can be added anywhere without breaking anyone's progress. Each lesson has five parts: *Learn* (rule, table, 20 examples with audio, 30 words), *Read* (two texts with tap-to-translate and a listening dialogue), *Practice* (20 exercises plus unlimited new ones), *Exam* (10 exam-style questions) and *Speak* (a picture, prompts, timer, speech recognition).
 - **Practice that explains itself.** 53 generators build fresh sentences every time and say *why* the answer is right and *why* each wrong option is wrong. Word-order puzzles accept every correct German order and challenge you to find another.
-- **3,500+ words** with level and topic, learned with spaced repetition (flashcards that come back just before you forget them).
+- **4,200+ words** with level and topic, learned with spaced repetition (flashcards that come back just before you forget them).
 - **Max, the offline tutor.** Checks your sentences (word order, verb endings, cases after verbs, prepositions and possessives, articles, modal verbs, negation, capitalisation), explains grammar, conjugates verbs and quizzes you. He doesn't catch everything and says so. With your own Anthropic API key he can also answer open questions.
 - **Translate tab.** Offline meanings, article and conjugation tables, word-by-word breakdowns and a grammar check — plus one-tap links to DeepL, Google Translate, Reverso, LEO, Linguee, dict.cc, Duden and Wiktionary.
 - **Exam training.** Reading exam sets (A2–C1) with reasons for every answer, 10 writing tasks (A2–C2) with phrase banks, timer and model texts, a mock test, speaking practice and 183 *Leben in Deutschland* practice questions.
@@ -25,6 +25,8 @@ A complete German course that runs in the browser, installs like an app, and wor
 - **Practice day, weak topics and a refresher** for anyone coming back after a break.
 - **Frau Weber**, the strict teacher's voice (switchable: streng / neutral / freundlich).
 - **Pronunciation drills.** Eight sound pairs (ü/u, ö/o, ich/sch, long vs. short vowels, w/v, z/s …) with listening tests and a microphone check.
+- **Uses the whole screen.** On a PC the start screen, lessons, practice grid and course path spread over two columns; on phones everything stays in one column.
+- **German + English labels.** Every menu item shows both languages; Settings → Menu language switches to German only or English only.
 - **Report a problem.** Every question has a ⚑ button that opens a pre-filled report.
 
 ## Documentation

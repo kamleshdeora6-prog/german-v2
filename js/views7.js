@@ -5,8 +5,11 @@
   const { esc } = H;
   const V = (window.Views = window.Views || {});
   const LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
-  const START_LESSON = { A1: 1, A2: 13, B1: 25, B2: 43, C1: 51, C2: 57 };
-  const LAST_LESSON = { A1: 12, A2: 24, B1: 42, B2: 50, C1: 56, C2: 60 };
+  /* Course positions (not lesson IDs) of the first and last lesson of every level. */
+  const START_LESSON = new Proxy({}, { get: (_, lv) => (Course.first(lv) || {}).pos || 1 });
+  const LAST_LESSON = new Proxy({}, { get: (_, lv) => (Course.last(lv) || {}).pos || DC.curriculum.length });
+  const atPos = (p) => DC.curriculum[Math.max(0, Math.min(DC.curriculum.length, p) - 1)];
+  const HOURS_PER_LESSON = { A1: 3, A2: 4, B1: 5, B2: 7, C1: 9, C2: 10 };   // v6 lessons are twice as long; includes review
   const STAGE_LEVEL = { 1: "A1", 2: "A1", 3: "A2", 4: "A2", 5: "B1", 6: "B1", 7: "B2", 8: "B2", 9: "C1", 10: "C1", 11: "C2", 12: "C2" };
   const day = 864e5;
 
@@ -82,7 +85,7 @@
       wrap.innerHTML = `<section class="card result lvl-${level}">
           <p class="muted">${log.length - wrong}/${log.length} correct · you stopped in stage ${top}</p>
           <p class="big">Your level: ${UI.levelDot(level)} <b>${level}.${sub}</b></p>
-          <p>Start at <b>lesson ${start}</b>. Everything before it stays open for review.</p>
+          <p>Start at <b>lesson ${start}</b> (${esc(atPos(start).title)}). Everything before it stays open for review.</p>
           ${weak.length ? `<p><b>Fix these first:</b></p><div class="chips">${weak.map((t) => `<span class="chip">${esc(t)}</span>`).join("")}</div>` : ""}
           <div class="row"><button class="btn sign plan">Make a plan from here</button><button class="btn ghost setl">Start at lesson ${start}</button><button class="btn ghost" data-go="placement/go">Test again</button></div>
         </section>
@@ -91,8 +94,8 @@
       wrap.querySelector(".plan").onclick = () => App.go("plan");
       wrap.querySelector(".setl").onclick = () => {
         const st = Store.get();
-        for (let n = 1; n < start; n++) { const L = Store.lesson(n); if (!L.done) { L.done = true; L.score = Math.max(L.score || 0, 70); L.placed = true; } }
-        Store.save(); App.dropCache(); App.go("lesson/" + start);
+        for (let p = 1; p < start; p++) { const L = Store.lesson(atPos(p).n); if (!L.done) { L.done = true; L.score = Math.max(L.score || 0, 70); L.placed = true; } }
+        Store.save(); App.dropCache(); App.go("lesson/" + atPos(start).n);
       };
     };
     step();
@@ -102,7 +105,7 @@
   const planMath = (fromLesson, level, days) => {
     const target = LAST_LESSON[level];
     const lessons = Math.max(1, target - fromLesson + 1);
-    const hoursNeeded = Math.round(lessons * 2.2);                 // ≈ 2.2 h per lesson incl. review
+    const hoursNeeded = Math.round(DC.curriculum.filter((l) => l.pos >= fromLesson && l.pos <= target).reduce((a, l) => a + (HOURS_PER_LESSON[l.level] || 5), 0));
     const perDay = lessons / Math.max(1, days);
     const covered = LEVELS.slice(0, LEVELS.indexOf(level) + 1).filter((lv) => LAST_LESSON[lv] >= fromLesson);
     const wordPool = DC.vocab.filter((v) => covered.includes(v.level)).length * (lessons / Math.max(1, LAST_LESSON[level] - START_LESSON[covered[0] || level] + 1));
@@ -170,14 +173,14 @@
   const nextLevel = (l) => LEVELS[Math.min(LEVELS.length - 1, LEVELS.indexOf(l) + 1)];
 
   function renderPlan(el, p) {
-    const doneLessons = DC.curriculum.filter((l) => l.n >= p.from && l.n <= p.target && Store.lesson(l.n).done).length;
+    const doneLessons = DC.curriculum.filter((l) => l.pos >= p.from && l.pos <= p.target && Store.lesson(l.n).done).length;
     const total = p.target - p.from + 1;
     const elapsed = Math.max(0, Math.round((Date.now() - p.created) / day));
     const left = Math.max(0, Math.round((p.deadline - Date.now()) / day));
     const shouldHave = Math.min(total, Math.round((elapsed / Math.max(1, elapsed + left)) * total));
     const diff = doneLessons - shouldHave;
     const perDay = left > 0 ? Math.max(0.2, (total - doneLessons) / left) : 0;
-    const next = DC.curriculum.find((l) => l.n >= p.from && !Store.lesson(l.n).done) || null;
+    const next = DC.curriculum.find((l) => l.pos >= p.from && !Store.lesson(l.n).done) || null;
     el.innerHTML = `<h2 class="page-title">Your plan</h2>
       <section class="card lvl-${p.level}">
         <p class="big">${UI.levelDot(p.level)} by ${new Date(p.deadline).toLocaleDateString()}</p>
@@ -186,7 +189,7 @@
         ${diff < -1 ? Weber.html("behind", { n: -diff, weeks: Math.max(1, Math.round(elapsed / 7)) }) : diff > 1 ? Weber.html("ahead", { n: diff }) : ""}
       </section>
       <section class="card"><h3>Today</h3>
-        ${next ? `<button class="tile wide lvl-${next.level}" data-go="lesson/${next.n}"><b>Lesson ${next.n}: ${esc(next.title)}</b><span>${esc(next.theme)}</span></button>` : "<p>All lessons in this plan are done. Set a new goal.</p>"}
+        ${next ? `<button class="tile wide lvl-${next.level}" data-go="lesson/${next.n}"><b>Lesson ${next.pos}: ${esc(next.title)}</b><span>${esc(next.theme)}</span></button>` : "<p>All lessons in this plan are done. Set a new goal.</p>"}
         <div class="row"><button class="btn sign" data-go="daily">Start today's session</button><button class="btn ghost" data-go="weak">Weak topics</button></div>
       </section>
       <section class="card"><h3>Change the plan</h3>
@@ -200,8 +203,8 @@
     const today = Store.today();
     const p = activePlan();
     const plan = [];
-    const next = DC.curriculum.find((l) => (!p || l.n >= p.from) && !Store.lesson(l.n).done);
-    if (next) plan.push({ k: "lesson", label: `Lesson ${next.n}: ${next.title}`, go: "lesson/" + next.n, mins: 15 });
+    const next = DC.curriculum.find((l) => (!p || l.pos >= p.from) && !Store.lesson(l.n).done);
+    if (next) plan.push({ k: "lesson", label: `Lesson ${next.pos}: ${next.title}`, go: "lesson/" + next.n, mins: 15 });
     plan.push({ k: "words", label: `Word review (${(V.dueCount ? V.dueCount() : "")} due)`, go: "vocab/review", mins: 8 });
     plan.push({ k: "drill", label: "Sentence drills – 10 items", go: "practice/smart", mins: 8 });
     if ((s.weakTopics || []).length) plan.push({ k: "weak", label: "Weak topics", go: "weak", mins: 6 });
@@ -269,7 +272,7 @@
     const s = Store.get();
     if (!act) {
       el.innerHTML = `<h2 class="page-title">Refresher</h2>
-        <section class="card"><p>For everyone who did a course, then had a gap. You don't need 60 lessons again – you need to know what fell out.</p>
+        <section class="card"><p>For everyone who did a course, then had a gap. You don't need the whole course again – you need to know what fell out.</p>
         <ol class="plain small"><li>A 20-question check at the level you reached.</li><li>A ranked <b>must-do list</b>: the rules that carry the most weight in exams and daily life.</li><li>Short drills, in order, until each one holds.</li></ol>
         <label>What level did you reach? <select class="lv">${LEVELS.map((l) => `<option ${l === "B1" ? "selected" : ""}>${l}</option>`).join("")}</select></label>
         <div class="row"><button class="btn sign start">Start the check</button></div></section>

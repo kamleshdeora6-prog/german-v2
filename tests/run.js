@@ -17,7 +17,9 @@ const ok = (cond, msg) => { if (!cond) { failed++; console.log("  ✗ " + msg); 
 const section = (t) => console.log("\n" + t);
 
 section("1. Course data");
-ok(DC.curriculum.every((l, i) => l.n === i + 1), "lessons are numbered 1..n without gaps");
+ok(DC.curriculum.every((l, i) => l.pos === i + 1), "course positions run 1..n without gaps");
+ok(new Set(DC.curriculum.map((l) => l.n)).size === DC.curriculum.length, "lesson IDs are unique");
+ok(DC.curriculum.filter((l) => l.n <= 60).every((l, i, a) => i === 0 || a[i - 1].n < l.n), "original lessons 1–60 keep their order (saved progress)");
 DC.curriculum.forEach((l) => {
   ["examples", "tasks"].forEach((k) => ok(l[k].length >= 10, `lesson ${l.n}: ${k} has ${l[k].length}, expected at least 10`));
   ok(l.exam.length === 10, `lesson ${l.n}: exam has ${l.exam.length}, expected 10`);
@@ -26,7 +28,7 @@ DC.curriculum.forEach((l) => {
   const vk = l.vocab.map((v) => v.de.split(",")[0].toLowerCase()); ok(vk.length === new Set(vk).size, `lesson ${l.n}: duplicate word in lesson vocabulary`);
   ok(l.reading && l.reading.length > 80, `lesson ${l.n}: reading text too short`);
   ok(DC.scenes[l.scene], `lesson ${l.n}: picture "${l.scene}" missing`);
-  l.rec.forEach((r) => ok(r < l.n, `lesson ${l.n}: prerequisite ${r} is not an earlier lesson`));
+  l.rec.forEach((r) => { const pr = DC.curriculum.find((x) => x.n === r); ok(pr && pr.pos < l.pos, `lesson ${l.n}: prerequisite ${r} is not an earlier lesson`); });
 });
 const keys = DC.vocab.map((v) => v.de.toLowerCase());
 ok(keys.length === new Set(keys).size, "no duplicate vocabulary entries");

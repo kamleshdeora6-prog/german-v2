@@ -1,0 +1,350 @@
+# Example sentences for A1 words (word|German|English)
+der Stadtplan|Hast du einen Stadtplan von Berlin?|Do you have a map of Berlin?
+der Durst|Ich habe großen Durst.|I'm very thirsty.
+die Liebe|Die Liebe ist das Wichtigste.|Love is the most important thing.
+der Anfang|Am Anfang war alles neu.|At the beginning everything was new.
+das Lied|Das Lied gefällt mir sehr.|I like the song a lot.
+die Kirche|Die Kirche ist sehr alt.|The church is very old.
+die Nummer|Welche Nummer hat der Bus?|What number is the bus?
+jetzt|Ich habe jetzt keine Zeit.|I don't have time now.
+immer|Er kommt immer zu spät.|He always comes late.
+nein|Nein, danke, ich möchte nichts.|No thanks, I don't want anything.
+das Baby|Das Baby schläft.|The baby is sleeping.
+der Junge|Der Junge spielt Fußball.|The boy is playing football.
+das Mädchen|Das Mädchen heißt Lea.|The girl is called Lea.
+der Enkel|Ihr Enkel ist fünf Jahre alt.|Her grandson is five years old.
+die Ehefrau|Seine Ehefrau ist Lehrerin.|His wife is a teacher.
+der Ehemann|Ihr Ehemann kocht gern.|Her husband likes cooking.
+die Hochzeit|Die Hochzeit ist im Juni.|The wedding is in June.
+die Telefonnummer|Wie ist Ihre Telefonnummer?|What is your phone number?
+die Postkarte|Ich schreibe dir eine Postkarte aus Rom.|I'm writing you a postcard from Rome.
+die Übung|Die Übung ist leicht.|The exercise is easy.
+der Unterricht|Der Unterricht beginnt um neun.|Class starts at nine.
+die Klasse|In meiner Klasse sind zwölf Leute.|There are twelve people in my class.
+das Heft|Schreib das Wort in dein Heft.|Write the word in your exercise book.
+das Papier|Hast du ein Blatt Papier?|Do you have a sheet of paper?
+die Tafel|Die Lehrerin schreibt an die Tafel.|The teacher writes on the board.
+das Wörterbuch|Ich brauche ein Wörterbuch.|I need a dictionary.
+das Dach|Auf dem Dach sitzt eine Katze.|A cat is sitting on the roof.
+der Stock|Ich wohne im dritten Stock.|I live on the third floor.
+das Badezimmer|Das Badezimmer ist links.|The bathroom is on the left.
+die Dusche|Die Dusche ist kaputt.|The shower is broken.
+das Waschbecken|Das Waschbecken ist sauber.|The sink is clean.
+der Spiegel|Im Bad hängt ein großer Spiegel.|There's a big mirror in the bathroom.
+der Herd|Der Herd ist noch heiß.|The cooker is still hot.
+der Backofen|Der Kuchen ist im Backofen.|The cake is in the oven.
+die Waschmaschine|Die Waschmaschine ist im Keller.|The washing machine is in the cellar.
+das Bier|Ein Bier, bitte!|A beer, please!
+der Wein|Möchtest du Rotwein oder Weißwein?|Would you like red wine or white wine?
+der Pfeffer|Kannst du mir bitte den Pfeffer geben?|Can you pass me the pepper, please?
+das Öl|Wir brauchen noch Öl.|We still need oil.
+das Mehl|Für den Kuchen brauche ich Mehl.|I need flour for the cake.
+die Nudel|Heute gibt es Nudeln mit Tomatensoße.|Today there's pasta with tomato sauce.
+die Banane|Die Banane ist gelb.|The banana is yellow.
+die Orange|Ich esse jeden Tag eine Orange.|I eat an orange every day.
+die Zitrone|Tee mit Zitrone, bitte.|Tea with lemon, please.
+das Hähnchen|Wir essen Hähnchen mit Reis.|We're eating chicken with rice.
+die Wurst|Er isst gern Wurst.|He likes eating sausage.
+der Schinken|Ein Brötchen mit Schinken, bitte.|A roll with ham, please.
+das Mittagessen|Was gibt es zum Mittagessen?|What's for lunch?
+das Abendessen|Um sieben gibt es Abendessen.|Dinner is at seven.
+der Nachtisch|Zum Nachtisch nehme ich ein Eis.|For dessert I'll have an ice cream.
+die Speisekarte|Kann ich bitte die Speisekarte haben?|Can I have the menu, please?
+das Trinkgeld|Wir geben zehn Prozent Trinkgeld.|We give a ten per cent tip.
+der Kellner|Der Kellner bringt das Essen.|The waiter brings the food.
+das Geschäft|Das Geschäft ist sonntags geschlossen.|The shop is closed on Sundays.
+die Bäckerei|Die Bäckerei öffnet um sechs.|The bakery opens at six.
+die Metzgerei|In der Metzgerei kaufe ich Fleisch.|I buy meat at the butcher's.
+der Cent|Das kostet neunzig Cent.|That costs ninety cents.
+die Kreditkarte|Kann ich mit Kreditkarte bezahlen?|Can I pay by credit card?
+der Rock|Sie trägt einen blauen Rock.|She is wearing a blue skirt.
+die Socke|Wo ist meine andere Socke?|Where is my other sock?
+der Hut|Der Hut ist zu groß.|The hat is too big.
+die Brille|Ich brauche eine neue Brille.|I need new glasses.
+die Tasche|Das Handy ist in meiner Tasche.|The mobile is in my bag.
+der Rucksack|Mein Rucksack ist schwer.|My backpack is heavy.
+der Körper|Sport ist gut für den Körper.|Sport is good for the body.
+das Ohr|Mein Ohr tut weh.|My ear hurts.
+der Mund|Machen Sie bitte den Mund auf.|Please open your mouth.
+der Hals|Ich habe Halsschmerzen.|I have a sore throat.
+der Arm|Er hat sich den Arm gebrochen.|He broke his arm.
+das Bein|Mein Bein tut weh.|My leg hurts.
+der Rücken|Ich habe Rückenschmerzen.|I have backache.
+der Bauch|Der Bauch tut mir weh.|My stomach hurts.
+das Herz|Das Herz schlägt schnell.|The heart is beating fast.
+die Schmerzen|Haben Sie Schmerzen?|Are you in pain?
+die Grippe|Sie hat die Grippe.|She has the flu.
+das Medikament|Nehmen Sie das Medikament zweimal am Tag.|Take the medicine twice a day.
+das Motorrad|Er fährt mit dem Motorrad zur Arbeit.|He rides his motorbike to work.
+die Straßenbahn|Die Straßenbahn kommt in fünf Minuten.|The tram is coming in five minutes.
+das Flugzeug|Das Flugzeug landet um zehn.|The plane lands at ten.
+der Flughafen|Wie komme ich zum Flughafen?|How do I get to the airport?
+der Parkplatz|Hier ist kein Parkplatz frei.|There's no free parking space here.
+die Tankstelle|Die Tankstelle ist an der Ecke.|The petrol station is on the corner.
+die Richtung|In welche Richtung muss ich gehen?|Which direction do I have to go?
+das Zelt|Wir schlafen im Zelt.|We sleep in the tent.
+die Jugendherberge|Die Jugendherberge ist billig.|The youth hostel is cheap.
+die Aussicht|Von hier hat man eine tolle Aussicht.|From here you have a great view.
+das Ausland|Sie arbeitet im Ausland.|She works abroad.
+die Insel|Wir machen Urlaub auf einer Insel.|We're on holiday on an island.
+der Fluss|Der Fluss heißt Spree.|The river is called the Spree.
+der Baum|Vor dem Haus steht ein großer Baum.|There's a big tree in front of the house.
+das Tier|Welches Tier magst du am liebsten?|Which animal do you like best?
+der Vogel|Ein Vogel singt im Garten.|A bird is singing in the garden.
+die Sonne|Die Sonne scheint.|The sun is shining.
+der Mond|Heute Nacht ist der Mond voll.|Tonight the moon is full.
+der Stern|Am Himmel sind viele Sterne.|There are many stars in the sky.
+der Himmel|Der Himmel ist blau.|The sky is blue.
+die Wolke|Heute gibt es viele Wolken.|There are lots of clouds today.
+der Schnee|Im Winter liegt hier viel Schnee.|In winter there's a lot of snow here.
+der Wind|Der Wind ist heute stark.|The wind is strong today.
+das Gewitter|Heute Abend kommt ein Gewitter.|A thunderstorm is coming this evening.
+die Temperatur|Die Temperatur ist heute 25 Grad.|The temperature today is 25 degrees.
+der Grad|Heute haben wir minus fünf Grad.|Today it is minus five degrees.
+der Frühling|Im Frühling blühen die Blumen.|In spring the flowers bloom.
+der Mittwoch|Am Mittwoch habe ich frei.|I'm free on Wednesday.
+der Donnerstag|Der Kurs ist am Donnerstag.|The course is on Thursday.
+der Februar|Der Februar ist kurz.|February is short.
+der August|Im August fahren wir ans Meer.|In August we're going to the seaside.
+der September|Die Schule beginnt im September.|School starts in September.
+der Oktober|Mein Geburtstag ist im Oktober.|My birthday is in October.
+der November|Im November ist es oft grau.|In November it's often grey.
+die Sekunde|Warte eine Sekunde!|Wait a second!
+der Feiertag|Morgen ist ein Feiertag.|Tomorrow is a public holiday.
+das Spiel|Das Spiel beginnt um acht.|The game starts at eight.
+das Schwimmbad|Wir gehen ins Schwimmbad.|We're going to the swimming pool.
+die Zeitschrift|Sie liest eine Zeitschrift.|She is reading a magazine.
+die Webseite|Die Informationen stehen auf der Webseite.|The information is on the website.
+das Passwort|Ich habe mein Passwort vergessen.|I've forgotten my password.
+der Verkäufer|Der Verkäufer ist sehr nett.|The shop assistant is very nice.
+der Ingenieur|Ravi arbeitet als Ingenieur.|Ravi works as an engineer.
+der Polizist|Der Polizist hilft uns.|The police officer helps us.
+die Krankenschwester|Die Krankenschwester misst das Fieber.|The nurse takes the temperature.
+jung|Meine Schwester ist noch jung.|My sister is still young.
+tief|Der See ist sehr tief.|The lake is very deep.
+breit|Die Straße ist breit.|The street is wide.
+dunkel|Im Winter wird es früh dunkel.|In winter it gets dark early.
+warm|Heute ist es warm.|It's warm today.
+kühl|Am Abend wird es kühl.|In the evening it gets cool.
+nass|Meine Schuhe sind nass.|My shoes are wet.
+trocken|Die Wäsche ist schon trocken.|The laundry is already dry.
+sauber|Die Küche ist sauber.|The kitchen is clean.
+schmutzig|Deine Hände sind schmutzig.|Your hands are dirty.
+arm|Die Familie ist arm.|The family is poor.
+freundlich|Die Nachbarn sind sehr freundlich.|The neighbours are very friendly.
+richtig|Die Antwort ist richtig.|The answer is right.
+falsch|Das ist leider falsch.|Unfortunately that's wrong.
+lustig|Der Film ist sehr lustig.|The film is very funny.
+böse|Bist du böse auf mich?|Are you angry with me?
+besetzt|Ist der Platz besetzt?|Is this seat taken?
+nötig|Das ist nicht nötig.|That's not necessary.
+gefährlich|Die Straße ist gefährlich.|The road is dangerous.
+fliegen|Wir fliegen nach Mumbai.|We're flying to Mumbai.
+verkaufen|Er verkauft sein Auto.|He's selling his car.
+öffnen|Kannst du bitte das Fenster öffnen?|Can you open the window, please?
+enden|Der Kurs endet im Juni.|The course ends in June.
+mögen|Ich mag keinen Fisch.|I don't like fish.
+aufstehen|Ich stehe um sieben auf.|I get up at seven.
+anfangen|Der Film fängt gleich an.|The film is about to start.
+aufräumen|Ich räume mein Zimmer auf.|I'm tidying my room.
+fernsehen|Am Abend sehen wir fern.|In the evening we watch TV.
+spazieren gehen|Wir gehen im Park spazieren.|We go for a walk in the park.
+Rad fahren|Ich fahre gern Rad.|I like cycling.
+blau|Das Meer ist blau.|The sea is blue.
+grün|Die Ampel ist grün.|The traffic light is green.
+gelb|Die Post in Deutschland ist gelb.|The post in Germany is yellow.
+schwarz|Ich trinke den Kaffee schwarz.|I drink my coffee black.
+grau|Heute ist der Himmel grau.|Today the sky is grey.
+braun|Er hat braune Augen.|He has brown eyes.
+orange|Sie trägt eine orange Jacke.|She is wearing an orange jacket.
+rosa|Das Baby hat rosa Socken.|The baby has pink socks.
+lila|Die Blumen sind lila.|The flowers are purple.
+der Finger|Ich habe mir in den Finger geschnitten.|I've cut my finger.
+das Gesicht|Wasch dir das Gesicht!|Wash your face!
+das Knie|Mein Knie tut weh.|My knee hurts.
+rennen|Die Kinder rennen in den Garten.|The children run into the garden.
+springen|Der Hund springt über den Zaun.|The dog jumps over the fence.
+riechen|Das Essen riecht gut.|The food smells good.
+singen|Sie singt im Chor.|She sings in the choir.
+lachen|Warum lachst du?|Why are you laughing?
+weinen|Das Kind weint.|The child is crying.
+malen|Paul malt ein Bild.|Paul is painting a picture.
+zeichnen|Kannst du gut zeichnen?|Can you draw well?
+zählen|Das Kind zählt bis zehn.|The child counts to ten.
+rechnen|Er rechnet schnell im Kopf.|He calculates quickly in his head.
+bügeln|Ich bügle mein Hemd.|I'm ironing my shirt.
+wütend|Der Chef ist wütend.|The boss is angry.
+froh|Ich bin froh, dass du da bist.|I'm glad you're here.
+nervös|Vor der Prüfung bin ich nervös.|Before the exam I'm nervous.
+hungrig|Nach dem Sport bin ich hungrig.|After sport I'm hungry.
+durstig|Die Kinder sind durstig.|The children are thirsty.
+hässlich|Das Haus ist ziemlich hässlich.|The house is rather ugly.
+sonnig|Morgen wird es sonnig.|Tomorrow it will be sunny.
+der Kalender|Ich schreibe den Termin in den Kalender.|I'm writing the appointment in the calendar.
+der Vormittag|Am Vormittag arbeite ich.|In the morning I work.
+der Nachmittag|Am Nachmittag gehe ich schwimmen.|In the afternoon I go swimming.
+eins|Es ist eins.|It's one o'clock.
+hundert|Das kostet hundert Euro.|That costs a hundred euros.
+tausend|Die Stadt hat zehntausend Einwohner.|The town has ten thousand inhabitants.
+die Million|Berlin hat fast vier Millionen Einwohner.|Berlin has almost four million inhabitants.
+die Gurke|Ich schneide eine Gurke für den Salat.|I'm cutting a cucumber for the salad.
+die Karotte|Kaninchen fressen gern Karotten.|Rabbits like eating carrots.
+die Erdbeere|Im Juni gibt es frische Erdbeeren.|In June there are fresh strawberries.
+das Eis|Im Sommer essen wir viel Eis.|In summer we eat a lot of ice cream.
+die Sahne|Möchtest du den Kuchen mit Sahne?|Would you like the cake with cream?
+der Kakao|Die Kinder trinken Kakao.|The children drink cocoa.
+die Tasse|Möchtest du eine Tasse Tee?|Would you like a cup of tea?
+die Schüssel|Der Salat ist in der Schüssel.|The salad is in the bowl.
+die Kanne|Die Kanne Kaffee ist leer.|The pot of coffee is empty.
+der Kuli|Kann ich mal deinen Kuli haben?|Can I borrow your pen?
+der Bleistift|Schreiben Sie mit Bleistift.|Write in pencil.
+der Drucker|Der Drucker funktioniert nicht.|The printer isn't working.
+die Kamera|Ich habe eine neue Kamera.|I have a new camera.
+das Pferd|Sie reitet ein weißes Pferd.|She rides a white horse.
+die Kuh|Die Kuh steht auf der Wiese.|The cow is standing in the meadow.
+das Schwein|Auf dem Bauernhof gibt es Schweine.|There are pigs on the farm.
+die Maus|Die Katze jagt eine Maus.|The cat is chasing a mouse.
+die Polizistin|Die Polizistin fragt nach meinem Ausweis.|The police officer asks for my ID.
+die Köchin|Meine Mutter ist eine tolle Köchin.|My mother is a great cook.
+die Verkäuferin|Die Verkäuferin hilft mir.|The shop assistant helps me.
+die Kellnerin|Die Kellnerin bringt die Rechnung.|The waitress brings the bill.
+der Friseur|Ich gehe morgen zum Friseur.|I'm going to the hairdresser tomorrow.
+der Fahrer|Der Fahrer wartet vor dem Hotel.|The driver is waiting in front of the hotel.
+der Mechaniker|Der Mechaniker repariert das Auto.|The mechanic repairs the car.
+das Zentrum|Das Hotel liegt im Zentrum.|The hotel is in the centre.
+der Zoo|Am Sonntag gehen wir in den Zoo.|On Sunday we're going to the zoo.
+die Badewanne|Das Kind sitzt in der Badewanne.|The child is sitting in the bath.
+das Kissen|Das Kissen ist sehr weich.|The pillow is very soft.
+das Handtuch|Hier ist ein frisches Handtuch.|Here is a fresh towel.
+der Erwachsene|Der Eintritt für Erwachsene kostet zehn Euro.|Admission for adults costs ten euros.
+später|Ich rufe dich später an.|I'll call you later.
+rechts|Die Post ist rechts.|The post office is on the right.
+oben|Das Bad ist oben.|The bathroom is upstairs.
+unten|Die Küche ist unten.|The kitchen is downstairs.
+vorne|Bitte steigen Sie vorne ein.|Please get on at the front.
+hinten|Hinten im Bus ist noch Platz.|There's still room at the back of the bus.
+die Unterwäsche|Ich packe Unterwäsche für eine Woche ein.|I'm packing underwear for a week.
+der Regenschirm|Nimm einen Regenschirm mit!|Take an umbrella with you!
+die Sonnenbrille|Wo ist meine Sonnenbrille?|Where are my sunglasses?
+die Hausschuhe|Zu Hause trage ich Hausschuhe.|At home I wear slippers.
+der Turnschuh|Ich brauche neue Turnschuhe.|I need new trainers.
+das Frühstücksei|Am Sonntag gibt es ein Frühstücksei.|On Sunday there's a boiled egg for breakfast.
+das Müsli|Zum Frühstück esse ich Müsli.|I eat muesli for breakfast.
+der Honig|Ich esse Brot mit Honig.|I eat bread with honey.
+die Kirsche|Die Kirschen sind süß.|The cherries are sweet.
+die Birne|Möchtest du eine Birne?|Would you like a pear?
+die Traube|Die Trauben sind aus Italien.|The grapes are from Italy.
+die Paprika|Ich kaufe eine rote Paprika.|I'm buying a red pepper.
+der Knoblauch|Die Soße ist mit viel Knoblauch.|The sauce has a lot of garlic in it.
+die Bohne|Wir kochen eine Suppe mit Bohnen.|We're cooking a bean soup.
+die Erbse|Die Kinder essen keine Erbsen.|The children don't eat peas.
+der Pilz|Im Herbst sammeln wir Pilze.|In autumn we pick mushrooms.
+die Soße|Die Soße ist zu scharf.|The sauce is too spicy.
+das Steak|Ich nehme das Steak mit Pommes.|I'll have the steak with chips.
+die Pommes|Die Kinder wollen Pommes.|The children want chips.
+der Senf|Möchtest du Senf zur Wurst?|Would you like mustard with the sausage?
+der Ketchup|Ohne Ketchup, bitte.|Without ketchup, please.
+die Limonade|Eine Limonade, bitte.|A lemonade, please.
+der Sprudel|Ich trinke lieber Sprudel als stilles Wasser.|I prefer sparkling water to still water.
+die Mahlzeit|Das Frühstück ist meine wichtigste Mahlzeit.|Breakfast is my most important meal.
+die Vorspeise|Als Vorspeise nehme ich eine Suppe.|As a starter I'll have a soup.
+das Hauptgericht|Was empfehlen Sie als Hauptgericht?|What do you recommend as a main course?
+die Kneipe|Wir treffen uns in der Kneipe.|We're meeting in the pub.
+die Kantine|Mittags esse ich in der Kantine.|At lunchtime I eat in the canteen.
+der Imbiss|Am Bahnhof gibt es einen Imbiss.|There's a snack bar at the station.
+braten|Ich brate die Kartoffeln in der Pfanne.|I fry the potatoes in the pan.
+der Großvater|Mein Großvater ist 90 Jahre alt.|My grandfather is 90 years old.
+die Großmutter|Meine Großmutter backt den besten Kuchen.|My grandmother bakes the best cake.
+das Enkelkind|Sie hat drei Enkelkinder.|She has three grandchildren.
+der Zwilling|Sie sind Zwillinge.|They are twins.
+die Hausfrau|Meine Oma war Hausfrau.|My grandma was a housewife.
+der Hausmann|Er ist seit einem Jahr Hausmann.|He has been a house husband for a year.
+der Vorname|Wie ist Ihr Vorname?|What is your first name?
+der Nachname|Mein Nachname ist Sharma.|My surname is Sharma.
+das Geburtsdatum|Schreiben Sie hier Ihr Geburtsdatum.|Write your date of birth here.
+der Geburtsort|Mein Geburtsort ist Mumbai.|My place of birth is Mumbai.
+die Hausnummer|Welche Hausnummer hat das Haus?|What's the house number?
+die Postleitzahl|Wie ist die Postleitzahl?|What's the postcode?
+Österreich|Wien ist die Hauptstadt von Österreich.|Vienna is the capital of Austria.
+die Schweiz|In der Schweiz spricht man vier Sprachen.|Four languages are spoken in Switzerland.
+die Türkei|Herr Kaya kommt aus der Türkei.|Mr Kaya comes from Turkey.
+Frankreich|Paris liegt in Frankreich.|Paris is in France.
+England|Sie hat ein Jahr in England gelebt.|She lived in England for a year.
+die USA|Mein Onkel wohnt in den USA.|My uncle lives in the USA.
+China|China ist ein sehr großes Land.|China is a very big country.
+Japan|Aiko kommt aus Japan.|Aiko comes from Japan.
+Europa|Deutschland liegt in der Mitte von Europa.|Germany is in the middle of Europe.
+Afrika|Sie reist im Winter nach Afrika.|She's travelling to Africa in winter.
+Französisch|Sprichst du Französisch?|Do you speak French?
+Arabisch|Ihre Muttersprache ist Arabisch.|Her mother tongue is Arabic.
+Russisch|Er lernt Russisch.|He's learning Russian.
+Türkisch|Herr Kaya spricht Türkisch und Deutsch.|Mr Kaya speaks Turkish and German.
+kommen aus|Ich komme aus Indien.|I come from India.
+geschieden|Meine Eltern sind geschieden.|My parents are divorced.
+der Student|Tomás ist Student.|Tomás is a student.
+Herr / Frau|Guten Tag, Herr Kaya! Hallo, Frau Weber!|Good afternoon, Mr Kaya! Hello, Mrs Weber!
+Freut mich!|Ich bin Leila. – Freut mich!|I'm Leila. – Nice to meet you!
+tanzen|Wir tanzen den ganzen Abend.|We dance all evening.
+am Abend|Am Abend lese ich ein Buch.|In the evening I read a book.
+jeden Tag|Ich lerne jeden Tag Deutsch.|I learn German every day.
+nach Hause|Ich gehe jetzt nach Hause.|I'm going home now.
+zu Hause|Bist du heute zu Hause?|Are you at home today?
+um sieben Uhr|Der Zug fährt um sieben Uhr.|The train leaves at seven o'clock.
+am Wochenende|Am Wochenende schlafe ich lange.|At the weekend I sleep in.
+wie viel(e)|Wie viele Kinder hast du?|How many children do you have?
+welch-|Welche Farbe magst du?|Which colour do you like?
+wie lange|Wie lange dauert der Film?|How long does the film last?
+wie alt|Wie alt ist deine Tochter?|How old is your daughter?
+wie spät|Wie spät ist es?|What time is it?
+buchstabieren|Können Sie das bitte buchstabieren?|Can you spell that, please?
+noch einmal|Sagen Sie das bitte noch einmal.|Please say that again.
+bedeuten|Was bedeutet dieses Wort?|What does this word mean?
+richtig / falsch|Richtig oder falsch? Kreuzen Sie an.|True or false? Tick the box.
+der Flur|Die Schuhe stehen im Flur.|The shoes are in the hallway.
+das Ei|Ich esse ein Ei zum Frühstück.|I eat an egg for breakfast.
+die Tomate|Die Tomaten sind rot und frisch.|The tomatoes are red and fresh.
+die Flasche|Eine Flasche Wasser, bitte.|A bottle of water, please.
+das Gramm|Ich hätte gern 200 Gramm Käse.|I'd like 200 grams of cheese.
+das Gemüse|Ich esse viel Gemüse.|I eat a lot of vegetables.
+das Obst|Obst ist gesund.|Fruit is healthy.
+mögen (mag)|Magst du Schokolade?|Do you like chocolate?
+vegetarisch|Ich esse vegetarisch.|I eat vegetarian food.
+das Brötchen|Zum Frühstück esse ich zwei Brötchen.|I eat two rolls for breakfast.
+die Marmelade|Ich mag Brot mit Marmelade.|I like bread with jam.
+die Gabel|Hier fehlt eine Gabel.|There's a fork missing here.
+der Löffel|Für die Suppe brauche ich einen Löffel.|I need a spoon for the soup.
+die Großeltern (Pl.)|Meine Großeltern wohnen auf dem Land.|My grandparents live in the country.
+der Cousin / die Cousine|Mein Cousin und meine Cousine kommen zu Besuch.|My cousins are coming to visit.
+die Enkelin|Ihre Enkelin heißt Mia.|Her granddaughter is called Mia.
+der Neffe|Mein Neffe ist drei Jahre alt.|My nephew is three years old.
+die Nichte|Ich besuche meine Nichte in Köln.|I'm visiting my niece in Cologne.
+die Minute|Der Bus kommt in zehn Minuten.|The bus is coming in ten minutes.
+der Monat|Ich bin seit einem Monat in Berlin.|I've been in Berlin for a month.
+Viertel nach / vor|Es ist Viertel nach drei.|It's a quarter past three.
+die Öffnungszeiten (Pl.)|Wie sind die Öffnungszeiten?|What are the opening hours?
+vereinbaren|Ich möchte einen Termin vereinbaren.|I'd like to make an appointment.
+um Mitternacht|Die Party endet um Mitternacht.|The party ends at midnight.
+einschlafen|Ich schlafe immer vor dem Fernseher ein.|I always fall asleep in front of the TV.
+anfangen (fängt an)|Der Unterricht fängt um neun an.|Class starts at nine.
+einladen (lädt ein)|Ich lade dich zu meinem Geburtstag ein.|I'm inviting you to my birthday.
+fernsehen (sieht fern)|Paul sieht zu viel fern.|Paul watches too much TV.
+zurückkommen|Wann kommst du zurück?|When are you coming back?
+aufwachen|Ich wache jeden Tag um sechs auf.|I wake up at six every day.
+abwaschen|Wer wäscht heute ab?|Who's washing up today?
+ausmachen|Mach bitte das Licht aus.|Please switch off the light.
+anmachen|Kannst du die Heizung anmachen?|Can you switch on the heating?
+aufschreiben|Ich schreibe die Wörter auf.|I write the words down.
+anziehen|Zieh eine Jacke an, es ist kalt!|Put on a jacket, it's cold!
+weggehen|Wann gehst du heute weg?|When are you going out today?
+die Wäsche|Ich wasche heute die Wäsche.|I'm doing the laundry today.
+abfahren / ankommen|Der Zug fährt um acht ab und kommt um elf an.|The train leaves at eight and arrives at eleven.
+dürfen (darf)|Darf ich hier parken?|May I park here?
+der Bahnsteig|Der Zug fährt von Bahnsteig 4 ab.|The train leaves from platform 4.
+der Bauch / Bauchschmerzen|Ich habe Bauchschmerzen.|I have a stomach ache.
+sich ausruhen|Du musst dich ausruhen.|You need to rest.
+der Schnupfen|Ich habe Schnupfen.|I have a runny nose.
+wehtun|Mein Kopf tut weh.|My head hurts.
+die Salbe|Die Salbe hilft gegen den Juckreiz.|The ointment helps against the itching.
+dreimal täglich|Nehmen Sie die Tropfen dreimal täglich.|Take the drops three times a day.
+gute Besserung!|Du bist krank? Gute Besserung!|You're ill? Get well soon!
+letzten Samstag|Letzten Samstag war ich im Kino.|Last Saturday I was at the cinema.

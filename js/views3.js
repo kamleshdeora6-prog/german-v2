@@ -215,6 +215,7 @@
       </section>
       <section class="card"><h3>Look and feel</h3>
         <label>Theme <select data-k="theme">${[["auto", "System (follows your phone)"], ["light", "Hell – light"], ["dark", "Dunkel – dark"], ["paper", "Papier – warm, easy on the eyes"]].map(([v, t]) => `<option value="${v}" ${(s.settings.theme || "auto") === v ? "selected" : ""}>${t}</option>`).join("")}</select></label>
+        <label>Menu language <select data-k="labels">${[["both", "Deutsch + English (recommended for beginners)"], ["de", "Nur Deutsch – German only"], ["en", "English only"]].map(([v, t]) => `<option value="${v}" ${(s.settings.labels || "both") === v ? "selected" : ""}>${t}</option>`).join("")}</select></label>
         <label>Text size <select data-k="textSize">${[["s", "Small"], ["m", "Normal"], ["l", "Large"], ["xl", "Very large"]].map(([v, t]) => `<option value="${v}" ${(s.settings.textSize || "m") === v ? "selected" : ""}>${t}</option>`).join("")}</select></label>
         <label>Teacher's tone <select data-k="tone">${[["streng", "Streng – Frau Weber, no excuses (default)"], ["neutral", "Neutral – plain feedback"], ["freundlich", "Freundlich – gentle encouragement"]].map(([v, t]) => `<option value="${v}" ${(s.settings.tone || "streng") === v ? "selected" : ""}>${t}</option>`).join("")}</select></label>
         <p class="muted small">Frau Weber comments on your plan, repeated mistakes and broken streaks. She's blunt about the work, never about you.</p>
@@ -251,7 +252,7 @@
       if (inp.type === "checkbox") inp.checked = !!st[k]; else inp.value = st[k] ?? "";
       inp.onchange = () => {
         st[k] = inp.type === "checkbox" ? inp.checked : inp.type === "number" || inp.type === "range" || inp.dataset.num ? +inp.value : inp.value.trim();
-        Store.save(); if (k === "theme") App.applyTheme();
+        Store.save(); if (k === "theme" || k === "labels" || k === "textSize") App.applyTheme();
         if (k === "aiOnline" && st.aiOnline && !st.aiKey) H.toast("Add your API key below to use online AI.");
       };
     });

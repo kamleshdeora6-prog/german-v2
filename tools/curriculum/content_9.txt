@@ -1,0 +1,1256 @@
+@@ 61|A1|Das Perfekt – erste Schritte|Mein Wochenende|park|10|after=12
+#expl
+Über die **Vergangenheit** spricht man im Alltag fast immer mit dem **Perfekt**: __Ich habe gearbeitet.__ __Wir sind nach Hause gegangen.__ Die Prüfung A1 erwartet das schon für einfache Sätze über gestern und das Wochenende.
+Das Perfekt hat zwei Teile: **haben** oder **sein** auf **Position 2** und das **Partizip II** am **Ende**. Regelmäßig: **ge- … -t** (machen → gemacht, kaufen → gekauft). Viele häufige Verben sind unregelmäßig: **ge- … -en** (essen → gegessen, sehen → gesehen, schlafen → geschlafen).
+Die meisten Verben nehmen **haben**. Mit **sein** stehen Verben der **Bewegung** (gehen, fahren, kommen, fliegen) und **sein** und **bleiben**. Hier lernst du die 20 wichtigsten Formen; die ganze Regel kommt in Lektion 17.
+#use
+Prüfung A1, Sprechen und Schreiben: über gestern, das Wochenende oder den Urlaub berichten.
+#table
+Infinitiv|haben/sein|Partizip II|Beispiel
+machen|haben|gemacht|Ich **habe** Sport **gemacht**.
+kaufen|haben|gekauft|Wir **haben** Brot **gekauft**.
+essen|haben|gegessen|Hast du schon **gegessen**?
+trinken|haben|getrunken|Er **hat** Tee **getrunken**.
+sehen|haben|gesehen|Ich **habe** einen Film **gesehen**.
+gehen|sein|gegangen|Sie **ist** ins Kino **gegangen**.
+fahren|sein|gefahren|Wir **sind** nach Köln **gefahren**.
+bleiben|sein|geblieben|Ich **bin** zu Hause **geblieben**.
+#ex
+Gestern habe ich viel gearbeitet. = Yesterday I worked a lot.
+Am Samstag habe ich eingekauft. = On Saturday I went shopping.
+Wir haben Pizza gegessen. = We ate pizza.
+Hast du gut geschlafen? = Did you sleep well?
+Er hat ein Buch gelesen. = He read a book.
+Ich habe meine Mutter angerufen. = I called my mother.
+Sie ist mit dem Bus gefahren. = She went by bus.
+Wir sind in den Park gegangen. = We went to the park.
+Am Sonntag bin ich zu Hause geblieben. = On Sunday I stayed at home.
+Was hast du am Wochenende gemacht? = What did you do at the weekend?
+Ich habe Fußball gespielt. = I played football.
+Habt ihr den Film gesehen? = Did you see the film?
+Ravi ist spät nach Hause gekommen. = Ravi came home late.
+Ich habe Kaffee getrunken. = I drank coffee.
+Wir haben Musik gehört. = We listened to music.
+#vocab
+gestern = yesterday
+am Wochenende = at the weekend
+letzten Samstag = last Saturday
+gemacht (machen) = done, made
+gekauft (kaufen) = bought
+gegessen (essen) = eaten
+getrunken (trinken) = drunk
+gesehen (sehen) = seen
+gelesen (lesen) = read
+geschlafen (schlafen) = slept
+gespielt (spielen) = played
+gehört (hören) = heard
+gearbeitet (arbeiten) = worked
+gekocht (kochen) = cooked
+angerufen (anrufen) = called
+eingekauft (einkaufen) = shopped
+gegangen (gehen) = gone
+gefahren (fahren) = driven, gone
+gekommen (kommen) = come
+geblieben (bleiben) = stayed
+#read
+Am Samstag hat Mia lange geschlafen. Um zehn Uhr hat sie gefrühstückt und Kaffee getrunken. Dann ist sie mit dem Fahrrad zum Markt gefahren. Dort hat sie Obst und Gemüse gekauft. Am Nachmittag hat sie für die Uni gelernt. Am Abend ist sie mit Tomás ins Kino gegangen. Sie haben eine Komödie gesehen. Danach haben sie in einem Restaurant gegessen. Am Sonntag ist Mia zu Hause geblieben. Sie hat ein Buch gelesen, Musik gehört und ihre Eltern angerufen. Am Abend hat sie gekocht: Nudeln mit Tomatensoße. Es war ein schönes Wochenende.
+#dialog
+Jonas: Hallo Mia! Wie war dein Wochenende?
+Mia: Schön! Am Samstag bin ich mit Tomás ins Kino gegangen.
+Jonas: Was habt ihr gesehen?
+Mia: Eine Komödie. Und danach haben wir italienisch gegessen.
+Jonas: Und am Sonntag?
+Mia: Da bin ich zu Hause geblieben. Ich habe gelesen und gekocht. Und du?
+Jonas: Ich habe gearbeitet. Leider.
+#dq
+Wohin ist Mia am Samstag gegangen? || Ins Kino.
+Was hat Mia am Sonntag gemacht? || Sie ist zu Hause geblieben, hat gelesen und gekocht.
+Was hat Jonas am Wochenende gemacht? || Er hat gearbeitet.
+#task
+Ich ___ Pizza ___. (essen) || habe / gegessen
+Wir ___ ins Kino ___. (gehen) || sind / gegangen
+Er ___ einen Film ___. (sehen) || hat / gesehen
+___ du gut ___? (schlafen) || Hast / geschlafen
+Sie ___ zu Hause ___. (bleiben) || ist / geblieben
+Ich ___ Brot ___. (kaufen) || habe / gekauft
+Ihr ___ nach Berlin ___. (fahren) || seid / gefahren
+Wir ___ Musik ___. (hören) || haben / gehört
+Partizip II: machen → || gemacht
+Partizip II: trinken → || getrunken
+haben oder sein? Ich ___ nach Hause gekommen. || bin
+Fehler? „Ich habe ins Kino gegangen.“ || Ich bin ins Kino gegangen.
+#exam
+Wann hat Mia gefrühstückt? || Um zehn Uhr.
+Wie ist Mia zum Markt gefahren? || Mit dem Fahrrad.
+Was hat Mia auf dem Markt gekauft? || Obst und Gemüse.
+Was haben Mia und Tomás im Kino gesehen? || Eine Komödie.
+Was hat Mia am Sonntagabend gekocht? || Nudeln mit Tomatensoße.
+Perfekt: Ich trinke Tee. || Ich habe Tee getrunken.
+Perfekt: Wir gehen in den Park. || Wir sind in den Park gegangen.
+Was haben Sie gestern gemacht? (4 Sätze)
+Erzählen Sie von Ihrem Wochenende.
+Schreiben Sie einer Freundin eine SMS: Was haben Sie heute gemacht?
+#speak
+Was haben die Leute im Park gemacht? __Ein Mann hat … Eine Frau ist …__
+Was hast du gestern gemacht? Fünf Sätze mit haben oder sein.
+Frag deinen Partner: __Was hast du am Wochenende gemacht?__
+Erzähl: Wohin bist du gefahren? Was hast du gegessen?
+
+@@ 62|B2|Passiv mit Modalverben und Zustandspassiv|Baustelle und Reparaturen|apartment|39,46|after=50
+#expl
+Mit einem **Modalverb** bildet man das Passiv so: Modalverb (Position 2) + **Partizip II + werden** (Ende): __Die Heizung muss repariert werden.__ Im Nebensatz steht das Modalverb ganz am Ende: __…, weil die Heizung repariert werden muss.__
+In der Vergangenheit steht das Modalverb im Präteritum: __Der Antrag konnte nicht bearbeitet werden.__ Im Perfekt (selten, eher schriftlich) entsteht ein doppelter Infinitiv: __Das Formular hat nicht gefunden werden können.__ Hier gilt: haben + … + Partizip II + werden + Modalverb.
+Das **Zustandspassiv** (sein + Partizip II) beschreibt nicht den Vorgang, sondern das **Ergebnis**: __Die Tür wird geschlossen__ (jemand schließt sie gerade) – __Die Tür ist geschlossen__ (sie ist jetzt zu). Typisch auf Schildern und in Berichten: __Das Geschäft ist geöffnet. Der Fehler ist behoben.__
+#use
+Prüfung B2, Schreiben: Beschwerden, Berichte und Anleitungen („Die Mängel müssen bis Freitag beseitigt werden.“).
+#table
+Form|Aktiv|Passiv
+Präsens + Modalverb|Man muss das Dach reparieren.|Das Dach **muss repariert werden**.
+Präteritum + Modalverb|Man konnte den Fehler nicht finden.|Der Fehler **konnte** nicht **gefunden werden**.
+Nebensatz|…, weil man die Wand streichen soll.|…, weil die Wand **gestrichen werden soll**.
+Vorgangspassiv|Man öffnet das Geschäft um neun.|Das Geschäft **wird** um neun **geöffnet**.
+Zustandspassiv|(Ergebnis)|Das Geschäft **ist** jetzt **geöffnet**.
+#ex
+Die Fenster müssen dringend erneuert werden. = The windows urgently need to be replaced.
+Der Schaden kann erst nächste Woche behoben werden. = The damage can't be repaired until next week.
+Der Aufzug darf während der Arbeiten nicht benutzt werden. = The lift must not be used during the work.
+Das Wasser sollte vorher abgestellt werden. = The water should be turned off beforehand.
+Die Wohnung konnte nicht rechtzeitig übergeben werden. = The flat could not be handed over on time.
+Ich weiß nicht, ob das bis Montag erledigt werden kann. = I don't know whether this can be done by Monday.
+Die Straße ist seit gestern gesperrt. = The road has been closed since yesterday.
+Der Fehler ist inzwischen behoben. = The fault has now been fixed.
+Die Tür war abgeschlossen, als wir ankamen. = The door was locked when we arrived.
+Alle Zimmer sind frisch gestrichen. = All the rooms are freshly painted.
+Die Rechnung muss innerhalb von zwei Wochen bezahlt werden. = The invoice must be paid within two weeks.
+Hier darf nicht geparkt werden. = Parking is not allowed here.
+Die Arbeiten sollen bis Ende Mai abgeschlossen sein. = The work is supposed to be completed by the end of May.
+Der Vertrag ist bereits unterschrieben. = The contract is already signed.
+Das hätte früher geprüft werden müssen. = That should have been checked earlier.
+#vocab
+der Mangel, ¨ = defect
+beseitigen = to remove, to eliminate
+beheben = to fix, to remedy
+erneuern = to renew, to replace
+abstellen = to turn off (water, gas)
+sperren = to close off, to block
+abschließen = to lock; to complete
+der Handwerkertermin, -e = tradesperson's appointment
+die Hausverwaltung, -en = property management
+der Schimmel = mould
+die Feuchtigkeit = damp, humidity
+undicht = leaking
+die Mietminderung, -en = rent reduction
+fristgerecht = by the deadline
+die Baustelle, -n = construction site
+der Lärm = noise
+übergeben = to hand over
+die Abnahme, -n = (official) acceptance, inspection
+der Kostenvoranschlag, ¨e = cost estimate
+in Auftrag geben = to commission
+#read
+Liebe Mieterinnen und Mieter, wie bereits angekündigt, muss das Dach unseres Hauses in den kommenden Wochen vollständig erneuert werden. Bei der letzten Prüfung wurden mehrere undichte Stellen entdeckt, die nicht länger aufgeschoben werden können. Die Arbeiten beginnen am 3. Juni und sollen bis Ende Juli abgeschlossen sein. Während dieser Zeit ist der Hof teilweise gesperrt. Fahrräder müssen deshalb im Keller abgestellt werden. Der Aufzug kann an einzelnen Tagen nicht benutzt werden; diese Tage werden rechtzeitig im Treppenhaus bekannt gegeben. Wir bitten um Verständnis, dass werktags zwischen 7 und 17 Uhr mit Lärm gerechnet werden muss. Die Dachgeschosswohnungen müssen vor Beginn der Arbeiten von den Handwerkern besichtigt werden. Bitte vereinbaren Sie dafür bis zum 20. Mai einen Termin mit der Hausverwaltung. Bereits bekannte Feuchtigkeitsschäden in den oberen Wohnungen werden im Anschluss an die Dacharbeiten behoben. Sollten Ihnen weitere Mängel auffallen, teilen Sie uns diese bitte schriftlich mit, damit sie in die Planung einbezogen werden können. Die Kosten der Sanierung werden nicht auf die Miete umgelegt. Mit freundlichen Grüßen, Ihre Hausverwaltung Schmidt & Partner
+#dialog
+Leila: Guten Tag, hier ist Leila Ahmadi aus der Goethestraße 12. Ich rufe wegen der Feuchtigkeit in meinem Bad an.
+Herr Brandt: Ja, Frau Ahmadi. Der Schaden ist uns bekannt. Er soll nach den Dacharbeiten behoben werden.
+Leila: Das ist erst im August! An der Wand ist schon Schimmel. Das muss sofort geprüft werden.
+Herr Brandt: Verstehe. Ich kann einen Handwerker schicken, aber der Termin kann frühestens nächste Woche vereinbart werden.
+Leila: Gut. Und wenn der Schimmel bis dahin größer wird?
+Herr Brandt: Dann sollten Sie Fotos machen. Alles muss dokumentiert werden, falls später über eine Mietminderung gesprochen wird.
+Leila: In Ordnung. Ich schicke Ihnen die Fotos heute noch per E-Mail.
+#dq
+Warum ruft Leila an? || Wegen der Feuchtigkeit (Schimmel) in ihrem Bad.
+Wann kann der Handwerkertermin frühestens sein? || Nächste Woche.
+Was soll Leila tun? || Fotos machen (alles dokumentieren) und sie per E-Mail schicken.
+#task
+Passiv mit Modalverb: Man muss die Heizung reparieren. → Die Heizung muss ___ ___. || repariert werden
+Passiv mit Modalverb: Man kann das Problem lösen. → Das Problem kann ___ ___. || gelöst werden
+Passiv mit Modalverb: Man darf hier nicht rauchen. → Hier darf nicht ___ ___. || geraucht werden
+Passiv mit Modalverb, Präteritum: Man konnte den Schlüssel nicht finden. → Der Schlüssel konnte nicht ___ ___. || gefunden werden
+Nebensatz: …, weil die Wand ___ ___ ___. (streichen, müssen) || gestrichen werden muss
+Nebensatz: Ich weiß nicht, ob das heute ___ ___ ___. (erledigen, können) || erledigt werden kann
+Zustandspassiv: Jemand hat die Tür geschlossen. → Die Tür ___ ___. || ist geschlossen
+Zustandspassiv: Man hat den Fehler behoben. → Der Fehler ___ ___. || ist behoben
+Vorgang oder Zustand? „Das Geschäft wird um 9 Uhr geöffnet.“ (V/Z) || V
+Vorgang oder Zustand? „Das Geschäft ist bis 20 Uhr geöffnet.“ (V/Z) || Z
+Vergangenheit, irreal: Das ___ früher geprüft werden müssen. || hätte
+Fehler? „Die Rechnung muss bezahlt werden muss.“ || Die Rechnung muss bezahlt werden.
+#exam
+Was muss erneuert werden? || Das Dach.
+Wann sollen die Arbeiten abgeschlossen sein? || Ende Juli.
+Wo müssen die Fahrräder abgestellt werden? || Im Keller.
+Wann muss mit Lärm gerechnet werden? || Werktags zwischen 7 und 17 Uhr.
+Bis wann soll man einen Termin vereinbaren? || Bis zum 20. Mai.
+Werden die Kosten auf die Miete umgelegt? || Nein.
+Passiv: Man muss die Mängel schnell beseitigen. || Die Mängel müssen schnell beseitigt werden.
+Schreiben Sie eine Beschwerde an Ihre Hausverwaltung über eine kaputte Heizung (100 Wörter).
+Beschreiben Sie, was in Ihrer Wohnung renoviert werden müsste.
+Erklären Sie den Unterschied zwischen „Das Fenster wird geöffnet“ und „Das Fenster ist geöffnet“.
+#speak
+Was muss in dieser Wohnung gemacht werden? __Die Wand muss … werden.__
+Spielt ein Telefonat mit der Hausverwaltung: Ein Mangel muss behoben werden.
+Was darf in deinem Haus nicht gemacht werden? Nenne Regeln.
+Beschreibe den Zustand: __Die Fenster sind …, die Tür ist …__
+
+@@ 63|B2|Relativsätze mit wer, was, wo(r)- und Präposition|Wer wagt, gewinnt|party|33|after=62
+#expl
+**wer** leitet einen Relativsatz ohne Bezugswort ein und bedeutet „jeder, der“: __Wer früh aufsteht, hat mehr vom Tag.__ Oft folgt im Hauptsatz **der**: __Wer zu spät kommt, den bestraft das Leben.__ Der Kasus von wer/der richtet sich nach dem jeweiligen Satz: __Wem die Arbeit gefällt, der bleibt.__
+**was** steht nach **alles, etwas, nichts, vieles, das, das Einzige** und nach **Superlativen**: __Das ist alles, was ich weiß. Das ist das Beste, was mir passiert ist.__ Bezieht sich der Relativsatz auf den **ganzen Satz**, steht ebenfalls **was**: __Er hat die Prüfung bestanden, was mich sehr freut.__
+Mit Präposition wird **was** zu **wo(r) + Präposition**: __Es gibt nichts, worüber ich mich mehr freue.__ __Er kam pünktlich, womit niemand gerechnet hatte.__ Für Orte steht **wo**, für Richtungen **wohin/woher**: __die Stadt, wo ich wohne; das Land, woher sie kommt__.
+#use
+Prüfung B2, Schreiben und Sprechen: Meinungen begründen, Sprichwörter, Zusammenfassungen („…, was zeigt, dass …“).
+#table
+Einleitung|Wann?|Beispiel
+wer … (der)|„jeder, der“|**Wer** viel liest, **der** schreibt besser.
+was|nach alles, nichts, etwas, das Beste|Das ist **alles**, **was** ich habe.
+was|bezieht sich auf den ganzen Satz|Er kam zu spät, **was** mich ärgerte.
+wo(r) + Präp.|was mit Präposition|Das ist etwas, **worauf** ich mich freue.
+wo / wohin / woher|Ort / Richtung|die Stadt, **wo** ich geboren bin
+#ex
+Wer Deutsch lernen will, muss viel sprechen. = Anyone who wants to learn German has to speak a lot.
+Wer nicht wagt, der nicht gewinnt. = Nothing ventured, nothing gained.
+Wem das nicht gefällt, der kann gehen. = Anyone who doesn't like it can leave.
+Wen du einlädst, ist deine Sache. = Whom you invite is your business.
+Das ist alles, was ich dazu sagen kann. = That's all I can say about it.
+Es gibt nichts, was sie nicht weiß. = There's nothing she doesn't know.
+Das Beste, was du tun kannst, ist abwarten. = The best thing you can do is wait.
+Er hat sich entschuldigt, was ich sehr fair finde. = He apologised, which I think is very fair.
+Sie hat die Stelle bekommen, worüber sich alle freuen. = She got the job, which everyone is happy about.
+Das ist etwas, woran ich mich nie gewöhnen werde. = That's something I'll never get used to.
+Es regnete den ganzen Tag, weshalb wir zu Hause blieben. = It rained all day, which is why we stayed at home.
+In der Stadt, wo ich aufgewachsen bin, gibt es kein Kino. = In the town where I grew up there is no cinema.
+Das Land, woher meine Eltern kommen, ist sehr groß. = The country my parents come from is very big.
+Vieles, was in der Zeitung steht, stimmt nicht. = Much of what is in the paper isn't true.
+Das Einzige, was fehlt, ist die Unterschrift. = The only thing missing is the signature.
+#vocab
+das Sprichwort, ¨er = proverb
+wagen = to dare
+die Redewendung, -en = idiom
+aufgeben = to give up
+das Risiko, Risiken = risk
+der Mut = courage
+die Geduld = patience
+ernten = to harvest, to reap
+säen = to sow
+der Schein = appearance
+trügen = to deceive
+das Einzige = the only thing
+weshalb = which is why
+wodurch = as a result of which
+worüber = about which
+womit = with which
+woran = on which, of which
+die Erkenntnis, -se = realisation
+erstaunlich = astonishing
+bedauerlich = regrettable
+#read
+Sprichwörter sind kleine Lebensweisheiten, die oft mit „wer“ oder „was“ beginnen. „Wer A sagt, muss auch B sagen“ bedeutet: Wer etwas anfängt, sollte es auch zu Ende bringen. „Was Hänschen nicht lernt, lernt Hans nimmermehr“ behauptet, dass man das, was man als Kind nicht lernt, als Erwachsener kaum noch lernen kann – eine These, die die moderne Forschung allerdings widerlegt hat. Viele Menschen lernen noch mit sechzig eine neue Sprache, was zeigt, dass das Gehirn ein Leben lang lernfähig bleibt. „Wer zuletzt lacht, lacht am besten“ tröstet alle, die zunächst verlieren. Und „Was du heute kannst besorgen, das verschiebe nicht auf morgen“ ist das, was Eltern ihren Kindern am liebsten sagen, wenn die Hausaufgaben warten. Interessant ist, dass manche Sprichwörter einander widersprechen: „Wer nicht wagt, der nicht gewinnt“ ermutigt zum Risiko, während „Vorsicht ist die Mutter der Porzellankiste“ genau das Gegenteil empfiehlt. Das Einzige, worauf man sich bei Sprichwörtern verlassen kann, ist also, dass es für jede Situation eines gibt. Für Deutschlernende sind sie trotzdem wertvoll: Wer sie im richtigen Moment verwendet, klingt sofort natürlicher, wodurch man im Gespräch oft Sympathie gewinnt.
+#dialog
+Tomás: Ich weiß nicht, ob ich mich für das Stipendium in Wien bewerben soll. Die Chancen sind klein.
+Aiko: Wer sich nicht bewirbt, bekommt es garantiert nicht.
+Tomás: Stimmt. Aber das ist alles, was ich gerade nicht brauche: noch eine Absage.
+Aiko: Eine Absage ist nichts, wovor man Angst haben muss. Das Schlimmste, was passieren kann, ist ein Nein.
+Tomás: Du hast recht. Und es gibt ja einiges, worauf ich stolz sein kann.
+Aiko: Genau! Wer A sagt, muss auch B sagen – du hast doch schon alle Unterlagen.
+Tomás: Okay, ich schicke sie heute Abend ab. Worüber ich mich wirklich freuen würde, wäre ein bisschen Glück.
+#dq
+Wofür will sich Tomás bewerben? || Für ein Stipendium in Wien.
+Was ist laut Aiko das Schlimmste, was passieren kann? || Ein Nein (eine Absage).
+Wann schickt Tomás die Unterlagen ab? || Heute Abend.
+#task
+___ zu spät kommt, muss draußen warten. (wer/was) || Wer
+Das ist alles, ___ ich weiß. (das/was) || was
+Es gibt nichts, ___ ich mehr hasse als Lügen. || was
+Das ist das Schönste, ___ ich je gesehen habe. || was
+Er hat bestanden, ___ mich sehr freut. (das/was) || was
+Es gibt etwas, ___ ich mich freue. (worauf/auf das) || worauf
+Das ist das Einzige, ___ ich mich erinnern kann. (woran/an was) || woran
+Die Stadt, ___ ich wohne, ist klein. || wo
+___ man vertraut, dem erzählt man alles. (wer im Dativ) || Wem
+Es regnete, ___ wir zu Hause blieben. (weshalb/was) || weshalb
+Verbinde: Er hat angerufen. Darüber habe ich mich gefreut. || Er hat angerufen, worüber ich mich gefreut habe.
+Fehler? „Das ist alles, das ich habe.“ || Das ist alles, was ich habe.
+#exam
+Was bedeutet „Wer A sagt, muss auch B sagen“? || Wer etwas anfängt, sollte es auch zu Ende bringen.
+Welche These hat die Forschung widerlegt? || Dass man als Erwachsener kaum noch lernen kann (Was Hänschen nicht lernt …).
+Welche zwei Sprichwörter widersprechen einander? || „Wer nicht wagt, der nicht gewinnt“ und „Vorsicht ist die Mutter der Porzellankiste“.
+Warum sind Sprichwörter für Lernende wertvoll? || Man klingt natürlicher und gewinnt Sympathie.
+Ergänzen Sie: Das ist das Beste, ___ du tun kannst. || was
+Ergänzen Sie: ___ viel arbeitet, braucht Pausen. || Wer
+Verbinden Sie mit „was“: Sie kam pünktlich. Das hat mich überrascht. || Sie kam pünktlich, was mich überrascht hat.
+Erklären Sie ein Sprichwort aus Ihrer Muttersprache auf Deutsch.
+Welches deutsche Sprichwort gefällt Ihnen am besten? Warum?
+Schreiben Sie fünf Sätze über Ihr Leben mit „Das Beste, was …“, „Alles, was …“, „Wer …“.
+#speak
+Erkläre einem Freund: __Wer …, der …__ – drei Lebensweisheiten.
+Was ist das Beste, was dir dieses Jahr passiert ist?
+Gibt es etwas, worauf du stolz bist? Worüber ärgerst du dich?
+Diskutiert: Ist „Wer nicht wagt, der nicht gewinnt“ ein guter Rat?
+
+@@ 64|B2|Nomen, Verben und Adjektive mit festen Präpositionen|Engagement und Interessen|office|31|after=63
+#expl
+Nicht nur Verben, auch **Nomen** und **Adjektive** haben feste Präpositionen, die man mitlernen muss: __die Angst **vor**, das Interesse **an**, stolz **auf**, zufrieden **mit**__. Oft passt die Präposition des Nomens zu der des Verbs: sich interessieren **für** → das Interesse **an** (!), sich freuen **über** → die Freude **über**.
+Bei **auf, über, an, in, vor, unter** entscheidet die feste Verbindung den Kasus, nicht „wo/wohin“: __warten auf + Akk.__, __teilnehmen an + Dat.__, __Angst vor + Dat.__, __abhängig von + Dat.__ Lernen Sie deshalb immer: Präposition + Kasus.
+Statt einer Sache kann ein ganzer Satz folgen. Dann steht ein **da(r)-Wort** als Platzhalter: __Ich bin stolz **darauf**, dass ich bestanden habe.__ __Sie hat Angst **davor**, allein zu reisen.__ In Fragen nach Sachen: **wo(r)- + Präposition** (Worauf? Wovor?), nach Personen: Präposition + **wen/wem** (Auf wen? Vor wem?).
+#use
+Prüfung B2: Präzise Formulierungen in Beschwerden, Bewerbungen und Diskussionen („Ich bin mit … nicht einverstanden.“).
+#table
+Typ|Beispiel|Kasus
+Verb|sich bewerben **um** eine Stelle|Akk.
+Verb|abhängen **von** dem Wetter|Dat.
+Nomen|die Angst **vor** der Prüfung|Dat.
+Nomen|die Bitte **um** Hilfe|Akk.
+Adjektiv|stolz **auf** den Erfolg|Akk.
+Adjektiv|zufrieden **mit** dem Ergebnis|Dat.
+Adjektiv|verantwortlich **für** das Projekt|Akk.
+#ex
+Sie hat großes Interesse an Politik. = She has a great interest in politics.
+Ich habe keine Lust auf Streit. = I'm not in the mood for an argument.
+Er ist sehr stolz auf seine Tochter. = He is very proud of his daughter.
+Wir sind mit dem Service nicht zufrieden. = We are not satisfied with the service.
+Die Angst vor Fehlern blockiert viele Lernende. = The fear of mistakes blocks many learners.
+Sie ist für die Organisation verantwortlich. = She is responsible for the organisation.
+Der Erfolg hängt von vielen Faktoren ab. = The success depends on many factors.
+Ich bin davon überzeugt, dass wir es schaffen. = I'm convinced that we'll manage it.
+Er hat sich um die Stelle beworben. = He applied for the job.
+Die Kinder sind neugierig auf das Geschenk. = The children are curious about the present.
+Sie ist mit einem Arzt verheiratet. = She is married to a doctor.
+Bist du an einem Praktikum interessiert? = Are you interested in an internship?
+Ich bin dir sehr dankbar für deine Hilfe. = I'm very grateful to you for your help.
+Wir haben uns über die Kosten informiert. = We found out about the costs.
+Worauf bist du am meisten stolz? = What are you most proud of?
+#vocab
+das Interesse an (+ Dat.) = interest in
+die Angst vor (+ Dat.) = fear of
+die Freude über (+ Akk.) = joy about
+die Bitte um (+ Akk.) = request for
+die Lust auf (+ Akk.) = desire for, fancy
+der Wunsch nach (+ Dat.) = wish for
+die Sorge um (+ Akk.) = worry about
+die Kritik an (+ Dat.) = criticism of
+die Teilnahme an (+ Dat.) = participation in
+die Voraussetzung für (+ Akk.) = requirement for
+stolz auf (+ Akk.) = proud of
+zufrieden mit (+ Dat.) = satisfied with
+abhängig von (+ Dat.) = dependent on
+verantwortlich für (+ Akk.) = responsible for
+interessiert an (+ Dat.) = interested in
+neugierig auf (+ Akk.) = curious about
+dankbar für (+ Akk.) = grateful for
+überzeugt von (+ Dat.) = convinced of
+enttäuscht von (+ Dat.) = disappointed by
+bekannt für (+ Akk.) = known for
+#read
+Ehrenamt in Deutschland: Fast jeder dritte Mensch in Deutschland engagiert sich freiwillig – im Sportverein, bei der Feuerwehr, in der Flüchtlingshilfe oder in der Nachbarschaft. Was motiviert die Menschen dazu? Eine Befragung zeigt: Die meisten haben Freude an der Arbeit mit anderen Menschen und den Wunsch nach einer sinnvollen Aufgabe. Viele sind stolz darauf, etwas für die Gesellschaft zu tun. Für jüngere Freiwillige ist außerdem die Möglichkeit wichtig, Erfahrungen zu sammeln, die für die spätere Bewerbung nützlich sind. Trotzdem klagen viele Vereine über einen Mangel an Nachwuchs. Junge Leute haben zwar Interesse an einem Engagement, aber häufig keine Lust auf feste Verpflichtungen über Jahre. Die Bereitschaft zu kurzen Projekten ist dagegen groß. Viele Organisationen haben sich darauf eingestellt und bieten flexible Einsätze an, etwa einen Nachmittag pro Monat. Ein weiteres Problem ist die Bürokratie: Ehrenamtliche Vorstände sind für Finanzen, Versicherungen und Datenschutz verantwortlich, und viele sind von der Menge an Formularen enttäuscht. Fachleute fordern deshalb mehr Unterstützung durch den Staat. Wer selbst aktiv werden möchte, kann sich bei den Freiwilligenagenturen der Städte über Angebote informieren.
+#dialog
+Herr Vogel: Schön, dass Sie Interesse an der Hausaufgabenhilfe haben, Herr Sharma. Was ist Ihre Motivation?
+Ravi: Ich bin sehr dankbar für die Hilfe, die ich selbst bekommen habe, als ich nach Deutschland kam. Davon möchte ich etwas zurückgeben.
+Herr Vogel: Wie viel Zeit hätten Sie?
+Ravi: Das hängt von meinen Projekten ab. Ein Nachmittag pro Woche wäre realistisch.
+Herr Vogel: Das reicht völlig. Haben Sie Erfahrung mit Kindern?
+Ravi: Mit meinem Neffen. Und ich bin davon überzeugt, dass ich gut erklären kann, vor allem Mathe.
+Herr Vogel: Wunderbar. Wir suchen genau jemanden, der für Mathe verantwortlich ist.
+#dq
+Woran hat Ravi Interesse? || An der Hausaufgabenhilfe.
+Wovon hängt seine Zeit ab? || Von seinen Projekten.
+Wofür soll Ravi verantwortlich sein? || Für Mathe.
+#task
+Sie hat Angst ___ Hunden. || vor
+Ich habe großes Interesse ___ Kunst. || an
+Er ist stolz ___ seine Arbeit. || auf
+Wir sind ___ dem Hotel zufrieden. || mit
+Das hängt ___ Wetter ab. || vom
+Sie ist ___ das Projekt verantwortlich. || für
+Ich habe keine Lust ___ Kino. || auf
+da-Wort: Ich bin stolz ___, dass ich bestanden habe. || darauf
+da-Wort: Er hat Angst ___, allein zu fliegen. || davor
+Frage (Sache): ___ bist du zufrieden? – Mit dem Ergebnis. || Womit
+Frage (Person): ___ ___ bist du verheiratet? – Mit Jonas. || Mit wem
+Fehler? „Ich habe Interesse für Musik.“ || Ich habe Interesse an Musik.
+#exam
+Wie viele Menschen engagieren sich in Deutschland freiwillig? || Fast jeder Dritte.
+Was motiviert die meisten Freiwilligen? || Freude an der Arbeit mit Menschen und der Wunsch nach einer sinnvollen Aufgabe.
+Worüber klagen viele Vereine? || Über einen Mangel an Nachwuchs.
+Was haben junge Leute oft nicht? || Lust auf feste Verpflichtungen über Jahre.
+Wofür sind ehrenamtliche Vorstände verantwortlich? || Für Finanzen, Versicherungen und Datenschutz.
+Ergänzen Sie: Ich bin ___ dem Ergebnis enttäuscht. || von
+Ergänzen Sie: Er hat sich ___ die Stelle beworben. || um
+Worauf sind Sie in Ihrem Leben stolz? (5 Sätze)
+Würden Sie sich ehrenamtlich engagieren? Wofür und warum?
+Schreiben Sie eine kurze Bewerbung für ein Ehrenamt.
+#speak
+Wofür interessierst du dich? Wovor hast du Angst? Worauf freust du dich?
+Erzähl von einem Ehrenamt, das du kennst.
+Wovon hängt deine Zufriedenheit im Job ab?
+Spielt ein Gespräch: Bewerbung als Freiwilliger.
+
+@@ 65|B2|Formelle Briefe und E-Mails: Anfrage, Beschwerde, Bitte|Schriftverkehr|office|45,48|after=64
+#expl
+Formelle Texte haben feste Teile: **Betreff** (ohne „Betreff:“ im Text, kurz und konkret), **Anrede** (__Sehr geehrte Frau Lange,__ / __Sehr geehrte Damen und Herren,__), **Einleitung** mit dem Anlass, **Hauptteil**, **Bitte oder Forderung**, **Schluss** (__Mit freundlichen Grüßen__, ohne Komma danach). Nach der Anrede mit Komma geht es **klein** weiter.
+Typische Formulierungen: Anlass – __ich wende mich an Sie, weil …__, __mit Bezug auf Ihr Schreiben vom …__; Anfrage – __ich würde gern wissen, ob …__, __könnten Sie mir bitte mitteilen, …__; Beschwerde – __leider muss ich Ihnen mitteilen, dass …__, __ich erwarte, dass …__, __ich bitte Sie, den Betrag bis zum … zu erstatten__.
+Der Ton bleibt auch bei Ärger **sachlich**: Fakten (Datum, Nummer, Betrag), dann die Folge, dann eine klare, erfüllbare Forderung mit Frist. Konjunktiv II macht Bitten höflich (__Ich wäre Ihnen dankbar, wenn …__), Nominalstil macht Texte offiziell (__nach Erhalt der Ware__).
+#use
+Prüfung B2 Schreiben Teil 2 (telc/Goethe): formelle E-Mail mit vier Inhaltspunkten, ca. 150 Wörter.
+#table
+Teil|Neutral|Formell
+Anrede|Hallo Frau Lange,|Sehr geehrte Frau Lange,
+Anlass|Ich schreibe wegen …|Ich wende mich an Sie, da …
+Bitte|Können Sie …?|Ich wäre Ihnen dankbar, wenn Sie … könnten.
+Beschwerde|Das finde ich nicht gut.|Leider entspricht dies nicht der vereinbarten Leistung.
+Forderung|Bitte zahlen Sie zurück.|Ich bitte Sie, mir den Betrag bis zum … zu erstatten.
+Schluss|Viele Grüße|Mit freundlichen Grüßen
+#ex
+Sehr geehrte Damen und Herren, ich wende mich an Sie, weil meine Bestellung nicht angekommen ist. = Dear Sir or Madam, I am writing to you because my order has not arrived.
+Mit Bezug auf Ihr Schreiben vom 3. Mai möchte ich Folgendes klarstellen. = With reference to your letter of 3 May, I would like to clarify the following.
+Ich würde gern wissen, ob der Kurs noch freie Plätze hat. = I would like to know whether the course still has places available.
+Könnten Sie mir bitte mitteilen, bis wann ich mich anmelden muss? = Could you please tell me by when I have to register?
+Leider muss ich Ihnen mitteilen, dass das Gerät defekt ist. = Unfortunately I have to inform you that the device is faulty.
+Ich wäre Ihnen dankbar, wenn Sie mir die Unterlagen zuschicken könnten. = I would be grateful if you could send me the documents.
+Ich bitte Sie, mir den Betrag bis zum 15. Juni zu erstatten. = I ask you to refund the amount to me by 15 June.
+Andernfalls sehe ich mich gezwungen, rechtliche Schritte einzuleiten. = Otherwise I shall be forced to take legal action.
+Im Anhang finden Sie eine Kopie der Rechnung. = Please find attached a copy of the invoice.
+Für Rückfragen stehe ich Ihnen gern zur Verfügung. = I am happy to answer any further questions.
+Vielen Dank im Voraus für Ihre Bemühungen. = Thank you in advance for your efforts.
+Ich freue mich auf Ihre Antwort. = I look forward to your reply.
+Mit freundlichen Grüßen = Yours sincerely
+Bitte entschuldigen Sie die verspätete Antwort. = Please excuse the late reply.
+Wie telefonisch besprochen, sende ich Ihnen den Vertrag. = As discussed on the phone, I am sending you the contract.
+#vocab
+der Betreff, -e = subject line
+die Anrede, -n = salutation
+der Anhang, ¨e = attachment
+die Bestellnummer, -n = order number
+die Kundennummer, -n = customer number
+die Rückerstattung, -en = refund
+erstatten = to refund
+die Gutschrift, -en = credit note
+die Mahnung, -en = reminder (payment)
+die Frist setzen = to set a deadline
+rechtliche Schritte = legal action
+die Rückfrage, -n = query
+umgehend = promptly
+bedauerlicherweise = regrettably
+entsprechen (+ Dat.) = to correspond to
+ausstehend = outstanding
+bestätigen = to confirm
+die Bemühung, -en = effort
+im Voraus = in advance
+zur Kenntnis nehmen = to take note of
+#read
+Betreff: Beschwerde über Sprachkurs „Deutsch B2 intensiv“ – Rückerstattung der Kursgebühr
+Sehr geehrte Damen und Herren,
+ich wende mich an Sie, da der oben genannte Kurs, für den ich mich am 2. September angemeldet und die Gebühr von 480 Euro überwiesen habe, nicht der Beschreibung auf Ihrer Webseite entspricht. Laut Ihrer Ausschreibung sollten maximal zwölf Teilnehmende in einer Gruppe lernen. Tatsächlich waren wir jedoch von Anfang an 19 Personen, sodass kaum Gelegenheit zum Sprechen bestand. Darüber hinaus fiel der Unterricht an drei von zwölf Terminen ohne Ersatz aus, da keine Vertretung für die erkrankte Lehrkraft gefunden werden konnte. Die versprochenen Prüfungssimulationen haben gar nicht stattgefunden. Ich habe diese Mängel bereits am 30. September mündlich im Sekretariat angesprochen, bisher jedoch keine Reaktion erhalten. Ich bitte Sie daher, mir einen angemessenen Teil der Kursgebühr, mindestens jedoch die Kosten für die drei ausgefallenen Termine in Höhe von 120 Euro, bis zum 31. Oktober auf das Ihnen bekannte Konto zu erstatten. Alternativ wäre ich auch mit einem kostenlosen Platz in einem Folgekurs einverstanden, sofern die Gruppengröße eingehalten wird. Eine Kopie der Anmeldebestätigung sowie der Überweisung finden Sie im Anhang. Für Rückfragen stehe ich Ihnen gern zur Verfügung.
+Mit freundlichen Grüßen
+Aiko Tanaka
+#dialog
+Aiko: Leila, kannst du meine Beschwerde lesen? Ich will nicht zu unhöflich klingen.
+Leila: Klar. Der Anfang ist gut: Du nennst Datum, Kurs und Betrag. Das ist wichtig.
+Aiko: Und hier habe ich geschrieben: „Das war eine Katastrophe.“
+Leila: Das würde ich streichen. Schreib lieber sachlich: „Der Kurs entsprach nicht der Beschreibung.“
+Aiko: Okay. Soll ich eine Frist setzen?
+Leila: Ja, unbedingt, aber eine realistische. Zwei Wochen sind üblich. Und biete eine Alternative an, das wirkt kooperativ.
+Aiko: Gut. Und am Ende „Mit freundlichen Grüßen“ mit Komma?
+Leila: Nein, ohne Komma. Und darunter nur dein Name.
+#dq
+Was findet Leila am Anfang gut? || Aiko nennt Datum, Kurs und Betrag.
+Was soll Aiko statt „Das war eine Katastrophe“ schreiben? || „Der Kurs entsprach nicht der Beschreibung.“
+Wie lange ist eine übliche Frist? || Zwei Wochen.
+#task
+Formelle Anrede (Name unbekannt): Sehr geehrte ___ und ___, || Damen / Herren
+Formelle Anrede: ___ ___ Frau Lange, || Sehr geehrte
+Schlussformel: Mit freundlichen ___ || Grüßen
+Anlass: Ich ___ mich an Sie, weil … (wenden) || wende
+Bitte höflich: Ich wäre Ihnen ___, wenn Sie mir helfen könnten. || dankbar
+Anhang: Im ___ finden Sie die Rechnung. || Anhang
+Bezug: Mit ___ auf Ihr Schreiben vom 3. Mai … || Bezug
+Forderung: Ich bitte Sie, den Betrag bis Freitag ___ ___. (erstatten) || zu erstatten
+Formeller: „Können Sie mir sagen, …?“ → ___ Sie mir bitte mitteilen, …? || Könnten
+Register: „Das war eine Katastrophe.“ → sachlich: Das entsprach leider nicht der ___. || Beschreibung
+Nach der Anrede mit Komma schreibt man ___ weiter. (groß/klein) || klein
+Fehler? „Sehr geehrte Herr Müller,“ || Sehr geehrter Herr Müller,
+#exam
+Wofür hat sich Aiko angemeldet? || Für den Kurs „Deutsch B2 intensiv“.
+Wie viele Teilnehmende waren versprochen, wie viele waren es? || Maximal zwölf; es waren 19.
+Wie oft ist der Unterricht ausgefallen? || An drei von zwölf Terminen.
+Wie viel Geld fordert Aiko mindestens zurück? || 120 Euro.
+Welche Alternative bietet sie an? || Einen kostenlosen Platz in einem Folgekurs (mit eingehaltener Gruppengröße).
+Was liegt der E-Mail bei? || Eine Kopie der Anmeldebestätigung und der Überweisung.
+Formulieren Sie formell: „Schicken Sie mir das Formular!“ || Ich wäre Ihnen dankbar, wenn Sie mir das Formular schicken könnten.
+Schreiben Sie eine Anfrage an eine Sprachschule (Preis, Termine, Prüfung, Gruppengröße).
+Schreiben Sie eine Beschwerde über eine verspätete Lieferung (ca. 150 Wörter).
+Antworten Sie als Firma auf Aikos Beschwerde.
+#speak
+Ruf bei einer Firma an und beschwere dich höflich, aber bestimmt.
+Formuliere drei Bitten formell und neutral.
+Was gehört in jede formelle E-Mail? Erkläre es einem Freund.
+Spielt: Kundenservice und verärgerter Kunde – findet eine Lösung.
+
+@@ 66|B2|Konnektoren für Zeit, Art und Weise: indem, wobei, solange, sobald, kaum|Prozesse beschreiben|classroom|34,47|after=65
+#expl
+**indem** beschreibt das **Mittel**: __Man lernt Wörter, indem man sie oft wiederholt.__ (Frage: Wie?) **dadurch, dass** betont dasselbe stärker: __Dadurch, dass er jeden Tag liest, hat er seinen Wortschatz vergrößert.__
+**wobei** fügt einen begleitenden Umstand oder eine Einschränkung hinzu: __Die Preise steigen, wobei Lebensmittel besonders betroffen sind.__ **solange** bedeutet „während der ganzen Zeit“ oder „unter der Bedingung“: __Solange du Fieber hast, bleibst du zu Hause.__ **sobald** = „direkt, wenn“: __Sobald ich Bescheid weiß, melde ich mich.__
+**kaum dass** / **kaum … (als)** zeigt, dass etwas sofort danach passiert: __Kaum war er zu Hause, klingelte das Telefon.__ **sooft** = „jedes Mal, wenn“: __Sooft ich ihn besuche, kocht er für mich.__ Alle sind Subjunktionen: Das Verb steht am **Ende** des Nebensatzes.
+#use
+Prüfung B2: Abläufe, Methoden und Bedingungen beschreiben, Grafiken kommentieren, Ratschläge begründen.
+#table
+Konnektor|Bedeutung|Beispiel
+indem|Mittel (wie?)|Er spart Geld, **indem** er selbst kocht.
+dadurch, dass|Mittel (betont)|**Dadurch, dass** er selbst kocht, spart er Geld.
+wobei|Begleitumstand / Einschränkung|Wir kamen an, **wobei** es schon dunkel war.
+solange|Dauer / Bedingung|**Solange** es regnet, bleiben wir drin.
+sobald|sofort danach|**Sobald** ich ankomme, rufe ich an.
+sooft|jedes Mal, wenn|**Sooft** sie kommt, bringt sie Blumen mit.
+#ex
+Man kann Strom sparen, indem man Geräte ganz ausschaltet. = You can save electricity by switching devices off completely.
+Indem sie jeden Tag Podcasts hört, verbessert sie ihr Hörverstehen. = By listening to podcasts every day, she improves her listening.
+Dadurch, dass die Bahn streikte, kamen viele zu spät. = Because the railway was on strike, many arrived late.
+Die Mieten steigen, wobei die Unterschiede zwischen den Städten groß sind. = Rents are rising, although the differences between cities are large.
+Er erzählte von seiner Reise, wobei er viele Fotos zeigte. = He talked about his trip, showing lots of photos as he did so.
+Solange du hier wohnst, gelten meine Regeln. = As long as you live here, my rules apply.
+Solange die Ampel rot ist, darfst du nicht gehen. = As long as the light is red, you mustn't go.
+Sobald die Ergebnisse da sind, informieren wir Sie. = As soon as the results are in, we'll inform you.
+Kaum hatte das Konzert begonnen, fiel der Strom aus. = The concert had hardly begun when the power went out.
+Sooft ich Oma besuche, backt sie Kuchen. = Whenever I visit Grandma, she bakes cake.
+Er verbesserte seine Aussprache, indem er Sätze nachsprach. = He improved his pronunciation by repeating sentences.
+Wir können morgen wandern, sofern es nicht regnet. = We can go hiking tomorrow, provided it doesn't rain.
+Sobald du fertig bist, können wir gehen. = As soon as you're ready, we can go.
+Die Lösung ist einfach, wobei sie natürlich Geld kostet. = The solution is simple, although it costs money, of course.
+Je nachdem, wie das Wetter ist, grillen wir oder gehen essen. = Depending on the weather, we'll barbecue or go out to eat.
+#vocab
+das Verfahren, - = procedure, method
+der Ablauf, ¨e = sequence, process
+der Schritt, -e = step
+die Methode, -n = method
+die Vorgehensweise, -n = approach
+wiederholen = to repeat
+verbessern = to improve
+die Effizienz = efficiency
+der Aufwand = effort
+sparen = to save
+der Verbrauch = consumption
+senken = to lower
+ausschalten = to switch off
+der Standby-Modus = standby mode
+die Dauer = duration
+die Bedingung, -en = condition
+gelten = to apply, to be valid
+unmittelbar = immediately
+gleichzeitig = at the same time
+anschließend = subsequently
+#read
+Wie lernt man am effizientesten Vokabeln? Die Gedächtnisforschung hat darauf einige klare Antworten. Am wirksamsten ist das sogenannte verteilte Wiederholen: Man festigt ein neues Wort, indem man es nicht zehnmal an einem Abend, sondern über mehrere Tage verteilt wiederholt, wobei die Abstände immer größer werden. Sobald man ein Wort sicher kennt, kann man es länger ruhen lassen; solange man unsicher ist, sollte es öfter wiederkommen. Genau nach diesem Prinzip arbeiten digitale Karteikarten. Ein zweiter Faktor ist das aktive Abrufen. Dadurch, dass man versucht, sich an das Wort zu erinnern, bevor man die Lösung sieht, wird die Erinnerung stärker als durch bloßes Lesen. Wer also eine Karte umdreht, ohne vorher nachzudenken, verschenkt einen großen Teil des Lerneffekts. Drittens hilft Kontext: Man behält Wörter besser, indem man sie in ganzen Sätzen lernt, wobei persönliche Beispiele besonders gut funktionieren. „Ich habe Angst vor Spinnen“ bleibt länger im Kopf als die Übersetzung „Angst = fear“. Und schließlich spielt der Schlaf eine Rolle: Sooft man kurz vor dem Schlafen wiederholt, profitiert man von der nächtlichen Verarbeitung im Gehirn. Kaum hat man diese Methoden ein paar Wochen ausprobiert, merkt man den Unterschied.
+#dialog
+Paul: Mama, wie kann ich mir die Englischvokabeln besser merken?
+Anna: Indem du sie jeden Tag ein bisschen wiederholst, nicht alles am Abend vor dem Test.
+Paul: Aber das dauert so lange!
+Anna: Nur fünf Minuten am Tag. Sobald du ein Wort dreimal richtig hattest, kommt es seltener.
+Paul: Und wenn ich es vergesse?
+Anna: Dann kommt es wieder öfter dran. Solange du es nicht sicher kannst, übst du es eben weiter.
+Paul: Okay. Kann ich das mit der App machen?
+Anna: Klar, wobei du die Antwort immer erst laut sagen solltest, bevor du die Karte umdrehst.
+#dq
+Wie soll Paul Vokabeln lernen? || Indem er sie jeden Tag ein bisschen wiederholt.
+Wann kommt ein Wort seltener? || Sobald er es dreimal richtig hatte.
+Was soll er vor dem Umdrehen der Karte tun? || Die Antwort laut sagen.
+#task
+Man lernt eine Sprache, ___ man sie spricht. (indem/wobei) || indem
+___ du Fieber hast, bleibst du im Bett. (solange/sobald) || Solange
+___ ich zu Hause bin, rufe ich dich an. (sobald/solange) || Sobald
+Wir fuhren los, ___ es schon dunkel war. (wobei/indem) || wobei
+___ ich ihn sehe, lacht er. (sooft/sobald) || Sooft
+Kaum ___ er eingeschlafen, klingelte der Wecker. (war/hatte) || war
+Verbinde mit indem: Er spart Geld. Er fährt mit dem Rad. || Er spart Geld, indem er mit dem Rad fährt.
+Verbinde mit dadurch, dass: Sie trainiert täglich. Sie ist fit geworden. || Dadurch, dass sie täglich trainiert, ist sie fit geworden.
+Verbinde mit sobald: Der Film ist zu Ende. Wir gehen essen. || Sobald der Film zu Ende ist, gehen wir essen.
+Frage nach dem Mittel: ___ kann man Energie sparen? – Indem man das Licht ausmacht. || Wie
+Satzstellung: Ich melde mich, sobald ich mehr ___. (wissen) || weiß
+Fehler? „Er hat abgenommen, indem er hat Sport gemacht.“ || Er hat abgenommen, indem er Sport gemacht hat.
+#exam
+Was ist verteiltes Wiederholen? || Wörter über mehrere Tage mit immer größeren Abständen wiederholen.
+Wann sollte ein Wort öfter wiederkommen? || Solange man unsicher ist.
+Warum ist aktives Abrufen wichtig? || Dadurch wird die Erinnerung stärker als durch bloßes Lesen.
+Welche Sätze bleiben besonders gut im Kopf? || Persönliche Beispielsätze.
+Welche Rolle spielt der Schlaf? || Wiederholen vor dem Schlafen nutzt die nächtliche Verarbeitung.
+Verbinden Sie mit indem: Sie lernt Wörter. Sie schreibt sie auf Karten. || Sie lernt Wörter, indem sie sie auf Karten schreibt.
+Ergänzen Sie: ___ der Zug ankommt, steigen wir aus. || Sobald
+Wie lernen Sie Vokabeln? Beschreiben Sie Ihre Methode mit indem, sobald und solange.
+Beschreiben Sie, wie man in Deutschland eine Wohnung findet (Schritt für Schritt).
+Geben Sie Tipps zum Energiesparen mit „indem“ und „dadurch, dass“.
+#speak
+Wie kann man gesund bleiben? Antworte mit __indem …__
+Was machst du, sobald du nach Hause kommst?
+Erkläre einen Ablauf (Kaffee kochen, Wäsche waschen) mit Konnektoren.
+Solange …, …: Nenne drei Regeln aus deiner Familie.
+
+@@ 67|B2|Diskutieren: Meinung, Zustimmung, Widerspruch, Kompromiss|Stadt der Zukunft|city|42,47|after=66
+#expl
+In einer Diskussion braucht man vier Gruppen von Ausdrücken: **Meinung äußern** (__Meiner Meinung nach …, Ich bin der Ansicht, dass …, Ich halte es für wichtig, dass …__), **zustimmen** (__Da stimme ich Ihnen zu. Das sehe ich genauso.__), **widersprechen** (__Da bin ich anderer Meinung. Das überzeugt mich nicht, weil …__) und **einen Kompromiss vorschlagen** (__Wie wäre es, wenn …? Könnten wir uns darauf einigen, dass …?__).
+Höfliches Widersprechen hat oft zwei Schritte: Zuerst etwas anerkennen, dann einschränken – __Sie haben insofern recht, als …, aber …__ / __Das ist ein wichtiger Punkt. Trotzdem …__ So bleibt das Gespräch sachlich.
+Wichtig sind auch **Rückfragen** (__Wie meinen Sie das genau?__), **Unterbrechen** (__Darf ich kurz etwas dazu sagen?__) und **das Wort zurückholen** (__Lassen Sie mich bitte ausreden.__). In der Prüfung zählt nicht, wer „gewinnt“, sondern dass man reagiert, begründet und am Ende gemeinsam eine Lösung findet.
+#use
+Prüfung B2 Sprechen Teil 2/3: Diskussion und gemeinsame Planung mit einer Partnerin / einem Partner.
+#table
+Funktion|Ausdruck
+Meinung|Ich bin der Ansicht, dass … / Meiner Meinung nach …
+Zustimmung|Da haben Sie völlig recht. / Das sehe ich genauso.
+Teilweise Zustimmung|Im Prinzip ja, aber … / Sie haben insofern recht, als …
+Widerspruch|Da bin ich anderer Meinung. / Das überzeugt mich nicht.
+Rückfrage|Wie meinen Sie das? / Können Sie ein Beispiel nennen?
+Kompromiss|Könnten wir uns darauf einigen, dass …? / Wie wäre es, wenn …?
+#ex
+Ich bin der Ansicht, dass Autos aus der Innenstadt verschwinden sollten. = I am of the opinion that cars should disappear from the city centre.
+Meiner Meinung nach brauchen wir mehr Radwege. = In my opinion we need more cycle paths.
+Ich halte es für wichtig, dass auch ältere Menschen mobil bleiben. = I think it's important that older people also stay mobile.
+Da stimme ich Ihnen voll und ganz zu. = I agree with you completely.
+Das sehe ich genauso. = I see it the same way.
+Im Prinzip ja, aber das ist zu teuer. = In principle yes, but that's too expensive.
+Da bin ich ganz anderer Meinung. = I have a completely different opinion on that.
+Das überzeugt mich nicht, weil es keine Alternativen gibt. = That doesn't convince me because there are no alternatives.
+Wie meinen Sie das genau? = What exactly do you mean by that?
+Können Sie dafür ein Beispiel nennen? = Can you give an example of that?
+Darf ich kurz etwas dazu sagen? = May I say something about that?
+Lassen Sie mich bitte ausreden. = Please let me finish.
+Wie wäre es, wenn wir mit einem Testjahr beginnen? = How about starting with a trial year?
+Könnten wir uns darauf einigen, dass Lieferverkehr erlaubt bleibt? = Could we agree that delivery traffic remains allowed?
+Gut, dann halten wir fest: Wir probieren es ein Jahr lang aus. = Good, then let's note: we'll try it for a year.
+#vocab
+die Ansicht, -en = view
+die Auffassung, -en = opinion
+der Standpunkt, -e = standpoint
+überzeugen = to convince
+überzeugend = convincing
+zustimmen (+ Dat.) = to agree with
+widersprechen (+ Dat.) = to contradict
+einwenden = to object
+der Einwand, ¨e = objection
+der Kompromiss, -e = compromise
+sich einigen auf = to agree on
+festhalten = to note, to record
+abwägen = to weigh up
+die autofreie Innenstadt = car-free city centre
+der Lieferverkehr = delivery traffic
+die Fußgängerzone, -n = pedestrian zone
+die Lebensqualität = quality of life
+der Einzelhandel = retail trade
+die Anbindung, -en = (transport) connection
+die Testphase, -n = trial phase
+#read
+Soll die Innenstadt autofrei werden? Diese Frage spaltet derzeit die Bürgerinnen und Bürger von Neustadt. Die Stadtverwaltung plant, den Autoverkehr im historischen Zentrum ab dem nächsten Frühjahr weitgehend zu verbieten. Nur Busse, Taxis, Lieferfahrzeuge zu bestimmten Zeiten und Menschen mit Behinderung sollen noch hineinfahren dürfen. Befürworter sind der Ansicht, dass die Lebensqualität dadurch deutlich steigen würde: weniger Lärm, sauberere Luft, mehr Platz für Cafés, Bäume und spielende Kinder. Sie verweisen auf Städte wie Kopenhagen oder Ljubljana, wo ähnliche Maßnahmen erfolgreich waren. Der Einzelhandel sieht das anders. Viele Geschäftsleute befürchten, dass Kundinnen und Kunden aus dem Umland ausbleiben, wenn sie nicht mehr bis vor die Tür fahren können, und lieber in Einkaufszentren am Stadtrand einkaufen. Auch der Seniorenbeirat äußert Bedenken: Für ältere Menschen sei der Weg von einem Parkhaus am Rand oft zu weit. Die Stadt hat deshalb einen Kompromiss vorgeschlagen: eine einjährige Testphase, kostenlose Shuttlebusse von den Parkhäusern ins Zentrum und eine wissenschaftliche Begleitung, die Umsätze, Luftqualität und Zufriedenheit misst. Ob das die Kritiker überzeugt, soll eine Bürgerversammlung im November zeigen.
+#dialog
+Moderatorin: Frau Krämer, Sie haben ein Modegeschäft in der Altstadt. Was halten Sie von der autofreien Innenstadt?
+Frau Krämer: Ehrlich gesagt überzeugt mich das nicht. Viele meiner Kundinnen kommen mit dem Auto aus dem Umland.
+Herr Yıldız: Darf ich kurz etwas dazu sagen? In Kopenhagen sind die Umsätze nach der Umstellung gestiegen.
+Frau Krämer: Lassen Sie mich bitte ausreden. Kopenhagen hat ein ganz anderes Radwegenetz als wir.
+Herr Yıldız: Da haben Sie insofern recht, als wir noch Radwege bauen müssen. Aber genau deshalb brauchen wir die Testphase.
+Moderatorin: Gibt es einen Punkt, auf den Sie sich einigen könnten?
+Frau Krämer: Wenn die Shuttlebusse wirklich kostenlos und häufig fahren, wäre ich bereit, es ein Jahr zu versuchen.
+Herr Yıldız: Damit kann ich gut leben.
+#dq
+Warum ist Frau Krämer skeptisch? || Viele Kundinnen kommen mit dem Auto aus dem Umland.
+Welches Beispiel nennt Herr Yıldız? || Kopenhagen (die Umsätze sind gestiegen).
+Unter welcher Bedingung stimmt Frau Krämer zu? || Wenn die Shuttlebusse kostenlos und häufig fahren.
+#task
+Meinung: Meiner ___ nach ist das zu teuer. || Meinung
+Meinung: Ich bin der ___, dass … || Ansicht
+Zustimmung: Das sehe ich ___. || genauso
+Zustimmung: Da ___ ich Ihnen zu. (stimmen) || stimme
+Widerspruch: Da bin ich anderer ___. || Meinung
+Widerspruch: Das ___ mich nicht. (überzeugen) || überzeugt
+Teilweise: Sie haben ___ recht, als … || insofern
+Rückfrage: Wie ___ Sie das genau? || meinen
+Unterbrechen: ___ ich kurz etwas dazu sagen? || Darf
+Kompromiss: Könnten wir uns ___ einigen, dass …? || darauf
+Kompromiss: Wie ___ es, wenn wir es testen? || wäre
+Fehler? „Ich bin der Meinung nach, dass es gut ist.“ || Ich bin der Meinung, dass es gut ist.
+#exam
+Was plant die Stadtverwaltung? || Den Autoverkehr im historischen Zentrum weitgehend zu verbieten.
+Wer darf noch hineinfahren? || Busse, Taxis, Lieferfahrzeuge zu bestimmten Zeiten und Menschen mit Behinderung.
+Welche Vorteile nennen die Befürworter? || Weniger Lärm, sauberere Luft, mehr Platz.
+Was befürchtet der Einzelhandel? || Dass Kunden aus dem Umland ausbleiben.
+Welche Bedenken hat der Seniorenbeirat? || Der Weg vom Parkhaus ist für ältere Menschen zu weit.
+Woraus besteht der Kompromiss? || Einjährige Testphase, kostenlose Shuttlebusse, wissenschaftliche Begleitung.
+Widersprechen Sie höflich: „Autos gehören in die Stadt.“
+Diskutieren Sie: Sollte Ihre Stadt autofrei werden? Nennen Sie zwei Argumente dafür und dagegen.
+Planen Sie mit einem Partner ein autofreies Stadtfest und einigen Sie sich auf drei Punkte.
+Fassen Sie die Diskussion zwischen Frau Krämer und Herrn Yıldız zusammen.
+#speak
+Diskutiert zu zweit: Homeoffice für alle – ja oder nein?
+Widersprich höflich in zwei Schritten: anerkennen, dann einschränken.
+Unterbrich höflich und hol dir das Wort zurück.
+Einigt euch auf einen Kompromiss für ein Klassenfest.
+
+@@ 68|C1|Redewiedergabe im Bericht: Konjunktiv I, Ersatzformen und redeeinleitende Verben|Medien und Politik|office|43,51|after=56
+#expl
+In Berichten trennt man die **eigene Aussage** von der **wiedergegebenen**: Der **Konjunktiv I** signalisiert „Das hat jemand gesagt – ich gebe es neutral wieder“. __Der Minister erklärte, die Lage sei stabil.__ Ist der Konjunktiv I mit dem Indikativ identisch (meist in der 1. Person Singular und im Plural), steht der **Konjunktiv II**: __Sie sagten, sie hätten (nicht: haben) keine Informationen.__
+Präzision entsteht durch das **redeeinleitende Verb**: __behaupten__ (Zweifel), __einräumen/zugeben__ (Zugeständnis), __betonen/unterstreichen__ (Gewicht), __bestreiten/dementieren__ (Verneinung), __kritisieren, warnen, fordern, ankündigen, versichern__. Das Verb bewertet die Aussage – oft wichtiger als der Konjunktiv.
+Weitere Mittel der Distanz: **sollen** (__Der Politiker soll Geld angenommen haben.__ = Es wird behauptet), **wollen** (__Er will nichts gewusst haben.__ = Er behauptet es selbst), Präpositionen wie **laut, zufolge, nach Angaben** und **angeblich, vermeintlich**. Für die Vergangenheit: __er habe gesagt / sei gegangen__; für die Zukunft: __er werde kommen__.
+#use
+Prüfung C1: Zusammenfassungen von Texten und Hörbeiträgen, Berichte, Protokolle, Zitate in Erörterungen.
+#table
+Mittel|Funktion|Beispiel
+Konjunktiv I|neutrale Wiedergabe|Er sagte, er **habe** keine Zeit.
+Konjunktiv II (Ersatz)|wenn K I = Indikativ|Sie sagten, sie **hätten** keine Zeit.
+sollen + Inf.|Gerücht, fremde Behauptung|Er **soll** reich **sein**.
+wollen + Inf.|eigene Behauptung|Er **will** es nicht **gewusst haben**.
+laut / zufolge|Quelle nennen|**Laut** Polizei … / Der Studie **zufolge** …
+behaupten / einräumen / bestreiten|Bewertung der Aussage|Er **räumte ein**, Fehler gemacht zu haben.
+#ex
+Die Ministerin erklärte, die Reform werde im Januar in Kraft treten. = The minister stated that the reform would come into force in January.
+Der Sprecher betonte, es habe keine Absprachen gegeben. = The spokesperson stressed there had been no agreements.
+Die Opposition behauptet, die Zahlen seien geschönt. = The opposition claims the figures have been embellished.
+Der Konzern bestreitet, von den Mängeln gewusst zu haben. = The corporation denies having known about the defects.
+Er räumte ein, dass er die Frist versäumt habe. = He admitted that he had missed the deadline.
+Die Anwohner fordern, der Lärm müsse reduziert werden. = The residents demand that the noise must be reduced.
+Die Polizei warnte, die Straßen könnten glatt sein. = The police warned that the roads could be slippery.
+Laut Wetterdienst wird es am Wochenende stürmisch. = According to the weather service it will be stormy at the weekend.
+Einem Bericht der Zeitung zufolge sollen 200 Stellen wegfallen. = According to a newspaper report, 200 jobs are to be cut.
+Der Politiker soll Spenden nicht angegeben haben. = The politician is alleged not to have declared donations.
+Der Verdächtige will zur Tatzeit zu Hause gewesen sein. = The suspect claims to have been at home at the time of the crime.
+Die Firma versicherte, alle Kunden würden entschädigt. = The company assured that all customers would be compensated.
+Sie fragte, ob die Daten sicher gespeichert würden. = She asked whether the data would be stored securely.
+Die Studierenden kündigten an, sie würden weiter protestieren. = The students announced they would continue to protest.
+Nach Angaben der Veranstalter kamen 10.000 Menschen. = According to the organisers, 10,000 people came.
+#vocab
+redeeinleitend = introducing speech
+die Redewiedergabe = reported speech
+wiedergeben = to reproduce, to report
+das Zitat, -e = quotation
+behaupten = to claim
+bestreiten = to deny, to dispute
+dementieren = to deny officially
+einräumen = to concede
+unterstreichen = to underline, to stress
+versichern = to assure
+ankündigen = to announce
+mutmaßlich = alleged, presumed
+angeblich = supposedly
+vermeintlich = supposed (wrongly)
+die Stellungnahme, -n = statement
+die Gegendarstellung, -en = correction (press)
+die Quelle, -n = source
+die Distanzierung = distancing
+der Wortlaut = exact wording
+sinngemäß = in essence, roughly
+#read
+Ein Beispiel für die Redewiedergabe in einem Nachrichtentext: Im Streit um die geplante Erweiterung des Flughafens hat die Landesregierung am Dienstag erstmals Fehler eingeräumt. Der Verkehrsminister sagte vor Journalisten, man habe die Bürgerinnen und Bürger zu spät beteiligt. Dies werde sich ändern. Künftig solle es vor jeder größeren Entscheidung öffentliche Anhörungen geben. Zugleich betonte er, an der Erweiterung selbst halte die Regierung fest; ohne zusätzliche Kapazitäten drohten der Region erhebliche wirtschaftliche Nachteile. Die Bürgerinitiative „Ruhiger Himmel“ reagierte zurückhaltend. Ihre Sprecherin erklärte, die Ankündigung komme reichlich spät und ändere nichts an den grundsätzlichen Problemen. Die Regierung habe Gutachten zur Lärmbelastung über Monate zurückgehalten. Das Ministerium bestreitet dies. Es seien lediglich vorläufige Daten gewesen, die man noch habe prüfen müssen. Einem Bericht des Regionalsenders zufolge sollen interne Unterlagen jedoch belegen, dass die Ergebnisse bereits im Frühjahr vorlagen. Der Minister will davon nach eigenen Angaben nichts gewusst haben. Die Opposition fordert nun einen Untersuchungsausschuss. Ein Sprecher der Fluggesellschaften warnte unterdessen, weitere Verzögerungen würden Arbeitsplätze gefährden. Die Entscheidung über die Erweiterung soll im kommenden Jahr fallen.
+#dialog
+Moderator: Herr Weiß, die Bürgerinitiative behauptet, die Regierung habe Gutachten zurückgehalten. Was sagen Sie dazu?
+Herr Weiß: Das weise ich entschieden zurück. Es handelte sich um vorläufige Zahlen.
+Moderator: Laut einem Bericht des Regionalsenders lagen die Ergebnisse aber schon im Frühjahr vor.
+Herr Weiß: Ich kenne den Bericht. Er stützt sich auf anonyme Quellen. Der Minister hat versichert, er habe die Daten erst im Herbst gesehen.
+Moderator: Sie räumen aber ein, dass die Bürger zu spät beteiligt wurden?
+Herr Weiß: Ja, das haben wir selbstkritisch eingestanden. Daraus ziehen wir Konsequenzen.
+#dq
+Was behauptet die Bürgerinitiative? || Die Regierung habe Gutachten zurückgehalten.
+Worauf stützt sich der Bericht des Regionalsenders laut Herrn Weiß? || Auf anonyme Quellen.
+Was räumt Herr Weiß ein? || Dass die Bürger zu spät beteiligt wurden.
+#task
+Indirekt: „Ich habe keine Zeit.“ → Er sagte, er ___ keine Zeit. || habe
+Indirekt (Ersatzform): „Wir haben keine Zeit.“ → Sie sagten, sie ___ keine Zeit. || hätten
+Indirekt: „Die Lage ist stabil.“ → Sie erklärte, die Lage ___ stabil. || sei
+Indirekt Vergangenheit: „Ich bin nicht dort gewesen.“ → Er sagte, er ___ nicht dort gewesen. || sei
+Indirekt Zukunft: „Wir werden helfen.“ → Sie versprachen, sie ___ helfen. (Ersatzform) || würden
+Gerücht: Man sagt, er ist bestochen worden. → Er ___ bestochen worden sein. || soll
+Eigene Behauptung: Er sagt, er war krank. → Er ___ krank gewesen sein. || will
+Quelle: ___ Polizei gab es keine Verletzten. || Laut
+Quelle nachgestellt: Dem Bericht ___ ist die Zahl gestiegen. || zufolge
+Verb wählen (Zugeständnis): Er ___ ein, einen Fehler gemacht zu haben. || räumte
+Verb wählen (Verneinung): Die Firma ___ die Vorwürfe. (bestreiten, Präteritum) || bestritt
+Fehler? „Er sagte, er sei gestern zu Hause gewesen sei.“ || Er sagte, er sei gestern zu Hause gewesen.
+#exam
+Welchen Fehler hat die Landesregierung eingeräumt? || Die Bürger zu spät beteiligt zu haben.
+Was soll es künftig geben? || Öffentliche Anhörungen vor größeren Entscheidungen.
+Was wirft die Bürgerinitiative der Regierung vor? || Gutachten zur Lärmbelastung zurückgehalten zu haben.
+Wie reagiert das Ministerium? || Es bestreitet es; es seien vorläufige Daten gewesen.
+Was fordert die Opposition? || Einen Untersuchungsausschuss.
+Wovor warnen die Fluggesellschaften? || Weitere Verzögerungen würden Arbeitsplätze gefährden.
+Geben Sie wieder: Die Ministerin sagt: „Wir haben alles richtig gemacht.“ || Die Ministerin sagt, sie hätten alles richtig gemacht.
+Fassen Sie eine aktuelle Nachricht in indirekter Rede zusammen (120 Wörter).
+Erklären Sie den Unterschied zwischen „Er sagte, er sei krank“ und „Er sagte, er ist krank“.
+Schreiben Sie ein kurzes Protokoll eines Gesprächs mit drei redeeinleitenden Verben.
+#speak
+Berichte, was ein Freund dir gestern erzählt hat – im Konjunktiv I.
+Gib eine Nachricht aus dem Radio mit „laut“, „zufolge“ und „sollen“ wieder.
+Spielt eine Pressekonferenz: Eine Person spricht, die andere fasst zusammen.
+Welche redeeinleitenden Verben zeigen Zweifel? Erkläre mit Beispielen.
+
+@@ 69|C1|Präfixverben: trennbar oder untrennbar (über-, um-, unter-, durch-, wieder-)|Bedeutung entscheidet|classroom|10,51|after=68
+#expl
+Die Präfixe **durch-, über-, um-, unter-, wider-, wieder-** können **trennbar** oder **untrennbar** sein – und dann ändert sich die **Bedeutung**. Trennbar ist meist die **wörtliche, räumliche** Bedeutung, betont auf dem Präfix: __Er **setzt** uns mit der Fähre **über**.__ Untrennbar ist meist die **übertragene** Bedeutung, betont auf dem Verb: __Sie **übersetzt** den Text.__
+Die Form zeigt den Unterschied: trennbar → Partizip mit **-ge-** in der Mitte und **zu** dazwischen (__übergesetzt, überzusetzen__); untrennbar → **ohne ge-** und zu davor (__übersetzt, zu übersetzen__). Beispiele: __umfahren__ (trennbar: umstoßen mit dem Auto – __Er hat das Schild umgefahren.__; untrennbar: um etwas herumfahren – __Wir haben den Stau umfahren.__).
+Weitere wichtige Paare: __wiederholen__ (zurückholen, trennbar) / __wiederholen__ (noch einmal machen, untrennbar); __unterhalten__ (darunterhalten) / __sich unterhalten__ (sprechen); __durchschauen__ (hindurchsehen) / __durchschauen__ (jemanden erkennen); __übergehen zu__ (wechseln) / __übergehen__ (ignorieren). Im Wörterbuch markiert ein Strich oder Betonungszeichen die Trennbarkeit.
+#use
+C1 Wortschatz und Präzision: Fachtexte verstehen, Missverständnisse vermeiden, Prüfung Sprachbausteine.
+#table
+Verb|trennbar (wörtlich)|untrennbar (übertragen)
+übersetzen|Er setzt uns ans andere Ufer über.|Sie übersetzt den Roman.
+umfahren|Er hat das Schild umgefahren.|Wir haben den Stau umfahren.
+wiederholen|Ich hole mein Buch wieder.|Wir wiederholen die Lektion.
+durchschauen|Er schaut durch das Fenster durch.|Ich habe ihn durchschaut.
+unterstellen|Wir stellen uns unter (Regen).|Er unterstellt mir Absicht.
+übergehen|Sie geht zum nächsten Thema über.|Man hat mich bei der Beförderung übergangen.
+#ex
+Die Lehrerin wiederholt die Regel noch einmal. = The teacher repeats the rule once more.
+Kannst du mir das Buch morgen wiederholen? – Nein: wiederbringen! = Can you fetch the book back for me tomorrow? – No: bring it back!
+Er hat den Brief ins Englische übersetzt. = He translated the letter into English.
+Der Fährmann hat uns übergesetzt. = The ferryman took us across.
+Wir haben den Stau großräumig umfahren. = We bypassed the traffic jam over a wide area.
+Ein Lkw hat die Ampel umgefahren. = A lorry knocked down the traffic light.
+Sie hat seine Absichten sofort durchschaut. = She saw through his intentions immediately.
+Bei Regen haben wir uns unter einer Brücke untergestellt. = When it rained, we sheltered under a bridge.
+Er unterstellt mir, dass ich gelogen habe. = He insinuates that I lied.
+Man hat sie bei der Beförderung übergangen. = She was passed over for promotion.
+Lassen Sie uns zum nächsten Punkt übergehen. = Let's move on to the next point.
+Wir haben uns den ganzen Abend unterhalten. = We chatted all evening.
+Die Firma unterhält zwei Büros in Asien. = The company maintains two offices in Asia.
+Der Plan ist schwer zu durchschauen. = The plan is hard to see through.
+Sie hat den ganzen Tag durchgearbeitet. = She worked through the whole day.
+#vocab
+übersetzen (untrennbar) = to translate
+übersetzen (trennbar) = to ferry across
+umfahren (untrennbar) = to drive around, to bypass
+umfahren (trennbar) = to knock down (with a vehicle)
+umgehen mit = to deal with
+umgehen (untrennbar) = to circumvent
+durchschauen (untrennbar) = to see through
+durchlesen (trennbar) = to read through
+unterhalten (untrennbar) = to entertain; to maintain
+sich unterstellen (trennbar) = to take shelter
+unterstellen (untrennbar) = to insinuate
+übergehen zu (trennbar) = to move on to
+übergehen (untrennbar) = to pass over, to ignore
+überlegen (untrennbar) = to consider
+überziehen (untrennbar) = to overdraw
+widersprechen (untrennbar) = to contradict
+widerspiegeln (trennbar) = to reflect
+wiedersehen (trennbar) = to see again
+die Betonung, -en = stress, emphasis
+das Präfix, -e = prefix
+#read
+Warum ist Deutsch manchmal so schwierig? Ein schönes Beispiel liefert ein kleiner Unfall, über den eine Lokalzeitung berichtete: „Ein Fahranfänger hat am Montagabend auf der Umgehungsstraße ein Verkehrsschild umgefahren. Er wollte nach eigenen Angaben eine Baustelle umfahren, verlor dabei jedoch die Kontrolle über sein Auto.“ Für Muttersprachler ist der Text völlig klar, für Lernende ein Rätsel: Dasselbe Verb bedeutet einmal „niederfahren“ und einmal „um etwas herumfahren“. Den Unterschied hört man an der Betonung – UMfahren gegenüber umFAHren – und man sieht ihn an der Form: „umgefahren“ mit ge- in der Mitte, „umfahren“ ohne ge-. Ähnlich geht es mit vielen anderen Verben. Wer einen Text „übersetzt“, überträgt ihn in eine andere Sprache; wer Menschen „übersetzt“, bringt sie mit dem Boot ans andere Ufer. Wer sich mit Kollegen „unterhält“, spricht mit ihnen; wer eine Familie „unterhält“, bezahlt für ihren Lebensunterhalt. Eine Faustregel hilft: Die trennbare Variante ist meist räumlich und konkret, die untrennbare eher abstrakt. Ganz zuverlässig ist die Regel aber nicht. Darum lohnt es sich, solche Verben im Wörterbuch nachzuschlagen und sie immer mit einem Beispielsatz zu lernen, statt die Bedeutung zu raten.
+#dialog
+Tomás: Leila, was ist der Unterschied zwischen „Ich habe ihn durchschaut“ und „Ich habe durchgeschaut“?
+Leila: Das erste ist untrennbar und bedeutet: Ich habe verstanden, was er wirklich will.
+Tomás: Und das zweite?
+Leila: Trennbar, ganz wörtlich: Du hast durch etwas hindurchgesehen, zum Beispiel durch ein Fernglas.
+Tomás: Und wie höre ich das?
+Leila: An der Betonung. Bei trennbaren Verben betont man das Präfix: DURCHgeschaut. Bei untrennbaren das Verb: durchSCHAUT.
+Tomás: Puh. Gibt es noch mehr davon?
+Leila: Viele. Am besten lernst du jedes Paar mit einem Beispielsatz.
+#dq
+Was bedeutet „Ich habe ihn durchschaut“? || Ich habe verstanden, was er wirklich will.
+Woran hört man den Unterschied? || An der Betonung.
+Was empfiehlt Leila? || Jedes Paar mit einem Beispielsatz zu lernen.
+#task
+Partizip: Sie hat den Text ins Deutsche ___. (übersetzen, Sprache) || übersetzt
+Partizip: Der Fährmann hat uns ___. (übersetzen, Ufer) || übergesetzt
+Partizip: Ein Auto hat die Laterne ___. (umfahren, niederfahren) || umgefahren
+Partizip: Wir haben den Stau ___. (umfahren, herum) || umfahren
+Partizip: Ich habe seinen Trick sofort ___. (durchschauen) || durchschaut
+zu-Infinitiv: Es ist schwer, diesen Text zu ___. (übersetzen, Sprache) || übersetzen
+zu-Infinitiv: Es war unmöglich, das Schild nicht ___. (umfahren, niederfahren) || umzufahren
+Präsens: Die Lehrerin ___ die Regel. (wiederholen, noch einmal) || wiederholt
+Präsens: Wir ___ jetzt zum nächsten Punkt ___. (übergehen) || gehen / über
+Bedeutung: „Er unterstellt mir Absicht.“ = Er behauptet, ich habe es ___ gemacht. || absichtlich
+Bedeutung: „Bei Regen stellen wir uns unter.“ = Wir suchen ___. (Schutz/Arbeit) || Schutz
+Fehler? „Ich habe den Brief übergesetzt.“ (Sprache gemeint) || Ich habe den Brief übersetzt.
+#exam
+Was hat der Fahranfänger umgefahren? || Ein Verkehrsschild.
+Was wollte er umfahren? || Eine Baustelle.
+Woran erkennt man den Unterschied in der Aussprache? || An der Betonung (UMfahren / umFAHren).
+Woran erkennt man ihn in der Schrift? || Am Partizip: mit ge- in der Mitte (trennbar) oder ohne ge- (untrennbar).
+Welche Faustregel nennt der Text? || Trennbar = räumlich/konkret, untrennbar = abstrakt.
+Bilden Sie zwei Sätze mit „unterhalten“ in zwei Bedeutungen.
+Erklären Sie den Unterschied: „Sie hat die Prüfung wiederholt“ / „Sie hat ihr Fahrrad wiedergeholt“.
+Schreiben Sie eine kurze Geschichte mit umfahren (beide Bedeutungen).
+Welche Verben in Ihrer Muttersprache haben zwei Bedeutungen? Vergleichen Sie.
+Nennen Sie drei untrennbare Verben mit über- und erklären Sie sie.
+#speak
+Sprich die Paare laut und betone richtig: UMfahren/umFAHren, ÜBERsetzen/überSETZen.
+Erkläre einem Lernenden den Unterschied zwischen „durchschauen“ und „durchlesen“.
+Erzähl eine Situation, in der du jemanden durchschaut hast.
+Bilde mit deinem Partner Sätze mit „unterhalten“, „übergehen“ und „umgehen“.
+
+@@ 70|C1|Grafiken und Statistiken versprachlichen|Zahlen und Trends|office|54|after=69
+#expl
+Eine Grafikbeschreibung folgt drei Schritten: **Einleitung** (Thema, Quelle, Zeitraum, Art der Grafik: __Das Säulendiagramm zeigt … Die Daten stammen vom Statistischen Bundesamt und beziehen sich auf die Jahre 2015 bis 2024.__), **Hauptteil** (wichtigste Entwicklungen, Höchst- und Tiefstwerte, Vergleiche) und **Schluss** (Zusammenfassung, mögliche Gründe, eigene Einschätzung).
+Für Entwicklungen braucht man präzise Verben: **steigen, zunehmen, wachsen, sich erhöhen** (um 5 % auf 40 %), **sinken, abnehmen, zurückgehen, sich verringern**, **gleich bleiben, stagnieren, schwanken**, **sich verdoppeln/halbieren**. Merke: **um** = Differenz, **auf** = Endwert, **von … auf** = Anfang und Ende.
+Für Anteile und Vergleiche: __Knapp die Hälfte / gut ein Drittel / etwa jeder Vierte__, __der Anteil liegt bei …__, __im Vergleich zu …__, __während … , …__, __an erster Stelle steht …__. Vorsicht mit Ursachen: Eine Grafik zeigt meist nur Zahlen, keine Gründe – formulieren Sie Vermutungen mit __vermutlich, dürfte, lässt sich darauf zurückführen, dass …__.
+#use
+Prüfung C1 (telc/Goethe/TestDaF): Grafik beschreiben und Ergebnisse diskutieren, schriftlich und mündlich.
+#table
+Entwicklung|Verb|Beispiel
+nach oben|steigen, zunehmen|Der Anteil **stieg von** 20 % **auf** 35 %.
+nach unten|sinken, zurückgehen|Die Zahl **ging um** 10 % **zurück**.
+gleich|stagnieren, konstant bleiben|Die Preise **blieben** nahezu **konstant**.
+unregelmäßig|schwanken|Die Werte **schwankten** zwischen 5 und 8 %.
+stark|sich verdoppeln, sprunghaft ansteigen|Die Nachfrage **hat sich verdoppelt**.
+Rang|an erster/letzter Stelle stehen|**An erster Stelle steht** das Fahrrad.
+#ex
+Das Diagramm zeigt die Entwicklung der Mietpreise in deutschen Großstädten. = The chart shows the development of rents in large German cities.
+Die Daten stammen vom Statistischen Bundesamt. = The data come from the Federal Statistical Office.
+Die Zahl der E-Autos ist seit 2020 stark gestiegen. = The number of electric cars has risen sharply since 2020.
+Der Anteil stieg von 12 auf 25 Prozent. = The share rose from 12 to 25 per cent.
+Die Arbeitslosigkeit ging um zwei Prozentpunkte zurück. = Unemployment fell by two percentage points.
+Die Preise sind nahezu konstant geblieben. = Prices remained almost constant.
+Die Besucherzahlen schwankten stark. = Visitor numbers fluctuated strongly.
+Knapp die Hälfte der Befragten nutzt täglich das Fahrrad. = Just under half of the respondents cycle every day.
+Etwa jeder Vierte arbeitet im Homeoffice. = About one in four works from home.
+Im Vergleich zum Vorjahr hat sich der Umsatz verdoppelt. = Compared with the previous year, sales have doubled.
+An erster Stelle steht das Auto, gefolgt vom öffentlichen Nahverkehr. = The car is in first place, followed by public transport.
+Während die Zahl in Städten zunahm, sank sie auf dem Land. = While the number increased in cities, it fell in rural areas.
+Den Höchststand erreichte der Wert im Jahr 2022. = The value reached its peak in 2022.
+Dies lässt sich vermutlich auf die gestiegenen Energiepreise zurückführen. = This can presumably be attributed to the increased energy prices.
+Zusammenfassend lässt sich ein deutlicher Aufwärtstrend feststellen. = In summary, a clear upward trend can be observed.
+#vocab
+das Säulendiagramm, -e = bar chart (vertical)
+das Balkendiagramm, -e = bar chart (horizontal)
+das Kreisdiagramm, -e = pie chart
+das Liniendiagramm, -e = line graph
+die Tabelle, -n = table
+der Prozentpunkt, -e = percentage point
+der Anteil, -e = share
+der Höchststand = peak
+der Tiefststand = low point
+der Aufwärtstrend = upward trend
+der Abwärtstrend = downward trend
+zunehmen = to increase
+zurückgehen = to decline
+stagnieren = to stagnate
+schwanken = to fluctuate
+sich verdoppeln = to double
+sich halbieren = to halve
+die Befragten (Pl.) = respondents
+der Vergleichszeitraum = comparison period
+die Erhebung, -en = survey
+#read
+Musterbeschreibung: Das Liniendiagramm mit dem Titel „Verkehrsmittel auf dem Weg zur Arbeit“ zeigt, wie sich die Nutzung von Auto, öffentlichem Nahverkehr und Fahrrad in einer deutschen Großstadt zwischen 2014 und 2024 entwickelt hat. Die Daten stammen aus einer jährlichen Befragung der Stadtverwaltung unter rund 5.000 Berufstätigen. Auffällig ist zunächst der Rückgang des Autos: Während 2014 noch knapp die Hälfte der Befragten (48 Prozent) mit dem eigenen Pkw zur Arbeit fuhr, waren es 2024 nur noch 31 Prozent – ein Minus von 17 Prozentpunkten. Gleichzeitig hat sich der Anteil des Fahrrads mehr als verdoppelt, nämlich von 11 auf 24 Prozent. Den stärksten Anstieg verzeichnete das Rad zwischen 2020 und 2021, was vermutlich mit der Pandemie und dem Ausbau neuer Radwege zusammenhängt. Der öffentliche Nahverkehr schwankte über den gesamten Zeitraum zwischen 30 und 38 Prozent; einem deutlichen Einbruch im Jahr 2020 folgte eine Erholung, und 2024 erreichte er mit 38 Prozent seinen Höchststand. Ein möglicher Grund dafür dürfte das bundesweite Monatsticket sein. Zusammenfassend lässt sich ein klarer Trend weg vom Auto hin zu umweltfreundlicheren Verkehrsmitteln feststellen. Ob sich diese Entwicklung fortsetzt, hängt allerdings davon ab, ob die Stadt weiter in Infrastruktur investiert. Zu berücksichtigen ist zudem, dass die Befragung nur Berufstätige erfasst; über den Freizeitverkehr sagt die Grafik nichts aus.
+#dialog
+Prüferin: Bitte beschreiben Sie kurz die wichtigste Entwicklung in Ihrer Grafik.
+Aiko: Die Grafik zeigt, dass der Anteil des Autos von 48 auf 31 Prozent gesunken ist, also um 17 Prozentpunkte.
+Prüferin: Und welches Verkehrsmittel hat am meisten zugelegt?
+Aiko: Das Fahrrad. Sein Anteil hat sich mehr als verdoppelt.
+Prüferin: Woran könnte das liegen?
+Aiko: Die Grafik nennt keine Gründe, aber vermutlich spielen neue Radwege und die Pandemie eine Rolle.
+Prüferin: Ist das in Ihrem Heimatland ähnlich?
+Aiko: In Tokio ist der Nahverkehr seit Jahren an erster Stelle. Das Auto spielt dort eine viel kleinere Rolle.
+#dq
+Um wie viele Prozentpunkte ist der Anteil des Autos gesunken? || Um 17 Prozentpunkte.
+Welches Verkehrsmittel hat am meisten zugelegt? || Das Fahrrad.
+Was steht in Tokio an erster Stelle? || Der Nahverkehr.
+#task
+Von 20 % ___ 30 %: Der Anteil stieg ___ 20 ___ 30 %. || von / auf
+Differenz: Die Zahl sank ___ 5 %. || um
+Endwert: Der Preis stieg ___ 3 Euro. || auf
+Verb: Die Werte blieben gleich. → Die Werte ___. (stagnieren) || stagnierten
+Verb: 10 → 20: Die Zahl hat sich ___. || verdoppelt
+Verb: 40 → 20: Der Wert hat sich ___. || halbiert
+Anteil: 48 % = ___ die Hälfte (knapp/gut) || knapp
+Anteil: 26 % = etwa jeder ___ || Vierte
+Rang: An erster ___ steht das Auto. || Stelle
+Vermutung: Das ___ sich auf die Preise zurückführen. (lassen) || lässt
+Einleitung: Die Daten ___ vom Statistischen Bundesamt. (stammen) || stammen
+Fehler? „Die Zahl ist um 30 % gestiegen auf.“ || Die Zahl ist auf 30 % gestiegen.
+#exam
+Was zeigt das Liniendiagramm? || Die Nutzung von Auto, Nahverkehr und Fahrrad auf dem Weg zur Arbeit (2014–2024).
+Woher stammen die Daten? || Aus einer jährlichen Befragung der Stadtverwaltung unter rund 5.000 Berufstätigen.
+Wie hat sich der Anteil des Fahrrads entwickelt? || Er hat sich mehr als verdoppelt (von 11 auf 24 %).
+Wann stieg das Fahrrad am stärksten? || Zwischen 2020 und 2021.
+Was ist ein möglicher Grund für den Höchststand des Nahverkehrs? || Das bundesweite Monatsticket.
+Welche Einschränkung der Befragung nennt der Text? || Sie erfasst nur Berufstätige, nicht den Freizeitverkehr.
+Beschreiben Sie: 2015: 30 %, 2025: 45 %. || Der Anteil ist von 30 auf 45 Prozent gestiegen (um 15 Prozentpunkte).
+Beschreiben Sie eine Grafik Ihrer Wahl in 150 Wörtern (Einleitung, Hauptteil, Schluss).
+Vergleichen Sie die Entwicklung mit Ihrem Heimatland.
+Welche Gründe könnte es für einen Rückgang des Fleischkonsums geben? Formulieren Sie vorsichtig.
+#speak
+Beschreibe eine erfundene Grafik über die Handynutzung von Jugendlichen.
+Nenne drei Entwicklungen mit steigen, sinken und schwanken.
+Formuliere Vermutungen über Gründe – vorsichtig und präzise.
+Vergleicht zu zweit zwei Grafiken und diskutiert die Unterschiede.
+
+@@ 71|C1|Wortbildung: Komposita, Ableitungen, Nominalisierung|Wörter verstehen, ohne sie zu kennen|classroom|54,55|after=70
+#expl
+Deutsch bildet neue Wörter vor allem durch **Komposition** (Zusammensetzung): Das **letzte** Wort bestimmt Bedeutung und **Genus**: __die Haustür__ (eine Tür), __der Türschlüssel__ (ein Schlüssel). Zwischen den Teilen stehen oft **Fugenelemente** (-s-, -es-, -n-, -en-, -er-): __Arbeitszeit, Liebesbrief, Sonnenbrille, Kinderwagen__. Wer das Grundwort erkennt, versteht auch lange Wörter: __Kraftfahrzeughaftpflichtversicherung__ = eine Versicherung.
+**Ableitungen** mit Suffixen zeigen die Wortart: **-ung, -heit, -keit, -schaft, -ion, -tät** → feminine Nomen; **-er, -ling, -ismus** → maskulin; **-chen, -lein, -ment, -um** → neutral. Adjektive: **-bar** (möglich: lesbar), **-los** (ohne: arbeitslos), **-haft, -ig, -lich, -isch**. Präfixe verändern die Bedeutung: **un-** (Gegenteil), **miss-** (falsch), **ver-** (oft „falsch“ oder „weg“: verlaufen, verschwenden), **er-** (Erfolg: erreichen).
+**Nominalisierung**: Fast jedes Verb wird mit dem Artikel **das** zum Nomen (__das Lesen, das Autofahren__), Adjektive werden mit der/die/das zu Personen oder Abstrakta (__der Kranke, das Gute__). In wissenschaftlichen Texten führt das zu dichten Ausdrücken, die man durch Auflösen in Sätze leichter versteht.
+#use
+C1 Lese- und Hörverstehen: unbekannte Wörter erschließen; Schreiben: präzise und abwechslungsreich formulieren.
+#table
+Mittel|Regel|Beispiele
+Kompositum|Grundwort am Ende bestimmt Genus|die Haus**tür**, der Tür**schlüssel**
+Fugen-s|oft nach -ung, -heit, -keit, -ion|Wohnung**s**markt, Gesundheit**s**system
+-ung/-heit/-keit|feminin, abstrakt|die Lösung, die Freiheit, die Möglichkeit
+-bar / -los|möglich / ohne|lesbar, essbar / arbeitslos, kostenlos
+un- / miss-|Gegenteil / falsch|unklar / Missverständnis
+Nominalisierung|das + Infinitiv|das Lernen, beim Autofahren
+#ex
+Die Arbeitszeitverkürzung wird seit Jahren diskutiert. = The reduction of working hours has been discussed for years.
+Der Wohnungsmarkt in Großstädten ist angespannt. = The housing market in big cities is tight.
+Das Gesundheitssystem steht unter Druck. = The health system is under pressure.
+Diese Schrift ist kaum lesbar. = This writing is barely legible.
+Der Eintritt ist kostenlos. = Admission is free.
+Das war ein unglückliches Missverständnis. = That was an unfortunate misunderstanding.
+Er hat sich im Wald verlaufen. = He got lost in the forest.
+Wir sollten keine Lebensmittel verschwenden. = We shouldn't waste food.
+Beim Autofahren telefoniert man nicht. = You don't make phone calls while driving.
+Das Lernen fällt mir abends schwerer. = Learning is harder for me in the evening.
+Die Kranken wurden sofort versorgt. = The sick were treated immediately.
+Ich wünsche dir alles Gute. = I wish you all the best.
+Die Erreichbarkeit der Mitarbeiter ist geregelt. = The availability of employees is regulated.
+Die Unvereinbarkeit der Positionen wurde deutlich. = The incompatibility of the positions became clear.
+Die Nachhaltigkeitsberichte großer Firmen sind oft schwer verständlich. = The sustainability reports of large companies are often hard to understand.
+#vocab
+die Wortbildung = word formation
+das Kompositum, Komposita = compound
+das Grundwort, ¨er = head word (of a compound)
+das Bestimmungswort, ¨er = modifier
+das Fugenelement, -e = linking element
+die Ableitung, -en = derivation
+das Suffix, -e = suffix
+das Präfix, -e = prefix
+die Nominalisierung, -en = nominalisation
+erschließen = to work out (meaning)
+zerlegen = to break down
+verständlich = understandable
+missverstehen = to misunderstand
+verlaufen (sich) = to get lost
+verschwenden = to waste
+erreichbar = reachable
+unvereinbar = incompatible
+kostenlos = free of charge
+fehlerhaft = faulty
+die Zusammensetzung, -en = composition
+#read
+Mark Twain spottete einst, manche deutschen Wörter seien so lang, dass sie eine Perspektive hätten. Tatsächlich ist die Fähigkeit, beliebig lange Zusammensetzungen zu bilden, eine Besonderheit des Deutschen. Ein berühmtes Beispiel war das „Rindfleischetikettierungsüberwachungsaufgabenübertragungsgesetz“, das in Mecklenburg-Vorpommern bis 2013 galt. Was wie ein Ungetüm aussieht, ist bei näherem Hinsehen ganz logisch: Es handelt sich um ein Gesetz, das die Übertragung der Aufgaben zur Überwachung der Etikettierung von Rindfleisch regelt. Wer solche Wörter verstehen will, sollte sie von hinten nach vorne lesen. Das letzte Element, das Grundwort, nennt die Sache und bestimmt den Artikel; alle vorderen Teile präzisieren sie. Ähnlich hilfreich ist die Kenntnis von Suffixen. Ein Wort auf „-keit“ ist feminin und abstrakt, ein Adjektiv auf „-bar“ beschreibt eine Möglichkeit, eines auf „-los“ einen Mangel. So erschließt sich „Unverzichtbarkeit“ fast von selbst: „verzichten“ heißt auf etwas nicht mehr bestehen, „-bar“ macht daraus eine Möglichkeit, „un-“ verneint sie, und „-keit“ macht das Ganze zu einem Nomen – die Eigenschaft, dass man auf etwas nicht verzichten kann. Wer diese Bausteine kennt, muss nicht jedes Wort einzeln lernen, sondern kann einen großen Teil des Wortschatzes ableiten. Für das Leseverstehen auf C1-Niveau ist diese Strategie oft wichtiger als jede Vokabelliste.
+#dialog
+Aiko: Leila, was bedeutet „Fahrgastrechteverordnung“? Das Wort steht auf meinem Bahnticket.
+Leila: Lies es von hinten: „Verordnung“ – eine Vorschrift. Wofür? Für „Rechte“. Wessen Rechte? Der „Fahrgäste“.
+Aiko: Also eine Vorschrift über die Rechte der Fahrgäste.
+Leila: Genau. Zum Beispiel, dass man bei Verspätung Geld zurückbekommt.
+Aiko: Und „Erstattungsfähigkeit“?
+Leila: „Erstatten“ ist zurückzahlen, „-fähig“ heißt möglich, „-keit“ macht ein Nomen daraus. Ob etwas zurückgezahlt werden kann.
+Aiko: Das ist ja wie ein Puzzle!
+#dq
+Wie soll man lange Wörter lesen? || Von hinten nach vorne.
+Was ist eine „Fahrgastrechteverordnung“? || Eine Vorschrift über die Rechte der Fahrgäste.
+Was bedeutet „Erstattungsfähigkeit“? || Ob etwas zurückgezahlt werden kann.
+#task
+Genus: ___ Haustür (Grundwort: die Tür) || die
+Genus: ___ Türschlüssel (Grundwort: der Schlüssel) || der
+Genus: ___ Handschuh (Grundwort: der Schuh) || der
+Fugenelement: Wohnung + Markt → der Wohnung___markt || s
+Fugenelement: Sonne + Brille → die Sonne___brille || n
+Suffix: möglich zu lesen → ___ || lesbar
+Suffix: ohne Arbeit → ___ || arbeitslos
+Präfix: nicht klar → ___ || unklar
+Nomen: frei → die ___ || Freiheit
+Nomen: möglich → die ___ || Möglichkeit
+Nominalisierung: Ich fahre gern Auto. → Das ___ macht mir Spaß. || Autofahren
+Fehler? „Das Hausnummer ist falsch.“ || Die Hausnummer ist falsch.
+#exam
+Was spottete Mark Twain? || Manche deutschen Wörter seien so lang, dass sie eine Perspektive hätten.
+Was regelte das lange Gesetz? || Die Übertragung der Aufgaben zur Überwachung der Etikettierung von Rindfleisch.
+Wie liest man lange Komposita am besten? || Von hinten nach vorne.
+Was bestimmt das Grundwort? || Die Sache und den Artikel (Genus).
+Was bedeutet „Unverzichtbarkeit“? || Die Eigenschaft, dass man auf etwas nicht verzichten kann.
+Zerlegen Sie „Lebensmittelverschwendung“ und erklären Sie die Bedeutung. || Leben + Mittel = Lebensmittel; Verschwendung = das Verschwenden → das Verschwenden von Lebensmitteln.
+Bilden Sie fünf Komposita mit „Arbeit“ als Bestimmungswort.
+Erklären Sie die Bedeutung von „-bar“, „-los“ und „un-“ mit je zwei Beispielen.
+Finden Sie in einem Zeitungsartikel drei lange Wörter und zerlegen Sie sie.
+Vergleichen Sie die Wortbildung im Deutschen mit Ihrer Muttersprache.
+#speak
+Erfinde ein langes Kompositum und lass deinen Partner es erklären.
+Erkläre „Kindergartenplatz“, „Mietpreisbremse“ und „Umweltschutzorganisation“.
+Welche Suffixe machen Nomen feminin? Nenne Beispiele.
+Spielt: Einer sagt ein Verb, der andere bildet Nomen und Adjektive daraus.
+
+@@ 72|C2|Literarische Texte analysieren: Erzählperspektive und Stilmittel|Literatur lesen|park|57,58|after=59
+#expl
+Bei der Analyse literarischer Texte fragt man nicht nur **was** erzählt wird, sondern **wie**. Zentral ist die **Erzählperspektive**: Ein **Ich-Erzähler** erzählt aus eigener Sicht und ist begrenzt glaubwürdig; ein **auktorialer Erzähler** weiß alles, kommentiert und greift vor; ein **personaler Erzähler** bleibt in der Sicht einer Figur, ohne zu kommentieren. Mittel der Innensicht sind **innerer Monolog** und **erlebte Rede** (__Morgen würde sie es ihm sagen. Morgen ganz bestimmt.__ – Gedanken in der 3. Person und im Präteritum).
+**Stilmittel** erzeugen Wirkung: **Metapher** (übertragene Bedeutung: __ein Meer aus Tränen__), **Vergleich** (mit wie/als ob), **Personifikation** (__der Wind flüstert__), **Anapher** (Wiederholung am Satzanfang), **Klimax** (Steigerung), **Ellipse**, **Antithese** (Gegensatz), **rhetorische Frage**, **Ironie**. Nicht das Benennen zählt, sondern die **Funktion**: Was bewirkt das Mittel an dieser Stelle?
+Für die Interpretation braucht man vorsichtige, belegte Formulierungen: __Dies lässt sich als … deuten. Die Wiederholung unterstreicht … (Z. 12). Auffällig ist … Der Text legt nahe, dass …__ Zitate werden mit Zeilenangabe belegt und in die eigene Sprache eingebettet.
+#use
+C2 (Goethe-Zertifikat C2 / Hochschule): literarische und essayistische Texte verstehen, interpretieren und darüber schreiben.
+#table
+Begriff|Erklärung|Beispiel
+Ich-Erzähler|subjektiv, begrenzt|„Ich wusste nicht, dass sie log.“
+auktorial|allwissend, kommentiert|„Er ahnte nicht, dass dies sein letzter Sommer sein würde.“
+erlebte Rede|Gedanken, 3. Pers., Präteritum|„Warum rief er nicht an? Hatte er es vergessen?“
+Metapher|übertragene Bedeutung|„Die Stadt war ein Käfig.“
+Anapher|Wiederholung am Satzanfang|„Kein Licht. Kein Laut. Kein Mensch.“
+Antithese|Gegensatz|„Draußen der Sommer, drinnen die Kälte.“
+#ex
+Der Text ist aus der Sicht eines Ich-Erzählers verfasst. = The text is written from the perspective of a first-person narrator.
+Der auktoriale Erzähler kommentiert das Geschehen aus der Distanz. = The omniscient narrator comments on events from a distance.
+Durch die erlebte Rede erhält der Leser Einblick in die Gedanken der Figur. = Through free indirect speech the reader gains insight into the character's thoughts.
+Die Metapher „Käfig“ verdeutlicht das Gefühl der Enge. = The metaphor "cage" illustrates the feeling of confinement.
+Die Anapher in Zeile 4 bis 6 verstärkt die Eindringlichkeit. = The anaphora in lines 4 to 6 intensifies the urgency.
+Dies lässt sich als Ausdruck innerer Zerrissenheit deuten. = This can be interpreted as an expression of inner conflict.
+Auffällig ist der Wechsel vom Präteritum ins Präsens. = What is striking is the switch from the past tense to the present.
+Der Text legt nahe, dass die Erzählerin ihre Entscheidung bereut. = The text suggests that the narrator regrets her decision.
+Die kurzen, elliptischen Sätze erzeugen Spannung. = The short, elliptical sentences create suspense.
+Die Natur wird personifiziert und spiegelt die Stimmung der Figur. = Nature is personified and mirrors the character's mood.
+Der offene Schluss lässt mehrere Deutungen zu. = The open ending allows several interpretations.
+Mit der rhetorischen Frage bezieht die Autorin den Leser ein. = With the rhetorical question the author involves the reader.
+Die Ironie liegt im Widerspruch zwischen Worten und Handlung. = The irony lies in the contradiction between words and action.
+Der Titel kann doppeldeutig verstanden werden. = The title can be understood ambiguously.
+Sprachlich fällt die Häufung von Verben der Bewegung auf. = Linguistically, the accumulation of verbs of motion is striking.
+#vocab
+die Erzählperspektive, -n = narrative perspective
+der Ich-Erzähler, - = first-person narrator
+der auktoriale Erzähler = omniscient narrator
+der personale Erzähler = third-person limited narrator
+die erlebte Rede = free indirect speech
+der innere Monolog = interior monologue
+das Stilmittel, - = stylistic device
+die Metapher, -n = metaphor
+die Personifikation, -en = personification
+die Anapher, -n = anaphora
+die Klimax = climax (gradation)
+die Antithese, -n = antithesis
+die Deutung, -en = interpretation
+deuten als = to interpret as
+das Leitmotiv, -e = leitmotif
+der Wendepunkt, -e = turning point
+der offene Schluss = open ending
+doppeldeutig = ambiguous
+die Zerrissenheit = inner conflict
+eindringlich = urgent, forceful
+#read
+Textauszug (eigene Kurzgeschichte, Anfang): „Der Zug hatte Verspätung, wie immer. Marta stand am Bahnsteig, den Koffer zwischen den Füßen, und zählte die Tauben auf dem Dach. Sieben. Acht. Eine flog davon. Warum war sie eigentlich hier? Sie hatte doch beschlossen, nicht zurückzufahren. Nie wieder in dieses Dorf, nie wieder an diesen Tisch, nie wieder in dieses Schweigen. Und jetzt? Jetzt stand sie da und wartete auf den Zug, der sie genau dorthin bringen würde. Der Wind zerrte an ihrem Mantel, als wollte er sie zurückhalten.“ – Interpretation: Der Auszug ist aus personaler Perspektive erzählt; der Leser bleibt eng bei Marta, ohne dass ein Erzähler kommentiert. Durch die erlebte Rede („Warum war sie eigentlich hier?“) erhält man unmittelbaren Einblick in ihre Zweifel. Die Anapher „nie wieder … nie wieder … nie wieder“ unterstreicht die Entschiedenheit eines früheren Entschlusses, der durch die folgende Frage „Und jetzt?“ sofort relativiert wird; diese Antithese von Vorsatz und Handlung bildet den Kern des Konflikts. Das Zählen der Tauben in elliptischen Sätzen lässt sich als Versuch deuten, sich von den eigenen Gedanken abzulenken. Die Personifikation des Windes, der „sie zurückhalten“ will, spiegelt Martas inneren Widerstand. Auffällig ist auch das unscheinbare „wie immer“ im ersten Satz: Es deutet an, dass die Reise kein Einzelfall ist und Marta diesen Weg schon oft gegangen ist. Der Auszug legt somit nahe, dass es um eine ambivalente Beziehung zur Herkunft geht – um das Bedürfnis, sich zu lösen, und die Unfähigkeit, es wirklich zu tun.
+#dialog
+Dozentin: Welche Erzählperspektive liegt im Auszug vor?
+Leila: Eine personale. Wir sehen alles aus Martas Sicht, aber in der dritten Person.
+Dozentin: Woran machen Sie das fest?
+Leila: Es gibt keinen Kommentar eines Erzählers, und die Fragen wie „Warum war sie eigentlich hier?“ sind erlebte Rede.
+Dozentin: Gut. Und welche Funktion hat die dreifache Wiederholung „nie wieder“?
+Leila: Sie zeigt, wie fest Marta sich vorgenommen hatte, nicht zurückzukehren. Umso stärker wirkt dann der Bruch mit „Und jetzt?“.
+Dozentin: Sehr schön. Sie benennen nicht nur das Mittel, sondern auch seine Wirkung. Genau das erwartet man auf diesem Niveau.
+#dq
+Welche Erzählperspektive erkennt Leila? || Eine personale Erzählperspektive.
+Woran erkennt sie die erlebte Rede? || An Fragen wie „Warum war sie eigentlich hier?“ (ohne Erzählerkommentar).
+Was lobt die Dozentin? || Dass Leila nicht nur das Mittel, sondern auch seine Wirkung nennt.
+#task
+Perspektive: „Ich hatte keine Ahnung, was er dachte.“ → ___-Erzähler || Ich
+Perspektive: Ein Erzähler weiß alles und kommentiert: ___ || auktorial
+Gedanken in 3. Person, Präteritum: „Warum rief er nicht an?“ → erlebte ___ || Rede
+Stilmittel: „Die Stadt war ein Käfig.“ → || Metapher
+Stilmittel: „Der Wind flüsterte.“ → || Personifikation
+Stilmittel: „Kein Licht. Kein Laut. Kein Mensch.“ → || Anapher
+Stilmittel: „Draußen Sommer, drinnen Winter.“ → || Antithese
+Stilmittel: „Er rannte wie ein gejagtes Tier.“ → || Vergleich
+Interpretation: Dies lässt sich ___ Zeichen der Angst deuten. || als
+Interpretation: Der Text legt ___, dass … || nahe
+Beleg: Die Wiederholung (Z. 5) ___ die Dringlichkeit. (unterstreichen) || unterstreicht
+Fehler? „Die Metapher zeigt, dass der Autor eine Metapher benutzt.“ → Funktion fehlt: Was ___ die Metapher? (bewirken) || bewirkt
+#exam
+Wo steht Marta? || Am Bahnsteig.
+Was zählt sie? || Die Tauben auf dem Dach.
+Was hatte Marta beschlossen? || Nicht mehr zurückzufahren.
+Welche Funktion hat die Anapher „nie wieder“? || Sie unterstreicht die Entschiedenheit des früheren Entschlusses.
+Wie wird der Wind dargestellt? || Personifiziert – als wollte er sie zurückhalten.
+Was deutet „wie immer“ an? || Dass die Reise kein Einzelfall ist.
+Formulieren Sie eine Deutung des Titels „Rückfahrt“ für diesen Auszug.
+Schreiben Sie eine Interpretation eines Gedichts Ihrer Wahl (250 Wörter).
+Setzen Sie die Geschichte fort, ohne die Erzählperspektive zu wechseln.
+Vergleichen Sie zwei Erzählperspektiven und ihre Wirkung auf den Leser.
+#speak
+Beschreibe einem Freund, worum es im Auszug geht – und was zwischen den Zeilen steht.
+Nenne drei Stilmittel im Text und erkläre ihre Wirkung.
+Diskutiert: Warum fährt Marta trotzdem zurück?
+Erzähl eine Szene aus deinem Leben in erlebter Rede.
+
+@@ 73|C2|Fachsprache Recht und Verwaltung verstehen|Verträge, Bescheide, Gesetze|office|45,57|after=72
+#expl
+Juristische Texte wirken schwer, folgen aber festen Mustern. Typisch sind **Nominalstil** (__nach Ablauf der Frist__), **Passiv und Passiversatz** (__ist zu entrichten, kann verlangt werden__), **Konditionalsätze ohne wenn** (__Erfolgt die Zahlung nicht fristgerecht, …__ = Wenn die Zahlung nicht … erfolgt) und **Verweise** (__gemäß § 3 Abs. 2__, __im Sinne dieses Vertrages__).
+Viele Alltagswörter haben eine **Fachbedeutung**: __Besitz__ (tatsächliche Herrschaft) ≠ __Eigentum__ (rechtliche Zugehörigkeit); __Kündigung__ (Beendigung eines Vertrags); __unverzüglich__ (= ohne schuldhaftes Zögern); __Frist__ (Zeitraum), __Termin__ (Zeitpunkt). Modalverben sind präzise: **muss** (Pflicht), **soll** (in der Regel Pflicht, Ausnahmen möglich), **kann** (Ermessen), **darf nicht** (Verbot).
+Lesestrategie: zuerst **wer** (Parteien), **was** (Pflicht/Recht), **wann** (Frist), **was passiert sonst** (Rechtsfolge). Lange Sätze zerlegt man, indem man den Hauptsatz sucht und Nominalgruppen in Nebensätze auflöst. Für schriftliche Antworten an Behörden: sachlich, mit Aktenzeichen, Datum und klarer Bitte.
+#use
+C2/Beruf: Mietverträge, Arbeitsverträge, Bescheide und AGB verstehen; Widerspruch formulieren; Beratungsgespräche führen.
+#table
+Rechtssprache|Alltagssprache
+Erfolgt die Zahlung nicht fristgerecht, …|Wenn Sie nicht rechtzeitig zahlen, …
+Die Kosten sind vom Mieter zu tragen.|Der Mieter muss die Kosten bezahlen.
+unverzüglich|sofort, ohne unnötige Verzögerung
+gemäß § 5 Abs. 1|so wie es in Paragraf 5, Absatz 1 steht
+Der Widerspruch ist binnen eines Monats einzulegen.|Sie müssen innerhalb eines Monats widersprechen.
+Die Kündigung bedarf der Schriftform.|Man muss schriftlich kündigen.
+#ex
+Erfolgt die Zahlung nicht innerhalb von 14 Tagen, wird eine Mahngebühr fällig. = If payment is not made within 14 days, a reminder fee becomes due.
+Die Kündigung bedarf der Schriftform. = Notice of termination must be given in writing.
+Die Kosten sind vom Mieter zu tragen. = The costs are to be borne by the tenant.
+Gegen diesen Bescheid kann binnen eines Monats Widerspruch eingelegt werden. = An objection to this decision can be lodged within one month.
+Der Arbeitnehmer hat Anspruch auf 30 Tage Erholungsurlaub. = The employee is entitled to 30 days of annual leave.
+Schäden sind dem Vermieter unverzüglich anzuzeigen. = Damage must be reported to the landlord without delay.
+Die Regelung gilt vorbehaltlich einer anderslautenden Vereinbarung. = The regulation applies unless otherwise agreed.
+Im Sinne dieses Vertrages gelten als Nebenkosten … = For the purposes of this contract, ancillary costs are …
+Gemäß § 3 Absatz 2 ist die Untervermietung nur mit Zustimmung zulässig. = According to Section 3(2), subletting is only permitted with consent.
+Der Vertrag verlängert sich stillschweigend um ein Jahr. = The contract is tacitly extended by one year.
+Unberührt hiervon bleibt das Recht zur außerordentlichen Kündigung. = The right to extraordinary termination remains unaffected.
+Hiermit lege ich gegen den Bescheid vom 3. März fristgerecht Widerspruch ein. = I hereby lodge an objection to the decision of 3 March within the deadline.
+Sollte eine Bestimmung unwirksam sein, bleibt der übrige Vertrag gültig. = Should any provision be invalid, the rest of the contract remains valid.
+Der Besitzer einer Sache ist nicht unbedingt ihr Eigentümer. = The possessor of a thing is not necessarily its owner.
+Die Behörde soll den Antrag innerhalb von drei Monaten bescheiden. = The authority shall decide on the application within three months.
+#vocab
+der Paragraf (§), -en = section (of a law)
+der Absatz (Abs.), ¨e = subsection, paragraph
+das Aktenzeichen, - = file reference
+der Bescheid, -e = official decision
+der Widerspruch, ¨e = objection, appeal
+der Anspruch, ¨e = entitlement, claim
+die Rechtsfolge, -n = legal consequence
+die Schriftform = written form
+unverzüglich = without undue delay
+binnen (+ Dat./Gen.) = within
+gemäß (+ Dat.) = in accordance with
+vorbehaltlich (+ Gen.) = subject to
+unberührt bleiben = to remain unaffected
+der Besitz = possession
+das Eigentum = ownership, property
+die Untervermietung = subletting
+außerordentlich = extraordinary
+stillschweigend = tacit(ly)
+unwirksam = invalid, ineffective
+die Allgemeinen Geschäftsbedingungen (AGB) = terms and conditions
+#read
+Auszug aus einem Mietvertrag mit Erläuterung: „§ 7 Schönheitsreparaturen. (1) Die Schönheitsreparaturen während der Mietzeit übernimmt der Mieter. (2) Sie sind fachgerecht auszuführen, soweit der Zustand der Räume dies erfordert. (3) Starre Fristen werden nicht vereinbart.“ Was bedeutet das? Absatz 1 legt fest, wer zuständig ist: Der Mieter muss zum Beispiel streichen oder tapezieren. Absatz 2 enthält zwei wichtige Einschränkungen. „Fachgerecht“ heißt nicht, dass ein Maler beauftragt werden muss, sondern dass die Arbeit ordentlich sein muss. Und „soweit der Zustand dies erfordert“ bedeutet: nur wenn es wirklich nötig ist, nicht nach einem festen Kalender. Absatz 3 ist eine Folge der Rechtsprechung des Bundesgerichtshofs, der Klauseln mit starren Fristen – etwa „alle drei Jahre Küche und Bad“ – für unwirksam erklärt hat. Wäre eine solche Klausel im Vertrag enthalten, müsste der Mieter in der Regel gar nicht renovieren. Ein weiteres Beispiel aus dem Vertrag: „§ 12 Kündigung. Die Kündigung bedarf der Schriftform. Sie ist spätestens am dritten Werktag eines Kalendermonats für den Ablauf des übernächsten Monats zulässig.“ Übersetzt: Eine E-Mail genügt nicht, nötig ist ein unterschriebener Brief. Wer bis zum 3. März kündigt, muss bis Ende Mai Miete zahlen; wer erst am 4. März kündigt, bis Ende Juni. Solche Formulierungen wirken umständlich, sind aber präzise, und genau darauf kommt es im Streitfall an.
+#dialog
+Beraterin: Herr Sharma, Ihr Vermieter verlangt, dass Sie beim Auszug alle Räume streichen. Was steht in Ihrem Vertrag?
+Ravi: Hier: „Der Mieter hat die Räume spätestens alle fünf Jahre zu renovieren.“
+Beraterin: Das ist eine starre Frist. Solche Klauseln sind nach der Rechtsprechung unwirksam.
+Ravi: Das heißt, ich muss gar nicht streichen?
+Beraterin: In der Regel nicht. Es sei denn, Sie haben die Wohnung beschädigt oder zum Beispiel knallrot gestrichen.
+Ravi: Nein, die Wände sind weiß. Was soll ich jetzt tun?
+Beraterin: Antworten Sie schriftlich, nennen Sie das Datum seines Schreibens und verweisen Sie auf die Unwirksamkeit der Klausel. Ich gebe Ihnen einen Musterbrief.
+#dq
+Was verlangt der Vermieter? || Dass Ravi beim Auszug alle Räume streicht.
+Warum ist die Klausel unwirksam? || Es ist eine starre Frist (alle fünf Jahre).
+Was soll Ravi tun? || Schriftlich antworten, das Datum nennen und auf die Unwirksamkeit verweisen.
+#task
+Alltagssprache: „Die Kosten sind vom Mieter zu tragen.“ → Der Mieter ___ die Kosten bezahlen. || muss
+Alltagssprache: „Die Kündigung bedarf der Schriftform.“ → Man muss ___ kündigen. || schriftlich
+Wenn-Satz: „Erfolgt die Zahlung nicht, …“ → ___ die Zahlung nicht erfolgt, … || Wenn
+Rechtssprache: innerhalb eines Monats → ___ eines Monats || binnen
+Rechtssprache: wie es in § 5 steht → ___ § 5 || gemäß
+Bedeutung: „unverzüglich“ = ohne unnötige ___ || Verzögerung
+Unterschied: Wer eine Wohnung mietet, hat den ___, aber nicht das Eigentum. || Besitz
+Modalverb: Pflicht ohne Ausnahme → „muss“; Pflicht mit möglichen Ausnahmen → „___“ || soll
+Modalverb: Die Behörde ___ entscheiden (Ermessen). || kann
+Widerspruch: Hiermit ___ ich Widerspruch gegen den Bescheid ein. (einlegen) || lege
+Kündigungsfrist: Kündigung am 3. März → Miete zahlen bis Ende ___. || Mai
+Fehler? „Gemäß des Vertrags muss ich zahlen.“ || Gemäß dem Vertrag muss ich zahlen.
+#exam
+Wer übernimmt laut § 7 die Schönheitsreparaturen? || Der Mieter.
+Was bedeutet „fachgerecht“ hier? || Die Arbeit muss ordentlich sein; man muss keinen Maler beauftragen.
+Warum gibt es keine starren Fristen? || Der Bundesgerichtshof hat solche Klauseln für unwirksam erklärt.
+Genügt eine E-Mail zur Kündigung? || Nein, es braucht einen unterschriebenen Brief (Schriftform).
+Bis wann muss man zahlen, wenn man am 4. März kündigt? || Bis Ende Juni.
+Übersetzen Sie in Alltagssprache: „Schäden sind unverzüglich anzuzeigen.“ || Schäden müssen sofort gemeldet werden.
+Schreiben Sie einen Widerspruch gegen einen Bescheid (Aktenzeichen, Datum, Begründung, Bitte).
+Erklären Sie einem Freund die wichtigsten Punkte seines Arbeitsvertrags in einfacher Sprache.
+Vergleichen Sie Rechtssprache im Deutschen und in Ihrer Muttersprache.
+Warum sind juristische Texte so formuliert? Nehmen Sie Stellung.
+#speak
+Erkläre den Unterschied zwischen Besitz und Eigentum mit einem Beispiel.
+„Übersetze“ einen Satz aus einem Vertrag in Alltagssprache.
+Spielt eine Mieterberatung: ein Problem, eine Klausel, eine Lösung.
+Was würdest du in einem Arbeitsvertrag zuerst prüfen? Warum?

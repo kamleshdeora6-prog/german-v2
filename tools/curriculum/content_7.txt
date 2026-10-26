@@ -121,7 +121,7 @@ Vermutung: Sie ist ___ schon zu Hause. || wohl
 Warnung: Vergiss das ___ nicht! || ja
 Beruhigung: Das klappt ___. || schon
 [Mix] Wo ist ___ die Rechnung, die ich gestern ___ habe? (bloß; bekommen) || bloß / bekommen
-[Mix] Er tut so, als ob er ___ nichts gewusst hätte. (Partikel für Selbstverständlichkeit) || ja
+[Mix] Wir haben ___ gestern darüber gesprochen, oder? (Partikel für Selbstverständlichkeit) || ja
 [Mix] Komm ___ ___ vorbei, wenn du Zeit hast. (zwei Partikeln) || doch mal
 #exam
 Wo waren die Schlüssel am Ende? || In der Jacke.

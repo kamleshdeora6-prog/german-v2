@@ -2,6 +2,15 @@
 
 All dates are the release dates of the app version shown in Settings → About.
 
+## 6.1.0 — 26 October 2026
+- **Whole-screen layout on PC**: two-column start screen, lesson cards side by side, wide practice grid, two-column course path; the header logo is no longer cut off.
+- **German + English labels** on every menu, tab, button and onboarding step; Settings → Menu language (both / German / English).
+- **13 new lessons** (73 in total): Perfekt in A1; Passiv, Relativsätze, Verben mit Präposition and more in B2; academic and stylistic topics in C1/C2.
+- **4,297 words** (from 3,548), with an example sentence for every A1/A2 word and most B1 words.
+- **Stable lesson IDs**: progress stays correct when lessons are added.
+- **iOS build fixed**: `build_ios.sh` ended with a test that returned exit code 1 on CI; the workflow now shows the real Xcode error if anything else fails.
+- **Max**: no false alarms on adjectival nouns (*die Abgeordnete*) or dummy *es* (*Es fehlen …*); 7,788 correct sentences checked.
+
 ## 6.0.0 — 26 October 2026
 - **New start screen “Heute”** with one next-step button, daily goal ring, streak and week view.
 - **Habit system**: streak freezes, daily quests, combos, levels, Familien-Liga, calendar reminder, sounds and vibration.

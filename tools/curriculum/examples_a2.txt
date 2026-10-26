@@ -1,0 +1,396 @@
+# Example sentences for A2 words (word|German|English)
+die Gesellschaft|Die Gesellschaft wird immer älter.|Society is getting older and older.
+die Bevölkerung|Die Bevölkerung der Stadt wächst.|The population of the city is growing.
+der Bürger|Die Bürger können ihre Meinung sagen.|Citizens can say what they think.
+der Staat|Der Staat bezahlt die Schulen.|The state pays for the schools.
+die Stadtverwaltung|Die Stadtverwaltung plant einen neuen Park.|The city administration is planning a new park.
+das Amt|Ich muss heute aufs Amt.|I have to go to the authorities today.
+die Bescheinigung|Ich brauche eine Bescheinigung vom Arbeitgeber.|I need a certificate from my employer.
+die Abmeldung|Vor dem Umzug ins Ausland ist eine Abmeldung nötig.|Before moving abroad you need to deregister.
+das Zeugnis|Paul hat ein gutes Zeugnis bekommen.|Paul got a good school report.
+die Konferenz|Die Konferenz dauert zwei Tage.|The conference lasts two days.
+der Termindruck|Im Büro haben wir viel Termindruck.|At the office we're under a lot of deadline pressure.
+die Kaution|Die Kaution beträgt zwei Monatsmieten.|The deposit is two months' rent.
+der Umzug|Der Umzug war anstrengend.|The move was exhausting.
+die Wohngemeinschaft|Ich wohne in einer Wohngemeinschaft.|I live in a shared flat.
+das Möbelstück|Das Sofa ist mein liebstes Möbelstück.|The sofa is my favourite piece of furniture.
+die Reparatur|Die Reparatur kostet hundert Euro.|The repair costs a hundred euros.
+der Handwerker|Der Handwerker kommt am Montag.|The tradesman is coming on Monday.
+der Hausmeister|Der Hausmeister repariert die Tür.|The caretaker repairs the door.
+die Ruhezeit|Von 22 bis 6 Uhr ist Ruhezeit.|Quiet hours are from 10 pm to 6 am.
+die Luftverschmutzung|Die Luftverschmutzung ist in der Stadt hoch.|Air pollution is high in the city.
+der Abfall|Wohin kommt dieser Abfall?|Where does this rubbish go?
+das Recycling|Recycling spart Rohstoffe.|Recycling saves raw materials.
+die Sonnenenergie|Unser Haus nutzt Sonnenenergie.|Our house uses solar energy.
+der Verbrauch|Der Verbrauch von Strom ist gestiegen.|Electricity consumption has risen.
+die Ernährung|Gesunde Ernährung ist wichtig.|A healthy diet is important.
+der Stress|Ich habe zurzeit viel Stress.|I'm under a lot of stress at the moment.
+die Entspannung|Yoga ist gut zur Entspannung.|Yoga is good for relaxation.
+die Behandlung|Die Behandlung dauert drei Wochen.|The treatment lasts three weeks.
+die Krankmeldung|Ich schicke dem Chef die Krankmeldung.|I'm sending my boss the sick note.
+die Nebenwirkung|Das Medikament hat keine Nebenwirkungen.|The medicine has no side effects.
+die Ausbildung|Sie macht eine Ausbildung als Köchin.|She's training to be a cook.
+der Abschluss|Nach dem Abschluss suche ich eine Stelle.|After graduating I'll look for a job.
+das Fach|Mathe ist mein Lieblingsfach.|Maths is my favourite subject.
+der Teilnehmer|Der Kurs hat zwölf Teilnehmer.|The course has twelve participants.
+die Fähigkeit|Er hat viele Fähigkeiten.|He has many skills.
+die Schwierigkeit|Ich habe Schwierigkeiten mit der Grammatik.|I have difficulties with grammar.
+die Bedeutung|Was ist die Bedeutung dieses Wortes?|What is the meaning of this word?
+das Verhältnis|Ich habe ein gutes Verhältnis zu meinen Eltern.|I have a good relationship with my parents.
+die Situation|Die Situation ist schwierig.|The situation is difficult.
+der Zustand|Das Auto ist in einem guten Zustand.|The car is in good condition.
+der Fortschritt|Du machst große Fortschritte!|You're making great progress!
+die Gelegenheit|Das ist eine gute Gelegenheit.|That's a good opportunity.
+der Zufall|Was für ein Zufall!|What a coincidence!
+die Ausnahme|Heute machen wir eine Ausnahme.|Today we'll make an exception.
+die Ordnung|In seinem Zimmer herrscht Ordnung.|His room is tidy.
+die Sicherheit|Sicherheit geht vor.|Safety comes first.
+die Gefahr|Bei Glatteis besteht Gefahr.|There's danger when the roads are icy.
+die Vorbereitung|Die Vorbereitung auf die Prüfung dauert lange.|Preparing for the exam takes a long time.
+der Fahrplan|Laut Fahrplan kommt der Bus um acht.|According to the timetable the bus comes at eight.
+die Haltestelle|Die Haltestelle ist direkt vor dem Haus.|The stop is right in front of the house.
+der Schaffner|Der Schaffner kontrolliert die Fahrkarten.|The conductor checks the tickets.
+die Panne|Wir hatten auf der Autobahn eine Panne.|We broke down on the motorway.
+die Werkstatt|Das Auto ist in der Werkstatt.|The car is at the garage.
+die Versicherungskarte|Bitte zeigen Sie Ihre Versicherungskarte.|Please show your insurance card.
+die Sendung|Die Sendung beginnt um 20 Uhr.|The programme starts at 8 pm.
+die Werbung|Im Fernsehen gibt es zu viel Werbung.|There's too much advertising on TV.
+die Umfrage|Laut einer Umfrage lesen Kinder weniger.|According to a survey, children read less.
+die Tastatur|Die Tastatur ist deutsch, mit ä, ö und ü.|The keyboard is German, with ä, ö and ü.
+der Ordner|Speichere die Datei im Ordner „Arbeit“.|Save the file in the "Work" folder.
+das Netzwerk|Das Netzwerk funktioniert nicht.|The network isn't working.
+das Programm|Was läuft heute im Programm?|What's on today?
+das Ladekabel|Hast du ein Ladekabel für mein Handy?|Do you have a charging cable for my phone?
+die Einstellung|Ändere die Einstellung in der App.|Change the setting in the app.
+verändern|Die Stadt hat sich sehr verändert.|The city has changed a lot.
+entwickeln|Die Firma entwickelt neue Apps.|The company develops new apps.
+beschreiben|Beschreiben Sie das Bild.|Describe the picture.
+verbieten|Die Eltern verbieten das Handy beim Essen.|The parents forbid the phone at meals.
+vorschlagen|Ich schlage vor, dass wir früher gehen.|I suggest we leave earlier.
+reparieren|Kannst du mein Fahrrad reparieren?|Can you repair my bike?
+gebrauchen|Kannst du diese Jacke noch gebrauchen?|Can you still use this jacket?
+verwenden|Verwenden Sie bitte nur Bleistift.|Please use only pencil.
+ausgeben|Ich gebe zu viel Geld für Kleidung aus.|I spend too much money on clothes.
+mieten|Wir mieten ein Auto für den Urlaub.|We're renting a car for the holiday.
+umziehen|Nächsten Monat ziehen wir um.|Next month we're moving.
+einladen|Ich lade dich zum Essen ein.|I'm inviting you to dinner.
+verabreden|Wir haben uns für Freitag verabredet.|We've arranged to meet on Friday.
+teilnehmen|Ich nehme an einem Deutschkurs teil.|I'm taking part in a German course.
+sich freuen|Ich freue mich sehr!|I'm very pleased!
+sich ärgern|Ärgere dich nicht!|Don't get annoyed!
+sich interessieren|Er interessiert sich für Geschichte.|He is interested in history.
+sich kümmern|Wer kümmert sich um den Hund?|Who's looking after the dog?
+sich bewerben|Ich bewerbe mich bei einer Bank.|I'm applying to a bank.
+sich vorstellen|Darf ich mich vorstellen? Ich heiße Ravi.|May I introduce myself? I'm Ravi.
+sich entschuldigen|Ich möchte mich entschuldigen.|I'd like to apologise.
+sich beschweren|Die Nachbarn beschweren sich über den Lärm.|The neighbours complain about the noise.
+sich entspannen|Am Wochenende entspanne ich mich.|At the weekend I relax.
+sich verletzen|Er hat sich beim Sport verletzt.|He hurt himself doing sport.
+sich gewöhnen|Ich gewöhne mich langsam an das Wetter.|I'm slowly getting used to the weather.
+sich unterhalten|Wir haben uns lange unterhalten.|We talked for a long time.
+vielleicht|Vielleicht komme ich später.|Maybe I'll come later.
+bestimmt|Das schaffst du bestimmt!|You'll definitely manage it!
+ungefähr|Die Fahrt dauert ungefähr eine Stunde.|The journey takes about an hour.
+mindestens|Du musst mindestens 18 Jahre alt sein.|You have to be at least 18 years old.
+höchstens|Das kostet höchstens zehn Euro.|That costs ten euros at most.
+insgesamt|Das macht insgesamt 25 Euro.|That makes 25 euros altogether.
+zumindest|Zumindest regnet es nicht.|At least it isn't raining.
+außerdem|Die Wohnung ist groß, außerdem ist sie billig.|The flat is big, and besides it's cheap.
+normalerweise|Normalerweise stehe ich um sieben auf.|Normally I get up at seven.
+selten|Ich gehe selten ins Theater.|I rarely go to the theatre.
+ständig|Das Telefon klingelt ständig.|The phone rings constantly.
+nachher|Ich mache das nachher.|I'll do it afterwards.
+damals|Damals hatte ich kein Handy.|Back then I didn't have a mobile.
+neulich|Neulich habe ich Jonas getroffen.|I met Jonas recently.
+demnächst|Demnächst eröffnet hier ein Café.|A café is opening here soon.
+das Abenteuer|Die Reise war ein großes Abenteuer.|The trip was a great adventure.
+das Hobby|Mein Hobby ist Fotografieren.|My hobby is photography.
+die Kunst|Sie interessiert sich für Kunst.|She's interested in art.
+der Roman|Ich lese gerade einen spannenden Roman.|I'm reading an exciting novel.
+das Gedicht|Das Kind lernt ein Gedicht auswendig.|The child is learning a poem by heart.
+die Band|Die Band spielt heute im Park.|The band is playing in the park today.
+der Sänger|Der Sänger hat eine tolle Stimme.|The singer has a great voice.
+die Sängerin|Die Sängerin kommt aus Wien.|The singer comes from Vienna.
+das Klavier|Sie spielt seit zehn Jahren Klavier.|She has played the piano for ten years.
+die Vorstellung|Die Vorstellung beginnt um acht.|The performance starts at eight.
+das Ladegerät|Ich habe mein Ladegerät vergessen.|I've forgotten my charger.
+löschen|Ich habe die Datei aus Versehen gelöscht.|I deleted the file by mistake.
+drucken|Kannst du das Ticket drucken?|Can you print the ticket?
+klicken|Klicken Sie hier, um sich anzumelden.|Click here to log in.
+installieren|Ich installiere die App.|I'm installing the app.
+chatten|Die Jugendlichen chatten den ganzen Abend.|The teenagers chat all evening.
+posten|Sie postet jeden Tag ein Foto.|She posts a photo every day.
+der Gruß|Viele Grüße an deine Familie!|Best wishes to your family!
+der Umschlag|Die Briefmarke klebt auf dem Umschlag.|The stamp is on the envelope.
+die Absage|Ich habe eine Absage bekommen.|I got a rejection.
+die Zusage|Wir warten noch auf die Zusage.|We're still waiting for the acceptance.
+sich melden|Melde dich, wenn du angekommen bist.|Let me know when you've arrived.
+streiten|Die Kinder streiten oft.|The children often argue.
+lügen|Er lügt nie.|He never lies.
+loben|Die Lehrerin lobt die Schüler.|The teacher praises the pupils.
+ändern|Ich kann den Termin nicht ändern.|I can't change the appointment.
+wechseln|Ich muss Geld wechseln.|I have to change money.
+wählen|Welche Farbe wählst du?|Which colour do you choose?
+zwingen|Niemand zwingt dich, mitzukommen.|Nobody's forcing you to come along.
+erfahren|Wann erfahren wir die Ergebnisse?|When will we find out the results?
+merken|Ich kann mir keine Namen merken.|I can't remember names.
+bemerken|Hast du etwas bemerkt?|Did you notice anything?
+fangen|Der Hund fängt den Ball.|The dog catches the ball.
+werfen|Wirf den Ball zu mir!|Throw the ball to me!
+drücken|Drücken Sie den grünen Knopf.|Press the green button.
+heben|Der Koffer ist zu schwer, ich kann ihn nicht heben.|The suitcase is too heavy, I can't lift it.
+füllen|Füll das Glas bitte mit Wasser.|Fill the glass with water, please.
+schneiden|Ich schneide das Brot.|I'm cutting the bread.
+kleben|Kleb das Foto ins Heft.|Stick the photo in the exercise book.
+pflanzen|Wir pflanzen einen Baum.|We're planting a tree.
+wachsen|Die Kinder wachsen so schnell!|The children grow so fast!
+sterben|Seine Großmutter ist letztes Jahr gestorben.|His grandmother died last year.
+retten|Die Feuerwehr hat die Katze gerettet.|The fire brigade rescued the cat.
+stören|Störe ich?|Am I disturbing you?
+klopfen|Jemand klopft an die Tür.|Someone is knocking at the door.
+erwarten|Wir erwarten Gäste.|We're expecting guests.
+bemühen|Ich bemühe mich, pünktlich zu sein.|I try hard to be on time.
+die Ehe|Ihre Ehe ist sehr glücklich.|Their marriage is very happy.
+der Partner|Mein Partner kommt aus Spanien.|My partner comes from Spain.
+die Partnerin|Er lebt mit seiner Partnerin in Köln.|He lives with his partner in Cologne.
+die Verwandten|Zu Weihnachten kommen alle Verwandten.|All the relatives come at Christmas.
+der Schwiegervater|Mein Schwiegervater ist sehr nett.|My father-in-law is very nice.
+die Schwiegermutter|Die Schwiegermutter kocht für alle.|The mother-in-law cooks for everyone.
+das Paar|Die beiden sind ein schönes Paar.|The two of them are a lovely couple.
+die Freude|Die Kinder springen vor Freude.|The children jump for joy.
+die Wut|Er war rot vor Wut.|He was red with anger.
+die Laune|Heute hat sie gute Laune.|She's in a good mood today.
+enttäuscht|Ich bin von dem Film enttäuscht.|I'm disappointed by the film.
+neidisch|Bist du neidisch auf seinen Erfolg?|Are you envious of his success?
+verliebt|Sie ist verliebt.|She is in love.
+die Krankheit|Die Krankheit ist nicht gefährlich.|The illness isn't dangerous.
+die Wunde|Die Wunde heilt gut.|The wound is healing well.
+das Pflaster|Hast du ein Pflaster?|Do you have a plaster?
+die Spritze|Der Arzt gibt mir eine Spritze.|The doctor gives me an injection.
+die Allergie|Ich habe eine Allergie gegen Katzen.|I'm allergic to cats.
+der Zahnarzt|Ich habe morgen einen Termin beim Zahnarzt.|I have a dentist's appointment tomorrow.
+der Krankenwagen|Ruf sofort einen Krankenwagen!|Call an ambulance immediately!
+schwanger|Meine Schwester ist schwanger.|My sister is pregnant.
+der Staubsauger|Der Staubsauger ist sehr laut.|The vacuum cleaner is very loud.
+die Spülmaschine|Stell die Teller in die Spülmaschine.|Put the plates in the dishwasher.
+das Erdgeschoss|Die Wohnung liegt im Erdgeschoss.|The flat is on the ground floor.
+möbliert|Ich suche ein möbliertes Zimmer.|I'm looking for a furnished room.
+das Gas|Wir kochen mit Gas.|We cook with gas.
+das Visum|Für die Reise brauche ich ein Visum.|I need a visa for the trip.
+der Zoll|Am Zoll müssen wir den Koffer öffnen.|At customs we have to open the suitcase.
+die Landkarte|Auf der Landkarte ist der Weg eingezeichnet.|The route is marked on the map.
+der Reiseführer|Der Reiseführer empfiehlt dieses Restaurant.|The guidebook recommends this restaurant.
+der Campingplatz|Wir übernachten auf einem Campingplatz.|We're staying at a campsite.
+die Pension|Die Pension ist klein, aber gemütlich.|The guesthouse is small but cosy.
+die Küste|Wir fahren an der Küste entlang.|We drive along the coast.
+das Tal|Das Dorf liegt in einem Tal.|The village is in a valley.
+der Hügel|Hinter dem Haus ist ein Hügel.|There's a hill behind the house.
+die Wiese|Die Kinder spielen auf der Wiese.|The children are playing in the meadow.
+das Gras|Das Gras ist nass.|The grass is wet.
+der Stein|Er wirft einen Stein ins Wasser.|He throws a stone into the water.
+die Erde|Die Erde dreht sich um die Sonne.|The earth revolves around the sun.
+das Klima|Das Klima hier ist mild.|The climate here is mild.
+der Nebel|Am Morgen gibt es oft Nebel.|There's often fog in the morning.
+bewölkt|Heute ist es bewölkt.|It's cloudy today.
+neblig|Fahr vorsichtig, es ist neblig.|Drive carefully, it's foggy.
+die Mitarbeiterin|Die neue Mitarbeiterin heißt Frau Öztürk.|The new employee is called Ms Öztürk.
+der Auftrag|Wir haben einen großen Auftrag bekommen.|We've received a big order.
+arbeitslos|Er ist seit drei Monaten arbeitslos.|He has been unemployed for three months.
+der Azubi|Der Azubi lernt schnell.|The trainee learns quickly.
+die Wohnungsanzeige|Ich lese jeden Tag die Wohnungsanzeigen.|I read the flat ads every day.
+der Altbau|Wir wohnen in einem schönen Altbau.|We live in a lovely old building.
+der Neubau|Die Wohnung im Neubau ist teurer.|The flat in the new building is more expensive.
+das Hochhaus|Er wohnt im 15. Stock eines Hochhauses.|He lives on the 15th floor of a high-rise.
+das Reihenhaus|Wir kaufen ein Reihenhaus am Stadtrand.|We're buying a terraced house on the edge of town.
+das Einfamilienhaus|Ihr Traum ist ein Einfamilienhaus mit Garten.|Her dream is a detached house with a garden.
+die Garage|Das Auto steht in der Garage.|The car is in the garage.
+der Quadratmeter|Die Wohnung hat 60 Quadratmeter.|The flat is 60 square metres.
+einziehen|Wann zieht ihr in die neue Wohnung ein?|When are you moving into the new flat?
+ausziehen|Mein Mitbewohner zieht im Mai aus.|My flatmate is moving out in May.
+renovieren|Wir renovieren die Küche.|We're renovating the kitchen.
+streichen|Wir streichen die Wände weiß.|We're painting the walls white.
+tapezieren|Im Schlafzimmer müssen wir noch tapezieren.|We still have to wallpaper the bedroom.
+aufbauen|Kannst du mir helfen, das Regal aufzubauen?|Can you help me assemble the shelf?
+abbauen|Nach dem Fest bauen wir das Zelt ab.|After the party we'll take the tent down.
+die Glühbirne|Die Glühbirne ist kaputt.|The light bulb is broken.
+die Steckdose|Wo ist hier eine Steckdose?|Where is there a socket here?
+der Wasserhahn|Der Wasserhahn tropft.|The tap is dripping.
+die Mikrowelle|Ich mache das Essen in der Mikrowelle warm.|I'm heating the food in the microwave.
+die Pfanne|Die Pfanne ist heiß.|The pan is hot.
+der Topf|Die Suppe kocht im Topf.|The soup is cooking in the pot.
+der Mülleimer|Der Mülleimer ist voll.|The bin is full.
+der Besen|Wo ist der Besen?|Where's the broom?
+der Eimer|Ich brauche einen Eimer Wasser.|I need a bucket of water.
+die Bettdecke|Die Bettdecke ist schön warm.|The duvet is nice and warm.
+der Kleiderschrank|Der Kleiderschrank ist zu klein.|The wardrobe is too small.
+der Schreibtisch|Ich arbeite am Schreibtisch.|I work at the desk.
+der Esstisch|Wir sitzen alle am Esstisch.|We're all sitting at the dining table.
+der Vorort|Sie wohnen in einem ruhigen Vorort.|They live in a quiet suburb.
+die Fußgängerzone|In der Fußgängerzone gibt es viele Geschäfte.|There are lots of shops in the pedestrian zone.
+das Einkaufszentrum|Das Einkaufszentrum ist sonntags geschlossen.|The shopping centre is closed on Sundays.
+der Spielplatz|Die Kinder sind auf dem Spielplatz.|The children are at the playground.
+der Friedhof|Der Friedhof liegt hinter der Kirche.|The cemetery is behind the church.
+das Schloss|Das Schloss ist 300 Jahre alt.|The castle is 300 years old.
+der Turm|Vom Turm sieht man die ganze Stadt.|From the tower you can see the whole city.
+das Denkmal|Auf dem Platz steht ein Denkmal.|There's a monument on the square.
+der Brunnen|Wir treffen uns am Brunnen.|We'll meet at the fountain.
+die Feuerwache|Die Feuerwache ist um die Ecke.|The fire station is around the corner.
+das Polizeirevier|Ich muss zum Polizeirevier, mein Fahrrad ist weg.|I have to go to the police station, my bike's gone.
+das Fundbüro|Vielleicht ist dein Schirm im Fundbüro.|Maybe your umbrella is at the lost property office.
+die Reinigung|Ich bringe den Anzug in die Reinigung.|I'm taking the suit to the dry cleaner's.
+der Kiosk|Am Kiosk kaufe ich eine Zeitung.|I buy a newspaper at the kiosk.
+der Fahrschein|Den Fahrschein bekommen Sie am Automaten.|You get the ticket from the machine.
+die Monatskarte|Mit der Monatskarte fahre ich günstiger.|With the monthly ticket I travel more cheaply.
+der Ausgang|Wo ist der Ausgang?|Where is the exit?
+die Kreuzung|An der Kreuzung biegen Sie links ab.|Turn left at the crossroads.
+der Kreisverkehr|Fahren Sie im Kreisverkehr die zweite Ausfahrt.|Take the second exit at the roundabout.
+der Zebrastreifen|Geh nur über den Zebrastreifen!|Only cross at the zebra crossing!
+der Lastwagen|Ein Lastwagen blockiert die Straße.|A lorry is blocking the street.
+der Helm|Beim Radfahren trage ich einen Helm.|I wear a helmet when cycling.
+tanken|Ich muss noch tanken.|I still have to get petrol.
+bremsen|Der Fahrer bremst sofort.|The driver brakes immediately.
+überholen|Hier darf man nicht überholen.|You're not allowed to overtake here.
+abbiegen|Biegen Sie an der Ampel rechts ab.|Turn right at the traffic lights.
+der Sportverein|Er spielt Handball im Sportverein.|He plays handball at the sports club.
+das Stadion|Das Stadion ist voll.|The stadium is full.
+der Ball|Der Ball ist im Tor!|The ball is in the goal!
+der Spieler|Der Spieler hat sich verletzt.|The player got injured.
+die Spielerin|Sie ist die beste Spielerin im Team.|She is the best player on the team.
+der Trainer|Der Trainer ist zufrieden.|The coach is satisfied.
+der Sieg|Die Mannschaft feiert den Sieg.|The team is celebrating the victory.
+die Niederlage|Nach der Niederlage waren alle traurig.|After the defeat everyone was sad.
+das Unentschieden|Das Spiel endete unentschieden.|The game ended in a draw.
+die Meisterschaft|Die Meisterschaft beginnt im August.|The championship starts in August.
+Ski fahren|Im Winter fahren wir in den Alpen Ski.|In winter we go skiing in the Alps.
+klettern|Die Kinder klettern auf den Baum.|The children climb the tree.
+segeln|Am Wochenende segeln wir auf dem See.|At the weekend we go sailing on the lake.
+angeln|Mein Opa angelt gern.|My grandpa likes fishing.
+reiten|Sie reitet seit ihrer Kindheit.|She has ridden since childhood.
+die Filiale|Die Bank hat hier eine Filiale.|The bank has a branch here.
+der Kassenbon|Bitte heben Sie den Kassenbon auf.|Please keep the receipt.
+das Wechselgeld|Sie haben mir zu wenig Wechselgeld gegeben.|You've given me too little change.
+die Packung|Eine Packung Milch, bitte.|A carton of milk, please.
+die Dose|Ich kaufe zwei Dosen Tomaten.|I'm buying two tins of tomatoes.
+der Becher|Ein Becher Joghurt kostet 60 Cent.|A pot of yoghurt costs 60 cents.
+der Liter|Ich trinke zwei Liter Wasser am Tag.|I drink two litres of water a day.
+umtauschen|Kann ich die Hose umtauschen?|Can I exchange the trousers?
+reklamieren|Ich möchte diesen Toaster reklamieren.|I'd like to complain about this toaster.
+der Kassierer|Der Kassierer fragt nach meiner Kundenkarte.|The cashier asks for my loyalty card.
+die Kassiererin|Die Kassiererin ist sehr schnell.|The cashier is very quick.
+der Onlineshop|Ich bestelle die Schuhe im Onlineshop.|I'm ordering the shoes from the online shop.
+das Fieberthermometer|Hast du ein Fieberthermometer?|Do you have a thermometer?
+die Versichertenkarte|Vergessen Sie Ihre Versichertenkarte nicht.|Don't forget your health insurance card.
+die Sprechstunde|Die Sprechstunde ist von 8 bis 12 Uhr.|Surgery hours are from 8 to 12.
+das Wartezimmer|Bitte nehmen Sie im Wartezimmer Platz.|Please take a seat in the waiting room.
+der Termin beim Arzt|Ich habe morgen einen Termin beim Arzt.|I have a doctor's appointment tomorrow.
+husten|Das Kind hustet seit Tagen.|The child has been coughing for days.
+niesen|Wer niest, sollte in den Ellenbogen niesen.|Anyone who sneezes should sneeze into their elbow.
+bluten|Dein Finger blutet!|Your finger is bleeding!
+behandeln|Der Arzt behandelt viele Patienten.|The doctor treats many patients.
+operieren|Sie wird morgen am Knie operiert.|She's having an operation on her knee tomorrow.
+gefallen (gefällt)|Das Kleid gefällt mir.|I like the dress.
+leidtun|Es tut mir leid.|I'm sorry.
+egal|Das ist mir egal.|I don't mind.
+bitten um|Ich bitte dich um Hilfe.|I'm asking you for help.
+zuhören|Hör mir bitte gut zu.|Please listen to me carefully.
+der Briefkasten|Im Briefkasten liegt ein Brief.|There's a letter in the letterbox.
+zum Glück|Zum Glück ist nichts passiert.|Luckily nothing happened.
+der Gutschein|Ich schenke ihr einen Gutschein.|I'm giving her a voucher.
+die Kerze|Auf dem Tisch brennt eine Kerze.|A candle is burning on the table.
+der Blumenstrauß|Er bringt einen Blumenstrauß mit.|He brings a bunch of flowers.
+einpacken|Soll ich das als Geschenk einpacken?|Shall I wrap it as a present?
+das Geschenkpapier|Wir haben kein Geschenkpapier mehr.|We've run out of wrapping paper.
+das Parfüm|Das Parfüm riecht sehr gut.|The perfume smells very good.
+der Schmuck|Sie trägt nie Schmuck.|She never wears jewellery.
+die Kette|Die Kette ist aus Silber.|The necklace is made of silver.
+zu Fuß|Ich gehe zu Fuß zur Arbeit.|I walk to work.
+der Boden|Das Buch liegt auf dem Boden.|The book is lying on the floor.
+die Ecke|Die Lampe steht in der Ecke.|The lamp is in the corner.
+die Möbel (Pl.)|Die Möbel sind schon im Wagen.|The furniture is already in the van.
+die Kommode|Die Socken sind in der Kommode.|The socks are in the chest of drawers.
+der Vorhang|Mach bitte den Vorhang zu.|Please close the curtain.
+hinter|Der Garten ist hinter dem Haus.|The garden is behind the house.
+der Hof|Die Kinder spielen im Hof.|The children are playing in the courtyard.
+der Stock / die Etage|Die Praxis ist im zweiten Stock.|The practice is on the second floor.
+letzte Woche|Letzte Woche war ich krank.|Last week I was ill.
+der Ausflug|Am Sonntag machen wir einen Ausflug.|On Sunday we're going on a trip.
+das Picknick|Wir machen ein Picknick im Park.|We're having a picnic in the park.
+fotografieren|Darf man hier fotografieren?|Are you allowed to take photos here?
+Spaß machen|Deutsch lernen macht Spaß!|Learning German is fun!
+einschlafen (eingeschlafen)|Ich bin beim Film eingeschlafen.|I fell asleep during the film.
+zum ersten Mal|Ich war zum ersten Mal in Wien.|I was in Vienna for the first time.
+noch nie|Ich habe noch nie Sushi gegessen.|I've never eaten sushi.
+die Kindheit|Ich hatte eine schöne Kindheit.|I had a happy childhood.
+als Kind|Als Kind wollte ich Pilot werden.|As a child I wanted to be a pilot.
+streng|Mein Vater war sehr streng.|My father was very strict.
+die Großstadt|Ich lebe gern in der Großstadt.|I like living in the big city.
+es gab|Früher gab es hier ein Kino.|There used to be a cinema here.
+durfte (dürfen)|Als Kind durfte ich nicht lange fernsehen.|As a child I wasn't allowed to watch TV for long.
+das Spielzeug|Das Spielzeug liegt überall.|The toys are everywhere.
+frech|Der Junge ist ganz schön frech.|The boy is quite cheeky.
+früher war alles anders|Mein Opa sagt immer: Früher war alles anders.|My grandpa always says: everything used to be different.
+heutzutage|Heutzutage hat jeder ein Smartphone.|Nowadays everyone has a smartphone.
+sich fühlen|Wie fühlst du dich heute?|How do you feel today?
+sich erkälten|Zieh dich warm an, sonst erkältest du dich.|Dress warmly, or you'll catch a cold.
+sich waschen|Das Kind wäscht sich allein.|The child washes on its own.
+sich die Zähne putzen|Ich putze mir zweimal am Tag die Zähne.|I brush my teeth twice a day.
+sich anziehen|Ich ziehe mich schnell an.|I get dressed quickly.
+sich beeilen|Beeil dich, der Bus kommt!|Hurry up, the bus is coming!
+sich freuen auf / über|Ich freue mich auf den Urlaub.|I'm looking forward to the holiday.
+sich interessieren für|Interessierst du dich für Musik?|Are you interested in music?
+sich ärgern über|Er ärgert sich über den Stau.|He's annoyed about the traffic jam.
+sich kümmern um|Ich kümmere mich um die Kinder.|I look after the children.
+sich erholen|Im Urlaub erhole ich mich gut.|I recover well on holiday.
+sich setzen|Bitte setzen Sie sich.|Please sit down.
+sich treffen|Wir treffen uns um sechs.|We're meeting at six.
+sich duschen|Ich dusche mich nach dem Sport.|I shower after sport.
+sich kämmen|Sie kämmt sich die Haare.|She combs her hair.
+sich rasieren|Er rasiert sich jeden Morgen.|He shaves every morning.
+sich schminken|Sie schminkt sich vor dem Spiegel.|She puts on make-up in front of the mirror.
+sich bewegen|Du solltest dich mehr bewegen.|You should get more exercise.
+sich konzentrieren|Ich kann mich nicht konzentrieren.|I can't concentrate.
+sich langweilen|Die Kinder langweilen sich.|The children are bored.
+sich verspäten|Der Zug verspätet sich um zehn Minuten.|The train is ten minutes late.
+sich verlieben|Sie hat sich in einen Kollegen verliebt.|She has fallen in love with a colleague.
+sich Sorgen machen|Mach dir keine Sorgen!|Don't worry!
+die Mannschaft|Unsere Mannschaft hat gewonnen.|Our team won.
+die Sportart|Welche Sportart machst du?|Which sport do you do?
+der Tennisschläger|Ich brauche einen neuen Tennisschläger.|I need a new tennis racket.
+das Training|Das Training ist dienstags.|Training is on Tuesdays.
+der Fan|Er ist ein großer Fan von Bayern München.|He's a big fan of Bayern Munich.
+das Gesellschaftsspiel|Am Abend spielen wir ein Gesellschaftsspiel.|In the evening we play a board game.
+die Anzeige|Ich habe die Anzeige im Internet gesehen.|I saw the advertisement online.
+die Kenntnisse (Pl.)|Gute Deutschkenntnisse sind wichtig.|Good German skills are important.
+die Teamarbeit|Teamarbeit macht mir Spaß.|I enjoy teamwork.
+der Urlaubstag|Ich habe noch fünf Urlaubstage.|I still have five days of holiday.
+krank sein|Wenn du krank bist, bleib zu Hause.|If you're ill, stay at home.
+sauber / schmutzig|Die Teller sind schmutzig, die Gläser sind sauber.|The plates are dirty, the glasses are clean.
+der Verkehr|Am Morgen ist viel Verkehr.|There's a lot of traffic in the morning.
+die Einwohner (Pl.)|Die Stadt hat 500.000 Einwohner.|The city has 500,000 inhabitants.
+der Vorteil / der Nachteil|Ein Vorteil ist der Preis, ein Nachteil die Lage.|One advantage is the price, a disadvantage the location.
+groß – größer – am größten|Mein Bruder ist größer als ich.|My brother is taller than me.
+gut – besser – am besten|Deutsch spricht sie am besten.|She speaks German best.
+viel – mehr – am meisten|Er arbeitet mehr als früher.|He works more than before.
+gern – lieber – am liebsten|Am liebsten trinke ich Tee.|Most of all I like drinking tea.
+hoch – höher – am höchsten|Dieser Berg ist höher als die Zugspitze.|This mountain is higher than the Zugspitze.
+nah – näher – am nächsten|Welche Haltestelle ist am nächsten?|Which stop is the nearest?
+genauso … wie|Sie ist genauso alt wie ich.|She is just as old as me.
+die Lebensqualität|Die Lebensqualität in Wien ist hoch.|The quality of life in Vienna is high.
+die Kleidung|Die Kleidung liegt auf dem Stuhl.|The clothes are on the chair.
+der Schuh|Der linke Schuh ist zu eng.|The left shoe is too tight.
+die Bluse|Die weiße Bluse passt gut.|The white blouse fits well.
+das T-Shirt|Im Sommer trage ich nur T-Shirts.|In summer I only wear T-shirts.
+die Jeans|Die Jeans ist zu lang.|The jeans are too long.
+der Anzug|Für die Hochzeit kauft er einen Anzug.|He's buying a suit for the wedding.
+die Mütze|Im Winter trage ich eine Mütze.|In winter I wear a woolly hat.
+die Stiefel (Pl.)|Die Stiefel sind wasserdicht.|The boots are waterproof.
+die Umkleidekabine|Die Umkleidekabine ist besetzt.|The changing room is occupied.
+bunt|Die Kinder malen bunte Bilder.|The children paint colourful pictures.
+gestreift / kariert|Er trägt ein kariertes Hemd.|He's wearing a checked shirt.
+schick|Du siehst heute sehr schick aus!|You look very smart today!
+packen|Ich muss noch meinen Koffer packen.|I still have to pack my suitcase.
+anschließend|Anschließend gehen wir essen.|Afterwards we'll go and eat.
+zum Schluss|Zum Schluss sagen alle Danke.|At the end everyone says thank you.
+die Rezeption|Fragen Sie an der Rezeption.|Ask at reception.
+das Einzelzimmer / Doppelzimmer|Ein Doppelzimmer kostet 90 Euro.|A double room costs 90 euros.
+die Halbpension|Das Hotel bietet Halbpension an.|The hotel offers half board.

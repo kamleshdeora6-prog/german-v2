@@ -11,8 +11,9 @@ def parse(path):                     # lesson text parser
         line = raw.rstrip("\n")
         if line.startswith("@@"):
             f = [x.strip() for x in line[2:].split("|")] + ["", "", "", "", ""]   # plus files only give the number
+            after = next((x[6:] for x in f if x.startswith("after=")), "")
             cur = dict(n=int(f[0]), lvl=f[1], title=f[2], theme=f[3], scene=f[4],
-                       rec=[x for x in f[5].split(",") if x.strip()], sec={})
+                       rec=[x for x in f[5].split(",") if x.strip() and not x.startswith("after=")] if not f[5].startswith("after=") else [], after=after, sec={})
             topics.append(cur); sec = None; continue
         if line.startswith("#") and cur is not None:
             sec = line[1:].strip(); cur["sec"][sec] = []; continue
@@ -41,7 +42,18 @@ def js(name, obj):
 lessons = []
 for p in sorted(glob.glob("content_*.txt")):
     lessons += parse(p)
-lessons.sort(key=lambda t: t["n"])
+# Lesson numbers are permanent IDs (progress is saved under them). New lessons are slotted into the
+# course with "after=<id>" in their header; "pos" is the place in the course shown to learners.
+_base = sorted([t for t in lessons if not t.get("after")], key=lambda t: t["n"])
+_new = sorted([t for t in lessons if t.get("after")], key=lambda t: t["n"])
+while _new:
+    placed = False
+    for t in list(_new):
+        idx = next((i for i, x in enumerate(_base) if x["n"] == int(t["after"])), None)
+        if idx is None: continue
+        _base.insert(idx + 1, t); _new.remove(t); placed = True
+    if not placed: raise SystemExit("after= points to a missing lesson: " + str([t["n"] for t in _new]))
+lessons = _base
 def split_ans(line):
     q, _, a = line.partition("||")
     return {"q": q.strip(), "a": a.strip()}
@@ -49,7 +61,7 @@ cur = []
 for t in lessons:
     s = t["sec"]
     cur.append({
-        "n": t["n"], "level": t["lvl"], "title": t["title"], "theme": t["theme"], "scene": t["scene"],
+        "n": t["n"], "pos": len(cur) + 1, "level": t["lvl"], "title": t["title"], "theme": t["theme"], "scene": t["scene"],
         "rec": [int(x) for x in t["rec"] if x.strip()],
         "expl": s.get("expl", []), "use": " ".join(s.get("use", [])),
         "table": [r.split("|") for r in s.get("table", [])],
@@ -60,6 +72,10 @@ for t in lessons:
         "exam": [split_ans(l) for l in s.get("exam", [])],
         "speak": s.get("speak", []),
     })
+    if s.get("read2"): cur[-1]["reading2"] = {"title": s["read2"][0], "text": " ".join(s["read2"][1:])}
+    if s.get("dialog"):
+        cur[-1]["dialog"] = [dict(zip(("who", "de"), [y.strip() for y in x.split(":", 1)])) for x in s["dialog"]]
+        cur[-1]["dq"] = [split_ans(x) for x in s.get("dq", [])]
 # ---------- v6 deepening: plus_*.txt adds words, examples, a second text, a listening dialogue and tasks ----------
 #   @@ <lesson n>
 #   #vocab   de, plural = en          (appended)
@@ -163,6 +179,31 @@ for v in v2:
     if k not in EXTRA_EX: k = re.sub(r",.*$", "", k).strip()
     if k in EXTRA_EX and not v.get("exDe"):
         v["exDe"], v["exEn"] = EXTRA_EX[k]
+# Words still without an example borrow a real sentence from the course (German + English pairs only).
+# Nouns match their exact form (or plural); verbs their infinitive, stem+t or stem+en; others the exact word.
+_pairs = [(e["de"], e["en"]) for l in cur for e in l["examples"] if e.get("en")]
+_used = collections.Counter()
+def _find(v):
+    w = re.sub(r"^(der|die|das)\s+", "", v["de"]).split(",")[0].split(" / ")[0].strip()
+    w = re.sub(r"\s*\(.*?\)", "", w).strip()
+    if not w or " " in w and not v.get("art"): return None
+    forms = {w}
+    if v.get("art"):
+        pl = re.sub(r"^die\s+", "", v.get("pl") or "")
+        if pl and not pl.startswith("-"): forms.add(pl)
+    elif re.search(r"(en|ern|eln)$", w) and w[0].islower():
+        st = re.sub(r"e?n$", "", w); forms |= {st + "t", st + "e", st + "st", "ge" + st + "t"}
+    rx = re.compile(r"(?<![\wäöüßÄÖÜ])(" + "|".join(map(re.escape, sorted(forms, key=len, reverse=True))) + r")(?![\wäöüßÄÖÜ])")
+    best = None
+    for de, en in _pairs:
+        m_ = rx.search(de)
+        if m_ and v.get("art") and m_.start() == 0: m_ = rx.search(de, 1)   # „Morgen …“ at the start is usually the adverb
+        if m_ and len(de) < 110 and (best is None or _used[de] < _used[best[0]]): best = (de, en)
+    return best
+for v in v2:
+    if v.get("exDe"): continue
+    f = _find(v)
+    if f: v["exDe"], v["exEn"] = f; _used[f[0]] += 1
 js("vocab", v2)
 
 verbs = []; seen = set()

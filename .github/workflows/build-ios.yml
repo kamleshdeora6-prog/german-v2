@@ -12,7 +12,7 @@ jobs:
   build:
     runs-on: macos-14
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Pick Xcode
         run: sudo xcode-select -s /Applications/Xcode_15.4.app || true; xcodebuild -version
@@ -23,13 +23,17 @@ jobs:
       - name: Copy the web app into the iOS project and generate the Xcode project
         run: |
           cd ios
-          bash build_ios.sh
+          bash build_ios.sh 2>&1 | tee gen.log
+          if [ ! -d DeutschCoach.xcodeproj ]; then
+            echo "::error title=XcodeGen failed::$(tail -5 gen.log | tr '\n' ' ')"
+            exit 1
+          fi
           xcodebuild -list -project DeutschCoach.xcodeproj
 
       - name: Build (no code signing)
         run: |
           cd ios
-          set -o pipefail
+          set +e
           xcodebuild \
             -project DeutschCoach.xcodeproj \
             -scheme DeutschCoach \
@@ -38,8 +42,25 @@ jobs:
             -destination 'generic/platform=iOS' \
             -derivedDataPath build \
             CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO DEVELOPMENT_TEAM="" \
-            clean build | tee build.log | grep -E "error|warning: |BUILD" || true
-          test -d build/Build/Products/Release-iphoneos/DeutschCoach.app || (tail -80 build.log; exit 1)
+            clean build > build.log 2>&1
+          status=$?
+          set -e
+          if [ $status -ne 0 ] || [ ! -d build/Build/Products/Release-iphoneos/DeutschCoach.app ]; then
+            # put the real compiler/linker errors into the run summary, so they show up as annotations
+            grep -E "error:|fatal error|BUILD FAILED|Signing|requires a development team" build.log | sort -u | head -15 | while read -r line; do echo "::error title=Xcode::$line"; done
+            echo "----- last 60 lines of the Xcode log -----"; tail -60 build.log
+            exit 1
+          fi
+          grep -E "warning:" build.log | sort -u | head -5 || true
+          echo "BUILD SUCCEEDED"
+
+      - name: Upload the Xcode log (also when the build fails)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcode-build-log
+          path: ios/build.log
+          if-no-files-found: ignore
 
       - name: Package as .ipa
         run: |

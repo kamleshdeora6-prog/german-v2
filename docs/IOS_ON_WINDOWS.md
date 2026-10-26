@@ -44,6 +44,11 @@ account (99 $/year) makes it last a year.
 - After using the microphone, the audio session stayed in record-only mode, so all speech went silent.
   Now it switches to `playAndRecord` while listening and back to `playback` afterwards.
 - Speech results containing quotes or line breaks broke the JavaScript callback. Now JSON-encoded.
+- **The "exit code 1" in 6.0 (fixed in 6.1):** the last line of `ios/build_ios.sh` was
+  `[ "$1" = "--open" ] && open …`. On GitHub there is no `--open`, so that test is false and the
+  whole script returned 1, even though the project had been generated fine. It is now an `if` block
+  followed by `exit 0`. If the build ever fails again, open the failed run: the Xcode error is shown
+  as a red annotation at the top, and the full log is attached as **xcode-build-log**.
 
 ## Updating the repo from Windows
 Easiest: **GitHub Desktop** (desktop.github.com) → clone `german-v2` → copy the new files over the

@@ -30,36 +30,38 @@
     el.innerHTML = `
     <div class="h-top"><h2 class="hello">${hello}${Store.name() ? `, <span>${esc(Store.name())}</span>` : ""}!</h2>
       <button class="lvchip" data-go="stats" aria-label="Level ${lv.n}, ${lv.pct}% to next level"><b>Lv ${lv.n}</b><span>${esc(lv.title)}</span><i style="--p:${lv.pct}%"></i></button></div>
-    ${back ? `<section class="card welcome"><p>👋 <b>Willkommen zurück!</b> Breaks happen. One short session today starts a new streak – and you keep everything you learned.</p></section>` : ""}
+    <div class="home-grid"><div class="col-a">
+    ${back ? `<section class="card welcome"><p>👋 <b>Willkommen zurück!</b> <i class="muted">(Welcome back!)</i> Breaks happen. One short session today starts a new streak – and you keep everything you learned.</p></section>` : ""}
     <section class="hero" aria-label="Today">
       <div class="hero-row">
         ${Habit.ring(pct, 116, 12, `<b>${todayXP}</b><span>/ ${goal} XP</span>`)}
         <div class="hero-side">
           <div class="flame ${sv.today ? "lit" : sv.atRisk ? "risk" : ""}"><span class="fl">🔥</span><b>${sv.count}</b><span>${sv.count === 1 ? "day" : "days"}</span></div>
           <div class="freeze" title="Streak freezes protect your streak on a missed day">❄️ ${sv.freezes}/2 freeze${sv.freezes === 1 ? "" : "s"}</div>
-          <p class="muted small">${pct >= 100 ? "Tagesziel erreicht ✓" : sv.today ? `${goal - todayXP} XP to today's goal` : sv.atRisk ? "Learn today to keep your streak" : sv.willFreeze ? "A freeze will cover the missed day" : "Start your streak today"}</p>
+          <p class="muted small">${pct >= 100 ? "Tagesziel erreicht ✓ (daily goal reached)" : sv.today ? `${goal - todayXP} XP to today's goal` : sv.atRisk ? "Learn today to keep your streak" : sv.willFreeze ? "A freeze will cover the missed day" : "Start your streak today"}</p>
         </div>
       </div>
-      <button class="btn sign big-btn go-next" data-go="${nx.go}"><span>${pct >= 100 ? "Keep going" : sv.today ? "Weiter" : "Start"}: ${esc(nx.label)}</span><small>${esc(nx.sub)} · ~${nx.min} min</small></button>
+      <button class="btn sign big-btn go-next" data-go="${nx.go}"><span>${pct >= 100 ? "Keep going" : sv.today ? "Continue" : "Start"}: ${esc(nx.label)}</span><small>${esc(nx.sub)} · ~${nx.min} min</small></button>
     </section>
     <section class="week" aria-label="This week">${Habit.week().map((d) => `<div class="wd ${d.xp >= goal ? "met" : d.xp ? "some" : ""} ${d.frozen ? "frz" : ""} ${d.today ? "today" : ""} ${d.future ? "fut" : ""}"><span>${d.n}</span><i>${d.frozen ? "❄" : d.xp >= goal ? "✓" : d.xp ? "•" : ""}</i></div>`).join("")}</section>
-    <section class="card quests"><h3>Tagesquests <span class="muted small">reset at midnight</span></h3>
+    <section class="card quests"><h3>${H.bi("Tagesquests", "Daily quests · new at midnight")}</h3>
       ${Habit.quests().map((q) => `<div class="quest ${q.done ? "done" : ""}"><span class="qic">${q.done ? "✅" : q.ic}</span><div class="qt"><span>${esc(q.t)}</span><div class="pbar sm"><span style="width:${Math.round((q.have / q.target) * 100)}%"></span></div></div><small>${q.have}/${q.target}</small></div>`).join("")}
     </section>
+    </div><div class="col-b">
     <section class="board lvl-${l.level}" aria-label="Your lesson">
-      <div class="board-top"><span>Lektion ${l.n} von ${DC.curriculum.length}</span><span>${UI.levelDot(l.level)}</span></div>
+      <div class="board-top"><span>Lesson ${l.pos} of ${DC.curriculum.length}</span><span>${UI.levelDot(l.level)}</span></div>
       <div class="board-title">${esc(l.title)}</div>
       <div class="board-sub">${esc(l.theme)}</div>
       <div class="dots" aria-label="${partsDone} of 5 parts done">${[0, 1, 2, 3, 4].map((i) => `<i class="${i < partsDone ? "on" : ""}"></i>`).join("")}<span>${partsDone}/5</span></div>
       <button class="btn ghost-light sm" data-go="lesson/${l.n}">${ls.read ? "Open lesson" : "Start lesson"}</button>
     </section>
     <section class="grid2 tools">
-      <button class="tile" data-go="vocab"><span class="ti">🗂</span><b>Wörter</b><span>${p.due ? `${p.due} due` : "Learn new words"}</span></button>
-      <button class="tile" data-go="listen"><span class="ti">🎧</span><b>Hören</b><span>Dictation</span></button>
-      <button class="tile" data-go="speak"><span class="ti">🎙</span><b>Sprechen</b><span>Shadowing & talk</span></button>
-      <button class="tile" data-go="translate"><span class="ti">⇄</span><b>Übersetzen</b><span>DeepL, LEO, offline</span></button>
+      <button class="tile" data-go="vocab"><span class="ti">🗂</span><b>${H.bi("Wörter", "Words")}</b><span>${p.due ? `${p.due} due` : "Learn new words"}</span></button>
+      <button class="tile" data-go="listen"><span class="ti">🎧</span><b>${H.bi("Hören", "Listening")}</b><span>Dictation</span></button>
+      <button class="tile" data-go="speak"><span class="ti">🎙</span><b>${H.bi("Sprechen", "Speaking")}</b><span>Shadowing & talk</span></button>
+      <button class="tile" data-go="translate"><span class="ti">⇄</span><b>${H.bi("Übersetzen", "Translate")}</b><span>DeepL, LEO, offline</span></button>
     </section>
-    ${league.length > 1 ? `<section class="card league"><h3>Familien-Liga <span class="muted small">this week</span></h3><ol>${league.map((x, i) => `<li class="${x.me ? "me" : ""}"><span class="rk">${["🥇", "🥈", "🥉"][i] || i + 1}</span><span class="av" style="background:${x.color}">${esc((x.name || "?").charAt(0).toUpperCase())}</span><span class="nm">${esc(x.name)}</span><b>${x.xp} XP</b></li>`).join("")}</ol></section>`
+    ${league.length > 1 ? `<section class="card league"><h3>${H.bi("Familien-Liga", "Family league · this week")}</h3><ol>${league.map((x, i) => `<li class="${x.me ? "me" : ""}"><span class="rk">${["🥇", "🥈", "🥉"][i] || i + 1}</span><span class="av" style="background:${x.color}">${esc((x.name || "?").charAt(0).toUpperCase())}</span><span class="nm">${esc(x.name)}</span><b>${x.xp} XP</b></li>`).join("")}</ol></section>`
       : `<section class="card league solo"><p>👨‍👩‍👧 <b>Learn together.</b> Add a profile for a friend or family member on this device and compete in a weekly league.</p><button class="btn ghost sm addp">Add a learner</button></section>`}
     ${p.weak.length ? `<section class="card"><h3>Needs practice</h3><div class="chips">${p.weak.map((w) => `<button class="chip" data-go="practice/${w.id}">${esc(w.title)} · ${w.pct}%</button>`).join("")}</div></section>` : ""}
     ${(() => { const r = s.resume; return r && Date.now() - r.at < 3 * 864e5 && r.route !== "home" && r.route !== nx.go
@@ -72,6 +74,7 @@
       return s.xp >= 200 && Date.now() - last > month && Date.now() > snooze && Date.now() - (s.created || 0) > 14 * 864e5
         ? `<section class="card remind"><p>💾 <b>Save a backup?</b> Progress lives only on this device.</p><div class="row"><button class="btn sign sm bk-now">Export backup</button><button class="btn ghost sm bk-later">Later</button></div></section>` : ""; })()}
     <div class="novoice"></div>
+    </div></div>
     <p class="credit muted small">${App.credit()}</p>`;
     const bn = el.querySelector(".bk-now"); if (bn) bn.onclick = () => { App.backup(); el.querySelector(".remind").remove(); };
     const bl = el.querySelector(".bk-later"); if (bl) bl.onclick = () => { s.backupSnooze = Date.now() + 30 * 864e5; Store.save(); el.querySelector(".remind").remove(); };
@@ -91,11 +94,11 @@
       }
       const st = s.lessons[l.n] || {};
       const open = Store.unlocked(l.n);
-      const cur = open && !st.done && (l.n === 1 || (s.lessons[l.n - 1] || {}).done || s.settings.unlockAll) && !LESSONS().some((x) => x.n < l.n && !(s.lessons[x.n] || {}).done);
+      const cur = open && !st.done && !LESSONS().some((x) => Course.before(x.n, l.n) && !(s.lessons[x.n] || {}).done);
       html += `<li class="stop lvl-${l.level} ${st.done ? "done" : ""} ${cur ? "current" : ""} ${open ? "" : "locked"}">
         <span class="dot"></span>
         <button class="stop-btn" ${open ? `data-go="lesson/${l.n}"` : "disabled"}>
-          <span class="stop-n">${l.n}</span><span class="stop-t">${esc(l.title)}<small>${esc(l.theme)}${st.score ? ` · ${st.score}%` : ""}${open ? "" : " · locked"}</small></span>
+          <span class="stop-n">${l.pos}</span><span class="stop-t">${esc(l.title)}<small>${esc(l.theme)}${st.score ? ` · ${st.score}%` : ""}${open ? "" : " · locked"}</small></span>
         </button></li>`;
     });
     el.innerHTML = html + `</ol><p class="muted small">Already know some topics? Turn on “Open all lessons” in Settings.</p>`;
@@ -107,18 +110,19 @@
   V.lesson = (el, [nStr, tab = "learn"]) => {
     const n = +nStr; const l = LESSONS().find((x) => x.n === n);
     if (!l) return (el.innerHTML = UI.empty("Lesson not found.", `<button class="btn" data-go="path">Back to the line</button>`));
-    if (!Store.unlocked(n)) return (el.innerHTML = UI.empty(`Lesson ${n} opens when you finish lesson ${n - 1}.`, `<button class="btn" data-go="lesson/${n - 1}">Go to lesson ${n - 1}</button>`));
+    const pv = Course.prev(n), nx = Course.next(n);
+    if (!Store.unlocked(n)) return (el.innerHTML = UI.empty(`Lesson ${l.pos} opens when you finish lesson ${pv.pos}.`, `<button class="btn" data-go="lesson/${pv.n}">Go to lesson ${pv.pos}</button>`));
     const ls = Store.lesson(n);
     const titles = Object.fromEntries(LESSONS().map((x) => [x.n, x.title]));
     el.innerHTML = `
       <header class="lhead lvl-${l.level}">
-        <div class="lhead-row"><button class="back" data-go="path" aria-label="Back">‹</button><span>Lesson ${l.n} · ${l.level}</span>${ls.done ? `<span class="badge">done ${ls.score}%</span>` : ""}</div>
+        <div class="lhead-row"><button class="back" data-go="path" aria-label="Back">‹</button><span>Lesson ${l.pos} · ${l.level}</span>${ls.done ? `<span class="badge">done ${ls.score}%</span>` : ""}</div>
         <h2>${esc(l.title)}</h2><p>${esc(l.theme)}</p>
       </header>
       ${l.rec.length ? `<details class="recap"><summary>Builds on ${l.rec.length} earlier lesson${l.rec.length > 1 ? "s" : ""}</summary>${l.rec.map((r) => `<button class="chip" data-go="lesson/${r}">L${r} ${esc(titles[r])}</button>`).join("")}</details>` : ""}
       <nav class="tabs steps" role="tablist">${TABS.map(([k, t], i) => { const dn = (ls.parts && ls.parts[k]) || (k === "practice" && ls.done); return `<button role="tab" aria-selected="${k === tab}" class="tab ${k === tab ? "on" : ""} ${dn ? "dn" : ""}" data-go="lesson/${n}/${k}"><span class="stepn">${dn ? "✓" : i + 1}</span>${t}${k === "practice" && ls.score ? ` <small>${ls.score}%</small>` : ""}</button>`; }).join("")}</nav>
       <div class="lbody"></div>
-      <div class="lnav">${n > 1 ? `<button class="btn ghost" data-go="lesson/${n - 1}">‹ L${n - 1}</button>` : "<span></span>"}${n < LESSONS().length ? `<button class="btn ghost" ${Store.unlocked(n + 1) ? `data-go="lesson/${n + 1}"` : "disabled"}>L${n + 1} ›</button>` : ""}</div>`;
+      <div class="lnav">${pv ? `<button class="btn ghost" data-go="lesson/${pv.n}">‹ L${pv.pos}</button>` : "<span></span>"}${nx ? `<button class="btn ghost" ${Store.unlocked(nx.n) ? `data-go="lesson/${nx.n}"` : "disabled"}>L${nx.pos} ›</button>` : ""}</div>`;
     const body = el.querySelector(".lbody");
     ({ learn, read, practice, exam, speak }[tab] || learn)(body, l, ls);
   };
@@ -152,7 +156,7 @@
       <section class="card"><h3>Reading <span class="row inline">${UI.say(l.reading, "Play")}<button class="btn ghost sm slow">Slow</button></span></h3>
         <div class="reading">${words}</div><p class="muted small">Tap a word to look it up.</p><div class="lookup" hidden></div></section>
       ${l.reading2 ? `<section class="card read2"><h3>${esc(l.reading2.title)} ${UI.say(l.reading2.text, "Play")}</h3><div class="reading">${l.reading2.text.split(/(\s+)/).map((w) => (/\S/.test(w) ? `<span class="w">${esc(w)}</span>` : w)).join("")}</div><div class="lookup" hidden></div></section>` : ""}
-      ${l.dialog ? `<section class="card"><h3>🎧 Hörszene</h3><p class="muted small">Listen first without reading. Then answer, then check the transcript.</p>
+      ${l.dialog ? `<section class="card"><h3>🎧 ${H.bi("Hörszene", "Listening scene")}</h3><p class="muted small">Listen first without reading. Then answer, then check the transcript.</p>
         <div class="row"><button class="btn sign sm dplay">▶ Play dialogue</button><button class="btn ghost sm dslow">Slow</button><button class="btn ghost sm dshow">Show transcript</button></div>
         <div class="dlg blur">${l.dialog.map((d) => `<p><b>${esc(d.who)}:</b> ${esc(d.de)}</p>`).join("")}</div>
         ${(l.dq || []).map((q, i) => `<div class="rq dq" data-i="${i}"><p>${md(q.q)}</p><form class="q-form"><input class="q-in" placeholder="Answer"><button class="btn sm">Check</button></form><p class="rfb muted" hidden></p></div>`).join("")}</section>` : ""}
@@ -230,7 +234,7 @@
         ls.tasks[i] = ok; li.className = "task " + (ok ? "ok" : "bad");
         ls.score = Math.max(ls.score || 0, scoreNow());
         el.querySelector(".sc").textContent = scoreNow() + "%";
-        if (!ls.done && scoreNow() >= 70) { ls.done = true; if (window.Habit) Habit.markPart(l.n, "practice"); Store.addXP(50); setTimeout(() => window.Habit && Habit.celebrate(`Lektion ${l.n} geschafft!`, `${scoreNow()} % · Lesson ${l.n + 1} is now open.`), 300); H.toast(`Lesson ${l.n} complete! Lesson ${l.n + 1} is open.`, "good"); }
+        if (!ls.done && scoreNow() >= 70) { ls.done = true; if (window.Habit) Habit.markPart(l.n, "practice"); Store.addXP(50); setTimeout(() => window.Habit && Habit.celebrate(`Lektion ${l.pos} geschafft! (Lesson done)`, `${scoreNow()} % · ${Course.next(l.n) ? "Lesson " + Course.next(l.n).pos + " is now open." : "Course complete!"}`), 300);  }
         Store.save();
       };
       li.querySelector("form").onsubmit = (e) => {

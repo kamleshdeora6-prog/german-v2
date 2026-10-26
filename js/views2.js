@@ -11,12 +11,12 @@
   /* ---------------- Üben ---------------- */
   function smartPick() {
     const s = Store.get();
-    const maxLesson = Math.max(1, ...Object.entries(s.lessons).filter(([, v]) => v.read || v.done).map(([k]) => +k));
-    const pool = Object.values(Engine.GEN).filter((g) => s.settings.unlockAll || Math.min(...g.lessons) <= maxLesson);
+    const maxLesson = Math.max(1, ...Object.entries(s.lessons).filter(([, v]) => v.read || v.done).map(([k]) => Course.pos(k)));   // a course position
+    const pool = Object.values(Engine.GEN).filter((g) => s.settings.unlockAll || Math.min(...g.lessons.map(Course.pos)) <= maxLesson);
     const weights = pool.map((g) => {
       const t = s.topics[g.id]; const rec = t && t.recent && t.recent.length ? t.recent : null;
       const acc = rec ? rec.reduce((a, b) => a + b, 0) / rec.length : 0.5;
-      const near = Math.min(...g.lessons) >= maxLesson - 3 ? 1.5 : 1;
+      const near = Math.min(...g.lessons.map(Course.pos)) >= maxLesson - 3 ? 1.5 : 1;
       return (1.2 - acc) * near + 0.1;
     });
     let r = Math.random() * weights.reduce((a, b) => a + b, 0);
@@ -53,7 +53,7 @@
       </section>
       ${groups.map((g) => `<section class="card"><h3>${UI.levelDot(g.lv)} Grammar drills</h3><div class="topics">${g.gens.map((x) => {
         const t = s.topics[x.id]; const rec = t && t.recent && t.recent.length ? Math.round((t.recent.reduce((a, b) => a + b, 0) / t.recent.length) * 100) : null;
-        return `<button class="topic" data-go="practice/${x.id}"><span>${esc(x.title)}</span><small>L${x.lessons.join(", L")}${rec !== null ? ` · ${rec}%` : ""}</small>${rec !== null ? `<i class="meter" style="--p:${rec}%"></i>` : ""}</button>`;
+        return `<button class="topic" data-go="practice/${x.id}"><span>${esc(x.title)}</span><small>L${x.lessons.map(Course.pos).sort((a, b) => a - b).join(", L")}${rec !== null ? ` · ${rec}%` : ""}</small>${rec !== null ? `<i class="meter" style="--p:${rec}%"></i>` : ""}</button>`;
       }).join("")}</div></section>`).join("")}`;
   };
 
@@ -89,8 +89,8 @@
     const all = V.vocabList(); const ids = all.map((w) => w.id);
     const due = SRS.due(ids);
     const s = Store.get();
-    const maxLesson = Math.max(1, ...Object.keys(s.lessons).map(Number));
-    const fresh = all.filter((w) => !s.srs[w.id] && (!w.lesson || w.lesson <= maxLesson)).sort((a, b) => (a.level > b.level ? 1 : -1)).slice(0, Math.max(0, 8 - Math.min(due.length, 8))).map((w) => w.id);
+    const maxLesson = Math.max(1, ...Object.keys(s.lessons).map(Course.pos));
+    const fresh = all.filter((w) => !s.srs[w.id] && (!w.lesson || Course.pos(w.lesson) <= maxLesson)).sort((a, b) => (a.level > b.level ? 1 : -1)).slice(0, Math.max(0, 8 - Math.min(due.length, 8))).map((w) => w.id);
     return H.shuffle(due).slice(0, n).concat(fresh);
   }
   function review(el) {
@@ -134,8 +134,8 @@
   V.listen = (el) => {
     const s = Store.get();
     const pool = () => {
-      const maxL = Math.max(1, ...Object.keys(s.lessons).map(Number));
-      const ex = DC.curriculum.filter((l) => s.settings.unlockAll || l.n <= maxL + 1).flatMap((l) => l.examples.map((e) => e.de));
+      const maxL = Math.max(1, ...Object.keys(s.lessons).map(Course.pos));
+      const ex = DC.curriculum.filter((l) => s.settings.unlockAll || l.pos <= maxL + 1).flatMap((l) => l.examples.map((e) => e.de));
       return Math.random() < 0.5 ? { de: H.pick(ex) } : Engine.sentence();
     };
     el.innerHTML = `<h2 class="page-title">Listening</h2><div class="dict"></div>`;
@@ -165,8 +165,8 @@
   /* ---------------- Sprechen ---------------- */
   V.speak = (el) => {
     const s = Store.get();
-    const maxL = Math.max(1, ...Object.keys(s.lessons).map(Number));
-    const lessons = DC.curriculum.filter((l) => s.settings.unlockAll || l.n <= maxL);
+    const maxL = Math.max(1, ...Object.keys(s.lessons).map(Course.pos));
+    const lessons = DC.curriculum.filter((l) => s.settings.unlockAll || l.pos <= maxL);
     const sentences = H.shuffle(lessons.flatMap((l) => l.examples.map((e) => e.de)));
     const l = H.pick(lessons);
     el.innerHTML = `<p class="muted small notice">🎙️ Speech recognition checks <b>which words</b> it heard, not your accent or pronunciation. Record yourself and compare with the audio for pronunciation.</p><h2 class="page-title">Speaking</h2>
