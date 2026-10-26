@@ -1,8 +1,8 @@
 name: Build iOS app (unsigned IPA)
 
-# Runs on GitHub's macOS machines, which have Xcode installed.
-# Produces an UNSIGNED .ipa that you sideload onto your iPhone with
-# AltStore or Sideloadly (both re-sign it with your own free Apple ID).
+# Runs on GitHub's Mac machines (you don't need a Mac). Produces an UNSIGNED .ipa.
+# On Windows, install it on your iPhone with Sideloadly (it signs the app with your free Apple ID).
+# Run it: GitHub → Actions → "Build iOS app" → Run workflow. Download the artifact when it is green.
 on:
   workflow_dispatch:
   push:
@@ -14,6 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Pick Xcode
+        run: sudo xcode-select -s /Applications/Xcode_15.4.app || true; xcodebuild -version
+
       - name: Install XcodeGen
         run: brew install xcodegen
 
@@ -21,24 +24,29 @@ jobs:
         run: |
           cd ios
           bash build_ios.sh
+          xcodebuild -list -project DeutschCoach.xcodeproj
 
       - name: Build (no code signing)
         run: |
           cd ios
+          set -o pipefail
           xcodebuild \
             -project DeutschCoach.xcodeproj \
             -scheme DeutschCoach \
             -configuration Release \
             -sdk iphoneos \
+            -destination 'generic/platform=iOS' \
             -derivedDataPath build \
-            CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO \
-            clean build
+            CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO DEVELOPMENT_TEAM="" \
+            clean build | tee build.log | grep -E "error|warning: |BUILD" || true
+          test -d build/Build/Products/Release-iphoneos/DeutschCoach.app || (tail -80 build.log; exit 1)
 
       - name: Package as .ipa
         run: |
           cd ios
-          mkdir -p Payload
+          rm -rf Payload && mkdir -p Payload
           cp -R build/Build/Products/Release-iphoneos/DeutschCoach.app Payload/
+          test -f Payload/DeutschCoach.app/www/index.html
           zip -qry DeutschCoach-unsigned.ipa Payload
           ls -la DeutschCoach-unsigned.ipa
 
