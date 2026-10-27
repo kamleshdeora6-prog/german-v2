@@ -2,6 +2,11 @@
 
 All dates are the release dates of the app version shown in Settings → About.
 
+## 6.9.0 — 27 October 2026
+- Drill guide (`V.drillGuide`, `V.guideHtml` in `js/views11.js`): collapsible panel above every drill built from Max's rule card (`Tutor.RULES` by `g`) and the drill's lessons (English explanation, table, examples), with a per-drill tip by item kind. Open/closed state per drill in `settings.guideClosed`.
+- Grammar revision page (`revise`, `revise/<id>`), searchable, all topics by level.
+- `js/engine_more.js`: 12 new generators (plural, pronomen, datum, vorschlaege, indirekt, praeteritum_alle, zweiteilig, je_desto, es_unpersoenlich, satz_c2, grafik, redemittel). All 73 lessons now have at least one drill (65 drills).
+
 ## 6.8.0 — 26 October 2026
 - Library hub (`js/views11.js`, route `library`): flashcards (`cards`), exercises by level/type (`exercises`), conjugation tables + drill (`verbs`), sentence translation (`sentences`), picture description (`pictures`), links to notes, passages, vocabulary, tables, LiD. Header link on desktop, tiles on Practice and More.
 - Data: legacy `flashcards.json` (grammar/article/verb cards → `DC.cards`) and `sentences.json` (→ `DC.sentences`) are now built by `tools/build_data.py`; `js/data/pictures.js` uses the photos in `assets/` (APK now includes `assets/`). Three wrong legacy verb cards corrected.

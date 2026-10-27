@@ -59,6 +59,11 @@
 
   /* ---------------- 3. What's new ---------------- */
   const NEWS = [
+    { v: "6.9.0", date: "27 October 2026", items: [
+      "<b>📘 Rules & tips above every drill</b>: what the topic is in one sentence, how it works, examples to listen to, typical mistakes, the full lesson explanation and what to do in this drill. Read it, tap “Got it – hide & start”, and it stays hidden for that topic until you open it again.",
+      "<b>📘 Grammar revision</b> (Practice page): every topic on one page each, by level, with search – revise without practising.",
+      "<b>12 new drills</b> – now every lesson has one: plural, personal pronouns (mich/mir/ihn/ihm …), dates (am ersten Mai), suggestions (Lass uns …), indirect questions, Präteritum of all verbs + Plusquamperfekt, entweder … oder / weder … noch, je … desto, „es“ & impersonal constructions, participle clauses, describing graphs, exam phrases.",
+    ] },
     { v: "6.8.0", date: "26 October 2026", items: [
       "<b>📚 Library (Bibliothek)</b> is back: every collection in one place, as in the first app – Flashcards, Notes, Exercises, Passages, Conjugation, Sentences, Describe a picture, Vocabulary, Grammar tables and Leben in Deutschland. In the top bar on PC, on the Practice page and under More.",
       "<b>🃏 Flashcards</b> by level and topic, German → English or English → German, plus the first app's grammar, article and verb cards. “Again” cards come back in the same round.",

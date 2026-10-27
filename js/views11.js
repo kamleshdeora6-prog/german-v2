@@ -221,3 +221,62 @@
       <section class="picgrid">${P.map((p, i) => `<button class="pictile" data-go="pictures/${i}"><img src="${esc(p.img)}" alt="" loading="lazy"><b>${esc(p.title)}</b><span>${esc(p.en)} · ${p.level}</span></button>`).join("")}</section>`;
   };
 })();
+
+/* ---------------- grammar guide: rules & tips above every drill, and a revision page for all topics ---------------- */
+(function () {
+  "use strict";
+  const { esc } = H;
+  const V = window.Views;
+  const lessonOf = (n) => DC.curriculum.find((x) => x.n === n);
+  const HOW = {
+    choice: "Read the sentence and tap the right form. Think about the rule first – which case, which ending, which word?",
+    input: "Type the missing word or form. Capitals and small typos are forgiven; the feedback shows exactly what changed and why.",
+    order: "Tap the words in the right order. Start with the verb position: where does the conjugated verb go?",
+  };
+  function kindsOf(id) { const k = new Set(); for (let i = 0; i < 6; i++) { try { const it = Engine.generate(id); if (it) k.add(it.kind); } catch (e) {} } return [...k]; }
+  /* the guide for one drill: rule card (if Max has one) + the lesson's explanation, table and examples */
+  V.guideHtml = (id, { full = false } = {}) => {
+    const g = Engine.GEN[id]; if (!g) return "";
+    const rule = (Tutor.RULES || []).find((r) => r.g === id);
+    const ls = g.lessons.map(lessonOf).filter(Boolean).sort((a, b) => Course.pos(a.n) - Course.pos(b.n));
+    const l = ls[0];
+    const exs = ls.flatMap((x) => x.examples || []).slice(0, full ? 8 : 5);
+    const first = rule ? rule.what : l ? String((l.en && l.en.expl && l.en.expl[0]) || "").replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/__(.+?)__/g, "<i>$1</i>") : "";
+    let h = `<div class="guide">`;
+    if (first) h += `<p class="g-one"><b>In one sentence:</b> ${first}</p>`;
+    if (rule) h += `<h4>How it works</h4><ul>${rule.how.map((x) => `<li>${x}</li>`).join("")}</ul>`;
+    if (exs.length) h += `<h4>Examples</h4><ul class="g-ex">${exs.map((e) => `<li><span class="de">${UI.colorArticles(e.de)}</span> ${UI.say(e.de)}<br><span class="muted small">${esc(e.en)}</span></li>`).join("")}</ul>`;
+    if (rule && rule.not && rule.not.length) h += `<h4>Typical mistakes</h4><ul class="nots">${rule.not.map(([w, c, y]) => `<li><s>${w}</s> → <b>${c}</b><br><span class="muted small">${y}</span></li>`).join("")}</ul>`;
+    if (l) {
+      h += `<details class="g-more" ${full && !rule ? "open" : ""}><summary>📖 Full explanation – Lesson ${l.pos}: ${esc(H.ltText ? H.ltText(l, "title") : l.title)}</summary>${H.lexpl(l)}${l.table && l.table.length ? UI.table(l.table, "lvl-" + l.level) : ""}</details>`;
+    }
+    if (rule && rule.why) h += `<p class="muted small"><b>Why German does this:</b> ${rule.why}</p>`;
+    if (!full) h += `<p class="g-how"><b>🎯 In this drill:</b> ${kindsOf(id).map((k) => HOW[k]).filter(Boolean).join(" ")} Every answer is explained, and the ones you miss are saved under “My mistakes”.</p>`;
+    h += `<div class="row">${ls.map((x) => `<button class="btn ghost sm" data-go="lesson/${x.n}">Lesson ${x.pos}</button>`).join("")}<button class="btn ghost sm" data-ask="Explain ${esc(g.title)} simply, with examples and mistakes to avoid">Ask Max</button>${full ? `<button class="btn sm" data-go="practice/${id}">Practise this</button>` : ""}</div></div>`;
+    return h;
+  };
+  /* the panel above a drill: open the first time, then it stays the way you left it */
+  V.drillGuide = (host, id) => {
+    const st = Store.get().settings; const closed = (st.guideClosed || {})[id];
+    const g = Engine.GEN[id];
+    host.innerHTML = `<details class="card dguide" ${closed ? "" : "open"}><summary><span>📘 <b>Rules & tips</b> · ${esc(g.title)}</span><span class="g-tog muted small">${closed ? "Show" : "Hide"}</span></summary>${V.guideHtml(id)}<div class="row center g-go"><button class="btn sign">Got it – hide & start ↓</button></div></details>`;
+    const d = host.querySelector("details");
+    host.querySelector(".g-go .btn").onclick = () => { d.open = false; setTimeout(() => { const q = host.parentNode.querySelector(".sess-host"); if (q) q.scrollIntoView({ block: "start", behavior: "smooth" }); }, 50); };
+    d.addEventListener("toggle", () => { st.guideClosed = Object.assign({}, st.guideClosed, { [id]: !d.open }); Store.save(); d.querySelector(".g-tog").textContent = d.open ? "Hide" : "Show"; if (window.Habit && d.open) {} });
+  };
+  /* revision: every topic, by level */
+  V.revise = (el, [id]) => {
+    if (id && Engine.GEN[id]) {
+      el.innerHTML = `<button class="back" data-go="revise">‹ All topics</button><h2 class="page-title">${esc(Engine.GEN[id].title)}</h2><section class="card">${V.guideHtml(id, { full: true })}</section>`;
+      return;
+    }
+    const s = Store.get();
+    const groups = ["A1", "A2", "B1", "B2", "C1", "C2"].map((lv) => ({ lv, gens: Object.values(Engine.GEN).filter((g) => g.level === lv) })).filter((g) => g.gens.length);
+    el.innerHTML = `<button class="back" data-go="practice">‹ Practice</button><h2 class="page-title">${H.bi("Grammatik wiederholen", "Grammar revision")}</h2>
+      <p class="muted">Every topic in short: the rule, examples, typical mistakes – then practise it. Search or open a level.</p>
+      <input class="search" type="search" placeholder="Search a topic (e.g. Dativ, weil, Perfekt)">
+      ${groups.map((g, gi) => `<details class="card rlv" ${gi === 0 ? "open" : ""}><summary><h3>${UI.levelDot(g.lv)} ${g.lv} · ${g.gens.length} topics</h3></summary><div class="topics">${g.gens.map((x) => { const t = s.topics[x.id]; const rec = t && t.recent && t.recent.length ? Math.round((t.recent.reduce((a, b) => a + b, 0) / t.recent.length) * 100) : null; return `<button class="topic" data-go="revise/${x.id}" data-t="${esc((x.title + " " + x.id).toLowerCase())}"><span>📘 ${esc(x.title)}</span><small>L${x.lessons.map(Course.pos).sort((a, b) => a - b).join(", L")}${rec !== null ? ` · ${rec}%` : ""}</small></button>`; }).join("")}</div></details>`).join("")}`;
+    const q = el.querySelector(".search");
+    q.oninput = () => { const t = q.value.toLowerCase().trim(); el.querySelectorAll(".rlv").forEach((d) => { let any = false; d.querySelectorAll(".topic").forEach((b) => { const m = !t || b.dataset.t.includes(t); b.hidden = !m; any = any || m; }); d.hidden = !any; if (t && any) d.open = true; }); };
+  };
+})();

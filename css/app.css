@@ -708,3 +708,14 @@ body.st-focus { padding-bottom: 0; }
 .flash .back i { font-style: normal; opacity: .85; } .flash .back small { display: block; }
 .sentlist li { margin: 6px 0; }
 .vlist li { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+
+/* drill guide */
+.dguide { padding: 0; } .dguide > summary { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 14px 16px; cursor: pointer; list-style: none; }
+.dguide > summary::-webkit-details-marker { display: none; } .dguide[open] > summary { border-bottom: 1px solid var(--line); }
+.dguide .guide { padding: 4px 16px 14px; }
+.guide h4 { margin: 14px 0 6px; } .guide ul { margin: 0; padding-left: 20px; } .guide li { margin: 4px 0; }
+.guide .g-one { font-size: 1.05rem; margin: 10px 0 0; } .guide .g-how { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; margin-top: 12px; }
+.guide .g-more { margin-top: 12px; } .guide .g-more > summary { cursor: pointer; font-weight: 600; }
+.rlv > summary { cursor: pointer; } .rlv > summary h3 { display: inline; }
+.v-practice .sess-host .session { margin-top: 0; }
+.dguide .g-go { padding: 0 16px 16px; }

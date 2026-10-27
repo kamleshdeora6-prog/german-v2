@@ -42,7 +42,9 @@
         }, { title: "Classic question bank", total: 10 });
       }
       if (!Engine.GEN[id]) return (el.innerHTML = UI.empty("Unknown topic."));
-      return UI.session(el, () => Engine.generate(id), { title: Engine.GEN[id].title, total: 10 });
+      el.innerHTML = `<div class="dg-host"></div><div class="sess-host"></div>`;
+      V.drillGuide(el.querySelector(".dg-host"), id);
+      return UI.session(el.querySelector(".sess-host"), () => Engine.generate(id), { title: Engine.GEN[id].title, total: 10 });
     }
     const s = Store.get();
     const groups = ["A1", "A2", "B1", "B2", "C1", "C2"].map((lv) => ({ lv, gens: Object.values(Engine.GEN).filter((g) => g.level === lv) }));
@@ -52,8 +54,10 @@
         <button class="tile" data-go="practice/mistakes"><b>My mistakes</b><span>${s.mistakes.length} saved</span></button>
         <button class="tile" data-go="vocab"><b>Words</b><span>${SRS.due(V.vocabIds()).length} due today</span></button>
         <button class="tile" data-go="practice/bank"><b>Question bank</b><span>${DC.bank.length} classic items</span></button>
+        <button class="tile" data-go="revise"><b>📘 ${H.bi("Grammatik wiederholen", "Grammar revision")}</b><span>Every topic: rule, examples, mistakes</span></button>
         <button class="tile" data-go="library"><b>📚 ${H.bi("Bibliothek", "Library")}</b><span>Flashcards, notes, exercises, texts, verbs, sentences, pictures</span></button>
       </section>
+      <p class="muted small">Every drill opens with its <b>📘 rules & tips</b> – read them, then hide them. Want to revise without practising? <button class="link" data-go="revise">Grammar revision</button></p>
       ${groups.map((g) => `<section class="card"><h3>${UI.levelDot(g.lv)} Grammar drills</h3><div class="topics">${g.gens.map((x) => {
         const t = s.topics[x.id]; const rec = t && t.recent && t.recent.length ? Math.round((t.recent.reduce((a, b) => a + b, 0) / t.recent.length) * 100) : null;
         return `<button class="topic" data-go="practice/${x.id}"><span>${esc(x.title)}</span><small>L${x.lessons.map(Course.pos).sort((a, b) => a - b).join(", L")}${rec !== null ? ` · ${rec}%` : ""}</small>${rec !== null ? `<i class="meter" style="--p:${rec}%"></i>` : ""}</button>`;

@@ -5,7 +5,7 @@ const path = require("path");
 const ROOT = path.join(__dirname, "..");
 global.window = global;
 for (const f of ["curriculum", "reference", "scenes", "vocab", "verbs", "conj", "notes", "passages", "bank", "lid", "exams", "placement", "starter", "dialogues", "sentences", "cards", "pictures"]) require(path.join(ROOT, "js/data", f + ".js"));
-require(path.join(ROOT, "js/engine.js")); require(path.join(ROOT, "js/engine_plus.js")); require(path.join(ROOT, "js/tutor.js"));
+require(path.join(ROOT, "js/engine.js")); require(path.join(ROOT, "js/engine_plus.js")); require(path.join(ROOT, "js/engine_more.js")); require(path.join(ROOT, "js/tutor.js"));
 /* Weber needs a tiny Store/H stub outside the browser */
 global.H = global.H || { esc: (x) => String(x) };
 const _s = { settings: { tone: "streng" } };
