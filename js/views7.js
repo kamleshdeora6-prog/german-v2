@@ -212,7 +212,8 @@
     write: { label: () => "Writing: one short task", go: () => "write", mins: 12, size: 1, icon: "✍️" },
     weak: { label: (n) => `Weak topics: ${n} items`, go: () => "weak", mins: 6, size: 10, icon: "🩹" },
     starter: { label: () => "First steps: one picture round", go: () => "starter", mins: 4, size: 1, icon: "🐣" },
-    partner: { label: (n) => `Conversation with the AI partner: ${n} answers`, go: () => "partner/lesson", mins: 10, size: 8, icon: "🗣" },
+    partner: { label: (n) => `Conversation with the speaking partner: ${n} answers`, go: () => "partner/lesson", mins: 10, size: 8, icon: "🗣" },
+    exam: { label: () => "Mock exam: one part", go: () => (V.nextExamPart ? V.nextExamPart() : "telc"), mins: 12, size: 1, icon: "🎓" },
   };
   const dailyTarget = (p, s) => (p && p.minutes) || ({ 20: 10, 50: 20, 100: 30, 150: 45 }[s.settings.goal] || 20);
   function lessonParts(p, skip) {
@@ -235,7 +236,8 @@
     const order = [];
     if (s.starterMode && window.Views.starterProgress && Views.starterProgress().next) order.push("starter");
     const talk = window.AI && AI.ready() ? "partner" : "speak";
-    order.push("parts2", "words", "drill", "parts3", "listen", talk, "read", "speak", "write", "drill", weak ? "weak" : "words", "listen", talk, "drill", "words", "read");
+    const examOn = ["A2", "B1", "B2"].includes((window.AI && AI.profile().level) || "A1") || Object.keys(s.telcParts || {}).length > 0;
+    order.push("parts2", "words", "drill", "parts3", "listen", talk, "read", examOn ? "exam" : "speak", "write", "drill", weak ? "weak" : "words", "listen", talk, "drill", examOn ? "exam" : "words", "read");
     let guard = 0;
     while (total < minutes && guard++ < 60) {
       const k = order[(guard - 1) % order.length];

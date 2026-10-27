@@ -24,6 +24,7 @@
     { id: "free", icon: "💬", title: "Free conversation", lv: "A1", role: "a curious German friend; talk about whatever the learner wants, keep the conversation going", ideas: ["Heute habe ich …", "Ich interessiere mich für …", "Was machst du gern?", "Erzähl mal, wie war dein Tag?"] },
   ];
   const LV = ["A1", "A2", "B1", "B2", "C1", "C2"];
+  V._scene = (id) => sceneFor(id);
   const sceneFor = (id) => {
     const sc = SCENES.find((x) => x.id === id); if (!sc) return null;
     if (sc.id !== "lesson") return sc;

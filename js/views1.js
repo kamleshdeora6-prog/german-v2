@@ -57,6 +57,8 @@
       <div class="dots" aria-label="${partsDone} of 5 parts done">${[0, 1, 2, 3, 4].map((i) => `<i class="${i < partsDone ? "on" : ""}"></i>`).join("")}<span>${partsDone}/5</span></div>
       <button class="btn ghost-light sm" data-go="lesson/${l.n}">${ls.read ? "Open lesson" : "Start lesson"}</button>
     </section>
+    ${Object.keys(s.telcParts || {}).length || Object.values(s.lessons).filter((x) => x.done).length >= 3 ? V.readinessCard(true) : ""}
+    ${UI.weeklyCard ? UI.weeklyCard() : ""}
     <section class="grid2 tools">
       <button class="tile" data-go="vocab"><span class="ti">🗂</span><b>${H.bi("Wörter", "Words")}</b><span>${p.due ? `${p.due} due` : "Learn new words"}</span></button>
       <button class="tile" data-go="listen"><span class="ti">🎧</span><b>${H.bi("Hören", "Listening")}</b><span>Dictation</span></button>
@@ -225,7 +227,9 @@
       html = guess.length ? `Probably a form of <b>${esc(guess[0].de)}</b> = ${esc(guess[0].en)}` : `„${esc(w)}“ isn't in the offline word list.`;
     }
     box.hidden = false;
-    box.innerHTML = `${html} ${UI.say(w)} <button class="link" data-ask="What does ${esc(w)} mean?">Ask Max</button><br>${UI.dictLinks(w)}`;
+    const hit = hits[0];
+    const decl = hit && V.declineHtml ? V.declineHtml(hit.de) : "";
+    box.innerHTML = `${html} ${UI.say(w)} ${hit ? UI.star({ type: "word", de: hit.de, en: hit.en, src: "Text" }) : ""} <button class="link" data-ask="What does ${esc(w)} mean?">Ask Max</button>${decl ? `<details class="small"><summary>All cases</summary>${decl}</details>` : ""}<br>${UI.dictLinks(w)}`;
   };
 
   function practice(el, l, ls) {
@@ -333,6 +337,7 @@
         <div class="row sp-row" hidden><button class="btn sm sp-chk">Check my answer</button></div><div class="efb" hidden></div></li>`).join("")}</ol>
       <p class="muted small">Goal: talk for 2 minutes and use this lesson's grammar at least 3 times. Useful starters: Auf dem Bild sehe ich … · Links/rechts … · Ich glaube, dass …</p>
       <div class="row"><button class="btn ghost timer">Start 2-min timer</button><button class="btn ghost" data-go="partner/lesson">🗣 Talk about it with the AI partner</button></div></section>
+      <section class="card"><h3>🎙 Record your 2-minute talk</h3><p class="muted small">Talk about the picture and the questions, then listen to yourself. Your last takes are kept on this device.</p><div class="lrec"></div></section>
       <section class="card"><h3>Shadow the examples</h3><p class="muted small">Listen, then repeat. You get a score for each word.</p><div class="shadow"></div></section>
       ${partNav(l, ls, "speak")}`;
     el.querySelectorAll(".sprompts > li").forEach((li) => {
@@ -355,6 +360,7 @@
       tm = setInterval(() => { left--; tb.textContent = `${Math.floor(left / 60)}:${String(left % 60).padStart(2, "0")}`; if (left <= 0 || !document.body.contains(tb)) { clearInterval(tm); tm = null; tb.textContent = "Time's up – well done!"; ls.spoke = true; Store.addXP(10); } }, 1000);
     };
     V.shadow(el.querySelector(".shadow"), l.examples.map((e) => e.de));
+    UI.recorder(el.querySelector(".lrec"), { key: "lesson:" + l.n, maxSecs: 240 });
     el.querySelector(".finish").addEventListener("click", () => { if (ls.spoke && window.Habit) Habit.markPart(l.n, "speak"); });
   }
 

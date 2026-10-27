@@ -213,7 +213,7 @@
       score,
       html: `<div class="fb-open"><div class="fb-head"><span class="fb-score ${score >= 65 ? "good" : score >= 45 ? "mid" : "low"}">${score}</span><div><b>${H.bi(verdict[0], verdict[1])}</b><div class="pbar sm"><span style="width:${score}%"></span></div></div></div>
         <ul class="fb-list">${checks.map(([ok, label, tip]) => `<li class="${ok ? "y" : "n"}"><span>${ok ? "✓" : "✗"}</span><div><b>${esc(label)}</b><br><span class="muted">${esc(tip)}</span></div></li>`).join("")}</ul>
-        ${fixes.length ? `<h4>Corrections</h4>${fixes.map((x) => `<p class="fb-you">${esc(x.s)}</p><p class="ex ok">→ ${esc(x.r.fixed)} ${UI.say(x.r.fixed)}</p><ul class="nots">${x.r.issues.map((i) => `<li>${i.rule}<br><span class="muted">${i.why}</span></li>`).join("")}</ul>`).join("")}` : ""}
+        ${fixes.length ? `<h4>Corrections</h4>${fixes.map((x) => `<p class="fb-you">${esc(x.s)}</p><p class="ex ok">→ ${esc(x.r.fixed)} ${UI.say(x.r.fixed)} ${UI.star ? UI.star({ type: "sentence", de: x.r.fixed, en: "", src: "Correction" }) : ""}</p><ul class="nots">${x.r.issues.map((i) => `<li>${i.rule}<br><span class="muted">${i.why}</span></li>`).join("")}</ul>`).join("")}` : ""}
         ${model}${useful}</div>`,
     };
   };

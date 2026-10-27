@@ -237,7 +237,7 @@
     return VINF.has(k + "n") || VINF.has(st + "en") || VINF.has(st + "n") || VINF.has(k);
   };
   const PRON_P = { ich: "1s", du: "2s", er: "3s", es: "3s", wir: "1p", ihr: "2p" };
-  const SEIN_PP = new Set("gegangen gefahren gekommen geflogen gelaufen aufgestanden eingeschlafen geblieben gewesen passiert geworden umgezogen gereist geschwommen gestorben angekommen abgefahren eingestiegen ausgestiegen umgestiegen zurückgekommen mitgekommen losgefahren gewandert gefallen aufgewacht gerannt gesprungen".split(" "));
+  const SEIN_PP = new Set("gegangen gefahren gekommen geflogen gelaufen aufgestanden eingeschlafen geblieben gewesen passiert geworden umgezogen gereist geschwommen gestorben angekommen abgefahren eingestiegen ausgestiegen umgestiegen zurückgekommen mitgekommen losgefahren gewandert aufgewacht gerannt gesprungen".split(" "));
   const HABEN_PP = new Set("gegessen gekauft gemacht gearbeitet gelernt gesehen getrunken gelesen geschrieben gespielt gekocht gewohnt gehört gesagt gefragt genommen gefunden gebracht geholfen besucht verstanden studiert telefoniert gewartet geschlafen getroffen angerufen eingekauft ferngesehen bekommen vergessen gewaschen bestellt repariert".split(" "));
   const BAD_PP = { gegeht: "gegangen", gekommt: "gekommen", getrinkt: "getrunken", geesst: "gegessen", gesehet: "gesehen", gefahrt: "gefahren", geschreibt: "geschrieben", gebringt: "gebracht", gedenkt: "gedacht", gewisst: "gewusst", geweißt: "gewusst", gestudiert: "studiert", gebesucht: "besucht", geverstanden: "verstanden", geeinkauft: "eingekauft", gelest: "gelesen", genehmt: "genommen", gefindet: "gefunden", geschlaft: "geschlafen", gehelft: "geholfen", getrefft: "getroffen", geanruft: "angerufen", geaufstanden: "aufgestanden", gebleibt: "geblieben", geseint: "gewesen", geflegt: "geflogen", gefliegt: "geflogen", geruft: "gerufen", gesprecht: "gesprochen", gesprichtet: "gesprochen", getelefoniert: "telefoniert", gereparierrt: "repariert" };
   const HABEN_F = new Set(["habe", "hast", "hat", "haben", "habt"]);
@@ -387,7 +387,7 @@
     for (let i = 0; i < L.length; i++) {
       if (!SUB.has(L[i])) continue;
       if (L[i] === "seit" && !(i === 0 || /,$/.test(words[i - 1] || ""))) continue;
-      if (/^(seit|bis)$/.test(L[i]) && /^(wann|wohin|wo|zu|morgen|heute|jetzt|später|bald)$/.test(L[i + 1] || "")) continue;   // "Seit wann …?", "Bis morgen" – not a subordinate clause
+      if (/^(seit|bis)$/.test(L[i]) && /^(wann|wohin|wo|zu|morgen|heute|jetzt|später|bald|kurzem|langem|januar|februar|märz|april|mai|juni|juli|august|september|oktober|november|dezember|montag|dienstag|mittwoch|donnerstag|freitag|samstag|sonntag|ende|anfang|mitte)$/.test(L[i + 1] || "")) continue;   // "Seit Juni gibt es …": preposition   // "Seit wann …?", "Bis morgen" – not a subordinate clause
       if (/^(während|seit|bis)$/.test(L[i]) && (/^(der|des|dem|den|einer|eines|einem|zwei|drei|vier|fünf|sechs|wenigen|langem|kurzem|gestern|heute|morgen|jahren|wochen|monaten|tagen|stunden)$/.test(L[i + 1] || "") || /^\d/.test(L[i + 1] || ""))) continue;   // preposition, not a conjunction
       if (L[i] === "während" && !(i === 0 || /,$/.test(words[i - 1] || ""))) continue;
       if (L[i] === "bis" && !/,$/.test(words[i - 1] || "")) continue;
@@ -458,7 +458,8 @@
       // infinitive not at end: "Ich kann sprechen Deutsch"
       L = low();
       const infIdx = L.findIndex((w, k) => k > mi && k < L.length - 1 && !PRONOUNS.has(w) && finIndex().has(w) && finIndex().get(w).some((x) => x.inf === w));
-      const perfInf = /^(haben|sein|worden|werden)$/.test((L[L.length - 1] || "").replace(/[.?!]$/, ""));
+      const lastL = (L[L.length - 1] || "").replace(/[.?!]$/, "");
+      const perfInf = /^(haben|sein|worden|werden|gehen|lassen|bleiben|lernen|fahren|kommen)$/.test(lastL) || (finIndex().has(lastL) && finIndex().get(lastL).some((x) => x.inf === lastL));   // "essen gehen", "kennen lernen": two infinitives at the end are fine
       if (infIdx > 0 && !perfInf && !PRONOUNS.has(L[infIdx + 1]) && !L.some((x) => /^(und|oder|aber|denn|sondern)$/.test(x))) {
         const w = words.splice(infIdx, 1)[0]; words.push(w);
         add(`<s>${w} ${words.slice(infIdx, -1).join(" ")}</s> → <b>${words.slice(infIdx, -1).join(" ")} ${w}</b>`, "With a modal verb the infinitive goes to the very <b>end</b> (verb bracket).", 11);
@@ -507,7 +508,7 @@
     }
     // nicht ein → kein
     L = low();
-    const ni = /^warum\b/i.test(raw) ? -1 : L.findIndex((w, i) => w === "nicht" && /^ein(e|en|em|er)?$/.test(L[i + 1] || "") && !(L[i + 1] === "ein" && (i + 2 >= L.length || /[,;:]$/.test(words[i + 1] || ""))));
+    const ni = /^warum\b/i.test(raw) || L.includes("sondern") ? -1 : L.findIndex((w, i) => w === "nicht" && /^ein(e|en|em|er)?$/.test(L[i + 1] || "") && !(L[i + 1] === "ein" && (i + 2 >= L.length || /[,;:]$/.test(words[i + 1] || ""))));
     if (ni >= 0) { const k = "k" + L[ni + 1]; add(`<s>nicht ${L[ni + 1]}</s> → <b>${k}</b>`, "A noun with <b>ein</b> is negated with <b>kein</b> (same ending).", 7); words.splice(ni, 2, k); }
     // preposition + article case
     L = low();

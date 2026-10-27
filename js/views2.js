@@ -5,9 +5,10 @@
   const V = (window.Views = window.Views || {});
 
   let VOCAB = null;
-  V.vocabList = () => (VOCAB = VOCAB || DC.vocab.map((w) => Object.assign({ id: "v:" + w.de.toLowerCase() }, w)));
+  const baseVocab = () => (VOCAB = VOCAB || DC.vocab.map((w) => Object.assign({ id: "v:" + w.de.toLowerCase() }, w)));
+  V.vocabList = () => { const nb = window.Notebook ? Notebook.cards() : []; return nb.length ? baseVocab().concat(nb) : baseVocab(); };
   V.dueCount = () => SRS.due(V.vocabIds()).length;
-  V.vocabIds = () => V.vocabList().filter((w) => Store.get().srs[w.id]).map((w) => w.id);
+  V.vocabIds = () => Object.keys(Store.get().srs).filter((k) => k.startsWith("v:") || k.startsWith("nb:"));   // only the cards you have (fast: no scan of the 4,000-word list)
 
   /* ---------------- Üben ---------------- */
   function smartPick() {
@@ -54,6 +55,9 @@
         <button class="tile" data-go="practice/mistakes"><b>My mistakes</b><span>${s.mistakes.length} saved</span></button>
         <button class="tile" data-go="vocab"><b>Words</b><span>${SRS.due(V.vocabIds()).length} due today</span></button>
         <button class="tile" data-go="practice/bank"><b>Question bank</b><span>${DC.bank.length} classic items</span></button>
+        <button class="tile" data-go="telc"><b>🎓 ${H.bi("Modelltests", "Mock exams")}</b><span>telc / Goethe format · timed</span></button>
+        <button class="tile" data-go="dictation"><b>✍️ ${H.bi("Diktat", "Dictation")}</b><span>Hear it, write it</span></button>
+        <button class="tile" data-go="story"><b>📖 ${H.bi("Geschichten", "Stories")}</b><span>Choose what to say</span></button>
         <button class="tile" data-go="revise"><b>📘 ${H.bi("Grammatik wiederholen", "Grammar revision")}</b><span>Every topic: rule, examples, mistakes</span></button>
         <button class="tile" data-go="library"><b>📚 ${H.bi("Bibliothek", "Library")}</b><span>Flashcards, notes, exercises, texts, verbs, sentences, pictures</span></button>
       </section>

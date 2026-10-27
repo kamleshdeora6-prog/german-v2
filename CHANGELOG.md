@@ -2,6 +2,18 @@
 
 All dates are the release dates of the app version shown in Settings → About.
 
+## 7.1.0 — 27 October 2026
+- `js/data/telc2.js`: Modelltest B1 · 2, B1 · 3, A2 · 2 (appended to `DC.telc`); router loads `telc` then `telc2` in order (`App.need` is now sequential). `V.nextExamPart` covers every test at the level.
+- Max: `gefallen` removed from the sein-Perfekt list; „seit/bis“ + month/weekday is a preposition; „nicht ein …, sondern …“ is not corrected to kein.
+
+## 7.0.0 — 27 October 2026
+- Exam pack (`js/views12.js`, `js/data/telc.js`): original mock exams in the format of telc Deutsch B1 (LV 1–3, SB 1–2, HV 1–3, SA, MP), telc A2 and Start Deutsch 1; part types match/mc/rf/gapmc/gapbank/form/write/speak; full timed exam (block timers, limited plays, auto hand-in) or untimed part practice with solutions and transcripts; telc scoring (B1: written 225/135, oral 75/45; A1/A2 60%). Results in `s.telc`, per part in `s.telcParts`. Official papers linked (`DC.telcLinks`).
+- Readiness meter (`V.readiness`): 50% mock-test parts, 30% drill accuracy, 20% lessons; home, Progress, results. Practice day block "exam" → `V.nextExamPart()`.
+- `js/extras.js`: `Rec` (MediaRecorder → IndexedDB, 5 takes per key, 80 total; `UI.recorder`), `Notebook` (☆ via `[data-note]`, words → SRS ids `nb:*`, included in `V.vocabList`), `Writings` (`s.whist`, versions + word diff; `UI.writeHistory`), `UI.shareText`, `Weekly` (per-day topic log `s.tlog`, `UI.weeklyCard`).
+- New screens: notebook, audio (EN → pause → DE ×2), dictation (letter-level diff), story (choose the reply), decline (`V.declineHtml`, plural notation resolver `V.pluralOf`, n-Deklination), watch.
+- Speed: data files as `JSON.parse('…')`, all scripts `defer`, rarely used data (lid, scenes, placement, dialogues, sentences, cards, pictures, telc) loaded on demand by the router (`App.need`); first paint on a 4× throttled CPU 2.4 s → 0.3 s. `V.vocabIds` no longer scans the word list. Screen fade-in, `touch-action: manipulation`, `content-visibility` for long lists.
+- Celebrations never cover exam/audio/story screens. Max: no false alarm for two infinitives at the end ("essen gehen"); lowercase first line after a letter greeting accepted.
+
 ## 6.9.0 — 27 October 2026
 - Drill guide (`V.drillGuide`, `V.guideHtml` in `js/views11.js`): collapsible panel above every drill built from Max's rule card (`Tutor.RULES` by `g`) and the drill's lessons (English explanation, table, examples), with a per-drill tip by item kind. Open/closed state per drill in `settings.guideClosed`.
 - Grammar revision page (`revise`, `revise/<id>`), searchable, all topics by level.

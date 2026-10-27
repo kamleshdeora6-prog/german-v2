@@ -33,10 +33,11 @@ OUT = os.path.join(HERE, "..", "js", "data")
 LEGACY = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "legacy_data")
 
 def js(name, obj):
+    # JSON.parse('…') instead of a JS object literal: browsers parse JSON 1.5–2× faster, so the app starts sooner
+    txt = json.dumps(obj, ensure_ascii=False, separators=(",", ":"))
+    txt = txt.replace("\\", "\\\\").replace("'", "\\'").replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
     with open(os.path.join(OUT, name + ".js"), "w", encoding="utf-8") as f:
-        f.write(f"window.DC=window.DC||{{}};DC.{name}=")
-        json.dump(obj, f, ensure_ascii=False, separators=(",", ":"))
-        f.write(";\n")
+        f.write(f"window.DC=window.DC||{{}};DC.{name}=JSON.parse('{txt}');\n")
 
 # ---------- curriculum ----------
 lessons = []

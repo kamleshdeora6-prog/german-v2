@@ -20,7 +20,14 @@
       ["verbs", "🔤", "Konjugation", "Conjugation", `${Object.keys(DC.conj).length} verb tables + drill`],
       ["sentences", "🔁", "Sätze", "Sentences", `${nSent} sentences to translate`],
       ["pictures", "🖼", "Bildbeschreibung", "Describe a picture", `${(DC.pictures || []).length} photos · speaking exam`],
+      ["notebook", "⭐", "Notizbuch", "My notebook", `${(Store.get().notebook || []).length} saved words, rules, sentences`],
+      ["telc", "🎓", "Modelltests", "Mock exams", "telc / Goethe format, A1–B1, timed"],
       ["vocab", "📚", "Wortschatz", "Vocabulary", "Word list, articles, typing"],
+      ["decline", "🔠", "Deklination", "Declension", "Any noun in all 4 cases"],
+      ["dictation", "✍️", "Diktat", "Dictation", "Hear it, write it, see every letter"],
+      ["story", "📖", "Geschichten", "Stories", "Choose what to say next"],
+      ["audio", "🎧", "Nur hören", "Audio lessons", "Hands-free: hear, answer, repeat"],
+      ["watch", "📺", "Videos & Podcasts", "Watch & listen", "Real German at your level"],
       ["grammar/tables", "📐", "Tabellen", "Grammar tables", "Articles, pronouns, prepositions"],
       ["exam/lid", "🇩🇪", "Leben in Deutschland", "Life in Germany test", `${DC.lid.length} questions`],
     ];
@@ -61,7 +68,8 @@
     const fromWord = (w) => ({ id: w.id, front: dir === "de" ? w.de : w.en, back: dir === "de" ? w.en : w.de, de: w.de, art: w.art, pl: w.pl, ex: w.exDe, exEn: w.exEn });
     const ids = V.vocabList(); const byDe = Object.fromEntries(ids.map((w) => [w.de, w]));
     const withId = (w) => Object.assign({}, w, { id: (byDe[w.de] || {}).id });
-    if (kind === "g") { title = { grammar: "Grammar cards", article_or_case: "Articles & cases", verb: "Verb forms" }[arg] || "Cards"; cards = (DC.cards || []).filter((c) => c.type === arg).map((c) => ({ front: c.front, back: c.back, de: /[äöüß]|\b(der|die|das|ich|du|er|wir)\b/i.test(c.back) ? c.back : "" })); }
+    if (kind === "nb") { title = "My saved words"; cards = Notebook.cards().map(fromWord); }
+    else if (kind === "g") { title = { grammar: "Grammar cards", article_or_case: "Articles & cases", verb: "Verb forms" }[arg] || "Cards"; cards = (DC.cards || []).filter((c) => c.type === arg).map((c) => ({ front: c.front, back: c.back, de: /[äöüß]|\b(der|die|das|ich|du|er|wir)\b/i.test(c.back) ? c.back : "" })); }
     else if (kind === "t") { title = `${arg} · ${lv}`; cards = DC.vocab.filter((w) => w.level === lv && (w.topic || "Allgemein") === arg).map(withId).map(fromWord); }
     else { title = `Mixed ${arg}`; cards = DC.vocab.filter((w) => w.level === arg).map(withId).map(fromWord); }
     cards = H.shuffle(cards).slice(0, 20);
@@ -203,9 +211,11 @@
         <section class="card"><h3>Talk about the picture</h3><ol class="picq">${p.q.map((q) => `<li lang="de">${esc(q)} ${UI.say(q)} ${UI.hint(q)}</li>`).join("")}</ol>
           <details><summary>Useful words (${p.words.length})</summary><ul class="picw">${p.words.map(([d, e]) => `<li><b>${UI.colorArticles(d)}</b> ${UI.say(d)} <span class="muted">${esc(e)}</span></li>`).join("")}</ul></details>
           <p class="muted small">Start with: <i>Auf dem Bild sehe ich … · Im Vordergrund/Hintergrund … · Links/Rechts … · Ich glaube, dass …</i></p></section>
+        <section class="card"><h3>🎙 Speak it</h3><div class="prec"></div></section>
         <section class="card"><h3>Your description</h3><textarea rows="5" placeholder="Speak or write 4–8 sentences in German…"></textarea>
           <div class="row">${UI.mic("Speak")}<button class="btn sm chk">Check my description</button><button class="btn ghost sm mdl">Model description</button></div><div class="pfb"></div></section>
         <div class="row">${+idx > 0 ? `<button class="btn ghost" data-go="pictures/${+idx - 1}">‹ Previous</button>` : ""}${+idx < P.length - 1 ? `<button class="btn" data-go="pictures/${+idx + 1}">Next picture ›</button>` : ""}</div>`;
+      UI.recorder(el.querySelector(".prec"), { key: "picture:" + idx, model: p.model, maxSecs: 180, label: "Record your description" });
       const ta = el.querySelector("textarea"), f = el.querySelector(".pfb");
       UI.bindMic(el, (t) => { ta.value = (ta.value ? ta.value + " " : "") + t; });
       el.querySelector(".chk").onclick = () => {
@@ -259,7 +269,9 @@
   V.drillGuide = (host, id) => {
     const st = Store.get().settings; const closed = (st.guideClosed || {})[id];
     const g = Engine.GEN[id];
-    host.innerHTML = `<details class="card dguide" ${closed ? "" : "open"}><summary><span>📘 <b>Rules & tips</b> · ${esc(g.title)}</span><span class="g-tog muted small">${closed ? "Show" : "Hide"}</span></summary>${V.guideHtml(id)}<div class="row center g-go"><button class="btn sign">Got it – hide & start ↓</button></div></details>`;
+    const rule = (Tutor.RULES || []).find((r) => r.g === id);
+    const starItem = { type: "rule", de: g.title, en: rule ? String(rule.what).replace(/<[^>]+>/g, "") : "", src: "Rules", body: rule ? "<ul>" + rule.how.map((x) => "<li>" + x + "</li>").join("") + "</ul>" : "" };
+    host.innerHTML = `<details class="card dguide" ${closed ? "" : "open"}><summary><span>📘 <b>Rules & tips</b> · ${esc(g.title)} ${UI.star(starItem)}</span><span class="g-tog muted small">${closed ? "Show" : "Hide"}</span></summary>${V.guideHtml(id)}<div class="row center g-go"><button class="btn sign">Got it – hide & start ↓</button></div></details>`;
     const d = host.querySelector("details");
     host.querySelector(".g-go .btn").onclick = () => { d.open = false; setTimeout(() => { const q = host.parentNode.querySelector(".sess-host"); if (q) q.scrollIntoView({ block: "start", behavior: "smooth" }); }, 50); };
     d.addEventListener("toggle", () => { st.guideClosed = Object.assign({}, st.guideClosed, { [id]: !d.open }); Store.save(); d.querySelector(".g-tog").textContent = d.open ? "Hide" : "Show"; if (window.Habit && d.open) {} });

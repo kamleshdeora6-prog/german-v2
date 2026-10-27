@@ -1,9 +1,9 @@
 /* Deutsch Coach – app shell: router, navigation, theme, install */
 (function () {
   "use strict";
-  const ROUTES = { home: "home", library: "library", revise: "revise", cards: "cards", exercises: "exercises", verbs: "verbs", sentences: "sentences", pictures: "pictures", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more", readexam: "readexam", write: "write", notes: "notes", translate: "translate", about: "about", placement: "placement", pronounce: "pronounce", news: "news", plan: "plan", daily: "daily", weak: "weak", refresh: "refresh", resources: "resources", starter: "starter", partner: "partner" };
-  const TAB_OF = { revise: "practice", library: "practice", cards: "practice", exercises: "practice", verbs: "practice", sentences: "practice", pictures: "practice", home: "home", path: "path", lesson: "path", practice: "practice", vocab: "practice", listen: "practice", speak: "practice", pronounce: "practice", tutor: "tutor", daily: "home", plan: "more", weak: "practice", refresh: "path", starter: "path", partner: "practice" };
-  const App = (window.App = { version: "6.9.0", updated: "26 October 2026", author: "Zombieland", pendingAsk: null });
+  const ROUTES = { home: "home", library: "library", revise: "revise", telc: "telc", notebook: "notebook", audio: "audio", dictation: "dictation", story: "story", decline: "decline", watch: "watch", cards: "cards", exercises: "exercises", verbs: "verbs", sentences: "sentences", pictures: "pictures", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more", readexam: "readexam", write: "write", notes: "notes", translate: "translate", about: "about", placement: "placement", pronounce: "pronounce", news: "news", plan: "plan", daily: "daily", weak: "weak", refresh: "refresh", resources: "resources", starter: "starter", partner: "partner" };
+  const TAB_OF = { telc: "practice", notebook: "practice", audio: "more", dictation: "practice", story: "practice", decline: "practice", watch: "practice", revise: "practice", library: "practice", cards: "practice", exercises: "practice", verbs: "practice", sentences: "practice", pictures: "practice", home: "home", path: "path", lesson: "path", practice: "practice", vocab: "practice", listen: "practice", speak: "practice", pronounce: "practice", tutor: "tutor", daily: "home", plan: "more", weak: "practice", refresh: "path", starter: "path", partner: "practice" };
+  const App = (window.App = { version: "7.1.0", updated: "27 October 2026", author: "Zombieland", pendingAsk: null });
   /* Where problem reports go. Put an email address here to offer email as well. */
   App.contact = { github: "https://github.com/kamleshdeora6-prog/german-v2", email: "" };
   App.report = (ctx) => {
@@ -120,7 +120,7 @@
   };
   /* Screens that hold your place (a session you are in the middle of) are kept alive in the
      background instead of being rebuilt, so leaving to ask Max and coming back resumes where you were. */
-  const KEEP = /^(cards|exercises|sentences|practice|lesson|write|readexam|placement|vocab|listen|speak|exam|weak|refresh)/;
+  const KEEP = /^(telc|dictation|story|cards|exercises|sentences|practice|lesson|write|readexam|placement|vocab|listen|speak|exam|weak|refresh)/;
   const cache = new Map();          // route key -> detached element
   const MAX_KEEP = 6;
   App.lastRoute = null;
@@ -146,10 +146,25 @@
     const view = document.createElement("div");
     view.className = "screen"; view.dataset.key = key;
     host.appendChild(view);
-    try { Views[name](view, parts.slice(1)); }
-    catch (e) { console.error(e); view.innerHTML = `<div class="empty"><p>This screen hit an error: ${H.esc(e.message)}</p><button class="btn" data-go="home">Go home</button></div>`; }
-    App.afterRoute(name);
+    const run = () => {
+      try { Views[name](view, parts.slice(1)); }
+      catch (e) { console.error(e); view.innerHTML = `<div class="empty"><p>This screen hit an error: ${H.esc(e.message)}</p><button class="btn" data-go="home">Go home</button></div>`; }
+      App.afterRoute(name);
+    };
+    const need = (NEED[name] || []).filter((d) => !DC[d]);
+    if (!need.length) return run();
+    view.innerHTML = `<div class="skeleton"><i></i><i></i><i></i></div>`;
+    App.need(need).then(() => { if (App.lastRoute === key && view.isConnected) { view.innerHTML = ""; run(); } })
+      .catch(() => { view.innerHTML = `<div class="empty"><p>This part couldn't be loaded. Check the connection once – after that it works offline.</p><button class="btn" data-go="${H.esc(key)}">Try again</button></div>`; });
   };
+  /* data that only some screens need is loaded when you first open them – the app starts faster */
+  const NEED = { exam: ["lid"], library: ["lid", "sentences", "cards", "pictures"], cards: ["cards"], sentences: ["sentences"], pictures: ["pictures"], partner: ["dialogues"], story: ["dialogues"], placement: ["placement"], refresh: ["placement"], lesson: ["scenes"], speak: ["scenes"], telc: ["telc", "telc2"] };
+  const loading = {};
+  const load1 = (d) => DC[d] ? Promise.resolve() : loading[d] || (loading[d] = new Promise((ok, fail) => {
+    const s = document.createElement("script"); s.src = `js/data/${d}.js`; s.onload = () => (DC[d] ? ok() : fail(new Error(d))); s.onerror = () => { delete loading[d]; fail(new Error(d)); }; document.head.appendChild(s);
+  }));
+  // in order: a later file may add to an earlier one (telc2 → telc)
+  App.need = (names) => [].concat(names).reduce((p, d) => p.then(() => load1(d)), Promise.resolve());
   App.dropCache = (re) => { [...cache.keys()].forEach((k) => { if (!re || re.test(k)) cache.delete(k); }); };
   App.afterRoute = (name) => {
     document.querySelectorAll(".nav a").forEach((a) => a.classList.toggle("on", a.dataset.tab === (TAB_OF[name] || "more")));

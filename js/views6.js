@@ -59,6 +59,19 @@
 
   /* ---------------- 3. What's new ---------------- */
   const NEWS = [
+    { v: "7.1.0", date: "27 October 2026", items: [
+      "<b>3 new mock exams</b>: Modelltest B1 · 2 and B1 · 3 (complete telc B1 format, all parts) and A2 · 2 – now 6 mock exams with 270 scored items. The practice day picks the next part you haven't done yet across all tests.",
+      "Max: three fewer false alarms (Seit Juni gibt es …, Das hat mir gefallen, nicht X, sondern Y).",
+    ] },
+    { v: "7.0.0", date: "27 October 2026", items: [
+      "<b>🎓 Mock exams in telc / Goethe format</b> for A1, A2 and B1: the same parts, task types, number of items and times as the real exam. Take the full timed exam or practise one part; recordings play only as often as in the exam; results by part with the pass mark; links to the official sample papers.",
+      "<b>📊 Exam readiness</b> on the home screen and in Progress: how ready you are for your level, per skill, and what to practise next. The practice day now includes one mock-exam part.",
+      "<b>📝 Rewrite and resubmit</b>: every letter you write is kept with its score (52 → 71 → 84) and you see exactly what you changed. “Send for correction” shares your text with a friend or teacher.",
+      "<b>🎙 Record yourself</b> in the speaking exam, in each lesson and when describing pictures – listen back and compare with the model.",
+      "<b>⭐ My notebook</b>: tap ☆ next to a word in a text, a rule or a corrected sentence. Saved words go straight into your flashcards.",
+      "<b>🎧 Audio lessons</b> (hands-free), <b>✍️ dictation</b> with every wrong letter marked, <b>📖 stories</b> where you choose what to say, <b>🔠 declension</b> of any noun, <b>📅 weekly report</b>, and <b>📺 videos & podcasts</b> by level.",
+      "<b>Faster</b>: the app starts about 4× faster on phones and screens change more smoothly.",
+    ] },
     { v: "6.9.0", date: "27 October 2026", items: [
       "<b>📘 Rules & tips above every drill</b>: what the topic is in one sentence, how it works, examples to listen to, typical mistakes, the full lesson explanation and what to do in this drill. Read it, tap “Got it – hide & start”, and it stays hidden for that topic until you open it again.",
       "<b>📘 Grammar revision</b> (Practice page): every topic on one page each, by level, with search – revise without practising.",

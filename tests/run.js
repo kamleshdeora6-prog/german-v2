@@ -4,7 +4,7 @@
 const path = require("path");
 const ROOT = path.join(__dirname, "..");
 global.window = global;
-for (const f of ["curriculum", "reference", "scenes", "vocab", "verbs", "conj", "notes", "passages", "bank", "lid", "exams", "placement", "starter", "dialogues", "sentences", "cards", "pictures"]) require(path.join(ROOT, "js/data", f + ".js"));
+for (const f of ["curriculum", "reference", "scenes", "vocab", "verbs", "conj", "notes", "passages", "bank", "lid", "exams", "placement", "starter", "dialogues", "sentences", "cards", "pictures", "telc", "telc2"]) require(path.join(ROOT, "js/data", f + ".js"));
 require(path.join(ROOT, "js/engine.js")); require(path.join(ROOT, "js/engine_plus.js")); require(path.join(ROOT, "js/engine_more.js")); require(path.join(ROOT, "js/tutor.js"));
 /* Weber needs a tiny Store/H stub outside the browser */
 global.H = global.H || { esc: (x) => String(x) };
@@ -77,6 +77,23 @@ section("1c2. Guided conversations");
   ok(ids.length >= 12, `${ids.length} guided scenarios`);
   ok(ids.every((k) => D[k].length >= 5 && D[k].every((x) => x.de && x.en && (x.ideas || []).length >= 1)), "every step has German, English and an example answer");
   ok((DC.dialogueReactions || []).length >= 5, "reactions present"); }
+
+section("1c3. Mock exams (telc format)");
+{ let items = 0;
+  Object.entries(DC.telc).forEach(([lv, tests]) => tests.forEach((t) => {
+    const keys = t.blocks.flatMap((b) => b.parts);
+    ok(keys.every((k) => t.parts[k]), `${t.id}: every block part exists`);
+    keys.forEach((k) => { const p = t.parts[k]; const where = `${t.id}/${k}`;
+      if (p.type === "match") { const ks = p.options.map((o) => o.k).concat(p.allowX ? ["x"] : []); ok(p.items.every((i) => ks.includes(i.a)), `${where}: answers are option letters`); ok(new Set(p.items.map((i) => i.a).filter((a) => a !== "x")).size === p.items.filter((i) => i.a !== "x").length, `${where}: each option used once`); items += p.items.length; }
+      if (p.type === "mc") { ok(p.items.every((i) => i.o && i.a >= 0 && i.a < i.o.length), `${where}: mc answers valid`); items += p.items.length; }
+      if (p.type === "rf") { ok(p.items.every((i) => typeof i.a === "boolean" && i.s), `${where}: r/f items valid`); ok(p.audio || p.text || p.items.every((i) => i.audio || i.t), `${where}: has something to read or hear`); items += p.items.length; }
+      if (p.type === "gapmc") { const gaps = (p.text.match(/\[(\d+)\]/g) || []).map((x) => +x.slice(1, -1)); ok(gaps.length === p.items.length && p.items.every((i) => gaps.includes(i.n) && i.a < i.o.length), `${where}: gaps match items`); items += gaps.length; }
+      if (p.type === "gapbank") { const gaps = (p.text.match(/\[(\d+)\]/g) || []).map((x) => +x.slice(1, -1)); const ws = p.words.map((w) => w.k); ok(gaps.every((g) => ws.includes(p.answers[g])), `${where}: bank answers valid`); ok(new Set(Object.values(p.answers)).size === gaps.length, `${where}: each word used once`); items += gaps.length; }
+      if (p.type === "write") ok(p.model && p.keywords && p.keywords.length === p.points_list.length, `${where}: model + keyword groups for every point`);
+      if (p.type === "speak") ok(p.teile.length === 3 && p.teile.every((x) => x.model) && p.criteria.length >= 3, `${where}: three Teile with models`);
+    });
+  }));
+  console.log(`  ${Object.values(DC.telc).flat().length} mock exams, ${items} scored items`); }
 
 section("1d. Feedback on answers");
 global.H.bi = global.H.bi || ((a, b) => a + " " + b);
@@ -161,6 +178,15 @@ const good = [];
 DC.curriculum.forEach((l) => { l.examples.forEach((e) => good.push(e.de)); [l.reading, l.reading2 ? l.reading2.text : ""].forEach((t) => good.push(...t.split(/(?<=[.!?])\s+/).filter((x) => x.trim().length > 12 && !/[„“"]/.test(x)))); (l.dialog || []).forEach((d) => good.push(...d.de.split(/(?<=[.!?])\s+/).filter((x) => x.trim().length > 12))); });
 DC.vocab.forEach((v) => { if (v.exDe) good.push(v.exDe); });
 (DC.starter || []).forEach((u) => (u.phrases || []).forEach((p) => good.push(p[0])));
+// mock exams: every text, recording, statement and model answer
+// (in letters the first line after „Liebe Sabine,“ starts small – that is correct, so it is checked capitalised)
+const sents = (t) => String(t || "").replace(/(\d)\.\s/g, "$1. ").split(/\n+|(?<=[a-zäöüß][.!?])\s+/).map((x) => x.trim()).filter((x) => x.length > 12 && !/[„“"]|\[\d+\]|^(Liebe|Lieber|Hallo|Sehr geehrte|Viele|Mit freundlichen|Liebe Grüße|Deine?|Hi)\b/.test(x) && /[.!?]$/.test(x)).map((x) => x[0].toUpperCase() + x.slice(1));
+Object.values(DC.telc || {}).flat().forEach((t) => Object.values(t.parts).forEach((p) => {
+  [p.text, p.letter, p.model].forEach((x) => good.push(...sents(x)));
+  (p.audio || []).forEach(([, x]) => good.push(...sents(x)));
+  (p.items || []).forEach((i) => { (i.audio || []).forEach(([, x]) => good.push(...sents(x))); if (i.s) good.push(i.s); if (i.t && /[.!?]$/.test(i.t)) good.push(...sents(i.t)); });
+  (p.teile || []).forEach((x) => good.push(...sents(x.model)));
+}));
 // picture descriptions (model texts)
 (DC.pictures || []).forEach((p) => p.model.split(/(?<=[.!?])\s+/).forEach((x) => good.push(x.trim())));
 // the first app's translation sentences

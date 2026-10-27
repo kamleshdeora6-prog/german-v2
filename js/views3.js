@@ -53,7 +53,8 @@
     if (part === "speak") return speakExam(el);
     el.innerHTML = `<h2 class="page-title">B1 exam trainer</h2>
       <section class="grid2">
-        <button class="tile hero" data-go="exam/mock"><b>Mock test</b><span>Reading, listening, language, writing (≈ 25 min)</span></button>
+        <button class="tile hero" data-go="telc"><b>🎓 Mock exams (telc / Goethe format)</b><span>A1 · A2 · B1 – full timed exam or one part</span></button>
+        <button class="tile" data-go="exam/mock"><b>Quick mock test</b><span>Generated: reading, listening, language, writing (≈ 25 min)</span></button>
         <button class="tile" data-go="readexam"><b>Reading exam</b><span>${DC.exams.reading.length} sets, A2–C1</span></button>
         <button class="tile" data-go="write"><b>Writing exam</b><span>${DC.exams.writing.length} tasks with model texts</span></button>
         <button class="tile" data-go="exam/speak"><b>Speaking exam</b><span>Plan · present · react</span></button>
@@ -185,6 +186,7 @@
     const topics = Object.entries(s.topics).filter(([id]) => Engine.GEN[id]).map(([id, t]) => ({ id, title: Engine.GEN[id].title, r: t.r, w: t.w, pct: Math.round((t.r / Math.max(1, t.r + t.w)) * 100) })).sort((a, b) => a.pct - b.pct);
     el.innerHTML = `<h2 class="page-title">Progress</h2>
       <section class="stats3"><div><b>${s.xp}</b><span>total XP</span></div><div><b>${s.streak.count}</b><span>day streak</span></div><div><b>${V.profile().done}</b><span>lessons done</span></div></section>
+      ${UI.weeklyCard ? UI.weeklyCard() : ""}${V.readinessCard ? V.readinessCard() : ""}
       <section class="card"><h3>Last 14 days</h3><div class="chart">${days.map((d) => `<div class="col" title="${d.d}: ${d.xp} XP"><i style="height:${(d.xp / mx) * 100}%" class="${d.xp >= s.settings.goal ? "met" : ""}"></i><small>${d.d.slice(8)}</small></div>`).join("")}</div></section>
       <section class="card"><h3>Grammar accuracy</h3>${topics.length ? topics.map((t) => `<div class="acc"><button class="link" data-go="practice/${t.id}">${esc(t.title)}</button><div class="bar"><i style="width:${t.pct}%" class="${t.pct < 60 ? "low" : ""}"></i></div><span>${t.pct}% (${t.r + t.w})</span></div>`).join("") : "<p class='muted'>Practise some drills to see your accuracy here.</p>"}</section>
       <section class="card"><h3>Mistake log</h3>${s.mistakes.length ? `<button class="btn sm" data-go="practice/mistakes">Practise these topics</button>` + s.mistakes.slice(0, 30).map((m) => `<div class="mist"><p>${m.prompt}</p><p class="muted">You: ${esc(m.given || "–")} · Right: <b>${esc(m.answer)}</b></p>${m.why ? `<details><summary>Why</summary>${m.why}</details>` : ""}</div>`).join("") : "<p class='muted'>No mistakes yet.</p>"}</section>`;

@@ -97,7 +97,7 @@
       </section>
       <section class="card"><textarea class="wtext" rows="14" placeholder="Schreiben Sie hier …">${esc(saved)}</textarea>${UI.umlautBar()}
         <div class="wstats"><span>Wörter: <b class="wc">0</b></span><span>Sätze: <b class="sc">0</b></span><span>Konnektoren: <b class="cc">0</b></span></div>
-        <div class="row"><button class="btn sign chk">Check my text</button><button class="btn ghost model">Show model text</button><button class="btn ghost save">Save draft</button></div>
+        <div class="row"><button class="btn sign chk">Check my text</button><button class="btn ghost model">Show model text</button><button class="btn ghost save">Save draft</button><button class="btn ghost share">Send for correction</button></div>
         <div class="wfb"></div></section>`;
     const ta = el.querySelector(".wtext"), fb = el.querySelector(".wfb");
     UI.bindUmlauts(el, ta);
@@ -113,6 +113,7 @@
     el.querySelector(".phrases").onclick = (e) => { const b = el.querySelector(".bank-box"); b.hidden = !b.hidden; e.target.textContent = b.hidden ? "Phrase bank" : "Hide phrases"; };
     el.querySelectorAll(".phrasebank button").forEach((b) => (b.onclick = () => { ta.value += (ta.value && !/\s$/.test(ta.value) ? " " : "") + b.textContent + " "; ta.focus(); stats(); }));
     UI.bindMic(el, (txt) => { ta.value += (ta.value ? " " : "") + txt; stats(); });
+    el.querySelector(".share").onclick = () => (ta.value.trim() ? UI.shareText(ta.value, `Please correct my German (${t.type})`) : H.toast("Write your text first."));
     el.querySelector(".save").onclick = () => { const s = Store.get(); s.writings = s.writings || {}; s.writings[idx] = ta.value; Store.save(); H.toast("Draft saved on this device."); };
     let tm = null;
     el.querySelector(".timer").onclick = (e) => {
@@ -168,6 +169,8 @@
         <div class="row"><button class="btn ghost model2">Model text</button><button class="btn ghost" data-ask="${esc("Give me tips for writing a " + t.type + " in German")}">Ask Max for tips</button></div>
         ${Views.aiButton(`${t.type} (${t.level}, about ${t.words} words): ${t.prompt} Content points: ${t.points.join("; ")}`, "", ".wtext", t.level)}</section>`;
       fb.querySelector(".model2").onclick = () => el.querySelector(".model").click();
+      Writings.add("write:" + idx, `${t.level} ${t.type}`, ta.value, score);
+      fb.insertAdjacentHTML("afterbegin", UI.writeHistory("write:" + idx)); UI.bindWriteHistory(fb, "write:" + idx, ta);
       fb.scrollIntoView({ behavior: "smooth", block: "nearest" });
     };
   };
