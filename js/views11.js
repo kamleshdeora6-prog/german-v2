@@ -29,7 +29,7 @@
       ["audio", "🎧", "Nur hören", "Audio lessons", "Hands-free: hear, answer, repeat"],
       ["watch", "📺", "Videos & Podcasts", "Watch & listen", "Real German at your level"],
       ["grammar/tables", "📐", "Tabellen", "Grammar tables", "Articles, pronouns, prepositions"],
-      ["exam/lid", "🇩🇪", "Leben in Deutschland", "Life in Germany test", `${DC.lid.length} questions`],
+      ["exam/lid", "🇩🇪", "Leben in Deutschland", "Life in Germany test", `${(DC.lid || []).length || 183} questions`],
     ];
     el.innerHTML = `<button class="back" data-go="more">‹ More</button><h2 class="page-title">${H.bi("Bibliothek", "Library")}</h2>
       <p class="muted">Everything in the course, by type – open any part directly, in any order.</p>

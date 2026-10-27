@@ -3,7 +3,7 @@
    Now: network-first with a short timeout for the app's own files (fresh when online, instant offline),
    and the page shows an "Update" bar when a new service worker is waiting. */
 const PREFIX = "deutsch-coach-v";          // the lab edition uses "deutsch-coach-lab-v" (tools/make_editions.py)
-const VERSION = "7.1.0";
+const VERSION = "7.1.1";
 const CACHE = PREFIX + VERSION;
 const VENDOR = PREFIX.replace(/-v$/, "") + "-vendor";
 const FILES = ["./", "index.html", "manifest.webmanifest", "css/app.css", "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png", "assets/grammar_reference.png",
@@ -24,7 +24,7 @@ self.addEventListener("fetch", (e) => {
   e.respondWith((async () => {
     const cache = await caches.open(CACHE);
     const hit = await cache.match(e.request, { ignoreSearch: true });
-    const net = fetch(e.request).then((r) => { if (r.ok) cache.put(e.request, r.clone()); return r; });
+    const net = fetch(e.request, { cache: "no-cache" }).then((r) => { if (r.ok) cache.put(e.request, r.clone()); return r; });
     if (!hit) return net.catch(() => caches.match("index.html"));
     // online: wait up to 2.5 s for the fresh file, otherwise serve the cached copy
     const timeout = new Promise((res) => setTimeout(() => res(hit), 2500));

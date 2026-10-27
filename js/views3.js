@@ -55,10 +55,10 @@
       <section class="grid2">
         <button class="tile hero" data-go="telc"><b>🎓 Mock exams (telc / Goethe format)</b><span>A1 · A2 · B1 – full timed exam or one part</span></button>
         <button class="tile" data-go="exam/mock"><b>Quick mock test</b><span>Generated: reading, listening, language, writing (≈ 25 min)</span></button>
-        <button class="tile" data-go="readexam"><b>Reading exam</b><span>${DC.exams.reading.length} sets, A2–C1</span></button>
-        <button class="tile" data-go="write"><b>Writing exam</b><span>${DC.exams.writing.length} tasks with model texts</span></button>
+        <button class="tile" data-go="readexam"><b>Reading exam</b><span>${((DC.exams || {}).reading || []).length} sets, A2–C1</span></button>
+        <button class="tile" data-go="write"><b>Writing exam</b><span>${((DC.exams || {}).writing || []).length} tasks with model texts</span></button>
         <button class="tile" data-go="exam/speak"><b>Speaking exam</b><span>Plan · present · react</span></button>
-        <button class="tile" data-go="exam/lid"><b>Leben in Deutschland</b><span>Practice selection: ${DC.lid.length} of the 310 official questions</span></button>
+        <button class="tile" data-go="exam/lid"><b>Leben in Deutschland</b><span>Practice selection: ${(DC.lid || []).length || 183} of the 310 official questions</span></button>
         <button class="tile" data-go="lesson/42/exam"><b>Model presentation</b><span>Lesson 42</span></button>
       </section>
       <section class="card"><h3>What the Goethe B1 speaking test looks like</h3>

@@ -200,5 +200,7 @@ good.forEach((s) => { const r = Tutor.check(s); if (r.issues.length) { fp++; if 
 failed += fp;
 console.log(`  ${good.length} correct sentences checked, ${fp} false alarms`);
 
+{ const fs = require("fs"); const idx = fs.readFileSync(path.join(ROOT, "index.html"), "utf8"); const ver = /version: "([^"]+)"/.exec(fs.readFileSync(path.join(ROOT, "js/app.js"), "utf8"))[1];
+  const tags = idx.match(/<script[^>]+src="js\/[^"]+"/g) || []; ok(tags.length && tags.every((t) => t.includes("?v=" + ver)), `every script in index.html carries ?v=${ver}`); }
 console.log(failed ? `\nFAILED: ${failed} problem(s)` : "\nAll checks passed.");
 process.exit(failed ? 1 : 0);

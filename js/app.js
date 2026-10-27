@@ -3,7 +3,7 @@
   "use strict";
   const ROUTES = { home: "home", library: "library", revise: "revise", telc: "telc", notebook: "notebook", audio: "audio", dictation: "dictation", story: "story", decline: "decline", watch: "watch", cards: "cards", exercises: "exercises", verbs: "verbs", sentences: "sentences", pictures: "pictures", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more", readexam: "readexam", write: "write", notes: "notes", translate: "translate", about: "about", placement: "placement", pronounce: "pronounce", news: "news", plan: "plan", daily: "daily", weak: "weak", refresh: "refresh", resources: "resources", starter: "starter", partner: "partner" };
   const TAB_OF = { telc: "practice", notebook: "practice", audio: "more", dictation: "practice", story: "practice", decline: "practice", watch: "practice", revise: "practice", library: "practice", cards: "practice", exercises: "practice", verbs: "practice", sentences: "practice", pictures: "practice", home: "home", path: "path", lesson: "path", practice: "practice", vocab: "practice", listen: "practice", speak: "practice", pronounce: "practice", tutor: "tutor", daily: "home", plan: "more", weak: "practice", refresh: "path", starter: "path", partner: "practice" };
-  const App = (window.App = { version: "7.1.0", updated: "27 October 2026", author: "Zombieland", pendingAsk: null });
+  const App = (window.App = { version: "7.1.1", updated: "27 October 2026", author: "Zombieland", pendingAsk: null });
   /* Where problem reports go. Put an email address here to offer email as well. */
   App.contact = { github: "https://github.com/kamleshdeora6-prog/german-v2", email: "" };
   App.report = (ctx) => {
@@ -161,7 +161,7 @@
   const NEED = { exam: ["lid"], library: ["lid", "sentences", "cards", "pictures"], cards: ["cards"], sentences: ["sentences"], pictures: ["pictures"], partner: ["dialogues"], story: ["dialogues"], placement: ["placement"], refresh: ["placement"], lesson: ["scenes"], speak: ["scenes"], telc: ["telc", "telc2"] };
   const loading = {};
   const load1 = (d) => DC[d] ? Promise.resolve() : loading[d] || (loading[d] = new Promise((ok, fail) => {
-    const s = document.createElement("script"); s.src = `js/data/${d}.js`; s.onload = () => (DC[d] ? ok() : fail(new Error(d))); s.onerror = () => { delete loading[d]; fail(new Error(d)); }; document.head.appendChild(s);
+    const s = document.createElement("script"); s.src = `js/data/${d}.js?v=${App.version}`; s.onload = () => (DC[d] ? ok() : fail(new Error(d))); s.onerror = () => { delete loading[d]; fail(new Error(d)); }; document.head.appendChild(s);
   }));
   // in order: a later file may add to an earlier one (telc2 → telc)
   App.need = (names) => [].concat(names).reduce((p, d) => p.then(() => load1(d)), Promise.resolve());

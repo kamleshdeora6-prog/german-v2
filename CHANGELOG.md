@@ -2,6 +2,9 @@
 
 All dates are the release dates of the app version shown in Settings → About.
 
+## 7.1.1 — 27 October 2026
+- Fix: after a deploy the browser's HTTP cache could serve the old `app.js` (without the lazy-data router) with the new `index.html` → `DC.lid` undefined on Prüfung/Bibliothek. Scripts and lazy data now load with `?v=<version>`; the service worker revalidates (`cache: "no-cache"`); views tolerate missing lazy data.
+
 ## 7.1.0 — 27 October 2026
 - `js/data/telc2.js`: Modelltest B1 · 2, B1 · 3, A2 · 2 (appended to `DC.telc`); router loads `telc` then `telc2` in order (`App.need` is now sequential). `V.nextExamPart` covers every test at the level.
 - Max: `gefallen` removed from the sein-Perfekt list; „seit/bis“ + month/weekday is a preposition; „nicht ein …, sondern …“ is not corrected to kein.

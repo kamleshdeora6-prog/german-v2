@@ -59,6 +59,9 @@
 
   /* ---------------- 3. What's new ---------------- */
   const NEWS = [
+    { v: "7.1.1", date: "27 October 2026", items: [
+      "Fix: Prüfung and Bibliothek could show “Cannot read properties of undefined” right after an update, when the browser still had part of the old version. Every file now carries the version number, so old and new files are never mixed.",
+    ] },
     { v: "7.1.0", date: "27 October 2026", items: [
       "<b>3 new mock exams</b>: Modelltest B1 · 2 and B1 · 3 (complete telc B1 format, all parts) and A2 · 2 – now 6 mock exams with 270 scored items. The practice day picks the next part you haven't done yet across all tests.",
       "Max: three fewer false alarms (Seit Juni gibt es …, Das hat mir gefallen, nicht X, sondern Y).",
