@@ -52,6 +52,7 @@
         <button class="tile" data-go="practice/mistakes"><b>My mistakes</b><span>${s.mistakes.length} saved</span></button>
         <button class="tile" data-go="vocab"><b>Words</b><span>${SRS.due(V.vocabIds()).length} due today</span></button>
         <button class="tile" data-go="practice/bank"><b>Question bank</b><span>${DC.bank.length} classic items</span></button>
+        <button class="tile" data-go="library"><b>📚 ${H.bi("Bibliothek", "Library")}</b><span>Flashcards, notes, exercises, texts, verbs, sentences, pictures</span></button>
       </section>
       ${groups.map((g) => `<section class="card"><h3>${UI.levelDot(g.lv)} Grammar drills</h3><div class="topics">${g.gens.map((x) => {
         const t = s.topics[x.id]; const rec = t && t.recent && t.recent.length ? Math.round((t.recent.reduce((a, b) => a + b, 0) / t.recent.length) * 100) : null;
@@ -226,6 +227,6 @@
       });
       return;
     }
-    el.innerHTML = `<h2 class="page-title">Reading & listening</h2>${["A1", "A2", "B1"].map((lv) => `<section class="card"><h3>${UI.levelDot(lv)} Texts</h3><ul class="textlist">${texts.filter((t) => t.level === lv).map((t) => `<li><button class="link" data-go="read/${t.id}">${esc(t.title)}</button></li>`).join("")}</ul></section>`).join("")}`;
+    el.innerHTML = `<h2 class="page-title">Reading & listening</h2><p class="muted">${texts.length} texts: every lesson's reading plus ${DC.passages.length} extra passages. Tap any word for its meaning.</p>${["A1", "A2", "B1", "B2", "C1", "C2"].filter((lv) => texts.some((t) => t.level === lv)).map((lv) => `<section class="card"><h3>${UI.levelDot(lv)} Texts</h3><ul class="textlist">${texts.filter((t) => t.level === lv).map((t) => `<li><button class="link" data-go="read/${t.id}">${esc(t.title)}</button></li>`).join("")}</ul></section>`).join("")}`;
   };
 })();

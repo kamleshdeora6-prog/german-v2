@@ -16,11 +16,16 @@
   const V = (n, v16, v32) => ({ f16: { id: `Llama-3.2-${n}-Instruct-q4f16_1-MLC`, lib: `Llama-3.2-${n}-Instruct-q4f16_1_cs1k-webgpu.wasm`, vram: v16, features: ["shader-f16"] }, f32: { id: `Llama-3.2-${n}-Instruct-q4f32_1-MLC`, lib: `Llama-3.2-${n}-Instruct-q4f32_1_cs1k-webgpu.wasm`, vram: v32, features: [] } });
   const G4 = { f16: { id: "gemma-4-E2B-it-q4f16_1-MLC", lib: "gemma-4-E2B-it-q4f16_1_cs512-webgpu.wasm", vram: 3388, features: ["shader-f16"], extra: { model_manifest: "mlc-model-manifest.json", buffer_size_required_bytes: 201326592 } },
                f32: { id: "gemma-4-E2B-it-q4f32_1-MLC", lib: "gemma-4-E2B-it-q4f32_1_cs512-webgpu.wasm", vram: 3863, features: [], extra: { model_manifest: "mlc-model-manifest.json", buffer_size_required_bytes: 201326592 } } };
+  const LAB = window.EDITION === "lab";
   LLM.MODELS = [
     { key: "1b", name: "Small – Llama 3.2 1B", size: "about 0.7 GB", hint: "phones and most laptops", v: V("1B", 879, 1128) },
     { key: "3b", name: "Better – Llama 3.2 3B", size: "about 1.8 GB", hint: "laptops and PCs", v: V("3B", 2264, 2951) },
-    { key: "g4", name: "Best – Gemma 4 E2B (Google, 2026)", size: "about 2–3 GB", hint: "PCs with 4 GB+ graphics memory", v: G4 },
-  ];
+    { key: "g4", name: "Best – Gemma 4 E2B (Google, 2026) · LAB", size: "about 2–3 GB", hint: "PCs with 4 GB+ graphics memory", v: G4 },
+  ].filter((m) => LAB || m.key !== "g4");   // Gemma 4 is new in WebLLM – it stays in the lab edition until it is proven on real devices
+  /* recent problems, for the lab's diagnostics report */
+  LLM.log = [];
+  const logErr = (where, e) => { LLM.log.push({ t: new Date().toISOString(), where, msg: String((e && e.message) || e).slice(0, 300) }); if (LLM.log.length > 20) LLM.log.shift(); };
+  LLM.loadSecs = null;
   const st = () => Store.get().settings;
   LLM.current = () => LLM.MODELS.find((m) => m.key === st().llmModel || (m.v.f16.id === st().llmModel)) || LLM.MODELS[0];
   /* which build this device can run */
@@ -55,16 +60,17 @@
     if (engine && engineFor === b.id) return engine;
     if (loading) return loading;
     loading = (async () => {
+      const t0 = performance.now();
       try {
         const lib = await import(LIB + "index.js");
         if (engine) { try { await engine.unload(); } catch (e) {} engine = null; }
         const worker = new Worker(BASE + "js/llm-worker.js", { type: "module" });
         engine = await lib.CreateWebWorkerMLCEngine(worker, b.id, { appConfig: await appConfig(b), initProgressCallback: (p) => progress.forEach((f) => f(p)) });
-        engineFor = b.id;
+        engineFor = b.id; LLM.loadSecs = Math.round((performance.now() - t0) / 100) / 10;
         st().llmReady = Object.assign({}, st().llmReady, { [b.id]: Date.now() }); Store.save();
         return engine;
       } catch (e) {
-        engine = null; engineFor = null;
+        engine = null; engineFor = null; logErr("load " + b.id, e);
         const msg = String((e && e.message) || e);
         if (/webgpu|adapter|gpu/i.test(msg)) throw new Error("Your graphics chip couldn't start the on-device AI (WebGPU). Try Chrome or Edge, update the graphics driver, or pick the small model.");
         if (/quota|storage|space/i.test(msg)) throw new Error("Not enough free storage for the model. Free some space or pick the small model.");
@@ -82,6 +88,14 @@
     const r = Object.assign({}, st().llmReady); delete r[m.v.f16.id]; delete r[m.v.f32.id]; st().llmReady = r; Store.save();
   };
   LLM._build = build;   // for tests
+  LLM.gpuInfo = async () => {
+    if (!navigator.gpu) return { webgpu: false };
+    try {
+      const a = await navigator.gpu.requestAdapter(); if (!a) return { webgpu: true, adapter: null };
+      const i = a.info || (a.requestAdapterInfo ? await a.requestAdapterInfo() : {}) || {};
+      return { webgpu: true, vendor: i.vendor || "", architecture: i.architecture || "", device: i.device || "", description: i.description || "", f16: a.features.has("shader-f16"), maxStorageBufferMB: Math.round(a.limits.maxStorageBufferBindingSize / 1048576), maxBufferMB: Math.round(a.limits.maxBufferSize / 1048576) };
+    } catch (e) { return { webgpu: true, error: String(e.message || e) }; }
+  };
   /* a sensible first choice: the small model on phones, the 3B model on computers */
   LLM.recommended = () => ((navigator.userAgentData && navigator.userAgentData.mobile) || /Android|iPhone|iPad|Mobile/i.test(navigator.userAgent) ? "1b" : "3b");
 
@@ -93,6 +107,9 @@
   /* one answer, streamed: onToken(textSoFar) is called while it is written */
   LLM.chat = async ({ system, messages, maxTokens = 300, temperature = 0.6, onToken }) => {
     const e = await LLM.load(); touch();
+    try { return await chatOn(e, { system, messages, maxTokens, temperature, onToken }); } catch (err) { logErr("chat", err); throw err; }
+  };
+  async function chatOn(e, { system, messages, maxTokens, temperature, onToken }) {
     const msgs = [{ role: "system", content: system }].concat(messages.slice(-12));
     const t0 = performance.now(); let text = "", usage = null;
     const stream = await e.chat.completions.create({ messages: msgs, max_tokens: Math.min(maxTokens, 600), temperature, top_p: 0.9, frequency_penalty: 0.3, stream: true, stream_options: { include_usage: true } });   // no extra_body.enable_thinking: WebLLM would add Qwen-style <think> tags to any model
@@ -105,26 +122,30 @@
     const secs = (performance.now() - t0) / 1000;
     LLM.lastStats = { secs, tokens: (usage && usage.completion_tokens) || Math.round(text.length / 4), tps: (usage && usage.extra && usage.extra.decode_tokens_per_s) || Math.round(text.length / 4 / Math.max(0.1, secs)) };
     touch();
-    if (!text) throw new Error("The on-device AI didn't answer. Try again.");
+    if (!text) { logErr("chat", "empty answer"); throw new Error("The on-device AI didn't answer. Try again."); }
     return text;
-  };
+  }
 
   /* German self-test on this device: six learner sentences; every reply is scored by Max's rules
      (German only, no grammar problems, short, ends with a question) and timed. */
   const TEST = ["Hallo! Ich heiße Ravi und komme aus Indien.", "Ich möchte einen Kaffee mit Milch, bitte.", "Ich habe seit gestern Kopfschmerzen.", "Am Wochenende habe ich mit Freunden Fußball gespielt.", "Wie viel kostet die Wohnung im Monat?", "Ich finde Homeoffice gut, weil ich Zeit spare."];
   const EN = /\b(the|you|and|is|are|what|this|that|your|have|i'm|it's|with|for)\b/i;
-  LLM.selfTest = async (m = LLM.current(), onStep) => {
-    const sys = "Du bist ein freundlicher Gesprächspartner für Deutschlerner auf Niveau A2. Antworte NUR auf Deutsch, mit höchstens zwei kurzen, einfachen Sätzen, und stelle am Ende eine Frage.";
+  const SYS = (lv) => `Du bist ein freundlicher Gesprächspartner für Deutschlerner auf Niveau ${lv}. Antworte NUR auf Deutsch, mit höchstens zwei ${lv === "B1" ? "" : "kurzen, einfachen "}Sätzen, und stelle am Ende eine Frage.`;
+  /* the lab runs the six sentences at three levels (18 answers) */
+  LLM.selfTest = async (m = LLM.current(), onStep, levels = ["A2"]) => {
+    const jobs = []; levels.forEach((lv) => TEST.forEach((u) => jobs.push({ lv, u })));
     const rows = []; let tps = 0;
-    for (let i = 0; i < TEST.length; i++) {
-      onStep && onStep(i, TEST.length);
-      const r = await LLM.chat({ system: sys, messages: [{ role: "user", content: TEST[i] }], maxTokens: 120, temperature: 0.4 });
+    for (let i = 0; i < jobs.length; i++) {
+      onStep && onStep(i, jobs.length);
+      const { lv } = jobs[i];
+      const r = await LLM.chat({ system: SYS(lv), messages: [{ role: "user", content: jobs[i].u }], maxTokens: 120, temperature: 0.4 });
       const sents = r.split(/(?<=[.!?])\s+/).filter(Boolean); const words = r.split(/\s+/).filter(Boolean).length;
       const issues = sents.reduce((a, x) => a + Tutor.check(x).issues.length, 0);
       const german = !EN.test(r) && /[a-zäöüß]/i.test(r);
       let sc = (german ? 30 : 0) + Math.max(0, 40 - issues * 20) + (/\?\s*$/.test(r) ? 15 : 0) + (sents.length <= 3 && words <= 30 ? 15 : 0);
-      rows.push({ user: TEST[i], reply: r, score: sc, issues, german }); tps += LLM.lastStats.tps;
+      rows.push({ level: lv, user: jobs[i].u, reply: r, score: sc, issues, german, secs: Math.round(LLM.lastStats.secs * 10) / 10 }); tps += LLM.lastStats.tps;
     }
+    LLM.lastTest = { model: m.key, rows };
     const res = { model: m.key, score: Math.round(rows.reduce((a, x) => a + x.score, 0) / rows.length), tps: Math.round(tps / rows.length), rows, at: Date.now() };
     st().llmTest = Object.assign({}, st().llmTest, { [m.key]: { score: res.score, tps: res.tps, at: res.at } }); Store.save();
     return res;

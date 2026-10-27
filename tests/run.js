@@ -4,7 +4,7 @@
 const path = require("path");
 const ROOT = path.join(__dirname, "..");
 global.window = global;
-for (const f of ["curriculum", "reference", "scenes", "vocab", "verbs", "conj", "notes", "passages", "bank", "lid", "exams", "placement", "starter"]) require(path.join(ROOT, "js/data", f + ".js"));
+for (const f of ["curriculum", "reference", "scenes", "vocab", "verbs", "conj", "notes", "passages", "bank", "lid", "exams", "placement", "starter", "dialogues", "sentences", "cards", "pictures"]) require(path.join(ROOT, "js/data", f + ".js"));
 require(path.join(ROOT, "js/engine.js")); require(path.join(ROOT, "js/engine_plus.js")); require(path.join(ROOT, "js/tutor.js"));
 /* Weber needs a tiny Store/H stub outside the browser */
 global.H = global.H || { esc: (x) => String(x) };
@@ -71,6 +71,12 @@ ST.forEach((u) => {
   (u.phrases || []).forEach(([d, e]) => ok(/[.!?]$/.test(d) && e, `unit ${u.id}: sentence "${d}" needs end punctuation and English`));
 });
 console.log(`  ${DC.curriculum.length} lessons with English explanations · First steps: ${ST.length} units, ${stWords} words`);
+
+section("1c2. Guided conversations");
+{ const D = DC.dialogues || {}; const ids = Object.keys(D);
+  ok(ids.length >= 12, `${ids.length} guided scenarios`);
+  ok(ids.every((k) => D[k].length >= 5 && D[k].every((x) => x.de && x.en && (x.ideas || []).length >= 1)), "every step has German, English and an example answer");
+  ok((DC.dialogueReactions || []).length >= 5, "reactions present"); }
 
 section("1d. Feedback on answers");
 global.H.bi = global.H.bi || ((a, b) => a + " " + b);
@@ -155,6 +161,12 @@ const good = [];
 DC.curriculum.forEach((l) => { l.examples.forEach((e) => good.push(e.de)); [l.reading, l.reading2 ? l.reading2.text : ""].forEach((t) => good.push(...t.split(/(?<=[.!?])\s+/).filter((x) => x.trim().length > 12 && !/[„“"]/.test(x)))); (l.dialog || []).forEach((d) => good.push(...d.de.split(/(?<=[.!?])\s+/).filter((x) => x.trim().length > 12))); });
 DC.vocab.forEach((v) => { if (v.exDe) good.push(v.exDe); });
 (DC.starter || []).forEach((u) => (u.phrases || []).forEach((p) => good.push(p[0])));
+// picture descriptions (model texts)
+(DC.pictures || []).forEach((p) => p.model.split(/(?<=[.!?])\s+/).forEach((x) => good.push(x.trim())));
+// the first app's translation sentences
+Object.values(DC.sentences || {}).forEach((l) => l.forEach((x) => good.push(x.de)));
+// the guided partner's own lines and example answers must pass Max too (one sentence at a time)
+Object.values(DC.dialogues || {}).forEach((steps) => steps.forEach((st) => [st.de].concat(st.ideas || []).forEach((t) => t.split(/(?<=[.!?])\s+/).forEach((x) => x.trim() && good.push(x.trim())))));
 DC.curriculum.forEach((l) => l.exam.forEach((q) => { if (q.m) good.push(...q.m.split(/(?<=[.!?])\s+/).filter((x) => x.trim().length > 12 && !/[„“"–:=→()]/.test(x))); }));
 for (let i = 0; i < 3000; i++) { const it = Engine.generate(); if (it && it.full) good.push(it.full); if (it && it.kind === "order") good.push(it.answer); }
 let fp = 0;

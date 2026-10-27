@@ -41,16 +41,27 @@
       <p class="muted small">Everything else in the app keeps working offline – Max, the exercises and all feedback.</p></section>`;
   }
 
-  /* ---------------- speaking partner ---------------- */
-  V.partner = (el, [id]) => {
-    if (!AI.ready()) return noKey(el, "Speaking partner");
+  /* ---------------- speaking partner ----------------
+     Two modes. "guided": hand-written conversations – no AI model, works on every device, never fails.
+     "ai": free talk with the AI (on this device or Claude). If the AI fails, the guided mode takes over. */
+  const LAB = window.EDITION === "lab";
+  const mode = () => { const m = Store.get().settings.partnerMode || (LAB ? "ai" : "guided"); return m === "ai" && AI.ready() ? "ai" : "guided"; };
+  V.partner = (el, [id, force]) => {
+    if (id && (force === "guided" || mode() === "guided")) return guided(el, id);
     if (!id) {
       const my = AI.profile().level, mi = LV.indexOf(my);
       // warm the model up while the learner picks a scenario (it takes a few seconds)
-      if (AI.local() && !LLM.isLoaded()) setTimeout(() => LLM.load().catch(() => {}), 300);
+      const m = mode(), want = Store.get().settings.partnerMode || (LAB ? "ai" : "guided");
+      if (LAB && m === "ai" && AI.local() && !LLM.isLoaded()) setTimeout(() => LLM.load().catch(() => {}), 300);
       el.innerHTML = `<button class="back" data-go="more">‹ More</button><h2 class="page-title">${H.bi("Sprechpartner", "Speaking partner")}</h2>
-        <p class="muted">Talk in German at your level (${my}) – ${AI.local() ? "with a small AI on this device (free, offline). Its German is simple and can have small slips; your mistakes are corrected by Max's checked rules." : "with Claude (online)."} Speak or type; your partner answers out loud, corrects real mistakes, and gives you feedback at the end. ${ASR.active() ? "Speech is recognised offline on this device." : ""}</p>
+        <div class="seg pmode" role="group" aria-label="Mode"><button data-pm="guided" class="${m === "guided" ? "on" : ""}">🎯 Guided</button><button data-pm="ai" class="${m === "ai" ? "on" : ""}">🤖 Free talk with AI</button></div>
+        <p class="muted">${m === "guided" ? `<b>Guided:</b> your partner asks real questions from the scenario, out loud, at its level. You answer freely – speak or type – Max corrects your German, and an example answer is always one tap away. Works on every device, offline, nothing to download.${want === "ai" ? ` <span class="small">(AI free talk isn't ready: ${esc(AI.why())})</span>` : ""}` : `<b>Free talk:</b> ${AI.local() ? "a small AI on this device (free, offline) answers whatever you say. Its German is simple and can have small slips; your mistakes are corrected by Max's checked rules." : "Claude (online) answers whatever you say."}`} ${ASR.active() ? "Speech is recognised offline on this device." : ""}</p>
         <section class="grid2 menu">${SCENES.map((s) => { const hard = LV.indexOf(s.lv) > mi + 1; return `<button class="tile" data-go="partner/${s.id}"><span class="ti">${s.icon}</span><b>${esc(s.id === "lesson" ? sceneFor("lesson").title : s.title)}</b><span>${s.lv}+${hard ? " · challenging" : ""}</span></button>`; }).join("")}</section>`;
+      el.querySelectorAll("[data-pm]").forEach((b) => (b.onclick = () => {
+        const st = Store.get().settings; st.partnerMode = b.dataset.pm; Store.save();
+        if (b.dataset.pm === "ai" && !AI.ready()) H.toast(AI.why() + " – using guided mode until then.");
+        V.partner(el, []);
+      }));
       return;
     }
     const sc = sceneFor(id); if (!sc) return App.go("partner");
@@ -58,10 +69,10 @@
       el.innerHTML = `<button class="back" data-go="partner">‹ Scenarios</button><h2 class="page-title">${sc.icon} ${esc(sc.title)}</h2>
         <section class="card"><p>⏳ Starting the AI on this device… The first start after opening the app takes 10–60 seconds.</p><div class="pbar"><span class="lp" style="width:2%"></span></div><p class="muted small lpt"></p></section>`;
       const off = LLM.onProgress((pr) => { const b = el.querySelector(".lp"); if (b) b.style.width = Math.round((pr.progress || 0) * 100) + "%"; const t = el.querySelector(".lpt"); if (t) t.textContent = String(pr.text || "").slice(0, 120); });
-      LLM.load().then(() => { off(); if (document.body.contains(el)) V.partner(el, [id]); }).catch((e) => { off(); el.querySelector(".card").innerHTML = `<p>⚠️ ${esc(e.message)}</p><div class="row"><button class="btn sign" data-go="partner/${esc(id)}">Try again</button><button class="btn ghost" data-go="settings">Settings</button></div>`; });
+      LLM.load().then(() => { off(); if (document.body.contains(el)) V.partner(el, [id]); }).catch((e) => { off(); el.querySelector(".card").innerHTML = `<p>⚠️ ${esc(e.message)}</p><div class="row"><button class="btn sign" data-go="partner/${esc(id)}/guided">Talk in guided mode</button><button class="btn ghost" data-go="partner/${esc(id)}">Try the AI again</button></div>`; });
       return;
     }
-    const hist = []; let busy = false, turns = 0, helps = 0;
+    const hist = []; let busy = false, turns = 0, helps = 0, fails = 0;
     const EN = /\b(the|is|are|and|i|you|my|have|with|this|that|what|don't|i'm|it's|because|like)\b/gi;
     const english = (t) => { const w = t.split(/\s+/).length; return w >= 3 && (t.match(EN) || []).length / w > 0.25 && !/[äöüß]|\b(ich|du|und|ist|nicht|das|der|die)\b/i.test(t); };
     el.innerHTML = `<button class="back" data-go="partner">‹ Scenarios</button><h2 class="page-title">${sc.icon} ${esc(sc.title)}</h2>
@@ -84,14 +95,19 @@
       try {
         // on this device the reply appears word by word while the model writes it
         const r = await AI.partnerTurn({ scenario: sc, history: hist, onToken: (t) => { wait.classList.add("live"); wait.innerHTML = `<p lang="de">${esc(t)}</p>`; } });
-        wait.remove();
+        wait.remove(); fails = 0;   // only failures in a row switch to guided mode
         if (r.correction && r.correction.wrong && r.correction.right && r.correction.wrong !== r.correction.right) {
           const last = chat.querySelectorAll(".msg.user"); const lu = last[last.length - 1];
           if (lu) lu.insertAdjacentHTML("beforeend", `<div class="p-corr"><del>${esc(r.correction.wrong)}</del> → <b>${esc(r.correction.right)}</b><br><span class="muted small">${esc(r.correction.why || "")}</span></div>`);
           Store.mistake({ prompt: `Speaking partner: ${esc(sc.title)}`, answer: r.correction.right, given: r.correction.wrong, why: esc(r.correction.why || "") });
         }
         partner(r);
-      } catch (e) { wait.remove(); add("assistant err", `<p>⚠️ ${esc(e.message)}</p><button class="btn ghost sm p-retry">Try again</button>`).querySelector(".p-retry").onclick = (ev) => { ev.target.closest(".msg").remove(); turn(); }; }
+      } catch (e) {
+        wait.remove(); fails++;
+        const box = add("assistant err", `<p>⚠️ ${esc(e.message)}</p><div class="row"><button class="btn ghost sm p-retry">Try again</button><button class="btn ghost sm" data-go="partner/${sc.id}/guided">Continue in guided mode</button></div>`);
+        box.querySelector(".p-retry").onclick = (ev) => { ev.target.closest(".msg").remove(); turn(); };
+        if (!LAB && fails >= 2) { H.toast("The AI isn't working right now – switching to guided mode."); setTimeout(() => App.go(`partner/${sc.id}/guided`), 1200); }
+      }
       busy = false;
     };
     const send = (text, force) => {
@@ -128,6 +144,73 @@
     };
     turn();
   };
+
+  /* ---------------- guided conversation (no AI model) ---------------- */
+  const EN_RE = /\b(the|is|are|and|i|you|my|have|with|this|that|what|don't|i'm|it's|because|like)\b/gi;
+  const isEnglish = (t) => { const w = t.split(/\s+/).length; return w >= 3 && (t.match(EN_RE) || []).length / w > 0.25 && !/[äöüß]|\b(ich|du|und|ist|nicht|das|der|die)\b/i.test(t); };
+  function stepsFor(id) {
+    if (id !== "lesson") return (DC.dialogues || {})[id] || null;
+    const l = AI.profile().lesson;   // today's lesson: its speaking prompts and open exam questions, with their model answers
+    const ex = (l.examples || []).map((e) => e.de);
+    const steps = l.speak.map((p, i) => ({ de: p.replace(/__/g, "").replace(/\s+/g, " ").trim(), en: "", ideas: ex.slice(i * 2, i * 2 + 2) }))
+      .concat(l.exam.filter((q) => q.m).map((q) => ({ de: q.q, en: "", ideas: [q.m.split(/(?<=[.!?])\s+/).slice(0, 2).join(" ")] })));
+    return steps.slice(0, 7);
+  }
+  function guided(el, id) {
+    const sc = sceneFor(id); const steps = sc && stepsFor(id);
+    if (!sc || !steps || !steps.length) return App.go("partner");
+    const hist = []; let k = 0, helps = 0, done = false;
+    el.innerHTML = `<button class="back" data-go="partner">‹ Scenarios</button><h2 class="page-title">${sc.icon} ${esc(sc.title)} <span class="muted small">· guided</span></h2>
+      <div class="pbar sm gbar"><span style="width:0%"></span></div>
+      <div class="chat pchat" aria-live="polite"></div>
+      <div class="p-suggest muted small"></div>
+      <form class="composer pcomp"><textarea rows="1" placeholder="Answer in German – or tap the microphone" aria-label="Your answer"></textarea>${UI.mic("")}<button class="btn sign">Send</button></form>`;
+    const chat = el.querySelector(".pchat"), ta = el.querySelector("textarea"), sug = el.querySelector(".p-suggest");
+    const add = (cls, html) => { const d = document.createElement("div"); d.className = "msg " + cls; d.innerHTML = html; chat.appendChild(d); d.scrollIntoView({ block: "end", behavior: "smooth" }); return d; };
+    const REACT = DC.dialogueReactions || ["Gut."];
+    const ask = (prefix) => {
+      const st = steps[k]; el.querySelector(".gbar span").style.width = Math.round((k / steps.length) * 100) + "%";
+      const line = (prefix ? prefix + " " : "") + st.de;
+      hist.push({ role: "assistant", de: line });
+      add("assistant", `<p lang="de">${esc(line)} ${UI.say(line)} ${UI.hint(st.de)}</p>${st.en ? `<details><summary class="muted small">English</summary><p class="muted">${esc(st.en)}</p></details>` : ""}`);
+      Speech.speak(line);
+      sug.innerHTML = (st.ideas || []).length ? `<button class="link p-help">💡 Stuck? Show an example answer</button>` : "";
+      const hb = sug.querySelector(".p-help"); if (hb) hb.onclick = () => { helps++; sug.innerHTML = `💡 For example: ${st.ideas.map((x) => `<i>${esc(x)}</i> ${UI.say(x)}`).join(" · ")} <span class="muted small">– say it your own way.</span>`; };
+    };
+    const finish = () => {
+      done = true; el.querySelector(".gbar span").style.width = "100%"; el.querySelector(".pcomp").remove(); sug.remove();
+      const r = AI.localSummary({ history: hist.concat(helps ? [] : []) });
+      const sc0 = Math.max(0, Math.min(100, r.score - Math.min(20, helps * 4)));
+      add("assistant summary", `<div class="fb-head"><span class="fb-score ${sc0 >= 65 ? "good" : sc0 >= 45 ? "mid" : "low"}">${sc0}</span><div><b>${H.bi("Gut gemacht!", "Well done!")}</b><br><span class="muted">${esc(r.summary)}${helps ? ` You looked at ${helps} example answer${helps > 1 ? "s" : ""}.` : ""}</span></div></div>
+        ${r.mistakes.length ? `<h4>To fix</h4><ul class="fb-list">${r.mistakes.map((x) => `<li class="n"><span>✗</span><div><del>${esc(x.wrong)}</del> → <b>${esc(x.right)}</b> ${UI.say(x.right)}<br><span class="muted">${esc(x.why)}</span></div></li>`).join("")}</ul>` : ""}
+        <p><b>Next:</b> ${esc(r.next)}</p>
+        <div class="row"><button class="btn sign" data-go="partner/${sc.id}/guided">Talk again</button><button class="btn ghost" data-go="partner">Other scenario</button></div>`);
+      Store.addXP(sc0 >= 65 ? 20 : 10);
+    };
+    const send = (text, force) => {
+      text = text.trim(); if (!text || done) return;
+      if (!force && isEnglish(text)) {
+        sug.innerHTML = `🇩🇪 That was English. Try it in German – short and simple is fine. <button class="link p-anyway">Send anyway</button>`;
+        sug.querySelector(".p-anyway").onclick = () => send(text, true); ta.value = text; return;
+      }
+      hist.push({ role: "user", text }); ta.value = ""; sug.innerHTML = "";
+      const u = add("user", `<p>${esc(text)}</p>`);
+      const r = Tutor.check(text);
+      if (r.issues.length) {
+        u.insertAdjacentHTML("beforeend", `<div class="p-corr"><del>${esc(text)}</del> → <b>${esc(r.fixed)}</b> ${UI.say(r.fixed)}<br><span class="muted small">${r.issues.map((x) => String(x.why || x.rule || "").replace(/<[^>]+>/g, "")).join(" ")}</span></div>`);
+        Store.mistake({ prompt: `Speaking: ${esc(sc.title)}`, answer: r.fixed, given: text });
+      }
+      if (window.Habit) { Habit.track("speak"); Habit.track("partner"); }
+      Store.addXP(4); k++;
+      if (k >= steps.length) return setTimeout(finish, 500);
+      const next = steps[k].de, react = /^(Und|Was|Wie|Wo|Wann|Warum|Welche|Hast|Haben|Können|Gibt|Möchtest|Möchten|Sind|Seit|Ich|Wir|Viele|Die|Der|Das)\b/.test(next) ? REACT[(k + text.length) % REACT.length] : "";
+      setTimeout(() => ask(react), 450);
+    };
+    el.querySelector("form").onsubmit = (e) => { e.preventDefault(); send(ta.value); };
+    ta.onkeydown = (e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(ta.value); } };
+    UI.bindMic(el.querySelector(".pcomp"), (t) => send(t));
+    ask("");
+  }
 
   /* ---------------- exercises from my mistakes ---------------- */
   V.aiPractice = async (el) => {

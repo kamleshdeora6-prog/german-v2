@@ -387,6 +387,7 @@
     for (let i = 0; i < L.length; i++) {
       if (!SUB.has(L[i])) continue;
       if (L[i] === "seit" && !(i === 0 || /,$/.test(words[i - 1] || ""))) continue;
+      if (/^(seit|bis)$/.test(L[i]) && /^(wann|wohin|wo|zu|morgen|heute|jetzt|später|bald)$/.test(L[i + 1] || "")) continue;   // "Seit wann …?", "Bis morgen" – not a subordinate clause
       if (/^(während|seit|bis)$/.test(L[i]) && (/^(der|des|dem|den|einer|eines|einem|zwei|drei|vier|fünf|sechs|wenigen|langem|kurzem|gestern|heute|morgen|jahren|wochen|monaten|tagen|stunden)$/.test(L[i + 1] || "") || /^\d/.test(L[i + 1] || ""))) continue;   // preposition, not a conjunction
       if (L[i] === "während" && !(i === 0 || /,$/.test(words[i - 1] || ""))) continue;
       if (L[i] === "bis" && !/,$/.test(words[i - 1] || "")) continue;
@@ -487,6 +488,7 @@
         if (pr === "ihr" && /^[A-ZÄÖÜ]/.test(words[a + 1] || "")) continue;   // "hat ihr Mann": ihr is a possessive here
         const cands = finIndex().get(vb).filter((x) => x.inf !== "(past)");
         if (!cands.length) continue;
+        if (b === a + 1 && /^(gehe|gehst|geht|gehen|lasse|lässt|lassen|bleibe|bleibst|bleibt|bleiben|kann|kannst|können|muss|musst|müssen|will|willst|wollen|darf|darfst|dürfen|soll|sollst|sollen|möchte|möchtest|möchten|werde|wirst|wird|werden)$/.test(L[b + 1] || "")) continue;   // "bevor ich schlafen gehe": infinitive before the finite verb at the end
         const ok = cands.some((x) => x.p === PRON_P[pr] || (pr === "ihr" && x.p === "3s" && false));
         if (ok) continue;
         if (pr === "es" || pr === "er") { if (cands.some((x) => x.p === "3s")) continue; }

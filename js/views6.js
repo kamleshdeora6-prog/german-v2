@@ -59,6 +59,19 @@
 
   /* ---------------- 3. What's new ---------------- */
   const NEWS = [
+    { v: "6.8.0", date: "26 October 2026", items: [
+      "<b>📚 Library (Bibliothek)</b> is back: every collection in one place, as in the first app – Flashcards, Notes, Exercises, Passages, Conjugation, Sentences, Describe a picture, Vocabulary, Grammar tables and Leben in Deutschland. In the top bar on PC, on the Practice page and under More.",
+      "<b>🃏 Flashcards</b> by level and topic, German → English or English → German, plus the first app's grammar, article and verb cards. “Again” cards come back in the same round.",
+      "<b>🔤 Conjugation</b>: all 353 verb tables, searchable, and a conjugation drill. <b>🔁 Sentences</b>: the first app's 202 sentences to translate (A1–B2).",
+      "<b>🖼 Describe a picture</b>: the photos from the first app with questions, useful words, a model description and feedback like in the speaking exam.",
+      "Reading list now also shows the B2/C1 passages; the grammar poster is under Grammar → Tables.",
+    ] },
+    { v: "6.7.0", date: "26 October 2026", items: [
+      "<b>🎯 Guided speaking partner</b> – works on every phone, PC and in the Android/iPhone app, offline, nothing to download: your partner asks real questions from 12 scenarios out loud, you answer freely by voice or typing, Max corrects your German, and an example answer is one tap away. The scenario “Today's lesson” uses your current lesson's speaking tasks.",
+      "<b>Two modes</b> on the speaking-partner page: Guided or Free talk with the on-device AI. If the AI can't start or stops answering, the conversation continues in guided mode.",
+      "<b>Two editions</b>: this daily app keeps only the proven parts (Llama models). A separate <b>Lab</b> edition has the newest models, a longer German test and a diagnostics report, with its own progress.",
+      "Max no longer flags „Seit wann …?“ questions.",
+    ] },
     { v: "6.6.0", date: "26 October 2026", items: [
       "<b>Gemma 4 E2B</b> (Google, 2026) as a third on-device model for PCs with a graphics card – the strongest German of the three. Settings also marks the model recommended for your device.",
       "<b>🧪 German self-test</b>: Settings → AI tutor tests the downloaded model on this device with six sentences, checks every reply with Max and measures the speed – so you can see which model works best here.",

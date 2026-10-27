@@ -696,3 +696,15 @@ body.st-focus { padding-bottom: 0; }
 @keyframes ai-grow { from { width: 10%; margin-left: 0; } to { width: 40%; margin-left: 60%; } }
 .btn.mic.rec { background: var(--bad); color: #fff; box-shadow: 0 0 0 calc(var(--lvl, 0) * 10px) color-mix(in srgb, var(--bad) 30%, transparent); transition: box-shadow .08s; }
 .aiset .ai-status { flex: 1; }
+
+/* library */
+.picgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
+.pictile { display: flex; flex-direction: column; gap: 4px; padding: 0 0 10px; border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--paper); overflow: hidden; text-align: left; cursor: pointer; color: inherit; font: inherit; }
+.pictile img { width: 100%; aspect-ratio: 16/10; object-fit: cover; background: var(--line); }
+.pictile b, .pictile span { padding: 0 10px; } .pictile span { font-size: .85rem; opacity: .7; }
+.pic { margin: 0 0 12px; } .pic img { width: 100%; max-width: 640px; max-height: 420px; object-fit: contain; border-radius: var(--r-lg); background: var(--line); display: block; }
+.picq li { margin: 6px 0; } .picw { columns: 2; } @media (max-width: 520px) { .picw { columns: 1; } }
+.poster img { width: 100%; height: auto; border-radius: 8px; margin-top: 8px; }
+.flash .back i { font-style: normal; opacity: .85; } .flash .back small { display: block; }
+.sentlist li { margin: 6px 0; }
+.vlist li { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }

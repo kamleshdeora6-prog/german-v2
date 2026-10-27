@@ -167,6 +167,7 @@
       const t = q.value.toLowerCase().trim();
       if (sect === "tables") {
         body.innerHTML = DC.reference.map((r) => `<section class="card"><h3>${esc(r.title)}</h3>${r.sections.filter((x) => !t || JSON.stringify(x).toLowerCase().includes(t)).map((x) => x.kind === "table" ? `${x.title ? `<h4>${md(x.title)}</h4>` : ""}${UI.table(x.rows)}` : `${x.title ? `<h4>${md(x.title)}</h4>` : ""}${x.lines.map((l) => `<p>${md(l)}</p>`).join("")}`).join("")}</section>`).join("");
+        if (!t) body.insertAdjacentHTML("afterbegin", `<details class="card poster"><summary>🖼 Everything on one poster: articles, pronouns, possessives, prepositions</summary><img src="assets/grammar_reference.png" alt="Grammar overview: articles, negation, personal and possessive pronouns in all cases, prepositions with accusative and dative" loading="lazy"><p class="muted small">Tap and hold (or right-click) to save it. The translations on the poster are in Spanish.</p></details>`);
       } else if (sect === "notes") {
         body.innerHTML = Object.entries(DC.notes).filter(([k, v]) => !t || (k + v).toLowerCase().includes(t)).map(([k, v]) => `<details class="card"><summary>${esc(k.replace(/_/g, " "))}</summary><pre>${esc(v)}</pre></details>`).join("");
       } else {
@@ -190,6 +191,44 @@
   };
 
   /* ---------------- Einstellungen ---------------- */
+  /* lab edition: long self-test, progress import and a plain-text diagnostics report */
+  function bindLab(el) {
+    const imp = el.querySelector(".lab-import");
+    if (imp) imp.onclick = () => { if (!confirm("Replace the lab's progress with a copy of your daily app's progress?")) return; if (Store.importStable()) { H.toast("Progress copied from the daily app."); V.settings(el); } };
+    const lt = el.querySelector(".lab-test");
+    if (lt) lt.onclick = async () => {
+      const out = el.querySelector(".lab-tres"); lt.disabled = true;
+      try { const r = await LLM.selfTest(LLM.current(), (i, n) => (out.textContent = `Testing ${i + 1}/${n}…`), ["A1", "A2", "B1"]);
+        const by = (lv) => { const x = r.rows.filter((y) => y.level === lv); return Math.round(x.reduce((a, y) => a + y.score, 0) / x.length); };
+        out.innerHTML = `<b>${r.score}/100</b> · A1 ${by("A1")} · A2 ${by("A2")} · B1 ${by("B1")} · ${r.tps} tokens/s – now press “Diagnostics report”.`;
+      } catch (e) { out.textContent = "✗ " + e.message; }
+      lt.disabled = false;
+    };
+    const ta = el.querySelector(".lab-out"), acts = el.querySelector(".lab-acts");
+    el.querySelector(".lab-diag").onclick = async () => { ta.hidden = false; acts.hidden = false; ta.value = "Collecting…"; ta.value = await diagnostics(); };
+    el.querySelector(".lab-copy").onclick = async () => { try { await navigator.clipboard.writeText(ta.value); H.toast("Copied – paste it into the chat with Claude."); } catch (e) { ta.select(); document.execCommand("copy"); H.toast("Copied."); } };
+    el.querySelector(".lab-save").onclick = () => { const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([ta.value], { type: "text/plain" })); a.download = `deutsch-coach-lab-report-${new Date().toISOString().slice(0, 10)}.txt`; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000); };
+  }
+  async function diagnostics() {
+    const st = Store.get().settings, L = [];
+    const line = (k, v) => L.push(`${k}: ${typeof v === "object" ? JSON.stringify(v) : v}`);
+    L.push("=== Deutsch Coach LAB – diagnostics ===");
+    line("app", `${App.version} (${window.EDITION})`); line("time", new Date().toString());
+    line("browser", navigator.userAgent); line("memory GB", navigator.deviceMemory || "?"); line("cores", navigator.hardwareConcurrency || "?");
+    line("screen", `${screen.width}x${screen.height} @${devicePixelRatio}`);
+    try { const e = await navigator.storage.estimate(); line("storage", `${Math.round(e.usage / 1048576)} MB used of ${Math.round(e.quota / 1048576)} MB`); } catch (e) {}
+    line("gpu", await LLM.gpuInfo());
+    L.push(""); L.push("--- AI ---");
+    line("provider", st.aiProvider); line("partner mode", st.partnerMode || "(default)");
+    line("model", LLM.current().key); try { const b = await LLM._build(LLM.current()); line("build", b.id); } catch (e) {}
+    line("supported", LLM.supported()); line("fits", await LLM.fits().catch(() => "?")); line("downloaded", LLM.downloaded());
+    line("source", await LLM.source().catch(() => "?")); line("loaded now", LLM.isLoaded()); line("load secs", LLM.loadSecs);
+    line("last answer", LLM.lastStats); line("tests", st.llmTest || {});
+    if (LLM.lastTest) { L.push(""); L.push(`--- last self-test (${LLM.lastTest.model}) ---`); LLM.lastTest.rows.forEach((r) => L.push(`[${r.level || "A2"}] ${r.score} | ${r.secs || "?"}s | issues ${r.issues}${r.german ? "" : " | NOT ONLY GERMAN"}\n  > ${r.user}\n  < ${r.reply}`)); }
+    L.push(""); L.push("--- errors ---"); (LLM.log.length ? LLM.log : [{ msg: "none" }]).forEach((x) => L.push(`${x.t || ""} ${x.where || ""} ${x.msg}`));
+    L.push(""); L.push("--- speech ---"); line("asr setting", st.asr); line("whisper supported", ASR.supported()); line("whisper downloaded", ASR.downloaded()); line("active", ASR.active());
+    return L.join("\n");
+  }
   V.settings = (el) => {
     const s = Store.get(); const st = s.settings;
     const voices = Speech.voices();
@@ -226,6 +265,18 @@
           <div class="row"><button class="btn sm ai-test">Test connection</button><span class="muted small ai-status">${AI.hasKey() ? `This month: ${AI.usage().calls} requests · about $${AI.usage().usd.toFixed(AI.usage().usd < 1 ? 3 : 2)}` : "No key yet."}</span></div>
           <details><summary>What the tutor has learnt about you (${(s.aiNotes || []).length} notes)</summary>${(s.aiNotes || []).length ? `<ul class="small">${s.aiNotes.map((n) => `<li>${H.esc(n)}</li>`).join("")}</ul><button class="btn ghost sm ai-forget">Forget these notes</button>` : `<p class="muted small">After your first conversation with the speaking partner, the tutor keeps a few short notes (recurring mistakes, interests) so later lessons fit you better. They stay on this device.</p>`}</details>`}
       </section>
+      <section class="card form"><h3>🗣 ${H.bi("Sprechpartner", "Speaking partner")}</h3>
+        <label>Mode <select data-k="partnerMode">${[["guided", "Guided – real questions, Max corrects you, works on every device (recommended)"], ["ai", "Free talk with the AI – needs the AI tutor above"]].map(([v, t]) => `<option value="${v}" ${(st.partnerMode || (window.EDITION === "lab" ? "ai" : "guided")) === v ? "selected" : ""}>${t}</option>`).join("")}</select></label>
+        <p class="muted small">If the AI can't start or stops answering, the partner continues in guided mode.</p>
+      </section>
+      ${window.EDITION === "lab" ? `<section class="card form labset"><h3>🧪 Lab edition</h3>
+        <p class="muted small">This is the test version. It has its own progress (your daily app isn't touched), the newest AI models, a longer German test and a diagnostics report you can send back.</p>
+        ${Store.hasStable() ? `<div class="row"><button class="btn ghost sm lab-import">Copy my progress from the daily app</button></div>` : ""}
+        ${LLM.supported() && LLM.downloaded() ? `<div class="row"><button class="btn sm lab-test">🧪 Long test: A1 · A2 · B1 (18 answers)</button><span class="muted small lab-tres"></span></div>` : ""}
+        <div class="row"><button class="btn sm lab-diag">📋 Diagnostics report</button></div>
+        <textarea class="lab-out" rows="8" readonly hidden aria-label="Diagnostics report"></textarea>
+        <div class="row lab-acts" hidden><button class="btn ghost sm lab-copy">Copy</button><button class="btn ghost sm lab-save">Download .txt</button></div>
+      </section>` : ""}
       <section class="card form"><h3>🎙 ${H.bi("Spracherkennung", "Speech recognition")}</h3>
         <p class="muted small"><b>Offline (Whisper)</b> runs on this device: it downloads once (about ${ASR.SIZE_MB} MB), then works without internet, sends no audio anywhere and understands learners better. <b>Browser</b> uses the browser's built-in recognition (Chrome sends audio to Google). ${window.AndroidBridge ? "In the Android app, the phone's own recognition is used." : ""}</p>
         <label>Use <select data-k="asr">${[["auto", "Automatic – offline once downloaded (recommended)"], ["whisper", "Always offline (Whisper)"], ["browser", "Always the browser's recognition"]].map(([v, t]) => `<option value="${v}" ${(st.asr || "auto") === v ? "selected" : ""}>${t}</option>`).join("")}</select></label>
@@ -290,6 +341,7 @@
       } catch (err) { out.textContent = "✗ " + err.message; }
       ltest.disabled = false;
     };
+    if (window.EDITION === "lab") bindLab(el);
     const ldl = el.querySelector(".llm-dl");
     if (ldl) ldl.onclick = async () => {
       const pr = el.querySelector(".llm-prog"); ldl.disabled = true; ldl.textContent = LLM.downloaded() ? "Starting…" : "Downloading…";

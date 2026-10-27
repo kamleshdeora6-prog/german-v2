@@ -2,6 +2,19 @@
 
 All dates are the release dates of the app version shown in Settings → About.
 
+## 6.8.0 — 26 October 2026
+- Library hub (`js/views11.js`, route `library`): flashcards (`cards`), exercises by level/type (`exercises`), conjugation tables + drill (`verbs`), sentence translation (`sentences`), picture description (`pictures`), links to notes, passages, vocabulary, tables, LiD. Header link on desktop, tiles on Practice and More.
+- Data: legacy `flashcards.json` (grammar/article/verb cards → `DC.cards`) and `sentences.json` (→ `DC.sentences`) are now built by `tools/build_data.py`; `js/data/pictures.js` uses the photos in `assets/` (APK now includes `assets/`). Three wrong legacy verb cards corrected.
+- Reading list shows all levels (B2/C1 passages were hidden). Grammar → Tables shows `assets/grammar_reference.png`.
+- Max: no false alarm for an infinitive before a finite verb at the end ("Bevor ich schlafen gehe"); 202 sentences and the picture models added to the false-alarm corpus.
+
+## 6.7.0 — 26 October 2026
+- Guided partner mode (`js/data/dialogues.js`, 12 hand-written scenarios × 6 steps with English and example answers; "lesson" scenario built from `l.speak` and exam model answers). No model needed; English detection, Max corrections, summary via `AI.localSummary`.
+- `settings.partnerMode` ("guided" | "ai"), toggle on the partner page and in Settings; AI load failure or two failed turns → guided mode (stable).
+- Editions: `js/edition.js` (`window.EDITION`); `tools/make_editions.py` builds stable and lab folders. Lab: Gemma 4, warm-up, `deutschcoach.lab.*` storage keys, import of stable progress, 18-answer A1/A2/B1 self-test, diagnostics report (GPU adapter, limits, load time, tokens/s, error ring buffer, ASR).
+- Service worker: `PREFIX`-based cache names; `activate` deletes only its own edition's old caches, so stable and lab on the same github.io origin don't wipe each other.
+- Max: "Seit wann …?" / "Bis morgen" are not subordinate clauses (dialogue lines added to the false-alarm corpus).
+
 ## 6.6.0 — 26 October 2026
 - On-device models: Gemma 4 E2B (f16/f32 WebGPU libraries vendored, `model_manifest` and 192 MB buffer requirement passed through; `LLM.fits()` checks `maxStorageBufferBindingSize`); per-device recommendation.
 - `LLM.chat` streams (`stream: true`, usage stats → tokens/s); never sends `extra_body.enable_thinking` (WebLLM would inject Qwen `<think>` tags into any model's prompt).

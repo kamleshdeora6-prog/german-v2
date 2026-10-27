@@ -1,7 +1,14 @@
 # Deutsch Coach
 
 **Learn German from A1 to C2 — free, offline, and every answer explained.**
-Created by **Zombieland** · version 6.6.0 · last updated 26 October 2026
+Created by **Zombieland** · version 6.8.0 · last updated 26 October 2026
+
+**Two editions.** This repo is the **stable** app for daily use. `python3 tools/make_editions.py dist` also builds
+the **Lab** edition (`dist/german-v2-lab`) for testing new AI features – separate progress, newest models, a long
+German test and a diagnostics report. See `LAB_README.md`.
+
+**Speaking partner.** *Guided* mode works on every device and offline with nothing to download; *Free talk*
+uses the on-device AI (Settings → AI tutor) and falls back to guided mode if the AI fails.
 
 **Open the app:** https://kamleshdeora6-prog.github.io/german-v2/
 

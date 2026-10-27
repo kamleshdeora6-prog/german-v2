@@ -8,7 +8,7 @@ BUILD="$ROOT/build/apk"
 rm -rf "$BUILD"; mkdir -p "$BUILD"
 cp -r "$ROOT/android/AndroidManifest.xml" "$ROOT/android/apktool.yml" "$ROOT/android/res" "$ROOT/android/smali" "$BUILD/"
 mkdir -p "$BUILD/assets/www"
-cp -r "$ROOT/index.html" "$ROOT/css" "$ROOT/js" "$ROOT/icons" "$ROOT/manifest.webmanifest" "$BUILD/assets/www/"
+cp -r "$ROOT/index.html" "$ROOT/css" "$ROOT/js" "$ROOT/icons" "$ROOT/assets" "$ROOT/manifest.webmanifest" "$BUILD/assets/www/"
 rm -f "$BUILD/assets/www/sw.js"          # no service worker inside the APK
 java -jar "$TOOLS/apktool.jar" b "$BUILD" -o "$ROOT/build/deutsch-coach-unsigned.apk"
 # Signing: set KEYSTORE, KS_ALIAS, KS_PASS (and optionally KEY_PASS) to sign with YOUR release key.

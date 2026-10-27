@@ -1,8 +1,9 @@
 /* Deutsch Coach – core services: progress store, spaced repetition, grading, speech. */
 (function () {
   "use strict";
-  const KEY = "deutschcoach.v2";                 // storage of the first profile (keeps old progress)
-  const PKEY = "deutschcoach.profiles";          // { active, list: [{ id, name, color, created }] }
+  const LAB = window.EDITION === "lab";          // the lab edition keeps its own, separate progress
+  const KEY = LAB ? "deutschcoach.lab.v2" : "deutschcoach.v2";                 // storage of the first profile (keeps old progress)
+  const PKEY = LAB ? "deutschcoach.lab.profiles" : "deutschcoach.profiles";    // { active, list: [{ id, name, color, created }] }
   const COLORS = ["#E3A400", "#1D8F4E", "#2465B4", "#7C3F98", "#C2571A", "#0F7B8A", "#8A1C3F", "#5B6770"];
   let profiles = null;
   function loadProfiles() {
@@ -28,7 +29,7 @@
   function load() {
     try {
       const pid = (profiles || loadProfiles()).active;
-      const raw = localStorage.getItem(keyOf(pid)) || (pid === "p1" ? localStorage.getItem("germanCoachProgress") : null);
+      const raw = localStorage.getItem(keyOf(pid)) || (pid === "p1" && !LAB ? localStorage.getItem("germanCoachProgress") : null);
       const d = DEFAULTS();
       state = raw ? deepMerge(d, JSON.parse(raw)) : d;
     } catch (e) { state = DEFAULTS(); }
@@ -102,6 +103,16 @@
       ok ? t.r++ : t.w++;
       t.recent = (t.recent || []).concat(ok ? 1 : 0).slice(-12);
       save();
+    },
+    /* lab only: copy the stable app's progress (same site) into the lab – the stable app is not touched */
+    hasStable() { try { return LAB && !!localStorage.getItem("deutschcoach.v2"); } catch (e) { return false; } },
+    importStable() {
+      if (!LAB) return false;
+      const raw = localStorage.getItem("deutschcoach.v2"); if (!raw) return false;
+      const keep = state && state.settings ? { aiProvider: state.settings.aiProvider, llmModel: state.settings.llmModel, llmReady: state.settings.llmReady, llmTest: state.settings.llmTest, partnerMode: state.settings.partnerMode } : {};
+      const d = deepMerge(DEFAULTS(), JSON.parse(raw)); d.settings.aiKey = ""; Object.keys(keep).forEach((k) => keep[k] !== undefined && (d.settings[k] = keep[k]));
+      try { const sp = JSON.parse(localStorage.getItem("deutschcoach.profiles") || "null"); const p1 = sp && sp.list && sp.list.find((x) => x.id === "p1"); const me = profiles.list.find((x) => x.id === profiles.active); if (p1 && p1.name && me && !me.name) { me.name = p1.name; writeProfiles(); } } catch (e) {}
+      state = d; flush(); listeners.forEach((f) => { try { f(state); } catch (e) {} }); return true;
     },
     mistake(m) { const s = Store.get(); s.mistakes.unshift(Object.assign({ t: Date.now() }, m)); s.mistakes = s.mistakes.slice(0, 120); save(); },
     lesson(n) { const s = Store.get(); return (s.lessons[n] = s.lessons[n] || { read: false, score: 0, done: false, tasks: {}, exam: {} }); },

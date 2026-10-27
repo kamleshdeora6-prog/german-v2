@@ -345,3 +345,9 @@ js("bank", out)
 js("lid", L("lid"))
 print("lessons", len(cur), "vocab", len(v2), "verbs", len(verbs), "conj", len(conj), "passages", len(ps), "bank", len(out),
       collections.Counter(x["type"] for x in out).most_common(8))
+
+# the first app's "Flashcards" and "Sentences" sections: grammar/article/verb cards and EN→DE sentences
+fc = L("flashcards")["flashcards"]
+CARDFIX = {"hat auf gewartet": "hat gewartet (auf + Akk.)", "hat teilgenommen an": "hat teilgenommen (an + Dat.)", "dachte an": "dachte (an + Akk.)"}
+js("cards", [{"type": c["type"], "level": c["level"], "front": c["front"], "back": CARDFIX.get(c["back"], c["back"])} for c in fc if c["type"] in ("grammar", "article_or_case", "verb")])
+js("sentences", {lv.upper(): [{"en": s["en"], "de": s["de"]} for s in v] for lv, v in L("sentences").items()})

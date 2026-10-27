@@ -1,9 +1,9 @@
 /* Deutsch Coach – app shell: router, navigation, theme, install */
 (function () {
   "use strict";
-  const ROUTES = { home: "home", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more", readexam: "readexam", write: "write", notes: "notes", translate: "translate", about: "about", placement: "placement", pronounce: "pronounce", news: "news", plan: "plan", daily: "daily", weak: "weak", refresh: "refresh", resources: "resources", starter: "starter", partner: "partner" };
-  const TAB_OF = { home: "home", path: "path", lesson: "path", practice: "practice", vocab: "practice", listen: "practice", speak: "practice", pronounce: "practice", tutor: "tutor", daily: "home", plan: "more", weak: "practice", refresh: "path", starter: "path", partner: "practice" };
-  const App = (window.App = { version: "6.6.0", updated: "26 October 2026", author: "Zombieland", pendingAsk: null });
+  const ROUTES = { home: "home", library: "library", cards: "cards", exercises: "exercises", verbs: "verbs", sentences: "sentences", pictures: "pictures", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more", readexam: "readexam", write: "write", notes: "notes", translate: "translate", about: "about", placement: "placement", pronounce: "pronounce", news: "news", plan: "plan", daily: "daily", weak: "weak", refresh: "refresh", resources: "resources", starter: "starter", partner: "partner" };
+  const TAB_OF = { library: "practice", cards: "practice", exercises: "practice", verbs: "practice", sentences: "practice", pictures: "practice", home: "home", path: "path", lesson: "path", practice: "practice", vocab: "practice", listen: "practice", speak: "practice", pronounce: "practice", tutor: "tutor", daily: "home", plan: "more", weak: "practice", refresh: "path", starter: "path", partner: "practice" };
+  const App = (window.App = { version: "6.8.0", updated: "26 October 2026", author: "Zombieland", pendingAsk: null });
   /* Where problem reports go. Put an email address here to offer email as well. */
   App.contact = { github: "https://github.com/kamleshdeora6-prog/german-v2", email: "" };
   App.report = (ctx) => {
@@ -120,7 +120,7 @@
   };
   /* Screens that hold your place (a session you are in the middle of) are kept alive in the
      background instead of being rebuilt, so leaving to ask Max and coming back resumes where you were. */
-  const KEEP = /^(practice|lesson|write|readexam|placement|vocab|listen|speak|exam|weak|refresh)/;
+  const KEEP = /^(cards|exercises|sentences|practice|lesson|write|readexam|placement|vocab|listen|speak|exam|weak|refresh)/;
   const cache = new Map();          // route key -> detached element
   const MAX_KEEP = 6;
   App.lastRoute = null;
@@ -189,7 +189,7 @@
       if (step === 1) d.innerHTML = `<div class="sheet ob" role="dialog" aria-labelledby="ob-t">${dots}<div class="ob-hero">🇩🇪</div><h2 id="ob-t">Willkommen! <span class="muted small">Welcome!</span></h2>
         <p>German from A1 to C2 in short daily steps. Every answer tells you <b>why</b>.</p>
         <label class="namebox">What should we call you? <input class="obname" maxlength="30" autocomplete="given-name" placeholder="Your name" value="${H.esc(Store.name())}"></label>
-        <button class="btn sign big-btn ob-next">Weiter · Next</button></div>`;
+        <button class="btn sign big-btn ob-next">Weiter · Next</button>${Store.hasStable() ? `<button class="btn ghost ob-import">🧪 Lab: copy my progress from the daily app</button>` : ""}</div>`;
       if (step === 2) d.innerHTML = `<div class="sheet ob" role="dialog" aria-labelledby="ob-t">${dots}<h2 id="ob-t">How much a day?</h2>
         <p class="muted">Small and daily beats big and rare. You can change this any time.</p>
         <div class="col goalpick">${[[20, "Locker", "Casual", "5 min"], [50, "Normal", "Regular", "10 min"], [100, "Ernsthaft", "Serious", "20 min"], [150, "Intensiv", "Intense", "30 min"]].map(([g, t, te, m]) => `<button class="pickrow ${g === goal ? "on" : ""}" data-goal="${g}"><b>${t} <span class="muted small">· ${te}</span></b><span>${m} a day</span></button>`).join("")}</div>
@@ -202,6 +202,8 @@
       const nm = d.querySelector(".obname"); if (nm) { setTimeout(() => nm.focus(), 50); nm.onkeydown = (e) => { if (e.key === "Enter") d.querySelector(".ob-next").click(); }; }
       d.querySelectorAll("[data-goal]").forEach((b) => (b.onclick = () => { goal = +b.dataset.goal; d.querySelectorAll("[data-goal]").forEach((x) => x.classList.toggle("on", x === b)); }));
       d.querySelectorAll("[data-tone]").forEach((b) => (b.onclick = () => { tone = b.dataset.tone; d.querySelectorAll("[data-tone]").forEach((x) => x.classList.toggle("on", x === b)); }));
+      const im = d.querySelector(".ob-import");
+      if (im) im.onclick = () => { if (Store.importStable()) { const s = Store.get(); s.settings.onboarded = true; Store.save(); d.remove(); App.applyTheme(); App.renderChip(); H.toast("Progress copied from the daily app."); App.go("home"); } };
       const nx = d.querySelector(".ob-next");
       if (nx) nx.onclick = () => {
         if (step === 1) { const v = nm.value.trim(); if (!v) { H.toast("Please type your name first."); nm.focus(); return; } Store.setName(v); App.renderChip(); }
