@@ -1,9 +1,9 @@
 /* Deutsch Coach – app shell: router, navigation, theme, install */
 (function () {
   "use strict";
-  const ROUTES = { home: "home", library: "library", revise: "revise", telc: "telc", notebook: "notebook", audio: "audio", dictation: "dictation", story: "story", decline: "decline", watch: "watch", cards: "cards", exercises: "exercises", verbs: "verbs", sentences: "sentences", pictures: "pictures", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more", readexam: "readexam", write: "write", notes: "notes", translate: "translate", about: "about", placement: "placement", pronounce: "pronounce", news: "news", plan: "plan", daily: "daily", weak: "weak", refresh: "refresh", resources: "resources", starter: "starter", partner: "partner" };
-  const TAB_OF = { telc: "practice", notebook: "practice", audio: "more", dictation: "practice", story: "practice", decline: "practice", watch: "practice", revise: "practice", library: "practice", cards: "practice", exercises: "practice", verbs: "practice", sentences: "practice", pictures: "practice", home: "home", path: "path", lesson: "path", practice: "practice", vocab: "practice", listen: "practice", speak: "practice", pronounce: "practice", tutor: "tutor", daily: "home", plan: "more", weak: "practice", refresh: "path", starter: "path", partner: "practice" };
-  const App = (window.App = { version: "7.1.1", updated: "27 October 2026", author: "Zombieland", pendingAsk: null });
+  const ROUTES = { home: "home", library: "library", revise: "revise", today: "today", mistakes: "mistakes", telc: "telc", notebook: "notebook", audio: "audio", dictation: "dictation", story: "story", decline: "decline", watch: "watch", cards: "cards", exercises: "exercises", verbs: "verbs", sentences: "sentences", pictures: "pictures", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more", readexam: "readexam", write: "write", notes: "notes", translate: "translate", about: "about", placement: "placement", pronounce: "pronounce", news: "news", plan: "plan", daily: "daily", weak: "weak", refresh: "refresh", resources: "resources", starter: "starter", partner: "partner" };
+  const TAB_OF = { today: "home", mistakes: "practice", telc: "practice", notebook: "practice", audio: "more", dictation: "practice", story: "practice", decline: "practice", watch: "practice", revise: "practice", library: "practice", cards: "practice", exercises: "practice", verbs: "practice", sentences: "practice", pictures: "practice", home: "home", path: "path", lesson: "path", practice: "practice", vocab: "practice", listen: "practice", speak: "practice", pronounce: "practice", tutor: "tutor", daily: "home", plan: "more", weak: "practice", refresh: "path", starter: "path", partner: "practice" };
+  const App = (window.App = { version: "7.2.0", updated: "29 October 2026", author: "Zombieland", pendingAsk: null });
   /* Where problem reports go. Put an email address here to offer email as well. */
   App.contact = { github: "https://github.com/kamleshdeora6-prog/german-v2", email: "" };
   App.report = (ctx) => {
@@ -131,6 +131,7 @@
     const host = document.getElementById("view");
     const key = raw;
     Speech.stop();
+    document.querySelectorAll(".celebrate").forEach((x) => x.remove());   // a celebration belongs to the screen it was shown on
     if (KEEP.test(name) && !/^(home|more)$/.test(name)) { const s = Store.get(); s.resume = { route: key, at: Date.now() }; Store.save(); }
     App.lastRoute = key;
     // park the current screen if it is worth keeping
@@ -148,7 +149,7 @@
     host.appendChild(view);
     const run = () => {
       try { Views[name](view, parts.slice(1)); }
-      catch (e) { console.error(e); view.innerHTML = `<div class="empty"><p>This screen hit an error: ${H.esc(e.message)}</p><button class="btn" data-go="home">Go home</button></div>`; }
+      catch (e) { console.error(e); if (window.ErrLog) ErrLog.add(e, { where: "screen " + name }); view.innerHTML = `<div class="empty"><p>This screen hit an error: ${H.esc(e.message)}</p><div class="row center"><button class="btn" data-go="home">Go home</button><button class="btn ghost" data-go="settings/problems">Send a report</button></div><p class="muted small">Tip: a full reload (Ctrl + Shift + R) fixes most problems right after an update.</p></div>`; }
       App.afterRoute(name);
     };
     const need = (NEED[name] || []).filter((d) => !DC[d]);

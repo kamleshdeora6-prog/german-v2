@@ -41,8 +41,10 @@
       <ul class="fb-list">${checks.map(([ok, l, tip]) => `<li class="${ok ? "y" : "n"}"><span>${ok ? "✓" : "✗"}</span><div><b>${esc(l)}</b><br><span class="muted">${esc(tip)}</span></div></li>`).join("")}</ul>
       ${fixes.length ? `<h4>Corrections</h4>${fixes.map((x) => `<p class="fb-you">${esc(x.s)} ${UI.star({ type: "sentence", de: x.r.fixed, en: "", src: "Writing" })}</p><p class="ex ok">→ ${esc(x.r.fixed)} ${UI.say(x.r.fixed)}</p><ul class="nots">${x.r.issues.map((i) => `<li>${i.rule}<br><span class="muted">${i.why}</span></li>`).join("")}</ul>`).join("")}` : ""}
       ${task.model ? `<details class="fb-model" ${score < 45 ? "open" : ""}><summary>📝 Model answer</summary><div class="ex">${nl2p(task.model)}</div>${UI.say(task.model)}</details>` : ""}</div>`;
-    return { score, html };
+    return { score, html, fixes };
   };
+  /* corrections from a checked text go to the mistake engine */
+  const logFixes = (fixes, cat = "write") => (fixes || []).forEach((x) => Store.mistake({ cat, prompt: `Correct this sentence:<br><i>${esc(x.s)}</i>`, answer: x.r.fixed, given: x.s, why: x.r.issues.map((i) => i.why).join(" ") }));
 
   /* ---------------- results, readiness ---------------- */
   const skillOf = { lesen: "Lesen", sprachbausteine: "Sprachbausteine", hoeren: "Hören", schreiben: "Schreiben", sprechen: "Sprechen" };
@@ -120,7 +122,7 @@
         let left = +a.dataset.left; if (left <= 0) return;
         if (Speech.isPlaying(a.dataset.lines)) { Speech.stop(); b.textContent = "▶ Play"; return; }
         const lines = JSON.parse(a.dataset.lines);
-        Speech.play(lines.map((x) => x[1]), { key: a.dataset.lines, pitches: lines.map((x) => PITCH[x[0]] || 1), locked: left < 90 });
+        Speech.play(lines.map((x) => x[1]), { key: a.dataset.lines, pitches: lines.map((x) => PITCH[x[0]] || 1), voices: lines.map((x) => ({ A: "m", B: "f", C: "f2", N: "n" }[x[0]] || "m")), locked: left < 90 });
         left--; a.dataset.left = left; if (left < 90) n.textContent = left ? `(${left}× left)` : "(heard)";
         b.textContent = "■ Stop";
         const off = Speech.onChange(() => { if (!Speech.isPlaying(a.dataset.lines)) { b.textContent = left > 0 ? "▶ Play again" : "✓ Heard"; b.disabled = left <= 0; } });
@@ -175,7 +177,7 @@
       const chk = sec.querySelector(".wchk");
       if (chk) chk.onclick = () => {
         if (!ta.value.trim()) return H.toast("Write your text first.");
-        const r = V.writeCheck(ta.value, p); sec.querySelector(".wfb").innerHTML = r.html;
+        const r = V.writeCheck(ta.value, p); sec.querySelector(".wfb").innerHTML = r.html; logFixes(r.fixes);
         Writings.add(task, `${t.title} · ${p.title}`, ta.value, r.score);
         sec.querySelector(".whost").innerHTML = UI.writeHistory(task); UI.bindWriteHistory(sec, task, ta);
         savePart(t, pk, Math.round((p.points * r.score) / 100 * 10) / 10, p.points);
@@ -192,7 +194,7 @@
       const r = scorePart(sec, t, pk, true);
       sec.querySelector(".pscore").innerHTML = `<p class="big"><b class="${r.pct >= 60 ? "good" : "low"}">${r.p} / ${r.max} points (${r.pct}%)</b> ${r.pct >= 60 ? "– pass level ✓" : "– 60% is the pass mark"}</p>${r.pct < 80 ? suggest(p) : ""}`;
       const tr = sec.querySelector(".transcript"); if (tr) tr.hidden = false;
-      savePart(t, pk, r.p, r.max); Store.addXP(Math.round(r.pct / 10));
+      savePart(t, pk, r.p, r.max); logWrong(sec, t, pk); Store.addXP(Math.round(r.pct / 10));
       if (window.Habit) Habit.track(p.skill === "hoeren" ? "listen" : p.skill === "lesen" ? "read" : p.skill === "sprechen" ? "speak" : "drill");
     };
   }
@@ -219,6 +221,30 @@
     return { p: pts, max: p.points, pct: n ? Math.round((right / n) * 100) : 0, right, n };
   }
 
+  /* every answered-but-wrong item of a part becomes a practice item in "My mistakes" */
+  function logWrong(sec, t, pk) {
+    const p = t.parts[pk], cat = "telc:" + p.skill, head = `<span class="muted small">${esc(t.title)} · ${esc(p.title)}</span><br>`;
+    const said = (a) => (a || []).map(([sp, tx]) => `${sp === "N" ? "📢" : sp}: ${tx}`).join(" ");
+    const add = (m) => Store.mistake(Object.assign({ cat }, m));
+    if (p.type === "match") p.items.forEach((it) => { const v = sec.querySelector(`.mi[data-n="${it.n}"] select`).value; if (!v || v === it.a || ((p.alsoOk || {})[it.n] || []).includes(v)) return;
+      const lab = (k) => (k === "x" ? "x) no match" : `${k}) ${(p.options.find((o) => o.k === k) || {}).t || ""}`);
+      add({ prompt: head + esc(it.t), options: p.options.map((o) => lab(o.k)).concat(p.allowX ? [lab("x")] : []), answer: lab(it.a), given: lab(v) }); });
+    if (p.type === "mc" || p.type === "rf") p.items.forEach((it) => { const c = sec.querySelector(`[data-n="${it.n}"] input:checked`); if (!c) return;
+      const want = p.type === "mc" ? String(it.a) : it.a ? "1" : "0"; if (c.value === want) return;
+      const audio = it.audio || p.audio, why = audio ? "What was said: " + esc(said(audio)).slice(0, 900) : "";
+      if (p.type === "mc") add({ prompt: head + (it.t ? esc(it.t) + "<br>" : "") + esc(it.q), options: it.o.slice(), answer: it.o[it.a], given: it.o[+c.value], why });
+      else add({ prompt: head + (it.t ? `<span class="tsign">${esc(it.t)}</span><br>` : "") + esc(it.s), options: ["richtig", "falsch"], answer: it.a ? "richtig" : "falsch", given: c.value === "1" ? "richtig" : "falsch", why }); });
+    if (p.type === "gapmc" || p.type === "gapbank") sec.querySelectorAll(".gap-s").forEach((s) => {
+      const num = +s.dataset.n; if (!s.value) return;
+      const want = p.type === "gapmc" ? String(p.items.find((x) => x.n === num).a) : p.answers[num];
+      if (s.value === want || ((p.alsoOk || {})[num] || []).includes(s.value)) return;
+      const sent = (p.text.split(/(?<=[.!?:])\s+|\n+/).find((x) => x.includes(`[${num}]`)) || "").replace(`[${num}]`, "_____").replace(/\[\d+\]/g, "…");
+      const word = (v) => (p.type === "gapmc" ? p.items.find((x) => x.n === num).o[+v] : (p.words.find((w) => w.k === v) || {}).w);
+      const opts = p.type === "gapmc" ? p.items.find((x) => x.n === num).o.slice() : [word(want), word(s.value)].concat(H.shuffle(p.words.map((w) => w.w).filter((w) => w !== word(want) && w !== word(s.value))).slice(0, 2));
+      add({ prompt: head + esc(sent), options: opts, answer: word(want), given: word(s.value), why: (p.why || {})[num] || "" }); });
+    if (p.type === "form") p.fields.forEach((f, i) => { const v = sec.querySelector(`input[data-i="${i}"]`).value.trim(); if (v && !f.a.some((x) => x.toLowerCase() === v.toLowerCase())) add({ prompt: head + esc(p.instruction) + "<br><b>" + esc(f.label) + "</b>", answer: f.a[0], given: v }); });
+    if (p.type === "write") { const ta = sec.querySelector(".wtext"); if (ta && ta.value.trim()) logFixes(V.writeCheck(ta.value, p).fixes); }
+  }
   function practicePart(el, t, pk) {
     if (!t.parts[pk]) return App.go("telc/" + t.id);
     const keys = t.blocks.flatMap((b) => b.parts), i = keys.indexOf(pk);
@@ -252,7 +278,7 @@
     };
     const handin = () => {
       clearInterval(timer); Speech.stop();
-      t.blocks[bi].parts.forEach((pk) => { const sec = el.querySelector(`.tpart[data-pk="${pk}"]`); const r = scorePart(sec, t, pk, false); scores[pk] = { p: r.p, max: r.max }; savePart(t, pk, r.p, r.max); });
+      t.blocks[bi].parts.forEach((pk) => { const sec = el.querySelector(`.tpart[data-pk="${pk}"]`); const r = scorePart(sec, t, pk, false); scores[pk] = { p: r.p, max: r.max }; savePart(t, pk, r.p, r.max); logWrong(sec, t, pk); });
       bi++;
       if (bi < t.blocks.length) return block();
       finish();
@@ -408,7 +434,7 @@
     const say = (cls, html) => { const d = document.createElement("div"); d.className = "msg " + cls; d.innerHTML = html; chat.appendChild(d); d.scrollIntoView({ block: "end", behavior: "smooth" }); };
     const step = () => {
       if (k >= steps.length) { box.innerHTML = `<div class="q is-ok"><p class="verdict">✓ ${right}/${steps.length} at the first try</p><div class="row"><button class="btn sign" data-go="story/${id}">Again</button><button class="btn ghost" data-go="partner/${id}/guided">Now talk freely (guided partner)</button></div></div>`; Store.addXP(10); return; }
-      const s = steps[k]; say("assistant", `<p lang="de">${esc(s.de)} ${UI.say(s.de)} ${UI.hint(s.de)}</p>`); Speech.speak(s.de);
+      const s = steps[k]; say("assistant", `<p lang="de">${esc(s.de)} ${UI.say(s.de)} ${UI.hint(s.de)}</p>`); Speech.speak(s.de, null, "f");
       const good = H.pick(s.ideas || ["Ja."]); const opts = H.shuffle([good].concat(H.shuffle(others).slice(0, 2)));
       let first = true;
       box.innerHTML = `<p class="muted small">What do you answer?</p><div class="choices col">${opts.map((o) => `<button class="choice" data-v="${esc(o)}">${esc(o)}</button>`).join("")}</div>`;

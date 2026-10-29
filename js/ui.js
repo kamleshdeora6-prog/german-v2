@@ -183,7 +183,7 @@
       cnt.textContent = `${i + 1} / ${total}`; bar.style.width = (i / total) * 100 + "%";
       const it = nextItem(i);
       if (!it) { body.innerHTML = UI.empty("No questions available for this selection."); return; }
-      UI.item(body, it, { onDone: (ok) => { if (ok) right++; bar.style.width = ((i + 1) / total) * 100 + "%"; }, onOverride: () => right++, onNext: () => { i++; step(); } });
+      UI.item(body, it, { onDone: (ok) => { if (it.onResult) try { it.onResult(ok); } catch (e) {} if (ok) right++; bar.style.width = ((i + 1) / total) * 100 + "%"; }, onOverride: () => right++, onNext: () => { i++; step(); } });
     }
     step();
     return wrap;

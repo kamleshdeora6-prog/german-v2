@@ -6,9 +6,28 @@
 
   let VOCAB = null;
   const baseVocab = () => (VOCAB = VOCAB || DC.vocab.map((w) => Object.assign({ id: "v:" + w.de.toLowerCase() }, w)));
-  V.vocabList = () => { const nb = window.Notebook ? Notebook.cards() : []; return nb.length ? baseVocab().concat(nb) : baseVocab(); };
+  /* whole sentences as flashcards ("s:" ids): from lessons and from sentences saved in the notebook */
+  const sentCards = () => Object.entries(Store.get().scards || {}).map(([id, c]) => ({ id, de: c.de, en: c.en || "", art: "", pl: "", level: c.level || "", topic: "Sentences", exDe: "", sentence: true, lesson: c.lesson }));
+  V.addSentenceCard = (de, en = "", extra = {}) => {
+    const s = Store.get(); s.scards = s.scards || {};
+    let h = 0x811c9dc5; for (let i = 0; i < de.length; i++) { h ^= de.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; }
+    const id = "s:" + h.toString(16);
+    if (s.scards[id]) return false;
+    s.scards[id] = Object.assign({ de, en }, extra); SRS.grade(id, 1); s.srs[id].due = Date.now(); Store.save(); return true;
+  };
+  V.vocabList = () => { const nb = window.Notebook ? Notebook.cards() : [], sc = sentCards(); return nb.length || sc.length ? baseVocab().concat(nb, sc) : baseVocab(); };
+  /* a gap sentence from the word's example: "Ich ____ jeden Tag." – the word in context */
+  V.clozeOf = (w) => {
+    if (!w || !w.exDe || w.sentence) return null;
+    const bare = w.de.replace(/^(der|die|das|sich)\s+/i, "").split(/[\s,(/]/)[0];
+    const stem = bare.toLowerCase().slice(0, Math.max(3, Math.min(bare.length - 2, 6)));
+    const toks = w.exDe.split(/(\s+)/); const k = toks.findIndex((t) => /\S/.test(t) && t.toLowerCase().replace(/[^a-zäöüß]/g, "").startsWith(stem));
+    if (k < 0) return null;
+    const word = toks[k].replace(/[.,!?;:]+$/, ""), tail = toks[k].slice(word.length);
+    return { html: toks.map((t, i) => (i === k ? `<span class="gap">_____</span>${H.esc(tail)}` : H.esc(t))).join(""), word };
+  };
   V.dueCount = () => SRS.due(V.vocabIds()).length;
-  V.vocabIds = () => Object.keys(Store.get().srs).filter((k) => k.startsWith("v:") || k.startsWith("nb:"));   // only the cards you have (fast: no scan of the 4,000-word list)
+  V.vocabIds = () => Object.keys(Store.get().srs).filter((k) => k.startsWith("v:") || k.startsWith("nb:") || k.startsWith("s:"));   // only the cards you have (fast: no scan of the 4,000-word list)
 
   /* ---------------- Üben ---------------- */
   function smartPick() {
@@ -29,11 +48,7 @@
     if (id) {
       if (id === "smart") return UI.session(el, () => Engine.generate(smartPick()), { title: "Smart mix", total: 10 });
       if (id === "ai") return V.aiPractice(el);
-      if (id === "mistakes") {
-        const ms = Store.get().mistakes.filter((m) => m.gen && Engine.GEN[m.gen]);
-        if (!ms.length) return (el.innerHTML = UI.empty("No mistakes saved yet.", `<button class="btn" data-go="practice">Back</button>`));
-        return UI.session(el, (i) => Engine.generate(ms[i % ms.length].gen), { title: "Fix your mistakes", total: Math.min(10, ms.length * 2) });
-      }
+      if (id === "mistakes") return App.go("mistakes");   // the mistake engine (js/mistakes.js)
       if (id === "bank") {
         const bank = H.shuffle(DC.bank);
         return UI.session(el, (i) => {
@@ -49,17 +64,19 @@
     }
     const s = Store.get();
     const groups = ["A1", "A2", "B1", "B2", "C1", "C2"].map((lv) => ({ lv, gens: Object.values(Engine.GEN).filter((g) => g.level === lv) }));
-    el.innerHTML = `<h2 class="page-title">Practice</h2>
+    const T = s.todaySession && s.todaySession.date === Store.today() ? s.todaySession : null;
+    const tLeft = T ? T.steps.filter((x) => !x.done).length : null;
+    const openM = window.Mistakes ? Mistakes.open().length : (s.mistakes || []).length;
+    el.innerHTML = `<h2 class="page-title">${H.bi("Üben", "Practice")}</h2>
       <section class="grid2">
-        <button class="tile hero" data-go="practice/smart"><b>Smart mix</b><span>Focuses on your weak topics</span></button><button class="tile" data-go="starter"><b>🐣 ${H.bi("Erste Schritte", "First steps")}</b><span>Picture flashcards for beginners</span></button><button class="tile" data-go="partner"><b>🗣 ${H.bi("Sprechpartner", "Speaking partner")}</b><span>${window.AI && AI.local() ? (window.LLM && LLM.supported() ? "AI on this device · free" : "Needs Chrome/Edge with WebGPU") : AI.hasKey() ? "Talk with Claude at your level" : "AI · needs your Claude key"}</span></button><button class="tile" data-go="practice/ai"><b>✨ ${H.bi("Aus meinen Fehlern", "From my mistakes")}</b><span>${window.AI && AI.canJudge() ? "New exercises made for you" : "From your saved mistakes"}</span></button>
-        <button class="tile" data-go="practice/mistakes"><b>My mistakes</b><span>${s.mistakes.length} saved</span></button>
-        <button class="tile" data-go="vocab"><b>Words</b><span>${SRS.due(V.vocabIds()).length} due today</span></button>
-        <button class="tile" data-go="practice/bank"><b>Question bank</b><span>${DC.bank.length} classic items</span></button>
+        <button class="tile hero" data-go="today"><b>▶ ${H.bi("Heute", "Today's session")}</b><span>${T ? (tLeft ? `${tLeft} step${tLeft > 1 ? "s" : ""} left` : "Done today ✓ – add 10 minutes") : "Cards · lesson · drill · listening · mistakes"}</span></button>
+        <button class="tile" data-go="mistakes"><b>🩹 ${H.bi("Meine Fehler", "My mistakes")}</b><span>${openM} to fix</span></button>
+        <button class="tile" data-go="vocab"><b>🃏 ${H.bi("Karteikarten", "Flashcards")}</b><span>${SRS.due(V.vocabIds()).length} due today</span></button>
         <button class="tile" data-go="telc"><b>🎓 ${H.bi("Modelltests", "Mock exams")}</b><span>telc / Goethe format · timed</span></button>
-        <button class="tile" data-go="dictation"><b>✍️ ${H.bi("Diktat", "Dictation")}</b><span>Hear it, write it</span></button>
-        <button class="tile" data-go="story"><b>📖 ${H.bi("Geschichten", "Stories")}</b><span>Choose what to say</span></button>
+        <button class="tile" data-go="partner"><b>🗣 ${H.bi("Sprechpartner", "Speaking partner")}</b><span>Talk at your level</span></button>
+        <button class="tile" data-go="practice/smart"><b>🎲 Smart mix</b><span>10 drills on your weak topics</span></button>
         <button class="tile" data-go="revise"><b>📘 ${H.bi("Grammatik wiederholen", "Grammar revision")}</b><span>Every topic: rule, examples, mistakes</span></button>
-        <button class="tile" data-go="library"><b>📚 ${H.bi("Bibliothek", "Library")}</b><span>Flashcards, notes, exercises, texts, verbs, sentences, pictures</span></button>
+        <button class="tile" data-go="library"><b>📚 ${H.bi("Bibliothek", "Library")}</b><span>Dictation, stories, texts, verbs, pictures, question bank …</span></button>
       </section>
       <p class="muted small">Every drill opens with its <b>📘 rules & tips</b> – read them, then hide them. Want to revise without practising? <button class="link" data-go="revise">Grammar revision</button></p>
       ${groups.map((g) => `<section class="card"><h3>${UI.levelDot(g.lv)} Grammar drills</h3><div class="topics">${g.gens.map((x) => {
@@ -91,7 +108,7 @@
     const list = el.querySelector(".wordlist"), q = el.querySelector(".search"), lv = el.querySelector(".lvsel");
     const draw = () => {
       const t = q.value.toLowerCase().trim();
-      const rows = all.filter((w) => (lv.value === "all" || w.level === lv.value) && (!t || w.de.toLowerCase().includes(t) || (w.en || "").toLowerCase().includes(t))).slice(0, 150);
+      const rows = all.filter((w) => !w.sentence && (lv.value === "all" || w.level === lv.value) && (!t || w.de.toLowerCase().includes(t) || (w.en || "").toLowerCase().includes(t))).slice(0, 150);
       list.innerHTML = rows.map((w) => { const c = s.srs[w.id]; return `<li><span class="${w.art ? "g-" + { der: "m", die: "f", das: "n" }[w.art] : ""}">${esc(w.de)}</span>${w.pl ? `<small> ${esc(w.pl)}</small>` : ""} ${UI.say(w.de)}<span class="en">${esc(w.en)}</span>${c ? `<i class="box b${c.box}" title="box ${c.box}"></i>` : ""}</li>`; }).join("") || "<li class='muted'>No words match.</li>";
     };
     q.oninput = draw; lv.onchange = draw; draw();
@@ -108,10 +125,14 @@
     const byId = Object.fromEntries(V.vocabList().map((w) => [w.id, w]));
     let q = reviewQueue(); let i = 0;
     const draw = () => {
-      if (i >= q.length) { el.innerHTML = UI.empty(`Done! ${q.length} cards reviewed.`, `<div class="row center"><button class="btn sign" data-go="vocab/review">Another round</button><button class="btn ghost" data-go="daily">Practice day</button><button class="btn ghost" data-go="vocab">Back to words</button></div>`); return; }
-      const w = byId[q[i]]; const isNew = !SRS.card(w.id);
-      el.innerHTML = `<div class="session"><div class="sess-head"><span class="sess-title">${isNew ? "New word" : "Review"}</span><span>${i + 1}/${q.length}</span></div><div class="bar"><i style="width:${(i / q.length) * 100}%"></i></div>
-        <button class="flash" aria-label="Show answer"><span class="front">${esc(w.en)}</span><span class="back" hidden><b class="${w.art ? "g-" + { der: "m", die: "f", das: "n" }[w.art] : ""}">${esc(w.de)}</b>${w.pl ? `<small>Pl. ${esc(w.pl)}</small>` : ""}${w.exDe ? `<i>${esc(w.exDe)}</i>` : ""}</span></button>
+      if (i >= q.length) { el.innerHTML = UI.empty(`Done! ${q.length} cards reviewed.`, `<div class="row center"><button class="btn sign" data-go="vocab/review">Another round</button><button class="btn ghost" data-go="today">Back to Today</button><button class="btn ghost" data-go="vocab">Back to words</button></div>`); return; }
+      const w = byId[q[i]]; if (!w) { i++; return draw(); } const isNew = !SRS.card(w.id) || !(SRS.card(w.id).reps > 1);
+      // known words sometimes come as a gap sentence; sentence cards show the English (or a gap) and ask for the German sentence
+      const cz = !w.sentence && !isNew && Math.random() < 0.5 ? V.clozeOf(w) : null;
+      const sz = w.sentence && !w.en ? (() => { const toks = w.de.split(" "); const k = toks.reduce((b, t, j) => (t.replace(/[^A-Za-zäöüÄÖÜß]/g, "").length > toks[b].replace(/[^A-Za-zäöüÄÖÜß]/g, "").length ? j : b), 0); return toks.map((t, j) => (j === k ? '<span class="gap">_____</span>' : esc(t))).join(" "); })() : null;
+      const front = cz ? `<span class="cloze">${cz.html}</span><small class="muted">${esc(w.en)}</small>` : w.sentence ? (sz ? `<span class="cloze">${sz}</span>` : `<span class="cloze">${esc(w.en)}</span><small class="muted">Say it in German</small>`) : esc(w.en);
+      el.innerHTML = `<div class="session"><div class="sess-head"><span class="sess-title">${w.sentence ? "Sentence" : isNew ? "New word" : cz ? "Word in context" : "Review"}</span><span>${i + 1}/${q.length}</span></div><div class="bar"><i style="width:${(i / q.length) * 100}%"></i></div>
+        <button class="flash" aria-label="Show answer"><span class="front">${front}</span><span class="back" hidden><b class="${w.art ? "g-" + { der: "m", die: "f", das: "n" }[w.art] : ""}">${esc(w.de)}</b>${w.pl ? `<small>Pl. ${esc(w.pl)}</small>` : ""}${w.exDe ? `<i>${esc(w.exDe)}</i>` : ""}</span></button>
         <div class="row center grades" hidden><button class="btn bad" data-g="0">Again</button><button class="btn ghost" data-g="1">Hard</button><button class="btn" data-g="2">Good</button><button class="btn ghost" data-g="3">Easy</button></div>
         <p class="muted small center">Think of the German word (with article), then tap the card.</p></div>`;
       const card = el.querySelector(".flash");

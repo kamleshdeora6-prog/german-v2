@@ -2,3 +2,5 @@ build/
 tools/jars/
 .DS_Store
 ios/www/
+tests/browser/out/
+node_modules/

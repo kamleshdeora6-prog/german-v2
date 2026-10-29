@@ -231,13 +231,29 @@
     L.push(""); L.push("--- speech ---"); line("asr setting", st.asr); line("whisper supported", ASR.supported()); line("whisper downloaded", ASR.downloaded()); line("active", ASR.active());
     return L.join("\n");
   }
-  V.settings = (el) => {
+  /* the crash log (js/errlog.js): what went wrong on this device, ready to send */
+  function problems(el) {
+    const xs = window.ErrLog ? ErrLog.list().slice().reverse() : [];
+    el.innerHTML = `<button class="back" data-go="settings">‹ Settings</button><h2 class="page-title">🧯 Problem log</h2>
+      <p class="muted">When something breaks, the app notes it here – only on this device. Send it to the developer with one tap.</p>
+      ${xs.length ? `<ul class="plog">${xs.map((x) => `<li><b>${H.esc(x.msg)}</b>${x.n > 1 ? ` <span class="muted">×${x.n}</span>` : ""}<br><span class="muted small">${new Date(x.t).toLocaleString()} · ${H.esc(x.route || "")} ${H.esc(x.where || "")} · v${H.esc(x.v)}</span></li>`).join("")}</ul>
+        <div class="row"><button class="btn sign pl-send">📤 Send report</button><button class="btn ghost pl-copy">Copy</button><button class="btn ghost pl-gh">Open a GitHub issue</button><button class="btn ghost pl-clear">Clear</button></div>` : UI.empty("No problems recorded. 🎉")}`;
+    if (!xs.length) return;
+    const text = ErrLog.report();
+    el.querySelector(".pl-send").onclick = () => UI.shareText(text, "Deutsch Coach problem report");
+    el.querySelector(".pl-copy").onclick = async () => { try { await navigator.clipboard.writeText(text); H.toast("Copied."); } catch (e) { H.toast("Couldn't copy – use Send report."); } };
+    el.querySelector(".pl-gh").onclick = () => App.openLink(`${App.contact.github}/issues/new?title=${encodeURIComponent("Problem report " + App.version)}&body=${encodeURIComponent("```\n" + text.slice(0, 6000) + "\n```")}`);
+    el.querySelector(".pl-clear").onclick = () => { ErrLog.clear(); problems(el); };
+  }
+  V.settings = (el, [sect] = []) => {
+    if (sect === "problems") return problems(el);
     const s = Store.get(); const st = s.settings;
     const voices = Speech.voices();
     el.innerHTML = `<h2 class="page-title">Settings</h2>
       <section class="card form">
         <label>Daily goal <select data-k="goal" data-num="1"><option value="20">Locker – 20 XP (~5 min)</option><option value="50">Normal – 50 XP (~10 min)</option><option value="100">Ernsthaft – 100 XP (~20 min)</option><option value="150">Intensiv – 150 XP (~30 min)</option></select></label>
         <label>Speaking speed <input data-k="rate" type="range" min="0.5" max="1.3" step="0.05"> <button class="btn ghost sm test">Test voice</button></label>
+        <label>Voice for texts and exams <select data-k="natural">${[["auto", `Natural recordings when available${window.Natural && Natural.count() ? ` (${Natural.count()} sentences)` : ""}, otherwise the device voice`], ["off", "Always the device voice"]].map(([v, t]) => `<option value="${v}" ${(st.natural || "auto") === v ? "selected" : ""}>${t}</option>`).join("")}</select></label>
         ${voices.length ? `<label>German voice <select data-k="voice"><option value="">Automatic</option>${voices.map((v) => `<option>${esc(v.name)}</option>`).join("")}</select></label>` : `<p class="muted small">${window.AndroidBridge ? "Using the phone's text-to-speech engine." : "No German voice found. Install one in your system's speech settings."}</p>`}
         <label class="chk"><input data-k="showEn" type="checkbox"> Show English translations</label>
         <label class="chk"><input data-k="unlockAll" type="checkbox"> Open all lessons (skip the order)</label>
@@ -309,7 +325,7 @@
         <p>Created by <b>${App.author}</b></p>
         <p>Last updated: ${App.updated}</p>
         <p class="muted small">© ${new Date().getFullYear()} ${App.author}. All rights reserved.</p>
-        <div class="row"><button class="btn ghost sm" data-go="about">About & privacy</button><button class="btn ghost sm" data-report='{"part":"General feedback"}'>⚑ Report a problem</button></div></section>`;
+        <div class="row"><button class="btn ghost sm" data-go="about">About & privacy</button><button class="btn ghost sm" data-report='{"part":"General feedback"}'>⚑ Report a problem</button><button class="btn ghost sm" data-go="settings/problems">🧯 Problem log (${window.ErrLog ? ErrLog.list().length : 0})</button></div></section>`;
     const pn = el.querySelector(".pn");
     pn.onchange = () => { if (!pn.value.trim()) { pn.value = Store.name(); return; } Store.setName(pn.value); App.renderChip(); H.toast("Name saved."); };
     el.querySelectorAll(".psw").forEach((b) => (b.onclick = () => { Store.switchTo(b.dataset.id); App.afterSwitch(); }));

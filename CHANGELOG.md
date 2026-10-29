@@ -2,6 +2,15 @@
 
 All dates are the release dates of the app version shown in Settings → About.
 
+## 7.2.0 — 29 October 2026
+- Today session (`js/today.js`, route `today`): plan from the daily goal (cards, lesson part, drill, listening, mistakes, speaking, exam part), state in `s.todaySession`, inline steps, "Back to Today" bar for lesson/exam steps, +10 minutes. Home button and Practice page start it; the Practice page is reduced to 8 tiles.
+- Mistake engine (`js/mistakes.js`, route `mistakes`): `Store.mistake` adds id/type/dedupe (count ×n), up to 300; types from generator, lesson, exam skill (`telc:*`), writing/corrections; practice items are fresh generator items or the original question (choice/input); fixed after 2 correct in a row. Logged from drills, lesson tasks, partner, mock exams (`logWrong`), writing checks (`logFixes`) and `FB.open` corrections. `UI.session` calls `item.onResult(ok)`.
+- FSRS-5 (`js/fsrs.js`): `SRS.grade` uses it; Leitner cards migrate on first review; maturity = stability ≥ 21 d. Sentence cards (`s:` ids, `s.scards`, `V.addSentenceCard`) from lessons and notebook sentences; gap-sentence variant (`V.clozeOf`) for known words.
+- Natural voices (`js/voice.js`, `tools/make_audio.py`, `tools/audio_texts.js`): Piper recordings per sentence in `audio/<voice>/<fnv1a>.mp3` + `audio/index.json`; `Speech.play(list, { voices })` splits lines into sentences and plays recordings when present (rate via `playbackRate`), TTS otherwise; setting `natural` (auto/off); speakers A/B/C/N → m/f/f2/n. `pages.yml` records missing sentences on deploy with an actions cache (45-minute budget per run); SW caches recordings cache-first.
+- Crash log (`js/errlog.js`): window errors, unhandled rejections and screen errors in `deutschcoach.errors` (30), Settings → Problem log with share / GitHub issue.
+- Tests in the repo: `tests/browser/*.js` (14 files) + `tests/browser/run-all.js` (own static servers, editions build); CI runs them (`tests.yml`). New `tests/browser/today.js` (25 checks).
+- Fixes: `[hidden]` now always hides (flashcard backs were visible before tapping); celebrations are removed on navigation and never cover Today.
+
 ## 7.1.1 — 27 October 2026
 - Fix: after a deploy the browser's HTTP cache could serve the old `app.js` (without the lazy-data router) with the new `index.html` → `DC.lid` undefined on Prüfung/Bibliothek. Scripts and lazy data now load with `?v=<version>`; the service worker revalidates (`cache: "no-cache"`); views tolerate missing lazy data.
 

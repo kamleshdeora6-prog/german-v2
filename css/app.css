@@ -1,3 +1,4 @@
+[hidden] { display: none !important; }   /* the hidden attribute always wins over display rules (flashcard backs, folded panels) */
 /* Deutsch Coach – visual system
    Ink slate + signal yellow. Level colours: A1 green, A2 blue, B1 purple, B2 orange, C1 teal, C2 wine.
    Grammatical gender colours are functional: der blue, die red, das green. */
@@ -781,3 +782,17 @@ button, a, .tile, .choice, select, label { touch-action: manipulation; }
 .skillbars .meter { width: 100% !important; left: auto; right: auto; bottom: auto; }
 .resbig .fb-score { color: #fff; }
 .mi select { max-width: 9.5em; }
+
+/* ---------- 7.2 ---------- */
+.today .t-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.t-steps { list-style: none; padding: 0; margin: 10px 0 14px; display: flex; flex-wrap: wrap; gap: 6px; }
+.t-steps li { padding: 4px 10px; border-radius: 99px; border: 1px solid var(--line); font-size: .85rem; opacity: .75; }
+.t-steps li.now { border-color: var(--sign); opacity: 1; font-weight: 700; } .t-steps li.done { opacity: .5; text-decoration: line-through; }
+.t-cont { margin: 8px 0 14px; } .t-end { text-align: center; }
+.todaybar { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(var(--nav-h, 64px) + 14px + env(safe-area-inset-bottom)); z-index: 60; border: 0; border-radius: 99px; padding: 10px 18px; background: var(--ink); color: var(--paper); font: inherit; font-weight: 700; box-shadow: 0 6px 20px rgba(0,0,0,.25); cursor: pointer; }
+@media (min-width: 900px) { .todaybar { bottom: 22px; } }
+.mgroups { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 8px; }
+.mgroups > li { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; } .mgroups > li > div { flex: 1; }
+.mlist { margin: 6px 0 0; padding-left: 18px; } .mlist li { margin: 3px 0; }
+.flash .cloze { font-size: 1.25rem; font-weight: 600; line-height: 1.5; } .flash .cloze .gap { display: inline-block; min-width: 3.5em; border-bottom: 3px solid var(--sign); }
+.plog { list-style: none; padding: 0; display: grid; gap: 8px; } .plog li { padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; word-break: break-word; }

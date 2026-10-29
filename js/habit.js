@@ -189,7 +189,7 @@
       // never interrupt a question: wait for the end-of-round screen
       if ((document.querySelector(".session .sess-body .q") || document.querySelector(".st-sess")) && !document.querySelector(".summary")) { queue.push([title, sub]); return; }   // also First steps rounds
       // working on a list of exercises or an answer (lesson practice, exam, writing): never block the screen – a banner instead
-      if (document.querySelector("#view .q-in, #view textarea, #view .tasks, #view .tpart, #view .audiop, #view .story, #view .flash")) { tone([523, 659, 784], 0.1); H.toast(`🎉 ${title}${sub ? " · " + sub : ""}`, "good"); return; }
+      if (document.querySelector("#view .q-in, #view textarea, #view .tasks, #view .tpart, #view .audiop, #view .story, #view .flash, #view .today")) { tone([523, 659, 784], 0.1); H.toast(`🎉 ${title}${sub ? " · " + sub : ""}`, "good"); return; }
       document.querySelectorAll(".celebrate").forEach((x) => x.remove());
       const d = document.createElement("div"); d.className = "celebrate"; d.setAttribute("role", "status");
       d.innerHTML = `<div class="cel-card"><div class="cel-burst">🎉</div><h2>${H.esc(title)}</h2>${sub ? `<p>${H.esc(sub)}</p>` : ""}<button class="btn sign">Continue</button></div>`;

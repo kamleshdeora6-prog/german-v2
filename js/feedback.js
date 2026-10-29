@@ -207,6 +207,7 @@
     const verdict = score >= 85 ? ["Sehr gut!", "Very good!"] : score >= 65 ? ["Gut!", "Good!"] : score >= 45 ? ["Okay – noch besser:", "Okay – to make it better:"] : ["Weiter üben", "Keep working on it"];
 
     const fixes = res.filter((x) => x.r.issues.length);
+    if (ctx.log !== false && window.Mistakes) fixes.forEach((x) => Store.mistake({ cat: "correction", prompt: `Correct this sentence:<br><i>${esc(x.s)}</i>`, answer: x.r.fixed, given: x.s, why: x.r.issues.map((i) => i.why).join(" ") }));
     const model = ctx.model ? `<details class="fb-model" ${score < 45 ? "open" : ""}><summary>📝 Model answer</summary><p class="ex">${esc(ctx.model)} ${UI.say(ctx.model)}</p><p class="muted small">One possible answer – yours can be different and still right.</p></details>` : "";
     const useful = !ctx.model && l.examples ? (() => { const kw = words(prompt).map(low).filter((x) => x.length > 4); const ex = l.examples.map((e) => ({ e, s: words(e.de).map(low).filter((x) => kw.includes(x)).length })).sort((a, b) => b.s - a.s).slice(0, 3); return `<details class="fb-model"><summary>💬 Sentences from this lesson you could use</summary>${ex.map(({ e }) => `<p class="ex">${esc(e.de)} ${UI.say(e.de)}<br><span class="muted">${esc(e.en)}</span></p>`).join("")}</details>`; })() : "";
     return {

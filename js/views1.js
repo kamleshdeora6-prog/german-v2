@@ -43,7 +43,10 @@
           <p class="muted small">${pct >= 100 ? "Tagesziel erreicht ✓ (daily goal reached)" : sv.today ? `${goal - todayXP} XP to today's goal` : sv.atRisk ? "Learn today to keep your streak" : sv.willFreeze ? "A freeze will cover the missed day" : "Start your streak today"}</p>
         </div>
       </div>
-      <button class="btn sign big-btn go-next" data-go="${nx.go}"><span>${pct >= 100 ? "Keep going" : sv.today ? "Continue" : "Start"}: ${esc(nx.label)}</span><small>${esc(nx.sub)} · ~${nx.min} min</small></button>
+      ${(() => { const T = s.todaySession && s.todaySession.date === Store.today() ? s.todaySession : null; const left = T ? T.steps.filter((x) => !x.done) : null;
+        if (/^starter/.test(nx.go)) return `<button class="btn sign big-btn go-next" data-go="${nx.go}"><span>${pct >= 100 ? "Keep going" : sv.today ? "Continue" : "Start"}: ${esc(nx.label)}</span><small>${esc(nx.sub)} · ~${nx.min} min</small></button>`;   // complete beginners: First steps first
+        return T && !left.length ? `<button class="btn sign big-btn go-next" data-go="today/more"><span>✓ Today done – 10 more minutes?</span><small>${esc(nx.label)}</small></button>`
+          : `<button class="btn sign big-btn go-next" data-go="today"><span>${T ? "Continue today's session" : "▶ Start today's session"}</span><small>${T ? `${left.length} step${left.length > 1 ? "s" : ""} left · ~${left.reduce((a, x) => a + x.mins, 0)} min` : "Cards · lesson · drill · listening · mistakes"}</small></button>`; })()}
     </section>
     <section class="week" aria-label="This week">${Habit.week().map((d) => `<div class="wd ${d.xp >= goal ? "met" : d.xp ? "some" : ""} ${d.frozen ? "frz" : ""} ${d.today ? "today" : ""} ${d.future ? "fut" : ""}"><span>${d.n}</span><i>${d.frozen ? "❄" : d.xp >= goal ? "✓" : d.xp ? "•" : ""}</i></div>`).join("")}</section>
     <section class="card quests"><h3>${H.bi("Tagesquests", "Daily quests · new at midnight")}</h3>
@@ -71,7 +74,7 @@
     ${(() => { const r = s.resume; return r && Date.now() - r.at < 3 * 864e5 && r.route !== "home" && r.route !== nx.go
         ? `<section class="card slim"><p>↩︎ <b>Continue where you left off</b> <span class="muted small">${esc(r.route)}</span></p><button class="btn ghost sm" data-go="${esc(r.route)}">Continue</button></section>` : ""; })()}
     ${s.plan ? (() => { const pl = s.plan, left = Math.max(0, Math.round((pl.deadline - Date.now()) / 864e5));
-        return `<section class="card slim lvl-${pl.level}"><p>🎯 <b>${pl.level} in ${left} days</b> · ${pl.minutes} min a day</p><button class="btn ghost sm" data-go="daily">Today's plan</button></section>`; })()
+        return `<section class="card slim lvl-${pl.level}"><p>🎯 <b>${pl.level} in ${left} days</b> · ${pl.minutes} min a day</p><button class="btn ghost sm" data-go="today">Today's session</button></section>`; })()
       : `<section class="card slim"><p>🎯 <b>${s.placement ? "Give your level a date." : "Not sure of your level?"}</b></p><button class="btn ghost sm" data-go="${s.placement ? "plan" : "placement"}">${s.placement ? "Make a plan" : "Placement test"}</button></section>`}
     ${!s.settings.reminder ? `<section class="card slim"><p>⏰ <b>Pick a learning time.</b> <span class="muted small">People who fix a time keep going much longer.</span></p><button class="btn ghost sm" data-go="settings">Set reminder</button></section>` : ""}
     ${(() => { const month = 30 * 864e5, last = s.lastBackup || 0, snooze = s.backupSnooze || 0;
@@ -158,13 +161,14 @@
         <ol class="exs">${l.examples.map((e) => `<li><span class="de">${UI.colorArticles(e.de)}</span> ${UI.say(e.de)}<br><span class="en">${esc(e.en)}</span></li>`).join("")}</ol></section>
       <section class="card"><h3>Vocabulary</h3>
         <ul class="vocab">${l.vocab.map((w) => `<li><span class="${H.genderClass(w.de)}">${esc(w.de)}</span> ${UI.say(w.de.split(",")[0])}<span class="en">${esc(w.en)}</span><button class="chip ext" data-url="https://www.linguee.com/german-english/search?query=${encodeURIComponent(w.de.replace(/^(der|die|das)\s+/, "").split(",")[0])}">Linguee ↗</button></li>`).join("")}</ul>
-        <button class="btn sm addcards">Add these words to my review deck</button></section>
+        <button class="btn sm addcards">Add these words and example sentences to my flashcards</button></section>
       <div class="row center"><button class="btn sign big-btn nextpart" data-go="lesson/${l.n}/read">Got it – next: read the text</button></div>`;
     el.querySelector(".nextpart").addEventListener("click", () => window.Habit && Habit.markPart(l.n, "learn"));
     el.querySelector(".playall").onclick = () => { const key = "L" + l.n + "-all"; if (Speech.isPlaying(key)) return Speech.stop(); Speech.play(l.examples.map((e) => e.de), { key }); };
     el.querySelector(".addcards").onclick = () => {
-      let c = 0; V.vocabList().filter((w) => w.lesson === l.n).forEach((w) => { if (!SRS.card(w.id)) { SRS.grade(w.id, 1); Store.get().srs[w.id].due = Date.now(); c++; } });
-      Store.save(); H.toast(c ? `${c} words added – review them under Words.` : "Already in your deck.");
+      let c = 0, k = 0; V.vocabList().filter((w) => w.lesson === l.n).forEach((w) => { if (!SRS.card(w.id)) { SRS.grade(w.id, 1); Store.get().srs[w.id].due = Date.now(); c++; } });
+      l.examples.slice(0, 8).forEach((e) => { if (V.addSentenceCard && V.addSentenceCard(e.de, e.en, { lesson: l.n, level: l.level })) k++; });
+      Store.save(); H.toast(c || k ? `${c} words and ${k} sentences added – they come back in your flashcards.` : "Already in your flashcards.");
     };
   }
 
@@ -189,7 +193,7 @@
     }
     if (l.dialog) {
       const who = [...new Set(l.dialog.map((d) => d.who))];
-      const play = (rate) => Speech.play(l.dialog.map((d) => d.de), { rate, key: "dlg" + l.n, pitches: l.dialog.map((d) => [1, 1.35, 0.8][who.indexOf(d.who) % 3]) });
+      const play = (rate) => Speech.play(l.dialog.map((d) => d.de), { rate, key: "dlg" + l.n, pitches: l.dialog.map((d) => [1, 1.35, 0.8][who.indexOf(d.who) % 3]), voices: l.dialog.map((d) => ["m", "f", "f2"][who.indexOf(d.who) % 3]) });
       el.querySelector(".dplay").onclick = () => play();
       el.querySelector(".dslow").onclick = () => play(0.7);
       el.querySelector(".dshow").onclick = (e) => { el.querySelector(".dlg").classList.toggle("blur"); e.target.textContent = el.querySelector(".dlg").classList.contains("blur") ? "Show transcript" : "Hide transcript"; };

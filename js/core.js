@@ -129,14 +129,16 @@
     card(id) { return Store.get().srs[id]; },
     due(ids) { const now = Date.now(); return ids.filter((id) => { const c = Store.get().srs[id]; return c && c.due <= now; }); },
     fresh(ids) { return ids.filter((id) => !Store.get().srs[id]); },
-    grade(id, g) { // g: 0 again, 1 hard, 2 good, 3 easy
-      const s = Store.get(); const c = s.srs[id] || { box: 0, due: 0, seen: 0, lapses: 0 };
+    grade(id, g) { // g: 0 again, 1 hard, 2 good, 3 easy – scheduled with FSRS (js/fsrs.js) when it is loaded
+      const s = Store.get();
+      if (window.FSRS) { const c = FSRS.review(s.srs[id], g); s.srs[id] = c; save(); return c; }
+      const c = s.srs[id] || { box: 0, due: 0, seen: 0, lapses: 0 };
       c.seen++;
       if (g === 0) { c.box = Math.max(1, c.box - 2); c.lapses++; c.due = Date.now() + 10 * 60e3; }
       else { c.box = Math.min(INTERVAL_D.length - 1, c.box + (g === 3 ? 2 : g === 2 ? 1 : 0) || 1); c.due = Date.now() + INTERVAL_D[c.box] * 864e5 * (g === 1 ? 0.6 : 1) + (c.box === 1 ? 0 : 0); if (c.box === 1 && g !== 3) c.due = Date.now() + 864e5 * (g === 1 ? 0.5 : 1); }
       s.srs[id] = c; save(); return c;
     },
-    stats(ids) { const s = Store.get(); let learned = 0, mature = 0; ids.forEach((id) => { const c = s.srs[id]; if (c) { learned++; if (c.box >= 5) mature++; } }); return { learned, mature, due: SRS.due(ids).length }; },
+    stats(ids) { const s = Store.get(); let learned = 0, mature = 0; ids.forEach((id) => { const c = s.srs[id]; if (c) { learned++; if (window.FSRS ? FSRS.mature(c) : c.box >= 5) mature++; } }); return { learned, mature, due: SRS.due(ids).length }; },
   };
 
   // ---------- grading ----------
@@ -208,9 +210,19 @@
   const P = { list: [], i: 0, state: "idle", rate: null, gen: 0, key: "", started: 0, timer: null };
   const subs = new Set();
   const emit = () => subs.forEach((f) => { try { f(Speech.status()); } catch (e) {} });
-  function sayOne(text, rate, done, pitch) {
+  function sayOne(text, rate, done, pitch, voice) {
     const g = P.gen;
     const end = () => { if (g === P.gen) done(); };
+    // a natural recording of this sentence (audio/, made with Piper) – otherwise the device voice below
+    const url = window.Natural && Natural.url(text, voice);
+    if (url) {
+      const a = new Audio(url); P.audio = a;
+      a.playbackRate = Math.max(0.5, Math.min(1.6, (rate || 0.9) / 0.9)); a.preservesPitch = true;
+      a.onended = end;
+      a.onerror = () => { if (P.audio === a) { P.audio = null; Natural.miss && Natural.miss(url); sayOne(text, rate, done, pitch, "__tts"); } };
+      a.play().catch(() => { if (P.audio === a && g === P.gen) { P.audio = null; sayOne(text, rate, done, pitch, "__tts"); } });
+      return;
+    }
     if (bridge() && bridge().speak) {
       try { bridge().stop && bridge().stop(); bridge().speak(text, rate); } catch (e) {}
       // iOS reports the real end (window.__ttsDone); Android doesn't, so estimate it (about 14 characters a second at rate 1)
@@ -235,19 +247,23 @@
     P.gen++; clearTimeout(P.timer);
     if (P.i >= P.list.length) { P.state = "idle"; P.gen++; emit(); return; }
     P.state = "playing"; P.started = Date.now(); emit();
-    sayOne(P.list[P.i], P.rate || Store.get().settings.rate || 0.9, () => { P.i++; playCurrent(); }, P.pitches && P.pitches[P.i]);
+    sayOne(P.list[P.i], P.rate || Store.get().settings.rate || 0.9, () => { P.i++; playCurrent(); }, P.pitches && P.pitches[P.i], P.voices && P.voices[P.i]);
   }
-  function hardStop() { P.gen++; clearTimeout(P.timer); if (bridge() && bridge().stop) try { bridge().stop(); } catch (e) {} if (window.speechSynthesis) speechSynthesis.cancel(); }
+  function hardStop() { P.gen++; clearTimeout(P.timer); if (P.audio) { try { P.audio.pause(); } catch (e) {} P.audio = null; } if (bridge() && bridge().stop) try { bridge().stop(); } catch (e) {} if (window.speechSynthesis) speechSynthesis.cancel(); }
   const Speech = {
     canSpeak: () => !!(bridge() && bridge().speak) || !!window.speechSynthesis,
     canListen: () => !!(bridge() && bridge().listen) || !!(window.SpeechRecognition || window.webkitSpeechRecognition) || !!(window.ASR && ASR.supported()),
     voices: () => loadVoices(),
     split: splitSentences,
     /* speak(text) – a text of any length; play(list) – a list of sentences (e.g. "Play all") */
-    speak(text, rate) { Speech.play(splitSentences(text), { rate, key: String(text) }); },
-    play(list, { rate, key, start = 0, locked = false, pitches = null } = {}) {
+    speak(text, rate, voice) { const l = splitSentences(text); Speech.play(l, { rate, key: String(text), voices: voice ? l.map(() => voice) : null }); },
+    play(list, { rate, key, start = 0, locked = false, pitches = null, voices = null } = {}) {
       hardStop();
-      P.list = (list || []).map(String).filter((x) => x.trim()); P.i = Math.max(0, Math.min(start, P.list.length - 1)); P.rate = rate || null; P.key = key || P.list.join(" "); P.locked = !!locked; P.pitches = pitches;
+      // one sentence per item (recordings exist per sentence); each sentence keeps its line's voice and pitch
+      const L = [], PI = [], VO = [];
+      const per = window.Natural && Natural.count() > 0;   // recordings exist per sentence – otherwise keep the lines as they are
+      (list || []).map(String).forEach((x, i) => (per ? splitSentences(x) : [x.trim()].filter(Boolean)).forEach((sn) => { L.push(sn); PI.push(pitches ? pitches[i] : undefined); VO.push(voices ? voices[i] : undefined); }));
+      P.list = L; P.i = Math.max(0, Math.min(start, P.list.length - 1)); P.rate = rate || null; P.key = key || (list || []).join(" "); P.locked = !!locked; P.pitches = pitches ? PI : null; P.voices = voices ? VO : null;
       if (!P.list.length) { P.state = "idle"; emit(); return; }
       playCurrent();
     },

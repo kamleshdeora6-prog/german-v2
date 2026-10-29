@@ -1,10 +1,26 @@
 name: Tests
+# Runs on every push and pull request: the content/grammar checks (tests/run.js) and the browser tests
+# (tests/browser/*.js – the whole app in a real Chromium: lessons, exams, offline mode, both editions …).
 on: [push, pull_request, workflow_dispatch]
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v4
         with: { node-version: '20' }
-      - run: node tests/run.js
+      - uses: actions/setup-python@v6
+        with: { python-version: '3.12' }
+      - name: Content and grammar checks
+        run: node tests/run.js
+      - name: Install the browser
+        run: |
+          npm install --no-save --no-package-lock playwright@1.63.0
+          npx playwright install --with-deps chromium
+      - name: Browser tests
+        run: node tests/browser/run-all.js
+      - name: Keep the logs and screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with: { name: browser-test-output, path: tests/browser/out, retention-days: 7 }

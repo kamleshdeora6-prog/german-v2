@@ -190,7 +190,7 @@
       </section>
       <section class="card"><h3>Today</h3>
         ${next ? `<button class="tile wide lvl-${next.level}" data-go="lesson/${next.n}"><b>Lesson ${next.pos}: ${H.lt(next)}</b><span>${H.lt(next, "theme")}</span></button>` : "<p>All lessons in this plan are done. Set a new goal.</p>"}
-        <div class="row"><button class="btn sign" data-go="daily">Start today's session</button><button class="btn ghost" data-go="weak">Weak topics</button></div>
+        <div class="row"><button class="btn sign" data-go="today">Start today's session</button><button class="btn ghost" data-go="weak">Weak topics</button></div>
       </section>
       <section class="card"><h3>Change the plan</h3>
         <div class="row"><button class="btn ghost" data-go="plan/new">New goal or date</button><button class="btn bad ghost" data-go="plan/clear">Delete plan</button></div>

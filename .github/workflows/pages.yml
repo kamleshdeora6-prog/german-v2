@@ -1,17 +1,47 @@
 name: Deploy to GitHub Pages
+# Publishes the app. Before publishing it makes the natural voice recordings (tools/make_audio.py, Piper):
+# only sentences that don't have a recording yet, kept in a cache between runs. The first run records
+# about 13,000 sentences (it continues on the next runs if it needs more than 45 minutes); after that each
+# deploy takes a minute or two. Without recordings the app simply uses the device voice.
 on:
   push: { branches: [main] }
   workflow_dispatch:
 permissions: { contents: read, pages: write, id-token: write }
-concurrency: { group: pages, cancel-in-progress: true }
+concurrency: { group: pages, cancel-in-progress: false }
 jobs:
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - uses: actions/setup-python@v6
+        with: { python-version: '3.12' }
+      - name: Restore the recordings made before
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            audio
+            ~/.cache/piper-voices
+          key: audio-${{ github.run_id }}
+          restore-keys: audio-
+      - name: Record new sentences (natural voice)
+        continue-on-error: true      # never block a deploy because of audio
+        run: |
+          pip install --quiet "piper-tts==1.8.0" "lameenc==1.9.0"
+          python tools/make_audio.py --minutes 45
+      - name: Save the recordings for next time
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            audio
+            ~/.cache/piper-voices
+          key: audio-${{ github.run_id }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with: { path: '.' }

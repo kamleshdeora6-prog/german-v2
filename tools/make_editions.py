@@ -12,7 +12,7 @@ import json, re, shutil, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SKIP = shutil.ignore_patterns(".git", "__pycache__", "node_modules", "*.apk")
+SKIP = shutil.ignore_patterns(".git", "__pycache__", "node_modules", "*.apk", "out", "dist")
 
 def sub(p, a, b, count=1):
     s = p.read_text(encoding="utf-8")

@@ -1,7 +1,7 @@
 # Deutsch Coach
 
 **Learn German from A1 to C2 — free, offline, and every answer explained.**
-Created by **Zombieland** · version 7.1.1 · last updated 26 October 2026
+Created by **Zombieland** · version 7.2.0 · last updated 26 October 2026
 
 **Two editions.** This repo is the **stable** app for daily use. `python3 tools/make_editions.py dist` also builds
 the **Lab** edition (`dist/german-v2-lab`) for testing new AI features – separate progress, newest models, a long

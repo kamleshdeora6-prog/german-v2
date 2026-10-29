@@ -75,6 +75,7 @@
       const it = Object.assign({ id: "nb" + Date.now().toString(36), at: Date.now(), type: "word" }, item);
       nb().unshift(it);
       if (it.type === "word") SRS.grade("nb:" + it.id, 1), (Store.get().srs["nb:" + it.id].due = Date.now());   // straight into the review deck
+      if (it.type === "sentence" && window.Views && Views.addSentenceCard) Views.addSentenceCard(it.de, it.en || "", { src: "notebook" });
       Store.save(); return true;
     },
     remove(id) { const s = Store.get(); s.notebook = nb().filter((x) => x.id !== id); delete s.srs["nb:" + id]; Store.save(); },

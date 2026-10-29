@@ -59,6 +59,14 @@
 
   /* ---------------- 3. What's new ---------------- */
   const NEWS = [
+    { v: "7.2.0", date: "29 October 2026", items: [
+      "<b>▶ Today</b>: one button, one session. Flashcards → the next lesson step → a short drill → listening → your mistakes (and speaking or a mock-exam part for bigger goals), one after the other, sized to your daily goal. Leave for a lesson and a “Back to Today” button brings you back.",
+      "<b>🩹 My mistakes</b>: every mistake – from drills, lessons, mock exams and Max's corrections in your texts – in one place, sorted by type. Each comes back until you get it right twice in a row.",
+      "<b>Smarter flashcards (FSRS)</b>, the scheduler Anki uses: every card comes back just before you would forget it. Known words now also appear as gap sentences, and lessons can add their example sentences as cards.",
+      "<b>Natural voices</b>: texts, dialogues and exam recordings can play with natural recorded voices (different voices for different speakers). They are recorded automatically on the website; until then – and in the Android app – the device voice is used. Settings → Voice.",
+      "<b>Fixed</b>: flashcards showed the answer before you tapped the card. Celebrations no longer cover the screen in the middle of a session.",
+      "<b>🧯 Problem log</b> (Settings → About): if something breaks, send a report with one tap.",
+    ] },
     { v: "7.1.1", date: "27 October 2026", items: [
       "Fix: Prüfung and Bibliothek could show “Cannot read properties of undefined” right after an update, when the browser still had part of the old version. Every file now carries the version number, so old and new files are never mixed.",
     ] },

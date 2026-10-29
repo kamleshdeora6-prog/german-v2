@@ -174,7 +174,7 @@
       const line = (prefix ? prefix + " " : "") + st.de;
       hist.push({ role: "assistant", de: line });
       add("assistant", `<p lang="de">${esc(line)} ${UI.say(line)} ${UI.hint(st.de)}</p>${st.en ? `<details><summary class="muted small">English</summary><p class="muted">${esc(st.en)}</p></details>` : ""}`);
-      Speech.speak(line);
+      Speech.speak(line, null, "f");
       sug.innerHTML = (st.ideas || []).length ? `<button class="link p-help">💡 Stuck? Show an example answer</button>` : "";
       const hb = sug.querySelector(".p-help"); if (hb) hb.onclick = () => { helps++; sug.innerHTML = `💡 For example: ${st.ideas.map((x) => `<i>${esc(x)}</i> ${UI.say(x)}`).join(" · ")} <span class="muted small">– say it your own way.</span>`; };
     };
