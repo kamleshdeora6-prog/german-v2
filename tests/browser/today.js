@@ -25,9 +25,10 @@ let pass = 0, fail = 0; const log = (c, m) => { c ? pass++ : fail++; console.log
   log(fs2[0] === 3 && fs2[1] === 10, `FSRS: new card “good” → ${fs2[0]} days, “again” → ${fs2[1]} minutes`);
   // ---- Today ----
   await go('home'); log(/Start today's session/.test(await p.textContent('.go-next')), 'home: the big button starts Today');
-  await p.click('.go-next'); await p.waitForSelector('.today');
-  const steps = await p.$$eval('.t-steps li', (x) => x.map((y) => y.textContent.trim()));
-  log(steps.length >= 5, `Today plan for a 30-minute goal: ${steps.join(' | ')}`);
+  // click through the DOM (a real click could land on another element if the page is still moving on a slow CI runner)
+  await p.evaluate(() => document.querySelector('.go-next').click()); await p.waitForSelector('.today .t-steps li', { timeout: 15000 }).catch(() => {});
+  const steps = await p.$$eval('.today .t-steps li', (x) => x.map((y) => y.textContent.trim()));
+  log(steps.length >= 5, `Today plan for a 30-minute goal: ${steps.join(' | ')}${steps.length ? '' : ' – page: ' + (await p.url()) + ' ' + (await p.textContent('#view')).slice(0, 200)}`);
   await p.screenshot({ path: OUT + '/today.png', fullPage: true });
   // step 1: new words of the day (7.3)
   log(/New words of the day/.test(steps[0]), 'Today starts with the new words of the day');
