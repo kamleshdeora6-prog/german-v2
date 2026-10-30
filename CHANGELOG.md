@@ -2,6 +2,16 @@
 
 All dates are the release dates of the app version shown in Settings → About.
 
+## 7.3.0 — 30 October 2026
+Fixes for the problems collected in `docs/ISSUES.md` (1–11).
+- Word-order items (`UI.item` kind order): placeholder answer line, Check disabled until all tiles are used, "⌨ Type instead" (graded with `Grade.grade`), first tile lower-cased unless it is a noun/Sie (`UI.smallFirst`).
+- `Grade.match(given, answer)`: content words must all be there for short answers; near misses are spelling mistakes (`level: "close"`, `typos`) instead of "Richtig"; long answers keep the 60 % content rule but still show typos. Used for lesson exam/reading/listening questions and the mock reading check. `FB.typos` renders letter diffs.
+- Lesson exam tab: the reading text (+ second text, dialogue transcript) in a sticky foldable panel, side by side from 1000 px (`V.examText`).
+- Max (`js/tutor.js`): phrase list (`PHRASES`), English words (`EN_DE`, small letters only), "1" → ein/eine/einen, eine/meine + der/das noun, "Die Zimmer hat" → das, predicative adjective endings, doubled verb in weil/dass clauses, inversion after a prepositional phrase, indirect questions after fragen/wissen/sagen, -en nouns after ordinals; more everyday verbs in the verb index; 3 old false alarms fixed (damit = with it, wissen wollte, meiner Meinung nach).
+- `FB.open`: text checks (space before punctuation, comma splices), `FB.spelling` (course word list, inflections/compounds tolerated, sure fixes after articles and missing umlauts), score capped by mistakes per sentence, corrected full answer, "what to fix – and why", lesson words you could use, levelled models (`FB.modelsHtml`).
+- `js/data/models.js` (lazy, routes lesson/today): 301 B1/B2/C1 versions of the open lesson exam answers; all pass Max and score ≥ 60 in tests. AI deep check returns better words and higher-level versions; local model explains why it can't.
+- `js/work.js`: work minutes per day (`s.work[date] = {m, t, k}`), worth per activity (Habit.track hook, lesson parts topped up to their worth), real active time, target from plan/settings, balance ahead/behind since `s.workStart`, goal celebration on minutes. Today plan fills the target (`plan(want)`), new step `words` (`s.wotd`, settings `newWords`), Home shows minutes ring, balance, time, Today's plan expanded and the words of the day (`V.homeToday`). Weekly card: readable names for `mistake:*` topics and minutes of work.
+
 ## 7.2.0 — 29 October 2026
 - Today session (`js/today.js`, route `today`): plan from the daily goal (cards, lesson part, drill, listening, mistakes, speaking, exam part), state in `s.todaySession`, inline steps, "Back to Today" bar for lesson/exam steps, +10 minutes. Home button and Practice page start it; the Practice page is reduced to 8 tiles.
 - Mistake engine (`js/mistakes.js`, route `mistakes`): `Store.mistake` adds id/type/dedupe (count ×n), up to 300; types from generator, lesson, exam skill (`telc:*`), writing/corrections; practice items are fresh generator items or the original question (choice/input); fixed after 2 correct in a row. Logged from drills, lesson tasks, partner, mock exams (`logWrong`), writing checks (`logFixes`) and `FB.open` corrections. `UI.session` calls `item.onResult(ok)`.

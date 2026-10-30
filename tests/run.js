@@ -4,7 +4,7 @@
 const path = require("path");
 const ROOT = path.join(__dirname, "..");
 global.window = global;
-for (const f of ["curriculum", "reference", "scenes", "vocab", "verbs", "conj", "notes", "passages", "bank", "lid", "exams", "placement", "starter", "dialogues", "sentences", "cards", "pictures", "telc", "telc2"]) require(path.join(ROOT, "js/data", f + ".js"));
+for (const f of ["curriculum", "reference", "scenes", "vocab", "verbs", "conj", "notes", "passages", "bank", "lid", "exams", "placement", "starter", "dialogues", "sentences", "cards", "pictures", "telc", "telc2", "models"]) require(path.join(ROOT, "js/data", f + ".js"));
 require(path.join(ROOT, "js/engine.js")); require(path.join(ROOT, "js/engine_plus.js")); require(path.join(ROOT, "js/engine_more.js")); require(path.join(ROOT, "js/tutor.js"));
 /* Weber needs a tiny Store/H stub outside the browser */
 global.H = global.H || { esc: (x) => String(x) };
@@ -123,6 +123,14 @@ ok(FB.open("I like reading and I play football with my friends.", { prompt: L2.e
 ok(FB.open("", { prompt: L2.exam[7].q, lesson: L2 }).score === 0, "an empty answer scores 0");
 ok(FB.open("Ich lese.", { prompt: L2.exam[7].q, lesson: L2 }).score < FB.open(L2.exam[7].m, { prompt: L2.exam[7].q, lesson: L2 }).score, "a one-sentence answer scores lower than a full one");
 console.log(`  ${models} model answers checked, ${low.length} scored below 60`);
+// levelled models: every key points at an open exam question, and every text scores well
+let lvN = 0; const lvLow = [];
+Object.entries(DC.models).forEach(([k, v]) => { const [n, i] = k.split(":").map(Number); const l = DC.curriculum.find((x) => x.n === n); const q = l && l.exam[i];
+  ok(q && (!q.a || /^z\.\s?B\./.test(q.a)), `models.js: ${k} is not an open exam question`);
+  if (q) Object.entries(v).forEach(([lv, t]) => { lvN++; ok(/^(A2|B1|B2|C1|C2)$/.test(lv), `models.js ${k}: level ${lv}`); const r = FB.open(t, { prompt: q.q, lesson: l, model: q.m, log: false }); if (r.score < 60) lvLow.push(`${k} ${lv}: ${r.score}`); }); });
+ok(lvLow.length <= Math.round(lvN * 0.05), `levelled model answers should score well (${lvLow.length} of ${lvN} below 60: ${lvLow.slice(0, 10).join(", ")})`);
+ok(FB.open("Das Sofa ist rote, Meine Zimmer hat eine schrank.", { prompt: DC.curriculum.find((l) => l.n === 5).exam[7].q, lesson: DC.curriculum.find((l) => l.n === 5), log: false }).score < 65, "an answer full of mistakes can't score Gut/Sehr gut");
+console.log(`  ${lvN} levelled model answers checked, ${lvLow.length} scored below 60`);
 
 section("2. Exercise generators");
 const lower = (s) => s.split(/\s+/).map((x) => x.toLowerCase().replace(/[.!?]+$/, "")).sort().join("|");
@@ -169,6 +177,21 @@ const CASES = [
   ["Das ist ein gutes Mann.", "Das ist ein guter Mann."],
   ["Sie hat ein teueres Auto.", "Sie hat ein teures Auto."],
   ["Wir helfen der alte Frau.", "Wir helfen der alten Frau."],
+  // 7.3 – mistakes from real answers
+  ["Das Sofa ist rote.", "Das Sofa ist rot."],
+  ["Meine Zimmer hat eine Küche.", "Mein Zimmer hat eine Küche."],
+  ["Mein Zimmer hat eine schrank.", "Mein Zimmer hat einen Schrank."],
+  ["Die Zimmer hat ein Bett.", "Das Zimmer hat ein Bett."],
+  ["Mein Zimmer hat 1 Küche.", "Mein Zimmer hat eine Küche."],
+  ["Das Zimmer hat ein bed.", "Das Zimmer hat ein Bett."],
+  ["Für ersten treffen man muss nicht fragen.", "Beim ersten Treffen muss man nicht fragen."],
+  ["Weil es ist eine personal information ist.", "Weil es eine persönliche Information ist."],
+  ["Ich bin kalt.", "Mir ist kalt."],
+  ["In Wochenende spiele ich Fußball.", "Am Wochenende spiele ich Fußball."],
+  ["In Berlin ich wohne seit zwei Jahren.", "In Berlin wohne ich seit zwei Jahren."],
+  ["Ich weiß nicht, wo wohnt er.", "Ich weiß nicht, wo er wohnt."],
+  ["Man sollte nicht fragen , wie viel Geld hast du ?", "Man sollte nicht fragen, wie viel Geld du hast."],
+  ["Ich habe eine Bruder.", "Ich habe einen Bruder."],
 ];
 CASES.forEach(([a, b]) => { const r = Tutor.check(a); ok(r.fixed === b, `"${a}" → got "${r.fixed}", expected "${b}"`); });
 console.log(`  ${CASES.length} cases`);
@@ -194,6 +217,8 @@ Object.values(DC.sentences || {}).forEach((l) => l.forEach((x) => good.push(x.de
 // the guided partner's own lines and example answers must pass Max too (one sentence at a time)
 Object.values(DC.dialogues || {}).forEach((steps) => steps.forEach((st) => [st.de].concat(st.ideas || []).forEach((t) => t.split(/(?<=[.!?])\s+/).forEach((x) => x.trim() && good.push(x.trim())))));
 DC.curriculum.forEach((l) => l.exam.forEach((q) => { if (q.m) good.push(...q.m.split(/(?<=[.!?])\s+/).filter((x) => x.trim().length > 12 && !/[„“"–:=→()]/.test(x))); }));
+// the levelled model answers (B1/B2/C1 versions of the lesson models)
+Object.values(DC.models).forEach((v) => Object.values(v).forEach((t) => good.push(...t.split(/(?<=[.!?])\s+/).filter((x) => x.trim().length > 12 && !/[„“"–:]/.test(x)))));
 for (let i = 0; i < 3000; i++) { const it = Engine.generate(); if (it && it.full) good.push(it.full); if (it && it.kind === "order") good.push(it.answer); }
 let fp = 0;
 good.forEach((s) => { const r = Tutor.check(s); if (r.issues.length) { fp++; if (fp <= 10) console.log(`  ✗ false alarm: "${s}" → "${r.fixed}"`); } });

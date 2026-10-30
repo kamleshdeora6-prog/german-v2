@@ -132,15 +132,19 @@
   AI.feedback = async ({ task, text, lesson, level }) => {
     const P = AI.profile(); const l = Object.assign({}, lesson || P.lesson); if (level) l.level = level;
     return AI.json({ maxTokens: 2500, effort: "medium", system: `You are an experienced, encouraging German teacher (Goethe/telc examiner). The learner's level is ${l.level}. Judge the answer against the task, at that level – don't demand C1 German from an A2 learner. Explain in English. Never invent errors: if something is correct, don't change it. Reply with JSON only.\n\n${P.text}`,
-      messages: [{ role: "user", content: `Lesson: "${l.title}" (${(l.en && l.en.title) || ""}).\nTask: ${task}\nLearner's answer:\n${text}\n\nReturn JSON: {"score": 0-100, "verdict": "one encouraging sentence", "task_fit": "does it answer the task? one sentence", "errors": [{"wrong": "exact words from the answer", "right": "corrected words", "why": "short rule in English"}], "corrected": "the whole answer, corrected, keeping the learner's ideas", "better": "a slightly richer version at level ${l.level}", "tip": "one concrete thing to practise next"}` }] });
+      messages: [{ role: "user", content: `Lesson: "${l.title}" (${(l.en && l.en.title) || ""}).\nTask: ${task}\nLearner's answer:\n${text}\n\nReturn JSON: {"score": 0-100, "verdict": "one encouraging sentence", "task_fit": "does it answer the task? one sentence", "errors": [{"wrong": "exact words from the answer", "right": "corrected words", "why": "short rule in English"}], "corrected": "the whole answer, corrected, keeping the learner's ideas", "better": "a slightly richer version at level ${l.level}", "words": [{"use": "a better or more precise German word/phrase", "instead": "what the learner wrote (or empty)", "why": "short"}], "models": {${nextLevels(l.level).map((x) => `"${x}": "the same answer written at ${x} level"`).join(", ")}}, "tip": "one concrete thing to practise next"}\nFor every error give the exact rule in plain English (e.g. "after weil the verb goes to the end"). "words": 2–4 suggestions like muss → sollte, with why.` }] });
   };
+  const LVS = ["A1", "A2", "B1", "B2", "C1", "C2"];
+  function nextLevels(lv) { const i = Math.max(0, LVS.indexOf(lv)); return LVS.slice(i + 1, i + 3); }
   AI.feedbackHtml = (r) => {
     const e = H.esc;
     const sc = Math.max(0, Math.min(100, +r.score || 0));
     return `<div class="ai-fb"><div class="fb-head"><span class="fb-score ${sc >= 65 ? "good" : sc >= 45 ? "mid" : "low"}">${sc}</span><div><b>✨ ${e(r.verdict || "")}</b><br><span class="muted small">${e(r.task_fit || "")}</span></div></div>
       ${(r.errors || []).length ? `<ul class="fb-list">${r.errors.slice(0, 12).map((x) => `<li class="n"><span>✗</span><div><span class="fb-you"><del>${e(x.wrong)}</del></span> → <b>${e(x.right)}</b><br><span class="muted">${e(x.why)}</span></div></li>`).join("")}</ul>` : `<p class="fb-ok">✓ No mistakes found.</p>`}
       ${r.corrected ? `<h4>Corrected</h4><p class="ex ok">${e(r.corrected)} ${UI.say(r.corrected)}</p>` : ""}
+      ${(r.words || []).length ? `<h4>💡 Better words</h4><ul class="nots">${r.words.slice(0, 5).map((w) => `<li>${w.instead ? `<s>${e(w.instead)}</s> → ` : ""}<b>${e(w.use)}</b><br><span class="muted">${e(w.why || "")}</span></li>`).join("")}</ul>` : ""}
       ${r.better ? `<details class="fb-model"><summary>⭐ A richer version</summary><p class="ex">${e(r.better)} ${UI.say(r.better)}</p></details>` : ""}
+      ${r.models && Object.keys(r.models).length && window.FB ? FB.modelsHtml("", r.models, "", false).replace("📝 Model answers", "📝 The same answer at higher levels") : ""}
       ${r.tip ? `<p class="muted"><b>Next:</b> ${e(r.tip)}</p>` : ""}
       <p class="muted small">AI feedback (${e(AI.model())}) – very good, but not perfect. Max's rule check above is the reliable base.</p></div>`;
   };

@@ -104,10 +104,13 @@
   }
 
   /* ---------- closed answers ---------- */
+  /* spelling: "verh<del>ert</del>itet → verh<mark>eira</mark>tet" for each misspelt word */
+  FB.typos = (typos) => (typos && typos.length ? `<span class="fb-note fb-spell">✎ ${typos.length > 1 ? "Spelling mistakes" : "Spelling mistake"}: ${typos.map((t) => { const d = charDiff(t.g, t.w); return `<span class="fb-you">${d.g}</span> → <b class="fb-right">${d.w}</b>`; }).join(", ")}</span>` : "");
   FB.closed = (q, given, answer, g) => {
     const out = [];
     if (g.ok) {
       out.push(`<span class="fb-ok">✓ ${H.bi("Richtig!", "Correct!")}</span> <b>${esc(answer)}</b>`);
+      if (g.typos && g.typos.length) out.push(FB.typos(g.typos));
       const cap = capitals(given, answer); if (cap) out.push(`<span class="fb-note">${cap}</span>`);
       if (g.note) out.push(`<span class="fb-note">${esc(g.note)}</span>`);
       return out.join("<br>");
@@ -115,6 +118,7 @@
     const d = diff(given, answer);
     out.push(`<span class="fb-bad">✗ Not yet.</span> You wrote: <span class="fb-you">${d.g || "–"}</span> → Right: <b class="fb-right">${d.w}</b>`);
     if (g.note) out.push(`<span class="fb-note">${esc(g.note)}${g.level === "close" ? " The highlighted letters are different." : ""}</span>`);
+    if (g.typos && g.typos.length) out.push(FB.typos(g.typos));
     const why = verbWhy(q, answer); if (why) out.push(`<span class="fb-why">💡 ${why}</span>`);
     const fm = /^Fehler\?\s*„([^“]+)“/.exec(q);
     if (fm) { const dd = wordDiff(fm[1], answer); out.push(`<span class="fb-why">💡 The mistake: <span class="fb-you">${dd.g}</span> → <b>${dd.w}</b></span>`); }
@@ -151,9 +155,100 @@
     return { sents: sents || (qs ? qs : def), qs: asks ? qs || 2 : 0, words: wordsT, asks, explicit: !!(sents || qs || wordsT) };
   }
 
+  /* ---------- 7.3: whole-text checks Max can't see sentence by sentence ---------- */
+  const NEWSENT = /,\s+(?=(?:Ich|Du|Er|Es|Wir|Man|Mein\w*|Dein\w*|Sein\w*|Unser\w*|Die|Der|Das|Ein|Eine|Dann|Danach|Heute|Morgen|Gestern|Außerdem|Leider)\b)/g;
+  function textChecks(t) {
+    const out = [];
+    let x = String(t || "").trim();
+    if (/\s+[,.!?;:]/.test(x)) { out.push({ rule: "No space before , . ? !", why: "In German (and English) there is no space before a comma, full stop or question mark: <i>fragen, wie …</i> – not <i>fragen , wie …</i>." }); x = x.replace(/\s+([,.!?;:])/g, "$1"); }
+    const joined = (x.match(NEWSENT) || []).length;
+    if (joined) { out.push({ rule: `Full stops between sentences${joined > 1 ? ` (${joined}×)` : ""}`, why: "A comma can't join two complete sentences. End the first one with a full stop and start the next with a capital letter: <i>Das Sofa ist rot. Mein Zimmer …</i>" }); x = x.replace(NEWSENT, ". "); }
+    return { text: x, issues: out };
+  }
+  /* words Max has never seen but that are one or two letters away from a word in the course: probably a spelling mistake */
+  let KNOWN = null, NOUNS_DE = null;
+  let KSIG = "";
+  function known() {
+    const sig = Object.keys(window.DC || {}).join(",");
+    if (KNOWN && sig === KSIG) return KNOWN;
+    KSIG = sig;
+    KNOWN = new Map(); NOUNS_DE = new Map();
+    const addT = (txt) => String(txt || "").split(/[^A-Za-zÄÖÜäöüß]+/).forEach((w) => { if (w.length > 1) { const k = w.toLowerCase(); KNOWN.set(k, KNOWN.has(k) ? KNOWN.get(k) : w); } });
+    const D = window.DC || {};
+    (D.curriculum || []).forEach((l) => { addT(l.reading); addT(l.reading2 && l.reading2.text); (l.examples || []).forEach((e) => addT(e.de)); (l.vocab || []).forEach((v) => addT(v.de)); (l.tasks || []).forEach((x) => addT(x.a)); (l.exam || []).forEach((x) => { addT(x.a); addT(x.m); }); (l.dialog || []).forEach((d) => addT(d.de)); });
+    (D.vocab || []).forEach((v) => { addT(v.de); addT(v.exDe); addT(v.pl); const m = /^(der|die|das)\s+([A-ZÄÖÜ][\wäöüß]+)/.exec(v.de); if (m) NOUNS_DE.set(m[2].toLowerCase(), m[1] + " " + m[2]); });
+    (D.verbs || []).forEach((v) => addT([v.inf, v.pres, v.past, v.perf].join(" ")));
+    Object.entries(D.conj || {}).forEach(([inf, v]) => { addT(inf); Object.values(v.f || {}).forEach(addT); });
+    ["sentences", "passages", "dialogues", "bank", "pictures", "cards", "starter", "telc", "telc2", "notes", "reference"].forEach((k) => { if (D[k] && typeof D[k] === "object") addT(JSON.stringify(D[k]).replace(/\\[nt"]/g, " ")); });
+    if (window.Engine) { Engine.NOUNS.concat(Engine.PEOPLE).forEach((n) => { addT(n.de + " " + n.pl); NOUNS_DE.set(n.de.toLowerCase(), Engine.art("def", "nom", n.g) + " " + n.de); }); }
+    return KNOWN;
+  }
+  function levD(a, b) {
+    const m = a.length, n = b.length; if (!m) return n; if (!n) return m;
+    let prev = Array.from({ length: n + 1 }, (_, i) => i);
+    for (let i = 1; i <= m; i++) { const cur = [i]; for (let j = 1; j <= n; j++) cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)); prev = cur; }
+    return prev[n];
+  }
+  const norm = (x) => String(x || "").toLowerCase().replace(/[^a-zäöüß0-9]+/g, " ").trim();
+  const unUml = (w) => w.replace(/ä/g, "a").replace(/ö/g, "o").replace(/ü/g, "u").replace(/ß/g, "ss");
+  /* is this an inflected form of a word the course knows? (glaubten → glauben, interessante → interessant) */
+  function inflected(k, K) {
+    const ends = ["e", "en", "er", "es", "em", "n", "s", "t", "st", "te", "ten", "test", "tet", "ste", "sten", "ster", "stes"];
+    for (const e of ends) {
+      if (!k.endsWith(e) || k.length - e.length < 3) continue;
+      const st = k.slice(0, -e.length);
+      if (K.has(st) || K.has(st + "en") || K.has(st + "n") || K.has(st + "e") || K.has(st + "t")) return true;
+    }
+    const pp = /^(ge|[a-zäöü]+ge)([a-zäöüß]+?)(t|en)$/.exec(k); if (pp && (K.has(pp[2] + "en") || K.has(pp[2] + "n"))) return true;
+    for (let i = 3; i <= k.length - 4; i++) if (K.has(k.slice(i)) && K.has(k.slice(0, i)) ) return true;   // compounds
+    return false;
+  }
+  FB.spelling = (t) => {
+    const K = known(); const out = []; const seen = new Set();
+    const raw = String(t || "").split(/\s+/);
+    const ws = raw.map((w) => w.replace(/^[„“"(]+|[.,!?;:“")]+$/g, ""));
+    ws.forEach((w, i) => {
+      const k = w.toLowerCase();
+      if (k.length < 3 || /[^a-zäöüß]/.test(k) || seen.has(k)) return;
+      const prev = (ws[i - 1] || "").toLowerCase();
+      // after ein/eine/1 … a noun must follow: "eine koche" → Küche
+      if (/^(1|eine|einen|einem|einer|keine|keinen|meine|meinen|deine|seine|unsere)$/.test(prev) && K.has(k) && !NOUNS_DE.has(k) && !/^[A-ZÄÖÜ]/.test(w) && k.length >= 4 && !(/^[A-ZÄÖÜ]/.test(ws[i + 1] || "") && !/[.,!?;:]$/.test(raw[i]))) {   // "eine große Wohnung": an adjective, not a noun
+        const n = [...NOUNS_DE.keys()].filter((x) => Math.abs(x.length - k.length) <= 1 && x[0] === k[0]).map((x) => ({ x, d: levD(unUml(x), unUml(k)) })).filter((o) => o.d <= 1).sort((a, b) => a.d - b.d)[0];
+        if (n) { seen.add(k); out.push({ g: w, w: NOUNS_DE.get(n.x).split(" ")[1], sure: true, why: `After „${prev}“ a noun follows – you probably mean <b>${NOUNS_DE.get(n.x)}</b>.` }); }
+        return;
+      }
+      if (K.has(k) || k.length < 4 || inflected(k, K) || (window.Tutor && Tutor.dict && Tutor.dict(k).length)) return;
+      // capitalised: names and new nouns are normal – only a missing umlaut (Kuche → Küche) is flagged
+      if (/^[A-ZÄÖÜ]/.test(w)) {
+        if (i === 0 || /[.!?:]$/.test(String(t).split(/\s+/)[i - 1] || "")) return;
+        const u = [...NOUNS_DE.keys()].find((x) => x !== k && unUml(x) === unUml(k));
+        if (u) { seen.add(k); out.push({ g: w, w: NOUNS_DE.get(u).split(" ")[1], sure: true, why: "Write the umlaut: ä, ö, ü." }); }
+        return;
+      }
+      const maxD = k.length >= 10 ? 3 : k.length >= 7 ? 2 : 1;
+      const c = [...K.keys()].filter((x) => Math.abs(x.length - k.length) <= maxD && x.slice(0, 2) === k.slice(0, 2)).map((x) => ({ x, d: levD(x, k) })).filter((o) => o.d <= maxD).sort((a, b) => a.d - b.d || (NOUNS_DE.has(b.x) ? 1 : 0) - (NOUNS_DE.has(a.x) ? 1 : 0)).slice(0, 2);
+      if (!c.length) return;
+      seen.add(k);
+      const cap = (x) => (NOUNS_DE.has(x) ? K.get(x).charAt(0).toUpperCase() + K.get(x).slice(1) : K.get(x));
+      out.push({ g: w, w: cap(c[0].x), alt: c[1] && c[1].d === c[0].d ? cap(c[1].x) : "", why: "This word isn't in the course's word list – is it spelt right?" });
+    });
+    return out;
+  };
+  /* structures that make an answer B1/B2 – underlined in the model answers */
+  const RICH = /\b(weil|dass|obwohl|da|deshalb|deswegen|trotzdem|außerdem|wenn|als|nachdem|bevor|während|damit|um|zu|würde\w*|könnte\w*|sollte\w*|hätte\w*|wäre\w*|dürfte\w*|müsste\w*|wird|werden|wurde\w*|worden|gelten|gilt|allerdings|jedoch|zwar|sodass|indem|statt|anstatt|sowohl|weder|noch|einerseits|andererseits|meiner Meinung nach|ich finde|ich bin der Meinung)\b/gi;
+  FB.richHtml = (t) => esc(t).replace(RICH, (m) => `<u>${m}</u>`);
+  FB.modelsHtml = (base, models, level, open) => {
+    const list = [[level || "", base]].concat(Object.entries(models || {})).filter(([, x]) => x);
+    if (!list.length) return "";
+    return `<details class="fb-model" ${open ? "open" : ""}><summary>📝 Model answer${list.length > 1 ? "s – " + list.map(([lv]) => lv || "basic").join(" · ") : ""}</summary>
+      ${list.map(([lv, x], i) => `<div class="mlevel">${list.length > 1 ? `<span class="lvl lvl-${esc(lv)}">${esc(lv || "basic")}</span>${i ? "" : ` <span class="muted small">your lesson's level</span>`}` : ""}<p class="ex">${i ? FB.richHtml(x) : esc(x)} ${UI.say(x)}</p></div>`).join("")}
+      <p class="muted small">${list.length > 1 ? "Same idea, richer German – the <u>underlined</u> parts are what makes a higher level (connectors, Konjunktiv, Passiv …). " : ""}One possible answer – yours can be different and still right.</p></details>`;
+  };
+
   FB.open = (text, ctx = {}) => {
     const l = ctx.lesson || {}, prompt = ctx.prompt || "", level = l.level || "A1";
-    const t = String(text || "").trim();
+    const tc = textChecks(text);
+    const t = tc.text;
     const ss = sentences(t), ws = words(t);
     const T = targets(prompt, level);
     const checks = [];   // [ok, label, tip]
@@ -181,8 +276,9 @@
     (l.check || []).filter((c) => { try { return !req.some((r) => new RegExp(c.re, "i").test(r)); } catch (e) { return true; } }).forEach((c) => { let ok = false; try { ok = new RegExp(c.re, "im").test(t); } catch (e) { ok = true; } checks.push([ok, `This lesson: ${c.label}`, ok ? "✓ used." : `Try to use it at least once – that's what this lesson trains.`]); });
     // 6. Max: rule problems, sentence by sentence
     const res = ss.map((s) => ({ s, r: Tutor.check(s) }));
-    const issues = res.reduce((a, x) => a + x.r.issues.length, 0);
-    checks.push([issues === 0, "Grammar rules", issues ? `${issues} possible mistake${issues > 1 ? "s" : ""} – see the corrections below.` : "No rule problems found (Max checks word order, verb endings, cases, articles and more)."]);
+    const spell = english ? [] : FB.spelling(t);
+    const issues = res.reduce((a, x) => a + x.r.issues.length, 0) + tc.issues.length + spell.length;
+    checks.push([issues === 0, "Grammar and spelling", issues ? `${issues} mistake${issues > 1 ? "s" : ""} – see the corrections below.` : "No mistakes found (Max checks word order, verb endings, cases, articles, spelling and more)."]);
     // 7. capitals and full stops
     const lowStart = ss.filter((s) => /^[a-zäöü]/.test(s)).length;
     if (lowStart) checks.push([false, "Capital letter at the start", `${lowStart} sentence${lowStart > 1 ? "s start" : " starts"} with a small letter.`]);
@@ -201,20 +297,45 @@
     const lcs = checks.filter((c) => c[1].startsWith("This lesson")); const lc = lcs.length ? lcs.filter((c) => c[0]).length / lcs.length : 1; score += Math.round(15 * lc);
     score += Math.max(0, (T.explicit ? 30 : 40) - issues * 8 - lowStart * 2);
     const vc = checks.find((c) => c[1] === "Words from this lesson"); score += !vc || vc[0] ? 10 : 4;
+    // many mistakes can't be "Sehr gut": the grade follows the number of mistakes per sentence
+    const per = issues / Math.max(1, ss.length);
+    if (issues >= 2) score = Math.min(score, per >= 2 || issues >= 6 ? 44 : per >= 1 || issues >= 4 ? 60 : 78);
     if (english) score = Math.min(score, 20);
     if (!ws.length) score = 0;
     score = Math.max(0, Math.min(100, score));
     const verdict = score >= 85 ? ["Sehr gut!", "Very good!"] : score >= 65 ? ["Gut!", "Good!"] : score >= 45 ? ["Okay – noch besser:", "Okay – to make it better:"] : ["Weiter üben", "Keep working on it"];
 
     const fixes = res.filter((x) => x.r.issues.length);
+    if (ctx.log !== false && window.Work && ws.length >= 3) Work.add(2);   // a written / spoken answer
+    if (ctx.log !== false && window.Mistakes) spell.forEach((x) => Store.mistake({ cat: "correction", prompt: `Spell it correctly: <i>${esc(x.g)}</i>`, answer: x.w, given: x.g, why: "Spelling" }));
     if (ctx.log !== false && window.Mistakes) fixes.forEach((x) => Store.mistake({ cat: "correction", prompt: `Correct this sentence:<br><i>${esc(x.s)}</i>`, answer: x.r.fixed, given: x.s, why: x.r.issues.map((i) => i.why).join(" ") }));
-    const model = ctx.model ? `<details class="fb-model" ${score < 45 ? "open" : ""}><summary>📝 Model answer</summary><p class="ex">${esc(ctx.model)} ${UI.say(ctx.model)}</p><p class="muted small">One possible answer – yours can be different and still right.</p></details>` : "";
+    const model = ctx.model ? FB.modelsHtml(ctx.model, ctx.models, level, score < 45) : "";
+    // the whole answer with every correction – what the learner should have written
+    // sure spelling fixes go in first, then Max checks the sentence again (1 Küche → eine Küche)
+    const sure = spell.filter((x) => x.sure);
+    const correctedAll = res.map((x) => {
+      let y = x.r.issues.length ? x.r.fixed : x.s;
+      sure.forEach((sp) => (y = y.replace(new RegExp(`(^|[^A-Za-zÄÖÜäöüß])${sp.g.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?=[^A-Za-zÄÖÜäöüß]|$)`), `$1${sp.w}`)));
+      return sure.length ? Tutor.check(y).fixed : y;
+    }).join(" ");
+    const changed = issues && norm(correctedAll) !== norm(text);
+    // words from the lesson that would fit
+    const usedL = new Set(ws.map(low));
+    const ideas = (l.vocab || []).filter((v) => !usedL.has(v.de.replace(/^(der|die|das)\s+/, "").split(",")[0].toLowerCase())).slice(0, 40);
+    const kw = words(prompt + " " + (ctx.model || "")).map(low);
+    const pickIdeas = ideas.map((v) => ({ v, s: kw.some((k) => k.length > 3 && v.de.toLowerCase().includes(k.slice(0, 5))) ? 1 : 0 })).sort((a, b) => b.s - a.s).slice(0, 8).map((o) => o.v);
     const useful = !ctx.model && l.examples ? (() => { const kw = words(prompt).map(low).filter((x) => x.length > 4); const ex = l.examples.map((e) => ({ e, s: words(e.de).map(low).filter((x) => kw.includes(x)).length })).sort((a, b) => b.s - a.s).slice(0, 3); return `<details class="fb-model"><summary>💬 Sentences from this lesson you could use</summary>${ex.map(({ e }) => `<p class="ex">${esc(e.de)} ${UI.say(e.de)}<br><span class="muted">${esc(e.en)}</span></p>`).join("")}</details>`; })() : "";
     return {
       score,
       html: `<div class="fb-open"><div class="fb-head"><span class="fb-score ${score >= 65 ? "good" : score >= 45 ? "mid" : "low"}">${score}</span><div><b>${H.bi(verdict[0], verdict[1])}</b><div class="pbar sm"><span style="width:${score}%"></span></div></div></div>
         <ul class="fb-list">${checks.map(([ok, label, tip]) => `<li class="${ok ? "y" : "n"}"><span>${ok ? "✓" : "✗"}</span><div><b>${esc(label)}</b><br><span class="muted">${esc(tip)}</span></div></li>`).join("")}</ul>
-        ${fixes.length ? `<h4>Corrections</h4>${fixes.map((x) => `<p class="fb-you">${esc(x.s)}</p><p class="ex ok">→ ${esc(x.r.fixed)} ${UI.say(x.r.fixed)} ${UI.star ? UI.star({ type: "sentence", de: x.r.fixed, en: "", src: "Correction" }) : ""}</p><ul class="nots">${x.r.issues.map((i) => `<li>${i.rule}<br><span class="muted">${i.why}</span></li>`).join("")}</ul>`).join("")}` : ""}
+        ${changed ? `<div class="fb-corrected"><h4>✍ ${H.bi("So schreibt man es", "Your answer, corrected")}</h4><p class="ex ok">${esc(correctedAll)} ${UI.say(correctedAll)} ${UI.star ? UI.star({ type: "sentence", de: correctedAll, en: "", src: "Correction" }) : ""}</p></div>` : ""}
+        ${fixes.length || tc.issues.length || spell.length ? `<h4>What to fix – and why</h4>
+          ${fixes.map((x) => `<p class="fb-you">${esc(x.s)}</p><p class="ex ok">→ ${esc(x.r.fixed)} ${UI.say(x.r.fixed)}</p><ul class="nots">${x.r.issues.map((i) => `<li>${i.rule}<br><span class="muted">${i.why}</span></li>`).join("")}</ul>`).join("")}
+          ${spell.length ? `<ul class="nots">${spell.map((x) => `<li><s>${esc(x.g)}</s> → <b>${esc(x.w)}</b>${x.alt ? ` <span class="muted">(or ${esc(x.alt)}?)</span>` : ""}<br><span class="muted">${x.why}</span></li>`).join("")}</ul>` : ""}
+          ${tc.issues.length ? `<ul class="nots">${tc.issues.map((i) => `<li><b>${i.rule}</b><br><span class="muted">${i.why}</span></li>`).join("")}</ul>` : ""}
+          <p class="muted small">Max checks with rules and the course's word list – unusual words or ideas can slip through. ${window.AI && AI.canJudge && AI.canJudge() ? "For a full teacher's check use ✨ below." : ""}</p>` : ""}
+        ${pickIdeas.length && score < 90 ? `<details class="fb-model"><summary>💡 Words from this lesson you could use</summary><p class="ideas">${pickIdeas.map((v) => `<span class="chip ${H.genderClass ? H.genderClass(v.de) : ""}">${esc(v.de.split(",")[0])}</span> <span class="muted small">${esc(v.en)}</span>`).join(" · ")}</p></details>` : ""}
         ${model}${useful}</div>`,
     };
   };

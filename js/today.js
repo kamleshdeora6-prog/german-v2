@@ -13,20 +13,69 @@
   const dueCards = () => SRS.due(V.vocabIds());
   const level = () => { try { return AI.profile().level; } catch (e) { return "A1"; } };
 
-  function plan() {
-    const m = minutes(), l = lessonNow(), steps = [];
-    if (st().starterMode && Views.starterProgress && Views.starterProgress().next) return [{ k: "starter", label: "First steps: one picture round", mins: 4 }, { k: "cards", label: "Flashcards: your first words", mins: 4 }].concat(m >= 20 ? [{ k: "starter", label: "First steps: one more round", mins: 4 }] : []);
-    const due = dueCards().length;
-    steps.push({ k: "cards", label: due ? `Flashcards: ${Math.min(due, 12)} due` : "Flashcards: new words", mins: 4 });
-    if (!(st().starterMode && Views.starterProgress && Views.starterProgress().next) && nextPart(l)) steps.push({ k: "lesson", label: `Lesson ${l.pos}: ${nextPart(l)[1]}`, mins: 7, n: l.n, part: nextPart(l)[0] });
-    else if (st().starterMode) steps.push({ k: "starter", label: "First steps: one picture round", mins: 4 });
-    steps.push({ k: "drill", label: "Grammar drill: 6 questions", mins: 4 });
-    if (m >= 20) steps.push({ k: "listen", label: "Listening: 3 sentences", mins: 3 });
-    if (Mistakes.open().length) steps.push({ k: "mistakes", label: `My mistakes: ${Math.min(4, Mistakes.queue(4).length) || 4}`, mins: 3 });
-    if (m >= 30) steps.push({ k: "speak", label: "Speaking: one answer", mins: 4 });
-    if (m >= 45 && ["A2", "B1", "B2"].includes(level())) steps.push({ k: "exam", label: "Mock exam: one part", mins: 10 });
-    if (m >= 45) steps.push({ k: "drill", label: "Grammar drill: 6 more", mins: 4 });
+  /* 7.3: the plan fills your daily minutes – every step is worth what it takes (Work.js counts it) */
+  const LESSON_PARTS = (l) => PARTS.filter(([k]) => { const ls = Store.lesson(l.n), p = ls.parts || {}; return !(p[k] || (k === "practice" && ls.done)); });
+  function cycle(i, l, parts, lv) {
+    const out = [];
+    if (parts.length) { const [k, t] = parts.shift(); out.push({ k: "lesson", label: `Lesson ${l.pos}: ${t}`, mins: Work.PART[k] || 10, n: l.n, part: k }); }
+    out.push({ k: "drill", label: "Grammar drill: 10 questions", mins: 5 });
+    if (i % 2 === 0) out.push({ k: "listen", label: "Listening: 3 sentences", mins: 3 });
+    if (Mistakes.open().length && i < 3) out.push({ k: "mistakes", label: `My mistakes: ${Math.min(6, Mistakes.queue(6).length) || 6}`, mins: 3 });
+    out.push({ k: "speak", label: "Speaking: one answer", mins: 4 });
+    if (["A2", "B1", "B2"].includes(lv) && i % 2 === 1) out.push({ k: "exam", label: "Mock exam: one part", mins: 12 });
+    if (i % 2 === 1) out.push({ k: "cards", label: "Flashcards: 12 more", mins: 3 });
+    return out;
+  }
+  function plan(want) {
+    const m = want || Math.max(10, Work.target() - Math.round(Work.done())), l = lessonNow(), steps = [];
+    if (st().starterMode && Views.starterProgress && Views.starterProgress().next) {
+      const out = [{ k: "starter", label: "First steps: one picture round", mins: 4 }, { k: "cards", label: "Flashcards: your first words", mins: 3 }];
+      while (out.reduce((a, x) => a + x.mins, 0) < Math.min(m, 40)) out.push({ k: "starter", label: "First steps: one more round", mins: 4 });
+      return out;
+    }
+    if (!want) {
+      const w = wordsToday();
+      if (w.ids.length && w.learned.length < w.ids.length) steps.push({ k: "words", label: `New words of the day: ${w.ids.length}`, mins: w.ids.length });
+      const due = dueCards().length;
+      steps.push({ k: "cards", label: due ? `Flashcards: ${Math.min(due, 12)} due` : "Flashcards: new words", mins: 3 });
+    }
+    const parts = LESSON_PARTS(l), lv = level();
+    for (let i = 0; steps.reduce((a, x) => a + x.mins, 0) < m && i < 12; i++) cycle(i, l, parts, lv).forEach((x) => steps.push(x));
+    // trim the last cycle so the plan ends close to the target
+    while (steps.length > 3 && steps.reduce((a, x) => a + x.mins, 0) - steps[steps.length - 1].mins >= m) steps.pop();
     return steps;
+  }
+  /* ---------- 7.3: new words of the day ---------- */
+  const wordsToday = () => {
+    const s = st(), d = Store.today();
+    if (s.wotd && s.wotd.date === d) return s.wotd;
+    const n = +s.settings.newWords || 5, l = lessonNow(), lv = l.level;
+    const list = V.vocabList().filter((w) => !w.sentence && w.en && !s.srs[w.id] && !/^nb:/.test(w.id));
+    const lessonIds = new Set((l.vocab || []).map((v) => "v:" + v.de.toLowerCase()));
+    const pick = list.filter((w) => lessonIds.has(w.id) || w.lesson === l.n).concat(list.filter((w) => w.level === lv && !lessonIds.has(w.id) && w.lesson !== l.n)).slice(0, n);
+    s.wotd = { date: d, ids: pick.map((w) => w.id), learned: [] }; Store.save();
+    return s.wotd;
+  };
+  V.wordsToday = () => { const w = wordsToday(), by = Object.fromEntries(V.vocabList().map((x) => [x.id, x])); return { ids: w.ids, learned: w.learned, words: w.ids.map((id) => by[id]).filter(Boolean) }; };
+  function words(body, cur, next, skip) {
+    const W = V.wordsToday(); let i = W.words.findIndex((w) => !W.learned.includes(w.id));
+    if (i < 0) return next();
+    const draw = () => {
+      if (i >= W.words.length) return next();
+      const w = W.words[i];
+      body.innerHTML = `<section class="card nwd"><p class="muted small">🆕 New word ${i + 1} of ${W.words.length} · listen, say it out loud, then add it to your cards</p>
+        <p class="nw-de">${UI.colorArticles(w.de)} ${UI.say(w.de.split(",")[0])}</p>${w.pl ? `<p class="muted">Plural: ${esc(w.pl)}</p>` : ""}<p class="nw-en">${esc(w.en)}</p>
+        ${w.exDe ? `<p class="ex">${UI.colorArticles(w.exDe)} ${UI.say(w.exDe)}${w.exEn ? `<br><span class="muted small">${esc(w.exEn)}</span>` : ""}</p>` : ""}
+        <div class="row"><button class="btn sign nw-ok">✓ Got it – add to my flashcards</button>${skip}</div></section>`;
+      setTimeout(() => Speech.speak(w.de.split(",")[0]), 200);
+      body.querySelector(".nw-ok").onclick = () => {
+        const s = st(); if (!s.srs[w.id]) { SRS.grade(w.id, 1); s.srs[w.id].due = Date.now() + 10 * 60e3; }
+        if (!s.wotd.learned.includes(w.id)) s.wotd.learned.push(w.id);
+        if (window.Habit) Habit.track("words"); Work.add(0.75); Store.addXP(3); Store.save(); i++; draw();
+      };
+      const sk = body.querySelector(".t-skip"); if (sk) sk.onclick = () => next();
+    };
+    draw();
   }
   const state = () => {
     const s = st(), d = Store.today();
@@ -36,13 +85,16 @@
 
   V.today = (el, [act]) => {
     const T = state();
-    if (act === "more") { T.steps = T.steps.concat([{ k: "drill", label: "Grammar drill: 6 questions", mins: 4 }, { k: "cards", label: "Flashcards", mins: 4 }, { k: "listen", label: "Listening: 3 sentences", mins: 3 }]); Store.save(); return App.go("today"); }
+    if (act === "more") { const left = Math.max(15, Work.target() - Math.round(Work.done())); T.steps = T.steps.concat(plan(Math.min(left, 30)).filter((x) => !(x.k === "lesson" && T.steps.some((y) => y.k === "lesson" && y.n === x.n && y.part === x.part)))); Store.save(); return App.go("today"); }
+    if (act === "words") { el.innerHTML = `<div class="today"><button class="back" data-go="home">‹ Home</button><div class="t-body"></div></div>`; return words(el.querySelector(".t-body"), {}, () => App.go("home"), ""); }
     // a lesson or exam step done elsewhere counts when you come back
     T.steps.forEach((x) => { if (!x.done && x.k === "lesson") { const ls = Store.lesson(x.n); if ((ls.parts || {})[x.part] || (x.part === "practice" && ls.done)) x.done = true; } });
     while (T.i < T.steps.length && T.steps[T.i].done) T.i++;
     const done = T.steps.filter((x) => x.done).length, total = T.steps.length;
-    el.innerHTML = `<div class="today"><div class="t-head"><h2 class="page-title">${H.bi("Heute", "Today")}</h2><span class="muted small">${done}/${total} · about ${T.steps.reduce((a, x) => a + (x.done ? 0 : x.mins), 0)} min left</span></div>
-      <div class="pbar"><span style="width:${Math.round((done / Math.max(1, total)) * 100)}%"></span></div>
+    const ws = Work.summary();
+    el.innerHTML = `<div class="today"><div class="t-head"><h2 class="page-title">${H.bi("Heute", "Today")}</h2><span class="muted small">${done}/${total} steps · ~${T.steps.reduce((a, x) => a + (x.done ? 0 : x.mins), 0)} min in this plan</span></div>
+      <div class="t-work"><b data-work="line">${esc(ws.line)}</b><span class="t-bal ${ws.bal >= 0 ? "ahead" : "behind"}" data-work="bal">${esc(ws.balLine)}</span><span class="muted small" data-work="time">⏱ ${Work.fmt(ws.time)} studied today</span></div>
+      <div class="pbar"><span style="width:${Math.min(100, Math.round((ws.m / Math.max(1, ws.T)) * 100))}%"></span></div>
       <ol class="t-steps">${T.steps.map((x, i) => `<li class="${x.done ? "done" : i === T.i ? "now" : ""}">${x.done ? "✓" : i === T.i ? "▶" : "·"} ${esc(x.label)}</li>`).join("")}</ol>
       <div class="t-body"></div></div>`;
     const body = el.querySelector(".t-body");
@@ -51,7 +103,7 @@
     const next = () => { cur.done = true; T.i++; Store.save(); App.go("today"); };
     const skip = `<button class="link t-skip">Skip this step</button>`;
     const bindSkip = () => { const b = body.querySelector(".t-skip"); if (b) b.onclick = () => { cur.done = true; cur.skipped = true; T.i++; Store.save(); App.go("today"); }; };
-    ({ cards, lesson, starter, drill, listen, mistakes, speak, exam }[cur.k] || drill)(body, cur, next, skip);
+    ({ cards, lesson, starter, drill, listen, mistakes, speak, exam, words }[cur.k] || drill)(body, cur, next, skip);
     bindSkip();
   };
 
@@ -100,10 +152,10 @@
     const id = drillTopic(), g = Engine.GEN[id];
     body.innerHTML = `<div class="dg-host"></div><div class="sess-host"></div><div class="row center">${skip}</div>`;
     if (V.drillGuide) V.drillGuide(body.querySelector(".dg-host"), id);
-    UI.session(body.querySelector(".sess-host"), () => Engine.generate(id), { title: g.title, total: 6, onEnd: () => cont(body, next) });
+    UI.session(body.querySelector(".sess-host"), () => Engine.generate(id), { title: g.title, total: 10, onEnd: () => cont(body, next) });
   }
   function mistakes(body, cur, next, skip) {
-    const items = Mistakes.queue(4).map(Mistakes.item).filter(Boolean);
+    const items = Mistakes.queue(6).map(Mistakes.item).filter(Boolean);
     if (!items.length) return next();
     body.innerHTML = `<div class="sess-host"></div><div class="row center">${skip}</div>`;
     UI.session(body.querySelector(".sess-host"), (i) => items[i], { title: "My mistakes", total: items.length, onEnd: () => cont(body, next) });
@@ -144,7 +196,7 @@
     UI.bindMic(body, (t) => { ta.value = (ta.value ? ta.value + " " : "") + t; });
     body.querySelector(".t-chk").onclick = () => {
       if (!ta.value.trim()) return H.toast("Say or type an answer first.");
-      const r = FB.open(ta.value, { prompt: p, lesson: l }); f.innerHTML = r.html + `<div class="row"><button class="btn sign t-n">Continue Today →</button></div>`;
+      const r = FB.open(ta.value, { prompt: p, lesson: l }); f.innerHTML = r.html + (V.aiButton ? V.aiButton(p, l.n, ".t-sp") : "") + `<div class="row"><button class="btn sign t-n">Continue Today →</button></div>`;
       if (window.Habit) Habit.track("speak"); Store.addXP(r.score >= 65 ? 8 : 3);
       f.querySelector(".t-n").onclick = next;
     };
@@ -156,11 +208,28 @@
   }
   function finish(body, T) {
     const s = st(), xp = ((s.days || {})[Store.today()] || 0) - (T.xp0 || 0);
-    body.innerHTML = `<section class="card t-end"><h3>🎉 ${H.bi("Fertig für heute!", "Done for today!")}</h3><p>+${Math.max(0, xp)} XP · 🔥 ${s.streak.count}-day streak</p>
+    const ws = Work.summary();
+    body.innerHTML = `<section class="card t-end"><h3>🎉 ${ws.left ? H.bi("Plan geschafft!", "This plan is done!") : H.bi("Fertig für heute!", "Done for today!")}</h3><p>${esc(ws.line)} · ${esc(ws.balLine)}</p><p>+${Math.max(0, xp)} XP · 🔥 ${s.streak.count}-day streak</p>
+      ${ws.left ? `<p class="muted">Your goal still has ${Work.fmt(ws.left)} – add more steps whenever you like${ws.bal >= 0 ? ", or rest: your lead covers today" : ""}.</p>` : ""}
       ${UI.weeklyCard ? UI.weeklyCard() : ""}
-      <div class="row"><button class="btn sign" data-go="today/more">+10 more minutes</button><button class="btn ghost" data-go="home">Home</button><button class="btn ghost" data-go="library">Library</button></div></section>`;
+      <div class="row"><button class="btn sign" data-go="today/more">+ more steps</button><button class="btn ghost" data-go="home">Home</button><button class="btn ghost" data-go="library">Library</button></div></section>`;
     if (!T.celebrated) { T.celebrated = true; Store.save(); if (window.Habit) setTimeout(() => Habit.celebrate("Heute geschafft! (Done for today)", `${T.steps.length} steps · +${Math.max(0, xp)} XP`), 400); }
   }
+  /* ---------- 7.3: Today's plan on Home – see what's next without opening Today ---------- */
+  V.homeToday = () => {
+    const s = st(); if (s.starterMode && Views.starterProgress && Views.starterProgress().next && !s.todaySession) return "";
+    const T = state(), ws = Work.summary();
+    T.steps.forEach((x) => { if (!x.done && x.k === "lesson") { const ls = Store.lesson(x.n); if ((ls.parts || {})[x.part] || (x.part === "practice" && ls.done)) x.done = true; } });
+    const nextI = T.steps.findIndex((x) => !x.done);
+    const W = V.wordsToday();
+    const icon = { cards: "🗂", lesson: "📘", drill: "🧩", listen: "🎧", mistakes: "🔁", speak: "🎙", exam: "🎓", starter: "🐣", words: "🆕" };
+    return `<section class="card home-today"><div class="ht-head"><h3>${H.bi("Heute", "Today's plan")}</h3><span class="muted small">${T.steps.filter((x) => x.done).length}/${T.steps.length} steps</span></div>
+      <p class="ht-work"><b>${esc(ws.line)}</b></p>
+      <ol class="t-steps ht-steps">${T.steps.map((x, i) => `<li class="${x.done ? "done" : i === nextI ? "now" : ""}"><span>${x.done ? "✓" : icon[x.k] || "·"}</span> ${esc(x.label)} <span class="muted small">~${x.mins} min</span></li>`).join("")}</ol>
+      <div class="row">${nextI >= 0 ? `<button class="btn sign" data-go="today">▶ Next: ${esc(T.steps[nextI].label)}</button>` : `<button class="btn sign" data-go="today/more">+ more steps</button>`}</div>
+      ${W.words.length ? `<div class="ht-words"><b>🆕 ${H.bi("Neue Wörter heute", "New words today")}</b> <span class="muted small">${W.learned.length}/${W.words.length} learned</span><div class="chips">${W.words.map((w) => `<button class="chip ${W.learned.includes(w.id) ? "on" : ""} ${H.genderClass ? H.genderClass(w.de) : ""}" data-tts="${esc(w.de.split(",")[0])}" title="${esc(w.en)}">${W.learned.includes(w.id) ? "✓ " : ""}${esc(w.de.split(",")[0])}</button>`).join("")}</div>${W.learned.length < W.words.length ? `<button class="link" data-go="today/words">Learn them now</button>` : ""}</div>` : ""}
+    </section>`;
+  };
   /* a "Back to Today" bar on the lesson/exam screen you were sent to */
   V.todayBar = () => {
     const s = st(); if (!s.returnToToday || Date.now() - s.returnToToday > 3 * 3600e3 || !s.todaySession || s.todaySession.date !== Store.today()) return;

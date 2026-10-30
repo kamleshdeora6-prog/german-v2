@@ -185,6 +185,8 @@ input:focus, select:focus, textarea:focus { border-color: var(--a2); outline: no
 .bank { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
 .tok { border: 1.5px solid var(--line); background: var(--soft); border-radius: 10px; padding: 8px 12px; font-weight: 600; cursor: pointer; }
 .built .tok { background: var(--card); border-color: var(--a2); } .tok.fixed { cursor: default; border-style: dotted; }
+.built .ph { color: var(--muted); font-size: .9rem; padding: 0 4px; } .built.has { border-style: solid; border-color: var(--a2); }
+.ord-help { margin: 4px 0 6px; } .ord-type { margin-top: 8px; } .q-check:disabled { opacity: .45; cursor: not-allowed; }
 .q-fb { margin-top: 14px; border-top: 1px solid var(--line); padding-top: 12px; }
 .verdict { font-weight: 800; font-size: 1.05rem; margin: 0 0 6px; }
 .is-ok .verdict { color: var(--ok); } .is-bad .verdict { color: var(--bad); }
@@ -796,3 +798,34 @@ button, a, .tile, .choice, select, label { touch-action: manipulation; }
 .mlist { margin: 6px 0 0; padding-left: 18px; } .mlist li { margin: 3px 0; }
 .flash .cloze { font-size: 1.25rem; font-weight: 600; line-height: 1.5; } .flash .cloze .gap { display: inline-block; min-width: 3.5em; border-bottom: 3px solid var(--sign); }
 .plog { list-style: none; padding: 0; display: grid; gap: 8px; } .plog li { padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; word-break: break-word; }
+
+/* 7.3 lesson exam: the text beside the questions */
+.exam-split { display: block; }
+.exam-text { position: sticky; top: 8px; z-index: 5; margin-bottom: 12px; }
+.exam-text > details { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 10px 14px; box-shadow: 0 6px 18px rgba(0,0,0,.18); }
+.exam-text summary { cursor: pointer; font-weight: 700; }
+.exam-text .et-body { max-height: 45vh; overflow: auto; margin-top: 8px; line-height: 1.6; }
+.exam-text .et-body p { margin: 6px 0; }
+@media (min-width: 1000px) {
+  .exam-split { display: grid; grid-template-columns: minmax(300px, 0.85fr) 1.15fr; gap: 16px; align-items: start; }
+  .exam-text { top: 12px; margin: 0; }
+  .exam-text .et-body { max-height: calc(100vh - 120px); }
+}
+/* 7.3 work minutes, Today on Home, new words, richer feedback */
+.t-work { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; margin: 4px 0 8px; }
+.t-bal { font-weight: 700; }
+.t-bal.ahead { color: var(--ok, #2fbf71); } .t-bal.behind { color: var(--warn, #e8a33d); }
+.home-today .ht-head { display: flex; justify-content: space-between; align-items: baseline; }
+.home-today .ht-work { margin: 2px 0 8px; }
+.ht-steps { max-height: 340px; overflow: auto; margin: 0 0 10px; padding-left: 0; list-style: none; }
+.ht-steps li { padding: 5px 2px; border-bottom: 1px solid var(--line); display: flex; gap: 8px; align-items: baseline; }
+.ht-steps li .muted { margin-left: auto; white-space: nowrap; }
+.ht-steps li.done { opacity: .55; text-decoration: line-through; } .ht-steps li.now { font-weight: 700; color: var(--a2); }
+.ht-words { margin-top: 12px; border-top: 1px dashed var(--line); padding-top: 10px; }
+.ht-words .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0; } .ht-words .chip.on { opacity: .6; }
+.nwd .nw-de { font-size: 1.6rem; font-weight: 800; margin: 6px 0; } .nwd .nw-en { font-size: 1.1rem; }
+.fb-corrected { margin: 10px 0; padding: 10px 12px; border-left: 4px solid var(--ok, #2fbf71); background: var(--soft); border-radius: 8px; }
+.fb-corrected h4 { margin: 0 0 4px; }
+.mlevel { margin: 8px 0; } .mlevel .ex u { text-decoration-color: var(--a2); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.fb-spell { display: inline-block; margin-top: 4px; }
+.ideas .chip { font-size: .9rem; }

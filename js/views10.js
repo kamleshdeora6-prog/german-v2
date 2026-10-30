@@ -238,9 +238,10 @@
   };
 
   /* ---------------- "detailed feedback" buttons under answers (exam, speaking, writing) ---------------- */
-  V.aiButton = (task, n, src, level) => AI.local() ? "" : AI.hasKey()
-    ? `<div class="ai-row"><button class="btn ghost sm ai-fb-btn" data-aitask="${esc(task)}" data-ain="${n || ""}" data-aisrc="${esc(src || "")}" data-ailv="${esc(level || "")}">✨ Detailed feedback from Claude</button></div>`
-    : `<p class="muted small ai-row">✨ Want a teacher's detailed feedback? <button class="link" data-go="settings">Add your Claude API key</button>.</p>`;
+  V.aiButton = (task, n, src, level) => AI.hasKey() && !AI.local()
+    ? `<div class="ai-row"><button class="btn ghost sm ai-fb-btn" data-aitask="${esc(task)}" data-ain="${n || ""}" data-aisrc="${esc(src || "")}" data-ailv="${esc(level || "")}">✨ Check deeper with Claude – every mistake explained, better words, higher-level versions</button></div>`
+    : AI.local() ? `<p class="muted small ai-row">✨ A deeper teacher-style check needs Claude: the on-device model is too small to correct reliably. <button class="link" data-go="settings">Settings → AI tutor</button></p>`
+    : `<p class="muted small ai-row">✨ Want every mistake explained like a teacher, with better words and B1/B2 versions? <button class="link" data-go="settings">Add your Claude API key</button>.</p>`;
   document.addEventListener("click", async (e) => {
     const b = e.target.closest(".ai-fb-btn"); if (!b) return;
     e.preventDefault();

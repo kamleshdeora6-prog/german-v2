@@ -59,6 +59,14 @@
 
   /* ---------------- 3. What's new ---------------- */
   const NEWS = [
+    { v: "7.3.0", date: "30 October 2026", items: [
+      "<b>⏱ Daily goal in minutes of work</b>: every task counts what it is worth (a lesson part 10–20 min, even if you knew it and were faster). Home and Today show “60 of 158 min · 98 min left”, your real study time, and whether you are <b>ahead or behind your plan</b> – a long day builds a lead that covers a short one. The streak stays easy: any real practice keeps it.",
+      "<b>Today's plan on Home</b>, expanded, with the next step one tap away – and Today now fills your whole daily goal.",
+      "<b>🆕 New words of the day</b> (5 by default – Settings): from your current lesson first, with article, plural, example and sound, then straight into your flashcards.",
+      "<b>Max checks much more</b>: wrong gender (eine Schrank, Die Zimmer hat), adjective endings after ist (rote → rot), the number 1 for ein/eine, English words (bed → Bett), learner phrases (für ersten Treffen → beim ersten Treffen, ich bin kalt → mir ist kalt), the verb twice after weil, word order after „In Berlin …“, indirect questions, commas between whole sentences, spaces before , and ?, and spelling. Every correction says <i>why</i>, your whole answer comes back corrected, many mistakes can no longer be “Sehr gut”, and you get words from the lesson you could use.",
+      "<b>Model answers at higher levels</b>: 300 hand-written B1 / B2 / C1 versions of the lesson exam answers, with the parts that make the higher level underlined. With Claude: “Check deeper” explains every mistake like a teacher, suggests better words and writes your answer at the next two levels.",
+      "<b>Spelling counts</b>: short answers must be spelt right (bist du verhertitet → Almost, with the wrong letters marked). <b>Word tiles</b> show the answer line, the first word is written small (no giveaway), Check waits for an answer, and “⌨ Type instead” lets you write the sentence. <b>Lesson exams</b> show the reading text right next to the questions.",
+    ] },
     { v: "7.2.0", date: "29 October 2026", items: [
       "<b>▶ Today</b>: one button, one session. Flashcards → the next lesson step → a short drill → listening → your mistakes (and speaking or a mock-exam part for bigger goals), one after the other, sized to your daily goal. Leave for a lesson and a “Back to Today” button brings you back.",
       "<b>🩹 My mistakes</b>: every mistake – from drills, lessons, mock exams and Max's corrections in your texts – in one place, sorted by type. Each comes back until you get it right twice in a row.",

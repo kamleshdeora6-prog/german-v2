@@ -179,6 +179,48 @@
     if (!m.length) return 0;
     return m.filter((w) => g.has(w) || [...g].some((x) => x.length > 4 && (x.startsWith(w.slice(0, 5)) || w.startsWith(x.slice(0, 5))))).length / m.length;
   }
+  /* Answer check for typed answers with one right content (short questions, reading/listening questions).
+     Every content word of the model must be there; a word that is only *nearly* there is a spelling mistake,
+     not a right answer. Long answers: 60 % of the content words are enough, spelling mistakes are still shown.
+     → { ok, level: exact|umlaut|content|close|wrong|empty, typos: [{ g, w }], note } */
+  const MSTOP = new Set("der die das den dem des ein eine einen einem einer und oder aber er sie es ich du wir ihr in im am zu mit von für the a an".split(" "));
+  function variants(answer) {
+    const a = String(answer || "").replace(/^z\.\s?B\.\s*/, "");
+    if (!a.includes(" / ")) return [a];
+    const [first, ...alts] = a.split(" / ");
+    const fw = first.split(/\s+/);
+    return [first].concat(alts.map((b) => { const bw = b.split(/\s+/); return bw.length >= fw.length ? b : fw.slice(0, fw.length - bw.length).concat(bw).join(" "); }));
+  }
+  function match(given, answer, accept = []) {
+    const g0 = grade(given, answer, accept);
+    if (g0.ok || g0.level === "empty") return Object.assign({ typos: [] }, g0);
+    const uml = (x) => { let y = x; UML.forEach(([a, b]) => (y = y.split(a).join(b))); return y; };
+    const gw = clean(given).split(" ").filter(Boolean).map(uml);
+    const gset = new Set(gw);
+    let best = null;
+    [answer].concat(accept || []).filter(Boolean).flatMap(variants).forEach((v) => {
+      const mw = clean(v).split(" ").filter((w) => w.length > 1 && !MSTOP.has(w));
+      if (!mw.length) return;
+      let hit = 0; const typos = [];
+      mw.forEach((w) => {
+        if (gset.has(w)) { hit++; return; }
+        // the same word with another ending (kommt / kommen) counts for long answers only
+        const near = gw.map((x) => ({ x, d: lev(x, w) })).sort((a, b) => a.d - b.d)[0];
+        if (!near) return;
+        const maxD = Math.max(1, Math.floor(w.length * 0.3));
+        if (near.d <= maxD && w.length > 3) typos.push({ g: near.x, w, d: near.d });
+      });
+      const n = mw.length, long = clean(v).split(" ").length > 6;
+      const r = { v, n, hit, typos, ratio: (hit + typos.length) / n, long };
+      if (!best || r.hit + r.typos.length * 0.5 > best.hit + best.typos.length * 0.5) best = r;
+    });
+    if (!best) return Object.assign({ typos: [] }, g0);
+    if (best.hit === best.n) return { ok: true, level: "content", typos: [] };
+    const need = best.n <= 2 ? 1 : 0.6;
+    if (!best.typos.length) return best.hit / best.n >= need ? { ok: true, level: "content", typos: [] } : Object.assign({}, g0, { typos: [] });
+    if (best.ratio >= need) return best.long && best.hit / best.n >= need ? { ok: true, level: "content", typos: best.typos, note: "Check the spelling." } : { ok: false, level: "close", typos: best.typos, note: "Almost – check the spelling." };
+    return Object.assign({}, g0, { typos: best.typos });
+  }
   function wordDiff(target, said) {
     const a = target.replace(/[.,!?„“"]/g, "").split(/\s+/).filter(Boolean);
     const b = clean(said).split(" ").filter(Boolean);
@@ -347,5 +389,5 @@
   };
 
   window.addEventListener("pagehide", flush);
-  window.Store = Store; window.SRS = SRS; window.Grade = { grade, clean, overlap, wordDiff, lev }; window.Speech = Speech; window.H = H;
+  window.Store = Store; window.SRS = SRS; window.Grade = { grade, match, clean, overlap, wordDiff, lev }; window.Speech = Speech; window.H = H;
 })();

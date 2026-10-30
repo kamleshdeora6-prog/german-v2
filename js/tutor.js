@@ -225,6 +225,12 @@
     const map = { ich: "1s", du: "2s", er: "3s", wir: "1p", ihr: "2p", sie: "3p" };
     Object.entries(DC.conj || {}).forEach(([inf, v]) => Object.entries(v.f || {}).forEach(([k, f]) => { if (map[k] && f) add(String(f).split(" ")[0], inf, map[k]); }));
     ["war", "hatte", "konnte", "musste", "wollte", "durfte", "sollte", "wurde", "ging", "kam", "fuhr"].forEach((f) => add(f, "(past)", "1s"));
+    // 7.3: everyday verbs with a regular present tense that are not in the drill engine
+    "wohnen leben lernen machen spielen kochen kaufen sagen fragen hören brauchen suchen zeigen reisen lachen weinen feiern besuchen bezahlen bestellen erklären erzählen glauben hoffen holen kosten legen stellen setzen packen putzen rauchen schmecken schicken studieren telefonieren träumen üben verdienen wünschen zahlen malen duschen frühstücken heiraten mieten planen lieben schauen singen schwimmen trinken gehen stehen bleiben schreiben finden bringen denken gewinnen beginnen kommen liegen sitzen fliegen verstehen bekommen vergessen verkaufen gehören gefallen passen fehlen danken helfen antworten warten arbeiten kennen nennen rennen brennen".split(" ").forEach((inf) => {
+      if ([...FIN.values()].some((xs) => xs.some((x) => x.inf === inf))) return;
+      const nouns = KNOWN_NOUNS();
+      P.forEach((p) => { let f; try { f = E.conj(inf, p); } catch (e) { f = null; } if (f && /^[a-zäöüß]+$/.test(f) && !nouns.has(f) && !/^(reise|zahlen|stellen|rauchen|essen|leben|lachen|kosten|fragen|passen|planen|malen)$/.test(f)) add(f, inf, p); });
+    });
     return FIN;
   }
   const isFinite = (w) => finIndex().has(w.toLowerCase());
@@ -244,6 +250,35 @@
   const SEIN_F = new Set(["bin", "bist", "ist", "sind", "seid"]);
   const MODAL_F = new Set(["kann", "kannst", "können", "könnt", "muss", "musst", "müssen", "müsst", "will", "willst", "wollen", "wollt", "darf", "darfst", "dürfen", "dürft", "soll", "sollst", "sollen", "sollt", "möchte", "möchtest", "möchten", "möchtet"]);
   const SUB = new Set(["weil", "dass", "obwohl", "wenn", "ob", "damit", "bevor", "nachdem", "während", "bis", "seit", "seitdem", "sodass"]);
+  /* 7.3: phrases learners build from English – [regex, replacement, why] */
+  const PHRASES = [
+    [/\b(?:für|in|an|bei) (?:dem |den )?ersten (Treffen|Mal|Date)\b/gi, (m, n) => `beim ersten ${n.charAt(0).toUpperCase() + n.slice(1).toLowerCase()}`, "„At the first meeting / the first time“ is <b>beim ersten Treffen / beim ersten Mal</b> (bei + dem = beim)."],
+    [/\b(?:für|in|an) (?:dem |den )?ersten (Tag|Abend|Morgen)\b/gi, (m, n) => `am ersten ${n}`, "Days and parts of the day take <b>am</b>: am ersten Tag, am Abend."],
+    [/\bin (?:dem |das )?(Wochenende|Morgen|Abend|Nachmittag|Vormittag|Montag|Dienstag|Mittwoch|Donnerstag|Freitag|Samstag|Sonntag)\b/gi, (m, n) => `am ${n.charAt(0).toUpperCase() + n.slice(1)}`, "Days, the weekend and parts of the day take <b>am</b> (an + dem): am Wochenende, am Montag, am Abend."],
+    [/\b(?:in|im|an) (?:dem )?(Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember|Sommer|Winter|Frühling|Herbst)\b/g, (m, n) => (/^im /i.test(m) ? m : `im ${n}`), "Months and seasons take <b>im</b> (in + dem): im Juni, im Sommer."],
+    [/\bin (\d{4})\b/g, (m, y) => `im Jahr ${y}`, "Years: just the number (<i>2020 war ich …</i>) or <b>im Jahr 2020</b> – never „in 2020“."],
+    [/\b(?:nach|zu|in) (?:dem |den )?Arzt\b/g, "zum Arzt", "Going to a person: <b>zu</b> + Dativ → <b>zum Arzt</b>."],
+    [/\bmehr (besser|schöner|größer|kleiner|teurer|billiger|schneller|älter|jünger)\b/gi, (m, a) => a, "The comparative already means „more“: <b>besser</b>, not „mehr besser“."],
+    [/\b(ich|Ich) bin (kalt|warm|heiß)\b/g, (m, i, a) => `${i === "Ich" ? "Mir" : "mir"} ist ${a}`, "Feeling cold/warm: <b>Mir ist kalt</b>. („Ich bin kalt“ means you are a cold person.)"],
+    [/\b(ich|Ich) bin langweilig\b/g, (m, i) => `${i === "Ich" ? "Mir" : "mir"} ist langweilig`, "Feeling bored: <b>Mir ist langweilig</b>. („Ich bin langweilig“ = I am boring.)"],
+    [/\b(eine )?personal informations?\b/gi, (m, e) => (e ? "eine persönliche Information" : "persönliche Informationen"), "„personal information“ is English → <b>persönliche Informationen</b> (or: <i>Das ist privat / zu persönlich</i>)."],
+    [/\bmake (?:a )?photo\b/gi, "ein Foto machen", "In German you <b>macht</b> a photo: ein Foto machen."],
+  ];
+  /* English words learners slip in → the German word (only words that are not German themselves) */
+  const EN_DE = { bed: "Bett", chair: "Stuhl", table: "Tisch", kitchen: "Küche", room: "Zimmer", window: "Fenster", door: "Tür", house: "Haus", flat: "Wohnung", apartment: "Wohnung", bathroom: "Bad", bedroom: "Schlafzimmer", garden: "Garten", floor: "Stock", money: "Geld", friend: "Freund", friends: "Freunde", family: "Familie", city: "Stadt", school: "Schule", food: "Essen", water: "Wasser", coffee: "Kaffee", weather: "Wetter", salary: "Gehalt", question: "Frage", questions: "Fragen", brother: "Bruder", sister: "Schwester", mother: "Mutter", father: "Vater", children: "Kinder", child: "Kind", wife: "Frau", husband: "Mann", office: "Büro", shop: "Geschäft", street: "Straße", train: "Zug", station: "Bahnhof", doctor: "Arzt", teacher: "Lehrer", book: "Buch", because: "weil", always: "immer", very: "sehr", with: "mit", private: "privat", personal: "persönlich", beautiful: "schön", expensive: "teuer", cheap: "billig", small: "klein", big: "groß", nice: "schön", today: "heute", tomorrow: "morgen", yesterday: "gestern", work: "Arbeit", job: "Job" };
+  delete EN_DE.job;
+  const L1_DIGIT = /^1$/;
+  /* base form of an adjective with an ending: rote → rot, schöne → schön (only adjectives the checker knows) */
+  function adjBaseWord(w) {
+    adjBase("rot");                                   // builds ADJ_MAP
+    const lw = w.toLowerCase();
+    for (const e of ["en", "es", "em", "e"]) {           // not -er: ruhiger, schöner are comparatives
+      if (!lw.endsWith(e) || lw.length - e.length < 2) continue;
+      const st = lw.slice(0, -e.length);
+      if (ADJ_MAP.has(st) && ADJ_MAP.get(st).stem === st && !ADJ_MAP.get(st).e) return st;
+    }
+    return null;
+  }
   const TIME1 = ["heute", "morgen", "gestern", "dann", "danach", "deshalb", "deswegen", "darum", "trotzdem", "leider", "jetzt", "zuerst", "später", "manchmal", "oft", "hier", "dort", "abends", "morgens", "vielleicht", "außerdem", "also"];
   const TIME2 = ["am montag", "am dienstag", "am mittwoch", "am donnerstag", "am freitag", "am samstag", "am sonntag", "am abend", "am morgen", "am wochenende", "jeden tag", "letzte woche", "nächste woche", "im sommer", "im winter", "zu hause", "in berlin", "im büro"];
   const DAT_P = new Set(["mit", "bei", "von", "aus", "nach", "seit", "zu", "gegenüber"]);
@@ -321,8 +356,8 @@
     return checkOne(sentence);
   }
   function checkOne(sentence, afterColon = false) {
-    const raw = sentence.trim();
-    const endP = /[.!?]$/.test(raw) ? raw.slice(-1) : ".";
+    const raw = sentence.trim().replace(/\s+([,.!?;:])/g, "$1");
+    let endP = /[.!?]$/.test(raw) ? raw.slice(-1) : ".";
     let words = raw.replace(/[.!?]+$/, "").split(/\s+/);
     const issues = [];
     const low = () => words.map((w) => w.toLowerCase().replace(/[,;:]$/, ""));
@@ -335,6 +370,42 @@
       if (BAD_PP[k]) { add(`<s>${k}</s> → <b>${BAD_PP[k]}</b>`, "Wrong Partizip II. " + (/iert$/.test(BAD_PP[k]) ? "-ieren verbs have no ge-." : BAD_PP[k].startsWith("ge") ? "This verb is irregular or separable – learn its participle." : "Verbs with be-/ver-/er- have no ge-."), 17); return w.replace(new RegExp(k, "i"), BAD_PP[k]); }
       return w;
     });
+    // ---------- 7.3: fixed phrases, English words, "1" for ein ----------
+    {
+      let j = words.join(" ");
+      PHRASES.forEach(([re, rep, why]) => {
+        j = j.replace(re, (...m) => {
+          const got = m[0], fix = typeof rep === "function" ? rep(...m) : rep;
+          const cap = /^[A-ZÄÖÜ]/.test(got) && m[m.length - 2] === 0 ? fix.charAt(0).toUpperCase() + fix.slice(1) : fix;
+          if (cap.toLowerCase() === got.toLowerCase()) return got;
+          add(`<s>${got}</s> → <b>${cap}</b>`, why, 0); return cap;
+        });
+      });
+      words = j.split(/\s+/).filter(Boolean);
+    }
+    words = words.map((w, i) => {
+      const k = w.toLowerCase().replace(/[,;:]$/, "");
+      const de = EN_DE[k];
+      if (!de || w.replace(/[,;:]$/, "") !== k || NOUNSET.has(k)) return w;      // only small-letter English words – capitalised ones may be German loanwords
+      add(`<s>${k}</s> → <b>${de}</b>`, `„${k}“ is English. In German: <b>${de}</b>${/^[A-ZÄÖÜ]/.test(de) ? " (a noun – capital letter)" : ""}.`, 0);
+      return de + w.slice(k.length);
+    });
+    {
+      const LL = low();
+      for (let i = 0; i < LL.length - 1; i++) {
+        if (L1_DIGIT.test(LL[i]) === false) continue;
+        if (/^(um|seit|bis|nach|vor|von|ab|im|am|platz|nummer|seite|lektion|kapitel|teil|zimmer|bus|linie|gleis)$/.test(LL[i - 1] || "")) continue;
+        const nw = words[i + 1].replace(/[,;:.!?]$/, "");
+        if (/^(Euro|Cent|Kilo|Gramm|Liter|Meter|Kilometer|Zentimeter|Stunde|Minute|Sekunde|Uhr|Prozent|Jahr|Monat|Woche|Tag|Mal|Person|Stück|Glas|Flasche|Packung|Dose|Portion|Nacht|Euro\d*)$/i.test(nw)) continue;   // amounts: 1 Euro, 1 Stunde are fine
+        const ng = nounGender(nw); if (!ng || ng.pl) continue;
+        const prev = LL[i - 1] || "";
+        const akk = i > 0 && (finIndex().has(prev) || /^(für|ohne|durch|gegen)$/.test(prev)) && !/^(ist|sind|bin|bist|seid|war|waren|wird|werden)$/.test(prev);
+        const dat = /^(mit|bei|aus|zu|von|nach|seit)$/.test(prev);
+        const right = E.art("indef", dat ? "dat" : akk ? "akk" : "nom", ng.g);
+        add(`<s>1 ${nw}</s> → <b>${right} ${R_cap(nw)}</b>`, `Write <b>ein / eine / einen</b> as a word, not the number 1 – the article shows gender and case (${ng.g === "m" ? "der" : ng.g === "f" ? "die" : "das"} ${R_cap(nw)}${akk && ng.g === "m" ? ", Akkusativ → einen" : ""}).`, 8);
+        words[i] = right;
+      }
+    }
     // age
     let L = low();
     const hi = L.findIndex((w) => HABEN_F.has(w));
@@ -382,10 +453,48 @@
       add(`<s>${words.slice(0, first + 2).join(" ")}</s> → <b>${words.slice(0, first).join(" ")} ${L[first + 1]} ${L[first]}</b>`, `„${words.slice(0, first).join(" ")}“ already takes position 1, so the verb must come next (position 2) and the subject follows (inversion).`, 3);
       const tmp = words[first]; words[first] = words[first + 1].toLowerCase(); words[first + 1] = tmp.toLowerCase();
     }
+    // weil/dass … ist … ist: the verb twice – keep only the one at the end
+    L = low();
+    for (let i = 0; i < L.length - 3; i++) {
+      if (!/^(weil|dass|wenn|ob|obwohl|damit)$/.test(L[i])) continue;
+      let end = L.length; for (let j = i + 1; j < L.length; j++) if (/,$/.test(words[j])) { end = j + 1; break; }
+      const last = (L[end - 1] || "").replace(/,$/, "");
+      if (!isFinite(last)) continue;
+      const dup = L.findIndex((w, k) => k > i && k < end - 1 && w === last);
+      if (dup < 0) continue;
+      add(`<s>${L[i]} … ${last} … ${last}</s> → <b>${L[i]} … ${last}</b>`, `The verb (<b>${last}</b>) comes only <b>once</b> – after <b>${L[i]}</b> it goes to the <b>end</b> of the clause.`, 21);
+      words.splice(dup, 1); L = low();
+    }
+    // "In Berlin ich wohne", "Beim ersten Treffen man muss": a phrase in position 1 → verb next, then the subject
+    L = low();
+    if (!first && /^(in|im|an|am|auf|bei|beim|mit|nach|vor|seit|für|zum|zur|vom|aus|während|nach)$/.test(L[0] || "")) {
+      let k = -1;
+      for (let x = 1; x <= 4 && x < L.length - 2; x++) { const wx = words[x].replace(/[,;:]$/, ""); if (/^[A-ZÄÖÜ]/.test(wx) || (NOUNSET.has(L[x]) && x > 1)) { k = x; break; } if (/,$/.test(words[x])) break; }
+      if (k > 0 && PRONOUNS.has(L[k + 1]) && isFinite(L[k + 2] || "") && !/[,;:]$/.test(words[k]) && !finIndex().has(L[k + 1])) {
+        const head = words.slice(0, k + 1).join(" ");
+        add(`<s>${head} ${L[k + 1]} ${L[k + 2]}</s> → <b>${head} ${L[k + 2]} ${L[k + 1]}</b>`, `„${head}“ is position 1 – the verb comes next (position 2), then the subject (inversion).`, 3);
+        const tmp = words[k + 1]; words[k + 1] = words[k + 2].toLowerCase(); words[k + 2] = tmp.toLowerCase();
+      }
+    }
+    // indirect question: "Ich frage, wie viel Geld hast du" → "…, wie viel Geld du hast"
+    L = low();
+    {
+      const ci = words.findIndex((w, k) => k > 0 && /,$/.test(w) && (/^(fragen|frage|fragt|fragst|gefragt|weiß|weißt|wissen|sagen|sag|sagt|erklären|verstehe|verstehen)$/.test(L[k]) || (L[k] === "nicht" && /^(weiß|weißt|wissen|verstehe|verstehen)$/.test(L[k - 1]))));
+      if (ci >= 0 && /^(wie|wo|was|wann|warum|wer|wen|wem|wohin|woher|welche[rsnm]?|ob)$/.test(L[ci + 1] || "")) {
+        let v = -1; for (let k = ci + 2; k < Math.min(L.length - 1, ci + 6); k++) { if (isFinite(L[k]) && PRONOUNS.has(L[k + 1]) && !/^[A-ZÄÖÜ]/.test(words[k])) { v = k; break; } }
+        if (v > 0 && !words.slice(ci + 1, v).some((w) => /,$/.test(w)) && !L.slice(v + 1).some((w) => /,$/.test(w))) {
+          const verb = words.splice(v, 1)[0]; words.push(verb);
+          add(`<s>${L.slice(ci + 1).join(" ")}</s> → <b>${words.slice(ci + 1).join(" ").toLowerCase()}</b>`, `After „${L[ci]},“ the question is a <b>subordinate clause</b> (indirect question): the verb goes to the <b>end</b> and the sentence ends with a full stop.`, 21);
+          if (endP === "?" && !isFinite(L[0])) endP = ".";
+          L = low();
+        }
+      }
+    }
     // subordinate clause verb position
     L = low();
     for (let i = 0; i < L.length; i++) {
       if (!SUB.has(L[i])) continue;
+      if (L[i] === "damit" && (/^(oder|und|aber|sowie)$/.test(L[i + 1] || "") || /[,.;:]$/.test(words[i]))) continue;   // "damit" = with it
       if (L[i] === "seit" && !(i === 0 || /,$/.test(words[i - 1] || ""))) continue;
       if (/^(seit|bis)$/.test(L[i]) && /^(wann|wohin|wo|zu|morgen|heute|jetzt|später|bald|kurzem|langem|januar|februar|märz|april|mai|juni|juli|august|september|oktober|november|dezember|montag|dienstag|mittwoch|donnerstag|freitag|samstag|sonntag|ende|anfang|mitte)$/.test(L[i + 1] || "")) continue;   // "Seit Juni gibt es …": preposition   // "Seit wann …?", "Bis morgen" – not a subordinate clause
       if (/^(während|seit|bis)$/.test(L[i]) && (/^(der|des|dem|den|einer|eines|einem|zwei|drei|vier|fünf|sechs|wenigen|langem|kurzem|gestern|heute|morgen|jahren|wochen|monaten|tagen|stunden)$/.test(L[i + 1] || "") || /^\d/.test(L[i + 1] || ""))) continue;   // preposition, not a conjunction
@@ -489,7 +598,7 @@
         if (pr === "ihr" && /^[A-ZÄÖÜ]/.test(words[a + 1] || "")) continue;   // "hat ihr Mann": ihr is a possessive here
         const cands = finIndex().get(vb).filter((x) => x.inf !== "(past)");
         if (!cands.length) continue;
-        if (b === a + 1 && /^(gehe|gehst|geht|gehen|lasse|lässt|lassen|bleibe|bleibst|bleibt|bleiben|kann|kannst|können|muss|musst|müssen|will|willst|wollen|darf|darfst|dürfen|soll|sollst|sollen|möchte|möchtest|möchten|werde|wirst|wird|werden)$/.test(L[b + 1] || "")) continue;   // "bevor ich schlafen gehe": infinitive before the finite verb at the end
+        if (b === a + 1 && /^(gehe|gehst|geht|gehen|lasse|lässt|lassen|bleibe|bleibst|bleibt|bleiben|kann|kannst|können|muss|musst|müssen|will|willst|wollen|darf|darfst|dürfen|soll|sollst|sollen|möchte|möchtest|möchten|werde|wirst|wird|werden|wollte|wollten|konnte|konnten|musste|mussten|sollte|sollten|durfte|durften|mochte|würde|würden|könnte|könnten)$/.test(L[b + 1] || "")) continue;   // "bevor ich schlafen gehe": infinitive before the finite verb at the end
         const ok = cands.some((x) => x.p === PRON_P[pr] || (pr === "ihr" && x.p === "3s" && false));
         if (ok) continue;
         if (pr === "es" || pr === "er") { if (cands.some((x) => x.p === "3s")) continue; }
@@ -580,6 +689,7 @@
     for (let i = 0; i < L.length - 2; i++) {
       const p = L[i]; const isD = DAT_P.has(p), isA = AKK_P.has(p); if (!isD && !isA) continue;
       if (p === "für" && L[i - 1] === "was") continue;
+      if (p === "nach" && /^(meinung|ansicht|auffassung)$/.test(L[i - 1] || "")) continue;   // "meiner Meinung nach kein …"
       const m = (L[i + 1] || "").match(/^(mein|dein|sein|ihr|unser|eu(?:e)?r|kein)(e|en|em|er|es)?$/); if (!m) continue;
       const nw = (words[i + 2] || "").replace(/[,;:.!?]$/, ""); if (!/^[A-ZÄÖÜ]/.test(nw)) continue;
       let ng = nounGender(nw); if (!ng) continue;
@@ -681,12 +791,52 @@
     words = words.map((w, i) => {
       const k = w.replace(/[,;:]$/, "");
       const prev = (L[i - 1] || ""), next = words[i + 1] || "";
-      if (i > 0 && k === k.toLowerCase() && NOUNSET.has(k) && !isFinite(k) && !NON_NOUN().has(k) && !(FUNC && FUNC[k]) && !/^(essen|leben|arbeiten|junge|alte|kranke|recht|unrecht|leid|weh|schuld|angst|weg|heim|fest|statt|teil|stand|halt|mal|morgen|abend)$/.test(k) && !maybeVerb(k) && !(/en$/.test(k) && !/^(der|die|das|den|dem|des|ein|eine|einen|einem|eines|kein|keine|keinen|keinem|mein|dein|sein|ihr|unser|euer|zum|beim|vom|im|am)$/.test(prev)) && !PRONOUNS.has(prev) && !/^[A-ZÄÖÜ]/.test(next) && !/^(zu|sich|mich|dich|uns|euch)$/.test(prev)) {
+      if (i > 0 && k === k.toLowerCase() && NOUNSET.has(k) && !isFinite(k) && !NON_NOUN().has(k) && !(FUNC && FUNC[k]) && !/^(essen|leben|arbeiten|junge|alte|kranke|recht|unrecht|leid|weh|schuld|angst|weg|heim|fest|statt|teil|stand|halt|mal|morgen|abend)$/.test(k) && !maybeVerb(k) && !(/en$/.test(k) && !/^(der|die|das|den|dem|des|ein|eine|einen|einem|eines|kein|keine|keinen|keinem|mein|dein|sein|ihr|unser|euer|zum|beim|vom|im|am)$/.test(prev) && !/^(erst|zweit|dritt|viert|fünft|letzt|nächst)en$/.test(prev)) && !PRONOUNS.has(prev) && !/^[A-ZÄÖÜ]/.test(next) && !/^(zu|sich|mich|dich|uns|euch)$/.test(prev)) {
         add(`<s>${k}</s> → <b>${R_cap(k)}</b>`, "All German nouns start with a capital letter.", 5);
         return R_cap(k) + w.slice(k.length);
       }
       return w;
     });
+    // 7.3: eine/meine/keine + a der/das-noun in the singular: "eine Schrank", "Meine Zimmer hat"
+    L = low();
+    const SG_VERB = (w) => { const c = finIndex().get((w || "").replace(/[,;:.!?]$/, "")); return !!c && c.every((x) => x.p === "3s" || x.p === "1s") && c.some((x) => x.p === "3s"); };
+    for (let i = 0; i < L.length - 1; i++) {
+      const m = L[i].match(/^(k?ein|mein|dein|sein|ihr|unser)e$/); if (!m) continue;
+      if (i > 0 && /^(mit|von|zu|bei|aus|nach|seit|für|durch|ohne|gegen|um|in|an|auf|über|unter|vor|hinter|neben|zwischen)$/.test(L[i - 1])) continue;
+      const nw = (words[i + 1] || "").replace(/[,;:.!?]$/, ""); if (!/^[A-ZÄÖÜ][a-zäöüß]+$/.test(nw)) continue;
+      const ng = nounGender(nw); if (!ng || ng.pl || ng.g === "f") continue;
+      const sgNext = SG_VERB(words[i + 2]) && !/,$/.test(words[i + 1]);
+      if (m[1] !== "ein" && maybePlural(nw) && !sgNext) continue;   // meine Zimmer = my rooms, keine Computer
+      if (m[1] === "ein" && i > 0 && /^(die|der|den|dem|des)$/.test(L[i - 1])) continue;
+      const subj = i === 0 || sgNext;
+      const prev = L[i - 1] || "";
+      const akk = !subj && i > 0 && finIndex().has(prev) && !/^(ist|sind|bin|bist|seid|war|waren|wird|werden|heißt|heiße|bleibt)$/.test(prev);
+      const right = m[1] + (akk && ng.g === "m" ? "en" : "");
+      const shown = /^[A-ZÄÖÜ]/.test(words[i]) ? R_cap(right) : right;
+      add(`<s>${words[i]} ${nw}</s> → <b>${shown} ${nw}</b>`, `<b>${nw}</b> is ${ng.g === "m" ? "masculine (der " + nw + ")" : "neuter (das " + nw + ")"}${akk && ng.g === "m" ? ` and here it is the object (Akkusativ) → <b>${right}</b>` : ` → <b>${right}</b>`}. <b>${L[i]}</b> is only for die-words and plurals.`, ng.g === "m" && akk ? 6 : 8);
+      words[i] = shown; L = low();
+    }
+    // "Die Zimmer hat …": die + a der/das-noun with a singular verb → it is one room: das Zimmer
+    for (let i = 0; i < L.length - 2; i++) {
+      if (L[i] !== "die") continue;
+      const nw = (words[i + 1] || "").replace(/[,;:.!?]$/, ""); if (!/^[A-ZÄÖÜ]/.test(nw) || /,$/.test(words[i + 1])) continue;
+      const ng = nounGender(nw); if (!ng || ng.g === "f" || PL_ONLY.test(nw)) continue;
+      if (!SG_VERB(words[i + 2])) continue;
+      if (i > 0 && !/^(und|aber|oder|denn)$/.test(L[i - 1]) && !(i === 0)) continue;
+      const right = ng.g === "m" ? "der" : "das", shown = i === 0 ? R_cap(right) : right;
+      add(`<s>${words[i]} ${nw} ${L[i + 2]}</s> → <b>${shown} ${nw} ${L[i + 2]}</b>`, `<b>${L[i + 2]}</b> is singular, so it is one ${nw}: ${right} ${nw} (${ng.g === "m" ? "masculine" : "neuter"}). <i>die ${nw}</i> would be the plural – then: die ${nw} haben/sind.`, 4);
+      words[i] = shown; L = low();
+    }
+    // "Das Sofa ist rote." – after sein/werden/bleiben the adjective has no ending
+    for (let i = 1; i < L.length; i++) {
+      if (!/^(ist|sind|bin|bist|seid|war|waren|wird|werden|bleibt|bleiben|wirkt|scheint|aussieht)$/.test(L[i - 1])) continue;
+      const w = L[i]; const nx = words[i + 1];
+      if (nx && /^[A-ZÄÖÜ]/.test(nx.replace(/[,;:.!?]$/, ""))) continue;
+      if (nx && !/^(und|aber|oder|sondern|denn|,)$/.test((nx || "").toLowerCase()) && !/[,;:]$/.test(words[i])) continue;
+      const base = adjBaseWord(w); if (!base || base === w) continue;
+      add(`<s>${L[i - 1]} ${w}</s> → <b>${L[i - 1]} ${base}</b>`, `After <b>${L[i - 1]}</b> the adjective stands alone and has <b>no ending</b>: das Sofa ist ${base === "rot" ? "rot" : base} (but: das ${base}e Sofa).`, 23);
+      words[i] = base + (words[i].match(/[,;:]$/) || [""])[0]; L = low();
+    }
     if (!afterColon && words[0] && words[0][0] !== words[0][0].toUpperCase()) { add("Capital letter at the start", "Every sentence starts with a capital letter.", 3); words[0] = R_cap(words[0]); }
     if (L.includes("wegen") && /wegen (dem|den)/.test(L.join(" "))) add("<s>wegen dem</s> → <b>wegen des</b>", "Spoken German often uses the Dativ, but in writing/exams wegen takes the <b>Genitiv</b>.", 40);
     // dedupe

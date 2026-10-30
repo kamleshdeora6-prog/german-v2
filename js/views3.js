@@ -87,7 +87,7 @@
     const tick = setInterval(() => { if (!document.body.contains(tl)) return clearInterval(tick); left--; tl.textContent = `${Math.floor(left / 60)}:${String(left % 60).padStart(2, "0")}`; if (left <= 0) { clearInterval(tick); el.querySelector(".finish").click(); } }, 1000);
     el.querySelector(".finish").onclick = (e) => {
       clearInterval(tick); e.currentTarget.disabled = true;
-      el.querySelectorAll(".mq").forEach((q) => { max += 2; const ok = Grade.overlap(q.querySelector("input").value, q.dataset.a) >= 0.5; if (ok) score += 2; q.insertAdjacentHTML("beforeend", `<p class="${ok ? "okt" : "badt"}">${ok ? "✓" : "✗"} ${esc(q.dataset.a)}</p>`); });
+      el.querySelectorAll(".mq").forEach((q) => { max += 2; const mg = Grade.match(q.querySelector("input").value, q.dataset.a), ok = mg.ok; if (ok) score += 2; q.insertAdjacentHTML("beforeend", `<p class="${ok ? "okt" : "badt"}">${ok ? "✓" : "✗"} ${esc(q.dataset.a)}${mg.typos.length ? "<br>" + FB.typos(mg.typos) : ""}</p>`); });
       el.querySelectorAll(".lq").forEach((q) => {
         const it = lang[+q.dataset.i]; max += 1;
         const v = (q.querySelector("select") || q.querySelector("input")).value;
@@ -252,6 +252,8 @@
     el.innerHTML = `<h2 class="page-title">Settings</h2>
       <section class="card form">
         <label>Daily goal <select data-k="goal" data-num="1"><option value="20">Locker – 20 XP (~5 min)</option><option value="50">Normal – 50 XP (~10 min)</option><option value="100">Ernsthaft – 100 XP (~20 min)</option><option value="150">Intensiv – 150 XP (~30 min)</option></select></label>
+        <label>Daily goal in minutes of work <select data-k="minutesGoal" data-num="1" data-def="0"><option value="0">From my plan${s.plan ? ` (${s.plan.minutes} min)` : " / goal above"}</option>${[15, 30, 45, 60, 90, 120, 150, 180].map((m) => `<option value="${m}">${m} min</option>`).join("")}</select></label>
+        <label>New words per day <select data-k="newWords" data-num="1" data-def="5">${[3, 5, 10, 15].map((m) => `<option value="${m}">${m}</option>`).join("")}</select></label>
         <label>Speaking speed <input data-k="rate" type="range" min="0.5" max="1.3" step="0.05"> <button class="btn ghost sm test">Test voice</button></label>
         <label>Voice for texts and exams <select data-k="natural">${[["auto", `Natural recordings when available${window.Natural && Natural.count() ? ` (${Natural.count()} sentences)` : ""}, otherwise the device voice`], ["off", "Always the device voice"]].map(([v, t]) => `<option value="${v}" ${(st.natural || "auto") === v ? "selected" : ""}>${t}</option>`).join("")}</select></label>
         ${voices.length ? `<label>German voice <select data-k="voice"><option value="">Automatic</option>${voices.map((v) => `<option>${esc(v.name)}</option>`).join("")}</select></label>` : `<p class="muted small">${window.AndroidBridge ? "Using the phone's text-to-speech engine." : "No German voice found. Install one in your system's speech settings."}</p>`}
@@ -336,7 +338,7 @@
     el.querySelector(".padd").onclick = App.profileSheet;
     el.querySelectorAll("[data-k]").forEach((inp) => {
       const k = inp.dataset.k;
-      if (inp.type === "checkbox") inp.checked = !!st[k]; else inp.value = st[k] ?? "";
+      if (inp.type === "checkbox") inp.checked = !!st[k]; else inp.value = st[k] ?? (inp.dataset.def || "");
       inp.onchange = () => {
         st[k] = inp.type === "checkbox" ? inp.checked : inp.type === "number" || inp.type === "range" || inp.dataset.num ? +inp.value : inp.value.trim();
         Store.save(); if (k === "theme" || k === "labels" || k === "textSize") App.applyTheme();

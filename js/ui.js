@@ -26,7 +26,7 @@
     let body = "";
     if (item.kind === "choice") body = `<div class="choices">${item.options.map((o) => `<button class="choice" data-v="${esc(o)}">${esc(o)}</button>`).join("")}</div>`;
     else if (item.kind === "input") body = `<form class="q-form" autocomplete="off"><input class="q-in" type="text" autocapitalize="off" spellcheck="false" placeholder="Type your answer" aria-label="Answer"><button class="btn" type="submit">Check</button></form>${UI.umlautBar()}`;
-    else if (item.kind === "order") body = `<div class="built" aria-live="polite">${item.fixedFirst ? `<span class="tok fixed">${esc(item.fixedFirst)}</span>` : ""}</div><div class="bank">${bankTokens(item).map((t, i) => `<button class="tok" data-i="${i}">${esc(t)}</button>`).join("")}</div><div class="row"><button class="btn q-check">Check</button><button class="btn ghost q-reset">Reset</button></div>`;
+    else if (item.kind === "order") body = `<p class="muted small ord-help">Tap the words in the right order – tap a word again to take it back.</p><div class="built" aria-live="polite" aria-label="Your answer">${item.fixedFirst ? `<span class="tok fixed">${esc(item.fixedFirst)}</span>` : ""}<span class="ph">Your answer appears here</span></div><div class="bank">${bankTokens(item).map((t, i) => `<button class="tok" data-i="${i}">${esc(t)}</button>`).join("")}</div><div class="row"><button class="btn q-check" disabled>Check</button><button class="btn ghost q-reset">Reset</button><button class="btn ghost q-type" type="button">⌨ Type instead</button></div><form class="q-form ord-type" autocomplete="off" hidden><input class="q-in" type="text" autocapitalize="off" spellcheck="false" placeholder="Type the whole sentence" aria-label="Answer"><button class="btn" type="submit">Check</button></form>`;
     el.innerHTML = `<div class="q ${opts.compact ? "compact" : ""}">${UI.reportBtn(itemCtx(item))}${promptHtml}${body}<div class="q-fb" hidden></div></div>`;
     const fb = el.querySelector(".q-fb");
 
@@ -87,18 +87,34 @@
         finish(g.ok, inp.value.trim(), g);
       };
     } else {
-      const built = el.querySelector(".built"), bank = el.querySelector(".bank");
-      const move = (b) => { if (answered) return; (b.parentElement === bank ? built : bank).appendChild(b); };
+      const built = el.querySelector(".built"), bank = el.querySelector(".bank"), chk = el.querySelector(".q-check");
+      const sync = () => { const n = built.querySelectorAll(".tok:not(.fixed)").length; built.querySelector(".ph").hidden = n > 0; chk.disabled = !!bank.children.length; built.classList.toggle("has", n > 0); };
+      const move = (b) => { if (answered) return; (b.parentElement === bank ? built : bank).appendChild(b); sync(); };
       bank.querySelectorAll(".tok").forEach((b) => (b.onclick = () => move(b)));
-      el.querySelector(".q-reset").onclick = () => built.querySelectorAll(".tok:not(.fixed)").forEach((b) => bank.appendChild(b));
-      el.querySelector(".q-check").onclick = () => {
-        const words = Array.from(built.querySelectorAll(".tok")).map((b) => b.textContent);
-        if (bank.children.length) return H.toast("Use all the words first.");
-        const given = words.join(" ");
-        const clean = (s) => Grade.clean(s);
-        const ok = clean(given) === clean(item.answer) || (item.accept || []).some((a) => clean(a) === clean(given));
-        finish(ok, given);
+      el.querySelector(".q-reset").onclick = () => { built.querySelectorAll(".tok:not(.fixed)").forEach((b) => bank.appendChild(b)); sync(); };
+      const same = (given) => { const clean = (s) => Grade.clean(s); return clean(given) === clean(item.answer) || (item.accept || []).some((a) => clean(a) === clean(given)); };
+      chk.onclick = () => {
+        if (answered) return;
+        if (bank.children.length) return H.toast(built.querySelectorAll(".tok:not(.fixed)").length ? "Use all the words first." : "Tap the words to build your answer first.");
+        const given = Array.from(built.querySelectorAll(".tok")).map((b) => b.textContent).join(" ");
+        finish(same(given), given);
       };
+      // type the sentence yourself
+      const tf = el.querySelector(".ord-type"), tin = tf.querySelector("input");
+      el.querySelector(".q-type").onclick = (e) => {
+        const typing = tf.hidden; tf.hidden = !typing; built.hidden = typing; bank.hidden = typing; el.querySelector(".ord-help").hidden = typing;
+        chk.hidden = typing; el.querySelector(".q-reset").hidden = typing; e.target.textContent = typing ? "🧩 Use the word tiles" : "⌨ Type instead";
+        if (typing) { if (item.fixedFirst && !tin.value) tin.value = item.fixedFirst + " "; setTimeout(() => tin.focus(), 30); }
+      };
+      tf.onsubmit = (e) => {
+        e.preventDefault(); if (answered) return;
+        const v = tin.value.trim(); if (!v) return tin.focus();
+        const g = Grade.grade(v, item.answer, item.accept);
+        const ok = g.ok || same(v);
+        tin.disabled = true;
+        finish(ok, v, ok ? g : g.level === "close" ? g : {});
+      };
+      sync();
     }
     return { finish };
   };
@@ -107,8 +123,20 @@
   function bankTokens(item) {
     const words = String(item.answer).replace(/[.!?]+$/, "").split(/\s+/).filter(Boolean);
     const skip = item.fixedFirst ? String(item.fixedFirst).split(/\s+/).filter(Boolean).length : 0;
+    // the first word would give the answer away with its capital letter (and "?"/"." are left out): write it small,
+    // unless it is a noun or the polite Sie – those are capitalised anywhere in the sentence
+    if (!skip && words.length > 1 && /^[A-ZÄÖÜ]/.test(words[0]) && UI.smallFirst(words[0])) words[0] = words[0][0].toLowerCase() + words[0].slice(1);
     return Engine.R.shuffle(words.slice(skip));
   }
+  let VFORMS = null;
+  const SMALL = /^(wann|was|wo|wohin|woher|wie|warum|wer|wen|wem|wessen|welche[rsnm]?|wieso|weshalb|heute|morgen|gestern|dann|danach|deshalb|trotzdem|jetzt|hier|dort|ich|du|er|es|wir|man|ja|nein|doch|und|aber|oder|denn|weil|dass|wenn|ob|als|im|am|um|in|an|auf|mit|nach|zu|bei|von|aus|für|ohne|der|die|das|den|dem|des|ein|eine|einen|einem|einer|kein|keine|mein|meine|dein|deine|sein|seine|unser|unsere|bitte|leider|vielleicht|gern|oft|immer|nie|manchmal|schon|noch|nicht|sehr|auch|so|da|bis|seit|vor|während|nachdem|bevor|obwohl|damit|zum|zur|beim|vom|ins)$/;
+  UI.smallFirst = (w) => {
+    const lw = w.toLowerCase();
+    if (SMALL.test(lw)) return true;
+    if (!VFORMS) { VFORMS = new Set(); try { Engine.VERBS.forEach((v) => ["1s", "2s", "3s", "1p", "2p", "3p"].forEach((p) => VFORMS.add(String(Engine.conj(v, p)).toLowerCase()))); Object.values(Engine.IRR).forEach((t) => Object.values(t).forEach((f) => VFORMS.add(String(f).toLowerCase()))); Object.values((window.DC && DC.conj) || {}).forEach((t) => Object.values(t.f || {}).forEach((f) => VFORMS.add(String(f).split(" ")[0].toLowerCase()))); } catch (e) { /* engine not ready */ } }
+    if (!VFORMS.has(lw)) return false;
+    return !Engine.lookupNoun(w) && !((window.DC && DC.vocab) || []).some((v) => v.art && v.de.split(" ").slice(1).join(" ") === w);
+  };
 
   /* external dictionaries – opened in the system browser (also from inside the APK) */
   UI.dictLinks = (word) => {

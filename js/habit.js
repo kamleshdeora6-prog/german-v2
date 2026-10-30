@@ -147,7 +147,7 @@
       if (ev && ev.kind === "frozen") setTimeout(() => H.toast(`❄️ A freeze saved your streak (${ev.used} day${ev.used > 1 ? "s" : ""}). Welcome back!`, "good"), 600);
       if (n > 0) Habit.track("xp", n);
       const q = qd();
-      if (before < goal && now >= goal && !q.celebrated) { q.celebrated = true; Store.save(); setTimeout(() => Habit.celebrate("Tagesziel erreicht! (Daily goal reached)", `${goal} XP today · ${streakView().count}-day streak 🔥`), 700); }
+      // 7.3: "daily goal reached" is now about minutes of work (js/work.js), not XP
       const lb = level(s.xp - n), la = level(s.xp);
       if (la.n > lb.n) setTimeout(() => Habit.celebrate(`Level ${la.n}: ${la.title}`, "New level reached. Weiter so!"), 1500);
     },

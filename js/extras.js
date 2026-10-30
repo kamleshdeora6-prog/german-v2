@@ -146,6 +146,7 @@
       for (let i = from; i < to; i++) { const d = new Date(Date.now() - i * 864e5); const k = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; Object.entries(log[k] || {}).forEach(([t, [r, n]]) => { const o = (out[t] = out[t] || [0, 0]); o[0] += r; o[1] += n; }); }
       return out;
     },
+    minutes() { const w = Store.get().work || {}; let m = 0; for (let i = 0; i < 7; i++) { const d = new Date(Date.now() - i * 864e5); const k = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; m += w[k] ? w[k].m : 0; } return m; },
     report() {
       const now = Weekly.range(0, 7), before = Weekly.range(7, 14), s = Store.get();
       const days = Object.keys(s.days || {}).filter((d) => Date.now() - new Date(d).getTime() < 7 * 864e5 && s.days[d] > 0).length;
@@ -154,11 +155,21 @@
       return { days, xp, answers: Object.values(now).reduce((a, [, n]) => a + n, 0), rows: rows.sort((a, b) => a.pct - b.pct) };
     },
   });
-  const title = (id) => (Engine.GEN[id] && Engine.GEN[id].title) || (/^lesson(\d+)/.test(id) ? "Lesson " + (Course.pos(+id.slice(6)) || id.slice(6)) : id.replace(/^bank:|^sent:|^lib:/, "").replace(/_/g, " "));
+  const NICE = { dictation: "Dictation", mistake: "My mistakes", correction: "Corrections from Max", write: "Writing", speak: "Speaking", bank: "Question bank", other: "Other" };
+  const title = (id) => {
+    id = String(id || "");
+    if (Engine.GEN[id]) return Engine.GEN[id].title;
+    if (/^mistake:/.test(id)) { const c = id.slice(8); return "My mistakes · " + (window.Mistakes ? Mistakes.title(c) : NICE[c] || c); }
+    if (/^lesson(\d+)/.test(id)) return "Lesson " + (Course.pos(+id.slice(6)) || id.slice(6));
+    if (/^telc:/.test(id) && window.Mistakes) return Mistakes.title(id);
+    if (NICE[id]) return NICE[id];
+    const t = id.replace(/^bank:|^sent:|^lib:/, "").replace(/_/g, " ");
+    return t.charAt(0).toUpperCase() + t.slice(1);
+  };
   UI.weeklyCard = () => {
     const r = Weekly.report(); if (!r.answers) return "";
     const top = r.rows.slice(0, 4), up = r.rows.filter((x) => x.prev !== null && x.pct > x.prev).sort((a, b) => b.pct - b.prev - (a.pct - a.prev)).slice(0, 2);
-    return `<section class="card weekly"><h3>📅 ${H.bi("Diese Woche", "This week")}</h3><p class="muted small">${r.days} day${r.days === 1 ? "" : "s"} practised · ${r.answers} answers · ${r.xp} XP</p>
+    return `<section class="card weekly"><h3>📅 ${H.bi("Diese Woche", "This week")}</h3><p class="muted small">${r.days} day${r.days === 1 ? "" : "s"} practised · ${r.answers} answers${window.Work ? ` · ${Work.fmt(Weekly.minutes())} of work` : ""} · ${r.xp} XP</p>
       ${top.length ? `<ul class="wk">${top.map((x) => `<li><span>${esc(title(x.t))}</span><b class="${x.pct >= 80 ? "good" : x.pct >= 60 ? "mid" : "low"}">${x.pct}%</b>${x.prev !== null ? `<small class="${x.pct >= x.prev ? "up" : "down"}">${x.pct >= x.prev ? "↑" : "↓"} ${x.prev}%</small>` : ""}${Engine.GEN[x.t] && x.pct < 80 ? `<button class="link" data-go="practice/${x.t}">practise</button>` : ""}</li>`).join("")}</ul>` : ""}
       ${up.length ? `<p class="small">💪 Better than last week: ${up.map((x) => `<b>${esc(title(x.t))}</b> (${x.prev}% → ${x.pct}%)`).join(", ")}</p>` : ""}</section>`;
   };

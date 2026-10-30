@@ -29,26 +29,32 @@ let pass = 0, fail = 0; const log = (c, m) => { c ? pass++ : fail++; console.log
   const steps = await p.$$eval('.t-steps li', (x) => x.map((y) => y.textContent.trim()));
   log(steps.length >= 5, `Today plan for a 30-minute goal: ${steps.join(' | ')}`);
   await p.screenshot({ path: OUT + '/today.png', fullPage: true });
-  // step 1: flashcards
+  // step 1: new words of the day (7.3)
+  log(/New words of the day/.test(steps[0]), 'Today starts with the new words of the day');
+  let g0 = 0; while ((await p.$('.t-body .nw-ok')) && g0++ < 20) { await p.click('.t-body .nw-ok'); await p.waitForTimeout(60); }
+  log(await p.evaluate(() => Store.get().wotd.learned.length === Store.get().wotd.ids.length && Store.get().wotd.ids.length === 5 && Store.get().wotd.ids.every((id) => Store.get().srs[id])), '5 new words learned → they are in the flashcards');
+  log(await p.evaluate(() => Work.done() > 0), 'learning words counts as work: ' + (await p.evaluate(() => Work.summary().line)));
+  // step 2: flashcards
   let guard = 0; while ((await p.$('.t-body .flash')) && guard++ < 30) { await p.click('.t-body .flash'); await p.click('.t-body [data-g="2"]'); await p.waitForTimeout(60); }
-  log(await p.evaluate(() => Store.get().todaySession.steps[0].done), 'step 1 (flashcards) done → next step');
+  log(await p.evaluate(() => Store.get().todaySession.steps[1].done), 'step 2 (flashcards) done → next step');
   // step 2: lesson link → back bar → comes back
   if (await p.$('.t-go')) { await p.click('.t-go'); await p.waitForTimeout(400); log(!!(await p.$('.todaybar')), 'lesson step opens the lesson with a “Back to Today” bar');
-    await p.evaluate(() => Habit.markPart(1, 'learn')); await p.click('.todaybar'); await p.waitForSelector('.today'); log(/✓/.test((await p.$$eval('.t-steps li', (x) => x[1].textContent))), 'lesson part done in the lesson → ticked off in Today'); }
+    await p.evaluate(() => Habit.markPart(1, 'learn')); await p.click('.todaybar'); await p.waitForSelector('.today'); log(/✓/.test((await p.$$eval('.t-steps li', (x) => x.find((y) => /Lesson/.test(y.textContent)).textContent))), 'lesson part done in the lesson → ticked off in Today');
+    log(await p.evaluate(() => (Store.get().work[Store.today()].k['L1:learn'] || 0) >= 12), 'a finished lesson part counts its full worth (12 min) in work minutes'); }
   // step 3: drill (inline session)
   await p.waitForSelector('.t-body .q, .t-body .sess-body', { timeout: 5000 }).catch(() => {});
-  for (let k = 0; k < 6; k++) { const r = await p.evaluate(() => { const q = document.querySelector('.t-body .q'); if (!q) return 'none'; const c = q.querySelector('.choice'); if (c) { c.click(); return 'c'; } const inp = q.querySelector('.q-in'); if (inp) { inp.value = 'x'; q.querySelector('form').requestSubmit(); return 'i'; } const tok = q.querySelector('.bank button'); if (tok) { q.querySelectorAll('.bank button').forEach((t) => t.click()); const ch = q.querySelector('.check, .q-check'); if (ch) ch.click(); return 'o'; } return 'other'; }); await p.waitForTimeout(150); await p.click('.t-body .q-next').catch(() => {}); await p.waitForTimeout(120); if (r === 'none') break; }
+  for (let k = 0; k < 12; k++) { const r = await p.evaluate(() => { const q = document.querySelector('.t-body .q'); if (!q) return 'none'; const c = q.querySelector('.choice'); if (c) { c.click(); return 'c'; } const inp = q.querySelector('.q-in'); if (inp) { inp.value = 'x'; q.querySelector('form').requestSubmit(); return 'i'; } const tok = q.querySelector('.bank button'); if (tok) { q.querySelectorAll('.bank button').forEach((t) => t.click()); const ch = q.querySelector('.check, .q-check'); if (ch) ch.click(); return 'o'; } return 'other'; }); await p.waitForTimeout(150); await p.click('.t-body .q-next').catch(() => {}); await p.waitForTimeout(120); if (r === 'none') break; }
   await p.waitForSelector('.t-cont button', { timeout: 5000 }).catch(() => {});
   log(!!(await p.$('.t-cont button')), 'drill finished inside Today → “Continue Today”');
   // a drill mistake is now in the mistake engine
   const nm = await p.evaluate(() => Mistakes.open().length); log(nm > 0, `wrong drill answers went to “My mistakes” (${nm})`);
   // skip the rest quickly
   if (await p.$('.t-cont button')) await p.click('.t-cont button');
-  for (let k = 0; k < 10 && !(await p.$('.t-end')); k++) { await p.waitForTimeout(150); const sk = await p.$('.t-skip'); if (sk) await sk.click(); else { const c = await p.$('.t-cont button, .t-n'); if (c) await c.click(); } }
+  for (let k = 0; k < 40 && !(await p.$('.t-end')); k++) { await p.waitForTimeout(150); const sk = await p.$('.t-skip'); if (sk) await sk.click(); else { const c = await p.$('.t-cont button, .t-n'); if (c) await c.click(); } }
   await p.waitForSelector('.t-end', { timeout: 6000 }).catch(() => {});
-  log(!!(await p.$('.t-end')), 'all steps → “Done for today” with +10 minutes');
+  log(!!(await p.$('.t-end')), 'all steps → end screen with “+ more steps”');
   await p.evaluate(() => document.querySelectorAll('.celebrate').forEach((x) => x.remove()));
-  await go('today/more'); await p.waitForTimeout(400); log((await p.$$('.t-steps li:not(.done)')).length >= 3, '+10 minutes adds three steps');
+  await go('today/more'); await p.waitForTimeout(400); log((await p.$$('.t-steps li:not(.done)')).length >= 3, '+ more steps adds steps');
   // ---- mistakes from a mock exam ----
   await go('telc/b1-1/part/sb1'); await p.waitForSelector('.gap-s');
   await p.evaluate(() => { document.querySelectorAll('.gap-s').forEach((s) => { const P = DC.telc.B1[0].parts.sb1; const it = P.items.find((x) => x.n === +s.dataset.n); s.value = String((it.a + 1) % 3); }); });

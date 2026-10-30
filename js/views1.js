@@ -20,7 +20,8 @@
   V.home = (el) => {
     const s = Store.get(); const p = V.profile();
     const goal = s.settings.goal || 50; const todayXP = s.days[Store.today()] || 0;
-    const pct = Math.round((todayXP / goal) * 100);
+    const ws = Work.summary();
+    const pct = Math.round((ws.m / Math.max(1, ws.T)) * 100);
     const sv = Habit.streakView(); const lv = Habit.level(s.xp); const nx = Habit.next();
     const l = p.next; const ls = Store.lesson(l.n); const partsDone = Habit.partsDone(l.n);
     const hr = new Date().getHours();
@@ -36,19 +37,22 @@
         return sp && sp.done < sp.total && !l1.done && (s.starterMode || sp.done > 0 || !s.xp) ? `<button class="st-entry" data-go="${sp.next ? "starter/u/" + sp.next.id : "starter"}"><span class="st-pic">🐣</span><span><b>${H.bi("Erste Schritte", "First steps – German from zero")}</b><span>Picture cards and 3-minute rounds · ${sp.done}/${sp.total} units${sp.next ? " · next: " + esc(sp.next.en) : ""}</span></span></button>` : ""; })()}
     <section class="hero" aria-label="Today">
       <div class="hero-row">
-        ${Habit.ring(pct, 116, 12, `<b>${todayXP}</b><span>/ ${goal} XP</span>`)}
+        ${Habit.ring(Math.min(100, pct), 116, 12, `<b data-work="m">${ws.m}</b><span>/ ${ws.T} min</span>`)}
         <div class="hero-side">
           <div class="flame ${sv.today ? "lit" : sv.atRisk ? "risk" : ""}"><span class="fl">🔥</span><b>${sv.count}</b><span>${sv.count === 1 ? "day" : "days"}</span></div>
           <div class="freeze" title="Streak freezes protect your streak on a missed day">❄️ ${sv.freezes}/2 freeze${sv.freezes === 1 ? "" : "s"}</div>
-          <p class="muted small">${pct >= 100 ? "Tagesziel erreicht ✓ (daily goal reached)" : sv.today ? `${goal - todayXP} XP to today's goal` : sv.atRisk ? "Learn today to keep your streak" : sv.willFreeze ? "A freeze will cover the missed day" : "Start your streak today"}</p>
+          <p class="muted small">${pct >= 100 ? "Tagesziel erreicht ✓ (daily goal reached)" : ws.m && Work.covered() ? `✓ Covered by your lead · ${Work.fmt(ws.left)} left for the full goal` : sv.today ? `${Work.fmt(ws.left)} of work left today` : sv.atRisk ? "Learn today to keep your streak" : sv.willFreeze ? "A freeze will cover the missed day" : "Start your streak today"}</p>
+          <p class="small t-bal ${ws.bal >= 0 ? "ahead" : "behind"}" data-work="bal">${esc(ws.balLine)}</p>
+          <p class="muted small" data-work="time">⏱ ${Work.fmt(ws.time)} studied today</p>
         </div>
       </div>
-      ${(() => { const T = s.todaySession && s.todaySession.date === Store.today() ? s.todaySession : null; const left = T ? T.steps.filter((x) => !x.done) : null;
+      ${(() => { const T0 = s.todaySession && s.todaySession.date === Store.today() ? s.todaySession : null; const left = T0 ? T0.steps.filter((x) => !x.done) : null; const T = T0 && T0.steps.some((x) => x.done) ? T0 : null;
         if (/^starter/.test(nx.go)) return `<button class="btn sign big-btn go-next" data-go="${nx.go}"><span>${pct >= 100 ? "Keep going" : sv.today ? "Continue" : "Start"}: ${esc(nx.label)}</span><small>${esc(nx.sub)} · ~${nx.min} min</small></button>`;   // complete beginners: First steps first
-        return T && !left.length ? `<button class="btn sign big-btn go-next" data-go="today/more"><span>✓ Today done – 10 more minutes?</span><small>${esc(nx.label)}</small></button>`
-          : `<button class="btn sign big-btn go-next" data-go="today"><span>${T ? "Continue today's session" : "▶ Start today's session"}</span><small>${T ? `${left.length} step${left.length > 1 ? "s" : ""} left · ~${left.reduce((a, x) => a + x.mins, 0)} min` : "Cards · lesson · drill · listening · mistakes"}</small></button>`; })()}
+        return T0 && !left.length ? `<button class="btn sign big-btn go-next" data-go="today/more"><span>✓ Today done – 10 more minutes?</span><small>${esc(nx.label)}</small></button>`
+          : `<button class="btn sign big-btn go-next" data-go="today"><span>${T ? "Continue today's session" : "▶ Start today's session"}</span><small>${left ? `${left.length} step${left.length > 1 ? "s" : ""} · ~${left.reduce((a, x) => a + x.mins, 0)} min · ${esc(Work.summary().line)}` : "New words · cards · lesson · drill · listening · mistakes"}</small></button>`; })()}
     </section>
-    <section class="week" aria-label="This week">${Habit.week().map((d) => `<div class="wd ${d.xp >= goal ? "met" : d.xp ? "some" : ""} ${d.frozen ? "frz" : ""} ${d.today ? "today" : ""} ${d.future ? "fut" : ""}"><span>${d.n}</span><i>${d.frozen ? "❄" : d.xp >= goal ? "✓" : d.xp ? "•" : ""}</i></div>`).join("")}</section>
+    <section class="week" aria-label="This week">${Habit.week().map((d) => { const met = Work.met(d.k); return `<div class="wd ${met ? "met" : d.xp ? "some" : ""} ${d.frozen ? "frz" : ""} ${d.today ? "today" : ""} ${d.future ? "fut" : ""}" title="${Math.round(Work.done(d.k))} min of work"><span>${d.n}</span><i>${d.frozen ? "❄" : met ? "✓" : d.xp ? "•" : ""}</i></div>`; }).join("")}</section>
+    ${V.homeToday ? V.homeToday() : ""}
     <section class="card quests"><h3>${H.bi("Tagesquests", "Daily quests · new at midnight")}</h3>
       ${Habit.quests().map((q) => `<div class="quest ${q.done ? "done" : ""}"><span class="qic">${q.done ? "✅" : q.ic}</span><div class="qt"><span>${esc(q.t)}</span><div class="pbar sm"><span style="width:${Math.round((q.have / q.target) * 100)}%"></span></div></div><small>${q.have}/${q.target}</small></div>`).join("")}
     </section>
@@ -201,8 +205,8 @@
         const q = l.dq[+box.dataset.i];
         box.querySelector("form").onsubmit = (e) => {
           e.preventDefault(); const v = box.querySelector("input").value; if (!v.trim()) return;
-          const ok = Grade.grade(v, q.a).ok || Grade.overlap(v, q.a) >= 0.5;
-          const f = box.querySelector(".rfb"); f.hidden = false; f.innerHTML = `${ok ? "✓" : "✗"} <b>${esc(q.a)}</b>`;
+          const g = Grade.match(v, q.a), ok = g.ok;
+          const f = box.querySelector(".rfb"); f.hidden = false; f.innerHTML = `${ok ? "✓" : g.level === "close" ? "≈" : "✗"} <b>${esc(q.a)}</b>${g.typos.length ? "<br>" + FB.typos(g.typos) : ""}`;
           if (window.Habit) Habit.track("listen"); Store.addXP(ok ? 5 : 1);
         };
       });
@@ -213,10 +217,10 @@
       const q = answered[+box.dataset.i];
       box.querySelector("form").onsubmit = (e) => {
         e.preventDefault();
-        const v = box.querySelector("input").value; const sc = Grade.overlap(v, q.a);
+        const v = box.querySelector("input").value; const g = Grade.match(v, q.a); const good = g.ok;
         const f = box.querySelector(".rfb"); f.hidden = false;
-        f.innerHTML = `${sc >= 0.5 ? "✓ Good." : "Compare:"} Model answer: <b>${esc(q.a)}</b>`;
-        if (sc >= 0.5) Store.addXP(5); if (window.Habit) { Habit.markPart(l.n, "read"); Habit.track("read"); }
+        f.innerHTML = `${good ? "✓ Good." : g.level === "close" ? "Almost – check the spelling." : "Compare:"} Model answer: <b>${esc(q.a)}</b>${g.typos.length ? "<br>" + FB.typos(g.typos) : ""}`;
+        if (good) Store.addXP(5); if (window.Habit) { Habit.markPart(l.n, "read"); Habit.track("read"); }
       };
     });
   }
@@ -282,7 +286,7 @@
         f.classList.remove("stale");
         f.innerHTML = `${FB.closed(t.q, inp.value, t.a, g)} ${!g.ok ? `<br><button class="link ov">My answer is also correct</button> · <button class="link" data-ask="${esc(`Why is the answer „${t.a}“ in: ${t.q}`)}">Ask Max why</button>` : ""}`;
         const ov = f.querySelector(".ov"); if (ov) ov.onclick = () => { mark(true); ov.remove(); };
-        Store.topic("lesson" + l.n, g.ok); Store.addXP(g.ok ? 5 : 1);
+        Store.topic("lesson" + l.n, g.ok); Store.addXP(g.ok ? 5 : 1); if (window.Work) Work.add(0.5);
         if (!g.ok) Store.mistake({ prompt: md(t.q), answer: t.a, given: inp.value, lesson: l.n });
         mark(g.ok);
       };
@@ -294,13 +298,22 @@
     }
   }
 
+  /* the lesson's texts next to the exam questions – no switching back to the Read tab */
+  V.examText = (l) => {
+    const para = (t) => esc(t).split(/\n+/).map((x) => `<p>${x}</p>`).join("");
+    return `<aside class="exam-text"><details ${matchMedia("(min-width: 1000px)").matches ? "open" : ""}><summary>📄 ${H.bi("Text", "The reading text")} <span class="muted small">– tap to show or hide</span></summary>
+      <div class="et-body"><div class="row inline">${UI.say(l.reading, "Play")}<button class="btn ghost sm et-slow">Slow</button></div>${para(l.reading)}
+      ${l.reading2 ? `<h4>${esc(l.reading2.title)} ${UI.say(l.reading2.text)}</h4>${para(l.reading2.text)}` : ""}
+      ${l.dialog ? `<details class="et-dlg"><summary class="small">🎧 Listening scene – transcript</summary>${l.dialog.map((d) => `<p><b>${esc(d.who)}:</b> ${esc(d.de)}</p>`).join("")}</details>` : ""}</div></details></aside>`;
+  };
   function exam(el, l, ls) {
-    el.innerHTML = `<section class="card"><h3>10 exam questions</h3><p class="muted small">Closed questions are checked automatically. Open questions: write or speak, then let Max check your German.</p>
+    el.innerHTML = `<div class="exam-split">${V.examText(l)}<div class="exam-q"><section class="card"><h3>10 exam questions</h3><p class="muted small">Closed questions are checked automatically. Open questions: write or speak, then let Max check your German.</p>
       ${l.exam.map((q, i) => `<div class="eq" data-i="${i}">${UI.reportBtn({ id: `L${l.n}-exam${i + 1}`, lesson: l.n, part: "Exam " + (i + 1), q: q.q, a: q.a })}<p><b>${i + 1}.</b> ${md(q.q)} ${UI.hint(q.q)}</p>
         ${q.a && !/^z\.\s?B\./.test(q.a) ? `<form class="q-form"><input class="q-in" autocomplete="off" placeholder="Answer"><button class="btn sm">Check</button></form>` :
-          `<textarea rows="3" placeholder="Write your answer in German…"></textarea><div class="row">${UI.mic("Speak")}<button class="btn sm chk">Check my answer</button>${q.a || q.m ? `<button class="btn ghost sm model">Model answer</button>` : ""}</div>`}
+          `<textarea rows="3" placeholder="Write your answer in German…"></textarea><div class="row">${UI.mic("Speak")}<button class="btn sm chk">Check my answer</button>${q.a || q.m ? `<button class="btn ghost sm model">Model answer${(DC.models || {})[`${l.n}:${i}`] ? "s (" + [l.level].concat(Object.keys(DC.models[`${l.n}:${i}`])).join(" · ") + ")" : ""}</button>` : ""}</div>`}
         <div class="efb" hidden></div></div>`).join("")}</section>
-      ${partNav(l, ls, "exam")}`;
+      ${partNav(l, ls, "exam")}</div></div>`;
+    el.querySelector(".et-slow").onclick = () => Speech.speak(l.reading, 0.7);
     el.querySelectorAll(".eq").forEach((box) => {
       const q = l.exam[+box.dataset.i]; const f = box.querySelector(".efb");
       const form = box.querySelector("form");
@@ -308,26 +321,27 @@
       if (form) form.onsubmit = (e) => {
         e.preventDefault(); const v = box.querySelector("input").value;
         if (!v.trim()) { H.toast("Type your answer first."); return; }
-        const g = Grade.grade(v, q.a); const ov = Grade.overlap(v, q.a);
-        const ok = g.ok || ov >= 0.6;
+        const g = Grade.match(v, q.a);
+        const ok = g.ok;
         const short = q.a.split(/\s+/).length <= 4;      // one-word / short answers: show the exact difference; longer ones: the content counts
         f.hidden = false; f.classList.remove("stale");
-        f.innerHTML = short || g.ok ? FB.closed(q.q, v, q.a, ok && !g.ok ? { ok: true } : g) : `${ok ? `<span class="fb-ok">✓ ${H.bi("Inhalt stimmt", "The content is right")}</span>` : `<span class="fb-bad">✗ Not quite.</span>`} Model answer: <b>${esc(q.a)}</b>${ok ? "" : `<br><span class="muted small">Look for the answer in the reading text (part 2), then try again.</span>`}`;
+        f.innerHTML = short || g.level !== "content" ? FB.closed(q.q, v, q.a, g) : `<span class="fb-ok">✓ ${H.bi("Inhalt stimmt", "The content is right")}</span> Model answer: <b>${esc(q.a)}</b>${g.typos.length ? "<br>" + FB.typos(g.typos) : ""}`;
+        if (!ok && !short) f.insertAdjacentHTML("beforeend", `<br><span class="muted small">The answer is in the reading text – open it above.</span>`);
         if (!ok) f.insertAdjacentHTML("beforeend", ` <br><button class="link ov">My answer is also correct</button>`);
         const ovb = f.querySelector(".ov"); if (ovb) ovb.onclick = () => { ls.exam[box.dataset.i] = true; Store.save(); ovb.replaceWith("✓ Counted as correct."); };
-        ls.exam[box.dataset.i] = ok; if (window.Habit && Object.keys(ls.exam).length >= 4) Habit.markPart(l.n, "exam"); Store.addXP(ok ? 5 : 1); Store.save();
+        ls.exam[box.dataset.i] = ok; if (window.Work) Work.add(0.5); if (window.Habit && Object.keys(ls.exam).length >= 4) Habit.markPart(l.n, "exam"); Store.addXP(ok ? 5 : 1); Store.save();
       };
       const ta = box.querySelector("textarea");
       if (ta) {
         UI.bindMic(box, (t) => { ta.value = (ta.value ? ta.value + " " : "") + t; });
         box.querySelector(".chk").onclick = () => {
           if (!ta.value.trim()) return H.toast("Write or speak an answer first.");
-          const r = FB.open(ta.value, { prompt: q.q, lesson: l, model: q.m || (q.a ? q.a.replace(/^z\.\s?B\.\s*/, "") : "") });
+          const r = FB.open(ta.value, { prompt: q.q, lesson: l, model: q.m || (q.a ? q.a.replace(/^z\.\s?B\.\s*/, "") : ""), models: (DC.models || {})[`${l.n}:${box.dataset.i}`] });
           f.hidden = false; f.innerHTML = r.html + V.aiButton(q.q, l.n);
           ls.exam[box.dataset.i] = r.score >= 50; ls.examScore = Object.assign(ls.examScore || {}, { [box.dataset.i]: r.score });
           if (window.Habit && Object.keys(ls.exam).length >= 4) Habit.markPart(l.n, "exam"); Store.addXP(r.score >= 65 ? 10 : 4); Store.save();
         };
-        const m = box.querySelector(".model"); if (m) m.onclick = () => { const mt = q.m || q.a.replace(/^z\.\s?B\.\s*/, ""); f.hidden = false; f.innerHTML = `<div class="fb-model"><b>📝 Model answer</b><p class="ex">${esc(mt)} ${UI.say(mt)}</p><p class="muted small">One possible answer. Write your own, then press “Check my answer”.</p></div>`; };
+        const m = box.querySelector(".model"); if (m) m.onclick = () => { const mt = q.m || q.a.replace(/^z\.\s?B\.\s*/, ""); f.hidden = false; f.innerHTML = FB.modelsHtml(mt, (DC.models || {})[`${l.n}:${box.dataset.i}`], l.level, true) + `<p class="muted small">Write your own answer, then press “Check my answer”.</p>`; };
       }
     });
   }
