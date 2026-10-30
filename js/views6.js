@@ -59,6 +59,9 @@
 
   /* ---------------- 3. What's new ---------------- */
   const NEWS = [
+    { v: "7.4.0", date: "30 October 2026", items: [
+      "<b>☁ Sync between devices</b>: learn on the PC, continue on the phone (any browser, also iPhone, and the Android app). Progress is saved in your own private GitHub repo, one file per learner. Set it up once in Settings → Sync; on a new device choose “I already learn on another device – load my profile”. Changes from two devices are merged – lessons, flashcards and mistakes from both are kept. The token stays on each device and is never in a backup; your Claude key is never synced.",
+    ] },
     { v: "7.3.0", date: "30 October 2026", items: [
       "<b>⏱ Daily goal in minutes of work</b>: every task counts what it is worth (a lesson part 10–20 min, even if you knew it and were faster). Home and Today show “60 of 158 min · 98 min left”, your real study time, and whether you are <b>ahead or behind your plan</b> – a long day builds a lead that covers a short one. The streak stays easy: any real practice keeps it.",
       "<b>Today's plan on Home</b>, expanded, with the next step one tap away – and Today now fills your whole daily goal.",

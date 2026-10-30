@@ -44,6 +44,7 @@
           <p class="muted small">${pct >= 100 ? "Tagesziel erreicht ✓ (daily goal reached)" : ws.m && Work.covered() ? `✓ Covered by your lead · ${Work.fmt(ws.left)} left for the full goal` : sv.today ? `${Work.fmt(ws.left)} of work left today` : sv.atRisk ? "Learn today to keep your streak" : sv.willFreeze ? "A freeze will cover the missed day" : "Start your streak today"}</p>
           <p class="small t-bal ${ws.bal >= 0 ? "ahead" : "behind"}" data-work="bal">${esc(ws.balLine)}</p>
           <p class="muted small" data-work="time">⏱ ${Work.fmt(ws.time)} studied today</p>
+          ${window.Sync && Sync.on() ? `<p class="muted small sync-line" data-sync data-go="settings/sync">${esc(Sync.statusText())}</p>` : ""}
         </div>
       </div>
       ${(() => { const T0 = s.todaySession && s.todaySession.date === Store.today() ? s.todaySession : null; const left = T0 ? T0.steps.filter((x) => !x.done) : null; const T = T0 && T0.steps.some((x) => x.done) ? T0 : null;

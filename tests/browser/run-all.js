@@ -12,7 +12,7 @@ const serve = (dir, port) => new Promise((ok) => {
     fs.readFile(f, (e, d) => { if (e) { res.writeHead(404); return res.end("not found"); } res.writeHead(200, { "content-type": TYPES[path.extname(f)] || "application/octet-stream" }); res.end(d); });
   }); s.listen(port, () => ok(s));
 });
-const ORDER = ["user-journey", "today", "fixes", "first-steps", "lessons", "drill-guide", "library", "exam-pack", "claude-ai", "claude-ai-robustness", "local-ai", "editions", "lab-models", "offline"];
+const ORDER = ["user-journey", "today", "fixes", "sync", "first-steps", "lessons", "drill-guide", "library", "exam-pack", "claude-ai", "claude-ai-robustness", "local-ai", "editions", "lab-models", "offline"];
 (async () => {
   fs.mkdirSync(path.join(__dirname, "out"), { recursive: true });
   const py = spawnSync(process.platform === "win32" ? "python" : "python3", [path.join(ROOT, "tools", "make_editions.py"), DIST], { stdio: "inherit" });

@@ -46,6 +46,7 @@
   let saveT = null;
   function save() {
     clearTimeout(saveT);
+    if (state && !Store._quiet) state.updatedAt = Date.now();     // 7.4: sync compares this between devices
     const k = keyOf((profiles || loadProfiles()).active), snap = state;
     saveT = setTimeout(() => { try { localStorage.setItem(k, JSON.stringify(snap)); } catch (e) { console.warn("save failed", e); } }, 150);
     listeners.forEach((f) => f(state));
@@ -120,6 +121,21 @@
     export() { const s = Store.get(); return JSON.stringify(Object.assign({}, s, { profileName: Store.name(), settings: Object.assign({}, s.settings, { aiKey: "" }) }), null, 1); },   // the API key never goes into a backup file
     import(txt) { const d = JSON.parse(txt); if (!d || typeof d !== "object" || !("xp" in d)) throw new Error("This file is not a Deutsch Coach backup."); const nm = d.profileName; delete d.profileName; const key = (state && state.settings && state.settings.aiKey) || ""; state = deepMerge(DEFAULTS(), d); if (!state.settings.aiKey) state.settings.aiKey = key; if (nm && !Store.name()) Store.setName(nm); save(); },
     reset() { state = DEFAULTS(); save(); },
+    /* ----- 7.4 sync helpers ----- */
+    raw: () => JSON.parse(JSON.stringify(Store.get())),
+    replace(d) { state = deepMerge(DEFAULTS(), d); flush(); listeners.forEach((f) => { try { f(state); } catch (e) {} }); },
+    setProfile(fields) { Object.assign(Store.profile(), fields); writeProfiles(); },
+    /* a profile that comes from another device: its own slot on this device, then switch to it */
+    addProfileWith(meta, data) {
+      const P = profiles || loadProfiles();
+      const blank = P.list.length === 1 && !P.list[0].name && !(state && state.xp);
+      const id = blank ? P.list[0].id : "p" + Date.now().toString(36);
+      if (!blank) P.list.push({ id, name: "", color: COLORS[P.list.length % COLORS.length], created: Date.now() });
+      Object.assign(P.list.find((p) => p.id === id), meta);
+      flush(); P.active = id; writeProfiles();
+      try { localStorage.setItem(keyOf(id), JSON.stringify(deepMerge(DEFAULTS(), data))); } catch (e) {}
+      state = null; load(); listeners.forEach((f) => { try { f(state); } catch (e) {} }); return id;
+    },
     today,
   };
 

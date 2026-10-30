@@ -2,6 +2,12 @@
 
 All dates are the release dates of the app version shown in Settings → About.
 
+## 7.4.0 — 30 October 2026
+- Sync through a private GitHub repo (`js/sync.js`, route `settings/sync`): GitHub contents API, one file `profiles/<slug>.json` per learner ({app, v, name, color, updatedAt, data}). Repo + fine-grained token per device in `localStorage` (`deutschcoach.sync`, lab: `deutschcoach.lab.sync`) – never in code, backups or the synced data; `settings.aiKey` is blanked before upload. Sync on start, on return to the app, 8 s after changes, when leaving, when back online and on profile switch; 409/422 → re-read, merge, retry.
+- `Sync.merge(local, remote)`: xp / days / work minutes = max, srs per card by last review, lessons done/read/parts/tasks united, topics by answer count, mistakes united by id, streak from the device that learned last, exam results united, Today/words-of-the-day of the same day united, settings from the newer copy except device-local ones (voice, theme, keys …).
+- Store: `updatedAt` on every save, `Store.raw/replace/setProfile/addProfileWith` (a downloaded profile reuses an empty first-start profile). Entry points: onboarding (“I already learn on another device”), profile sheet, Settings, Home status line.
+- Tests: `tests/browser/sync.js` (22 checks, two browser contexts against a fake GitHub API).
+
 ## 7.3.0 — 30 October 2026
 Fixes for the problems collected in `docs/ISSUES.md` (1–11).
 - Word-order items (`UI.item` kind order): placeholder answer line, Check disabled until all tiles are used, "⌨ Type instead" (graded with `Grade.grade`), first tile lower-cased unless it is a noun/Sie (`UI.smallFirst`).

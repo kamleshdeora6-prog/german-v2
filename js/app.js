@@ -3,7 +3,7 @@
   "use strict";
   const ROUTES = { home: "home", library: "library", revise: "revise", today: "today", mistakes: "mistakes", telc: "telc", notebook: "notebook", audio: "audio", dictation: "dictation", story: "story", decline: "decline", watch: "watch", cards: "cards", exercises: "exercises", verbs: "verbs", sentences: "sentences", pictures: "pictures", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more", readexam: "readexam", write: "write", notes: "notes", translate: "translate", about: "about", placement: "placement", pronounce: "pronounce", news: "news", plan: "plan", daily: "daily", weak: "weak", refresh: "refresh", resources: "resources", starter: "starter", partner: "partner" };
   const TAB_OF = { today: "home", mistakes: "practice", telc: "practice", notebook: "practice", audio: "more", dictation: "practice", story: "practice", decline: "practice", watch: "practice", revise: "practice", library: "practice", cards: "practice", exercises: "practice", verbs: "practice", sentences: "practice", pictures: "practice", home: "home", path: "path", lesson: "path", practice: "practice", vocab: "practice", listen: "practice", speak: "practice", pronounce: "practice", tutor: "tutor", daily: "home", plan: "more", weak: "practice", refresh: "path", starter: "path", partner: "practice" };
-  const App = (window.App = { version: "7.3.0", updated: "29 October 2026", author: "Zombieland", pendingAsk: null });
+  const App = (window.App = { version: "7.4.0", updated: "29 October 2026", author: "Zombieland", pendingAsk: null });
   /* Where problem reports go. Put an email address here to offer email as well. */
   App.contact = { github: "https://github.com/kamleshdeora6-prog/german-v2", email: "" };
   App.report = (ctx) => {
@@ -65,6 +65,7 @@
         <p class="muted small">Every profile has its own progress, words and streak on this device.</p>
         <ul class="plist">${Store.profiles().map((p) => `<li><button class="pick ${p.id === cur.id ? "on" : ""}" data-id="${p.id}"><span class="av" style="background:${p.color}">${H.esc(initial(p.name))}</span>${H.esc(p.name || "Unnamed")}${p.id === cur.id ? ' <span class="muted small">· active</span>' : ""}</button></li>`).join("")}</ul>
         <div class="row"><input class="newname" maxlength="30" placeholder="New learner's name" aria-label="New learner's name"><button class="btn sign add">Add</button></div>
+        <div class="row"><button class="btn ghost" data-go="settings/sync">☁ ${window.Sync && Sync.on() ? "Profiles on GitHub" : "Load my profile from another device"}</button></div>
         <div class="row"><button class="btn ghost" data-go="settings">Manage profiles</button><button class="btn ghost close">Close</button></div></div>`;
       d.querySelectorAll(".pick").forEach((b) => (b.onclick = () => { Store.switchTo(b.dataset.id); d.remove(); App.afterSwitch(); }));
       d.querySelector(".add").onclick = () => {
@@ -73,12 +74,12 @@
         Store.addProfile(nm); d.remove(); App.afterSwitch();
       };
       d.querySelector(".close").onclick = () => d.remove();
-      d.querySelector("[data-go]").addEventListener("click", () => d.remove());
+      d.querySelectorAll("[data-go]").forEach((x) => x.addEventListener("click", () => d.remove()));
     };
     draw(); d.onclick = (e) => { if (e.target === d) d.remove(); };
     document.body.appendChild(d);
   };
-  App.afterSwitch = () => { App.applyTheme(); App.renderChip(); H.toast(`Hallo, ${Store.name() || "du"}!`); onboarding(); App.go("home"); };
+  App.afterSwitch = () => { App.applyTheme(); App.renderChip(); H.toast(`Hallo, ${Store.name() || "du"}!`); onboarding(); App.go("home"); if (window.Sync) Sync.syncNow("switch"); };
 
   App.go = (h) => { if (location.hash === "#/" + h) App.route(); else location.hash = "#/" + h; };
   App.askMax = (q) => { App.maxPanel(true); setTimeout(() => (V0().tutorSend ? V0().tutorSend(q) : App.pendingAsk = q), 60); };
@@ -205,7 +206,7 @@
       if (step === 1) d.innerHTML = `<div class="sheet ob" role="dialog" aria-labelledby="ob-t">${dots}<div class="ob-hero">🇩🇪</div><h2 id="ob-t">Willkommen! <span class="muted small">Welcome!</span></h2>
         <p>German from A1 to C2 in short daily steps. Every answer tells you <b>why</b>.</p>
         <label class="namebox">What should we call you? <input class="obname" maxlength="30" autocomplete="given-name" placeholder="Your name" value="${H.esc(Store.name())}"></label>
-        <button class="btn sign big-btn ob-next">Weiter · Next</button>${Store.hasStable() ? `<button class="btn ghost ob-import">🧪 Lab: copy my progress from the daily app</button>` : ""}</div>`;
+        <button class="btn sign big-btn ob-next">Weiter · Next</button><button class="btn ghost ob-sync">☁ I already learn on another device – load my profile</button>${Store.hasStable() ? `<button class="btn ghost ob-import">🧪 Lab: copy my progress from the daily app</button>` : ""}</div>`;
       if (step === 2) d.innerHTML = `<div class="sheet ob" role="dialog" aria-labelledby="ob-t">${dots}<h2 id="ob-t">How much a day?</h2>
         <p class="muted">Small and daily beats big and rare. You can change this any time.</p>
         <div class="col goalpick">${[[20, "Locker", "Casual", "5 min"], [50, "Normal", "Regular", "10 min"], [100, "Ernsthaft", "Serious", "20 min"], [150, "Intensiv", "Intense", "30 min"]].map(([g, t, te, m]) => `<button class="pickrow ${g === goal ? "on" : ""}" data-goal="${g}"><b>${t} <span class="muted small">· ${te}</span></b><span>${m} a day</span></button>`).join("")}</div>
@@ -218,6 +219,8 @@
       const nm = d.querySelector(".obname"); if (nm) { setTimeout(() => nm.focus(), 50); nm.onkeydown = (e) => { if (e.key === "Enter") d.querySelector(".ob-next").click(); }; }
       d.querySelectorAll("[data-goal]").forEach((b) => (b.onclick = () => { goal = +b.dataset.goal; d.querySelectorAll("[data-goal]").forEach((x) => x.classList.toggle("on", x === b)); }));
       d.querySelectorAll("[data-tone]").forEach((b) => (b.onclick = () => { tone = b.dataset.tone; d.querySelectorAll("[data-tone]").forEach((x) => x.classList.toggle("on", x === b)); }));
+      const obs = d.querySelector(".ob-sync");
+      if (obs) obs.onclick = () => { const s = Store.get(); s.settings.onboarded = true; Store.save(); d.remove(); App.go("settings/sync"); };
       const im = d.querySelector(".ob-import");
       if (im) im.onclick = () => { if (Store.importStable()) { const s = Store.get(); s.settings.onboarded = true; Store.save(); d.remove(); App.applyTheme(); App.renderChip(); H.toast("Progress copied from the daily app."); App.go("home"); } };
       const nx = d.querySelector(".ob-next");

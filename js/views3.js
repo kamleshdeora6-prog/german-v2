@@ -247,9 +247,11 @@
   }
   V.settings = (el, [sect] = []) => {
     if (sect === "problems") return problems(el);
+    if (sect === "sync" && window.Sync) return Sync.page(el);
     const s = Store.get(); const st = s.settings;
     const voices = Speech.voices();
     el.innerHTML = `<h2 class="page-title">Settings</h2>
+      <section class="card slim"><p>☁ <b>Sync between devices</b> <span class="muted small" data-sync>${window.Sync ? H.esc(Sync.statusText()) : ""}</span></p><button class="btn ghost sm" data-go="settings/sync">${window.Sync && Sync.on() ? "Open" : "Set up"}</button></section>
       <section class="card form">
         <label>Daily goal <select data-k="goal" data-num="1"><option value="20">Locker – 20 XP (~5 min)</option><option value="50">Normal – 50 XP (~10 min)</option><option value="100">Ernsthaft – 100 XP (~20 min)</option><option value="150">Intensiv – 150 XP (~30 min)</option></select></label>
         <label>Daily goal in minutes of work <select data-k="minutesGoal" data-num="1" data-def="0"><option value="0">From my plan${s.plan ? ` (${s.plan.minutes} min)` : " / goal above"}</option>${[15, 30, 45, 60, 90, 120, 150, 180].map((m) => `<option value="${m}">${m} min</option>`).join("")}</select></label>
@@ -327,7 +329,7 @@
         <p>Created by <b>${App.author}</b></p>
         <p>Last updated: ${App.updated}</p>
         <p class="muted small">© ${new Date().getFullYear()} ${App.author}. All rights reserved.</p>
-        <div class="row"><button class="btn ghost sm" data-go="about">About & privacy</button><button class="btn ghost sm" data-report='{"part":"General feedback"}'>⚑ Report a problem</button><button class="btn ghost sm" data-go="settings/problems">🧯 Problem log (${window.ErrLog ? ErrLog.list().length : 0})</button></div></section>`;
+        <div class="row"><button class="btn ghost sm" data-go="about">About & privacy</button><button class="btn ghost sm" data-report='{"part":"General feedback"}'>⚑ Report a problem</button><button class="btn ghost sm" data-go="settings/sync">☁ Sync between devices</button><button class="btn ghost sm" data-go="settings/problems">🧯 Problem log (${window.ErrLog ? ErrLog.list().length : 0})</button></div></section>`;
     const pn = el.querySelector(".pn");
     pn.onchange = () => { if (!pn.value.trim()) { pn.value = Store.name(); return; } Store.setName(pn.value); App.renderChip(); H.toast("Name saved."); };
     el.querySelectorAll(".psw").forEach((b) => (b.onclick = () => { Store.switchTo(b.dataset.id); App.afterSwitch(); }));
