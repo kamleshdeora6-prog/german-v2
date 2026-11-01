@@ -626,6 +626,7 @@
       if (p === "für" && L[i - 1] === "was") continue;   // „Was für ein …“ is not the preposition für
       const a = L[i + 1]; if (!/^(der|die|das|den|dem|ein|eine|einen|einem|einer)$/.test(a)) continue;
       const ng = nounGender(words[i + 2].replace(/[,;:]$/, "")); if (!ng || ng.pl) continue;
+      if (a === "die" && maybePlural(words[i + 2].replace(/[,;:]$/, ""))) continue;   // "für die Koffer" = plural
       const c = DAT_P.has(p) ? "dat" : "akk";
       const kind = /^ein/.test(a) ? "indef" : "def";
       const right = E.art(kind, c, ng.g);
@@ -727,7 +728,7 @@
       const nw = (words[i + 2] || "").replace(/[,;:.!?]$/, ""); if (!/^[A-ZÄÖÜ]/.test(nw)) continue;
       const base = adjBase(adjW); if (!base) continue;
       let ng = nounGender(nw); if (!ng) continue;
-      const pl = ng.pl || (maybePlural(nw) && /^(die|den|der|keine|keinen|keiner|meine|meinen|meiner|deine|seine|ihre|unsere|eure)$/.test(det) && ng.g !== "f");
+      const pl = ng.pl || (maybePlural(nw) && /^(die|den|keine|keinen|meine|meinen|deine|seine|ihre|unsere|eure)$/.test(det) && ng.g !== "f");
       const g = pl ? "pl" : ng.g;
       let want = null;
       const indef = /^(k?ein|mein|dein|sein|ihr|unser|eu(?:e)?r)/.test(det);
@@ -791,7 +792,7 @@
     words = words.map((w, i) => {
       const k = w.replace(/[,;:]$/, "");
       const prev = (L[i - 1] || ""), next = words[i + 1] || "";
-      if (i > 0 && k === k.toLowerCase() && NOUNSET.has(k) && !isFinite(k) && !NON_NOUN().has(k) && !(FUNC && FUNC[k]) && !/^(essen|leben|arbeiten|junge|alte|kranke|recht|unrecht|leid|weh|schuld|angst|weg|heim|fest|statt|teil|stand|halt|mal|morgen|abend)$/.test(k) && !maybeVerb(k) && !(/en$/.test(k) && !/^(der|die|das|den|dem|des|ein|eine|einen|einem|eines|kein|keine|keinen|keinem|mein|dein|sein|ihr|unser|euer|zum|beim|vom|im|am)$/.test(prev) && !/^(erst|zweit|dritt|viert|fünft|letzt|nächst)en$/.test(prev)) && !PRONOUNS.has(prev) && !/^[A-ZÄÖÜ]/.test(next) && !/^(zu|sich|mich|dich|uns|euch)$/.test(prev)) {
+      if (i > 0 && k === k.toLowerCase() && NOUNSET.has(k) && !isFinite(k) && !NON_NOUN().has(k) && !(FUNC && FUNC[k]) && !/^(essen|leben|arbeiten|junge|alte|kranke|recht|unrecht|leid|weh|schuld|angst|weg|heim|fest|statt|teil|stand|halt|mal|morgen|abend|bar|reibe|gang|art|punkt|strom|stich|bruch|kern|schale|wäsche|linie|test|post|bio|mode|kamm|daumen|pille|zinsen)$/.test(k) && !maybeVerb(k) && !(/en$/.test(k) && !/^(der|die|das|den|dem|des|ein|eine|einen|einem|eines|kein|keine|keinen|keinem|mein|dein|sein|ihr|unser|euer|zum|beim|vom|im|am)$/.test(prev) && !/^(erst|zweit|dritt|viert|fünft|letzt|nächst)en$/.test(prev)) && !PRONOUNS.has(prev) && !/^[A-ZÄÖÜ]/.test(next) && !/^(zu|sich|mich|dich|uns|euch)$/.test(prev)) {
         add(`<s>${k}</s> → <b>${R_cap(k)}</b>`, "All German nouns start with a capital letter.", 5);
         return R_cap(k) + w.slice(k.length);
       }

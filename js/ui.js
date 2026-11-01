@@ -36,8 +36,14 @@
       const whyNot = !ok && item.whyNot && item.whyNot[given] ? `<p class="whynot"><b>Why not „${esc(given)}“?</b> ${item.whyNot[given]}</p>` : "";
       const full = item.full || (item.kind === "order" ? item.answer : "");
       fb.hidden = false;
-      fb.innerHTML = `<p class="verdict">${ok ? "✓ Richtig!" : "✗ Not quite."} ${gradeInfo.note ? `<span class="muted">${esc(gradeInfo.note)}</span>` : ""}</p>
+      // 7.5: how close was it, which word, which grammar topic
+      const dg = !ok && item.kind !== "choice" && window.Diag && given ? Diag.compare(given, item.answer) : null;
+      const near = dg && (dg.verdict === "almost" || dg.verdict === "order");
+      const note = gradeInfo.note && !(dg && gradeInfo.level === "close" && dg.items.some((x) => x.topic !== "spelling" && x.topic !== "umlauts")) ? gradeInfo.note : "";
+      fb.innerHTML = `<p class="verdict ${near ? "near" : ""}">${ok ? "✓ Richtig!" : near ? "" : dg && dg.verdict === "few" ? "" : "✗ Not quite."} ${note ? `<span class="muted">${esc(note)}</span>` : ""}</p>
+        ${dg ? Diag.feedbackHtml(dg) : ""}
         ${ok ? "" : `<p>Answer: <b>${esc(item.answer)}</b></p>`}
+        ${window.Diag ? Diag.tipFor(item.full || item.answer) : ""}
         ${whyNot}
         ${item.why ? `<div class="why"><b>Why:</b> ${item.why}</div>` : ""}
         ${full ? `<p class="ex">${UI.colorArticles(full)} ${UI.say(full)}</p>` : ""}
@@ -45,9 +51,9 @@
         <div class="row">${!ok && item.kind !== "choice" ? `<button class="btn ghost sm q-override">I was right</button>` : ""}<button class="btn sm q-next">${opts.nextLabel || "Next"}</button><button class="btn ghost sm q-ask">Ask Max</button>${UI.reportBtn(itemCtx(item, given)).replace('class="rflag"', 'class="btn ghost sm rflag inline"').replace(">⚑<", ">⚑ Report<")}</div>`;
       Store.topic(item.gen, ok);
       if (window.Habit) { Habit.track("drill"); if (/^weak/.test(App.lastRoute || "")) Habit.track("weak"); }
-      if (!ok) Store.mistake({ prompt: item.prompt, answer: item.answer, given, gen: item.gen, why: item.why });
+      if (!ok) Store.mistake({ prompt: item.prompt, answer: item.answer, given, gen: item.gen, why: item.why, topics: dg && dg.topics.length ? dg.topics : undefined, near: near || undefined });
       const cb = window.Habit ? Habit.answer(ok) : { combo: 0, bonus: 0 };
-      Store.addXP((ok ? 10 : 2) + cb.bonus);
+      Store.addXP((ok ? 10 : near ? 5 : 2) + cb.bonus);
       if (cb.combo >= 3) fb.insertAdjacentHTML("afterbegin", `<p class="combo" aria-live="polite">🔥 ${cb.combo} in a row${cb.bonus ? ` · +${cb.bonus} bonus XP` : ""}</p>`);
       if (full && ok) Speech.speak(full);
       fb.querySelector(".q-next").onclick = () => opts.onNext && opts.onNext(ok);
@@ -83,6 +89,7 @@
         e.preventDefault(); if (answered) return;
         const g = Grade.grade(inp.value, item.answer, item.accept);
         if (g.level === "empty") return inp.focus();
+        if (g.ok && !item.orders) { const alts = Grade.orders(item.answer); if (alts.length) item.orders = [item.answer].concat(alts); }
         inp.disabled = true;
         finish(g.ok, inp.value.trim(), g);
       };
@@ -92,7 +99,8 @@
       const move = (b) => { if (answered) return; (b.parentElement === bank ? built : bank).appendChild(b); sync(); };
       bank.querySelectorAll(".tok").forEach((b) => (b.onclick = () => move(b)));
       el.querySelector(".q-reset").onclick = () => { built.querySelectorAll(".tok:not(.fixed)").forEach((b) => bank.appendChild(b)); sync(); };
-      const same = (given) => { const clean = (s) => Grade.clean(s); return clean(given) === clean(item.answer) || (item.accept || []).some((a) => clean(a) === clean(given)); };
+      const same = (given) => { const clean = (s) => Grade.clean(s); return clean(given) === clean(item.answer) || (item.accept || []).some((a) => clean(a) === clean(given)) || Grade.orders(item.answer).some((a) => clean(a) === clean(given)); };
+      if (!item.orders) { const alts = Grade.orders(item.answer); if (alts.length) item.orders = [item.answer].concat(alts); }
       chk.onclick = () => {
         if (answered) return;
         if (bank.children.length) return H.toast(built.querySelectorAll(".tok:not(.fixed)").length ? "Use all the words first." : "Tap the words to build your answer first.");

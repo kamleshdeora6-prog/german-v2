@@ -7,7 +7,7 @@ let pass = 0, fail = 0; const log = (c, m) => { c ? pass++ : fail++; console.log
   await p.addInitScript(() => { window.speechSynthesis && (window.speechSynthesis.speak = () => {}); if (localStorage.getItem('seeded')) return; localStorage.setItem('seeded', '1'); localStorage.setItem('deutschcoach.profiles', JSON.stringify({ active: 'p1', list: [{ id: 'p1', name: 'Sohan', color: '#E3A400', created: 1 }] })); localStorage.setItem('deutschcoach.v2', JSON.stringify({ v: 2, xp: 0, settings: { onboarded: true, labels: 'both', unlockAll: true } })); });
   await p.goto(B + '#/practice'); await p.waitForTimeout(400);
   const ids = await p.evaluate(() => Object.keys(Engine.GEN));
-  log(ids.length === 65, `${ids.length} drills on the practice page`);
+  log(ids.length === 68, `${ids.length} drills on the practice page`);
   log(!!(await p.$('[data-go="revise"]')), 'Practice: Grammar revision tile');
   // every drill: guide shows + first item renders
   const bad = [];
@@ -29,7 +29,7 @@ let pass = 0, fail = 0; const log = (c, m) => { c ? pass++ : fail++; console.log
   await p.fill('.q-in', 'xyz'); await p.press('.q-in', 'Enter'); await p.waitForSelector('.q-fb:not([hidden])'); log(/verb goes to the end/.test(await p.textContent('.q-fb')), 'new drill "indirect questions" works: ' + pr.replace(/\s+/g, ' ').slice(0, 70));
   // revision page
   await p.goto(B + '#/revise'); await p.waitForTimeout(300); await p.screenshot({ path: OUT + '/revise.png' });
-  log((await p.$$('.rlv .topic')).length === 65, 'revision page lists all 65 topics');
+  log((await p.$$('.rlv .topic')).length === 68, 'revision page lists all 68 topics');
   await p.fill('.search', 'perfekt'); await p.waitForTimeout(150); const vis = await p.$$eval('.rlv .topic', (x) => x.filter((y) => !y.hidden).length); log(vis >= 1 && vis < 10, `search works (${vis} for "perfekt")`);
   await p.goto(B + '#/revise/je_desto'); await p.waitForTimeout(200); log(/je|desto/i.test(await p.textContent('#view')) && !!(await p.$('[data-go="practice/je_desto"]')), 'topic page with "Practise this"');
   const cov = await p.evaluate(() => { const c = new Set(Object.values(Engine.GEN).flatMap((g) => g.lessons)); return DC.curriculum.filter((l) => !c.has(l.n)).map((l) => 'L' + l.pos); });

@@ -261,6 +261,9 @@
       h += `<details class="g-more" ${full && !rule ? "open" : ""}><summary>📖 Full explanation – Lesson ${l.pos}: ${esc(H.ltText ? H.ltText(l, "title") : l.title)}</summary>${H.lexpl(l)}${l.table && l.table.length ? UI.table(l.table, "lvl-" + l.level) : ""}</details>`;
     }
     if (rule && rule.why) h += `<p class="muted small"><b>Why German does this:</b> ${rule.why}</p>`;
+    // 7.5: the case reference for every case topic
+    const CASE_REF = { akkusativ: "akk", dativ: "dverbs", dat_akk: "both", praepositionen: "preps", wechsel: "wechsel", pronomen: "pron", artikel: "gender", wortschatz_artikel: "gender", zeitpraep: "time", zeit: "time", datum: "time", genitiv: "preps", possessiv: "gender", adjektiv: "overview" };
+    if (CASE_REF[id]) h += `<p class="g-cases">📘 <button class="link" data-go="cases/${CASE_REF[id]}">Which case? – the lists: Dativ verbs, prepositions, time words, article tables</button></p>`;
     if (!full) h += `<p class="g-how"><b>🎯 In this drill:</b> ${kindsOf(id).map((k) => HOW[k]).filter(Boolean).join(" ")} Every answer is explained, and the ones you miss are saved under “My mistakes”.</p>`;
     h += `<div class="row">${ls.map((x) => `<button class="btn ghost sm" data-go="lesson/${x.n}">Lesson ${x.pos}</button>`).join("")}<button class="btn ghost sm" data-ask="Explain ${esc(g.title)} simply, with examples and mistakes to avoid">Ask Max</button>${full ? `<button class="btn sm" data-go="practice/${id}">Practise this</button>` : ""}</div></div>`;
     return h;

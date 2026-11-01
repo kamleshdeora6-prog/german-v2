@@ -1,0 +1,252 @@
+# 7.5 everyday words, part 3 – bank, house, rooms, body, dentist, doctor, kitchen, office, post, weather, fitness
+#A1
+die Münze|coin|Münzen|Geld|Ich habe nur Münzen dabei.|I've only got coins on me.
+der Zeh|toe|Zehen|Körper|Mein großer Zeh tut weh.|My big toe hurts.
+die Lippe|lip|Lippen|Körper|Im Winter sind meine Lippen trocken.|In winter my lips are dry.
+der Zahn|tooth|Zähne|Körper|Putz dir bitte die Zähne!|Please brush your teeth!
+die Haustür|front door|Haustüren|Wohnen|Mach bitte die Haustür zu.|Please shut the front door.
+das Kopfkissen|pillow|Kopfkissen|Wohnen|Das Kopfkissen ist zu hart.|The pillow is too hard.
+#A2
+das Girokonto|current account|Girokonten|Geld|Ich möchte ein Girokonto eröffnen.|I'd like to open a current account.
+der Kredit|loan|Kredite|Geld|Für die Wohnung nehmen wir einen Kredit auf.|We're taking out a loan for the flat.
+die Zinsen|interest||Geld|Die Zinsen sind gerade niedrig.|Interest rates are low at the moment.
+der Kontoauszug|bank statement|Kontoauszüge|Geld|Auf dem Kontoauszug sehe ich alle Zahlungen.|I see all the payments on the bank statement.
+der Kontostand|account balance|Kontostände|Geld|Ich prüfe meinen Kontostand online.|I check my balance online.
+der Stau|traffic jam|Staus|Verkehr|Auf der Autobahn ist ein langer Stau.|There's a long traffic jam on the motorway.
+das Einfamilienhaus|detached house|Einfamilienhäuser|Wohnen|Sie wohnen in einem Einfamilienhaus mit Garten.|They live in a detached house with a garden.
+das Doppelhaus|semi-detached house|Doppelhäuser|Wohnen|Unser Doppelhaus hat einen kleinen Garten.|Our semi-detached house has a small garden.
+der Bauernhof|farm|Bauernhöfe|Natur|Auf dem Bauernhof gibt es Kühe und Hühner.|There are cows and chickens on the farm.
+die Kundenkarte|loyalty card|Kundenkarten|Einkaufen|Haben Sie eine Kundenkarte?|Do you have a loyalty card?
+der Geldschein|banknote|Geldscheine|Geld|Er bezahlt mit einem großen Geldschein.|He pays with a large banknote.
+die PIN|PIN|PINs|Geld|Geben Sie bitte Ihre PIN ein.|Please enter your PIN.
+die Aktivität|activity|Aktivitäten|Freizeit|Das Hotel bietet viele Aktivitäten an.|The hotel offers lots of activities.
+die Gartenarbeit|gardening||Freizeit|Gartenarbeit macht mir Spaß.|I enjoy gardening.
+Videospiele spielen|to play video games||Freizeit|Mein Bruder spielt jeden Abend Videospiele.|My brother plays video games every evening.
+das Joggen|jogging||Sport|Joggen ist gut gegen Stress.|Jogging is good for stress.
+der Punkt|point; dot; full stop|Punkte|Sport|Unsere Mannschaft hat drei Punkte.|Our team has three points.
+der Meister|champion; master craftsman|Meister|Sport|Bayern München ist wieder deutscher Meister.|Bayern Munich are German champions again.
+das Fell|fur|Felle|Tiere|Die Katze hat ein weiches Fell.|The cat has soft fur.
+der Flügel|wing; grand piano|Flügel|Tiere|Der Vogel hat einen verletzten Flügel.|The bird has an injured wing.
+die Pfote|paw|Pfoten|Tiere|Der Hund gibt mir die Pfote.|The dog gives me its paw.
+das Insekt|insect|Insekten|Tiere|Im Sommer gibt es viele Insekten.|There are lots of insects in summer.
+der Schwanz|tail|Schwänze|Tiere|Der Hund wedelt mit dem Schwanz.|The dog wags its tail.
+bellen|to bark||Tiere|Der Hund bellt die ganze Nacht.|The dog barks all night.
+baden|to have a bath; to swim||Wohnen|Die Kinder baden jeden Abend.|The children have a bath every evening.
+der Schwamm|sponge|Schwämme|Wohnen|Mit dem Schwamm putze ich den Tisch.|I clean the table with the sponge.
+das Badetuch|bath towel|Badetücher|Wohnen|Nimm ein Badetuch mit ins Schwimmbad.|Take a bath towel to the pool.
+der Waschlappen|flannel, face cloth|Waschlappen|Wohnen|Der Waschlappen hängt neben dem Waschbecken.|The flannel hangs next to the washbasin.
+das Doppelbett|double bed|Doppelbetten|Wohnen|Das Hotelzimmer hat ein Doppelbett.|The hotel room has a double bed.
+das Kinderzimmer|children's room|Kinderzimmer|Wohnen|Im Kinderzimmer liegen überall Spielsachen.|There are toys everywhere in the children's room.
+die Bettwäsche|bed linen||Wohnen|Ich wechsle jede Woche die Bettwäsche.|I change the bed linen every week.
+das Bett machen|to make the bed||Wohnen|Mach bitte dein Bett!|Please make your bed!
+ins Bett gehen|to go to bed||Wohnen|Ich gehe um elf ins Bett.|I go to bed at eleven.
+das Gästezimmer|guest room|Gästezimmer|Wohnen|Unsere Gäste schlafen im Gästezimmer.|Our guests sleep in the guest room.
+der Kleiderbügel|coat hanger|Kleiderbügel|Wohnen|Häng die Jacke auf einen Kleiderbügel.|Hang the jacket on a coat hanger.
+der Wäschekorb|laundry basket|Wäschekörbe|Wohnen|Die schmutzigen Socken kommen in den Wäschekorb.|The dirty socks go in the laundry basket.
+das Etagenbett|bunk bed|Etagenbetten|Wohnen|Die Brüder schlafen in einem Etagenbett.|The brothers sleep in a bunk bed.
+der Radiowecker|clock radio|Radiowecker|Wohnen|Der Radiowecker klingelt um sechs.|The clock radio goes off at six.
+der Föhn|hairdryer|Föhne|Wohnen|Im Bad hängt ein Föhn.|There's a hairdryer in the bathroom.
+das Bettlaken|sheet|Bettlaken|Wohnen|Das Bettlaken ist frisch gewaschen.|The sheet is freshly washed.
+der Vorhang|curtain|Vorhänge|Wohnen|Mach bitte die Vorhänge zu.|Please close the curtains.
+die Matratze|mattress|Matratzen|Wohnen|Die neue Matratze ist sehr bequem.|The new mattress is very comfortable.
+die Nachttischlampe|bedside lamp|Nachttischlampen|Wohnen|Ich lese mit der Nachttischlampe.|I read by the bedside lamp.
+der Nachttisch|bedside table|Nachttische|Wohnen|Das Handy liegt auf dem Nachttisch.|The phone is on the bedside table.
+die Augenbraue|eyebrow|Augenbrauen|Körper|Er hebt die Augenbrauen.|He raises his eyebrows.
+die Zunge|tongue|Zungen|Körper|Ich habe mir auf die Zunge gebissen.|I bit my tongue.
+die Brust|chest; breast|Brüste|Körper|Ich habe Schmerzen in der Brust.|I have pains in my chest.
+der Bauch|stomach, belly|Bäuche|Körper|Nach dem Essen tut mir der Bauch weh.|My stomach hurts after eating.
+der Ellbogen|elbow|Ellbogen|Körper|Ich habe mir den Ellbogen gestoßen.|I've knocked my elbow.
+die Hüfte|hip|Hüften|Körper|Oma hat eine neue Hüfte bekommen.|Grandma has had a new hip.
+die Stirn|forehead|Stirnen|Körper|Das Kind hat Fieber, die Stirn ist heiß.|The child has a temperature, his forehead is hot.
+die Wange|cheek|Wangen|Körper|Sie gibt ihm einen Kuss auf die Wange.|She gives him a kiss on the cheek.
+das Kinn|chin|Kinne|Körper|Er hat einen Bart am Kinn.|He has a beard on his chin.
+der Fingernagel|fingernail|Fingernägel|Körper|Ich schneide meine Fingernägel.|I cut my fingernails.
+der Daumen|thumb|Daumen|Körper|Ich drücke dir die Daumen!|I'll keep my fingers crossed for you!
+die Ferse|heel|Fersen|Körper|Der Schuh drückt an der Ferse.|The shoe rubs at the heel.
+der Knöchel|ankle; knuckle|Knöchel|Körper|Beim Fußball habe ich mir den Knöchel verletzt.|I hurt my ankle playing football.
+die Zahnspange|braces (teeth)|Zahnspangen|Gesundheit|Meine Tochter trägt eine Zahnspange.|My daughter wears braces.
+das Zahnfleisch|gums||Gesundheit|Mein Zahnfleisch blutet beim Putzen.|My gums bleed when I brush.
+den Tisch decken|to set the table||Wohnen|Kannst du bitte den Tisch decken?|Can you set the table, please?
+zu Abend essen|to have dinner||Essen|Wir essen um sieben zu Abend.|We have dinner at seven.
+den Tisch abräumen|to clear the table||Wohnen|Nach dem Essen räumen die Kinder den Tisch ab.|After the meal the children clear the table.
+die Pfeffermühle|pepper mill|Pfeffermühlen|Essen|Reich mir bitte die Pfeffermühle.|Pass me the pepper mill, please.
+der Salzstreuer|salt shaker|Salzstreuer|Essen|Der Salzstreuer ist leer.|The salt shaker is empty.
+die Salatschüssel|salad bowl|Salatschüsseln|Essen|Die Salatschüssel steht in der Mitte.|The salad bowl is in the middle.
+der Teelöffel|teaspoon|Teelöffel|Essen|Nimm einen Teelöffel Zucker.|Take a teaspoon of sugar.
+das Antibiotikum|antibiotic|Antibiotika|Gesundheit|Die Ärztin verschreibt ein Antibiotikum.|The doctor prescribes an antibiotic.
+der Hausbesuch|house call|Hausbesuche|Gesundheit|Der Arzt macht einen Hausbesuch.|The doctor makes a house call.
+die Klinik|clinic, hospital|Kliniken|Gesundheit|Er liegt seit zwei Tagen in der Klinik.|He has been in hospital for two days.
+die Pille|pill|Pillen|Gesundheit|Diese Pille hilft gegen Kopfschmerzen.|This pill helps against headaches.
+die Schlaftablette|sleeping pill|Schlaftabletten|Gesundheit|Er nimmt keine Schlaftabletten mehr.|He doesn't take sleeping pills any more.
+das Medikament|medicine, drug|Medikamente|Gesundheit|Nehmen Sie das Medikament nach dem Essen.|Take the medicine after meals.
+der Test|test|Tests|Gesundheit|Der Test ist negativ.|The test is negative.
+die Fußmatte|doormat|Fußmatten|Wohnen|Der Schlüssel liegt unter der Fußmatte.|The key is under the doormat.
+die Türklingel|doorbell|Türklingeln|Wohnen|Die Türklingel ist kaputt, bitte klopfen.|The doorbell is broken, please knock.
+die Krücke|crutch|Krücken|Gesundheit|Mit dem gebrochenen Bein geht er an Krücken.|With his broken leg he walks on crutches.
+das Röntgenbild|X-ray|Röntgenbilder|Gesundheit|Das Röntgenbild zeigt keinen Bruch.|The X-ray shows no fracture.
+die Klimaanlage|air conditioning|Klimaanlagen|Wohnen|Im Büro läuft die Klimaanlage.|The air conditioning is on in the office.
+die Zentralheizung|central heating||Wohnen|Die Wohnung hat Zentralheizung.|The flat has central heating.
+die Batterie|battery|Batterien|Technik|Die Batterie ist leer.|The battery is flat.
+der Adapter|adapter|Adapter|Technik|In England brauche ich einen Adapter für den Stecker.|In England I need an adapter for the plug.
+die Hintertür|back door|Hintertüren|Wohnen|Die Hintertür führt in den Garten.|The back door leads into the garden.
+der Strom|electricity; current||Wohnen|Der Strom ist schon wieder teurer geworden.|Electricity has gone up again.
+der Heizkörper|radiator|Heizkörper|Wohnen|Der Heizkörper ist kalt.|The radiator is cold.
+die Alarmanlage|alarm system|Alarmanlagen|Wohnen|Das Haus hat eine Alarmanlage.|The house has an alarm system.
+der Ventilator|fan|Ventilatoren|Wohnen|Im Sommer läuft der Ventilator.|In summer the fan is on.
+der Stromzähler|electricity meter|Stromzähler|Wohnen|Der Stromzähler ist im Keller.|The electricity meter is in the cellar.
+der Kamin|fireplace; chimney|Kamine|Wohnen|Im Winter sitzen wir am Kamin.|In winter we sit by the fire.
+der Schornstein|chimney|Schornsteine|Wohnen|Aus dem Schornstein kommt Rauch.|Smoke is coming out of the chimney.
+die Einfahrt|driveway|Einfahrten|Wohnen|Bitte nicht in der Einfahrt parken!|Please don't park in the driveway!
+das Geschirr spülen|to do the washing-up||Wohnen|Wer spült heute das Geschirr?|Who's doing the washing-up today?
+der Herd|cooker, stove|Herde|Wohnen|Der Topf steht auf dem Herd.|The pot is on the stove.
+die Bratpfanne|frying pan|Bratpfannen|Wohnen|Die Eier brate ich in der Bratpfanne.|I fry the eggs in the frying pan.
+die Schüssel|bowl|Schüsseln|Wohnen|In der Schüssel ist Salat.|There's salad in the bowl.
+die Reibe|grater|Reiben|Wohnen|Den Käse reibe ich mit der Reibe.|I grate the cheese with the grater.
+der Schäler|peeler|Schäler|Wohnen|Mit dem Schäler geht das Kartoffelschälen schneller.|Peeling potatoes is quicker with a peeler.
+das Schneidebrett|chopping board|Schneidebretter|Wohnen|Schneide das Gemüse auf dem Schneidebrett.|Cut the vegetables on the chopping board.
+das Küchenmesser|kitchen knife|Küchenmesser|Wohnen|Das Küchenmesser ist sehr scharf.|The kitchen knife is very sharp.
+der Kochtopf|saucepan, pot|Kochtöpfe|Wohnen|Das Wasser kocht im Kochtopf.|The water is boiling in the pot.
+das Sieb|sieve, colander|Siebe|Wohnen|Gieß die Nudeln in das Sieb.|Pour the pasta into the colander.
+der Korkenzieher|corkscrew|Korkenzieher|Wohnen|Hast du einen Korkenzieher für die Flasche?|Have you got a corkscrew for the bottle?
+die Küchenmaschine|food processor|Küchenmaschinen|Wohnen|Den Teig macht die Küchenmaschine.|The food processor makes the dough.
+der Messbecher|measuring jug|Messbecher|Wohnen|Ich messe das Wasser mit dem Messbecher.|I measure the water with the measuring jug.
+der Dosenöffner|tin opener|Dosenöffner|Wohnen|Ohne Dosenöffner bekomme ich die Dose nicht auf.|I can't open the tin without a tin opener.
+der Schneebesen|whisk|Schneebesen|Wohnen|Schlag die Sahne mit dem Schneebesen.|Whip the cream with the whisk.
+der Holzlöffel|wooden spoon|Holzlöffel|Wohnen|Ich rühre die Soße mit dem Holzlöffel.|I stir the sauce with the wooden spoon.
+die Alufolie|tin foil||Wohnen|Ich packe die Brote in Alufolie.|I wrap the sandwiches in foil.
+das Küchenpapier|kitchen roll||Wohnen|Wisch das mit Küchenpapier weg.|Wipe that up with kitchen roll.
+der Müllbeutel|bin bag|Müllbeutel|Wohnen|Wir brauchen neue Müllbeutel.|We need new bin bags.
+die Frischhaltefolie|cling film||Wohnen|Deck die Schüssel mit Frischhaltefolie ab.|Cover the bowl with cling film.
+der Mülleimer|bin|Mülleimer|Wohnen|Der Mülleimer ist voll.|The bin is full.
+die Stehlampe|floor lamp|Stehlampen|Wohnen|Neben dem Sofa steht eine Stehlampe.|There's a floor lamp next to the sofa.
+das Schlafsofa|sofa bed|Schlafsofas|Wohnen|Unser Besuch schläft auf dem Schlafsofa.|Our visitors sleep on the sofa bed.
+die Tischlampe|table lamp|Tischlampen|Wohnen|Auf dem Schreibtisch steht eine Tischlampe.|There's a table lamp on the desk.
+der Couchtisch|coffee table|Couchtische|Wohnen|Die Zeitschriften liegen auf dem Couchtisch.|The magazines are on the coffee table.
+der Mitarbeiter|employee; staff member|Mitarbeiter|Arbeit|Die Firma hat fünfzig Mitarbeiter.|The company has fifty employees.
+die Buchhaltung|accounts department||Arbeit|Die Rechnung geht an die Buchhaltung.|The invoice goes to the accounts department.
+der Posteingang|inbox|Posteingänge|Technik|In meinem Posteingang sind hundert E-Mails.|There are a hundred emails in my inbox.
+der Ordner|folder; file|Ordner|Arbeit|Die Unterlagen sind im blauen Ordner.|The documents are in the blue folder.
+der Kurier|courier|Kuriere|Kommunikation|Ein Kurier bringt das Paket noch heute.|A courier is bringing the parcel today.
+die Luftpost|airmail||Kommunikation|Der Brief geht per Luftpost nach Indien.|The letter goes to India by airmail.
+einwerfen|to post (a letter)||Kommunikation|Kannst du den Brief einwerfen?|Can you post the letter?
+Post bekommen|to get mail||Kommunikation|Heute habe ich Post von meiner Bank bekommen.|Today I got a letter from my bank.
+verspätet|delayed, late||Verkehr|Der Zug ist verspätet.|The train is delayed.
+der Hubschrauber|helicopter|Hubschrauber|Verkehr|Ein Hubschrauber bringt den Verletzten ins Krankenhaus.|A helicopter takes the injured person to hospital.
+der Hagel|hail||Wetter|Der Hagel hat das Auto beschädigt.|The hail damaged the car.
+schwül|humid, muggy||Wetter|Heute ist es sehr schwül.|It's very humid today.
+mild|mild||Wetter|Der Winter war dieses Jahr sehr mild.|The winter was very mild this year.
+Sport treiben|to do sport||Sport|Ich treibe dreimal pro Woche Sport.|I do sport three times a week.
+fit bleiben|to stay fit||Sport|Um fit zu bleiben, gehe ich schwimmen.|To stay fit I go swimming.
+der Liegestütz|press-up|Liegestütze|Sport|Er schafft dreißig Liegestütze.|He can do thirty press-ups.
+laufen gehen|to go for a run||Sport|Morgens gehe ich laufen.|In the mornings I go for a run.
+das Springseil|skipping rope|Springseile|Sport|Die Kinder spielen mit dem Springseil.|The children are playing with the skipping rope.
+die Hantel|dumbbell|Hanteln|Sport|Im Fitnessstudio trainiere ich mit Hanteln.|At the gym I train with dumbbells.
+der Spind|locker|Spinde|Sport|Meine Sachen sind im Spind.|My things are in the locker.
+#B1
+der Bungalow|bungalow|Bungalows|Wohnen|Meine Großeltern wohnen in einem Bungalow.|My grandparents live in a bungalow.
+der Kartenleser|card reader|Kartenleser|Geld|Stecken Sie die Karte in den Kartenleser.|Insert the card into the card reader.
+das Heimwerken|DIY||Freizeit|Heimwerken ist sein Hobby.|DIY is his hobby.
+sich die Zeit vertreiben|to pass the time||Freizeit|Im Zug vertreibe ich mir die Zeit mit Lesen.|On the train I pass the time by reading.
+das Podium|podium|Podien|Sport|Die Siegerin steht ganz oben auf dem Podium.|The winner stands at the top of the podium.
+Punkte erzielen|to score points||Sport|Die Mannschaft hat viele Punkte erzielt.|The team scored a lot of points.
+die Art|species; kind; way|Arten|Natur|Viele Arten sind vom Aussterben bedroht.|Many species are threatened with extinction.
+der Schnabel|beak|Schnäbel|Tiere|Der Vogel hat einen gelben Schnabel.|The bird has a yellow beak.
+das Säugetier|mammal|Säugetiere|Tiere|Der Wal ist ein Säugetier.|The whale is a mammal.
+kaltblütig|cold-blooded||Tiere|Schlangen sind kaltblütig.|Snakes are cold-blooded.
+das Reptil|reptile|Reptilien|Tiere|Krokodile sind Reptilien.|Crocodiles are reptiles.
+der Huf|hoof|Hufe|Tiere|Das Pferd hat einen Stein im Huf.|The horse has a stone in its hoof.
+die Schnauze|snout, muzzle|Schnauzen|Tiere|Der Hund hat eine nasse Schnauze.|The dog has a wet nose.
+das Nagetier|rodent|Nagetiere|Tiere|Mäuse sind Nagetiere.|Mice are rodents.
+die Mähne|mane|Mähnen|Tiere|Der Löwe hat eine große Mähne.|The lion has a big mane.
+schnurren|to purr||Tiere|Die Katze schnurrt auf meinem Schoß.|The cat purrs on my lap.
+knurren|to growl||Tiere|Der Hund knurrt den Postboten an.|The dog growls at the postman.
+die Kralle|claw|Krallen|Tiere|Die Katze hat scharfe Krallen.|The cat has sharp claws.
+brüllen|to roar; to shout||Tiere|Im Zoo brüllt der Löwe.|At the zoo the lion roars.
+das Horn|horn|Hörner|Tiere|Die Kuh hat zwei Hörner.|The cow has two horns.
+zwitschern|to chirp||Tiere|Morgens zwitschern die Vögel.|In the morning the birds chirp.
+summen|to buzz; to hum||Tiere|Die Bienen summen im Garten.|The bees are buzzing in the garden.
+der Abfluss|drain, plughole|Abflüsse|Wohnen|Der Abfluss ist verstopft.|The drain is blocked.
+die Klobürste|toilet brush|Klobürsten|Wohnen|Die Klobürste steht neben der Toilette.|The toilet brush is next to the toilet.
+der Handtuchhalter|towel rail|Handtuchhalter|Wohnen|Die Handtücher hängen am Handtuchhalter.|The towels are on the towel rail.
+der Spiegelschrank|bathroom cabinet|Spiegelschränke|Wohnen|Die Tabletten sind im Spiegelschrank.|The tablets are in the bathroom cabinet.
+das eigene Bad|en-suite bathroom||Wohnen|Jedes Zimmer hat ein eigenes Bad.|Every room has its own bathroom.
+die Bettwäsche wechseln|to change the sheets||Wohnen|Im Hotel wird die Bettwäsche jeden Tag gewechselt.|In the hotel the sheets are changed every day.
+die Frisierkommode|dressing table|Frisierkommoden|Wohnen|An der Frisierkommode schminkt sie sich.|She does her make-up at the dressing table.
+die Achsel|armpit|Achseln|Körper|Das Deo kommt unter die Achseln.|The deodorant goes under your arms.
+das Augenlid|eyelid|Augenlider|Körper|Mein Augenlid zuckt.|My eyelid is twitching.
+das Ohrläppchen|earlobe|Ohrläppchen|Körper|Sie hat ein Loch im Ohrläppchen.|She has a hole in her earlobe.
+das Nasenloch|nostril|Nasenlöcher|Körper|Mein linkes Nasenloch ist zu.|My left nostril is blocked.
+das Gehör|hearing||Körper|Mein Opa hat ein schlechtes Gehör.|My grandpa's hearing is poor.
+der Tastsinn|sense of touch||Körper|Blinde Menschen haben oft einen guten Tastsinn.|Blind people often have a good sense of touch.
+das Sehvermögen|eyesight||Körper|Mit dem Alter wird das Sehvermögen schlechter.|Eyesight gets worse with age.
+berühren|to touch||Körper|Bitte die Bilder nicht berühren!|Please don't touch the pictures!
+der Geruchssinn|sense of smell||Körper|Hunde haben einen sehr guten Geruchssinn.|Dogs have a very good sense of smell.
+der Brustkorb|ribcage, chest|Brustkörbe|Körper|Der Arzt hört den Brustkorb ab.|The doctor listens to the chest.
+das Schienbein|shin|Schienbeine|Körper|Beim Fußball bekam er einen Tritt gegen das Schienbein.|He got kicked in the shin at football.
+der Oberschenkel|thigh|Oberschenkel|Körper|Nach dem Laufen tun meine Oberschenkel weh.|After running my thighs hurt.
+der Po|bottom, bum|Pos|Körper|Das Baby hat einen roten Po.|The baby has a red bottom.
+die Wade|calf (of the leg)|Waden|Körper|Ich habe einen Krampf in der Wade.|I've got cramp in my calf.
+der Kiefer|jaw|Kiefer|Körper|Nach dem Zahnarzt tut mir der Kiefer weh.|My jaw hurts after the dentist.
+die Handfläche|palm|Handflächen|Körper|Sie liest aus der Handfläche.|She reads palms.
+der Zehennagel|toenail|Zehennägel|Körper|Der Zehennagel ist eingewachsen.|The toenail has grown in.
+die Fußsohle|sole of the foot|Fußsohlen|Körper|Im Sand ist es heiß an den Fußsohlen.|The sand is hot on the soles of your feet.
+der Zahnarztstuhl|dentist's chair|Zahnarztstühle|Gesundheit|Auf dem Zahnarztstuhl bin ich immer nervös.|I'm always nervous in the dentist's chair.
+der Bohrer|drill|Bohrer|Gesundheit|Das Geräusch vom Bohrer mag niemand.|Nobody likes the noise of the drill.
+die Zahnprothese|dentures|Zahnprothesen|Gesundheit|Opa legt seine Zahnprothese ins Glas.|Grandpa puts his dentures in the glass.
+das Tischset|place mat|Tischsets|Wohnen|Auf jedem Platz liegt ein Tischset.|There's a place mat at every place.
+der Untersetzer|coaster|Untersetzer|Wohnen|Stell das Glas bitte auf einen Untersetzer.|Please put the glass on a coaster.
+die Servierplatte|serving dish|Servierplatten|Wohnen|Das Fleisch liegt auf einer großen Servierplatte.|The meat is on a large serving dish.
+die Arzthelferin|doctor's assistant (f)|Arzthelferinnen|Gesundheit|Die Arzthelferin nimmt mir Blut ab.|The doctor's assistant takes a blood sample.
+die Jacke aufhängen|to hang up one's jacket||Wohnen|Du kannst deine Jacke an der Garderobe aufhängen.|You can hang your jacket up in the hall.
+die Gegensprechanlage|intercom|Gegensprechanlagen|Wohnen|Sprechen Sie bitte in die Gegensprechanlage.|Please speak into the intercom.
+der Treppenabsatz|landing|Treppenabsätze|Wohnen|Auf dem Treppenabsatz steht ein Kinderwagen.|There's a pram on the landing.
+der Tropf|drip (in hospital)|Tropfe|Gesundheit|Der Patient hängt am Tropf.|The patient is on a drip.
+die Terrassentür|French window|Terrassentüren|Wohnen|Durch die Terrassentür geht man in den Garten.|You go into the garden through the French window.
+das Dachfenster|skylight|Dachfenster|Wohnen|Durch das Dachfenster sieht man die Sterne.|You can see the stars through the skylight.
+die Satellitenschüssel|satellite dish|Satellitenschüsseln|Technik|Auf dem Balkon hängt eine Satellitenschüssel.|There's a satellite dish on the balcony.
+der Fensterputzer|window cleaner|Fensterputzer|Arbeit|Der Fensterputzer kommt einmal im Monat.|The window cleaner comes once a month.
+die Veranda|porch, veranda|Veranden|Wohnen|Abends sitzen wir auf der Veranda.|In the evenings we sit on the veranda.
+der Thermostat|thermostat|Thermostate|Wohnen|Stell den Thermostat auf zwanzig Grad.|Set the thermostat to twenty degrees.
+der Holzofen|wood-burning stove|Holzöfen|Wohnen|Der Holzofen macht das Zimmer schnell warm.|The wood-burning stove warms the room quickly.
+das Abflussrohr|drainpipe|Abflussrohre|Wohnen|Das Abflussrohr ist undicht.|The drainpipe is leaking.
+die Antenne|aerial, antenna|Antennen|Technik|Die Antenne ist auf dem Dach.|The aerial is on the roof.
+die Dachrinne|gutter|Dachrinnen|Wohnen|Die Dachrinne ist voller Blätter.|The gutter is full of leaves.
+der Fensterladen|shutter|Fensterläden|Wohnen|Nachts machen wir die Fensterläden zu.|At night we close the shutters.
+der Elektroherd|electric cooker|Elektroherde|Wohnen|Die Küche hat einen Elektroherd.|The kitchen has an electric cooker.
+der Schmortopf|casserole dish|Schmortöpfe|Wohnen|Das Gulasch kocht im Schmortopf.|The goulash is cooking in the casserole dish.
+der Handmixer|hand mixer|Handmixer|Wohnen|Mit dem Handmixer wird die Sahne fest.|The cream gets stiff with the hand mixer.
+das Nudelholz|rolling pin|Nudelhölzer|Wohnen|Roll den Teig mit dem Nudelholz aus.|Roll out the dough with the rolling pin.
+die Schöpfkelle|ladle|Schöpfkellen|Wohnen|Die Suppe nimmt man mit der Schöpfkelle.|You serve the soup with a ladle.
+der Pfannenwender|spatula|Pfannenwender|Wohnen|Dreh das Fleisch mit dem Pfannenwender um.|Turn the meat over with the spatula.
+der Wok|wok|Woks|Wohnen|Das Gemüse brate ich im Wok.|I fry the vegetables in the wok.
+der Brotkasten|bread bin|Brotkästen|Wohnen|Das Brot liegt im Brotkasten.|The bread is in the bread bin.
+die Kühl-Gefrier-Kombination|fridge-freezer|Kühl-Gefrier-Kombinationen|Wohnen|Unsere Kühl-Gefrier-Kombination ist neu.|Our fridge-freezer is new.
+das Abtropfgestell|dish rack|Abtropfgestelle|Wohnen|Die Teller trocknen im Abtropfgestell.|The plates are drying in the dish rack.
+die Diele|floorboard; hall|Dielen|Wohnen|Die alten Dielen knarren.|The old floorboards creak.
+das Kabelfernsehen|cable TV||Technik|Wir haben Kabelfernsehen.|We have cable TV.
+der Hocker|stool|Hocker|Wohnen|Er sitzt auf einem Hocker in der Küche.|He sits on a stool in the kitchen.
+die Dekoration|decoration|Dekorationen|Wohnen|Die Dekoration im Wohnzimmer ist sehr schön.|The decoration in the living room is very nice.
+die Zahlen|figures||Arbeit|Die Zahlen für dieses Jahr sind gut.|The figures for this year are good.
+das Postauto|post van|Postautos|Kommunikation|Das Postauto kommt jeden Morgen um neun.|The post van comes every morning at nine.
+der Dunst|haze||Wetter|Über der Stadt liegt Dunst.|There's haze over the city.
+das Pilates|Pilates||Sport|Mittwochs mache ich Pilates.|On Wednesdays I do Pilates.
+der Lauftreff|running club|Lauftreffs|Sport|Beim Lauftreff laufen wir zusammen durch den Park.|At the running club we run through the park together.
+der Fitnesstrainer|fitness trainer|Fitnesstrainer|Sport|Der Fitnesstrainer zeigt mir die Übungen.|The fitness trainer shows me the exercises.
+der Sit-up|sit-up|Sit-ups|Sport|Jeden Morgen mache ich zwanzig Sit-ups.|Every morning I do twenty sit-ups.
+der Gymnastikball|exercise ball|Gymnastikbälle|Sport|Im Büro sitzt sie auf einem Gymnastikball.|At the office she sits on an exercise ball.
+der Duschraum|shower room|Duschräume|Sport|Der Duschraum ist neben der Umkleide.|The shower room is next to the changing room.
+der Crosstrainer|cross trainer|Crosstrainer|Sport|Ich trainiere eine halbe Stunde auf dem Crosstrainer.|I train on the cross trainer for half an hour.
+#B2
+die Amphibie|amphibian|Amphibien|Tiere|Frösche sind Amphibien.|Frogs are amphibians.
+warmblütig|warm-blooded||Tiere|Vögel sind warmblütig.|Birds are warm-blooded.
+das Bidet|bidet|Bidets|Wohnen|Im Hotelbad gibt es ein Bidet.|There's a bidet in the hotel bathroom.
+die Körperbehaarung|body hair||Körper|Manche Männer entfernen ihre Körperbehaarung.|Some men remove their body hair.
+der BMI|BMI||Gesundheit|Die Ärztin berechnet meinen BMI.|The doctor calculates my BMI.
+der Unterleib|lower abdomen||Körper|Sie hat Schmerzen im Unterleib.|She has pains in her lower abdomen.
+das Gesäß|buttocks|Gesäße|Körper|Die Spritze bekommt man ins Gesäß.|The injection goes into the buttock.
+die Glaswaren|glassware||Wohnen|Glaswaren gibt es im dritten Stock.|Glassware is on the third floor.
+der Rotor|rotor|Rotoren|Technik|Der Rotor des Hubschraubers dreht sich.|The helicopter's rotor is turning.
+das Rotorblatt|rotor blade|Rotorblätter|Technik|Ein Rotorblatt ist beschädigt.|One rotor blade is damaged.
+das Heck|rear; tail|Hecks|Verkehr|Das Gepäck ist im Heck des Autos.|The luggage is in the back of the car.
+die Kettlebell|kettlebell|Kettlebells|Sport|Sie trainiert mit einer Kettlebell.|She trains with a kettlebell.
+der Giebel|gable|Giebel|Wohnen|Das Haus hat einen hohen Giebel.|The house has a tall gable.

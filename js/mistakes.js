@@ -6,10 +6,21 @@
   const { esc } = H;
   const st = () => Store.get();
   const plain = (s) => String(s || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
-  const catOf = (m) => m.cat || (m.gen && Engine.GEN[m.gen] ? m.gen : m.gen && /^bank:/.test(m.gen) ? "bank" : m.lesson ? "lesson" + m.lesson : /^Speaking/i.test(m.prompt || "") ? "speak" : "other");
+  /* 7.5: a mistake is grouped by its grammar TOPIC (time words, Dativ verbs …) when it has one, otherwise by where it happened */
+  const topicsOf = (m) => {
+    if (m.topics && m.topics.length) return window.Diag ? Diag.sortTopics(m.topics) : m.topics;
+    const D = window.Diag; if (!D || m.cat) return []; // exam parts etc. keep their own group
+    if (m.gen && D.GEN2TOPIC[m.gen]) return [D.GEN2TOPIC[m.gen]];
+    if (/^Spelling$/.test(m.why || "")) return ["spelling"];
+    if (m.given && m.answer) { const d = D.compare(plain(m.given), plain(m.answer)); return d.topics.slice(0, 2); }
+    return [];
+  };
+  const catOf = (m) => { const t = topicsOf(m); return t.length ? "t:" + t[0] : m.cat || (m.gen && Engine.GEN[m.gen] ? m.gen : m.gen && /^bank:/.test(m.gen) ? "bank" : m.lesson ? "lesson" + m.lesson : /^Speaking/i.test(m.prompt || "") ? "speak" : "other"); };
   const M = (window.Mistakes = {
     catOf,
+    topicsOf,
     title(cat) {
+      if (/^t:/.test(cat) && window.Diag) return Diag.title(cat.slice(2));
       if (Engine.GEN[cat]) return Engine.GEN[cat].title;
       if (/^lesson\d+/.test(cat)) { const l = DC.curriculum.find((x) => x.n === +cat.slice(6)); return l ? `Lesson ${l.pos}: ${H.ltText ? H.ltText(l, "title") : l.title}` : "Lesson"; }
       if (/^telc:/.test(cat)) return "Exam: " + ({ lesen: "Lesen", hoeren: "Hören", sprachbausteine: "Sprachbausteine", schreiben: "Schreiben", sprechen: "Sprechen" }[cat.slice(5)] || cat.slice(5));
@@ -53,12 +64,15 @@
     const k = plain(m.prompt).slice(0, 160) + "|" + plain(m.answer);
     const dup = s.mistakes.find((x) => !x.fixed && plain(x.prompt).slice(0, 160) + "|" + plain(x.answer) === k);
     if (dup) { dup.n = (dup.n || 1) + 1; dup.t = Date.now(); dup.given = m.given || dup.given; dup.ok = 0; Store.save(); return; }
+    const tp = topicsOf(m); if (tp.length) m.topics = tp;
     orig(Object.assign({ id: "m" + Date.now().toString(36) + Math.random().toString(36).slice(2, 5), n: 1 }, m));
     // keep 300: drop the oldest fixed ones first
     if (s.mistakes.length > 300) { const fixed = s.mistakes.filter((x) => x.fixed).sort((a, b) => a.fixed - b.fixed); const drop = new Set(fixed.slice(0, s.mistakes.length - 300)); s.mistakes = s.mistakes.filter((x) => !drop.has(x)).slice(0, 300); Store.save(); }
   };
   /* older entries get an id once */
-  setTimeout(() => { let ch = false; M.all().forEach((m, i) => { if (!m.id) { m.id = "m" + (m.t || Date.now()).toString(36) + i; ch = true; } }); if (ch) Store.save(); }, 0);
+  setTimeout(() => { let ch = false; M.all().forEach((m, i) => { if (!m.id) { m.id = "m" + (m.t || Date.now()).toString(36) + i; ch = true; } if (!m.topics && !m.topicsChecked) { const t = topicsOf(m); if (t.length) m.topics = t; m.topicsChecked = 1; ch = true; } }); if (ch) Store.save(); }, 0);
+  /* the weakest grammar topics: open mistakes per topic */
+  M.weakTopics = (n = 3) => M.groups().filter((g) => /^t:/.test(g.cat) && !/^t:(capitals|spelling|missing|vocab)$/.test(g.cat)).slice(0, n);
 
   /* ---------------- the page ---------------- */
   const V = window.Views;
@@ -72,11 +86,12 @@
     }
     const groups = M.groups(), fixed = M.fixed();
     el.innerHTML = `<button class="back" data-go="practice">‹ Practice</button><h2 class="page-title">${H.bi("Meine Fehler", "My mistakes")}</h2>
-      <p class="muted">Everything you got wrong – in drills, lessons, mock exams and texts – sorted by type. Each mistake comes back until you get it right twice in a row.</p>
+      <p class="muted">Everything you got wrong – in drills, lessons, mock exams and texts – sorted by <b>grammar topic</b>, most mistakes first. Read the rule, do a drill for the topic, redo your own mistakes. Each comes back until you get it right twice in a row.</p>
       ${groups.length ? `<section class="card"><div class="row"><button class="btn sign big-btn" data-go="mistakes/go">▶ Practise my mistakes (${Math.min(10, M.queue(10).length)})</button></div>
         <ul class="mgroups">${groups.map((g) => `<li><div><b>${esc(g.title)}</b><span class="muted small"> · ${g.xs.length} open${g.n > g.xs.length ? `, ${g.n}× made` : ""}</span>
           <details><summary class="small">show</summary><ul class="small mlist">${g.xs.slice(0, 12).map((m) => `<li>${m.given ? `<s>${esc(plain(m.given)).slice(0, 80)}</s> → ` : ""}<b>${esc(plain(m.answer)).slice(0, 100)}</b>${m.n > 1 ? ` <span class="muted">×${m.n}</span>` : ""}</li>`).join("")}</ul></details></div>
-          <button class="btn sm" data-go="mistakes/go:${encodeURIComponent(g.cat)}">Practise</button>${Engine.GEN[g.cat] ? `<button class="btn ghost sm" data-go="revise/${g.cat}">📘 Rule</button>` : ""}</li>`).join("")}</ul></section>`
+          ${(() => { const T = /^t:/.test(g.cat) && window.Diag ? Diag.TOPICS[g.cat.slice(2)] : null;
+            return `<button class="btn sm" data-go="mistakes/go:${encodeURIComponent(g.cat)}">Redo mine</button>${T && T.gens[0] && Engine.GEN[T.gens[0]] ? `<button class="btn ghost sm" data-go="practice/${T.gens[0]}">▶ Drill</button>` : ""}${T && T.ref ? `<button class="btn ghost sm" data-go="cases/${T.ref}">📘 Rule</button>` : T && T.gens[0] ? `<button class="btn ghost sm" data-go="revise/${T.gens[0]}">📘 Rule</button>` : Engine.GEN[g.cat] ? `<button class="btn ghost sm" data-go="revise/${g.cat}">📘 Rule</button>` : ""}${T ? `<p class="muted small mrule">${T.rule}</p>` : ""}`; })()}</li>`).join("")}</ul></section>`
       : UI.empty("No open mistakes. Well done – or do a drill or a mock exam first.")}
       ${fixed.length ? `<details class="card"><summary>✓ Fixed (${fixed.length})</summary><ul class="small mlist">${fixed.slice(0, 30).map((m) => `<li><b>${esc(plain(m.answer)).slice(0, 100)}</b> <span class="muted">· ${esc(M.title(catOf(m)))}</span></li>`).join("")}</ul></details>` : ""}
       ${window.AI && AI.ready && AI.ready() && !AI.local() ? `<div class="row"><button class="btn ghost" data-go="practice/ai">✨ New exercises from my mistakes (Claude)</button></div>` : ""}`;

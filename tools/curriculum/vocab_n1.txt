@@ -1,0 +1,215 @@
+# 7.5 everyday words (gap list checked against a frequency word book; entries, plurals and examples are our own)
+# de|en|plural|topic|example|example in English
+#A2
+irisch|Irish||Länder|Mein Kollege ist irisch.|My colleague is Irish.
+walisisch|Welsh||Länder|Die walisische Sprache ist alt.|The Welsh language is old.
+britisch|British||Länder|Sie hat einen britischen Pass.|She has a British passport.
+die Passkontrolle|passport control|Passkontrollen|Reisen|An der Passkontrolle warten viele Leute.|Many people are waiting at passport control.
+die Ankunft|arrival|Ankünfte|Reisen|Die Ankunft ist um zehn Uhr.|The arrival is at ten o'clock.
+der Abflug|departure (flight)|Abflüge|Reisen|Der Abflug hat eine Stunde Verspätung.|The departure is one hour late.
+der Gang|aisle; corridor|Gänge|Reisen|Ich möchte einen Platz am Gang.|I would like an aisle seat.
+das Handgepäck|hand luggage||Reisen|Mein Handgepäck ist zu schwer.|My hand luggage is too heavy.
+der Anschlussflug|connecting flight|Anschlussflüge|Reisen|Ich habe meinen Anschlussflug verpasst.|I missed my connecting flight.
+die Anzeigetafel|departure board|Anzeigetafeln|Reisen|Schau mal auf die Anzeigetafel!|Have a look at the departure board!
+der Jetlag|jet lag|Jetlags|Reisen|Nach dem Flug habe ich Jetlag.|After the flight I have jet lag.
+der Sicherheitsgurt|seat belt|Sicherheitsgurte|Reisen|Bitte schließen Sie den Sicherheitsgurt.|Please fasten your seat belt.
+einchecken|to check in||Reisen|Ich checke online ein.|I check in online.
+die Reisetasche|travel bag|Reisetaschen|Reisen|Meine Reisetasche ist blau.|My travel bag is blue.
+die Gepäckausgabe|baggage reclaim|Gepäckausgaben|Reisen|Wir warten an der Gepäckausgabe.|We are waiting at baggage reclaim.
+die Kabine|cabin; changing room|Kabinen|Reisen|Die Kabine ist dort hinten.|The changing room is back there.
+das Übergepäck|excess baggage||Reisen|Für Übergepäck muss man extra zahlen.|You have to pay extra for excess baggage.
+der Check-in-Schalter|check-in desk|Check-in-Schalter|Reisen|Der Check-in-Schalter öffnet um sechs.|The check-in desk opens at six.
+der Korb|basket|Körbe|Einkaufen|Ich nehme einen Korb.|I take a basket.
+das Pflanzenöl|vegetable oil|Pflanzenöle|Essen|Wir kochen mit Pflanzenöl.|We cook with vegetable oil.
+der Teig|dough|Teige|Essen|Der Teig muss eine Stunde ruhen.|The dough has to rest for an hour.
+glutenfrei|gluten-free||Essen|Haben Sie auch glutenfreies Brot?|Do you also have gluten-free bread?
+die Obsttorte|fruit tart|Obsttorten|Essen|Zum Kaffee gibt es Obsttorte.|There is fruit tart with the coffee.
+der Lebkuchen|gingerbread|Lebkuchen|Feste|Im Dezember essen wir Lebkuchen.|In December we eat gingerbread.
+der Apfelstrudel|apple strudel|Apfelstrudel|Essen|Der Apfelstrudel ist noch warm.|The apple strudel is still warm.
+das Croissant|croissant|Croissants|Essen|Ich hätte gern zwei Croissants.|I would like two croissants.
+das Brötchen|bread roll|Brötchen|Essen|Am Sonntag hole ich frische Brötchen.|On Sunday I fetch fresh bread rolls.
+die Brezel|pretzel|Brezeln|Essen|Die Brezel ist sehr salzig.|The pretzel is very salty.
+der Käsekuchen|cheesecake|Käsekuchen|Essen|Meine Oma backt einen Käsekuchen.|My grandma bakes a cheesecake.
+das Butterbrot|slice of bread and butter|Butterbrote|Essen|Die Kinder nehmen ein Butterbrot mit.|The children take a slice of bread and butter with them.
+der Milchkaffee|white coffee|Milchkaffees|Essen|Einen Milchkaffee, bitte!|A white coffee, please!
+das Roggenbrot|rye bread|Roggenbrote|Essen|Roggenbrot ist dunkel und gesund.|Rye bread is dark and healthy.
+das Rührei|scrambled eggs|Rühreier|Essen|Zum Frühstück mache ich Rührei.|I make scrambled eggs for breakfast.
+der Orangensaft|orange juice|Orangensäfte|Essen|Ein Glas Orangensaft, bitte.|A glass of orange juice, please.
+die Busspur|bus lane|Busspuren|Verkehr|Autos dürfen nicht auf der Busspur fahren.|Cars are not allowed to drive in the bus lane.
+der Nachtbus|night bus|Nachtbusse|Verkehr|Ich fahre mit dem Nachtbus nach Hause.|I take the night bus home.
+der Busbahnhof|bus station|Busbahnhöfe|Verkehr|Der Busbahnhof ist neben dem Bahnhof.|The bus station is next to the train station.
+die Bushaltestelle|bus stop|Bushaltestellen|Verkehr|Die Bushaltestelle ist gleich um die Ecke.|The bus stop is just around the corner.
+der Fahrpreis|fare|Fahrpreise|Verkehr|Der Fahrpreis ist gestiegen.|The fare has gone up.
+der Schulbus|school bus|Schulbusse|Verkehr|Der Schulbus kommt um sieben.|The school bus comes at seven.
+der Reisebus|coach|Reisebusse|Verkehr|Wir fahren mit dem Reisebus nach Prag.|We are going to Prague by coach.
+der Flughafenbus|airport bus|Flughafenbusse|Verkehr|Der Flughafenbus fährt alle zwanzig Minuten.|The airport bus runs every twenty minutes.
+der Kleinbus|minibus|Kleinbusse|Verkehr|Die Gruppe fährt mit einem Kleinbus.|The group travels in a minibus.
+die Ermäßigung|reduction; concession|Ermäßigungen|Geld|Studenten bekommen eine Ermäßigung.|Students get a reduction.
+das Kostüm|costume; women's suit|Kostüme|Feste|Zum Karneval trage ich ein Kostüm.|I wear a costume for carnival.
+die Feder|feather; spring|Federn|Natur|Der Vogel hat bunte Federn.|The bird has colourful feathers.
+die Maske|mask|Masken|Feste|Im Bus trägt sie eine Maske.|She wears a mask on the bus.
+die Weihnachtskugel|Christmas bauble|Weihnachtskugeln|Feste|Wir hängen rote Weihnachtskugeln an den Baum.|We hang red baubles on the tree.
+der Kranz|wreath|Kränze|Feste|An der Tür hängt ein Kranz.|There is a wreath on the door.
+lässig|casual||Kleidung|Im Büro ist die Kleidung lässig.|In the office the clothing is casual.
+der Regenschirm|umbrella|Regenschirme|Kleidung|Nimm einen Regenschirm mit!|Take an umbrella with you!
+der Bikini|bikini|Bikinis|Kleidung|Sie kauft einen neuen Bikini.|She buys a new bikini.
+die Strickjacke|cardigan|Strickjacken|Kleidung|Es ist kühl, ich ziehe eine Strickjacke an.|It's cool, I'll put on a cardigan.
+die Unterhose|underpants|Unterhosen|Kleidung|Er packt fünf Unterhosen ein.|He packs five pairs of underpants.
+der Badeanzug|swimsuit|Badeanzüge|Kleidung|Ich habe meinen Badeanzug vergessen.|I forgot my swimsuit.
+der Bademantel|bathrobe|Bademäntel|Kleidung|Im Hotel gibt es einen Bademantel.|There is a bathrobe in the hotel.
+der Schlafanzug|pyjamas|Schlafanzüge|Kleidung|Das Kind trägt einen Schlafanzug mit Sternen.|The child is wearing pyjamas with stars.
+die Krawatte|tie|Krawatten|Kleidung|Zum Vorstellungsgespräch trägt er eine Krawatte.|He wears a tie to the job interview.
+die Strumpfhose|tights|Strumpfhosen|Kleidung|Im Winter trage ich eine warme Strumpfhose.|In winter I wear warm tights.
+die Jogginghose|jogging bottoms|Jogginghosen|Kleidung|Zu Hause trage ich gern eine Jogginghose.|At home I like wearing jogging bottoms.
+die Socke|sock|Socken|Kleidung|Wo ist meine zweite Socke?|Where is my other sock?
+die Weste|waistcoat; vest|Westen|Kleidung|Er trägt eine Weste unter dem Sakko.|He wears a waistcoat under his jacket.
+das Sweatshirt|sweatshirt|Sweatshirts|Kleidung|Das Sweatshirt ist aus Baumwolle.|The sweatshirt is made of cotton.
+die Regenjacke|rain jacket|Regenjacken|Kleidung|Ohne Regenjacke wirst du nass.|Without a rain jacket you'll get wet.
+der Ohrring|earring|Ohrringe|Kleidung|Sie hat einen Ohrring verloren.|She has lost an earring.
+der Geldbeutel|purse; wallet|Geldbeutel|Geld|Mein Geldbeutel ist leer.|My purse is empty.
+der Handschuh|glove|Handschuhe|Kleidung|Im Winter brauche ich Handschuhe.|In winter I need gloves.
+das Armband|bracelet|Armbänder|Kleidung|Das Armband ist ein Geschenk.|The bracelet is a present.
+die Handtasche|handbag|Handtaschen|Kleidung|Das Handy ist in meiner Handtasche.|The phone is in my handbag.
+die Halskette|necklace|Halsketten|Kleidung|Sie trägt eine silberne Halskette.|She is wearing a silver necklace.
+die Mütze|cap; woolly hat|Mützen|Kleidung|Setz eine Mütze auf, es ist kalt!|Put on a hat, it's cold!
+der Hausschuh|slipper|Hausschuhe|Kleidung|Zu Hause trage ich Hausschuhe.|At home I wear slippers.
+der Turnschuh|trainer, sneaker|Turnschuhe|Kleidung|Für den Sport brauche ich Turnschuhe.|I need trainers for sport.
+die Sandale|sandal|Sandalen|Kleidung|Im Sommer trage ich Sandalen.|In summer I wear sandals.
+der Gummistiefel|rubber boot|Gummistiefel|Kleidung|Bei Regen ziehen die Kinder Gummistiefel an.|When it rains the children put on rubber boots.
+die E-Mail-Adresse|email address|E-Mail-Adressen|Kommunikation|Wie ist Ihre E-Mail-Adresse?|What is your email address?
+die SMS|text message|SMS|Kommunikation|Ich schicke dir eine SMS.|I'll send you a text message.
+die Website|website|Websites|Technik|Die Öffnungszeiten stehen auf der Website.|The opening hours are on the website.
+die Taste|key; button|Tasten|Technik|Drück die grüne Taste.|Press the green button.
+das Festnetz|landline||Kommunikation|Ruf mich bitte auf dem Festnetz an.|Please call me on the landline.
+die Untertasse|saucer|Untertassen|Wohnen|Die Tasse steht auf der Untertasse.|The cup is on the saucer.
+monatlich|monthly||Zeit|Die Miete wird monatlich bezahlt.|The rent is paid monthly.
+jährlich|yearly||Zeit|Wir treffen uns jährlich.|We meet every year.
+montags|on Mondays||Zeit|Montags habe ich Deutschkurs.|On Mondays I have a German class.
+die Rolltreppe|escalator|Rolltreppen|Einkaufen|Nehmen Sie die Rolltreppe in den zweiten Stock.|Take the escalator to the second floor.
+die Theke|counter|Theken|Einkaufen|Die Wurst gibt es an der Theke.|You get the sausage at the counter.
+der Fahrstuhl|lift, elevator|Fahrstühle|Wohnen|Der Fahrstuhl ist leider kaputt.|Unfortunately the lift is broken.
+die Sportkleidung|sportswear||Kleidung|Die Sportkleidung ist im ersten Stock.|Sportswear is on the first floor.
+die Mode|fashion|Moden|Kleidung|Sie interessiert sich für Mode.|She is interested in fashion.
+die Beleuchtung|lighting|Beleuchtungen|Wohnen|Die Beleuchtung in der Küche ist zu dunkel.|The lighting in the kitchen is too dark.
+der Tunnel|tunnel|Tunnel|Verkehr|Der Zug fährt durch einen langen Tunnel.|The train goes through a long tunnel.
+die Raststätte|motorway service area|Raststätten|Verkehr|An der Raststätte machen wir eine Pause.|We take a break at the service area.
+die Parkuhr|parking meter|Parkuhren|Verkehr|Hast du Kleingeld für die Parkuhr?|Have you got change for the parking meter?
+die Autovermietung|car rental|Autovermietungen|Verkehr|Die Autovermietung ist am Flughafen.|The car rental is at the airport.
+das Tagesgericht|dish of the day|Tagesgerichte|Essen|Was ist heute das Tagesgericht?|What is today's dish of the day?
+die Bar|bar|Bars|Freizeit|Nach dem Kino gehen wir in eine Bar.|After the cinema we go to a bar.
+der Brotkorb|bread basket|Brotkörbe|Essen|Der Kellner bringt einen Brotkorb.|The waiter brings a bread basket.
+das Weinglas|wine glass|Weingläser|Essen|Ein Weinglas ist kaputt.|One wine glass is broken.
+der Essig|vinegar|Essige|Essen|Für den Salat brauche ich Essig und Öl.|For the salad I need vinegar and oil.
+die Realschule|secondary school (type)|Realschulen|Schule|Mein Sohn geht auf die Realschule.|My son goes to secondary school.
+der Schulleiter|head teacher|Schulleiter|Schule|Der Schulleiter begrüßt die neuen Schüler.|The head teacher welcomes the new pupils.
+der Kugelschreiber|ballpoint pen|Kugelschreiber|Schule|Kann ich deinen Kugelschreiber benutzen?|Can I use your pen?
+die Schultasche|school bag|Schultaschen|Schule|Die Schultasche ist sehr schwer.|The school bag is very heavy.
+der Radiergummi|eraser|Radiergummis|Schule|Hast du einen Radiergummi für mich?|Have you got an eraser for me?
+der Anspitzer|pencil sharpener|Anspitzer|Schule|Mein Bleistift ist stumpf – wo ist der Anspitzer?|My pencil is blunt – where is the sharpener?
+das Federmäppchen|pencil case|Federmäppchen|Schule|Im Federmäppchen sind drei Stifte.|There are three pens in the pencil case.
+das Lehrbuch|textbook|Lehrbücher|Schule|Öffnet bitte das Lehrbuch auf Seite zehn.|Please open the textbook at page ten.
+das Lineal|ruler|Lineale|Schule|Zeichne die Linie mit dem Lineal.|Draw the line with the ruler.
+der Hörsaal|lecture hall|Hörsäle|Schule|Die Vorlesung ist im großen Hörsaal.|The lecture is in the big lecture hall.
+der Campus|campus|Campus|Schule|Die Mensa ist mitten auf dem Campus.|The canteen is in the middle of the campus.
+der Dozent|lecturer|Dozenten|Schule|Unser Dozent erklärt sehr gut.|Our lecturer explains very well.
+die Margarine|margarine|Margarinen|Essen|Ich esse lieber Butter als Margarine.|I prefer butter to margarine.
+das Eigelb|egg yolk|Eigelb|Essen|Für die Soße brauchst du zwei Eigelb.|You need two egg yolks for the sauce.
+die saure Sahne|sour cream||Essen|Zur Suppe gibt es saure Sahne.|There is sour cream with the soup.
+milchfrei|dairy-free||Essen|Ist der Kuchen milchfrei?|Is the cake dairy-free?
+die Sojamilch|soy milk||Essen|Ich trinke Kaffee mit Sojamilch.|I drink coffee with soy milk.
+sich amüsieren|to enjoy oneself||Freizeit|Auf der Party haben wir uns gut amüsiert.|We really enjoyed ourselves at the party.
+das Nachtleben|nightlife||Freizeit|Berlin hat ein tolles Nachtleben.|Berlin has great nightlife.
+tanzen gehen|to go dancing||Freizeit|Am Samstag gehen wir tanzen.|On Saturday we're going dancing.
+der Nachtclub|nightclub|Nachtclubs|Freizeit|Der Nachtclub öffnet erst um elf.|The nightclub only opens at eleven.
+der Jahrmarkt|funfair|Jahrmärkte|Freizeit|Auf dem Jahrmarkt fahren die Kinder Karussell.|At the funfair the children ride the merry-go-round.
+das Musical|musical|Musicals|Freizeit|Wir sehen heute Abend ein Musical.|We are seeing a musical this evening.
+der Stiefsohn|stepson|Stiefsöhne|Familie|Ihr Stiefsohn ist zwölf Jahre alt.|Her stepson is twelve years old.
+die Stieftochter|stepdaughter|Stieftöchter|Familie|Seine Stieftochter studiert in Köln.|His stepdaughter studies in Cologne.
+der Enkel|grandson; grandchild|Enkel|Familie|Unser Enkel besucht uns am Wochenende.|Our grandson visits us at the weekend.
+das Sandwich|sandwich|Sandwiches|Essen|Zum Mittag esse ich ein Sandwich.|I eat a sandwich for lunch.
+die Bratwurst|fried sausage|Bratwürste|Essen|Auf dem Markt gibt es Bratwurst.|There are fried sausages at the market.
+unreif|unripe||Essen|Die Bananen sind noch unreif.|The bananas are still unripe.
+die Schale|peel; skin; bowl|Schalen|Essen|Wirf die Schale in den Biomüll.|Throw the peel in the organic waste.
+der Kern|pip; stone; core|Kerne|Essen|Diese Trauben haben keine Kerne.|These grapes have no pips.
+hacken|to chop||Essen|Hack die Zwiebel ganz klein.|Chop the onion very small.
+reif|ripe||Essen|Die Erdbeeren sind schon reif.|The strawberries are already ripe.
+die Mango|mango|Mangos|Essen|Die Mango ist süß und weich.|The mango is sweet and soft.
+die Aprikose|apricot|Aprikosen|Essen|Im Sommer gibt es Aprikosen.|There are apricots in summer.
+die Melone|melon|Melonen|Essen|Eine Melone ist im Sommer sehr erfrischend.|A melon is very refreshing in summer.
+die Weintraube|grape|Weintrauben|Essen|Die Weintrauben kommen aus Italien.|The grapes come from Italy.
+#B1
+der Sicherheitsdienst|security service|Sicherheitsdienste|Reisen|Der Sicherheitsdienst kontrolliert die Taschen.|Security checks the bags.
+das Terminal|terminal|Terminals|Reisen|Unser Flug geht von Terminal zwei.|Our flight leaves from terminal two.
+die Zollabfertigung|customs clearance|Zollabfertigungen|Reisen|Die Zollabfertigung dauert lange.|Customs clearance takes a long time.
+der Klapptisch|folding table; tray table|Klapptische|Reisen|Bitte klappen Sie den Tisch hoch.|Please fold up the tray table.
+das Gepäckfach|overhead locker|Gepäckfächer|Reisen|Ihre Jacke passt ins Gepäckfach.|Your jacket fits in the overhead locker.
+die Tragfläche|wing (of a plane)|Tragflächen|Reisen|Ich sitze direkt über der Tragfläche.|I'm sitting right above the wing.
+der Kofferkuli|luggage trolley|Kofferkulis|Reisen|Wir nehmen einen Kofferkuli für die Koffer.|We take a trolley for the suitcases.
+der Frachtraum|cargo hold|Frachträume|Reisen|Der große Koffer kommt in den Frachtraum.|The big suitcase goes in the hold.
+die Landebahn|runway|Landebahnen|Reisen|Das Flugzeug rollt auf die Landebahn.|The plane taxis onto the runway.
+der Berliner|doughnut (filled)|Berliner|Essen|Ein Berliner ist mit Marmelade gefüllt.|A Berliner is filled with jam.
+das Marzipan|marzipan|Marzipane|Essen|Marzipan wird aus Mandeln gemacht.|Marzipan is made from almonds.
+die Kruste|crust|Krusten|Essen|Das Brot hat eine harte Kruste.|The bread has a hard crust.
+der Stollen|stollen (Christmas cake)|Stollen|Feste|Der Stollen kommt aus Dresden.|Stollen comes from Dresden.
+der Rollstuhl|wheelchair|Rollstühle|Gesundheit|Der Bus hat einen Platz für einen Rollstuhl.|The bus has a space for a wheelchair.
+das Wartehäuschen|bus shelter|Wartehäuschen|Verkehr|Bei Regen warten wir im Wartehäuschen.|When it rains we wait in the bus shelter.
+den Bus nehmen|to take the bus||Verkehr|Heute nehme ich den Bus.|Today I'm taking the bus.
+das Lametta|tinsel||Feste|Früher hatte jeder Baum Lametta.|In the past every tree had tinsel.
+die Krippe|nativity scene; crèche|Krippen|Feste|Unter dem Baum steht eine Krippe.|There is a nativity scene under the tree.
+die Seide|silk|Seiden|Kleidung|Das Tuch ist aus Seide.|The scarf is made of silk.
+die Übergröße|plus size|Übergrößen|Kleidung|Gibt es diese Hose auch in Übergröße?|Is there this pair of trousers in a plus size too?
+der Büstenhalter (BH)|bra|Büstenhalter|Kleidung|Sie kauft einen neuen BH.|She buys a new bra.
+die Boxershorts|boxer shorts||Kleidung|Er trägt gern Boxershorts.|He likes wearing boxer shorts.
+der Anzug|suit|Anzüge|Kleidung|Zur Hochzeit trägt er einen dunklen Anzug.|He wears a dark suit to the wedding.
+die Latzhose|dungarees|Latzhosen|Kleidung|Der Maler trägt eine Latzhose.|The painter wears dungarees.
+die Baseballmütze|baseball cap|Baseballmützen|Kleidung|Er trägt die Baseballmütze verkehrt herum.|He wears the baseball cap back to front.
+die Brieftasche|wallet|Brieftaschen|Geld|Meine Brieftasche ist in der Jacke.|My wallet is in my jacket.
+die Hosenträger|braces, suspenders||Kleidung|Opa trägt immer Hosenträger.|Grandpa always wears braces.
+der Schnürschuh|lace-up shoe|Schnürschuhe|Kleidung|Die Schnürschuhe passen gut.|The lace-up shoes fit well.
+der Stöckelschuh|high-heeled shoe|Stöckelschuhe|Kleidung|In Stöckelschuhen kann ich nicht laufen.|I can't walk in high heels.
+das Handynetz|mobile network|Handynetze|Kommunikation|Hier gibt es kein Handynetz.|There is no mobile signal here.
+die Mailbox|voicemail|Mailboxen|Kommunikation|Sprich mir bitte auf die Mailbox.|Please leave me a voicemail.
+der Touchscreen|touchscreen|Touchscreens|Technik|Der Touchscreen reagiert nicht.|The touchscreen doesn't respond.
+das Symbol|icon; symbol|Symbole|Technik|Klicken Sie auf das rote Symbol.|Click on the red icon.
+das Mauspad|mouse mat|Mauspads|Technik|Das Mauspad ist neben der Tastatur.|The mouse mat is next to the keyboard.
+der Henkel|handle (of a cup, bag)|Henkel|Wohnen|Der Henkel der Tasse ist abgebrochen.|The handle of the cup has broken off.
+alle zwei Wochen|every two weeks||Zeit|Ich gehe alle zwei Wochen zum Friseur.|I go to the hairdresser every two weeks.
+die Bademode|swimwear||Kleidung|Bademode finden Sie im Erdgeschoss.|You'll find swimwear on the ground floor.
+die Herrenmode|menswear||Kleidung|Die Herrenmode ist im zweiten Stock.|Menswear is on the second floor.
+die Kosmetik|cosmetics||Einkaufen|Die Kosmetik ist gleich am Eingang.|Cosmetics are right at the entrance.
+die Damenwäsche|lingerie||Kleidung|Die Damenwäsche ist im ersten Stock.|Lingerie is on the first floor.
+die Küchengeräte|kitchen appliances||Wohnen|Neue Küchengeräte sind teuer.|New kitchen appliances are expensive.
+die Lederwaren|leather goods||Einkaufen|Lederwaren gibt es im Erdgeschoss.|Leather goods are on the ground floor.
+der Behindertenparkplatz|disabled parking space|Behindertenparkplätze|Verkehr|Hier ist ein Behindertenparkplatz.|There is a disabled parking space here.
+die Kfz-Versicherung|car insurance|Kfz-Versicherungen|Verkehr|Die Kfz-Versicherung ist teurer geworden.|The car insurance has become more expensive.
+das Steakmesser|steak knife|Steakmesser|Essen|Zum Steak bekommen Sie ein Steakmesser.|You get a steak knife with the steak.
+der Zahnstocher|toothpick|Zahnstocher|Essen|Auf dem Tisch stehen Zahnstocher.|There are toothpicks on the table.
+das Sektglas|champagne glass|Sektgläser|Feste|Wir stoßen mit Sektgläsern an.|We clink champagne glasses.
+die Hausaufgabe|homework|Hausaufgaben|Schule|Hast du deine Hausaufgaben gemacht?|Have you done your homework?
+das Whiteboard|whiteboard|Whiteboards|Schule|Die Lehrerin schreibt an das Whiteboard.|The teacher writes on the whiteboard.
+die Cafeteria|cafeteria|Cafeterias|Schule|In der Cafeteria gibt es Kaffee und Kuchen.|There is coffee and cake in the cafeteria.
+die Schlagsahne|whipped cream||Essen|Möchten Sie Schlagsahne zum Kuchen?|Would you like whipped cream with the cake?
+aus Freilandhaltung|free-range||Essen|Ich kaufe nur Eier aus Freilandhaltung.|I only buy free-range eggs.
+Kontakte knüpfen|to make contacts||Freizeit|Im Sportverein kann man gut Kontakte knüpfen.|At the sports club it's easy to make contacts.
+das Ballett|ballet|Ballette|Kultur|Meine Tochter tanzt Ballett.|My daughter does ballet.
+das Festival|festival|Festivals|Kultur|Im Sommer fahren wir zu einem Festival.|In summer we go to a festival.
+die Ofenkartoffel|baked potato|Ofenkartoffeln|Essen|Die Ofenkartoffel gibt es mit Quark.|The baked potato comes with quark.
+der Obstkern|fruit stone; pip|Obstkerne|Essen|Spuck den Obstkern nicht auf den Boden!|Don't spit the stone on the floor!
+würfeln|to dice; to roll dice||Essen|Würfel die Kartoffeln in kleine Stücke.|Dice the potatoes into small pieces.
+raspeln|to grate||Essen|Ich rasple die Karotten für den Salat.|I grate the carrots for the salad.
+verfault|rotten||Essen|Der Apfel ist verfault.|The apple is rotten.
+kernlos|seedless||Essen|Kernlose Trauben mögen Kinder gern.|Children like seedless grapes.
+die Stachelbeere|gooseberry|Stachelbeeren|Essen|Stachelbeeren sind ziemlich sauer.|Gooseberries are quite sour.
+die Brombeere|blackberry|Brombeeren|Essen|Im Wald wachsen Brombeeren.|Blackberries grow in the woods.
+#B2
+das Plundergebäck|Danish pastry|Plundergebäcke|Essen|Zum Frühstück gab es Plundergebäck.|There was Danish pastry for breakfast.
+der Rumpf|fuselage; trunk|Rümpfe|Reisen|Der Rumpf des Flugzeugs ist weiß.|The fuselage of the plane is white.
+das Cockpit|cockpit|Cockpits|Reisen|Der Pilot sitzt im Cockpit.|The pilot sits in the cockpit.
+der Duty-free-Shop|duty-free shop|Duty-free-Shops|Reisen|Im Duty-free-Shop ist Parfüm günstig.|Perfume is cheap in the duty-free shop.
+der Trolleybus|trolleybus|Trolleybusse|Verkehr|In Salzburg fahren Trolleybusse.|Trolleybuses run in Salzburg.
+der Shuttlebus|shuttle bus|Shuttlebusse|Verkehr|Ein Shuttlebus bringt uns zum Hotel.|A shuttle bus takes us to the hotel.
+der Schnitz|segment (of fruit)|Schnitze|Essen|Gib mir einen Schnitz von deinem Apfel.|Give me a slice of your apple.
+entsaften|to juice||Essen|Wir entsaften die Orangen selbst.|We juice the oranges ourselves.
+die Wohntextilien|soft furnishings||Wohnen|Wohntextilien machen eine Wohnung gemütlich.|Soft furnishings make a flat cosy.
+aus Käfighaltung|from caged hens||Essen|Eier aus Käfighaltung sind verboten.|Eggs from caged hens are banned.
+der Doppelrahm|double cream||Essen|Doppelrahm hat sehr viel Fett.|Double cream has a lot of fat.

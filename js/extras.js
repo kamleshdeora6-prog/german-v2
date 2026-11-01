@@ -171,6 +171,8 @@
     const top = r.rows.slice(0, 4), up = r.rows.filter((x) => x.prev !== null && x.pct > x.prev).sort((a, b) => b.pct - b.prev - (a.pct - a.prev)).slice(0, 2);
     return `<section class="card weekly"><h3>📅 ${H.bi("Diese Woche", "This week")}</h3><p class="muted small">${r.days} day${r.days === 1 ? "" : "s"} practised · ${r.answers} answers${window.Work ? ` · ${Work.fmt(Weekly.minutes())} of work` : ""} · ${r.xp} XP</p>
       ${top.length ? `<ul class="wk">${top.map((x) => `<li><span>${esc(title(x.t))}</span><b class="${x.pct >= 80 ? "good" : x.pct >= 60 ? "mid" : "low"}">${x.pct}%</b>${x.prev !== null ? `<small class="${x.pct >= x.prev ? "up" : "down"}">${x.pct >= x.prev ? "↑" : "↓"} ${x.prev}%</small>` : ""}${Engine.GEN[x.t] && x.pct < 80 ? `<button class="link" data-go="practice/${x.t}">practise</button>` : ""}</li>`).join("")}</ul>` : ""}
+      ${(() => { const wk = Date.now() - 7 * 864e5; const c = {}; (Store.get().mistakes || []).filter((m) => (m.t || 0) > wk && window.Mistakes).forEach((m) => { const k = Mistakes.topicsOf(m)[0]; if (k && !/^(capitals|spelling|missing)$/.test(k)) c[k] = (c[k] || 0) + (m.n || 1); });
+        const top = Object.entries(c).sort((a, b) => b[1] - a[1]).slice(0, 3); return top.length ? `<p class="small">🔁 Most mistakes this week: ${top.map(([k, n]) => `<button class="link" data-go="mistakes/go:t%3A${k}">${esc(window.Diag ? Diag.title(k) : k)} (${n})</button>`).join(", ")}</p>` : ""; })()}
       ${up.length ? `<p class="small">💪 Better than last week: ${up.map((x) => `<b>${esc(title(x.t))}</b> (${x.prev}% → ${x.pct}%)`).join(", ")}</p>` : ""}</section>`;
   };
   UI.weeklyTitle = title;

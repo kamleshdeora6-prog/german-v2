@@ -161,7 +161,9 @@
 
   /* ---------------- Grammatik ---------------- */
   V.grammar = (el, [sect]) => {
-    el.innerHTML = `<h2 class="page-title">Grammar reference</h2><input class="search" type="search" placeholder="Search (e.g. Dativ, weil, Perfekt)">
+    el.innerHTML = `<h2 class="page-title">Grammar reference</h2>
+      <button class="st-entry cases-entry" data-go="cases"><span class="st-pic">📘</span><span><b>${H.bi("Welcher Fall?", "Which case?")}</b><span>What always takes the Dativ, what takes the Akkusativ – verbs, prepositions, time words (um / am / im), article and pronoun tables.</span></span></button>
+      <input class="search" type="search" placeholder="Search (e.g. Dativ, weil, Perfekt)">
       <nav class="tabs"><button class="tab ${!sect || sect === "rules" ? "on" : ""}" data-go="grammar/rules">Rules</button><button class="tab ${sect === "tables" ? "on" : ""}" data-go="grammar/tables">Tables</button><button class="tab ${sect === "notes" ? "on" : ""}" data-go="grammar/notes">Notes</button></nav><div class="gbody"></div>`;
     const body = el.querySelector(".gbody"), q = el.querySelector(".search");
     const draw = () => {

@@ -71,7 +71,13 @@
     const n = +s.settings.newWords || 5, l = lessonNow(), lv = l.level;
     const list = V.vocabList().filter((w) => !w.sentence && w.en && !s.srs[w.id] && !/^nb:/.test(w.id));
     const lessonIds = new Set((l.vocab || []).map((v) => "v:" + v.de.toLowerCase()));
-    const pick = list.filter((w) => lessonIds.has(w.id) || w.lesson === l.n).concat(list.filter((w) => w.level === lv && !lessonIds.has(w.id) && w.lesson !== l.n)).slice(0, n);
+    // 1. the lesson's own words, 2. everyday words for the lesson's topic (7.5 word list), 3. other words of your level
+    const LV = ["A1", "A2", "B1", "B2", "C1", "C2"], lim = LV.indexOf(lv);
+    const topic = new Set(Engine.lessonTopics ? Engine.lessonTopics(l.n) : []);
+    const a = list.filter((w) => lessonIds.has(w.id) || w.lesson === l.n);
+    const b = list.filter((w) => topic.has(w.topic) && LV.indexOf(w.level) <= lim && !a.includes(w));
+    const c = list.filter((w) => w.level === lv && !a.includes(w) && !b.includes(w));
+    const pick = [...new Set(a.slice(0, Math.ceil(n / 2)).concat(b, a, c))].slice(0, n);
     s.wotd = { date: d, ids: pick.map((w) => w.id), learned: [] }; Store.save();
     return s.wotd;
   };
@@ -171,6 +177,11 @@
     const ids = (gens || []).map((g) => (typeof g === "string" ? g : g.id)).filter((id) => Engine.GEN[id]);
     // the weakest topic you have already met, otherwise one from the current lesson
     const met = Object.entries(st().topics || {}).filter(([k, v]) => Engine.GEN[k] && (v.r || 0) + (v.w || 0) >= 3).map(([k, v]) => [k, (v.recent || []).reduce((a, b) => a + b, 0) / Math.max(1, (v.recent || []).length)]).sort((a, b) => a[1] - b[1]);
+    // 7.5: the grammar topic with the most open mistakes comes first
+    const wt = Mistakes.weakTopics ? Mistakes.weakTopics(1)[0] : null;
+    const tg = wt && window.Diag ? (Diag.TOPICS[wt.cat.slice(2)] || {}).gens || [] : [];
+    const g0 = tg.find((x) => Engine.GEN[x]);
+    if (g0) return g0;
     if (met.length && met[0][1] < 0.8) return met[0][0];
     return ids.length ? H.pick(ids) : Object.keys(Engine.GEN)[0];
   }

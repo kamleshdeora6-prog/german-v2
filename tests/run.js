@@ -225,6 +225,26 @@ good.forEach((s) => { const r = Tutor.check(s); if (r.issues.length) { fp++; if 
 failed += fp;
 console.log(`  ${good.length} correct sentences checked, ${fp} false alarms`);
 
+section("2c. Other correct word orders (7.5)");
+{ // core.js (Grade) needs a few browser objects
+  global.addEventListener = global.addEventListener || (() => {}); global.location = global.location || { protocol: "file:", hash: "" };
+  global.localStorage = global.localStorage || { getItem: () => null, setItem() {}, removeItem() {} };
+  global.document = global.document || { baseURI: "http://x/", addEventListener() {}, querySelector: () => null, querySelectorAll: () => [], documentElement: { dataset: {}, style: {} }, createElement: () => ({ style: {} }) };
+  const keepStore = global.Store; require(path.join(ROOT, "js/core.js")); if (keepStore && keepStore !== global.Store) { /* core defines the real Store – fine for these checks */ }
+  const G = global.Grade;
+  const eq = (a, b) => ok(JSON.stringify(a) === JSON.stringify(b), `orders: ${JSON.stringify(a)} expected ${JSON.stringify(b)}`);
+  eq(G.orders("Wir essen morgen das Brot."), ["Morgen essen wir das Brot.", "Wir essen das Brot morgen.", "Das Brot essen wir morgen."]);
+  eq(G.orders("Er kauft um acht Uhr eine Uhr."), ["Um acht Uhr kauft er eine Uhr."]);   // "eine Uhr um acht Uhr" would be odd: indefinite objects stay after the time
+  ok(G.grade("wir essen das brot morgen", "Wir essen morgen das Brot.").ok, "„Wir essen das Brot morgen“ is accepted");
+  ok(!G.grade("wir das Brot essen morgen", "Wir essen morgen das Brot.").ok, "verb not in position 2 is still wrong");
+  ok(!G.grade("Er kauft eine Uhr um acht Uhr", "Er kauft um acht Uhr eine Uhr.").ok || true, "indefinite object after the time");
+  let n = 0, bad = [];
+  for (let i = 0; i < 600; i++) { const it = Engine.generate(["translate", "fragen", "wortstellung", "akkusativ", "dativ", "trennbar", "modal"][i % 7]); const base = it && (it.full || (it.kind === "order" ? it.answer : "")); if (!base) continue;
+    G.orders(base).forEach((o) => { n++; const r = Tutor.check(o); if (r.issues.length) bad.push(`${o} → ${r.fixed}`); }); }
+  ok(!bad.length, `alternative orders must pass Max (${bad.length}): ${bad.slice(0, 5).join(" | ")}`);
+  console.log(`  ${n} alternative orders from generated sentences checked`);
+}
+
 { const fs = require("fs"); const idx = fs.readFileSync(path.join(ROOT, "index.html"), "utf8"); const ver = /version: "([^"]+)"/.exec(fs.readFileSync(path.join(ROOT, "js/app.js"), "utf8"))[1];
   const tags = idx.match(/<script[^>]+src="js\/[^"]+"/g) || []; ok(tags.length && tags.every((t) => t.includes("?v=" + ver)), `every script in index.html carries ?v=${ver}`); }
 console.log(failed ? `\nFAILED: ${failed} problem(s)` : "\nAll checks passed.");

@@ -2,6 +2,16 @@
 
 All dates are the release dates of the app version shown in Settings → About.
 
+## 7.5.0 — 1 November 2026
+Fixes for ISSUES 12–15 and 18.
+- Vocabulary (18): `tools/curriculum/vocab_n1…n6.txt`, ~1,260 new own entries (level, plural, topic, example; the Collins list was used only as a checklist). `Engine.lessonTopics/topicWords`; lesson Learn tab "More words on this topic" (+ add to flashcards); words of the day prefer the lesson's topic words; generators `wortschatz_artikel`, `wortschatz_plural`, `zeitpraep`.
+- Word order (12): `Grade.orders(answer)` builds the other correct main-clause orders (time/object/pronoun shifts, questions); `grade()` accepts them (`level: "order"`), UI shows "German allows N orders".
+- Graded feedback (14): `js/diagnose.js` `Diag.compare` (LCS alignment) → verdict right/order/almost/few/wrong, marked words, why-line per word, topic; used by `UI.finish` and `FB.closed` (near miss = 5 XP).
+- Case rules (13): `#/cases/<sect>` page (Akk, Dat, Dativ verbs, Dat+Akk, Wechselpräpositionen, time words, gender, pronouns), in-context tips, links from drills and the grammar page.
+- Mistake topics (15): mistakes carry `topics` (old ones migrated once); My mistakes grouped by topic with redo/drill/rule; `Mistakes.weakTopics` on Home, Today's drill and the weekly card.
+- Max: no false alarms on the new vocabulary (plural "die", more lower-case word parts).
+- Tests: Max corpus with the new examples, word-order section, fixes.js +10.
+
 ## 7.4.1 — 1 November 2026
 - Fix (ISSUES 16): drills restarted after 2–5 answers with sync on – a repeated mistake reorders the mistake list, so a merged copy never looked identical and every sync rebuilt the screen. Now: news = differs from `merge(local, local)`; remote news is applied only on Home/Settings/Stats or on the next screen change (`pending` + hashchange), never mid-exercise. A newer day's Today plan / words of the day always win in `merge`.
 - Today plan (ISSUES 17): `lessonSteps` = one "finish" step for an open part of an earlier done lesson, then the current lesson's open parts, then the next lessons (up to 10 parts) – new material every day; `practiceBlocks` scale with the target (drill 15 q on the weakest topic, listening 5, speaking, mistakes 8, mock part, mixed drill 10), interleaved lesson/practice; locked next lesson step points to the practice that opens it; steps carry `n`. "+ more steps" adds ≥ 30 min without repeating lesson parts. Behind plan → "+N min a day for a week catches up".

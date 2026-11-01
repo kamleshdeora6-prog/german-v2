@@ -126,6 +126,35 @@ let pass = 0, fail = 0; const log = (c, m) => { c ? pass++ : fail++; console.log
   await go('home'); const wk = await p.textContent('.weekly');
   log(!/mistake:/.test(wk) && /Corrections from Max/.test(wk), '“This week” shows “Corrections from Max”, not mistake:correction');
 
+  // ---- 7.5: graded verdicts with the grammar topic (problems 13–15) ----
+  await go('practice/akkusativ'); await p.waitForSelector('.q');
+  const show = async (item, typed) => { await p.evaluate(({ item, typed }) => { const host = document.querySelector('.sess-body') || document.querySelector('#view .screen'); const box = document.createElement('div'); box.className = 'probe'; document.querySelectorAll('.probe').forEach((x) => x.remove()); host.prepend(box); UI.item(box, Object.assign({ kind: 'input', why: 'x', gen: 'translate', prompt: 'Translate' }, item), { noFocus: true }); box.querySelector('.q-in').value = typed; box.querySelector('form').requestSubmit(); }, { item, typed }); await p.waitForTimeout(150); return p.$eval('.probe .q-fb', (e) => e.innerText); };
+  const v1 = await show({ answer: 'Er kauft um acht Uhr eine Uhr.' }, 'er kauft am acht uhr eine uhr');
+  log(/Almost/.test(v1) && /1 word/.test(v1) && /um/.test(v1) && /Time words/.test(v1) && !/one letter/.test(v1), 'am → um: “Almost – 1 word”, marked, with the topic “Time words” (no “one letter” message)');
+  await p.locator('.probe').screenshot({ path: OUT + '/fix-almost.png' });
+  const v2 = await show({ answer: 'Sie danken morgen der Frau.' }, 'ihr danken morgen die frau');
+  log(/words to fix/.test(v2) && /Dativ/.test(v2) && /Pronouns|sie/.test(v2), 'ihr … die Frau: “2 words to fix” – pronoun and danken + Dativ explained');
+  await p.locator('.probe').screenshot({ path: OUT + '/fix-dativ.png' });
+  const v3 = await show({ answer: 'Wir essen morgen das Brot.' }, 'wir essen das brot morgen');
+  log(/Richtig/.test(v3) && /order|orders/.test(v3), '„Wir essen das Brot morgen“ is right too – and the other orders are shown');
+  const v4 = await show({ answer: 'Wir essen morgen das Brot.' }, 'wir das brot essen morgen');
+  log(!/Richtig/.test(v4), 'verb not in position 2 is still wrong');
+  const tp = await p.evaluate(() => Mistakes.groups().map((g) => g.title));
+  log(tp.some((t) => /Time words/.test(t)) && tp.some((t) => /Pronouns|Dativ/.test(t)) && tp.some((t) => /Adjective endings|Article/.test(t)), 'My mistakes are grouped by grammar topic: ' + tp.join(', '));
+  await go('mistakes'); await p.waitForTimeout(200);
+  log(/▶ Drill/.test(await p.textContent('#view')) && /📘 Rule/.test(await p.textContent('#view')), 'each topic has its rule, a drill and the own mistakes to redo');
+  await p.screenshot({ path: OUT + '/fix-mistakes-topics.png', fullPage: true });
+  await go('cases/dverbs'); await p.waitForTimeout(250);
+  const cs = await p.textContent('#view');
+  log(/Verbs that ALWAYS take the Dativ/.test(cs) && /danken/.test(cs) && /DOGFU/.test(cs) && /um acht Uhr/.test(cs), '“Which case?” page: Dativ verbs, prepositions, time words, tables');
+  await p.screenshot({ path: OUT + '/fix-cases.png', fullPage: false });
+  // ---- 18: new words in lessons and words of the day ----
+  log(await p.evaluate(() => DC.vocab.length > 5400 && DC.vocab.some((w) => w.de === 'die Bushaltestelle' && w.exDe)), 'word list: 1,200+ new everyday words with examples (e.g. die Bushaltestelle)');
+  await go('lesson/7/learn'); await p.waitForTimeout(300);
+  log(/More words on this topic/.test(await p.textContent('#view')) && (await p.$$('.morewords li')).length >= 20, 'lesson 7 (food) shows more everyday words on the topic: ' + (await p.$$eval('.morewords li > span:first-child', (x) => x.slice(0, 6).map((y) => y.textContent))).join(', '));
+  const wt = await p.evaluate(() => { const s = Store.get(); delete s.wotd; s.lessons[7] = s.lessons[7] || {}; return V = Views.wordsToday ? Views.wordsToday().words.map((w) => w.de) : []; });
+  log(wt.length === 5, 'words of the day: ' + wt.join(', '));
+
   // phone width: the text panel is a foldable bar
   await p.setViewportSize({ width: 390, height: 800 }); await go('lesson/4/exam'); await p.reload(); await p.waitForTimeout(800);
   const ph = await p.evaluate(() => ({ open: document.querySelector('.exam-text details').open, grid: getComputedStyle(document.querySelector('.exam-split')).display, w: document.documentElement.scrollWidth }));

@@ -95,7 +95,7 @@ Optional: choose 5/10/15 in settings.
 ## 11. ✅ (7.3) Small: "mistake:correction" shown as a raw name in "Diese Woche" (Home)
 Should read "Corrections from Max" (Mistakes.title), and the internal "mistake:…" practice names need nice titles everywhere.
 
-## 12. Word order: more than one right answer is marked wrong
+## 12. ✅ (7.5) Word order: more than one right answer is marked wrong
 Reported 31 Oct 2026. "Wir essen morgen das Brot." and "Wir essen das Brot morgen." are both correct, but the app accepts only one.
 German rule: the verb is fixed (position 2), but the middle field is flexible – a time word can stand before or after a
 *known* object (das Brot, ihn, es). With "ein Brot" / no article, time first is the normal order (Wir essen morgen ein Brot).
@@ -104,7 +104,7 @@ definite object or pronoun, place/time swaps, the time word in position 1 (Morge
 show "German allows 2 correct orders" with both (the "orders" feature exists – extend it to all generators); add tests that
 every accepted order passes Max and that wrong ones (verb not in position 2) still fail.
 
-## 13. Case rules and tips: what always takes Dativ / Akkusativ (+ clearer translation feedback)
+## 13. ✅ (7.5) Case rules and tips: what always takes Dativ / Akkusativ (+ clearer translation feedback)
 Reported 31 Oct 2026, screenshot: Translate EN → DE "They thank the woman tomorrow." – typed "ihr danken morgen die frau"
 → only "Not quite" + the model answer. Not explained: ihr = you (all) – "they" is sie; danken always takes the Dativ → der Frau
 (not die Frau); capital F.
@@ -123,7 +123,7 @@ To do:
 - Tips in context: when a sentence in a drill/translation has a Dativ verb or a case preposition, show a small note
   ("danken + Dativ → der Frau") under the question or in the feedback, with a link to the list. Lists as flashcards too.
 
-## 14. "Not quite" for a one-word slip feels harsh – say what is wrong and how close it was
+## 14. ✅ (7.5) "Not quite" for a one-word slip feels harsh – say what is wrong and how close it was
 Reported 31 Oct 2026, screenshot: "He buys a watch at eight o'clock." – typed "er kauft am acht uhr eine uhr" → red "✗ Not quite.
 Almost – one letter is different." The only real mistake is am → um (a whole word, not a letter) – the rest was right.
 To do:
@@ -137,7 +137,7 @@ To do:
   (decide together). The letter-count message must only appear when it really is one letter.
 - Add "Time prepositions (um / am / im / in / von … bis / seit / vor)" to the "Which case?" reference planned in problem 13.
 
-## 15. Every mistake needs its grammar topic – so I can learn and practise exactly that
+## 15. ✅ (7.5) Every mistake needs its grammar topic – so I can learn and practise exactly that
 Reported 31 Oct 2026. Today "My mistakes" groups by where the mistake happened (drill name, "Translate EN → DE", lesson,
 exam part, "Corrections from Max"). It should say *what kind* of mistake it was.
 To do:
@@ -176,3 +176,13 @@ To do:
   each worth more minutes, instead of 29 tiny ones.
 - Yesterday's undone steps are not copied; the balance shows the lost minutes once ("behind plan"), the new plan is for today only.
 - "Behind plan" should be encouraging: show how much per day catches up ("+20 min/day for a week") instead of only the big number.
+
+## 18. ✅ (7.5) More vocabulary – everyday words that were missing
+1 Nov 2026: Sohan shared a "3000 essential words" book (Collins, 2019) as a checklist. Of ~1,990 single words/short phrases
+in it, ~550 are already in the app; the other ~1,400 are listed in `docs/vocab-to-add.csv` (priority, topic, German, English, type).
+Priority 1 (~750): everyday topics – food, shops, house, clothes, body, health, travel, town, bank, post, weather, school, IT.
+Priority 2 (~290): leisure, animals, plants, music, sports in general. Priority 3 (~390): specialist (car parts, skeleton,
+insects, boat travel, baby goods, single sports).
+To do when we build it: the book is copyrighted – use it only as a checklist of which words are missing. Every app entry is our
+own: article + plural + level + own example sentence + English, checked by Max; no phrases or sentences copied from the book.
+Add priority 1 first (with lesson/topic links, so they show up in words of the day and flashcards by topic), then 2; 3 optional.

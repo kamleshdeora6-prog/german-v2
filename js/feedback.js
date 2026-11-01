@@ -116,7 +116,10 @@
       return out.join("<br>");
     }
     const d = diff(given, answer);
+    const dg = window.Diag && words(answer).length > 1 ? Diag.compare(given, answer) : null;
+    if (dg && dg.verdict !== "wrong" && dg.verdict !== "empty") { out.push(Diag.feedbackHtml(dg)); out.push(`<span class="muted small">Change your answer and press Check again.</span>`); return out.join(""); }
     out.push(`<span class="fb-bad">✗ Not yet.</span> You wrote: <span class="fb-you">${d.g || "–"}</span> → Right: <b class="fb-right">${d.w}</b>`);
+    if (dg && dg.items.length) out.push(Diag.feedbackHtml(Object.assign({}, dg, { html: "" })));
     if (g.note) out.push(`<span class="fb-note">${esc(g.note)}${g.level === "close" ? " The highlighted letters are different." : ""}</span>`);
     if (g.typos && g.typos.length) out.push(FB.typos(g.typos));
     const why = verbWhy(q, answer); if (why) out.push(`<span class="fb-why">💡 ${why}</span>`);
@@ -308,7 +311,7 @@
     const fixes = res.filter((x) => x.r.issues.length);
     if (ctx.log !== false && window.Work && ws.length >= 3) Work.add(2);   // a written / spoken answer
     if (ctx.log !== false && window.Mistakes) spell.forEach((x) => Store.mistake({ cat: "correction", prompt: `Spell it correctly: <i>${esc(x.g)}</i>`, answer: x.w, given: x.g, why: "Spelling" }));
-    if (ctx.log !== false && window.Mistakes) fixes.forEach((x) => Store.mistake({ cat: "correction", prompt: `Correct this sentence:<br><i>${esc(x.s)}</i>`, answer: x.r.fixed, given: x.s, why: x.r.issues.map((i) => i.why).join(" ") }));
+    if (ctx.log !== false && window.Mistakes) fixes.forEach((x) => Store.mistake({ topics: window.Diag ? [...new Set(x.r.issues.map(Diag.topicOfIssue).filter(Boolean))] : undefined, cat: "correction", prompt: `Correct this sentence:<br><i>${esc(x.s)}</i>`, answer: x.r.fixed, given: x.s, why: x.r.issues.map((i) => i.why).join(" ") }));
     const model = ctx.model ? FB.modelsHtml(ctx.model, ctx.models, level, score < 45) : "";
     // the whole answer with every correction – what the learner should have written
     // sure spelling fixes go in first, then Max checks the sentence again (1 Küche → eine Küche)

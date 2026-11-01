@@ -177,6 +177,9 @@
       return [full].concat(parts);
     });
     for (const c of cands) if (g === c) return { ok: true, level: "exact" };
+    // 7.5: another correct word order of the same sentence
+    const alts = [answer].concat(accept || []).filter(Boolean).flatMap((a) => orders(String(a)));
+    for (const a of alts) if (g === clean(a)) return { ok: true, level: "order", note: "Also correct – German allows this order too.", orders: [answer].concat(orders(String(answer))) };
     let gu = g; UML.forEach(([a, b]) => (gu = gu.split(a).join(b)));
     for (const c of cands) if (gu === c) return { ok: true, level: "umlaut", note: "Correct – but write the umlauts ä, ö, ü." };
     for (const c of cands) {
@@ -236,6 +239,52 @@
     if (!best.typos.length) return best.hit / best.n >= need ? { ok: true, level: "content", typos: [] } : Object.assign({}, g0, { typos: [] });
     if (best.ratio >= need) return best.long && best.hit / best.n >= need ? { ok: true, level: "content", typos: best.typos, note: "Check the spelling." } : { ok: false, level: "close", typos: best.typos, note: "Almost – check the spelling." };
     return Object.assign({}, g0, { typos: best.typos });
+  }
+  /* 7.5: other correct word orders of a simple sentence. German fixes the verb (position 2, or 1 in a yes/no question)
+     but the middle field is flexible: a time word may stand before or after a KNOWN object (das Brot, ihn, meinen Freund),
+     and the time word or a known object may take position 1. Returns the alternatives (not the sentence itself). */
+  const TIMEW = ["heute", "morgen", "gestern", "jetzt", "bald", "später", "oft", "immer", "nie", "manchmal", "abends", "morgens", "montags", "am montag", "am dienstag", "am mittwoch", "am donnerstag", "am freitag", "am samstag", "am sonntag", "am abend", "am morgen", "am nachmittag", "am wochenende", "jeden tag", "jeden morgen", "jeden abend", "heute abend", "morgen früh", "letzte woche", "nächste woche", "um acht uhr", "um sieben uhr", "um neun uhr", "im sommer", "im winter", "vorgestern", "übermorgen", "am samstag"];
+  const PRON = /^(ich|du|er|sie|es|wir|ihr|man)$/i;
+  const KNOWN = /^(der|die|das|den|dem|des|mein|meine|meinen|meinem|meiner|dein|deine|deinen|deinem|sein|seine|seinen|seinem|ihr|ihre|ihren|ihrem|unser|unsere|unseren|euer|eure|euren|diese|diesen|dieses|dieser)$/i;
+  const OPRON = /^(ihn|sie|es|mich|dich|uns|euch|ihm|ihr|mir|dir|ihnen|Ihnen)$/;
+  function orders(answer) {
+    const end = (/[?!.]$/.exec(answer) || ["."])[0];
+    const w = String(answer).replace(/[.?!]+$/, "").split(/\s+/);
+    const low = w.map((x) => x.toLowerCase());
+    // find the time chunk
+    let ti = -1, tl = 0;
+    for (let i = 0; i < low.length; i++) for (const t of TIMEW) { const n = t.split(" ").length; if (low.slice(i, i + n).join(" ") === t && n > tl) { ti = i; tl = n; } }
+    if (ti < 0) return [];
+    const T = w.slice(ti, ti + tl);
+    const out = new Set();
+    const cap = (x) => x.charAt(0).toUpperCase() + x.slice(1), unc = (x) => ((PRON.test(x) && x !== "Sie") || KNOWN.test(x) || /^(ein|eine)$/i.test(x) ? x.toLowerCase() : x);
+    const objAt = (i) => { if (OPRON.test(w[i] || "")) return 1; if (KNOWN.test(w[i] || "")) { let j = i + 1; while (j < w.length && /^[a-zäöüß]+e[nrms]?$/.test(w[j]) && !/^[A-ZÄÖÜ]/.test(w[j])) j++; return /^[A-ZÄÖÜ]/.test(w[j] || "") ? j - i + 1 : 0; } return 0; };
+    // pattern 1: S V T O [end]   (statement, subject = pronoun or det+noun / name)
+    let sLen = PRON.test(w[0]) ? 1 : KNOWN.test(w[0]) || /^(ein|eine)$/i.test(w[0]) ? 2 : /^[A-ZÄÖÜ]/.test(w[0]) ? 1 : 0;
+    if (sLen && ti === sLen + 2 && OPRON.test(w[sLen + 1]) && !/\?$/.test(end))                                       // Ich rufe dich morgen an. → Morgen rufe ich dich an.
+      out.add([cap(T[0]), ...T.slice(1), w[sLen], unc(w[0]), ...w.slice(1, sLen), w[sLen + 1], ...w.slice(ti + tl)].join(" ") + end);
+    if (sLen && ti === sLen + 1 && !/\?$/.test(end)) {
+      const S = w.slice(0, sLen), V = w[sLen], oLen = objAt(ti + tl), O = w.slice(ti + tl, ti + tl + oLen), REST = w.slice(ti + tl + oLen);
+      out.add([cap(T[0]), ...T.slice(1), V, unc(S[0]), ...S.slice(1), ...w.slice(ti + tl)].join(" ") + end);               // Morgen essen wir das Brot.
+      if (REST.length <= 1) {
+        if (oLen) {
+          out.add([...S, V, ...O, ...T, ...REST].join(" ") + end);                                                        // Wir essen das Brot morgen.
+          if (!OPRON.test(O[0])) out.add([cap(O[0]), ...O.slice(1), V, unc(S[0]), ...S.slice(1), ...T, ...REST].join(" ") + end);   // Das Brot essen wir morgen.
+        }
+      }
+    }
+    // pattern 2: V S T O [end]?   (yes/no question) and W V S T O [end]?
+    const q = /\?$/.test(end);
+    if (q) {
+      const off = /^(wann|wo|wohin|woher|warum|wie|was|wen|wem)$/i.test(w[0]) ? 1 : 0;
+      const sL = PRON.test(w[off + 1]) ? 1 : 0;
+      if (sL && ti === off + 2) {
+        const oLen = objAt(ti + tl), O = w.slice(ti + tl, ti + tl + oLen), REST = w.slice(ti + tl + oLen);
+        if (oLen && REST.length <= 1) out.add([...w.slice(0, off + 2), ...O, ...T, ...REST].join(" ") + end);          // Isst du das Brot morgen?
+      }
+    }
+    out.delete(answer);
+    return [...out].filter((x) => x !== answer);
   }
   function wordDiff(target, said) {
     const a = target.replace(/[.,!?„“"]/g, "").split(/\s+/).filter(Boolean);
@@ -405,5 +454,5 @@
   };
 
   window.addEventListener("pagehide", flush);
-  window.Store = Store; window.SRS = SRS; window.Grade = { grade, match, clean, overlap, wordDiff, lev }; window.Speech = Speech; window.H = H;
+  window.Store = Store; window.SRS = SRS; window.Grade = { grade, match, clean, overlap, wordDiff, lev, orders }; window.Speech = Speech; window.H = H;
 })();

@@ -75,7 +75,8 @@
     </section>
     ${league.length > 1 ? `<section class="card league"><h3>${H.bi("Familien-Liga", "Family league · this week")}</h3><ol>${league.map((x, i) => `<li class="${x.me ? "me" : ""}"><span class="rk">${["🥇", "🥈", "🥉"][i] || i + 1}</span><span class="av" style="background:${x.color}">${esc((x.name || "?").charAt(0).toUpperCase())}</span><span class="nm">${esc(x.name)}</span><b>${x.xp} XP</b></li>`).join("")}</ol></section>`
       : `<section class="card league solo"><p>👨‍👩‍👧 <b>Learn together.</b> Add a profile for a friend or family member on this device and compete in a weekly league.</p><button class="btn ghost sm addp">Add a learner</button></section>`}
-    ${p.weak.length ? `<section class="card"><h3>Needs practice</h3><div class="chips">${p.weak.map((w) => `<button class="chip" data-go="practice/${w.id}">${esc(w.title)} · ${w.pct}%</button>`).join("")}</div></section>` : ""}
+    ${(() => { const wt = window.Mistakes && Mistakes.weakTopics ? Mistakes.weakTopics(3) : [];
+      return p.weak.length || wt.length ? `<section class="card"><h3>Needs practice</h3>${wt.length ? `<p class="muted small">Your most frequent mistakes, by grammar topic:</p><div class="chips">${wt.map((g) => `<button class="chip" data-go="mistakes/go:${encodeURIComponent(g.cat)}">🔁 ${esc(g.title)} · ${g.n}×</button>`).join("")}</div>` : ""}${p.weak.length ? `<div class="chips">${p.weak.map((w) => `<button class="chip" data-go="practice/${w.id}">${esc(w.title)} · ${w.pct}%</button>`).join("")}</div>` : ""}<div class="row"><button class="link" data-go="mistakes">All my mistakes by topic →</button><button class="link" data-go="cases">📘 Which case? (Dativ, Akkusativ …)</button></div></section>` : ""; })()}
     ${(() => { const r = s.resume; return r && Date.now() - r.at < 3 * 864e5 && r.route !== "home" && r.route !== nx.go
         ? `<section class="card slim"><p>↩︎ <b>Continue where you left off</b> <span class="muted small">${esc(r.route)}</span></p><button class="btn ghost sm" data-go="${esc(r.route)}">Continue</button></section>` : ""; })()}
     ${s.plan ? (() => { const pl = s.plan, left = Math.max(0, Math.round((pl.deadline - Date.now()) / 864e5));
@@ -167,9 +168,21 @@
       <section class="card"><h3>Vocabulary</h3>
         <ul class="vocab">${l.vocab.map((w) => `<li><span class="${H.genderClass(w.de)}">${esc(w.de)}</span> ${UI.say(w.de.split(",")[0])}<span class="en">${esc(w.en)}</span><button class="chip ext" data-url="https://www.linguee.com/german-english/search?query=${encodeURIComponent(w.de.replace(/^(der|die|das)\s+/, "").split(",")[0])}">Linguee ↗</button></li>`).join("")}</ul>
         <button class="btn sm addcards">Add these words and example sentences to my flashcards</button></section>
+      ${(() => { const LV = ["A1", "A2", "B1", "B2", "C1", "C2"]; const tw = Engine.topicWords ? Engine.topicWords(l.n, LV[Math.min(5, LV.indexOf(l.level) + 1)]).filter((w) => !l.vocab.some((v) => v.de.split(",")[0].toLowerCase() === w.de.toLowerCase())) : [];
+        return tw.length ? `<section class="card morewords"><h3>📚 ${H.bi("Mehr Wörter zum Thema", "More words on this topic")} <span class="muted small">(${tw.length})</span></h3>
+          <p class="muted small">Everyday words that fit this lesson – up to one level above it. They also come up in your words of the day.</p>
+          <ul class="vocab">${tw.slice(0, 40).map((w) => `<li><span class="${H.genderClass(w.de)}">${esc(w.de)}</span>${w.pl && w.art ? ` <span class="muted small">${esc(w.pl)}</span>` : ""} ${UI.say(w.de)}<span class="en">${esc(w.en)}</span> ${UI.levelDot(w.level)}</li>`).join("")}</ul>
+          ${tw.length > 40 ? `<p class="muted small">… and ${tw.length - 40} more in the Library → Flashcards by topic.</p>` : ""}
+          <button class="btn sm addtopic">Add these ${Math.min(40, tw.length)} words to my flashcards</button></section>` : ""; })()}
       <div class="row center"><button class="btn sign big-btn nextpart" data-go="lesson/${l.n}/read">Got it – next: read the text</button></div>`;
     el.querySelector(".nextpart").addEventListener("click", () => window.Habit && Habit.markPart(l.n, "learn"));
     el.querySelector(".playall").onclick = () => { const key = "L" + l.n + "-all"; if (Speech.isPlaying(key)) return Speech.stop(); Speech.play(l.examples.map((e) => e.de), { key }); };
+    const at = el.querySelector(".addtopic");
+    if (at) at.onclick = () => {
+      const LV = ["A1", "A2", "B1", "B2", "C1", "C2"]; let c = 0;
+      Engine.topicWords(l.n, LV[Math.min(5, LV.indexOf(l.level) + 1)]).slice(0, 40).forEach((w) => { const id = "v:" + w.de.toLowerCase(); if (!SRS.card(id)) { SRS.grade(id, 1); Store.get().srs[id].due = Date.now(); c++; } });
+      Store.save(); H.toast(c ? `${c} words added – they come back in your flashcards.` : "Already in your flashcards.");
+    };
     el.querySelector(".addcards").onclick = () => {
       let c = 0, k = 0; V.vocabList().filter((w) => w.lesson === l.n).forEach((w) => { if (!SRS.card(w.id)) { SRS.grade(w.id, 1); Store.get().srs[w.id].due = Date.now(); c++; } });
       l.examples.slice(0, 8).forEach((e) => { if (V.addSentenceCard && V.addSentenceCard(e.de, e.en, { lesson: l.n, level: l.level })) k++; });
@@ -288,7 +301,7 @@
         f.innerHTML = `${FB.closed(t.q, inp.value, t.a, g)} ${!g.ok ? `<br><button class="link ov">My answer is also correct</button> · <button class="link" data-ask="${esc(`Why is the answer „${t.a}“ in: ${t.q}`)}">Ask Max why</button>` : ""}`;
         const ov = f.querySelector(".ov"); if (ov) ov.onclick = () => { mark(true); ov.remove(); };
         Store.topic("lesson" + l.n, g.ok); Store.addXP(g.ok ? 5 : 1); if (window.Work) Work.add(0.5);
-        if (!g.ok) Store.mistake({ prompt: md(t.q), answer: t.a, given: inp.value, lesson: l.n });
+        if (!g.ok) { const dg = window.Diag ? Diag.compare(inp.value, t.a) : null; Store.mistake({ prompt: md(t.q), answer: t.a, given: inp.value, lesson: l.n, topics: dg && dg.topics.length ? dg.topics : undefined }); }
         mark(g.ok);
       };
     });

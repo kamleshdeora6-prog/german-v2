@@ -221,3 +221,64 @@
     return choice("redemittel", 56, it[0], it[1], it[2], it[3]);
   });
 })();
+
+/* 7.5: drills from the whole word list – article (der/die/das) and plural of the words for your lesson's topic */
+(function () {
+  "use strict";
+  const E = window.Engine, R = E.R;
+  const def = (id, meta, fn) => (E.GEN[id] = Object.assign({ id, fn }, meta));
+  const LV = ["A1", "A2", "B1", "B2", "C1", "C2"];
+  /* topics of the word list that belong to a lesson (by lesson number) */
+  const LT = { 1: ["Familie"], 2: ["Freizeit", "Sport", "Musik"], 3: ["Zeit", "Wohnen"], 4: ["Länder", "Kommunikation"], 5: ["Wohnen"], 6: ["Einkaufen", "Geld"], 7: ["Essen"], 8: ["Familie"], 9: ["Zeit", "Gesundheit"], 10: ["Wohnen", "Zeit"], 11: ["Verkehr"], 12: ["Gesundheit", "Essen"], 61: ["Freizeit"], 13: ["Wohnen"], 14: ["Feste", "Einkaufen"], 15: ["Stadt", "Verkehr"], 16: ["Wohnen"], 17: ["Freizeit", "Reisen"], 18: ["Zeit"], 19: ["Gesundheit", "Körper"], 20: ["Freizeit", "Sport", "Musik"], 21: ["Arbeit"], 22: ["Stadt", "Wohnen"], 23: ["Kleidung", "Körper"], 24: ["Reisen", "Verkehr"], 26: ["Wohnen", "Technik"], 27: ["Feste", "Essen"], 28: ["Schule"], 31: ["Freizeit", "Tiere"], 32: ["Geld", "Kommunikation"], 37: ["Natur", "Tiere", "Wetter", "Verkehr"], 38: ["Technik", "Kommunikation"], 39: ["Essen", "Arbeit"], 40: ["Verkehr", "Reisen"], 62: ["Wohnen", "Technik"] };
+  E.lessonTopics = (n) => LT[n] || [];
+  E.topicWords = (n, maxLevel) => {
+    const t = new Set(LT[n] || []), lim = LV.indexOf(maxLevel || "B1");
+    return t.size ? (window.DC && DC.vocab || []).filter((w) => t.has(w.topic) && LV.indexOf(w.level) <= lim) : [];
+  };
+  const nouns = (lessonN) => {
+    const lv = (window.DC && DC.curriculum || []).find((l) => l.n === lessonN);
+    const lim = LV.indexOf(lv ? lv.level : "A2") + 1;
+    let pool = (lessonN ? E.topicWords(lessonN, LV[lim]) : []).filter((w) => w.art && w.pl && /^(der|die|das) [A-ZÄÖÜ][a-zäöüß-]+$/.test(w.de) && !/^die -$/.test(w.pl));
+    if (pool.length < 12) pool = (DC.vocab || []).filter((w) => w.art && w.pl && /^(der|die|das) [A-ZÄÖÜ][a-zäöüß-]+$/.test(w.de) && LV.indexOf(w.level) <= lim && !/^die -$/.test(w.pl));
+    return pool;
+  };
+  const lessonNow = () => { try { return AI.profile().lesson.n; } catch (e) { return 0; } };
+  const G = { der: "masculine", die: "feminine", das: "neuter" };
+  const hint = (w) => {
+    const n = w.de.split(" ")[1];
+    if (/(ung|heit|keit|schaft|ion|tät|ik|ur|ei|enz|anz)$/.test(n) && w.art === "die") return "Endings -ung, -heit, -keit, -schaft, -ion, -tät, -ik, -ei are always die.";
+    if (/(chen|lein|ment|um)$/.test(n) && w.art === "das") return "-chen and -lein (small things) are always das; -ment and -um usually das.";
+    if (/(ling|ismus|or|ich|ig)$/.test(n) && w.art === "der") return "-ling, -ismus, -or, -ich, -ig are usually der.";
+    if (/e$/.test(n) && w.art === "die") return "Most nouns ending in -e are die.";
+    if (n.match(/[A-ZÄÖÜ][a-zäöüß]+$/) && n.length > 7) return "In compound nouns the LAST word decides the article.";
+    return "Learn every noun with its article – the flashcards always show it.";
+  };
+  def("wortschatz_artikel", { title: "der, die, das: words for your topic", level: "A1", lessons: [1, 5, 6, 7, 8, 13, 14, 15, 16, 19, 22, 23, 24] }, () => {
+    const w = R.pick(nouns(lessonNow())), n = w.de.split(" ")[1];
+    return { kind: "choice", topic: "artikel", lesson: 5, prompt: `Which article? <b>___ ${H ? H.esc(n) : n}</b> <span class="muted small">(${(w.en || "").replace(/[<>]/g, "")})</span>`, answer: w.art, options: R.shuffle(["der", "die", "das"]), why: `<b>${w.de}</b> is ${G[w.art]}. ${hint(w)}`, full: w.exDe || w.de, en: w.exEn || w.en };
+  });
+  def("wortschatz_plural", { title: "Plural: words for your topic", level: "A2", lessons: [5, 7, 15, 16, 19, 22, 23, 24] }, () => {
+    const w = R.pick(nouns(lessonNow()).filter((x) => x.pl.replace(/^die /, "") !== x.de.split(" ")[1] || Math.random() < 0.2));
+    const pl = w.pl.replace(/^die /, "");
+    return { kind: "input", topic: "plural", lesson: 5, prompt: `Plural: <b>${w.de}</b> → die ___ <span class="muted small">(${(w.en || "").replace(/[<>]/g, "")})</span>`, answer: pl, accept: ["die " + pl], why: `<b>${w.de}</b> → <b>die ${pl}</b>.${pl === w.de.split(" ")[1] ? " Same as the singular – only the article changes." : ""}` };
+  });
+})();
+
+/* 7.5: time words – um, am, im, in, vor, seit */
+(function () {
+  "use strict";
+  const E = window.Engine, R = E.R;
+  E.GEN.zeitpraep = { id: "zeitpraep", title: "Time words: um, am, im, in, vor, seit", level: "A1", lessons: [9, 10, 3, 18, 61], fn: () => {
+    const it = R.pick([
+      ["Der Kurs beginnt ___ neun Uhr.", "um", "Clock time → <b>um</b>."], ["Wir treffen uns ___ Montag.", "am", "Days → <b>am</b> (an + dem)."],
+      ["___ Abend sehe ich fern.", "Am", "Parts of the day → <b>am</b>: am Morgen, am Abend (but: in der Nacht)."], ["Ich habe ___ Mai Geburtstag.", "im", "Months → <b>im</b> (in + dem)."],
+      ["___ Winter ist es kalt.", "Im", "Seasons → <b>im</b>."], ["Der Zug kommt ___ zehn Minuten.", "in", "A time from now → <b>in</b>."],
+      ["Ich war ___ zwei Jahren in Spanien.", "vor", "A time ago → <b>vor</b> + Dativ."], ["Ich lerne ___ drei Monaten Deutsch.", "seit", "Since then until now → <b>seit</b> (+ present tense)."],
+      ["___ Wochenende fahren wir weg.", "Am", "Weekend → <b>am</b> Wochenende."], ["Das Geschäft ist ___ halb acht geöffnet.", "ab", "From a point in time → <b>ab</b>."],
+      ["Er arbeitet ___ neun ___ fünf.", "von … bis", "From … to → <b>von … bis</b>."], ["Wir fahren ___ 3. Oktober nach Berlin.", "am", "Dates → <b>am</b> (am 3. Oktober)."],
+      ["___ der Nacht schlafe ich.", "In", "Exception: <b>in der Nacht</b>."], ["Der Film fängt ___ Viertel nach acht an.", "um", "Clock time → <b>um</b>."]]);
+    const opts = it[1] === "von … bis" ? ["von … bis", "um … bis", "am … zu"] : R.shuffle([...new Set([it[1], ...["um", "am", "im", "in", "vor", "seit"].map((x) => (/^[A-Z]/.test(it[1]) ? x[0].toUpperCase() + x.slice(1) : x))])]).slice(0, 4);
+    if (!opts.includes(it[1])) opts[0] = it[1];
+    return { kind: "choice", topic: "zeitpraep", lesson: 9, prompt: it[0].replace(/___/g, "_____"), answer: it[1], options: R.shuffle(opts), why: it[2] + ' <button class="link" data-go="cases/time">All time words</button>', full: it[1] === "von … bis" ? "Er arbeitet von neun bis fünf." : it[0].replace("___", it[1]) };
+  } };
+})();

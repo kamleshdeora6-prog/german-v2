@@ -59,6 +59,13 @@
 
   /* ---------------- 3. What's new ---------------- */
   const NEWS = [
+    { v: "7.5.0", date: "1 November 2026", items: [
+      "<b>📚 About 1,260 new everyday words</b> (now ~5,550): food, clothes, home, travel, health, sport, tech, money, work … each with article, plural and an example. Lessons show <b>More words on this topic</b>, words of the day come from your lesson's topic, and new drills practise their article and plural.",
+      "<b>Other correct word orders count</b>: “Wir essen das Brot morgen” and “Morgen essen wir das Brot” are both right – the app says so and shows the other orders.",
+      "<b>Clearer feedback</b>: 🟡 Fast! – 1 word to fix, 🟠 2 words to fix, or “right words, only the order”. The wrong word is marked, with why (am → um: clock times take um) and the grammar topic + rule.",
+      "<b>Which case?</b> (Grammar): what always takes Akkusativ, Dativ, Dativ verbs, two-way prepositions, time words, pronouns – with examples.",
+      "<b>Mistakes by grammar topic</b>: every mistake gets its topic; My mistakes groups them with “Redo mine”, “▶ Drill” and “📘 Rule”. Home, Today and the weekly report show your weakest topics.",
+    ] },
     { v: "7.4.1", date: "1 November 2026", items: [
       "<b>Fix: drills no longer restart by themselves</b> when sync is on. News from your other device waits until you finish what you are doing.",
       "<b>Today moves forward</b>: every day brings new material – the current lesson's open parts, then the next lesson. A part left open in an earlier lesson is one short “finish” step. Fewer, bigger, varied steps (each practice kind at most twice); yesterday's undone steps are not copied. The drill is always your weakest topic. Behind plan? It tells you how many extra minutes a day catch up.",
