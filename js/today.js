@@ -15,19 +15,34 @@
 
   /* 7.3: the plan fills your daily minutes – every step is worth what it takes (Work.js counts it) */
   const LESSON_PARTS = (l) => PARTS.filter(([k]) => { const ls = Store.lesson(l.n), p = ls.parts || {}; return !(p[k] || (k === "practice" && ls.done)); });
-  function cycle(i, l, parts, lv) {
-    const out = [];
-    if (parts.length) { const [k, t] = parts.shift(); out.push({ k: "lesson", label: `Lesson ${l.pos}: ${t}`, mins: Work.PART[k] || 10, n: l.n, part: k }); }
-    out.push({ k: "drill", label: "Grammar drill: 10 questions", mins: 5 });
-    if (i % 2 === 0) out.push({ k: "listen", label: "Listening: 3 sentences", mins: 3 });
-    if (Mistakes.open().length && i < 3) out.push({ k: "mistakes", label: `My mistakes: ${Math.min(6, Mistakes.queue(6).length) || 6}`, mins: 3 });
-    out.push({ k: "speak", label: "Speaking: one answer", mins: 4 });
-    if (["A2", "B1", "B2"].includes(lv) && i % 2 === 1) out.push({ k: "exam", label: "Mock exam: one part", mins: 12 });
-    if (i % 2 === 1) out.push({ k: "cards", label: "Flashcards: 12 more", mins: 3 });
+  /* 7.4.1: a plan that moves forward. Every day brings new material – the current lesson's open parts, then the next
+     lesson – mixed with a few bigger practice blocks (each kind at most twice). Yesterday's undone steps are not copied. */
+  const W8 = () => Work.PART;
+  function lessonSteps(budget, skip = () => false) {
+    const out = []; let used = 0; let l = lessonNow(); const s = st();
+    // one part left open in an earlier, finished lesson (e.g. Speak) → a single "finish" step, never the whole day
+    const older = DC.curriculum.filter((x) => l && Course.before(x.n, l.n) && s.lessons[x.n] && s.lessons[x.n].done && LESSON_PARTS(x).some(([k]) => !skip(x.n, k))).pop();
+    if (older) { const [k, t] = LESSON_PARTS(older).find(([kk]) => !skip(older.n, kk)); out.push({ k: "lesson", label: `Finish lesson ${older.pos}: ${t}`, mins: W8()[k], n: older.n, part: k }); used += W8()[k]; }
+    for (let g = 0; l && used < budget && g < 3; g++, l = Course.next(l.n)) {
+      for (const [k, t] of LESSON_PARTS(l)) {
+        if (used >= budget || out.length >= 10) break;
+        if (skip(l.n, k)) continue;
+        out.push({ k: "lesson", label: `Lesson ${l.pos}: ${t}`, mins: W8()[k], n: l.n, part: k }); used += W8()[k];
+      }
+    }
     return out;
   }
-  function plan(want) {
-    const m = want || Math.max(10, Work.target() - Math.round(Work.done())), l = lessonNow(), steps = [];
+  function practiceBlocks(m, lv) {
+    const out = [{ k: "drill", label: "Grammar drill: 15 questions (your weakest topic)", mins: 8, n: 15 }];
+    if (m >= 30) out.push({ k: "listen", label: "Listening: 5 sentences", mins: 5, n: 5 });
+    if (m >= 45) out.push({ k: "speak", label: "Speaking: one answer", mins: 4 });
+    if (m >= 45 && Mistakes.open().length) out.push({ k: "mistakes", label: `My mistakes: ${Math.min(8, Mistakes.queue(8).length) || 8}`, mins: 4, n: 8 });
+    if (m >= 75 && ["A2", "B1", "B2"].includes(lv)) out.push({ k: "exam", label: "Mock exam: one part", mins: 12 });
+    if (m >= 100) out.push({ k: "drill", label: "Grammar drill: 10 questions (mixed)", mins: 5, n: 10, mix: true });
+    return out;
+  }
+  function plan(want, existing = []) {
+    const m = want || Math.max(10, Work.target() - Math.round(Work.done())), steps = [];
     if (st().starterMode && Views.starterProgress && Views.starterProgress().next) {
       const out = [{ k: "starter", label: "First steps: one picture round", mins: 4 }, { k: "cards", label: "Flashcards: your first words", mins: 3 }];
       while (out.reduce((a, x) => a + x.mins, 0) < Math.min(m, 40)) out.push({ k: "starter", label: "First steps: one more round", mins: 4 });
@@ -37,12 +52,16 @@
       const w = wordsToday();
       if (w.ids.length && w.learned.length < w.ids.length) steps.push({ k: "words", label: `New words of the day: ${w.ids.length}`, mins: w.ids.length });
       const due = dueCards().length;
-      steps.push({ k: "cards", label: due ? `Flashcards: ${Math.min(due, 12)} due` : "Flashcards: new words", mins: 3 });
+      steps.push({ k: "cards", label: due ? `Flashcards: ${Math.min(due, 30)} due` : "Flashcards: new words", mins: Math.min(10, Math.max(3, Math.ceil(due / 4))), n: Math.min(30, Math.max(12, due)) });
     }
-    const parts = LESSON_PARTS(l), lv = level();
-    for (let i = 0; steps.reduce((a, x) => a + x.mins, 0) < m && i < 12; i++) cycle(i, l, parts, lv).forEach((x) => steps.push(x));
-    // trim the last cycle so the plan ends close to the target
-    while (steps.length > 3 && steps.reduce((a, x) => a + x.mins, 0) - steps[steps.length - 1].mins >= m) steps.pop();
+    const fixed = steps.reduce((a, x) => a + x.mins, 0);
+    const prac = practiceBlocks(m, level());
+    const budget = Math.max(Math.round(m * 0.4), m - fixed - prac.reduce((a, x) => a + x.mins, 0));
+    const les = lessonSteps(budget, (n, k) => existing.some((y) => y.k === "lesson" && y.n === n && y.part === k));
+    // lesson, lesson, practice, lesson, practice … – new material first, practice in between
+    const L = les.slice(), P = prac.slice();
+    if (L.length) steps.push(L.shift());
+    while (L.length || P.length) { if (L.length) steps.push(L.shift()); if (P.length) steps.push(P.shift()); }
     return steps;
   }
   /* ---------- 7.3: new words of the day ---------- */
@@ -85,7 +104,7 @@
 
   V.today = (el, [act]) => {
     const T = state();
-    if (act === "more") { const left = Math.max(15, Work.target() - Math.round(Work.done())); T.steps = T.steps.concat(plan(Math.min(left, 30)).filter((x) => !(x.k === "lesson" && T.steps.some((y) => y.k === "lesson" && y.n === x.n && y.part === x.part)))); Store.save(); return App.go("today"); }
+    if (act === "more") { const left = Math.max(15, Work.target() - Math.round(Work.done())); T.steps = T.steps.concat(plan(Math.max(30, Math.min(left, 45)), T.steps)); Store.save(); return App.go("today"); }
     if (act === "words") { el.innerHTML = `<div class="today"><button class="back" data-go="home">‹ Home</button><div class="t-body"></div></div>`; return words(el.querySelector(".t-body"), {}, () => App.go("home"), ""); }
     // a lesson or exam step done elsewhere counts when you come back
     T.steps.forEach((x) => { if (!x.done && x.k === "lesson") { const ls = Store.lesson(x.n); if ((ls.parts || {})[x.part] || (x.part === "practice" && ls.done)) x.done = true; } });
@@ -110,7 +129,7 @@
   /* ---------- steps ---------- */
   function cards(body, cur, next, skip) {
     const list = V.vocabList(), byId = Object.fromEntries(list.map((w) => [w.id, w]));
-    let q = H.shuffle(dueCards()).slice(0, 12);
+    let q = H.shuffle(dueCards()).slice(0, cur.n || 12);
     if (q.length < 6) { const lv = level(); q = q.concat(list.filter((w) => !Store.get().srs[w.id] && w.level === lv && w.en).slice(0, 6 - q.length).map((w) => w.id)); }
     q = q.filter((id) => byId[id]);
     if (!q.length) return next();
@@ -131,6 +150,13 @@
   }
   function lesson(body, cur, next, skip) {
     const l = DC.curriculum.find((x) => x.n === cur.n);
+    if (!Store.unlocked(l.n)) {
+      const pv = Course.prev(l.n);
+      body.innerHTML = `<section class="card"><h3>🔒 Lesson ${l.pos} opens next</h3><p>It opens when the practice of <b>lesson ${pv.pos}</b> reaches 70 %. Do that first – then this step continues.</p>
+        <div class="row"><button class="btn sign big-btn t-go">Practise lesson ${pv.pos} →</button>${skip}</div></section>`;
+      body.querySelector(".t-go").onclick = () => { st().returnToToday = Date.now(); Store.save(); App.go(`lesson/${pv.n}/practice`); };
+      return;
+    }
     body.innerHTML = `<section class="card lvl-${l.level}"><h3>Lesson ${l.pos}: ${H.lt(l)}</h3><p>Next step: <b>${esc(cur.label.split(": ").pop())}</b>. It opens in the lesson – when you're done, come back with “Back to Today”.</p>
       <div class="row"><button class="btn sign big-btn t-go">Open the lesson →</button>${skip}</div></section>`;
     body.querySelector(".t-go").onclick = () => { st().returnToToday = Date.now(); Store.save(); App.go(`lesson/${cur.n}/${cur.part}`); };
@@ -145,17 +171,17 @@
     const ids = (gens || []).map((g) => (typeof g === "string" ? g : g.id)).filter((id) => Engine.GEN[id]);
     // the weakest topic you have already met, otherwise one from the current lesson
     const met = Object.entries(st().topics || {}).filter(([k, v]) => Engine.GEN[k] && (v.r || 0) + (v.w || 0) >= 3).map(([k, v]) => [k, (v.recent || []).reduce((a, b) => a + b, 0) / Math.max(1, (v.recent || []).length)]).sort((a, b) => a[1] - b[1]);
-    if (met.length && met[0][1] < 0.8 && Math.random() < 0.6) return met[0][0];
+    if (met.length && met[0][1] < 0.8) return met[0][0];
     return ids.length ? H.pick(ids) : Object.keys(Engine.GEN)[0];
   }
   function drill(body, cur, next, skip) {
     const id = drillTopic(), g = Engine.GEN[id];
     body.innerHTML = `<div class="dg-host"></div><div class="sess-host"></div><div class="row center">${skip}</div>`;
-    if (V.drillGuide) V.drillGuide(body.querySelector(".dg-host"), id);
-    UI.session(body.querySelector(".sess-host"), () => Engine.generate(id), { title: g.title, total: 10, onEnd: () => cont(body, next) });
+    if (V.drillGuide && !cur.mix) V.drillGuide(body.querySelector(".dg-host"), id);
+    UI.session(body.querySelector(".sess-host"), () => Engine.generate(cur.mix ? H.pick(Object.keys(Engine.GEN).filter((k) => Engine.GEN[k].level <= level())) : id), { title: cur.mix ? "Mixed drill" : g.title, total: cur.n || 10, onEnd: () => cont(body, next) });
   }
   function mistakes(body, cur, next, skip) {
-    const items = Mistakes.queue(6).map(Mistakes.item).filter(Boolean);
+    const items = Mistakes.queue(cur.n || 6).map(Mistakes.item).filter(Boolean);
     if (!items.length) return next();
     body.innerHTML = `<div class="sess-host"></div><div class="row center">${skip}</div>`;
     UI.session(body.querySelector(".sess-host"), (i) => items[i], { title: "My mistakes", total: items.length, onEnd: () => cont(body, next) });
@@ -167,7 +193,7 @@
   }
   function listen(body, cur, next, skip) {
     const lv = level();
-    const pool = H.shuffle(DC.curriculum.filter((l) => l.level === lv).flatMap((l) => l.examples || []).filter((e) => e.de.split(" ").length >= 3 && e.de.split(" ").length <= 12)).slice(0, 3);
+    const pool = H.shuffle(DC.curriculum.filter((l) => l.level === lv).flatMap((l) => l.examples || []).filter((e) => e.de.split(" ").length >= 3 && e.de.split(" ").length <= 12)).slice(0, cur.n || 3);
     let i = 0;
     const draw = () => {
       if (i >= pool.length) return next();

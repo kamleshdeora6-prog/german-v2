@@ -99,6 +99,17 @@ const remote = (slug) => JSON.parse(files['profiles/' + slug + '.json']);
   await pc.evaluate(() => { Store.lesson(5).done = true; Store.save(); return Sync.syncNow('test'); }); await pc.waitForTimeout(900);
   const r3 = remote('kamlesh').data;
   log(conflicts > before && r3.lessons[4].done && r3.lessons[5].done, 'a change on GitHub while saving → merged again and retried, nothing lost');
+  // ---- 7.4.1: a sync in the middle of a drill never restarts it ----
+  await go(pc, 'practice/akkusativ'); await pc.waitForSelector('.q');
+  await pc.evaluate(() => { document.querySelector('#view .screen').dataset.mark = 'keep'; Store.mistake({ prompt: 'dup', answer: 'd' }); Store.mistake({ prompt: 'other', answer: 'o' }); Store.mistake({ prompt: 'dup', answer: 'd' }); });   // a repeated mistake changes the list order
+  for (let k = 0; k < 3; k++) { await pc.evaluate(() => { const c = document.querySelector('.q .choice'); if (c) c.click(); }); await pc.waitForTimeout(100); await pc.evaluate(() => { const n = document.querySelector('.q-next'); if (n) n.click(); }); await pc.evaluate(() => Sync.syncNow('drill')); await pc.waitForTimeout(400); }
+  log(await pc.evaluate(() => document.querySelector('#view .screen').dataset.mark === 'keep' && /4 \/ 10/.test(document.querySelector('#view').innerText)), 'drill keeps going through 3 syncs (question 4 of 10, no restart)');
+  // the other device changes something while the PC is in a drill → applied later, not in the middle
+  await phone.evaluate(() => { Store.lesson(9).done = true; Store.save(); return Sync.syncNow('test'); }); await phone.waitForTimeout(400);
+  await pc.evaluate(() => Sync.syncNow('drill')); await pc.waitForTimeout(500);
+  log(await pc.evaluate(() => document.querySelector('#view .screen').dataset.mark === 'keep'), 'news from the phone during a drill: the drill is not interrupted');
+  await go(pc, 'home'); await pc.waitForTimeout(300);
+  log(await pc.evaluate(() => !!(Store.get().lessons[9] && Store.get().lessons[9].done)), '…and the phone’s change is there as soon as you leave the drill');
   // ---- Home shows the status ----
   await go(pc, 'home'); log(/Synced/.test(await pc.textContent('.sync-line')), 'Home shows “☁ Synced …”');
   // ---- offline: no error, syncs later ----

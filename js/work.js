@@ -61,7 +61,7 @@
       const T = Work.target(), m = Math.round(Work.done()), left = Math.max(0, T - m), bal = Work.balance();
       return { T, m, left, bal, time: Work.time(),
         line: `${m} of ${T} min of work${left ? ` · ${Work.fmt(left)} left` : " · ✓ goal reached"}`,
-        balLine: bal > 0 ? `${Work.fmt(bal)} ahead of plan` : bal < 0 ? `${Work.fmt(bal)} behind plan` : "exactly on plan" };
+        balLine: bal > 0 ? `${Work.fmt(bal)} ahead of plan` : bal < 0 ? `${Work.fmt(bal)} behind plan – +${Math.ceil(-bal / 7 / 5) * 5} min a day for a week catches up` : "exactly on plan" };
     },
     /* live numbers in any element with [data-work] */
     paint() {

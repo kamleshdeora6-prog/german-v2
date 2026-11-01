@@ -59,6 +59,10 @@
 
   /* ---------------- 3. What's new ---------------- */
   const NEWS = [
+    { v: "7.4.1", date: "1 November 2026", items: [
+      "<b>Fix: drills no longer restart by themselves</b> when sync is on. News from your other device waits until you finish what you are doing.",
+      "<b>Today moves forward</b>: every day brings new material – the current lesson's open parts, then the next lesson. A part left open in an earlier lesson is one short “finish” step. Fewer, bigger, varied steps (each practice kind at most twice); yesterday's undone steps are not copied. The drill is always your weakest topic. Behind plan? It tells you how many extra minutes a day catch up.",
+    ] },
     { v: "7.4.0", date: "30 October 2026", items: [
       "<b>☁ Sync between devices</b>: learn on the PC, continue on the phone (any browser, also iPhone, and the Android app). Progress is saved in your own private GitHub repo, one file per learner. Set it up once in Settings → Sync; on a new device choose “I already learn on another device – load my profile”. Changes from two devices are merged – lessons, flashcards and mistakes from both are kept. The token stays on each device and is never in a backup; your Claude key is never synced.",
     ] },

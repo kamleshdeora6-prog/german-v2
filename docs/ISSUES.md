@@ -94,3 +94,85 @@ Optional: choose 5/10/15 in settings.
 
 ## 11. ✅ (7.3) Small: "mistake:correction" shown as a raw name in "Diese Woche" (Home)
 Should read "Corrections from Max" (Mistakes.title), and the internal "mistake:…" practice names need nice titles everywhere.
+
+## 12. Word order: more than one right answer is marked wrong
+Reported 31 Oct 2026. "Wir essen morgen das Brot." and "Wir essen das Brot morgen." are both correct, but the app accepts only one.
+German rule: the verb is fixed (position 2), but the middle field is flexible – a time word can stand before or after a
+*known* object (das Brot, ihn, es). With "ein Brot" / no article, time first is the normal order (Wir essen morgen ein Brot).
+To do: in the word-order generators (and Grade/order checks) build all correct orders automatically – time before/after a
+definite object or pronoun, place/time swaps, the time word in position 1 (Morgen essen wir das Brot) – and accept every one;
+show "German allows 2 correct orders" with both (the "orders" feature exists – extend it to all generators); add tests that
+every accepted order passes Max and that wrong ones (verb not in position 2) still fail.
+
+## 13. Case rules and tips: what always takes Dativ / Akkusativ (+ clearer translation feedback)
+Reported 31 Oct 2026, screenshot: Translate EN → DE "They thank the woman tomorrow." – typed "ihr danken morgen die frau"
+→ only "Not quite" + the model answer. Not explained: ihr = you (all) – "they" is sie; danken always takes the Dativ → der Frau
+(not die Frau); capital F.
+To do:
+- Feedback for typed sentences: word-by-word diff (ihr → Sie, die → der) and one "why" line per difference, using Max's rules
+  (subject ↔ verb ending, case after verb/preposition, gender) – like the writing feedback in 7.3.
+- A "Which case?" reference (Grammar → Cases, also reachable from Max and every drill guide), with lists and examples:
+  · Dativ verbs: helfen, danken, gehören, gefallen, gratulieren, antworten, folgen, glauben (jemandem), passen, schmecken,
+    fehlen, vertrauen, zuhören, wehtun, begegnen, raten, verzeihen …
+  · Akkusativ verbs (most verbs): haben, sehen, kaufen, brauchen, besuchen, fragen, kennen, lieben, suchen, finden, trinken …
+  · Dativ + Akkusativ verbs (person Dativ, thing Akkusativ): geben, schenken, zeigen, schicken, bringen, erklären, leihen, empfehlen …
+  · Prepositions: Akkusativ – durch, für, gegen, ohne, um, bis, entlang · Dativ – aus, bei, mit, nach, seit, von, zu, gegenüber, ab ·
+    Wechsel (Wo? → Dativ, Wohin? → Akkusativ) – an, auf, hinter, in, neben, über, unter, vor, zwischen · Genitiv – wegen, trotz,
+    während, statt.
+  · Article tables (der/die/das/die → den/die/das/die → dem/der/dem/den + n) and mnemonics (e.g. "DOGFU" for Akkusativ prepositions).
+- Tips in context: when a sentence in a drill/translation has a Dativ verb or a case preposition, show a small note
+  ("danken + Dativ → der Frau") under the question or in the feedback, with a link to the list. Lists as flashcards too.
+
+## 14. "Not quite" for a one-word slip feels harsh – say what is wrong and how close it was
+Reported 31 Oct 2026, screenshot: "He buys a watch at eight o'clock." – typed "er kauft am acht uhr eine uhr" → red "✗ Not quite.
+Almost – one letter is different." The only real mistake is am → um (a whole word, not a letter) – the rest was right.
+To do:
+- Graded verdicts instead of right/wrong only: ✓ Richtig · 🟡 Almost – 1 word (am → um) · 🟠 2–3 words to fix · ✗ Not yet.
+  "Almost" in amber, not red; the wrong word(s) marked in the sentence (er kauft <del>am</del> → <b>um</b> acht Uhr …).
+- Name the topic of the slip and give the rule in one line, e.g. "Time: um + clock time (um acht Uhr) · am + day / part of the
+  day (am Montag, am Abend) · im + month / season (im Mai) · in + … (in zwei Tagen)", with a link to the topic's guide.
+- Same for other one-word slips: wrong article/case (die → der Frau: danken + Dativ), verb ending (ihr → sie / danken),
+  missing umlaut, word order only (all words right, order wrong → "Right words – only the order").
+- "Almost" counts as a near-miss: comes back sooner in My mistakes, smaller XP than right, combo not broken harshly
+  (decide together). The letter-count message must only appear when it really is one letter.
+- Add "Time prepositions (um / am / im / in / von … bis / seit / vor)" to the "Which case?" reference planned in problem 13.
+
+## 15. Every mistake needs its grammar topic – so I can learn and practise exactly that
+Reported 31 Oct 2026. Today "My mistakes" groups by where the mistake happened (drill name, "Translate EN → DE", lesson,
+exam part, "Corrections from Max"). It should say *what kind* of mistake it was.
+To do:
+- Tag each mistake with one or more grammar topics, found by comparing the answer with the model (and Max's rule that fired):
+  time prepositions (am → um) · Dativ verbs (die → der Frau after danken) · Akkusativ (ein → einen) · prepositions + case ·
+  Wechselpräpositionen · article / gender · adjective endings · verb ending / subject (ihr → sie) · verb position 2 ·
+  verb at the end (weil, dass) · separable verbs · Perfekt haben/sein · nicht / kein · capitals · umlauts · spelling ·
+  vocabulary (wrong word) · word order only.
+- "My mistakes" sorted by topic with counts ("Dativ verbs – 7 mistakes, 3 fixed"), each with: 📘 the rule (guide / "Which case?"
+  page), ▶ a targeted drill for that topic (existing generator, or fresh questions built from the mistakes), and the mistakes
+  themselves to redo.
+- Topic statistics over time: Home / weekly report shows the 3 weakest topics and whether they are getting better;
+  Today's plan adds a drill for the weakest topic.
+- Max's rules and the new one-word verdicts (problem 14) both report their topic, so writing/speaking mistakes count too.
+- Old mistakes get tagged once on update where the topic can be worked out.
+
+## 16. ✅ (7.4.1) Drills restart by themselves after 2–5 questions (Today) – URGENT
+Reported 1 Nov 2026, screenshot: Today → Grammar drill restarted ~5 times after 2, 3, 5 questions.
+Likely cause (7.4 sync): every few seconds after an answer the sync runs; `Sync.merge` rebuilds the progress object (key order,
+merged lists), so it never looks "identical" to the local copy → `Store.replace` + `App.route()` re-renders the screen → the drill
+starts again. (Device without sync: check whether it happens there too.)
+To do: compare progress by content, not by JSON order; only reload the screen when the other device really changed something;
+never re-render while an exercise/session/text box is open – apply quietly and show "☁ Updated from your other device";
+browser test: answer 10 drill questions with sync on and a fake GitHub → no restart.
+
+## 17. ✅ (7.4.1) Today's plan doesn't move forward: yesterday's leftovers, no new chapter, too repetitive
+Reported 1 Nov 2026 (screenshot: 29 steps, Lesson 6 parts from yesterday, "3 h 13 min behind plan").
+- New day = new plan, but the lesson part stays the same until it is finished, so an unfinished day means repeating the same
+  chapter the next day and never reaching new material.
+- The plan is 29 small steps of the same kinds (drill / speaking / listening / mistakes repeated 6–7 times).
+To do:
+- Every day includes NEW material: the next lesson part(s), and when the current lesson is ≥ 70 % / exam part done, the next
+  lesson starts – unfinished parts of an older lesson become a short "finish" step, not the whole day.
+- Plan by blocks with variety: new lesson (largest share) → words of the day → one drill for the weakest topic (problem 15) →
+  listening → speaking → mistakes → mock exam part (B1); no repeats of the same step type more than twice; ~8–12 steps,
+  each worth more minutes, instead of 29 tiny ones.
+- Yesterday's undone steps are not copied; the balance shows the lost minutes once ("behind plan"), the new plan is for today only.
+- "Behind plan" should be encouraging: show how much per day catches up ("+20 min/day for a week") instead of only the big number.

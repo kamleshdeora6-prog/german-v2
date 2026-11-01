@@ -3,7 +3,7 @@
    Now: network-first with a short timeout for the app's own files (fresh when online, instant offline),
    and the page shows an "Update" bar when a new service worker is waiting. */
 const PREFIX = "deutsch-coach-v";          // the lab edition uses "deutsch-coach-lab-v" (tools/make_editions.py)
-const VERSION = "7.4.0";
+const VERSION = "7.4.1";
 const CACHE = PREFIX + VERSION;
 const VENDOR = PREFIX.replace(/-v$/, "") + "-vendor";
 const FILES = ["./", "index.html", "manifest.webmanifest", "css/app.css", "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png", "assets/grammar_reference.png",

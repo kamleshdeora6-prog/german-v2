@@ -99,8 +99,28 @@ let pass = 0, fail = 0; const log = (c, m) => { c ? pass++ : fail++; console.log
   await p.evaluate(() => { const c = document.querySelector('.q .choice'); if (c) c.click(); else { const i = document.querySelector('.q .q-in'); i.value = 'x'; document.querySelector('.q form').requestSubmit(); } });
   await p.waitForTimeout(150);
   log(await p.evaluate((w0) => Work.done() > w0, w0), 'a drill answer counts as work');
+  // ---- 17. the plan moves forward: new lessons every day, few repeated step kinds ----
+  const pl = await p.evaluate(() => {
+    const s = Store.get(); s.settings.minutesGoal = 158; s.work[Store.today()] = { m: 0, t: 0, k: {} };
+    [1, 2, 3, 4, 5].forEach((n) => { const l = Store.lesson(n); l.done = true; l.score = 80; l.parts = { learn: 1, read: 1, practice: 1, exam: 1, speak: 1 }; });
+    const l6 = Store.lesson(6); l6.done = true; l6.score = 75; l6.parts = { learn: 1, read: 1, practice: 1, exam: 1 };   // like the screenshot: lesson 6 without Speak
+    s.todaySession = { date: '2026-10-31', steps: [{ k: 'lesson', n: 6, part: 'learn', label: 'old', mins: 12 }], i: 0 }; Store.save();
+    App.go('today');
+    return null;
+  });
+  await p.waitForTimeout(500);
+  const plan2 = await p.evaluate(() => Store.get().todaySession);
+  const kinds = {}; plan2.steps.forEach((x) => (kinds[x.k] = (kinds[x.k] || 0) + 1));
+  const lessonNs = [...new Set(plan2.steps.filter((x) => x.k === 'lesson').map((x) => x.n))];
+  log(plan2.date === await p.evaluate(() => Store.today()) && !plan2.steps.some((x) => x.label === 'old'), "a new day gets a new plan – yesterday's steps are not copied");
+  log(plan2.steps.some((x) => x.k === 'lesson' && x.n === 7 && x.part === 'learn'), 'new material: lesson 7 starts today');
+  log(plan2.steps.some((x) => /Finish lesson 6: Speak/.test(x.label)) && plan2.steps.filter((x) => x.n === 6).length === 1, 'lesson 6’s open Speak part is one short “finish” step');
+  log(Object.entries(kinds).every(([k, n]) => k === 'lesson' || n <= 2), 'no practice kind more than twice: ' + JSON.stringify(kinds));
+  log(plan2.steps.length <= 18 && plan2.steps.reduce((a, x) => a + x.mins, 0) >= 140, `158-minute plan: ${plan2.steps.length} steps, ${plan2.steps.reduce((a, x) => a + x.mins, 0)} min, lessons ${lessonNs.join(', ')}`);
+  log(/catches up/.test(await p.evaluate(() => Work.summary().balLine)) || (await p.evaluate(() => Work.balance())) >= 0, 'behind plan → “+… min a day for a week catches up”: ' + await p.evaluate(() => Work.summary().balLine));
+  await p.screenshot({ path: OUT + '/fix-plan.png', fullPage: false });
   // settings: words per day
-  await go('settings'); log(await p.evaluate(() => document.querySelector('[data-k="newWords"]').value === '5' && document.querySelector('[data-k="minutesGoal"]').value === '90'), 'settings: minutes goal and new words per day');
+  await go('settings'); log(await p.evaluate(() => document.querySelector('[data-k="newWords"]').value === '5' && document.querySelector('[data-k="minutesGoal"]').value === '158'), 'settings: minutes goal and new words per day');
   // ---- 11. readable names in “This week” ----
   await p.evaluate(() => { Store.topic('mistake:correction', true); Store.topic('mistake:correction', false); Store.topic('mistake:correction', true); });
   await go('home'); const wk = await p.textContent('.weekly');

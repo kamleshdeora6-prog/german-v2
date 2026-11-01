@@ -75,16 +75,18 @@
     // flashcards: the copy reviewed last wins, per card
     out.srs = Object.assign({}, older.srs);
     Object.entries(newer.srs || {}).forEach(([id, c]) => { const o = out.srs[id]; out.srs[id] = !o ? c : ((c.last || 0) > (o.last || 0) || ((c.last || 0) === (o.last || 0) && (c.reps || c.seen || 0) >= (o.reps || o.seen || 0))) ? c : o; });
-    out.scards = Object.assign({}, older.scards, newer.scards);
+    if (older.scards || newer.scards) out.scards = Object.assign({}, older.scards, newer.scards);
     // lessons: what is done on either device is done
     out.lessons = {};
     new Set(Object.keys(local.lessons || {}).concat(Object.keys(remote.lessons || {}))).forEach((n) => {
       const a = (local.lessons || {})[n] || {}, b = (remote.lessons || {})[n] || {}, nw = newer === local ? a : b, ol = nw === a ? b : a;
       const l = Object.assign({}, ol, nw);
       l.done = !!(a.done || b.done); l.read = !!(a.read || b.read); l.spoke = !!(a.spoke || b.spoke); l.score = Math.max(a.score || 0, b.score || 0);
-      l.parts = Object.assign({}, b.parts, a.parts); Object.keys(l.parts).forEach((k) => (l.parts[k] = Math.min(...[a.parts && a.parts[k], b.parts && b.parts[k]].filter(Boolean))));
-      ["tasks", "exam"].forEach((k) => { l[k] = Object.assign({}, ol[k], nw[k]); Object.keys(l[k]).forEach((i) => { if ((a[k] || {})[i] === true || (b[k] || {})[i] === true) l[k][i] = true; }); });
-      l.examScore = maxMap(a.examScore, b.examScore);
+      if (a.parts || b.parts) { l.parts = Object.assign({}, b.parts, a.parts); Object.keys(l.parts).forEach((k) => (l.parts[k] = Math.min(...[a.parts && a.parts[k], b.parts && b.parts[k]].filter(Boolean)))); }
+      ["tasks", "exam"].forEach((k) => { if (!a[k] && !b[k]) return; l[k] = Object.assign({}, ol[k], nw[k]); Object.keys(l[k]).forEach((i) => { if ((a[k] || {})[i] === true || (b[k] || {})[i] === true) l[k][i] = true; }); });
+      if (a.examScore || b.examScore) l.examScore = maxMap(a.examScore, b.examScore);
+      ["done", "read", "spoke"].forEach((k) => { if (!(k in a) && !(k in b)) delete l[k]; });
+      if (!("score" in a) && !("score" in b)) delete l.score;
       out.lessons[n] = l;
     });
     // grammar topics: the copy with more answers
@@ -99,11 +101,13 @@
     out.streak = Object.assign({}, (sb.last || "") > (sa.last || "") ? sb : sa); out.streak.best = Math.max(sa.best || 0, sb.best || 0, out.streak.count || 0);
     // exam results and parts
     const byAt = (x, y) => { const m = new Map(); (x || []).concat(y || []).forEach((r) => m.set(String(r.at || JSON.stringify(r)), r)); return [...m.values()]; };
-    out.telc = byAt(local.telc, remote.telc); out.exams = byAt(local.exams, remote.exams); out.whist = byAt(local.whist, remote.whist);
-    out.telcParts = Object.assign({}, older.telcParts); Object.entries(newer.telcParts || {}).forEach(([k, v]) => { const o = out.telcParts[k]; out.telcParts[k] = !o || (v.at || 0) >= (o.at || 0) ? v : o; });
+    ["telc", "exams", "whist"].forEach((k) => { if (local[k] || remote[k]) out[k] = byAt(local[k], remote[k]); });
+    if (older.telcParts || newer.telcParts) { out.telcParts = Object.assign({}, older.telcParts); Object.entries(newer.telcParts || {}).forEach(([k, v]) => { const o = out.telcParts[k]; out.telcParts[k] = !o || (v.at || 0) >= (o.at || 0) ? v : o; }); }
     out.tlog = {}; new Set(Object.keys(local.tlog || {}).concat(Object.keys(remote.tlog || {}))).forEach((d) => { const a = (local.tlog || {})[d] || {}, b = (remote.tlog || {})[d] || {}; const o = {}; new Set(Object.keys(a).concat(Object.keys(b))).forEach((k) => { const x = a[k] || [0, 0], y = b[k] || [0, 0]; o[k] = x[1] >= y[1] ? x : y; }); out.tlog[d] = o; });
     // today: same day → keep the steps done on either device
     const ta = local.todaySession, tb = remote.todaySession;
+    if (ta && tb && ta.date !== tb.date) out.todaySession = JSON.parse(JSON.stringify(ta.date > tb.date ? ta : tb));   // a newer day's plan always wins
+    if (wa0(local, remote)) out.wotd = wa0(local, remote);
     if (ta && tb && ta.date === tb.date) { const pick = ta.steps.filter((x) => x.done).length >= tb.steps.filter((x) => x.done).length ? ta : tb; out.todaySession = JSON.parse(JSON.stringify(pick)); }
     const wa = local.wotd, wb = remote.wotd;
     if (wa && wb && wa.date === wb.date) out.wotd = Object.assign({}, wa, { learned: [...new Set((wa.learned || []).concat(wb.learned || []))] });
@@ -113,6 +117,7 @@
     out.updatedAt = Math.max(t(local), t(remote));
     return out;
   }
+  const wa0 = (a, b) => { const x = a.wotd, y = b.wotd; return x && y && x.date !== y.date ? JSON.parse(JSON.stringify(x.date > y.date ? x : y)) : null; };
   const forUpload = (d) => { const x = JSON.parse(JSON.stringify(d)); if (x.settings) x.settings.aiKey = ""; delete x.resume; return x; };
   const same = (a, b) => JSON.stringify(forUpload(a)) === JSON.stringify(forUpload(b));
 
@@ -129,7 +134,9 @@
           const r = await getRemote(slug);
           const local = Store.raw();
           const merged = r ? merge(local, r.file.data) : local;
-          if (r && !same(merged, local)) { Store._quiet = true; Store.replace(merged); Store._quiet = false; if (window.App && App.dropCache) { App.dropCache(); if (!document.querySelector("#view input:focus, #view textarea:focus")) App.route(); } }
+          // only when the other device really brought something new (merging a copy with itself changes nothing)
+          const news = r && !same(merged, merge(local, local));
+          if (news) applyRemote(merged);
           if (r && same(merged, r.file.data)) { setStatus("ok"); return; }
           const p = Store.profile() || {};
           try { await putRemote(slug, { app: "deutsch-coach", v: 1, name: p.name || slug, color: p.color, updatedAt: merged.updatedAt || Date.now(), data: forUpload(merged) }, r && r.sha); setStatus("ok"); return; }
@@ -141,6 +148,17 @@
     })();
     return busy;
   }
+  /* Never rebuild the screen while you are in the middle of something (a drill, a lesson, an exam): the new data waits
+     and is merged in when you next change screens; on Home / Today's list it shows at once. */
+  let pending = false;
+  const idle = () => { const r = (location.hash.replace(/^#\/?/, "") || "home"); return /^(home|settings|stats|more|news)/.test(r) && !document.querySelector("#view input:focus, #view textarea:focus"); };
+  function applyRemote(merged) {
+    if (!idle()) { pending = merged; return; }
+    pending = false;
+    Store._quiet = true; Store.replace(merged); Store._quiet = false;
+    if (window.App && App.dropCache) { App.dropCache(); App.route(); }
+  }
+  addEventListener("hashchange", () => { if (!pending) return; const remoteData = pending; pending = false; Store._quiet = true; Store.replace(merge(Store.raw(), remoteData)); Store._quiet = false; if (window.App && App.dropCache) App.dropCache(); }, true);
   const schedule = (ms = 8000) => { if (!on() || !linked() || Store._quiet) return; clearTimeout(pushT); pushT = setTimeout(() => syncNow("change"), ms); };
 
   /* link the active profile to a file on GitHub (upload it, or merge with what is there) */

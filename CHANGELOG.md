@@ -2,6 +2,11 @@
 
 All dates are the release dates of the app version shown in Settings → About.
 
+## 7.4.1 — 1 November 2026
+- Fix (ISSUES 16): drills restarted after 2–5 answers with sync on – a repeated mistake reorders the mistake list, so a merged copy never looked identical and every sync rebuilt the screen. Now: news = differs from `merge(local, local)`; remote news is applied only on Home/Settings/Stats or on the next screen change (`pending` + hashchange), never mid-exercise. A newer day's Today plan / words of the day always win in `merge`.
+- Today plan (ISSUES 17): `lessonSteps` = one "finish" step for an open part of an earlier done lesson, then the current lesson's open parts, then the next lessons (up to 10 parts) – new material every day; `practiceBlocks` scale with the target (drill 15 q on the weakest topic, listening 5, speaking, mistakes 8, mock part, mixed drill 10), interleaved lesson/practice; locked next lesson step points to the practice that opens it; steps carry `n`. "+ more steps" adds ≥ 30 min without repeating lesson parts. Behind plan → "+N min a day for a week catches up".
+- Tests: fixes.js +6 (new-day plan), sync.js +3 (no restart mid-drill, news applied after leaving).
+
 ## 7.4.0 — 30 October 2026
 - Sync through a private GitHub repo (`js/sync.js`, route `settings/sync`): GitHub contents API, one file `profiles/<slug>.json` per learner ({app, v, name, color, updatedAt, data}). Repo + fine-grained token per device in `localStorage` (`deutschcoach.sync`, lab: `deutschcoach.lab.sync`) – never in code, backups or the synced data; `settings.aiKey` is blanked before upload. Sync on start, on return to the app, 8 s after changes, when leaving, when back online and on profile switch; 409/422 → re-read, merge, retry.
 - `Sync.merge(local, remote)`: xp / days / work minutes = max, srs per card by last review, lessons done/read/parts/tasks united, topics by answer count, mistakes united by id, streak from the device that learned last, exam results united, Today/words-of-the-day of the same day united, settings from the newer copy except device-local ones (voice, theme, keys …).
