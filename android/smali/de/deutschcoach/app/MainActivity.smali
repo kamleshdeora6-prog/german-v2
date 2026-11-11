@@ -29,8 +29,8 @@
     invoke-virtual {v1, v3}, Landroid/webkit/WebSettings;->setMediaPlaybackRequiresUserGesture(Z)V
     const/16 v4, 0x64
     invoke-virtual {v1, v4}, Landroid/webkit/WebSettings;->setTextZoom(I)V
-    new-instance v1, Landroid/webkit/WebViewClient;
-    invoke-direct {v1}, Landroid/webkit/WebViewClient;-><init>()V
+    new-instance v1, Lde/deutschcoach/app/Client;
+    invoke-direct {v1, p0}, Lde/deutschcoach/app/Client;-><init>(Lde/deutschcoach/app/MainActivity;)V
     invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V
     new-instance v1, Landroid/webkit/WebChromeClient;
     invoke-direct {v1}, Landroid/webkit/WebChromeClient;-><init>()V
@@ -40,7 +40,7 @@
     const-string v2, "AndroidBridge"
     invoke-virtual {v0, v1, v2}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
     invoke-virtual {p0, v0}, Lde/deutschcoach/app/MainActivity;->setContentView(Landroid/view/View;)V
-    const-string v1, "file:///android_asset/www/index.html"
+    const-string v1, "file:///android_asset/www/boot.html"
     invoke-virtual {v0, v1}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
     new-instance v1, Landroid/speech/tts/TextToSpeech;
     invoke-direct {v1, p0, p0}, Landroid/speech/tts/TextToSpeech;-><init>(Landroid/content/Context;Landroid/speech/tts/TextToSpeech$OnInitListener;)V

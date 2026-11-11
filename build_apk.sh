@@ -7,9 +7,15 @@ TOOLS="${TOOLS:-$ROOT/tools}"
 BUILD="$ROOT/build/apk"
 rm -rf "$BUILD"; mkdir -p "$BUILD"
 cp -r "$ROOT/android/AndroidManifest.xml" "$ROOT/android/apktool.yml" "$ROOT/android/res" "$ROOT/android/smali" "$BUILD/"
+# 7.6: the APK is a small shell that shows the live web app (GitHub Pages) – every upload to GitHub updates the app,
+# no new APK needed. Offline it uses the web app's own offline cache. Inside the APK: only the start page
+# (hands old progress over once) and the "needs internet once" page.
+APP_URL="${APP_URL:-https://kamleshdeora6-prog.github.io/german-v2/}"
+case "$APP_URL" in */) ;; *) APP_URL="$APP_URL/";; esac
 mkdir -p "$BUILD/assets/www"
-cp -r "$ROOT/index.html" "$ROOT/css" "$ROOT/js" "$ROOT/icons" "$ROOT/assets" "$ROOT/manifest.webmanifest" "$BUILD/assets/www/"
-rm -f "$BUILD/assets/www/sw.js"          # no service worker inside the APK
+cp "$ROOT/android/www/boot.html" "$ROOT/android/www/offline.html" "$BUILD/assets/www/"
+sed -i "s#__APP_URL__#$APP_URL#g" "$BUILD/assets/www/boot.html" "$BUILD/assets/www/offline.html" "$BUILD/smali/de/deutschcoach/app/Client.smali"
+echo "App shows: $APP_URL"
 java -jar "$TOOLS/apktool.jar" b "$BUILD" -o "$ROOT/build/deutsch-coach-unsigned.apk"
 # Signing: set KEYSTORE, KS_ALIAS, KS_PASS (and optionally KEY_PASS) to sign with YOUR release key.
 # Without them the public Android debug key is used – fine for testing, never for distribution.

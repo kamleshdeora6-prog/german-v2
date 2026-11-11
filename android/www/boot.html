@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Deutsch Coach</title>
+<style>html,body{margin:0;height:100%;background:#151a2d;color:#fff;font:16px system-ui,sans-serif}body{display:grid;place-items:center}b{display:block;font-size:22px;margin-bottom:6px}</style></head>
+<body><div style="text-align:center"><b>Deutsch Coach</b>Lädt … · Loading …</div>
+<script>
+/* The Android app shows the live web app (updates come by themselves, no new APK).
+   Progress from the old built-in copy lives in this file:// storage: hand it over once through the app (AndroidBridge),
+   the web app takes it on its first start (js/handover.js) and answers "done". */
+var APP = "__APP_URL__";
+try {
+  var B = window.AndroidBridge;
+  if (B && B.getHandover && B.getHandover() !== "done") {
+    var d = {}, n = 0;
+    for (var i = 0; i < localStorage.length; i++) { var k = localStorage.key(i); if (/^(deutschcoach\.|germanCoachProgress$)/.test(k)) { d[k] = localStorage.getItem(k); n++; } }
+    if (n) B.setHandover(JSON.stringify(d));
+  }
+} catch (e) {}
+location.replace(APP + "index.html" + location.hash);
+</script></body></html>

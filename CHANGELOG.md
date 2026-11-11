@@ -2,6 +2,17 @@
 
 All dates are the release dates of the app version shown in Settings → About.
 
+## 7.6.0 — 11 November 2026
+- Android app = shell around the live web app (GitHub Pages; `APP_URL` in `build_apk.sh`, default `https://kamleshdeora6-prog.github.io/german-v2/`). Updates arrive with every deploy, no new APK; offline through the web app's service worker after the first online start. The APK only carries `android/www/boot.html` and `offline.html` (17 KB).
+- Progress hand-over from the old built-in copy (file:// storage): `boot.html` puts the app's keys into `AndroidBridge.setHandover` (SharedPreferences) until the web app answers "done"; `js/handover.js` (first script) imports them when this storage has no real progress (an empty first-start profile does not count) and never again.
+- Android: `Client` (WebViewClient) – other sites open in the browser, first start without internet → offline page with "Try again" (also on `online`). Bridge `getHandover/setHandover/shell`.
+- In the Android app a new service worker reloads by itself on Home; elsewhere the Update bar.
+- Tests: `tests/browser/android-shell.js` (10 checks).
+
+## 7.5.1 — 11 November 2026
+- Fix (ISSUES 19): lesson practice reached 70 % ("Lesson done … is now open") but the next lesson stayed locked. Cause: parked screens (`App` KEEP cache) and the practice closure held the lesson object of the state before `Store.replace` (sync merge on hashchange, profile switch), so `done` was saved into an orphan copy. Now each screen records `_state` and a parked screen is reused only while `Store.get()` is the same object; practice `mark()` re-reads `Store.lesson(n)` and carries correct answers over.
+- Tests: fixes.js +2 (finish after a sync swap; swap while the practice is open).
+
 ## 7.5.0 — 1 November 2026
 Fixes for ISSUES 12–15 and 18.
 - Vocabulary (18): `tools/curriculum/vocab_n1…n6.txt`, ~1,260 new own entries (level, plural, topic, example; the Collins list was used only as a checklist). `Engine.lessonTopics/topicWords`; lesson Learn tab "More words on this topic" (+ add to flashcards); words of the day prefer the lesson's topic words; generators `wortschatz_artikel`, `wortschatz_plural`, `zeitpraep`.

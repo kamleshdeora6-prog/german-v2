@@ -276,6 +276,9 @@
       const i = +li.dataset.i, t = tasks[i];
       const f = li.querySelector(".tfb");
       const mark = (ok) => {
+        // never save into an old copy of the progress (7.5.1: lesson said "done" but the next one stayed locked)
+        const fresh = Store.lesson(l.n);
+        if (fresh !== ls) { fresh.tasks = fresh.tasks || {}; Object.keys(ls.tasks || {}).forEach((k) => { if (ls.tasks[k] === true) fresh.tasks[k] = true; }); fresh.score = Math.max(fresh.score || 0, ls.score || 0); ls = fresh; }
         ls.tasks[i] = ok; li.className = "task " + (ok ? "ok" : "bad");
         ls.score = Math.max(ls.score || 0, scoreNow());
         el.querySelector(".sc").textContent = scoreNow() + "%"; const s2 = el.querySelector(".sc2"); if (s2) s2.textContent = scoreNow() + "%";

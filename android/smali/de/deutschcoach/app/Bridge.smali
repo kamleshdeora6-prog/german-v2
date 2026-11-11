@@ -63,3 +63,46 @@
     invoke-virtual {v0, v1}, Lde/deutschcoach/app/MainActivity;->runOnUiThread(Ljava/lang/Runnable;)V
     return-void
 .end method
+
+# 7.6: progress hand-over from the old built-in copy (file://) to the live web app (https://) – one string in SharedPreferences
+.method public getHandover()Ljava/lang/String;
+    .annotation runtime Landroid/webkit/JavascriptInterface;
+    .end annotation
+    .locals 4
+    iget-object v0, p0, Lde/deutschcoach/app/Bridge;->a:Lde/deutschcoach/app/MainActivity;
+    const-string v1, "dc"
+    const/4 v2, 0x0
+    invoke-virtual {v0, v1, v2}, Lde/deutschcoach/app/MainActivity;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    move-result-object v0
+    const-string v1, "handover"
+    const-string v2, ""
+    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    move-result-object v3
+    return-object v3
+.end method
+
+.method public setHandover(Ljava/lang/String;)V
+    .annotation runtime Landroid/webkit/JavascriptInterface;
+    .end annotation
+    .locals 3
+    iget-object v0, p0, Lde/deutschcoach/app/Bridge;->a:Lde/deutschcoach/app/MainActivity;
+    const-string v1, "dc"
+    const/4 v2, 0x0
+    invoke-virtual {v0, v1, v2}, Lde/deutschcoach/app/MainActivity;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    move-result-object v0
+    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+    move-result-object v0
+    const-string v1, "handover"
+    invoke-interface {v0, v1, p1}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+    move-result-object v0
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
+    return-void
+.end method
+
+.method public shell()I
+    .annotation runtime Landroid/webkit/JavascriptInterface;
+    .end annotation
+    .locals 1
+    const/4 v0, 0x1
+    return v0
+.end method

@@ -3,7 +3,7 @@
   "use strict";
   const ROUTES = { cases: "cases", home: "home", library: "library", revise: "revise", today: "today", mistakes: "mistakes", telc: "telc", notebook: "notebook", audio: "audio", dictation: "dictation", story: "story", decline: "decline", watch: "watch", cards: "cards", exercises: "exercises", verbs: "verbs", sentences: "sentences", pictures: "pictures", path: "path", lesson: "lesson", practice: "practice", vocab: "vocab", tutor: "tutor", listen: "listen", speak: "speak", read: "read", exam: "exam", grammar: "grammar", stats: "stats", settings: "settings", more: "more", readexam: "readexam", write: "write", notes: "notes", translate: "translate", about: "about", placement: "placement", pronounce: "pronounce", news: "news", plan: "plan", daily: "daily", weak: "weak", refresh: "refresh", resources: "resources", starter: "starter", partner: "partner" };
   const TAB_OF = { cases: "grammar", today: "home", mistakes: "practice", telc: "practice", notebook: "practice", audio: "more", dictation: "practice", story: "practice", decline: "practice", watch: "practice", revise: "practice", library: "practice", cards: "practice", exercises: "practice", verbs: "practice", sentences: "practice", pictures: "practice", home: "home", path: "path", lesson: "path", practice: "practice", vocab: "practice", listen: "practice", speak: "practice", pronounce: "practice", tutor: "tutor", daily: "home", plan: "more", weak: "practice", refresh: "path", starter: "path", partner: "practice" };
-  const App = (window.App = { version: "7.5.0", updated: "1 November 2026", author: "Zombieland", pendingAsk: null });
+  const App = (window.App = { version: "7.6.0", updated: "11 November 2026", author: "Zombieland", pendingAsk: null });
   /* Where problem reports go. Put an email address here to offer email as well. */
   App.contact = { github: "https://github.com/kamleshdeora6-prog/german-v2", email: "" };
   App.report = (ctx) => {
@@ -144,9 +144,12 @@
     host.innerHTML = "";
     host.className = "view v-" + name; document.body.dataset.route = name;
     const cached = cache.get(key);
-    if (cached) { cache.delete(key); host.appendChild(cached); App.afterRoute(name); return; }
+    // 7.5.1: a parked screen still points at the progress it was built from; if that was swapped meanwhile
+    // (sync brought the other device's progress, profile switch …) it would save into the old copy – build it again
+    if (cached && cached._state === Store.get()) { cache.delete(key); host.appendChild(cached); App.afterRoute(name); return; }
+    if (cached) cache.delete(key);
     const view = document.createElement("div");
-    view.className = "screen"; view.dataset.key = key;
+    view.className = "screen"; view.dataset.key = key; view._state = Store.get();
     host.appendChild(view);
     const run = () => {
       try { Views[name](view, parts.slice(1)); }
@@ -284,7 +287,10 @@
       navigator.serviceWorker.register("sw.js").then((reg) => {
         reg.update().catch(() => {});
         // a new version was installed in the background: offer it instead of silently showing the old one
-        const offer = () => { if (document.querySelector(".updbar")) return; const b = document.createElement("div"); b.className = "updbar"; b.innerHTML = `<span>✨ A new version of Deutsch Coach is ready.</span><button class="btn sign sm">Update</button>`; b.querySelector("button").onclick = App.hardReload; document.body.appendChild(b); };
+        let offer = () => { if (document.querySelector(".updbar")) return; const b = document.createElement("div"); b.className = "updbar"; b.innerHTML = `<span>✨ A new version of Deutsch Coach is ready.</span><button class="btn sign sm">Update</button>`; b.querySelector("button").onclick = App.hardReload; document.body.appendChild(b); };
+        // Android app: take a new version by itself when you are not in the middle of something
+        const idle = () => /^(home)?$/.test(location.hash.replace(/^#\/?/, "").split("/")[0]) && !document.querySelector("#view input:focus, #view textarea:focus");
+        const offer0 = offer; if (window.AndroidBridge) offer = () => (idle() ? location.reload() : offer0());
         if (reg.waiting && navigator.serviceWorker.controller) offer();
         reg.addEventListener("updatefound", () => { const w = reg.installing; if (w) w.addEventListener("statechange", () => { if (w.state === "installed" && navigator.serviceWorker.controller) offer(); }); });
       }).catch(() => {});

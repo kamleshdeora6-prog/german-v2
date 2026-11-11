@@ -95,7 +95,7 @@ ios/              WKWebView wrapper (Swift + XcodeGen spec), needs macOS to buil
 
 **Tests:** `node tests/run.js` checks the course data, all generators and Max (corrections and false alarms); the *Tests* workflow runs it on every push.
 
-**Android APK:** the *Build APK* workflow builds and signs it. Without a keystore it uses the public debug key (testing only). For releases, add the repository secrets `KEYSTORE_BASE64`, `KS_ALIAS` and `KS_PASS` (see the master report), or run `KEYSTORE=… KS_ALIAS=… KS_PASS=… bash build_apk.sh` locally (locally: download the two jars listed in `.github/workflows/build-apk.yml` into `tools/jars`, then `TOOLS=tools/jars bash build_apk.sh`; needs Java only, no Android SDK).
+**Android APK (7.6+):** a small shell that shows the live app at `APP_URL` (see `build_apk.sh`) – every push to GitHub updates the app, no new APK needed; offline it uses the web app's offline cache. Install a new APK only when the Android part itself changes (`android/`). The *Build APK* workflow builds and signs it. Without a keystore it uses the public debug key (testing only). For releases, add the repository secrets `KEYSTORE_BASE64`, `KS_ALIAS` and `KS_PASS` (see the master report), or run `KEYSTORE=… KS_ALIAS=… KS_PASS=… bash build_apk.sh` locally (locally: download the two jars listed in `.github/workflows/build-apk.yml` into `tools/jars`, then `TOOLS=tools/jars bash build_apk.sh`; needs Java only, no Android SDK).
 
 **Report address:** problem reports go to this repo's GitHub issues. To also offer email, set `App.contact.email` at the top of `js/app.js`.
 

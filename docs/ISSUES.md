@@ -186,3 +186,8 @@ insects, boat travel, baby goods, single sports).
 To do when we build it: the book is copyrighted – use it only as a checklist of which words are missing. Every app entry is our
 own: article + plural + level + own example sentence + English, checked by Max; no phrases or sentences copied from the book.
 Add priority 1 first (with lesson/topic links, so they show up in words of the day and flashcards by topic), then 2; 3 optional.
+
+## 19. ✅ (7.5.1) Lesson says "done – next lesson open", but the next lesson stays locked (needs 2–3 runs)
+- Reported 11 Nov 2026: after finishing a chapter's practice (≥ 70 %) the celebration says the next lesson is open, but it is still locked; solving the chapter 2–3 times opens it.
+- Cause: with sync on, the other device's progress is merged in when you change screens. A lesson screen kept in the background (e.g. after "Back to Today") still pointed at the old copy, so the answers and "done" were saved there and lost.
+- Fix: kept screens are rebuilt when the progress was replaced; lesson answers always save to the current progress.

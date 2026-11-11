@@ -1,7 +1,7 @@
 # Deutsch Coach – notes for development
 
 German course app (A1–C2) by Zombieland. Vanilla JavaScript PWA, no build step, hosted on GitHub Pages
-(`.github/workflows/pages.yml`), Android APK via `build_apk.sh` (apktool wrapper around the web app).
+(`.github/workflows/pages.yml`), Android APK via `build_apk.sh` (since 7.6 a shell that loads the live Pages app – web updates need no new APK; only `android/` changes do; `js/handover.js` moves old built-in progress once).
 
 ## Layout
 - `index.html` loads every script with `defer` and `?v=<version>` (must equal `App.version` in `js/app.js` – a unit test checks it).

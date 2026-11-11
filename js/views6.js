@@ -59,6 +59,13 @@
 
   /* ---------------- 3. What's new ---------------- */
   const NEWS = [
+    { v: "7.6.0", date: "11 November 2026", items: [
+      "<b>📱 The Android app updates itself</b>: it now shows the live app, so every new version arrives by itself – no new APK to download and install. It still works offline (after one start with internet). Install this APK once; your progress moves over by itself on its first start.",
+      "In the app, a new version is taken automatically when you are on Home; elsewhere a small “Update” bar appears, so nothing interrupts an exercise. Links to other websites open in your browser.",
+    ] },
+    { v: "7.5.1", date: "11 November 2026", items: [
+      "<b>Fix: finishing a lesson now really opens the next one.</b> With sync on, a lesson screen you came back to (e.g. via “Back to Today”) could save into an old copy of your progress – it said “Lesson done”, but the next lesson stayed locked. Now the screen is rebuilt with your current progress, and answers always save to it.",
+    ] },
     { v: "7.5.0", date: "1 November 2026", items: [
       "<b>📚 About 1,260 new everyday words</b> (now ~5,550): food, clothes, home, travel, health, sport, tech, money, work … each with article, plural and an example. Lessons show <b>More words on this topic</b>, words of the day come from your lesson's topic, and new drills practise their article and plural.",
       "<b>Other correct word orders count</b>: “Wir essen das Brot morgen” and “Morgen essen wir das Brot” are both right – the app says so and shows the other orders.",

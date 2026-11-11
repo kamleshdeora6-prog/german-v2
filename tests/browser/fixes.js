@@ -155,6 +155,17 @@ let pass = 0, fail = 0; const log = (c, m) => { c ? pass++ : fail++; console.log
   const wt = await p.evaluate(() => { const s = Store.get(); delete s.wotd; s.lessons[7] = s.lessons[7] || {}; return V = Views.wordsToday ? Views.wordsToday().words.map((w) => w.de) : []; });
   log(wt.length === 5, 'words of the day: ' + wt.join(', '));
 
+  // 7.5.1: a lesson finished after sync swapped the progress must still open the next lesson
+  const solve = async (L) => { const n = await p.evaluate((L) => DC.curriculum.find((x) => x.n === L).tasks.length, L); for (let i = 0; i < n; i++) { await p.evaluate(([L, i]) => { const t = DC.curriculum.find((x) => x.n === L).tasks[i]; const li = document.querySelectorAll('.task')[i]; li.querySelector('input').value = (t.a || 'Ich lerne Deutsch.').replace(/^z\.\s?B\.\s*/, '').split(' / ')[0]; li.querySelector('form').requestSubmit(); }, [L, i]); await p.waitForTimeout(20); } await p.waitForTimeout(200); };
+  const swap = () => p.evaluate(() => { Store._quiet = true; Store.replace(Store.raw()); Store._quiet = false; });
+  const [L9, N9] = await p.evaluate(() => [8, 9].map((i) => DC.curriculum[i].n));
+  await p.evaluate(([a, b]) => { [a].forEach((n) => { const ls = Store.lesson(n); ls.done = false; ls.score = 0; ls.tasks = {}; }); Store.lesson(DC.curriculum[7].n).done = true; Store.save(); }, [L9]);
+  await go(`lesson/${L9}/practice`); await go('today'); await swap(); await go(`lesson/${L9}/practice`); await solve(L9);
+  log(await p.evaluate(([L, N]) => Store.lesson(L).done && Store.unlocked(N), [L9, N9]), 'lesson finished on a screen kept from before a sync merge → next lesson really opens');
+  await p.evaluate((L) => { const ls = Store.lesson(L); ls.done = false; ls.score = 0; ls.tasks = {}; Store.save(); }, L9); await p.evaluate(() => App.dropCache());
+  await go('today'); await go(`lesson/${L9}/practice`); await swap(); await solve(L9);
+  log(await p.evaluate(([L, N]) => Store.lesson(L).done && Store.unlocked(N), [L9, N9]), 'progress swapped while the practice is open → next lesson still opens');
+
   // phone width: the text panel is a foldable bar
   await p.setViewportSize({ width: 390, height: 800 }); await go('lesson/4/exam'); await p.reload(); await p.waitForTimeout(800);
   const ph = await p.evaluate(() => ({ open: document.querySelector('.exam-text details').open, grid: getComputedStyle(document.querySelector('.exam-split')).display, w: document.documentElement.scrollWidth }));

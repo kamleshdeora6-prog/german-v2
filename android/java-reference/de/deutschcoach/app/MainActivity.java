@@ -31,11 +31,11 @@ public class MainActivity extends Activity implements TextToSpeech.OnInitListene
         s.setAllowFileAccess(true);
         s.setMediaPlaybackRequiresUserGesture(false);
         s.setTextZoom(100);
-        web.setWebViewClient(new WebViewClient());
+        web.setWebViewClient(new Client(this));   // 7.6: keeps the live web app inside, other sites go to the browser
         web.setWebChromeClient(new WebChromeClient());
         web.addJavascriptInterface(new Bridge(this), "AndroidBridge");
         setContentView(web);
-        web.loadUrl("file:///android_asset/www/index.html");
+        web.loadUrl("file:///android_asset/www/boot.html");   // 7.6: hands old progress over once, then opens the live web app
         tts = new TextToSpeech(this, this);
     }
 

@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Deutsch Coach</title>
+<style>html,body{margin:0;min-height:100%;background:#151a2d;color:#fff;font:16px/1.5 system-ui,sans-serif}main{max-width:420px;margin:0 auto;padding:48px 20px;text-align:center}h1{font-size:22px}p{color:#c9cee0}button{margin-top:16px;font:600 16px system-ui;padding:12px 22px;border:0;border-radius:12px;background:#e3a400;color:#151a2d}</style></head>
+<body><main>
+<h1>📶 Kein Internet <small style="font-weight:400;color:#c9cee0">· No internet</small></h1>
+<p>Deutsch Coach braucht beim ersten Start einmal Internet. Danach funktioniert die App auch offline.</p>
+<p>The app needs the internet once, on its first start. After that it also works offline, and updates come by themselves.</p>
+<button onclick="go()">Erneut versuchen · Try again</button>
+</main>
+<script>
+var APP = "__APP_URL__";
+function go() { location.replace(APP + "index.html"); }
+addEventListener("online", go);
+</script></body></html>
